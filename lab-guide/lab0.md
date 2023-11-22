@@ -1,6 +1,4 @@
-Microsoft Fabric
-
-Fabric Analyst in a Day
+Microsoft Fabric - Fabric Analyst in a Day
 
 ![tesb](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.001.png)
 
@@ -11,13 +9,12 @@ Lab Prerequisites
 
 [Scenario / Problem Statement](###Scenario/ProblemStatement)
 
-[Overview of Power BI Desktop Dashboard](#OverviewofPowerBIDesktopDashboard
-)
+[Overview of Power BI Desktop Dashboard](#OverviewofPowerBIDesktopDashboard)
 
 [References](#References)
 
 # Document Structure
-### 
+
 The lab includes steps for the user to follow along together with associated screenshots that provide a visual aid. In the screenshots, sections are highlighted with red or orange boxes to indicate the area the user needs to focus on.
 
 ### Scenario / Problem Statement
