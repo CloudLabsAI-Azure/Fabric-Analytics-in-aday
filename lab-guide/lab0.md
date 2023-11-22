@@ -56,7 +56,7 @@ Before we start with Fabric, let’s look at the current dashboard in Power BI D
 
    The dashboard analyzes Sales for Fabrikam. KPIs are listed on the left top of the page. The remaining visuals highlight Sales over time, by Territory, by Product Group, Resellers. 
 
-   ![A screenshot of Power BI Desktop report](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.004.png)
+    ![A screenshot of Power BI Desktop report](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.004.png)
 
 1. **Note:** In this training, we are focusing on the data acquisition, transformation and modeling using tools available in Fabric. We will not be focusing on report development or navigation. Let’s spend a couple of minutes to understand the report and move to the next steps.
 1. Let’s analyze the data by Sales Territory. Select New England from the Sales Territory (Scatter plot) visual.
@@ -78,11 +78,11 @@ Notice the margin % is 52%, which is above the average of 50%. Also the Sales Yo
 
 1. Select the outlier Reseller in the scatter plot to remove the filter.
 1. Let’s get the Product details by Product Group and Reseller. From the Sales by Product Group and Reseller Company bar chart right click on the **Packaging Materials bar for Tailspin Toys** and from the dialog select Drill through -> Product Details.
-   ![A screenshot of Power BI Desktop with Drill through selection](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.008.png)
+    ![A screenshot of Power BI Desktop with Drill through selection](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.008.png)
 1. You will be navigated to the page which provides the Product Details. Notice there are some future orders in place as well.
 1. Once you are done reviewing this page, select the Ctrl+back arrow on the top right of the page to be navigated back to the Sales Report.
 
-   ![A screenshot of Power BI Desktop Product Details page](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.009.png)
+    ![A screenshot of Power BI Desktop Product Details page](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.009.png)
 
 1. Feel free to further analyze the report. Once ready let’s look at the model view. From the left panel, select **Model view icon**. Notice there are two fact tables, Sales and PO. 
    1. Granularity of Sales data is by Date, by Reseller, by Product and People. Date, Reseller, Product and People connect to Sales.
@@ -92,7 +92,7 @@ Notice the margin % is 52%, which is above the average of 50%. Also the Sales Yo
    1. We have Customer information by Reseller. Customer connects to Reseller. 
 1. Let’s look at Power Query to understand the data sources. From the ribbon select **Home -> Transform data.**
 
-   ![A screenshot of data model](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.010.png)
+    ![A screenshot of data model](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.010.png)
 
 1. Power Query window opens. From the ribbon, select **Home -> Data** source settings. Data source settings dialog opens. Notice that we have 4 data sources as mentioned in the problem statement.
    1. Snowflake
@@ -101,12 +101,12 @@ Notice the margin % is 52%, which is above the average of 50%. Also the Sales Yo
    1. Dataverse
 1. Select **Close** to close the Data source settings dialog.
 
-   ![A screenshot of Datasour](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.011.png)
+    ![A screenshot of Datasour](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.011.png)
 
 1. In the left Queries panel, notice the queries are grouped by data source. 
 1. Notice **DataverseData** folder has CustomerData available in 4 different queries, BabyBoomer, GenX, GenY and GenZ. These 4 queries are appended to create Customer query.
 
-   ![A screenshot of queries](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.012.png)
+    ![A screenshot of queries](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.012.png)
 
 1. Notice **ADLSData** folder has multiple dimensions – Geo, Product, Reseller and Date. It also has Sales fact.
    1. Geo dimension is created by merging data from Cities, Countries and States query. 
