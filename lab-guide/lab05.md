@@ -3,7 +3,7 @@ Microsoft Fabric
 Fabric Analyst in a Day
 
 Lab 5
-# ![](Aspose.Words.f1677eee-72ae-4802-9c99-0ea3edd4fa94.001.png)
+# ![](../media/Aspose.Words.f1677eee-72ae-4802-9c99-0ea3edd4fa94.001.png)
 
 # Contents
 [Introduction	3]()
