@@ -17,7 +17,7 @@
 
 
 # <a name="_toc150852388"></a>**Introduction** 
-In our scenario, Campaign Supplier Data is in Snowflake, Customer Data is in Dataverse and Employee Data is in SharePoint. All these data sources are updated at different times. To minimize the number of data refreshes of Dataflows, we are going to create individual Dataflows for each of these data sources.
+In our scenario,Supplier Data is in Snowflake, Customer Data is in Dataverse and Employee Data is in SharePoint. All these data sources are updated at different times. To minimize the number of data refreshes of Dataflows, we are going to create individual Dataflows for each of these data sources.
 
 Note: Multiple data sources are supported in a single Dataflow.
 
@@ -40,7 +40,7 @@ You will be navigated to Dataflow page. Now that we are familiar with Dataflow, 
 
 1. If you have not already opened it, open **FAIAD.pbix** located in **/Report** folder of the lab material. 
 1. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
-1. Power Query window opens. From the left panel, under SnowflakeData folder **Ctrl+Select** or Shift+Select the following queries.
+1. Power Query window opens. From the left panel, under SnowflakeData folder **Ctrl+Select** or **Shift+Select** the following queries.
    1. SupplierCategories
    1. Suppliers
    1. Supplier
@@ -53,7 +53,7 @@ You will be navigated to Dataflow page. Now that we are familiar with Dataflow, 
   ![A screenshot to copy queries from Power Query window](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.004.png)
 
 1. Navigate back to the **browser**.
-1. In the Dataflow pane select the center pane, enter **Ctrl+V** (current right click Paste is not supported).
+1. In the Dataflow pane select the **center pane**, enter **Ctrl+V** (current right click Paste is not supported).
 
 Notice the 5 queries are pasted and now you have the Queries panel on the left. Since we do not have a connection created for Snowflake, you will see a warning message requesting you to configure the connection.
 
@@ -76,7 +76,7 @@ Connection is established and you can view the data in the preview panel. Feel f
   ![A screenshot to Enable Staging](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.007.png)
 
 1. Similarly, right click on **PO** query. Select **Enable staging** to remove the check mark.
-1. Note: We do not have to disable staging for the other 3 queries because Enable Load was disabled in Power BI Desktop (from where these queries were copied from).
+   -Note: We do not have to disable staging for the other 3 queries because Enable Load was disabled in Power BI Desktop (from where these queries were copied from).
 1. Select **Supplier** query.
 1. On the bottom right corner select “**+**” next to **Data destination**.
 1. Select Lakehouse from the dialog.
@@ -100,10 +100,8 @@ Connection is established and you can view the data in the preview panel. Feel f
 1. Choose destination settings dialog opens. Every time Dataflow Gen2 is refreshed we would like to perform a full load. Make sure Update method is set to **Replace**.
 1. Notice there is a warning. Lakehouse does not support column names with space in it. Select **Fix it**, to fix the warning.
 
-   ![A screenshot of a computer
+   ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.012.png)
 
-    Description automatically generated](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.012.png)
-   
     ![A screenshot to Choose destination settings](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.013.png)
 
 1. Column mapping can be used to map dataflow columns to existing columns. In our case, it is a New Table. Hence, we can use the defaults. Select **Save settings**.
@@ -113,12 +111,12 @@ Connection is established and you can view the data in the preview panel. Feel f
 
    ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.015.png)
 
-1. On the bottom right corner, select **Publish**.From the top of the screen, select the arrow next to Dataflow1 to rename.
+1. From the top of the screen, select the arrow next to Dataflow1 to rename.
 1. In the dialog, change the name to **df\_Supplier\_Snowflake.**
 1. Click on Enter** to save the name change.
-1.   ![A screenshot showing renaming of Dataflow1](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.016.png)
+   ![A screenshot showing renaming of Dataflow1](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.016.png)
 1. On the bottom right corner, select **Publish**.
-1.   ![A screenshot to Publish Dataflow](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.017.png)
+   ![A screenshot to Publish Dataflow](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.017.png)
 
 You will be navigated back to Data Factory screen. It may take a few moments for the Dataflow to Publish. 
 
@@ -179,11 +177,9 @@ Connection is established and you can view the data in the preview panel. Feel f
 1. Select **Customer** query.
 1. On the bottom right corner select “**+**” next to **Data destination**.
 1. Select Lakehouse from the dialog.
-1.   ![A screenshot to configure Data Destination for Customer query](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.024.png)
+   ![A screenshot to configure Data Destination for Customer query](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.024.png)
 
-![A screenshot of a computer
-
-Description automatically generated](Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.025.png)
+  ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.025.png)
 
 1. Connect to data destination dialog opens. From the **Connection dropdown** select **Lakehouse (none)**.
 
@@ -200,9 +196,9 @@ Description automatically generated](Aspose.Words.12ee924b-aa27-4137-9af5-6e5d68
 
 1. Choose destination settings dialog opens. Every time Dataflow Gen2 is refreshed we would like to perform a full load. Make sure Update method is set to **Replace**.
 1. Notice there is a warning. Lakehouse does not support column names with space in it. Select **Fix it**, to fix the warning.
-1.   ![A screenshot of Choose destination settings](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.027.png)
+   ![A screenshot of Choose destination settings](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.027.png)
 
-     ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.028.png)
+   ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.028.png)
 
 1. Column mapping can be used to map dataflow columns to existing columns. In our case, it is a New Table. Hence, we can use the defaults. Select **Save settings**.
 1. You will be navigated back to Power Query window. Notice on the bottom **right corner**, Data destination is set to Lakehouse.
@@ -265,7 +261,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 1. Select **People** query.
 1. On the bottom right corner select “**+**” next to **Data destination**.
 1. Select Lakehouse from the dialog.
-1. ![A screenshot to configure Data Destination for People query](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.039.png)
+   ![A screenshot to configure Data Destination for People query](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.039.png)
 
    ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.040.png)
 
@@ -280,11 +276,11 @@ Connection is established and you can view the data in the preview panel. Feel f
 1. We can leave the table name as **People**.
 1. Select **Next**.
 
-![A screenshot of Choose destination target](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.042.png)
+  ![A screenshot of Choose destination target](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.042.png)
 
 1. Choose destination settings dialog opens. Every time Dataflow Gen2 is refreshed we would like to perform a full load. Make sure Update method is set to **Replace**.
 1. Notice there is a warning. Lakehouse does not support column names with space in it. Select **Fix it**, to fix the warning.
-1. ![A screenshot of Choose destination settings](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.043.png)
+   ![A screenshot of Choose destination settings](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.043.png)
 
   ![A screenshot of a computerDescription automatically generated](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.044.png)
 
@@ -304,14 +300,14 @@ You will be navigated back to Data Factory screen. It may take a few moments for
 1. In Description text box add **Dataflow to ingest People data from SharePoint to Lakehouse**.
 1. Select **Save**.
 
-![A screenshot of Dataflow1 dialog](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.047.png)
+  ![A screenshot of Dataflow1 dialog](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.047.png)
 
 You will be navigated back to the Data Factory screen. We have now ingested all the data into Lakehouse. In the next lab, we will work with Lakehouse.
 
 # <a name="_toc150777627"></a><a name="_toc150779083"></a><a name="_toc150852393"></a>**References**
 Fabric Analyst in a Day introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help section has links to some great resources.
 
-![A screenshot of help options](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.048.png)
+  ![A screenshot of help options](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.048.png)
 
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
@@ -335,32 +331,6 @@ Read the more in-depth Fabric experience announcement blogs:
 - [Administration and governance in Fabric blog](https://aka.ms/Fabric-Admin-Gov-Blog)
 - [OneLake](https://aka.ms/Fabric-OneLake-Blog)[ in Fabric blog](https://aka.ms/Fabric-OneLake-Blog)
 - [Dataverse and Microsoft Fabric integration blog](https://aka.ms/Dataverse-Fabric-Blog)
-
-Here are a few more resources that will help you with your next steps with Microsoft Fabric.
-
-- See blog post to read the full [Microsoft Fabric preview announcement](https://aka.ms/build2023-fabricblog)
-- [Sign up for the Microsoft Fabric free trial](https://aka.ms/try-fabric)
-- [Visit the Microsoft Fabric website](https://aka.ms/microsoft-fabric)
-- Learning path: [Get started with Microsoft Fabric - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/paths/get-started-fabric/)
-- Webinar series: [Microsoft Fabric Webinar Series](https://info.microsoft.com/ww-landing-introduction-to-microsoft-fabric-webinar-series.html?lcid=en-us)
-
-Read the more in-depth Fabric experience announcement blogs:
-
-- [Data Factory experience in Fabric blog](https://aka.ms/Fabric-Data-Factory-Blog) 
-- [Synapse Data Engineering experience in Fabric blog](https://aka.ms/Fabric-DE-Blog) 
-- [Synapse Data Science experience in Fabric blog](https://aka.ms/Fabric-DS-Blog) 
-- [Synapse Data Warehousing experience in Fabric blog](https://aka.ms/Fabric-DW-Blog) 
-- [Synapse Real-Time Analytics experience in Fabric blog](https://aka.ms/Fabric-RTA-Blog)
-- [Power BI announcement blog](https://aka.ms/Fabric-PBI-Blog)
-- [Data Activator experience in Fabric blog](https://aka.ms/Fabric-DA-Blog) 
-- [Administration and governance in Fabric blog](https://aka.ms/Fabric-Admin-Gov-Blog)
-- [OneLake](https://aka.ms/Fabric-OneLake-Blog)[ in Fabric blog](https://aka.ms/Fabric-OneLake-Blog)
-- [Microsoft 365 data integration in Fabric blog](https://aka.ms/buil2023-m365-fabric-blog)
-- [Dataverse and Microsoft Fabric integration blog](https://aka.ms/Dataverse-Fabric-Blog)
-- Explore the [Fabric technical documentation](https://aka.ms/fabric-docs)
-- Read the [free e-book on getting started with Fabric](https://aka.ms/fabric-get-started-ebook)
-- Watch the [free Fabric webinar series](https://aka.ms/fabric-webinar-series)
-- Explore Fabric through the [Guided Tour](https://aka.ms/Fabric-GuidedTour)
 
 © 2023 Microsoft Corporation. All rights reserved.
 
