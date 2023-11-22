@@ -454,32 +454,6 @@ Read the more in-depth Fabric experience announcement blogs:
 - [OneLake](https://aka.ms/Fabric-OneLake-Blog)[ in Fabric blog](https://aka.ms/Fabric-OneLake-Blog)
 - [Dataverse and Microsoft Fabric integration blog](https://aka.ms/Dataverse-Fabric-Blog)
 
-Here are a few more resources that will help you with your next steps with Microsoft Fabric.
-
-- See blog post to read the full [Microsoft Fabric preview announcement](https://aka.ms/build2023-fabricblog)
-- [Sign up for the Microsoft Fabric free trial](https://aka.ms/try-fabric)
-- [Visit the Microsoft Fabric website](https://aka.ms/microsoft-fabric)
-- Learning path: [Get started with Microsoft Fabric - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/paths/get-started-fabric/)
-- Webinar series: [Microsoft Fabric Webinar Series](https://info.microsoft.com/ww-landing-introduction-to-microsoft-fabric-webinar-series.html?lcid=en-us)
-
-Read the more in-depth Fabric experience announcement blogs:
-
-- [Data Factory experience in Fabric blog](https://aka.ms/Fabric-Data-Factory-Blog) 
-- [Synapse Data Engineering experience in Fabric blog](https://aka.ms/Fabric-DE-Blog) 
-- [Synapse Data Science experience in Fabric blog](https://aka.ms/Fabric-DS-Blog) 
-- [Synapse Data Warehousing experience in Fabric blog](https://aka.ms/Fabric-DW-Blog) 
-- [Synapse Real-Time Analytics experience in Fabric blog](https://aka.ms/Fabric-RTA-Blog)
-- [Power BI announcement blog](https://aka.ms/Fabric-PBI-Blog)
-- [Data Activator experience in Fabric blog](https://aka.ms/Fabric-DA-Blog) 
-- [Administration and governance in Fabric blog](https://aka.ms/Fabric-Admin-Gov-Blog)
-- [OneLake](https://aka.ms/Fabric-OneLake-Blog)[ in Fabric blog](https://aka.ms/Fabric-OneLake-Blog)
-- [Microsoft 365 data integration in Fabric blog](https://aka.ms/buil2023-m365-fabric-blog)
-- [Dataverse and Microsoft Fabric integration blog](https://aka.ms/Dataverse-Fabric-Blog)
-- Explore the [Fabric technical documentation](https://aka.ms/fabric-docs)
-- Read the [free e-book on getting started with Fabric](https://aka.ms/fabric-get-started-ebook)
-- Watch the [free Fabric webinar series](https://aka.ms/fabric-webinar-series)
-- Explore Fabric through the [Guided Tour](https://aka.ms/Fabric-GuidedTour)
-
 © 2023 Microsoft Corporation. All rights reserved.
 
 By using this demo/lab, you agree to the following terms:
