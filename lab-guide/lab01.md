@@ -6,13 +6,13 @@ Lab 1
 # ![](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.001.png)
 
 # Contents
-[Introduction]()
+[Introduction](#Introduction)
 
 [Fabric Workspace]()
 
 [How to create trial Fabric workspace:]()
 
-[Overview of Fabric Experiences:](#Introduction)
+[Overview of Fabric Experiences:]()
 
 [How** to create a New workspace:]()
 
@@ -22,7 +22,7 @@ Lab 1
 
 
 #
-# <a name="_toc150852461"></a>**Introduction** 
+# Introduction
 Today you will learn about various key features of Fabric. This is an introductory course intended to expose you to the various artifacts experiences and items available in Fabric.  By the end of this workshop you will learn how to use Lakehouse, Dataflow Gen 2, Data Pipeline, and use DirectLake feature.
 
 By the end of this lab, you will have learned: 
