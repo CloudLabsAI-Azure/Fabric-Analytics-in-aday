@@ -113,12 +113,12 @@ Notice the margin % is 52%, which is above the average of 50%. Also the Sales Yo
    1. Dataverse
 1. Select **Close** to close the Data source settings dialog.
 
-   ![A screenshot of Datasour](Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.011.png)
+   ![A screenshot of Datasour](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.011.png)
 
 1. In the left Queries panel, notice the queries are grouped by data source. 
 1. Notice **DataverseData** folder has CustomerData available in 4 different queries, BabyBoomer, GenX, GenY and GenZ. These 4 queries are appended to create Customer query.
 
-   ![A screenshot of queries](Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.012.png)
+   ![A screenshot of queries](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.012.png)
 
 1. Notice **ADLSData** folder has multiple dimensions – Geo, Product, Reseller and Date. It also has Sales fact.
    1. Geo dimension is created by merging data from Cities, Countries and States query. 
@@ -135,7 +135,7 @@ Now we know what we are dealing with. In the following labs, we will create a si
 # <a name="_toc151126680"></a>**References**
 Fabric Analyst in a Day introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help section has links to some great resources.
 
-![A screenshot of help options](Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.013.png)
+![A screenshot of help options](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.013.png)
 
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
