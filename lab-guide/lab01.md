@@ -55,25 +55,10 @@ Currently, you are in **My Workspace**. To work with the Fabric artifactsitems, 
 
    ![A screenshot of upgrade to free trial](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.005.png)
 
-1. Once successful, select Stay in current workspace.
+1. Once successful, select Stay in the current workspace.
 
    ![A screenshot of Fabric experiences options](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.006.png)
 
-   ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.007.png)
-   
-   ![A screenshot of a computer escription automatically generated](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.008.png)
-   
-   ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.009.png)
-   
-   ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.010.png)
-   
-   ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.011.png)
-   
-   [A screenshot of New workspace dialog](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.021.png)
-   
-   ![A screenshot of Create a workspace dialog](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.022.png)
-   
-   ![A screenshot to select trial license](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.023.png)
 
 ### Overview of Fabric Experiences:
 
