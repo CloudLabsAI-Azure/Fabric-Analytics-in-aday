@@ -37,12 +37,12 @@ By the end of this lab, you will have learned:
 1. Note: If you have an existing Power BI account, you may want to use the browser in private/incognito mode.
 1. Enter the **Email** provided by the instructor and click **Submit.**
 
-![A screenshot of create account page](Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.002.png)
+![A screenshot of create account page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.002.png)
 
 1. You will be navigated to the **password** screen. Enter the password shared with you by the instructor. 
 1. Click **Sign in** and follow the prompts to sign in to Fabric.
 
-![A sceenshot of the enter password page](Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.003.png)
+![A sceenshot of the enter password page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.003.png)
 
 1. You will be navigated to the familiar **Power BI Service landing page**.
 1. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor.
@@ -63,7 +63,7 @@ Currently, you are in **My Workspace**. To work with the Fabric artifactsitems, 
 1. On the **bottom** left of the screen, select **Power BI**. A dialog opens with all the options available in Fabric. In this course we will be learning how to create and work with some of these artifacts.
 
 
-![A screenshot of Fabric experiences options](Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.006.png)
+![A screenshot of Fabric experiences options](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.006.png)
 
 Currently, you are in **My Workspace**. To work with the Fabric artifacts, you will need a trial license and a workspace that has Fabric license. Let’s do this.
 
@@ -110,20 +110,20 @@ A new workspace is created, and you will be navigated into this workspace. We wi
 
 1. Select **Power BI** on the bottom left of your screen. A dialog with the list of Fabric experiences will open. Let’s explore these.
 1. Select Data Factory.
-1. ![A screenshot of a dialog to select Data Factory experience](Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.012.png)
+1. ![A screenshot of a dialog to select Data Factory experience](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.012.png)
 1. You are navigated to Data Factory Home page. The page contains 3 main sections. 
    1. New: This lists the items available in Data Factory – Dataflow Gen2 and Data pipeline.
       1. Dataflow Gen2 is the next generation of Dataflow.
       1. Data pipeline is used for data orchestration.
    1. Recommended: This section provides access to quick start learning documentation.
    1. Quick Access: This section lists the recently used or favorite items.
-   1. ![A screenshot of Data Factory Home page](Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.013.png)
+   1. ![A screenshot of Data Factory Home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.013.png)
 1. Select **Data Factory** on the bottom left of your screen. Fabric experience dialog opens.
-1. ![A screenshot of dialog to select Data Activator](Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.014.png)
+1. ![A screenshot of dialog to select Data Activator](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.014.png)
 1. Select **Data Activator** from the dialog. You will be navigated to Data Activator Home. Data Activator is a no-code experience in Microsoft Fabric for automatically taking actions when patterns or conditions are detected in changing data. Notice the 3 sections are like Data Factory experience. In the New section notice the items.
    1. **Reflex:** Used to monitor datasets, queries and event streams for patterns.
    1. **Reflex sample:** Sample solution.
-1. ![A screenshot of Data Activator Home page](Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.015.png)
+1. ![A screenshot of Data Activator Home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.015.png)
 1. Select **Data Activator** on the bottom left of your screen. Fabric experience dialog opens.
 1. Select **Data Engineering**. In the New section notice the items. 
    1. **Lakehouse:** Used to store big data for cleaning, querying, reporting, sharing.
@@ -132,7 +132,7 @@ A new workspace is created, and you will be navigated into this workspace. We wi
    1. **Data pipeline:** Used to orchestrate data solution.
    1. **Import notebook:** Used to import notebooks from local machine.
    1. **Use a sample:** Used to create a sample.
-   1. ![A screenshot of Data Engineering Home page](Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.016.png)
+   1. ![A screenshot of Data Engineering Home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.016.png)
    1. Select **Data Engineering** on the bottom left of your screen. Fabric experience dialog opens.
 1. Select Data Science. You will be navigated to Data Science Home. Again, there are 3 sections. In the New section notice the items.
    1. Model:** Used to create machine learning models.
@@ -140,25 +140,25 @@ A new workspace is created, and you will be navigated into this workspace. We wi
    1. Notebook:** Used to explore data and build machine learning solutions.
    1. Import Notebook:** Used to import notebooks from local machine.
    1. Sample:** S**ample solution.**
-   1. ![A screenshot of Data Science Home page](Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.017.png)
+   1. ![A screenshot of Data Science Home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.017.png)
 1. Select **Data Science** on the bottom left of your screen. Fabric experience dialog opens.
 1. Select **Data Warehouse**. You will be navigated to Data Warehouse Home. Again, there are 3 sections. In the New section notice the items. Notice Data pipeline and Dataflow Gen2 are available here as well.
    1. **Warehouse: Used to provide strategic insights from multiple sources.**
    1. **Sample warehouse:** Sample warehouse solution.
    1. **Data pipeline:** Used to orchestrate data solution.
    1. **Dataflow Gen2:** Next generation of Dataflow.
-   1. ![A screenshot of Data Warehouse Home page](Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.018.png)
+   1. ![A screenshot of Data Warehouse Home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.018.png)
 1. Select **Data Warehouse** on the bottom left of your screen. Fabric experience dialog opens.
 1. Select **Real-Time Analytics**. You will be navigated to Real-Time Analytics Home. Again, there are 3 sections. In the New section notice the items. 
    1. **KQL Database:** Used to rapidly load structured, unstructured, and streaming data for querying.
    1. **KQL Queryset:** Used to run queries on the data to produce shareable tables and visuals.
    1. **Eventstream:** Used to capture, transform and route real time event stream.
    1. **Use a sample:** Used to create a sample.
-1. ![A screenshot of Real Time Analytics Home page](Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.019.png)Select **Data Engineering**. (Lakehouse is a Data Engineering artifact).
+1. ![A screenshot of Real Time Analytics Home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.019.png)Select **Data Engineering**. (Lakehouse is a Data Engineering artifact).
 
 ![A screenshot of a computer
 
-Description automatically generated](Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.020.png) <a name="_toc150852465"></a>How** to create a New workspace:
+Description automatically generated](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.020.png) <a name="_toc150852465"></a>How** to create a New workspace:
 
 1. Now let’s create a workspace with Fabric license. Select **Workspaces** from the left navigation bar. A dialog opens.
 1. Select **New workspace**.
@@ -182,16 +182,16 @@ A new workspace is created, and you will be navigated into this workspace. We wi
 
 1. Select **Real-Time Analytics** on the bottom left of your screen. Fabric experience dialog opens.
 1. Select Data **Engineering** to be navigated to Data Engineering experience.
-1. ![A screenshot of dialog to select Data Engineering](Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.024.png)
+1. ![A screenshot of dialog to select Data Engineering](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.024.png)
 1. Under New, you will find various options like Lakehouse, Notebook, Data Pipeline, etc. Select **Lakehouse (Preview)**.
 
-![A screenshot of Data Engineering home page](Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.025.png)
+![A screenshot of Data Engineering home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.025.png)
 
 1. A dialog requesting **Lakehouse Name** opens. Enter **lh\_FAIAD** (lh here refers to Lakehouse.).
 1. Note: lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.
 1. Select **Create**.
 
-![A screenshot of dialog to name the Lakehouse](Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.026.png)
+![A screenshot of dialog to name the Lakehouse](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.026.png)
 
 Within a few moments, a Lakehouse is created, and you will be navigated to the Lakehouse interface.
 
@@ -200,14 +200,14 @@ On the **left panel**, notice that below your workspace, you will have the Lakeh
 Within the Lakehouse explorer you will notice **Tables** and **Files**. Lakehouse could expose Azure Data Lake Gen2 files under the files section, or a dataflow could load data to Lakehouse tables. There are various options available. We are going to show you some of the options as in the following labs.
 
 
-![A screenshot of LakeHouse](Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.027.png)
+![A screenshot of LakeHouse](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.027.png)
 
 In this lab, we explored the Fabric interface, created a Fabric workspace and a Lakehouse. In the next lab, we will learn how to use Dataflow Gen2 to connect to ADLS Gen2 to extract, transform and ingest data into the Lakehouse.
 
 # <a name="_toc150777627"></a><a name="_toc150852467"></a>**References**
 Fabric Analyst in a Day introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help section has links to some great resources.
 
-![A screenshot of help options](Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.028.png)
+![A screenshot of help options](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.028.png)
 
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
