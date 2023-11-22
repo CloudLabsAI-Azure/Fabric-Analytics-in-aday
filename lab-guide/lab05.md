@@ -1,57 +1,28 @@
-Microsoft Fabric
+# Microsoft Fabric - Fabric Analyst in a Day - Lab 5
 
-Fabric Analyst in a Day
 
-Lab 5
 # ![](../media/Aspose.Words.f1677eee-72ae-4802-9c99-0ea3edd4fa94.001.png)
 
 # Contents
-[Introduction	3]()
+[Introduction](#_toc150852565)
 
-[Dataflow Gen2	3]()
+[Dataflow Gen2](#_toc150852566)
 
-[Configure Scheduled refresh	3]()
+[Configure Scheduled refresh](#_toc150852567)
 
-[Data Pipeline	7]()
+[Data Pipeline](#_toc150852568)
 
-[Overview of Data Pipeline:	7]()
+[Overview of Data Pipeline](#_toc150852569)
 
-[Data Pipeline – How to build simple Data Pipeline:	9]()
+[Data Pipeline – How to build simple Data Pipeline](#_toc150852570)
 
-[Data Pipeline – How to build a complex Data Pipeline:	11]()
+[Data Pipeline – How to build a complex Data Pipeline](#_toc150852571)
 
-[Data Pipeline – How to schedule refresh:	28]()
+[Data Pipeline – How to schedule refresh](#_toc150852572)
 
-[References	29]()
-
-Introduction	2
-
-Dataflow Gen2	2
-
-Configure Scheduled refresh	2
-
-Data Pipeline	6
-
-Overview of Data Pipeline:	6
-
-Data Pipeline – How to build simple Data Pipeline:	8
-
-Data Pipeline – How to build a complex Data Pipeline:	10
-
-Data Pipeline – How to schedule refresh:	26
+[References](#_toc150852573)
 
 
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
 # <a name="_toc150852565"></a>**Introduction** 
 We have ingested data from different data sources into Lakehouse. You got introduced to Lakehouse, created a data model. The next step is to set up a refresh schedule for the data sources. Just to recap the requirement:
 
