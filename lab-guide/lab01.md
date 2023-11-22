@@ -8,15 +8,15 @@ Lab 1
 # Contents
 [Introduction](#Introduction)
 
-[Fabric Workspace]()
+[Fabric Workspace](#Fabric Workspace)
 
-[How to create trial Fabric workspace:]()
+[How to create trial Fabric workspace:](###How to create trial Fabric workspace:)
 
 [Overview of Fabric Experiences:]()
 
-[How** to create a New workspace:]()
+[How to create a New workspace:]()
 
-[How** to create a Lakehouse:]()
+[How to create a Lakehouse:]()
 
 [References]()
 
@@ -30,8 +30,8 @@ By the end of this lab, you will have learned:
 - How to create a Fabric workspace
 - How to create a Lakehouse  
 
-# <a name="_toc150852462"></a>**Fabric Workspace**
-### <a name="_toc150852463"></a>How** to create trial Fabric workspace:
+# Fabric Workspace
+### How to create trial Fabric workspace:
 
 1. Open the **browser** and navigate to <https://app.powerbi.com/>. You will be navigated to the login page.
 1. Note: If you have an existing Power BI account, you may want to use the browser in private/incognito mode.
@@ -70,43 +70,33 @@ Currently, you are in **My Workspace**. To work with the Fabric artifacts, you w
 1. On the top right corner of the screen, select the **user** **icon**.
 1. Select **Start trial**.
 
-![A screenshot of a computer
-
-Description automatically generated]
+![A screenshot of a computer Description automatically generated]
 
 1. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Start trial**.
 
-![A screenshot of a computer
-
-Description automatically generated]
+![A screenshot of a computer Description automatically generated]
 
 1. Once successful, select **Stay in current workspace**.
 1. Select **Workspaces** from the left navigation bar. A dialog opens.
 1. Select **New workspace**.
 
-![A screenshot of a computer
-
-Description automatically generated]
+![A screenshot of a computer Description automatically generated]
 
 1. **Create a workspace** dialog opens on the right side of the browser.
 1. In the **Name** field enter **FAIAD\_<yourusername>**. Note: Workspace name must be unique. We are using FAIAD as the workspace name for this document. However, your workspace name will be different. Make sure a green check mark with “**This name is available**” is displayed below the Name field.
 1. If you choose to, you can enter a **Description** for the workspace. This is an optional field.
 1. Click on **Advanced** to expand the section.
 
-![A screenshot of a computer
-
-Description automatically generated]
+![A screenshot of a computer Description automatically generated]
 
 1. Under **License mode**, make sure **Trial** is selected. (It should be selected by default)
 1. Select **Apply** to create a new workspace.
 
-![A screenshot of a computer
-
-Description automatically generated]
+![A screenshot of a computer Description automatically generated]
 
 A new workspace is created, and you will be navigated into this workspace. We will bring data from the different data sources into Lakehouse and use the data from the Lakehouse to build our model and report on it. The first step is to create a Lakehouse.
 
-### How** to create a Lakehouse:<a name="_toc150852464"></a>Overview of Fabric Experiences:
+### How to create a Lakehouse: Overview of Fabric Experiences:
 
 1. Select **Power BI** on the bottom left of your screen. A dialog with the list of Fabric experiences will open. Let’s explore these.
 1. Select Data Factory.
