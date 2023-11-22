@@ -7,7 +7,7 @@ Fabric Analyst in a Day
 Lab Prerequisites 
 
 # Contents
-[Document Structure](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/blob/main/lab-guide/lab0.md#document-structure)
+[Document Structure](#Document Structure)
 
 [Scenario / Problem Statement]()
 
