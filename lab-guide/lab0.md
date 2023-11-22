@@ -9,7 +9,7 @@ Lab Prerequisites
 # Contents
 [Document Structure]()
 
-[Scenario / Problem Statement]()
+[Scenario / Problem Statement](<a name="_toc151126678"></a>)
 
 [Overview of Power BI Desktop Dashboard]()
 
