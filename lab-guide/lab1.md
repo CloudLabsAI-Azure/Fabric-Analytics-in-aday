@@ -1,16 +1,8 @@
 Microsoft Fabric
 
 Fabric Analyst in a Day
-
-Lab 0
-
-Microsoft Fabric
-
-Fabric Analyst in a Day
-
 Lab 1
 
-Lab 0
 # ![](Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.001.png)
 
 # Contents
@@ -30,24 +22,13 @@ Lab 0
 
 
 #
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
 # <a name="_toc150852461"></a>**Introduction** 
-Today you will learn about various key features of Fabric. This is an introductory course intended to expose you to the various artifacts product experiences and items available in Fabric.  By the end of this course workshop you will learn how to use Lakehouse, Dataflow Gen 2, Data Pipeline and use DirectLake feature.
+Today you will learn about various key features of Fabric. This is an introductory course intended to expose you to the various artifacts experiences and items available in Fabric.  By the end of this workshop you will learn how to use Lakehouse, Dataflow Gen 2, Data Pipeline, and use DirectLake feature.
 
 By the end of this lab, you will have learned: 
 
 - How to create a Fabric workspace
-- How create a Lakehouse  
+- How to create a Lakehouse  
 
 # <a name="_toc150852462"></a>**Fabric Workspace**
 ### <a name="_toc150852463"></a>How** to create trial Fabric workspace:
