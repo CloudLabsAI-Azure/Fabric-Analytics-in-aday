@@ -15,7 +15,7 @@ Lab Prerequisites
 
 [References]()
 
-# <a name="_toc151126677"></a>**Document Structure**
+# **Document Structure**
 ### 
 The lab includes steps for the user to follow along together with associated screenshots that provide a visual aid. In the screenshots, sections are highlighted with red or orange boxes to indicate the area the user needs to focus on.
 
