@@ -1,17 +1,9 @@
 Microsoft Fabric
 
 Fabric Analyst in a Day
+![tesb](..\meadia\Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.001.png)
 
-Lab 0
-
-Microsoft Fabric
-
-Fabric Analyst in a Day
-
-Lab 0
-
-Lab 0
-# ![](..\meadia\Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.001.png)Lab Prerequisites 
+Lab Prerequisites 
 
 # Contents
 [Document Structure	3]()
