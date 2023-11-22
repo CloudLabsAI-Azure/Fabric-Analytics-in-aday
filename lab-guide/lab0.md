@@ -11,7 +11,7 @@ Fabric Analyst in a Day
 Lab 0
 
 Lab 0
-# ![](Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.001.png)Lab Prerequisites 
+# ![](..\meadia\Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.001.png)Lab Prerequisites 
 
 # Contents
 [Document Structure	3]()
