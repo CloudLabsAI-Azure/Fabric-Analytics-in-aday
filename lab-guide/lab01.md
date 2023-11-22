@@ -110,20 +110,19 @@ Currently, you are in **My Workspace**. To work with the Fabric artifactsitems, 
    1. **Use a sample:** Used to create a sample.
    ![A screenshot of Real Time Analytics Home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.019.png)
 
-   ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.020.png)
 <a name="_toc150852465"></a>**How to create a New workspace:**
 
 1. Now let’s create a workspace with Fabric license. Select **Workspaces** from the left navigation bar. A dialog opens.
 1. Select **New workspace**.
 
-   ![A screenshot of New workspace dialog]
+   [A screenshot of New workspace dialog](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.021.png)
 
 1. **Create a workspace** dialog opens on the right side of the browser.
 1. In the **Name** field enter **FAIAD\_<yourusername>**. Note: Workspace name must be unique. We are using FAIAD as the workspace name for this document. However, your workspace name will be different. Make sure a green check mark with “**This name is available**” is displayed below the Name field.
 1. If you choose to, you can enter a **Description** for the workspace. This is an optional field.
 1. Click on **Advanced** to expand the section.
 
-![A screenshot of Create a workspace dialog]
+ [A screenshot of New workspace dialog](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.021.png)
 
 1. Under **License mode**, make sure **Trial** is selected. (It should be selected by default)
 1. Select **Apply** to create a new workspace.
