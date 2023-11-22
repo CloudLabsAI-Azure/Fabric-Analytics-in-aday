@@ -4,19 +4,19 @@
 # ![](../media/Aspose.Words.78333b69-24f7-49ac-a05b-1a912397214d.001.png)
 
 # Contents
-[Introduction	3](#_toc151123908)
+[Introduction](#_toc151123908)
 
-[Power BI	3](#_toc151123909)
+[Power BI](#_toc151123909)
 
-[Auto-Create Report	3](#_toc151123910)
+[Auto-Create Report](#_toc151123910)
 
-[Create Report starting from a Blank canvas	6](#_toc151123911)
+[Create Report starting from a Blank canvas](#_toc151123911)
 
-[Direct Lake Mode	17](#_toc151123912)
+[Direct Lake Mode](#_toc151123912)
 
-[Clean up Lab environment	22](#_toc151123913)
+[Clean up Lab environment](#_toc151123913)
 
-[References	23](#_toc151123914)
+[References](#_toc151123914)
 
 # <a name="_toc151123908"></a>**Introduction** 
 We have ingested data from different data sources into Lakehouse, got introduced to Lakehouse, created a data model, set refresh schedule for the data sources. Now we are going to create a report.
