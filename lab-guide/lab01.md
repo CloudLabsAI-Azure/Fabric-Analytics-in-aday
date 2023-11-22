@@ -80,7 +80,7 @@ Currently, you are in **My Workspace**. To work with the Fabric artifactsitems, 
       1. Data pipeline is used for data orchestration.
    1. Recommended: This section provides access to quick start learning documentation.
    1. Quick Access: This section lists the recently used or favorite items.
-      ![A screenshot of Data Factory Home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.013.png)
+   ![A screenshot of Data Factory Home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.013.png)
 1. Select **Data Factory** on the bottom left of your screen. Fabric experience dialog opens.
    ![A screenshot of dialog to select Data Activator](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.014.png)
 1. Select **Data Activator** from the dialog. You will be navigated to Data Activator Home. Data Activator is a no-code experience in Microsoft Fabric for automatically taking actions when patterns or conditions are detected in changing data. Notice the 3 sections are like Data Factory experience. In the New section notice the items.
