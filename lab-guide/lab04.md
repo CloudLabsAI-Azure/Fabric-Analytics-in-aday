@@ -84,44 +84,32 @@ You will be navigated to a screen where you can view the tables and a preview of
 1. From the top menu, select **New semantic model**. A dialog opens where you can select tables to create a new dataset (suppose you need a subset of the tables to create a dataset). We are going to use all the tables; hence we are not going to create a new dataset.
 1. Select **Cancel** to navigate back.
 
-![A screenshot of a computer
-
-Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.006.png)
+![A screenshot of a computer Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.006.png)
 ### Lakehouse – How to create Shortcut:
 
 1. You can create shortcuts to Fabric, ADLS Gen2 and Amazon S3, like creating shortcuts in windows desktop. Select the **ellipsis** next to **Files** in the left panel.
 1. Select **New shortcut**.
 
-![A screenshot of a computer
-
-Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.007.png)
+![A screenshot of a computer Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.007.png)
 
 1. New shortcut dialog opens. Select **Azure Data Lake Storage Gen2**. We will create a connection to the ADLS Gen2 container to showcase the capabilities.
 
-![A screenshot of a computer
-
-Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.008.png)
+![A screenshot of a computer Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.008.png)
 
 1. Under **Connection settings -> URL** enter **<https://stvnextblobstorage.dfs.core.windows.net/>.** Since you have created the connection to ADLS Gen2 before, your credentials are recognized. 
 1. Select **Next**.
 
-![A screenshot of a computer
-
-Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.009.png)
+![A screenshot of a computer Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.009.png)
 
 1. Under **Shortcut settings -> Shortcut Name** enter **Sales**.
 1. Under **Target Location -> Sub Path** enter **/fabrikam-sales/Delta-Parquet-Format/**
 1. Select **Create**.
 
-![A screenshot of a computer
-
-Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.010.png)
+![A screenshot of a computer Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.010.png)
 
 1. You are** navigated back to the Lakehouse Explorer screen. Expand **Files** in the left panel.
 
-![A screenshot of a computer
-
-Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.011.png)
+![A screenshot of a computer Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.011.png)
 
 1. Notice you have access to all the parquet files from ADLS Gen2. Similarly you can select **Sales** folder in the **center pane** to navigate through the folder structure. 
 ### <a name="_toc150852369"></a>Lakehouse – How to query data using SQL
