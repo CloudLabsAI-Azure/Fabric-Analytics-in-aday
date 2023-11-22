@@ -5,9 +5,9 @@ Microsoft Fabric - Fabric Analyst in a Day
 Lab Prerequisites 
 
 # Contents
-[Document Structure](#DocumentStructure)
+[Document Structure](#Document Structure)
 
-[Scenario / Problem Statement](###Scenario/ProblemStatement)
+[Scenario / Problem Statement](###Scenario / Problem Statement)
 
 [Overview of Power BI Desktop Dashboard](#OverviewofPowerBIDesktopDashboard)
 
