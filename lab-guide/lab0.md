@@ -7,7 +7,7 @@ Fabric Analyst in a Day
 Lab Prerequisites 
 
 # Contents
-[Document Structure](#Document Structure)
+[Document Structure](# Document Structure)
 
 [Scenario / Problem Statement]()
 
