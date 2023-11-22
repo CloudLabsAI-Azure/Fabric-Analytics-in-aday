@@ -34,12 +34,12 @@ By the end of this lab, you will have learned:
 1. Note: If you have an existing Power BI account, you may want to use the browser in private/incognito mode.
 1. Enter the **Email** provided by the instructor and click **Submit.**
 
-![A screenshot of create account page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.002.png)
+   ![A screenshot of create account page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.002.png)
 
 1. You will be navigated to the **password** screen. Enter the password shared with you by the instructor. 
 1. Click **Sign in** and follow the prompts to sign in to Fabric.
 
-![A sceenshot of the enter password page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.003.png)
+   ![A sceenshot of the enter password page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.003.png)
 
 1. You will be navigated to the familiar **Power BI Service landing page**.
 1. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor.
@@ -49,25 +49,25 @@ Currently, you are in **My Workspace**. To work with the Fabric artifactsitems, 
 1. On the top right corner of the screen, select the **user** **icon**.
 1. Select **Start trial**.
 
-![A screenshot of start trial]
+   ![A screenshot of start trial](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.004.png)
 
 1. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Start trial**.
 
-![A screenshot of upgrade to free trial]
+   ![A screenshot of upgrade to free trial](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.005.png)
 
 1. Once successful, select Stay in current workspace.
 
-![A screenshot of Fabric experiences options](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.006.png)
+   ![A screenshot of Fabric experiences options](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.006.png)
 
-![A screenshot of a computer Description automatically generated]
+   ![A screenshot of a computer Description automatically generated]
 
-![A screenshot of a computer Description automatically generated]
+   ![A screenshot of a computer Description automatically generated]
 
-![A screenshot of a computer Description automatically generated]
+   ![A screenshot of a computer Description automatically generated]
 
-![A screenshot of a computer Description automatically generated]
+   ![A screenshot of a computer Description automatically generated]
 
-![A screenshot of a computer Description automatically generated]
+   ![A screenshot of a computer Description automatically generated]
 
 ### Overview of Fabric Experiences:
 
@@ -196,8 +196,8 @@ Read the more in-depth Fabric experience announcement blogs:
 
 © 2023 Microsoft Corporation. All rights reserved.
 
-[A screenshot of start trial]: Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.004.png
-[A screenshot of upgrade to free trial]: Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.005.png
+
+
 [A screenshot of a computer
 
 Description automatically generated]: Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.007.png
