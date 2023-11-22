@@ -59,29 +59,29 @@ Before we start with Fabric, let’s look at the current dashboard in Power BI D
 
    The dashboard analyzes Sales for Fabrikam. KPIs are listed on the left top of the page. The remaining visuals highlight Sales over time, by Territory, by Product Group, Resellers. 
 
-![A screenshot of Power BI Desktop report](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.004.png)
+   ![A screenshot of Power BI Desktop report](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.004.png)
 
 1. **Note:** In this training, we are focusing on the data acquisition, transformation and modeling using tools available in Fabric. We will not be focusing on report development or navigation. Let’s spend a couple of minutes to understand the report and move to the next steps.
 1. Let’s analyze the data by Sales Territory. Select New England from the Sales Territory (Scatter plot) visual.
 
 Notice from the Sales over Time, Reseller Tailspin Toys has more sales compared to Wingtip Toys in New England. If you look at Sales YoY% column chart you will notice that Wingtip sales growth has been low and declining quarter over quarter during the past year. After a small rebound in Q3 it went down again in Q4. 
 
-1. ![A screenshot of Power BI Desktop report with New England selected](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.005.png)
+   ![A screenshot of Power BI Desktop report with New England selected](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.005.png)
 1. Let’s compare this to Rocky Mountain territory. Select Rocky Mountain from Sales Territory (Scatter plot) visual.
 
 Notice in the Sales YoY% column chart sales for Wingtip Toys has increased dramatically in 2022 Q4 after being low for the previous 2 quarters.
 
-1. ![A screenshot of Power BI Desktop report with Rocky Mountain selected](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.006.png)
+   ![A screenshot of Power BI Desktop report with Rocky Mountain selected](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.006.png)
 1. Select **Rocky Mountain from Sales Territory** to remove the filter.
 1. From the Scatter plot on the bottom center of the screen (Sales Orders by Sales) select the outlier on the top right (4th quadrant).
 
 Notice the margin % is 52%, which is above the average of 50%. Also the Sales YoY% has gone up the last 2 quarters of 2022.
 
-![A screenshot of Power BI Desktop with Scatter plot selection](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.007.png)
+   ![A screenshot of Power BI Desktop with Scatter plot selection](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.007.png)
 
 1. Select the outlier Reseller in the scatter plot to remove the filter.
 1. Let’s get the Product details by Product Group and Reseller. From the Sales by Product Group and Reseller Company bar chart right click on the **Packaging Materials bar for Tailspin Toys** and from the dialog select Drill through -> Product Details.
-1. ![A screenshot of Power BI Desktop with Drill through selection](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.008.png)
+   ![A screenshot of Power BI Desktop with Drill through selection](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.008.png)
 1. You will be navigated to the page which provides the Product Details. Notice there are some future orders in place as well.
 1. Once you are done reviewing this page, select the Ctrl+back arrow on the top right of the page to be navigated back to the Sales Report.
 
@@ -126,7 +126,7 @@ Now we know what we are dealing with. In the following labs, we will create a si
 # References
 Fabric Analyst in a Day introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help section has links to some great resources.
 
-![A screenshot of help options](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.013.png)
+   ![A screenshot of help options](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.013.png)
 
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
