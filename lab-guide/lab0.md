@@ -7,19 +7,20 @@ Fabric Analyst in a Day
 Lab Prerequisites 
 
 # Contents
-[Document Structure](# Document Structure)
+[Document Structure](#Document Structure)
 
-[Scenario / Problem Statement]()
+[Scenario / Problem Statement](### Scenario / Problem Statement)
 
-[Overview of Power BI Desktop Dashboard]()
+[Overview of Power BI Desktop Dashboard](#Overview of Power BI Desktop Dashboard
+)
 
-[References]()
+[References](#References)
 
 # Document Structure
 ### 
 The lab includes steps for the user to follow along together with associated screenshots that provide a visual aid. In the screenshots, sections are highlighted with red or orange boxes to indicate the area the user needs to focus on.
 
-### <a name="_toc151126678"></a>Scenario / Problem Statement
+### Scenario / Problem Statement
 
 Fabrikam, Inc. is a wholesale novelty goods distributor. As a wholesaler, Fabrikam’s customers are mostly companies who resell to individuals. Fabrikam sells to retail customers across the United States including specialty stores, supermarkets, computing stores and tourist attraction shops. Fabrikam also sells to other wholesalers via a network of agents who promote the products on Fabrikam’s behalf. While all of Fabrikam's customers are currently based in the United States, the company is intending to push for expansion into other countries/regions.
 
@@ -50,7 +51,7 @@ You are facing the following challenges:
 
 You heard about Fabric and you decided to try to use Fabric to see if it will address the challenges you are facing.
 
-<a name="_toc151126679"></a>Overview of Power BI Desktop Dashboard
+Overview of Power BI Desktop Dashboard
 
 Before we start with Fabric, let’s look at the current dashboard in Power BI Desktop to understand the transformations and the model.
 
@@ -122,7 +123,7 @@ Notice the margin % is 52%, which is above the average of 50%. Also the Sales Yo
 
 Now we know what we are dealing with. In the following labs, we will create a similar Power Query using Dataflow Gen2 and model using Lakehouse.
 
-# <a name="_toc151126680"></a>**References**
+# References
 Fabric Analyst in a Day introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help section has links to some great resources.
 
 ![A screenshot of help options](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.013.png)
