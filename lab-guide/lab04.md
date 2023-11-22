@@ -1,52 +1,20 @@
-Microsoft Fabric
-
-Fabric Analyst in a Day
-Lab 4
+# Microsoft Fabric - Fabric Analyst in a Day - Lab 4
 
 # ![](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.001.png)
 
 # Contents
-[Introduction	3]()
+[Introduction](#_toc150852367)
 
-[Lakehouse	3]()
+[Lakehouse](#_toc150852368)
 
-[Lakehouse – How to query data using SQL	3]()
+[Lakehouse – How to query data using SQL](#_toc150852369)
 
-[Lakehouse – How to create a model – Relationships:	10]()
+[Lakehouse – How to create a model – Relationships](#_toc150852370)
 
-[Lakehouse – How to create a model – Measures:	16]()
+[Lakehouse – How to create a model – Measures](#_toc150852371)
 
-[References	19]()
+[References](#_toc150852372)
 
-Introduction	2
-
-Lakehouse	2
-
-Explore Lakehouse	2
-
-Lakehouse – How to create Power BI dataset	3
-
-Lakehouse – How to create Shortcut:	4
-
-Lakehouse – How to query data using SQL	7
-
-Lakehouse – How to create a model – Relationships:	13
-
-Lakehouse – How to create a model – Measures:	18
-
-
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
 # <a name="_toc150852367"></a>**Introduction** 
 We have data from various sources ingested in the Lakehouse. In this lab, you work with the data model. Typically, we performed modeling activities like creating relationships, adding measures, etc in Power BI Desktop. Here we will learn how to perform these modeling activities in the service. 
 
