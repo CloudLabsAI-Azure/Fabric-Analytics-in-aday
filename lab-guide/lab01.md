@@ -8,15 +8,15 @@ Lab 1
 # Contents
 [Introduction](#Introduction)
 
-[Fabric Workspace](#Fabric Workspace)
+[Fabric Workspace](#FabricWorkspace)
 
-[How to create trial Fabric workspace:](###How to create trial Fabric workspace:)
+   [How to create trial Fabric workspace:](###HowtocreatetrialFabricworkspace:)
 
-[Overview of Fabric Experiences:]()
+   [Overview of Fabric Experiences:]()
 
-[How to create a New workspace:]()
+   [How to create a New workspace:]()
 
-[How to create a Lakehouse:]()
+   [How to create a Lakehouse:]()
 
 [References]()
 
