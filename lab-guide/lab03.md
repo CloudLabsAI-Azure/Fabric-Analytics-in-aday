@@ -7,17 +7,17 @@ Lab 3
 # ![](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.001.png)
 
 # Contents
-  [Introduction	3](#_toc150852388)
+  [Introduction](#_toc150852388)
   
-  [Dataflow Gen 2	3](#_toc150852389)
+  [Dataflow Gen2](#_toc150852389)
   
-  [How to connect to Snowflake and transform data:	3](#_toc150852390)
+  [How to connect to Snowflake and transform data](#_toc150852390)
   
-  [How to connect to Dataverse and transform data:	10](#_toc150852391)
+  [How to connect to Dataverse and transform data](#_toc150852391)
   
-  [How to connect to SharePoint and transform data:	16](#_toc150852392)
+  [How to connect to SharePoint and transform data](#_toc150852392)
   
-  [References	22](#_toc150852393)
+  [References](#_toc150852393)
 
 
 # <a name="_toc150852388"></a>**Introduction** 
