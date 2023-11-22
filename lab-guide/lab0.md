@@ -7,7 +7,7 @@ Fabric Analyst in a Day
 Lab Prerequisites 
 
 # Contents
-[Document Structure]("_toc151126677")
+[Document Structure]()
 
 [Scenario / Problem Statement]()
 
