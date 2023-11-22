@@ -84,7 +84,7 @@ Let’s create a report like the one we have in Power BI Desktop. We are going t
 
 Notice on the design canvas, you will find the default tables. (You may have to scroll to the right or bottom to view them)
 
-    ![A screenshot of Lakehouse model view](../media/Aspose.Words.78333b69-24f7-49ac-a05b-1a912397214d.009.png)
+   ![A screenshot of Lakehouse model view](../media/Aspose.Words.78333b69-24f7-49ac-a05b-1a912397214d.009.png)
 
 1. Right click on the table **long\_running\_queries** and select **Hide in report view**.
 
