@@ -7,9 +7,9 @@ Fabric Analyst in a Day
 Lab Prerequisites 
 
 # Contents
-[Document Structure]()
+[Document Structure](_toc151126677)
 
-[Scenario / Problem Statement](<a name="_toc151126678"></a>)
+[Scenario / Problem Statement]()
 
 [Overview of Power BI Desktop Dashboard]()
 
