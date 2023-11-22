@@ -7,13 +7,13 @@ Fabric Analyst in a Day
 Lab Prerequisites 
 
 # Contents
-[Document Structure	3]()
+[Document Structure]()
 
-[Scenario / Problem Statement	3]()
+[Scenario / Problem Statement]()
 
-[Overview of Power BI Desktop Dashboard	4]()
+[Overview of Power BI Desktop Dashboard]()
 
-[References	10]()
+[References]()
 
 #
 # **The following prerequisites and setup must be done for successful completion of the lab:** 
