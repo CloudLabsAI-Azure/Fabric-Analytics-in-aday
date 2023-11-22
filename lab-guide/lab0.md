@@ -15,30 +15,20 @@ Lab Prerequisites
 
 [References]()
 
-#
-# **The following prerequisites and setup must be done for successful completion of the lab:** 
-
-# **You must be connected to the internet.** 
-
-# **You must have Microsoft Office installed.** 
-
-# **You must be signed up for Power BI: Go to http://aka.ms/pbidiadtraining and sign up for Power BI with a business email address. If you cannot sign up for Power BI, let the instructor know. If you have an existing account, please use the same URL as above to log in.** 
-- You will need to have Microsoft Edge. 
-
 # <a name="_toc151126677"></a>**Document Structure**
-### TBD
+### 
 The lab includes steps for the user to follow along together with associated screenshots that provide a visual aid. In the screenshots, sections are highlighted with red or orange boxes to indicate the area the user needs to focus on.
 
 ### <a name="_toc151126678"></a>Scenario / Problem Statement
 
-Fabrikam, Inc. is a wholesale novelty goods distributor. As a wholesaler, Fabrikam’s customers are mostly companies who resell to individuals. Fabrikam sells to retail customers across the United States including specialty stores, supermarkets, computing stores and tourist attraction shops, and some individuals. Fabrikam also sells to other wholesalers via a network of agents who promote the products on Fabrikam’s behalf. While all of Fabrikam's customers are currently based in the United States, the company is intending to push for expansion into other countries/regions.
+Fabrikam, Inc. is a wholesale novelty goods distributor. As a wholesaler, Fabrikam’s customers are mostly companies who resell to individuals. Fabrikam sells to retail customers across the United States including specialty stores, supermarkets, computing stores and tourist attraction shops. Fabrikam also sells to other wholesalers via a network of agents who promote the products on Fabrikam’s behalf. While all of Fabrikam's customers are currently based in the United States, the company is intending to push for expansion into other countries/regions.
 
 You are a Data Analyst in the Sales team. You collect, clean, and interpret data sets to solve business problems. You also put together visualizations like charts and graphs, write reports, and present them to the decision-makers in the organization.
 
 In order to draw valuable insights from the data, you pull data from multiple systems, clean it and mash it up together. You pull data from the following sources:
 
 - Sales Data: This data comes from the ERP System and is stored in an ADLS Gen 2 database or Databricks. It gets updated at noon every day.
-- Campaigns Supplier Data: This data comes from the Marketing agency executing the campaignsthe different suppliers and is stored in a Snowflake database. It gets updated at midnight every day.
+- Supplier Data: This data comes from the different suppliers and is stored in a Snowflake database. It gets updated at midnight every day.
 - Customer data: this data comes from Customer Insights and is stored in Dataverse. The data is always up to date.
 - Employees Data: This data comes from the HR system, it is stored as an export file in a SharePoint folder.  It gets updated every morning at 9 AM.   
 
