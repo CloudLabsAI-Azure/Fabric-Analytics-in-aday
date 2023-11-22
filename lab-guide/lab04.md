@@ -66,9 +66,7 @@ By the end of this lab, you will have learned:
 
 You will be navigated to Details of lh\_FAIAD screen. This screen provides an overview of the artifacts available in the Lakehouse. Notice in the center pane, there are two option we saw in the previous screen, Lakehouse and SQL analytics endpoint are available here as well. On the left pane lists the tables that are available in the Lakehouse. On the top pane and menu you have options to share, visualize the data using Power BI, Excel, Paginated report. We will be creating a Power BI report in a later lab, first we need to model the data.
 
-![A screenshot of a computer
-
-Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.003.png)
+![A screenshot of a computer Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.003.png)
 
 1. Select **lh\_FAIAD -> Lakhouse** option from the center pane.
 
@@ -76,9 +74,7 @@ You will be navigated to a different view of the Lakehouse. Notice on the top th
 
 1. Select **Open** under **Open this Lakehouse** section.
 
-![A screenshot of a computer
-
-Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.004.png)
+![A screenshot of a computer Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.004.png)
 
 You will be navigated to a screen where you can view the tables and a preview of the data from each table of the Lakehouse. There is option to add more data using Get data option. If you are familiar with notebooks, there is option to create one using Open notebook and write code (e.g. for Machine Learning or data transformation).
 ### Lakehouse – How to create Power BI dataset
