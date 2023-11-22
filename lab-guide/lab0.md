@@ -9,7 +9,7 @@ Lab Prerequisites
 # Contents
 [Document Structure](#Document Structure)
 
-[Scenario / Problem Statement](### Scenario / Problem Statement)
+[Scenario / Problem Statement](#Scenario / Problem Statement)
 
 [Overview of Power BI Desktop Dashboard](#Overview of Power BI Desktop Dashboard
 )
