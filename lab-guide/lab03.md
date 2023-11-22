@@ -7,27 +7,18 @@ Lab 3
 # ![](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.001.png)
 
 # Contents
-  [Introduction	3]()
+  [Introduction	3](#_toc150852388)
   
-  [Dataflow Gen 2	3]()
+  [Dataflow Gen 2	3](#_toc150852389)
   
-  [How to connect to Snowflake and transform data:	3]()
+  [How to connect to Snowflake and transform data:	3](#_toc150852390)
   
-  [How to connect to Dataverse and transform data:	10]()
+  [How to connect to Dataverse and transform data:	10](#_toc150852391)
   
-  [How to connect to SharePoint and transform data:	16]()
+  [How to connect to SharePoint and transform data:	16](#_toc150852392)
   
-  [References	22]()
+  [References	22](#_toc150852393)
 
-Introduction	2
-
-Dataflow Gen 2	2
-
-How to connect to Snowflake and transform data:	2
-
-How to connect to Dataverse and transform data:	8
-
-How to connect to SharePoint and transform data:	15
 
 # <a name="_toc150852388"></a>**Introduction** 
 In our scenario, Campaign Supplier Data is in Snowflake, Customer Data is in Dataverse and Employee Data is in SharePoint. All these data sources are updated at different times. To minimize the number of data refreshes of Dataflows, we are going to create individual Dataflows for each of these data sources.
@@ -47,7 +38,7 @@ By the end of this lab, you will have learned:
 1. Navigate back to **Data Factory** screen.
 1. From the top menu, select **New -> Dataflow Gen2**.
 
-![A screenshot to select New -> Dataflow Gen2]
+  ![A screenshot to select New -> Dataflow Gen2]
 
 You will be navigated to Dataflow page. Now that we are familiar with Dataflow, let’s go ahead and copy the queries from Power BI Desktop into Dataflow.
 
@@ -61,9 +52,7 @@ You will be navigated to Dataflow page. Now that we are familiar with Dataflow, 
    1. PO Line Items
 1. **Right click** and select **Copy**.
 
-![A screenshot of a computer
-
-  Description automatically generated](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.003.png)
+  ![A screenshot of a computer  Description automatically generated](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.003.png)
   
   ![A screenshot to copy queries from Power Query window](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.004.png)
 
