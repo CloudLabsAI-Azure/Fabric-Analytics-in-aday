@@ -6,19 +6,19 @@ Lab 1
 # ![](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.001.png)
 
 # Contents
-[Introduction	3]()
+[Introduction]()
 
-[Fabric Workspace	3]()
+[Fabric Workspace]()
 
-[How** to create trial Fabric workspace:	3]()
+[How to create trial Fabric workspace:]()
 
-[Overview of Fabric Experiences:	5]()
+[Overview of Fabric Experiences:](#Introduction)
 
-[How** to create a New workspace:	11]()
+[How** to create a New workspace:]()
 
-[How** to create a Lakehouse:	12]()
+[How** to create a Lakehouse:]()
 
-[References	14]()
+[References]()
 
 
 #
