@@ -4,8 +4,7 @@ Fabric Analyst in a Day
 
 Lab 3
 
-Lab 0
-# ![](Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.001.png)
+# ![](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.001.png)
 
 # Contents
   [Introduction	3]()
