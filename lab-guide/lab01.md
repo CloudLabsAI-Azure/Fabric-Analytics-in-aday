@@ -12,11 +12,11 @@ Lab 1
 
    [How to create trial Fabric workspace:](###HowtocreatetrialFabricworkspace:)
 
-   [Overview of Fabric Experiences:](###OverviewofFabricExperiences)
+   [Overview of Fabric Experiences:](###OverviewofFabricExperiences:)
 
    [How to create a New workspace:](#_toc150852465)
 
-   [How to create a Lakehouse:]()
+   [How to create a Lakehouse:](#_toc150852466)
 
 [References](#_toc150852467)
 
@@ -122,7 +122,8 @@ Currently, you are in **My Workspace**. To work with the Fabric artifactsitems, 
    1. **Use a sample:** Used to create a sample.
    ![A screenshot of Real Time Analytics Home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.019.png)
 
-   ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.020.png) <a name="_toc150852465"></a>**How to create a New workspace:**
+   ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.020.png)
+<a name="_toc150852465"></a>**How to create a New workspace:**
 
 1. Now let’s create a workspace with Fabric license. Select **Workspaces** from the left navigation bar. A dialog opens.
 1. Select **New workspace**.
@@ -142,7 +143,7 @@ Currently, you are in **My Workspace**. To work with the Fabric artifactsitems, 
 ![A screenshot to select trial license]
 
 A new workspace is created, and you will be navigated into this workspace. We will bring data from the different data sources into Lakehouse and use the data from the Lakehouse to build our model and report on it. The first step is to create a Lakehouse.
-### <a name="_toc150852466"></a>How** to create a Lakehouse:
+### <a name="_toc150852466"></a>**How to create a Lakehouse:**
 
 1. Select **Real-Time Analytics** on the bottom left of your screen. Fabric experience dialog opens.
 1. Select **Data Engineering** to be navigated to Data Engineering experience.
