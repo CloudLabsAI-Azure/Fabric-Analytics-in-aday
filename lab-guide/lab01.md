@@ -10,13 +10,13 @@ Lab 1
 
 [Fabric Workspace](#FabricWorkspace)
 
-   [How to create trial Fabric workspace:](###HowtocreatetrialFabricworkspace:)
+[How to create trial Fabric workspace:](###HowtocreatetrialFabricworkspace:)
 
-   [Overview of Fabric Experiences:](###OverviewofFabricExperiences:)
+[Overview of Fabric Experiences:](###OverviewofFabricExperiences:)
 
-   [How to create a New workspace:](#_toc150852465)
+[How to create a New workspace:](#_toc150852465)
 
-   [How to create a Lakehouse:](#_toc150852466)
+[How to create a Lakehouse:](#_toc150852466)
 
 [References](#_toc150852467)
 
