@@ -64,7 +64,9 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
 
 1. Select **Power BI** on the bottom left of your screen. A dialog with the list of Fabric experiences will open. Let’s explore these.
 1. Select Data Factory.
+   
    ![A screenshot of a dialog to select Data Factory experience](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.012.png)
+   
 1. You are navigated to Data Factory Home page. The page contains 3 main sections. 
    1. New: This lists the items available in Data Factory – Dataflow Gen2 and Data pipeline.
       1. Dataflow Gen2 is the next generation of Dataflow.
@@ -77,7 +79,9 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
 1. Select **Data Activator** from the dialog. You will be navigated to Data Activator Home. Data Activator is a no-code experience in Microsoft Fabric for automatically taking actions when patterns or conditions are detected in changing data. Notice the 3 sections are like Data Factory experience. In the New section notice the items.
    1. **Reflex:** Used to monitor datasets, queries and event streams for patterns.
    1. **Reflex sample:** Sample solution.
+      
    ![A screenshot of Data Activator Home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.015.png)
+   
 1. Select **Data Activator** on the bottom left of your screen. Fabric experience dialog opens.
 1. Select **Data Engineering**. In the New section notice the items. 
    1. **Lakehouse:** Used to store big data for cleaning, querying, reporting, sharing.
@@ -101,13 +105,16 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
    1. **Sample warehouse:** Sample warehouse solution.
    1. **Data pipeline:** Used to orchestrate data solution.
    1. **Dataflow Gen2:** Next generation of Dataflow.
+      
    ![A screenshot of Data Warehouse Home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.018.png)
+   
 1. Select **Data Warehouse** on the bottom left of your screen. Fabric experience dialog opens.
 1. Select **Real-Time Analytics**. You will be navigated to Real-Time Analytics Home. Again, there are 3 sections. In the New section notice the items. 
    1. **KQL Database:** Used to rapidly load structured, unstructured, and streaming data for querying.
    1. **KQL Queryset:** Used to run queries on the data to produce shareable tables and visuals.
    1. **Eventstream:** Used to capture, transform and route real time event stream.
    1. **Use a sample:** Used to create a sample.
+      
    ![A screenshot of Real Time Analytics Home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.019.png)
 
 <a name="_toc150852465"></a>**How to create a New workspace:**
@@ -115,26 +122,28 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
 1. Now let’s create a workspace with Fabric license. Select **Workspaces** from the left navigation bar. A dialog opens.
 1. Select **New workspace**.
 
-   [A screenshot of New workspace dialog](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.021.png)
+   ![A screenshot of New workspace dialog](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.021.png)
 
 1. **Create a workspace** dialog opens on the right side of the browser.
 1. In the **Name** field enter **FAIAD\_<yourusername>**. Note: Workspace name must be unique. We are using FAIAD as the workspace name for this document. However, your workspace name will be different. Make sure a green check mark with “**This name is available**” is displayed below the Name field.
 1. If you choose to, you can enter a **Description** for the workspace. This is an optional field.
 1. Click on **Advanced** to expand the section.
 
- [A screenshot of New workspace dialog](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.021.png)
+ ![A screenshot of New workspace dialog](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.022.png)
 
 1. Under **License mode**, make sure **Trial** is selected. (It should be selected by default)
 1. Select **Apply** to create a new workspace.
 
-![A screenshot to select trial license](../media/Imgtrial.png)
+![A screenshot to select trial license](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.023.png)
 
 A new workspace is created, and you will be navigated into this workspace. We will bring data from the different data sources into Lakehouse and use the data from the Lakehouse to build our model and report on it. The first step is to create a Lakehouse.
 ### <a name="_toc150852466"></a>**How to create a Lakehouse:**
 
 1. Select **Real-Time Analytics** on the bottom left of your screen. Fabric experience dialog opens.
 1. Select **Data Engineering** to be navigated to Data Engineering experience.
+   
    ![A screenshot of dialog to select Data Engineering](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.024.png)
+   
  Select **Lakehouse**.
 
    ![A screenshot of Data Engineering home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.025.png)
