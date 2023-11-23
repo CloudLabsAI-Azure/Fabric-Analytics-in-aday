@@ -175,11 +175,11 @@ In the right panel, under Applied steps notice all the steps are registered. Thi
 We need to bring in State next. But the steps are getting repetitive. We already have the queries in the Power BI Desktop file. Let’s see if we can copy over the queries from there.
 
 **Note:** Please wait for the Countries query to finish execution before moving to the next step. This may take a couple of minutes.
+
 ### <a name="_toc150852526"></a>How to copy Queries from Power BI Desktop – Option 1:
+
 1. If you have not already opened it, open **FAIAD.pbix** located in **/Report** folder of the lab material. 
 1. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
-
-  ![ screenshot Power BI Desktop report](../media/Aspose.Words.d9e40fe6-e088-40f4-b33d-59abff8ed5bb.025.png)
   
   ![A screenshot of Power BI Desktop report.](../media/Aspose.Words.d9e40fe6-e088-40f4-b33d-59abff8ed5bb.026.png)
 
@@ -217,25 +217,25 @@ Now we need to merge these queries to create Geography dimension. Let’s copy t
 1. From the left panel, under **Queries** select **Geo** query in ADLSData folder.
 1. From the ribbon select **Home -> Advanced Editor**.
 
-![A screenshot of Power Query window from Power BI Desktop](../media/Aspose.Words.d9e40fe6-e088-40f4-b33d-59abff8ed5bb.032.png)
+  ![A screenshot of Power Query window from Power BI Desktop](../media/Aspose.Words.d9e40fe6-e088-40f4-b33d-59abff8ed5bb.032.png)
 
 1. Advanced Editor window open. **Highlight all the text** in Advanced Editor
 1. Right click and select **Copy**.
 
-   ![A screen shot of Advanced Editor](../media/Aspose.Words.d9e40fe6-e088-40f4-b33d-59abff8ed5bb.033.png)
+  ![A screen shot of Advanced Editor](../media/Aspose.Words.d9e40fe6-e088-40f4-b33d-59abff8ed5bb.033.png)
 
 1. Select **X** on the top right corner of the window or select **Done** to **close** Advanced Editor window.
 1. **Navigate** back to the Dataflow window in the **browser**. 
 1. From the ribbon **Get Data -> Blank query.**
 
-![A screenshot of Get Data -> Blank Query in Dataflow](../media/Aspose.Words.d9e40fe6-e088-40f4-b33d-59abff8ed5bb.034.png)
+  ![A screenshot of Get Data -> Blank Query in Dataflow](../media/Aspose.Words.d9e40fe6-e088-40f4-b33d-59abff8ed5bb.034.png)
 
 1. Advanced Editor dialog opens. **Highlight all the text** in the editor.
 1. Select **Delete** on your keyboard to Delete all the text.
 1. Advanced Editor should be blank. Now enter **Ctrl+V** to paste the content you had copied from the Power BI Desktop’s Advanced Editor.
 1. Select **Next**.
 
-` `![A screenshot of Advanced Editor](../media/Aspose.Words.d9e40fe6-e088-40f4-b33d-59abff8ed5bb.035.png)
+  ![A screenshot of Advanced Editor](../media/Aspose.Words.d9e40fe6-e088-40f4-b33d-59abff8ed5bb.035.png)
 
 1. Now we have the Geo dimension. Let’s rename the query. In the **right panel**, under **Query settings -> Properties -> Name**, change the name to **Geo**.
 
@@ -381,11 +381,11 @@ Now let’s ingest this data into Lakehouse
 1. On the bottom right corner select “**+**” next to **Data destination**.
 1. Select **Lakehouse** from the dialog.
 
-` `![A screenshot configure Data Destination for Product query](../media/Aspose.Words.d9e40fe6-e088-40f4-b33d-59abff8ed5bb.053.png)
+  ![A screenshot configure Data Destination for Product query](../media/Aspose.Words.d9e40fe6-e088-40f4-b33d-59abff8ed5bb.053.png)
 
 1. Connect to data destination dialog opens. From the **Connection dropdown** select **Lakehouse (none)**.
 
-   ![A screenshot of Connect to data destination](../media/Aspose.Words.d9e40fe6-e088-40f4-b33d-59abff8ed5bb.054.png)
+  ![A screenshot of Connect to data destination](../media/Aspose.Words.d9e40fe6-e088-40f4-b33d-59abff8ed5bb.054.png)
 
 1. Select **Next**.
 1. Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
