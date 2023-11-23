@@ -47,8 +47,6 @@ You will be navigated to Dataflow page. Now that we are familiar with Dataflow, 
    1. PO
    1. PO Line Items
 1. **Right click** and select **Copy**.
-
-  ![A screenshot of a computer  Description automatically generated](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.003.png)
   
   ![A screenshot to copy queries from Power Query window](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.004.png)
 
