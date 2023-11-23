@@ -24,74 +24,20 @@ By the end of this lab, you will have learned:
 - Explore SQL view of Lakehouse.
 - Explore Data modeling in Lakehouse.
 # <a name="_toc150852368"></a>**Lakehouse**
-### Explore Lakehouse
 
 1. Let’s navigate back to the **Fabric workspace** you created in the earlier lab.
 1. Navigate back to **Data Factory** screen.
-1. You will see 3 types of lh\_FAIAD – Dataset, SQL endpoint and Lakehouse. We explored Lakehouse option in an earlier lab.  Select **lh\_FAIAD Dataset SQL analytics endpoint(default)** option to explore the SQL option. You will be navigated to SQL view of the explorer.. We will explore the other two options shortly.
+1. You will see 3 types of lh\_FAIAD – Dataset, SQL endpoint and Lakehouse. We explored Lakehouse option in an earlier lab.  Select **lh\_FAIAD SQL analytics endpoint** option to explore the SQL option. You will be navigated to SQL view of the explorer.
 
    ![A screenshot of Data Factory Home](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.002.png)
 
-You will be navigated to Details of lh\_FAIAD screen. This screen provides an overview of the artifacts available in the Lakehouse. Notice in the center pane, there are two option we saw in the previous screen, Lakehouse and SQL analytics endpoint are available here as well. On the left pane lists the tables that are available in the Lakehouse. On the top pane and menu you have options to share, visualize the data using Power BI, Excel, Paginated report. We will be creating a Power BI report in a later lab, first we need to model the data.
-
-   ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.003.png)
-
-1. Select **lh\_FAIAD -> Lakhouse** option from the center pane.
-
-You will be navigated to a different view of the Lakehouse. Notice on the top there is a SQL connection string. This connection string could be used to connect to the Lakehouse using other tools like SSMS, custom applications, etc. In the top menu there are options to Refresh, Share and view Lineage. We will explore some of these options later.
-
-1. Select **Open** under **Open this Lakehouse** section.
-
-   ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.004.png)
-
-You will be navigated to a screen where you can view the tables and a preview of the data from each table of the Lakehouse. There is option to add more data using Get data option. If you are familiar with notebooks, there is option to create one using Open notebook and write code (e.g. for Machine Learning or data transformation).
-### Lakehouse – How to create Power BI dataset
-
-   ![](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.005.png)
-
-1. From the top menu, select **New semantic model**. A dialog opens where you can select tables to create a new dataset (suppose you need a subset of the tables to create a dataset). We are going to use all the tables; hence we are not going to create a new dataset.
-1. Select **Cancel** to navigate back.
-
-   ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.006.png)
-### Lakehouse – How to create Shortcut:
-
-1. You can create shortcuts to Fabric, ADLS Gen2 and Amazon S3, like creating shortcuts in windows desktop. Select the **ellipsis** next to **Files** in the left panel.
-1. Select **New shortcut**.
-
-   ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.007.png)
-
-1. New shortcut dialog opens. Select **Azure Data Lake Storage Gen2**. We will create a connection to the ADLS Gen2 container to showcase the capabilities.
-
-   ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.008.png)
-
-1. Under **Connection settings -> URL** enter **<https://stvnextblobstorage.dfs.core.windows.net/>.** Since you have created the connection to ADLS Gen2 before, your credentials are recognized. 
-1. Select **Next**.
-
-   ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.009.png)
-
-1. Under **Shortcut settings -> Shortcut Name** enter **Sales**.
-1. Under **Target Location -> Sub Path** enter **/fabrikam-sales/Delta-Parquet-Format/**
-1. Select **Create**.
-
-   ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.010.png)
-
-1. You are** navigated back to the Lakehouse Explorer screen. Expand **Files** in the left panel.
-
-   ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.011.png)
-
-1. Notice you have access to all the parquet files from ADLS Gen2. Similarly you can select **Sales** folder in the **center pane** to navigate through the folder structure. 
 ### <a name="_toc150852369"></a>Lakehouse – How to query data using SQL
 
 If you would like to explore the data before creating a data model, you can use SQL to do so. Let’s look at two options to use SQL, the first one is developer friendly, and second option is for analysts. 
 
 Let’s assume you want to quickly find out the Units sold by Supplier using SQL. We have two options, writing a SQL statement or using a visual to create the SQL statement.
 
-1. On the **top right** of the screen, select **Lakehouse dropdown**.
-1. Select **SQL analytics endpoint**. You will be navigated to SQL view of the explorer.
-
-   ![](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.012.png)
-
-Notice on the left panel, you can view the Tables. If you expand the tablestables, you can view the Columns that make up the table. Also, there are options to create SQL Views, Functions, Stored Procedures. If you have SQL background, feel free to explore these options. Let’s try to write a simple SQL query.
+Notice on the left panel, you can view the Tables. If you expand the tables, you can view the Columns that make up the table. Also, there are options to create SQL Views, Functions, Stored Procedures. If you have SQL background, feel free to explore these options. Let’s try to write a simple SQL query.
 
 1. From the **top menu** select **New SQL query** or from the **bottom of the left panel** select **Query**. You will be navigated to SQL query view.
 
@@ -124,7 +70,7 @@ GROUP BY su.Supplier\_Name
    ![A screenshot of Visualize results dialog](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.016.png)
 
 1. Familiar report view dialog opens. From the **Data** pane, expand **SQL query 1**.
-1. Select **Supplier\_Name** and **Units** **fields**. Table visual is created by default.
+1. Select **Supplier_Name** and **Units** **fields**. Table visual is created by default.
 1. Change the visual type by selecting **Stacked column chart** from the **Visualization** section.
 1. **Resize** the visual as needed.
 
@@ -167,16 +113,17 @@ You will be navigated back to SQL analytics endpoint view. If you are not famili
    ![A screenshot of merge query dialog](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.021.png)
 
 1. In the **results** pane, click on the **double arrow** next to **Supplier** column.
-1. Dialog opens, select **Supplier\_Name** from the dialog.
+1. Dialog opens, select **Supplier_Name** from the dialog.
 1. Select **OK**. Notice in the Sales table all the **steps are recorded**.
 1. Now we have the query ready, let’s view the result. Select **Visualize results** from the results pane.
 
    ![A screenshot of visual query dialog](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.022.png)
 
-1. **Visualize results dialog** opens which looks like Power BI window. From the **Data** pane in the right, select **Supplier\_Name and Quantity** fields.
+1. **Visualize results dialog** opens which looks like Power BI window. From the **Data** pane in the right, select **Supplier_Name and Quantity** fields.
 1. This will create a table visual, with the result like the SQL query result from earlier. If you choose to, you can Save this report. Since we saved a similar report earlier, we are going to select **Cancel**.
 
    ![A screenshot of visualize report dialog](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.023.png)
+   
 ### <a name="_toc150852370"></a>Lakehouse – How to create a model – Relationships:
 
 Ok now we are ready to build the model, build relationships between tables and create measures.
@@ -220,7 +167,7 @@ Your model should look like below.
 
    ![A screenshot of New relationship dialog](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.028.png)
 
-1. Similarly, create a **many to one** relationship with Cross filter direction as **Both** between **Product\_Details** and **Product**. Select **StockItemID** from **Product\_Details** and **StockItemID** from **Product**.
+1. Similarly, create a **many to one** relationship with Cross filter direction as **Both** between **Product_Details** and **Product**. Select **StockItemID** from **Product_Details** and **StockItemID** from **Product**.
 1. Now let’s create a relationship between Reseller and Geo. Select **PostalCityID** from **Reseller** table and drag it over **CityID** in **Geo** table.
 1. New relationship dialog opens. Make sure **Table 1** is **Reseller** and **Column** is **PostalCityID.**
 1. Make sure **Table 2** is **Geo** and **Column** is **CityID.**
@@ -258,12 +205,13 @@ Your model should look like the screenshot below.
 We are done creating all the relationships. Your model should look like below.
 
    ![A screenshot of modeling view](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.033.png)
+   
 ### <a name="_toc150852371"></a>Lakehouse – How to create a model – Measures:
-Let’s add a few measures which we need to create the Sales dashboard.
+Let’s add a few measures which we need to create the Sales report.
 
 1. Select **Sales table** from the model view. We want to add the measures to the Sales table.
 1. From the top menu, select **Home -> New Measure**. Notice formula bar is displayed.
-1. Enter **Sales = SUM(Sales[Sales\_Amount])** in the **formula bar**.
+1. Enter **Sales = SUM(Sales[Sales_Amount])** in the **formula bar**.
 1. Select the **check mark** in the formula bar or click Enter button.
 1. In the Properties panel on the right, expand **Formatting** section.
 1. From the **Format** dropdown select **Currency**.
@@ -298,8 +246,8 @@ Let’s add a few measures which we need to create the Sales dashboard.
    ![A screenshot of modeling view with formula bar to add measure](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.037.png)
 
 1. Follow similar steps to add following measures
-   1. **GM = SUM(Sales[Line\_Profit])** formatted as **Currency, Decimal places of 2**
-   1. **GM% = DIVIDE([GM], [Sales])** formatted as **Percentage, Decimal places of 2**
+   1. **GM = SUM(Sales[Line_Profit])** formatted as **Currency, Decimal places of 2**
+   1. **GM% = DIVIDE([GM],[Sales])** formatted as **Percentage, Decimal places of 2**
    1. **No of Customers = COUNTROWS(Customer)** formatted as **Whole Number**
 
 We have created a data model; the next step is to set up a refresh schedule for the different data sources. We will do that in the following labs.
@@ -331,32 +279,6 @@ Read the more in-depth Fabric experience announcement blogs:
 - [Administration and governance in Fabric blog](https://aka.ms/Fabric-Admin-Gov-Blog)
 - [OneLake](https://aka.ms/Fabric-OneLake-Blog)[ in Fabric blog](https://aka.ms/Fabric-OneLake-Blog)
 - [Dataverse and Microsoft Fabric integration blog](https://aka.ms/Dataverse-Fabric-Blog)
-
-Here are a few more resources that will help you with your next steps with Microsoft Fabric.
-
-- See blog post to read the full [Microsoft Fabric preview announcement](https://aka.ms/build2023-fabricblog)
-- [Sign up for the Microsoft Fabric free trial](https://aka.ms/try-fabric)
-- [Visit the Microsoft Fabric website](https://aka.ms/microsoft-fabric)
-- Learning path: [Get started with Microsoft Fabric - Training | Microsoft Learn](https://learn.microsoft.com/en-us/training/paths/get-started-fabric/)
-- Webinar series: [Microsoft Fabric Webinar Series](https://info.microsoft.com/ww-landing-introduction-to-microsoft-fabric-webinar-series.html?lcid=en-us)
-
-Read the more in-depth Fabric experience announcement blogs:
-
-- [Data Factory experience in Fabric blog](https://aka.ms/Fabric-Data-Factory-Blog) 
-- [Synapse Data Engineering experience in Fabric blog](https://aka.ms/Fabric-DE-Blog) 
-- [Synapse Data Science experience in Fabric blog](https://aka.ms/Fabric-DS-Blog) 
-- [Synapse Data Warehousing experience in Fabric blog](https://aka.ms/Fabric-DW-Blog) 
-- [Synapse Real-Time Analytics experience in Fabric blog](https://aka.ms/Fabric-RTA-Blog)
-- [Power BI announcement blog](https://aka.ms/Fabric-PBI-Blog)
-- [Data Activator experience in Fabric blog](https://aka.ms/Fabric-DA-Blog) 
-- [Administration and governance in Fabric blog](https://aka.ms/Fabric-Admin-Gov-Blog)
-- [OneLake](https://aka.ms/Fabric-OneLake-Blog)[ in Fabric blog](https://aka.ms/Fabric-OneLake-Blog)
-- [Microsoft 365 data integration in Fabric blog](https://aka.ms/buil2023-m365-fabric-blog)
-- [Dataverse and Microsoft Fabric integration blog](https://aka.ms/Dataverse-Fabric-Blog)
-- Explore the [Fabric technical documentation](https://aka.ms/fabric-docs)
-- Read the [free e-book on getting started with Fabric](https://aka.ms/fabric-get-started-ebook)
-- Watch the [free Fabric webinar series](https://aka.ms/fabric-webinar-series)
-- Explore Fabric through the [Guided Tour](https://aka.ms/Fabric-GuidedTour)
 
 © 2023 Microsoft Corporation. All rights reserved.
 
