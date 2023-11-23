@@ -127,7 +127,7 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
 1. Under **License mode**, make sure **Trial** is selected. (It should be selected by default)
 1. Select **Apply** to create a new workspace.
 
-![A screenshot to select trial license]
+![A screenshot to select trial license](../media/Imgtrial.png)
 
 A new workspace is created, and you will be navigated into this workspace. We will bring data from the different data sources into Lakehouse and use the data from the Lakehouse to build our model and report on it. The first step is to create a Lakehouse.
 ### <a name="_toc150852466"></a>**How to create a Lakehouse:**
