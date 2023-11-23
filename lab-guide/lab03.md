@@ -252,6 +252,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 1. Select **People** query.
 1. On the bottom right corner select “**+**” next to **Data destination**.
 1. Select Lakehouse from the dialog.
+   
    ![A screenshot to configure Data Destination for People query](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.039.png)
 
 1. Connect to data destination dialog opens. From the **Connection dropdown** select **Lakehouse (none)**.
@@ -269,6 +270,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 1. Choose destination settings dialog opens. Every time Dataflow Gen2 is refreshed we would like to perform a full load. Make sure Update method is set to **Replace**.
 1. Notice there is a warning. Lakehouse does not support column names with space in it. Select **Fix it**, to fix the warning.
+   
    ![A screenshot of Choose destination settings](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.043.png)
 
 1. Column mapping can be used to map dataflow columns to existing columns. In our case, it is a New Table. Hence, we can use the defaults. Select **Save settings**.
