@@ -142,7 +142,9 @@ A new workspace is created, and you will be navigated into this workspace. We wi
 1. Select **Real-Time Analytics** on the bottom left of your screen. Fabric experience dialog opens.
 1. Select **Data Engineering** to be navigated to Data Engineering experience.
    
+   
    ![A screenshot of dialog to select Data Engineering](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.024.png)
+
    
  Select **Lakehouse**.
 
