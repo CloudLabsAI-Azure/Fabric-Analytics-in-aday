@@ -8,11 +8,11 @@
   [Dataflow Gen2](#_toc150852389)
   
   [How to connect to Snowflake and transform data](#_toc150852390)
-  
+    
   [How to connect to Dataverse and transform data](#_toc150852391)
-  
+    
   [How to connect to SharePoint and transform data](#_toc150852392)
-  
+    
   [References](#_toc150852393)
 
 
@@ -34,7 +34,7 @@ By the end of this lab, you will have learned:
 1. Navigate back to **Data Factory** screen.
 1. From the top menu, select **New -> Dataflow Gen2**.
 
-  ![A screenshot to select New -> Dataflow Gen2]
+  ![A screenshot to select New -> Dataflow Gen2](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.002.png)
 
 You will be navigated to Dataflow page. Now that we are familiar with Dataflow, let’s go ahead and copy the queries from Power BI Desktop into Dataflow.
 
@@ -76,17 +76,15 @@ Connection is established and you can view the data in the preview panel. Feel f
   ![A screenshot to Enable Staging](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.007.png)
 
 1. Similarly, right click on **PO** query. Select **Enable staging** to remove the check mark.
-   -Note: We do not have to disable staging for the other 3 queries because Enable Load was disabled in Power BI Desktop (from where these queries were copied from).
+   Note: We do not have to disable staging for the other 3 queries because Enable Load was disabled in Power BI Desktop (from where these queries were copied from).
 1. Select **Supplier** query.
 1. On the bottom right corner select “**+**” next to **Data destination**.
 1. Select Lakehouse from the dialog.
   ![A screenshot to select Data Destination for Supplier query](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.008.png)
 
-  ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.009.png)
-
 1. Connect to data destination dialog opens. From the **Connection dropdown** select **Lakehouse (none)**.
 
-   ![A screenshot to Connect to data destination]
+   ![A screenshot to Connect to data destination](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.010.png)
 
 1. Select **Next**.
 1. Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
@@ -99,23 +97,22 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 1. Choose destination settings dialog opens. Every time Dataflow Gen2 is refreshed we would like to perform a full load. Make sure Update method is set to **Replace**.
 1. Notice there is a warning. Lakehouse does not support column names with space in it. Select **Fix it**, to fix the warning.
-
-   ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.012.png)
-
+   
     ![A screenshot to Choose destination settings](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.013.png)
 
 1. Column mapping can be used to map dataflow columns to existing columns. In our case, it is a New Table. Hence, we can use the defaults. Select **Save settings**.
 1. You will be navigated back to Power Query window. Notice on the bottom **right corner**, Data destination is set to Lakehouse.
 1. Similarly, set up the Data Destination for PO query. Once it is done, your PO query should have Data Destination set to Lakehouse as show in the screenshot below.
+   
    ![A screenshot showing Data Destintion for PO](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.014.png)
 
-   ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.015.png)
-
-1. From the top of the screen, select the arrow next to Dataflow1 to rename.
+1. From the top of the screen, select the **arrow next to Dataflow1** to rename.
 1. In the dialog, change the name to **df\_Supplier\_Snowflake.**
-1. Click on Enter** to save the name change.
+1. Click on **Enter** to save the name change.
    ![A screenshot showing renaming of Dataflow1](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.016.png)
+   
 1. On the bottom right corner, select **Publish**.
+   
    ![A screenshot to Publish Dataflow](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.017.png)
 
 You will be navigated back to Data Factory screen. It may take a few moments for the Dataflow to Publish. 
@@ -124,7 +121,7 @@ Note: Sometimes, Dataflow name does not get updated. In this case, follow steps 
 
 1. Once Dataflow 1 is finished publishing, let’s rename it. Click on the **ellipsis** next to Dataflow 1. Select **Properties**.
 
-![A screenshot to select Properties for Dataflow1]
+![A screenshot to select Properties for Dataflow1](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.018.png)
 
 1. Dataflow properties dialog opens. Change the **name** to **df\_Supplier\_Snowflake**.
 1. In Description text box add **Dataflow to ingest Supplier data from Snowflake to Lakehouse**.
@@ -137,7 +134,7 @@ You will be navigated back to the Data Factory screen. Now let’s create a data
 
 1. From the top menu, select **New -> Dataflow Gen2**.
 
-![A screenshot to select New -> Dataflow Gen2]
+![A screenshot to select New -> Dataflow Gen2](../media/img2.png)
 
 You will be navigated to Dataflow page. Now that we are familiar with Dataflow, let’s go ahead and copy the queries from Power BI Desktop into Dataflow.
 
@@ -179,11 +176,9 @@ Connection is established and you can view the data in the preview panel. Feel f
 1. Select Lakehouse from the dialog.
    ![A screenshot to configure Data Destination for Customer query](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.024.png)
 
-  ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.025.png)
-
 1. Connect to data destination dialog opens. From the **Connection dropdown** select **Lakehouse (none)**.
 
-   ![A screenshot of Connect to data destination][A screenshot to Connect to data destination]
+   ![A screenshot of Connect to data destination](../media/img3.png)
 
 1. Select **Next**.
 1. Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
@@ -196,22 +191,20 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 1. Choose destination settings dialog opens. Every time Dataflow Gen2 is refreshed we would like to perform a full load. Make sure Update method is set to **Replace**.
 1. Notice there is a warning. Lakehouse does not support column names with space in it. Select **Fix it**, to fix the warning.
+   
    ![A screenshot of Choose destination settings](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.027.png)
-
-   ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.028.png)
 
 1. Column mapping can be used to map dataflow columns to existing columns. In our case, it is a New Table. Hence, we can use the defaults. Select **Save settings**.
 1. You will be navigated back to Power Query window. Notice on the bottom **right corner**, Data destination is set to Lakehouse.
 1. On the bottom right corner, select **Publish**.
+   
   ![A screenshot to Publish queries](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.029.png)
-
-  ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.030.png)
 
 You will be navigated back to Data Factory screen. It may take a few moments for the Dataflow to Publish. 
 
 1. Dataflow 1 is the dataflow we were working in. Let’s rename it before we continue. Click on the **ellipsis** next to Dataflow 1. Select **Properties**.
 
-![A screenshot to select Dataflow1 -> Properties]
+![A screenshot to select Dataflow1 -> Properties](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.031.png)
 
 1. Dataflow properties dialog opens. Change the **name** to df\_Customer\_Dataverse**	.
 1. In Description text box add **Dataflow to ingest Customer data from Dataverse to Lakehouse**.
@@ -224,7 +217,7 @@ You will be navigated back to the Data Factory screen. Now let’s create a data
 
 1. From the top menu, select **New -> Dataflow Gen2**.
 
-![A screenshot to select New -> Dataflow Gen2]
+![A screenshot to select New -> Dataflow Gen2](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.033.png)
 
 You will be navigated to Dataflow page. Now that we are familiar with Dataflow, let’s go ahead and copy the queries from Power BI Desktop into Dataflow.
 
@@ -232,10 +225,8 @@ You will be navigated to Dataflow page. Now that we are familiar with Dataflow, 
 1. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
 1. Power Query window opens. From the left panel, under SharepointData folder **select** **People** query.
 1. **Right click** and select **Copy**.
-
-  ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.034.png) 
   
-  ![A screenshot to copy queries from Power Query window](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.035.png)
+  ![A screenshot to copy queries from Power Query window](../media/img4.png)
 
 1. Navigate back to the Dataflow screen in the **browser**.
 1. In the Dataflow pane, enter **Ctrl+V** (current right click Paste is not supported).
@@ -263,11 +254,9 @@ Connection is established and you can view the data in the preview panel. Feel f
 1. Select Lakehouse from the dialog.
    ![A screenshot to configure Data Destination for People query](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.039.png)
 
-   ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.040.png)
-
 1. Connect to data destination dialog opens. From the **Connection dropdown** select **Lakehouse (none)**.
 
-   ![A screenshot of Connect to data destination]
+   ![A screenshot of Connect to data destination](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.040.png)
 
 1. Select **Next**.
 1. Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
@@ -282,19 +271,17 @@ Connection is established and you can view the data in the preview panel. Feel f
 1. Notice there is a warning. Lakehouse does not support column names with space in it. Select **Fix it**, to fix the warning.
    ![A screenshot of Choose destination settings](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.043.png)
 
-  ![A screenshot of a computerDescription automatically generated](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.044.png)
-
 1. Column mapping can be used to map dataflow columns to existing columns. In our case, it is a New Table. Hence, we can use the defaults. Select **Save settings**.
 1. You will be navigated back to Power Query window. Notice on the bottom **right corner**, Data destination is set to Lakehouse.
 1. On the bottom right corner, select **Publish**.
+   
   ![A screenshot of publishing People query](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.045.png)
-  ![A screenshot of a computer Description automatically generated](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.046.png)
 
 You will be navigated back to Data Factory screen. It may take a few moments for the Dataflow to Publish. 
 
 1. Dataflow 1 is the dataflow we were working in. Let’s rename it before we continue. Click on the **ellipsis** next to Dataflow 1. Select **Properties**.
 
-   ![A screenshot of Dataflow1 -> Properties][A screenshot to select Properties for Dataflow1]
+   ![A screenshot of Dataflow1 -> Properties][A screenshot to select Properties for Dataflow1](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.046.png)
 
 1. Dataflow properties dialog opens. Change the **name** to **df\_People\_SharePoint**.
 1. In Description text box add **Dataflow to ingest People data from SharePoint to Lakehouse**.
