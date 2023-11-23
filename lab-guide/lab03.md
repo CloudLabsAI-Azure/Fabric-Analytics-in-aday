@@ -281,7 +281,7 @@ You will be navigated back to Data Factory screen. It may take a few moments for
 
 1. Dataflow 1 is the dataflow we were working in. Let’s rename it before we continue. Click on the **ellipsis** next to Dataflow 1. Select **Properties**.
 
-   ![A screenshot of Dataflow1 -> Properties][A screenshot to select Properties for Dataflow1](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.046.png)
+![A screenshot of Dataflow1 -> Properties](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.046.png)
 
 1. Dataflow properties dialog opens. Change the **name** to **df\_People\_SharePoint**.
 1. In Description text box add **Dataflow to ingest People data from SharePoint to Lakehouse**.
