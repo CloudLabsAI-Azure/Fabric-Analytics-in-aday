@@ -9,7 +9,7 @@ Lab Prerequisites
 
 [Scenario / Problem Statement](###Scenario/ProblemStatement)
 
-[Overview of Power BI Desktop Dashboard](#OverviewofPowerBIDesktopDashboard)
+[Overview of Power BI Desktop Report](#OverviewofPowerBIDesktopReport)
 
 [References](#References)
 
@@ -48,13 +48,13 @@ You are facing the following challenges:
 
 You heard about Fabric and you decided to try to use Fabric to see if it will address the challenges you are facing.
 
-Overview of Power BI Desktop Dashboard
+Overview of Power BI Desktop Report
 
-Before we start with Fabric, let’s look at the current dashboard in Power BI Desktop to understand the transformations and the model.
+Before we start with Fabric, let’s look at the current Report in Power BI Desktop to understand the transformations and the model.
 
 1. Open the **FAIAD.pbix** located in **/Report** folder of the lab material. The file will open in Power BI Desktop.
 
-   The dashboard analyzes Sales for Fabrikam. KPIs are listed on the left top of the page. The remaining visuals highlight Sales over time, by Territory, by Product Group, Resellers. 
+   The report analyzes Sales for Fabrikam. KPIs are listed on the left top of the page. The remaining visuals highlight Sales over time, by Territory, by Product Group, Resellers. 
 
     ![A screenshot of Power BI Desktop report](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.004.png)
 
