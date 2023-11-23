@@ -20,7 +20,7 @@
 
 #
 # Introduction
-Today you will learn about various key features of Fabric. This is an introductory course intended to expose you to the various experiences and items available in Fabric.  By the end of this workshop you will learn how to use Lakehouse, Dataflow Gen 2, Data Pipeline, and use DirectLake feature.
+Today you will learn about various key features of Fabric. This is an introductory course intended to expose you to the various product experiences and items available in Fabric.  By the end of this workshop you will learn how to use Lakehouse, Dataflow Gen 2, Data Pipeline, and use DirectLake feature.
 
 By the end of this lab, you will have learned: 
 
@@ -31,7 +31,7 @@ By the end of this lab, you will have learned:
 ### How to create trial Fabric workspace:
 
 1. Open the **browser** and navigate to <https://app.powerbi.com/>. You will be navigated to the login page.
-1. Note: If you have an existing Power BI account, you may want to use the browser in private/incognito mode.
+   Note: If you have an existing Power BI account, you may want to use the browser in private/incognito mode.
 1. Enter the **Email** provided by the instructor and click **Submit.**
 
    ![A screenshot of create account page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.002.png)
@@ -44,7 +44,7 @@ By the end of this lab, you will have learned:
 1. You will be navigated to the familiar **Power BI Service landing page**.
 1. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor.
 
-Currently, you are in **My Workspace**. To work with the Fabric artifactsitems, you will need a trial license and a workspace that has Fabric license. Let’s do this.
+Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s do this.
 
 1. On the top right corner of the screen, select the **user** **icon**.
 1. Select **Start trial**.
@@ -55,7 +55,7 @@ Currently, you are in **My Workspace**. To work with the Fabric artifactsitems, 
 
    ![A screenshot of upgrade to free trial](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.005.png)
 
-1. Once successful, select Stay in the current workspace.
+1. Once successful, select **Stay in the current workspace.**
 
    ![A screenshot of Fabric experiences options](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.006.png)
 
@@ -134,16 +134,16 @@ A new workspace is created, and you will be navigated into this workspace. We wi
 
 1. Select **Real-Time Analytics** on the bottom left of your screen. Fabric experience dialog opens.
 1. Select **Data Engineering** to be navigated to Data Engineering experience.
-1. ![A screenshot of dialog to select Data Engineering](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.024.png)
+   ![A screenshot of dialog to select Data Engineering](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.024.png)
  Select **Lakehouse**.
 
-![A screenshot of Data Engineering home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.025.png)
+   ![A screenshot of Data Engineering home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.025.png)
 
 1. A dialog requesting **Lakehouse Name** opens. Enter **lh\_FAIAD**.
    - Note: lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.
 1. Select **Create**.
 
-![A screenshot of dialog to name the Lakehouse](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.026.png)
+   ![A screenshot of dialog to name the Lakehouse](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.026.png)
 
 Within a few moments, a Lakehouse is created, and you will be navigated to the Lakehouse interface.
 
@@ -152,14 +152,14 @@ On the **left panel**, notice that below your workspace, you will have the Lakeh
 Within the Lakehouse explorer you will notice **Tables** and **Files**. Lakehouse could expose Azure Data Lake Gen2 files under the files section, or a dataflow could load data to Lakehouse tables. There are various options available. We are going to show you some of the options as in the following labs.
 
 
-![A screenshot of LakeHouse](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.027.png)
+   ![A screenshot of LakeHouse](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.027.png)
 
 In this lab, we explored the Fabric interface, created a Fabric workspace and a Lakehouse. In the next lab, we will learn how to use Dataflow Gen2 to connect to ADLS Gen2 to extract, transform and ingest data into the Lakehouse.
 
 # <a name="_toc150852467"></a>**References**
 Fabric Analyst in a Day introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help section has links to some great resources.
 
-![A screenshot of help options](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.028.png)
+   ![A screenshot of help options](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.028.png)
 
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
