@@ -105,7 +105,7 @@ Connection is established and you can view the data in the preview panel. Feel f
    ![A screenshot showing Data Destintion for PO](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.014.png)
 
 1. From the top of the screen, select the **arrow next to Dataflow1** to rename.
-1. In the dialog, change the name to **df\_Supplier\_Snowflake.**
+1. In the dialog, change the name to **df_Supplier_Snowflake.**
 1. Click on **Enter** to save the name change.
    ![A screenshot showing renaming of Dataflow1](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.016.png)
    
@@ -121,7 +121,7 @@ Note: Sometimes, Dataflow name does not get updated. In this case, follow steps 
 
 ![A screenshot to select Properties for Dataflow1](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.018.png)
 
-1. Dataflow properties dialog opens. Change the **name** to **df\_Supplier\_Snowflake**.
+1. Dataflow properties dialog opens. Change the **name** to **df_Supplier_Snowflake**.
 1. In Description text box add **Dataflow to ingest Supplier data from Snowflake to Lakehouse**.
 1. Select **Save**.
 
@@ -204,7 +204,7 @@ You will be navigated back to Data Factory screen. It may take a few moments for
 
 ![A screenshot to select Dataflow1 -> Properties](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.031.png)
 
-1. Dataflow properties dialog opens. Change the **name** to df\_Customer\_Dataverse**	.
+1. Dataflow properties dialog opens. Change the **name** to df_Customer_Dataverse**	.
 1. In Description text box add **Dataflow to ingest Customer data from Dataverse to Lakehouse**.
 1. Select **Save**.
 
@@ -239,28 +239,28 @@ Notice the query is pasted and is available in the left panel. Since we do not h
 1. **Authentication kind** should be **Organizational Account**.
 1. Select **Connect**.
 
-  ![A screenshot of Connect to data source](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.037.png)
+  ![A screenshot of Connect to data source](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.img5.png)
 
 Connection is established and you can view the data in the preview panel. Feel free to navigate through the Applied Steps of the queries. Now we need to ingest People data into Lakehouse.
 
 1. As mentioned earlier, we do are not Staging any of this data. So right click on **People** query in the Queries pane and select **Enable staging** to remove the check mark.
 
-  ![A screenshot to disable Staging](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.038.png)
+  ![A screenshot to disable Staging](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.007.png)
 
 1. Select **People** query.
 1. On the bottom right corner select “**+**” next to **Data destination**.
 1. Select Lakehouse from the dialog.
    
-   ![A screenshot to configure Data Destination for People query](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.039.png)
+   ![A screenshot to configure Data Destination for People query](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.008.png)
 
 1. Connect to data destination dialog opens. From the **Connection dropdown** select **Lakehouse (none)**.
 
-   ![A screenshot of Connect to data destination](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.040.png)
+   ![A screenshot of Connect to data destination](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.010.png)
 
 1. Select **Next**.
 1. Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
 1. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> <your workspace name>.** 
-1. Select **lh\_FAIAD.**
+1. Select **lh_FAIAD.**
 1. We can leave the table name as **People**.
 1. Select **Next**.
 
@@ -281,9 +281,9 @@ You will be navigated back to Data Factory screen. It may take a few moments for
 
 1. Dataflow 1 is the dataflow we were working in. Let’s rename it before we continue. Click on the **ellipsis** next to Dataflow 1. Select **Properties**.
 
-![A screenshot of Dataflow1 -> Properties](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.046.png)
+![A screenshot of Dataflow1 -> Properties](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.031.png)
 
-1. Dataflow properties dialog opens. Change the **name** to **df\_People\_SharePoint**.
+1. Dataflow properties dialog opens. Change the **name** to **df_People_SharePoint**.
 1. In Description text box add **Dataflow to ingest People data from SharePoint to Lakehouse**.
 1. Select **Save**.
 
