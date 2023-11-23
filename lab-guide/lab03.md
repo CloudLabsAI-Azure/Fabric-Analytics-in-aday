@@ -233,13 +233,13 @@ Notice the query is pasted and is available in the left panel. Since we do not h
 
 1. Select **Configure connection**.
 
-  ![A screenshot to configure connection for People query in Dataflow](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.036.png)
+  ![A screenshot to configure connection for People query in Dataflow](../media/img6.png)
 
 1. Connect to data source dialog opens. In the **Connection** dropdown make sure, **Create new connection** is selected.
 1. **Authentication kind** should be **Organizational Account**.
 1. Select **Connect**.
 
-  ![A screenshot of Connect to data source](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.img5.png)
+  ![A screenshot of Connect to data source](../media/img5.png)
 
 Connection is established and you can view the data in the preview panel. Feel free to navigate through the Applied Steps of the queries. Now we need to ingest People data into Lakehouse.
 
