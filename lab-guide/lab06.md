@@ -44,8 +44,8 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
    ![A screenshot of build first report screen](../media/Aspose.Words.78333b69-24f7-49ac-a05b-1a912397214d.004.png)
 
-1. Pick a dataset to use in your report page opens. Notice we have 4 options. **Select lh\_FAIAD**.
-   1. lh\_FAIAD – This is the lakehouse with the dataset we created and want to use for the report.
+1. Pick a dataset to use in your report page opens. Notice we have 4 options. **Select lh_FAIAD**.
+   1. lh_FAIAD – This is the lakehouse with the dataset we created and want to use for the report.
    1. Units by Supplier – This is the dataset we created using T-SQL.
    1. DataflowsStagingWarehouse – This is the staging warehouse which is created by default. Since we did not use this as we did not stage data.
    1. DataflowsStagingLakehouse – This is the staging lakehouse which is created by default. Since we did not use this as we did not stage data.
@@ -63,7 +63,7 @@ Notice on the top menu, you have the option to Edit the report or view some of t
 
 1. Once you are ready, **collapse** all the tables in the **Data** section on the right. Notice we have 5 new tables which are not part of the dataset we created. These are default tables added to help analyze performance. We will remove these from the report view shortly.
 1. Let’s save this report. From the top menu, select **Save**.
-1. Save your report dialog opens. Name the report as **rpt\_Sales\_Auto\_Report** (we are prefixing report name with rpt which is short for report).
+1. Save your report dialog opens. Name the report as **rpt_Sales_Auto_Report** (we are prefixing report name with rpt which is short for report).
 1. Make sure the report is saved in **<your workspace name>.**
 1. Select **Save.**
 
@@ -78,22 +78,22 @@ Let’s create a report like the one we have in Power BI Desktop. We are going t
    ![A screenshot of Microsoft Fabric experiences dialog](../media/Aspose.Words.78333b69-24f7-49ac-a05b-1a912397214d.008.png)
 
 1. **Scroll** down to **Quick Access** section.
-1. Select **lh\_FAIAD -> SQL analytics endpoint**. We will be in the Data view of the Lakehouse.
+1. Select **lh_FAIAD -> SQL analytics endpoint**. We will be in the Data view of the Lakehouse.
 1. From the **bottom of the left panel**, select **Model** to be navigated to the Model view.
 
 Notice on the design canvas, you will find the default tables. (You may have to scroll to the right or bottom to view them)
 
    ![A screenshot of Lakehouse model view](../media/Aspose.Words.78333b69-24f7-49ac-a05b-1a912397214d.009.png)
 
-1. Right click on the table **long\_running\_queries** and select **Hide in report view**.
+1. Right click on the table **long_running_queries** and select **Hide in report view**.
 
    ![A screenshot of Lakehouse model view showing hide in report view](../media/Aspose.Words.78333b69-24f7-49ac-a05b-1a912397214d.010.png)
 
 1. Similarly, select **Hide in report view** option for the following tables:
-   1. **fabric\_query\_starting**
-   1. **fabric\_query\_completed**
-   1. **exec\_requests\_history**
-   1. **frequently\_run\_queries**
+   1. **fabric_query_starting**
+   1. **fabric_query_completed**
+   1. **exec_requests_history**
+   1. **frequently_run_queries**
 1. We can start creating a new report from the model view. From the top menu, select **Home -> New report**. You will be navigated to the Power BI report canvas in a new window/tab in your browser.
 
    ![A screenshot showing selecting New Report](../media/Aspose.Words.78333b69-24f7-49ac-a05b-1a912397214d.011.png)
@@ -185,9 +185,9 @@ Let’s create a line chart to visualize Sales over time by Reseller Company.
 
    ![A screenshot of line chart visual configuration](../media/Aspose.Words.78333b69-24f7-49ac-a05b-1a912397214d.022.png)
 
-1. Let’s add Month to this chart. From the Date table, drag **Short\_Month\_Name** field below **Year** in the **X-axis**. Notice the visual is sorted by Sales. Let’s sort it by Short\_Month\_Name
+1. Let’s add Month to this chart. From the Date table, drag **Short_Month_Name** field below **Year** in the **X-axis**. Notice the visual is sorted by Sales. Let’s sort it by Short_Month_Name
 1. Select the **ellipsis** on the top right corner of the visual.
-1. Select **Sort axis -> Year Short\_Month\_Name**.
+1. Select **Sort axis -> Year Short_Month_Name**.
 1. Select the **ellipsis** on the top right corner of the visual.
 1. Select **Sort axis -> Sort ascending**.
 
@@ -199,7 +199,7 @@ Let’s create a line chart to visualize Sales over time by Reseller Company.
 
 1. Navigate to the **tab of the browser** with model view of the Lakehouse.
 1. From the left Explorer pane, expand **lhFAIAD -> Schemas -> dbo -> Tables -> Date**.
-1. Select **Short\_Month\_Name** column.
+1. Select **Short_Month_Name** column.
 1. In the **Properties** pane on the right, expand **Advanced** section.
 1. In the **Sort by column** drop down select **Month**.
 
@@ -229,7 +229,7 @@ Notice how easy it is to update the semantic model while building the reports. T
    ![A screenshot of line chart visual formatting](../media/Aspose.Words.78333b69-24f7-49ac-a05b-1a912397214d.028.png)
 
 1. Let’s save the report, from the menu select **File -> Save**.
-1. Save your report dialog opens. Name the report as **rpt\_Sales\_Report** (we are prefixing report name with rpt which is short for report).
+1. Save your report dialog opens. Name the report as **rpt_Sales_Report** (we are prefixing report name with rpt which is short for report).
 1. Make sure the report is saved in **<your workspace name>.**
 1. Select **Save.**
 
@@ -244,7 +244,7 @@ In real scenario, data is updated at the source. Since we are in a training envi
 
 1. Navigate to the **tab of the browser** with model view of the Lakehouse.
 1. Select **<your workspace name>** from the left panel.
-1. Select **df\_Sales\_ADFS** so we can edit the dataflow by adding the new Parquet file.
+1. Select **df_Sales_ADFS** so we can edit the dataflow by adding the new Parquet file.
 
    ![A screenshot of Data factory home](../media/Aspose.Words.78333b69-24f7-49ac-a05b-1a912397214d.030.png)
 
@@ -315,6 +315,7 @@ Let’s revisit the challenges that are listed in the problem statement.
   **Microsoft Fabric is a SaaS offering. All we need is a browser to access the service. We do not have to install any software on our desktops.**
 
 # <a name="_toc151123913"></a>**Clean up Lab environment**
+
 Once you are ready to clean up the lab environment, follow the steps below.
 
 1. Navigate back to the **tab of the browser** with Power BI canvas. Close out this tab.
@@ -334,7 +335,9 @@ Once you are ready to clean up the lab environment, follow the steps below.
 This will delete the workspace and all the items that were contained in the workspace.
 
    ![A screenshot of Workspace settings dialog](../media/Aspose.Words.78333b69-24f7-49ac-a05b-1a912397214d.039.png)
+   
 # <a name="_toc150777627"></a><a name="_toc150779083"></a><a name="_toc151123914"></a>**References**
+
 Fabric Analyst in a Day introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help section has links to some great resources.
 
    ![A screenshot of help options](../media/Aspose.Words.78333b69-24f7-49ac-a05b-1a912397214d.040.png)
