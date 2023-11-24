@@ -78,16 +78,19 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
 1. Select **Data Factory** on the bottom left of your screen. Fabric experience dialog opens.
    
       ![A screenshot of dialog to select Data Activator](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.014.png)
+
    
 1. Select **Data Activator** from the dialog. You will be navigated to Data Activator Home. Data Activator is a no-code experience in Microsoft Fabric for automatically taking actions when patterns or conditions are detected in changing data. Notice the 3 sections are like Data Factory experience. In the New section notice the items.
    1. **Reflex:** Used to monitor datasets, queries and event streams for patterns.
    1. **Reflex sample:** Sample solution.
-  
 
-   
-      
-      
-      ![A screenshot of Data Activator Home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.015.png)
+
+        ![A screenshot of Data Activator Home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.015.png)
+
+
+
+
+
 
    
 1. Select **Data Activator** on the bottom left of your screen. Fabric experience dialog opens.
