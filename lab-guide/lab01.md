@@ -18,7 +18,7 @@
 [References](#_toc150852467)
 
 
-#
+
 # Introduction
 Today you will learn about various key features of Fabric. This is an introductory course intended to expose you to the various product experiences and items available in Fabric.  By the end of this workshop you will learn how to use Lakehouse, Dataflow Gen 2, Data Pipeline, and use DirectLake feature.
 
@@ -83,7 +83,9 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
    1. **Reflex:** Used to monitor datasets, queries and event streams for patterns.
    1. **Reflex sample:** Sample solution.
       
+      
       ![A screenshot of Data Activator Home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.015.png)
+
    
 1. Select **Data Activator** on the bottom left of your screen. Fabric experience dialog opens.
 1. Select **Data Engineering**. In the New section notice the items. 
@@ -97,14 +99,17 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
       ![A screenshot of Data Engineering Home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.016.png)
       
    1. Select **Data Engineering** on the bottom left of your screen. Fabric experience dialog opens.
-1. Select **Data Science**. You will be navigated to Data Science Home. Again, there are 3 sections. In the New section notice the items.
+   1. Select **Data Science**. You will be navigated to Data Science Home. Again, there are 3 sections. In the New 
+      section notice the items.
    1. **Model:** Used to create machine learning models.
    1. **Experiment:** Used to create, run and track development of multiple models.
    1. **Notebook:** Used to explore data and build machine learning solutions.
    1. **Import Notebook:** Used to import notebooks from local machine.
    1. **Sample:** Sample solution.
       
+      
       ![A screenshot of Data Science Home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.017.png)
+      
    
 1. Select **Data Science** on the bottom left of your screen. Fabric experience dialog opens.
 1. Select **Data Warehouse**. You will be navigated to Data Warehouse Home. Again, there are 3 sections. In the New section notice the items. Notice Data pipeline and Dataflow Gen2 are available here as well.
@@ -113,7 +118,9 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
    1. **Data pipeline:** Used to orchestrate data solution.
    1. **Dataflow Gen2:** Next generation of Dataflow.
       
+      
       ![A screenshot of Data Warehouse Home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.018.png)
+      
    
 1. Select **Data Warehouse** on the bottom left of your screen. Fabric experience dialog opens.
 1. Select **Real-Time Analytics**. You will be navigated to Real-Time Analytics Home. Again, there are 3 sections. In the New section notice the items. 
@@ -122,7 +129,9 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
    1. **Eventstream:** Used to capture, transform and route real time event stream.
    1. **Use a sample:** Used to create a sample.
       
+      
       ![A screenshot of Real Time Analytics Home page](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.019.png)
+
 
 <a name="_toc150852465"></a>**How to create a New workspace:**
 
@@ -136,14 +145,15 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
 1. If you choose to, you can enter a **Description** for the workspace. This is an optional field.
 1. Click on **Advanced** to expand the section.
 
-    ![A screenshot of New workspace dialog](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.022.png)
+      ![A screenshot of New workspace dialog](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.022.png)
 
 1. Under **License mode**, make sure **Trial** is selected. (It should be selected by default)
 1. Select **Apply** to create a new workspace.
 
-   ![A screenshot to select trial license](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.023.png)
+      ![A screenshot to select trial license](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.023.png)
 
-A new workspace is created, and you will be navigated into this workspace. We will bring data from the different data sources into Lakehouse and use the data from the Lakehouse to build our model and report on it. The first step is to create a Lakehouse.
+      A new workspace is created, and you will be navigated into this workspace. We will bring data from the different       data sources into Lakehouse and use the data from the Lakehouse to build our model and report on it. The first          step is to create a Lakehouse.
+   
 ### <a name="_toc150852466"></a>**How to create a Lakehouse:**
 
 1. Select **Real-Time Analytics** on the bottom left of your screen. Fabric experience dialog opens.
@@ -160,17 +170,17 @@ A new workspace is created, and you will be navigated into this workspace. We wi
    - Note: lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.
 5. Select **Create**.
 
-   ![A screenshot of dialog to name the Lakehouse](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.026.png)
+      ![A screenshot of dialog to name the Lakehouse](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.026.png)
 
-Within a few moments, a Lakehouse is created, and you will be navigated to the Lakehouse interface.
+      Within a few moments, a Lakehouse is created, and you will be navigated to the Lakehouse interface.
 
-On the **left panel**, notice that below your workspace, you will have the Lakehouse icon. You can easily navigate to the Lakehouse by clicking on this icon at any time.
+      On the **left panel**, notice that below your workspace, you will have the Lakehouse icon. You can easily       navigate to the Lakehouse by clicking on this icon at any time.
 
-   Within the Lakehouse explorer you will notice **Tables** and **Files**. Lakehouse could expose Azure Data Lake Gen2 files under the files section, or a dataflow could load data to Lakehouse tables. There are    various options available. We are going to show you some of the options as in the following labs.
+      Within the Lakehouse explorer you will notice **Tables** and **Files**. Lakehouse could expose Azure Data Lake          Gen2 files under the files section, or a dataflow could load data to Lakehouse tables. There are    various             options available. We are going to show you some of the options as in the following labs.
    
-   ![A screenshot of LakeHouse](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.027.png)
+     ![A screenshot of LakeHouse](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.027.png)
 
-In this lab, we explored the Fabric interface, created a Fabric workspace and a Lakehouse. In the next lab, we will learn how to use Dataflow Gen2 to connect to ADLS Gen2 to extract, transform and ingest data into the Lakehouse.
+    In this lab, we explored the Fabric interface, created a Fabric workspace and a Lakehouse. In the next lab, we will learn how to use Dataflow Gen2 to connect to ADLS Gen2 to extract, transform and ingest data into the Lakehouse.
 
 # <a name="_toc150852467"></a>**References**
 Fabric Analyst in a Day introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help section has links to some great resources.
