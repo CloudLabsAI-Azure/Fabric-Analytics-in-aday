@@ -61,24 +61,25 @@ Before we start with Fabric, let’s look at the current Report in Power BI Desk
 1. **Note:** In this training, we are focusing on the data acquisition, transformation and modeling using tools available in Fabric. We will not be focusing on report development or navigation. Let’s spend a couple of minutes to understand the report and move to the next steps.
 1. Let’s analyze the data by Sales Territory. Select New England from the Sales Territory (Scatter plot) visual.
 
-Notice from the Sales over Time, Reseller Tailspin Toys has more sales compared to Wingtip Toys in New England. If you look at Sales YoY% column chart you will notice that Wingtip sales growth has been low and declining quarter over quarter during the past year. After a small rebound in Q3 it went down again in Q4. 
+      Notice from the Sales over Time, Reseller Tailspin Toys has more sales compared to Wingtip Toys in New England. If you look at Sales YoY% column chart you will notice that Wingtip sales growth has been low and declining quarter over quarter during the past year. After a small rebound in Q3 it went down again in Q4. 
 
-   ![A screenshot of Power BI Desktop report with New England selected](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.005.png)
+      ![A screenshot of Power BI Desktop report with New England selected](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.005.png)
 1. Let’s compare this to Rocky Mountain territory. Select Rocky Mountain from Sales Territory (Scatter plot) visual.
 
-Notice in the Sales YoY% column chart sales for Wingtip Toys has increased dramatically in 2022 Q4 after being low for the previous 2 quarters.
+      Notice in the Sales YoY% column chart sales for Wingtip Toys has increased dramatically in 2022 Q4 after being low for the previous 2 quarters.
 
-   ![A screenshot of Power BI Desktop report with Rocky Mountain selected](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.006.png)
+      ![A screenshot of Power BI Desktop report with Rocky Mountain selected](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.006.png)
 1. Select **Rocky Mountain from Sales Territory** to remove the filter.
 1. From the Scatter plot on the bottom center of the screen (Sales Orders by Sales) select the outlier on the top right (4th quadrant).
 
-Notice the margin % is 52%, which is above the average of 50%. Also the Sales YoY% has gone up the last 2 quarters of 2022.
+      Notice the margin % is 52%, which is above the average of 50%. Also the Sales YoY% has gone up the last 2 quarters of 2022.
 
-   ![A screenshot of Power BI Desktop with Scatter plot selection](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.007.png)
+      ![A screenshot of Power BI Desktop with Scatter plot selection](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.007.png)
 
 1. Select the outlier Reseller in the scatter plot to remove the filter.
 1. Let’s get the Product details by Product Group and Reseller. From the Sales by Product Group and Reseller Company bar chart right click on the **Packaging Materials bar for Tailspin Toys** and from the dialog select Drill through -> Product Details.
-    ![A screenshot of Power BI Desktop with Drill through selection](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.008.png)
+      ![A screenshot of Power BI Desktop with Drill through selection](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.008.png)
+   
 1. You will be navigated to the page which provides the Product Details. Notice there are some future orders in place as well.
 1. Once you are done reviewing this page, select the Ctrl+back arrow on the top right of the page to be navigated back to the Sales Report.
 
@@ -108,7 +109,7 @@ Notice the margin % is 52%, which is above the average of 50%. Also the Sales Yo
 
     ![A screenshot of queries](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.012.png)
 
-1. Notice **ADLSData** folder has multiple dimensions – Geo, Product, Reseller and Date. It also has Sales fact.
+   Notice **ADLSData** folder has multiple dimensions – Geo, Product, Reseller and Date. It also has Sales fact.
    1. Geo dimension is created by merging data from Cities, Countries and States query. 
    1. Product dimension is created by merging data from Product Groups and Product Item Group query.
    1. Reseller dimension is filtered using BuyingGroup query.
