@@ -179,7 +179,7 @@ By the end of this lab, you will have learned:
 
 ### <a name="_toc150852526"></a>How to copy Queries from Power BI Desktop – Option 1:
 
-1. If you have not already opened it, open **FAIAD.pbix** located in **/Report** folder of the lab material. 
+1. If you have not already opened it, open **FAIAD.pbix** located in **report/FAIAD.pbix** folder of the lab material. 
 1. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
   
       ![A screenshot of Power BI Desktop report.](../media/Aspose.Words.d9e40fe6-e088-40f4-b33d-59abff8ed5bb.026.png)
