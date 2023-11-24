@@ -7,9 +7,9 @@
 
 [Fabric Workspace](#FabricWorkspace)
 
-[How to create trial Fabric workspace:](#HowtocreatetrialFabricworkspace)
+[How to create trial Fabric workspace](#HowtocreatetrialFabricworkspace)
 
-[Overview of Fabric Experiences:](#OverviewofFabricExperiences)
+[Overview of Fabric Experiences](#OverviewofFabricExperiences)
 
 [How to create a New workspace:](#_toc150852465)
 
