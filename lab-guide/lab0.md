@@ -52,7 +52,7 @@ Overview of Power BI Desktop Report
 
 Before we start with Fabric, let’s look at the current Report in Power BI Desktop to understand the transformations and the model.
 
-1. Open the **FAIAD.pbix** located in **/Report** folder of the lab material. The file will open in Power BI Desktop.
+1. Open the **FAIAD.pbix** located in **reports/FAIAD.pbix** folder of the lab material. The file will open in Power BI Desktop.
 
    The report analyzes Sales for Fabrikam. KPIs are listed on the left top of the page. The remaining visuals highlight Sales over time, by Territory, by Product Group, Resellers. 
 
