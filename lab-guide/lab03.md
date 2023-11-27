@@ -168,10 +168,12 @@ In our scenario,Supplier Data is in Snowflake, Customer Data is in Dataverse and
       * Tenant ID: **9ddb7112-7d5f-432c-9147-a4dd1b0de572**
       * Service Principal Application ID: **1c7b251d-1875-4b1f-8711-8dead51bd633**
       * Secret Key: **nO-8Q~h7OxXyyV5TroOJJoexVl4jRnRcVuRiNaWm**
-        
-1. Select **Connect**.
 
-     ![A screenshot of Connect to data source](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.022.png)
+    ![A screenshot of Connect to data source](../media/faiadsp.png)
+   
+1. Select **Connect**.
+    
+                 ![A screenshot of Connect to data source](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.022.png)
 
     Connection is established and you can view the data in the preview panel. Feel free to navigate through the Applied Steps of the queries. Customer data is available by Category, Baby Boomers, GenX, GenY and GenZ.     This 4 queries are appended to create Customer query. Now we need to ingest Customer data into Lakehouse.
 
