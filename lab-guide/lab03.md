@@ -162,7 +162,13 @@ In our scenario,Supplier Data is in Snowflake, Customer Data is in Dataverse and
      ![A screenshot Configure connection in Dataflow](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.021.png)
 
 1. Connect to data source dialog opens. In the **Connection** dropdown make sure, **Create new connection** is selected.
-1. **Authentication kind** should be **Organizational Account**.
+1. **Authentication kind** should be **Service Principal**.
+1. Enter the below credentials to connect to the Dataverse:
+
+      * Tenant ID: **9ddb7112-7d5f-432c-9147-a4dd1b0de572**
+      * Service Principal Application ID: **1c7b251d-1875-4b1f-8711-8dead51bd633**
+      * Secret Key: **nO-8Q~h7OxXyyV5TroOJJoexVl4jRnRcVuRiNaWm**
+        
 1. Select **Connect**.
 
      ![A screenshot of Connect to data source](../media/Aspose.Words.12ee924b-aa27-4137-9af5-6e5d681a1e05.022.png)
