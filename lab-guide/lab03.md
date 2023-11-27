@@ -172,6 +172,7 @@ In our scenario,Supplier Data is in Snowflake, Customer Data is in Dataverse and
     ![A screenshot of Connect to data source](../media/faiadsp.png)
    
 1. Select **Connect**.
+
     Connection is established and you can view the data in the preview panel. Feel free to navigate through the Applied Steps of the queries. Customer data is available by Category, Baby Boomers, GenX, GenY and GenZ.     This 4 queries are appended to create Customer query. Now we need to ingest Customer data into Lakehouse.
 
 1. As mentioned earlier, we do are not Staging any of this data. So right click on **Customer** query in the Queries pane and select **Enable staging** to remove the check mark.
