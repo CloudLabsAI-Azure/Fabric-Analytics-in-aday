@@ -140,7 +140,7 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
    ![A screenshot of New workspace dialog](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.021.png)
 
 1. **Create a workspace** dialog opens on the right side of the browser.
-1. In the **Name** field enter **FAIAD\_<yourusername>**. Note: Workspace name must be unique. We are using FAIAD as the workspace name for this document. However, your workspace name will be different. Make sure a green check mark with “**This name is available**” is displayed below the Name field.
+1. In the **Name** field enter **FAIAD_yourusername**. Note: Workspace name must be unique. We are using FAIAD as the workspace name for this document. However, your workspace name will be different. Make sure a green check mark with “**This name is available**” is displayed below the Name field.
 1. If you choose to, you can enter a **Description** for the workspace. This is an optional field.
 1. Click on **Advanced** to expand the section.
 
