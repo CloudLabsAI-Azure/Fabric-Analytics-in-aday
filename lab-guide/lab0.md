@@ -30,8 +30,6 @@ In order to draw valuable insights from the data, you pull data from multiple sy
 - Customer data: this data comes from Customer Insights and is stored in Dataverse. The data is always up to date.
 - Employees Data: This data comes from the HR system, it is stored as an export file in a SharePoint folder.  It gets updated every morning at 9 AM.   
 
-   ![A close-up of a white card Description automatically generated](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.002.png)
-   
    ![A diagram of data flow](../media/Aspose.Words.2ed70cc0-be12-4074-8ce5-48f6b0305ec4.003.png)
 
 You currently build a dataset on Power BI premium that pulls the data from the above source systems in order to satisfy your reporting needs as well as provide end users the ability to self-serve. You use Power Query to update your dataset. 
@@ -48,7 +46,7 @@ You are facing the following challenges:
 
 You heard about Fabric and you decided to try to use Fabric to see if it will address the challenges you are facing.
 
-Overview of Power BI Desktop Report
+## Overview of Power BI Desktop Report
 
 Before we start with Fabric, let’s look at the current Report in Power BI Desktop to understand the transformations and the model.
 
