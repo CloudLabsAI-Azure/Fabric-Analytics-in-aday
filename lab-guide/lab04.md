@@ -29,7 +29,7 @@ By the end of this lab, you will have learned:
 1. Navigate back to **Data Factory** screen.
 1. You will see 3 types of lh\FAIAD – Dataset, SQL endpoint and Lakehouse. We explored Lakehouse option in an earlier lab.  Select **lh_FAIAD SQL analytics endpoint** option to explore the SQL option. You will be navigated to SQL view of the explorer.
 
-      ![A screenshot of Data Factory Home](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.002.png)
+      ![A screenshot of Data Factory Home](../media/Picture130.png)
 
 ### <a name="_toc150852369"></a>Lakehouse – How to query data using SQL
 
@@ -41,7 +41,7 @@ If you would like to explore the data before creating a data model, you can use 
 
 1. From the **top menu** select **New SQL query** or from the **bottom of the left panel** select **Query**. You will be navigated to SQL query view.
 
-      ![A screenshot of SQL Query view](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.013.png)
+      ![A screenshot of SQL Query view](../media/Picture131.png)
 
 1. **Paste** below SQL query in the **query window**. This query will return the units by Supplier Name. It is joining Sales table with Product and Supplier table to achieve this.
 
@@ -60,15 +60,15 @@ If you would like to explore the data before creating a data model, you can use 
 1. On the right **Explorer** panel, under **Queries section** notice this query is saved under **My queries** as **SQL query 1**. This provides an option to rename the query and save it for future use. There is also 
    an option to view queries that are shared with you using **Shared queries** folder.
 
-      ![A screenshot of SQL query screen](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.014.png)
+      ![A screenshot of SQL query screen](../media/Picture132.png)
 
 1. We can also visualize the result of this query. **Highlight the query** in the query pane and select **Visualize results** from the **Results pane**.
 
-      ![A screenshot of SQL query screen with result](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.015.png)
+      ![A screenshot of SQL query screen with result](../media/Picture133.png)
 
 1. Visualize results dialog opens. Select **Continue**.
 
-      ![A screenshot of Visualize results dialog](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.016.png)
+      ![A screenshot of Visualize results dialog](../media/Picture134.png)
 
 1. Familiar report view dialog opens. From the **Data** pane, expand **SQL query 1**.
 1. Select **Supplier_Name** and **Units** **fields**. Table visual is created by default.
@@ -82,7 +82,7 @@ If you would like to explore the data before creating a data model, you can use 
 1. Make sure the destination workspace is **<your workspace name>.**
 1. Select **Save.**
 
-      ![A screenshot of Visualize results screen](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.017.png)
+      ![A screenshot of Visualize results screen](../media/Picture135.png)
 
       You will be navigated back to SQL analytics endpoint view. If you are not familiar with SQL, you can execute a similar query using visual query.
 
@@ -90,20 +90,20 @@ If you would like to explore the data before creating a data model, you can use 
 1. From the **Explorer** pane, drag **Sales, Product and Supplier** tables to the visual query pane.
 1. With **Sales** table selected, from the Visual query pane menu, select **Combine -> Merge queries**.
 
-      ![A screenshot of Visual query screen](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.018.png)
+      ![A screenshot of Visual query screen](../media/Picture136.png)
 
 1. Merge dialog opens. From the **Right table for merge** dropdown select **Product**.
 1. Select **StockItemID** from both **Sales** and **Product** table. This is to merge Product and Sales tables.
 1. From the **Join Kind**, select **Left Outer**.
 1. Select **OK**.
 
-      ![A screenshot of merge query dialog](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.019.png)
+      ![A screenshot of merge query dialog](../media/Picture137.png)
 
 1. In the **results** pane, click on the **double arrow** next to **Product** column.
 1. Dialog opens, select **SupplierID** from the dialog.
 1. Select **OK**.
 
-      ![A screenshot of visual query dialog](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.020.png)
+      ![A screenshot of visual query dialog](../media/Picture138.png)
 
 1. Similarly, let’s merge Supplier table. With **Sales** table select, from the Visual query pane menu, select **Combine -> Merge queries**.
 1. Merge dialog opens. From the **Right table for merge** dropdown select **Supplier**.
@@ -111,19 +111,19 @@ If you would like to explore the data before creating a data model, you can use 
 1. From the **Join Kind**, select **Left Outer**.
 1. Select **OK**.
 
-      ![A screenshot of merge query dialog](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.021.png)
+      ![A screenshot of merge query dialog](../media/Picture139.png)
 
 1. In the **results** pane, click on the **double arrow** next to **Supplier** column.
 1. Dialog opens, select **Supplier_Name** from the dialog.
 1. Select **OK**. Notice in the Sales table all the **steps are recorded**.
 1. Now we have the query ready, let’s view the result. Select **Visualize results** from the results pane.
 
-      ![A screenshot of visual query dialog](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.022.png)
+      ![A screenshot of visual query dialog](../media/Picture140.png)
 
 1. **Visualize results dialog** opens which looks like Power BI window. From the **Data** pane in the right, select **Supplier_Name and Quantity** fields.
 1. This will create a table visual, with the result like the SQL query result from earlier. If you choose to, you can Save this report. Since we saved a similar report earlier, we are going to select **Cancel**.
 
-      ![A screenshot of visualize report dialog](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.023.png)
+      ![A screenshot of visualize report dialog](../media/Picture141.png)
    
 ### <a name="_toc150852370"></a>Lakehouse – How to create a model – Relationships:
 
@@ -133,7 +133,7 @@ Ok now we are ready to build the model, build relationships between tables and c
 1. **Resize and rearrange** the tables as needed.
 1. Let’s create a relationship between Sales and Reseller. Select **ResellerID** from **Sales** table and drag it over **ResellerID** in **Reseller** table.
 
-      ![A screenshot of modeling view](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.024.png)
+      ![A screenshot of modeling view](../media/Picture142.png)
 
 1. New relationship dialog opens. Make sure **Table 1** is **Sales** and **Column** is **ResellerID.**
 1. Make sure **Table 2** is **Reseller** and **Column** is **ResellerID.**
@@ -141,7 +141,7 @@ Ok now we are ready to build the model, build relationships between tables and c
 1. Make sure **Cross filter direction is single**.
 1. Select **Ok**.
 
-      ![A screenshot of New relationship dialog](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.025.png)
+      ![A screenshot of New relationship dialog](../media/Picture143.png)
 
 1. Similarly, create a relationship between Sales and Date. Select **InvoiceDate** from **Sales** table and drag it over **Date** in **Date** table.
 1. New relationship dialog opens. Make sure **Table 1** is **Sales** and **Column** is **InvoiceDate.**
@@ -150,14 +150,14 @@ Ok now we are ready to build the model, build relationships between tables and c
 1. Make sure **Cross filter direction is single**.
 1. Select **Ok**.
 
-      ![A screenshot of New relationship dialog](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.026.png)
+      ![A screenshot of New relationship dialog](../media/Picture144.png)
 
 1. Similarly, create a **many to one** relationship between **Sales** and **Product**. Select **StockItemID** from **Sales** and **StockItemID** from **Product**.
 1. Similarly, create a **many to one** relationship between **Sales** and **People**. Select **SalespersonPersonID** from **Sales** and **PersonID** from **People**. 
 
       Your model should look like below.
 
-      ![A screenshot of modeling view](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.027.png)
+      ![A screenshot of modeling view](../media/Picture145.png)
 
 1. Now let’s create a relationship between Product and Supplier. Select **SupplierID** from **Product** table and drag it over **SupplierID** in **Supplier** table.
 1. New relationship dialog opens. Make sure **Table 1** is **Product** and **Column** is **SupplierID.**
@@ -166,7 +166,7 @@ Ok now we are ready to build the model, build relationships between tables and c
 1. Make sure **Cross filter direction is both**.
 1. Select **Ok**.
 
-      ![A screenshot of New relationship dialog](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.028.png)
+      ![A screenshot of New relationship dialog](../media/Picture146.png)
 
 1. Similarly, create a **many to one** relationship with Cross filter direction as **Both** between **Product_Details** and **Product**. Select **StockItemID** from **Product_Details** and **StockItemID** from **Product**.
 1. Now let’s create a relationship between Reseller and Geo. Select **PostalCityID** from **Reseller** table and drag it over **CityID** in **Geo** table.
@@ -176,7 +176,7 @@ Ok now we are ready to build the model, build relationships between tables and c
 1. Make sure **Cross filter direction is both**.
 1. Select **Ok**.
 
-      ![A screenshot of New relationship dialog](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.029.png)
+      ![A screenshot of New relationship dialog](../media/Picture147.png)
 
 1. Now let’s create a relationship between Customer and Reseller. Select **ResellerID** from **Customer** table and drag it over **ResellerID** in **Reseller** table.
 1. New relationship dialog opens. Make sure **Table 1** is **Customer** and **Column** is **ResellerID.**
@@ -185,11 +185,11 @@ Ok now we are ready to build the model, build relationships between tables and c
 1. Make sure **Cross filter direction is single**.
 1. Select **Ok**.
 
-      ![A screenshot of New relationship dialog](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.030.png)**	
+      ![A screenshot of New relationship dialog](../media/Picture148.png)**	
 
       Your model should look like the screenshot below.
 
-      ![A screenshot of modeling view](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.031.png)
+      ![A screenshot of modeling view](../media/Picture149.png)
 
 1. Now let’s create a relationship between PO and Date. Select **Order_Date** from **PO** table and drag it over **Date** in **Date** table.
 1. New relationship dialog opens. Make sure **Table 1** is **PO** and **Column** is **Order.**
@@ -198,14 +198,14 @@ Ok now we are ready to build the model, build relationships between tables and c
 1. Make sure **Cross filter direction is single**.
 1. Select **OK**.
 
-      ![A screenshot of New relationship dialog](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.032.png)
+      ![A screenshot of New relationship dialog](../media/Picture150.png)
 
 1. Similarly, create a **many to one** relationship between **PO** and **Product**. Select **StockItemID** from **PO** and **StockItemID** from **Product**.
 1. Similarly, create a **many to one** relationship between **PO** and **People**. Select **ContactPersonID** from **PO** and **PersonID** from **People**. 
 
       We are done creating all the relationships. Your model should look like below.
 
-      ![A screenshot of modeling view](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.033.png)
+      ![A screenshot of modeling view](../media/Picture151.png)
    
 ### <a name="_toc150852371"></a>Lakehouse – How to create a model – Measures:
 Let’s add a few measures which we need to create the Sales report.
@@ -218,7 +218,7 @@ Let’s add a few measures which we need to create the Sales report.
 1. From the **Format** dropdown select **Currency**.
 1. Set **Decimal places** to **0**.
 
-      ![A screenshot of modeling view with formula bar to add measure](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.034.png)
+      ![A screenshot of modeling view with formula bar to add measure](../media/Picture152.png)
 
 1. With the Sales table selected, select **New Measure** from the top menu.
 1. Enter **Units = SUM(Sales[Quantity])** in the formula bar.
@@ -227,7 +227,7 @@ Let’s add a few measures which we need to create the Sales report.
 1. From the **Format** dropdown select **Whole number**.
 1. Set the **Thousands Separator** to **Yes**.
 
-      ![A screenshot of modeling view with formula bar to add measure](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.035.png)
+      ![A screenshot of modeling view with formula bar to add measure](../media/Picture153.png)
 
 1. With the Sales table selected, select **New Measure** from the top menu.
 1. Enter **Orders = DISTINCTCOUNT(Sales[InvoiceID])** in the formula bar.
@@ -236,7 +236,7 @@ Let’s add a few measures which we need to create the Sales report.
 1. From the **Format** dropdown select **Whole number**.
 1. Set the **Thousands Separator** to **Yes**.
 
-      ![A screenshot of modeling view with formula bar to add measure](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.036.png)
+      ![A screenshot of modeling view with formula bar to add measure](../media/Picture154.png)
 
 1. With the Sales table selected, select **New Measure** from the top menu.
 1. Enter **Avg Order = DIVIDE([Sales], [Orders])** in the formula bar.
@@ -244,7 +244,7 @@ Let’s add a few measures which we need to create the Sales report.
 1. Once the measure is saved, notice the Measure tools option on the top menu. Select **Measure tools**.
 1. From the Format drop down, select **Currency**.
 
-      ![A screenshot of modeling view with formula bar to add measure](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.037.png)
+      ![A screenshot of modeling view with formula bar to add measure](../media/Picture155.png)
 
 1. Follow similar steps to add following measures
    1. **GM = SUM(Sales[Line_Profit])** formatted as **Currency, Decimal places of 2**
@@ -256,7 +256,7 @@ Let’s add a few measures which we need to create the Sales report.
 # <a name="_toc150777627"></a><a name="_toc150779083"></a><a name="_toc150852372"></a>**References**
 Fabric Analyst in a Day introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help section has links to some great resources.
 
-   ![A screenshot of help options](../media/Aspose.Words.0b1dbfd3-f5c1-48c3-9789-d82b03cb6b9e.038.png)
+   ![A screenshot of help options](../media/Picture156.png)
 
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
