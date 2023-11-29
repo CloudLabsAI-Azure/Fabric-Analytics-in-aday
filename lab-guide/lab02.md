@@ -1,6 +1,3 @@
-![image](https://github.com/bhavangowdan/Fabric-Analytics-in-aday/assets/83076341/d3d25a6d-067a-44e7-8350-9c314534b242)# Microsoft Fabric - Fabric Analyst in a Day - Lab 2
-
-
 # ![](../media/Aspose.Words.d9e40fe6-e088-40f4-b33d-59abff8ed5bb.001.png)
 
 # Contents
