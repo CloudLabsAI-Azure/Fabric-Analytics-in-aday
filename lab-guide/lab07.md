@@ -1,6 +1,6 @@
 Microsoft Fabric - Fabric Analyst in a Day - Lab 7
 
-# ![](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.001.png)
+# ![](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.001.png)
 
 # Contents
 [Introduction	3](#_toc152166234)
@@ -57,15 +57,15 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 1. You will probably be on the Data Factory home page. From the bottom of the left panel, select **Data Factory icon**.
 1. Fabric experience dialog opens. Select **Power BI**. You will be navigated to **Power BI Home page**.
 
-![A screenshot of Microsoft Fabric experiences dialog](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.002.png)
+![A screenshot of Microsoft Fabric experiences dialog](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.002.png)
 
 1. Select **New Report** from the top menu.
 
-![A screenshot of Power BI home](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.003.png)
+![A screenshot of Power BI home](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.003.png)
 
 1. You will be navigated to **Build your first report screen**. There will be options to enter data manually and build a report or to pick a published semantic model. We have created a semantic model in the previous labs. Let’s use that. Select **Pick a published semantic model** option.
 
-![A screenshot of build first report screen](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.004.png)
+![A screenshot of build first report screen](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.004.png)
 
 1. Pick a dataset to use in your report page opens. Notice we have four options. **Select lh\_FAIAD**:
    1. **lh\_FAIAD:** This is the lakehouse with the dataset we created and want to use for the report.
@@ -74,11 +74,11 @@ Let’s start by using the auto-create report option. And later in the lab, we w
    1. **DataflowsStagingLakehouse:** This is the staging lakehouse which is created by default since we did not use this as we did not stage data.
 1. Click the **arrow next to Auto-create report button**. Notice there are two options, Auto-create report and Create a blank report. Let’s try auto-creating, so select **Auto-create report**.
 
-![A screenshot of a pick a dataset to use in your report screen](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.005.png)
+![A screenshot of a pick a dataset to use in your report screen](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.005.png)
 
 1. Power BI will start auto creating the report. Notice there is an option to Pre-select data, if we choose. Once the report is ready, a dialog appears on the top right of the screen. Select **View report now**.
 
-![A screenshot of auto-create ready success dialog](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.006.png)
+![A screenshot of auto-create ready success dialog](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.006.png)
 
 **Checkpoint:** You will have a report which looks like the screenshot below. There are a few KPIs and some trend visuals. This is a good start if you are analyzing a new model and need a jumpstart.
 
@@ -91,7 +91,7 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 1. Make sure the report is saved in **<your workspace name>.**
 1. Select **Save.**
 
-![A screenshot of auto-created report](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.007.png)
+![A screenshot of auto-created report](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.007.png)
 
 ### <a name="_toc152166237"></a>Task 2: Hide default (metrics) tables
 Let’s create a report like the one we have in Power BI Desktop. We are going to do this by starting with a blank canvas. Before we start creating a report, let’s remove the default tables (above screenshot) from the report view. This is done in the modeling section of the Lakehouse.
@@ -99,7 +99,7 @@ Let’s create a report like the one we have in Power BI Desktop. We are going t
 1. From the bottom of the left panel, select **Power BI icon**. Fabric dialog opens.
 1. Select **Data Engineering**. You will be navigated to Data Engineering Home page.
 
-![A screenshot of Microsoft Fabric experiences dialog](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.008.png)
+![A screenshot of Microsoft Fabric experiences dialog](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.008.png)
 
 1. Scroll down to **Quick Access** section.
 1. Select **lh\_FAIAD -> SQL analytics endpoint**. We will be in the Data view of the Lakehouse.
@@ -107,11 +107,11 @@ Let’s create a report like the one we have in Power BI Desktop. We are going t
 
 Notice on the design canvas, you will find the default tables. (You may have to scroll to the right or bottom to view them)
 
-![A screenshot of Lakehouse model view](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.009.png)
+![A screenshot of Lakehouse model view](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.009.png)
 
 1. Right click on the table **long\_running\_queries** and select **Hide in report view**.
 
-![A screenshot of Lakehouse model view showing hide in report view](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.010.png)
+![A screenshot of Lakehouse model view showing hide in report view](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.010.png)
 
 1. Similarly, select **Hide in report view** option for the following tables:
    1. fabric\_query\_starting
@@ -122,13 +122,13 @@ Notice on the design canvas, you will find the default tables. (You may have to 
 ### <a name="_toc152166238"></a>Task 3: Configure background for a New report
 1. We can start creating a new report from the model view. From the top menu, select **Home -> New report**. You will be navigated to the Power BI report canvas in a new window / tab in your browser.
 
-![A screenshot showing selecting New Report](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.011.png)
+![A screenshot showing selecting New Report](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.011.png)
 
 1. If you have not already opened it, open **FAIAD.pbix** located in the **/Report** folder on the **Desktop** of your lab environment. 
 
 We are going to use this report as a reference. We will start by adding the canvas background. We will create the report header, add a couple of KPIs, and create the Sales over time line chart. In the interest of time and with the understanding that you have experience with building visuals in Power BI Desktop, we will not be creating all the visuals. 
 
-![A screenshot of a Power BI Desktop report](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.012.png)
+![A screenshot of a Power BI Desktop report](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.012.png)
 
 1. Navigate back to **Power BI canvas** in your browser.
 1. Select **Format page** **icon** in Visualization pane.
@@ -139,7 +139,7 @@ We are going to use this report as a reference. We will start by adding the canv
 1. Set **Image fit** dropdown to **Fit**.
 1. Set Transparency to **0%**.
 
-![A screenshot of new blank report](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.013.png)
+![A screenshot of new blank report](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.013.png)
 
 ### <a name="_toc152166239"></a><a name="_hlk152165928"></a>Task 4: Add Header to the report
 1. Let’s add the header in the top margin. From the **menu**, select **Text box**.
@@ -151,7 +151,7 @@ We are going to use this report as a reference. We will start by adding the canv
 1. Use **Background** slider to set it to **Off**.
 1. Resize the **text box to fit in the top margin**.
 
-![A screenshot Text box visual for Fabrikam](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.014.png)
+![A screenshot Text box visual for Fabrikam](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.014.png)
 
 ### <a name="_toc152166240"></a>Task 5: Add KPIs to the report
 1. Let’s add Sales KPI. Select the **white space** in the canvas to take focus off the text box.
@@ -159,7 +159,7 @@ We are going to use this report as a reference. We will start by adding the canv
 1. From the **Data section** expand **Sales** **table**.
 1. Select **Sales measure**.
 
-![A screenshot of multi-row card visual ](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.015.png)
+![A screenshot of multi-row card visual ](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.015.png)
 
 1. With **multi-row card visual selected**, select **Format visual** **icon** from Visualizations section.
 1. Expand **Category labels** section.
@@ -167,19 +167,19 @@ We are going to use this report as a reference. We will start by adding the canv
 1. Select **Color drop down**. Color palette dialog opens.
 1. Set Hex value to **#004753**.
 
-![A screenshot of multi-row card visual formatting](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.016.png)
+![A screenshot of multi-row card visual formatting](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.016.png)
 
 1. Expand **Cards** section.
 1. Use **Accent bar** slider to set it to **Off**.
 
-![A screenshot of multi-row card visual formatting](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.017.png)
+![A screenshot of multi-row card visual formatting](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.017.png)
 
 1. Select **General** in the Visualizations pane.
 1. Expand **Effects section**.
 1. Use **Background** slider to set it to **Off**.
 1. Resize the **visual** and move it to the **left box as shown in the screenshot**.
 
-![A screenshot of multi-row card visual formatting](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.018.png)
+![A screenshot of multi-row card visual formatting](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.018.png)
 
 1. Let’s add another KPI. Select the **Sales multi-row card** we just created. **Copy** the visual by selecting **Ctrl+C** from your keyboard.
 1. **Paste** the visual by selecting **Ctrl+V** from your keyboard. Notice the visual is pasted onto the canvas.
@@ -187,7 +187,7 @@ We are going to use this report as a reference. We will start by adding the canv
 1. From the **Data** section, expand **Sales** table and select **Units** measure.
 1. Resize the **visual** and **place it in the box below the Sales visual**.
 
-![A screenshot of multi-row card visual copy and pasted for Units measure](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.019.png)
+![A screenshot of multi-row card visual copy and pasted for Units measure](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.019.png)
 
 ### <a name="_toc152166241"></a>Task 6: Add Line chart to the report
 Let’s create a line chart to visualize Sales over time by Reseller Company.
@@ -197,7 +197,7 @@ Let’s create a line chart to visualize Sales over time by Reseller Company.
 1. From the **Data section** expand **Date** table.
 1. Select **Year** field. Notice Year is a summed by default and added to the Y-axis. Let’s rectify this.
 
-![A screenshot of line chart visual configuration](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.020.png) 
+![A screenshot of line chart visual configuration](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.020.png) 
 
 ### <a name="_toc152166242"></a>Task 7: Configure Year column in Date table
 1. Navigate to the tab of the browser with **model view of the Lakehouse**.
@@ -206,7 +206,7 @@ Let’s create a line chart to visualize Sales over time by Reseller Company.
 1. In the **Properties** pane on the right, expand **Advanced** section.
 1. In the **Summarize by** drop down select **None**.
 
-![A screenshot of modeling in Lakehouse](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.021.png)
+![A screenshot of modeling in Lakehouse](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.021.png)
 
 1. Navigate back to the tab of the browser with **Power BI canvas**.
 1. From the top menu select **Refresh**. Notice now Year is not a summation field. 
@@ -214,7 +214,7 @@ Let’s create a line chart to visualize Sales over time by Reseller Company.
 1. Select **Year** field and it will be added to the **X-axis**.
 1. Expand **Sales** table and select **Sales measure**.
 
-![A screenshot of line chart visual configuration](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.022.png)
+![A screenshot of line chart visual configuration](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.022.png)
 
 ### <a name="_toc152166243"></a>Task 8: Configure Short\_Month\_Name column in Date table
 1. Let’s add Month to this chart. From the Date table, drag **Short\_Month\_Name** field below **Year** in the **X-axis**. Notice the visual is sorted by Sales. Let’s sort it by Short\_Month\_Name.
@@ -223,11 +223,11 @@ Let’s create a line chart to visualize Sales over time by Reseller Company.
 1. Select the **ellipsis (…)** on the top right corner of the visual.
 1. Select **Sort axis -> Sort ascending**.
 
-![A screenshot of line chart visual configuration](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.023.png)
+![A screenshot of line chart visual configuration](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.023.png)
 
 **Note:** The months are sorted alphabetically. Let’s fix this.
 
-![A screenshot of line chart visual ](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.024.png)
+![A screenshot of line chart visual ](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.024.png)
 
 1. Navigate to the tab of the browser with **model view of the Lakehouse**.
 1. From the left Explorer pane, expand **lhFAIAD -> Schemas -> dbo -> Tables -> Date**.
@@ -235,12 +235,12 @@ Let’s create a line chart to visualize Sales over time by Reseller Company.
 1. In the **Properties** pane on the right, expand **Advanced** section.
 1. In the **Sort by column** drop down select **Month**.
 
-![A screenshot of Lakehouse modeling setting sort by column](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.025.png)
+![A screenshot of Lakehouse modeling setting sort by column](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.025.png)
 
 1. Navigate back to the tab of the browser with **Power BI canvas**.
 1. From the top menu select **Refresh**. Notice now months are sorted properly.
 
-![A screenshot of line chart visual ](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.026.png) 
+![A screenshot of line chart visual ](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.026.png) 
 
 ### <a name="_toc152166244"></a>Task 9: Format Line chart
 Notice how easy it is to update the semantic model while building the reports. This gives a seamless interaction like Power BI Desktop.
@@ -248,7 +248,7 @@ Notice how easy it is to update the semantic model while building the reports. T
 1. With the **Line chart visual selected**, in the **Data section** expand **Reseller** table.
 1. Drag **Reseller -> Reseller Company** field to the **Legend** section.
 
-![A screenshot of adding Reseller Company field to Legend section](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.027.png)
+![A screenshot of adding Reseller Company field to Legend section](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.027.png)
 
 1. With the **Line chart visual selected**, from the **Visualization** section select **Format visual icon -> General**.
 1. Expand **Title** section.
@@ -256,7 +256,7 @@ Notice how easy it is to update the semantic model while building the reports. T
 1. Expand **Effects** section.
 1. Use **Background** slider to set it to **Off**.
 
-![A screenshot of Line chart visual formatting](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.028.png)
+![A screenshot of Line chart visual formatting](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.028.png)
 
 1. From the **Visualization** section select **Format visual icon -> Visual**.
 1. Expand **X-axis** section.
@@ -268,7 +268,7 @@ Notice how easy it is to update the semantic model while building the reports. T
 1. Resize the **visual** and move it to the **top right box as shown in the screenshot**.
 1. Scroll to the right on the visual and **notice we have data through April 2023**.
 
-![A screenshot of Line chart visual formatting](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.029.png)
+![A screenshot of Line chart visual formatting](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.029.png)
 
 1. Let’s save the report, from the menu select **File -> Save**.
 1. Save your report dialog opens. Name the report as **rpt\_Sales\_Report** 
@@ -276,7 +276,7 @@ Notice how easy it is to update the semantic model while building the reports. T
 1. Make sure the report is saved in **<your workspace name>.**
 1. Select **Save.**
 
-![A screenshot of report saving](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.030.png)
+![A screenshot of report saving](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.030.png)
 
 As mentioned earlier, we will not build all the visuals in this lab. At your leisure, feel free to build more visuals. 
 
@@ -289,14 +289,14 @@ In real scenario, data is updated at the source. Since we are in a training envi
 1. Select **<your workspace name>** from the left panel.
 1. Select **df\_Sales\_ADFS** so we can edit the dataflow by adding the new Parquet file.
 
-![A screenshot of Data factory home](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.031.png)
+![A screenshot of Data factory home](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.031.png)
 
 1. If you have not already opened it, open **FAIAD.pbix** located in the **/Report** folder on the **Desktop** of your lab environment. 
 1. From the ribbon select **Home -> Transform data**. Power Query window opens.
 1. From the left panel, under **DirectLake** folder select **MayInvoice** query.
 1. **Right click** and select **Copy.** 
 
-![A screenshot of Power BI Desktop, Power Query](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.032.png)
+![A screenshot of Power BI Desktop, Power Query](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.032.png)
 
 1. Navigate back to the **Dataflow screen** in the browser.
 1. In the Dataflow pane, enter **Ctrl+V** (currently right click Paste is not supported).
@@ -308,30 +308,30 @@ Now let’s remove the reference to ADLS Base Folder (2) and use ADLS Base Folde
 1. In the formula bar, change from **#"ADLS Base Folder (2)"** to **#"ADLS Base Folder"**
 1. Select the **check mark** next to the formula bar or hit Enter.
 
-![A screenshot of dataflow](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.033.png)
+![A screenshot of dataflow](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.033.png)
 
 1. In the left panel, under Queries section **right click ADLS Base Folder (2)** query and select **Delete**.
 1. Delete query dialog appears. Select **Delete** to confirm.
 
-![A screenshot dataflow showing deletion of ADLS Base Folder (2)](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.034.png)
+![A screenshot dataflow showing deletion of ADLS Base Folder (2)](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.034.png)
 
 1. Now, let’s append the May invoice data with the Invoice table. Select **Invoice** query from the Queries section.
 1. From the ribbon, select **Home -> Append** queries.
 1. Append query dialog appears. From the **Table to append** dropdown select **MayInvoice**.
 1. Select **OK**.
 
-![A screenshot of append query](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.035.png)
+![A screenshot of append query](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.035.png)
 
 1. Select **Publish** in the bottom right corner to save and publish the updates. 
 
-![A screenshot of Publish dataflow](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.036.png)
+![A screenshot of Publish dataflow](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.036.png)
 
 **Note:** Once published the dataflow will refresh. This may take a few minutes.
 
 1. Navigate back to the tab of the browser with **Power BI canvas.**
 1. From the top menu select **Refresh**. Notice now in the Line chart there is data for May 2023. Also, notice the Sales dollar has increased.
 
-![A screenshot of data refreshed in the report](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.037.png)
+![A screenshot of data refreshed in the report](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.037.png)
 
 As each data flow, we have created in earlier labs is refreshed on schedule, data is ingested into the Lakehouse. The data model in the Lakehouse is updated and the reports are refreshed. We do not have to refresh the data model and report when each of the data flow refreshes. This is the advantage of Direct Lake.
 
@@ -364,11 +364,11 @@ Once you are ready to clean up the lab environment, follow the steps below.
 1. Navigate to the tab with **model view of the** **Lakehouse**.
 1. Select **<your workspace name>** from the left panel to navigate to the home page.
 
-![A screenshot to select your workspace](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.038.png)
+![A screenshot to select your workspace](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.038.png)
 
 1. From the top menu, select the **ellipsis (…)** next to Manage access and select **Workspace settings**.
 
-![A screenshot to select Workspace settings](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.039.png)
+![A screenshot to select Workspace settings](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.039.png)
 
 1. Workspace settings dialog opens. Select **Other** from the left menu.
 1. Select **Remove this workspace**.
@@ -376,12 +376,12 @@ Once you are ready to clean up the lab environment, follow the steps below.
 
 This will delete the workspace and all the items that were contained in the workspace.
 
-![A screenshot of Workspace settings dialog](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.040.png)
+![A screenshot of Workspace settings dialog](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.040.png)
 
 # <a name="_toc150777627"></a><a name="_toc150779083"></a><a name="_toc152166247"></a>**References**
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
 
-![A screenshot of help options](Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.041.png)
+![A screenshot of help options](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.041.png)
 
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
