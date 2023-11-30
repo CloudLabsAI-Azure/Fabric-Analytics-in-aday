@@ -31,14 +31,6 @@ Microsoft Fabric - Fabric Analyst in a Day - Lab 7
 
 [References	25](#_toc152166247)
 
-
-#
-#
-#
-#
-#
-#
-#
 #
 # <a name="_toc152166234"></a>**Introduction** 
 We have ingested data from different data sources into Lakehouse, were introduced to Lakehouse, created a data model, and set a refresh schedule for the data sources. Now we are going to create a report.
@@ -57,15 +49,15 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 1. You will probably be on the Data Factory home page. From the bottom of the left panel, select **Data Factory icon**.
 1. Fabric experience dialog opens. Select **Power BI**. You will be navigated to **Power BI Home page**.
 
-![A screenshot of Microsoft Fabric experiences dialog](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.002.png)
+![A screenshot of Microsoft Fabric experiences dialog](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.002.png)
 
 1. Select **New Report** from the top menu.
 
-![A screenshot of Power BI home](../Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.003.png)
+![A screenshot of Power BI home](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.003.png)
 
 1. You will be navigated to **Build your first report screen**. There will be options to enter data manually and build a report or to pick a published semantic model. We have created a semantic model in the previous labs. Let’s use that. Select **Pick a published semantic model** option.
 
-![A screenshot of build first report screen](media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.004.png)
+![A screenshot of build first report screen](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.004.png)
 
 1. Pick a dataset to use in your report page opens. Notice we have four options. **Select lh\_FAIAD**:
    1. **lh\_FAIAD:** This is the lakehouse with the dataset we created and want to use for the report.
