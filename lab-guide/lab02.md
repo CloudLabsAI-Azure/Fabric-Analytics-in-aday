@@ -1,428 +1,201 @@
 # ![](../media/Aspose.Words.d9e40fe6-e088-40f4-b33d-59abff8ed5bb.001.png)
 
 # Contents
-  [Introduction](#_toc150852522)
-  
-  [Dataflow Gen 2](#_toc150852523)
-  
-  [How to create Dataflow Gen 2:](#_toc150852524)
-  
-  [How to connect to ADLS Gen2 and transform data:](#_toc150852525)
-  
-  [How to copy Queries from Power BI Desktop – Option 1:](#_toc150852526)
-  
-  [How to copy Queries from Power BI Desktop – Option 2:](#_toc150852527)
-  
-  [How to configure Data Destination:](#_toc150852528)
-  
-  [Configure Dataflow to ingest remaining queries:](#_toc150852529)
-  
-  [References](#_toc150852530)
+[Introduction](#)
 
-# <a name="_toc150852522"></a>**Introduction** 
-In our scenario, Sales Data comes from the ERP System and is stored in an ADLS Gen 2 database. It gets updated at noon every day. We need to transform and ingest this data into Lakehouse and use it in our model. 
+[Fabric License](#)
 
-There are multiple ways to ingest this data. 
+  [Task 1: Enable trial Fabric license](#)
 
-- Shortcuts: This does not provide a way to transform data. 
-- Notebooks: This requires us to write code. It is a developer-friendly approach.
-- Dataflow Gen2: You are probably familiar with Power Query or Dataflow Gen1. Dataflow Gen2, as the name indicates, is the newer version of Dataflow. It provides all the capabilities of Power Query/ Dataflow Gen1 with the added ability to transform and ingest data into multiple data sources. We are going to introduce this in the next couple of labs.
-- Data Pipeline: This is an orchestration tool.Activities can be orchestrated to extract, transform, and ingest data. We will be using Data Pipeline to execute Dataflow Gen2 activity which in turn will perform extraction, transformation and ingestion. 
-- We will start with Dataflow to create the connection to the data source and the necessary transformations. And then we will use Data Pipeline to orchestrate/execute the Dataflow.
+[Overview of Fabric Experiences:](#)
+
+  [Task 2: Data Factory Experience](#)
+  
+  [Task 3: Data Activator Experience](#)
+  
+  [Task 4: Data Engineering Experience](#)
+  
+  [Task 5: Data Science Experience](#)
+  
+  [Task 6: Data Warehouse Experience](#)
+  
+  [Task 7: Real-Time Analytics Experience](#)
+
+[Fabric Workspace](#)
+
+  [Task 8: Create a Fabric Workspace](#)
+  
+  [Task 9: Create a Lakehouse](#)
+
+[References](#)
+
+# Introduction
+Today you will learn about various key features of Microsoft Fabric. This is an introductory workshop intended to introduce you to the various product experiences and items available in Fabric. By the end of this workshop, you will learn how to use Lakehouse, Dataflow Gen2, Data Pipeline, and DirectLake feature.
 
 By the end of this lab, you will have learned: 
 
-- How to create Dataflow Gen2.
-- How to connect to ADLS Gen2 using Dataflow Gen2 and transform data.
-- How to ingest data into Lakehouse.
+  - How to create a Fabric workspace
+  - How to create a Lakehouse  
 
-# <a name="_toc150852523"></a>**Dataflow Gen 2**
-### <a name="_toc150852524"></a>How to create Dataflow Gen 2:
+# Fabric License
+### Task 1: Enable trial Fabric license
+1. Open the **browser** and navigate to https://app.powerbi.com/. You will be navigated to the login page.
+    **Note:** If you have an existing Power BI account, you may want to use the browser in private / incognito mode.
+2. Enter the **Email** provided by the instructor and click **Submit**.
 
-1. Let’s navigate back to the **Fabric workspace** you created in the earlier lab.
-1. If you have not navigated away after the previous lab, you will be in the Lakehouse screen. If you have navigated away that is fine. Select **Data Engineering** from the bottom left of your screen.
-1. A dialog box opens. Select **Data Factory**. Data Factory has workloads needed to extract, transform and ingest data.
-
-    ![A screenshot of a dialog to select Data Factory experience](../media/Picture35.png)
-
-1. You will be navigated to Data Factory page. Under New, select **Dataflow Gen2.** 
-
-    ![A screenshot of a dialog to select Dataflow Gen2](../media/Picture36.png)
-
-    You will be navigated to Dataflow page. This screen will look familiar as it is like Dataflow Gen1 or Power Query. You will notice the options to connect to various data sources are available, along with the ability to transform data. Let’s connect to ADLS Gen2 data source and perform some transformations.
-### <a name="_toc150852525"></a>How to connect to ADLS Gen2 and transform data:
-
-1. From the ribbon, select **Home -> Get data -> More…** 
-
-    ![A screenshot of Dataflow screen to select Get Data](../media/Picture37.png)
-
-1. You will be navigated to Choose data source dialog. You can search for the data source by typing in the search box. Notice, on the left panel, there are options to use a Blank table or Blank query. You will also find a new option to Upload file. We will explore this option in a later lab. For now, let’s click on **View more ->** on the right corner of your screen. 
-
-    ![A screenshot of Choose data source](../media/Picture38.png)
-
-      Now you can view all the available data sources. You have the option to filter the data sources by File, Database, Microsoft Fabric, Powe Platform, Azure etc.
-
-      ![A screenshot of available data sources](../media/Picture39.png)
-
-1. Select **Azure** from the filter to filter down to Azure data sources. 
-1. Select **Azure Data Lake Storage Gen2**.
-
-    ![A screenshot of select Azure Data Lake Storage Gen2](../media/Picture40.png)
-
-1. You will be navigated to connection screen. You need to create a connection to ADLS Gen2 data source. Under **Connection Settings -> URL** enter <https://stvnextblobstorage.dfs.core.windows.net/>
-
-    ![A screenshot of Connect to data source](../media/Picture41.png)
-
-1. Select **Account Key** from the Authentication Type drop down.
-1. Enter following in the **Account Key text box**: Lpwn8hQASMpe5r4F+VFXAvpnzKF9x9Kjt5GMvMCFWB0xCFuM4fyVwOW6rF200bTop3LpKpsIno/T+AStx6cz6w==
-
-     ![A screenshot of Connect to data source](../media/Picture42.png)
-
-1. Select **Next** on the bottom right of the screen.
-1. Once the connection is established, you will be navigated to the Preview folder data screen. There are a lot of files in the ADLS Gen2 folder. We need data from a few of them. Select **Create** to create a connection to the folder.
-
-     ![A screenshot of Preview folder data](../media/Picture43.png)
-
-1. You are back in the Power Query dialog. This will be the connection to the root folder of ADLS. We will reference this query in subsequent queries. Let’s rename the query. In the **right panel**, under **Query settings -> Properties -> Name**, change the name to **ADLS Base Folder.**
-1. All queries from Dataflow Gen2 are loaded to a Staging Lakehouse by default. Staging is used when we need to stage data to be used in further transformation before it is ready for consumption. As part of this lab, we will not be staging data. To disable this load, in the **left panel**, **right click on ADLS Base Folder** query. 
-1. **Uncheck Enable Staging** option.
-
-     ![A screenshot to disable Staging](../media/Picture44.png)
-
-    Data we need from ADLS Gen2 is located in fabrikam-sales/Delta-Parquet-Format folder. Within this folder, each dimension and fact are in a subfolder. E.g. Cities parquet file is located in fabrikam-sales/Delta-  Parquet-Format/Application.Cities. 
-
-1. Let’s add a filter. Select the **dropdown** for **Folder Path** column (you may have to scroll to the right). 
-1. Select **Text filters -> Contains.**
-
-    ![A screenshot to filter by Folder Path](../media/Picture45.png)
-
-1. Filter rows dialog opens. Enter **fabrikam-sales/Delta-Parquet-Format** (case-sensitive) in the text box for contains.
-1. Select **OK.**
-
-    ![A screenshot of Filter rows dialog](../media/Picture46.png)
+    ![Picture17](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/3995afaf-cf69-4541-894e-b2b06ee8caf5)
 
 
-    Notice there are two file formats in the folder, **json** and **parquet**.
+3. You will be navigated to the **Password** screen. Enter the password shared with you by the instructor. 
+4. Click **Sign in** and follow the prompts to sign into Fabric.
 
-    **Parquet** is an open-source file format built to handle flat columnar storage data formats. Parquet operates well with complex data in large volumes and is known for its both performant data compression and its     ability to handle a wide variety of encoding types.
+    ![Picture18](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/5428ffb9-7039-4fcc-818c-42fb5cf2b4f5)
 
-    **Json** file contains metadata like schema, data type of the parquet file.
+5. You will be navigated to the familiar **Power BI Service Home page**.
+6. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor.
 
-1. We need only the parquet file as this has the data we need. Select the **Extension** column **dropdown**.
-1. Uncheck **.json** so it is filtered down to .parquet files.
-1. Select **OK**.
+Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s do this.
 
-    ![A screenshot to filter out json files](../media/Picture47.png)
+7. On the top right corner of the screen, select the **user icon**.
+8. Select **Start trial**.
 
-     Now we have the Base query set up. We can reference this for all the queries from ADLS Gen2 source.
-
-    Sales data is available at Geography, Product, SalesPerson, Date granularity. Let’s first create a query to get Geography dimension. Geography data is available in three different files located in the following   subfolders.
-
-- Cities - Application.Cities
-- Countries -Application.Countries
-- State - Application.StateProvinces
-
-  We need to combine City, State and Country data from these three files to create the Geography dimension.
-
-1. Let’s start with City. On the left panel, **right click on ADLS Base folder**. Select **Reference** to create a new query that references ADLS Base folder query.
-
-     ![A screenshot to Reference ADLS Base folder](../media/Picture48.png)
-
-1. Select the **dropdown** for the **Folder Path** column. 
-
-    ![A screenshot to filter Folder Path](../media/Picture49.png)
-
-1. Select **Text filters -> Contains**.
-1. In the **Filter Rows dialog** enter **Application.Cities** (case-sensitive)**.**
-
-     ![A screenshot of Filter Rows dialog](../media/Picture50.png)
-
-1. Select **OK**.
-1. Data will be filtered to a single row. Select **Binary** under **Content** column.
-
-     ![Screenshot of ADLS Base Folder(2)](../media/Picture51.png)
-
-1. Notice you will see all the City details. In the **right panel**, under **Query settings -> Properties -> Name**, change the name to **Cities.** 
-
-     ![A screenshot to Rename query](../media/Picture52.png)
-
-    In the right panel, under Applied steps notice all the steps are registered. This behavior is like Power Query. Now let’s follow a similar process to create **Country** query.
-
-1. On the left panel, **right click on ADLS Base folder**. Select **Reference** to create a new query that references ADLS Base folder query.
-
-     ![A screenshot to reference ADLS Base Folder](../media/Picture53.png)
-
-1. Select the **dropdown** for the **Folder Path** column. 
-1. Select **Text filters -> Contains**.
-
-    ![A screenshot to filter by Folder Path](../media/Picture54.png)
-
-1. In the **Filter Rows dialog** enter **Application.Countries** (case-sensitive).
-1. Select **OK**.
-
-    ![A screenshot of Filter rows dialog](../media/Picture55.png)
-
-1. Data will be filtered to a single row. Select **Binary** under **Content** column.
-
-     ![Screenshot of ADLS Base Folder(2)](../media/Picture56.png)
-
-1. Notice you will see all the Country details. In the **right panel**, under **Query settings -> Properties -> Name**, change the name to **Countries**.
-
-     ![A screenshot to Rename query](../media/Picture57.png)
-
-      We need to bring in State next. But the steps are getting repetitive. We already have the queries in the Power BI Desktop file. Let’s see if we can copy over the queries from there.
-
-     **Note:** Please wait for the Countries query to finish execution before moving to the next step. This may take a couple of minutes.
-
-### <a name="_toc150852526"></a>How to copy Queries from Power BI Desktop – Option 1:
-
-1. If you have not already opened it, open **FAIAD.pbix** located in **report/FAIAD.pbix** folder of the lab material. 
-1. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
+      ![Picture19](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/9f2a3001-5e81-4bed-8408-ec4287467842)
   
-      ![A screenshot of Power BI Desktop report.](../media/Picture58.png)
+9. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Start trial**.
 
-1. From the left panel, under ADLSData folder, right click **States** query and select **Copy.**
+      ![Picture20](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/c910b821-9662-42a4-91f2-501ec2f81828)
 
-      ![A screenshot Power Query window](../media/Picture59.png)
+10. Successfully upgraded to a free Microsoft Fabric trial dialog opens. Select **Fabric Home Page**. 
 
-1. Navigate back to the **browser**. You should be in the Dataflow we were working on.
-1. On the left panel under select **Queries** panel and enter **Ctrl+V** (current right click Paste is not supported).
+    ![Picture21](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/709b1a4e-5a75-4b40-b2ab-8d010e2a8dd4)
 
-      ![A screenshot Dataflow queries](../media/Picture60.png)
 
-    Notice ADLS Base Folder (2) is copied as well. This is because States refers to ADLS Base Folder in Power BI Desktop. But we already have ADLS Base Folder. Let’s solve this.
+11. You will be navigated to the **Fabric Home page**.
 
-1. Select **States** query.
-1. From the **right panel**, under **Applied** **Steps**, select **Source**.
+    ![Picture22](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/dc8dcdc9-8b10-4e09-8c70-67f22a47a7b3)
 
-     ![A screenshot of States query Source step](../media/Picture61.png)
+# Overview of Fabric Experiences:
+### Task 2: Data Factory Experience
+1. Select **Microsoft Fabric** icon on the bottom left of your screen. A dialog with the list of Fabric experiences will open. Notice that Power BI, Data Factory and Data Activator are independent experiences. Data Engineering, Data Science, Data Warehouse, and Real-Time Analytics are Synapse experiences and these four experiences are powered by Synapse. Let’s explore.
+2. Select **Data Factory**.
 
-1. In the formula bar, change from **#"ADLS Base Folder (2)"** to **#"ADLS Base Folder"**. 
-1. Select the **check mark** next to the formula bar or hit **enter**.
+    ![Picture23](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/793c431e-6942-4e80-9bc2-774f95e60eba)
 
-      ![A screenshot of States query Source step after updating formula bar](../media/Picture62.png)
+3. You are navigated to the **Data Factory Home page**. The page contains three main sections. 
+    1. **New:** This lists the items available in Data Factory – Dataflow Gen2 and Data pipeline.
+       1. Dataflow Gen2 is the next generation of Dataflow.
+       1. Data pipeline is used for data orchestration.
+    1. **Recommended**: This section provides access to quick start learning documentation.
+    1. **Quick Access**: This section lists the recently used or favorite items.
 
-1. Now we can remove ADLS Base Folder (2). In the left panel, under **Queries** section right click **ADLS Base Folder (2)** query and select **Delete**.
+        ![Picture24](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/4cfa0615-359d-47ad-b4f3-a5432201c44b)
 
-      ![A screenshot of delete ADLS Base Folder (2) delete](../media/Picture63.png)
+### Task 3: Data Activator Experience
+1. Select **Data Factory** on the bottom left of your screen. Fabric experience dialog opens.
 
-1. Delete query dialog appears. Select **Delete** to confirm.
+     ![Picture25](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/98c00246-ad57-4b6a-873d-7e3527ad30df)
 
-### <a name="_toc150852527"></a>How to copy Queries from Power BI Desktop – Option 2:
-  Now we need to merge these queries to create Geography dimension. Let’s copy the query again from the Power BI Desktop file. This time let’s copy the code from Advanced Editor.
+2. Select **Data Activator** from the dialog. You will be navigated to **Data Activator Home page**. Data Activator is a no-code experience in Microsoft Fabric for automatically taking actions when patterns or conditions are detected in changing data. Notice the three sections are like the Data Factory experience. In the New section, notice the items:
+    1. **Reflex:** Used to monitor datasets, queries, and event streams for patterns.
+    1. **Reflex sample:** Sample solution.
 
-1. Navigate back to the **Power Query window** of the Power BI Desktop file.
-1. From the left panel, under **Queries** select **Geo** query in ADLSData folder.
-1. From the ribbon select **Home -> Advanced Editor**.
+         ![Picture26](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/b517d1b3-8fda-4df2-9a7a-8db844fb33c6)
 
-     ![A screenshot of Power Query window from Power BI Desktop](../media/Picture64.png)
+### Task 4: Data Engineering Experience
 
-1. Advanced Editor window open. **Highlight all the text** in Advanced Editor
-1. Right click and select **Copy**.
+1. Select **Data Activator** on the bottom left of your screen. Fabric experience dialog opens.
+2. Select **Data Engineering**. You will be navigated to the **Data Engineering Home page**. Again, the page contains three main sections. In the New section, notice the items: 
+   1. **Lakehouse:** Used to store big data for cleaning, querying, reporting, and sharing.
+   2. **Notebook**: Used to run queries on the data to produce shareable tables and visuals.
+   3. **Spark Job Definition**: Used to define, schedule, and manage Apache jobs.
+   4. **Data pipeline**: Used to orchestrate data solution.
+   5. **Import notebook**: Used to import notebooks from local machine.
+   6. **Use a sample**: Used to create a sample.
 
-     ![A screen shot of Advanced Editor](../media/Picture65.png)
+      ![Picture27](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/19abeee2-ff05-49fd-8c93-974ede877f61)
 
-1. Select **X** on the top right corner of the window or select **Done** to **close** Advanced Editor window.
-1. **Navigate** back to the Dataflow window in the **browser**. 
-1. From the ribbon **Get Data -> Blank query.**
+### Task 5: Data Science Experience
+1. Select **Data Engineering** on the bottom left of your screen. Fabric experience dialog opens.
+2. Select **Data Science**. You will be navigated to the **Data Science Home page**. Again, there are three sections. In the New section, notice the items:
+    1. **ML model**: Used to create machine learning models.
+    1. **Experiment**: Used to create, run, and track development of multiple models.
+    1. **Notebook**: Used to explore data and build machine learning solutions.
+    1. **Import Notebook**: Used to import notebooks from local machine.
+    1. **Sample**: Sample solution.
 
-   ![A screenshot of Get Data -> Blank Query in Dataflow](../media/Picture66.png)
+      ![Picture28](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/ad8c4969-b773-4729-ac6f-b051f6f0568d)
 
-1. Advanced Editor dialog opens. **Highlight all the text** in the editor.
-1. Select **Delete** on your keyboard to Delete all the text.
-1. Advanced Editor should be blank. Now enter **Ctrl+V** to paste the content you had copied from the Power BI Desktop’s Advanced Editor.
-1. Select **Next**.
+### Task 6: Data Warehouse Experience
+1. Select **Data Science** on the bottom left of your screen. Fabric experience dialog opens.
+2. Select **Data Warehouse**. You will be navigated to **Data Warehouse Home page**. Again, there are three sections. In the New section, notice the items. Notice Data pipeline and Dataflow Gen2 are available here as well.
+   1. **Warehouse**: Used to provide strategic insights from multiple sources.
+   2. **Sample warehouse**: Sample warehouse solution.
+   3. **Data pipeline**: Used to orchestrate data solution.
 
-     ![A screenshot of Advanced Editor](../media/Picture67.png)
+      ![Picture29](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/fd991d84-d9ba-45df-867d-0b4f3ce00174)
 
-1. Now we have the Geo dimension. Let’s rename the query. In the **right panel**, under **Query settings -> Properties -> Name**, change the name to **Geo**.
+### Task 7: Real-Time Analytics Experience
 
-      Let’s walk through the steps to understand how Geo is created. From the right panel, under Applied Steps, select Source. If you look at the formula bar or click on Settings you will notice that the Source of this   query is a join between Cities and States. As you walk through the steps, you will notice the result of the first join is in turn joined with Countries. So, all three of the queries are used to create Geo dimension.
+1. Select **Data Warehouse** on the bottom left of your screen. Fabric experience dialog opens.
+2. Select **Real-Time Analytics**. You will be navigated to **Real-Time Analytics Home page**. Again, there are three sections. In the New section, notice the items: 
+   1. **KQL Database**: Used to rapidly load structured, unstructured, and streaming data for querying.
+   2. **KQL Queryset**: Used to run queries on the data to produce shareable tables and visuals.
+   3. **Eventstream**: Used to capture, transform, and route real-time event stream.
+   4. **Use a sample**: Used to create a sample.
 
-   ![A screenshot of Formula bar for Geo query](../media/Picture68.png)
-   
-### <a name="_toc150852528"></a>How to configure Data Destination:
+      ![Picture30](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/69f664d3-c1b7-429f-b539-f3a7c5f3ff58)
 
-  Now we have a dimension let’s ingest this data into Lakehouse. This is the new feature available in Dataflow Gen2.
+# Fabric Workspace
+### Task 8: Create a Fabric Workspace
+1. Now let’s create a workspace with Fabric license. Select **Workspaces** from the left navigation bar. A dialog opens.
+2. Select **New workspace**.
 
-1. As mentioned earlier, we are not Staging any of this data. So right click on **Cities** query and select **Enable staging** to remove the check mark.
+    ![Picture31](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/1abb5726-062b-4e6f-b31d-7e64154e9a08)
 
-     ![A screenshot to disable Staging](../media/Picture69.png)
+3. **Create a workspace** dialog opens on the right side of the browser.
+4. In the **Name** field enter **FAIAD_<yourusername>**. 
+    **Note:** Workspace name must be unique. We are using FAIAD as the workspace name for this       document. However, your workspace name will be different. Make sure a green check mark with      “**This name is available**” is displayed below the Name field.
+5. If you choose, you can enter a **Description** for the workspace. This is an optional field.
+6. Click on **Advanced** to expand the section.
 
-1. Follow the same steps for **Countries**, **States and Geo** queries to remove the check mark next to **Enable staging**.
-1. Select **Geo** query.
-1. On the bottom right corner select “**+**” next to **Data destination**.
-1. Select Lakehouse from the dialog.
+    ![Picture32](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/7753b82d-3e75-44ae-ade7-922d7ce6aa82)
 
-     ![A screenshot select Data Destination](../media/Picture70.png)
+7. Under **License mode**, make sure **Trial** is selected. (It should be selected by default.)
+8. Select **Apply** to create a new workspace.
 
+     ![Picture33](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/53c16aaa-f5aa-40e1-ae81-6b3419b8320d)
 
-1. Connect to data destination dialog opens. We need to create a new Connection to the Lakehouse. With **Create new connection** selected in the **Connection dropdown** and **Authentication kind** set to   **Organizational account**, select **Next**.
+    A new workspace is created, and you will be navigated into this workspace. We will bring data from the different data sources into Lakehouse and use the data from the Lakehouse to build our model and report on it. The first step is to create a Lakehouse.
 
-     ![A screenshot of Connect to data destination](../media/Picture71.png)
+### Task 9: Create a Lakehouse
+1. Select **Real-Time Analytics** on the bottom left of your screen. Fabric experience dialog opens.
+2. Select **Data Engineering** to be navigated to Data Engineering Home page.
 
-1. Once connection is created, Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
-1. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> <your workspace name>.** 
-1. Select **lh\_FAIAD.**
-1. We can leave the table name as **Geo**.
-1. Select **Next**.
+    ![Picture34](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/5d99fdea-b065-4fe7-af9c-c3e7fee8a0c2)
 
-     ![A screenshot to Choose destination target](../media/Picture72.png)
+3. Select **Lakehouse**.
 
-1. Choose destination settings dialog opens. Every time Dataflow Gen2 is refreshed we would like to perform a full load. Make sure Update method is set to **Replace**.
-1. Notice there is a warning. Lakehouse does not support column names with space in it. Select **Fix it**, to fix the warning.
+    ![Picture35](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/3ee5be4a-be9b-4cce-bf4b-9587895bfa1c)
 
-    Notice you also have an option to Append data. If you select this, every time dataflow is refreshed, new data is appended to existing data.
+4. New lakehouse dialog opens. Type **lh_FAIAD** in the Name textbox. 
+    **Note**: lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.
+5. Select **Create**.
 
-      ![A screenshot to Choose destination settings](../media/Picture73.png)
+    ![Picture36](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/13961927-fea2-485f-8d53-ca04a496915f)
 
-1. Column mapping can be used to map dataflow columns to existing columns. In our case, it is a New Table. Hence, we can use the defaults. Select **Save settings**.
+Within a few moments, a Lakehouse is created, and you will be navigated to the Lakehouse interface. On the **left panel**, notice that below your workspace, you will have the Lakehouse icon. You can easily navigate to the Lakehouse by clicking on this icon at any time.
 
-    **Note:** If you do not want some of the columns in the Lakehouse, use the check box to the right of Source column to uncheck the columns you do not need.
+Within the Lakehouse explorer you will notice **Tables** and **Files**. Lakehouse could expose Azure Data Lake Gen2 files under the files section, or a dataflow could load data to Lakehouse tables. There are various options available. We are going to show you some of the options as in the following labs.
 
-1. You will be navigated back to Power Query window. Notice on the bottom **right corner**, Data destination is set to Lakehouse.
-1. Let’s Publish these queries so we can review	 the Lakehouse. We will come back to add more queries. On the bottom right corner, select **Publish**.
+   ![Picture37](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/c610b936-304c-431c-87ed-72def4c4ba1d)
 
-     ![A screenshot to Publish Dataflow](../media/Picture74.png)
+  In this lab, we explored the Fabric interface, created a Fabric workspace, and a Lakehouse. In the next lab, we will learn how to use Dataflow Gen2 to connect to ADLS Gen2 to extract, transform, and ingest data into the Lakehouse.
 
-1. You will be navigated back to Data Factory screen. It may take a few moments for the Dataflow to Publish. Once done, select **lh\_FAIAD Lakehouse.**
+# References
+Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
 
-      ![A screenshot to select Lakehouse](../media/Picture75.png)
+  ![Picture38](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/a1caeee4-9c00-4538-b506-aedbe4b62445)
 
-1. You will be navigated to Lakehouse Explorer screen. In the left panel, expand **lh_FAIAD -> Tables**.
-1. Notice we have **Geo** table in the Lakehouse now. Expand **Geo** and notice all the columns. 
-1. **Select Geo** table and the data preview will open in the right panel.
-
-     ![A screenshot to explore Lakehouse tables](../media/Picture76.png)
-
-     There is a SQL Endpoint as well, which can be used to query this table. We will look at this option in a later lab. Now that we know Geo data is landed in Lakehouse, let’s bring the rest of the data from ADLS.
-  ### <a name="_toc150852529"></a>Configure Dataflow to ingest remaining queries:
-
-1. In the left menu bar, select **<your workspace name>** to be navigated back to the **workspace**.
-1. We are working with Dataflow 1. Let’s rename it before we continue. Click on the **ellipsis** next to Dataflow 1. Select **Properties**.
-
-     ![A screenshot to select Dataflow1 Properties](../media/Picture77.png)
-
-1. Dataflow properties dialog opens. Change the **name** to **df_Sales_ADLS**.
-
-      Note: We are prepending Dataflow name with “**df**”. This will make it easy to search and sort.
-
-1. In Description text box add, **Dataflow to ingest Sales Data from ADLS to Lakehouse**.
-1. Select **Save**.
-
-      ![A screenshot Dataflow Properties dialog](../media/Picture78.png)
-
-1. You will be navigated back to the Data Factory screen. Select Dataflow **df_Sales_ADLS** to navigate back into the dataflow.
-
-      ![A screenshot to select df_Sales_ADLS](../media/Picture79.png)
-
-      To make things easy, let’s see if we can copy over the queries from Power BI Desktop.
-
-1. If you have not already opened it, open **FAIAD.pbix** located in **report/FAIAD.pbix** folder of the lab material.
-1. From the ribbon select **Home -> Transform**. Power Query window opens.
-1. From the **Queries** panel on the left, **Ctrl+Select** following queries from **ADLSData**.
-   1. **Product**
-   1. **Product Groups**
-   1. **Product Item Group**
-   1. **Product Details**
-   1. **Invoice**
-   1. **InvoiceLineItems**
-   1. **Sales**
-   1. **BuyingGroup**
-   1. **Reseller**
-   1. **Date**
-
-     ![A screenshot to copy queries from Power Query window](../media/Picture80.png)
-
-1. **Right click** and select **Copy**.
-1. Navigate back to **df_Sales_ADF** Dataflow window of the **browser**.
-1. On the left panel under select **Queries** panel and enter **Ctrl+V** (current right click Paste is not supported).
-
-     ![A screenshot to paste queries in Dataflow](../media/Picture81.png)
-
-    Now let’s follow the steps we took earlier. Remove the reference to ADLS Base Folder (2) and use ADLS Base Folder.
-
-1. Select **Product** query.
-1. From the right panel, under **Applied Steps**, select **Source**.
-1. In the formula bar, change from **#"ADLS Base Folder (2)" to #"ADLS Base Folder"**.
-1. Select the **check mark** next to the formula bar or hit enter.
-
-     ![A screenshot of formula bar for Product query](../media/Picture82.png)
-
-1. Perform the same action of replacing reference to **#"ADLS Base Folder (2)"** with **#"ADLS Base Folder"** for the following queries.
-   1. **Product Groups**
-   1. **Product Item Group**
-   1. **Product Details**
-   1. **Invoice**
-   1. **InvoiceLineItems**
-   1. **BuyingGroup**
-   1. **Reseller**
-   1. **Date**
-1. Now we can remove ADLS Base Folder (2). In the left panel, under Queries section **right click ADLS Base Folder (2)** query and select **Delete**.
-1. Delete query dialog appears. Select **Delete** to confirm.
-
-     ![A screenshot to Delete ADLS Base Folder (2) query](../media/Picture83.png)
-
-1. As mentioned earlier, we do are not Staging any of this data. So **right click** on following queries and select **Enable staging** to remove the check mark.
-   1. Product
-   1. Product Details
-   1. Reseller
-   1. Date
-   1. Sales
-
-    **Note**: If load is disabled in Power BI Desktop, we do not have to disable staging in Dataflow. Hence, we do not have to disable staging for Product Item Group, Product Groups, etc.
-
-     ![A screenshot to disable Staging](../media/Picture84.png)
-
-    Now let’s ingest this data into Lakehouse
-
-1. Select **Product** query.
-1. On the bottom right corner select “**+**” next to **Data destination**.
-1. Select **Lakehouse** from the dialog.
-
-     ![A screenshot configure Data Destination for Product query](../media/Picture85.png)
-
-1. Connect to data destination dialog opens. From the **Connection dropdown** select **Lakehouse (none)**.
-
-     ![A screenshot of Connect to data destination](../media/Picture86.png)
-
-1. Select **Next**.
-1. Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
-1. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> <your workspace name>.** 
-1. Select **lh\_FAIAD.**
-1. We can leave the table name as **Product**.
-1. Select **Next**.
-
-      ![A screenshot of Choose destination target](../media/Picture87.png)
-
-1. Choose destination settings dialog opens. Every time Dataflow Gen2 is refreshed we would like to perform a full load. Make sure Update method is set to **Replace**.
-1. Notice there is a warning. Lakehouse does not support column names with space in it. Select **Fix it**, to fix the warning.
-
-     ![A screenshot of Choose destination settings](../media/Picture88.png)
-
-1. Column mapping can be used to map dataflow columns to existing columns. In our case, it is a New Table. Hence, we can use the defaults. Select **Save settings**.
-1. You will be navigated back to Power Query window. Notice on the bottom **right corner**, Data destination is set to **Lakehouse**.
-1. Similarly, set the **Data Destination** for the following queries.
-   1. **Product Details**
-   1. **Reseller**
-   1. **Date**
-   1. **Sales**
-
-     We have a data flow that ingests data from ADLS into Lakehouse. Let’s go ahead and publish this dataflow. 
-
-1. Select **Publish** in the bottom right corner.
-
-      ![A screenshot of dataflow to Publish](../media/Picture89.png)
-
-     You will be navigated back to Data Factory page. It will take a few minutes for the dataflow to refresh.
-
-     In the next lab, we will ingest data from the other data sources.
-
-# <a name="_toc150777627"></a><a name="_toc150852530"></a>**References**
-
-Fabric Analyst in a Day introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help section has links to some great resources.
-
-   ![A screenshot of help options](../media/Picture90.png)
 
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
@@ -433,6 +206,7 @@ Here are a few more resources that will help you with your next steps with Micro
 - Learn new skills by exploring the [Fabric Learning modules](https://aka.ms/learn-fabric)
 - Explore the [Fabric technical documentation](https://aka.ms/fabric-docs)
 - Read the [free e-book on getting started with Fabric](https://aka.ms/fabric-get-started-ebook)
+- Join the [Fabric community](https://aka.ms/fabric-community) to post your questions, share your feedback, and learn from others
 
 Read the more in-depth Fabric experience announcement blogs:
 
@@ -448,3 +222,12 @@ Read the more in-depth Fabric experience announcement blogs:
 - [Dataverse and Microsoft Fabric integration blog](https://aka.ms/Dataverse-Fabric-Blog)
 
 © 2023 Microsoft Corporation. All rights reserved.
+By using this demo/lab, you agree to the following terms:
+The technology/functionality described in this demo/lab is provided by Microsoft Corporation for purposes of obtaining your feedback and to provide you with a learning experience. You may only use the demo/lab to evaluate such technology features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell this demo/lab or any portion thereof.
+COPYING OR REPRODUCTION OF THE DEMO/LAB (OR ANY PORTION OF IT) TO ANY OTHER SERVER OR LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS EXPRESSLY PROHIBITED.
+THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT.
+FEEDBACK. If you give feedback about the technology features, functionality and/or concepts described in this demo/lab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.
+MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE DEMO/LAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY, WHETHER EXPRESS, IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. MICROSOFT DOES NOT MAKE ANY ASSURANCES OR REPRESENTATIONS WITH REGARD TO THE ACCURACY OF THE RESULTS, OUTPUT THAT DERIVES FROM USE OF DEMO/ LAB, OR SUITABILITY OF THE INFORMATION CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
+DISCLAIMER
+This demo/lab contains only a portion of new features and enhancements in Microsoft Power BI. Some of the features might change in future releases of the product. In this demo/lab, you will learn about some, but not all, new features.
+
