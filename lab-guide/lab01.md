@@ -146,9 +146,9 @@ Notice the margin % is 52%, which is above the average of 50%. Also, the Sales Y
    Now we know what we are dealing with. In the following labs, we will create a similar Power      Query using Dataflow Gen2 and model using Lakehouse.
 
 # References
-   Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has           links to some great resources.
-   
-  ![Picture16](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/13178b86-b21e-4cd1-b34f-4ce4682d1de8)
+Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has           links to some great resources.
+
+   ![Picture16](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/13178b86-b21e-4cd1-b34f-4ce4682d1de8)
 
 
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
