@@ -3,188 +3,150 @@
 # ![](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.001.png)
 
 # Contents
-[Introduction](#Introduction)
+[Document Structure](#DocumentStructure)
 
-[Fabric Workspace](#FabricWorkspace)
+[Scenario / Problem Statement](#Scenario/ProblemStatement)
 
-[How to create trial Fabric workspace](#HowtocreatetrialFabricworkspace)
+[Overview of Power BI Desktop Report](#OverviewofPowerBIDesktopReport)
 
-[Overview of Fabric Experiences](#OverviewofFabricExperiences)
-
-[How to create a New workspace:](#_toc150852465)
-
-[How to create a Lakehouse:](#_toc150852466)
-
-[References](#_toc150852467)
-
-
-
-# Introduction
-Today you will learn about various key features of Fabric. This is an introductory course intended to expose you to the various product experiences and items available in Fabric.  By the end of this workshop you will learn how to use Lakehouse, Dataflow Gen 2, Data Pipeline, and use DirectLake feature.
-
-By the end of this lab, you will have learned: 
-
-- How to create a Fabric workspace
-- How to create a Lakehouse  
-
-# Fabric Workspace
-### How to create trial Fabric workspace:
-
-1. Open the **browser** and navigate to <https://app.powerbi.com/>. You will be navigated to the login page.
-   Note: If you have an existing Power BI account, you may want to use the browser in private/incognito mode.
-1. Enter the **Email** provided by the instructor and click **Submit.**
-
-   ![A screenshot of create account page](../media/Picture14.png)
-
-1. You will be navigated to the **password** screen. Enter the password shared with you by the instructor. 
-1. Click **Sign in** and follow the prompts to sign in to Fabric.
-
-   ![A sceenshot of the enter password page](../media/Picture15.png)
-
-1. You will be navigated to the familiar **Power BI Service landing page**.
-1. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor.
-
-Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s do this.
-
-1. On the top right corner of the screen, select the **user** **icon**.
-1. Select **Start trial**.
-
-   ![A screenshot of start trial](../media/Picture16.png)
-
-1. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Start trial**.
-
-   ![A screenshot of upgrade to free trial](../media/Picture17.png)
-
-1. Once successful, select **Stay in the current workspace.**
-
-   ![A screenshot of Fabric experiences options](../media/Picture18.png)
-
-
-### Overview of Fabric Experiences:
-
-1. Select **Power BI** on the bottom left of your screen. A dialog with the list of Fabric experiences will open. Let’s explore these.
-1. Select Data Factory.
+[Task 1: Set up Power BI Desktop in Lab environment](#Task1:SetupPowerBIDesktopinLabenvironment)
    
-   ![A screenshot of a dialog to select Data Factory experience](../media/Picture19.png)
+[Task 2: Analyze Power BI Desktop Report](#Task2:AnalyzePowerBIDesktopReport)
    
-1. You are navigated to Data Factory Home page. The page contains 3 main sections. 
-   1. New: This lists the items available in Data Factory – Dataflow Gen2 and Data pipeline.
-      1. Dataflow Gen2 is the next generation of Dataflow.
-      1. Data pipeline is used for data orchestration.
-   1. Recommended: This section provides access to quick start learning documentation.
-   1. Quick Access: This section lists the recently used or favorite items.
-      ![A screenshot of Data Factory Home page](../media/Picture20.png)
+[Task 3: Review Power Queries](#Task3:ReviewPowerQueries)
+   
+[References](#References)
 
-1. Select **Data Factory** on the bottom left of your screen. Fabric experience dialog opens.
-   
-      ![A screenshot of dialog to select Data Activator](../media/Picture21.png)
 
-   
-1. Select **Data Activator** from the dialog. You will be navigated to Data Activator Home. Data Activator is a no-code experience in Microsoft Fabric for automatically taking actions when patterns or conditions are detected in changing data. Notice the 3 sections are like Data Factory experience. In the New section notice the items.
-   1. **Reflex:** Used to monitor datasets, queries and event streams for patterns.
-   1. **Reflex sample:** Sample solution.
 
-        ![A screenshot of Data Activator Home page](../media/Picture22.png)
+# Document Structure
+The lab includes steps for the user to follow along with associated screenshots that provide visual aid. In each screenshot, sections are highlighted with orange boxes to indicate the area(s) user should focus on.
+
+# Scenario / Problem Statement
+Fabrikam, Inc. is a wholesale novelty goods distributor. As a wholesaler, Fabrikam’s customers are mostly companies who resell to individuals. Fabrikam sells to retail customers across the United States including specialty stores, supermarkets, computing stores and tourist attraction shops. Fabrikam also sells to other wholesalers via a network of agents who promote the products on Fabrikam’s behalf. While all Fabrikam's customers are currently based in the United States, the company is intending to push for expansion into other countries / regions.
+
+You are a Data Analyst in the Sales team. You collect, clean, and interpret data sets to solve business problems. You also put together visualizations like charts and graphs, write reports, and present them to the decision-makers in the organization.
+
+In order to draw valuable insights from the data, you pull data from multiple systems, clean it and mash it up together. You pull data from the following sources:
+
+- **Sales Data:** comes from the ERP system and data is stored in an ADLS Gen2 database or             Databricks. It gets updated at noon / 12 PM every day.
+- **Supplier Data:** comes from different suppliers and data is stored in a Snowflake database.        It gets updated at midnight / 12 AM every day.
+- **Customer Data:** comes from Customer Insights and data is stored in Dataverse. The data is         always up to date.
+- **Employees Data:** comes from the HR system; it is stored as an export file in a SharePoint         folder. It gets updated every morning at 9 AM.
+
+   ![Picture1FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/e236d8ac-890d-4f7b-93f5-e8d163e3b878)
+  
+You are currently building a dataset on Power BI Premium that pulls the data from the above source systems order to satisfy your reporting needs as well as provide end users with the ability to self-serve. You use Power Query to update your model. 
+
+**You are facing the following challenges:**
+   - You need to refresh your dataset at least three times a day to accommodate the different         update times for the different data sources.
+   - Your refreshes take a long time as you need to do a full refresh every time to capture any       updates that happened to the source systems.
+   - Any errors in any of the data sources that you are pulling from will result in your dataset      refresh breaking. A lot of times the employee file does not upload on time resulting in          your dataset refresh breaking.
+   - It takes a very long time to make any changes to your data model as Power Query takes a          long time to refresh your previews, given the large data sizes and complex transformations.
+   - You need a Windows PC to use Power BI Desktop even though the corporate standard is Mac.
+You heard about Microsoft Fabric, and decided to try it to see if it will address your challenges.
+
+# Overview of Power BI Desktop Report
+Before we start with Fabric, let’s look at the current Report in Power BI Desktop to understand the transformations and the model.
+### Task 1: Set up Power BI Desktop in Lab environment
+1. Open the **FAIAD.pbix** located in the **Report** folder on the **Desktop** of your lab environment. The file will open in Power BI Desktop.
+
+    ![Picture2FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/ce64a7c3-6bb5-45d0-8ced-fc923145805c)
+
+3. Enter your email address dialog opens. Navigate to **Environment Details** tab on the right panel in the lab environment.
+4. Copy the **Username Credentials** and paste it in the Email textbox of the dialog.
+5. Select **Continue**.
+
+    ![Picture3FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/ab7ccb1c-d41b-41c3-86e6-baccf6506361)
+6. Let’s get you signed in dialog opens. Select **Work or school account**.
+7. Select **Continue**.
+
+      ![Picture4FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/d1908a37-3197-4c08-9fe6-73dfcb91f997)
+8. Sign in dialog opens. Reenter the **Username Credentials** by copying it from the **Environment Details** tab.
+9. Select **Next**.
+      ![Picture5FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/a3931a21-f2a9-48bd-8807-306f300a4c45)
+10. In the next dialog, reenter the **Password Credentials** by copying it from the **Environment Details** tab.
+11. Select **Sign in**.
+12. Action Required dialog opens requesting to set up multifactor authentication. We do not need to set this up, since this is a lab environment. Select **Ask Later**.
+    
+      ![Picture6FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/999ecb8b-4854-4a3a-84f3-bd85e3daa77b)
+13. Select **No, sign in the app** only in the next dialog. Power BI Desktop will now open.
+
+### Task 2: Analyze Power BI Desktop Report
+The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of the page. The remaining visuals highlight Sales over time, by Territory, Product Group, and Reseller Company. 
+
+   ![Picture7FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/1ad8a0d4-5f3b-4dd4-ab15-9b6212a92de8)
+
+   **Note:** In this training, we are focusing on data acquisition, transformation, and modeling using tools available in Fabric. We will not be focusing on report development or navigation. Let’s spend a couple of minutes understanding the report and move to the next steps.
+
+1. Let’s analyze data by Sales Territory. Select **New England from the Sales Territory** (Scatter plot) visual.
+Notice from the Sales over time, Reseller Tailspin Toys has more sales compared to Wingtip Toys in New England. If you look at the Sales YoY% column chart you will notice that Wingtip Toys sales growth has been low and declining quarter over quarter during the past year. After a small rebound in Q3 it went down again in Q4. 
+
+      ![Picture8FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/b3f38036-16cb-4896-a851-7ff0aefc7c0d)
    
-1. Select **Data Activator** on the bottom left of your screen. Fabric experience dialog opens.
-1. Select **Data Engineering**. In the New section notice the items. 
-   1. **Lakehouse:** Used to store big data for cleaning, querying, reporting, sharing.
-   1. **Notebook:** Used to run queries on the data to produce shareable tables and visuals.
-   1. **Spark Job Definition:** Used to define, schedule and manage apache jobs.
-   1. **Data pipeline:** Used to orchestrate data solution.
-   1. **Import notebook:** Used to import notebooks from local machine.
-   1. **Use a sample:** Used to create a sample.
+3. Let’s compare this to the Rocky Mountain territory. Select Rocky Mountain from Sales Territory (Scatter plot) visual.
+Notice in the Sales YoY% column chart, sales for Wingtip Toys has increased dramatically in 2022 Q4 after being low for the previous two quarters.
+
+      ![Picture9FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/ac85d3d3-3aff-4229-aaf3-302c0dc07506)
+   
+4. Select **Rocky Mountain from Sales Territory** to remove the filter.
+5. From the Scatter plot on the bottom center of the screen (Sales Orders by Sales) select the outlier on the top right (4th quadrant).
+Notice the margin % is 52%, which is above the average of 50%. Also, the Sales YoY% has gone up the last 2 quarters of 2022.
+
+      ![Picture10FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/f0fc3e03-dcd3-47c6-9a34-a5bbd5d196b8)
+
+5. Select the outlier Reseller in the scatter plot to **remove the filter**.
+6. Let’s get the Product details by Product Group and Reseller. From the Sales by Product Group and Reseller Company bar chart, **right click on the Packaging Materials bar for Tailspin Toys** and from the dialog select **Drill through -> Product Details**.
+
+      ![Picture11FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/6b27ccc9-bc40-43b1-a447-0ded3660642c)
+
+   You will be navigated to the page which provides the Product Details. Notice there are some       future orders in place as well.
+7. Once you are done reviewing this page, select the **Ctrl+back arrow** on the top right of the page to be navigated back to the Sales Report.
       
-      ![A screenshot of Data Engineering Home page](../media/Picture23.png)
+      ![Picture12FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/6ff10b89-9d8f-4b2b-bf76-be3d2c1608ab)
+
+8. Feel free to further analyze the report. Once ready let’s look at the model view. From the left panel, select **Model view icon**. Notice there are two fact tables, Sales and PO. 
+   1. Granularity of Sales data is by Date, Reseller, Product, and People. Date, Reseller,             Product, and People connect to Sales.
+   1.  Granularity of PO data is by Date, Product, and People. Date, Product, and People connect        to PO.
+   1. 	We have Supplier data by Product. Supplier connects to Product.
+   1. 	We have Reseller’s location data by Geo. Geo connects to Reseller.
+   1. 	We have Customer information by Reseller. Customer connects to Reseller.
+
+### Task 3: Review Power Queries
+1. Let’s look at Power Query to understand the data sources. From the ribbon select **Home -> Transform data**.
+
+      ![Picture13FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/fbfb74a2-d328-4a18-bb6a-7e6fec6d2f82)
+
+2. Power Query window opens. From the ribbon, select **Home -> Data source settings**. Data source settings dialog opens. Notice we have four data sources as mentioned in the problem statement:
+   1.	Snowflake
+   1.	SharePoint
+   1.	ADLS Gen2
+   1.	Dataverse
+3. Select **Close** to close the Data source settings dialog.
+
+      ![Picture14](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/1554d26b-b4b4-4dfd-950c-7e875c67b39a)
+
+4. In the left Queries panel, notice the queries are grouped by data source. 
+5. Notice **DataverseData** folder has Customer data available in four different queries, BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create Customer query.
+
+      ![Picture15](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/7b261b69-164a-4ed1-9cba-bf0839969f77)
+
+6. Notice ADLSData folder has multiple dimensions: Geo, Product, Reseller, and Date. It also has Sales fact.
+   1.	Geo dimension is created by merging data from Cities, Countries, and States query. 
+   1.	Product dimension is created by merging data from Product Groups and Product Item Group query.
+   1.	Reseller dimension is filtered using BuyingGroup query.
+   1.	Sales fact is created by merging InvoiceLineItems with Invoice query.
+7. Notice SnowflakeData folder has Supplier dimension and PO (Order / Spend) fact.
+   1.	Supplier dimension is created by merging Suppliers query with SupplierCategories query.
+   1.	PO fact is created by merging PO with PO Line Items query.
+8. Notice SharepointData folder has People dimension.
+   Now we know what we are dealing with. In the following labs, we will create a similar Power      Query using Dataflow Gen2 and model using Lakehouse.
+
+# References
+Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
       
-   1. Select **Data Engineering** on the bottom left of your screen. Fabric experience dialog opens.
-   1. Select **Data Science**. You will be navigated to Data Science Home. Again, there are 3 sections. In the New 
-      section notice the items.
-   1. **Model:** Used to create machine learning models.
-   1. **Experiment:** Used to create, run and track development of multiple models.
-   1. **Notebook:** Used to explore data and build machine learning solutions.
-   1. **Import Notebook:** Used to import notebooks from local machine.
-   1. **Sample:** Sample solution.
-      
-      
-      ![A screenshot of Data Science Home page](../media/Picture24.png)
-      
-   
-1. Select **Data Science** on the bottom left of your screen. Fabric experience dialog opens.
-1. Select **Data Warehouse**. You will be navigated to Data Warehouse Home. Again, there are 3 sections. In the New section notice the items. Notice Data pipeline and Dataflow Gen2 are available here as well.
-   1. **Warehouse:** Used to provide strategic insights from multiple sources.
-   1. **Sample warehouse:** Sample warehouse solution.
-   1. **Data pipeline:** Used to orchestrate data solution.
-   1. **Dataflow Gen2:** Next generation of Dataflow.
-      
-      
-      ![A screenshot of Data Warehouse Home page](../media/Picture25.png)
-      
-   
-1. Select **Data Warehouse** on the bottom left of your screen. Fabric experience dialog opens.
-1. Select **Real-Time Analytics**. You will be navigated to Real-Time Analytics Home. Again, there are 3 sections. In the New section notice the items. 
-   1. **KQL Database:** Used to rapidly load structured, unstructured, and streaming data for querying.
-   1. **KQL Queryset:** Used to run queries on the data to produce shareable tables and visuals.
-   1. **Eventstream:** Used to capture, transform and route real time event stream.
-   1. **Use a sample:** Used to create a sample.
-      
-      
-      ![A screenshot of Real Time Analytics Home page](../media/Picture26.png)
+   ![Picture16](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/13178b86-b21e-4cd1-b34f-4ce4682d1de8)
 
-
-<a name="_toc150852465"></a>**How to create a New workspace:**
-
-1. Now let’s create a workspace with Fabric license. Select **Workspaces** from the left navigation bar. A dialog opens.
-1. Select **New workspace**.
-
-   ![A screenshot of New workspace dialog](../media/Picture27.png)
-
-1. **Create a workspace** dialog opens on the right side of the browser.
-1. In the **Name** field enter **FAIAD_yourusername**. Note: Workspace name must be unique. We are using FAIAD as the workspace name for this document. However, your workspace name will be different. Make sure a green check mark with “**This name is available**” is displayed below the Name field.
-1. If you choose to, you can enter a **Description** for the workspace. This is an optional field.
-1. Click on **Advanced** to expand the section.
-
-      ![A screenshot of New workspace dialog](../media/Picture28.png)
-
-1. Under **License mode**, make sure **Trial** is selected. (It should be selected by default)
-1. Select **Apply** to create a new workspace.
-
-      ![A screenshot to select trial license](../media/Picture29.png)
-
-      A new workspace is created, and you will be navigated into this workspace. We will bring data from the different       data sources into Lakehouse and use the data from the Lakehouse to build our model and report on it. The first          step is to create a Lakehouse.
-   
-### <a name="_toc150852466"></a>**How to create a Lakehouse:**
-
-1. Select **Real-Time Analytics** on the bottom left of your screen. Fabric experience dialog opens.
-1. Select **Data Engineering** to be navigated to Data Engineering experience.
-   
-   
-      ![A screenshot of dialog to select Data Engineering](../media/Picture30.png)
-
-1. Select **Lakehouse**.
-
-     ![A screenshot of Data Engineering home page](../media/Picture31.png)
-
-4. A dialog requesting **Lakehouse Name** opens. Enter **lh\_FAIAD**.
-   - Note: lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.
-5. Select **Create**.
-
-      ![A screenshot of dialog to name the Lakehouse](../media/Picture32.png)
-
-      Within a few moments, a Lakehouse is created, and you will be navigated to the Lakehouse interface.
-
-      On the **left panel**, notice that below your workspace, you will have the Lakehouse icon. You can easily       navigate to the Lakehouse by clicking on this icon at any time.
-
-      Within the Lakehouse explorer you will notice **Tables** and **Files**. Lakehouse could expose Azure Data Lake          Gen2 files under the files section, or a dataflow could load data to Lakehouse tables. There are    various             options available. We are going to show you some of the options as in the following labs.
-   
-     ![A screenshot of LakeHouse](../media/Picture33.png)
-
-    In this lab, we explored the Fabric interface, created a Fabric workspace and a Lakehouse. In the next lab, we will learn how to use Dataflow Gen2 to connect to ADLS Gen2 to extract, transform and ingest data into the Lakehouse.
-
-# <a name="_toc150852467"></a>**References**
-Fabric Analyst in a Day introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help section has links to some great resources.
-
-   ![A screenshot of help options](../media/Picture34.png)
 
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
@@ -195,6 +157,7 @@ Here are a few more resources that will help you with your next steps with Micro
 - Learn new skills by exploring the [Fabric Learning modules](https://aka.ms/learn-fabric)
 - Explore the [Fabric technical documentation](https://aka.ms/fabric-docs)
 - Read the [free e-book on getting started with Fabric](https://aka.ms/fabric-get-started-ebook)
+- Join the [Fabric community ](https://aka.ms/fabric-community) to post your questions, share      your feedback, and learn from others
 
 Read the more in-depth Fabric experience announcement blogs:
 
@@ -210,3 +173,19 @@ Read the more in-depth Fabric experience announcement blogs:
 - [Dataverse and Microsoft Fabric integration blog](https://aka.ms/Dataverse-Fabric-Blog)
 
 © 2023 Microsoft Corporation. All rights reserved.
+By using this demo/lab, you agree to the following terms:
+
+The technology/functionality described in this demo/lab is provided by Microsoft Corporation for purposes of obtaining your feedback and to provide you with a learning experience. You may only use the demo/lab to evaluate such technology features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell this demo/lab or any portion thereof.
+
+COPYING OR REPRODUCTION OF THE DEMO/LAB (OR ANY PORTION OF IT) TO ANY OTHER SERVER OR LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS EXPRESSLY PROHIBITED.
+
+THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT.
+
+**FEEDBACK.** If you give feedback about the technology features, functionality and/or concepts described in this demo/lab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.
+
+MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE DEMO/LAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY, WHETHER EXPRESS, IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. MICROSOFT DOES NOT MAKE ANY ASSURANCES OR REPRESENTATIONS WITH REGARD TO THE ACCURACY OF THE RESULTS, OUTPUT THAT DERIVES FROM USE OF DEMO/ LAB, OR SUITABILITY OF THE INFORMATION CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
+
+**DISCLAIMER**
+
+This demo/lab contains only a portion of new features and enhancements in Microsoft Power BI. Some of the features might change in future releases of the product. In this demo/lab, you will learn about some, but not all, new features.
+
