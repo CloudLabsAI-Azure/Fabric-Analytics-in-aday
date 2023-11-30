@@ -32,7 +32,7 @@ In order to draw valuable insights from the data, you pull data from multiple sy
 - **Customer Data:** comes from Customer Insights and data is stored in Dataverse. The data is         always up to date.
 - **Employees Data:** comes from the HR system; it is stored as an export file in a SharePoint         folder. It gets updated every morning at 9 AM.
 
-   ![Picture1FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/e236d8ac-890d-4f7b-93f5-e8d163e3b878)
+     ![Picture1FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/e236d8ac-890d-4f7b-93f5-e8d163e3b878)
   
 You are currently building a dataset on Power BI Premium that pulls the data from the above source systems order to satisfy your reporting needs as well as provide end users with the ability to self-serve. You use Power Query to update your model. 
 
@@ -49,36 +49,36 @@ Before we start with Fabric, let’s look at the current Report in Power BI Desk
 ### Task 1: Set up Power BI Desktop in Lab environment
 1. Open the **FAIAD.pbix** located in the **Report** folder on the **Desktop** of your lab environment. The file will open in Power BI Desktop.
 
-    ![Picture2FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/ce64a7c3-6bb5-45d0-8ced-fc923145805c)
+      ![Picture2FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/ce64a7c3-6bb5-45d0-8ced-fc923145805c)
 
 3. Enter your email address dialog opens. Navigate to **Environment Details** tab on the right panel in the lab environment.
 4. Copy the **Username Credentials** and paste it in the Email textbox of the dialog.
 5. Select **Continue**.
 
-    ![Picture3FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/ab7ccb1c-d41b-41c3-86e6-baccf6506361)
-6. Let’s get you signed in dialog opens. Select **Work or school account**.
-7. Select **Continue**.
+      ![Picture3FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/ab7ccb1c-d41b-41c3-86e6-baccf6506361)
+   
+7. Let’s get you signed in dialog opens. Select **Work or school account**.
+8. Select **Continue**.
 
       ![Picture4FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/d1908a37-3197-4c08-9fe6-73dfcb91f997)
-8. Sign in dialog opens. Reenter the **Username Credentials** by copying it from the **Environment Details** tab.
-9. Select **Next**.
+   
+10. Sign in dialog opens. Reenter the **Username Credentials** by copying it from the **Environment Details** tab.
+11. Select **Next**.
     
-      ![Picture5FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/a3931a21-f2a9-48bd-8807-306f300a4c45)
+       ![Picture5FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/a3931a21-f2a9-48bd-8807-306f300a4c45)
 
-11. In the next dialog, reenter the **Password Credentials** by copying it from the **Environment Details** tab.
-12. Select **Sign in**.
-13. Action Required dialog opens requesting to set up multifactor authentication. We do not need to set this up, since this is a lab environment. Select **Ask Later**.
+12. In the next dialog, reenter the **Password Credentials** by copying it from the **Environment Details** tab.
+13. Select **Sign in**.
+14. Action Required dialog opens requesting to set up multifactor authentication. We do not need to set this up, since this is a lab environment. Select **Ask Later**.
     
-      ![Picture6FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/999ecb8b-4854-4a3a-84f3-bd85e3daa77b)
+       ![Picture6FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/999ecb8b-4854-4a3a-84f3-bd85e3daa77b)
     
-14. Select **No, sign in the app** only in the next dialog. Power BI Desktop will now open.
+15. Select **No, sign in the app** only in the next dialog. Power BI Desktop will now open.
 
 ### Task 2: Analyze Power BI Desktop Report
- The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of the page. The remaining visuals highlight Sales over time, by Territory, Product         Group, and Reseller Company. 
-
-   ![Picture7FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/1ad8a0d4-5f3b-4dd4-ab15-9b6212a92de8)
-
-   **Note:** In this training, we are focusing on data acquisition, transformation, and modeling using tools available in Fabric. We will not be focusing on report development or navigation. Let’s spend a couple of minutes understanding the report and move to the next steps.
+  The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of the page. The remaining visuals highlight Sales over time, by Territory, Product         Group, and Reseller Company. 
+            ![Picture7FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/1ad8a0d4-5f3b-4dd4-ab15-9b6212a92de8)
+           **Note:** In this training, we are focusing on data acquisition, transformation, and modeling using tools available in Fabric. We will not be focusing on                   report development or navigation. Let’s spend a couple of minutes understanding the report and move to the next steps.
 
 1. Let’s analyze data by Sales Territory. Select **New England from the Sales Territory** (Scatter plot) visual.
 Notice from the Sales over time, Reseller Tailspin Toys has more sales compared to Wingtip Toys in New England. If you look at the Sales YoY% column chart you will notice that Wingtip Toys sales growth has been low and declining quarter over quarter during the past year. After a small rebound in Q3 it went down again in Q4. 
@@ -106,12 +106,12 @@ Notice the margin % is 52%, which is above the average of 50%. Also, the Sales Y
       
       ![Picture12FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/6ff10b89-9d8f-4b2b-bf76-be3d2c1608ab)
 
-8. Feel free to further analyze the report. Once ready let’s look at the model view. From the left panel, select **Model view icon**. Notice there are two fact tables, Sales and PO. 
+8. Feel free to further analyze the report. Once ready let’s look at the model view. From the left panel, select **Model view icon**. Notice there are two fact tables, Sales and PO.
    1. Granularity of Sales data is by Date, Reseller, Product, and People. Date, Reseller,             Product, and People connect to Sales.
-   1. Granularity of PO data is by Date, Product, and People. Date, Product, and People connect        to PO.
-   1. We have Supplier data by Product. Supplier connects to Product.
-   1. We have Reseller’s location data by Geo. Geo connects to Reseller.
-   1. We have Customer information by Reseller. Customer connects to Reseller.
+   2.  Granularity of PO data is by Date, Product, and People. Date, Product, and People connect        to PO.
+   3. We have Supplier data by Product. Supplier connects to Product.
+   4. We have Reseller’s location data by Geo. Geo connects to Reseller.
+   5. We have Customer information by Reseller. Customer connects to Reseller.
 
 ### Task 3: Review Power Queries
 1. Let’s look at Power Query to understand the data sources. From the ribbon select **Home -> Transform data**.
