@@ -79,7 +79,8 @@ Before we start with Fabric, let’s look at the current Report in Power BI Desk
    The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of the page. The remaining visuals highlight Sales over time, by Territory, Product         Group, and Reseller Company. 
    
    ![Picture7FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/1ad8a0d4-5f3b-4dd4-ab15-9b6212a92de8)
-       **Note:** In this training, we are focusing on data acquisition, transformation, and modeling using tools available in Fabric. We will not be focusing on                   report development or navigation. Let’s spend a couple of minutes understanding the report and move to the next steps.
+     
+   **Note:** In this training, we are focusing on data acquisition, transformation, and modeling using tools available in Fabric. We will not be focusing on                   report development or navigation. Let’s spend a couple of minutes understanding the report and move to the next steps.
 
 1. Let’s analyze data by Sales Territory. Select **New England from the Sales Territory** (Scatter plot) visual.
 Notice from the Sales over time, Reseller Tailspin Toys has more sales compared to Wingtip Toys in New England. If you look at the Sales YoY% column chart you will notice that Wingtip Toys sales growth has been low and declining quarter over quarter during the past year. After a small rebound in Q3 it went down again in Q4. 
@@ -146,7 +147,7 @@ Notice the margin % is 52%, which is above the average of 50%. Also, the Sales Y
 
 # References
    Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has           links to some great resources.
-   ![Picture16](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/13178b86-b21e-4cd1-b34f-4ce4682d1de8)
+  ![Picture16](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/13178b86-b21e-4cd1-b34f-4ce4682d1de8)
 
 
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
