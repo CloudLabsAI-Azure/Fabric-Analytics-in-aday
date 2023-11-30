@@ -1,441 +1,305 @@
-# Microsoft Fabric - Fabric Analyst in a Day - Lab 5
+Microsoft Fabric - Fabric Analyst in a Day - Lab 5
 
-
-# ![](../media/Aspose.Words.f1677eee-72ae-4802-9c99-0ea3edd4fa94.001.png)
+Lab 0
+# ![](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.001.png)c
 
 # Contents
-[Introduction](#_toc150852565)
+[Introduction	3](#_toc152200366)
 
-[Dataflow Gen2](#_toc150852566)
+[Lakehouse	3](#_toc152200367)
 
-[Configure Scheduled refresh](#_toc150852567)
+[Task 1: Query data using SQL	3](#_toc152200368)
 
-[Data Pipeline](#_toc150852568)
+[Task 2: Visualize T-SQL result	5](#_toc152200369)
 
-[Overview of Data Pipeline](#_toc150852569)
+[Task 3: Create Visual query	7](#_toc152200370)
 
-[Data Pipeline – How to build simple Data Pipeline](#_toc150852570)
+[Task 4: Visualize query results	10](#_toc152200371)
 
-[Data Pipeline – How to build a complex Data Pipeline](#_toc150852571)
+[Task 5: Create Relationships	11](#_toc152200372)
 
-[Data Pipeline – How to schedule refresh](#_toc150852572)
+[Task 6: Create Measures	13](#_toc152200373)
 
-[References](#_toc150852573)
+[Task 7: Optional section – Create Relationships	16](#_toc152200374)
+
+[Task 8: Optional section – Create Measures	20](#_toc152200375)
+
+[References	20](#_toc152200376)
 
 
-# <a name="_toc150852565"></a>**Introduction** 
-We have ingested data from different data sources into Lakehouse. You got introduced to Lakehouse, created a data model. The next step is to set up a refresh schedule for the data sources. Just to recap the requirement:
-
-- Sales data in ADLS is updated at noon every day.
-- Supplier data in Snowflake is updated at midnight every day.
-- Customer data in Dataverse is always up to date. We need to refresh this 4 times a day, at midnight, 6 am, noon and 6 pm.
-- Employee datafile in SharePoint is updated at 9 am every day. However, we have noticed that sometimes there is a 15 to 30 minute delay. We need to create a refresh schedule to accommodate this.
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+# <a name="_toc152200366"></a>**Introduction** 
+We have data from various sources ingested into the Lakehouse. In this lab, you will work with the data model. Typically, we performed modeling activities like creating relationships, adding measures, etc. in Power BI Desktop. Here we will learn how to perform these modeling activities in the service. 
 
 By the end of this lab, you will have learned: 
 
-- Configuring scheduled refresh of Dataflow Gen2.
-- To create a Data Pipeline.
-- Configuringe scheduled refresh of a Data Pipeline.
-# <a name="_toc150852566"></a>**Dataflow Gen2**
-### <a name="_toc150852567"></a>Configure Scheduled refresh
+- <a name="_hlk152198899"></a>How to explore Lakehouse
+- How to explore SQL view of Lakehouse
+- How to explore Data modeling in Lakehouse
 
-Let’s start by configuring a scheduled refresh of Sales Dataflow.
-
+# <a name="_toc152200367"></a>**Lakehouse**
+### <a name="_toc152200368"></a>Task 1: Query data using SQL
 1. Let’s navigate back to the **Fabric workspace** you created in the earlier lab.
-1. All the artifacts you have created are listed here. On the right of the screen, in the **Search box** enter **df**. This will filter the artifacts to Dataflows.
+1. Navigate back to **Data Factory screen**.
+1. You will see three types of lh\_FAIAD – Semantic model, SQL endpoint, and Lakehouse. We explored the Lakehouse option in an earlier lab. Select **lh\_FAIAD SQL analytics endpoint** option to explore the SQL option. You will be navigated to **SQL view** of the explorer.
 
-      ![A screenshot of Fabric workspace](../media/Picture205.png)
+` `![A screenshot of Data Factory Home](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.002.png)
 
-1. Hover on **df_Sales_ADLS** row. Notice that the familiar **Refresh** and **Schedule Refresh icons** are available. Select the **ellipsis**.
-1. Notice there is option to Delete, Edit & Export Dataflow. We can use Properties to update name and description of the Dataflow. We will look at Refresh history shortly. Select **Settings**.
+If you would like to explore the data before creating a data model, you can use SQL to do so. Let’s look at two options to use SQL, the first one is developer-friendly, and second option is for analysts. 
 
-      ![A screenshot of df_Sales_ADLS Settings](../media/Picture206.png)
+Let’s assume you want to quickly find out the Units sold by Supplier using SQL. We have two options, writing a SQL statement or using a visual to create the SQL statement.
 
-      Settings page opens. In the left panel you will find all the Dataflows listed. 
+Notice on the left panel, you can view the Tables. If you expand the tables, you can view the Columns that make up the table. Also, there are options to create SQL Views, Functions, and Stored Procedures. If you have a SQL background, feel free to explore these options. Let’s try to write a simple SQL query.
 
-1. In the center pane, select **Refresh history** link.
+1. From the **top menu** select **New SQL query** or from the **bottom of the left panel** select **Query**. You will be navigated to SQL query view.
 
-      ![A screenshot of Settings for df_Sales_ADLS](../media/Picture207.png)
+   ![A screenshot of SQL Query view](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.003.png)
 
-1. Refresh history dialog opens. You will have at least one refresh listed it. This is the refresh which occurred when the dataflow is published. Select the **Start time** link.
+1. **Paste** the below SQL query into the **query window**. This query will return the units by Supplier Name. It is joining Sales table with Product and Supplier table to achieve this.
 
-      Note: Start time will be different for you.
+SELECT su.Supplier\_Name, SUM(Quantity) as Units
 
-      ![A screenshot of Refresh history](../media/Picture208.png)
+FROM dbo.Sales s
 
-      Details screen will open. This will provide details of the refresh, it lists the start, end time, duration. It also lists the tables, activities that were refreshed. In case there is a failure, you can click on       the name of the table/activity to investigate further.
+JOIN dbo.Product p on p.StockItemID = s.StockItemID
 
-      ![A screenshot of Refresh Details](../media/Picture209.png)
+JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
 
-1. Let’s navigate away by clicking on the **X** on the top right corner. You will be navigated back to dataflow settings page.
-1. Under Gateway connection, expand **Data source credentials**. List of connections used in the dataflow is displayed. In this case, Lakehouse and ADLS. 
-   1. Lakehouse – This is the connection to ingest data from Dataflow.
-   1. ADLS – This is the connection to the ADLS source data.
+GROUP BY su.Supplier\_Name
 
-         ![A screenshot of Gateway Connections for df_Sales_ADLS](../media/Picture210.png)
+1. Click **Run** to view the results.
+1. Notice there is an option to save this query as a View by selecting **Save as view**.
+1. On the right **Explorer** panel, under **Queries section** notice this query is saved under **My queries** as **SQL query 1**. This provides an option to rename the query and save it for future use. There is also an option to view queries that are shared with you using **Shared queries** folder.
 
-1. Expand **Refresh.**
-1. Set **Configure a refresh** **schedule** slider to **On**.
-1. Set **Refresh frequency** dropdown to **Daily**. Notice there is an option to set it to Weekly as well.
-1. Set **Time Zone** to your preferred time zone.
-   Note: Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your/data source location.
-1. Select **Add another time** link. Notice Time option is displayed.
-1. Set Time to **noon**. Notice that you can set refresh on the top of the hour or half hour.
-1. Select **Apply** to save this setting.
+   ![A screenshot of SQL query screen](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.004.png)
 
-      Note: By clicking on Add another time link, you can add multiple refresh times. 
+### <a name="_hlk152164208"></a> <a name="_toc152200369"></a>Task 2: Visualize T-SQL result
+1. We can also visualize the result of this query. **Highlight the query** in the query pane and select **Visualize results** from the **Results pane**.
 
-      You can also send failure notifications to dataset owner and other contacts.
+   ![A screenshot of SQL query screen with result](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.005.png)
 
-      ![A screenshot of Refresh schedule for df_Sales_ADLS](../media/Picture211.png)
+1. Visualize results dialog opens. Select **Continue**.
 
-1. In the left panel, select **df_Supplier_Snowflake**.
-1. Configure the refresh schedule to refresh **every day at midnight**. 
-1. Select **Apply** to save this setting.
+   ![A screenshot of Visualize results dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.006.png)
 
-      ![A screenshot of Refresh schedule for df_Sales_ADLS](../media/Picture212.png)
+1. The familiar report view dialog opens. From the **Data** pane, expand **SQL query 1**.
+1. Select **Supplier\_Name** and **Units** **fields**. Table visual is created by default.
+1. Change the visual type by selecting **Stacked column chart** from the **Visualization** section.
+1. **Resize** the visual as needed. Chart type changes.
 
-1. In the left panel, select **df_Customer_Dataverse**.
-1. Configure the refresh schedule to **4 times a day – midnight, 6 am, noon and 6 pm**. 
-1. Select **Apply** to save this setting.
+**Note:** Notice all the options available to format a visual in Power BI report are available here as well.
 
-      ![A screenshot of Refresh schedule for df_Customer_Dataverse](../media/Picture213.png)
+1. Select **Save as report**.
+1. Save your report dialog opens. Type **Units by Supplier** in the **Enter a name for your report textbox**.
+1. Make sure the destination workspace is **<your workspace name>.**
+1. Select **Save.**
 
-      As mentioned earlier, we need to build custom logic to handle the scenario where Employee file in SharePoint is not delivered on time. Let’s use Data Pipeline to solve this.
+   ![A screenshot of Visualize results screen](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.007.png)
+### <a name="_toc152200370"></a>Task 3: Create Visual query
+You will be navigated back to **SQL analytics endpoint view**. If you are not familiar with SQL, you can execute a similar query using visual query.
 
-# <a name="_toc150852568"></a>**Data Pipeline**
+1. From the top menu select **New visual query**. A visual query pane opens.
+1. From the **Explorer** pane, drag **Sales, Product, and Supplier** tables to the visual query pane.
+1. With **Sales** table selected, from the Visual query pane menu, select **Combine -> Merge queries**.
 
-### <a name="_toc150852569"></a>Overview of Data Pipeline:
-1. On the **bottom left** of your browser window, select **Power BI**.
-1. Microsoft Fabric dialog opens. Select **Data Factory**. You will navigate to Data Factory Home page.
+   ![A screenshot of Visual query screen](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.008.png)
 
-      ![A screenshot Fabric experiences dialog](../media/Picture214.png)
-
-1. From the top panel, select **Data Pipeline** to create a new pipeline.
-1. New pipeline dialog opens. **Name** the pipeline as **pl_Refresh_People_SharePoint**.
-1. Select **Create**.
-
-      ![A screenshot of Data Factory Home](../media/Picture215.png)
-
-      You are** navigated to Data Pipeline page. If you have worked with Azure Data Factory, this screen will be familiar. Let’s get a quick overview of the layout.
-
-      You are on the **Home** screen. If you look at the top menu, you will find options to add the commonly used activities, validate and run a pipeline and view the run history. Also, in the center pane you will          find quick options to start building the pipeline.
-
-      ![A screenshot of Data Pipeline landing page](../media/Picture216.png)
-
-1. From the top menu select **Activities**. Now in the menu you will find a list of commonly used Activities. 
-1. Select the **ellipsis** on the right on the menu to view all the other available Activities. We are going to use a few of these Activities in the lab.
-
-      ![A screenshot of Data Pipeline with available activities](../media/Picture217.png)
-
-1. From the top menu select **Run**. You will find options to run and schedule the pipeline execution. You will also find the option to view execution history by using View run history.
-1. From the top menu select **View**. Here you will find options to view the code in JSON format. You will also find options to format the activities.
-1. Note: If you have JSON background at the end of the lab, feel free to select View JSON code. Here you will notice all the orchestration you are doing using the design view can also be written in JSON. 
-
-      ![A screenshot of View ribbon in Data Pipeline](../media/Picture218.png)
-   
-### <a name="_toc150852570"></a>Data Pipeline – How to build simple Data Pipeline:
-
-Let’s start building the pipeline. We need an activity to refresh the Dataflow. Let’s find an activity which we can use.
-
-1. From the top menu select **Activities -> Dataflow**. Dataflow activity is added to the center design pane. Notice the bottom pane now has configuration options of the Dataflow activity.
-1. We are going to configure the activity to connect to df_People_SharePoint activity. From the **bottom** **pane**, select **Settings**.
-1. Make sure **Workspace** is set to **<your workspace name>.**
-1. From the **Dataflow dropdown** select **df_People_SharePoint**. When this Dataflow activity is executed, it is going to refresh **df_People_SharePoint.** That was easy right 😊
-
-      Note: Notification Option is currently greyed out. This feature will be enabled shortly. You will be able to configure notifications on the success and failure of this activity. 
-
-      In our scenario, the Employee data file is not updated on schedule. Sometimes there is a delay. Let’s see if we can accommodate this.
-
-      ![A screenshot of Dataflow activity settings configuration in Data Pipeline](../media/Picture219.png)
-
-1. From the **bottom** **pane**, select **General**. Let’s give the activity a name and description.
-1. In the Name field, enter **dfactivity_People_SharePoint**.
-1. In the **Description** field, enter **Data flow activity to refresh df_People_Sharepoint dataflow.**
-1. Notice there is an option to Deactivate an activity. This feature is useful during testing or debugging. We will leave it as **Activated**.
-1. There is an option to set **Timeout**. Let’s leave the **default value** which should give enough time for the dataflow to refresh.
-
-      If the datafile is not available on schedule let’s set the activity to re-execute every 10 mins for 3 times. If it fails on the 3<sup>rd</sup> attempt as well, then it will report a failure.
-
-1. Set **Retry** to **3**. 
-1. Expand **Advanced** section.
-1. Set **Retry interval (sec)** to **600**. 
-1. From the menu select **Home -> Save** icon to save the pipeline.
-
-      ![A screenshot of Dataflow activity General configuration in Data Pipeline](../media/Picture221.png)
-
-      Notice the advantage of using the data pipeline compared to setting the data flow on scheduled refresh (like we did for the earlier data flows)
-
-- Pipeline provides the option to retry multiple times before failing the refresh.
-- Pipeline provides the ability to refresh within seconds whereas with data flow, scheduled refresh is every 30 minutes.
-
-Let’s add a little more complexity to our scenario. We have noticed that if the datafile is not available at 9 am, then typically it is available with 5 mins. If this window is missed, then it takes 15 minutes for the file to be available. We want to schedule the retries at 5 mins and 15 mins. Let’s see how this can be achieved by creating a new Data Pipeline.
-
-1. From the left panel, select **<your workspace name>** to be navigated to Data Factory home page.
-1. From the top menu, select New Data Pipeline.
-1. New pipeline dialog opens. **Name** the pipeline as **pl_Refresh_People_SharePoint_Option2**.
-1. Select **Create**.
-   
- ### <a name="_toc150852571"></a>Data Pipeline – How to build a complex Data Pipeline:
-
-   ![A screenshot of create New Data Pipeline](../media/Picture222.png)
-
-1. You will be navigated to the Data Pipeline screen. From the menu, select **Activities**.
-1. Select the **ellipsis** on the right.
-1. From the activity list select **Until**. Until is an activity that is used to iterate until a condition is satisfied. In our scenario, we are going to iterate and refresh the dataflow until it is successful, or we    have tried 3 times.
-   
-      ![A screenshot of adding Until activity in Data Pipeline](../media/Picture223.png)
-
-1. We need to create variables which will be used to iterate and set status. Select the **blank area** in the pipeline design pane.
-1. Menu is the **bottom pane** changes. Select **Variables**.
-1. Select **New** to add a new variable.
-1. Notice a row appears. Enter **Name** as **varCounter**. We are going to use this variable to iterate 3 times.
-1. From **Type** drop down select **Integer**.
-1. Enter **Default value** of **0**.
-
-      Note: we are prepending variable names with var, so it is easy to find them, and it is good practice.
-
-      ![A screenshot of variables in Data Pipeline](../media/Picture224.png)
-
-1. Select **New** to add another new variable.
-1. Notice a row appears. Enter **Name** as **varTempCounter**. We are going to use this variable increment varCounter variable.
-1. From **Type** drop down select **Integer**.
-1. Enter **Default value** of **0**.
-1. Follow similar steps to add 3 more variables.
-   1. **varIsSuccess** of type **String** and default value **No**. This variable will be used to indicate if the dataflow refresh was successful.
-   1. **varSuccess** of type **String** and default value **Yes**. This variable will be used to set the value of varIsSuccess if dataflow refresh is successful.
-   1. **varWaitTime** of type **Integer** and default value **60**. This variable will be used to set the wait time if dataflow fails. (either 5 minutes/300 seconds or 15 minutes/900 seconds).
-1. Select **Until activity**. 
-1. From the **bottom pane**, select **General**.
-1. Enter **Name** as **Iterator**
-1. Enter **Description** as **Iterator to refresh dataflow. It will retry up to 3 times**. 
-
-      ![A screenshot of General configuration of Until activity](../media/Picture225.png)
-
-1. From the bottom pane, select **Settings**.
-1. Select the **Expression text box**. We need to enter an expression in this text box that will evaluate to true or false. Until activity iterators while this expression evaluates to false. Once the expression evaluates to true, Until activity stops the iteration.
-1. Select **Add dynamic content** link that appears below the text box.
-
-      ![A screenshot of Settings configuration of Until activity](../media/Picture226.png)
-
-      We need to write an expression which would execute until either value of **varCounter is 3 or** value **varIsSuccess is Yes.** (varCounter and varIsSuccess are the variables we just created).
-
-1. **Pipeline expression builder** dialog opens. In the bottom half of the dialog, you will have a menu.
-   1. **Parameters**: Are constants across a data factory that can be consumed by a pipeline in any expression.
-   1. **System variables**: These variables can be used in expressions when defining entities within either service. E.g., pipeline id, pipeline name, trigger name, etc.
-   1. **Functions**: You can call functions within expressions. Functions are categorized into Collection, Conversion, Date, Logical, Math and String functions. E.g., concat is a String function, add is a Math    function, etc.
-   1. **Variables**: Pipeline variables are values that can be set and modified during a pipeline run. Unlike pipeline parameters, which are defined at the pipeline level and cannot be changed during a pipeline run,          pipeline variables can be set and modified within a pipeline using a Set Variable activity. We are going to use Set Variable activity shortly.
-
-         ![A screenshot of Pipeline expression builder dialog](../media/Picture227.png)
-
-1. Select **Functions** from the bottom menu.
-1. Expand **Logical Functions** section.
-1. Select **or function**. Notice **@or()** is added to the dynamic expression text box. or function takes 2 parameters. We are working on the first parameter now.
-
-      ![A screenshot of Pipeline expression builder dialog](../media/Picture228.png)
-
-1. Place the cursor **in between the parentheses** of **@or** function.
-1. From the **Logical Functions** section, select **equals** function. Notice this is added to the dynamic expression text box. Your function should look like @or(equals()). equals function also takes 2 parameters. We will be checking if the variable varCounter is equal to 3.
-
-      ![A screenshot of Pipeline expression builder dialog](../media/Picture229.png)
-
-1. Now place cursor **in between the parentheses** of **@equals** function to add the parameters.
-1. From the bottom menu, select **Variables**.
-1. Select **varCounter** variable which will be the first parameter.
-1. Enter **3** as the second parameter of equals function. Your expression will be @or(equals(variables('varCounter '),3)) as showns in the screenshot below.
-
-      ![A screenshot of Pipeline expression builder dialog](../media/Picture230.png)
-
-1. We need to add the second parameter to or function. Add a comma in between the ending two parentheses. This time we will try typing in the function name. Start typing **equ** and you will get a drop down of available functions (this is called IntelliSense). Select **equals** function.
-
-      ![A screenshot of Pipeline expression builder dialog](../media/Picture231.png)
-
-1. The first parameter of equals function is a variable. Place **cursor before the comma**.
-1. Start typing **variables(**.
-1. With the help of intellisense select **variables('‘varIsSuccess')’)**.
-1. After the comma, let’s enter the second parameter. Start typing **variables(**.
-1. With the help of intellisense select **variables('‘varSuccess'’)**. Here we are comparing the value of varIsSuccess to the value of varSuccess. (varSuccess is defaulted to Yes).
-
-      ![A screenshot of Pipeline expression builder dialog](../media/Picture232.png)
-
-1. Your expression should be:
-
-      @or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))
-
+1. Merge dialog opens. From the **Right table for merge** dropdown select **Product**.
+1. Select **StockItemID** from both **Sales** and **Product** table. This is to merge Product and Sales tables.
+1. From the **Join kind**, select **Left Outer**.
 1. Select **OK**.
 
-      ![A screenshot of Pipeline expression builder dialog](../media/Picture233.png)
+   ![A screenshot of merge query dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.009.png)
 
-1. You will be navigated back to the design screen. With Until activity selected, from the **bottom pane**, select **Activities**. We will now add the activities that need to be executed.
-1. Select the **Edit icon** in the first row. You will be navigated to a blank iterator design screen.
+1. In the **results** pane, click on the **double arrow** next to **Product** column.
+1. Dialog opens, select **SupplierID** from the dialog.
+1. Select **OK**. 
 
-      ![A screenshot of Activity configuration for Until activity](../media/Picture234.png)
+   ![A screenshot of visual query dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.010.png)
 
-1. From the top menu, select **Activities -> Dataflow**. Dataflow activity is added to the design pane.
-1. With Dataflow activity selected, in the bottom pane select **General**. Let’s give the activity a name and description.
-1. In the Name field, enter **dfactivity_People_SharePoint**.
-1. In the **Description** field, enter **Data flow activity to refresh df_People_Sharepoint dataflow.**
+Notice Merged queries and Expanded Product steps are created in the Sales table.
 
-      ![A screenshot of General configuration Dataflow activity](../media/Picture235.png)
+1. Similarly, let’s merge Supplier table. Within the **Sales** table select **“+”** (located after Expanded Product) to add a new step. Dialog opens.
+1. Select **Combine -> Merge queries**.
 
-1. Select **Settings** from the bottom pane.
-1. Make sure **Workspace** is set to **<your workspace name>.**
-1. From the **Dataflow dropdown** select **df_People_SharePoint**. When this Dataflow activity is executed, it is going to refresh **df_People_SharePoint.**
+   ![A screenshot to add Merge query step](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.011.png)
 
-      ![A screenshot of Settings configuration Dataflow activity](../media/Picture236.png)
+1. Merge dialog opens. From the **Right table for merge** dropdown select **Supplier**.
+1. Select **SupplierID** from both **Sales** and **Supplier** table. This is to merge Supplier and Sales tables.
+1. From the **Join kind**, select **Left Outer**.
+1. Select **OK**.
 
-      We have configured Dataflow activity like we did earlier in the lab. Now we will add new logic. If the dataflow refresh is successful, we need to exist out of the until iterator. Remember one of the conditions        to exist the iterator is to set the value of varIsSuccess variable to Yes.
+   ![A screenshot of merge query dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.012.png)
 
-1. From the top menu, select **Activities -> Set variable**. Set variable activity is added to the design canvas.
-1. With Set variable activity selected, in the bottom pane select **General**. Let’s give the activity a name and description.
-1. In the Name field, enter **set_varIsSuccess**.
-1. In the **Description** field, enter **Set variable varIsSuccess to Yes.**
+1. In the **results** pane, click on the **double arrow** next to **Supplier** column.
+1. Dialog opens, select **Supplier\_Name** from the dialog.
+1. Select **OK**. Notice in the Sales table all the **steps are recorded**.
 
-      **Hover** over Dataflow activity. To the right of the activity box there are 4 icons. These can be used to connect to the next activity based on the result of the the activity.
+### <a name="_toc152200371"></a>Task 4: Visualize query results
+1. Now we have the query ready, let’s view the result. Select **Visualize results** from the results pane.
 
-1. **First one** with a grey curved arrow is used on skip the activity.
-1. **Second one** with green check mark is used on success of the activity.
-1. **Third one** with red X mark is used on failure of the activity.
-1. **Fourth one** with blue straight arrow is used on completion of the activity.
-1. Select the **green check mark** and drag to connect to Dataflow activity to Set variable activity. So on success of data flow refresh we want to execute the Set variable activity.
+   ![A screenshot of visual query dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.013.png)
 
-      ![A screenshot of General configuration Set variable activity](../media/Picture237.png)
+1. Visualize results dialog opens which looks like Power BI window. From the **Data** pane in the right, select **Supplier\_Name** and **Quantity** fields.
+1. This will create a table visual, with the result like the SQL query result from earlier. If you choose to, you can Save this report. Since we saved a similar report earlier, we are going to select **Cancel**.
 
-1. With Set variable activity selected, select **Settings** from the bottom menu.
-1. In the bottom pane, make sure **Variable type** is **Pipeline variable**.
-1. In the Name field, select **varIsSuccess**. This is the variable whose value we are going to set.
-1. In the **Value** field, select the text box. Select **Add dynamic content link**.
+   ![A screenshot of visualize report dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.014.png)
 
-      ![A screenshot of Settings configuration Set variable activity](../media/Picture238.png)
+### <a name="_toc152200372"></a>Task 5: Create Relationships
+Ok now we are ready to build the model, build relationships between tables, and create measures.
 
-1. Pipeline expression builder dialog opens. Select the **Add dynamic content below text area**.
-1. From the bottom menu select **Variables -> varSuccess**. Notice @variables('varSuccess') is entered in the Add dynamic content below text area. Remember when we created variables, we had preset the value of varSuccess variable to Yes. So we are assigning the value of Yes to varIsSuccess variable.
-1. Select **OK**. You will be navigated back to the iterator design pane.
+1. From the **bottom of the left panel** select **Model**. You will notice the center pane looks like the Model view we see in Power BI Desktop.
+1. **Resize and rearrange** the tables as needed.
+1. Let’s create a relationship between Sales and Reseller. Select **ResellerID** from **Sales** table and drag it over **ResellerID** in **Reseller** table.
 
-      ![A screenshot of Pipeline expression builder](../media/Picture239.png)
+   ![A screenshot of modeling view](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.015.png)
 
-      Now we need to set the counter if the dataflow activity fails. In Data Pipeline, we cannot self-reference a variable. Which means we cannot increment the counter variable varCounter by adding one to its value (       varCounter = varCounter + 1). So we make use of varTempCounter variable.
+1. New relationship dialog opens. Make sure **Table 1** is **Sales** and **Column** is **ResellerID.**
+1. Make sure **Table 2** is **Reseller** and **Column** is **ResellerID.**
+1. Make sure **Cardinality** is **Many to one (\*:1)**.
+1. Make sure **Cross filter direction** is **Single**.
+1. Select **Ok**.
 
-1. From the top menu, select **Activities -> Set variable**. Set variable activity is added to the design canvas.
-1. With Set variable activity selected, in the bottom pane select **General**. Let’s give the activity a name and description.
-1. In the Name field, enter **set_varTempCounter**.
-1. In the **Description** field, enter **Increment variable varTempCounter.**
-1. Select the **red X mark** from Dataflow activity to the new Set variable activity. So, on failure of data flow refresh we want to execute this Set variable activity.
+   ![A screenshot of New relationship dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.016.png)
 
-      ![A screenshot of General configuration Set variable activity](../media/Picture240.png)
+1. Similarly, create a relationship between Sales and Date. Select **InvoiceDate** from **Sales** table and drag it over **Date** in **Date** table.
+1. New relationship dialog opens. Make sure **Table 1** is **Sales** and **Column** is **InvoiceDate.**
+1. Make sure **Table 2** is **Date** and **Column** is **Date.**
+1. Make sure **Cardinality** is **Many to one (\*:1)**.
+1. Make sure **Cross filter direction** is **Single**.
+1. Select **Ok**.
 
-1. With Set variable activity selected, select **Settings** from the bottom menu.
-1. In the bottom pane, make sure **Variable type** is **Pipeline variable**.
-1. In the Name field, select **varTempCounter**. This is the variable whose value we are going to set.
-1. In the **Value** field, select the text box. Select **Add dynamic content link**.
-1. Pipeline expression builder dialog opens. Enter **@add(variables('varCounter'),1)**. Feel free to type this expression in or use the menu to select the functions or paste it in. 
+   ![A screenshot of New relationship dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.017.png)
 
-      This function is setting the value of variable varTempCounter to the value of variable varCounter plus 1 (varTempCounter = varCounter + 1).
+**Checkpoint:** Your model should have the two relations as shown in the screenshot:
 
-      ![A screenshot of Settings configuration Set variable activity](../media/Picture241.png)
+ ![A screenshot of model so far](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.018.png)
 
-      Now we need to set the value of varCounter variable to the value of varTempCounter. 
+For the sake of time, we will not be creating all the relationships. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the remaining relationships.
 
-1. From the top menu, select **Activities -> Set variable**. Set variable activity is added to the design canvas.
-1. With Set variable activity selected, in the bottom pane select **General**. Let’s give the activity a name and description.
-1. In the Name field, enter **set_varCounter**.
-1. In the **Description** field, enter **Increment variable varCounter.**
-1. Select the **green check mark** from set_varTempCounter Set variable activity to the new Set variable activity. 
+### <a name="_toc152200373"></a>Task 6: Create Measures
+Let’s add a few measures which we need to create the Sales dashboard.
 
-      ![A screenshot of General configuration Set variable activity](../media/Picture242.png)
+1. Select **Sales table** from the model view. We want to add the measures to the Sales table.
+1. From the top menu, select **Home -> New Measure**. Notice formula bar is displayed.
+1. Enter **Sales = SUM(Sales[Sales\_Amount])** in the **formula bar**.
+1. Click the **check mark** in the formula bar or click Enter button.
+1. In the Properties panel on the right, expand **Formatting** section.
+1. From the **Format** dropdown select **Currency**.
+1. Set **Decimal places** to **0**.
 
-1. With set_varCounter Set variable activity selected, select **Settings** from the bottom menu.
-1. In the bottom pane, make sure **Variable type** is **Pipeline variable**.
-1. In the Name field, select **varCounter**. This is the variable whose value we are going to set.
-1. In the **Value** field, select the text box. Select **Add dynamic content link**.
-1. Pipeline expression builder dialog opens. Enter **@variables('varTempCounter')**. Feel free to type this expression in or use the menu to select the functions or paste it in. 
+   ![A screenshot of modeling view with formula bar to add measure](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.019.png)
 
-      This function is setting the value of variable varCounter to the value of variable varTempCounter  (varCounter = varTempCounter + 0). At the end of each iteration both varCounter and varTempCounter have the same value.
+1. With the **Sales table selected**, click **New Measure** from the top menu.
+1. Enter **Units = SUM(Sales[Quantity])** in the **formula bar.**
+1. Click the **check mark** in the formula bar or click Enter button.
+1. In the Properties panel on the right, expand **Formatting** section (it may take a few moments for the Properties panel to load).
+1. From the **Format** dropdown select **Whole number**.
+1. Set the **Thousands Separator** to **Yes**.
 
-      ![A screenshot of Settings configuration Set variable activity](../media/Picture243.png)
+   ![A screenshot of modeling view with formula bar to add measure](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.020.png)
 
-      Next, we need to wait for 5 minutes/300 seconds if data flow refresh fails the first time before trying again. If data flow refresh fails for the second time we need to wait 15 minutes/900 seconds and try       again. We are going to use Wait activity and variable varWaitTime to set the wait time.
+1. With the **Sales table selected**, select **New Measure** from the top menu.
+1. Enter **Orders = DISTINCTCOUNT(Sales[InvoiceID])** in the **formula bar.**
+1. Click the **check mark** in the formula bar or click Enter button.
+1. In the Properties panel on the right, expand **Formatting** section.
+1. From the **Format** dropdown select **Whole number**.
+1. Set the **Thousands Separator** to **Yes**.
 
-1. From the top menu, select **Activities -> ellipsis - > Wait**. Wait activity is added to the design canvas.
-1. With Wait activity selected, in the bottom pane select **General**. Let’s give the activity a name and description.
-1. In the Name field, enter **wait_onFailure**.
-1. In the **Description** field, enter **Wait for 300 seconds on 2nd try and 900 seconds on 3rd try.**
-1. Select the **green check mark** from set_varCounter Set variable activity to the new Wait activity. 
+   ![A screenshot of modeling view with formula bar to add measure](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.021.png)
 
-      ![A screenshot of General configuration Wait activity](../media/Picture244.png)
+Again, for the sake of time, we will not be creating all the measures. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the remaining measures.
 
-1. With Wait activity selected, select **Settings** from the bottom menu.
-1. In the **Wait time in seconds** field, select the text box. Select **Add dynamic content link**.
-1. Pipeline expression builder dialog opens. Enter 
+We have created a data model; the next step is to set up a refresh schedule for the different data sources. We will do that in the following labs.
 
-   **@if(**
-   
-   `    `**greater(variables('varCounter'), 1),**
-   
-   `    `**if(equals(variables('varCounter'), 2),**
-   
-   `        `**mul(variables('varWaitTime'),15 ),** 
-   
-   `        `**mul(variables('varWaitTime'), 0)**
-   
-   `    `**),**
-   
-   `    `**mul(variables('varWaitTime'),5 )**
-   
-   **)**
-   
-      Feel free to type this expression in or use the menu to select the functions or paste it in. 
-   
-      ![A screenshot of Settings configuration Wait activity](../media/Picture245.png)
+### <a name="_toc152200374"></a>Task 7: Optional section – Create Relationships
+Let’s add the remaining relationships.
 
-      We are using two new functions here:
+1. Create a **many to one** relationship between **Sales** and **Product**. Select **StockItemID** from **Sales** and **StockItemID** from **Product**.
+1. Similarly, create a **many to one** relationship between **Sales** and **People**. Select **SalespersonPersonID** from **Sales** and **PersonID** from **People**. 
 
-      greater – Takes two numbers as parameters and compares which one is greater.
+**Checkpoint:** Your model should look like the screenshot below.
 
-      mul – this is multiply function. Takes in two parameters to multiply. 
+  ![A screenshot of modeling view](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.022.png)
 
-      The expression is a nested if statement. It is checking if the value of varCounter variable is greater than 1. If it is true, it checks if the value of varCounter variable is 2. If it is true, it set the wait          time to varWaitTime times 15. Remember, we had defaulted varWaitTime value to 60. That would be 60*15 = 900 seconds. If the value of varCounter variable is not 2 (it is greater than 2, which means data flow           refresh has failed 3 times we are done iterating. We don’t have to wait anymore), wait time is set to varWaitTime * 0. So, to 0. If the value of varCounter variable is 1, then we multiply the varWaitTime * 5.         That would by 60*5 = 300 seconds.
+1. Now let’s create a relationship between Product and Supplier. Select **SupplierID** from **Product** table and drag it over **SupplierID** in **Supplier** table.
+1. New relationship dialog opens. Make sure **Table 1** is **Product** and **Column** is **SupplierID.**
+1. Make sure **Table 2** is **Supplier** and **Column** is **SupplierID.**
+1. Make sure **Cardinality** is **Many to one (\*:1)**.
+1. Make sure **Cross filter direction** is **Both**.
+1. Select **Ok**.
 
-1. Select **OK**. You’re until iterator should look like the screenshot below.
-   
-      ![A screenshot of activities in Until activity](../media/Picture246.png)
-   
-1. From the top left of the design canvas **select pl_refresh_people_Sharepoint_option2** to be navigated out of Until iterator.
-   
-      ![A screenshot of activities in Until activity](../media/Picture247.png)
+   ![A screenshot of New relationship dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.023.png)
 
-1. We are done creating the data pipeline. From the top menu, select **Home -> Save icon** to save the data pipeline.
+1. Similarly, create a **many to one** relationship with **Cross filter direction** as **Both** between **Product\_Details** and **Product**. Select **StockItemID** from **Product\_Details** and **StockItemID** from **Product**.
+1. Now let’s create a relationship between Reseller and Geo. Select **PostalCityID** from **Reseller** table and drag it over **CityID** in **Geo** table.
+1. New relationship dialog opens. Make sure **Table 1** is **Reseller** and **Column** is **PostalCityID.**
+1. Make sure **Table 2** is **Geo** and **Column** is **CityID.**
+1. Make sure **Cardinality** is **Many to one (\*:1)**.
+1. Make sure **Cross filter direction** is **Both**.
+1. Select **Ok**.
 
-     ![A screenshot of Data Pipeline](../media/Picture248.png)
-   
-### <a name="_toc150852572"></a>Data Pipeline – How to schedule refresh:
+   ![A screenshot of New relationship dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.024.png)
 
-1. We can test the data pipeline, by selecting **Home -> Run.** (It may take a few minutes for the data pipeline to complete refresh. This is a training environment, so the file in SharePoint is always available. Hence, your data pipeline will never fail).
-1. We can set the data pipeline to execute on a schedule. From the top menu, select **Home -> Schedule**. Schedule dialog opens.
+1. Now let’s create a relationship between Customer and Reseller. Select **ResellerID** from **Customer** table and drag it over **ResellerID** in **Reseller** table.
+1. New relationship dialog opens. Make sure **Table 1** is **Customer** and **Column** is **ResellerID.**
+1. Make sure **Table 2** is **Reseller** and **Column** is **ResellerID.**
+1. Make sure **Cardinality is Many to one**.
+1. Make sure **Cross filter direction is single**.
+1. Select **Ok**.
 
-      ![A screenshot of refresh schedule of Data Pipeline](../media/Picture249.png)
+   ![A screenshot of New relationship dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.025.png)**	
 
-1. Set **Scheduled run** radio button to **On**.
-1. Set **Repeat dropdown** to **Daily**.
-1. Set **Time** to **9 AM**.
-1. Set **Start date and time** to **Today**.
-1. Set **End date and time** to a **future date**.
-1. Set your **Time zone**.
-   **Note**: Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your/data source location.
+**Checkpoint:** Your model should look like the screenshot below.
 
-1. Select **Apply**.
-1. Select the **X** mark on the top right of the dialog to close it.
-1. Select **<your workspace name>** in the left panel to navigate to Data Factory home screen.
+ ![A screenshot of modeling view](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.026.png)
 
-    Note: In the Schedule screen, there is no option to notify on success or failure (like Dataflow Schedule). Notification can be done by adding an activity in the Data Pipeline. We are not doing it in this lab as it is a lab environment.
+1. Now let’s create a relationship between PO and Date. Select **Order\_Date** from **PO** table and drag it over **Date** in **Date** table.
+1. New relationship dialog opens. Make sure **Table 1** is **PO** and **Column** is **Order\_Date.**
+1. Make sure **Table 2** is **Date** and **Column** is **Date.**
+1. Make sure **Cardinality** is **Many to one (\*:1)**.
+1. Make sure **Cross filter direction** is **Single**.
+1. Select **OK**.
 
-    We have scheduled refreshes of the various data sources. We will be creating reports in the next lab.
+   ![A screenshot of New relationship dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.027.png)
 
-# <a name="_toc150777627"></a><a name="_toc150779083"></a><a name="_toc150852573"></a>**References**
+1. Similarly, create a **many to one** relationship between **PO** and **Product**. Select **StockItemID** from **PO** and **StockItemID** from **Product**.
+1. Similarly, create a **many to one** relationship between **PO** and **People**. Select **ContactPersonID** from **PO** and **PersonID** from **People**. 
 
-Fabric Analyst in a Day introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help section has links to some great resources.
+We are done creating all the relationships. 
 
-   ![A screenshot of help options](../media/Picture250.png)
+**Checkpoint:** Your model should look like the screenshot below.
+
+ ![A screenshot of modeling view](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.028.png)
+
+### <a name="_toc152200375"></a>Task 8: Optional section – Create Measures
+Let’s add the remaining relationships.
+
+1. Enter **Avg Order = DIVIDE([Sales], [Orders])** in the formula bar.
+1. Click the **check mark** in the formula bar or click Enter button.
+1. Once the measure is saved, notice the Measure tools option on the top menu. Click **Measure tools**.
+1. From the Format drop down, click **Currency**.
+
+   ![A screenshot of modeling view with formula bar to add measure](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.029.png)
+
+1. Follow similar steps to add the following measures:
+   1. **GM = SUM(Sales[Line\_Profit])** formatted as **Currency, Decimal places of 2**
+   1. **GM% = DIVIDE([GM], [Sales])** formatted as **Percentage, Decimal places of 2**
+   1. **No of Customers = COUNTROWS(Customer)** formatted as **Whole Number**
+
+# <a name="_toc150777627"></a><a name="_toc150779083"></a><a name="_toc152200376"></a>**References**
+Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
+
+ ![A screenshot of help options](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.030.png)
 
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
@@ -446,6 +310,7 @@ Here are a few more resources that will help you with your next steps with Micro
 - Learn new skills by exploring the [Fabric Learning modules](https://aka.ms/learn-fabric)
 - Explore the [Fabric technical documentation](https://aka.ms/fabric-docs)
 - Read the [free e-book on getting started with Fabric](https://aka.ms/fabric-get-started-ebook)
+- Join the [Fabric community](https://aka.ms/fabric-community) to post your questions, share your feedback, and learn from others
 
 Read the more in-depth Fabric experience announcement blogs:
 
@@ -459,25 +324,3 @@ Read the more in-depth Fabric experience announcement blogs:
 - [Administration and governance in Fabric blog](https://aka.ms/Fabric-Admin-Gov-Blog)
 - [OneLake](https://aka.ms/Fabric-OneLake-Blog)[ in Fabric blog](https://aka.ms/Fabric-OneLake-Blog)
 - [Dataverse and Microsoft Fabric integration blog](https://aka.ms/Dataverse-Fabric-Blog)
-
-© 2023 Microsoft Corporation. All rights reserved.
-
-By using this demo/lab, you agree to the following terms:
-
-The technology/functionality described in this demo/lab is provided by Microsoft Corporation for purposes of obtaining your feedback and to provide you with a learning experience. You may only use the demo/lab to evaluate such technology features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell this demo/lab or any portion thereof.
-
-COPYING OR REPRODUCTION OF THE DEMO/LAB (OR ANY PORTION OF IT) TO ANY OTHER SERVER OR LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS EXPRESSLY PROHIBITED.
-
-THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT.
-
-**FEEDBACK**. If you give feedback about the technology features, functionality and/or concepts described in this demo/lab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.
-
-MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE DEMO/LAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY, WHETHER EXPRESS, IMPLIED OR STATUTORY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. MICROSOFT DOES NOT MAKE ANY ASSURANCES OR REPRESENTATIONS WITH REGARD TO THE ACCURACY OF THE RESULTS, OUTPUT THAT DERIVES FROM USE OF DEMO/ LAB, OR SUITABILITY OF THE INFORMATION CONTAINED IN THE DEMO/LAB FOR ANY PURPOSE.
-
-**DISCLAIMER**
-
-This demo/lab contains only a portion of new features and enhancements in Microsoft Power BI. Some of the features might change in future releases of the product. In this demo/lab, you will learn about some, but not all, new features.
-
-Version: 11.15.2023                                Copyright 2023 Microsoft   	                                                         34|Page 
-
-Maintained by:  Microsoft Corporation 
