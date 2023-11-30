@@ -147,6 +147,7 @@ Notice the margin % is 52%, which is above the average of 50%. Also, the Sales Y
 
 # References
    Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has           links to some great resources.
+   
   ![Picture16](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/13178b86-b21e-4cd1-b34f-4ce4682d1de8)
 
 
