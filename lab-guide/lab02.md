@@ -1,33 +1,33 @@
 # ![](../media/Aspose.Words.d9e40fe6-e088-40f4-b33d-59abff8ed5bb.001.png)
 
 # Contents
-[Introduction](#)
+[Introduction](#Introduction)
 
-[Fabric License](#)
+[Fabric License](#FabricLicense)
 
-  [Task 1: Enable trial Fabric license](#)
+  [Task 1: Enable trial Fabric license](#Task1:EnabletrialFabriclicense)
 
-[Overview of Fabric Experiences:](#)
+[Overview of Fabric Experiences:](#OverviewofFabricExperiences:)
 
-  [Task 2: Data Factory Experience](#)
+  [Task 2: Data Factory Experience](#Task2:DataFactoryExperience)
   
-  [Task 3: Data Activator Experience](#)
+  [Task 3: Data Activator Experience](#Task3:DataActivatorExperience)
   
-  [Task 4: Data Engineering Experience](#)
+  [Task 4: Data Engineering Experience](#Task4:DataEngineeringExperience)
   
-  [Task 5: Data Science Experience](#)
+  [Task 5: Data Science Experience](#Task5:DataScienceExperience)
   
-  [Task 6: Data Warehouse Experience](#)
+  [Task 6: Data Warehouse Experience](#Task6:DataWarehouseExperience)
   
-  [Task 7: Real-Time Analytics Experience](#)
+  [Task 7: Real-Time Analytics Experience](#Task7:Real-TimeAnalyticsExperience)
 
-[Fabric Workspace](#)
+[Fabric Workspace](#FabricWorkspace)
 
-  [Task 8: Create a Fabric Workspace](#)
+  [Task 8: Create a Fabric Workspace](#Task8:CreateaFabricWorkspace)
   
-  [Task 9: Create a Lakehouse](#)
+  [Task 9: Create a Lakehouse](#Task9:CreateaLakehouse)
 
-[References](#)
+[References](#References)
 
 # Introduction
 Today you will learn about various key features of Microsoft Fabric. This is an introductory workshop intended to introduce you to the various product experiences and items available in Fabric. By the end of this workshop, you will learn how to use Lakehouse, Dataflow Gen2, Data Pipeline, and DirectLake feature.
