@@ -1,6 +1,6 @@
-Microsoft Fabric - Fabric Analyst in a Day - Lab 5
+# Microsoft Fabric - Fabric Analyst in a Day - Lab 5
 
-Lab 0
+
 # ![](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.001.png)c
 
 # Contents
