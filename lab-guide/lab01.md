@@ -17,8 +17,6 @@
    
 [References](#References)
 
-
-
 # Document Structure
 The lab includes steps for the user to follow along with associated screenshots that provide visual aid. In each screenshot, sections are highlighted with orange boxes to indicate the area(s) user should focus on.
 
@@ -64,16 +62,19 @@ Before we start with Fabric, let’s look at the current Report in Power BI Desk
       ![Picture4FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/d1908a37-3197-4c08-9fe6-73dfcb91f997)
 8. Sign in dialog opens. Reenter the **Username Credentials** by copying it from the **Environment Details** tab.
 9. Select **Next**.
+    
       ![Picture5FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/a3931a21-f2a9-48bd-8807-306f300a4c45)
-10. In the next dialog, reenter the **Password Credentials** by copying it from the **Environment Details** tab.
-11. Select **Sign in**.
-12. Action Required dialog opens requesting to set up multifactor authentication. We do not need to set this up, since this is a lab environment. Select **Ask Later**.
+
+11. In the next dialog, reenter the **Password Credentials** by copying it from the **Environment Details** tab.
+12. Select **Sign in**.
+13. Action Required dialog opens requesting to set up multifactor authentication. We do not need to set this up, since this is a lab environment. Select **Ask Later**.
     
       ![Picture6FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/999ecb8b-4854-4a3a-84f3-bd85e3daa77b)
-13. Select **No, sign in the app** only in the next dialog. Power BI Desktop will now open.
+    
+14. Select **No, sign in the app** only in the next dialog. Power BI Desktop will now open.
 
 ### Task 2: Analyze Power BI Desktop Report
-The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of the page. The remaining visuals highlight Sales over time, by Territory, Product Group, and Reseller Company. 
+ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of the page. The remaining visuals highlight Sales over time, by Territory, Product         Group, and Reseller Company. 
 
    ![Picture7FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/1ad8a0d4-5f3b-4dd4-ab15-9b6212a92de8)
 
@@ -107,10 +108,10 @@ Notice the margin % is 52%, which is above the average of 50%. Also, the Sales Y
 
 8. Feel free to further analyze the report. Once ready let’s look at the model view. From the left panel, select **Model view icon**. Notice there are two fact tables, Sales and PO. 
    1. Granularity of Sales data is by Date, Reseller, Product, and People. Date, Reseller,             Product, and People connect to Sales.
-   1.  Granularity of PO data is by Date, Product, and People. Date, Product, and People connect        to PO.
-   1. 	We have Supplier data by Product. Supplier connects to Product.
-   1. 	We have Reseller’s location data by Geo. Geo connects to Reseller.
-   1. 	We have Customer information by Reseller. Customer connects to Reseller.
+   1. Granularity of PO data is by Date, Product, and People. Date, Product, and People connect        to PO.
+   1. We have Supplier data by Product. Supplier connects to Product.
+   1. We have Reseller’s location data by Geo. Geo connects to Reseller.
+   1. We have Customer information by Reseller. Customer connects to Reseller.
 
 ### Task 3: Review Power Queries
 1. Let’s look at Power Query to understand the data sources. From the ribbon select **Home -> Transform data**.
