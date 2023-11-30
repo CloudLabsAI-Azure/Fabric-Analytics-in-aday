@@ -26,17 +26,6 @@ Lab 0
 
 [References	20](#_toc152200376)
 
-
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
 # <a name="_toc152200366"></a>**Introduction** 
 We have data from various sources ingested into the Lakehouse. In this lab, you will work with the data model. Typically, we performed modeling activities like creating relationships, adding measures, etc. in Power BI Desktop. Here we will learn how to perform these modeling activities in the service. 
 
@@ -52,7 +41,7 @@ By the end of this lab, you will have learned:
 1. Navigate back to **Data Factory screen**.
 1. You will see three types of lh\_FAIAD – Semantic model, SQL endpoint, and Lakehouse. We explored the Lakehouse option in an earlier lab. Select **lh\_FAIAD SQL analytics endpoint** option to explore the SQL option. You will be navigated to **SQL view** of the explorer.
 
-` `![A screenshot of Data Factory Home](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.002.png)
+ ![A screenshot of Data Factory Home](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.002.png)
 
 If you would like to explore the data before creating a data model, you can use SQL to do so. Let’s look at two options to use SQL, the first one is developer-friendly, and second option is for analysts. 
 
