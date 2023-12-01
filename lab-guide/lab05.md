@@ -4,29 +4,30 @@
 # ![](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.001.png)c
 
 # Contents
-[Introduction	3](#_toc152200366)
+ * Introduction
 
-[Lakehouse	3](#_toc152200367)
+ * Lakehouse
 
-[Task 1: Query data using SQL	3](#_toc152200368)
+     * Task 1: Query data using SQL
 
-[Task 2: Visualize T-SQL result	5](#_toc152200369)
+     * Task 2: Visualize T-SQL result	
 
-[Task 3: Create Visual query	7](#_toc152200370)
+     * Task 3: Create Visual query
 
-[Task 4: Visualize query results	10](#_toc152200371)
+     * Task 4: Visualize query results
 
-[Task 5: Create Relationships	11](#_toc152200372)
+     * Task 5: Create Relationships	
 
-[Task 6: Create Measures	13](#_toc152200373)
+     * Task 6: Create Measures
 
-[Task 7: Optional section – Create Relationships	16](#_toc152200374)
+     * Task 7: Optional section – Create Relationships
 
-[Task 8: Optional section – Create Measures	20](#_toc152200375)
+     * Task 8: Optional section – Create Measures
 
-[References	20](#_toc152200376)
+ * References
 
 # <a name="_toc152200366"></a>**Introduction** 
+
 We have data from various sources ingested into the Lakehouse. In this lab, you will work with the data model. Typically, we performed modeling activities like creating relationships, adding measures, etc. in Power BI Desktop. Here we will learn how to perform these modeling activities in the service. 
 
 By the end of this lab, you will have learned: 
@@ -36,18 +37,20 @@ By the end of this lab, you will have learned:
 - How to explore Data modeling in Lakehouse
 
 # <a name="_toc152200367"></a>**Lakehouse**
+
 ### <a name="_toc152200368"></a>Task 1: Query data using SQL
+
 1. Let’s navigate back to the **Fabric workspace** you created in the earlier lab.
 1. Navigate back to **Data Factory screen**.
 1. You will see three types of lh\_FAIAD – Semantic model, SQL endpoint, and Lakehouse. We explored the Lakehouse option in an earlier lab. Select **lh\_FAIAD SQL analytics endpoint** option to explore the SQL option. You will be navigated to **SQL view** of the explorer.
 
- ![A screenshot of Data Factory Home](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.002.png)
+    ![A screenshot of Data Factory Home](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.002.png)
 
-If you would like to explore the data before creating a data model, you can use SQL to do so. Let’s look at two options to use SQL, the first one is developer-friendly, and second option is for analysts. 
-
-Let’s assume you want to quickly find out the Units sold by Supplier using SQL. We have two options, writing a SQL statement or using a visual to create the SQL statement.
-
-Notice on the left panel, you can view the Tables. If you expand the tables, you can view the Columns that make up the table. Also, there are options to create SQL Views, Functions, and Stored Procedures. If you have a SQL background, feel free to explore these options. Let’s try to write a simple SQL query.
+    If you would like to explore the data before creating a data model, you can use SQL to do so. Let’s look at two options to use SQL, the first one is developer-friendly, and second option is for analysts. 
+    
+    Let’s assume you want to quickly find out the Units sold by Supplier using SQL. We have two options, writing a SQL statement or using a visual to create the SQL statement.
+    
+    Notice on the left panel, you can view the Tables. If you expand the tables, you can view the Columns that make up the table. Also, there are options to create SQL Views, Functions, and Stored Procedures. If you have a SQL background, feel free to explore these options. Let’s try to write a simple SQL query.
 
 1. From the **top menu** select **New SQL query** or from the **bottom of the left panel** select **Query**. You will be navigated to SQL query view.
 
@@ -55,16 +58,17 @@ Notice on the left panel, you can view the Tables. If you expand the tables, you
 
 1. **Paste** the below SQL query into the **query window**. This query will return the units by Supplier Name. It is joining Sales table with Product and Supplier table to achieve this.
 
-SELECT su.Supplier\_Name, SUM(Quantity) as Units
-
-FROM dbo.Sales s
-
-JOIN dbo.Product p on p.StockItemID = s.StockItemID
-
-JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
-
-GROUP BY su.Supplier\_Name
-
+   ```
+     SELECT su.Supplier\_Name, SUM(Quantity) as Units
+     
+     FROM dbo.Sales s
+     
+     JOIN dbo.Product p on p.StockItemID = s.StockItemID
+     
+     JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+     
+     GROUP BY su.Supplier\_Name
+   ```
 1. Click **Run** to view the results.
 1. Notice there is an option to save this query as a View by selecting **Save as view**.
 1. On the right **Explorer** panel, under **Queries section** notice this query is saved under **My queries** as **SQL query 1**. This provides an option to rename the query and save it for future use. There is also an option to view queries that are shared with you using **Shared queries** folder.
@@ -72,6 +76,7 @@ GROUP BY su.Supplier\_Name
    ![A screenshot of SQL query screen](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.004.png)
 
 ### <a name="_hlk152164208"></a> <a name="_toc152200369"></a>Task 2: Visualize T-SQL result
+
 1. We can also visualize the result of this query. **Highlight the query** in the query pane and select **Visualize results** from the **Results pane**.
 
    ![A screenshot of SQL query screen with result](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.005.png)
@@ -85,7 +90,7 @@ GROUP BY su.Supplier\_Name
 1. Change the visual type by selecting **Stacked column chart** from the **Visualization** section.
 1. **Resize** the visual as needed. Chart type changes.
 
-**Note:** Notice all the options available to format a visual in Power BI report are available here as well.
+   **Note:** Notice all the options available to format a visual in Power BI report are available here as well.
 
 1. Select **Save as report**.
 1. Save your report dialog opens. Type **Units by Supplier** in the **Enter a name for your report textbox**.
@@ -93,7 +98,9 @@ GROUP BY su.Supplier\_Name
 1. Select **Save.**
 
    ![A screenshot of Visualize results screen](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.007.png)
+   
 ### <a name="_toc152200370"></a>Task 3: Create Visual query
+
 You will be navigated back to **SQL analytics endpoint view**. If you are not familiar with SQL, you can execute a similar query using visual query.
 
 1. From the top menu select **New visual query**. A visual query pane opens.
@@ -115,7 +122,7 @@ You will be navigated back to **SQL analytics endpoint view**. If you are not fa
 
    ![A screenshot of visual query dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.010.png)
 
-Notice Merged queries and Expanded Product steps are created in the Sales table.
+   Notice Merged queries and Expanded Product steps are created in the Sales table.
 
 1. Similarly, let’s merge Supplier table. Within the **Sales** table select **“+”** (located after Expanded Product) to add a new step. Dialog opens.
 1. Select **Combine -> Merge queries**.
@@ -134,6 +141,7 @@ Notice Merged queries and Expanded Product steps are created in the Sales table.
 1. Select **OK**. Notice in the Sales table all the **steps are recorded**.
 
 ### <a name="_toc152200371"></a>Task 4: Visualize query results
+
 1. Now we have the query ready, let’s view the result. Select **Visualize results** from the results pane.
 
    ![A screenshot of visual query dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.013.png)
@@ -144,6 +152,7 @@ Notice Merged queries and Expanded Product steps are created in the Sales table.
    ![A screenshot of visualize report dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.014.png)
 
 ### <a name="_toc152200372"></a>Task 5: Create Relationships
+
 Ok now we are ready to build the model, build relationships between tables, and create measures.
 
 1. From the **bottom of the left panel** select **Model**. You will notice the center pane looks like the Model view we see in Power BI Desktop.
@@ -169,13 +178,14 @@ Ok now we are ready to build the model, build relationships between tables, and 
 
    ![A screenshot of New relationship dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.017.png)
 
-**Checkpoint:** Your model should have the two relations as shown in the screenshot:
+ **Checkpoint:** Your model should have the two relations as shown in the screenshot:
 
- ![A screenshot of model so far](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.018.png)
+  ![A screenshot of model so far](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.018.png)
 
 For the sake of time, we will not be creating all the relationships. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the remaining relationships.
 
 ### <a name="_toc152200373"></a>Task 6: Create Measures
+
 Let’s add a few measures which we need to create the Sales dashboard.
 
 1. Select **Sales table** from the model view. We want to add the measures to the Sales table.
@@ -211,14 +221,15 @@ Again, for the sake of time, we will not be creating all the measures. If time p
 We have created a data model; the next step is to set up a refresh schedule for the different data sources. We will do that in the following labs.
 
 ### <a name="_toc152200374"></a>Task 7: Optional section – Create Relationships
+
 Let’s add the remaining relationships.
 
 1. Create a **many to one** relationship between **Sales** and **Product**. Select **StockItemID** from **Sales** and **StockItemID** from **Product**.
 1. Similarly, create a **many to one** relationship between **Sales** and **People**. Select **SalespersonPersonID** from **Sales** and **PersonID** from **People**. 
 
-**Checkpoint:** Your model should look like the screenshot below.
-
-  ![A screenshot of modeling view](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.022.png)
+   **Checkpoint:** Your model should look like the screenshot below.
+  
+    ![A screenshot of modeling view](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.022.png)
 
 1. Now let’s create a relationship between Product and Supplier. Select **SupplierID** from **Product** table and drag it over **SupplierID** in **Supplier** table.
 1. New relationship dialog opens. Make sure **Table 1** is **Product** and **Column** is **SupplierID.**
@@ -248,9 +259,9 @@ Let’s add the remaining relationships.
 
    ![A screenshot of New relationship dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.025.png)**	
 
-**Checkpoint:** Your model should look like the screenshot below.
+   **Checkpoint:** Your model should look like the screenshot below.
 
- ![A screenshot of modeling view](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.026.png)
+   ![A screenshot of modeling view](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.026.png)
 
 1. Now let’s create a relationship between PO and Date. Select **Order\_Date** from **PO** table and drag it over **Date** in **Date** table.
 1. New relationship dialog opens. Make sure **Table 1** is **PO** and **Column** is **Order\_Date.**
@@ -264,13 +275,14 @@ Let’s add the remaining relationships.
 1. Similarly, create a **many to one** relationship between **PO** and **Product**. Select **StockItemID** from **PO** and **StockItemID** from **Product**.
 1. Similarly, create a **many to one** relationship between **PO** and **People**. Select **ContactPersonID** from **PO** and **PersonID** from **People**. 
 
-We are done creating all the relationships. 
-
-**Checkpoint:** Your model should look like the screenshot below.
-
- ![A screenshot of modeling view](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.028.png)
+  We are done creating all the relationships. 
+  
+   **Checkpoint:** Your model should look like the screenshot below.
+ 
+   ![A screenshot of modeling view](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.028.png)
 
 ### <a name="_toc152200375"></a>Task 8: Optional section – Create Measures
+
 Let’s add the remaining relationships.
 
 1. Enter **Avg Order = DIVIDE([Sales], [Orders])** in the formula bar.
@@ -286,9 +298,10 @@ Let’s add the remaining relationships.
    1. **No of Customers = COUNTROWS(Customer)** formatted as **Whole Number**
 
 # <a name="_toc150777627"></a><a name="_toc150779083"></a><a name="_toc152200376"></a>**References**
+
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
 
- ![A screenshot of help options](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.030.png)
+  ![A screenshot of help options](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.030.png)
 
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
