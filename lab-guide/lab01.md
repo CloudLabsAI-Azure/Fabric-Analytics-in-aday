@@ -3,19 +3,13 @@
 # ![](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.001.png)
 
 # Contents
-[Document Structure](#DocumentStructure)
-
-[Scenario / Problem Statement](#Scenario/ProblemStatement)
-
-[Overview of Power BI Desktop Report](#OverviewofPowerBIDesktopReport)
-
-   [Task 1: Set up Power BI Desktop in Lab environment](#Task1:SetupPowerBIDesktopinLabenvironment)
-   
-   [Task 2: Analyze Power BI Desktop Report](#Task2:AnalyzePowerBIDesktopReport)
-   
-   [Task 3: Review Power Queries](#Task3:ReviewPowerQueries)
-   
-[References](#References)
+1. Document Structure
+2. Scenario / Problem Statement
+3. Overview of Power BI Desktop Report
+   - Task 1: Set up Power BI Desktop in Lab environment
+   - Task 2: Analyze Power BI Desktop Report
+   - Task 3: Review Power Queries
+4. References
 
 # Document Structure
 The lab includes steps for the user to follow along with associated screenshots that provide visual aid. In each screenshot, sections are highlighted with orange boxes to indicate the area(s) user should focus on.
