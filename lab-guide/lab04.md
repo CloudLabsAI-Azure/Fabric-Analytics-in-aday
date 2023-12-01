@@ -197,7 +197,7 @@ You will be navigated back to the **Data Factory screen**. Now let’s create a 
     * **Secret Key**: **nO-8Q~h7OxXyyV5TroOJJoexVl4jRnRcVuRiNaWm**
    
 5. Select **Connect**.
-
+6. For Old environment we need to select the **Organization account* and click on Connect.
       
 
 
