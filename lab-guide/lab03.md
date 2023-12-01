@@ -7,29 +7,29 @@
 
    * Dataflow Gen2
 
-   * Task 1: Create Dataflow Gen2
+     * Task 1: Create Dataflow Gen2
 
-   * Task 2: Create connection to ADLS Gen2
+     * Task 2: Create connection to ADLS Gen2
 
-   *  Task 3: Create Base ADLS Gen2 folder query
+     *  Task 3: Create Base ADLS Gen2 folder query
 
-   * Task 4: Create Cities query
+     * Task 4: Create Cities query
 
-   * Task 5: Create Countries query	
+     * Task 5: Create Countries query	
 
-   * Task 6: Create States using Copy – Option 1	
+     * Task 6: Create States using Copy – Option 1	
 
-   * Task 7: Create Geo query by Copy – Option 2	
+     * Task 7: Create Geo query by Copy – Option 2	
 
-   * Task 8: Configure Data Destination for Geo query
+     * Task 8: Configure Data Destination for Geo query
 
-   * Task 9: Publish Dataflow	
+     * Task 9: Publish Dataflow	
 
-   * Task 10: Rename Dataflow
+     * Task 10: Rename Dataflow
 
-   * Task 11: Build remaining queries in Dataflow
+     * Task 11: Build remaining queries in Dataflow
 
-   * Task 12: Configure Data destination for remaining queries
+     * Task 12: Configure Data destination for remaining queries
 
    * References	
 
