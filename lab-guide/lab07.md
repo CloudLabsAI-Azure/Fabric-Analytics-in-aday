@@ -3,36 +3,37 @@
 # ![](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.001.png)
 
 # Contents
-[Introduction	3](#_toc152166234)
+   * Introduction
 
-[Power BI	3](#_toc152166235)
+   * Power BI
 
-[Task 1: Auto-Create Report	3](#_toc152166236)
+     * Task 1: Auto-Create Report	3](#_toc152166236)
+         
+      * Task 2: Hide default (metrics) tables
+         
+      * Task 3: Configure background for New report
+         
+      * Task 4: Add Header to the report
+         
+      * Task 5: Add KPIs to the report
+         
+      * Task 6: Add Line chart to the report
+         
+      * Task 7: Configure Year column in Date table
+         
+      * Task 8: Configure Short_Month_Name column in Date table
+         
+      * Task 9: Format Line chart
+         
+      * Task 10: Add new data to simulate Direct Lake Mode
+         
+   * Clean up Lab environment
 
-[Task 2: Hide default (metrics) tables	6](#_toc152166237)
-
-[Task 3: Configure background for New report	8](#_toc152166238)
-
-[Task 4: Add Header to the report	10](#_toc152166239)
-
-[Task 5: Add KPIs to the report	10](#_toc152166240)
-
-[Task 6: Add Line chart to the report	14](#_toc152166241)
-
-[Task 7: Configure Year column in Date table	14](#_toc152166242)
-
-[Task 8: Configure Short_Month_Name column in Date table	15](#_toc152166243)
-
-[Task 9: Format Line chart	17](#_toc152166244)
-
-[Task 10: Add new data to simulate Direct Lake Mode	20](#_toc152166245)
-
-[Clean up Lab environment	24](#_toc152166246)
-
-[References	25](#_toc152166247)
+   * References
 
 #
 # <a name="_toc152166234"></a>**Introduction** 
+
 We have ingested data from different data sources into Lakehouse, were introduced to Lakehouse, created a data model, and set a refresh schedule for the data sources. Now we are going to create a report.
 
 By the end of this lab, you will have learned: 
@@ -42,7 +43,9 @@ By the end of this lab, you will have learned:
 - How to experience Direct Lake mode resulting in data automatically refreshing
 
 # <a name="_toc152166235"></a>**Power BI**
+
 ### <a name="_toc152166236"></a>Task 1: Auto-Create Report
+
 Let’s start by using the auto-create report option. And later in the lab, we will re-create the report we have in Power BI.
 
 1. Let’s navigate back to the **Fabric workspace** you created in the earlier lab.
@@ -72,9 +75,9 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
    ![A screenshot of auto-create ready success dialog](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.006.png)
 
-**Checkpoint:** You will have a report which looks like the screenshot below. There are a few KPIs and some trend visuals. This is a good start if you are analyzing a new model and need a jumpstart.
-
-**Note:** Notice on the top menu, you have the option to Edit the report or view some of the data as tables. Feel free to explore these options.
+      **Checkpoint:** You will have a report which looks like the screenshot below. There are a few KPIs and some trend visuals. This is a good start if you are analyzing a new model and need a jumpstart.
+      
+      **Note:** Notice on the top menu, you have the option to Edit the report or view some of the data as tables. Feel free to explore these options.
 
 1. Once you are ready, **collapse** all the tables in the **Data** section on the right. Notice we have five new tables which are not part of the model we created. These are default tables added to help analyze performance. We will remove these from the report view shortly.
 1. Let’s save this report. From the top menu, select **Save**.
@@ -86,6 +89,7 @@ Let’s start by using the auto-create report option. And later in the lab, we w
    ![A screenshot of auto-created report](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.007.png)
 
 ### <a name="_toc152166237"></a>Task 2: Hide default (metrics) tables
+
 Let’s create a report like the one we have in Power BI Desktop. We are going to do this by starting with a blank canvas. Before we start creating a report, let’s remove the default tables (above screenshot) from the report view. This is done in the modeling section of the Lakehouse.
 
 1. From the bottom of the left panel, select **Power BI icon**. Fabric dialog opens.
@@ -97,9 +101,9 @@ Let’s create a report like the one we have in Power BI Desktop. We are going t
 1. Select **lh\_FAIAD -> SQL analytics endpoint**. We will be in the Data view of the Lakehouse.
 1. From the **bottom of the left panel**, select **Model** to be navigated to the Model view.
 
-Notice on the design canvas, you will find the default tables. (You may have to scroll to the right or bottom to view them)
+    Notice on the design canvas, you will find the default tables. (You may have to scroll to the right or bottom to view them)
 
-   ![A screenshot of Lakehouse model view](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.009.png)
+    ![A screenshot of Lakehouse model view](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.009.png)
 
 1. Right click on the table **long\_running\_queries** and select **Hide in report view**.
 
@@ -112,15 +116,16 @@ Notice on the design canvas, you will find the default tables. (You may have to 
    1. frequently\_run\_queries
 
 ### <a name="_toc152166238"></a>Task 3: Configure background for a New report
+
 1. We can start creating a new report from the model view. From the top menu, select **Home -> New report**. You will be navigated to the Power BI report canvas in a new window / tab in your browser.
 
    ![A screenshot showing selecting New Report](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.011.png)
 
 1. If you have not already opened it, open **FAIAD.pbix** located in the **/Report** folder on the **Desktop** of your lab environment. 
 
-We are going to use this report as a reference. We will start by adding the canvas background. We will create the report header, add a couple of KPIs, and create the Sales over time line chart. In the interest of time and with the understanding that you have experience with building visuals in Power BI Desktop, we will not be creating all the visuals. 
-
-   ![A screenshot of a Power BI Desktop report](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.012.png)
+    We are going to use this report as a reference. We will start by adding the canvas background. We will create the report header, add a couple of KPIs, and create the Sales over time line chart. In the interest of time and with the understanding that you have experience with building visuals in Power BI Desktop, we will not be creating all the visuals. 
+      
+    ![A screenshot of a Power BI Desktop report](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.012.png)
 
 1. Navigate back to **Power BI canvas** in your browser.
 1. Select **Format page** **icon** in Visualization pane.
@@ -134,6 +139,7 @@ We are going to use this report as a reference. We will start by adding the canv
    ![A screenshot of new blank report](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.013.png)
 
 ### <a name="_toc152166239"></a><a name="_hlk152165928"></a>Task 4: Add Header to the report
+
 1. Let’s add the header in the top margin. From the **menu**, select **Text box**.
 1. Enter **Fabrikam Company** as the first line in the text box.
 1. Enter **Sales Report** as the second line in the text box.
@@ -146,6 +152,7 @@ We are going to use this report as a reference. We will start by adding the canv
    ![A screenshot Text box visual for Fabrikam](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.014.png)
 
 ### <a name="_toc152166240"></a>Task 5: Add KPIs to the report
+
 1. Let’s add Sales KPI. Select the **white space** in the canvas to take focus off the text box.
 1. From the **Visualizations** **section** select **Multi-row card visual**.
 1. From the **Data section** expand **Sales** **table**.
@@ -182,6 +189,7 @@ We are going to use this report as a reference. We will start by adding the canv
    ![A screenshot of multi-row card visual copy and pasted for Units measure](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.019.png)
 
 ### <a name="_toc152166241"></a>Task 6: Add Line chart to the report
+
 Let’s create a line chart to visualize Sales over time by Reseller Company.
 
 1. Select the **white space** in the canvas to take focus off the multi-row card visual.
@@ -192,6 +200,7 @@ Let’s create a line chart to visualize Sales over time by Reseller Company.
    ![A screenshot of line chart visual configuration](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.020.png) 
 
 ### <a name="_toc152166242"></a>Task 7: Configure Year column in Date table
+
 1. Navigate to the tab of the browser with **model view of the Lakehouse**.
 1. From the left Explorer pane, expand **lhFAIAD -> Schemas -> dbo -> Tables -> Date**.
 1. Select **Year** column.
@@ -209,6 +218,7 @@ Let’s create a line chart to visualize Sales over time by Reseller Company.
    ![A screenshot of line chart visual configuration](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.022.png)
 
 ### <a name="_toc152166243"></a>Task 8: Configure Short\_Month\_Name column in Date table
+
 1. Let’s add Month to this chart. From the Date table, drag **Short\_Month\_Name** field below **Year** in the **X-axis**. Notice the visual is sorted by Sales. Let’s sort it by Short\_Month\_Name.
 1. Select the **ellipsis (…)** on the top right corner of the visual.
 1. Select **Sort axis -> Year Short\_Month\_Name**.
@@ -217,7 +227,7 @@ Let’s create a line chart to visualize Sales over time by Reseller Company.
 
    ![A screenshot of line chart visual configuration](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.023.png)
 
-**Note:** The months are sorted alphabetically. Let’s fix this.
+   **Note:** The months are sorted alphabetically. Let’s fix this.
 
    ![A screenshot of line chart visual ](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.024.png)
 
@@ -235,6 +245,7 @@ Let’s create a line chart to visualize Sales over time by Reseller Company.
    ![A screenshot of line chart visual ](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.026.png) 
 
 ### <a name="_toc152166244"></a>Task 9: Format Line chart
+
 Notice how easy it is to update the semantic model while building the reports. This gives a seamless interaction like Power BI Desktop.
 
 1. With the **Line chart visual selected**, in the **Data section** expand **Reseller** table.
@@ -273,6 +284,7 @@ Notice how easy it is to update the semantic model while building the reports. T
 As mentioned earlier, we will not build all the visuals in this lab. At your leisure, feel free to build more visuals. 
 
 ### <a name="_toc152166245"></a>Task 10: Add new data to simulate Direct Lake Mode
+
 Typically, in Import mode, once data in the source is refreshed, we need to refresh the Power BI model after which the data in the report is updated. With Direct Query mode, once data is refreshed in source, it is available in Power BI report. However direct query mode is typically slow. To solve this problem, Microsoft Fabric has introduced Direct Lake mode. Direct Lake is a fast path to load the data from the lake straight into the Power BI engine, ready for analysis. Let’s explore this.
 
 In real scenario, data is updated at the source. Since we are in a training environment, we will simulate this by connecting it to a parquet file with data for May 2023. 
@@ -293,7 +305,7 @@ In real scenario, data is updated at the source. Since we are in a training envi
 1. Navigate back to the **Dataflow screen** in the browser.
 1. In the Dataflow pane, enter **Ctrl+V** (currently right click Paste is not supported).
 
-Now let’s remove the reference to ADLS Base Folder (2) and use ADLS Base Folder.
+   Now let’s remove the reference to ADLS Base Folder (2) and use ADLS Base Folder.
 
 1. Select **MayInvoice** query.
 1. From the right panel, under **Applied Steps**, select **Source**.
@@ -318,7 +330,7 @@ Now let’s remove the reference to ADLS Base Folder (2) and use ADLS Base Folde
 
    ![A screenshot of Publish dataflow](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.036.png)
 
-**Note:** Once published the dataflow will refresh. This may take a few minutes.
+   **Note:** Once published the dataflow will refresh. This may take a few minutes.
 
 1. Navigate back to the tab of the browser with **Power BI canvas.**
 1. From the top menu select **Refresh**. Notice now in the Line chart there is data for May 2023. Also, notice the Sales dollar has increased.
@@ -350,6 +362,7 @@ Let’s revisit the challenges that are listed in the problem statement:
   Microsoft Fabric is a SaaS offering. All we need is a browser to access the service. We do not have to install any software on our desktops.
 
 # <a name="_toc152166246"></a>**Clean up Lab environment**
+
 Once you are ready to clean up the lab environment, follow the steps below.
 
 1. Navigate back to the tab of the browser with **Power BI canvas**. **Close out this tab.**
@@ -371,6 +384,7 @@ This will delete the workspace and all the items that were contained in the work
    ![A screenshot of Workspace settings dialog](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.040.png)
 
 # <a name="_toc150777627"></a><a name="_toc150779083"></a><a name="_toc152166247"></a>**References**
+
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
 
    ![A screenshot of help options](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.041.png)
