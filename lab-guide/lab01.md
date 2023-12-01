@@ -114,7 +114,7 @@ Notice the margin % is 52%, which is above the average of 50%. Also, the Sales Y
       a. Granularity of Sales data is by Date, Reseller, Product, and People. Date, Reseller,             Product, and People connect to Sales.
    
       b. Granularity of PO data is by Date, Product, and People. Date, Product, and People       
-         connect to PO.
+   connect to PO.
    
       c. We have Supplier data by Product. Supplier connects to Product.
    
