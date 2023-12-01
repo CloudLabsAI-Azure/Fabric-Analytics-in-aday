@@ -105,15 +105,11 @@ Notice the margin % is 52%, which is above the average of 50%. Also, the Sales Y
 
 8. Feel free to further analyze the report. Once ready let’s look at the model view. From the left panel, select **Model view icon**. Notice there are two fact tables, Sales and PO.
 
-      a. Granularity of Sales data is by Date, Reseller, Product, and People. Date, Reseller, Product, and People connect to Sales.
-   
-      b. Granularity of PO data is by Date, Product, and People. Date, Product, and People connect to PO.
-   
-      c. We have Supplier data by Product. Supplier connects to Product.
-   
-      d. We have Reseller’s location data by Geo. Geo connects to Reseller.
-   
-      e. We have Customer information by Reseller. Customer connects to Reseller.
+      1. ranularity of Sales data is by Date, Reseller, Product, and People. Date, Reseller, Product, and People connect to Sales.
+      2. Granularity of PO data is by Date, Product, and People. Date, Product, and People connect to PO.
+      3. We have Supplier data by Product. Supplier connects to Product.
+      4. We have Reseller’s location data by Geo. Geo connects to Reseller.
+      5. We have Customer information by Reseller. Customer connects to Reseller.
 
 ### Task 3: Review Power Queries
 1. Let’s look at Power Query to understand the data sources. From the ribbon select **Home -> Transform data**.
@@ -122,13 +118,10 @@ Notice the margin % is 52%, which is above the average of 50%. Also, the Sales Y
 
 2. Power Query window opens. From the ribbon, select **Home -> Data source settings**. Data source settings dialog opens. Notice we have four data sources as mentioned in the problem statement:
 
-      a.	Snowflake
-   
-      b.	SharePoint
-
-      c.	ADLS Gen2
-
-      d.	Dataverse
+      1. Snowflake
+      2. SharePoint
+      3. ADLS Gen2
+      4. Dataverse
 
 4. Select **Close** to close the Data source settings dialog.
 
@@ -141,19 +134,15 @@ Notice the margin % is 52%, which is above the average of 50%. Also, the Sales Y
 
 7. Notice **ADLSData** folder has multiple dimensions: Geo, Product, Reseller, and Date. It also has Sales fact.
    
-   a.	Geo dimension is created by merging data from Cities, Countries, and States query. 
-
-   b.	Product dimension is created by merging data from Product Groups and Product Item Group query.
-
-   c.	Reseller dimension is filtered using BuyingGroup query.
-
-   d.	Sales fact is created by merging InvoiceLineItems with Invoice query.
+   1. Geo dimension is created by merging data from Cities, Countries, and States query.
+   2. Product dimension is created by merging data from Product Groups and Product Item Group query.
+   3. Reseller dimension is filtered using BuyingGroup query.
+   4. Sales fact is created by merging InvoiceLineItems with Invoice query.
 
 9. Notice **SnowflakeData** folder has Supplier dimension and PO (Order / Spend) fact.
 
-   a. Supplier dimension is created by merging Suppliers query with SupplierCategories query.
-
-   b.	PO fact is created by merging PO with PO Line Items query.
+   1. Supplier dimension is created by merging Suppliers query with SupplierCategories query.
+   2. PO fact is created by merging PO with PO Line Items query.
 
 11. Notice **SharepointData** folder has People dimension.
    Now we know what we are dealing with. In the following labs, we will create a similar Power      Query using Dataflow Gen2 and model using Lakehouse.
