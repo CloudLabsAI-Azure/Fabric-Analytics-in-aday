@@ -82,7 +82,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
 2. Connect to data source dialog opens. In the **Connection** dropdown make sure, **Create new connection** is selected.
 3. **Authentication kind** should be **Snowflake**.
-4. **Username** should be **TE\_SNOWFLAKE**
+4. **Username** should be **TE_SNOWFLAKE**
 5. **Password** should be **)EHZ3h7!eGym8EWR**
 6. Select **Connect**.
 
@@ -112,7 +112,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
       ![A screenshot to Connect to data destination](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.008.png)
 
 6. Choose destination target dialog opens. Make sure the **New table radio button** is **selected**, since we are creating a new table.
-7. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -><yourworkspacename>.** 
+7. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> your workspace name.** 
 8. Select **lh_FAIAD**
 9. Leave the table name as **Supplier**.
 10. Select **Next**.
@@ -215,7 +215,7 @@ Connection is established and you can view the data in the preview panel. Feel f
       ![Picture81](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/3b11a768-0a6a-41e2-aabd-864aac096e62)
 
 7. Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
-8. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> <yourworkspacename>.** 
+8. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> your workspace name.** 
 9. Select **lh_FAIAD**
 10. Leave the table name as **Customer**
 11. Select **Next**.
@@ -282,7 +282,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 
       ![A screenshot of Connect to data source](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.029.png)
 
-### <a name="_toc152198716"></a>Task 10: Configure Data destination for People query
+### <a name="_toc152198716"></a>Task 11: Configure Data destination for People query
 Connection is established and you can view the data in the preview panel. Feel free to navigate through the Applied Steps of the queries. Now we need to ingest People data into Lakehouse.
 
 1. As mentioned earlier, we are not staging any of this data. So **right click** on the **People** query in the Queries pane and select **Enable staging** to remove the check mark.
@@ -301,7 +301,7 @@ Connection is established and you can view the data in the preview panel. Feel f
       ![A screenshot of Connect to data destination](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.008.png)
 
 7. Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
-8. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -><your workspace name>.** 
+8. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse-> your workspace name.**
 9. Select **lh_FAIAD**
 10. Leave the table name as **People**
 11. Select **Next**.
@@ -314,7 +314,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 
       ![A screenshot of Choose destination settings](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.033.png)
 
-### <a name="_toc152198717"></a>Task 11: Publish and Rename SharePoint Dataflow
+### <a name="_toc152198717"></a>Task 12: Publish and Rename SharePoint Dataflow
 1. You will be navigated back to **Power Query window**. Notice on the bottom **right corner**, Data destination is set to **Lakehouse**.
 2. On the bottom right corner, select **Publish**.
 
