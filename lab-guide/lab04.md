@@ -189,8 +189,9 @@ You will be navigated back to the **Data Factory screen**. Now let’s create a 
       ![A screenshot Configure connection in Dataflow](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.018.png)
 
 2. Connect to data source dialog opens. In the **Connection** dropdown make sure, **Create new connection** is selected.
-3. **Authentication kind** should be **Service Prinicipal.** and enter the below SPN credentials.
+3. For the New Environments **Authentication kind** should be **Service Prinicipal.** and enter the below SPN credentials.
    
+    * **Dataverse**: orgf8415570.crm.dynamics.com
     * **Tenant ID**: **9ddb7112-7d5f-432c-9147-a4dd1b0de572**
     * **Service Principal Application ID**: **1c7b251d-1875-4b1f-8711-8dead51bd633**
     * **Secret Key**: **nO-8Q~h7OxXyyV5TroOJJoexVl4jRnRcVuRiNaWm**
