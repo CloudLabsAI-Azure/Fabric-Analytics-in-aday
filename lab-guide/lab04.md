@@ -189,13 +189,18 @@ You will be navigated back to the **Data Factory screen**. Now let’s create a 
       ![A screenshot Configure connection in Dataflow](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.018.png)
 
 2. Connect to data source dialog opens. In the **Connection** dropdown make sure, **Create new connection** is selected.
-3. **Authentication kind** should be **Organizational Account.**.
-4. Select **Connect**.
+3. **Authentication kind** should be **Service Prinicipal.** and enter the below SPN credentials.
+   **Tenant ID**: *9ddb7112-7d5f-432c-9147-a4dd1b0de572**
+   **Service Principal Application ID**: **1c7b251d-1875-4b1f-8711-8dead51bd633**
+   **Secret Key**: **nO-8Q~h7OxXyyV5TroOJJoexVl4jRnRcVuRiNaWm**
+   
+5. Select **Connect**.
 
-      ![Picture80](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/e68c1646-3f3f-4b0c-841b-bcfc3faaaf2f)
+      
 
 
 ### <a name="_toc152198712"></a>Task 7: Create Data destination for Customer query
+
 Connection is established and you can view the data in the preview panel. Feel free to navigate through the Applied Steps of the queries. Customer data is available by Category, BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create the Customer query. Now we need to ingest Customer data into Lakehouse.
 
 1. As mentioned earlier, we are not staging any of this data. So **right click** on **Customer** query in the Queries pane and select **Enable staging** to remove the check mark.
