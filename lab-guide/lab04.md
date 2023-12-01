@@ -227,7 +227,6 @@ Connection is established and you can view the data in the preview panel. Feel f
 
     ![A screenshot of Choose destination settings](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.023.png)
 
-
 ### <a name="_toc152198713"></a>Task 8: Publish and Rename Dataverse Dataflow
 
 1. You will be navigated back to **Power Query window**. Notice on the bottom **right corner**, **Data destination** is set to **Lakehouse**.
