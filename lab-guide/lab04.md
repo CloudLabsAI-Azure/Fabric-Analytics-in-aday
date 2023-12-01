@@ -123,7 +123,6 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 12. Notice there is a warning, “Some column names contain unsupported characters. Should we fix them for you?”. Lakehouse does not support column names with space in it. Select **Fix it**, to remove the warning.
 13. Column mapping can be used to map dataflow columns to existing columns. In our case, it is a New Table. Hence, we can use the defaults. Select **Save settings**.
 
-
       ![A screenshot to Choose destination settings](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.010.png)
 
 14. You will be navigated back to **Power Query window**. Notice on the bottom **right corner, Data destination** is set to **Lakehouse**. Similarly, **set up the Data Destination for PO query**. Once it is done, your PO query should have **Data Destination** set to **Lakehouse** as shown in the screenshot below.
