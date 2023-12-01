@@ -3,33 +3,33 @@
 # ![](../media/Aspose.Words.d9e40fe6-e088-40f4-b33d-59abff8ed5bb.001.png)
 
 # Contents
-[Introduction](#Introduction)
+  * Introduction
 
-[Fabric License](#FabricLicense)
+  * Fabric License
 
-  [Task 1: Enable trial Fabric license](#Task1:EnabletrialFabriclicense)
+      * Task 1: Enable trial Fabric license
 
-[Overview of Fabric Experiences:](#OverviewofFabricExperiences:)
+  * Overview of Fabric Experiences:
 
-  [Task 2: Data Factory Experience](#Task2:DataFactoryExperience)
+      * Task 2: Data Factory Experience
   
-  [Task 3: Data Activator Experience](#Task3:DataActivatorExperience)
+      * Task 3: Data Activator Experience
   
-  [Task 4: Data Engineering Experience](#Task4:DataEngineeringExperience)
+      * Task 4: Data Engineering Experience
   
-  [Task 5: Data Science Experience](#Task5:DataScienceExperience)
+      * Task 5: Data Science Experience
   
-  [Task 6: Data Warehouse Experience](#Task6:DataWarehouseExperience)
+      * Task 6: Data Warehouse Experience
   
-  [Task 7: Real-Time Analytics Experience](#Task7:Real-TimeAnalyticsExperience)
+      * Task 7: Real-Time Analytics Experience
 
-[Fabric Workspace](#FabricWorkspace)
+  * Fabric Workspace
 
-  [Task 8: Create a Fabric Workspace](#Task8:CreateaFabricWorkspace)
+      * Task 8: Create a Fabric Workspace
   
-  [Task 9: Create a Lakehouse](#Task9:CreateaLakehouse)
+      * Task 9: Create a Lakehouse
 
-[References](#References)
+  * References
 
 # Introduction
 Today you will learn about various key features of Microsoft Fabric. This is an introductory workshop intended to introduce you to the various product experiences and items available in Fabric. By the end of this workshop, you will learn how to use Lakehouse, Dataflow Gen2, Data Pipeline, and DirectLake feature.
@@ -42,21 +42,22 @@ By the end of this lab, you will have learned:
 # Fabric License
 ### Task 1: Enable trial Fabric license
 1. Open the **browser** and navigate to https://app.powerbi.com/. You will be navigated to the login page.
-    **Note:** If you have an existing Power BI account, you may want to use the browser in private / incognito mode.
-2. Enter the **Email** provided by the instructor and click **Submit**.
+
+    Note: If you have an existing Power BI account, you may want to use the browser in private / incognito mode.
+3. Enter the **Email** provided by the instructor and click **Submit**.
 
       ![Picture17](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/3995afaf-cf69-4541-894e-b2b06ee8caf5)
 
 
-3. You will be navigated to the **Password** screen. Enter the password shared with you by the instructor. 
-4. Click **Sign in** and follow the prompts to sign into Fabric.
+4. You will be navigated to the **Password** screen. Enter the password shared with you by the instructor. 
+5. Click **Sign in** and follow the prompts to sign into Fabric.
 
       ![Picture18](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/5428ffb9-7039-4fcc-818c-42fb5cf2b4f5)
 
-5. You will be navigated to the familiar **Power BI Service Home page**.
-6. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor.
+6. You will be navigated to the familiar **Power BI Service Home page**.
+7. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor.
 
-Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s do this.
+    Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s do this.
 
 7. On the top right corner of the screen, select the **user icon**.
 8. Select **Start trial**.
@@ -72,27 +73,32 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
       ![Picture21](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/709b1a4e-5a75-4b40-b2ab-8d010e2a8dd4)
 
 
-11. You will be navigated to the **Fabric Home page**.
+11. You will be navigated to the Microsoft Fabric Home page.
 
       ![Picture22](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/dc8dcdc9-8b10-4e09-8c70-67f22a47a7b3)
 
 # Overview of Fabric Experiences:
+
 ### Task 2: Data Factory Experience
-1. Select **Microsoft Fabric** icon on the bottom left of your screen. A dialog with the list of Fabric experiences will open. Notice that Power BI, Data Factory and Data Activator are independent experiences. Data Engineering, Data Science, Data Warehouse, and Real-Time Analytics are Synapse experiences and these four experiences are powered by Synapse. Let’s explore.
-2. Select **Data Factory**.
+
+1. Select the **Microsoft Fabric** icon on the bottom left of your screen. A dialog with the list of Fabric experiences will open. Notice that Power BI, Data Factory, and Data Activator are independent experiences. Data Engineering, Data Science, Data Warehouse, and Real-Time Analytics are Synapse experiences and these four experiences are powered by Synapse. Let’s explore.
+  
+3. Select **Data Factory**.
  
       ![Picture23](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/793c431e-6942-4e80-9bc2-774f95e60eba)
 
-3. You are navigated to the **Data Factory Home page**. The page contains three main sections. 
+4. You are navigated to the **Data Factory Home page**. The page contains three main sections.
+   
     1. **New:** This lists the items available in Data Factory – Dataflow Gen2 and Data pipeline.
-       1. Dataflow Gen2 is the next generation of Dataflow.
-       1. Data pipeline is used for data orchestration.
-    1. **Recommended**: This section provides access to quick start learning documentation.
-    1. **Quick Access**: This section lists the recently used or favorite items.
+         1. Dataflow Gen2 is the next generation of Dataflow.
+         1. Data pipeline is used for data orchestration.
+    2. **Recommended**: This section provides access to quick start learning documentation.
+    3. **Quick Access**: This section lists the recently used or favorite items.
 
-        ![Picture24](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/4cfa0615-359d-47ad-b4f3-a5432201c44b)
+   ![Picture24](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/4cfa0615-359d-47ad-b4f3-a5432201c44b)
 
 ### Task 3: Data Activator Experience
+
 1. Select **Data Factory** on the bottom left of your screen. Fabric experience dialog opens.
 
       ![Picture25](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/98c00246-ad57-4b6a-873d-7e3527ad30df)
@@ -101,22 +107,23 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
     1. **Reflex:** Used to monitor datasets, queries, and event streams for patterns.
     1. **Reflex sample:** Sample solution.
 
-         ![Picture26](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/b517d1b3-8fda-4df2-9a7a-8db844fb33c6)
+        ![Picture26](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/b517d1b3-8fda-4df2-9a7a-8db844fb33c6)
 
 ### Task 4: Data Engineering Experience
 
 1. Select **Data Activator** on the bottom left of your screen. Fabric experience dialog opens.
 2. Select **Data Engineering**. You will be navigated to the **Data Engineering Home page**. Again, the page contains three main sections. In the New section, notice the items: 
    1. **Lakehouse:** Used to store big data for cleaning, querying, reporting, and sharing.
-   2. **Notebook**: Used to run queries on the data to produce shareable tables and visuals.
-   3. **Spark Job Definition**: Used to define, schedule, and manage Apache jobs.
-   4. **Data pipeline**: Used to orchestrate data solution.
-   5. **Import notebook**: Used to import notebooks from local machine.
-   6. **Use a sample**: Used to create a sample.
+   1. **Notebook**: Used to run queries on the data to produce shareable tables and visuals.
+   1. **Spark Job Definition**: Used to define, schedule, and manage Apache jobs.
+   1. **Data pipeline**: Used to orchestrate data solution.
+   1. **Import notebook**: Used to import notebooks from local machine.
+   1. **Use a sample**: Used to create a sample.
 
-         ![Picture27](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/19abeee2-ff05-49fd-8c93-974ede877f61)
+   ![Picture27](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/19abeee2-ff05-49fd-8c93-974ede877f61)
 
 ### Task 5: Data Science Experience
+
 1. Select **Data Engineering** on the bottom left of your screen. Fabric experience dialog opens.
 2. Select **Data Science**. You will be navigated to the **Data Science Home page**. Again, there are three sections. In the New section, notice the items:
     1. **ML model**: Used to create machine learning models.
@@ -125,14 +132,15 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
     1. **Import Notebook**: Used to import notebooks from local machine.
     1. **Sample**: Sample solution.
 
-         ![Picture28](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/ad8c4969-b773-4729-ac6f-b051f6f0568d)
+      ![Picture28](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/ad8c4969-b773-4729-ac6f-b051f6f0568d)
 
 ### Task 6: Data Warehouse Experience
+
 1. Select **Data Science** on the bottom left of your screen. Fabric experience dialog opens.
 2. Select **Data Warehouse**. You will be navigated to **Data Warehouse Home page**. Again, there are three sections. In the New section, notice the items. Notice Data pipeline and Dataflow Gen2 are available here as well.
    1. **Warehouse**: Used to provide strategic insights from multiple sources.
-   2. **Sample warehouse**: Sample warehouse solution.
-   3. **Data pipeline**: Used to orchestrate data solution.
+   1. **Sample warehouse**: Sample warehouse solution.
+   1. **Data pipeline**: Used to orchestrate data solution.
 
         ![Picture29](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/fd991d84-d9ba-45df-867d-0b4f3ce00174)
 
@@ -141,29 +149,33 @@ Currently, you are in **My Workspace**. To work with Fabric items, you will need
 1. Select **Data Warehouse** on the bottom left of your screen. Fabric experience dialog opens.
 2. Select **Real-Time Analytics**. You will be navigated to **Real-Time Analytics Home page**. Again, there are three sections. In the New section, notice the items: 
    1. **KQL Database**: Used to rapidly load structured, unstructured, and streaming data for querying.
-   2. **KQL Queryset**: Used to run queries on the data to produce shareable tables and visuals.
-   3. **Eventstream**: Used to capture, transform, and route real-time event stream.
-   4. **Use a sample**: Used to create a sample.
+   1. **KQL Queryset**: Used to run queries on the data to produce shareable tables and visuals.
+   1. **Eventstream**: Used to capture, transform, and route real-time event stream.
+   1. **Use a sample**: Used to create a sample.
 
-         ![Picture30](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/69f664d3-c1b7-429f-b539-f3a7c5f3ff58)
+      ![Picture30](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/69f664d3-c1b7-429f-b539-f3a7c5f3ff58)
 
 # Fabric Workspace
+
 ### Task 8: Create a Fabric Workspace
+
 1. Now let’s create a workspace with Fabric license. Select **Workspaces** from the left navigation bar. A dialog opens.
 2. Select **New workspace**.
 
       ![Picture31](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/1abb5726-062b-4e6f-b31d-7e64154e9a08)
 
 3. **Create a workspace** dialog opens on the right side of the browser.
-4. In the **Name** field enter **FAIAD_<yourusername>**. 
-    **Note:** Workspace name must be unique. We are using FAIAD as the workspace name for this       document. However, your workspace name will be different. Make sure a green check mark with      “**This name is available**” is displayed below the Name field.
-5. If you choose, you can enter a **Description** for the workspace. This is an optional field.
-6. Click on **Advanced** to expand the section.
+4. In the **Name** field enter **FAIAD_yourusername**.
+
+    **Note:** Workspace name must be unique. We are using FAIAD as the workspace name for this document. However, your workspace name will be different. Make sure a green check mark with “This name is available” is displayed below the Name field.
+   
+6. If you choose, you can enter a **Description** for the workspace. This is an optional field.
+7. Click on **Advanced** to expand the section.
 
      ![Picture32](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/7753b82d-3e75-44ae-ade7-922d7ce6aa82)
 
-7. Under **License mode**, make sure **Trial** is selected. (It should be selected by default.)
-8. Select **Apply** to create a new workspace.
+8. Under **License mode**, make sure **Trial** is selected. (It should be selected by default.)
+9. Select **Apply** to create a new workspace.
 
       ![Picture33](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/53c16aaa-f5aa-40e1-ae81-6b3419b8320d)
 
