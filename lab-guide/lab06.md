@@ -156,7 +156,7 @@ Let’s start by configuring a scheduled refresh of Sales Dataflow.
 8. From the top menu click **Run**. You will find options to run and schedule the pipeline execution. You will also find the option to view execution history by using View run history.
 9. From the top menu select **View**. Here you will find options to view the code in JSON format. You will also find options to format the activities.
 
-   **Note:** If you have a JSON background at the end of the lab, feel free to select View JSON code. Here you will notice all the orchestration you are doing using the design view can also be written in JSON. 
+     **Note:** If you have a JSON background at the end of the lab, feel free to select View JSON code. Here you will notice all the orchestration you are doing using the design view can also be written in JSON. 
    
       ![A screenshot of View ribbon in Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.015.png)
   
@@ -169,7 +169,7 @@ Let’s start building the pipeline. We need an activity to refresh the Dataflow
 3. Make sure **Workspace** is set to **your workspace name.**
 4. From the **Dataflow dropdown** select **df_People_SharePoint**. When this Dataflow activity is executed, it is going to refresh **df_People_SharePoint.** That was easy, right? 😊
 
-   **Note:** Notification Option is currently greyed out. This feature will be enabled shortly. You will be able to configure notifications on success and failure of this activity. 
+      **Note:** Notification Option is currently greyed out. This feature will be enabled shortly. You will be able to configure notifications on success and failure of this activity. 
 
    In our scenario, Employee Data is not updated on schedule. Sometimes there is a delay. Let’s see if we can accommodate for this.
    
@@ -181,7 +181,7 @@ Let’s start building the pipeline. We need an activity to refresh the Dataflow
 8. Notice there is an option to Deactivate an activity. This feature is useful during testing or debugging. Leave it as **Activated**.
 9. There is an option to set **Timeout**. Let’s leave the **default value** which should give enough time for the dataflow to refresh.
 
-  **Note:** If the data is not available on schedule, let’s set the activity to re-execute every 10 minutes, three times. If it fails on the third attempt as well, then it will report a failure.
+     **Note:** If the data is not available on schedule, let’s set the activity to re-execute every 10 minutes, three times. If it fails on the third attempt as well, then it will report a failure.
 
 10. Set **Retry** to **3**. 
 11. Expand **Advanced** section.
