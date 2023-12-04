@@ -42,7 +42,7 @@ By the end of this lab, you will have learned:
 
 1. Let’s navigate back to the **Fabric workspace** you created in the earlier lab.
 1. Navigate back to **Data Factory screen**.
-1. You will see three types of lh\_FAIAD – Semantic model, SQL endpoint, and Lakehouse. We explored the Lakehouse option in an earlier lab. Select **lh\_FAIAD SQL analytics endpoint** option to explore the SQL option. You will be navigated to **SQL view** of the explorer.
+1. You will see three types of lh_FAIAD – Semantic model, SQL endpoint, and Lakehouse. We explored the Lakehouse option in an earlier lab. Select **lh_FAIAD SQL analytics endpoint** option to explore the SQL option. You will be navigated to **SQL view** of the explorer.
 
     ![A screenshot of Data Factory Home](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.002.png)
 
@@ -59,7 +59,7 @@ By the end of this lab, you will have learned:
 1. **Paste** the below SQL query into the **query window**. This query will return the units by Supplier Name. It is joining Sales table with Product and Supplier table to achieve this.
 
    ```
-     SELECT su.Supplier\_Name, SUM(Quantity) as Units
+     SELECT su.Supplier_Name, SUM(Quantity) as Units
      
      FROM dbo.Sales s
      
@@ -67,7 +67,7 @@ By the end of this lab, you will have learned:
      
      JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
      
-     GROUP BY su.Supplier\_Name
+     GROUP BY su.Supplier_Name
    ```
 1. Click **Run** to view the results.
 1. Notice there is an option to save this query as a View by selecting **Save as view**.
@@ -86,7 +86,7 @@ By the end of this lab, you will have learned:
    ![A screenshot of Visualize results dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.006.png)
 
 1. The familiar report view dialog opens. From the **Data** pane, expand **SQL query 1**.
-1. Select **Supplier\_Name** and **Units** **fields**. Table visual is created by default.
+1. Select **Supplier_Name** and **Units** **fields**. Table visual is created by default.
 1. Change the visual type by selecting **Stacked column chart** from the **Visualization** section.
 1. **Resize** the visual as needed. Chart type changes.
 
@@ -137,7 +137,7 @@ You will be navigated back to **SQL analytics endpoint view**. If you are not fa
    ![A screenshot of merge query dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.012.png)
 
 1. In the **results** pane, click on the **double arrow** next to **Supplier** column.
-1. Dialog opens, select **Supplier\_Name** from the dialog.
+1. Dialog opens, select **Supplier_Name** from the dialog.
 1. Select **OK**. Notice in the Sales table all the **steps are recorded**.
 
 ### <a name="_toc152200371"></a>Task 4: Visualize query results
@@ -146,7 +146,7 @@ You will be navigated back to **SQL analytics endpoint view**. If you are not fa
 
    ![A screenshot of visual query dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.013.png)
 
-1. Visualize results dialog opens which looks like Power BI window. From the **Data** pane in the right, select **Supplier\_Name** and **Quantity** fields.
+1. Visualize results dialog opens which looks like Power BI window. From the **Data** pane in the right, select **Supplier_Name** and **Quantity** fields.
 1. This will create a table visual, with the result like the SQL query result from earlier. If you choose to, you can Save this report. Since we saved a similar report earlier, we are going to select **Cancel**.
 
    ![A screenshot of visualize report dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.014.png)
