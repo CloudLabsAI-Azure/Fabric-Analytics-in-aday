@@ -64,18 +64,18 @@ Let’s start by configuring a scheduled refresh of Sales Dataflow.
 1. Let’s navigate back to the **Fabric workspace** you created in the earlier lab.
 1. All the artifacts you have created are listed here. On the right of the screen, in the **Search box** enter **df**. This will filter the artifacts to Dataflows.
 
-  ![A screenshot of Fabric workspace](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.002.png)
+      ![A screenshot of Fabric workspace](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.002.png)
 
 1. Hover on the **df_Sales_ADLS** row. Notice that the familiar **Refresh** and **Schedule Refresh icons** are available. Select the **ellipsis (…)**.
 1. Notice there is option to Delete, Edit, and Export the Dataflow. We can use Properties to update the name and description of the Dataflow. We will look at Refresh history shortly. Select **Settings**.
 
-  ![A screenshot of df_Sales_ADLS Settings](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.003.png)
+      ![A screenshot of df_Sales_ADLS Settings](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.003.png)
 
 **Note:** Settings page opens. In the left panel you will find all the Dataflows listed. 
 
 1. In the center pane, select **Refresh history** link.
 
-  ![A screenshot of Settings for df_Sales_ADLS](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.004.png)
+      ![A screenshot of Settings for df_Sales_ADLS](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.004.png)
 
 1. Refresh history dialog opens. You will have at least one refresh listed it. This is the refresh which occurred when the dataflow is published. Select the **Start time** link.
 
@@ -92,7 +92,7 @@ Let’s start by configuring a scheduled refresh of Sales Dataflow.
    1. **Lakehouse:** This is the connection to ingest data from Dataflow.
    1. **ADLS:** This is the connection to the ADLS source data.
 
-     ![A screenshot of Gateway Connections for df_Sales_ADLS](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.007.png)
+      ![A screenshot of Gateway Connections for df_Sales_ADLS](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.007.png)
 
 1. Expand **Refresh.**
 1. Set **Configure a refresh** **schedule** slider to **On**.
@@ -117,13 +117,13 @@ Let’s start by configuring a scheduled refresh of Sales Dataflow.
 1. Configure the refresh schedule to refresh **every day at midnight / 12 AM**. 
 1. Select **Apply** to save this setting.
 
-     ![A screenshot of Refresh schedule for df_Sales_ADLS](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.009.png)
+      ![A screenshot of Refresh schedule for df_Sales_ADLS](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.009.png)
 
 1. In the left panel, select **df_Customer_Dataverse**.
 1. Configure refresh schedule to four times a day: **midnight / 12 AM, 6 AM, noon / 12 PM, and 6 PM**.
 1. Select **Apply** to save this setting.
 
-     ![A screenshot of Refresh schedule for df_Customer_Dataverse](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.010.png)
+      ![A screenshot of Refresh schedule for df_Customer_Dataverse](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.010.png)
 
       As mentioned earlier, we need to build custom logic to handle the scenario where Employee file in SharePoint is not delivered on time. Let’s use Data Pipeline to solve this.
 
@@ -140,25 +140,25 @@ Let’s start by configuring a scheduled refresh of Sales Dataflow.
 1. New pipeline dialog opens. **Name** the pipeline as **pl_Refresh_People_SharePoint**
 1. Select **Create**.
 
-    ![Screenshot of Data Factory Home to create new Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.012.png)
+     ![Screenshot of Data Factory Home to create new Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.012.png)
 
    You are** navigated to **Data Pipeline page**. If you have worked with Azure Data Factory, this screen will be familiar. Let’s get a quick overview of the layout.
    
    You are on the **Home** screen. If you look at the top menu, you will find options to add the commonly used activities, validate and run a pipeline and view the run history. Also, in the center pane you will find quick options to start building the pipeline.
    
-     ![A screenshot of Data Pipeline landing page](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.013.png)
-
+      ![A screenshot of Data Pipeline landing page](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.013.png)
+ 
 1. From the top menu select **Activities**. Now in the menu you will find a list of commonly used Activities. 
 1. Select the **ellipsis (…)** on the right on the menu to view all the other available Activities. We are going to use a few of these Activities in the lab.
 
-     ![A screenshot of Data Pipeline with available activities](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.014.png)
+      ![A screenshot of Data Pipeline with available activities](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.014.png)
 
 1. From the top menu click **Run**. You will find options to run and schedule the pipeline execution. You will also find the option to view execution history by using View run history.
 1. From the top menu select **View**. Here you will find options to view the code in JSON format. You will also find options to format the activities.
 
    **Note:** If you have a JSON background at the end of the lab, feel free to select View JSON code. Here you will notice all the orchestration you are doing using the design view can also be written in JSON. 
    
-     ![A screenshot of View ribbon in Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.015.png)
+      ![A screenshot of View ribbon in Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.015.png)
   
 ### <a name="_toc152204375"></a>Task 4: Build simpler Data Pipeline
 
@@ -173,7 +173,7 @@ Let’s start building the pipeline. We need an activity to refresh the Dataflow
 
    In our scenario, Employee Data is not updated on schedule. Sometimes there is a delay. Let’s see if we can accommodate for this.
    
-     ![A screenshot of Dataflow activity settings configuration in Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.016.png)
+      ![A screenshot of Dataflow activity settings configuration in Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.016.png)
 
 1. From the **bottom** **pane**, select **General**. Let’s give the activity a name and description.
 1. In the **Name** field, enter **dfactivity_People_SharePoint**
@@ -188,7 +188,7 @@ Let’s start building the pipeline. We need an activity to refresh the Dataflow
 1. Set **Retry interval (sec)** to **600**. 
 1. From the menu select **Home -> Save** icon to save the pipeline.
 
-     ![A screenshot of Dataflow activity General configuration in Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.017.png)
+      ![A screenshot of Dataflow activity General configuration in Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.017.png)
    
      Notice the advantage of using the data pipeline compared to setting the data flow on scheduled refresh (like we did for the earlier data flows):
    
@@ -204,7 +204,7 @@ Let’s add a little more complexity to our scenario. We have noticed that if th
 1. New pipeline dialog opens. **Name** the pipeline as **pl_Refresh_People_SharePoint_Option2**
 1. Select **Create**.
 
-     ![A screenshot of create new data pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.018.png)
+      ![A screenshot of create new data pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.018.png)
 
 ### <a name="_toc152204377"></a>Task 6: Create Until Activity
 
@@ -216,7 +216,7 @@ Let’s add a little more complexity to our scenario. We have noticed that if th
 
     In our scenario, we are going to iterate and refresh the dataflow until it is successful, or we have tried three times.
 
-    ![A screenshot of adding Until activity in Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.019.png)
+      ![A screenshot of adding Until activity in Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.019.png)
 
 ### <a name="_toc152204378"></a>Task 7: Create Variables
 
@@ -229,7 +229,7 @@ Let’s add a little more complexity to our scenario. We have noticed that if th
 
    **Note:** we are prepending variable names with var, so it is easy to find them, and it is a good practice.
 
-   ![A screenshot of variables in Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.020.png)
+      ![A screenshot of variables in Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.020.png)
 
 1. Select **New** to add another new variable.
 1. Notice a row appears. Enter **Name** as **varTempCounter**. We are going to use this variable increment varCounter variable.
