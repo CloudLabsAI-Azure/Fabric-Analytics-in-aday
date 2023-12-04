@@ -439,7 +439,7 @@ Next, we need to wait for 5 minutes/300 seconds if data flow refresh fails the f
      
         Feel free to type this expression in or use the menu to select the functions or paste it in. 
 
-   ![A screenshot of Settings configuration Wait activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.041.png)
+      ![A screenshot of Settings configuration Wait activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.041.png)
 
 We are using two new functions here:
 
@@ -452,20 +452,20 @@ The expression is a nested if statement. It is checking if the value of varCount
 
     **Checkpoint:** You’re Until iterator should look like the screenshot below.
 
-   ![A screenshot of activities in Until activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.042.png)
+      ![A screenshot of activities in Until activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.042.png)
 
 10. From the top left of the design canvas **select pl_refresh_people_Sharepoint_option2** to be navigated out of Until iterator. 
 
-   ![A screenshot of activities in Until activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.043.png)
+      ![A screenshot of activities in Until activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.043.png)
 
 11. We are done creating the data pipeline. From the top menu, select **Home -> Save icon** to save the data pipeline.
 
-   ![A screenshot of Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.044.png)
+      ![A screenshot of Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.044.png)
 
 ### <a name="_toc152204385"></a>Task 14: Configure Schedule refresh for Data Pipeline
 
 1. We can test the data pipeline, by selecting **Home -> Run.** 
-     **Note:** It may take a few minutes for the data pipeline to complete refresh. This is a training environment, so the file in SharePoint is always available. Hence, your data pipeline will never fail.
+      **Note:** It may take a few minutes for the data pipeline to complete refresh. This is a training environment, so the file in SharePoint is always available. Hence, your data pipeline will never fail.
 2. We can set the data pipeline to execute on a schedule. From the top menu, select **Home -> Schedule**. Schedule dialog opens.
 3. Set **Scheduled run** radio button to **On**.
 4. Set **Repeat dropdown** to **Daily**.
@@ -474,12 +474,12 @@ The expression is a nested if statement. It is checking if the value of varCount
 7. Set **End date and time** to a **future date**.
 8. Set your **Time zone**.
 
-   **Note**: Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
+    **Note**: Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
 
 9. Select **Apply**.
 10. Select the **X** mark on the top right of the dialog to close it.
 
-     ![A screenshot of refresh schedule of Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.045.png)
+       ![A screenshot of refresh schedule of Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.045.png)
 
 11. Select **your workspace name** in the left panel to navigate to Data Factory home screen.
 
