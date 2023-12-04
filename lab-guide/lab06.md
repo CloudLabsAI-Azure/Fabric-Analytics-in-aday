@@ -3,39 +3,39 @@
 # ![](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.001.png)
 
 # Contents
-   * Introduction
+* Introduction
 
-   * Dataflow Gen2
+* Dataflow Gen2
 
-         * Task 1: Configure scheduled refresh for Sales Dataflow
+  * Task 1: Configure scheduled refresh for Sales Dataflow
+  
+  * Task 2: Configure Scheduled refresh for Supplier and Customer Dataflow
 
-         * Task 2: Configure Scheduled refresh for Supplier and Customer Dataflow
+* Data Pipeline
 
-   * Data Pipeline
-
-        * Task 3: Create Data Pipeline
-
-    * Task 4: Build simpler Data Pipeline
-      
-    * Task 5: Create new Data Pipeline
-      
-    * Task 6: Create Until Activity
-      
-    * Task 7: Create Variables
-      
-    * Task 8: Configure Until Activity
-      
-    * Task 9: Configure Dataflow Activity
-      
-    * Task 10: Configure 1<sup>st</sup> Set variable Activity
-      
-    * Task 11: Configure 2<sup>nd</sup> Set variable Activity
-      
-    * Task 12: Configure 3<sup>rd</sup> Set variable Activity
-      
-    * Task 13: Configure Wait Activity
-      
-    * Task 14: Configure Schedule refresh for Data Pipeline
+  * Task 3: Create Data Pipeline
+  
+  * Task 4: Build simpler Data Pipeline
+        
+  * Task 5: Create new Data Pipeline
+        
+  * Task 6: Create Until Activity
+        
+  * Task 7: Create Variables
+        
+  * Task 8: Configure Until Activity
+        
+  * Task 9: Configure Dataflow Activity
+        
+  * Task 10: Configure 1<sup>st</sup> Set variable Activity
+        
+  * Task 11: Configure 2<sup>nd</sup> Set variable Activity
+        
+  * Task 12: Configure 3<sup>rd</sup> Set variable Activity
+        
+  * Task 13: Configure Wait Activity
+        
+  * Task 14: Configure Schedule refresh for Data Pipeline
       
 * References
 
@@ -64,35 +64,35 @@ Let’s start by configuring a scheduled refresh of Sales Dataflow.
 1. Let’s navigate back to the **Fabric workspace** you created in the earlier lab.
 1. All the artifacts you have created are listed here. On the right of the screen, in the **Search box** enter **df**. This will filter the artifacts to Dataflows.
 
-![A screenshot of Fabric workspace](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.002.png)
+  ![A screenshot of Fabric workspace](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.002.png)
 
 1. Hover on the **df_Sales_ADLS** row. Notice that the familiar **Refresh** and **Schedule Refresh icons** are available. Select the **ellipsis (…)**.
 1. Notice there is option to Delete, Edit, and Export the Dataflow. We can use Properties to update the name and description of the Dataflow. We will look at Refresh history shortly. Select **Settings**.
 
-![A screenshot of df_Sales_ADLS Settings](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.003.png)
+  ![A screenshot of df_Sales_ADLS Settings](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.003.png)
 
 **Note:** Settings page opens. In the left panel you will find all the Dataflows listed. 
 
 1. In the center pane, select **Refresh history** link.
 
-![A screenshot of Settings for df_Sales_ADLS](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.004.png)
+  ![A screenshot of Settings for df_Sales_ADLS](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.004.png)
 
 1. Refresh history dialog opens. You will have at least one refresh listed it. This is the refresh which occurred when the dataflow is published. Select the **Start time** link.
 
    **Note:** Start time will be different for you.
 
-   ![A screenshot of Refresh history](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.005.png)
+     ![A screenshot of Refresh history](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.005.png)
 
       Details screen will open. This will provide details of the refresh, it lists the start, end time, and duration. It also lists the tables / activities that were refreshed. In case there is a failure, you can click on the name of the table / activity to investigate further.
       
-    ![A screenshot of Refresh Details](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.006.png)
+      ![A screenshot of Refresh Details](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.006.png)
 
 1. Let’s navigate away by clicking on the **X** on the top right corner. You will be navigated back to **dataflow settings page**.
 1. Under Gateway connection, expand **Data source credentials**. A list of connections used in the dataflow is displayed. In this case, Lakehouse and ADLS. 
    1. **Lakehouse:** This is the connection to ingest data from Dataflow.
    1. **ADLS:** This is the connection to the ADLS source data.
 
-   ![A screenshot of Gateway Connections for df_Sales_ADLS](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.007.png)
+     ![A screenshot of Gateway Connections for df_Sales_ADLS](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.007.png)
 
 1. Expand **Refresh.**
 1. Set **Configure a refresh** **schedule** slider to **On**.
@@ -107,9 +107,9 @@ Let’s start by configuring a scheduled refresh of Sales Dataflow.
 
     **Note:** By clicking on Add another time link, you can add multiple refresh times. 
 
-You can also send failure notifications to the dataflow owner and other contacts.
+    You can also send failure notifications to the dataflow owner and other contacts.
 
-![A screenshot of Refresh schedule for df_Sales_ADLS](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.008.png)
+      ![A screenshot of Refresh schedule for df_Sales_ADLS](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.008.png)
 
 ### <a name="_toc152204372"></a>Task 2: Configure Scheduled refresh for Supplier and Customer Dataflow
 
@@ -117,15 +117,15 @@ You can also send failure notifications to the dataflow owner and other contacts
 1. Configure the refresh schedule to refresh **every day at midnight / 12 AM**. 
 1. Select **Apply** to save this setting.
 
-   ![A screenshot of Refresh schedule for df_Sales_ADLS](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.009.png)
+     ![A screenshot of Refresh schedule for df_Sales_ADLS](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.009.png)
 
 1. In the left panel, select **df_Customer_Dataverse**.
 1. Configure refresh schedule to four times a day: **midnight / 12 AM, 6 AM, noon / 12 PM, and 6 PM**.
 1. Select **Apply** to save this setting.
 
-   ![A screenshot of Refresh schedule for df_Customer_Dataverse](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.010.png)
+     ![A screenshot of Refresh schedule for df_Customer_Dataverse](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.010.png)
 
-As mentioned earlier, we need to build custom logic to handle the scenario where Employee file in SharePoint is not delivered on time. Let’s use Data Pipeline to solve this.
+      As mentioned earlier, we need to build custom logic to handle the scenario where Employee file in SharePoint is not delivered on time. Let’s use Data Pipeline to solve this.
 
 # <a name="_toc152204373"></a>**Data Pipeline**
 
@@ -134,32 +134,32 @@ As mentioned earlier, we need to build custom logic to handle the scenario where
 1. On the **bottom left** of your browser window, select **Power BI**.
 1. Microsoft Fabric dialog opens. Select **Data Factory**. You will navigate to Data Factory Home page.
 
-   ![A screenshot Fabric experiences dialog](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.011.png)
+     ![A screenshot Fabric experiences dialog](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.011.png)
 
 1. From the top panel, select **Data pipeline** to create a new pipeline.
 1. New pipeline dialog opens. **Name** the pipeline as **pl_Refresh_People_SharePoint**
 1. Select **Create**.
 
-  ![Screenshot of Data Factory Home to create new Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.012.png)
+    ![Screenshot of Data Factory Home to create new Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.012.png)
 
    You are** navigated to **Data Pipeline page**. If you have worked with Azure Data Factory, this screen will be familiar. Let’s get a quick overview of the layout.
    
    You are on the **Home** screen. If you look at the top menu, you will find options to add the commonly used activities, validate and run a pipeline and view the run history. Also, in the center pane you will find quick options to start building the pipeline.
    
-   ![A screenshot of Data Pipeline landing page](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.013.png)
+     ![A screenshot of Data Pipeline landing page](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.013.png)
 
 1. From the top menu select **Activities**. Now in the menu you will find a list of commonly used Activities. 
 1. Select the **ellipsis (…)** on the right on the menu to view all the other available Activities. We are going to use a few of these Activities in the lab.
 
-   ![A screenshot of Data Pipeline with available activities](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.014.png)
+     ![A screenshot of Data Pipeline with available activities](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.014.png)
 
 1. From the top menu click **Run**. You will find options to run and schedule the pipeline execution. You will also find the option to view execution history by using View run history.
 1. From the top menu select **View**. Here you will find options to view the code in JSON format. You will also find options to format the activities.
 
    **Note:** If you have a JSON background at the end of the lab, feel free to select View JSON code. Here you will notice all the orchestration you are doing using the design view can also be written in JSON. 
    
-   ![A screenshot of View ribbon in Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.015.png)
-
+     ![A screenshot of View ribbon in Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.015.png)
+  
 ### <a name="_toc152204375"></a>Task 4: Build simpler Data Pipeline
 
 Let’s start building the pipeline. We need an activity to refresh the Dataflow. Let’s find an activity which we can use.
@@ -173,7 +173,7 @@ Let’s start building the pipeline. We need an activity to refresh the Dataflow
 
    In our scenario, Employee Data is not updated on schedule. Sometimes there is a delay. Let’s see if we can accommodate for this.
    
-   ![A screenshot of Dataflow activity settings configuration in Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.016.png)
+     ![A screenshot of Dataflow activity settings configuration in Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.016.png)
 
 1. From the **bottom** **pane**, select **General**. Let’s give the activity a name and description.
 1. In the **Name** field, enter **dfactivity_People_SharePoint**
@@ -181,16 +181,16 @@ Let’s start building the pipeline. We need an activity to refresh the Dataflow
 1. Notice there is an option to Deactivate an activity. This feature is useful during testing or debugging. Leave it as **Activated**.
 1. There is an option to set **Timeout**. Let’s leave the **default value** which should give enough time for the dataflow to refresh.
 
-**Note:** If the data is not available on schedule, let’s set the activity to re-execute every 10 minutes, three times. If it fails on the third attempt as well, then it will report a failure.
+  **Note:** If the data is not available on schedule, let’s set the activity to re-execute every 10 minutes, three times. If it fails on the third attempt as well, then it will report a failure.
 
 1. Set **Retry** to **3**. 
 1. Expand **Advanced** section.
 1. Set **Retry interval (sec)** to **600**. 
 1. From the menu select **Home -> Save** icon to save the pipeline.
 
-   ![A screenshot of Dataflow activity General configuration in Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.017.png)
+     ![A screenshot of Dataflow activity General configuration in Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.017.png)
    
-   Notice the advantage of using the data pipeline compared to setting the data flow on scheduled refresh (like we did for the earlier data flows):
+     Notice the advantage of using the data pipeline compared to setting the data flow on scheduled refresh (like we did for the earlier data flows):
    
    - Pipeline provides the option to retry multiple times before failing the refresh.
    - Pipeline provides the ability to refresh within seconds whereas with data flow, scheduled refresh is every 30 minutes.
@@ -204,7 +204,7 @@ Let’s add a little more complexity to our scenario. We have noticed that if th
 1. New pipeline dialog opens. **Name** the pipeline as **pl_Refresh_People_SharePoint_Option2**
 1. Select **Create**.
 
-   ![A screenshot of create new data pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.018.png)
+     ![A screenshot of create new data pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.018.png)
 
 ### <a name="_toc152204377"></a>Task 6: Create Until Activity
 
@@ -214,9 +214,9 @@ Let’s add a little more complexity to our scenario. We have noticed that if th
 
    **Until**: is an activity that is used to iterate until a condition is satisfied. 
 
-In our scenario, we are going to iterate and refresh the dataflow until it is successful, or we have tried three times.
+    In our scenario, we are going to iterate and refresh the dataflow until it is successful, or we have tried three times.
 
-![A screenshot of adding Until activity in Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.019.png)
+    ![A screenshot of adding Until activity in Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.019.png)
 
 ### <a name="_toc152204378"></a>Task 7: Create Variables
 
@@ -247,15 +247,15 @@ In our scenario, we are going to iterate and refresh the dataflow until it is su
 1. Enter **Name** as **Iterator**
 1. Enter **Description** as **Iterator to refresh dataflow. It will retry up to 3 times**. 
 
-   ![A screenshot of General configuration of Until activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.021.png)
+     ![A screenshot of General configuration of Until activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.021.png)
 
 1. From the bottom pane, select **Settings**.
 1. Select the **Expression text box**. We need to enter an expression in this text box that will evaluate to true or false. Until activity iterators while this expression evaluates to false. Once the expression evaluates to true, Until activity stops the iteration.
 1. Select **Add dynamic content** link that appears below the text box.
 
-   ![A screenshot of Settings configuration of Until activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.022.png)
+     ![A screenshot of Settings configuration of Until activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.022.png)
 
-   We need to write an expression which would execute until either value of **varCounter is 3 or** value **varIsSuccess is Yes.** (varCounter and varIsSuccess are the variables we just created.)
+     We need to write an expression which would execute until either value of **varCounter is 3 or** value **varIsSuccess is Yes.** (varCounter and varIsSuccess are the variables we just created.)
 
 1. **Pipeline expression builder** dialog opens. In the bottom half of the dialog, you will have a menu:
    1. **Parameters:** Are constants across a data factory that can be consumed by a pipeline in any expression.
@@ -263,31 +263,31 @@ In our scenario, we are going to iterate and refresh the dataflow until it is su
    1. **Functions:** You can call functions within expressions. Functions are categorized into Collection, Conversion, Date, Logical, Math, and String functions. E.g., concat is a String function, add is a Math function, etc.
    1. **Variables:** Pipeline variables are values that can be set and modified during a pipeline run. Unlike pipeline parameters, which are defined at the pipeline level and cannot be changed during a pipeline run, pipeline variables can be set and modified within a pipeline using a Set Variable activity. We are going to use Set Variable activity shortly.
 
-   ![A screenshot of Pipeline expression builder dialog](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.023.png)
+     ![A screenshot of Pipeline expression builder dialog](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.023.png)
 
 1. Click **Functions** from the bottom menu.
 1. Expand the **Logical Functions** section.
 1. Select **or function**. Notice **@or()** is added to the dynamic expression text box. The or function takes two parameters. We are working on the first parameter now.
 
-   ![A screenshot of Pipeline expression builder dialog](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.024.png)
+     ![A screenshot of Pipeline expression builder dialog](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.024.png)
 
 1. Place the cursor **in between the parentheses** of **@or** function.
 1. From the **Logical Functions** section, select **equals** function. Notice this is added to the dynamic expression text box. 
 
    **Note:** Your function should look like **@or(equals())**. The equals function also takes three parameters. We will be checking if the variable varCounter is equal to 3.
    
-   ![A screenshot of Pipeline expression builder dialog](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.025.png)
+     ![A screenshot of Pipeline expression builder dialog](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.025.png)
 
 1. Now place cursor **in between the parentheses** of **@equals** function to add the parameters.
 1. From the bottom menu, select **Variables**.
 1. Select **varCounter** variable which will be the first parameter.
 1. Enter **3** as the second parameter of equals function. Your expression will be **@or(equals(variables('varCounter'),3))** as shown in the screenshot below.
-
-   ![A screenshot of Pipeline expression builder dialog](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.026.png)
+  
+     ![A screenshot of Pipeline expression builder dialog](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.026.png)
 
 1. We need to add the second parameter to the **or** function. **Add a comma** in between the ending two parentheses. This time we will try typing in the function name. Start typing **equ** and you will get a drop down of available functions (this is called intellisense). Select the **equals** function.
 
-   ![A screenshot of Pipeline expression builder dialog](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.027.png)
+     ![A screenshot of Pipeline expression builder dialog](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.027.png)
 
 1. The first parameter of equals function is a variable. Place **cursor before the comma**.
 1. Start typing **variables(**
@@ -295,7 +295,7 @@ In our scenario, we are going to iterate and refresh the dataflow until it is su
 1. After the comma, let’s enter the second parameter. Start typing **variables(**
 1. With the help of intellisense select **variables('varSuccess')**. Here we are comparing the value of varIsSuccess to the value of varSuccess. (varSuccess is defaulted to Yes.)
 
-   ![A screenshot of Pipeline expression builder dialog](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.028.png)
+     ![A screenshot of Pipeline expression builder dialog](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.028.png)
 
 1. Your expression should be:
 
@@ -303,26 +303,26 @@ In our scenario, we are going to iterate and refresh the dataflow until it is su
 
 1. Select **OK**.
 
-   ![A screenshot of Pipeline expression builder dialog](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.029.png)
+     ![A screenshot of Pipeline expression builder dialog](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.029.png)
 
 ### <a name="_toc152204380"></a>Task 9: Configure Dataflow Activity
 1. You will be navigated back to the design screen. With **Until activity selected**, from the **bottom pane**, select **Activities**. We will now add the activities that need to be executed.
 1. Select the **Edit icon** in the first row. You will be navigated to a blank iterator design screen.
 
-   ![A screenshot of Activity configuration for Until activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.030.png)
+     ![A screenshot of Activity configuration for Until activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.030.png)
 
 1. From the top menu, select **Activities -> Dataflow**. Dataflow activity is added to the design pane.
 1. With **Dataflow activity selected**, in the bottom pane select **General**. Let’s give the activity a name and description.
 1. In the **Name** field, enter **dfactivity_People_SharePoint**
 1. In the **Description** field, enter **Data flow activity to refresh df_People_Sharepoint dataflow.**
 
-   ![A screenshot of General configuration Dataflow activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.031.png)
+     ![A screenshot of General configuration Dataflow activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.031.png)
 
 1. Select **Settings** from the bottom pane.
 1. Make sure **Workspace** is set to **<your workspace name>.**
 1. From the **Dataflow dropdown** select **df_People_SharePoint**. When this Dataflow activity is executed, it is going to refresh **df_People_SharePoint.**
 
-   ![A screenshot of Settings configuration Dataflow activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.032.png)
+     ![A screenshot of Settings configuration Dataflow activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.032.png)
 
 ### <a name="_toc152204381"></a>Task 10: Configure 1<sup>st</sup> Set variable Activity
 
@@ -342,7 +342,7 @@ We have configured Dataflow activity like we did earlier in the lab. Now we will
 
 1. Click the **green check mark** and drag to connect to **Dataflow activity** to **Set variable activity**. So on success of data flow refresh we want to execute the Set variable activity.
 
-   ![A screenshot of General configuration Set variable activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.033.png)
+     ![A screenshot of General configuration Set variable activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.033.png)
 
 1. With **Set variable activity selected**, select **Settings** from the bottom menu.
 1. In the bottom pane, make sure **Variable type** is **Pipeline variable**.
@@ -350,13 +350,13 @@ We have configured Dataflow activity like we did earlier in the lab. Now we will
    This is the variable whose value we are going to set.
 1. In the **Value** field, select the **text box**. Select **Add dynamic content link**.
    
-   ![A screenshot of Settings configuration Set variable activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.034.png)
+     ![A screenshot of Settings configuration Set variable activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.034.png)
 
 1. Pipeline expression builder dialog opens. Select the **Add dynamic content below text area**.
 1. From the bottom menu select **Variables -> varSuccess**. Notice @variables('varSuccess') is entered in the Add dynamic content below text area. Remember when we created variables, we had preset the value of varSuccess variable to Yes. So we are assigning the value of Yes to varIsSuccess variable.
 1. Select **OK**. You will be navigated back to the **iterator design pane**.
 
-   ![A screenshot of Pipeline expression builder](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.035.png)
+     ![A screenshot of Pipeline expression builder](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.035.png)
 
 Now we need to set the counter if the dataflow activity fails. In Data Pipeline, we cannot self-reference a variable. Which means we cannot increment the counter variable varCounter by adding one to its value (varCounter = varCounter + 1). So we make use of varTempCounter variable.
 
@@ -368,7 +368,7 @@ Now we need to set the counter if the dataflow activity fails. In Data Pipeline,
 1. In the **Description** field, enter **Increment variable varTempCounter.**
 1. Click the **red x-mark** from Dataflow activity to the new Set variable activity. So, on failure of data flow refresh we want to execute this Set variable activity.
 
-   ![A screenshot of General configuration Set variable activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.036.png)
+     ![A screenshot of General configuration Set variable activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.036.png)
 
 1. With **Set variable activity selected**, select **Settings** from the bottom menu.
 1. In the bottom pane, make sure **Variable type** is **Pipeline variable**.
@@ -377,11 +377,11 @@ Now we need to set the counter if the dataflow activity fails. In Data Pipeline,
 1. In the **Value** field, select the **text box**. Select **Add dynamic content link**.
 1. Pipeline expression builder dialog opens. Enter **@add(variables('varCounter'),1)**. Feel free to type this expression in or use the menu to select the functions or paste it in. 
 
-**Note:** This function is setting the value of variable varTempCounter to the value of variable varCounter plus 1 (varTempCounter = varCounter + 1).
+    **Note:** This function is setting the value of variable varTempCounter to the value of variable varCounter plus 1 (varTempCounter = varCounter + 1).
 
-   ![A screenshot of Settings configuration Set variable activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.037.png)
+     ![A screenshot of Settings configuration Set variable activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.037.png)
 
-Now we need to set the value of varCounter variable to the value of varTempCounter. 
+      Now we need to set the value of varCounter variable to the value of varTempCounter. 
 
 ### <a name="_toc152204383"></a>Task 12: Configure 3<sup>rd</sup> Set variable Activity
 
@@ -391,7 +391,7 @@ Now we need to set the value of varCounter variable to the value of varTempCount
 1. In the **Description** field, enter **Increment variable varCounter.**
 1. Select the **green check mark** from set_varTempCounter Set variable activity to the new Set variable activity. 
 
-   ![A screenshot of General configuration Set variable activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.038.png)
+     ![A screenshot of General configuration Set variable activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.038.png)
 
 1. With **set_varCounter Set variable activity selected**, select **Settings** from the bottom menu.
 1. In the bottom pane, make sure **Variable type** is **Pipeline variable**.
@@ -399,9 +399,9 @@ Now we need to set the value of varCounter variable to the value of varTempCount
 1. In the **Value** field, select the **text box**. Select **Add dynamic content link**.
 1. Pipeline expression builder dialog opens. Enter **@variables('varTempCounter')**. Feel free to type this expression in or use the menu to select the functions or paste it in. 
 
-   **Note:** This function is setting the value of variable varCounter to the value of variable varTempCounter  (varCounter = varTempCounter). At the end of each iteration both varCounter and varTempCounter have the same value.
+     **Note:** This function is setting the value of variable varCounter to the value of variable varTempCounter  (varCounter = varTempCounter). At the end of each iteration both varCounter and varTempCounter have the same value.
    
-   ![A screenshot of Settings configuration Set variable activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.039.png)
+     ![A screenshot of Settings configuration Set variable activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.039.png)
 
 ### <a name="_toc152204384"></a>Task 13: Configure Wait Activity
 
@@ -413,29 +413,29 @@ Next, we need to wait for 5 minutes/300 seconds if data flow refresh fails the f
 1. In the **Description** field, enter **Wait for 300 seconds on 2nd try and 900 seconds on 3rd try.**
 1. Select the **green check mark** from set_varCounter Set variable activity to the new Wait activity. 
 
-   ![A screenshot of General configuration Wait activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.040.png)
+     ![A screenshot of General configuration Wait activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.040.png)
 
 1. With Wait activity selected, select **Settings** from the bottom menu.
 1. In the **Wait time in seconds** field, select the text box. Select **Add dynamic content link**.
 1. Pipeline expression builder dialog opens. Enter 
 
-**@if(**
+  **@if(**
+  
+  `    `**greater(variables('varCounter'), 1),**
+  
+  `    `**if(equals(variables('varCounter'), 2),**
+  
+  `        `**mul(variables('varWaitTime'),15 ),** 
+  
+  `        `**mul(variables('varWaitTime'), 0)**
+  
+  `    `**),**
+  
+  `    `**mul(variables('varWaitTime'),5 )**
+  
+  **)**
 
-`    `**greater(variables('varCounter'), 1),**
-
-`    `**if(equals(variables('varCounter'), 2),**
-
-`        `**mul(variables('varWaitTime'),15 ),** 
-
-`        `**mul(variables('varWaitTime'), 0)**
-
-`    `**),**
-
-`    `**mul(variables('varWaitTime'),5 )**
-
-**)**
-
-Feel free to type this expression in or use the menu to select the functions or paste it in. 
+  Feel free to type this expression in or use the menu to select the functions or paste it in. 
 
    ![A screenshot of Settings configuration Wait activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.041.png)
 
@@ -477,13 +477,13 @@ The expression is a nested if statement. It is checking if the value of varCount
 1. Select **Apply**.
 1. Select the **X** mark on the top right of the dialog to close it.
 
-   ![A screenshot of refresh schedule of Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.045.png)
+     ![A screenshot of refresh schedule of Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.045.png)
 
 1. Select **<your workspace name>** in the left panel to navigate to Data Factory home screen.
 
-**Note**: In the Schedule screen, there is no option to notify on success or failure (like Dataflow Schedule). Notification can be done by adding an activity in the Data Pipeline. We are not doing it in this lab as it is a lab environment.
+  **Note**: In the Schedule screen, there is no option to notify on success or failure (like Dataflow Schedule). Notification can be done by adding an activity in the Data Pipeline. We are not doing it in this lab as it is a lab environment.
 
-We have scheduled refreshes of the various data sources. We will be creating reports in the next lab.
+  We have scheduled refreshes of the various data sources. We will be creating reports in the next lab.
 
 # <a name="_toc150777627"></a><a name="_toc150779083"></a><a name="_toc152204386"></a>**References**
 
