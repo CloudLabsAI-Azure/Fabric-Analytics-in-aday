@@ -66,7 +66,7 @@ Let’s start by configuring a scheduled refresh of Sales Dataflow.
 
 ![A screenshot of Fabric workspace](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.002.png)
 
-1. Hover on the **df\_Sales\_ADLS** row. Notice that the familiar **Refresh** and **Schedule Refresh icons** are available. Select the **ellipsis (…)**.
+1. Hover on the **df_Sales_ADLS** row. Notice that the familiar **Refresh** and **Schedule Refresh icons** are available. Select the **ellipsis (…)**.
 1. Notice there is option to Delete, Edit, and Export the Dataflow. We can use Properties to update the name and description of the Dataflow. We will look at Refresh history shortly. Select **Settings**.
 
 ![A screenshot of df_Sales_ADLS Settings](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.003.png)
@@ -113,13 +113,13 @@ You can also send failure notifications to the dataflow owner and other contacts
 
 ### <a name="_toc152204372"></a>Task 2: Configure Scheduled refresh for Supplier and Customer Dataflow
 
-1. In the left panel, select **df\_Supplier\_Snowflake**.
+1. In the left panel, select **df_Supplier_Snowflake**.
 1. Configure the refresh schedule to refresh **every day at midnight / 12 AM**. 
 1. Select **Apply** to save this setting.
 
    ![A screenshot of Refresh schedule for df_Sales_ADLS](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.009.png)
 
-1. In the left panel, select **df\_Customer\_Dataverse**.
+1. In the left panel, select **df_Customer_Dataverse**.
 1. Configure refresh schedule to four times a day: **midnight / 12 AM, 6 AM, noon / 12 PM, and 6 PM**.
 1. Select **Apply** to save this setting.
 
@@ -137,7 +137,7 @@ As mentioned earlier, we need to build custom logic to handle the scenario where
    ![A screenshot Fabric experiences dialog](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.011.png)
 
 1. From the top panel, select **Data pipeline** to create a new pipeline.
-1. New pipeline dialog opens. **Name** the pipeline as **pl\_Refresh\_People\_SharePoint**
+1. New pipeline dialog opens. **Name** the pipeline as **pl_Refresh_People_SharePoint**
 1. Select **Create**.
 
   ![Screenshot of Data Factory Home to create new Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.012.png)
@@ -165,9 +165,9 @@ As mentioned earlier, we need to build custom logic to handle the scenario where
 Let’s start building the pipeline. We need an activity to refresh the Dataflow. Let’s find an activity which we can use.
 
 1. From the top menu select **Activities -> Dataflow**. Dataflow activity is added to the center design pane. Notice the bottom pane now has configuration options of the Dataflow activity.
-1. We are going to configure the activity to connect to df\_People\_SharePoint activity. From the **bottom** **pane**, select **Settings**.
+1. We are going to configure the activity to connect to df_People_SharePoint activity. From the **bottom** **pane**, select **Settings**.
 1. Make sure **Workspace** is set to **<your workspace name>.**
-1. From the **Dataflow dropdown** select **df\_People\_SharePoint**. When this Dataflow activity is executed, it is going to refresh **df\_People\_SharePoint.** That was easy, right? 😊
+1. From the **Dataflow dropdown** select **df_People_SharePoint**. When this Dataflow activity is executed, it is going to refresh **df_People_SharePoint.** That was easy, right? 😊
 
    **Note:** Notification Option is currently greyed out. This feature will be enabled shortly. You will be able to configure notifications on success and failure of this activity. 
 
@@ -176,8 +176,8 @@ Let’s start building the pipeline. We need an activity to refresh the Dataflow
    ![A screenshot of Dataflow activity settings configuration in Data Pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.016.png)
 
 1. From the **bottom** **pane**, select **General**. Let’s give the activity a name and description.
-1. In the **Name** field, enter **dfactivity\_People\_SharePoint**
-1. In the **Description** field, enter **Data flow activity to refresh df\_People\_Sharepoint dataflow.**
+1. In the **Name** field, enter **dfactivity_People_SharePoint**
+1. In the **Description** field, enter **Data flow activity to refresh df_People_Sharepoint dataflow.**
 1. Notice there is an option to Deactivate an activity. This feature is useful during testing or debugging. Leave it as **Activated**.
 1. There is an option to set **Timeout**. Let’s leave the **default value** which should give enough time for the dataflow to refresh.
 
@@ -201,7 +201,7 @@ Let’s add a little more complexity to our scenario. We have noticed that if th
 
 1. From the left panel, click **<your workspace name>**, then** you will be navigated to the Data Factory Home page.
 1. From the top menu, click **New** and from the dropdown, click **Data pipeline**.
-1. New pipeline dialog opens. **Name** the pipeline as **pl\_Refresh\_People\_SharePoint\_Option2**
+1. New pipeline dialog opens. **Name** the pipeline as **pl_Refresh_People_SharePoint_Option2**
 1. Select **Create**.
 
    ![A screenshot of create new data pipeline](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.018.png)
@@ -313,14 +313,14 @@ In our scenario, we are going to iterate and refresh the dataflow until it is su
 
 1. From the top menu, select **Activities -> Dataflow**. Dataflow activity is added to the design pane.
 1. With **Dataflow activity selected**, in the bottom pane select **General**. Let’s give the activity a name and description.
-1. In the **Name** field, enter **dfactivity\_People\_SharePoint**
-1. In the **Description** field, enter **Data flow activity to refresh df\_People\_Sharepoint dataflow.**
+1. In the **Name** field, enter **dfactivity_People_SharePoint**
+1. In the **Description** field, enter **Data flow activity to refresh df_People_Sharepoint dataflow.**
 
    ![A screenshot of General configuration Dataflow activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.031.png)
 
 1. Select **Settings** from the bottom pane.
 1. Make sure **Workspace** is set to **<your workspace name>.**
-1. From the **Dataflow dropdown** select **df\_People\_SharePoint**. When this Dataflow activity is executed, it is going to refresh **df\_People\_SharePoint.**
+1. From the **Dataflow dropdown** select **df_People_SharePoint**. When this Dataflow activity is executed, it is going to refresh **df_People_SharePoint.**
 
    ![A screenshot of Settings configuration Dataflow activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.032.png)
 
@@ -330,7 +330,7 @@ We have configured Dataflow activity like we did earlier in the lab. Now we will
 
 1. From the top menu, select **Activities -> Set variable**. Set variable activity is added to the design canvas.
 1. With **Set variable activity selected**, in the bottom pane select **General**. Let’s give the activity a name and description.
-1. In the **Name** field, enter **set\_varIsSuccess**
+1. In the **Name** field, enter **set_varIsSuccess**
 1. In the **Description** field, enter **Set variable varIsSuccess to Yes.**
 
    **Note:** Hover** over **Dataflow activity**. To the right of the activity box there are four icons. These can be used to connect to the next activity based on the result of the activity:
@@ -364,7 +364,7 @@ Now we need to set the counter if the dataflow activity fails. In Data Pipeline,
 
 1. From the top menu, select **Activities -> Set variable**. Set variable activity is added to the design canvas.
 1. With **Set variable activity selected**, in the bottom pane select **General**. Let’s give the activity a name and description.
-1. In the **Name** field, enter **set\_varTempCounter**
+1. In the **Name** field, enter **set_varTempCounter**
 1. In the **Description** field, enter **Increment variable varTempCounter.**
 1. Click the **red x-mark** from Dataflow activity to the new Set variable activity. So, on failure of data flow refresh we want to execute this Set variable activity.
 
@@ -387,13 +387,13 @@ Now we need to set the value of varCounter variable to the value of varTempCount
 
 1. From the top menu, select **Activities -> Set variable**. Set variable activity is added to the design canvas.
 1. With **Set variable activity selected**, in the bottom pane select **General**. Let’s give the activity a name and description.
-1. In the **Name** field, enter **set\_varCounter**
+1. In the **Name** field, enter **set_varCounter**
 1. In the **Description** field, enter **Increment variable varCounter.**
-1. Select the **green check mark** from set\_varTempCounter Set variable activity to the new Set variable activity. 
+1. Select the **green check mark** from set_varTempCounter Set variable activity to the new Set variable activity. 
 
    ![A screenshot of General configuration Set variable activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.038.png)
 
-1. With **set\_varCounter Set variable activity selected**, select **Settings** from the bottom menu.
+1. With **set_varCounter Set variable activity selected**, select **Settings** from the bottom menu.
 1. In the bottom pane, make sure **Variable type** is **Pipeline variable**.
 1. In the **Name** field, select **varCounter**. This is the variable whose value we are going to set.
 1. In the **Value** field, select the **text box**. Select **Add dynamic content link**.
@@ -409,9 +409,9 @@ Next, we need to wait for 5 minutes/300 seconds if data flow refresh fails the f
 
 1. From the top menu, select **Activities -> ellipsis (…) - > Wait**. Wait activity is added to the design canvas.
 1. With **Wait activity selected**, in the bottom pane select **General**. Let’s give the activity a name and description.
-1. In the **Name** field, enter **wait\_onFailure**
+1. In the **Name** field, enter **wait_onFailure**
 1. In the **Description** field, enter **Wait for 300 seconds on 2nd try and 900 seconds on 3rd try.**
-1. Select the **green check mark** from set\_varCounter Set variable activity to the new Wait activity. 
+1. Select the **green check mark** from set_varCounter Set variable activity to the new Wait activity. 
 
    ![A screenshot of General configuration Wait activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.040.png)
 
@@ -452,7 +452,7 @@ The expression is a nested if statement. It is checking if the value of varCount
 
    ![A screenshot of activities in Until activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.042.png)
 
-1. From the top left of the design canvas **select pl\_refresh\_people\_Sharepoint\_option2** to be navigated out of Until iterator. 
+1. From the top left of the design canvas **select pl_refresh_people_Sharepoint_option2** to be navigated out of Until iterator. 
 
    ![A screenshot of activities in Until activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.043.png)
 
