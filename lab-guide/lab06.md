@@ -418,23 +418,23 @@ Next, we need to wait for 5 minutes/300 seconds if data flow refresh fails the f
 1. With Wait activity selected, select **Settings** from the bottom menu.
 1. In the **Wait time in seconds** field, select the text box. Select **Add dynamic content link**.
 1. Pipeline expression builder dialog opens. Enter 
-
-  **@if(**
   
-  `    `**greater(variables('varCounter'), 1),**
+    **@if(**
+    
+    `    `**greater(variables('varCounter'), 1),**
+    
+    `    `**if(equals(variables('varCounter'), 2),**
+    
+    `        `**mul(variables('varWaitTime'),15 ),** 
+    
+    `        `**mul(variables('varWaitTime'), 0)**
+    
+    `    `**),**
+    
+    `    `**mul(variables('varWaitTime'),5 )**
+    
+    **)**
   
-  `    `**if(equals(variables('varCounter'), 2),**
-  
-  `        `**mul(variables('varWaitTime'),15 ),** 
-  
-  `        `**mul(variables('varWaitTime'), 0)**
-  
-  `    `**),**
-  
-  `    `**mul(variables('varWaitTime'),5 )**
-  
-  **)**
-
   Feel free to type this expression in or use the menu to select the functions or paste it in. 
 
    ![A screenshot of Settings configuration Wait activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.041.png)
