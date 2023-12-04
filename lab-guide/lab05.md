@@ -94,7 +94,7 @@ By the end of this lab, you will have learned:
 
 1. Select **Save as report**.
 1. Save your report dialog opens. Type **Units by Supplier** in the **Enter a name for your report textbox**.
-1. Make sure the destination workspace is **<your workspace name>.**
+1. Make sure the destination workspace is **your workspace name.**
 1. Select **Save.**
 
    ![A screenshot of Visualize results screen](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.007.png)
@@ -144,7 +144,7 @@ You will be navigated back to **SQL analytics endpoint view**. If you are not fa
 
 1. Now we have the query ready, let’s view the result. Select **Visualize results** from the results pane.
 
-   ![A screenshot of visual query dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.013.png)
+      ![A screenshot of visual query dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.013.png)
 
 1. Visualize results dialog opens which looks like Power BI window. From the **Data** pane in the right, select **Supplier_Name** and **Quantity** fields.
 1. This will create a table visual, with the result like the SQL query result from earlier. If you choose to, you can Save this report. Since we saved a similar report earlier, we are going to select **Cancel**.
@@ -178,7 +178,7 @@ Ok now we are ready to build the model, build relationships between tables, and 
 
    ![A screenshot of New relationship dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.017.png)
 
- **Checkpoint:** Your model should have the two relations as shown in the screenshot:
+     **Checkpoint:** Your model should have the two relations as shown in the screenshot:
 
   ![A screenshot of model so far](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.018.png)
 
@@ -190,7 +190,7 @@ Let’s add a few measures which we need to create the Sales dashboard.
 
 1. Select **Sales table** from the model view. We want to add the measures to the Sales table.
 1. From the top menu, select **Home -> New Measure**. Notice formula bar is displayed.
-1. Enter **Sales = SUM(Sales[Sales\_Amount])** in the **formula bar**.
+1. Enter **Sales = SUM(Sales[Sales_Amount])** in the **formula bar**.
 1. Click the **check mark** in the formula bar or click Enter button.
 1. In the Properties panel on the right, expand **Formatting** section.
 1. From the **Format** dropdown select **Currency**.
@@ -227,24 +227,24 @@ Let’s add the remaining relationships.
 1. Create a **many to one** relationship between **Sales** and **Product**. Select **StockItemID** from **Sales** and **StockItemID** from **Product**.
 1. Similarly, create a **many to one** relationship between **Sales** and **People**. Select **SalespersonPersonID** from **Sales** and **PersonID** from **People**. 
 
-   **Checkpoint:** Your model should look like the screenshot below.
+      **Checkpoint:** Your model should look like the screenshot below.
   
     ![A screenshot of modeling view](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.022.png)
 
 1. Now let’s create a relationship between Product and Supplier. Select **SupplierID** from **Product** table and drag it over **SupplierID** in **Supplier** table.
 1. New relationship dialog opens. Make sure **Table 1** is **Product** and **Column** is **SupplierID.**
 1. Make sure **Table 2** is **Supplier** and **Column** is **SupplierID.**
-1. Make sure **Cardinality** is **Many to one (\*:1)**.
+1. Make sure **Cardinality** is **Many to one (*:1)**.
 1. Make sure **Cross filter direction** is **Both**.
 1. Select **Ok**.
 
-   ![A screenshot of New relationship dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.023.png)
+      ![A screenshot of New relationship dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.023.png)
 
-1. Similarly, create a **many to one** relationship with **Cross filter direction** as **Both** between **Product\_Details** and **Product**. Select **StockItemID** from **Product\_Details** and **StockItemID** from **Product**.
+1. Similarly, create a **many to one** relationship with **Cross filter direction** as **Both** between **Product_Details** and **Product**. Select **StockItemID** from **Product_Details** and **StockItemID** from **Product**.
 1. Now let’s create a relationship between Reseller and Geo. Select **PostalCityID** from **Reseller** table and drag it over **CityID** in **Geo** table.
 1. New relationship dialog opens. Make sure **Table 1** is **Reseller** and **Column** is **PostalCityID.**
 1. Make sure **Table 2** is **Geo** and **Column** is **CityID.**
-1. Make sure **Cardinality** is **Many to one (\*:1)**.
+1. Make sure **Cardinality** is **Many to one (*:1)**.
 1. Make sure **Cross filter direction** is **Both**.
 1. Select **Ok**.
 
@@ -253,24 +253,24 @@ Let’s add the remaining relationships.
 1. Now let’s create a relationship between Customer and Reseller. Select **ResellerID** from **Customer** table and drag it over **ResellerID** in **Reseller** table.
 1. New relationship dialog opens. Make sure **Table 1** is **Customer** and **Column** is **ResellerID.**
 1. Make sure **Table 2** is **Reseller** and **Column** is **ResellerID.**
-1. Make sure **Cardinality is Many to one**.
-1. Make sure **Cross filter direction is single**.
+1. Make sure **Cardinality is Many to one (*:1)**.
+1. Make sure **Cross filter direction is **single**.
 1. Select **Ok**.
 
    ![A screenshot of New relationship dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.025.png)**	
 
-   **Checkpoint:** Your model should look like the screenshot below.
+      **Checkpoint:** Your model should look like the screenshot below.
 
    ![A screenshot of modeling view](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.026.png)
 
-1. Now let’s create a relationship between PO and Date. Select **Order\_Date** from **PO** table and drag it over **Date** in **Date** table.
-1. New relationship dialog opens. Make sure **Table 1** is **PO** and **Column** is **Order\_Date.**
+1. Now let’s create a relationship between PO and Date. Select **Order_Date** from **PO** table and drag it over **Date** in **Date** table.
+1. New relationship dialog opens. Make sure **Table 1** is **PO** and **Column** is **Order_Date.**
 1. Make sure **Table 2** is **Date** and **Column** is **Date.**
-1. Make sure **Cardinality** is **Many to one (\*:1)**.
+1. Make sure **Cardinality** is **Many to one (*:1)**.
 1. Make sure **Cross filter direction** is **Single**.
 1. Select **OK**.
 
-   ![A screenshot of New relationship dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.027.png)
+      ![A screenshot of New relationship dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.027.png)
 
 1. Similarly, create a **many to one** relationship between **PO** and **Product**. Select **StockItemID** from **PO** and **StockItemID** from **Product**.
 1. Similarly, create a **many to one** relationship between **PO** and **People**. Select **ContactPersonID** from **PO** and **PersonID** from **People**. 
