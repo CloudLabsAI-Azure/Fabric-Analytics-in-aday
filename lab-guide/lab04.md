@@ -189,17 +189,12 @@ You will be navigated back to the **Data Factory screen**. Now let’s create a 
       ![A screenshot Configure connection in Dataflow](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.018.png)
 
 2. Connect to data source dialog opens. In the **Connection** dropdown make sure, **Create new connection** is selected.
-3. For the New Environments **Authentication kind** should be **Service Prinicipal.** and enter the below SPN credentials.
-   
-    * **Dataverse**: orgf8415570.crm.dynamics.com
-    * **Tenant ID**: **9ddb7112-7d5f-432c-9147-a4dd1b0de572**
-    * **Service Principal Application ID**: **1c7b251d-1875-4b1f-8711-8dead51bd633**
-    * **Secret Key**: **nO-8Q~h7OxXyyV5TroOJJoexVl4jRnRcVuRiNaWm**
-   
-5. Select **Connect**.
-6. For Old environment we need to select the **Organization account* and click on Connect.
-      
+3. **Authentication kind** should be **Organizational Account.**.
 
+
+      ![Picture80](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/e68c1646-3f3f-4b0c-841b-bcfc3faaaf2f)
+   
+4. Select **Connect**.
 
 ### <a name="_toc152198712"></a>Task 7: Create Data destination for Customer query
 
