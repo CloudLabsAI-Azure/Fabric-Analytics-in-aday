@@ -82,13 +82,13 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
 2. Connect to data source dialog opens. In the **Connection** dropdown make sure, **Create new connection** is selected.
 3. **Authentication kind** should be **Snowflake**.
-4. **Username** should be **TE_SNOWFLAKE**
-5. **Password** should be **)EHZ3h7!eGym8EWR**
+4. **Username** should be **Teams**
+5. **Password** should be **fxv7xKp7B93isr7**
 6. Select **Connect**.
 
       ![A screenshot to connect to data source](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.005.png)
 
-      Connection is established and you can view the data in the preview panel. Feel free to navigate through the Applied Steps of the queries. Basically, Suppliers query has the details of suppliers and SupplierCategories as the name implies has supplier categories. These two tables are joined to create Supplier dimension, with the columns we need. Similarly, we have PO Line Items merged with PO to create the PO fact. Now we need to ingest Supplier and PO data into Lakehouse.
+      Connection is established and you can view the data in the preview panel. Feel free to navigate through the Applied Steps of the queries. Basically, the Suppliers query has the details of suppliers and SupplierCategories as the name implies has supplier categories. These two tables are joined to create Supplier dimension, with the columns we need. Similarly, we have PO Line Items merged with PO to create the PO fact. Now we need to ingest Supplier and PO data into Lakehouse.
 
 7. As mentioned earlier, we are not Staging any of this data. So **right click** on **Supplier** query in the Queries pane and select **Enable staging** to remove the check mark.
 
