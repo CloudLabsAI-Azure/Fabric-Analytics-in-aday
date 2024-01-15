@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 4
 
-# ![](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.001.png)
+# ![](../media/new8.png)
 
 # Contents
 - Introduction
@@ -49,7 +49,7 @@ By the end of this lab, you will have learned:
 # <a name="_toc152198705"></a>**Dataflow Gen 2**
 ### <a name="_toc152151584"></a><a name="_toc152198706"></a>Task 1: Copy Snowflake queries to Dataflow
 
-1. Let’s navigate back to the **Fabric workspace** you created in the earlier lab.
+1. Let’s navigate back to the Fabric workspace, **FAIAD_username** you created in the earlier Lab 2, Task 8.
 1. From the top menu, select **New -> Dataflow Gen2**.
 
       ![A screenshot to select New -> Dataflow Gen2](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.002.png)
@@ -57,7 +57,9 @@ By the end of this lab, you will have learned:
       You will be navigated to **Dataflow page**. Now that we are familiar with Dataflow, let’s go ahead and copy the queries from Power BI Desktop into Dataflow.
 
 3. If you have not already opened it, open the **FAIAD.pbix** located in the **Report** folder on the **Desktop** of your lab environment.
+
 4. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
+
 5. Power Query window opens. From the left panel, under SnowflakeData folder **Ctrl+Select** or Shift+Select the following queries:
    1. SupplierCategories
    2. Suppliers
