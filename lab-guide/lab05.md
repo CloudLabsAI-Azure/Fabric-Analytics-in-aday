@@ -1,6 +1,5 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 5
 
-
 # ![](../media/new9.png)
 
 # Contents
@@ -42,21 +41,21 @@ By the end of this lab, you will have learned:
 
 1. Let’s navigate back to the Fabric workspace, **FAIAD_username** you created in Lab 2, Task 8.
 1. Navigate back to **Data Factory screen**.
-1. You will see three types of lh_FAIAD – Semantic model, SQL endpoint, and Lakehouse. We explored the Lakehouse option in an earlier lab. Select **lh_FAIAD SQL analytics endpoint** option to explore the SQL option. You will be navigated to **SQL view** of the explorer.
+1. You will see three types of lh_FAIAD – Semantic model, SQL endpoint, and Lakehouse. We explored the Lakehouse option in an earlier lab. Select the **lh_FAIAD SQL analytics endpoint** option to explore the SQL option. You will be navigated to the **SQL view** of the explorer.
 
     ![A screenshot of Data Factory Home](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.002.png)
 
-    If you would like to explore the data before creating a data model, you can use SQL to do so. Let’s look at two options to use SQL, the first one is developer-friendly, and second option is for analysts. 
+    If you would like to explore the data before creating a data model, you can use SQL to do so. Let’s look at two options to use SQL, the first one is developer-friendly, and the second option is for analysts. 
     
     Let’s assume you want to quickly find out the Units sold by Supplier using SQL. We have two options, writing a SQL statement or using a visual to create the SQL statement.
     
     Notice on the left panel, you can view the Tables. If you expand the tables, you can view the Columns that make up the table. Also, there are options to create SQL Views, Functions, and Stored Procedures. If you have a SQL background, feel free to explore these options. Let’s try to write a simple SQL query.
 
-1. From the **top menu** select **New SQL query** or from the **bottom of the left panel** select **Query**. You will be navigated to SQL query view.
+1. From the **top menu** select **New SQL query** or from the **bottom of the left panel** select **Query**. You will be navigated to the SQL query view.
 
    ![A screenshot of SQL Query view](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.003.png)
 
-1. **Paste** the below SQL query into the **query window**. This query will return the units by Supplier Name. It is joining Sales table with Product and Supplier table to achieve this.
+1. **Paste** the below SQL query into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier table to achieve this.
 
    ```
    SELECT su.Supplier_Name, SUM(Quantity) as Units
@@ -71,7 +70,7 @@ By the end of this lab, you will have learned:
    ```
 1. Click **Run** to view the results.
 1. Notice there is an option to save this query as a View by selecting **Save as view**.
-1. On the right **Explorer** panel, under **Queries section** notice this query is saved under **My queries** as **SQL query 1**. This provides an option to rename the query and save it for future use. There is also an option to view queries that are shared with you using **Shared queries** folder.
+1. On the right **Explorer** panel, under **Queries section** notice this query is saved under **My queries** as **SQL query 1**. This provides an option to rename the query and save it for future use. There is also an option to view queries that are shared with you using the **Shared queries** folder.
 
    ![A screenshot of SQL query screen](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.004.png)
 
@@ -101,11 +100,11 @@ By the end of this lab, you will have learned:
    
 ### <a name="_toc152200370"></a>Task 3: Create Visual query
 
-You will be navigated back to **SQL analytics endpoint view**. If you are not familiar with SQL, you can execute a similar query using visual query.
+You will be navigated back to **SQL analytics endpoint view**. If you are not familiar with SQL, you can execute a similar query using the visual query.
 
 1. From the top menu select **New visual query**. A visual query pane opens.
 1. From the **Explorer** pane, drag **Sales, Product, and Supplier** tables to the visual query pane.
-1. With **Sales** table selected, from the Visual query pane menu, select **Combine -> Merge queries**.
+1. With the **Sales** table selected, from the Visual query pane menu, select **Combine -> Merge queries**.
 
    ![A screenshot of Visual query screen](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.008.png)
 
@@ -124,13 +123,13 @@ You will be navigated back to **SQL analytics endpoint view**. If you are not fa
 
    Notice Merged queries and Expanded Product steps are created in the Sales table.
 
-1. Similarly, let’s merge Supplier table. Within the **Sales** table select **“+”** (located after Expanded Product) to add a new step. Dialog opens.
+1. Similarly, let’s merge the Supplier table. Within the **Sales** table select **“+”** (located after Expanded Product) to add a new step. Dialog opens.
 1. Select **Combine -> Merge queries**.
 
    ![A screenshot to add Merge query step](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.011.png)
 
 1. Merge dialog opens. From the **Right table for merge** dropdown select **Supplier**.
-1. Select **SupplierID** from both **Sales** and **Supplier** table. This is to merge Supplier and Sales tables.
+1. Select **SupplierID** from both **Sales** and **Supplier** table. This is to merge the Supplier and Sales tables.
 1. From the **Join kind**, select **Left Outer**.
 1. Select **OK**.
 
@@ -146,18 +145,18 @@ You will be navigated back to **SQL analytics endpoint view**. If you are not fa
 
       ![A screenshot of visual query dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.013.png)
 
-1. Visualize results dialog opens which looks like Power BI window. From the **Data** pane in the right, select **Supplier_Name** and **Quantity** fields.
+1. Visualize results dialog opens which looks like a Power BI window. From the **Data** pane on the right, select the **Supplier_Name** and **Quantity** fields.
 1. This will create a table visual, with the result like the SQL query result from earlier. If you choose to, you can Save this report. Since we saved a similar report earlier, we are going to select **Cancel**.
 
    ![A screenshot of visualize report dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.014.png)
 
 ### <a name="_toc152200372"></a>Task 5: Create Relationships
 
-Ok now we are ready to build the model, build relationships between tables, and create measures.
+Ok, now we are ready to build the model, build relationships between tables, and create measures.
 
 1. From the **bottom of the left panel** select **Model**. You will notice the center pane looks like the Model view we see in Power BI Desktop.
 1. **Resize and rearrange** the tables as needed.
-1. Let’s create a relationship between Sales and Reseller. Select **ResellerID** from **Sales** table and drag it over **ResellerID** in **Reseller** table.
+1. Let’s create a relationship between Sales and Resellers. Select **ResellerID** from the **Sales** table and drag it over **ResellerID** in the **Reseller** table.
 
    ![A screenshot of modeling view](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.015.png)
 
@@ -169,7 +168,7 @@ Ok now we are ready to build the model, build relationships between tables, and 
 
    ![A screenshot of New relationship dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.016.png)
 
-1. Similarly, create a relationship between Sales and Date. Select **InvoiceDate** from **Sales** table and drag it over **Date** in **Date** table.
+1. Similarly, create a relationship between Sales and Date. Select **InvoiceDate** from the **Sales** table and drag it over **Date** in the **Date** table.
 1. New relationship dialog opens. Make sure **Table 1** is **Sales** and **Column** is **InvoiceDate.**
 1. Make sure **Table 2** is **Date** and **Column** is **Date.**
 1. Make sure **Cardinality** is **Many to one (\*:1)**.
@@ -189,9 +188,9 @@ For the sake of time, we will not be creating all the relationships. If time per
 Let’s add a few measures which we need to create the Sales dashboard.
 
 1. Select **Sales table** from the model view. We want to add the measures to the Sales table.
-1. From the top menu, select **Home -> New Measure**. Notice formula bar is displayed.
+1. From the top menu, select **Home -> New Measure**. The notice formula bar is displayed.
 1. Enter **Sales = SUM(Sales[Sales_Amount])** in the **formula bar**.
-1. Click the **check mark** in the formula bar or click Enter button.
+1. Click the **check mark** in the formula bar or click the Enter button.
 1. In the Properties panel on the right, expand **Formatting** section.
 1. From the **Format** dropdown select **Currency**.
 1. Set **Decimal places** to **0**.
@@ -200,8 +199,8 @@ Let’s add a few measures which we need to create the Sales dashboard.
 
 1. With the **Sales table selected**, click **New Measure** from the top menu.
 1. Enter **Units = SUM(Sales[Quantity])** in the **formula bar.**
-1. Click the **check mark** in the formula bar or click Enter button.
-1. In the Properties panel on the right, expand **Formatting** section (it may take a few moments for the Properties panel to load).
+1. Click the **check mark** in the formula bar or click the Enter button.
+1. In the Properties panel on the right, expand the **Formatting** section (it may take a few moments for the Properties panel to load).
 1. From the **Format** dropdown select **Whole number**.
 1. Set the **Thousands Separator** to **Yes**.
 
@@ -209,7 +208,7 @@ Let’s add a few measures which we need to create the Sales dashboard.
 
 1. With the **Sales table selected**, select **New Measure** from the top menu.
 1. Enter **Orders = DISTINCTCOUNT(Sales[InvoiceID])** in the **formula bar.**
-1. Click the **check mark** in the formula bar or click Enter button.
+1. Click the **check mark** in the formula bar or click the Enter button.
 1. In the Properties panel on the right, expand **Formatting** section.
 1. From the **Format** dropdown select **Whole number**.
 1. Set the **Thousands Separator** to **Yes**.
@@ -231,7 +230,7 @@ Let’s add the remaining relationships.
   
     ![A screenshot of modeling view](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.022.png)
 
-1. Now let’s create a relationship between Product and Supplier. Select **SupplierID** from **Product** table and drag it over **SupplierID** in **Supplier** table.
+1. Now let’s create a relationship between the Product and the Supplier. Select **SupplierID** from the **Product** table and drag it over **SupplierID** in the **Supplier** table.
 1. New relationship dialog opens. Make sure **Table 1** is **Product** and **Column** is **SupplierID.**
 1. Make sure **Table 2** is **Supplier** and **Column** is **SupplierID.**
 1. Make sure **Cardinality** is **Many to one (*:1)**.
@@ -241,7 +240,7 @@ Let’s add the remaining relationships.
       ![A screenshot of New relationship dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.023.png)
 
 1. Similarly, create a **many to one** relationship with **Cross filter direction** as **Both** between **Product_Details** and **Product**. Select **StockItemID** from **Product_Details** and **StockItemID** from **Product**.
-1. Now let’s create a relationship between Reseller and Geo. Select **PostalCityID** from **Reseller** table and drag it over **CityID** in **Geo** table.
+1. Now let’s create a relationship between Reseller and Geo. Select **PostalCityID** from the **Reseller** table and drag it over **CityID** in the **Geo** table.
 1. New relationship dialog opens. Make sure **Table 1** is **Reseller** and **Column** is **PostalCityID.**
 1. Make sure **Table 2** is **Geo** and **Column** is **CityID.**
 1. Make sure **Cardinality** is **Many to one (*:1)**.
@@ -250,7 +249,7 @@ Let’s add the remaining relationships.
 
    ![A screenshot of New relationship dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.024.png)
 
-1. Now let’s create a relationship between Customer and Reseller. Select **ResellerID** from **Customer** table and drag it over **ResellerID** in **Reseller** table.
+1. Now let’s create a relationship between the Customer and the Reseller. Select **ResellerID** from the **Customer** table and drag it over **ResellerID** in the **Reseller** table.
 1. New relationship dialog opens. Make sure **Table 1** is **Customer** and **Column** is **ResellerID.**
 1. Make sure **Table 2** is **Reseller** and **Column** is **ResellerID.**
 1. Make sure **Cardinality is Many to one (*:1)**.
@@ -263,7 +262,7 @@ Let’s add the remaining relationships.
 
    ![A screenshot of modeling view](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.026.png)
 
-1. Now let’s create a relationship between PO and Date. Select **Order_Date** from **PO** table and drag it over **Date** in **Date** table.
+1. Now let’s create a relationship between PO and Date. Select **Order_Date** from the **PO** table and drag it over **Date** in the **Date** table.
 1. New relationship dialog opens. Make sure **Table 1** is **PO** and **Column** is **Order_Date.**
 1. Make sure **Table 2** is **Date** and **Column** is **Date.**
 1. Make sure **Cardinality** is **Many to one (*:1)**.
@@ -286,9 +285,9 @@ Let’s add the remaining relationships.
 Let’s add the remaining relationships.
 
 1. Enter **Avg Order = DIVIDE([Sales], [Orders])** in the formula bar.
-1. Click the **check mark** in the formula bar or click Enter button.
+1. Click the **check mark** in the formula bar or click the Enter button.
 1. Once the measure is saved, notice the Measure tools option on the top menu. Click **Measure tools**.
-1. From the Format drop down, click **Currency**.
+1. From the Format drop-down, click **Currency**.
 
    ![A screenshot of modeling view with formula bar to add measure](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.029.png)
 
@@ -331,11 +330,11 @@ Read the more in-depth Fabric experience announcement blogs:
 
 By using this demo/lab, you agree to the following terms:
 
-The technology/functionality described in this demo/lab is provided by Microsoft Corporation for purposes of obtaining your feedback and to provide you with a learning experience. You may only use the demo/lab to evaluate such technology features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell this demo/lab or any portion thereof.
+The technology/functionality described in this demo/lab is provided by Microsoft Corporation for the purposes of obtaining your feedback and providing you with a learning experience. You may only use the demo/lab to evaluate such technology features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell this demo/lab or any portion thereof.
 
 COPYING OR REPRODUCTION OF THE DEMO/LAB (OR ANY PORTION OF IT) TO ANY OTHER SERVER OR LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS EXPRESSLY PROHIBITED.
 
-THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT.
+THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT.
 
 **FEEDBACK**. If you give feedback about the technology features, functionality and/or concepts described in this demo/lab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.
 
