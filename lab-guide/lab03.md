@@ -127,7 +127,7 @@ You will be navigated to the **Dataflow page**. This screen will look familiar a
 Now we have the Base query set up. We can reference this for all the queries from the ADLS Gen2 source.
 
 ### <a name="_toc152196227"></a>Task 4: Create Cities query
-Sales Data is available by Geography, Product, sales person, and Date granularity. Let’s first create a query to get the Geo dimension. Geo data is available in three different files located in the following subfolders:
+Sales Data is available by Geography, Product, salesperson, and Date granularity. Let’s first create a query to get the Geo dimension. Geo data is available in three different files located in the following subfolders:
 
 - **Cities:** Application.Cities
 - **Countries:** Application.Countries
@@ -288,7 +288,7 @@ Now we have a dimension, let’s ingest this data into Lakehouse. This is the ne
 
    ![A screenshot of Connect to data destination](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.036.png)
 
-1. Once the connection is created, choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
+1. Once the connection is created, the choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
 1. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_username**.
 1. Select **lh\_FAIAD**
 1. Leave the table name as **Geo**
@@ -354,7 +354,7 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
    To make things easy, let’s see if we can copy over the queries from Power BI Desktop.
 
 1. If you have not already opened it, open **FAIAD.pbix** located in the **Report** folder on the **Desktop** of your lab environment.
-1. From the ribbon select **Home -> Transform**. Power Query window opens.
+1. From the ribbon select **Home -> Transform**. The power Query window opens.
 1. From the **Queries** panel on the left, **Ctrl+Select** following queries from **ADLSData**.
    1. Product
    1. Product Groups
@@ -369,7 +369,7 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 
    ![A screenshot to copy queries from Power Query window](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.045.png)
 
-1. **Right click** and select **Copy**.
+1. **Right-click** and select **Copy**.
 
    ![A screenshot to copy queries from Power Query window](../media/new7.png)
    
@@ -430,11 +430,12 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
    c. Date
 
    d. Sales
-1. We have a data flow that ingests data from ADLS into Lakehouse. Let’s go ahead and publish this dataflow. Select **Publish** in the bottom right corner.
+
+1. We have a data flow that ingests data from ADLS into Lakehouse. Let’s go ahead and publish this data flow. Select **Publish** in the bottom right corner.
 
    ![A screenshot of dataflow to Publish](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.052.png)
 
-   You will be navigated back to the Data Factory Home page. It will take a few minutes for the dataflow to refresh.
+   You will be navigated back to the Data Factory Home page. It will take a few minutes for the data to refresh.
 
    In the next lab, we will ingest data from the other data sources.
 
