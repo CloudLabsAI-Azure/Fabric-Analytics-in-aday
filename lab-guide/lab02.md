@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 2
 
-# ![](../media/Aspose.Words.d9e40fe6-e088-40f4-b33d-59abff8ed5bb.001.png)
+# ![](../media/new4.png)
 
 # Contents
 
@@ -8,7 +8,7 @@
 
   * Fabric License
 
-      * Task 1: Enable trial Fabric license
+      * Task 1: Enable a Microsoft Fabric trial license
         
 
   * Overview of Fabric Experiences:
@@ -17,11 +17,11 @@
   
       * Task 3: Data Activator Experience
   
-      * Task 4: Data Engineering Experience
+      * Task 4: Synapse Data Engineering Experience
   
-      * Task 5: Data Science Experience
+      * Task 5: Synapse Data Science Experience
   
-      * Task 6: Data Warehouse Experience
+      * Task 6: Synapse Data Warehouse Experience
   
       * Task 7: Real-Time Analytics Experience
 
@@ -42,40 +42,40 @@ By the end of this lab, you will have learned:
   - How to create a Lakehouse  
 
 # Fabric License
-### Task 1: Enable trial Fabric license
+### Task 1: Enable a Microsoft Fabric trial license
 1. Open the **browser** and navigate to https://app.powerbi.com/. You will be navigated to the login page.
 
-    Note: If you have an existing Power BI account, you may want to use the browser in private / incognito mode.
-3. Enter the **Email** provided by the instructor and click **Submit**.
+    >**Note:** If you have an existing Power BI account, you may want to use the browser in private / incognito mode.
+1. Enter the **Email** provided by the instructor and click **Submit**.
 
       ![Picture17](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/3995afaf-cf69-4541-894e-b2b06ee8caf5)
 
 
-4. You will be navigated to the **Password** screen. Enter the password shared with you by the instructor. 
-5. Click **Sign in** and follow the prompts to sign into Fabric.
+1. You will be navigated to the **Password** screen. Enter the password shared with you by the instructor. 
+1. Click **Sign in** and follow the prompts to sign into Fabric.
 
       ![Picture18](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/5428ffb9-7039-4fcc-818c-42fb5cf2b4f5)
 
-6. You will be navigated to the familiar **Power BI Service Home page**.
-7. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor.
+1. You will be navigated to the familiar **Power BI Service Home page**.
+1. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor.
 
     Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s do this.
 
-7. On the top right corner of the screen, select the **user icon**.
-8. Select **Start trial**.
+1. On the top right corner of the screen, select the **user icon**.
+1. Select **Start trial**.
 
       ![Picture19](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/9f2a3001-5e81-4bed-8408-ec4287467842)
   
-9. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Start trial**.
+1. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Start trial**.
 
       ![Picture20](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/c910b821-9662-42a4-91f2-501ec2f81828)
 
-10. Successfully upgraded to a free Microsoft Fabric trial dialog opens. Select **Fabric Home Page**. 
+1. Successfully upgraded to a free Microsoft Fabric trial dialog opens. Select **Fabric Home Page**. 
 
       ![Picture21](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/709b1a4e-5a75-4b40-b2ab-8d010e2a8dd4)
 
 
-11. You will be navigated to the Microsoft Fabric Home page.
+1. You will be navigated to the **Microsoft Fabric Home page**.
 
       ![Picture22](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/dc8dcdc9-8b10-4e09-8c70-67f22a47a7b3)
 
@@ -111,7 +111,7 @@ By the end of this lab, you will have learned:
 
         ![Picture26](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/b517d1b3-8fda-4df2-9a7a-8db844fb33c6)
 
-### Task 4: Data Engineering Experience
+### Task 4: Synapse Data Engineering Experience
 
 1. Select **Data Activator** on the bottom left of your screen. Fabric experience dialog opens.
 2. Select **Data Engineering**. You will be navigated to the **Data Engineering Home page**. Again, the page contains three main sections. In the New section, notice the items: 
@@ -124,7 +124,7 @@ By the end of this lab, you will have learned:
 
    ![Picture27](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/19abeee2-ff05-49fd-8c93-974ede877f61)
 
-### Task 5: Data Science Experience
+### Task 5: Synapse Data Science Experience
 
 1. Select **Data Engineering** on the bottom left of your screen. Fabric experience dialog opens.
 2. Select **Data Science**. You will be navigated to the **Data Science Home page**. Again, there are three sections. In the New section, notice the items:
@@ -136,7 +136,7 @@ By the end of this lab, you will have learned:
 
       ![Picture28](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/ad8c4969-b773-4729-ac6f-b051f6f0568d)
 
-### Task 6: Data Warehouse Experience
+### Task 6: Synapse Data Warehouse Experience
 
 1. Select **Data Science** on the bottom left of your screen. Fabric experience dialog opens.
 2. Select **Data Warehouse**. You will be navigated to **Data Warehouse Home page**. Again, there are three sections. In the New section, notice the items. Notice Data pipeline and Dataflow Gen2 are available here as well.
@@ -167,9 +167,9 @@ By the end of this lab, you will have learned:
       ![Picture31](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/1abb5726-062b-4e6f-b31d-7e64154e9a08)
 
 3. **Create a workspace** dialog opens on the right side of the browser.
-4. In the **Name** field enter **FAIAD_yourusername**.
+4. In the **Name** field enter **FAIAD_username**.
 
-    **Note:** Workspace name must be unique. We are using FAIAD as the workspace name for this document. However, your workspace name will be different. Make sure a green check mark with “This name is available” is displayed below the Name field.
+    **Note:** Workspace name must be unique. We are using FAIAD as the workspace name for this document. However, your workspace name must be different. Make sure a green check mark with **“This name is available”** is displayed below the Name field.
    
 6. If you choose, you can enter a **Description** for the workspace. This is an optional field.
 7. Click on **Advanced** to expand the section.
@@ -199,13 +199,13 @@ By the end of this lab, you will have learned:
 
       ![Picture36](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/13961927-fea2-485f-8d53-ca04a496915f)
 
-      Within a few moments, a Lakehouse is created, and you will be navigated to the Lakehouse interface. On the **left panel**, notice that below your workspace, you          will have the Lakehouse icon. You can easily navigate to the Lakehouse by clicking on this icon at any time.
+      Within a few moments, a Lakehouse is created, and you will be navigated to the Lakehouse interface. On the **left panel**, notice that below your workspace, you will have the Lakehouse icon. You can easily navigate to the Lakehouse by clicking on this icon at any time.
 
-      Within the Lakehouse explorer you will notice **Tables** and **Files**. Lakehouse could expose Azure Data Lake Gen2 files under the files section, or a dataflow          could load data to Lakehouse tables. There are various options available. We are going to show you some of the options as in the following labs.
+      Within the Lakehouse explorer you will notice **Tables** and **Files**. Lakehouse could expose Azure Data Lake Storage Gen2 files under the files section, or a dataflow could load data to Lakehouse tables. There are various options available. We are going to show you some of the options as in the following labs.
 
       ![Picture37](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/c610b936-304c-431c-87ed-72def4c4ba1d)
 
-      In this lab, we explored the Fabric interface, created a Fabric workspace, and a Lakehouse. In the next lab, we will learn how to use Dataflow Gen2 to connect to         ADLS Gen2 to extract, transform, and ingest data into the Lakehouse.
+      In this lab, we explored the Fabric interface, created a Fabric workspace, and a Lakehouse. In the next lab, we will learn how to use Dataflow Gen2 to connect to ADLS Gen2 to extract, transform, and ingest data into the Lakehouse.
 
 # References
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
