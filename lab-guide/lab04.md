@@ -82,8 +82,8 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
 2. Connect to data source dialog opens. In the **Connection** dropdown make sure, **Create new connection** is selected.
 3. **Authentication kind** should be **Snowflake**.
-4. **Username** should be **Teams**
-5. **Password** should be **fxv7xKp7B93isr7**
+4. **Username** should be **TE_SNOWFLAKE**
+5. **Password** should be **8UpfRpExVDXv2AC**
 6. Select **Connect**.
 
       ![A screenshot to connect to data source](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.005.png)
