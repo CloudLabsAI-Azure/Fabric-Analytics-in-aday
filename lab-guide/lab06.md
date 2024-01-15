@@ -61,7 +61,8 @@ By the end of this lab, you will have learned:
 
 Let’s start by configuring a scheduled refresh of Sales Dataflow.
 
-1. Let’s navigate back to the **Fabric workspace** you created in the earlier lab.
+1. Let’s navigate back to the Fabric workspace **FAIAD_username** you created in Lab 2, Task 8.
+
 2. All the artifacts you have created are listed here. On the right of the screen, in the **Search box** enter **df**. This will filter the artifacts to Dataflows.
 
       ![A screenshot of Fabric workspace](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.002.png)
@@ -71,7 +72,7 @@ Let’s start by configuring a scheduled refresh of Sales Dataflow.
 
       ![A screenshot of df_Sales_ADLS Settings](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.003.png)
 
-**Note:** Settings page opens. In the left panel you will find all the Dataflows listed. 
+     >**Note:** Settings page opens. In the left panel you will find all the Dataflows listed. 
 
 5. In the center pane, select **Refresh history** link.
 
@@ -79,7 +80,7 @@ Let’s start by configuring a scheduled refresh of Sales Dataflow.
 
 6. Refresh history dialog opens. You will have at least one refresh listed it. This is the refresh which occurred when the dataflow is published. Select the **Start time** link.
 
-   **Note:** Start time will be different for you.
+   >**Note:** Start time will be different for you.
 
      ![A screenshot of Refresh history](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.005.png)
 

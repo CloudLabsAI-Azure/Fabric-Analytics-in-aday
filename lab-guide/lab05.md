@@ -1,7 +1,7 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 5
 
 
-# ![](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.001.png)
+# ![](../media/new9.png)
 
 # Contents
  * Introduction
@@ -40,7 +40,7 @@ By the end of this lab, you will have learned:
 
 ### <a name="_toc152200368"></a>Task 1: Query data using SQL
 
-1. Let’s navigate back to the **Fabric workspace** you created in the earlier lab.
+1. Let’s navigate back to the Fabric workspace, **FAIAD_username** you created in Lab 2, Task 8.
 1. Navigate back to **Data Factory screen**.
 1. You will see three types of lh_FAIAD – Semantic model, SQL endpoint, and Lakehouse. We explored the Lakehouse option in an earlier lab. Select **lh_FAIAD SQL analytics endpoint** option to explore the SQL option. You will be navigated to **SQL view** of the explorer.
 
@@ -59,15 +59,15 @@ By the end of this lab, you will have learned:
 1. **Paste** the below SQL query into the **query window**. This query will return the units by Supplier Name. It is joining Sales table with Product and Supplier table to achieve this.
 
    ```
-     SELECT su.Supplier_Name, SUM(Quantity) as Units
+   SELECT su.Supplier_Name, SUM(Quantity) as Units
      
-     FROM dbo.Sales s
+   FROM dbo.Sales s
      
-     JOIN dbo.Product p on p.StockItemID = s.StockItemID
+   JOIN dbo.Product p on p.StockItemID = s.StockItemID
      
-     JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+   JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
      
-     GROUP BY su.Supplier_Name
+   GROUP BY su.Supplier_Name
    ```
 1. Click **Run** to view the results.
 1. Notice there is an option to save this query as a View by selecting **Save as view**.
