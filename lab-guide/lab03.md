@@ -85,7 +85,7 @@ You will be navigated to the **Dataflow page**. This screen will look familiar a
 
 1. You will be navigated to the Connect to Data Source dialog. You need to create a connection to the ADLS Gen2 data source. Under **Connection Settings -> URL** enter
    ```
-    https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet-Format
+   https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet-Format
    ```
    ![A screenshot of Connect to data source](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.008.png)
 

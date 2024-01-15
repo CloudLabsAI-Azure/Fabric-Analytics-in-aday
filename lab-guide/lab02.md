@@ -91,7 +91,9 @@ By the end of this lab, you will have learned:
 4. You are navigated to the **Data Factory Home page**. The page contains three main sections.
    
     1. **New:** This lists the items available in Data Factory – Dataflow Gen2 and Data pipeline.
+
          1. Dataflow Gen2 is the next generation of Dataflow.
+
          1. Data pipeline is used for data orchestration.
     2. **Recommended**: This section provides access to quick-start learning documentation.
     3. **Quick Access**: This section lists the recently used or favourite items.
@@ -139,6 +141,7 @@ By the end of this lab, you will have learned:
 
 1. Select **Data Science** on the bottom left of your screen. Fabric experience dialog opens.
 2. Select **Data Warehouse**. You will be navigated to the **Data Warehouse Home page**. Again, there are three sections. In the New section, notice the items. Notice Data Pipeline and Dataflow Gen2 are available here as well.
+
    1. **Warehouse**: Used to provide strategic insights from multiple sources.
    1. **Sample warehouse**: Sample warehouse solution.
    1. **Data pipeline**: Used to orchestrate data solution.
@@ -148,7 +151,8 @@ By the end of this lab, you will have learned:
 ### Task 7: Real-Time Analytics Experience
 
 1. Select **Data Warehouse** on the bottom left of your screen. Fabric experience dialog opens.
-2. Select **Real-Time Analytics**. You will be navigated to the **Real-Time Analytics Home page**. Again, there are three sections. In the New section, notice the items: 
+2. Select **Real-Time Analytics**. You will be navigated to the **Real-Time Analytics Home page**. Again, there are three sections. In the New section, notice the items:
+
    1. **KQL Database**: Used to rapidly load structured, unstructured, and streaming data for querying.
    1. **KQL Queryset**: Used to run queries on the data to produce shareable tables and visuals.
    1. **Eventstream**: Used to capture, transform, and route real-time event stream.
@@ -161,7 +165,7 @@ By the end of this lab, you will have learned:
 ### Task 8: Create a Fabric Workspace
 
 1. Now let’s create a workspace with a Fabric license. Select **Workspaces** from the left navigation bar. A dialog opens.
-2. Select **New workspace**.
+2. Select **+ New workspace**.
 
       ![Picture31](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/1abb5726-062b-4e6f-b31d-7e64154e9a08)
 
@@ -192,7 +196,8 @@ By the end of this lab, you will have learned:
 
      ![Picture35](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/3ee5be4a-be9b-4cce-bf4b-9587895bfa1c)
 
-4. New lakehouse dialog opens. Type **lh_FAIAD** in the Name textbox. 
+4. New lakehouse dialog opens. Type **lh_FAIAD** in the Name textbox.
+ 
     >**Note**: lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.
     
 5. Select **Create**.
