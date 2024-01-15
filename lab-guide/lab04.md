@@ -54,11 +54,11 @@ By the end of this lab, you will have learned:
 
       ![A screenshot to select New -> Dataflow Gen2](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.002.png)
 
-      You will be navigated to **Dataflow page**. Now that we are familiar with Dataflow, let’s go ahead and copy the queries from Power BI Desktop into Dataflow.
+      You will be navigated to the **Dataflow page**. Now that we are familiar with Dataflow, let’s go ahead and copy the queries from Power BI Desktop into Dataflow.
 
 3. If you have not already opened it, open the **FAIAD.pbix** located in the **Report** folder on the **Desktop** of your lab environment.
 
-4. From the ribbon select **Home -> Transform data**. The power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
+4. From the ribbon select **Home -> Transform data**. The power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by the data source.
 
 5. The Power Query window opens. From the left panel, under SnowflakeData folder **Ctrl+Select** or Shift+Select the following queries:
    1. SupplierCategories
