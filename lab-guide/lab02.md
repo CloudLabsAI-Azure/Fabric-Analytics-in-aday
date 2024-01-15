@@ -8,7 +8,7 @@
 
   * Fabric License
 
-      * Task 1: Enable a Microsoft Fabric trial license    
+      * Task 1: Enable a Microsoft Fabric trial license
 
   * Overview of Fabric Experiences:
 
@@ -42,6 +42,7 @@ By the end of this lab, you will have learned:
 
 # Fabric License
 ### Task 1: Enable a Microsoft Fabric trial license
+
 1. Open the **browser** and navigate to https://app.powerbi.com/. You will be navigated to the login page.
 
     >**Note:** If you have an existing Power BI account, you may want to use the browser in private / incognito mode.
@@ -95,6 +96,7 @@ By the end of this lab, you will have learned:
          1. Dataflow Gen2 is the next generation of Dataflow.
 
          1. Data pipeline is used for data orchestration.
+            
     2. **Recommended**: This section provides access to quick-start learning documentation.
     3. **Quick Access**: This section lists the recently used or favourite items.
 
@@ -187,6 +189,7 @@ By the end of this lab, you will have learned:
     A new workspace is created, and you will be navigated into this workspace. We will bring data from the different data sources into Lakehouse and use the data from the Lakehouse to build our model and report on it. The first step is to create a Lakehouse.
 
 ### Task 9: Create a Lakehouse
+
 1. Select **Real-Time Analytics** on the bottom left of your screen. Fabric experience dialog opens.
 2. Select **Data Engineering** to be navigated to the Data Engineering Home page.
 
