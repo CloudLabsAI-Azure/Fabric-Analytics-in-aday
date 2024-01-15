@@ -39,11 +39,11 @@ In our scenario, Sales Data comes from the ERP system and is stored in an ADLS G
 There are multiple ways to ingest this data. 
 
 - **Shortcuts:** This does not provide a way to transform data. 
-- **Notebooks:** This requires us to write code. It is a developer friendly approach.
+- **Notebooks:** This requires us to write code. It is a developer-friendly approach.
 - **Dataflow Gen2:** You are probably familiar with Power Query or Dataflow Gen1. Dataflow Gen2, as the name indicates, is the newer version of Dataflow. It provides all the capabilities of Power Query / Dataflow Gen1 with the added ability to transform and ingest data into multiple data sources. We are going to introduce this in the next couple of labs.
 - **Data Pipeline:** This is an orchestration tool. Activities can be orchestrated to extract, transform, and ingest data. We will be using Data Pipeline to execute Dataflow Gen2 activity which in turn will perform extraction, transformation, and ingestion. 
 
-We will start with Dataflow Gen2 to create the connection to the data source and the necessary transformations. Then we will use Data Pipeline to orchestrate / execute the Dataflow Gen2.
+We will start with Dataflow Gen2 to create the connection to the data source and the necessary transformations. Then we will use Data Pipeline to orchestrate/execute the Dataflow Gen2.
 
 By the end of this lab, you will have learned: 
 
@@ -64,13 +64,13 @@ By the end of this lab, you will have learned:
 
    ![A screenshot of Data Factory Home selecting Dataflow Gen2](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.003.png)
 
-You will be navigated to the **Dataflow page**. This screen will look familiar as it is like Dataflow Gen1 or Power Query. You will notice the options to connect to various data sources are available, along with the ability to transform data. Let’s connect to ADLS Gen2 data source and perform some transformations.
+You will be navigated to the **Dataflow page**. This screen will look familiar as it is like Dataflow Gen1 or Power Query. You will notice the options to connect to various data sources are available, along with the ability to transform data. Let’s connect to the ADLS Gen2 data source and perform some transformations.
 ### <a name="_toc152196225"></a>Task 2: Create connection to ADLS Gen2
 1. From the ribbon, select **Home -> Get data -> More…** 
 
    ![A screenshot of Dataflow screen to select Get Data](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.004.png)
 
-1. You will be navigated to **Get data Choose data source** dialog. You can search for the data source by typing in the search box. Notice, on the left panel, there are options to use a Blank table or Blank query. You will also find a new option to Upload file. We will explore this option in a later lab. For now, let’s click on **View more ->** on the right corner of your screen. 
+1. You will be navigated to the **Get data Choose data source** dialog. You can search for the data source by typing in the search box. Notice, on the left panel, there are options to use a Blank table or Blank query. You will also find a new option to Upload files. We will explore this option in a later lab. For now, let’s click on **View more ->** on the right corner of your screen. 
 
    ![A screenshot of Choose data source](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.005.png)
 
@@ -83,13 +83,13 @@ You will be navigated to the **Dataflow page**. This screen will look familiar a
 
    ![A screenshot of select Azure Data Lake Storage Gen2](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.007.png)
 
-1. You will be navigated to the Connect to data source dialog. You need to create a connection to ADLS Gen2 data source. Under **Connection Settings -> URL** enter
+1. You will be navigated to the Connect to Data Source dialog. You need to create a connection to the ADLS Gen2 data source. Under **Connection Settings -> URL** enter
    ```
     https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet-Format
    ```
    ![A screenshot of Connect to data source](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.008.png)
 
-1. Select **Account Key** from the Authentication kind dropdown
+1. Select **Account Key** from the Authentication kind dropdown.
 1. Copy the Account Key from the Environment Variables tab (next to the Lab Guide tab) and paste it in the **Account key text box**.
 
    ![A screenshot of Connect to data source](../media/new6.png)
@@ -104,7 +104,7 @@ You will be navigated to the **Dataflow page**. This screen will look familiar a
 1. You are back in the **Power Query** dialog. This will be the connection to the root folder of ADLS Gen2. We will reference this query in subsequent queries. Let’s rename the query. In the **right panel**, under **Query settings -> Properties -> Name**, change the name to **ADLS Base Folder**.
 
 
-1. All queries from Dataflow Gen2 are loaded to a Staging Lakehouse by default. As part of this lab, we will not be staging data. To disable this load, in the **left panel, right click on ADLS Base Folder** query. 
+1. All queries from Dataflow Gen2 are loaded to a Staging Lakehouse by default. As part of this lab, we will not be staging data. To disable this load, in the **left panel, right-click on ADLS Base Folder** query. 
 
    >**Note:** Staging is used when we need to stage data to be used in further transformation before it is ready for consumption. 
 
@@ -115,7 +115,7 @@ You will be navigated to the **Dataflow page**. This screen will look familiar a
    Notice there are two file formats in the folder, **json** and **parquet**.
    
    - **Parquet:** is an open-source file format built to handle flat columnar storage data formats. Parquet operates well with complex data in large volumes and is known for its both performant data compression and its ability to handle a wide variety of encoding types.
-   - **Json:** file contains metadata like schema, data type of the parquet file.
+   - **Json:** file contains metadata like schema, and data type of the parquet file.
 
 1. We need only the parquet file as this has the data we need. Select the **Extension column dropdown arrow**.
 
@@ -124,10 +124,10 @@ You will be navigated to the **Dataflow page**. This screen will look familiar a
 
    ![A screenshot to filter out json files](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.012.png)
 
-Now we have the Base query set up. We can reference this for all the queries from ADLS Gen2 source.
+Now we have the Base query set up. We can reference this for all the queries from the ADLS Gen2 source.
 
 ### <a name="_toc152196227"></a>Task 4: Create Cities query
-Sales Data is available by Geography, Product, SalesPerson, and Date granularity. Let’s first create a query to get Geo dimension. Geo data is available in three different files located in the following subfolders:
+Sales Data is available by Geography, Product, sales person, and Date granularity. Let’s first create a query to get the Geo dimension. Geo data is available in three different files located in the following subfolders:
 
 - **Cities:** Application.Cities
 - **Countries:** Application.Countries
@@ -162,10 +162,11 @@ We need to combine City, State, and Country data from these three files to creat
    
       ![A screenshot to Rename query](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.017.png)
 
-In the right panel, under **Applied steps** notice all the steps are registered. This behavior is like Power Query. Now let’s follow a similar process to create **Country** query.
+In the right panel, under **Applied steps** notice all the steps are registered. This behavior is like Power Query. Now let’s follow a similar process to create a **Country** query.
 
 ### <a name="_toc152196228"></a>Task 5: Create Countries query
-1. On the left panel, **right click on ADLS Base Folder**. Select **Reference** to create a new query that references ADLS Base Folder query.
+
+1. On the left panel, **right click on ADLS Base Folder**. Select **Reference** to create a new query that references the ADLS Base Folder query.
 
    ![A screenshot to reference ADLS Base Folder](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.018.png)
 
@@ -183,7 +184,7 @@ In the right panel, under **Applied steps** notice all the steps are registered.
 
    ![A screenshot of Filter rows dialog](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.020.png)
 
-1. Data will be filtered to a single row. Select **Binary** under **Content** column.
+1. Data will be filtered to a single row. Select **Binary** under the **Content** column.
 
    ![Screenshot of ADLS Base Folder(2)](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.021.png)
 
@@ -197,12 +198,13 @@ We need to bring in State next, but the steps are getting repetitive. We already
 
 ### <a name="_toc152196229"></a>Task 6: Create States using Copy – Option 1
 
-1. If you have not already opened it, open **FAIAD.pbix** located in the **Report** folder on the **Desktop** of your lab environment. 
-1. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
+1. If you have not already opened it, open **FAIAD.pbix** located in the **Report** folder on the **Desktop** of your lab environment.
+   
+1. From the ribbon select **Home -> Transform data**. The power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by the data source.
 
    ![A screenshot of Power BI Desktop report.](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.023.png)
 
-1. From the left panel, under ADLSData folder, **right click States** query and select **Copy.**
+1. From the left panel, under the ADLSData folder, **right-click States** query and select **Copy**.
 
    ![A screenshot Power Query window](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.024.png)
 
@@ -211,7 +213,7 @@ We need to bring in State next, but the steps are getting repetitive. We already
 
    ![A screenshot Dataflow queries](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.025.png) 
 
-   Notice ADLS Base Folder (2) is copied as well. This is because States refers to ADLS Base Folder in Power BI Desktop, but we already have ADLS Base Folder. Let’s resolve this.
+   Notice ADLS Base Folder (2) is copied as well. This is because States refers to the ADLS Base Folder in Power BI Desktop, but we already have the ADLS Base Folder. Let’s resolve this.
 
 1. Select the **States** query.
 1. From the **right panel**, under **Applied** **steps**, select **Source**.
@@ -223,7 +225,7 @@ We need to bring in State next, but the steps are getting repetitive. We already
 
    ![A screenshot of States query Source step after updating formula bar](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.027.png)
 
-1. Now we can remove ADLS Base Folder (2). In the left panel, under **Queries** section, **right click** **ADLS Base Folder (2)** query and select **Delete**.
+1. Now we can remove the ADLS Base Folder (2). In the left panel, under **Queries** section, **right click** **ADLS Base Folder (2)** query and select **Delete**.
 
    ![A screenshot of delete ADLS Base Folder (2) delete](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.028.png)
 
@@ -246,13 +248,13 @@ Now we need to merge these queries to create the Geo dimension. Let’s copy the
 
    ![A screen shot of Advanced Editor](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.030.png)
 
-1. Select **X** on the top right corner of the window or select **Done** to close Advanced Editor window.
+1. Select **X** on the top right corner of the window or select **Done** to close the Advanced Editor window.
 1. Navigate back to the **Dataflow** window in the browser. 
-1. From the ribbon **Get Data -> Blank query.**
+1. From the ribbon **Get Data -> Blank query**.
 
    ![A screenshot of Get Data -> Blank Query in Dataflow](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.031.png)
 
-1. Get data, Connect to data source Advanced Editor dialog opens. **Highlight all the text** in the editor.
+1. Get data, Connect to the data source Advanced Editor dialog opens. **Highlight all the text** in the editor.
 1. Select **Delete** on your keyboard to delete all the text
 1. Advanced Editor should be blank. Now enter **Ctrl+V** to paste the content you had copied from the Power BI Desktop’s Advanced Editor.
 1. Select **Next**.
@@ -263,7 +265,7 @@ Now we need to merge these queries to create the Geo dimension. Let’s copy the
 
    >**Note:** Please wait for the query to finish loading. It may take a few minutes.
 
-Let’s walk through the steps to understand how Geo was created. From the right panel, under Applied Steps, select **Source**. If you look at the formula bar or click on Settings, you will notice that the Source of this query is a join between Cities and States. As you walk through the steps, you will notice the result of the first join is in turn joined with Countries. So, all three queries are used to create Geo dimension.
+Let’s walk through the steps to understand how Geo was created. From the right panel, under Applied Steps, select **Source**. If you look at the formula bar or click on Settings, you will notice that the Source of this query is a join between Cities and States. As you walk through the steps, you will notice the result of the first join is in turn joined with Countries. So, all three queries are used to create a Geo dimension.
 
    ![A screenshot of Formula bar for Geo query](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.033.png)
 
@@ -271,7 +273,7 @@ Let’s walk through the steps to understand how Geo was created. From the right
 
 Now we have a dimension, let’s ingest this data into Lakehouse. This is the new feature available in Dataflow Gen2.
 
-1. As mentioned earlier, we are not staging any of this data. So **right click** on **Cities** query and select **Enable staging** to remove the check mark.
+1. As mentioned earlier, we are not staging any of this data. So **right-click** on the **Cities** query and select **Enable staging** to remove the check mark.
 
    ![A screenshot to disable Staging](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.034.png)
 
@@ -286,7 +288,7 @@ Now we have a dimension, let’s ingest this data into Lakehouse. This is the ne
 
    ![A screenshot of Connect to data destination](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.036.png)
 
-1. Once connection is created, Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
+1. Once the connection is created, choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
 1. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_username**.
 1. Select **lh\_FAIAD**
 1. Leave the table name as **Geo**
@@ -303,7 +305,7 @@ Now we have a dimension, let’s ingest this data into Lakehouse. This is the ne
 
    ![A screenshot to Choose destination settings](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.038.png)
 
-   >**Note:** If you do not want some of the columns in the Lakehouse, use the check box to the right of Source column to uncheck the columns you do not need.
+   >**Note:** If you do not want some of the columns in the Lakehouse, use the check box to the right of the Source column to uncheck the columns you do not need.
 
 ### <a name="_toc152196232"></a>Task 9: Publish Dataflow
 
@@ -317,9 +319,9 @@ Now we have a dimension, let’s ingest this data into Lakehouse. This is the ne
 
    ![A screenshot to select Lakehouse](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.040.png)
 
-1. You will be navigated to **Lakehouse Explorer screen**. In the left panel, expand **lh\_FAIAD -> Tables**.
+1. You will be navigated to the **Lakehouse Explorer screen**. In the left panel, expand **lh\_FAIAD -> Tables**.
 
-1. Notice we have Geo table in the Lakehouse now. Expand **Geo** and notice all the columns.
+1. Notice we have a Geo table in the Lakehouse now. Expand **Geo** and notice all the columns.
 
 1. **Select Geo** table and the data preview will open in the right panel.
 
@@ -377,14 +379,14 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 
    ![A screenshot copying queries to dataflow](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.046.png)
 
-1. As mentioned earlier, we are not Staging any of this data. So **right click** on following queries and select **Enable staging** to remove the check mark.
+1. As mentioned earlier, we are not Staging any of this data. So **right click** on the following queries and select **Enable staging** to remove the check mark.
    1. Product
    1. Product Details
    1. Reseller
    1. Date
    1. Sales
 
-   >**Note:** If load is disabled in Power BI Desktop, we do not have to disable staging in Dataflow. Hence, we do not have to disable staging for Product Item Group, Product Groups, etc.
+   >**Note:** If load is disabled in Power BI Desktop, we do not have to disable staging in Dataflow. Hence, we do not have to disable staging for Product Item Groups, Product Groups, etc.
 
    ![A screenshot to disable Staging](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.047.png)
 
@@ -417,7 +419,7 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 
    ![A screenshot of Choose destination settings](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.051.png)
 
-1. You will be navigated back to **Power Query window**. Notice on the bottom **right corner**, Data destination is set to **Lakehouse**.
+1. You will be navigated back to the **Power Query window**. Notice on the bottom **right corner**, data destination is set to **Lakehouse**.
 
 1. Similarly, set the **Data Destination** for the following queries:
    
@@ -469,11 +471,11 @@ Read the more in-depth Fabric experience announcement blogs:
 
 By using this demo/lab, you agree to the following terms:
 
-The technology/functionality described in this demo/lab is provided by Microsoft Corporation for purposes of obtaining your feedback and to provide you with a learning experience. You may only use the demo/lab to evaluate such technology features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell this demo/lab or any portion thereof.
+The technology/functionality described in this demo/lab is provided by Microsoft Corporation for the purposes of obtaining your feedback and providing you with a learning experience. You may only use the demo/lab to evaluate such technology features and functionality and provide feedback to Microsoft. You may not use it for any other purpose. You may not modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell this demo/lab or any portion thereof.
 
 COPYING OR REPRODUCTION OF THE DEMO/LAB (OR ANY PORTION OF IT) TO ANY OTHER SERVER OR LOCATION FOR FURTHER REPRODUCTION OR REDISTRIBUTION IS EXPRESSLY PROHIBITED.
 
-THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCITONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT.
+THIS DEMO/LAB PROVIDES CERTAIN SOFTWARE TECHNOLOGY/PRODUCT FEATURES AND FUNCTIONALITY, INCLUDING POTENTIAL NEW FEATURES AND CONCEPTS, IN A SIMULATED ENVIRONMENT WITHOUT COMPLEX SET-UP OR INSTALLATION FOR THE PURPOSE DESCRIBED ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS DEMO/LAB MAY NOT REPRESENT FULL FEATURE FUNCTIONALITY AND MAY NOT WORK THE WAY A FINAL VERSION MAY WORK. WE ALSO MAY NOT RELEASE A FINAL VERSION OF SUCH FEATURES OR CONCEPTS. YOUR EXPERIENCE WITH USING SUCH FEATURES AND FUNCTIONALITY IN A PHYSICAL ENVIRONMENT MAY ALSO BE DIFFERENT.
 
 **FEEDBACK**. If you give feedback about the technology features, functionality and/or concepts described in this demo/lab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.
 
