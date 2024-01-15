@@ -1,12 +1,12 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 1
 
-# ![](../media/Aspose.Words.75ea6829-7998-4d6f-8e60-59d82c1678ac.001.png)
+# ![](../media/new1.png)
 
 # Contents
 - Document Structure
 - Scenario / Problem Statement
 - Overview of Power BI Desktop Report
-   - Task 1: Set up Power BI Desktop in Lab environment
+   - Task 1: Set up Power BI Desktop in lab environment
    - Task 2: Analyze Power BI Desktop Report
    - Task 3: Review Power Queries
 - References
@@ -41,7 +41,7 @@ You heard about Microsoft Fabric, and decided to try it to see if it will addres
 
 # Overview of Power BI Desktop Report
 Before we start with Fabric, let’s look at the current Report in Power BI Desktop to understand the transformations and the model.
-### Task 1: Set up Power BI Desktop in Lab environment
+### Task 1: Set up Power BI Desktop in lab environment
 1. Open the **FAIAD.pbix** located in the **Report** folder on the **Desktop** of your lab environment. The file will open in Power BI Desktop.
 
       ![Picture2FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/ce64a7c3-6bb5-45d0-8ced-fc923145805c)
@@ -105,7 +105,7 @@ Notice the margin % is 52%, which is above the average of 50%. Also, the Sales Y
 
 8. Feel free to further analyze the report. Once ready let’s look at the model view. From the left panel, select **Model view icon**. Notice there are two fact tables, Sales and PO.
 
-      1. ranularity of Sales data is by Date, Reseller, Product, and People. Date, Reseller, Product, and People connect to Sales.
+      1. Granularity of Sales data is by Date, Reseller, Product, and People. Date, Reseller, Product, and People connect to Sales.
       2. Granularity of PO data is by Date, Product, and People. Date, Product, and People connect to PO.
       3. We have Supplier data by Product. Supplier connects to Product.
       4. We have Reseller’s location data by Geo. Geo connects to Reseller.
@@ -116,7 +116,7 @@ Notice the margin % is 52%, which is above the average of 50%. Also, the Sales Y
 
       ![Picture13FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/fbfb74a2-d328-4a18-bb6a-7e6fec6d2f82)
 
-2. Power Query window opens. From the ribbon, select **Home -> Data source settings**. Data source settings dialog opens. Notice we have four data sources as mentioned in the problem statement:
+2. Power Query window opens. From the ribbon, select **Home -> Data source settings**. Data source settings dialog opens. As you scroll through the list you will notice there are four main sources as mentioned in the problem statement:
 
       1. Snowflake
       2. SharePoint
@@ -128,27 +128,42 @@ Notice the margin % is 52%, which is above the average of 50%. Also, the Sales Y
     ![Picture14](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/1554d26b-b4b4-4dfd-950c-7e875c67b39a)
 
 5. In the left Queries panel, notice the queries are grouped by data source. 
-6. Notice **DataverseData** folder has Customer data available in four different queries, BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create Customer query.
+6. Notice **DataverseData** folder has Customer data available in four different queries: BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create Customer query.
 
     ![Picture15](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/7b261b69-164a-4ed1-9cba-bf0839969f77)
 
-7. Notice **ADLSData** folder has multiple dimensions: Geo, Product, Reseller, and Date. It also has Sales fact.
+1. You can enter the credentials for the Dataverse data source by entering the **Username** and **Password** available in the **Environment Variables** tab (next to the Lab Guide). Please select Microsoft account option.
+
+      ![](../media/new2.png)
+
+1. For  ADLS data source, use the **Account Key** option and enter the **Adls storage account Access key** that is available in the **Environment Variables** tab (next to the Lab Guide).
+
+1. Notice **ADLSData** folder has multiple dimensions: Geo, Product, Reseller, and Date. It also has Sales fact.
    
-   1. Geo dimension is created by merging data from Cities, Countries, and States query.
-   2. Product dimension is created by merging data from Product Groups and Product Item Group query.
-   3. Reseller dimension is filtered using BuyingGroup query.
-   4. Sales fact is created by merging InvoiceLineItems with Invoice query.
+   1. **Geo dimension** is created by merging data from Cities, Countries, and States query.
+   2. **Product dimension** is created by merging data from Product Groups and Product Item Group query.
+   3. **Reseller dimension** is filtered using BuyingGroup query.
+   4. **Sales fact** is created by merging InvoiceLineItems with Invoice query.
 
-9. Notice **SnowflakeData** folder has Supplier dimension and PO (Order / Spend) fact.
 
-   1. Supplier dimension is created by merging Suppliers query with SupplierCategories query.
-   2. PO fact is created by merging PO with PO Line Items query.
+1. For  ADLS data source, use the **Account Key** option and enter the **Adls storage account Access key** that is available in the **Environment Variables** tab (next to the Lab Guide).
 
-11. Notice **SharepointData** folder has People dimension.
-   Now we know what we are dealing with. In the following labs, we will create a similar Power      Query using Dataflow Gen2 and model using Lakehouse.
+
+1. Notice **SnowflakeData** folder has Supplier dimension and PO (Order / Spend) fact.
+
+   1. **Supplier dimension** is created by merging Suppliers query with SupplierCategories query.
+   2. **PO fact** is created by merging PO with PO Line Items query.
+
+1. For the SharePoint data source, enter the **Username** and **Password** available in **Environment Variables** tab (next to Lab guide). Please select Microsoft account option.
+
+1. Notice **SharepointData** folder has People dimension.
+
+   ![](../media/new3.png)
+
+Now we know what we are dealing with. In the following labs, we will create a similar Power Query using Dataflow Gen2 and model using Lakehouse.
 
 # References
-Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has           links to some great resources.
+Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
 
 
    ![Picture16](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/13178b86-b21e-4cd1-b34f-4ce4682d1de8)
