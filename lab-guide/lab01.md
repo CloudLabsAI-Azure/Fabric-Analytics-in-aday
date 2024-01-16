@@ -125,7 +125,7 @@ Notice the margin % is 52%, which is above the average of 50%. Also, the Sales Y
 
 4. Select **Close** to close the Data source settings dialog.
 
-    ![Picture14](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/1554d26b-b4b4-4dfd-950c-7e875c67b39a)
+    ![](../media/new12.png)
 
 5. In the left Queries panel, notice the queries are grouped by data source. 
 6. Notice **DataverseData** folder has Customer data available in four different queries: BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create a Customer query.

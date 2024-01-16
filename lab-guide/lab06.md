@@ -336,10 +336,13 @@ We have configured Dataflow activity like we did earlier in the lab. Now we will
 
    **Note:** Hover over **Dataflow activity**. To the right of the activity box, there are four icons. These can be used to connect to the next activity based on the result of the activity:
 
-  1. **Grey curved arrow** icon is used to skip the activity
-  1. **Green check mark** icon is used on the success of the activity
-  1. **Red x-mark** icon is used on the failure of the activity
-  1. **Blue straight arrow** icon is used on completion of the activity
+   **Note:** **Grey curved arrow** icon is used to skip the activity.
+   
+   **Note:** **Green check mark** icon is used on the success of the activity.
+
+   **Note:** **Red x-mark** icon is used on the failure of the activity.
+   
+   **Note:** **Blue straight arrow** icon is used on completion of the activity.
 
 5. Click the **green check mark** and drag to connect to **Dataflow activity** to **Set variable activity**. So on the success of the data flow refresh we want to execute the Set variable activity.
 
@@ -379,8 +382,6 @@ Now we need to set the counter if the dataflow activity fails. In Data Pipeline,
 10. Pipeline expression builder dialog opens. Enter **@add(variables('varCounter'),1)**.
 
     **Note:** Feel free to type this expression in or use the menu to select the functions or paste it in. 
-
-    **Note:** This function sets the value of variable varTempCounter to the value of variable varCounter plus 1 (varTempCounter = varCounter + 1).
 
      ![A screenshot of Settings configuration Set variable activity](../media/Aspose.Words.8e9803f1-24d8-45d0-b7f3-d4af1b019516.037.png)
 

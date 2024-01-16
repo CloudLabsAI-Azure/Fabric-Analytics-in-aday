@@ -190,7 +190,8 @@ By the end of this lab, you will have learned:
 
 ### Task 9: Create a Lakehouse
 
-1. Select **Real-Time Analytics** on the bottom left of your screen. Fabric experience dialog opens.
+1. In the fabric Experience Icon on the bottom left of your screen, should currently be set to **Real-Time Analytics**, click on it to open the Fabric experience dialog.
+
 2. Select **Data Engineering** to be navigated to the Data Engineering Home page.
 
       ![Picture34](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/5d99fdea-b065-4fe7-af9c-c3e7fee8a0c2)
