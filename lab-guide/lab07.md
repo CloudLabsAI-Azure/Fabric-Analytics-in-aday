@@ -54,7 +54,7 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
       ![A screenshot of Microsoft Fabric experiences dialog](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.002.png)
 
-1. Select **New Report** from the top menu.
+1. Select **+ New Report** from the top menu.
 
       ![A screenshot of Power BI home](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.003.png)
 
@@ -82,9 +82,11 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 1. Once you are ready, **collapse** all the tables in the **Data** section on the right. Notice we have five new tables which are not part of the model we created. These are default tables added to help analyze performance. We will remove these from the report view shortly.
 1. Let’s save this report. From the top menu, select **Save**.
-1. Save your report dialog opens. Name the report as **rpt\_Sales\_Auto\_Report** 
-   **Note:** We are prefixing the report name with rpt which is short for report.
-1. Make sure the report is saved in **<your workspace name>.**
+1. Save your report dialog opens. Name the report as **rpt\_Sales\_Auto\_Report**.
+
+   >**Note:** We are prefixing the report name with rpt which is short for the report.
+
+1. Make sure the report is saved in **Fabric_username.**
 1. Select **Save.**
 
       ![A screenshot of auto-created report](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.007.png)
@@ -111,8 +113,7 @@ Let’s create a report like the one we have in Power BI Desktop. We are going t
       ![A screenshot of Lakehouse model view showing hide in report view](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.010.png)
 
 7. Similarly, select **Hide in report view** option for the following tables:
-   1. fabric_query_starting
-   1. fabric_query_completed
+   
    1. exec_requests_history
    1. frequently_run_queries
 
@@ -145,7 +146,7 @@ Let’s create a report like the one we have in Power BI Desktop. We are going t
 1. Enter **Fabrikam Company** as the first line in the text box.
 1. Enter **Sales Report** as the second line in the text box.
 1. Highlight **Fabrikam Company** and set **Font** to **Segoe UI** and **font size** to **18, bold**.
-1. Highlight **Sales Report** and set **Font** to **Segoe UI** and **font size** to **14.**
+1. Highlight **Sales Report** and set **Font** to **Segoe UI** and **font size** to **14**.
 1. With the **text box selected**, in the Format pane on the right, **expand Effects**.
 1. Use **Background** slider to set it to **Off**.
 1. Resize the **text box to fit in the top margin**.
@@ -155,7 +156,7 @@ Let’s create a report like the one we have in Power BI Desktop. We are going t
 ### <a name="_toc152166240"></a>Task 5: Add KPIs to the report
 
 1. Let’s add Sales KPI. Select the **white space** in the canvas to take the focus off the text box.
-1. From the **Visualizations** **section** select **Multi-row card visual**.
+1. From the **Visualizations** section, select **Multi-row card visual**.
 1. From the **Data section** expand **Sales** **table**.
 1. Select **Sales measure**.
 
@@ -267,20 +268,20 @@ Notice how easy it is to update the semantic model while building the reports. T
 1. Use **Title** slider to set it to **Off**.
 1. Expand **Lines** section.
 1. Expand **Colors** section.
-1. Set **Wingtip Toys** color to **#004753.**
-1. Set **Tailspin Toys** color to **#F17925.**
+1. Set **Wingtip Toys** color to **#004753**.
+1. Set **Tailspin Toys** color to **#F17925**.
 1. Resize the **visual** and move it to the **top right box as shown in the screenshot**.
 1. Scroll to the right on the visual and **notice we have data through April 2023**.
 
      ![A screenshot of Line chart visual formatting](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.029.png)
 
 1. Let’s save the report, from the menu select **File -> Save**.
-1. Save your report dialog opens. Name the report as **rpt_Sales_Report**
+1. Save your report dialog opens. Name the report as **rpt_Sales_Report**.
 
      **Note:** We are prefixing the report name with rpt which is short for report.
    
-1. Make sure the report is saved in **your workspace name.**
-1. Select **Save.**
+1. Make sure the report is saved in **your workspace name**.
+1. Select **Save**.
 
      ![A screenshot of report saving](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.030.png)
 
@@ -301,7 +302,7 @@ In a real scenario, data is updated at the source. Since we are in a training en
 1. If you have not already opened it, open the **FAIAD.pbix** located in the **Report** folder on the **Desktop** of your lab environment. 
 1. From the ribbon select **Home -> Transform data**. The power Query window opens.
 1. From the left panel, under **DirectLake** folder select **MayInvoice** query.
-1. **Right click** and select **Copy.** 
+1. **Right click** and select **Copy**. 
 
       ![A screenshot of Power BI Desktop, Power Query](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.032.png)
 
@@ -335,7 +336,7 @@ In a real scenario, data is updated at the source. Since we are in a training en
 
    **Note:** Once published the dataflow will refresh. This may take a few minutes.
 
-1. Navigate back to the tab of the browser with **Power BI canvas.**
+1. Navigate back to the tab of the browser with **Power BI canvas**.
 1. From the top menu select **Refresh**. Notice how in the Line chart there is data for May 2023. Also, notice the Sales dollar has increased.
 
      ![A screenshot of data refreshed in the report](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.037.png)
@@ -344,23 +345,23 @@ As each data flow, we have created in earlier labs is refreshed on schedule, dat
 
 Let’s revisit the challenges that are listed in the problem statement:
 
-- **You need to refresh your dataset at least three times a day to accommodate the different update times for the different data sources.**
+- **You need to refresh your dataset at least three times a day to accommodate the different update times for the different data sources**.
 
-  We solved this using Direct Lake. Each individual data flow is refreshed on its schedule. The dataset and report do not have to be refreshed.
+  We solved this using Direct Lake. Each data flow is refreshed on its schedule. The dataset and report do not have to be refreshed.
 
-- **Your refreshes take a long time as you need to do a full refresh every time to capture any updates that happened to the source systems.**
+- **Your refreshes take a long time as you need to do a full refresh every time to capture any updates that happened to the source systems**.
 
-  Again, we solved this using Direct Lake. Each individual data flow is refreshed on its schedule. The dataset and report do not have to be refreshed, so we do not have to worry about full refresh. 
+  Again, we solved this using Direct Lake. Each data flow is refreshed on its schedule. The dataset and report do not have to be refreshed, so we do not have to worry about a full refresh. 
 
-- **Any errors in any of the data sources that you are pulling from will result in your dataset refresh breaking. A lot of times the employee file doesn’t upload on time resulting in your dataset refresh breaking.** 
+- **Any errors in any of the data sources that you are pulling from will result in your dataset refresh breaking. A lot of times the employee file doesn’t upload on time resulting in your dataset refresh breaking**. 
 
   Data Pipeline helps to solve this problem, by providing the ability to retry refresh on failure and at different intervals.
 
-- **It takes a very long time to make any changes to your data model as Power Query takes a long time to refresh your previews, given the large data sizes and complex transformations.** 
+- **It takes a very long time to make any changes to your data model as Power Query takes a long time to refresh your previews, given the large data sizes and complex transformations**. 
 
   We noticed Data Flows are efficient and easy to make changes. Typically, previews in Data Flows do not take long to load.
 
-- **You need a Windows PC to use Power BI Desktop even though the corporate standard is Mac.**
+- **You need a Windows PC to use Power BI Desktop even though the corporate standard is Mac**.
 
   Microsoft Fabric is a SaaS offering. All we need is a browser to access the service. We do not have to install any software on our desktops.
 

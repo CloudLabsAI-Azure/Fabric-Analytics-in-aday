@@ -60,7 +60,7 @@ By the end of this lab, you will have learned:
 
    ![A screenshot of a dialog to select Data Factory experience](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.002.png)
 
-1. You will be navigated to the Data Factory Home page. Under New, select **Dataflow Gen2.** 
+1. You will be navigated to the Data Factory Home page. Under New, select **Dataflow Gen2**. 
 
    ![A screenshot of Data Factory Home selecting Dataflow Gen2](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.003.png)
 
@@ -102,7 +102,6 @@ You will be navigated to the **Dataflow page**. This screen will look familiar a
    ![A screenshot of Preview folder dialog](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.010.png)
 
 1. You are back in the **Power Query** dialog. This will be the connection to the root folder of ADLS Gen2. We will reference this query in subsequent queries. Let’s rename the query. In the **right panel**, under **Query settings -> Properties -> Name**, change the name to **ADLS Base Folder**.
-
 
 1. All queries from Dataflow Gen2 are loaded to a Staging Lakehouse by default. As part of this lab, we will not be staging data. To disable this load, in the **left panel, right-click on ADLS Base Folder** query. 
 
@@ -204,7 +203,7 @@ We need to bring in State next, but the steps are getting repetitive. We already
 
    ![A screenshot of Power BI Desktop report.](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.023.png)
 
-1. From the left panel, under the ADLSData folder, **right-click States** query and select **Copy**.
+1. From the left panel, under the ADLSData folder, right-click on the **States** query and select **Copy**.
 
    ![A screenshot Power Query window](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.024.png)
 
@@ -213,11 +212,11 @@ We need to bring in State next, but the steps are getting repetitive. We already
 
    ![A screenshot Dataflow queries](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.025.png) 
 
-   Notice ADLS Base Folder (2) is copied as well. This is because States refers to the ADLS Base Folder in Power BI Desktop, but we already have the ADLS Base Folder. Let’s resolve this.
+   Notice that **ADLS Base Folder (2)** is copied as well. This is because States refers to the ADLS Base Folder in Power BI Desktop, but we already have the ADLS Base Folder. Let’s resolve this.
 
 1. Select the **States** query.
 1. From the **right panel**, under **Applied** **steps**, select **Source**.
-1. In the formula bar, change from #"ADLS Base Folder (2)" to **#"ADLS Base Folder"**
+1. In the formula bar, change from #"ADLS Base Folder (2)" to **#"ADLS Base Folder"**.
 
    ![A screenshot of States query Source step](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.026.png) 
 
@@ -315,7 +314,7 @@ Now we have a dimension, let’s ingest this data into Lakehouse. This is the ne
 
    ![A screenshot to Publish Dataflow](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.039.png)
 
-1. You will be navigated back to **Data Factory screen**. It may take a few moments for the Dataflow to Publish. Once done, select **lh\_FAIAD Lakehouse.**
+1. You will be navigated back to **Data Factory screen**. It may take a few moments for the Dataflow to Publish. Once done, select **lh\_FAIAD Lakehouse**.
 
    ![A screenshot to select Lakehouse](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.040.png)
 
@@ -323,7 +322,7 @@ Now we have a dimension, let’s ingest this data into Lakehouse. This is the ne
 
 1. Notice we have a Geo table in the Lakehouse now. Expand **Geo** and notice all the columns.
 
-1. **Select Geo** table and the data preview will open in the right panel.
+1. Select the **Geo** table and the data preview will open in the right panel.
 
    ![A screenshot to explore Lakehouse tables](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.041.png)
 
@@ -419,7 +418,7 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 
    ![A screenshot of Choose destination settings](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.051.png)
 
-1. You will be navigated back to the **Power Query window**. Notice on the bottom **right corner**, data destination is set to **Lakehouse**.
+1. You will be navigated back to the **Power Query window**. Notice on the bottom right corner **data destination** is set to **Lakehouse**.
 
 1. Similarly, set the **Data Destination** for the following queries:
    

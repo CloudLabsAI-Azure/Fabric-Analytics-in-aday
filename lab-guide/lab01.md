@@ -71,11 +71,11 @@ Before we start with Fabric, let’s look at the current Report in Power BI Desk
 15. Select **No, sign in the app** only in the next dialog. Power BI Desktop will now open.
 
 ### Task 2: Analyze Power BI Desktop Report
-   The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of the page. The remaining visuals highlight Sales over time, by Territory, Product         Group, and Reseller Company. 
+   The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of the page. The remaining visuals highlight Sales over time, by Territory, Product Group, and Reseller Company. 
    
    ![Picture7FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/1ad8a0d4-5f3b-4dd4-ab15-9b6212a92de8)
      
-   **Note:** In this training, we are focusing on data acquisition, transformation, and modeling using tools available in Fabric. We will not be focusing on                   report development or navigation. Let’s spend a couple of minutes understanding the report and move to the next steps.
+   **Note:** In this training, we are focusing on data acquisition, transformation, and modeling using tools available in Fabric. We will not be focusing on report development or navigation. Let’s spend a couple of minutes understanding the report and move to the next steps.
 
 1. Let’s analyze data by Sales Territory. Select **New England from the Sales Territory** (Scatter plot) visual.
 Notice from the Sales over time, Reseller Tailspin Toys has more sales compared to Wingtip Toys in New England. If you look at the Sales YoY% column chart you will notice that Wingtip Toys sales growth has been low and declining quarter over quarter during the past year. After a small rebound in Q3, it went down again in Q4. 
@@ -98,7 +98,7 @@ Notice the margin % is 52%, which is above the average of 50%. Also, the Sales Y
 
       ![Picture11FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/6b27ccc9-bc40-43b1-a447-0ded3660642c)
 
-   You will be navigated to the page which provides the Product Details. Notice there are some       future orders in place as well.
+   You will be navigated to the page which provides the Product Details. Notice there are some future orders in place as well.
 7. Once you are done reviewing this page, select the **Ctrl+back arrow** on the top right of the page to be navigated back to the Sales Report.
       
     ![Picture12FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/6ff10b89-9d8f-4b2b-bf76-be3d2c1608ab)
@@ -108,8 +108,8 @@ Notice the margin % is 52%, which is above the average of 50%. Also, the Sales Y
       1. Granularity of Sales data is by Date, Reseller, Product, and People. Date, Reseller, Product, and People connect to Sales.
       2. Granularity of PO data is by Date, Product, and People. Date, Product, and People connect to PO.
       3. We have Supplier data by Product. Supplier connects to Product.
-      4. We have Reseller’s location data by Geo. Geo connects to Reseller.
-      5. We have Customer information by Reseller. The customer connects to Reseller.
+      4. We have Reseller’s location data by Geo. Geo connects to the Reseller.
+      5. We have Customer information by Reseller. The customer connects to the Reseller.
 
 ### Task 3: Review Power Queries
 1. Let’s look at Power Query to understand the data sources. From the ribbon select **Home -> Transform data**.
@@ -125,7 +125,7 @@ Notice the margin % is 52%, which is above the average of 50%. Also, the Sales Y
 
 4. Select **Close** to close the Data source settings dialog.
 
-    ![Picture14](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/1554d26b-b4b4-4dfd-950c-7e875c67b39a)
+    ![](../media/new12.png)
 
 5. In the left Queries panel, notice the queries are grouped by data source. 
 6. Notice **DataverseData** folder has Customer data available in four different queries: BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create a Customer query.
@@ -136,7 +136,7 @@ Notice the margin % is 52%, which is above the average of 50%. Also, the Sales Y
 
       ![](../media/new2.png)
 
-1. For  ADLS data source, use the **Account Key** option and enter the **Adls storage account Access key** that is available in the **Environment Variables** tab (next to the Lab Guide).
+1. For ADLS data source, use the **Account Key** option and enter the **Adls storage account Access key** that is available in the **Environment Variables** tab (next to the Lab Guide).
 
 1. Notice **ADLSData** folder has multiple dimensions: Geo, Product, Reseller, and Date. It also has Sales facts.
    
@@ -145,9 +145,7 @@ Notice the margin % is 52%, which is above the average of 50%. Also, the Sales Y
    3. **Reseller dimension** is filtered using the BuyingGroup query.
    4. **Sales fact** is created by merging InvoiceLineItems with Invoice query.
 
-
-1. For  ADLS data source, use the **Account Key** option and enter the **Adls storage account Access key** that is available in the **Environment Variables** tab (next to the Lab Guide).
-
+1. For ADLS data source, use the **Account Key** option and enter the **Adls storage account Access key** that is available in the **Environment Variables** tab (next to the Lab Guide).
 
 1. Notice **SnowflakeData** folder has a Supplier dimension and PO (Order / Spend) fact.
 
