@@ -84,7 +84,7 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 1. Let’s save this report. From the top menu, select **Save**.
 1. Save your report dialog opens. Name the report as **rpt\_Sales\_Auto\_Report**.
 
-   >**Note:** We are prefixing the report name with rpt which is short for report.
+   >**Note:** We are prefixing the report name with rpt which is short for the report.
 
 1. Make sure the report is saved in **Fabric_username.**
 1. Select **Save.**
@@ -113,8 +113,8 @@ Let’s create a report like the one we have in Power BI Desktop. We are going t
       ![A screenshot of Lakehouse model view showing hide in report view](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.010.png)
 
 7. Similarly, select **Hide in report view** option for the following tables:
-   1. exec_requests_history
    
+   1. exec_requests_history
    1. frequently_run_queries
 
 ### <a name="_toc152166238"></a>Task 3: Configure background for a New report
@@ -347,11 +347,11 @@ Let’s revisit the challenges that are listed in the problem statement:
 
 - **You need to refresh your dataset at least three times a day to accommodate the different update times for the different data sources.**
 
-  We solved this using Direct Lake. Each individual data flow is refreshed on its schedule. The dataset and report do not have to be refreshed.
+  We solved this using Direct Lake. Each data flow is refreshed on its schedule. The dataset and report do not have to be refreshed.
 
 - **Your refreshes take a long time as you need to do a full refresh every time to capture any updates that happened to the source systems.**
 
-  Again, we solved this using Direct Lake. Each individual data flow is refreshed on its schedule. The dataset and report do not have to be refreshed, so we do not have to worry about full refresh. 
+  Again, we solved this using Direct Lake. Each data flow is refreshed on its schedule. The dataset and report do not have to be refreshed, so we do not have to worry about full refresh. 
 
 - **Any errors in any of the data sources that you are pulling from will result in your dataset refresh breaking. A lot of times the employee file doesn’t upload on time resulting in your dataset refresh breaking.** 
 
