@@ -69,7 +69,7 @@ By the end of this lab, you will have learned:
    GROUP BY su.Supplier_Name
    ```
 1. Click **Run** to view the results.
-1. Notice there is an option to save this query as a View by selecting **Save as view**.
+1. Notice there is an option to save this query as a View by selecting Save as view.
 1. On the right **Explorer** panel, under **Queries section** notice this query is saved under **My queries** as **SQL query 1**. This provides an option to rename the query and save it for future use. There is also an option to view queries that are shared with you using the **Shared queries** folder.
 
    ![A screenshot of SQL query screen](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.004.png)
@@ -248,15 +248,6 @@ Let’s add the remaining relationships.
 1. Select **Ok**.
 
    ![A screenshot of New relationship dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.024.png)
-
-1. Now let’s create a relationship between the Customer and the Reseller. Select **ResellerID** from the **Customer** table and drag it over **ResellerID** in the **Reseller** table.
-1. New relationship dialog opens. Make sure **Table 1** is **Customer** and **Column** is **ResellerID.**
-1. Make sure **Table 2** is **Reseller** and **Column** is **ResellerID.**
-1. Make sure **Cardinality is Many to one (*:1)**.
-1. Make sure **Cross filter direction is **single**.
-1. Select **Ok**.
-
-   ![A screenshot of New relationship dialog](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.025.png)**	
 
       **Checkpoint:** Your model should look like the screenshot below.
 

@@ -54,7 +54,7 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
       ![A screenshot of Microsoft Fabric experiences dialog](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.002.png)
 
-1. Select **New Report** from the top menu.
+1. Select **+ New Report** from the top menu.
 
       ![A screenshot of Power BI home](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.003.png)
 
@@ -82,9 +82,11 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 1. Once you are ready, **collapse** all the tables in the **Data** section on the right. Notice we have five new tables which are not part of the model we created. These are default tables added to help analyze performance. We will remove these from the report view shortly.
 1. Let’s save this report. From the top menu, select **Save**.
-1. Save your report dialog opens. Name the report as **rpt\_Sales\_Auto\_Report** 
-   **Note:** We are prefixing the report name with rpt which is short for report.
-1. Make sure the report is saved in **<your workspace name>.**
+1. Save your report dialog opens. Name the report as **rpt\_Sales\_Auto\_Report**.
+
+   >**Note:** We are prefixing the report name with rpt which is short for report.
+
+1. Make sure the report is saved in **Fabric_username.**
 1. Select **Save.**
 
       ![A screenshot of auto-created report](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.007.png)
@@ -111,9 +113,8 @@ Let’s create a report like the one we have in Power BI Desktop. We are going t
       ![A screenshot of Lakehouse model view showing hide in report view](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.010.png)
 
 7. Similarly, select **Hide in report view** option for the following tables:
-   1. fabric_query_starting
-   1. fabric_query_completed
    1. exec_requests_history
+   
    1. frequently_run_queries
 
 ### <a name="_toc152166238"></a>Task 3: Configure background for a New report

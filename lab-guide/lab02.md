@@ -49,7 +49,7 @@ By the end of this lab, you will have learned:
     
 1. Enter the **Email** provided by the instructor and click **Submit**.
 
-      ![Picture17](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/3995afaf-cf69-4541-894e-b2b06ee8caf5)
+   ![Picture17](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/3995afaf-cf69-4541-894e-b2b06ee8caf5)
 
 
 1. You will be navigated to the **Password** screen. Enter the password shared with you by the instructor. 
@@ -106,7 +106,7 @@ By the end of this lab, you will have learned:
 
 1. Select **Data Factory** on the bottom left of your screen. Fabric experience dialog opens.
 
-      ![Picture25](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/98c00246-ad57-4b6a-873d-7e3527ad30df)
+   ![Picture25](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/98c00246-ad57-4b6a-873d-7e3527ad30df)
 
 2. Select **Data Activator** from the dialog. You will be navigated to the **Data Activator Home page**. Data Activator is a no-code experience in Microsoft Fabric for automatically taking actions when patterns or conditions are detected in changing data. Notice the three sections are like the Data Factory experience. In the New section, notice the items:
     1. **Reflex:** Used to monitor datasets, queries, and event streams for patterns.

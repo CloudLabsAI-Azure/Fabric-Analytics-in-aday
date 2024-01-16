@@ -136,7 +136,7 @@ Notice the margin % is 52%, which is above the average of 50%. Also, the Sales Y
 
       ![](../media/new2.png)
 
-1. For  ADLS data source, use the **Account Key** option and enter the **Adls storage account Access key** that is available in the **Environment Variables** tab (next to the Lab Guide).
+1. For ADLS data source, use the **Account Key** option and enter the **Adls storage account Access key** that is available in the **Environment Variables** tab (next to the Lab Guide).
 
 1. Notice **ADLSData** folder has multiple dimensions: Geo, Product, Reseller, and Date. It also has Sales facts.
    
@@ -145,9 +145,7 @@ Notice the margin % is 52%, which is above the average of 50%. Also, the Sales Y
    3. **Reseller dimension** is filtered using the BuyingGroup query.
    4. **Sales fact** is created by merging InvoiceLineItems with Invoice query.
 
-
-1. For  ADLS data source, use the **Account Key** option and enter the **Adls storage account Access key** that is available in the **Environment Variables** tab (next to the Lab Guide).
-
+1. For ADLS data source, use the **Account Key** option and enter the **Adls storage account Access key** that is available in the **Environment Variables** tab (next to the Lab Guide).
 
 1. Notice **SnowflakeData** folder has a Supplier dimension and PO (Order / Spend) fact.
 

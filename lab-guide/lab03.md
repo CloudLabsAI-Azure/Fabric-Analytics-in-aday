@@ -103,7 +103,6 @@ You will be navigated to the **Dataflow page**. This screen will look familiar a
 
 1. You are back in the **Power Query** dialog. This will be the connection to the root folder of ADLS Gen2. We will reference this query in subsequent queries. Let’s rename the query. In the **right panel**, under **Query settings -> Properties -> Name**, change the name to **ADLS Base Folder**.
 
-
 1. All queries from Dataflow Gen2 are loaded to a Staging Lakehouse by default. As part of this lab, we will not be staging data. To disable this load, in the **left panel, right-click on ADLS Base Folder** query. 
 
    >**Note:** Staging is used when we need to stage data to be used in further transformation before it is ready for consumption. 
