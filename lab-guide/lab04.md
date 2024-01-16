@@ -90,7 +90,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
       ![A screenshot to connect to data source](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.005.png)
 
-      Connection is established and you can view the data in the preview panel. Feel free to navigate through the Applied Steps of the queries. Basically, the Suppliers query has the details of suppliers and SupplierCategories as the name implies have supplier categories. These two tables are joined to create the Supplier dimension, with the columns we need. Similarly, we have PO Line Items merged with PO to create the PO fact. Now we need to ingest Supplier and PO data into Lakehouse.
+      Connection is established and you can view the data in the preview panel. Feel free to navigate through the Applied Steps of the queries. The Suppliers query has the details of suppliers and SupplierCategories as the name implies have supplier categories. These two tables are joined to create the Supplier dimension, with the columns we need. Similarly, we have PO Line Items merged with PO to create the PO fact. Now we need to ingest Supplier and PO data into Lakehouse.
 
 7. As mentioned earlier, we are not Staging any of this data. So **right-click** on the **Supplier** query in the Queries pane and select **Enable staging** to remove the check mark.
 
@@ -103,7 +103,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 ### <a name="_toc152198708"></a>Task 3: Configure Data Destination for Supplier and PO queries
 
 1. Select the **Supplier** query.
-2. On the bottom right corner select “+” next to **Data destination**.
+2. On the bottom right corner select **+** next to **Data destination**.
 3. Select **Lakehouse** from the dialog.
 
       ![A screenshot to select Data Destination for Supplier query](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.007.png)
@@ -114,8 +114,8 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
       ![A screenshot to Connect to data destination](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.008.png)
 
 6. Choose destination target dialog opens. Make sure the **New table radio button** is **selected**, since we are creating a new table.
-7. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> your workspace name.** 
-8. Select **lh_FAIAD**
+7. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> your workspace name**. 
+8. Select **lh_FAIAD**.
 9. Leave the table name as **Supplier**.
 10. Select **Next**.
 
@@ -127,7 +127,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
       ![A screenshot to Choose destination settings](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.010.png)
 
-14. You will be navigated back to the **Power Query window**. Notice on the bottom **right corner, Data destination** is set to **Lakehouse**. Similarly, **set up the Data Destination for PO query**. Once it is done, your PO query should have **Data Destination** set to **Lakehouse** as shown in the screenshot below.
+14. You will be navigated back to the **Power Query window**. Notice on the bottom right corner, **Data destination** is set to **Lakehouse**. Similarly, **set up the Data Destination for PO query**. Once it is done, your PO query should have **Data Destination** set to **Lakehouse** as shown in the screenshot below.
 
       ![A screenshot showing Data Destintion for PO](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.011.png)
 
@@ -165,7 +165,7 @@ You will be navigated back to the **Data Factory screen**. Now let’s create a 
 
       ![A screenshot to select New -> Dataflow Gen2](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.016.png)
 
-      You will be navigated to the **Dataflow page.** Now that we are familiar with Dataflow, let’s go ahead and copy the queries from Power BI Desktop into Dataflow.
+      You will be navigated to the **Dataflow page**. Now that we are familiar with Dataflow, let’s go ahead and copy the queries from Power BI Desktop into Dataflow.
 
 2. If you have not already opened it, open the **FAIAD.pbix** located in the **Report** folder on the **Desktop** of your lab environment. 
 3. From the ribbon select **Home -> Transform data**. The power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by the data source.
@@ -191,7 +191,7 @@ You will be navigated back to the **Data Factory screen**. Now let’s create a 
       ![A screenshot Configure connection in Dataflow](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.018.png)
 
 2. Connect to data source dialog opens. In the **Connection** dropdown make sure, **Create new connection** is selected.
-3. **Authentication kind** should be **Organizational Account.**.
+3. **Authentication kind** should be **Organizational Account**.
 
       ![Picture80](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/e68c1646-3f3f-4b0c-841b-bcfc3faaaf2f)
    
@@ -206,7 +206,7 @@ Connection is established and you can view the data in the preview panel. Feel f
       ![A screenshot to disable Staging](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.020.png)
 
 2. Select **Customer** query.
-3. On the bottom right corner select “+” next to **Data destination**.
+3. On the bottom right corner select **+** next to **Data destination**.
 4. Select **Lakehouse** from the dialog.
 
       ![A screenshot to configure Data Destination for Customer query](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.021.png)
@@ -217,9 +217,9 @@ Connection is established and you can view the data in the preview panel. Feel f
       ![Picture81](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/3b11a768-0a6a-41e2-aabd-864aac096e62)
 
 7. Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
-8. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> your workspace name.** 
-9. Select **lh_FAIAD**
-10. Leave the table name as **Customer**
+8. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> your workspace name**. 
+9. Select **lh_FAIAD**.
+10. Leave the table name as **Customer**.
 11. Select **Next**.
 
       ![A screenshot of Choose destination target](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.022.png)
@@ -243,7 +243,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 
       ![A screenshot to select Dataflow1 -> Properties](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.025.png)
 
-2. Dataflow properties dialog opens. Change the **Name** to **df\_Customer\_Dataverse**
+2. Dataflow properties dialog opens. Change the **Name** to **df\_Customer\_Dataverse**.
 3. In the **Description** text box add **Dataflow to ingest Customer data from Dataverse to Lakehouse**.
 4. Select **Save**.
 
@@ -290,7 +290,7 @@ Connection is established and you can view the data in the preview panel. Feel f
       ![A screenshot to disable Staging](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.030.png)
 
 2. Select **People** query.
-3. On the bottom right corner select “+” next to **Data destination**.
+3. On the bottom right corner select **+** next to **Data destination**.
 4. Select **Lakehouse** from the dialog.
 
       ![A screenshot to configure Data Destination for People query](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.031.png)
@@ -301,9 +301,9 @@ Connection is established and you can view the data in the preview panel. Feel f
       ![A screenshot of Connect to data destination](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.008.png)
 
 7. Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
-8. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse-> your workspace name.**
-9. Select **lh_FAIAD**
-10. Leave the table name as **People**
+8. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse-> your workspace name**.
+9. Select **lh_FAIAD**.
+10. Leave the table name as **People**.
 11. Select **Next**.
 
       ![A screenshot of Choose destination target](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.032.png)
@@ -316,7 +316,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 ### <a name="_toc152198717"></a>Task 12: Publish and Rename SharePoint Dataflow
 
-1. You will be navigated back to the **Power Query window**. Notice on the bottom **right corner**, Data destination is set to **Lakehouse**.
+1. You will be navigated back to the **Power Query window**. Notice on the bottom right corner, **Data destination** is set to **Lakehouse**.
 
 2. On the bottom right corner, select **Publish**.
 
