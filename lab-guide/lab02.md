@@ -95,9 +95,10 @@ By the end of this lab, you will have learned:
 
          1. Dataflow Gen2 is the next generation of Dataflow.
 
-         1. Data pipeline is used for data orchestration.
+         1. A data pipeline is used for data orchestration.
             
     2. **Recommended**: This section provides access to quick-start learning documentation.
+       
     3. **Quick Access**: This section lists the recently used or favourite items.
 
    ![Picture24](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/4cfa0615-359d-47ad-b4f3-a5432201c44b)
@@ -119,11 +120,11 @@ By the end of this lab, you will have learned:
 1. Select **Data Activator** on the bottom left of your screen. Fabric experience dialog opens.
 2. Select **Data Engineering**. You will be navigated to the **Data Engineering Home page**. Again, the page contains three main sections. In the New section, notice the items: 
    1. **Lakehouse:** Used to store big data for cleaning, querying, reporting, and sharing.
-   1. **Notebook**: Used to run queries on the data to produce shareable tables and visuals.
-   1. **Spark Job Definition**: Used to define, schedule, and manage Apache jobs.
-   1. **Data pipeline**: Used to orchestrate data solution.
-   1. **Import notebook**: Used to import notebooks from local machine.
-   1. **Use a sample**: Used to create a sample.
+   1. **Notebook:** Used to run queries on the data to produce shareable tables and visuals.
+   1. **Spark Job Definition:** Used to define, schedule, and manage Apache jobs.
+   1. **Data pipeline:** Used to orchestrate data solution.
+   1. **Import notebook:** Used to import notebooks from local machine.
+   1. **Use a sample:** Used to create a sample.
 
    ![Picture27](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/19abeee2-ff05-49fd-8c93-974ede877f61)
 
@@ -131,11 +132,11 @@ By the end of this lab, you will have learned:
 
 1. Select **Data Engineering** on the bottom left of your screen. Fabric experience dialog opens.
 2. Select **Data Science**. You will be navigated to the **Data Science Home page**. Again, there are three sections. In the New section, notice the items:
-    1. **ML model**: Used to create machine learning models.
-    1. **Experiment**: Used to create, run, and track the development of multiple models.
+    1. **ML model:** Used to create machine learning models.
+    1. **Experiment:** Used to create, run, and track the development of multiple models.
     1. **Notebook**: Used to explore data and build machine learning solutions.
-    1. **Import Notebook**: Used to import notebooks from a local machine.
-    1. **Sample**: Sample solution.
+    1. **Import Notebook:** Used to import notebooks from a local machine.
+    1. **Sample:** Sample solution.
 
       ![Picture28](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/ad8c4969-b773-4729-ac6f-b051f6f0568d)
 
@@ -144,9 +145,9 @@ By the end of this lab, you will have learned:
 1. Select **Data Science** on the bottom left of your screen. Fabric experience dialog opens.
 2. Select **Data Warehouse**. You will be navigated to the **Data Warehouse Home page**. Again, there are three sections. In the New section, notice the items. Notice Data Pipeline and Dataflow Gen2 are available here as well.
 
-   1. **Warehouse**: Used to provide strategic insights from multiple sources.
-   1. **Sample warehouse**: Sample warehouse solution.
-   1. **Data pipeline**: Used to orchestrate data solution.
+   1. **Warehouse:** Used to provide strategic insights from multiple sources.
+   1. **Sample warehouse:** Sample warehouse solution.
+   1. **Data pipeline:** Used to orchestrate data solution.
 
         ![Picture29](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/fd991d84-d9ba-45df-867d-0b4f3ce00174)
 
@@ -155,10 +156,10 @@ By the end of this lab, you will have learned:
 1. Select **Data Warehouse** on the bottom left of your screen. Fabric experience dialog opens.
 2. Select **Real-Time Analytics**. You will be navigated to the **Real-Time Analytics Home page**. Again, there are three sections. In the New section, notice the items:
 
-   1. **KQL Database**: Used to rapidly load structured, unstructured, and streaming data for querying.
-   1. **KQL Queryset**: Used to run queries on the data to produce shareable tables and visuals.
-   1. **Eventstream**: Used to capture, transform, and route real-time event stream.
-   1. **Use a sample**: Used to create a sample.
+   1. **KQL Database:** Used to rapidly load structured, unstructured, and streaming data for querying.
+   1. **KQL Queryset:** Used to run queries on the data to produce shareable tables and visuals.
+   1. **Eventstream:** Used to capture, transform, and route real-time event stream.
+   1. **Use a sample:** Used to create a sample.
 
       ![Picture30](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/69f664d3-c1b7-429f-b539-f3a7c5f3ff58)
 
@@ -174,7 +175,7 @@ By the end of this lab, you will have learned:
 3. **Create a workspace** dialog opens on the right side of the browser.
 4. In the **Name** field enter **FAIAD_username**.
 
-    >**Note:** Workspace name must be unique. We are using FAIAD as the workspace name for this document. However, your workspace name must be different. Make sure a green check mark with **“This name is available”** is displayed below the Name field.
+    >**Note:** Workspace name must be unique. We are using FAIAD as the workspace name for this document. However, your workspace name must be different. Make sure a green check mark with **This name is available** is displayed below the Name field.
    
 6. If you choose, you can enter a **Description** for the workspace. This is an optional field.
 7. Click on **Advanced** to expand the section.
@@ -190,7 +191,7 @@ By the end of this lab, you will have learned:
 
 ### Task 9: Create a Lakehouse
 
-1. In the fabric Experience Icon on the bottom left of your screen, should currently be set to **Real-Time Analytics**, click on it to open the Fabric experience dialog.
+1. In the Fabric Experience Icon on the bottom left of your screen, should currently be set to **Real-Time Analytics**, click on it to open the Fabric Experience dialog.
 
 2. Select **Data Engineering** to be navigated to the Data Engineering Home page.
 
@@ -202,7 +203,7 @@ By the end of this lab, you will have learned:
 
 4. New lakehouse dialog opens. Type **lh_FAIAD** in the Name textbox.
  
-    >**Note**: lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.
+    >**Note:** lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.
     
 5. Select **Create**.
 
