@@ -72,9 +72,9 @@ By the end of this lab, you will have learned:
 
 ### <a name="_hlk152164208"></a> <a name="_toc152200369"></a>Task 2: Visualize T-SQL result
 
-1. We can also visualize the result of this query. **Highlight the query** in the query pane and select **Visualize results** from the **Results pane**.
+1. We can also visualize the result of this query. **Highlight the query** in the query pane and go to **Explore this Data(Preview)** dropdown then select **Visualize results** from the **Results pane**.
 
-   ![A screenshot of SQL query screen with result](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.005.png)
+   ![A screenshot of SQL query screen with result](../media/L6T2S1.png)
 
 1. Visualize results dialog opens. Select **Continue**.
 
