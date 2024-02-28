@@ -111,7 +111,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 4. Connect to data destination dialog opens. From the **Connection dropdown** select **Lakehouse (none)**.
 5. Select **Next**.
 
-      ![A screenshot to Connect to data destination](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.008.png)
+      ![A screenshot to Connect to data destination](../media/L4T3S5.png)
 
 6. Choose destination target dialog opens. Make sure the **New table radio button** is **selected**, since we are creating a new table.
 7. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> your workspace name**. 
@@ -121,11 +121,11 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
       ![A screenshot to Choose destination target](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.009.png)
 
-11. Choose destination settings dialog opens. Every time Dataflow Gen2 is refreshed we would like to perform a full load. Make sure **Update method** is set to **Replace**.
+11. Choose destination settings dialog opens. Every time Dataflow Gen2 is refreshed we would like to perform a full load. Toggle the **Use Automatic Settings** switch to **OFF** and make sure **Update method** is set to **Replace**.
 12. Notice there is a warning, “Some column names contain unsupported characters. Should we fix them for you?”. Lakehouse does not support column names with space in it. Select **Fix it**, to remove the warning.
 13. Column mapping can be used to map dataflow columns to existing columns. In our case, it is a New Table. Hence, we can use the defaults. Select **Save settings**.
 
-      ![A screenshot to Choose destination settings](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.010.png)
+      ![A screenshot to Choose destination settings](../media/L4T3S13.png)
 
 14. You will be navigated back to the **Power Query window**. Notice on the bottom right corner, **Data destination** is set to **Lakehouse**. Similarly, **set up the Data Destination for PO query**. Once it is done, your PO query should have **Data Destination** set to **Lakehouse** as shown in the screenshot below.
 
@@ -222,13 +222,13 @@ Connection is established and you can view the data in the preview panel. Feel f
 10. Leave the table name as **Customer**.
 11. Select **Next**.
 
-      ![A screenshot of Choose destination target](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.022.png)
+      ![A screenshot of Choose destination target](../media/L4T3S5.png)
 
-12. Choose destination settings dialog opens. Every time Dataflow Gen2 is refreshed we would like to perform a full load. Make sure **Update method** is set to **Replace**.
+12. Choose destination settings dialog opens. Every time Dataflow Gen2 is refreshed we would like to perform a full load. Toggle the **Use Automatic Settings** switch to **OFF** and make sure **Update method** is set to **Replace**.
 13. Notice there is a warning, “Some column names contain unsupported characters. Should we fix them for you?”. Lakehouse does not support column names with space in it. Select **Fix it**, to remove the warning.
 14. Column mapping can be used to map dataflow columns to existing columns. In our case, it is a New Table. Hence, we can use the defaults. Select **Save settings**.
 
-    ![A screenshot of Choose destination settings](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.023.png)
+    ![A screenshot of Choose destination settings](../media/L4T7S14.png)
 
 ### <a name="_toc152198713"></a>Task 8: Publish and Rename Dataverse Dataflow
 
@@ -293,7 +293,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 3. On the bottom right corner select **+** next to **Data destination**.
 4. Select **Lakehouse** from the dialog.
 
-      ![A screenshot to configure Data Destination for People query](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.031.png)
+      ![A screenshot to configure Data Destination for People query](../media/L4T3S5.png)
 
 5. Connect to data destination dialog opens. From the **Connection dropdown** select **Lakehouse (none)**.
 6. Select **Next**.
@@ -308,11 +308,11 @@ Connection is established and you can view the data in the preview panel. Feel f
 
       ![A screenshot of Choose destination target](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.032.png)
 
-12. Choose destination settings dialog opens. Every time Dataflow Gen2 is refreshed we would like to perform a full load. Make sure **Update method** is set to **Replace**.
+12. Choose destination settings dialog opens. Every time Dataflow Gen2 is refreshed we would like to perform a full load.Toggle the **Use Automatic Settings** switch to **OFF** and make sure **Update method** is set to **Replace**.
 13. Notice there is a warning, “Some column names contain unsupported characters. Should we fix them for you?”. Lakehouse does not support column names with space in it. Select **Fix it**, to remove the warning.
 14. Column mapping can be used to map dataflow columns to existing columns. In our case, it is a New Table. Hence, we can use the defaults. Select **Save settings**.
 
-      ![A screenshot of Choose destination settings](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.033.png)
+      ![A screenshot of Choose destination settings](../media/L4T11S14.png)
 
 ### <a name="_toc152198717"></a>Task 12: Publish and Rename SharePoint Dataflow
 
