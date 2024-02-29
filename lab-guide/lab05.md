@@ -100,7 +100,7 @@ Let’s start by configuring a scheduled refresh of Sales Dataflow.
 11. Set **Refresh frequency** dropdown to **Daily**. Notice there is an option to set it to Weekly as well.
 12. Set **Time Zone** to your preferred time zone.
 
-    **Note**: Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
+    **Note:** Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
 
 13. Click **Add another time** link. Notice the Time option is displayed.
 14. Set **Time** to **noon**. Notice that you can set refresh on the top of the hour or half hour.
@@ -213,7 +213,7 @@ Let’s add a little more complexity to our scenario. We have noticed that if th
 1. Click the **ellipsis(…)** on the right.
 1. From the activity list, click **Until**. 
 
-   **Until**: is an activity that is used to iterate until a condition is satisfied. 
+   **Until:** is an activity that is used to iterate until a condition is satisfied. 
 
     In our scenario, we are going to iterate and refresh the dataflow until it is successful, or we have tried three times.
 
@@ -469,7 +469,7 @@ The expression is a nested if statement. It checks if the value of the varCounte
 7. Set **End date and time** to a **future date**.
 8. Set your **Time zone**.
 
-    **Note**: Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
+    **Note:** Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
 
 9. Select **Apply**.
 10. Select the **X** mark on the top right of the dialog to close it.
@@ -478,7 +478,7 @@ The expression is a nested if statement. It checks if the value of the varCounte
 
 11. Select **your workspace name** in the left panel to navigate to the Data Factory home screen.
 
-  **Note**: In the Schedule screen, there is no option to notify on success or failure (like Dataflow Schedule). Notification can be done by adding an activity in the Data Pipeline. We are not doing it in this lab as it is a lab environment.
+  **Note:** In the Schedule screen, there is no option to notify on success or failure (like Dataflow Schedule). Notification can be done by adding an activity in the Data Pipeline. We are not doing it in this lab as it is a lab environment.
 
   We have scheduled refreshes of the various data sources. We will be creating reports in the next lab.
 
