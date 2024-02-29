@@ -11,7 +11,7 @@
 
      * Task 2: Visualize T-SQL result	
 
-     * Task 3: Create Visual query
+     * Task 3: Create a Visual query
 
      * Task 4: Visualize query results
 
@@ -65,7 +65,7 @@ By the end of this lab, you will have learned:
    GROUP BY su.Supplier_Name
    ```
 1. Click **Run** to view the results.
-1. Notice there is an option to save this query as a View by selecting Save as view.
+1. Notice there is an option to save this query as a View by selecting Save as View.
 1. On the right **Explorer** panel, under **Queries section** notice this query is saved under **My queries** as **SQL query 1**. This provides an option to rename the query and save it for future use. There is also an option to view queries that are shared with you using the **Shared queries** folder.
 
    ![A screenshot of SQL query screen](../media/Aspose.Words.81f0a6eb-66e8-4803-8eb7-2aca2def2ac4.004.png)
