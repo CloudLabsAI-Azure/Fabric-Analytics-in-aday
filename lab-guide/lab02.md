@@ -51,7 +51,6 @@ By the end of this lab, you will have learned:
 
    ![Picture17](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/3995afaf-cf69-4541-894e-b2b06ee8caf5)
 
-
 1. You will be navigated to the **Password** screen. Enter the password shared with you by the instructor. 
 1. Click **Sign in** and follow the prompts to sign into Fabric.
 
@@ -97,9 +96,9 @@ By the end of this lab, you will have learned:
 
          1. A data pipeline is used for data orchestration.
             
-    2. **Recommended**: This section provides access to quick-start learning documentation.
+    2. **Recommended:** This section provides access to quick-start learning documentation.
        
-    3. **Quick Access**: This section lists the recently used or favourite items.
+    3. **Quick Access:** This section lists the recently used or favourite items.
 
    ![Picture24](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/4cfa0615-359d-47ad-b4f3-a5432201c44b)
 
@@ -134,7 +133,7 @@ By the end of this lab, you will have learned:
 2. Select **Data Science**. You will be navigated to the **Data Science Home page**. Again, there are three sections. In the New section, notice the items:
     1. **ML model:** Used to create machine learning models.
     1. **Experiment:** Used to create, run, and track the development of multiple models.
-    1. **Notebook**: Used to explore data and build machine learning solutions.
+    1. **Notebook:** Used to explore data and build machine learning solutions.
     1. **Import Notebook:** Used to import notebooks from a local machine.
     1. **Sample:** Sample solution.
 
