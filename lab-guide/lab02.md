@@ -146,7 +146,6 @@ By the end of this lab, you will have learned:
 2. Select **Data Warehouse**. You will be navigated to the **Data Warehouse Home page**. Again, there are three sections. In the New section, notice the items. Notice Data Pipeline and Dataflow Gen2 are available here as well.
 
    1. **Warehouse:** Used to provide strategic insights from multiple sources.
-   1. **Sample warehouse:** Sample warehouse solution.
    1. **Data pipeline:** Used to orchestrate data solution.
 
         ![Picture29](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/fd991d84-d9ba-45df-867d-0b4f3ce00174)
