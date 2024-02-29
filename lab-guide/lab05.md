@@ -15,9 +15,9 @@
 
   * Task 3: Create Data Pipeline
   
-  * Task 4: Build simpler Data Pipeline
+  * Task 4: Build a simpler Data Pipeline
         
-  * Task 5: Create new Data Pipeline
+  * Task 5: Create a new Data Pipeline
         
   * Task 6: Create Until Activity
         
@@ -327,7 +327,7 @@ Let’s add a little more complexity to our scenario. We have noticed that if th
 
 ### <a name="_toc152204381"></a>Task 10: Configure 1<sup>st</sup> Set variable Activity
 
-We have configured Dataflow activity like we did earlier in the lab. Now we will add new logic. If the dataflow refresh is successful, we need to exist out of the Until iterator. Remember one of the conditions to exist the iterator is to set the value of the varIsSuccess variable to Yes.
+We have configured the Dataflow activity like we did earlier in the lab. Now we will add new logic. If the dataflow refresh is successful, we need to exist out of the Until iterator. Remember one of the conditions to exist the iterator is to set the value of the varIsSuccess variable to Yes.
 
 1. From the top menu, select **Activities -> Set variable**. Set variable activity is added to the design canvas.
 2. With **Set variable activity selected**, in the bottom pane select **General**. Let’s give the activity a name and description.
