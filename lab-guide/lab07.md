@@ -31,7 +31,6 @@
 
    * References
 
-#
 # <a name="_toc152166234"></a>**Introduction** 
 
 We have ingested data from different data sources into Lakehouse, were introduced to Lakehouse, created a data model, and set a refresh schedule for the data sources. Now we are going to create a report.
