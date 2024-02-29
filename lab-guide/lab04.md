@@ -308,7 +308,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 
       ![A screenshot of Choose destination target](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.032.png)
 
-12. Choose destination settings dialog opens. Every time Dataflow Gen2 is refreshed we would like to perform a full load.Toggle the **Use Automatic Settings** switch to **OFF** and make sure **Update method** is set to **Replace**.
+12. Choose destination settings dialog opens. Every time Dataflow Gen2 is refreshed we would like to perform a full load. Toggle the **Use Automatic Settings** switch to **OFF** and make sure **Update method** is set to **Replace**.
 13. Notice there is a warning, “Some column names contain unsupported characters. Should we fix them for you?”. Lakehouse does not support column names with space in it. Select **Fix it**, to remove the warning.
 14. Column mapping can be used to map dataflow columns to existing columns. In our case, it is a New Table. Hence, we can use the defaults. Select **Save settings**.
 
