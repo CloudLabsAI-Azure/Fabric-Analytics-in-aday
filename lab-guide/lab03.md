@@ -295,14 +295,14 @@ Now we have a dimension, let’s ingest this data into Lakehouse. This is the ne
 
    ![A screenshot to Choose destination target](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.037.png)
 
-1. Choose destination settings dialog opens. Every time Dataflow Gen2 is refreshed we would like to perform a full load. Make sure **Update method** is set to **Replace**.
+1. Choose destination settings dialog opens. Every time Dataflow Gen2 is refreshed we would like to perform a full load. Toggle the **Use Automatic Settings** switch to **OFF** and make sure **Update method** is set to **Replace**.
 1. Notice there is a warning that "Some column names contain unsupported characters. Should we fix them for you?" Lakehouse does not support column names with space in it. Select **Fix it**, to remove the warning.
 
    >**Note:** You also have an option to Append data. If you select this, every time dataflow is refreshed, new data is appended to existing data.
 
 1. Column mapping can be used to map dataflow columns to existing columns. In our case, it is a New Table. Hence, we can use the defaults. Select **Save settings**.
 
-   ![A screenshot to Choose destination settings](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.038.png)
+   ![A screenshot to Choose destination settings](../media/Fabricnewone1.png)
 
    >**Note:** If you do not want some of the columns in the Lakehouse, use the check box to the right of the Source column to uncheck the columns you do not need.
 
@@ -412,11 +412,11 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 
    ![A screenshot of Choose destination target](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.050.png)
 
-1. Choose destination settings dialog opens. Every time Dataflow Gen2 is refreshed we would like to perform a full load. Make sure **Update method** is set to **Replace**.
+1. Choose destination settings dialog opens. Every time Dataflow Gen2 is refreshed we would like to perform a full load. Toggle the **Use Automatic Settings** switch to **OFF** and make sure **Update method** is set to **Replace**.
 1. Notice there is a warning, “Some column names contain unsupported characters. Should we fix them for you?” Lakehouse does not support column names with space in it. Select **Fix it**, to remove the warning.
 1. Column mapping can be used to map dataflow columns to existing columns. In our case, it is a New Table. Hence, we can use the defaults. Select **Save settings**.
 
-   ![A screenshot of Choose destination settings](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.051.png)
+   ![A screenshot to Choose destination settings](../media/Fabricnewone2.png)
 
 1. You will be navigated back to the **Power Query window**. Notice on the bottom right corner **data destination** is set to **Lakehouse**.
 

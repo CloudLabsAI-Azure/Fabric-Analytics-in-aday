@@ -148,7 +148,7 @@ By the end of this lab, you will have learned:
    1. **Warehouse:** Used to provide strategic insights from multiple sources.
    1. **Data pipeline:** Used to orchestrate data solution.
 
-        ![Picture29](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/fd991d84-d9ba-45df-867d-0b4f3ce00174)
+        ![A screenshot to Choose destination settings](../media/Fabricnewone3.png)
 
 ### Task 7: Real-Time Analytics Experience
 
