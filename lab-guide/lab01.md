@@ -19,22 +19,22 @@ Fabrikam, Inc. is a wholesale novelty goods distributor. As a wholesaler, Fabrik
 
 You are a Data Analyst in the Sales team. You collect, clean, and interpret data sets to solve business problems. You also put together visualizations like charts and graphs, write reports, and present them to the decision-makers in the organization.
 
-In order to draw valuable insights from the data, you pull data from multiple systems, clean it and mash it up together. You pull data from the following sources:
+To draw valuable insights from the data, you pull data from multiple systems, clean it and mash it up together. You pull data from the following sources:
 
-- **Sales Data:** comes from the ERP system and data is stored in an ADLS Gen2 database or             Databricks. It gets updated at noon / 12 PM every day.
-- **Supplier Data:** comes from different suppliers and data is stored in a Snowflake database.        It gets updated at midnight / 12 AM every day.
-- **Customer Data:** comes from Customer Insights and data is stored in Dataverse. The data is         always up to date.
-- **Employee Data:** comes from the HR system; it is stored as an export file in a SharePoint         folder. It gets updated every morning at 9 AM.
+- **Sales Data:** comes from the ERP system and data is stored in an ADLS Gen2 database or Databricks. It gets updated at noon / 12 PM every day.
+- **Supplier Data:** comes from different suppliers and data is stored in a Snowflake database. It gets updated at midnight / 12 AM every day.
+- **Customer Data:** comes from Customer Insights and data is stored in Dataverse. The data is always up to date.
+- **Employee Data:** comes from the HR system; it is stored as an export file in a SharePoint folder. It gets updated every morning at 9 AM.
 
      ![Picture1FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/e236d8ac-890d-4f7b-93f5-e8d163e3b878)
   
-You are currently building a dataset on Power BI Premium that pulls the data from the above source systems in order to satisfy your reporting needs as well as provide end users with the ability to self-serve. You use Power Query to update your model. 
+You are currently building a dataset on Power BI Premium that pulls the data from the above source systems to satisfy your reporting needs as well as provide end users with the ability to self-serve. You use Power Query to update your model. 
 
 **You are facing the following challenges:**
-   - You need to refresh your dataset at least three times a day to accommodate the different         update times for the different data sources.
-   - Your refreshes take a long time as you need to do a full refresh every time to capture any       updates that happened to the source systems.
-   - Any errors in any of the data sources that you are pulling from will result in your dataset      refresh breaking. A lot of times the employee file does not upload on time resulting in          your dataset refresh breaking.
-   - It takes a very long time to make any changes to your data model as Power Query takes a          long time to refresh your previews, given the large data sizes and complex transformations.
+   - You need to refresh your dataset at least three times a day to accommodate the different update times for the different data sources.
+   - Your refreshes take a long time as you need to do a full refresh every time to capture any updates that happened to the source systems.
+   - Any errors in any of the data sources that you are pulling from will result in your dataset refresh breaking. A lot of times the employee file does not upload on time resulting in          your dataset refresh breaking.
+   - It takes a very long time to make any changes to your data model as Power Query takes a long time to refresh your previews, given the large data sizes and complex transformations.
    - You need a Windows PC to use Power BI Desktop even though the corporate standard is Mac.
 
 You heard about Microsoft Fabric and decided to try it to see if it will address your challenges.
@@ -105,8 +105,8 @@ Notice the margin % is 52%, which is above the average of 50%. Also, the Sales Y
 
 8. Feel free to further analyze the report. Once ready let’s look at the model view. From the left panel, select **Model view icon**. Notice there are two fact tables, Sales and PO.
 
-      1. Granularity of Sales data is by Date, Reseller, Product, and People. Date, Reseller, Product, and People connect to Sales.
-      2. Granularity of PO data is by Date, Product, and People. Date, Product, and People connect to PO.
+      1. The granularity of Sales data is by Date, Reseller, Product, and People. Date, Reseller, Product, and People connect to Sales.
+      2. The granularity of PO data is by Date, Product, and People. Date, Product, and People connect to PO.
       3. We have Supplier data by Product. Supplier connects to Product.
       4. We have Reseller’s location data by Geo. Geo connects to the Reseller.
       5. We have Customer information by Reseller. The customer connects to the Reseller.
