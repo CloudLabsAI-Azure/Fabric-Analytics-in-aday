@@ -185,6 +185,11 @@ Let’s add a few measures which we need to create the Sales dashboard.
 
 1. Select **Sales table** from the model view. We want to add the measures to the Sales table.
 1. From the top menu, select **Home -> New Measure**. The notice formula bar is displayed.
+
+    >**Note:** If you are unable to click on the New Measure option, go to **Reporting (1)** and select **Automatically update semantic model (2)**.
+    
+    ![A screenshot of modeling view with formula bar to add measure](../media/Fabricnewone4.png)
+
 1. Enter **Sales = SUM(Sales[Sales_Amount])** in the **formula bar**.
 1. Click the **check mark** in the formula bar or click the Enter button.
 1. In the Properties panel on the right, expand **Formatting** section.
