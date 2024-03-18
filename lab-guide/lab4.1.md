@@ -1,6 +1,8 @@
 
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 4
 
+# ![](../media/img3.png)
+
 # Contents
 
 - Introduction	
@@ -163,6 +165,8 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
     # ![](../media/img3.png)
  
 4. On the bottom right corner, select **Publish**.
+
+     # ![](../media/img3.png)
  
     You will be navigated back to **FAIAD_<username> workspace**. It may take a few moments for the Dataflow to Publish. Now let’s create a dataflow to bring in data from Dataverse.
 
@@ -191,6 +195,8 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
     e.	Customer
 
 5. **Right click** and select **Copy**.
+
+     # ![](../media/img3.png)
     
 6. Navigate back to the **Dataflow page** in your browser.
 
