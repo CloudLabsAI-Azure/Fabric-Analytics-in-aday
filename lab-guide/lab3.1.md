@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 3
 
-# ![](../media/ImageNew_faided3.1.png)
+# ![](../media/ImageNew_faided3.1_1.png)
 
 # Contents
    * Introduction	3
