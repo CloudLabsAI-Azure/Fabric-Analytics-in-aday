@@ -238,6 +238,7 @@ in
 13. Select Publish in the bottom right corner to save and publish the updates. 
  
 Note: Once published the dataflow will refresh. This may take a few minutes.
+
 14. Select rpt_Sales_Report from the left menu bar to navigate back to the report.
 15. From the top menu select Refresh. Notice now in the Line chart there is data for May 2023. Also, notice the Sales amount and Units has increased.
  
