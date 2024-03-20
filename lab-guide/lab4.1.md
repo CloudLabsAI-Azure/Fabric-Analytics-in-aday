@@ -209,7 +209,6 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 Notice the five queries are pasted and now you have the Queries panel on the left. Since we do not have a connection created for Dataverse, you will see a warning message requesting you to configure the connection.
 
 1. Select **Configure connection**.
-
     
     # ![](../media/Lab_4.1_17.png)
  
