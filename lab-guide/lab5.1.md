@@ -393,7 +393,6 @@ Let’s add a little more complexity to our scenario. We have noticed that if th
 
 6. In the **Description** field, enter **Dataflow activity to refresh df_People_Sharepoint dataflow**.
 
-
    # ![](../media/Lab_5.31.png)
  
 7. Select **Settings** from the bottom pane.
