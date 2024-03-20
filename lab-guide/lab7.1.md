@@ -248,49 +248,36 @@ Note: We are prefixing report name with rpt which is short for report.
 14. From the top menu select **Refresh.** Notice now months are sorted properly.
 
     # ![](../media/Lab_7.28.png)
-
-1. From the **left menu bar,** select **lh_FAIAD** to navigate to the lakehouse.
-2. From the left Explorer pane, expand **lhFAIAD -> Schemas -> dbo -> Tables -> Date.**
-3. Select **Year** column.
-4. In the **Properties** pane on the right, expand **Advanced** section.
-5. In the **Summarize by** drop down select **None.**
- 
-6. Navigate back to report by selecting **rpt_Sales_Report** from the left menu bar.
-7. Select **Edit** from the top menu.
-8. From the top menu select **Refresh.** Notice in Data panel, Year is not a summation field. 
-9. With the **Line chart visual selected, remove Sum of Year** from the Y-axis.
-10. Select **Year** field and it will be added to the **X-axis.**
-11. Expand **Sales** table and select **Sales measure.**
  
  
 ### <a name="_toc152166244"></a>Task 9: Format Line chart
 
 Notice how easy it is to update the semantic model while building the reports. This gives a seamless interaction like Power BI Desktop.
 
-5. With the **Line chart visual selected,** in the **Data section** expand **Reseller** table.
-6. Drag **Reseller -> Reseller Company** field to the **Legend** section.
+1. With the **Line chart visual selected,** in the **Data section** expand **Reseller** table.
+2. Drag **Reseller -> Reseller Company** field to the **Legend** section.
 
    # ![](../media/Lab_7.29.png)
  
-7. With the **Line chart visual selected,** from the **Visualization** section select **Format visual icon -> General.**
-8. Expand **Title** section.
-9. Set **Title** text to **Sales over time.**
-10. Expand **Effects** section.
-11. Use **Background** slider to set it to **Off.**
+3. With the **Line chart visual selected,** from the **Visualization** section select **Format visual icon -> General.**
+4. Expand **Title** section.
+5. Set **Title** text to **Sales over time.**
+6. Expand **Effects** section.
+7. Use **Background** slider to set it to **Off.**
 
-    # ![](../media/Lab_7.30.png)
+   # ![](../media/Lab_7.30.png)
  
-12. From the **Visualization** section select **Format visual icon -> Visual.**
-13. Expand **Lines** section.
-14. Expand **Colors** section.
-15. Set **Wingtip Toys** color to **#004753**
-16. Set **Tailspin Toys** color to **#F17925**
-17. Resize the **visual** and move it to the **top right box as shown in the screenshot.**
-18. Scroll to the right on the visual and **notice we have data through April 2023.**
+8. From the **Visualization** section select **Format visual icon -> Visual.**
+9. Expand **Lines** section.
+10. Expand **Colors** section.
+11. Set **Wingtip Toys** color to **#004753**
+12. Set **Tailspin Toys** color to **#F17925**
+13. Resize the **visual** and move it to the **top right box as shown in the screenshot.**
+14. Scroll to the right on the visual and **notice we have data through April 2023.**
 
     # ![](../media/Lab_7.31.png)
  
-19. Let’s save the report, from the menu select **File -> Save.**
+15. Let’s save the report, from the menu select **File -> Save.**
 As mentioned earlier, we will not build all the visuals in this lab. At your leisure, feel free to build more visuals. 
 
 ### <a name="_toc152166245"></a>Task 10: Add new data to simulate Direct Lake Mode
@@ -316,7 +303,7 @@ In a real scenario, data is updated at the source. Since we are in a training en
 
     in
         
-     "Imported Parquet"
+     #"Imported Parquet"
 
 6. Select **Next.**
 
