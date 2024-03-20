@@ -434,7 +434,8 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
       3.	Sales
       4.	Date
 
-1. 13. We have a data flow that ingests data from ADLS into Lakehouse. Let’s go ahead and publish this dataflow. Select Publish in the bottom right corner.
+1. We have a data flow that ingests data from ADLS into Lakehouse. Let’s go ahead and publish this dataflow. Select Publish in the bottom right corner.
+
    ![A screenshot of Choose destination settings](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.051.png)
 
 1. We have a data flow that ingests data from ADLS into Lakehouse. Let’s go ahead and publish this data flow. Select **Publish** in the bottom right corner.
