@@ -354,7 +354,7 @@ Connection is established and you can view the data in the preview panel. Feel f
  
 11.	Choose destination settings dialog opens. This time around we will use the automatic settings as this will do a full update of the data. Also, it will rename the columns as needed. Select **Save settings**.
 
-    ![](../media/Lab_4.1_35.png)
+ # ![](../media/Lab_4.1_35.png)
  
 
 ## Task 12: Publish and Rename SharePoint Dataflow
