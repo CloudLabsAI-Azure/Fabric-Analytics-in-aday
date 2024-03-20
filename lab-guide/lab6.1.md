@@ -198,7 +198,7 @@ Notice all the steps are recorded in Sales block. (Reference the first screensho
 
 1. Now that we have the query ready, let’s view the result. Select **Visualize results** from the results pane.
 
-    # ![](../media/Lab_6.20.png)
+   # ![](../media/Lab_6.20.png)
  
 2. Visualize results dialog opens. From the **Data** pane in the right, **expand Visual query1**.
 
@@ -206,8 +206,7 @@ Notice all the steps are recorded in Sales block. (Reference the first screensho
 
 4. Notice the result is like the SQL query result from earlier. If you choose to, you can Save this report. Since we saved a similar report earlier, we are going to select **Cancel**.
 
-
-    # ![](../media/Lab_6.21.png)
+   # ![](../media/Lab_6.21.png)
  
 
 ## Task 5: Create Relationships
