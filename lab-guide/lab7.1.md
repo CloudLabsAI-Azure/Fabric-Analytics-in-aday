@@ -292,37 +292,39 @@ In a real scenario, data is updated at the source. Since we are in a training en
 
 3. From the ribbon, select **Home -> Get data -> Blank query.**
 4. Connect to data source dialog opens. Select **all the rows in the editor and delete it.**
-5. Copy below code and paste it in the editor.
+5. Copy the below code and paste it into the editor.
 
+    ```
     let
        
-     Source = #"ADLS Base Folder",
-     #"Filtered Rows" = Table.SelectRows(Source, each Text.Contains([Folder Path], "Sales.Invoices_May")),
+    Source = #"ADLS Base Folder",
+    #"Filtered Rows" = Table.SelectRows(Source, each Text.Contains([Folder Path], "Sales.Invoices_May")),
     #"https://stvnextblobstorage dfs core windows net/fabrikam-sales/Delta-Parquet-Format/Sales Invoices_May/_0-0ee085a3-716f-4833-a792-c3162c1de300-0 parquet" = #"Filtered Rows"{[#"Folder Path"="https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet-Format/Sales.Invoices_May/",Name="0-0ee085a3-716f-4833-a792-c3162c1de300-0.parquet"]}[Content],
     #"Imported Parquet" = Parquet.Document(#"https://stvnextblobstorage dfs core windows net/fabrikam-sales/Delta-Parquet-Format/Sales Invoices_May/_0-0ee085a3-716f-4833-a792-c3162c1de300-0 parquet")
 
     in
         
-     #"Imported Parquet"
+    #"Imported Parquet"
+    ```
 
-6. Select **Next.**
+7. Select **Next.**
 
    # ![](../media/Lab_7.33.png)
  
-7. A new query is recreated. Let’s **rename** it. Rename the query to **MayInvoice** in the right panel, under **Query settings -> Properties -> Name.**
+8. A new query is recreated. Let’s **rename** it. Rename the query to **MayInvoice** in the right panel, under **Query settings -> Properties -> Name.**
 
-8. Let’s disable staging for the new query. **Right click** on MayInvoice query and **uncheck Enable staging.**
+9. Let’s disable staging for the new query. **Right click** on MayInvoice query and **uncheck Enable staging.**
 
    # ![](../media/Lab_7.34.png)
  
-9. Now, let’s append the May **invoice** data with the Invoice table. Select Invoice query from the Queries section.
-10. From the ribbon, select **Home -> Append** queries.
-11. Append query dialog appears. From the **Table to append** dropdown select **MayInvoice.**
-12. Select **OK.**
+10. Now, let’s append the May **invoice** data with the Invoice table. Select Invoice query from the Queries section.
+11. From the ribbon, select **Home -> Append** queries.
+12. Append query dialog appears. From the **Table to append** dropdown select **MayInvoice.**
+13. Select **OK.**
 
     # ![](../media/Lab_7.35.png)
  
-13. Select **Publish** in the bottom right corner to save and publish the updates. 
+14. Select **Publish** in the bottom right corner to save and publish the updates. 
 
     # ![](../media/Lab_7.36.png)
  
