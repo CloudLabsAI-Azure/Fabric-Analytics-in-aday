@@ -303,9 +303,9 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 12.	In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported).
 
-    **Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
+    > **Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
-    **Note**: Notice the query pasted and is available in the left panel. Since we do not have a connection created to SharePoint, you will see a warning message requesting you to configure the connection.
+    > **Note**: Notice the query pasted and is available in the left panel. Since we do not have a connection created to SharePoint, you will see a warning message requesting you to configure the connection.
 
 ## Task 10: Create SharePoint connection
 
@@ -321,7 +321,6 @@ Connection is established and you can view the data in the preview panel. Feel f
 
     # ![](../media/Lab_4.1_30.png)
  
-
 ## Task 11: Configure Data destination for People query
 
 Connection is established and you can view the data in the preview panel. Feel free to navigate through the Applied Steps of the queries. Now we need to ingest People data into Lakehouse.
@@ -342,7 +341,6 @@ Connection is established and you can view the data in the preview panel. Feel f
 
     # ![](../media/Lab_4.1_33.png)
  
-
 6. Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
 
 7. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<username>**. 
@@ -357,7 +355,7 @@ Connection is established and you can view the data in the preview panel. Feel f
  
 11.	Choose destination settings dialog opens. This time around we will use the automatic settings as this will do a full update of the data. Also, it will rename the columns as needed. Select **Save settings**.
 
-    # ![](../media/Lab_4.1_35.png)
+    ![](../media/Lab_4.1_35.png)
  
 
 ## Task 12: Publish and Rename SharePoint Dataflow
