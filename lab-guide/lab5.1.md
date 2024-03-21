@@ -68,11 +68,11 @@ By the end of this lab, you will have learned:
 ## Task 1: Configure scheduled refresh for Sales Dataflow
 Let’s start by configuring a scheduled refresh of Sales Dataflow.
 
-1. Let’s navigate back to the Fabric workspace, **FAIAD_<username>** you created in Lab 2, Task 9.
+1. Let’s navigate back to the Fabric workspace, **FAIAD_** you created in Lab 2, Task 9.
 
 2. All the artifacts you have created are listed here. On the right of the screen, in the **Search box** enter **df**. This will filter the artifacts to Dataflows.
 
-    # ![](../media/Lab_5.2.png)
+    ![](../media/Lab_5.2.png)
  
 3. Hover on the **df_Sales_ADLS** row. Notice that the familiar **Refresh** and **Schedule Refresh icons** are available. Select the **ellipsis (…)**.
 

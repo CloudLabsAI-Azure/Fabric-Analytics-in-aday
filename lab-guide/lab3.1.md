@@ -396,9 +396,13 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 1. As mentioned earlier, we are not Staging any of this data. So **right click** on the following queries and select **Enable staging** to remove the check mark.
    
    1. Product
+   
    1. Product Details
+   
    1. Reseller
+   
    1. Date
+   
    1. Sales
 
    >**Note:** If load is disabled in Power BI Desktop, we do not have to disable staging in Dataflow. Hence, we do not have to disable staging for Product Item Groups, Product Groups, etc.
@@ -431,9 +435,13 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 1. Choose destination settings dialog opens. This time around we will use the automatic settings as this will do a full update of the data. Also, it will rename the columns as needed. Select **Save settings**.
 1. You will be navigated back to the **Power Query window**. Notice on the bottom right corner, **Data destination** is set to **Lakehouse**
 1. Similarly, set the **Data Destination** for the following queries:
+      
       1.	Product Details
+      
       2.	Reseller
+      
       3.	Sales
+      
       4.	Date
 
 1. We have a data flow that ingests data from ADLS into Lakehouse. Let’s go ahead and publish this dataflow. Select Publish in the bottom right corner.

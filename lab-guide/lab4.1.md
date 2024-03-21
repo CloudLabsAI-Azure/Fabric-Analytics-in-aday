@@ -57,9 +57,9 @@ By the end of this lab, you will have learned:
 
 1. Let’s navigate back to the Fabric workspace, **FAIAD_<username>** you created in Lab 2, Task 9.
 
-2. From the top menu, select **New -> Dataflow Gen2**.
+2. From the top menu, select **+ New -> Dataflow Gen2**.
   
-  # ![](../media/Lab_4.1_2.png)
+   ![](../media/Lab_4.1_2.png)
 
 You will be navigated to the **Dataflow page**. Now that we are familiar with Dataflow, let’s go ahead and copy the queries from Power BI Desktop into Dataflow.
 
@@ -81,15 +81,15 @@ You will be navigated to the **Dataflow page**. Now that we are familiar with Da
 
 6. **Right click** and select **Copy**.
 
-    # ![](../media/Lab_4.1_3.png)
+    ![](../media/Lab_4.1_3.png)
  
 7. Navigate back to the **browser**.
 
 8. In the Dataflow pane select the **center pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.
 
-    **Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
+    >**Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
-    # ![](../media/Lab_4.1_4.png)
+    ![](../media/Lab_4.1_4.png)
  
 
 ## Task 2: Create connection to Snowflake
@@ -98,7 +98,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
 1. Select **Configure connection**.
  
-    # ![](../media/Lab_4.1_5.png)
+    ![](../media/Lab_4.1_5.png)
 
 2. Connect to data source dialog opens. In the **Connection** dropdown make sure, **Create new connection** is selected.
 
@@ -108,17 +108,17 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
 5. Select **Connect**.
 
-    # ![](../media/Lab_4.1_6.png)
+    ![](../media/Lab_4.1_6.png)
  
     Connection is established and you can view the data in the preview panel. Feel free to navigate through the Applied Steps of the queries. Basically, Suppliers query has the details of suppliers and SupplierCategories as the name implies has supplier categories. These two tables are joined to create Supplier dimension, with the columns we need. Similarly, we have PO Line Items merged with PO to create the PO fact. Now we need to ingest the Supplier and PO data into Lakehouse.
 
 6. As mentioned earlier, we are not staging any of this data. So **right click** on **Supplier** query in the Queries pane and select **Enable staging** to remove the check mark.
 
-    # ![](../media/Lab_4.1_7.png)
+    ![](../media/Lab_4.1_7.png)
  
 7. Similarly, right click on **PO** query. Select **Enable staging** to remove the check mark.
 
-    **Note**: We do not have to disable staging for the other three queries because Enable Load was disabled in Power BI Desktop (from where these queries were copied from).
+   > **Note**: We do not have to disable staging for the other three queries because Enable Load was disabled in Power BI Desktop (from where these queries were copied from).
 
 ## Task 3: Configure Data Destination for Supplier and PO queries
 
@@ -126,13 +126,13 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
 2. From the ribbon select **Home -> Add data destination -> Lakehouse**.
 
-    # ![](../media/Lab_4.1_8.png)
+    ![](../media/Lab_4.1_8.png)
  
 3. Connect to data destination dialog opens. From the **Connection dropdown** select **Lakehouse (none)**.
 
 4. Select **Next**.
 
-    # ![](../media/Lab_4.1_9.png)
+    ![](../media/Lab_4.1_9.png)
 
 5. Choose destination target dialog opens. Make sure the **New table radio button** is **selected**, since we are creating a new table.
 
@@ -144,37 +144,37 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
 9. Select **Next**.
 
-    # ![](../media/Lab_4.1_10.png)
+    ![](../media/Lab_4.1_10.png)
  
 10. Choose destination settings dialog opens. This time around we will use the automatic settings as this will do a full update of the data. Also, it will rename the columns as needed. Select **Save settings**.
 
-    # ![](../media/Lab_4.1_11.png)
+    ![](../media/Lab_4.1_11.png)
 
 11. You will be navigated back to the **Power Query window**. Notice on the bottom **right corner, Data destination** is set to **Lakehouse**. Similarly, **set up the Data Destination for PO query**. Once it is done, your PO query should have **Data Destination** set to **Lakehouse** as shown in the screenshot below.
  
-    # ![](../media/Lab_4.1_12.png)
+    ![](../media/Lab_4.1_12.png)
 
 ## Task 4: Rename and Publish Snowflake Dataflow
 
 1. From the top of the screen, select the **arrow next to Dataflow 2** to rename.
 
-2. In the dialog, change the name to **df_Supplier_Snowflake**
+2. In the dialog, change the Name to **df_Supplier_Snowflake**
 
 3. Click on **Enter** to save the name change.
 
-    # ![](../media/Lab_4.1_13.png)
+    ![](../media/Lab_4.1_13.png)
  
 4. On the bottom right corner, select **Publish**.
 
-     # ![](../media/Lab_4.1_14.png)
+    ![](../media/Lab_4.1_14.png)
  
     You will be navigated back to **FAIAD_<username> workspace**. It may take a few moments for the Dataflow to Publish. Now let’s create a dataflow to bring in data from Dataverse.
 
 ## Task 5: Copy Dataverse queries to Dataflow
 
-1. From the top menu, select **New -> Dataflow Gen2**.
+1. From the top menu, select **+ New -> Dataflow Gen2**.
 
-    # ![](../media/Lab_4.1_15.png)
+    ![](../media/Lab_4.1_15.png)
  
     You will be navigated to the Dataflow page. Now that we are familiar with Dataflow, let’s go ahead and copy the queries from Power BI Desktop into Dataflow.
 
@@ -196,7 +196,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
 5. **Right click** and select **Copy**.
 
-     # ![](../media/Lab_4.1_16.png)
+    ![](../media/Lab_4.1_16.png)
     
 6. Navigate back to the **Dataflow page** in your browser.
 
@@ -210,7 +210,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
 1. Select **Configure connection**.
     
-    # ![](../media/Lab_4.1_17.png)
+    ![](../media/Lab_4.1_17.png)
  
 2. Connect to data source dialog opens. In the **Connection dropdown** make sure, **Create new connection** is **selected**.
 
@@ -218,7 +218,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
 4. Select **Connect**.
   
-    # ![](../media/Lab_4.1_18.png)
+    ![](../media/Lab_4.1_18.png)
 
 ## Task 7: Create Data destination for Customer query
 
@@ -226,19 +226,19 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 1. As mentioned earlier, we are not staging any of this data. So **right click** on the **Customer** query in the Queries pane and select **Enable staging** to remove the check mark.
 
-    # ![](../media/Lab_4.1_19.png)
+    ![](../media/Lab_4.1_19.png)
  
 2. Select **Customer** query.
 
 3. From the ribbon select **Home -> Add data destination -> Lakehouse**.
 
-    # ![](../media/Lab_4.1_20.png)
+    ![](../media/Lab_4.1_20.png)
 
 4. Connect to data destination dialog opens. From the **Connection dropdown** select **Lakehouse (none)**.
 
 5. Select **Next**.
 
-    # ![](../media/Lab_4.1_21.png)
+    ![](../media/Lab_4.1_21.png)
 
 6. Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
 
@@ -250,11 +250,11 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 10. Select **Next**.
  
-    # ![](../media/Lab_4.1_22.png)
+    ![](../media/Lab_4.1_22.png)
 
 11. Choose destination settings dialog opens. This time around we will use the automatic settings as this will do a full update of the data. Also, it will rename the columns as needed. Select **Save settings**.
  
-    # ![](../media/Lab_4.1_23.png)
+    ![](../media/Lab_4.1_23.png)
 
 ## Task 8: Publish and Rename Dataverse Dataflow
 
@@ -262,13 +262,13 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 2. On the bottom right corner, select **Publish**.
 
-    # ![](../media/Lab_4.1_24.png)
+    ![](../media/Lab_4.1_24.png)
  
     **Note**: You will be navigated back to **FAIAD_<username> workspace**. It may take a few moments for the Dataflow to Publish. 
 
 3. Dataflow 2 is the dataflow we were working in. Let’s rename it before we continue. Click on the **ellipsis (…)** next to Dataflow 1. Select **Properties**.
 
-    # ![](../media/Lab_4.1_25.png)
+    ![](../media/Lab_4.1_25.png)
  
 4. Dataflow properties dialog opens. Change the **Name** to **df_Customer_Dataverse**
 
@@ -276,7 +276,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 6. Select **Save**.
 
-    # ![](../media/Lab_4.1_26.png)
+    ![](../media/Lab_4.1_26.png)
  
     You will be navigated back to **FAIAD_<username> workspace**. Now let’s create a dataflow to bring in data from SharePoint.
 
@@ -284,7 +284,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 1. From the top menu, select **New -> Dataflow Gen2**.
 
-    # ![](../media/Lab_4.1_27.png)
+    ![](../media/Lab_4.1_27.png)
  
     You will be navigated to the **Dataflow page**. Now that we are familiar with Dataflow, let’s go ahead and copy the queries from Power BI Desktop into Dataflow.
 
@@ -296,7 +296,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 10. **Right click** and select **Copy**.
   
-    # ![](../media/Lab_4.1_28.png)
+    ![](../media/Lab_4.1_28.png)
 
 11. Navigate back to the **Dataflow screen** in the browser.
 
@@ -310,7 +310,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 1. Select **Configure connection**.
  
-    # ![](../media/Lab_4.1_29.png)
+    ![](../media/Lab_4.1_29.png)
 
 2. Connect to data source dialog opens. In the **Connection** dropdown make sure **Create new connection** is selected.
 
@@ -318,7 +318,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 4. Select **Connect**.
 
-    # ![](../media/Lab_4.1_30.png)
+    ![](../media/Lab_4.1_30.png)
  
 ## Task 11: Configure Data destination for People query
 
@@ -326,19 +326,19 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 1. As mentioned earlier, we are not staging any of this data. So **right click** on the **People** query in the Queries pane and select **Enable staging** to remove the check mark.
 
-    # ![](../media/Lab_4.1_31.png)
+    ![](../media/Lab_4.1_31.png)
  
 2. Select **People** query.
 
 3. From the ribbon select **Home -> Add data destination -> Lakehouse**.
  
-    # ![](../media/Lab_4.1_32.png)
+    ![](../media/Lab_4.1_32.png)
 
 4. Connect to data destination dialog opens. From the **Connection dropdown** select **Lakehouse (none)**.
 
 5. Select **Next**.
 
-    # ![](../media/Lab_4.1_33.png)
+    ![](../media/Lab_4.1_33.png)
  
 6. Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
 
@@ -350,11 +350,11 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 10. Select **Next**.
 
-    # ![](../media/Lab_4.1_34.png)
+    ![](../media/Lab_4.1_34.png)
  
 11. Choose destination settings dialog opens. This time around we will use the automatic settings as this will do a full update of the data. Also, it will rename the columns as needed. Select **Save settings**.
 
-    # ![](../media/Lab_4.1_35.png)
+    ![](../media/Lab_4.1_35.png)
  
 ## Task 12: Publish and Rename SharePoint Dataflow
 
@@ -362,13 +362,13 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 2. On the bottom right corner, select **Publish**.
 
-    # ![](../media/Lab_4.1_36.png)
+    ![](../media/Lab_4.1_36.png)
  
     **Note**: You will be navigated back to **FAIAD_<username> workspace**. It may take a few moments for the Dataflow to Publish. 
 
 3. Dataflow 2 is the dataflow we were working in. Let’s rename it before we continue. Click on the **ellipsis (…)** next to Dataflow 2. Select **Properties**.
 
-    # ![](../media/Lab_4.1_37.png)
+    ![](../media/Lab_4.1_37.png)
  
 4. Dataflow properties dialog opens. Change the **name** to **df_People_SharePoint**
 

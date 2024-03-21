@@ -51,12 +51,13 @@ By the end of this lab, you will have learned:
     
 1. Enter the **Username** available in the **Environment Variables** tab (next to the Lab Guide) as the Email and click **Submit**.  
 
-   # ![](../media/2-2.png)
+    ![](../media/2-2.png)
 
 1. You will be navigated to the **Password** screen. Enter the **Password** available in the **Environment Variables** tab (next to the Lab Guide) shared with you by the instructor. 
+
 1. Click **Sign in** and follow the prompts to sign into Fabric.
 
-   # ![](../media/2-3.png)
+   ![](../media/2-3.png)
 
 1. You will be navigated to the familiar **Power BI Service Home page**.
 1. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor.
@@ -64,25 +65,26 @@ By the end of this lab, you will have learned:
     Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has a Fabric license. Let’s do this.
 
 1. On the top right corner of the screen, select the **user icon**.
+
 1. Select **Start trial**.
 
-   # ![](../media/2-4.png)
+    ![](../media/2-4.png)
   
 1. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Start trial**.
 
-   # ![](../media/2-5.png)
+    ![](../media/2-5.png)
 
 1. Select the **“X”** on the top right corner of **Just one last step** dialog to close the dialog. We will not be providing these details as this is a lab environment.
 
-   # ![](../media/2-6.png)
+    ![](../media/2-6.png)
 
 1. Successfully upgraded to a free Microsoft Fabric trial dialog opens. Select **Fabric Home Page**. 
 
-   # ![](../media/2-7.png)
+    ![](../media/2-7.png)
 
 1. You will be navigated to the **Microsoft Fabric Home page**.
 
-    # ![](../media/2-8.png)
+    ![](../media/2-8.png)
 
 # Overview of Fabric Experiences:
 
@@ -92,7 +94,7 @@ By the end of this lab, you will have learned:
 
 1. Select **Data Factory**.
  
-    # ![](../media/2-9.png)
+    ![](../media/2-9.png)
 
 1. You are navigated to the **Data Factory Home page**. The page contains three main sections.
    
@@ -106,51 +108,71 @@ By the end of this lab, you will have learned:
        
     3. **Quick Access**: This section lists the recently used or favourite items.
 
-    # ![](../media/2-10.png)
+        ![](../media/2-10.png)
 
 ### Task 3: Data Activator Experience
 
 1. Select **Data Factory** on the bottom left of your screen. Fabric experience dialog opens.
 
-    # ![](../media/2-11.png)
+    ![](../media/2-11.png)
 
 2. Select **Data Activator** from the dialog. You will be navigated to the **Data Activator Home page**. Data Activator is a no-code experience in Microsoft Fabric for automatically taking actions when patterns or conditions are detected in changing data. Notice the three sections are like the Data Factory experience. In the New section, notice the items:
+    
     1. **Reflex:** Used to monitor datasets, queries, and event streams for patterns.
+    
     1. **Reflex sample:** Sample solution.
 
-    # ![](../media/2-12.png)
+        ![](../media/2-12.png)
 
 ### Task 4: Industry Solutions Experience
 1. Select Fabric experience selector icon (currently set to Data Activator) on the bottom left of your screen. Fabric experience dialog opens.
+
 2. Select Industry Solutions from the dialog. You will be navigated to Industry Solutions Home page. Microsoft Fabric offers industry-specific data solutions that provide a robust platform for data management, analytics, and decision-making. These data solutions address the unique challenges faced by different industries, enabling businesses to optimize operations, integrate data from different sources, and use rich analytics. Notice the three sections are like the previous experiences. In the New section, notice the items:
+    
     1. **Sustainability solutions:** supports the ingestion, standardization, and analysis of Environmental, Social, and Governance (ESG) data.
+    
     1. **Retail solutions:** helps in managing large volumes of data, integrating data from various sources, and providing real-time analytics for prompt decision-making. Retailers can use these solutions for inventory optimization, customer segmentation, sales forecasting, dynamic pricing, and fraud detection.
 
-    # ![](../media/2-13.png)
+       ![](../media/2-13.png)
 
 ### Task 5: Synapse Data Engineering Experience
 
 1. Select **Data Activator** on the bottom left of your screen. Fabric experience dialog opens.
+
 2. Select **Data Engineering**. You will be navigated to the **Data Engineering Home page**. Again, the page contains three main sections. In the New section, notice the items: 
+   
    1. **Lakehouse:** Used to store big data for cleaning, querying, reporting, and sharing.
+   
    1. **Notebook:** Used for data ingestion, preparation, analysis and other data-related tasks using various languages like Python, R and Scala.
+   
    1. **Environment:** Used to set up shared libraries, spark compute settings and resources for notebooks and spark job definitions
+   
    1. **Spark Job Definition:** Used to define, schedule, and manage Apache jobs.
+   
    1. **Data pipeline:** Used to orchestrate data solution.
+   
    1. **Import notebook:** Used to import notebooks from local machine.
+   
    1. **Use a sample:** Used to create a sample.
 
-    # ![](../media/2-14.png)
+      ![](../media/2-14.png)
 
 ### Task 6: Synapse Data Science Experience
 
 1. Select **Fabric experience selector** icon (currently set to Data Engineering) on the bottom left of your screen. Fabric experience dialog opens.
+
 2. Select **Data Science**. You will be navigated to the **Data Science Home page**. Again, there are three sections. In the New section, notice the items:
+    
     1. **ML model:** Used to create machine learning models.
+    
     1. **Experiment:** Used to create, run, and track the development of multiple models.
+    
     1. **Notebook**: Used to explore data and build machine learning solutions.
+    
     1. **Environment**: Used to set up shared libraries, spark compute settings and resources for notebooks and spark job definitions.
+    
     1. **Import Notebook:** Used to import notebooks from a local machine.
+    
     1. **Sample:** Sample solution.
 
    **Note**: Items like Notebook, Environment, Data pipeline, etc. are available in multiple experiences as they are relevant in each of these experiences.
@@ -160,24 +182,32 @@ By the end of this lab, you will have learned:
 ### Task 7: Synapse Data Warehouse Experience
 
 1. Select **Fabric experience selector** icon (currently set to Data Science) on the bottom left of your screen. Fabric experience dialog opens.
+
 2. Select **Data Warehouse**. You will be navigated to the **Data Warehouse Home page**. Again, there are three sections. In the New section, notice the items. Notice Data Pipeline and Dataflow Gen2 are available here as well.
 
    1. **Warehouse:** Used to provide strategic insights from multiple sources.
+   
    1. **Data pipeline:** Used to orchestrate data solution.
 
-    # ![](../media/2-16.png)
+      ![](../media/2-16.png)
 
 ### Task 8: Real-Time Analytics Experience
 
 1. Select **Fabric experience selector** icon (currently set to Data Warehouse) on the bottom left of your screen. Fabric experience dialog opens.
+
 2. Select **Real-Time Analytics**. You will be navigated to the **Real-Time Analytics Home page**. Again, there are three sections. In the New section, notice the items:
+   
    1. **Eventhouse:** Used to create a workspace of database, which can be shared across projects.
+   
    1. **KQL Database:** Used to rapidly load structured, unstructured, and streaming data for querying.
+   
    1. **KQL Queryset:** Used to run queries on the data to produce shareable tables and visuals.
+   
    1. **Eventstream:** Used to capture, transform, and route real-time event stream.
+   
    1. **Use a sample:** Used to create a sample.
 
-    # ![](../media/2-17.png)
+      ![](../media/2-17.png)
 
 # Fabric Workspace
 
