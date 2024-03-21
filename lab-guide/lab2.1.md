@@ -125,7 +125,7 @@ By the end of this lab, you will have learned:
         ![](../media/2-12.png)
 
 ### Task 4: Industry Solutions Experience
-1. Select the Fabric experience selector icon (currently set to Data Activator) on the bottom left of your screen. Fabric experience dialog opens.
+1. Select the Fabric Experience selector icon (currently set to Data Activator) on the bottom left of your screen. Fabric experience dialog opens.
 
 2. Select Industry Solutions from the dialog. You will be navigated to the Industry Solutions Home page. Microsoft Fabric offers industry-specific data solutions that provide a robust platform for data management, analytics, and decision-making. These data solutions address the unique challenges faced by different industries, enabling businesses to optimize operations, integrate data from different sources, and use rich analytics. Notice the three sections are like the previous experiences. In the New section, notice the items:
     
