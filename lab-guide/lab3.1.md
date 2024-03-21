@@ -138,9 +138,6 @@ We need to combine City, State, and Country data from these three files to creat
    ![A screenshot to Reference ADLS Base folder](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.013.png)
 
 1. Select the **Folder Path column dropdown arrow**.
-
-   ![A screenshot to Reference ADLS Base folder](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.013.png)
- 
 1. Select **Text filters -> Contains...**
 
    ![A screenshot to filter Folder Path](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.014.png)
@@ -172,8 +169,6 @@ In the right panel, under **Applied steps** notice all the steps are registered.
    ![A screenshot to reference ADLS Base Folder](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.018.png)
 
 1. Select the **Folder Path column dropdown**.
-
-   ![A screenshot to reference ADLS Base Folder](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.018.png)
 
 1. Select **Text filters -> Contains...**
 
@@ -214,7 +209,7 @@ We need to bring in State next, but the steps are getting repetitive. We already
 1. Navigate back to the **browser**. You should be in the Dataflow we were working on.
 1. On the left panel select the **Queries** panel and enter **Ctrl+V** (currently right click Paste is not supported). If you are using **MAC device**, please use **Cmd+V** to paste.
 
-   **Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to enable **VM Native Clipboard**. Select OK in the dialog. Once done pasting the query you can disable this option.
+  >**Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to enable **VM Native Clipboard**. Select OK in the dialog. Once done pasting the query you can disable this option.
    
    ![A screenshot Dataflow queries](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.025.png) 
 
@@ -224,7 +219,7 @@ We need to bring in State next, but the steps are getting repetitive. We already
 
 1. Select the **States** query.
 1. From the **right panel**, under **Applied** **steps**, select **Source**.
-1. In the formula bar, change from #"ADLS Base Folder" to **#"ADLS Base Folder for Geo"**.
+1. In the formula bar, change from #"ADLS Base Folder (2)" to **#"ADLS Base Folder"**
 
    ![A screenshot of States query Source step](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.026.png) 
 
