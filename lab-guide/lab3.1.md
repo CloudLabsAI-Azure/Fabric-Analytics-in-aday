@@ -55,7 +55,7 @@ By the end of this lab, you will have learned:
 # **Dataflow Gen2**
 ### Task 1: Create Dataflow Gen2
 1. Let’s navigate back to the **Fabric workspace** you created in the earlier Lab 2, Task 9.
-1. 2. If you have not navigated away after the previous lab, you will be in the Lakehouse screen. If you have navigated away that is fine. Select **Fabric experience selector** icon from the bottom left of your screen.
+1. If you have not navigated away after the previous lab, you will be in the Lakehouse screen. If you have navigated away that is fine. Select **Fabric experience selector** icon from the bottom left of your screen.
 1. Select **Data Factory** from the open Fabric experience dialog. Data Factory has workloads needed to extract, transform, and ingest data.
 
    ![A screenshot of a dialog to select Data Factory experience](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.002.png)
@@ -90,7 +90,7 @@ You will be navigated to the **Dataflow page**. This screen will look familiar a
    ![A screenshot of Connect to data source](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.008.png)
 
 1. Select **Account Key** from the Authentication kind dropdown.
-1. 7. Copy the **Adls storage account Access Key** from the **Environment Variables** tab (next to the Lab Guide tab) and paste it in the Account key text box.
+1. Copy the **Adls storage account Access Key** from the **Environment Variables** tab (next to the Lab Guide tab) and paste it in the Account key text box.
 
    ![A screenshot of Connect to data source](../media/new6.png)
 
@@ -113,6 +113,7 @@ You will be navigated to the **Dataflow page**. This screen will look familiar a
    Notice there are two file formats in the folder, **json** and **parquet**.
    
    - **Parquet:** is an open-source file format built to handle flat columnar storage data formats. Parquet operates well with complex data in large volumes and is known for its both performant data compression and its ability to handle a wide variety of encoding types.
+   
    - **Json:** file contains metadata like schema, and data type of the parquet file.
 
 1. We need only the parquet file as this has the data we need. Select the **Extension column dropdown arrow**.
@@ -209,17 +210,17 @@ We need to bring in State next, but the steps are getting repetitive. We already
 1. Navigate back to the **browser**. You should be in the Dataflow we were working on.
 1. On the left panel select the **Queries** panel and enter **Ctrl+V** (currently right click Paste is not supported). If you are using **MAC device**, please use **Cmd+V** to paste.
 
-  >**Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to enable **VM Native Clipboard**. Select OK in the dialog. Once done pasting the query you can disable this option.
-   
-   ![A screenshot Dataflow queries](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.025.png) 
+   >**Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to enable **VM Native Clipboard**. Select OK in the dialog. Once done pasting the query you can disable this option.
+      
+      ![A screenshot Dataflow queries](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.025.png) 
 
-   ![A screenshot Dataflow queries](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.025.png) 
+      ![A screenshot Dataflow queries](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.025.png) 
 
-   Notice that **ADLS Base Folder** is copied as well. This is because States refers to the ADLS Base Folder in Power BI Desktop, but we already have the ADLS Base Folder. Let’s resolve this.
+      Notice that **ADLS Base Folder** is copied as well. This is because States refers to the ADLS Base Folder in Power BI Desktop, but we already have the ADLS Base Folder. Let’s resolve this.
 
 1. Select the **States** query.
 1. From the **right panel**, under **Applied** **steps**, select **Source**.
-1. In the formula bar, change from #"ADLS Base Folder (2)" to **#"ADLS Base Folder"**
+1. In the formula bar, change from **#"ADLS Base Folder (2)"** to **#"ADLS Base Folder"**
 
    ![A screenshot of States query Source step](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.026.png) 
 
@@ -252,7 +253,7 @@ Now we need to merge these queries to create the Geo dimension. Let’s copy the
 
 1. Select **X** on the top right corner of the window or select **Done** to close the Advanced Editor window.
 1. Navigate back to the **Dataflow** window in the browser. 
-1. From the ribbon **Get Data -> Blank query**.
+1. From the ribbon **Get data -> Blank query**.
 
    ![A screenshot of Get Data -> Blank Query in Dataflow](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.031.png)
 
@@ -280,8 +281,11 @@ Now we have a dimension, let’s ingest this data into Lakehouse. This is the ne
    ![A screenshot to disable Staging](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.034.png)
 
 1. Follow the same steps for **Countries and Geo** queries **to remove the check mark next to Enable staging**.
+
 1. Select **Geo** query.
+
 1. On the bottom right corner select **+** next to **Data destination.**
+
 1. Select **Lakehouse** from the dialog.
 
    ![A screenshot select Data Destination](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.035.png)
@@ -310,7 +314,7 @@ Now we have a dimension, let’s ingest this data into Lakehouse. This is the ne
 
 1. Column mapping can be used to map dataflow columns to existing columns. In our case, it is a New Table. Hence, we can use the defaults. Select **Save settings**.
 
-   ![A screenshot to Choose destination settings](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.038.png)
+   ![A screenshot to Choose destination settings](../media/Fabrichey1.png)
 
 
 ### Task 9: Publish Dataflow
@@ -338,6 +342,7 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 ### Task 10: Rename Dataflow
 
 1. In the left menu bar, select **FAIAD_username** to be navigated back to the **workspace**.
+
 1. We are working with Dataflow 1. Let’s rename it before we continue. Click on the **ellipsis (…)** next to Dataflow 1. Select **Properties**.
 
    ![A screenshot to select Dataflow1 Properties](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.042.png)
@@ -363,6 +368,7 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 
 1. From the ribbon select **Home -> Transform**. The power Query window opens.
 1. From the **Queries** panel on the left, **Ctrl+Select** following queries from **ADLSData**.
+   
    1. Product
    1. Product Groups
    1. Product Item Group
@@ -374,7 +380,7 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
    1. Reseller
    1. Date
 
-   ![A screenshot to copy queries from Power Query window](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.045.png)
+      ![A screenshot to copy queries from Power Query window](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.045.png)
 
 1. **Right-click** and select **Copy**.
 
@@ -388,6 +394,7 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
    ![A screenshot copying queries to dataflow](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.046.png)
 
 1. As mentioned earlier, we are not Staging any of this data. So **right click** on the following queries and select **Enable staging** to remove the check mark.
+   
    1. Product
    1. Product Details
    1. Reseller
@@ -431,7 +438,7 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 
 1. We have a data flow that ingests data from ADLS into Lakehouse. Let’s go ahead and publish this dataflow. Select Publish in the bottom right corner.
 
-   ![A screenshot of Choose destination settings](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.051.png)
+   ![A screenshot of Choose destination settings](../media/Fabrichey2.png)
 
 1. We have a data flow that ingests data from ADLS into Lakehouse. Let’s go ahead and publish this data flow. Select **Publish** in the bottom right corner.
 
