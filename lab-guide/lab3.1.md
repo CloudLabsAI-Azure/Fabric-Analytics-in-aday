@@ -299,14 +299,14 @@ Now we have a dimension, let’s ingest this data into Lakehouse. This is the ne
    ![A screenshot to Choose destination target](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.037.png)
 
 1. Choose destination settings dialog opens. Use the slider to disable automatic settings. Let’s check out the options.
-   Notice there are options to Append data to existing table or Replace. 
+   Notice there are options to Append data to an existing table or Replace it. 
    Also, notice there are Schema options on publish. You have the option of keeping the schema fixed, or if it is going to change over time there is a dynamic schema option.
 
 1. Notice there is a warning that "Some column names contain unsupported characters. Should we fix them for you?" Lakehouse does not support column names with space in it. If you choose to select Fix it, it will add underscores to replace space in column names.
 
-   >**Note:** The check box to the right of Source column lets you pick only those columns you want to load to the Lakehouse.  
+   >**Note:** The check box to the right of the Source column lets you pick only those columns you want to load to the Lakehouse.  
 
-1. In our scenario, we are going to use automatic settings. **Enable Use automatic settings** slider. Notice it automatically fixing destination column names with an underscore.
+1. In our scenario, we are going to use automatic settings. **Enable Use automatic settings** slider. Notice it automatically fixes destination column names with an underscore.
 
 1. Column mapping can be used to map dataflow columns to existing columns. In our case, it is a New Table. Hence, we can use the defaults. Select **Save settings**.
 
@@ -380,7 +380,7 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 
    ![A screenshot to copy queries from Power Query window](../media/new7.png)
    
-1. Navigate back to **df\_Sales\_ADF** Dataflow window of the browser.
+1. Navigate back to **df\_Sales\_ADLS** Dataflow window of the browser.
 
 1. On the left panel under select **Queries** panel and enter **Ctrl+V** (currently right click Paste is not supported). If you are using **MAC device**, please use **Cmd+V** to paste.
 
@@ -404,7 +404,7 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 
 1. Select the **Product** query.
 1. On the bottom right corner select **+** next to **Data destination**.
-1. 2. From the ribbon select **Home -> Add data destination -> Lakehouse**.
+1. From the ribbon select **Home -> Add data destination -> Lakehouse**.
 
    ![A screenshot configure Data Destination for Product query](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.048.png)
 
