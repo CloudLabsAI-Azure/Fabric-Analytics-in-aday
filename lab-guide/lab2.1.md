@@ -47,7 +47,7 @@ By the end of this lab, you will have learned:
 
 1. Open the **browser** and navigate to https://app.powerbi.com/. You will be navigated to the login page.
 
-    >**Note:** : If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private / incognito mode.
+    >**Note:** If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private / incognito mode.
     
 1. Enter the **Username** available in the **Environment Variables** tab (next to the Lab Guide) as the Email and click **Submit**.  
 
@@ -74,7 +74,7 @@ By the end of this lab, you will have learned:
 
     ![](../media/2-5.png)
 
-1. Select the **“X”** on the top right corner of **Just one last step** dialog to close the dialog. We will not be providing these details as this is a lab environment.
+1. Select the **“X”** on the top right corner of the **Just one last step** dialog to close the dialog. We will not be providing these details as this is a lab environment.
 
     ![](../media/2-6.png)
 
@@ -125,9 +125,9 @@ By the end of this lab, you will have learned:
         ![](../media/2-12.png)
 
 ### Task 4: Industry Solutions Experience
-1. Select Fabric experience selector icon (currently set to Data Activator) on the bottom left of your screen. Fabric experience dialog opens.
+1. Select the Fabric experience selector icon (currently set to Data Activator) on the bottom left of your screen. Fabric experience dialog opens.
 
-2. Select Industry Solutions from the dialog. You will be navigated to Industry Solutions Home page. Microsoft Fabric offers industry-specific data solutions that provide a robust platform for data management, analytics, and decision-making. These data solutions address the unique challenges faced by different industries, enabling businesses to optimize operations, integrate data from different sources, and use rich analytics. Notice the three sections are like the previous experiences. In the New section, notice the items:
+2. Select Industry Solutions from the dialog. You will be navigated to the Industry Solutions Home page. Microsoft Fabric offers industry-specific data solutions that provide a robust platform for data management, analytics, and decision-making. These data solutions address the unique challenges faced by different industries, enabling businesses to optimize operations, integrate data from different sources, and use rich analytics. Notice the three sections are like the previous experiences. In the New section, notice the items:
     
     1. **Sustainability solutions:** supports the ingestion, standardization, and analysis of Environmental, Social, and Governance (ESG) data.
     
@@ -159,7 +159,7 @@ By the end of this lab, you will have learned:
 
 ### Task 6: Synapse Data Science Experience
 
-1. Select **Fabric experience selector** icon (currently set to Data Engineering) on the bottom left of your screen. Fabric experience dialog opens.
+1. Select the **Fabric experience selector** icon (currently set to Data Engineering) on the bottom left of your screen. Fabric experience dialog opens.
 
 2. Select **Data Science**. You will be navigated to the **Data Science Home page**. Again, there are three sections. In the New section, notice the items:
     
@@ -175,13 +175,13 @@ By the end of this lab, you will have learned:
     
     1. **Sample:** Sample solution.
 
-   **Note**: Items like Notebook, Environment, Data pipeline, etc. are available in multiple experiences as they are relevant in each of these experiences.
+   >**Note**: Items like Notebook, Environment, Data pipeline, etc. are available in multiple experiences as they are relevant in each of these experiences.
 
     # ![](../media/2-15.png)
 
 ### Task 7: Synapse Data Warehouse Experience
 
-1. Select **Fabric experience selector** icon (currently set to Data Science) on the bottom left of your screen. Fabric experience dialog opens.
+1. Select the **Fabric experience selector** icon (currently set to Data Science) on the bottom left of your screen. Fabric experience dialog opens.
 
 2. Select **Data Warehouse**. You will be navigated to the **Data Warehouse Home page**. Again, there are three sections. In the New section, notice the items. Notice Data Pipeline and Dataflow Gen2 are available here as well.
 
@@ -193,11 +193,11 @@ By the end of this lab, you will have learned:
 
 ### Task 8: Real-Time Analytics Experience
 
-1. Select **Fabric experience selector** icon (currently set to Data Warehouse) on the bottom left of your screen. Fabric experience dialog opens.
+1. Select the **Fabric experience selector** icon (currently set to Data Warehouse) on the bottom left of your screen. Fabric experience dialog opens.
 
 2. Select **Real-Time Analytics**. You will be navigated to the **Real-Time Analytics Home page**. Again, there are three sections. In the New section, notice the items:
    
-   1. **Eventhouse:** Used to create a workspace of database, which can be shared across projects.
+   1. **Eventhouse:** Used to create a workspace of the database, which can be shared across projects.
    
    1. **KQL Database:** Used to rapidly load structured, unstructured, and streaming data for querying.
    
@@ -237,11 +237,11 @@ By the end of this lab, you will have learned:
 
 ### Task 10: Create a Lakehouse
 
-1. Select **Fabric experience selector** icon (currently set to Real-Time Analytics) on the bottom left of your screen. Fabric experience dialog opens.
+1. Select the **Fabric experience selector** icon (currently set to Real-Time Analytics) on the bottom left of your screen. Fabric experience dialog opens.
 
     # ![](../media/2-21.png)
 
-1. Select **Data Engineering** to be navigated to Data Engineering Home page.
+1. Select **Data Engineering** to be navigated to the Data Engineering Home page.
 1. Select **Lakehouse**.
 
     # ![](../media/2-22.png)
