@@ -65,9 +65,9 @@ You will be navigated to the **Dataflow page**. Now that we are familiar with Da
 
 3. If you have not already opened it, open the **FAIAD.pbix** located in the **C:\FAIAD\Reports** folder of your lab environment.
 
-4. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
+4. From the ribbon select **Home -> Transform data**. The power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by the data source.
 
-5. Power Query window opens. From the left panel, under the SnowflakeData folder **Ctrl+Select** or Shift+Select the following queries:
+5. The Power Query window opens. From the left panel, under the SnowflakeData folder **Ctrl+Select** or Shift+Select the following queries:
 
     a.	SupplierCategories
 
@@ -85,7 +85,7 @@ You will be navigated to the **Dataflow page**. Now that we are familiar with Da
  
 7. Navigate back to the **browser**.
 
-8. In the Dataflow pane select the **center pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.
+8. In the Dataflow pane select the **center pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using a MAC device, please use Cmd+V to paste.
 
     >**Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
@@ -110,15 +110,15 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
     ![](../media/Lab_4.1_6.png)
  
-    Connection is established and you can view the data in the preview panel. Feel free to navigate through the Applied Steps of the queries. Basically, Suppliers query has the details of suppliers and SupplierCategories as the name implies has supplier categories. These two tables are joined to create Supplier dimension, with the columns we need. Similarly, we have PO Line Items merged with PO to create the PO fact. Now we need to ingest the Supplier and PO data into Lakehouse.
+    Connection is established and you can view the data in the preview panel. Feel free to navigate through the Applied Steps of the queries. the Suppliers query has the details of suppliers and SupplierCategories as the name implies have supplier categories. These two tables are joined to create the Supplier dimension, with the columns we need. Similarly, we have PO Line Items merged with PO to create the PO fact. Now we need to ingest the Supplier and PO data into Lakehouse.
 
-6. As mentioned earlier, we are not staging any of this data. So **right click** on **Supplier** query in the Queries pane and select **Enable staging** to remove the check mark.
+6. As mentioned earlier, we are not staging any of this data. So **right-click** on the **Supplier** query in the Queries pane and select **Enable staging** to remove the check mark.
 
     ![](../media/Lab_4.1_7.png)
  
-7. Similarly, right click on **PO** query. Select **Enable staging** to remove the check mark.
+7. Similarly, right-click on the **PO** query. Select **Enable staging** to remove the check mark.
 
-   > **Note**: We do not have to disable staging for the other three queries because Enable Load was disabled in Power BI Desktop (from where these queries were copied from).
+   > **Note**: We do not have to disable staging for the other three queries because Enable Load was disabled in Power BI Desktop (from where these queries were copied).
 
 ## Task 3: Configure Data Destination for Supplier and PO queries
 
@@ -180,9 +180,9 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
 2. If you have not already opened it, open **FAIAD.pbix** located in the **C:\FAIAD\Reports** folder of your lab environment. 
 
-3. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
+3. From the ribbon select **Home -> Transform data**. The power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by the data source.
 
-4. Power Query window opens. From the left panel, under DataverseData folder **Ctrl+Select** the following queries:
+4. The Power Query window opens. From the left panel, under DataverseData folder **Ctrl+Select** the following queries:
 
     a.	BabyBoomer
 
@@ -200,7 +200,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
     
 6. Navigate back to the **Dataflow page** in your browser.
 
-7. In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.
+7. In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using a MAC device, please use Cmd+V to paste.
 
     **Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to enable VM Native Clipboard. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
@@ -266,7 +266,7 @@ Connection is established and you can view the data in the preview panel. Feel f
  
     **Note**: You will be navigated back to **FAIAD_<username> workspace**. It may take a few moments for the Dataflow to Publish. 
 
-3. Dataflow 2 is the dataflow we were working in. Let’s rename it before we continue. Click on the **ellipsis (…)** next to Dataflow 1. Select **Properties**.
+3. Dataflow 2 is the dataflow we were working on. Let’s rename it before we continue. Click on the **ellipsis (…)** next to Dataflow 1. Select **Properties**.
 
     ![](../media/Lab_4.1_25.png)
  
@@ -290,9 +290,9 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 7. If you have not already opened it, open the **FAIAD.pbix** located in the **C:\FAIAD\Reports** folder of your lab environment. 
 
-8. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
+8. From the ribbon select **Home -> Transform data**. The power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by the data source.
 
-9. Power Query window opens. From the left panel, under the SharepointData folder **select People** query.
+9. The Power Query window opens. From the left panel, under the SharepointData folder **select People** query.
 
 10. **Right click** and select **Copy**.
   
@@ -366,7 +366,7 @@ Connection is established and you can view the data in the preview panel. Feel f
  
     **Note**: You will be navigated back to **FAIAD_<username> workspace**. It may take a few moments for the Dataflow to Publish. 
 
-3. Dataflow 2 is the dataflow we were working in. Let’s rename it before we continue. Click on the **ellipsis (…)** next to Dataflow 2. Select **Properties**.
+3. Dataflow 2 is the dataflow we were working on. Let’s rename it before we continue. Click on the **ellipsis (…)** next to Dataflow 2. Select **Properties**.
 
     ![](../media/Lab_4.1_37.png)
  
@@ -378,7 +378,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 
    ![](../media/Lab_4.1_38.png)
  
-You will be navigated back to **FAIAD_<username> workspace**. We have now ingested all the data into Lakehouse. In the next lab, we will schedule Dataflow refresh.
+You will be navigated back to **FAIAD_<username> workspace**. We have now ingested all the data into Lakehouse. In the next lab, we will schedule a Dataflow refresh.
 
 # References
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
