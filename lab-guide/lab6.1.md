@@ -24,9 +24,7 @@
         
     - Task 8: Optional section – Create Measures
 
-- References	
-
-
+- References
 
 # Introduction 
 
@@ -48,7 +46,7 @@ By the end of this lab, you will have learned:
 
 2. You will see three types of lh_FAIAD – Lakehouse, Semantic model and SQL endpoint. We explored the Lakehouse option in an earlier lab. Select **lh_FAIAD SQL analytics endpoint** option to explore the SQL option. You will be navigated to the **SQL view** of the explorer.
 
-    # ![](../media/Lab_6.2.png)
+    ![](../media/Lab_6.2.png)
     
 If you would like to explore the data before creating a data model, you can use SQL to do so. Let’s look at two options to use SQL, the first one is developer friendly, and second option is for analysts. 
 
@@ -58,7 +56,7 @@ Notice on the left panel, you can view the Tables. If you expand the tables, you
 
 3. From the **top menu** select **New SQL query** or from the **bottom of the left panel** select **Query**. You will be navigated to SQL query view.
 
-    # ![](../media/Lab_6.3.png)
+    ![](../media/Lab_6.3.png)
  
 4. Paste the **below SQL query** into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
 
@@ -76,7 +74,7 @@ Notice on the left panel, you can view the Tables. If you expand the tables, you
 
 7. On the **left Explorer** panel, under **Queries** section notice this query is saved under **My queries** as **SQL query 1**. This provides an option to rename the query and save it for future use. There is also an option to view queries that are shared with you using the **Shared queries** folder.
 
-    # ![](../media/Lab_6.4.png)
+    ![](../media/Lab_6.4.png)
     
 
 
@@ -84,7 +82,7 @@ Notice on the left panel, you can view the Tables. If you expand the tables, you
 
 1. We can also visualize the result of this query. **Highlight the query** in the query pane and select the **Results pane** then select **Explore this data**.
 
-    # ![](../media/Lab_6.5.png)
+    ![](../media/Lab_6.5.png)
    
 2. **Explore SQL query** dialog opens. From the **Data** pane, expand **SQL query 1**.
 
@@ -92,15 +90,15 @@ Notice on the left panel, you can view the Tables. If you expand the tables, you
 
 4. From the **Visualization** section, change the visual type by selecting the **Stacked column chart**.
 
-    # ![](../media/Lab_6.6.png)
+    ![](../media/Lab_6.6.png)
  
 5. **Expand Matrix** to view the data as a matrix. 
 
-    # ![](../media/Lab_6.7.png)
+    ![](../media/Lab_6.7.png)
  
 6. Select **Save - > Save as report** on the top right of the screen.
 
-    # ![](../media/Lab_6.8.png)
+    ![](../media/Lab_6.8.png)
  
 7. Save your report dialog opens. Type **Units by Supplier** in the **Enter a name for your report textbox**.
 
@@ -108,13 +106,13 @@ Notice on the left panel, you can view the Tables. If you expand the tables, you
 
 9. Select **Save**.
 
-    # ![](../media/Lab_6.9.png)
+    ![](../media/Lab_6.9.png)
    
     You will be navigated to the full report experience. You have options to format the visuals. We will look at these options in the next lab.
 
 10. From the left panel, select **lh_FAIAD**.
 
-    # ![](../media/Lab_6.10.png)
+    ![](../media/Lab_6.10.png)
  
 ## Task 3: Create Visual query
 
@@ -126,11 +124,11 @@ You will be navigated back to the **SQL analytics endpoint view**. If you are no
 
 3. Drag **Sales, Product, and Supplier** tables to the visual query pane.
 
-    # ![](../media/Lab_6.11.png)
+    ![](../media/Lab_6.11.png)
  
 4. With **Sales** table selected, from the Visual query pane menu, select **Combine -> Merge queries**.
 
-    # ![](../media/Lab_6.12.png)
+    ![](../media/Lab_6.12.png)
      
 5. Merge dialog opens. From the **Right table for merge dropdown** select **Product**.
 
@@ -140,7 +138,7 @@ You will be navigated back to the **SQL analytics endpoint view**. If you are no
 
 8. Select **OK**.
 
-    # ![](../media/Lab_6.13.png)
+    ![](../media/Lab_6.13.png)
  
 9. In the **results** pane, click on the **double arrow** next to the **Product** column.
 
@@ -148,13 +146,13 @@ You will be navigated back to the **SQL analytics endpoint view**. If you are no
 
 11. Select **OK**. Notice **Merged queries** and **Expanded Product** steps are created in the **Sales** table.
 
-    # ![](../media/Lab_6.14.png)
+    ![](../media/Lab_6.14.png)
  
 12. Similarly, let’s merge the Supplier table. Within the **Sales** table select “**+**” (located after Expanded Product) to add a new step. Dialog opens.
 
 13. Select **Combine -> Merge queries**.
 
-    # ![](../media/Lab_6.15.png)
+    ![](../media/Lab_6.15.png)
  
 14. Merge dialog opens. From the **Right table for merge dropdown** select **Supplier**.
 
@@ -164,7 +162,7 @@ You will be navigated back to the **SQL analytics endpoint view**. If you are no
 
 17. Select **OK**.
 
-    # ![](../media/Lab_6.16.png)
+    ![](../media/Lab_6.16.png)
  
 18. In the **results** pane, click on the **double arrow** next to **Supplier** column.
 
@@ -172,13 +170,13 @@ You will be navigated back to the **SQL analytics endpoint view**. If you are no
 
 20. Select **OK**. Notice in the Sales table, **Merged queries** is added and the **steps are recorded**.  
 
-    # ![](../media/Lab_6.17.png)
+    ![](../media/Lab_6.17.png)
  
 21. Let’s now group by Supplier name to get quantity by Supplier. Within the **Sales** table select “**+**” (located after Expanded Supplier) to add a new step. Dialog opens.
 
 22. Select **Transform table -> Group by**. Group by dialog opens.
  
-    # ![](../media/Lab_6.18.png)
+    ![](../media/Lab_6.18.png)
 
 23. From the **Group by** dropdown select **Supplier_Name**.
 
@@ -186,11 +184,11 @@ You will be navigated back to the **SQL analytics endpoint view**. If you are no
 
 25. Set **Operation** to **Sum**
 
-26. Select** Quantity** from **Column** dropdown.
+26. Select **Quantity** from **Column** dropdown.
 
 27. Select **OK**.
 
-    # ![](../media/Lab_6.19.png)
+    ![](../media/Lab_6.19.png)
  
 Notice all the steps are recorded in Sales block. (Reference the first screenshot under Task 4.)
 
@@ -198,7 +196,7 @@ Notice all the steps are recorded in Sales block. (Reference the first screensho
 
 1. Now that we have the query ready, let’s view the result. Select **Visualize results** from the results pane.
 
-   # ![](../media/Lab_6.20.png)
+   ![](../media/Lab_6.20.png)
  
 2. Visualize results dialog opens. From the **Data** pane in the right, **expand Visual query1**.
 
@@ -206,7 +204,7 @@ Notice all the steps are recorded in Sales block. (Reference the first screensho
 
 4. Notice the result is like the SQL query result from earlier. If you choose to, you can Save this report. Since we saved a similar report earlier, we are going to select **Cancel**.
 
-   # ![](../media/Lab_6.21.png)
+   ![](../media/Lab_6.21.png)
  
 
 ## Task 5: Create Relationships
@@ -219,7 +217,7 @@ Ok now we are ready to build the model, build relationships between tables, and 
 
 3. Let’s create a relationship between Sales and Reseller tables. Select **ResellerID** from the **Sales** table and drag it over to **ResellerID** in the **Reseller** table.
 
-    # ![](../media/Lab_6.22.png)
+    ![](../media/Lab_6.22.png)
  
 4. New relationship dialog opens. Make sure **Table 1** is **Sales** and **Column** is **ResellerID**.
 
@@ -231,7 +229,7 @@ Ok now we are ready to build the model, build relationships between tables, and 
 
 8. Select **Ok**.
  
-    # ![](../media/Lab_6.23.png)
+    ![](../media/Lab_6.23.png)
 
 9. Similarly, create a relationship between Sales and Date tables. Select **InvoiceDate** from the **Sales** table and drag it over to **Date** in the **Date** table.
 
@@ -245,17 +243,17 @@ Ok now we are ready to build the model, build relationships between tables, and 
 
 14. Select **Ok**.
 
-    # ![](../media/Lab_6.24.png)
+    ![](../media/Lab_6.24.png)
  
 15. Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID** from the **Sales** table and **StockItemID** from the **Product** table.
 
 16. From the top menu select **Reporting -> Automatically update semantic model** to save and update the model. 
 
-    # ![](../media/Lab_6.25.png)
+    ![](../media/Lab_6.25.png)
  
     **Checkpoint**: Your model should have the three relationships between Sales and Reseller tables, Sales and Date and Sales and Product tables as shown in the below screenshot:
 
-    # ![](../media/Lab_6.26.png)
+    ![](../media/Lab_6.26.png)
  
     For the sake of time, we will not be creating all the relationships. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the remaining relationships.
 
@@ -275,7 +273,7 @@ Let’s add a few measures which we need to create the Sales dashboard.
 
 6. From the **Format** dropdown select **Whole number**.
 
-    # ![](../media/Lab_6.27.png)
+    ![](../media/Lab_6.27.png)
  
 7. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
@@ -287,7 +285,7 @@ Let’s add a few measures which we need to create the Sales dashboard.
 
 11. From the **Format** dropdown select **Whole number**.
 
-    # ![](../media/Lab_6.28.png)
+    ![](../media/Lab_6.28.png)
  
 12. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
@@ -299,7 +297,7 @@ Let’s add a few measures which we need to create the Sales dashboard.
 
 16. From the Format dropdown select **Whole number**.
 
-    # ![](../media/Lab_6.29.png)
+    ![](../media/Lab_6.29.png)
  
     Again, for the sake of time, we will not be creating all the measures. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the remaining measures.
   
@@ -313,7 +311,7 @@ Let’s add the remaining relationships.
 
     **Checkpoint**: Your model should look like the screenshot below.
 
-    # ![](../media/Lab_6.30.png)
+    ![](../media/Lab_6.30.png)
  
 2. Now let’s create a relationship between Product and Supplier. Select **SupplierID** from **Product** table and drag it over **SupplierID** in **Supplier** table.
 
@@ -328,7 +326,7 @@ Let’s add the remaining relationships.
 7. Select **Ok**.
  
 
-    # ![](../media/Lab_6.31.png)
+    ![](../media/Lab_6.31.png)
 
 8. Similarly, create a **many to one** relationship with **Cross filter direction** as **Both** between **Product_Details** and **Product**. Select **StockItemID** from **Product_Details** and **StockItemID** from **Product**.
 
@@ -344,7 +342,7 @@ Let’s add the remaining relationships.
 
 14. Select **Ok**.
 
-    # ![](../media/Lab_6.32.png)
+    ![](../media/Lab_6.32.png)
  
 15. Now let’s create a relationship between Customer and Reseller. Select **ResellerID** from **Customer** table and drag it over **ResellerID** in **Reseller** table.
 
@@ -358,11 +356,11 @@ Let’s add the remaining relationships.
 
 20. Select **Ok**.  
 
-    # ![](../media/Lab_6.33.png)
+    ![](../media/Lab_6.33.png)
  	
     **Checkpoint**: Your model should look like the screenshot below.
 
-    # ![](../media/Lab_6.34.png)
+    ![](../media/Lab_6.34.png)
  
 21. Now let’s create a relationship between PO and Date. Select **Order_Date** from **PO** table and drag it over **Date** in **Date** table.
 
@@ -376,7 +374,7 @@ Let’s add the remaining relationships.
 
 26. Select **OK**.
 
-    # ![](../media/Lab_6.35.png)
+    ![](../media/Lab_6.35.png)
  
 27. Similarly, create a **many to one** relationship between **PO** and **Product**. Select **StockItemID** from **PO** and **StockItemID** from **Product**.
 
@@ -386,7 +384,7 @@ Let’s add the remaining relationships.
 
     **Checkpoint**: Your model should look like the screenshot below.
 
-    # ![](../media/Lab_6.36.png)
+    ![](../media/Lab_6.36.png)
  
 
 ## Task 8: Optional section – Create Measures
@@ -403,7 +401,7 @@ Let’s add the remaining measures.
 
 5. From the Format drop down, click **Decimal Number**.
 
-    # ![](../media/Lab_6.37.png)
+    ![](../media/Lab_6.37.png)
  
 6. Follow similar steps to add the following measures:
 
@@ -413,10 +411,10 @@ Let’s add the remaining measures.
 
     c. **No of Customers = COUNTROWS(Customer)** formatted as **Whole Number**
 
-# References
+## References
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
 
-   # ![](../media/img18.png) 
+   ![](../media/img18.png) 
  
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 

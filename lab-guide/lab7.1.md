@@ -52,15 +52,15 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 2. From the bottom of the left panel select **Fabric experience selector** icon.
 3. Fabric experience dialog opens. Select **Power BI**. You will be navigated to **Power BI Home page**.
 
-    # ![](../media/Lab_7.2.png)
+    ![](../media/Lab_7.2.png)
  
 4. Select **New Report** from the top menu. 
 
-    # ![](../media/Lab_7.3.png)
+    ![](../media/Lab_7.3.png)
 
 5. You will be navigated to **Build your first report screen**. There will be options to enter data manually and build a report or to pick a published semantic model. We have created a semantic model in the previous labs. Let’s use that. Select **Pick a published semantic model** option.
 
-    # ![](../media/Lab_7.4.png)
+    ![](../media/Lab_7.4.png)
  
 6. Pick a dataset to use in your report page opens. Notice we have four options. **Select lh_FAIAD:**
 a.	**lh_FAIAD:** This is the lakehouse with the dataset we created and want to use for the report.
@@ -69,11 +69,11 @@ c.	**DataflowsStagingWarehouse:** This is the staging warehouse which is created
 d.	**DataflowsStagingLakehouse:** This is the staging lakehouse which is created by default. We did not use this as we did not stage data.
 7. Click the **arrow next to Auto-create report button.** Notice there are two options, Auto-create report and Create a blank report. Let’s try auto-creating, so select **Auto-create report.**.
 
-    # ![](../media/Lab_7.5.png)
+    ![](../media/Lab_7.5.png)
 
 8. Power BI will start auto creating the report. Notice there is an option to Pre-select data, if we choose too. Once the report is ready, a dialog appears on the top right of the screen. Select **View report now.**
 
-    # ![](../media/Lab_7.6.png)
+    ![](../media/Lab_7.6.png)
  
    >**Checkpoint:** You will have a report which looks like the screenshot below. There are a few KPIs and some trend visuals. This is a good start if you are analyzing a new model and need a jumpstart.
    >**Note:** Notice on the top menu, you have the option to Edit the report or view some of the data as tables. Feel free to explore these options.
@@ -84,13 +84,13 @@ d.	**DataflowsStagingLakehouse:** This is the staging lakehouse which is created
 11. Make sure the report is saved in your workspace, **FAIAD_<username>.**
 12. Select **Save.**
 
-    # ![](../media/Lab_7.7.png)
+    ![](../media/Lab_7.7.png)
  
     >**Note:** Auto-created report may look different for you as it is “auto-created”. It also depends on the relationships and measures you created in the previous lab (Lab 6). 
     Above screenshot is how the auto-created report **may** look if you created all the relationships and measures including the optional relationships (Lab 6).
     Below screenshot is how the auto-created report **may** look if you skipped creating the optional relationships and measures (Lab 6).
 
-    # ![](../media/Lab_7.8.png)
+    ![](../media/Lab_7.8.png)
  
 ### <a name="_toc152166237"></a>Task 2: Configure background for a New report
 
@@ -98,156 +98,212 @@ Let’s create a new report using a blank canvas.
 
 1. In the **left panel,** select your workspace name, **FAIAD_<username>** to be navigated to the workspace.
 
-   # ![](../media/Lab_7.9.png)
+   ![](../media/Lab_7.9.png)
+
 2. From the top menu, select **New -> Report.** You will be navigated to build your first report page.
  
 3. Select **Pick a published semantic model,** so we can pick the model we have created.
 
-   # ![](../media/Lab_7.10.png)
+   ![](../media/Lab_7.10.png)
  
 4. Pick a semantic model to use in your report dialog opens. Select **lh_FAIAD.**
 5. Click the **arrow next to Auto-create report button.** Select **Create a blank report.**
 
-   # ![](../media/Lab_7.11.png)
+    ![](../media/Lab_7.11.png)
  
 6. If you have not already opened it, open the **FAIAD.pbix** located in the **C:\FAIAD\Reports** folder of your lab environment. 
 
     We are going to use this report as a reference. We will start by adding the canvas background. We will create the report header, add a couple of KPIs, and create the Sales over time line chart. In the interest of time and with the understanding that you have experience with building visuals in Power BI Desktop, we will not be creating all the visuals. 
 
-     # ![](../media/Lab_7.12.png)
+    ![](../media/Lab_7.12.png)
  
 7. Navigate back to **Power BI** canvas in your browser.
-8. Select **Format page icon** in Visualization pane.
-9. Expand **Canvas background section.**
-10. Select **Browse** from **Image** option. File explorer dialog opens.
-11. Navigate to **C:\FAIAD\Reports** folder of your lab environment. 
-12. Select **Summary Background.png.**
-13. Set **Image fit** dropdown to Fit.
-14. Set Transparency to **0%.**
 
-    # ![](../media/Lab_7.13.png)
+8. Select **Format page icon** in Visualization pane.
+
+9. Expand **Canvas background section.**
+
+10. Select **Browse** from **Image** option. File explorer dialog opens.
+
+11. Navigate to **C:\FAIAD\Reports** folder of your lab environment. 
+
+12. Select **Summary Background.png.**
+
+13. Set **Image fit** dropdown to Fit.
+
+14. Set Transparency to **0%**
+
+    ![](../media/Lab_7.13.png)
  
 ### <a name="_toc152166238"></a>Task 3: Add Header to the report
 
 1. Let’s add the header in the top margin. From the **menu,** select **Text box.**
+
 2. Enter **Fabrikam Company** as the first line in the text box.
+
 3. Enter **Sales Report** as the second line in the text box.
+
 4. Highlight **Fabrikam Company** and set **Font** to **Segoe UI** and **font size** to **18, bold.**
+
 5. Highlight **Sales Report** and set **Font** to **Segoe UI** and **font size** to **14.**
+
 6. With the **text box selected,** in the Format text box pane on the right, **expand Effects.**
+
 7. Use **Background** slider to set it to **Off.**
+
 8. Resize the **text box to fit in the top margin.**
  
-    # ![](../media/Lab_7.14.png)
+    ![](../media/Lab_7.14.png)
 
 ### <a name="_toc152166239"></a><a name="_hlk152165928"></a>Task 4: Add KPIs to the report
 
 1. Let’s add Sales KPI. Select the **white space** in the canvas to take focus off the text box.
+
 2. From the **Visualizations section** select **Multi-row card visual.**
+
 3. From the **Data section** expand **Sales table.**
+
 4. Select **Sales measure.**
 
-   # ![](../media/Lab_7.15.png)
+    ![](../media/Lab_7.15.png)
  
 5. With **multi-row card visual selected,** select **Format visual icon** from Visualizations section.
-6. Expand **Category labels** section.
-7. Increase **font size** to **14.**
-8. Select **Color drop down.** Color palette dialog opens.
-9. Set Hex value to **#004753.**
 
-   # ![](../media/Lab_7.16.png)
+6. Expand **Category labels** section.
+
+7. Increase **font size** to **14.**
+
+8. Select **Color drop down.** Color palette dialog opens.
+
+9. Set Hex value to **004753.**
+
+    ![](../media/Lab_7.16.png)
  
 10. Expand **Cards** section.
+
 11. Use **Accent bar** slider to set it to **Off.**
 
-     # ![](../media/Lab_7.17.png)
+    ![](../media/Lab_7.17.png)
  
 12. Select **General** in the Visualizations pane.
+
 13. Expand **Effects section.**
+
 14. Use **Background** slider to set it to **Off.**
+
 15. Resize the **visual** and move it to the **left box as shown in the screenshot.**
 
-    # ![](../media/Lab_7.18.png)
+    ![](../media/Lab_7.18.png)
  
 16. Let’s add another KPI. Select the *Sales multi-row card** we just created. **Copy** the visual by selecting Ctrl+C from your keyboard.
+
 17. **Paste** the visual by selecting **Ctrl+V** from your keyboard. Notice the visual is pasted onto the canvas.
+
 18. With the **new visual highlighted,** in the **Visualization pane -> Build visual -> Fields** section remove Sales measure.
+
 19. From the **Data** section, expand **Sales** table and select **Units** measure.
+
 20. Resize the **visual** and **place it in the box below the Sales visual.**
 
-    # ![](../media/Lab_7.19.png)
+    ![](../media/Lab_7.19.png)
  
 ### <a name="_toc152166240"></a>Task 5: Add Line chart to the report
 Let’s create a line chart to visualize Sales over time by Reseller Company.
 1. Select the **white space** in the canvas to take focus off the multi-row card visual.
+
 2. From the **Visualizations section** select **Line chart.**
+
 3. From the **Data section** expand **Date** table.
+
 4. Select **Year** field. Notice Year is a summed by default and added to the Y-axis. Let’s rectify this.
 
-    # ![](../media/Lab_7.20.png)
+    ![](../media/Lab_7.20.png)
  
 ### <a name="_toc152166241"></a>Task 6: Save the report
 
 Let’s save the report before we navigate away from the report to make changes to the model. 
 1. From the menu select **File -> Save.**
-2. Save your report dialog opens. Name the report as **rpt_Sales_Report **
-Note: We are prefixing report name with rpt which is short for report.
-3. Make sure the report is saved in **FAIAD_<username>** workspace.
-4. Select Save.
 
-    # ![](../media/Lab_7.21.png)
+2. Save your report dialog opens. Name the report as **rpt_Sales_Report**
+
+    >**Note:** We are prefixing report name with rpt which is short for report.
+
+3. Make sure the report is saved in **FAIAD_<username>** workspace.
+
+4. Select **Save**.
+
+    ![](../media/Lab_7.21.png)
 
 
 ### <a name="_toc152166242"></a>Task 7: Configure Year column in Date table
 
 1. From the **left menu bar,** select **lh_FAIAD** to navigate to the lakehouse.
+
 2. From the left Explorer pane, expand **lhFAIAD -> Schemas -> dbo -> Tables -> Date.**
+
 3. Select **Year** column.
+
 4. In the **Properties** pane on the right, expand **Advanced** section.
+
 5. In the Summarize by drop down select **None**.
 
-    # ![](../media/Lab_7.22.png)
+    ![](../media/Lab_7.22.png)
  
 6. Navigate back to report by selecting **rpt_Sales_Report** from the left menu bar.
+
 7. Select **Edit** from the top menu.
+
 8. From the top menu select **Refresh**. Notice in Data panel, Year is not a summation field. 
+
 9. With the **Line chart visual selected, remove Sum of Year**** from the Y-axis.
+
 10. Select **Year** field and it will be added to the **X-axis.**
+
 11. Expand **Sales** table and select **Sales measure.**
 
-    # ![](../media/Lab_7.23.png)
+    ![](../media/Lab_7.23.png)
  
 ### <a name="_toc152166243"></a>Task 8: Configure Short_Month_Name column in Date table
 
 1. Let’s add Month to this chart. From the Date table, drag **Short_Month_Name** field below **Year** in the **X-axis.** Notice the visual is sorted by Sales. Let’s sort it by Short_Month_Name.
+
 2. Select the **ellipsis (…)** on the top right corner of the visual.
+
 3. Select **Sort axis -> Year Short_Month_Name.**
+
 4. Select the **ellipsis (…)** on the top right corner of the visual.
+
 5. Select **Sort axis -> Sort ascending.**
 
-    # ![](../media/Lab_7.24.png)
+    ![](../media/Lab_7.24.png)
  
-    **Note**: The months are sorted alphabetically. Let’s fix this.
+    >**Note**: The months are sorted alphabetically. Let’s fix this.
 
-    # ![](../media/Lab_7.25.png)
+    ![](../media/Lab_7.25.png)
  
 6. From the **left menu bar,** select **lh_FAIAD** to navigate to the lakehouse.
+
 7. **Unsaved changes** dialog opens. Select **Save** to save the changes to the report.
 
-    # ![](../media/Lab_7.26.png)
+    ![](../media/Lab_7.26.png)
  
 8. You will be navigated to lh_FAIAD lakehouse. From the left Explorer pane, expand **lhFAIAD -> Schemas -> dbo -> Tables -> Date.**
+
 9. Select **Short_Month_Name** column.
+
 10. In the **Properties** pane on the right, expand **Advanced** section.
+
 11. In the **Sort by column** drop down select **Month.**
 
-    # ![](../media/Lab_7.27.png)
+    ![](../media/Lab_7.27.png)
  
 12. Navigate back to report by selecting **rpt_Sales_Report** from the left menu bar.
-13. Select **Edit** from the top menu.
-14. From the top menu select **Refresh.** Notice now months are sorted properly.
 
-    # ![](../media/Lab_7.28.png)
+13. Select **Edit** from the top menu.
+
+14. From the top menu select **Refresh** Notice now months are sorted properly.
+
+    ![](../media/Lab_7.28.png)
  
  
 ### <a name="_toc152166244"></a>Task 9: Format Line chart
@@ -257,7 +313,7 @@ Notice how easy it is to update the semantic model while building the reports. T
 1. With the **Line chart visual selected,** in the **Data section** expand **Reseller** table.
 2. Drag **Reseller -> Reseller Company** field to the **Legend** section.
 
-   # ![](../media/Lab_7.29.png)
+    ![](../media/Lab_7.29.png)
  
 3. With the **Line chart visual selected,** from the **Visualization** section select **Format visual icon -> General.**
 4. Expand **Title** section.
@@ -265,7 +321,7 @@ Notice how easy it is to update the semantic model while building the reports. T
 6. Expand **Effects** section.
 7. Use **Background** slider to set it to **Off.**
 
-   # ![](../media/Lab_7.30.png)
+    ![](../media/Lab_7.30.png)
  
 8. From the **Visualization** section select **Format visual icon -> Visual.**
 9. Expand **Lines** section.
@@ -275,7 +331,7 @@ Notice how easy it is to update the semantic model while building the reports. T
 13. Resize the **visual** and move it to the **top right box as shown in the screenshot.**
 14. Scroll to the right on the visual and **notice we have data through April 2023.**
 
-    # ![](../media/Lab_7.31.png)
+    ![](../media/Lab_7.31.png)
  
 15. Let’s save the report, from the menu select **File -> Save.**
 As mentioned earlier, we will not build all the visuals in this lab. At your leisure, feel free to build more visuals. 
@@ -288,7 +344,7 @@ In a real scenario, data is updated at the source. Since we are in a training en
 1. Select **FAIAD_<username>**  from the left menu bar to navigate to workspace home.
 2. Select **df_Sales_ADFS** so we can edit the dataflow by adding the new Parquet file.
 
-   # ![](../media/Lab_7.32.png)
+   ![](../media/Lab_7.32.png)
 
 3. From the ribbon, select **Home -> Get data -> Blank query.**
 4. Connect to data source dialog opens. Select **all the rows in the editor and delete it.**
@@ -306,43 +362,44 @@ In a real scenario, data is updated at the source. Since we are in a training en
 
 7. Select **Next.**
 
-   # ![](../media/Lab_7.33.png)
+   ![](../media/Lab_7.33.png)
  
 8. A new query is recreated. Let’s **rename** it. Rename the query to **MayInvoice** in the right panel, under **Query settings -> Properties -> Name.**
 
 9. Let’s disable staging for the new query. **Right click** on MayInvoice query and **uncheck Enable staging.**
 
-   # ![](../media/Lab_7.34.png)
+   ![](../media/Lab_7.34.png)
  
 10. Now, let’s append the May **invoice** data with the Invoice table. Select Invoice query from the Queries section.
 11. From the ribbon, select **Home -> Append** queries.
 12. Append query dialog appears. From the **Table to append** dropdown select **MayInvoice.**
 13. Select **OK.**
 
-    # ![](../media/Lab_7.35.png)
+    ![](../media/Lab_7.35.png)
  
 14. Select **Publish** in the bottom right corner to save and publish the updates. 
 
-    # ![](../media/Lab_7.36.png)
+    ![](../media/Lab_7.36.png)
  
-**Note:** Once published the dataflow will refresh. This may take a few minutes.
+>**Note:** Once published the dataflow will refresh. This may take a few minutes.
 
 14. Select **rpt_Sales_Report** from the left menu bar to navigate back to the report.
 15. From the top menu select **Refresh.** Notice now in the Line chart there is data for May 2023. Also, notice the Sales amount and Units has increased.
 
-    # ![](../media/Lab_7.37.png)
+    ![](../media/Lab_7.37.png)
  
 The Dataflows we have created in earlier labs are refreshed on schedule, data is ingested into the Lakehouse. The data model in the Lakehouse is updated and the reports are refreshed. We do not have to refresh the data model and report when each of the Dataflow refreshes. This is the advantage of Direct Lake.
 Let’s revisit the challenges that are listed in the problem statement:
--	**You need to refresh your dataset at least three times a day to accommodate the different update times for the different data sources.**
+
+- **You need to refresh your dataset at least three times a day to accommodate the different update times for the different data sources.**
 We solved this using Direct Lake. Each individual Dataflow is refreshed on its schedule. Dataset and report do not have to be refreshed.
--	**Your refreshes take a long time as you need to do a full refresh every time to capture any updates that happened to the source systems.**
+- **Your refreshes take a long time as you need to do a full refresh every time to capture any updates that happened to the source systems.**
 Again, we solved this using Direct Lake. Each individual Dataflow is refreshed on its schedule. Dataset and report do not have to be refreshed, so we do not have to worry about full refresh. 
--	**Any errors in any of the data sources that you are pulling from will result in your dataset refresh breaking. A lot of times the employee file doesn’t upload on time resulting in your dataset refresh breaking.**
+- **Any errors in any of the data sources that you are pulling from will result in your dataset refresh breaking. A lot of times the employee file doesn’t upload on time resulting in your dataset refresh breaking.**
 Data Pipeline helps to solve this problem, by providing the ability to retry refresh on failure and at different intervals.
--	**It takes a very long time to make any changes to your data model as Power Query takes a long time to refresh your previews, given the large data sizes and complex transformations.** 
+- **It takes a very long time to make any changes to your data model as Power Query takes a long time to refresh your previews, given the large data sizes and complex transformations.** 
 We noticed Dataflows are efficient and easy to make changes. Typically, preview in Dataflows do not take long to load.
--	vYou need a Windows PC to use Power BI Desktop even though the corporate standard is Mac.**
+- **vYou need a Windows PC to use Power BI Desktop even though the corporate standard is Mac.**
 Microsoft Fabric is a SaaS offering. All we need is a browser to access the service. We do not have to install any software on our desktops.
 
 # <a name="_toc152166246"></a>Clean up Lab environment
@@ -352,20 +409,20 @@ Once you are ready to clean up the lab environment, follow the steps below.
 1. Select **FAIAD_<username>** workspace from the left panel to navigate to the workspace home.
 2. From the top menu, select the **ellipsis (…)** next to Manage access and select **Workspace settings.**
 
-   # ![](../media/Lab_7.38.png)
+   ![](../media/Lab_7.38.png)
  
 3. Workspace settings dialog opens. Select **Other** from the left menu.
 4. Select **Remove this workspace.**
 5. Delete workspace dialog opens. Select **Delete.**
 This will delete the workspace and all the items that were contained in the workspace.
 
-   # ![](../media/Lab_7.39.png)
+   ![](../media/Lab_7.39.png)
  
 # <a name="_toc150777627"></a><a name="_toc150779083"></a><a name="_toc152166247"></a>References
 
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
 
-   # ![](../media/img18.png) 
+   ![](../media/img18.png) 
  
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
