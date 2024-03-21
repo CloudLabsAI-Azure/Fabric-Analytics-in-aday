@@ -55,7 +55,7 @@ By the end of this lab, you will have learned:
 # **Dataflow Gen2**
 ### Task 1: Create Dataflow Gen2
 1. Let’s navigate back to the **Fabric workspace** you created in the earlier Lab 2, Task 9.
-1. If you have not navigated away after the previous lab, you will be in the Lakehouse screen. If you have navigated away that is fine. Select **Fabric experience selector** icon from the bottom left of your screen.
+1. If you have not navigated away after the previous lab, you will be in the Lakehouse screen. If you have navigated away that is fine. Select the **Fabric experience selector** icon from the bottom left of your screen.
 1. Select **Data Factory** from the open Fabric experience dialog. Data Factory has workloads needed to extract, transform, and ingest data.
 
    ![A screenshot of a dialog to select Data Factory experience](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.002.png)
@@ -444,7 +444,7 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
       
       4.	Date
 
-1. We have a data flow that ingests data from ADLS into Lakehouse. Let’s go ahead and publish this dataflow. Select Publish in the bottom right corner.
+1. We have a data flow that ingests data from ADLS into Lakehouse. Let’s go ahead and publish this data flow. Select Publish in the bottom right corner.
 
    ![A screenshot of Choose destination settings](../media/Fabrichey2.png)
 
