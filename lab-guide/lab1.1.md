@@ -102,7 +102,7 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
    # ![](../media/img13.png)
   
-8. Feel free to further analyze the report. Once ready let’s look at the model view. From the left panel, select the Model view icon. Notice there are two fact tables, Sales and PO. 
+8. Feel free to further analyze the report. Once ready let’s look at the model view. From the left panel, select the Model View icon. Notice there are two fact tables, Sales and PO. 
       1. The granularity of Sales data is by Date, Reseller, Product, and People. Date, Reseller, Product, and People connect to Sales.
       2. The granularity of PO data is by Date, Product, and People. Date, Product, and People connect to PO.
       3. We have Supplier data by Product. Supplier connects to Product.
