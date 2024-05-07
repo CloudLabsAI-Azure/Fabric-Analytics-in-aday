@@ -65,3 +65,38 @@ Jetzt können Sie alle verfügbaren Datenquellen anzeigen. Sie haben die Möglic
 ### Aufgabe 3: Die Abfrage für den Ordner „Base ADLS Gen2“ erstellen
 
 1.	Sobald die Verbindung hergestellt ist, werden Sie zum Bildschirm **Vorschau der Ordnerdaten anzeigen** weitergeleitet. Im ADLS Gen2-Ordner sind viele Dateien enthalten. Wir benötigen Daten aus einigen von ihnen. Wählen Sie **Erstellen** aus, um eine Verbindung zum Ordner herzustellen.
+2.	Sie befinden sich wieder im Dialogfeld **Power Query**. Dies ist die Verbindung zum Stammordner von ADLS Gen2. Wir werden in nachfolgenden Abfragen auf diese Abfrage verweisen. Wir benennen die Abfrage um. Ändern Sie im **rechten Bereich** unter **Abfrageeinstellungen -> Eigenschaften -> Name** den Namen in **ADLS Base Folder for Geo**.
+3.	Alle Abfragen von Dataflow Gen2 werden standardmäßig in ein Staging Lakehouse geladen. Im Rahmen dieser Übung werden wir keine Daten bereitstellen. Klicken Sie im **linken Bereich mit der rechten Maustaste auf die Abfrage „ADLS Base Folder“**, um diesen Ladevorgang zu deaktivieren.
+
+**Hinweis:** Staging wird verwendet, wenn wir Daten für die weitere Transformation bereitstellen müssen, bevor sie für die Nutzung bereit sind.
+
+4.	**Deaktivieren Sie die Option „Staging aktivieren“**.
+
+Beachten Sie, dass der Ordner zwei Dateiformate enthält: **JSON** und **Parquet**.
+  - **Parquet**: ist ein Open-Source-Dateiformat, das für die Verarbeitung einfacher spaltenorientierter Speicherdatenformate entwickelt wurde. Parquet funktioniert gut mit komplexen Daten in großen Mengen und ist sowohl für seine leistungsstarke Datenkomprimierung als auch für
+seine Fähigkeit bekannt, eine Vielzahl von Codierungstypen zu verarbeiten.
+  - **JSON**: Diese Datei enthält Metadaten wie Schema, Datentyp der Parquet-Datei.
+
+5.	Wir benötigen lediglich die Parquet-Datei, da diese die von uns benötigten Daten enthält. Wählen Sie den **Dropdown-Pfeil Extension** aus.
+6.	**Deaktivieren Sie .json**, sodass sie nach .parquet-Dateien gefiltert wird.
+7.	Wählen Sie **OK** aus.
+
+Jetzt haben wir die Abfrage „Base“ eingerichtet. Wir können diese Abfrage für alle Geo-Abfragen referenzieren.
+
+### Aufgabe 4: Abfrage „Cities“ erstellen
+Verkaufsdaten sind nach Geografie, Produkt, Verkäufer und Datengranularität verfügbar. Erstellen wir zunächst eine Abfrage, um die Geo-Dimension zu erhalten. Geodaten sind in drei verschiedenen Dateien verfügbar, die sich in den folgenden Unterordnern befinden:
+  - **Cities**: Application.Cities
+  - **Countries**: Application.Countries
+  - **State**: Application.StateProvinces
+
+Wir müssen City-, State- und Country-Daten aus diesen drei Dateien kombinieren, um die Geo- Dimension zu erstellen.
+1.	Beginnen wir mit „City“. Klicken Sie im linken Bereich **mit der rechten Maustaste auf „ADLS Base Folder for Geo“**. Wählen Sie **Verweis** aus, um eine neue Abfrage zu erstellen, die auf die Abfrage
+„ADLS Base Folder for Geo“ verweist.
+2.	Wählen Sie den **Dropdown-Pfeil der Spalte Folder Path** aus.
+3.	Wählen Sie **Textfilter -> Enthält…** aus.
+4.	Geben Sie im Dialog **Zeilen filtern Application.Cities** ein.
+
+**Hinweis**: Hier müssen Sie die Groß- und Kleinschreibung beachten.
+
+5.	Wählen Sie **OK** aus.
+6.	Daten werden in einer einzelne Zeile gefiltert. Wählen Sie **Binary** unter der Spalte **Content** aus.
