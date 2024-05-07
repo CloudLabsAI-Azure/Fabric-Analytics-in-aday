@@ -240,6 +240,13 @@ Zur Vereinfachung prüfen wir jetzt, ob wir die Abfragen aus Power BI Desktop ko
 &nbsp; &nbsp; h.	BuyingGroup<br>
 &nbsp; &nbsp; i.	Reseller<br>
 &nbsp; &nbsp; j.	Date<br>
+5.	**Klicken Sie mit der rechten Maustaste**, und wählen Sie **Kopieren** aus.
+6.	Navigieren zum Dataflow-Fenster des Browsers zurück zu **df_Sales_ADLS**.
+7.	Wählen Sie im linken Bereich den Bereich **Abfragen** aus, und geben Sie **STRG+V** ein (derzeit wird das Einfügen mit der rechten Maustaste nicht unterstützt). Wenn Sie ein MAC-Gerät verwenden, drücken Sie zum Einfügen bitte Cmd+V.
+
+**Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den Schieberegler, um das **VM Native Clipboard zu
+aktivieren**. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben, können Sie diese Option deaktivieren.
+
 
 
 
