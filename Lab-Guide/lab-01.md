@@ -165,41 +165,41 @@ Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit Microsoft Fabric
 
 • Die vollständige [Ankündigung der allgemeinen Verfügbarkeit von Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) finden Sie im Blogbeitrag.
 
-Fabric bei einer [interaktiven Vorstellung](https://aka.ms/Fabric-GuidedTour) kennenlernen
+• Fabric bei einer [interaktiven Vorstellung](https://aka.ms/Fabric-GuidedTour) kennenlernen
 
-Zur [kostenlosen Testversion von Microsoft Fabric](https://aka.ms/try-fabric) anmelden
+• Zur [kostenlosen Testversion von Microsoft Fabric](https://aka.ms/try-fabric) anmelden
 
-[Website von Microsoft Fabric](https://aka.ms/microsoft-fabric) besuchen
+• [Website von Microsoft Fabric](https://aka.ms/microsoft-fabric) besuchen
 
-Mit Modulen von [Fabric Learning](https://aka.ms/learn-fabric) neue Qualifikationen erwerben
+• Mit Modulen von [Fabric Learning](https://aka.ms/learn-fabric) neue Qualifikationen erwerben
 
-[Technische Dokumentation zu Fabric](https://aka.ms/learn-fabric) lesen
+• [Technische Dokumentation zu Fabric](https://aka.ms/learn-fabric) lesen
 
-[Kostenloses E-Book zum Einstieg in Fabric](https://aka.ms/fabric-get-started-ebook) lesen
+• [Kostenloses E-Book zum Einstieg in Fabric](https://aka.ms/fabric-get-started-ebook) lesen
 
-Mitglied der [Fabric-Community](https://aka.ms/fabric-community) werden, um Fragen zu stellen, Feedback zu geben und sich mit anderen auszutauschen
+• Mitglied der [Fabric-Community](https://aka.ms/fabric-community) werden, um Fragen zu stellen, Feedback zu geben und sich mit anderen auszutauschen
 
 Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
 
-[Blog zur Data Factory-Umgebung in Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
+• [Blog zur Data Factory-Umgebung in Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
 
-[Blog zur Synapse Data Engineering-Umgebung in Fabric](https://aka.ms/Fabric-DE-Blog)
+• [Blog zur Synapse Data Engineering-Umgebung in Fabric](https://aka.ms/Fabric-DE-Blog)
 
-[Blog zur Synapse Data Science-Umgebung in Fabric](https://aka.ms/Fabric-DS-Blog)
+• [Blog zur Synapse Data Science-Umgebung in Fabric](https://aka.ms/Fabric-DS-Blog)
 
-[Blog zur Synapse Data Warehousing-Umgebung in Fabric](https://aka.ms/Fabric-RTA-Blog)
+• [Blog zur Synapse Data Warehousing-Umgebung in Fabric](https://aka.ms/Fabric-RTA-Blog)
 
-[Blog zur Synapse Real-Time Analytics-Umgebung in Fabric](https://aka.ms/Fabric-RTA-Blog)
+• [Blog zur Synapse Real-Time Analytics-Umgebung in Fabric](https://aka.ms/Fabric-RTA-Blog)
 
-[Blog zur Power BI-Ankündigung](https://aka.ms/Fabric-PBI-Blog)
+• [Blog zur Power BI-Ankündigung](https://aka.ms/Fabric-PBI-Blog)
     
-[Blog zur Data Activator-Umgebung in Fabric](https://aka.ms/Fabric-DA-Blog)
+• [Blog zur Data Activator-Umgebung in Fabric](https://aka.ms/Fabric-DA-Blog)
 
-[Blog zu Verwaltung und Governance in Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
+• [Blog zu Verwaltung und Governance in Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
-[Blog zu OneLake in Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
+• [Blog zu OneLake in Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
-[Blog zur Dataverse- und Microsoft Fabric-Integration](https://aka.ms/Fabric-Admin-Gov-Blog)
+• [Blog zur Dataverse- und Microsoft Fabric-Integration](https://aka.ms/Fabric-Admin-Gov-Blog)
 
 © 2023 Microsoft Corporation. Alle Rechte vorbehalten.
 
