@@ -102,7 +102,7 @@ Der Detailbildschirm wird geöffnet. Hier erhalten Sie Details zur Aktualisierun
     Wie bereits erwähnt, müssen wir eine benutzerdefinierte Logik erstellen, um das Szenario zu handhaben, in dem die Mitarbeiterdatei in SharePoint nicht rechtzeitig gesendet wird. Wir verwenden die Datenpipeline, um dieses Problem zu beheben.
 
 
-# Datenpipeline
+## Datenpipeline
 ## Aufgabe 3: Datenpipeline erstellen
 1.	Wählen Sie unten links auf dem Bildschirm das Symbol **Fabric-Funktionsbereichs-Auswahl** aus.
 2.	Das Dialogfeld Microsoft Fabric wird geöffnet. Wählen Sie **Data Factory** aus. Sie navigieren zur Data Factory-Startseite.
@@ -125,7 +125,7 @@ Der Detailbildschirm wird geöffnet. Hier erhalten Sie Details zur Aktualisierun
      **Hinweis**: Wenn Sie am Ende der Übung über einen JSON-Hintergrund verfügen, können Sie auch„JSON-Code anzeigen“ auswählen. Hier sehen Sie, dass die gesamte Orchestrierung, die Sie über die Entwurfsansicht durchführen, auch in JSON geschrieben werden kann.
 
 ## Aufgabe 4: Einfache Datenpipeline erstellen
-    Beginnen wir mit der Erstellung der Pipeline. Wir benötigen eine Aktivität, um den Dataflow zu aktualisieren. Lassen Sie uns nach einer Aktivität suchen, die wir verwenden können.
+Beginnen wir mit der Erstellung der Pipeline. Wir benötigen eine Aktivität, um den Dataflow zu aktualisieren. Lassen Sie uns nach einer Aktivität suchen, die wir verwenden können.
 
 1. Wählen Sie im oberen Menü **Aktivitäten -> Dataflow** aus. Die Dataflow-Aktivität wird dem mittleren Designbereich hinzugefügt. Beachten Sie, dass der untere Bereich jetztKonfigurationsoptionen der Dataflow-Aktivität enthält.
 
@@ -156,14 +156,54 @@ unverändert, damit dem Dataflow genügend Zeit für die Aktualisierung zur Verf
 
 Wenn die Daten nicht planmäßig verfügbar sind, legen wir die Aktivität so fest, dass sie
 dreimal alle 10 Minuten erneut ausgeführt wird. Wenn der dritte Versuch fehlschlägt, wird ein Fehler gemeldet.
-10.	Legen Sie Wiederholen auf 3 fest.
-11.	Erweitern Sie den Abschnitt Erweitert.
-12.	Legen Sie Wiederholungsintervall (Sek.) auf 600 fest.
-13.	Wählen Sie im Menü Startseite -> Symbol „Speichern“ aus, um die Pipeline zu speichern.
+
+10.	Legen Sie **Wiederholen** auf **3** fest.
+
+11.	Erweitern Sie den Abschnitt **Erweitert**.
+
+12.	Legen Sie **Wiederholungsintervall (Sek.)** auf **600** fest.
+
+13.	Wählen Sie im Menü **Startseite -> Symbol „Speichern“** aus, um die Pipeline zu speichern.
 
 Beachten Sie, welchen Vorteil die Verwendung der Datenpipeline im Vergleich zur Festlegung des Dataflows auf eine geplante Aktualisierung bietet (wie es schon bei früheren Dataflows erfolgt ist):
-•	Die Pipeline bietet die Möglichkeit der mehrmaligen Wiederholung, bevor die Aktualisierung fehlschlägt.
-•	Die Pipeline ermöglicht eine Aktualisierung innerhalb von Sekunden, während beim Dataflow alle 30 Minuten eine geplante Aktualisierung erfolgt.
+
+    • Die Pipeline bietet die Möglichkeit der mehrmaligen Wiederholung, bevor die Aktualisierung fehlschlägt
+
+    • Die Pipeline ermöglicht eine Aktualisierung innerhalb von Sekunden, während beim Dataflow alle 30 Minuten eine geplante Aktualisierung erfolgt.
+
+## Aufgabe 5: Neue Datenpipeline erstellen
+Fügen wir unserem Szenario etwas mehr Komplexität hinzu. Wir haben festgestellt, dass, wenn die Daten nicht um 9:00 Uhr morgens verfügbar sind, sie in der Regel innerhalb von fünf Minutenverfügbar sind. Wird das Zeitfenster verpasst, dauert es 15 Minuten, bis die Datei verfügbar ist. Wir möchten die Wiederholungen so planen, dass sie alle 5 und 15 Minuten erfolgen. Sehen wir uns an, wie dies durch die Erstellung einer neuen Datenpipeline erreicht werden kann.
+
+1. Wählen Sie im linken Bereich **FAIAD_< Benutzername >** aus, um zur Startseite des Arbeitsbereichs zu gelangen.
+
+2. Klicken Sie im oberen Menü auf **Neu** und im **Dropdownmenü** auf **Datenpipeline**.
+
+3. Das Dialogfeld „Neue Pipeline“ wird geöffnet. **Geben Sie der Pipeline den Namen pl_Refresh_People_SharePoint_Option2**.
+ 
+4.	Wählen Sie **Erstellen** aus.
+
+## Aufgabe 6: Bis-Aktivität erstellen
+
+1. Sie werden zum Bildschirm „Datenpipeline“ weitergeleitet. Wählen Sie im Menü die Option
+**Aktivitäten** aus.
+
+2. Klicken Sie rechts auf die **Auslassungspunkte (...).**
+
+3. Klicken Sie in der Aktivitätsliste auf **Bis**.
+
+**Bis**: Mit dieser Aktivität wird eine Iteration ausgeführt, bis eine Bedingung erfüllt ist.
+
+In unserem Szenario erfolgt die Iteration des Dataflows so lange, bis er erfolgreich ist oder drei Versuche durchgeführt wurden.
+
+
+
+
+
+
+
+
+
+
 
 
 
