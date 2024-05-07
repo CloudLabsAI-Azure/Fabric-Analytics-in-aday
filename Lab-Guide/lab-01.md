@@ -64,9 +64,13 @@ Bevor wir mit Fabric beginnen, sehen wir uns den aktuellen Bericht in Power BI D
 
 4.	Kopieren Sie den **Benutzernamen** und fügen Sie ihn im Dialogfeld in das Textfeld für die E-Mail- Adresse ein.
 
+    ![](../Images/lab1-image3.png)
+
 5.	Wählen Sie **Continue** aus.
 
 6.	Das Dialogfeld für die Anmeldung wird geöffnet. Wählen Sie **Geschäfts- oder Schulkonto** aus.
+
+    ![](../Images/lab1-imag4.png)
 
 7.	Wählen Sie **Weiter** aus.
 
