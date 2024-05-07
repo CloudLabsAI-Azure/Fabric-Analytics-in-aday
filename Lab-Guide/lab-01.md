@@ -31,6 +31,8 @@ Um wertvolle Erkenntnisse aus den Daten zu ziehen, rufen Sie Daten aus mehreren 
 - **Kundendaten**: Diese stammen aus Customer Insights und werden in Dataverse gespeichert. Die Daten sind immer auf dem neuesten Stand.
 - **Mitarbeiterdaten**: Diese stammen aus dem Personalsystem und werden als Exportdatei in einem SharePoint-Ordner gespeichert. Die Daten werden jeden Morgen um 9 Uhr aktualisiert.
 
+  ![](../Images/lab1-imag1.png)
+
 Derzeit arbeiten Sie an einem Dataset in Power BI Premium, mit dem die Daten aus den oben
 genannten Quellsystemen abgerufen werden sollen, damit Sie Ihre Berichte schreiben können und Endanwender die Möglichkeit erhalten, Self-Service-Angebote zu nutzen. Das Modell aktualisieren Sie mit Power Query.
 
