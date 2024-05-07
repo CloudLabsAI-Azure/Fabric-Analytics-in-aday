@@ -77,18 +77,19 @@ Derzeit sind Sie in **Mein Arbeitsbereich**. Wenn Sie mit Fabric-Elementen arbei
 Funktionsbereichs-Auswahl) aus. Ein Dialogfeld mit einer Liste der Funktionsbereiche von Fabric wird geöffnet. Beachten Sie, dass Power BI, Data Factory, Data Activator und Industry Solutions unabhängige Funktionsbereiche sind. Data Engineering, Data Science, Data Warehouse und Real-
 Time Analytics sind Synapse-Funktionsbereiche und werden mit Technologien von Synapse bereitgestellt. Sehen wir uns die Funktionsbereiche nun gesondert an.
 
-2.	Wählen Sie **Data Factory** aus.
+2. Wählen Sie **Data Factory** aus.
 
-3.	Sie werden zur Startseite von Data Factory weitergeleitet. Der Seite ist in drei Hauptbereiche unterteilt.
+3. Sie werden zur Startseite von Data Factory weitergeleitet. Der Seite ist in drei Hauptbereiche unterteilt.
 
-    a.	Neu: Hier werden die Bestandteile von Data Factory angezeigt. Das sind Dataflow Gen2 und Data Pipeline.
+    a. Neu: Hier werden die Bestandteile von Data Factory angezeigt. Das sind Dataflow Gen2 und Data Pipeline.
 
-        i.	Dataflow Gen2 ist die nächste Generation von Dataflow.
+    - Dataflow Gen2 ist die nächste Generation von Dataflow.
 
-        ii.	Data Pipeline dient zur Datenorchestrierung.
-    b.	Recommended: In diesem Abschnitt können Sie die Schnellstart-Lerndokumentation aufrufen.
+    - Data Pipeline dient zur Datenorchestrierung.
+    
+    b. Recommended: In diesem Abschnitt können Sie die Schnellstart-Lerndokumentation aufrufen.
 
-    c.	Quick Access: Hier finden Sie die zuletzt verwendeten oder bevorzugten Elemente.
+    c. Quick Access: Hier finden Sie die zuletzt verwendeten oder bevorzugten Elemente.
 
 ### Aufgabe 3: Data Activator-Funktionsbereich
 
@@ -100,9 +101,9 @@ weitergeleitet. Data Activator ist ein codefreier Funktionsbereich in Microsoft 
 automatisch Maßnahmen durchgeführt werden können, wenn in sich ändernden Daten Muster oder Bedingungen erkannt werden. Beachten Sie, dass die drei Abschnitte dem Data Factory-
 Funktionsbereich ähneln. Unter „Neu“ sehen Sie diese Elemente:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a.	Reflex: Dient zur Überwachung von Datensätzen, Abfragen und Ereignisströmen auf Muster.
+    a. Reflex: Dient zur Überwachung von Datensätzen, Abfragen und Ereignisströmen auf Muster.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.	**Reflex-Beispiel:** Beispiellösung
+    b. **Reflex-Beispiel:** Beispiellösung
 
 ### Aufgabe 4: Industry Solutions-Funktionsbereich
 
@@ -236,59 +237,58 @@ Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten Funktionen
 
 Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit Microsoft Fabric.
 
-• Die vollständige [Ankündigung der allgemeinen Verfügbarkeit von Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) finden Sie im Blogbeitrag.
+- Die vollständige [Ankündigung der allgemeinen Verfügbarkeit von Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) finden Sie im Blogbeitrag.
 
-• Fabric bei einer [interaktiven Vorstellung](https://aka.ms/Fabric-GuidedTour) kennenlernen
+- Fabric bei einer [interaktiven Vorstellung](https://aka.ms/Fabric-GuidedTour) kennenlernen
 
-• Zur [kostenlosen Testversion von Microsoft Fabric](https://aka.ms/try-fabric) anmelden
+- Zur [kostenlosen Testversion von Microsoft Fabric](https://aka.ms/try-fabric) anmelden
 
-• [Website von Microsoft Fabric](https://aka.ms/microsoft-fabric) besuchen
+- [Website von Microsoft Fabric](https://aka.ms/microsoft-fabric) besuchen
 
-• Mit Modulen von [Fabric Learning](https://aka.ms/microsoft-fabric) neue Qualifikationen erwerben
+- Mit Modulen von [Fabric Learning](https://aka.ms/learn-fabric) neue Qualifikationen erwerben
 
-• [Technische Dokumentation zu Fabric](https://aka.ms/fabric-docs) lesen
+- [Technische Dokumentation zu Fabric](https://aka.ms/learn-fabric) lesen
 
-• [Kostenloses E-Book zum Einstieg in Fabric](https://aka.ms/fabric-get-started-ebook) lesen
+- [Kostenloses E-Book zum Einstieg in Fabric](https://aka.ms/fabric-get-started-ebook) lesen
 
-• Mitglied der [Fabric-Community](https://aka.ms/fabric-get-started-ebook) werden, um Fragen zu stellen, Feedback zu geben und sich mit anderen auszutauschen
-
+- Mitglied der [Fabric-Community](https://aka.ms/fabric-community) werden, um Fragen zu stellen, Feedback zu geben und sich mit anderen auszutauschen
 
 Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
 
-• [Blog zum Data Factory-Funktionsbereich in Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
+- [Blog zur Data Factory-Umgebung in Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
 
-• [Blog zum Data Engineering-Funktionsbereich von Synapse in Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
+- [Blog zur Synapse Data Engineering-Umgebung in Fabric](https://aka.ms/Fabric-DE-Blog)
 
-• [Blog zum Data Science-Funktionsbereich von Synapse in Fabric](https://aka.ms/Fabric-DS-Blog)
+- [Blog zur Synapse Data Science-Umgebung in Fabric](https://aka.ms/Fabric-DS-Blog)
 
-• [Blog zum Data Warehousing-Funktionsbereich von Synapse in Fabric](https://aka.ms/Fabric-DS-Blog)
+- [Blog zur Synapse Data Warehousing-Umgebung in Fabric](https://aka.ms/Fabric-RTA-Blog)
 
-• [Blog zum Real-Time Analytics-Funktionsbereich von Synapse in Fabric](https://aka.ms/Fabric-RTA-Blog)
+- [Blog zur Synapse Real-Time Analytics-Umgebung in Fabric](https://aka.ms/Fabric-RTA-Blog)
 
-• [Blog mit Ankündigungen zu Power BI](https://aka.ms/Fabric-RTA-Blog)
+- [Blog zur Power BI-Ankündigung](https://aka.ms/Fabric-PBI-Blog)
+    
+- [Blog zur Data Activator-Umgebung in Fabric](https://aka.ms/Fabric-DA-Blog)
 
-• [Blog zum Data Activator-Funktionsbereich in Fabric](https://aka.ms/Fabric-DA-Blog)
+- [Blog zu Verwaltung und Governance in Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
-• [Blog zu Verwaltung und Governance in Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
+- [Blog zu OneLake in Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
-• [Blog zu OneLake in Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
-
-• [Blog zur Dataverse- und Microsoft Fabric-Integration](https://aka.ms/Dataverse-Fabric-Blog)
+- [Blog zur Dataverse- und Microsoft Fabric-Integration](https://aka.ms/Fabric-Admin-Gov-Blog)
 
 © 2023 Microsoft Corporation. Alle Rechte vorbehalten.
 
 Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den folgenden Bedingungen zu:
 
-Die in dieser Demo/Übung beschriebene Technologie/Funktionalität wird von der Microsoft Corporation bereitgestellt, um Feedback von Ihnen zu erhalten und Ihnen Wissen zu vermitteln.
-Sie dürfen die Demo/Übung nur verwenden, um derartige Technologiefeatures und Funktionen
-zu bewerten und Microsoft Feedback zu geben. Es ist Ihnen nicht erlaubt, sie für andere Zwecke zu verwenden. Es ist Ihnen nicht gestattet, diese Demo/Übung oder einen Teil derselben zu ändern, zu kopieren, zu verbreiten, zu übertragen, anzuzeigen, auszuführen, zu vervielfältigen, zu veröffentlichen, zu lizenzieren, zu transferieren oder zu verkaufen oder aus ihr abgeleitete Werke zu erstellen.
+Die in dieser Demo/Übung beschriebene Technologie/Funktionalität wird von der Microsoft Corporation bereitgestellt, um Feedback von Ihnen zu erhalten und Ihnen Wissen zu vermitteln. Sie dürfen die Demo/Übung nur verwenden, um derartige Technologiefeatures und Funktionen zu bewerten und Microsoft Feedback zu geben. Es ist Ihnen nicht erlaubt, sie für andere Zwecke zu verwenden. Es ist Ihnen nicht gestattet, diese Demo/Übung oder einen Teil derselben zu
+ändern, zu kopieren, zu verbreiten, zu übertragen, anzuzeigen, auszuführen, zu vervielfältigen, zu veröffentlichen, zu lizenzieren, zu transferieren oder zu verkaufen oder aus ihr abgeleitete Werke zu erstellen.
 
 DAS KOPIEREN ODER VERVIELFÄLTIGEN DER DEMO/ÜBUNG (ODER EINES TEILS DERSELBEN) AUF EINEN/EINEM ANDEREN SERVER ODER SPEICHERORT FÜR DIE WEITERE VERVIELFÄLTIGUNG
 ODER VERBREITUNG IST AUSDRÜCKLICH UNTERSAGT.
 
 DIESE DEMO/ÜBUNG STELLT BESTIMMTE SOFTWARE-TECHNOLOGIE-/PRODUKTFEATURES UND FUNKTIONEN, EINSCHLIESSLICH POTENZIELLER NEUER FEATURES UND KONZEPTE, IN EINER SIMULIERTEN UMGEBUNG OHNE KOMPLEXE EINRICHTUNG ODER INSTALLATION FÜR DEN OBEN BESCHRIEBENEN ZWECK BEREIT. DIE TECHNOLOGIE/KONZEPTE IN DIESER DEMO/ÜBUNG ZEIGEN MÖGLICHERWEISE NICHT DAS VOLLSTÄNDIGE FUNKTIONSSPEKTRUM UND FUNKTIONIEREN MÖGLICHERWEISE NICHT WIE DIE ENDGÜLTIGE VERSION. UNTER UMSTÄNDEN VERÖFFENTLICHEN WIR AUCH KEINE ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
 
-**FEEDBACK**. Wenn Sie Feedback zu den Technologiefeatures, Funktionen und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden, gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen
+**FEEDBACK**: Wenn Sie Feedback zu den Technologiefeatures, Funktionen und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden, gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen
+
 und gewerblich zu nutzen. Außerdem treten Sie Dritten kostenlos sämtliche Patentrechte ab, die erforderlich sind, damit deren Produkte, Technologien und Dienste bestimmte Teile einer
 Software oder eines Dienstes von Microsoft, welche/welcher das Feedback enthält, verwenden oder eine Verbindung zu dieser/diesem herstellen können. Sie geben kein Feedback, das einem Lizenzvertrag unterliegt, aufgrund dessen Microsoft Drittparteien eine Lizenz für seine Software oder Dokumentation gewähren muss, weil wir Ihr Feedback in diese aufnehmen. Diese Rechte bestehen nach Ablauf dieser Vereinbarung fort.
 

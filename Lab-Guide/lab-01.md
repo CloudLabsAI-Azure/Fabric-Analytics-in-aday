@@ -56,27 +56,27 @@ Bevor wir mit Fabric beginnen, sehen wir uns den aktuellen Bericht in Power BI D
 
 ### Aufgabe 1: Power BI Desktop in einer Übungsumgebung einrichten
 
-1.	Öffnen Sie in der Übungsumgebung im Ordner **C:\FAIAD\Reports die Datei FAIAD.pbix.** Die Datei wird in Power BI Desktop geöffnet.
+1. Öffnen Sie in der Übungsumgebung im Ordner **C:\FAIAD\Reports die Datei FAIAD.pbix.** Die Datei wird in Power BI Desktop geöffnet.
 
     ![](../Images/lab1-imag2.png)
 
-3.	Geben Sie im Dialogfeld Ihre E-Mail-Adresse ein. Öffnen Sie rechts in der Übungsumgebung die Registerkarte **Environment Details.**
+3. Geben Sie im Dialogfeld Ihre E-Mail-Adresse ein. Öffnen Sie rechts in der Übungsumgebung die Registerkarte **Environment Details.**
 
-4.	Kopieren Sie den **Benutzernamen** und fügen Sie ihn im Dialogfeld in das Textfeld für die E-Mail- Adresse ein.
+4. Kopieren Sie den **Benutzernamen** und fügen Sie ihn im Dialogfeld in das Textfeld für die E-Mail- Adresse ein.
 
     ![](../Images/lab1-image3.png)
 
-5.	Wählen Sie **Continue** aus.
+5. Wählen Sie **Continue** aus.
 
-6.	Das Dialogfeld für die Anmeldung wird geöffnet. Wählen Sie **Geschäfts- oder Schulkonto** aus.
+6. Das Dialogfeld für die Anmeldung wird geöffnet. Wählen Sie **Geschäfts- oder Schulkonto** aus.
 
     ![](../Images/lab1-imag4.png)
 
-7.	Wählen Sie **Weiter** aus.
+7. Wählen Sie **Weiter** aus.
 
-8.	Das Dialogfeld „Anmelden“ wird geöffnet. Geben Sie den **Benutzernamen** erneut ein, indem Sie ihn aus der Registerkarte **Umgebungsdetails** kopieren.
+8. Das Dialogfeld „Anmelden“ wird geöffnet. Geben Sie den **Benutzernamen** erneut ein, indem Sie ihn aus der Registerkarte **Umgebungsdetails** kopieren.
 
-9.	Wählen Sie **Next** aus.
+9. Wählen Sie **Next** aus.
 
 10.	Geben Sie im nächsten Dialogfeld das **Kennwort** und die **Anmeldeinformationen** ein, indem Sie beides aus der Registerkarte **Umgebungsdetails** kopieren.
 
@@ -91,25 +91,25 @@ Im nachstehenden Bericht werden die Verkäufe von Fabrikam analysiert. Die KPIs 
 
 **Hinweis:** Bei diesem Training geht es um die Erfassung, Transformation und Modellierung von Daten mithilfe der in Fabric verfügbaren Tools. Es geht weder um die Anfertigung von Berichten noch die Navigation. Sehen wir uns den Bericht kurz an und fahren dann fort.
 
-1.	Analysieren wir die Daten nach dem Vertriebsgebiet. Wählen Sie im Streudiagramm **Sales Territory** die Region „New England“ aus. Unter „Sales over time“ sehen Sie, dass der Handelspartner Tailspin Toys im Vergleich zu Wingtip Toys in Neuengland mehr Verkäufe erzielt. Wenn Sie sich das Säulendiagramm „Sales YoY%“ ansehen, werden Sie feststellen, dass das Umsatzwachstum von Wingtip Toys im vergangenen Jahr gering war und von Quartal zu Quartal weniger wurde. Nach einer kleinen Erholung im dritten Quartal ging es im vierten Quartal wieder bergab.
+1. Analysieren wir die Daten nach dem Vertriebsgebiet. Wählen Sie im Streudiagramm **Sales Territory** die Region „New England“ aus. Unter „Sales over time“ sehen Sie, dass der Handelspartner Tailspin Toys im Vergleich zu Wingtip Toys in Neuengland mehr Verkäufe erzielt. Wenn Sie sich das Säulendiagramm „Sales YoY%“ ansehen, werden Sie feststellen, dass das Umsatzwachstum von Wingtip Toys im vergangenen Jahr gering war und von Quartal zu Quartal weniger wurde. Nach einer kleinen Erholung im dritten Quartal ging es im vierten Quartal wieder bergab.
 
-2.	Vergleichen wir dies mit dem Vertriebsgebiet „Rocky Mountain“. Wählen Sie im Streudiagrammvisual **Sales Territory** die Region „Rocky Mountain“ aus. Beachten Sie im Säulendiagramm „Sales YoY%“, dass die Umsätze von Wingtip Toys im vierten Quartal 2022 enorm zugelegt haben, nachdem sie in den beiden vorangegangenen Quartalen niedrig waren.
+2. Vergleichen wir dies mit dem Vertriebsgebiet „Rocky Mountain“. Wählen Sie im Streudiagrammvisual **Sales Territory** die Region „Rocky Mountain“ aus. Beachten Sie im Säulendiagramm „Sales YoY%“, dass die Umsätze von Wingtip Toys im vierten Quartal 2022 enorm zugelegt haben, nachdem sie in den beiden vorangegangenen Quartalen niedrig waren.
 
-3.	Wählen Sie im Streudiagramm **Sales Territory** die Region „Rocky Mountain“ aus, um den Filter zu entfernen.
+3. Wählen Sie im Streudiagramm **Sales Territory** die Region „Rocky Mountain“ aus, um den Filter zu entfernen.
  
-4.	Wählen Sie im Streudiagrammvisual unten in der Mitte des Bildschirms (Sales Orders by Sales) den Ausreißer oben rechts aus (4. Quadrant). Beachten Sie, dass die Marge % 52 % beträgt, was über dem Durchschnitt von 50 % liegt. Außerdem ist der Umsatz im Jahresvergleich in % in den letzten beiden Quartalen des Jahres 2022 gestiegen.
+4. Wählen Sie im Streudiagrammvisual unten in der Mitte des Bildschirms (Sales Orders by Sales) den Ausreißer oben rechts aus (4. Quadrant). Beachten Sie, dass die Marge % 52 % beträgt, was über dem Durchschnitt von 50 % liegt. Außerdem ist der Umsatz im Jahresvergleich in % in den letzten beiden Quartalen des Jahres 2022 gestiegen.
 
-5.	Wählen Sie im Streudiagrammvisual den Handelspartner mit dem Ausreißer aus, um den **Filter zu entfernen.**
+5. Wählen Sie im Streudiagrammvisual den Handelspartner mit dem Ausreißer aus, um den **Filter zu entfernen.**
 
-6.	Sehen wir nun die Produktinformationen nach Produktgruppe und Wiederverkäufer an. Klicken Sie im Balkendiagrammvisual „Sales by Product Group and Reseller Company“ mit der rechten Maustaste auf den Balken **Packaging Materials** von Tailspin Toys, und wählen Sie im Dialogfeld die Option **Drillthrough ausführen -> Product Detail** aus.
+6. Sehen wir nun die Produktinformationen nach Produktgruppe und Wiederverkäufer an. Klicken Sie im Balkendiagrammvisual „Sales by Product Group and Reseller Company“ mit der rechten Maustaste auf den Balken **Packaging Materials** von Tailspin Toys, und wählen Sie im Dialogfeld die Option **Drillthrough ausführen -> Product Detail** aus.
 Sie gelangen zu der Seite mit den Produktinformationen. Dort sind auch einige zukünftige Bestellungen aufgeführt.
 
-7.	Sobald Sie die Informationen gelesen haben, wählen Sie oben auf der Seite den
+7. Sobald Sie die Informationen gelesen haben, wählen Sie oben auf der Seite den
 **STRG+Zurückpfeil** aus, um zum Umsatzbericht zurückzukehren.
 
-8.	Sehen Sie sich den Bericht gerne noch genauer an. Anschließend betrachten wir die Modellansicht. Wählen Sie links das **Symbol für die Modellansicht** aus. Beachten Sie, dass es zwei Faktentabellen gibt: Sales und PO.
+8. Sehen Sie sich den Bericht gerne noch genauer an. Anschließend betrachten wir die Modellansicht. Wählen Sie links das **Symbol für die Modellansicht** aus. Beachten Sie, dass es zwei Faktentabellen gibt: Sales und PO.
 
-    -   Die Genauigkeit der Sales-Daten richtet sich nach Date, Reseller, Product und People. Date, Reseller, Product und People sind mit Sales in Zusammenhang gesetzt.
+    - Die Genauigkeit der Sales-Daten richtet sich nach Date, Reseller, Product und People. Date, Reseller, Product und People sind mit Sales in Zusammenhang gesetzt.
 
     - Die Genauigkeit von PO-Daten richtet sich nach Date, Product und People. Date, Product und People sind mit PO in Zusammenhang gesetzt.
 
@@ -121,43 +121,44 @@ Sie gelangen zu der Seite mit den Produktinformationen. Dort sind auch einige zu
 
 ### Aufgabe 3: Power Query-Abfragen überprüfen
 
-1.	Beschäftigen wir uns in Power Query mit den Datenquellen. Klicken Sie im Menüband auf **Start > Daten transformieren**.
+1. Beschäftigen wir uns in Power Query mit den Datenquellen. Klicken Sie im Menüband auf **Start > Daten transformieren**.
 
-2.	Das Power Query-Fenster wird geöffnet. Wählen Sie im Menüband die Option **Start -> Datenquelleneinstellungen** aus. Das Dialogfeld mit den Datenquelleneinstellungen wird geöffnet. Wenn Sie durch die Liste blättern, werden Sie sehen, dass es vier Datenquellen gibt, die in der Problemstellung genannt sind:
+2. Das Power Query-Fenster wird geöffnet. Wählen Sie im Menüband die Option **Start -> Datenquelleneinstellungen** aus. Das Dialogfeld mit den Datenquelleneinstellungen wird geöffnet. Wenn Sie durch die Liste blättern, werden Sie sehen, dass es vier Datenquellen gibt, die in der Problemstellung genannt sind:
 
     &nbsp; a. Snowflake <br>
     &nbsp; b. SharePoint <br> 
     &nbsp; c. ADLS Gen2 <br>
     &nbsp; d. Dataverse <br>
 
-3.	Schließen Sie das Dialogfeld mit den Einstellungen für die Datenquellen mit **Schließen**.
+3. Schließen Sie das Dialogfeld mit den Einstellungen für die Datenquellen mit **Schließen**.
 
-4.	Beachten Sie, dass die Abfragen auf der linken Seite nach Datenquelle angeordnet sind.
+4. Beachten Sie, dass die Abfragen auf der linken Seite nach Datenquelle angeordnet sind.
 
-5.	Hinweis: Der Ordner **DataverseData** enthält Kundendaten zu vier verschiedenen Abfragen: BabyBoomer, GenX, GenY und GenZ. Diese vier Abfragen werden angefügt, um eine Customer- Abfrage zu erstellen.
+5. Hinweis: Der Ordner **DataverseData** enthält Kundendaten zu vier verschiedenen Abfragen: BabyBoomer, GenX, GenY und GenZ. Diese vier Abfragen werden angefügt, um eine Customer- Abfrage zu erstellen.
 
-6.	Sie können die Anmeldeinformationen für die Dataverse Datenquelle eingeben, indem Sie den auf der Registerkarte **Environment Variables** (neben der Übungsanleitung) angezeigten **Username** und das **Password** eingeben. Wählen Sie die Option „Microsoft-Konto“ aus.
+6. Sie können die Anmeldeinformationen für die Dataverse Datenquelle eingeben, indem Sie den auf der Registerkarte **Environment Variables** (neben der Übungsanleitung) angezeigten **Username** und das **Password** eingeben. Wählen Sie die Option „Microsoft-Konto“ aus.
 
-7.	Verwenden Sie bei der ADLS-Datenquelle die Option **Kontoschlüssel**, und geben Sie den **Zugriffsschlüssel für das Adls-Speicherkonto** ein. Diesen finden Sie auf der Registerkarte Environment Variables (neben der Übungsanleitung).
+7. Verwenden Sie bei der ADLS-Datenquelle die Option **Kontoschlüssel**, und geben Sie den **Zugriffsschlüssel für das Adls-Speicherkonto** ein. Diesen finden Sie auf der Registerkarte Environment Variables (neben der Übungsanleitung).
 
-8.	Beachten Sie, dass der Ordner **ADLSData** mehrere Dimensionen beinhaltet: Geo, Product, Reseller und Date. Zudem ist das Sales-Element enthalten.
-    -	**Die Geo-Dimension** ergibt sich durch die Zusammenführung von Daten aus den Abfragen „Cities“, „Countries“ und „States“.
+8. Beachten Sie, dass der Ordner **ADLSData** mehrere Dimensionen beinhaltet: Geo, Product, Reseller und Date. Zudem ist das Sales-Element enthalten.
+    - **Die Geo-Dimension** ergibt sich durch die Zusammenführung von Daten aus den Abfragen „Cities“, „Countries“ und „States“.
 
-    -	**Die Product-Dimension** ergibt sich durch die Zusammenführung von Daten aus den Abfragen „Product Groups“ und „Product Item Group“.
+    - **Die Product-Dimension** ergibt sich durch die Zusammenführung von Daten aus den Abfragen „Product Groups“ und „Product Item Group“.
 
-    -	**Die Reseller-Dimension** wird mithilfe der Abfrage „BuyingGroup“ gefiltert.
+    - **Die Reseller-Dimension** wird mithilfe der Abfrage „BuyingGroup“ gefiltert.
 
-    -	**Das Sales-Element** ergibt sich durch die Zusammenführung der Abfragen
+    - **Das Sales-Element** ergibt sich durch die Zusammenführung der Abfragen
     „InvoiceLineItems“ und „Invoice“.
 
-9.	Bei der Datenquelle „Snowflake“ verwenden Sie den **Snowflake-Benutzernamen** und das
+9. Bei der Datenquelle „Snowflake“ verwenden Sie den **Snowflake-Benutzernamen** und das
 **Snowflake-Kennwort** von der Registerkarte **Environment Variables** (neben der Übungsanleitung).
 
 10.	Beachten Sie, dass der Ordner SnowflakeData die Dimension „Supplier und das Element „PO“ (Bestellung/Ausgabe) enthält.
-    -	Die Supplier-Dimension ergibt sich durch die Zusammenführung der Abfragen
+    
+    - Die Supplier-Dimension ergibt sich durch die Zusammenführung der Abfragen
     „Suppliers“ und „SupplierCategories“.
 
-    -	Das Element „PO“ ergibt sich durch die Zusammenführung der Abfragen „PO“ und „PO Line Items“.
+    - Das Element „PO“ ergibt sich durch die Zusammenführung der Abfragen „PO“ und „PO Line Items“.
 
 11.	Bei der SharePoint-Datenquelle geben Sie den auf der Registerkarte **Environment Variables** (neben der Übungsanleitung) angezeigten Username Password ein. Wählen Sie die Option „Microsoft-Konto“ aus.
 
@@ -171,43 +172,43 @@ kennen. Im Menü des Dienstes finden Sie in der Hilfe (?) Links zu praktischen I
 
 Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit Microsoft Fabric.
 
-• Die vollständige [Ankündigung der allgemeinen Verfügbarkeit von Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) finden Sie im Blogbeitrag.
+- Die vollständige [Ankündigung der allgemeinen Verfügbarkeit von Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) finden Sie im Blogbeitrag.
 
-• Fabric bei einer [interaktiven Vorstellung](https://aka.ms/Fabric-GuidedTour) kennenlernen
+- Fabric bei einer [interaktiven Vorstellung](https://aka.ms/Fabric-GuidedTour) kennenlernen
 
-• Zur [kostenlosen Testversion von Microsoft Fabric](https://aka.ms/try-fabric) anmelden
+- Zur [kostenlosen Testversion von Microsoft Fabric](https://aka.ms/try-fabric) anmelden
 
-• [Website von Microsoft Fabric](https://aka.ms/microsoft-fabric) besuchen
+- [Website von Microsoft Fabric](https://aka.ms/microsoft-fabric) besuchen
 
-• Mit Modulen von [Fabric Learning](https://aka.ms/learn-fabric) neue Qualifikationen erwerben
+- Mit Modulen von [Fabric Learning](https://aka.ms/learn-fabric) neue Qualifikationen erwerben
 
-• [Technische Dokumentation zu Fabric](https://aka.ms/learn-fabric) lesen
+- [Technische Dokumentation zu Fabric](https://aka.ms/learn-fabric) lesen
 
-• [Kostenloses E-Book zum Einstieg in Fabric](https://aka.ms/fabric-get-started-ebook) lesen
+- [Kostenloses E-Book zum Einstieg in Fabric](https://aka.ms/fabric-get-started-ebook) lesen
 
-• Mitglied der [Fabric-Community](https://aka.ms/fabric-community) werden, um Fragen zu stellen, Feedback zu geben und sich mit anderen auszutauschen
+- Mitglied der [Fabric-Community](https://aka.ms/fabric-community) werden, um Fragen zu stellen, Feedback zu geben und sich mit anderen auszutauschen
 
 Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
 
-• [Blog zur Data Factory-Umgebung in Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
+- [Blog zur Data Factory-Umgebung in Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
 
-• [Blog zur Synapse Data Engineering-Umgebung in Fabric](https://aka.ms/Fabric-DE-Blog)
+- [Blog zur Synapse Data Engineering-Umgebung in Fabric](https://aka.ms/Fabric-DE-Blog)
 
-• [Blog zur Synapse Data Science-Umgebung in Fabric](https://aka.ms/Fabric-DS-Blog)
+- [Blog zur Synapse Data Science-Umgebung in Fabric](https://aka.ms/Fabric-DS-Blog)
 
-• [Blog zur Synapse Data Warehousing-Umgebung in Fabric](https://aka.ms/Fabric-RTA-Blog)
+- [Blog zur Synapse Data Warehousing-Umgebung in Fabric](https://aka.ms/Fabric-RTA-Blog)
 
-• [Blog zur Synapse Real-Time Analytics-Umgebung in Fabric](https://aka.ms/Fabric-RTA-Blog)
+- [Blog zur Synapse Real-Time Analytics-Umgebung in Fabric](https://aka.ms/Fabric-RTA-Blog)
 
-• [Blog zur Power BI-Ankündigung](https://aka.ms/Fabric-PBI-Blog)
+- [Blog zur Power BI-Ankündigung](https://aka.ms/Fabric-PBI-Blog)
     
-• [Blog zur Data Activator-Umgebung in Fabric](https://aka.ms/Fabric-DA-Blog)
+- [Blog zur Data Activator-Umgebung in Fabric](https://aka.ms/Fabric-DA-Blog)
 
-• [Blog zu Verwaltung und Governance in Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
+- [Blog zu Verwaltung und Governance in Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
-• [Blog zu OneLake in Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
+- [Blog zu OneLake in Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
-• [Blog zur Dataverse- und Microsoft Fabric-Integration](https://aka.ms/Fabric-Admin-Gov-Blog)
+- [Blog zur Dataverse- und Microsoft Fabric-Integration](https://aka.ms/Fabric-Admin-Gov-Blog)
 
 © 2023 Microsoft Corporation. Alle Rechte vorbehalten.
 
