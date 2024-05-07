@@ -236,44 +236,44 @@ Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten Funktionen
 
 Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit Microsoft Fabric.
 
-- Die vollständige Ankündigung der allgemeinen Verfügbarkeit von Microsoft Fabric finden Sie im Blogbeitrag.
+• Die vollständige [Ankündigung der allgemeinen Verfügbarkeit von Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) finden Sie im Blogbeitrag.
 
-- Fabric bei einer interaktiven Vorstellung kennenlernen
+• Fabric bei einer [interaktiven Vorstellung](https://aka.ms/Fabric-GuidedTour) kennenlernen
 
-- Zur kostenlosen Testversion von Microsoft Fabric anmelden
+• Zur [kostenlosen Testversion von Microsoft Fabric](https://aka.ms/try-fabric) anmelden
 
-- Website von Microsoft Fabric besuchen
+• [Website von Microsoft Fabric](https://aka.ms/microsoft-fabric) besuchen
 
-- Mit Modulen von Fabric Learning neue Qualifikationen erwerben
+• Mit Modulen von [Fabric Learning](https://aka.ms/microsoft-fabric) neue Qualifikationen erwerben
 
-- Technische Dokumentation zu Fabric lesen
+• [Technische Dokumentation zu Fabric](https://aka.ms/fabric-docs) lesen
 
-- Kostenloses E-Book zum Einstieg in Fabric lesen
+• [Kostenloses E-Book zum Einstieg in Fabric](https://aka.ms/fabric-get-started-ebook) lesen
 
-- Mitglied der Fabric-Community werden, um Fragen zu stellen, Feedback zu geben und sich mit anderen auszutauschen
+• Mitglied der [Fabric-Community](https://aka.ms/fabric-get-started-ebook) werden, um Fragen zu stellen, Feedback zu geben und sich mit anderen auszutauschen
 
 
 Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
 
-- Blog zum Data Factory-Funktionsbereich in Fabric
+• [Blog zum Data Factory-Funktionsbereich in Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
 
-- Blog zum Data Engineering-Funktionsbereich von Synapse in Fabric
+• [Blog zum Data Engineering-Funktionsbereich von Synapse in Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
 
-- Blog zum Data Science-Funktionsbereich von Synapse in Fabric
+• [Blog zum Data Science-Funktionsbereich von Synapse in Fabric](https://aka.ms/Fabric-DS-Blog)
 
-- Blog zum Data Warehousing-Funktionsbereich von Synapse in Fabric
+• [Blog zum Data Warehousing-Funktionsbereich von Synapse in Fabric](https://aka.ms/Fabric-DS-Blog)
 
-- Blog zum Real-Time Analytics-Funktionsbereich von Synapse in Fabric
+• [Blog zum Real-Time Analytics-Funktionsbereich von Synapse in Fabric](https://aka.ms/Fabric-RTA-Blog)
 
-- Blog mit Ankündigungen zu Power BI
+• [Blog mit Ankündigungen zu Power BI](https://aka.ms/Fabric-RTA-Blog)
 
-- Blog zum Data Activator-Funktionsbereich in Fabric
+• [Blog zum Data Activator-Funktionsbereich in Fabric](https://aka.ms/Fabric-DA-Blog)
 
-- Blog zu Verwaltung und Governance in Fabric
+• [Blog zu Verwaltung und Governance in Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
-- Blog zu OneLake in Fabric
+• [Blog zu OneLake in Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
-- Blog zur Dataverse- und Microsoft Fabric-Integration
+• [Blog zur Dataverse- und Microsoft Fabric-Integration](https://aka.ms/Dataverse-Fabric-Blog)
 
 © 2023 Microsoft Corporation. Alle Rechte vorbehalten.
 
