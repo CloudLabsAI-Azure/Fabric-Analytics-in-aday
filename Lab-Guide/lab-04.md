@@ -116,4 +116,84 @@ Beachten Sie, dass die fünf Abfragen eingefügt wurden und dass der Bereich „
 3.	Die **Authentifizierungsart** muss **Organisationskonto** lauten.
 4.	Wählen Sie **Verbinden** aus.
 
+### Aufgabe 7: Datenziel für die Abfrage „Customer“ erstellen
+Die Verbindung wird hergestellt, und Sie können die Daten im Vorschaufenster ansehen. Wenn Sie möchten, sehen Sie sich die angewandten Schritte der Abfragen an. Kundendaten sind nach
+Kategorie verfügbar: BabyBoomer, GenX, GenY und GenZ. Diese vier Abfragen werden angehängt, um die Customer-Abfrage zu erstellen. Nun müssen die Kundendaten im Lakehouse erfasst werden.
+1.	Wie bereits erwähnt, stellen wir keine dieser Daten bereit. Klicken Sie im Bereich mit den Abfragen **mit der rechten Maustaste** auf die Abfrage **Customer**, und wählen Sie **Staging aktivieren** aus, um das Häkchen zu entfernen.
+2.	Wählen Sie die Abfrage **Customer** aus.
+3.	Klicken Sie im Menüband auf **Start > Datenziel hinzufügen -> Lakehouse**.
+4.	Das Dialogfeld „Herstellen einer Verbindung mit dem Datenziel“ wird geöffnet. Wählen Sie im
+**Dropdown-Menü „Verbindung“** die Option **Lakehouse (keine)** aus.
+5.	Wählen Sie **Weiter** aus.
+6.	Das Dialogfeld „Ziel auswählen“ wird geöffnet. Stellen Sie sicher, dass das **Optionsfeld „Neue Tabelle“** ausgewählt ist, da wir eine neue Tabelle erstellen.
+7.	Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen. Wechseln Sie links zu **Lakehouse -> FAIAD_<Benutzername>.**
+8.	Wählen Sie **lh_FAIAD** aus.
+9.	Behalten Sie den Tabellennamen **Customer** bei.
+10.	Wählen Sie **Weiter** aus.
+11.	Das Dialogfeld „Zieleinstellungen auswählen“ wird geöffnet. Dieses Mal verwenden wir die automatischen Einstellungen, da hierdurch eine vollständige Aktualisierung der Daten erfolgt. Außerdem werden die Spalten nach Bedarf umbenannt. Wählen Sie **Einstellungen speichern** aus.
 
+### Aufgabe 8: Dataverse-Dataflow veröffentlichen und umbenennen
+1.	Sie werden zum **Power Query-Fenster** weitergeleitet. Beachten Sie **unten rechts**, dass das
+**Datenziel** auf **Lakehouse** festgelegt ist.
+2.	Wählen Sie unten rechts **Veröffentlichen** aus.
+
+**Hinweis:** Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet. Es kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
+
+3.	Wir arbeiten mit Dataflow 2. Benennen wir ihn um, bevor wir fortfahren. Klicken Sie auf die
+**Auslassungspunkte (…)** neben Dataflow 2. Wählen Sie **Eigenschaften** aus.
+4.	Das Dialogfeld „Dataflow-Eigenschaften“ wird geöffnet. Ändern Sie den **Namen** in
+**df_Customer_Dataverse**.
+5.	Ergänzen Sie im Textfeld **Beschreibung** den Text **Dataflow zur Erfassung von Kundendaten aus Dataverse im Lakehouse**.
+6.	Klicken Sie auf **Speichern**.
+
+Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet. Erstellen wir nun einen Dataflow zur Erfassung der Daten aus SharePoint.
+
+### Aufgabe 9: SharePoint-Abfragen in Dataflow kopieren
+1.	Wählen Sie im Menü oben die Option **Neu -> Dataflow Gen2** aus.
+
+Sie werden zur **Dataflow-Seite** weitergeleitet. Nachdem Sie Dataflow nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in Dataflow.
+
+2.	Öffnen Sie **FAIAD.pbix** im Ordner **C:\FAIAD\Reports** in Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
+3.	Wählen Sie im Menüband **Start > Daten transformieren** aus. Das Power Query-Fenster wird
+geöffnet. Wie Sie in der vorherigen Übung festgestellt haben, sind die Abfragen im linken Bereich nach Datenquelle organisiert.
+4.	Das Power Query-Fenster wird geöffnet. Wählen Sie links unter dem Ordner **SharepointData** die Abfrage **People** aus.
+5.	**Klicken Sie mit der rechten Maustaste**, und wählen Sie **Kopieren** aus.
+6.	Rufen Sie im Browser wieder das Fenster **Dataflow** auf.
+7.	Drücken Sie im Bereich **Dataflow** auf **Strg+V** (das Einfügen mittels Rechtsklick ist derzeit nicht möglich).
+
+**Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den Schieberegler, um das **VM Native Clipboard zu aktivieren**. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben, können Sie diese Option deaktivieren.
+
+Beachten Sie, dass die Abfrage links eingefügt wurde. Weil für SharePoint keine Verbindung erstellt wurde, wird eine Warnmeldung angezeigt, in der Sie aufgefordert werden, eine Verbindung zu konfigurieren.
+
+
+Aufgabe 10: Verbindung zu SharePoint erstellen
+1.	Wählen Sie **Verbindung konfigurieren** aus.
+2.	Das Dialogfeld „Mit Datenquelle verbinden“ wird geöffnet. Überprüfen Sie, dass im Dropdown- Menü **Verbindung** die Option **Neue Verbindung erstellen** ausgewählt ist.
+3.	Die **Authentifizierungsart** muss **Organisationskonto** lauten.
+4.	Wählen Sie **Verbinden** aus.
+
+### Aufgabe 11: Datenziel für die Abfrage „People“ konfigurieren
+Die Verbindung wird hergestellt, und Sie können die Daten im Vorschaufenster ansehen. Wenn Sie möchten, sehen Sie sich die angewandten Schritte der Abfragen an. Nun müssen die Personendaten im Lakehouse erfasst werden.
+1.	Wie bereits erwähnt, stellen wir keine dieser Daten bereit. Klicken Sie im Bereich mit den
+Abfragen **mit der rechten Maustaste** auf die Abfrage **People**, und wählen Sie **Staging aktivieren**
+aus, um das Häkchen zu entfernen.
+2.	Wählen Sie die Abfrage **People** aus.
+3.	Klicken Sie im Menüband auf **Start > Datenziel hinzufügen -> Lakehouse**.
+4.	Das Dialogfeld „Herstellen einer Verbindung mit dem Datenziel“ wird geöffnet. Wählen Sie im
+**Dropdown-Menü „Verbindung“** die Option **Lakehouse (keine)** aus.
+5.	Wählen Sie **Weiter** aus.
+6.	Das Dialogfeld „Ziel auswählen“ wird geöffnet. Stellen Sie sicher, dass das **Optionsfeld „Neue Tabelle“** ausgewählt ist, da wir eine neue Tabelle erstellen.
+7.	Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen. Navigieren Sie im linken Bereich zu **Lakehouse -> FAIAD_<Benutzername>.**
+8.	Wählen Sie **lh_FAIAD** aus.
+9.	Behalten Sie den Tabellennamen **People** bei.
+10.	Wählen Sie **Weiter** aus.
+11.	Dieses Mal verwenden wir die automatischen Einstellungen, da hierdurch eine vollständige Aktualisierung der Daten erfolgt. Außerdem werden die Spalten nach Bedarf umbenannt. Wählen Sie **Einstellungen speichern** aus.
+
+### Aufgabe 12: SharePoint-Dataflow veröffentlichen und umbenennen
+1.	Sie werden zum **Power Query-Fenster** weitergeleitet. Beachten Sie, dass **unten rechts** das Datenziel auf **Lakehouse** festgelegt ist.
+2.	Wählen Sie unten rechts **Veröffentlichen** aus.
+
+**Hinweis:** Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet. Es kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
+ 
+3.	Wir arbeiten mit Dataflow 2. Benennen wir ihn um, bevor wir fortfahren. Klicken Sie auf die
+**Auslassungspunkte (…)** neben Dataflow 2. Wählen Sie **Eigenschaften** aus.
