@@ -247,6 +247,72 @@ Zur Vereinfachung prüfen wir jetzt, ob wir die Abfragen aus Power BI Desktop ko
 **Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den Schieberegler, um das **VM Native Clipboard zu
 aktivieren**. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben, können Sie diese Option deaktivieren.
 
+8.	Wie bereits erwähnt, stellen wir keine dieser Daten bereit. Klicken Sie also **mit der rechten Maustaste** auf die folgenden Abfragen, und wählen Sie **Staging aktivieren** aus, um das Häkchen zu entfernen.<br>
+&nbsp; &nbsp; a.	Product<br>
+&nbsp; &nbsp; b.	Product Details<br>
+&nbsp; &nbsp; c.	Reseller<br>
+&nbsp; &nbsp; d.	Sales<br>
+&nbsp; &nbsp; e.	Date<br>
+
+**Hinweis:** Wenn das Laden in Power BI Desktop deaktiviert ist, müssen wir das Staging in Dataflow nicht deaktivieren. Daher müssen wir das Staging für „Product Item Group“, „Product Groups“ usw. nicht deaktivieren.
+
+Stellen Sie sicher, dass **alle Abfragen verarbeitet werden**. Lassen Sie uns diese Daten abschließend in Lakehouse erfassen.
+
+### Aufgabe 12: Datenziel für verbleibende Abfragen konfigurieren
+1.	Wählen Sie die Abfrage **Product** aus.
+2.	Klicken Sie im Menüband auf **Start > Datenziel hinzufügen -> Lakehouse**.
+3.	Das Dialogfeld „Herstellen einer Verbindung mit dem Datenziel“ wird geöffnet. Wählen Sie im
+**Dropdown-Menü „Verbindung“** die Option **Lakehouse (keine)** aus.
+4.	Wählen Sie **Weiter** aus.
+5.	Das Dialogfeld „Ziel auswählen“ wird geöffnet. Stellen Sie sicher, dass das **Optionsfeld „Neue Tabelle“** ausgewählt ist, da wir eine neue Tabelle erstellen.
+6.	Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen. Navigieren Sie im linken Bereich zu **Lakehouse -> FAIAD_<Benutzername>**.
+7.	Wählen Sie **lh_FAIAD** aus.
+8.	Behalten Sie den Tabellennamen **Product** bei.
+9.	Wählen Sie **Weiter** aus.
+10.	Dieses Mal verwenden wir die automatischen Einstellungen, da hierdurch eine vollständige Aktualisierung der Daten erfolgt. Außerdem werden die Spalten nach Bedarf umbenannt. Wählen Sie **Einstellungen speichern** aus.
+11.	Sie werden zum **Power Query-Fenster** weitergeleitet. Beachten Sie, dass **unten rechts** das Datenziel auf **Lakehouse** festgelegt ist.
+12.	Legen Sie ebenso das **Datenziel** für die folgenden Abfragen fest:<br>
+&nbsp; &nbsp; a.	Product Details<br>
+&nbsp; &nbsp; b.	Reseller<br>
+&nbsp; &nbsp; c.	Sales<br>
+&nbsp; &nbsp; d.	Date<br>
+ 13.	Wir haben einen Dataflow, der Daten aus ADLS in Lakehouse erfasst. Fahren wir fort und veröffentlichen diesen Dataflow. Wählen Sie unten rechts Veröffentlichen aus.
+ 
+Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet. Es dauert einige Minuten, bis der Dataflow aktualisiert wird.
+In der nächsten Übung werden wir Daten aus den anderen Datenquellen erfassen.
+
+## Referenzen
+Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie in der Hilfe (?) Links zu praktischen Informationen.
+
+Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit Microsoft Fabric.
+  - Die vollständige [Ankündigung der allgemeinen Verfügbarkeit von Microsof t Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) finden Sie im Blogbeitrag.
+  - Fabric bei einer interaktiven Vorstellung kennenlernen
+  - Zur kostenlosen Testversion von Microsof t Fabric anmelden
+  - Website von Microsof t Fabric besuchen
+  - Mit Modulen von Fabric Learning neue Qualifikationen erwerben
+  - Technische Dokumentation zu Fabric lesen
+  - Kostenloses E-Book zum Einstieg in Fabric lesen
+  - Mitglied der Fabric-Community werden, um Fragen zu stellen, Feedback zu geben und sich mit anderen auszutauschen
+
+Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
+  - Blog zum Data Factory-Funktionsbereich in Fabric
+  - Blog zum Data Engineering-Funktionsbereich von Synapse in Fabric
+  - Blog zum Data Science-Funktionsbereich von Synapse in Fabric
+  - Blog zum Data Warehousing-Funktionsbereich von Synapse in Fabric
+  - Blog zum Real-Time Analytics-Funktionsbereich von Synapse in Fabric
+  - Blog zur Power BI-Ankündigung
+ 
+  - Blog zum Data Activator-Funktionsbereich in Fabric
+  - Blog zu Verwaltung und Governance in Fabric
+  - Blog zu OneLake in Fabric
+  - Blog zur Dataverse- und Microsof t Fabric-Integration
+
+
+
+
+
+
+
 
 
 
