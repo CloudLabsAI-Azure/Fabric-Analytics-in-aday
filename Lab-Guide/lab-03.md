@@ -230,16 +230,16 @@ Zur Vereinfachung prüfen wir jetzt, ob wir die Abfragen aus Power BI Desktop ko
 2.	Öffnen Sie **FAIAD.pbix** im Ordner **C:\FAIAD\Reports** in Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
 3.	Wählen Sie im Menüband **Start > Transformieren** aus. Das Power Query-Fenster wird geöffnet.
 4.	Wählen Sie im Bereich **Abfragen** auf der linken Seite mit **STRG+Auswahl** die folgenden Abfragen aus **ADLSData** aus.<br>
-a.	Product<br>
-b.	Product Groups<br>
-c.	Product Item Group<br>
-d.	Product Details<br>
-e.	Invoice<br>
-f.	InvoiceLineItems<br>
-g.	Sales<br>
-h.	BuyingGroup<br>
-i.	Reseller<br>
-j.	Date<br>
+&nbsp; &nbsp; a.	Product<br>
+&nbsp; &nbsp; b.	Product Groups<br>
+&nbsp; &nbsp; c.	Product Item Group<br>
+&nbsp; &nbsp; d.	Product Details<br>
+&nbsp; &nbsp; e.	Invoice<br>
+&nbsp; &nbsp; f.	InvoiceLineItems<br>
+&nbsp; &nbsp; g.	Sales<br>
+&nbsp; &nbsp; h.	BuyingGroup<br>
+&nbsp; &nbsp; i.	Reseller<br>
+&nbsp; &nbsp; j.	Date<br>
 
 
 
