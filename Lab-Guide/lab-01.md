@@ -171,35 +171,35 @@ Zur [kostenlosen Testversion von Microsoft Fabric](https://aka.ms/try-fabric) an
 
 [Website von Microsoft Fabric](https://aka.ms/microsoft-fabric) besuchen
 
-    - Mit Modulen von Fabric Learning neue Qualifikationen erwerben
+Mit Modulen von [Fabric Learning](https://aka.ms/learn-fabric) neue Qualifikationen erwerben
 
-    - Technische Dokumentation zu Fabric lesen
+[Technische Dokumentation zu Fabric](https://aka.ms/learn-fabric) lesen
 
-    - Kostenloses E-Book zum Einstieg in Fabric lesen
+[Kostenloses E-Book zum Einstieg in Fabric](https://aka.ms/fabric-get-started-ebook) lesen
 
-    - Mitglied der Fabric-Community werden, um Fragen zu stellen, Feedback zu geben und sich mit anderen auszutauschen
+Mitglied der [Fabric-Community](https://aka.ms/fabric-community) werden, um Fragen zu stellen, Feedback zu geben und sich mit anderen auszutauschen
 
 Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
 
-    - Blog zur Data Factory-Umgebung in Fabric
+[Blog zur Data Factory-Umgebung in Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
 
-    - Blog zur Synapse Data Engineering-Umgebung in Fabric
+[Blog zur Synapse Data Engineering-Umgebung in Fabric](https://aka.ms/Fabric-DE-Blog)
 
-    - Blog zur Synapse Data Science-Umgebung in Fabric
+[Blog zur Synapse Data Science-Umgebung in Fabric](https://aka.ms/Fabric-DS-Blog)
 
-    - Blog zur Synapse Data Warehousing-Umgebung in Fabric
+[Blog zur Synapse Data Warehousing-Umgebung in Fabric](https://aka.ms/Fabric-RTA-Blog)
 
-    - Blog zur Synapse Real-Time Analytics-Umgebung in Fabric
+[Blog zur Synapse Real-Time Analytics-Umgebung in Fabric](https://aka.ms/Fabric-RTA-Blog)
 
-    - Blog zur Power BI-Ankündigung
+[Blog zur Power BI-Ankündigung](https://aka.ms/Fabric-PBI-Blog)
     
-    - Blog zur Data Activator-Umgebung in Fabric
+[Blog zur Data Activator-Umgebung in Fabric](https://aka.ms/Fabric-DA-Blog)
 
-    - Blog zu Verwaltung und Governance in Fabric
+[Blog zu Verwaltung und Governance in Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
-    - Blog zu OneLake in Fabric
+[Blog zu OneLake in Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
-    - Blog zur Dataverse- und Microsoft Fabric-Integration
+[Blog zur Dataverse- und Microsoft Fabric-Integration](https://aka.ms/Fabric-Admin-Gov-Blog)
 
 © 2023 Microsoft Corporation. Alle Rechte vorbehalten.
 
