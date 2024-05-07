@@ -162,13 +162,14 @@ Nun wissen wir, worum es geht. In den folgenden Übungen erstellen wir eine ähn
 kennen. Im Menü des Dienstes finden Sie in der Hilfe (?) Links zu praktischen Informationen.
 
 Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit Microsoft Fabric.
-    - Die vollständige Ankündigung der allgemeinen Verfügbarkeit von Microsoft Fabric finden Sie im Blogbeitrag.
 
-    - Fabric bei einer interaktiven Vorstellung kennenlernen
+• Die vollständige [Ankündigung der allgemeinen Verfügbarkeit von Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) finden Sie im Blogbeitrag.
 
-    - Zur kostenlosen Testversion von Microsoft Fabric anmelden
+Fabric bei einer [interaktiven Vorstellung](https://aka.ms/Fabric-GuidedTour) kennenlernen
 
-    - Website von Microsoft Fabric besuchen
+Zur [kostenlosen Testversion von Microsoft Fabric](https://aka.ms/try-fabric) anmelden
+
+[Website von Microsoft Fabric](https://aka.ms/microsoft-fabric) besuchen
 
     - Mit Modulen von Fabric Learning neue Qualifikationen erwerben
 
