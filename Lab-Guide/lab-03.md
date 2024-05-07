@@ -100,3 +100,82 @@ Wir müssen City-, State- und Country-Daten aus diesen drei Dateien kombinieren,
 
 5.	Wählen Sie **OK** aus.
 6.	Daten werden in einer einzelne Zeile gefiltert. Wählen Sie **Binary** unter der Spalte **Content** aus.
+7.	Beachten Sie, dass alle City-Details angezeigt werden. Ändern Sie im **rechten Bereich** unter **Abfrageeinstellungen -> Eigenschaften -> Name den Namen** in **Cities**.
+
+**Hinweis**: Stellen Sie unten rechts im Screenshot sicher, dass die Abfrage über vier angewendete Schritte verfügt, und warten Sie, bis sie vollständig geladen ist. Dies kann einige Minuten dauern.
+
+Beachten Sie im rechten Bereich unter **Angewendete Schritte**, dass alle Schritte registriert sind. Dieses Verhalten ist mit dem von Power Query identisch. Folgen wir nun einem ähnlichen Prozess, um die Abfrage **Country** zu erstellen.
+
+### Aufgabe 5: Abfrage „Countries“ erstellen
+
+1.	Klicken Sie im linken Bereich **mit der rechten Maustaste auf „ADLS Base Folder for Geo“**. Wählen Sie **Verweis** aus, um eine neue Abfrage zu erstellen, die auf die Abfrage „ADLS Base Folder for Geo“ verweist.
+2.	Wählen Sie den **Dropdown-Pfeil** der** Spalte Folder Path** aus.
+3.	Wählen Sie **Textfilter -> Enthält…** aus.
+4.	Geben Sie im **Dialogfeld „Zeilen filtern“ Application.Countries** ein.
+
+**Hinweis**: Hierbei muss die Groß-/Kleinschreibung beachtet werden.
+
+5.	Wählen Sie **OK** aus.
+6.	Daten werden in einer einzelne Zeile gefiltert. Wählen Sie **Binary** unter der Spalte **Content** aus
+7.	Beachten Sie, dass alle Country-Details angezeigt werden. Ändern Sie im **rechten Bereich** unter **Abfrageeinstellungen -> Eigenschaften -> Name** den Namen in **Countries**.
+
+**Hinweis**: Stellen Sie unten rechts im Screenshot sicher, dass die Abfrage über vier angewendete Schritte verfügt, und warten Sie, bis sie vollständig geladen ist. Dies kann einige Minuten dauern.
+
+Als Nächstes müssen wir „State“ einfügen, aber die Schritte wiederholen sich immer mehr. Wir verfügen bereits über die Abfragen in der Power BI Desktop-Datei. Jetzt prüfen wir, ob wir die Abfragen von dort kopieren können.
+
+### Aufgabe 6: States mit Kopieren – Option 1 erstellen
+1.	Öffnen Sie **FAIAD.pbix** im Ordner **C:\FAIAD\Reports** in Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
+2.	Wählen Sie im Menüband **Start > Daten transformieren** aus. Das Power Query-Fenster wird
+geöffnet. Wie Sie in der vorherigen Übung festgestellt haben, sind die Abfragen im linken Bereich nach Datenquelle organisiert.
+3.	Klicken Sie im linken Bereich unter dem ADLSData-Ordner **mit der rechten Maustaste auf die Abfrage „States“**, und wählen Sie **Kopieren** aus.
+4.	Navigieren Sie zurück zum **Browser**. Sie sollten sich im Dataflow befinden, an dem wir gearbeitet haben.
+5.	Wählen Sie im linken Bereich den Bereich **Abfragen** aus, und geben Sie **STRG+V** ein (derzeit wird das Einfügen mit der rechten Maustaste nicht unterstützt). Wenn Sie ein MAC-Gerät verwenden, drücken Sie zum Einfügen bitte Cmd+V.
+
+**Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den Schieberegler, um das **VM Native Clipboard zu
+aktivieren**. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfrage eingefügt haben, können Sie diese Option deaktivieren.
+
+Beachten Sie, dass „ADLS Base Folder“ ebenfalls kopiert wird. Dies liegt daran, dass sich die Abfrage
+„States“ auf „ADLS Base Folder“ in Power BI Desktop bezieht, wir aber bereits über eine ähnliche Abfrage verfügen. Lassen Sie uns dies lösen.
+
+6.	Wählen Sie die Abfrage **States** aus.
+7.	Wählen Sie im **rechten Bereich** unter **Angewendete Schritte** die Option **Source** aus.
+8.	Ändern Sie in der Formelleiste #”ADLS Base Folder” zu **#”ADLS Base Folder for Geo”**.
+9.	Klicken Sie auf das **Häkchen** neben der Bearbeitungsleiste, oder drücken Sie die **Eingabetaste**.
+10.	Jetzt können wir „ADLS Base Folder“ entfernen. Klicken Sie im linken Bereich unter dem Abschnitt **Abfragen mit der rechten Maustaste auf die Abfrage ADLS Base Folder**, und wählen Sie **Löschen** aus.
+11.	Das Dialogfeld „Abfrage löschen“ wird angezeigt. Wählen Sie zur Bestätigung **Löschen** aus.
+
+**Hinweis:** Stellen Sie sicher, dass die Abfrage über vier angewendete Schritte verfügt, und warten Sie, bis die Abfrage vollständig geladen ist. Dies kann einige Minuten dauern.
+
+### Aufgabe 7: Abfrage „Geo“ mit Kopieren erstellen – Option 2
+
+Jetzt müssen wir diese Abfragen zusammenführen, um die Geo-Dimension zu erstellen. Wir kopieren die Abfrage erneut aus der Datei Power BI Desktop. Dieses Mal kopieren wir den Code aus dem
+erweiterten Editor.
+
+1.	Navigieren Sie zurück zum **Power Query-Fenster** der Power BI Desktop-Datei.
+2.	Wählen Sie im linken Bereich unter **Abfragen** die Abfrage **Geo** im Ordner „ADLSData“ aus.
+3.	Wählen Sie im Menüband die Registerkarte **Start -> Erweiterter Editor** aus.
+4.	Das Fenster „Erweiterter Editor“ wird geöffnet. **Heben Sie den gesamten Text** im erweiterten Editor hervor.
+5.	**Klicken Sie mit der rechten Maustaste**, und wählen Sie **Kopieren** aus.
+6.	Klicken Sie oben rechts im Fenster auf **X**, oder wählen Sie die Option **Fertig** aus, um das Fenster
+„Erweiterter Editor“ zu schließen.
+7.	Navigieren Sie im Browser zurück zum Fenster **Dataflow**.
+8.	Klicken Sie im Menüband auf **Daten abrufen > Leere Abfrage**.
+9.	Rufen Sie die Daten ab. Der Dialog „Erweiterter Editor“ mit der Option „Mit Datenquelle verbinden“ wird geöffnet. **Heben Sie den gesamten Text** im Editor hervor.
+10.	Wählen Sie auf Ihrer Tastatur **Löschen** aus, um den gesamten Text zu löschen.
+11.	Der erweiterte Editor sollte leer sein. Geben Sie nun **STRG+V** ein, um den Inhalt einzufügen, den Sie aus dem erweiterten Editor von Power BI Desktop kopiert haben.
+12.	Wählen Sie **Weiter** aus.
+13.	Jetzt verfügen wir über die Geo-Dimension. Wir benennen die Abfrage um. Ändern Sie im
+**rechten Bereich** unter **Abfrageeinstellungen -> Eigenschaften -> Name** den Namen in **Geo**.
+
+**Hinweis:** Warten Sie, bis die Abfrage vollständig geladen ist. Dies kann einige Minuten dauern.Gehen wir die Schritte durch, um zu verstehen, wie Geo erstellt wurde. Wählen Sie im rechten
+Bereich unter „Angewendete Schritte“ die Option **Quelle** aus. Wenn Sie sich die Bearbeitungsleiste ansehen oder auf „Einstellungen“ klicken, stellen Sie fest, dass die Quelle dieser Abfrage eine
+Verknüpfung zwischen Cities und States ist. Wenn Sie die Schritte durchgehen, stellen Sie fest, dass das Ergebnis der ersten Verknüpfung wiederum mit „Countries“ verknüpft wird. Daher werden alle drei Abfragen verwendet, um eine Geo-Dimension zu erstellen.
+
+### Aufgabe 8: Datenziel für die Abfrage „Geo“ konfigurieren
+Jetzt verfügen wir über eine Dimension. Lassen Sie uns diese Daten in Lakehouse erfassen. Dies ist die neue Funktion, die in Dataflow Gen2 verfügbar ist.
+1.	Wie bereits erwähnt, stellen wir keine dieser Daten bereit. Klicken Sie also **mit der rechten Maustaste** auf die Abfrage **Cities**, und wählen Sie **Staging aktivieren** aus, um das Häkchen zu entfernen.
+2.	Befolgen Sie dieselben Schritte für die Abfrage **Countries und Geo**, um **das Häkchen neben Staging aktivieren** zu entfernen.
+3.	Wählen Sie die Abfrage **Geo** aus.
+4.	Wählen Sie unten rechts „+“ neben **Datenziel** aus.
+5.	Wählen Sie im Dialogfeld die Option **Lakehouse** aus.
+
