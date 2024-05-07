@@ -178,4 +178,73 @@ Jetzt verfügen wir über eine Dimension. Lassen Sie uns diese Daten in Lakehous
 3.	Wählen Sie die Abfrage **Geo** aus.
 4.	Wählen Sie unten rechts „+“ neben **Datenziel** aus.
 5.	Wählen Sie im Dialogfeld die Option **Lakehouse** aus.
+6.	Das Dialogfeld „Herstellen einer Verbindung mit dem Datenziel“ wird geöffnet. Wir müssen eine neue Verbindung zu Lakehouse herstellen. Wenn **Neue Verbindung erstellen** im **Dropdown-Menü „Verbindung“** ausgewählt und **Authentifizierungsart** auf **Organisationskonto** festgelegt ist, wählen Sie **Weiter** aus.
+7.	Nachdem die Verbindung hergestellt wurde, wird das Dialogfeld „Ziel auswählen“ geöffnet.
+Stellen Sie sicher, dass das **Optionsfeld „Neue Tabelle“** ausgewählt ist, da wir eine neue Tabelle erstellen.
+8.	Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen. Navigieren Sie im linken Bereich zu **Lakehouse -> FAIAD_<Benutzername>.**
+9.	Wählen Sie **lh_FAIAD** aus.
+10.	Behalten Sie den Tabellennamen **Geo** bei.
+11.	Wählen Sie **Weiter** aus.
+12.	Das Dialogfeld „Zieleinstellungen auswählen“ wird geöffnet. Verwenden Sie den **Schieberegler**, um **automatische Einstellungen zu deaktivieren**. Schauen wir uns die Optionen an.
+Beachten Sie, dass es Optionen zum **Anfügen von Daten** an eine vorhandene Tabelle oder zum
+**Ersetzen** gibt.
+Beachten Sie außerdem, dass es für **das Veröffentlichen Schemaoptionen** gibt.
+Sie haben die Möglichkeit, das Schema unverändert zu lassen. Wenn es sich im Laufe der Zeit ändern soll, steht Ihnen die Option eines dynamischen Schemas zur Verfügung.
+Sie haben die Möglichkeit, das Schema unverändert zu lassen. Lakehouse unterstützt keine Spaltennamen mit Leerzeichen. Wenn Sie „Korrigieren“ auswählen, werden Leerzeichen in Spaltennamen durch Unterstriche ersetzt.
+
+**Hinweis:** Mit dem Kontrollkästchen rechts neben der Spalte „Quelle” können Sie nur die Spalten auswählen, die Sie in Lakehouse laden möchten.
+
+13.	In unserem Szenario verwenden wir automatische Einstellungen. Aktivieren Sie den Schieberegler **Automatische Einstellungen aktivieren**. Beachten Sie, dass damit die Zielspaltennamen automatisch mit einem Unterstrich korrigiert werden.
+14.	Mithilfe der Spaltenzuordnung können Dataflow-Spalten vorhandenen Spalten zugeordnet werden. In unserem Fall handelt es sich um eine neue Tabelle. Daher können wir die Standardwerte verwenden. Wählen Sie **Einstellungen speichern** aus.
+
+### Aufgabe 9: Dataflow veröffentlichen
+1.	Sie werden zum **Power Query-Fenster** weitergeleitet. Beachten Sie, dass unten rechts das
+**Datenziel auf Lakehouse festgelegt ist**.
+2.	Lassen Sie uns diese Abfragen veröffentlichen, damit wir Lakehouse überprüfen können. Wir werden darauf zurückkommen, um weitere Abfragen hinzuzufügen. Wählen Sie unten rechts **Veröffentlichen** aus.
+3.	Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet. Es kann einige
+Momente dauern, bis der Dataflow veröffentlicht wird. Wählen Sie anschließend entweder aus dem mittleren oder dem linken Bereich **lh_FAIAD Lakehouse aus**.
+4.	Sie werden zum **Bildschirm „Lakehouse-Explorer“** weitergeleitet. Erweitern Sie im linken Bereich die Option **lh_FAIAD -> Tables**.
+5.	Beachten Sie, dass jetzt eine Geo-Tabelle in Lakehouse vorhanden ist. Erweitern Sie **Geo**, und beachten Sie alle Spalten.
+6.	**Wählen Sie die Geo-Tabelle** aus, sodass die Datenvorschau im rechten Bereich geöffnet wird.
+
+Es ist auch ein SQL-Endpunkt vorhanden, der zum Abfragen dieser Tabelle verwendet werden kann. Wir sehen uns diese Option in einer späteren Übung an. Da wir nun wissen, dass die Geodaten in Lakehouse vorhanden sind, fügen wir die restlichen Daten von ADLS Gen2 ein.
+
+
+### Aufgabe 10: Dataflow umbenennen
+1.	Wählen Sie in der linken Menüleiste **FAIAD_<Benutzername>** aus, um zum **Arbeitsbereich**
+zurückzukehren.
+2.	Wir arbeiten mit Dataflow 1. Benennen wir es um, bevor wir fortfahren. Klicken Sie auf die
+**Auslassungspunkte (…)** neben Dataflow 1. Wählen Sie **Eigenschaften** aus.
+3.	Das Dialogfeld „Dataflow-Eigenschaften“ wird geöffnet. Ändern Sie den Namen in **df_Sales_ADLS**.
+
+**Hinweis:** Wir stellen dem Dataflow-Namen „**df**“ voran. Dadurch kann er einfacher gesucht und sortiert werden.
+
+4.	Fügen Sie im Textfeld **Beschreibung den Text Dataflow to ingest Sales Data from ADLS to Lakehouse hinzu**.
+5.	Wählen Sie **Speichern** aus.
+
+### Aufgabe 11: Verbleibende Abfragen im Dataflow erstellen
+1.	Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet. Wählen Sie den Dataflow **df_Sales_ADLS** aus, um zum Dataflow zurückzukehren.
+
+Zur Vereinfachung prüfen wir jetzt, ob wir die Abfragen aus Power BI Desktop kopieren können.
+
+2.	Öffnen Sie **FAIAD.pbix** im Ordner **C:\FAIAD\Reports** in Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
+3.	Wählen Sie im Menüband **Start > Transformieren** aus. Das Power Query-Fenster wird geöffnet.
+4.	Wählen Sie im Bereich **Abfragen** auf der linken Seite mit **STRG+Auswahl** die folgenden Abfragen aus **ADLSData** aus.<br>
+a.	Product<br>
+b.	Product Groups<br>
+c.	Product Item Group<br>
+d.	Product Details<br>
+e.	Invoice<br>
+f.	InvoiceLineItems<br>
+g.	Sales<br>
+h.	BuyingGroup<br>
+i.	Reseller<br>
+j.	Date<br>
+
+
+
+
+
+
+
 
