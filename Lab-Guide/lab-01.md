@@ -58,27 +58,29 @@ Bevor wir mit Fabric beginnen, sehen wir uns den aktuellen Bericht in Power BI D
 
 1.	Öffnen Sie in der Übungsumgebung im Ordner **C:\FAIAD\Reports die Datei FAIAD.pbix.** Die Datei wird in Power BI Desktop geöffnet.
 
-2.	Geben Sie im Dialogfeld Ihre E-Mail-Adresse ein. Öffnen Sie rechts in der Übungsumgebung die Registerkarte **Environment Details.**
+    ![](../Images/lab1-imag2.png)
 
-3.	Kopieren Sie den **Benutzernamen** und fügen Sie ihn im Dialogfeld in das Textfeld für die E-Mail- Adresse ein.
+3.	Geben Sie im Dialogfeld Ihre E-Mail-Adresse ein. Öffnen Sie rechts in der Übungsumgebung die Registerkarte **Environment Details.**
 
-4.	Wählen Sie **Continue** aus.
+4.	Kopieren Sie den **Benutzernamen** und fügen Sie ihn im Dialogfeld in das Textfeld für die E-Mail- Adresse ein.
 
-5.	Das Dialogfeld für die Anmeldung wird geöffnet. Wählen Sie **Geschäfts- oder Schulkonto** aus.
+5.	Wählen Sie **Continue** aus.
 
-6.	Wählen Sie **Weiter** aus.
+6.	Das Dialogfeld für die Anmeldung wird geöffnet. Wählen Sie **Geschäfts- oder Schulkonto** aus.
 
-7.	Das Dialogfeld „Anmelden“ wird geöffnet. Geben Sie den **Benutzernamen** erneut ein, indem Sie ihn aus der Registerkarte **Umgebungsdetails** kopieren.
+7.	Wählen Sie **Weiter** aus.
 
-8.	Wählen Sie **Next** aus.
+8.	Das Dialogfeld „Anmelden“ wird geöffnet. Geben Sie den **Benutzernamen** erneut ein, indem Sie ihn aus der Registerkarte **Umgebungsdetails** kopieren.
 
-9.	Geben Sie im nächsten Dialogfeld das **Kennwort** und die **Anmeldeinformationen** ein, indem Sie beides aus der Registerkarte **Umgebungsdetails** kopieren.
+9.	Wählen Sie **Next** aus.
 
-10.	Wählen Sie **Anmelden** aus.
+10.	Geben Sie im nächsten Dialogfeld das **Kennwort** und die **Anmeldeinformationen** ein, indem Sie beides aus der Registerkarte **Umgebungsdetails** kopieren.
 
-11.	Das Dialogfeld „Action Required“ wird geöffnet. Darin werden Sie aufgefordert, die Multifaktor- Authentifizierung einzurichten. Weil dies eine Übungsumgebung ist, müssen wir das nicht tun. Wählen Sie **Ask Later** aus.
+11.	Wählen Sie **Anmelden** aus.
 
-12.	Wählen Sie im nächsten Dialogfeld die Option **Nein, nur in der App anmelden** aus. Nun wird Power BI Desktop geöffnet.
+12.	Das Dialogfeld „Action Required“ wird geöffnet. Darin werden Sie aufgefordert, die Multifaktor- Authentifizierung einzurichten. Weil dies eine Übungsumgebung ist, müssen wir das nicht tun. Wählen Sie **Ask Later** aus.
+
+13.	Wählen Sie im nächsten Dialogfeld die Option **Nein, nur in der App anmelden** aus. Nun wird Power BI Desktop geöffnet.
 
 ### Aufgabe 2: Power BI Desktop-Bericht analysieren
 Im nachstehenden Bericht werden die Verkäufe von Fabrikam analysiert. Die KPIs stehen oben links auf der Seite. Die restlichen Visuals zeigen die Verkaufszahlen im Laufe der Zeit, nach Gebiet, Produktgruppe und Wiederverkäuferfirma.
