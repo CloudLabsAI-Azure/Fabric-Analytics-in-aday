@@ -61,4 +61,59 @@ Die Verbindung wird hergestellt, und Sie können die Daten im Vorschaufenster an
 6.	Wie bereits erwähnt, stellen wir keine dieser Daten bereit. Klicken Sie im Bereich mit den
 Abfragen **mit der rechten Maustaste** auf die Abfrage **Supplier**, und wählen Sie **Staging aktivieren**
 aus, um das Häkchen zu entfernen.
+7.	Klicken Sie ebenfalls mit der rechten Maustaste auf die Abfrage **PO**. Entfernen Sie durch Auswahl von **Staging aktivieren** das Häkchen.
+**Hinweis:** Bei den anderen drei Abfragen muss das Staging nicht deaktiviert werden, weil die Option
+„Laden aktivieren“ in Power BI Desktop (aus dem diese Abfragen kopiert wurden) deaktiviert war.
+
+### Aufgabe 3: Datenziel für die Abfragen „Supplier“ und „PO“ konfigurieren
+1.	Wählen Sie die Abfrage **Supplier** aus.
+2.	Klicken Sie im Menüband auf **Start > Datenziel hinzufügen -> Lakehouse**.
+3.	Das Dialogfeld „Herstellen einer Verbindung mit dem Datenziel“ wird geöffnet. Wählen Sie im
+**Dropdown-Menü „Verbindung“** die Option **Lakehouse (keine)** aus.
+4.	Wählen Sie **Weiter** aus.
+5.	Das Dialogfeld „Ziel auswählen“ wird geöffnet. Stellen Sie sicher, dass das Optionsfeld **Neue Tabelle ausgewählt** ist, weil wir eine neue Tabelle erstellen.
+6.	Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen. Navigieren Sie im linken Bereich zu **Lakehouse -> FAIAD_<Benutzername>.**
+7.	Wählen Sie **lh_FAIAD** aus.
+8.	Behalten Sie den Tabellennamen **Supplier** bei.
+9.	Wählen Sie **Weiter** aus.
+10.	Das Dialogfeld „Zieleinstellungen auswählen“ wird geöffnet. Dieses Mal verwenden wir die automatischen Einstellungen, da hierdurch eine vollständige Aktualisierung der Daten erfolgt. Außerdem werden die Spalten nach Bedarf umbenannt. Wählen Sie **Einstellungen speichern** aus.
+11.	Sie werden zum **Power Query-Fenster** weitergeleitet. Beachten Sie unten rechts, dass das
+**Datenziel** auf **Lakehouse** festgelegt ist. Legen Sie ebenso das **Datenziel für die Abfrage „PO“** fest.
+Sobald das erledigt ist, sollte bei der Abfrage „PO“ das **Datenziel**, wie im Screenshot unten zu sehen, **Lakehouse** lauten.
+### Aufgabe 4: Snowflake-Dataflow umbenennen und veröffentlichen
+1.	Wählen Sie oben auf dem Bildschirm den **Pfeil neben Dataflow 2** aus.
+2.	Ändern Sie im Dialogfeld den Namen in **df_Supplier_Snowflake**.
+3.	Speichern Sie die Namensänderung durch Drücken der **Eingabetaste**.
+4.	Wählen Sie unten rechts **Veröffentlichen** aus.
+
+Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet. Es kann einige Momente dauern, bis der Dataflow veröffentlicht wird. Erstellen wir nun einen Dataflow zur Erfassung der Daten aus Dataverse.
+ 
+### Aufgabe 5: Dataverse-Abfragen in Dataflow kopieren
+1.	Wählen Sie im Menü oben die Option **Neu -> Dataflow Gen2** aus.
+
+Sie werden zur **Dataflow-Seite** weitergeleitet. Nachdem Sie Dataflow nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in Dataflow.
+
+2.	Öffnen Sie **FAIAD.pbix** im Ordner **C:\FAIAD\Reports** in Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
+3.	Wählen Sie im Menüband **Start > Daten transformieren** aus. Das Power Query-Fenster wird
+geöffnet. Wie Sie in der vorherigen Übung festgestellt haben, sind die Abfragen im linken Bereich nach Datenquelle organisiert.
+4.	Das Power Query-Fenster wird geöffnet. Wählen Sie links im Ordner „DataverseData“ mit
+**Strg+Auswahl** die folgenden Abfragen aus:<br>
+&nbsp; &nbsp; a.	BabyBoomer<br>
+&nbsp; &nbsp; b.	GenX<br>
+&nbsp; &nbsp; c.	GenY<br>
+&nbsp; &nbsp; d.	GenZ<br>
+&nbsp; &nbsp; e.	Customer
+5.	**Klicken Sie mit der rechten Maustaste**, und wählen Sie **Kopieren** aus.
+6.	Rufen Sie im Browser wieder die **Dataflow-Seite** auf.
+7.	Drücken Sie im Bereich **Dataflow** auf **Strg+V** (das Einfügen mittels Rechtsklick ist derzeit nicht möglich). Wenn Sie ein MAC-Gerät verwenden, drücken Sie zum Einfügen bitte Cmd+V.
+
+**Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den Schieberegler, um das **VM Native Clipboard zu aktivieren**. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben, können Sie diese Option deaktivieren.
+
+### Aufgabe 6: Verbindung zu Dataverse erstellen
+Beachten Sie, dass die fünf Abfragen eingefügt wurden und dass der Bereich „Abfragen“ jetzt links ist. Weil für Dataverse keine Verbindung erstellt wurde, wird eine Warnmeldung angezeigt, in der Sie aufgefordert werden, eine Verbindung zu konfigurieren.
+1.	Wählen Sie **Verbindung konfigurieren** aus.
+2.	Das Dialogfeld „Mit Datenquelle verbinden“ wird geöffnet. Überprüfen Sie, dass im Dropdown- Menü **Verbindung** die Option **Neue Verbindung erstellen ausgewählt** ist.
+3.	Die **Authentifizierungsart** muss **Organisationskonto** lauten.
+4.	Wählen Sie **Verbinden** aus.
+
 
