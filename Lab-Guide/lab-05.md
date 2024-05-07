@@ -152,7 +152,9 @@ Der Detailbildschirm wird geöffnet. Hier erhalten Sie Details zur Aktualisierun
 9.	Es ist eine Option zum Festlegen eines **Timeouts** verfügbar. Lassen wir den **Standardwert**
 unverändert, damit dem Dataflow genügend Zeit für die Aktualisierung zur Verfügung steht.
 
-**Hinweis:** Wenn die Daten nicht planmäßig verfügbar sind, legen wir die Aktivität so fest, dass sie
+**Hinweis**
+
+Wenn die Daten nicht planmäßig verfügbar sind, legen wir die Aktivität so fest, dass sie
 dreimal alle 10 Minuten erneut ausgeführt wird. Wenn der dritte Versuch fehlschlägt, wird ein Fehler gemeldet.
 10.	Legen Sie Wiederholen auf 3 fest.
 11.	Erweitern Sie den Abschnitt Erweitert.
