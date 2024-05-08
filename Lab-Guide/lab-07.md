@@ -1,8 +1,8 @@
 ![](../Images/image7.1.png)
 
 ## Inhalt
-Einführung
-Power BI
+- Einführung
+- Power BI
   - Aufgabe 1: Bericht automatisch erstellen
   - Aufgabe 2: Hintergrund für einen neuen Bericht konfigurieren 
   - Aufgabe 3: Dem Bericht eine Kopfzeile hinzufügen 
@@ -14,9 +14,10 @@ Power BI
   - Aufgabe 9: Liniendiagramm formatieren 
   - Aufgabe 10: Neue Daten hinzufügen, um den Direct Lake-Modus zu simulieren 
 
-Übungsumgebung bereinigen 
+- Übungsumgebung bereinigen 
 
-Referenzen 
+- Referenzen 
+
 ## Einführung
 Wir haben Daten aus verschiedenen Datenquellen in Lakehouse erfasst, eine Einführung in
 Lakehouse erhalten, einen Aktualisierungsplan für die Datenquellen festgelegt und ein Datenmodell
