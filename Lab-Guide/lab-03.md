@@ -1,6 +1,6 @@
  	 
  
-目录
+## 目录
 简介	3
 数据流 Gen2	3
 任务 1：创建数据流Gen2	3
@@ -18,7 +18,7 @@
 参考	30
 
  
-简介
+## 简介
 在我们的应用场景中，销售数据来自ERP 系统，存储在 ADLS Gen2 中。每天中午 12 点更新。我们需要将这些数据转换并引入到Lakehouse 中，并在我们的模型中使用这些数据。
 引入此数据的方法有多种。
 •	快捷方式：这不是转换数据的方法。
@@ -32,8 +32,8 @@
 •	如何将数据引入Lakehouse
 
 
-数据流Gen2
-任务 1：创建数据流 Gen2
+## 数据流Gen2
+### 任务 1：创建数据流 Gen2
 1.	让我们导航回到您在实验 2 任务 9 中创建的 Fabric 工作区。
 2.	如果您在上一个实验之后尚未离开，您将位于Lakehouse 屏幕中。如果您已离开，没有关系。选择屏幕左下角的 Fabric 体验选择器图标。
  
@@ -43,7 +43,7 @@
 
 您将导航到数据流页面。此屏幕看起来很熟悉，因为它与数据流Gen1 或Power Query 相似。您会注意到这里提供了连接到各种数据源的选项以及转换数据的功能。我们连接到 ADLS Gen2数据源并执行一些转换。
  
-任务 2：创建与ADLS Gen2 的连接
+### 任务 2：创建与ADLS Gen2 的连接
 1.	从功能区中选择主页 -> 获取数据 -> 更多…
 
 2.	您将导航到获取数据选择数据源对话框。您可以通过在搜索框中键入内容来搜索数据源。请注意，左侧面板上有使用空白表或空白查询的选项。您还会看到一个新的“上传文件”选项。我们将在稍后的实验中探索该选项。现在，我们点击屏幕右上角的查看更多->。
@@ -63,7 +63,7 @@ https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet-For
  
 8.	选择屏幕右下角的下一步。
 
-任务 3：创建基ADLS Gen2 文件夹查询
+### 任务 3：创建基ADLS Gen2 文件夹查询
 1.	建立连接后，您将导航到预览文件夹数据屏幕。ADLS Gen2 文件夹中有很多文件。我们需要其中一些文件的数据。选择创建以创建与文件夹的连接。
 
 2.	您已返回到 Power Query 对话框。这将连接到 ADLS Gen2 根文件夹。我们将在后续查询中引用该查询。我们为该查询重命名。在右侧面板中的查询设置 -> 属性-> 名称下，将名称更改为 ADLS Base Folder for Geo
@@ -81,7 +81,7 @@ https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet-For
 
 现在我们已经设置了基本查询。我们可以针对所有Geo 查询引用此查询。
  
-任务 4：创建Cities 查询
+### 任务 4：创建Cities 查询
 Sales 数据按 Geography、Product、Sales Person 和 Date 粒度提供。我们首先创建一个查询来获取 Geo 维度。Geo 数据位于以下子文件夹中的三个不同文件中：
 •	Cities: Application.Cities
 •	Countries: Application.Countries
@@ -106,7 +106,7 @@ Sales 数据按 Geography、Product、Sales Person 和 Date 粒度提供。我�
 
 在右侧面板中的已应用步骤下，请注意所有步骤均已登记。此行为与Power Query 中的行为类似。现在，我们按照相似的流程来创建 Country 查询。
  
-任务 5：创建 Countries 查询
+### 任务 5：创建 Countries 查询
 1.	在左侧面板上，右键单击 ADLS Base Folder for Geo。选择引用，创建引用 ADLS Base Folder for Geo 查询的新查询。
 
 2.	选择 Folder Path 列下拉箭头。
@@ -127,7 +127,7 @@ Sales 数据按 Geography、Product、Sales Person 和 Date 粒度提供。我�
 
 接下来我们需要引入州/省，但这些步骤都是一样的。Power BI Desktop 文件中已经有查询。我们来看看能否从那里复制查询。
  
-任务 6：使用复制创建States - 选项 1
+### 任务 6：使用复制创建States - 选项 1
 1.	如果您还未打开FAIAD.pbix，请打开它。它位于您的实验环境的C:\FAIAD\Reports 文件夹中。
 2.	从功能区中选择主页 -> 转换数据。Power Query 窗口随即打开。您在之前的实验中注意到，左侧面板中的查询是按数据源整理的。
 
@@ -152,7 +152,7 @@ Sales 数据按 Geography、Product、Sales Person 和 Date 粒度提供。我�
 11.	“删除查询”对话框随即打开。选择删除进行确认。
 注意：请确保查询有四个应用的步骤，并等待查询加载完成。这可能需要几分钟时间。
  
-任务 7：通过复制创建 Geo 查询- 选项 2
+### 任务 7：通过复制创建 Geo 查询- 选项 2
 现在我们需要合并这些查询以创建Geo 维度。让我们再次从Power BI Desktop 文件复制查询。这次我们从高级编辑器复制代码。
 1.	导航回到 Power BI Desktop 文件的 Power Query 窗口。
 2.	在左侧面板的查询下，选择 ADLSData 文件夹中的 Geo 查询。
@@ -178,7 +178,7 @@ Sales 数据按 Geography、Product、Sales Person 和 Date 粒度提供。我�
 注意：请等待查询加载完成。这可能需要几分钟时间。
 让我们逐步完成这些步骤，了解Geo 是如何创建的。在右侧面板的“已应用步骤”下，选择 Source。如果您查看编辑栏或点击“设置”，您会注意到此查询的源是 Cities 和States 之间的联接。当您完成这些步骤后，您会注意到第一次联接的结果又与 Countries 联接。因此，所有三个查询都用于创建Geo 维度。
 
-任务 8：为 Geo 查询配置数据目标
+### 任务 8：为 Geo 查询配置数据目标
 现在我们有了一个维度，我们将这些数据引入到Lakehouse 中。这是数据流Gen2 中提供的新功能。
 1.	如前所述，我们不会暂存任何此类数据。因此右键单击 Cities 查询并选择启用暂存以删除复选标记。
 
@@ -207,7 +207,7 @@ Sales 数据按 Geography、Product、Sales Person 和 Date 粒度提供。我�
 14.	可使用列映射将数据流列映射到现有列。在我们的案例中，它是一个新表。因此，我们可以使用默认值。选择保存设置。
 
 
-任务 9：发布数据流
+### 任务 9：发布数据流
 1.	您将会导航回到 Power Query 窗口。请注意，右下角的数据目标设置为湖屋。
 2.	让我们发布这些查询，以便我们可以检查湖屋。我们将稍后回来添加更多查询。在右下角，选择发布。
 
@@ -221,7 +221,7 @@ Sales 数据按 Geography、Product、Sales Person 和 Date 粒度提供。我�
 还有一个 SQL 终结点可用于查询该表。我们将在稍后的实验中探索该选项。现在我们知道了
 Lakehouse 中的地理数据，让我们引入 ADLS Gen2 中的其余数据。
  
-任务 10：重命名数据流
+### 任务 10：重命名数据流
 1.	在左侧菜单栏中，选择 FAIAD_<username> 以导航回到工作区。
 2.	我们正在使用 Dataflow 1。在继续下面的步骤之前，我们先将其重命名。点击 Dataflow 1
 旁边的省略号 (…)。选择属性。
@@ -234,7 +234,7 @@ Lakehouse 中的地理数据，让我们引入 ADLS Gen2 中的其余数据。
  
  
 
-任务 11：在数据流中生成剩余查询
+### 任务 11：在数据流中生成剩余查询
 1.	您将导航回到 FAIAD_<username> 工作区。选择数据流 df_Sales_ADLS 以导航回到数据流。
 
 为了方便，我们来看看能否从Power BI Desktop 复制查询。
@@ -270,7 +270,7 @@ e.	Date
 
 确保所有查询均已处理。完成后，我们将这些数据引入到 Lakehouse 中。
  
-任务 12：为剩余查询配置数据目标
+### 任务 12：为剩余查询配置数据目标
 1.	选择 Product 查询。
 2.	在功能区中，选择主页-> 添加数据目标-> 湖屋。
 
