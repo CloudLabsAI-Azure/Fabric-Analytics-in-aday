@@ -33,7 +33,7 @@ Inhalt dieser Übung:
 
 ## Lakehouse
 
-## Aufgabe 1: Daten mithilfe von SQL abfragen
+### Aufgabe 1: Daten mithilfe von SQL abfragen
 
 1. Navigieren wir nun zurück zum Fabric-Arbeitsbereich **FAIAD_< username >**, den Sie in Übung 2, Aufgabe 9, erstellt haben.
 
@@ -72,7 +72,7 @@ Spalten der Tabelle. Außerdem lassen sich SQL-Ansichten, Funktionen und gespeic
 
    ![](../Images/lab6-image3.png)
 
-## Aufgabe 2: T-SQL-Ergebnis veranschaulichen
+### Aufgabe 2: T-SQL-Ergebnis veranschaulichen
 
 1. Das Ergebnis der Abfrage kann auch bildlich veranschaulicht werden. **Markieren Sie die Abfrage** im Abfragebereich, und wählen Sie erst den Bereich **Ergebnisse** und dann **Diese Daten erkunden** aus.
 
@@ -111,7 +111,7 @@ Sie gelangen zum vollständigen Bericht. Sie haben Optionen zum Formatieren der 
 
     ![](../Images/lab6-image9.png)
 
-## Aufgabe 3: visuelle Abfrage erstellen
+### Aufgabe 3: visuelle Abfrage erstellen
 
 Sie werden zur Ansicht von **SQL-Analyse-Endpunkten** weitergeleitet. Wenn Sie SQL nicht kennen, können Sie eine ähnliche Abfrage mithilfe einer visuellen Abfrage durchführen.
 
@@ -191,7 +191,7 @@ Sie werden zur Ansicht von **SQL-Analyse-Endpunkten** weitergeleitet. Wenn Sie S
 
 Beachten Sie, dass alle Schritte im Sales-Block aufgezeichnet werden. (Siehe den ersten Screenshot unter Aufgabe 4.)
 
-## Aufgabe 4: Abfrageergebnisse visualisieren
+### Aufgabe 4: Abfrageergebnisse visualisieren
 
 1.	Nachdem die Abfrage nun fertig ist, sehen wir uns das Ergebnis an. Wählen Sie im Ergebnisbereich die Option **Visualisieren von Ergebnissen** aus.
 
@@ -206,7 +206,7 @@ Beachten Sie, dass alle Schritte im Sales-Block aufgezeichnet werden. (Siehe den
     ![](../Images/lab6-image20.png)
  
  
-## Aufgabe 5: Beziehungen erstellen
+### Aufgabe 5: Beziehungen erstellen
 
 Nun können wir das Modell erstellen, Beziehungen zwischen Tabellen festlegen und Measures vorgeben.
 
@@ -257,7 +257,7 @@ und bei **Spalte InvoiceDate** angegeben ist.
 
 Aus Zeitgründen können wir nicht alle Beziehungen erstellen. Sofern Zeit verbleibt, können Sie den fakultativen Abschnitt am Ende der Übung durcharbeiten. Darin werden die restlichen Beziehungen erstellt.
 
-## Aufgabe 6: Measures erstellen
+### Aufgabe 6: Measures erstellen
 
 Ergänzen wir ein paar Measures, die zur Erstellung des Sales-Dashboards benötigt werden.
 
@@ -304,7 +304,7 @@ Aus Zeitgründen können wir nicht alle Measures erstellen. Sofern Zeit verbleib
 
 Nachdem das Datenmodell jetzt erstellt wurde, erstellen wir nun einen Bericht. Dazu arbeiten wir die nächste Übung durch.
 
-## Aufgabe 7: Fakultativer Abschnitt – Beziehungen erstellen
+### Aufgabe 7: Fakultativer Abschnitt – Beziehungen erstellen
 
 Ergänzen wir die restlichen Beziehungen.
 
@@ -386,7 +386,7 @@ Nun sind alle Beziehungen erstellt.
 
 ![](../Images/lab6-image35.png)
 
-## Aufgabe 8: Fakultativer Abschnitt – Measures erstellen
+### Aufgabe 8: Fakultativer Abschnitt – Measures erstellen
 
 Ergänzen wir die restlichen Measures.
 
