@@ -1,5 +1,3 @@
-![](../Images/lab1-heading.png)
-
 
 ## Inhalt
 - Einführung	
