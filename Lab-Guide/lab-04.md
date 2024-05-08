@@ -209,6 +209,10 @@ e.	Customer
 6.	选择**保存**。
 
 您将导航回到 **FAIAD_<username>** **工作区**。我们现在已将所有数据引入到 Lakehouse。在下一个实验中，我们将安排数据流刷新。
+
+
+
+
  
 参考
 Fabric Analyst in a Day (FAIAD) 介绍了Microsoft Fabric 中提供的一些主要功能。在服务菜单中， “帮助 (?)”部分包含指向一些优质资源的链接。
