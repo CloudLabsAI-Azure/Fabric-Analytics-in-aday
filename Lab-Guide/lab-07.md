@@ -161,3 +161,18 @@ Speichern wir den Bericht, bevor wir ihn verlassen, um Änderungen am Modell vor
 3. Wählen Sie die Spalte **Year** aus.
 4. Erweitern Sie im Bereich **Eigenschaften** rechts den Abschnitt **Erweitert**.
 5. Wählen Sie aus der Dropdownliste **Zusammenfassen nach** den Eintrag **Keine** aus.
+6. Kehren Sie zum Bericht zurück, indem Sie in der linken Menüleiste **rpt_Sales_Report** auswählen.
+7. Wählen Sie im oberen Menü **Bearbeiten** aus.
+8. Wählen Sie im oberen Menü **Aktualisieren** aus. Beachten Sie, dass „Year“ im Datenbereich kein
+Summierungsfeld ist.
+9. Wenn das **Visual „Liniendiagramm“ ausgewählt ist, entfernen Sie „Sum of Year“** von der Y-Achse.
+10. Wählen Sie das Feld **Year** aus, sodass es der **X-Achse** hinzugefügt wird.
+11. Erweitern Sie die Tabelle **Sales**, und wählen Sie die **Kennzahl „Sales“** aus.
+### Aufgabe 8: Die Spalte „Short_Month_Name“ in der Tabelle „Date“ konfigurieren
+1. Fügen wir diesem Diagramm „Monat“ hinzu. Ziehen Sie das Feld **Short_Month_Name** unter **Year**
+aus der Tabelle „Date“ in die **X-Achse**. Beachten Sie dass das Visual nach „Sales“ sortiert ist. Nun
+sortieren wir es nach Short_Month_Name.
+2. Wählen Sie die **Auslassungspunkte (…)** oben rechts im Visual aus.
+3. Wählen Sie **Sortierachse -> Year Short_Month_Name** aus.
+4. Wählen Sie die **Auslassungspunkte (…)** oben rechts im Visual aus.
+5. Wählen Sie **Sortierachse -> Aufsteigend sortieren** aus.
