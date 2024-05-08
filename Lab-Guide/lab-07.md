@@ -122,3 +122,42 @@ im Abschnitt „Visualisierungen“ aus.
 8. Wählen Sie das **Dropdownmenü „Farbe“** aus. Das Dialogfeld „Farbpalette“ wird geöffnet.
 9. Legen Sie den HEX-Wert auf **#004753** fest.
 10. Erweitern Sie den Abschnitt **Karten**.
+11. Verwenden Sie den Schieberegler **Akzentleiste**, um ihn **auf** Aus festzulegen.
+12. Wählen Sie im Visualisierungsbereich **Allgemein** aus.
+13. Erweitern Sie den **Abschnitt „Effekte“**.
+14. Verwenden Sie den Schieberegler **Hintergrund**, um ihn auf **Aus** festzulegen.
+15. Ändern Sie die Größe des **Visuals**, und verschieben Sie es in das **linke Feld, wie im Screenshot
+dargestellt.**
+16. Fügen wir nun einen weiteren KPI hinzu. Wählen Sie die soeben erstellte **mehrzeilige Sales-Karte**
+aus. **Kopieren Sie** das Visual, indem Sie **STRG+C** auf Ihrer Tastatur auswählen.
+17. **Fügen Sie** das Visual ein, indem Sie **STRG+V** auf Ihrer Tastatur auswählen. Beachten Sie, dass das
+Visual in das Canvas eingefügt wird.
+18. Wenn das **neue Visual hervorgehoben ist**, entfernen Sie im Abschnitt **Visualisierungsbereich ->
+Visual erstellen -> Felder** die Kennzahl **Sales**.
+19. Erweitern Sie im Abschnitt **Daten** die Tabelle **Sales**, und wählen Sie die Kennzahl **Units** aus.
+20. Ändern Sie die Größe des **Visuals** und **platzieren Sie es im Feld unter dem Sales-Visual**.
+### Aufgabe 5: Dem Bericht ein Liniendiagramm hinzufügen
+Lassen Sie uns ein Liniendiagramm erstellen, um Sales im Zeitverlauf nach Reseller Company zu
+visualisieren.
+1. Wählen Sie den **Leerraum** im Canvas aus, um den Fokus vom mehrzeiligen Kartenvisual zu
+entfernen.
+2. Wählen Sie im **Abschnitt Visualisierungen** die Option **Liniendiagramm** aus.
+3. Erweitern Sie im **Abschnitt „Daten“** die Tabelle **Date**.
+4. Wählen Sie das Feld **Year** aus. Beachten Sie, dass „Year“ standardmäßig summiert und der Y-
+Achse hinzugefügt wird. Lassen Sie uns dies korrigieren.
+### Aufgabe 6: Den Bericht speichern
+Speichern wir den Bericht, bevor wir ihn verlassen, um Änderungen am Modell vorzunehmen.
+1. Wählen Sie im Menü **Datei -> Speichern** aus.
+2. Das Dialogfeld „Bericht speichern“ wird geöffnet. Geben Sie dem Bericht den Namen
+**rpt_Sales_Report**.
+
+**Hinweis:** Wir stellen dem Berichtsnamen das Präfix „rpt“ voran, was für „Bericht“ steht.
+
+3. Stellen Sie sicher, dass der Bericht im Arbeitsbereich **FAIAD_<Benutzername>** gespeichert wird.
+4. Wählen Sie **Speichern** aus.
+### Aufgabe 7: Spalte „Year“ in der Tabelle „Date“ konfigurieren
+1. Wählen Sie in der **linken Menüleiste lh_FAIAD** aus, um zum Lakehouse zu navigieren.
+2. Erweitern Sie im linken Explorer-Bereich **lhFAIAD -> Schemas -> dbo -> Tables -> Date.**
+3. Wählen Sie die Spalte **Year** aus.
+4. Erweitern Sie im Bereich **Eigenschaften** rechts den Abschnitt **Erweitert**.
+5. Wählen Sie aus der Dropdownliste **Zusammenfassen nach** den Eintrag **Keine** aus.
