@@ -404,11 +404,11 @@ Ergänzen wir die restlichen Measures.
 
 6.	Fügen Sie auf gleiche Weise die folgenden Measures hinzu:
 
-     a.**GM = SUM(Sales[Line_Profit])** formatiert als **Dezimalzahl**.
+    a. **GM = SUM(Sales[Line_Profit])** formatiert als **Dezimalzahl**.
 
-    b.**GM% = DIVIDE([GM], [Sales])** formatiert als **Prozent**.
+    b. **GM% = DIVIDE([GM], [Sales])** formatiert als **Prozent**.
 
-    c.**No of Customers = COUNTROWS(Customer)** formatiert als **Ganze Zahl**
+    c. **No of Customers = COUNTROWS(Customer)** formatiert als **Ganze Zahl**
 
 ## Referenzen
 
@@ -465,13 +465,4 @@ DIE MICROSOFT CORPORATION LEHNT HIERMIT JEGLICHE GEWÄHRLEISTUNGEN UND GARANTIEN
 
 **HAFTUNGSAUSSCHLUSS**
 
-Diese Demo/Übung enthält nur einen Teil der neuen Features und Verbesserungen in Microsoft Power BI. Einige Features können sich unter Umständen in zukünftigen Versionen des Produkts ändern. In dieser Demo/Übung erhalten Sie Informationen über einige, aber nicht über alle neuen Features.    
-
-
-
-
-
-
-
-
-
+Diese Demo/Übung enthält nur einen Teil der neuen Features und Verbesserungen in Microsoft Power BI. Einige Features können sich unter Umständen in zukünftigen Versionen des Produkts ändern. In dieser Demo/Übung erhalten Sie Informationen über einige, aber nicht über alle neuen Features.
