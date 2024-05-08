@@ -1,3 +1,5 @@
+![](../Images/lab2-heading.png)
+
 ## Inhalt
 - Einführung	
 
@@ -47,9 +49,13 @@ Inhalt dieser Übung:
 
 2. Geben Sie den **Benutzernamen**, den Sie auf der Registerkarte **Umgebungsvariablen** (neben der der Übungsanleitung) finden, sowie die **E-Mail** ein und klicken Sie auf **Submit**.
 
+    ![](../Images/lab2-image1.jpg)
+
 3. Die Seite **Kennwort** wird angezeigt. Geben Sie das **Kennwort** ein, das Sie auf der Registerkarte **Umgebungsvariablen** (neben der Übungsanleitung) finden und Ihnen von Ihrem Kursleiter mitgeteilt wurde.
 
 4.	Klicken Sie auf **Sign in**, und folgen Sie den Anweisungen, um sich bei Fabric anzumelden.
+
+    ![](../Images/lab2-image2.png)
 
 5.	Sie werden zur bereits bekannten **Startseite des Power BI-Dienstes** geleitet.
 
@@ -61,9 +67,14 @@ Derzeit sind Sie in **Mein Arbeitsbereich**. Wenn Sie mit Fabric-Elementen arbei
 
 8.	Wählen Sie **Start trial** aus.
 
+    ![](../Images/lab2-image3.jpg)
+
 9.	Das Dialogfeld „Upgrade auf eine kostenlose Testversion auf Microsoft Fabric“ wird geöffnet. Wählen Sie **Test starten** aus.
 
+![](../Images/lab2-image4.jpg)
+
 10.	Wählen Sie das **„X”** in der oberen rechten Ecke des Dialogfelds **Nur noch ein letzter Schritt** aus, um das Dialogfeld zu schließen. Da es sich um eine Übungsumgebung handelt, werden wir diese Angaben nicht machen.
+![](../Images/lab2-image5.jpg)
 
 11.	Das Dialogfeld „Erfolgreiches Upgrade auf Microsoft Fabric“ wird geöffnet. Wählen Sie **Fabric Home Page** aus.
 
