@@ -1,3 +1,5 @@
+![](../Images/image6.1.png)
+
 ## Inhalt
 
 - Einführung
@@ -52,14 +54,16 @@ Spalten der Tabelle. Außerdem lassen sich SQL-Ansichten, Funktionen und gespeic
     ![](../Images/lab6-image2.png)
 
 4. Fügen Sie die unten **stehende SQL-Abfrage** in das **Abfragefenster** ein. Mit dieser Abfrage werden die Units by Supplierenname ermittelt. Dazu wird die Tabelle „Sales“ mit den Tabellen „Product“ und „Supplier" verknüpft.
-```
-    SELECT su.Supplier_Name, SUM(Quantity) as Units FROM 
-    dbo.Sales s
-    JOIN dbo.Product p on p.StockItemID = s.StockItemID 
-    JOIN 
-    dbo.Supplier su on su.SupplierID = p.SupplierID GROUP 
-    BY su.Supplier_Name
-```
+
+    ```
+        SELECT su.Supplier_Name, SUM(Quantity) as Units FROM 
+        dbo.Sales s
+        JOIN dbo.Product p on p.StockItemID = s.StockItemID 
+        JOIN 
+        dbo.Supplier su on su.SupplierID = p.SupplierID GROUP 
+        BY su.Supplier_Name
+    ```
+
 5. Zeigen Sie die Ergebnisse mit **Ausführen** an.
 
 6. Beachten Sie, dass die Abfrage mit der Option **Als Ansicht speichern** gespeichert werden kann.

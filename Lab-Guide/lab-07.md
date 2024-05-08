@@ -1,3 +1,5 @@
+![](../Images/image7.1.png)
+
 ## Inhalt
 Einführung
 Power BI
