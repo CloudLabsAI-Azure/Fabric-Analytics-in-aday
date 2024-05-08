@@ -145,7 +145,7 @@ Sie gelangen zu der Seite mit den Produktinformationen. Dort sind auch einige zu
 
 1. Beschäftigen wir uns in Power Query mit den Datenquellen. Klicken Sie im Menüband auf **Start > Daten transformieren**.
 
-![](../Images/lab1-image13.jpg)
+    ![](../Images/lab1-image13.jpg)
 
 2. Das Power Query-Fenster wird geöffnet. Wählen Sie im Menüband die Option **Start -> Datenquelleneinstellungen** aus. Das Dialogfeld mit den Datenquelleneinstellungen wird geöffnet. Wenn Sie durch die Liste blättern, werden Sie sehen, dass es vier Datenquellen gibt, die in der Problemstellung genannt sind:
 
@@ -156,13 +156,13 @@ Sie gelangen zu der Seite mit den Produktinformationen. Dort sind auch einige zu
 
 3. Schließen Sie das Dialogfeld mit den Einstellungen für die Datenquellen mit **Schließen**.
 
-![](../Images/lab1-image14.png)
+    ![](../Images/lab1-image14.png)
 
 4. Beachten Sie, dass die Abfragen auf der linken Seite nach Datenquelle angeordnet sind.
 
 5. Hinweis: Der Ordner **DataverseData** enthält Kundendaten zu vier verschiedenen Abfragen: BabyBoomer, GenX, GenY und GenZ. Diese vier Abfragen werden angefügt, um eine Customer- Abfrage zu erstellen.
 
-![](../Images/lab1-image15.png)
+    ![](../Images/lab1-image15.png)
 
 6. Sie können die Anmeldeinformationen für die Dataverse Datenquelle eingeben, indem Sie den auf der Registerkarte **Environment Variables** (neben der Übungsanleitung) angezeigten **Username** und das **Password** eingeben. Wählen Sie die Option „Microsoft-Konto“ aus.
 
@@ -192,7 +192,7 @@ Sie gelangen zu der Seite mit den Produktinformationen. Dort sind auch einige zu
 
 12.	Beachten Sie, dass der Ordner **SharepointData** die Dimension „People“ enthält.
 
-![](../Images/lab1-image16.png)
+    ![](../Images/lab1-image16.png)
 
 
 Nun wissen wir, worum es geht. In den folgenden Übungen erstellen wir eine ähnliche Power Query unter Nutzung der Dataflow Gen2-Datenbank und eines Modells mit Lakehouse.
