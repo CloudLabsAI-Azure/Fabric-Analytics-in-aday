@@ -70,8 +70,6 @@ Bevor wir mit Fabric beginnen, sehen wir uns den aktuellen Bericht in Power BI D
 
 5. Wählen Sie **Continue** aus.
 
-
-
 6. Das Dialogfeld für die Anmeldung wird geöffnet. Wählen Sie **Geschäfts- oder Schulkonto** aus.
 
     ![](../Images/lab1-imag4.png)
@@ -89,8 +87,6 @@ Bevor wir mit Fabric beginnen, sehen wir uns den aktuellen Bericht in Power BI D
 11.	Wählen Sie **Anmelden** aus.
 
     ![](../Images/lab1-image6.gif)
-
-
 
 12.	Das Dialogfeld „Action Required“ wird geöffnet. Darin werden Sie aufgefordert, die Multifaktor- Authentifizierung einzurichten. Weil dies eine Übungsumgebung ist, müssen wir das nicht tun. Wählen Sie **Ask Later** aus.
 
