@@ -1,3 +1,6 @@
+![](../Images/lab1-heading.png)
+
+
 ## Inhalt
 - Einführung	
 - Dataflow Gen2	
@@ -47,8 +50,6 @@ Beginnen wir damit, eine geplante Aktualisierung des Verkaufs-Dataflows zu konfi
 1. Navigieren wir nun zurück zum Fabric-Arbeitsbereich **FAIAD_<username>**, den Sie in Übung 2, Aufgabe 9, erstellt haben.
 
 2. Alle von Ihnen erstellten Artefakte werden hier aufgelistet. Geben Sie rechts im Bildschirm **df** in das **Suchfeld** ein. Dadurch werden die Artefakte nach Dataflows gefiltert.
-
-   ![](../Images/lb5-img1.png)
 
 3. Zeigen Sie mit der Maus auf die Zeile **df_Sales_ADLS**. Beachten Sie, dass die vertrauten Symbole
 **Aktualisieren** und **Aktualisierung planen** verfügbar sind. Klicken Sie auf die **Auslassungspunkte (...).**

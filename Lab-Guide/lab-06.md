@@ -21,12 +21,13 @@
 
 - Referenzen	
 
-Einführung
+## Einführung
 Wir haben Daten aus verschiedenen Datenquellen im Lakehouse erfasst. In dieser Übung arbeiten Sie mit dem Datenmodell. Üblicherweise werden Modellierungsarbeiten wie das Erstellen von Beziehungen, das Hinzufügen von Measures usw. in Power BI Desktop durchgeführt. Nun erfahren Sie, wie Sie diese Vorgänge im Dienst durchführen können.
+
 Inhalt dieser Übung:
-•	Lakehouse
-•	SQL-Ansicht in Lakehouse
-•	Datenmodellierung in Lakehouse
+- Lakehouse
+- SQL-Ansicht in Lakehouse
+- Datenmodellierung in Lakehouse
 
 ## Lakehouse
 
@@ -35,6 +36,8 @@ Inhalt dieser Übung:
 1. Navigieren wir nun zurück zum Fabric-Arbeitsbereich **FAIAD_< username >**, den Sie in Übung 2, Aufgabe 9, erstellt haben.
 
 2. Sie sehen drei Arten von lh_FAIAD – Lakehouse, Semantikmodell und SQL-Endpunkt. Lakehouse ist Ihnen schon aus einer früheren Übung bekannt. Um sich mit der SQL-Option zu beschäftigen, wählen Sie **lh_FAIAD SQL-Analyse-Endpunkt** aus. Sie werden zur SQL-Ansicht des Explorers weitergeleitet.
+
+    ![](../Images/lab6-image1.png)
 
 Wenn Sie sich die Daten vor der Erstellung eines Datenmodells genauer ansehen möchten, können Sie dies mit SQL tun. Betrachten wir jetzt zwei Möglichkeiten zur Nutzung von SQL, von denen die erste besonders für Entwickler geeignet ist, die zweite für Analysten.
 
@@ -45,6 +48,8 @@ Spalten der Tabelle. Außerdem lassen sich SQL-Ansichten, Funktionen und gespeic
 
 3. Wählen Sie im **Menü oben** die Option **Neue SQL-Abfrage** aus, oder klicken Sie **links unten** auf
 **Abfrage**. Die Ansicht „SQL-Abfrage“ wird geöffnet.
+
+    ![](../Images/lab6-image2.png)
 
 4. Fügen Sie die unten **stehende SQL-Abfrage** in das **Abfragefenster** ein. Mit dieser Abfrage werden die Units by Supplierenname ermittelt. Dazu wird die Tabelle „Sales“ mit den Tabellen „Product“ und „Supplier" verknüpft.
 ```
@@ -61,9 +66,13 @@ Spalten der Tabelle. Außerdem lassen sich SQL-Ansichten, Funktionen und gespeic
 
 7. Die Abfrage wird dann **links** im Bereich **Explorer** unter dem Abschnitt **Abfragen** unter **Meine Abfragen** als **SQL-Abfrage 1** gespeichert. So kann die Abfrage umbenannt und zur späteren Verwendung gespeichert werden. Es ist auch möglich, Abfragen anzuzeigen, die an Sie freigegeben wurden. Öffnen Sie dazu den Ordner **Freigegebene Abfragen**.
 
+   ![](../Images/lab6-image3.png)
+
 ## Aufgabe 2: T-SQL-Ergebnis veranschaulichen
 
 1. Das Ergebnis der Abfrage kann auch bildlich veranschaulicht werden. **Markieren Sie die Abfrage** im Abfragebereich, und wählen Sie erst den Bereich **Ergebnisse** und dann **Diese Daten erkunden** aus.
+
+    ![](../Images/lab6-image4.png)
 
 2. Das Dialogfeld **SQL-Abfrage erkunden** wird geöffnet. Erweitern Sie im Bereich **Daten** den Eintrag
 **SQL-Abfrage 1**.
@@ -71,10 +80,16 @@ Spalten der Tabelle. Außerdem lassen sich SQL-Ansichten, Funktionen und gespeic
 3. Wählen Sie die Felder **Supplier_Name** und **Units** aus. Es wird ein gruppiertes Balkendiagramm erstellt wird.
 
 4. Ändern Sie unter Visualisierung die Art der Abbildung durch Auswahl des **gestapelten Säulendiagramms**.
+
+    ![](../Images/lab6-image5.png)
  
 5. **Erweitern Sie die Matrix**, um die Daten als Matrix anzuzeigen.
 
+    ![](../Images/lab6-image6.png)
+
 6. Wählen Sie **Speichern - > Als Bericht speichern** oben rechts auf dem Bildschirm aus.
+
+    ![](../Images/lab6-image7.png)
  
  
 7. Das Dialogfeld „Bericht speichern“ wird geöffnet. Geben Sie im Textfeld **Bericht benennen** den Text **Units by Supplier** ein.
@@ -84,9 +99,13 @@ entspricht.
 
 9. Klicken Sie auf **Speichern**.
 
+    ![](../Images/lab6-image8.png)
+
 Sie gelangen zum vollständigen Bericht. Sie haben Optionen zum Formatieren der visuellen Elemente. Wir schauen uns diese Optionen in der nächsten Übung näher an.
  
 10.	Klicken Sie links auf **lh_FAIAD**.
+
+    ![](../Images/lab6-image9.png)
 
 ## Aufgabe 3: visuelle Abfrage erstellen
 
@@ -97,9 +116,13 @@ Sie werden zur Ansicht von **SQL-Analyse-Endpunkten** weitergeleitet. Wenn Sie S
 2.	Erweitern Sie im **Explorer-Bereich Schemas -> dbo -> Tables**.
 
 3.	Ziehen Sie die Tabellen **Sales, Product und Supplier** in den Bereich für visuelle Abfragen.
+
+    ![](../Images/lab6-image10.png)
  
 4.	Wählen Sie bei Auswahl der Tabelle **Sales** im Menü des Bereichs für visuelle Abfragen die Option
 **Kombinieren -> Abfragen zusammenführen** aus.
+
+    ![](../Images/lab6-image11.png)
 
 5.	Das Dialogfeld zum Zusammenführen wird geöffnet.Wählen Sie in der **Dropdown-Liste Rechte Tabelle zum Zusammenführen** den Eintrag **Produkt** aus.
 
@@ -109,16 +132,22 @@ Sie werden zur Ansicht von **SQL-Analyse-Endpunkten** weitergeleitet. Wenn Sie S
 
 8.	Klicken Sie auf **OK**.
 
+    ![](../Images/lab6-image12.png)
+
 9.	Klicken Sie unter **Ergebnisse** auf den 
 **Doppelpfeil** neben der Spalte **Product**.
 
 10.	Ein Dialogfeld wird geöffnet. Wählen Sie darin **SupplierID** aus.
 
 11.	Klicken Sie auf **OK**. Beachten Sie, dass die Schritte **Zusammengeführte Abfragen** und **Erweitert Product** in der Tabelle **Sales** erstellt werden.
+
+    ![](../Images/lab6-image13.png)
  
 12.	Führen wir ebenso die Tabelle „Supplier“ zusammen. Erstellen Sie einen neuen Schritt, indem Sie in der Tabelle **Sales** auf das + (nach „Erweitert Product“) klicken. Ein Dialogfeld wird geöffnet.
 
 13.	Wählen Sie darin **Kombinieren -> Abfragen zusammenführen** aus.
+
+    ![](../Images/lab6-image14.png)
 
 14.	Das Dialogfeld zum Zusammenführen wird geöffnet. Wählen Sie in der **Dropdown-Liste Rechte Tabelle zum Zusammenführen** den Eintrag **Supplier** aus.
 
@@ -127,6 +156,8 @@ Sie werden zur Ansicht von **SQL-Analyse-Endpunkten** weitergeleitet. Wenn Sie S
 16.	Wählen Sie als **Art des Joins** die Option **Linker äußerer** aus.
 
 17.	Klicken Sie auf **OK**.
+
+    ![](../Images/lab6-image15.png)
  
 18.	Klicken Sie unter **Ergebnisse** auf den **Doppelpfeil** neben der Spalte **Supplier**.
 
@@ -134,9 +165,13 @@ Sie werden zur Ansicht von **SQL-Analyse-Endpunkten** weitergeleitet. Wenn Sie S
 
 20.	Klicken Sie auf **OK**. Beachten Sie, dass in der Sales-Tabelle **Zusammengeführte Abfragen** hinzugefügt wurde und die **Schritte aufgezeichnet werden**.
 
+    ![](../Images/lab6-image16.png)
+
 21.	Gruppieren wir nun nach Lieferantennamen, um die Menge nach Lieferant zu erhalten. Erstellen Sie einen neuen Schritt, indem Sie in der Tabelle **Sales** auf das + (nach „Erweiterter Lieferant“) klicken. Ein Dialogfeld wird geöffnet.
 
 22.	Wählen Sie **Tabelle umwandeln -> Gruppieren nach** aus. Das Dialogfeld „Gruppieren nach“ wird geöffnet.
+
+    ![](../Images/lab6-image17.png)
 
 23.	Wählen Sie aus der Dropdown-Liste **Gruppieren nach** die Option **Lieferantenname** aus.
 
@@ -148,17 +183,23 @@ Sie werden zur Ansicht von **SQL-Analyse-Endpunkten** weitergeleitet. Wenn Sie S
  
 27.	Klicken Sie auf OK.
 
+    ![](../Images/lab6-image18.png)
+
 Beachten Sie, dass alle Schritte im Sales-Block aufgezeichnet werden. (Siehe den ersten Screenshot unter Aufgabe 4.)
 
 ## Aufgabe 4: Abfrageergebnisse visualisieren
 
 1.	Nachdem die Abfrage nun fertig ist, sehen wir uns das Ergebnis an. Wählen Sie im Ergebnisbereich die Option **Visualisieren von Ergebnissen** aus.
 
+    ![](../Images/lab6-image19.png)
+
 2.	Das Dialogfeld „Visualisieren von Ergebnissen“ wird geöffnet. Erweitern Sie im Bereich **Daten** auf der rechten Seite die **visuelle Abfrage1**.
 
 3.	Wählen Sie die Felder **Supplier_Name** und **Units** aus.
 
 4.	Beachten Sie, dass das Ergebnis dem SQL-Abfrageergebnis von vorhin ähnelt. An dieser Stelle können Sie den Bericht speichern. Weil wir zuvor einen ähnlichen Bericht gespeichert haben, klicken wir aber auf **Abbrechen**.
+
+    ![](../Images/lab6-image20.png)
  
  
 ## Aufgabe 5: Beziehungen erstellen
@@ -171,6 +212,8 @@ Nun können wir das Modell erstellen, Beziehungen zwischen Tabellen festlegen un
 
 3.	Erstellen wir jetzt eine Beziehung zwischen den Tabellen „Sales“ und „Reseller“. Wählen Sie in der Tabelle **Sales** den Eintrag **ResellerID** aus, und ziehen Sie ihn in der Tabelle **Reseller** auf den Eintrag **ResellerID**.
 
+    ![](../Images/lab6-image21.png)
+
 4.	Das Dialogfeld „Neue Beziehung“ wird geöffnet. Vergewissern Sie sich, dass unter **Table 1 Sales** und bei **Spalte ResellerID** angegeben ist.
 
 5.	Vergewissern Sie sich, dass unter **Table 2 Reseller** und bei **Spalte ResellerID** angegeben ist.
@@ -180,6 +223,8 @@ Nun können wir das Modell erstellen, Beziehungen zwischen Tabellen festlegen un
 7.	Bei **Kreuzfilterrichtung** muss **Einfach** ausgewählt sein.
  
 8.	Klicken Sie auf **OK**.
+
+    ![](../Images/lab6-image22.png)
 
 9.	Erstellen wir auf diese Weise auch eine Beziehung zwischen den Tabellen „Sales“ und „Date“. Wählen Sie in der Tabelle **Sales** den Eintrag **InvoiceDate** aus, und ziehen Sie ihn in der Tabelle **Date** auf den Eintrag **Date**.
 
@@ -194,11 +239,17 @@ und bei **Spalte InvoiceDate** angegeben ist.
 
 14.	Klicken Sie auf **OK**.
 
+    ![](../Images/lab6-image23.png)
+
 15.	Erstellen Sie eine analog eine **n:1-Beziehung** zwischen den Tabellen **Sales** und **Product**. Wählen Sie in der Tabelle **Sales** den Eintrag **StockItemID** und in der Tabelle **Product** den Eintrag **StockItemID** aus.
  
 16.	Wählen Sie im oberen Menü **Berichterstellung -> Semantikmodell automatisch aktualisieren** aus, um das Modell zu speichern und zu aktualisieren.
 
+    ![](../Images/lab6-image24.png)
+
 **Überprüfen Sie**: Das Modell muss die drei Beziehungen zwischen den Tabellen „Sales“ und „Reseller“, „Sales“ und „Date“ sowie „Sales” und „Product” aufweisen, wie im folgenden Screenshot gezeigt:
+
+  ![](../Images/lab6-image25.png)
 
 Aus Zeitgründen können wir nicht alle Beziehungen erstellen. Sofern Zeit verbleibt, können Sie den fakultativen Abschnitt am Ende der Übung durcharbeiten. Darin werden die restlichen Beziehungen erstellt.
 
@@ -218,6 +269,8 @@ Ergänzen wir ein paar Measures, die zur Erstellung des Sales-Dashboards benöti
  
 6.	Wählen Sie in der Dropdown-Liste **Format** den Eintrag **Ganze Zahl** aus.
 
+    ![](../Images/lab6-image26.png)
+
 7.	Wählen Sie bei Auswahl der Tabelle **Sales** im Menü oben die Option **Start -> Neues Measure** aus. Die Bearbeitungsleiste wird angezeigt.
 
 8.	Geben Sie dort **Units = SUM(Sales[Quantity])** ein.
@@ -227,6 +280,8 @@ Ergänzen wir ein paar Measures, die zur Erstellung des Sales-Dashboards benöti
 10.	Erweitern Sie im Eigenschaftsfenster rechts den Abschnitt **Formatierung** (es kann einen Moment dauern, bis das Eigenschaftsfenster geladen wird).
 
 11.	Wählen Sie in der Dropdown-Liste **Format** den Eintrag **Ganze Zahl** aus.
+
+    ![](../Images/lab6-image27.png)
 
 12.	Wählen Sie bei Auswahl der Tabelle **Sales** im Menü oben die Option **Start -> Neues Measure** aus. Die Bearbeitungsleiste wird angezeigt.
 
@@ -238,6 +293,8 @@ Ergänzen wir ein paar Measures, die zur Erstellung des Sales-Dashboards benöti
 15.	Erweitern Sie im Eigenschaftsfenster rechts den Abschnitt **Formatierung**.
  
 16.	Wählen Sie in der Dropdown-Liste **Format** den Eintrag **Ganze Zahl** aus.
+
+    ![](../Images/lab6-image28.png)
 
 Aus Zeitgründen können wir nicht alle Measures erstellen. Sofern Zeit verbleibt, können Sie den fakultativen Abschnitt am Ende der Übung durcharbeiten. Darin werden die restlichen Measures erstellt.
 
@@ -251,6 +308,8 @@ Ergänzen wir die restlichen Beziehungen.
 
 **Überprüfen Sie**: Das Modell sollte so wie im Screenshot unten aussehen.
 
+![](../Images/lab6-image29.png)
+
 2.	Erstellen wir jetzt eine Beziehung zwischen den Tabellen „Product“ und „Supplier“. Wählen Sie in der Tabelle **Product** den Eintrag **SupplierID** aus, und ziehen Sie ihn in der Tabelle **Supplier** auf den Eintrag **SupplierID**.
 
 3.	Das Dialogfeld „Neue Beziehung“ wird geöffnet. Vergewissern Sie sich, dass unter **Table 1 Product** und bei **Spalte SupplierID** angegeben ist.
@@ -262,6 +321,8 @@ Ergänzen wir die restlichen Beziehungen.
 6.	Bei **Kreuzfilterrichtung** muss **Beides** ausgewählt sein.
 
 7.	Klicken Sie auf **OK**.
+
+    ![](../Images/lab6-image30.png)
 
 8.	Erstellen Sie auf ähnliche Weise eine **n:1-Beziehung** zwischen **Product_Details** und **Product**, wobei die **Kreuzfilterrichtung** auf **Beides** festgelegt wird. Wählen Sie unter **Product_Details** den Eintrag **StockItemID** und unter **Product** den Eintrag **StockItemID** aus.
 
@@ -277,6 +338,8 @@ Ergänzen wir die restlichen Beziehungen.
 
 14.	Klicken Sie auf **OK**.
 
+    ![](../Images/lab6-image31.png)
+
 15.	Erstellen wir jetzt eine Beziehung zwischen den Tabellen „Customer“ und „Reseller“. Wählen Sie in der Tabelle **Customer** den Eintrag **ResellerID** aus, und ziehen Sie ihn in der Tabelle **Reseller** auf den Eintrag **ResellerID**.
 
 16.	Das Dialogfeld „Neue Beziehung“ wird geöffnet. Vergewissern Sie sich, dass unter **Table 1 Customer** und bei **Spalte ResellerID** angegeben ist.
@@ -289,7 +352,11 @@ Ergänzen wir die restlichen Beziehungen.
 
 20.	Klicken Sie auf **OK**.
 
+    ![](../Images/lab6-image32.png)
+
 **Überprüfen Sie**: Das Modell sollte so wie im Screenshot unten aussehen.
+
+![](../Images/lab6-image33.png)
 
 21.	Erstellen wir jetzt eine Beziehung zwischen den Tabellen „PO“ und „Date“. Wählen Sie in der Tabelle **PO** den Eintrag **Order_Date** aus, und ziehen Sie ihn in der Tabelle **Date** auf den Eintrag **Date**.
 
@@ -303,6 +370,8 @@ Ergänzen wir die restlichen Beziehungen.
 
 26.	Klicken Sie auf **OK**.
 
+    ![](../Images/lab6-image34.png)
+
 27.	Erstellen Sie ebenso eine **n:1-Beziehung** zwischen den Tabellen **PO** und **Product**. Wählen Sie unter **PO** den Eintrag **StockItemID** und unter **Product** den Eintrag **StockItemID** aus.
 
 28.	Erstellen Sie ebenso eine **n:1-Beziehung** zwischen den Tabellen **PO** und **People**. Wählen Sie unter **PO** den Eintrag **ContactPersonID** und unter **People** den Eintrag **PersonID** aus.
@@ -310,6 +379,8 @@ Ergänzen wir die restlichen Beziehungen.
 Nun sind alle Beziehungen erstellt.
 
 **Überprüfen Sie**: Das Modell sollte so wie im Screenshot unten aussehen.
+
+![](../Images/lab6-image35.png)
 
 ## Aufgabe 8: Fakultativer Abschnitt – Measures erstellen
 
@@ -325,6 +396,8 @@ Ergänzen wir die restlichen Measures.
 
 5.	Wählen Sie in der Dropdown-Liste für das Format den Eintrag **Dezimalzahl** aus.
 
+    ![](../Images/lab6-image36.png)
+
 6.	Fügen Sie auf gleiche Weise die folgenden Measures hinzu:
 
      a.**GM = SUM(Sales[Line_Profit])** formatiert als **Dezimalzahl**.
@@ -336,6 +409,8 @@ Ergänzen wir die restlichen Measures.
 ## Referenzen
 
 Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie in der Hilfe (?) Links zu praktischen Informationen.
+
+![](../Images/lab6-image37.png)
 
 Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit Microsoft Fabric.
 
