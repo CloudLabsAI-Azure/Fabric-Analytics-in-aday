@@ -43,12 +43,12 @@ Inhalt dieser Übung:
 2.	Wenn Sie nach der vorherigen Übung nicht zu einem anderen Bereich navigiert sind, befinden Sie sich im Lakehouse-Bildschirm. Wählen Sie unten links auf dem Bildschirm das Symbol Fabric- Funktionsbereichs-Auswahl aus.
 3.	Wählen Sie im geöffneten Dialogfeld für den Fabric-Funktionsbereich Data Factory aus. Data Factory verfügt über Workloads, die zum Extrahieren, Transformieren und Erfassen von Daten erforderlich sind.
 
-    ![](../Images/lab-03/image004.gif)
+    ![](../Images/lab-03/image006.png)
 
 4.	Sie werden zur Data Factory-Startseite weitergeleitet. Wählen Sie unter „Neu“ die Option
 Datenfluss Gen2 aus.
 
-    ![](../Images/lab-03/image005.gif)
+    ![](../Images/lab-03/image009.png)
 
 Sie werden zur **Dataflow-Seite** weitergeleitet. Dieser Bildschirm wird Ihnen bekannt vorkommen, da er Dataflow Gen1 oder Power Query ähnelt. Sie werden feststellen, dass die Optionen zum Herstellen einer Verbindung zu verschiedenen Datenquellen sowie die Möglichkeit zur Datentransformation verfügbar sind. Stellen wir eine Verbindung zur ADLS Gen2-Datenquelle her und führen einige Transformationen durch.
 
@@ -56,30 +56,30 @@ Sie werden zur **Dataflow-Seite** weitergeleitet. Dieser Bildschirm wird Ihnen b
 
 1. Wählen Sie im Menüband **Start -> Daten abrufen -> Mehr…**
 
-   ![](../Images/lab-03/image006.gif)
+   ![](../Images/lab-03/image012.jpg)
 
 2. Sie werden zum Dialogfeld **Daten abrufen Datenquelle auswählen** weitergeleitet. Sie können nach der Datenquelle suchen, indem Sie sie in das Suchfeld eingeben. Beachten Sie, dass im
 linken Bereich Optionen zur Verwendung einer Blank-Tabelle oder Blank-Abfrage vorhanden ist. Es ist außerdem eine neue Option zum Hochladen von Dateien verfügbar. Wir werden diese Option in einer späteren Übung untersuchen. Klicken wir zunächst oben rechts im Bildschirm auf **Mehr anzeigen ->**.
 
-   ![](../Images/lab-03/image007.gif)
+   ![](../Images/lab-03/image015.jpg)
 
    Jetzt können Sie alle verfügbaren Datenquellen anzeigen. Sie haben die Möglichkeit, die Datenquellen nach Datei, Datenbank, Microsoft Fabric, Power Platform, Azure usw. zu filtern.
 
-   ![](../Images/lab-03/image008.gif)
+   ![](../Images/lab-03/image018.jpg)
 
 3.	Wählen Sie **Azure** aus den oberen Filteroptionen aus, um nach Azure-Datenquellen zu filtern.
 4.	Wählen Sie **Azure Data Lake Storage Gen2** aus.
 
-    ![](../Images/lab-03/image009.gif)
+    ![](../Images/lab-03/image021.jpg)
 
 5.	Sie werden zum Dialogfeld „Mit Datenquelle verbinden“ weitergeleitet. Sie müssen eine Verbindung zur ADLS Gen2-Datenquelle herstellen. Geben Sie unter **Verbindungseinstellungen -> URL** diesen Link https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet-Format ein.
 
-    ![](../Images/lab-03/image010.gif)
+    ![](../Images/lab-03/image024.png)
 
 6.	Wählen Sie **Kontoschlüssel** aus der Dropdown-Liste „Authentifizierungsart“ aus.
 7.	Kopieren Sie den **Zugriffsschlüssel für das Adls-Speicherkonto** von der Registerkarte **Umgebungsvariablen** (neben der Registerkarte „Übungsanleitung“) und fügen Sie ihn in das Textfeld **Kontoschlüssel** ein.
 
-    ![](../Images/lab-03/image011.gif)
+    ![](../Images/lab-03/image027.jpg)
 
 8.	Wählen Sie unten rechts auf dem Bildschirm **Weiter** aus.
 
@@ -87,7 +87,7 @@ linken Bereich Optionen zur Verwendung einer Blank-Tabelle oder Blank-Abfrage vo
 
 1.	Sobald die Verbindung hergestellt ist, werden Sie zum Bildschirm **Vorschau der Ordnerdaten anzeigen** weitergeleitet. Im ADLS Gen2-Ordner sind viele Dateien enthalten. Wir benötigen Daten aus einigen von ihnen. Wählen Sie **Erstellen** aus, um eine Verbindung zum Ordner herzustellen.
 
-    ![](../Images/lab-03/image012.gif)
+    ![](../Images/lab-03/image030.jpg)
 
 2.	Sie befinden sich wieder im Dialogfeld **Power Query**. Dies ist die Verbindung zum Stammordner von ADLS Gen2. Wir werden in nachfolgenden Abfragen auf diese Abfrage verweisen. Wir benennen die Abfrage um. Ändern Sie im **rechten Bereich** unter **Abfrageeinstellungen -> Eigenschaften -> Name** den Namen in **ADLS Base Folder for Geo**.
 3.	Alle Abfragen von Dataflow Gen2 werden standardmäßig in ein Staging Lakehouse geladen. Im Rahmen dieser Übung werden wir keine Daten bereitstellen. Klicken Sie im **linken Bereich mit der rechten Maustaste auf die Abfrage „ADLS Base Folder“**, um diesen Ladevorgang zu deaktivieren.
@@ -96,7 +96,7 @@ linken Bereich Optionen zur Verwendung einer Blank-Tabelle oder Blank-Abfrage vo
 
 4.	**Deaktivieren Sie die Option „Staging aktivieren“**.
 
-    ![](../Images/lab-03/image013.gif)
+    ![](../Images/lab-03/image033.jpg)
 
 Beachten Sie, dass der Ordner zwei Dateiformate enthält: **JSON** und **Parquet**.
   
@@ -108,7 +108,7 @@ seine Fähigkeit bekannt, eine Vielzahl von Codierungstypen zu verarbeiten.
 6.	**Deaktivieren Sie .json**, sodass sie nach .parquet-Dateien gefiltert wird.
 7.	Wählen Sie **OK** aus.
 
-    ![](../Images/lab-03/image014.gif)
+    ![](../Images/lab-03/image036.jpg)
 
 Jetzt haben wir die Abfrage „Base“ eingerichtet. Wir können diese Abfrage für alle Geo-Abfragen referenzieren.
 
@@ -122,15 +122,15 @@ Wir müssen City-, State- und Country-Daten aus diesen drei Dateien kombinieren,
 1.	Beginnen wir mit „City“. Klicken Sie im linken Bereich **mit der rechten Maustaste auf „ADLS Base Folder for Geo“**. Wählen Sie **Verweis** aus, um eine neue Abfrage zu erstellen, die auf die Abfrage
 „ADLS Base Folder for Geo“ verweist.
 
-    ![](../Images/lab-03/image015.gif)
+    ![](../Images/lab-03/image039.png)
 
 2.	Wählen Sie den **Dropdown-Pfeil der Spalte Folder Path** aus.
 
-    ![](../Images/lab-03/image016.gif)
+    ![](../Images/lab-03/image042.jpg)
 
 3. Wählen Sie **Textfilter -> Enthält…** aus.
 
-    ![](../Images/lab-03/image017.gif)
+    ![](../Images/lab-03/image045.jpg)
 
 4. Geben Sie im Dialog **Zeilen filtern Application.Cities** ein.
 
@@ -138,17 +138,17 @@ Wir müssen City-, State- und Country-Daten aus diesen drei Dateien kombinieren,
 
 5. Wählen Sie **OK** aus.
 
-    ![](../Images/lab-03/image018.gif)
+    ![](../Images/lab-03/image048.png)
 
 6.	Daten werden in einer einzelne Zeile gefiltert. Wählen Sie **Binary** unter der Spalte **Content** aus.
 
-    ![](../Images/lab-03/image019.gif)
+    ![](../Images/lab-03/image051.jpg)
 
 7.	Beachten Sie, dass alle City-Details angezeigt werden. Ändern Sie im **rechten Bereich** unter **Abfrageeinstellungen -> Eigenschaften -> Name den Namen** in **Cities**.
 
 **Hinweis**: Stellen Sie unten rechts im Screenshot sicher, dass die Abfrage über vier angewendete Schritte verfügt, und warten Sie, bis sie vollständig geladen ist. Dies kann einige Minuten dauern.
 
-![](../Images/lab-03/image020.gif)
+![](../Images/lab-03/image054.jpg)
 
 Beachten Sie im rechten Bereich unter **Angewendete Schritte**, dass alle Schritte registriert sind. Dieses Verhalten ist mit dem von Power Query identisch. Folgen wir nun einem ähnlichen Prozess, um die Abfrage **Country** zu erstellen.
 
@@ -156,14 +156,15 @@ Beachten Sie im rechten Bereich unter **Angewendete Schritte**, dass alle Schrit
 
 1.	Klicken Sie im linken Bereich **mit der rechten Maustaste auf „ADLS Base Folder for Geo“**. Wählen Sie **Verweis** aus, um eine neue Abfrage zu erstellen, die auf die Abfrage „ADLS Base Folder for Geo“ verweist.
 
-    ![](../Images/lab-03/image021.gif)
+    ![](../Images/lab-03/image057.png)
+
 2.	Wählen Sie den **Dropdown-Pfeil** der** Spalte Folder Path** aus.
 
-    ![](../Images/lab-03/image022.gif)
+    ![](../Images/lab-03/image060.jpg)
 
 3.	Wählen Sie **Textfilter -> Enthält…** aus.
 
-    ![](../Images/lab-03/image023.gif)
+    ![](../Images/lab-03/image063.jpg)
 
 
 4.	Geben Sie im **Dialogfeld „Zeilen filtern“ Application.Countries** ein.
@@ -172,18 +173,18 @@ Beachten Sie im rechten Bereich unter **Angewendete Schritte**, dass alle Schrit
 
 5.	Wählen Sie **OK** aus.
 
-    ![](../Images/lab-03/image024.gif)
+    ![](../Images/lab-03/image066.png)
 
 6.	Daten werden in einer einzelne Zeile gefiltert. Wählen Sie **Binary** unter der Spalte **Content** aus
 
-    ![](../Images/lab-03/image025.gif)
+    ![](../Images/lab-03/image069.jpg)
 
 
 7.	Beachten Sie, dass alle Country-Details angezeigt werden. Ändern Sie im **rechten Bereich** unter **Abfrageeinstellungen -> Eigenschaften -> Name** den Namen in **Countries**.
 
 **Hinweis**: Stellen Sie unten rechts im Screenshot sicher, dass die Abfrage über vier angewendete Schritte verfügt, und warten Sie, bis sie vollständig geladen ist. Dies kann einige Minuten dauern.
 
-![](../Images/lab-03/image026.gif)
+![](../Images/lab-03/image072.jpg)
 
 Als Nächstes müssen wir „State“ einfügen, aber die Schritte wiederholen sich immer mehr. Wir verfügen bereits über die Abfragen in der Power BI Desktop-Datei. Jetzt prüfen wir, ob wir die Abfragen von dort kopieren können.
 
@@ -192,12 +193,12 @@ Als Nächstes müssen wir „State“ einfügen, aber die Schritte wiederholen s
 2.	Wählen Sie im Menüband **Start > Daten transformieren** aus. Das Power Query-Fenster wird
 geöffnet. Wie Sie in der vorherigen Übung festgestellt haben, sind die Abfragen im linken Bereich nach Datenquelle organisiert.
 
-    ![](../Images/lab-03/image027.gif)
+    ![](../Images/lab-03/image075.jpg)
 
 
 3.	Klicken Sie im linken Bereich unter dem ADLSData-Ordner **mit der rechten Maustaste auf die Abfrage „States“**, und wählen Sie **Kopieren** aus.
 
-    ![](../Images/lab-03/image028.gif)
+    ![](../Images/lab-03/image078.png)
 
 4.	Navigieren Sie zurück zum **Browser**. Sie sollten sich im Dataflow befinden, an dem wir gearbeitet haben.
 5.	Wählen Sie im linken Bereich den Bereich **Abfragen** aus, und geben Sie **STRG+V** ein (derzeit wird das Einfügen mit der rechten Maustaste nicht unterstützt). Wenn Sie ein MAC-Gerät verwenden, drücken Sie zum Einfügen bitte Cmd+V.
@@ -205,7 +206,9 @@ geöffnet. Wie Sie in der vorherigen Übung festgestellt haben, sind die Abfrage
     **Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den Schieberegler, um das **VM Native Clipboard zu
     aktivieren**. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfrage eingefügt haben, können Sie diese Option deaktivieren.
 
-    ![](../Images/lab-03/image029.gif)
+    ![](../Images/lab-03/image081.jpg)
+
+    ![](../Images/lab-03/image083.jpg)
 
     Beachten Sie, dass „ADLS Base Folder“ ebenfalls kopiert wird. Dies liegt daran, dass sich die Abfrage
     „States“ auf „ADLS Base Folder“ in Power BI Desktop bezieht, wir aber bereits über eine ähnliche Abfrage verfügen. Lassen Sie uns dies lösen.
@@ -214,15 +217,16 @@ geöffnet. Wie Sie in der vorherigen Übung festgestellt haben, sind die Abfrage
 7.	Wählen Sie im **rechten Bereich** unter **Angewendete Schritte** die Option **Source** aus.
 8.	Ändern Sie in der Formelleiste #”ADLS Base Folder” zu **#”ADLS Base Folder for Geo”**.
 
-    ![](../Images/lab-03/image030.gif)
+    ![](../Images/lab-03/image086.jpg)
 
 9.	Klicken Sie auf das **Häkchen** neben der Bearbeitungsleiste, oder drücken Sie die **Eingabetaste**.
 
-    ![](../Images/lab-03/image031.gif)
+    ![](../Images/lab-03/image089.jpg)
 
 10.	Jetzt können wir „ADLS Base Folder“ entfernen. Klicken Sie im linken Bereich unter dem Abschnitt **Abfragen mit der rechten Maustaste auf die Abfrage ADLS Base Folder**, und wählen Sie **Löschen** aus.
 
-    ![](../Images/lab-03/image032.gif)
+    ![](../Images/lab-03/image092.png)
+
 11.	Das Dialogfeld „Abfrage löschen“ wird angezeigt. Wählen Sie zur Bestätigung **Löschen** aus.
 
 **Hinweis:** Stellen Sie sicher, dass die Abfrage über vier angewendete Schritte verfügt, und warten Sie, bis die Abfrage vollständig geladen ist. Dies kann einige Minuten dauern.
@@ -236,26 +240,26 @@ erweiterten Editor.
 2.	Wählen Sie im linken Bereich unter **Abfragen** die Abfrage **Geo** im Ordner „ADLSData“ aus.
 3.	Wählen Sie im Menüband die Registerkarte **Start -> Erweiterter Editor** aus.
 
-    ![](../Images/lab-03/image033.gif)
+    ![](../Images/lab-03/image095.png)
 
 4.	Das Fenster „Erweiterter Editor“ wird geöffnet. **Heben Sie den gesamten Text** im erweiterten Editor hervor.
 5.	**Klicken Sie mit der rechten Maustaste**, und wählen Sie **Kopieren** aus.
 
-    ![](../Images/lab-03/image034.gif)
+    ![](../Images/lab-03/image098.jpg)
 
 6.	Klicken Sie oben rechts im Fenster auf **X**, oder wählen Sie die Option **Fertig** aus, um das Fenster
 „Erweiterter Editor“ zu schließen.
 7.	Navigieren Sie im Browser zurück zum Fenster **Dataflow**.
 8.	Klicken Sie im Menüband auf **Daten abrufen > Leere Abfrage**.
 
-    ![](../Images/lab-03/image035.gif)
+    ![](../Images/lab-03/image101.png)
 
 9.	Rufen Sie die Daten ab. Der Dialog „Erweiterter Editor“ mit der Option „Mit Datenquelle verbinden“ wird geöffnet. **Heben Sie den gesamten Text** im Editor hervor.
 10.	Wählen Sie auf Ihrer Tastatur **Löschen** aus, um den gesamten Text zu löschen.
 11.	Der erweiterte Editor sollte leer sein. Geben Sie nun **STRG+V** ein, um den Inhalt einzufügen, den Sie aus dem erweiterten Editor von Power BI Desktop kopiert haben.
 12.	Wählen Sie **Weiter** aus.
 
-    ![](../Images/lab-03/image036.gif)
+    ![](../Images/lab-03/image104.jpg)
 
 13.	Jetzt verfügen wir über die Geo-Dimension. Wir benennen die Abfrage um. Ändern Sie im
 **rechten Bereich** unter **Abfrageeinstellungen -> Eigenschaften -> Name** den Namen in **Geo**.
@@ -266,24 +270,24 @@ Gehen wir die Schritte durch, um zu verstehen, wie Geo erstellt wurde. Wählen S
 Bereich unter „Angewendete Schritte“ die Option **Quelle** aus. Wenn Sie sich die Bearbeitungsleiste ansehen oder auf „Einstellungen“ klicken, stellen Sie fest, dass die Quelle dieser Abfrage eine
 Verknüpfung zwischen Cities und States ist. Wenn Sie die Schritte durchgehen, stellen Sie fest, dass das Ergebnis der ersten Verknüpfung wiederum mit „Countries“ verknüpft wird. Daher werden alle drei Abfragen verwendet, um eine Geo-Dimension zu erstellen.
 
-![](../Images/lab-03/image037.gif)
+![](../Images/lab-03/image107.jpg)
 
 ### Aufgabe 8: Datenziel für die Abfrage „Geo“ konfigurieren
 Jetzt verfügen wir über eine Dimension. Lassen Sie uns diese Daten in Lakehouse erfassen. Dies ist die neue Funktion, die in Dataflow Gen2 verfügbar ist.
 1.	Wie bereits erwähnt, stellen wir keine dieser Daten bereit. Klicken Sie also **mit der rechten Maustaste** auf die Abfrage **Cities**, und wählen Sie **Staging aktivieren** aus, um das Häkchen zu entfernen.
 
-    ![](../Images/lab-03/image038.gif)
+    ![](../Images/lab-03/image110.png)
 
 2.	Befolgen Sie dieselben Schritte für die Abfrage **Countries und Geo**, um **das Häkchen neben Staging aktivieren** zu entfernen.
 3.	Wählen Sie die Abfrage **Geo** aus.
 4.	Wählen Sie unten rechts „+“ neben **Datenziel** aus.
 5.	Wählen Sie im Dialogfeld die Option **Lakehouse** aus.
 
-    ![](../Images/lab-03/image039.gif)
+    ![](../Images/lab-03/image113.jpg)
 
 6.	Das Dialogfeld „Herstellen einer Verbindung mit dem Datenziel“ wird geöffnet. Wir müssen eine neue Verbindung zu Lakehouse herstellen. Wenn **Neue Verbindung erstellen** im **Dropdown-Menü „Verbindung“** ausgewählt und **Authentifizierungsart** auf **Organisationskonto** festgelegt ist, wählen Sie **Weiter** aus.
 
-    ![](../Images/lab-03/image040.gif)
+    ![](../Images/lab-03/image116.png)
 
 7.	Nachdem die Verbindung hergestellt wurde, wird das Dialogfeld „Ziel auswählen“ geöffnet.
 Stellen Sie sicher, dass das **Optionsfeld „Neue Tabelle“** ausgewählt ist, da wir eine neue Tabelle erstellen.
@@ -292,7 +296,7 @@ Stellen Sie sicher, dass das **Optionsfeld „Neue Tabelle“** ausgewählt ist,
 10.	Behalten Sie den Tabellennamen **Geo** bei.
 11.	Wählen Sie **Weiter** aus.
 
-    ![](../Images/lab-03/image041.gif)
+    ![](../Images/lab-03/image119.png)
 
 12.	Das Dialogfeld „Zieleinstellungen auswählen“ wird geöffnet. Verwenden Sie den **Schieberegler**, um **automatische Einstellungen zu deaktivieren**. Schauen wir uns die Optionen an.
 Beachten Sie, dass es Optionen zum **Anfügen von Daten** an eine vorhandene Tabelle oder zum
@@ -304,31 +308,30 @@ Beachten Sie, dass es Optionen zum **Anfügen von Daten** an eine vorhandene Tab
 
     **Hinweis:** Mit dem Kontrollkästchen rechts neben der Spalte „Quelle” können Sie nur die Spalten auswählen, die Sie in Lakehouse laden möchten.
 
-    ![](../Images/lab-03/image042.gif)
+    ![](../Images/lab-03/image122.jpg)
 
 13.	In unserem Szenario verwenden wir automatische Einstellungen. Aktivieren Sie den Schieberegler **Automatische Einstellungen aktivieren**. Beachten Sie, dass damit die Zielspaltennamen automatisch mit einem Unterstrich korrigiert werden.
 14.	Mithilfe der Spaltenzuordnung können Dataflow-Spalten vorhandenen Spalten zugeordnet werden. In unserem Fall handelt es sich um eine neue Tabelle. Daher können wir die Standardwerte verwenden. Wählen Sie **Einstellungen speichern** aus.
 
-    ![](../Images/lab-03/image043.gif)
+    ![](../Images/lab-03/image125.jpg)
 
 ### Aufgabe 9: Dataflow veröffentlichen
 1.	Sie werden zum **Power Query-Fenster** weitergeleitet. Beachten Sie, dass unten rechts das
 **Datenziel auf Lakehouse festgelegt ist**.
 2.	Lassen Sie uns diese Abfragen veröffentlichen, damit wir Lakehouse überprüfen können. Wir werden darauf zurückkommen, um weitere Abfragen hinzuzufügen. Wählen Sie unten rechts **Veröffentlichen** aus.
 
-    ![](../Images/lab-03/image044.gif)
+    ![](../Images/lab-03/image128.jpg)
 
 3.	Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet. Es kann einige
 Momente dauern, bis der Dataflow veröffentlicht wird. Wählen Sie anschließend entweder aus dem mittleren oder dem linken Bereich **lh_FAIAD Lakehouse aus**.
 
-    ![](../Images/lab-03/image045.gif)
-
+    ![](../Images/lab-03/image131.jpg)
 
 4.	Sie werden zum **Bildschirm „Lakehouse-Explorer“** weitergeleitet. Erweitern Sie im linken Bereich die Option **lh_FAIAD -> Tables**.
 5.	Beachten Sie, dass jetzt eine Geo-Tabelle in Lakehouse vorhanden ist. Erweitern Sie **Geo**, und beachten Sie alle Spalten.
 6.	**Wählen Sie die Geo-Tabelle** aus, sodass die Datenvorschau im rechten Bereich geöffnet wird.
 
-    ![](../Images/lab-03/image046.gif)
+    ![](../Images/lab-03/image134.jpg)
 
 Es ist auch ein SQL-Endpunkt vorhanden, der zum Abfragen dieser Tabelle verwendet werden kann. Wir sehen uns diese Option in einer späteren Übung an. Da wir nun wissen, dass die Geodaten in Lakehouse vorhanden sind, fügen wir die restlichen Daten von ADLS Gen2 ein.
 
@@ -339,8 +342,7 @@ zurückzukehren.
 2.	Wir arbeiten mit Dataflow 1. Benennen wir es um, bevor wir fortfahren. Klicken Sie auf die
 **Auslassungspunkte (…)** neben Dataflow 1. Wählen Sie **Eigenschaften** aus.
 
-    ![](../Images/lab-03/image047.gif)
-
+    ![](../Images/lab-03/image137.jpg)
 
 3.	Das Dialogfeld „Dataflow-Eigenschaften“ wird geöffnet. Ändern Sie den Namen in **df_Sales_ADLS**.
 
@@ -349,12 +351,12 @@ zurückzukehren.
 4.	Fügen Sie im Textfeld **Beschreibung den Text Dataflow to ingest Sales Data from ADLS to Lakehouse hinzu**.
 5.	Wählen Sie **Speichern** aus.
 
-    ![](../Images/lab-03/image048.gif)
+    ![](../Images/lab-03/image140.png)
 
 ### Aufgabe 11: Verbleibende Abfragen im Dataflow erstellen
 1.	Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet. Wählen Sie den Dataflow **df_Sales_ADLS** aus, um zum Dataflow zurückzukehren.
 
-    ![](../Images/lab-03/image049.gif)
+    ![](../Images/lab-03/image143.jpg)
 
     Zur Vereinfachung prüfen wir jetzt, ob wir die Abfragen aus Power BI Desktop kopieren können.
 
@@ -384,14 +386,14 @@ zurückzukehren.
 
 5.	**Klicken Sie mit der rechten Maustaste**, und wählen Sie **Kopieren** aus.
 
-    ![](../Images/lab-03/image050.gif)
+    ![](../Images/lab-03/image146.png)
 
 6.	Navigieren zum Dataflow-Fenster des Browsers zurück zu **df_Sales_ADLS**.
 7.	Wählen Sie im linken Bereich den Bereich **Abfragen** aus, und geben Sie **STRG+V** ein (derzeit wird das Einfügen mit der rechten Maustaste nicht unterstützt). Wenn Sie ein MAC-Gerät verwenden, drücken Sie zum Einfügen bitte Cmd+V.
 
     **Hinweis:** Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den Schieberegler, um das **VM Native Clipboard zuaktivieren**. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben, können Sie diese Option deaktivieren.
 
-    ![](../Images/lab-03/image051.gif)
+    ![](../Images/lab-03/image149.png)
 
 8.	Wie bereits erwähnt, stellen wir keine dieser Daten bereit. Klicken Sie also **mit der rechten Maustaste** auf die folgenden Abfragen, und wählen Sie **Staging aktivieren** aus, um das Häkchen zu entfernen.<br>
 &nbsp; &nbsp; a.	Product<br>
@@ -402,7 +404,7 @@ zurückzukehren.
 
 **Hinweis:** Wenn das Laden in Power BI Desktop deaktiviert ist, müssen wir das Staging in Dataflow nicht deaktivieren. Daher müssen wir das Staging für „Product Item Group“, „Product Groups“ usw. nicht deaktivieren.
 
-![](../Images/lab-03/image052.gif)
+![](../Images/lab-03/image152.png)
 
 Stellen Sie sicher, dass **alle Abfragen verarbeitet werden**. Lassen Sie uns diese Daten abschließend in Lakehouse erfassen.
 
@@ -410,13 +412,13 @@ Stellen Sie sicher, dass **alle Abfragen verarbeitet werden**. Lassen Sie uns di
 1.	Wählen Sie die Abfrage **Product** aus.
 2.	Klicken Sie im Menüband auf **Start > Datenziel hinzufügen -> Lakehouse**.
 
-    ![](../Images/lab-03/image053.gif)
+    ![](../Images/lab-03/image155.jpg)
 
 3.	Das Dialogfeld „Herstellen einer Verbindung mit dem Datenziel“ wird geöffnet. Wählen Sie im
 **Dropdown-Menü „Verbindung“** die Option **Lakehouse (keine)** aus.
 4.	Wählen Sie **Weiter** aus.
 
-    ![](../Images/lab-03/image054.gif)
+    ![](../Images/lab-03/image158.png)
 
 5.	Das Dialogfeld „Ziel auswählen“ wird geöffnet. Stellen Sie sicher, dass das **Optionsfeld „Neue Tabelle“** ausgewählt ist, da wir eine neue Tabelle erstellen.
 6.	Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen. Navigieren Sie im linken Bereich zu **Lakehouse -> FAIAD_<Benutzername>**.
@@ -424,11 +426,11 @@ Stellen Sie sicher, dass **alle Abfragen verarbeitet werden**. Lassen Sie uns di
 8.	Behalten Sie den Tabellennamen **Product** bei.
 9.	Wählen Sie **Weiter** aus.
 
-    ![](../Images/lab-03/image055.gif)
+    ![](../Images/lab-03/image161.png)
 
 10.	Dieses Mal verwenden wir die automatischen Einstellungen, da hierdurch eine vollständige Aktualisierung der Daten erfolgt. Außerdem werden die Spalten nach Bedarf umbenannt. Wählen Sie **Einstellungen speichern** aus.
 
-    ![](../Images/lab-03/image056.gif)
+    ![](../Images/lab-03/image164.png)
 
 11.	Sie werden zum **Power Query-Fenster** weitergeleitet. Beachten Sie, dass **unten rechts** das Datenziel auf **Lakehouse** festgelegt ist.
 12.	Legen Sie ebenso das **Datenziel** für die folgenden Abfragen fest:<br>
@@ -439,7 +441,7 @@ Stellen Sie sicher, dass **alle Abfragen verarbeitet werden**. Lassen Sie uns di
 
 13.	Wir haben einen Dataflow, der Daten aus ADLS in Lakehouse erfasst. Fahren wir fort und veröffentlichen diesen Dataflow. Wählen Sie unten rechts Veröffentlichen aus.
 
-    ![](../Images/lab-03/image057.gif)
+    ![](../Images/lab-03/image167.jpg)
  
 Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet. Es dauert einige Minuten, bis der Dataflow aktualisiert wird.
 In der nächsten Übung werden wir Daten aus den anderen Datenquellen erfassen.
@@ -447,7 +449,7 @@ In der nächsten Übung werden wir Daten aus den anderen Datenquellen erfassen.
 ## Referenzen
 Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie in der Hilfe (?) Links zu praktischen Informationen.
 
-![](../Images/lab-03/image058.gif)
+![](../Images/lab-03/image170.png)
 
 Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit Microsoft Fabric.
   - Die vollständige [Ankündigung der allgemeinen Verfügbarkeit von Microsof t Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) finden Sie im Blogbeitrag.
