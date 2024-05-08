@@ -588,7 +588,7 @@ Der Ausdruck ist eine geschachtelte if-Anweisung. Hiermit wird überprüft, ob d
 
 Wir haben Aktualisierungen für die verschiedenen Datenquellen geplant. In der nächsten Übung werden wir Beziehungen und Kennzahlen erstellen und andere Modellierungsaktivitäten durchführen.
 
-## Referenzen
+### Referenzen
 Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie in der Hilfe (?) Links zu praktischen Informationen.
 
 ![](../Images/lb5-img45.png)

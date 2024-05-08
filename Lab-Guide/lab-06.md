@@ -410,7 +410,7 @@ Ergänzen wir die restlichen Measures.
 
     c. **No of Customers = COUNTROWS(Customer)** formatiert als **Ganze Zahl**
 
-## Referenzen
+### Referenzen
 
 Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie in der Hilfe (?) Links zu praktischen Informationen.
 
