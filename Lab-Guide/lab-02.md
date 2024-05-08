@@ -98,7 +98,6 @@ Time Analytics sind Synapse-Funktionsbereiche und werden mit Technologien von Sy
 
     ![](../Images/lab2-image8.jpg)
 
-
 3. Sie werden zur Startseite von Data Factory weitergeleitet. Der Seite ist in drei Hauptbereiche unterteilt.
 
     a. Neu: Hier werden die Bestandteile von Data Factory angezeigt. Das sind Dataflow Gen2 und Data Pipeline.
@@ -142,11 +141,11 @@ Funktionsbereich ähneln. Unter „Neu“ sehen Sie diese Elemente:
 Branchen konfrontiert sind, und ermöglichen es Unternehmen, Abläufe zu optimieren, Daten aus verschiedenen Quellen zu integrieren und umfassende Analysen zu nutzen. Beachten Sie, dass
 die drei Abschnitte vorangegangenen Funktionsbereichen ähneln. Unter „Neu“ sehen Sie diese Elemente:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Nachhaltigkeitslösungen: unterstützen die Erfassung, Standardisierung und Analyse von Umwelt-, Sozial- und Governance-Daten (ESG)
+    a. Nachhaltigkeitslösungen: unterstützen die Erfassung, Standardisierung und Analyse von Umwelt-, Sozial- und Governance-Daten (ESG)
 
- b.	Retail-Lösungen: helfen bei der Verwaltung großer Datenmengen, der Integration von Daten aus verschiedenen Quellen und der Bereitstellung von Echtzeitanalysen für eine schnelle Entscheidungsfindung. Einzelhändler können diese Lösungen zur Bestandsoptimierung, Kundensegmentierung, Umsatzprognose, dynamischen Preisgestaltung und Betrugserkennung nutzen.
+    b.	Retail-Lösungen: helfen bei der Verwaltung großer Datenmengen, der Integration von Daten aus verschiedenen Quellen und der Bereitstellung von Echtzeitanalysen für eine schnelle Entscheidungsfindung. Einzelhändler können diese Lösungen zur Bestandsoptimierung, Kundensegmentierung, Umsatzprognose, dynamischen Preisgestaltung und Betrugserkennung nutzen.
 
- ![](../Images/lab2-image12.png)
+    ![](../Images/lab2-image12.png)
 
 
 
@@ -222,7 +221,7 @@ weitergeleitet. Auch hier gibt es drei Abschnitte: Unter „Neu“ sehen Sie die
 
     b.	**KQL-Datenbank**: Diese dient zum schnellen Laden und Speichern strukturierter und unstrukturierter Daten sowie von Streaming-Daten für Abfragen.
 
-    c.	**KQL-Abfragesatz**: Dient zum Abfragen der Daten, um gemeinsam verwendbare Tabellen und Grafiken zu erstellen.
+    c. **KQL-Abfragesatz**: Dient zum Abfragen der Daten, um gemeinsam verwendbare Tabellen und Grafiken zu erstellen.
 
     d.	**Eventstream**: Hiermit werden Ereignisströme in Echtzeit erfasst, umgewandelt und weitergeleitet.
 
@@ -247,7 +246,7 @@ weitergeleitet. Auch hier gibt es drei Abschnitte: Unter „Neu“ sehen Sie die
 
 4.	Geben Sie im Feld Name den Text **FAIAD_<Benutzername>** ein.
 
-**Hinweis**: Der Name des Arbeitsbereichs muss eindeutig sein. Der Name Ihres Arbeitsbereichs lautet jedoch anders. Achten Sie darauf, dass unter dem Feld für den Namen ein grünes Häkchen mit dem Text Dieser Name ist verfügbar zu sehen ist.
+    **Hinweis**: Der Name des Arbeitsbereichs muss eindeutig sein. Der Name Ihres Arbeitsbereichs lautet jedoch anders. Achten Sie darauf, dass unter dem Feld für den Namen ein grünes Häkchen mit dem Text Dieser Name ist verfügbar zu sehen ist.
 
 5.	Wenn Sie möchten, können Sie eine **Beschreibung** des Arbeitsbereichs eingeben. Dieses Feld ist optional.
 
@@ -278,7 +277,7 @@ Ein neuer Arbeitsbereich wird erstellt, und Sie werden zu diesem weitergeleitet.
 
 4.	Das Dialogfeld „Neues Lakehouse“ wird geöffnet. Geben Sie im Textfeld für den Namen die Bezeichnung **lh_FAIAD** ein.
 
-**Hinweis**: „lh“ bezieht sich hier auf Lakehouse. Die Buchstaben „lh“ werden vorangestellt, damit das Lakehouse leichter erkannt und gefunden werden kann.
+    **Hinweis**: „lh“ bezieht sich hier auf Lakehouse. Die Buchstaben „lh“ werden vorangestellt, damit das Lakehouse leichter erkannt und gefunden werden kann.
 
 5.	Wählen Sie **Create in the screenshot** aus.
 
