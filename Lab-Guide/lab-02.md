@@ -71,14 +71,20 @@ Derzeit sind Sie in **Mein Arbeitsbereich**. Wenn Sie mit Fabric-Elementen arbei
 
 9.	Das Dialogfeld „Upgrade auf eine kostenlose Testversion auf Microsoft Fabric“ wird geöffnet. Wählen Sie **Test starten** aus.
 
-![](../Images/lab2-image4.jpg)
+    ![](../Images/lab2-image4.jpg)
 
 10.	Wählen Sie das **„X”** in der oberen rechten Ecke des Dialogfelds **Nur noch ein letzter Schritt** aus, um das Dialogfeld zu schließen. Da es sich um eine Übungsumgebung handelt, werden wir diese Angaben nicht machen.
 ![](../Images/lab2-image5.jpg)
 
 11.	Das Dialogfeld „Erfolgreiches Upgrade auf Microsoft Fabric“ wird geöffnet. Wählen Sie **Fabric Home Page** aus.
 
+    ![](../Images/lab2-image6.jpg)
+
+
 12.	Sie werden zur **Startseite von Microsoft Fabric** geleitet.
+
+    ![](../Images/lab2-image7.jpg)
+
 
 ## Übersicht über die Funktionsbereiche in Fabric
 
@@ -89,6 +95,9 @@ Funktionsbereichs-Auswahl) aus. Ein Dialogfeld mit einer Liste der Funktionsbere
 Time Analytics sind Synapse-Funktionsbereiche und werden mit Technologien von Synapse bereitgestellt. Sehen wir uns die Funktionsbereiche nun gesondert an.
 
 2. Wählen Sie **Data Factory** aus.
+
+    ![](../Images/lab2-image8.jpg)
+
 
 3. Sie werden zur Startseite von Data Factory weitergeleitet. Der Seite ist in drei Hauptbereiche unterteilt.
 
@@ -102,10 +111,16 @@ Time Analytics sind Synapse-Funktionsbereiche und werden mit Technologien von Sy
 
     c. Quick Access: Hier finden Sie die zuletzt verwendeten oder bevorzugten Elemente.
 
+    ![](../Images/lab2-image9.jpg)
+
+
 ### Aufgabe 3: Data Activator-Funktionsbereich
 
 1.	Wählen Sie unten links auf Ihrem Bildschirm das Symbol **Fabric-Funktionsbereichs-Auswahl**
 (aktuell auf Data Factory eingestellt) aus. Das Dialogfeld „Fabric-Funktionsbereich“ wird geöffnet.
+
+    ![](../Images/lab2-image10.png)
+
 
 2.	Wählen Sie dort die Option **Data Activator** aus. Sie werden zur **Startseite von Data Activator**
 weitergeleitet. Data Activator ist ein codefreier Funktionsbereich in Microsoft Fabric, mit dem
@@ -115,6 +130,9 @@ Funktionsbereich ähneln. Unter „Neu“ sehen Sie diese Elemente:
     a. Reflex: Dient zur Überwachung von Datensätzen, Abfragen und Ereignisströmen auf Muster.
 
     b. **Reflex-Beispiel:** Beispiellösung
+
+    ![](../Images/lab2-image11.png)
+
 
 ### Aufgabe 4: Industry Solutions-Funktionsbereich
 
@@ -127,6 +145,10 @@ die drei Abschnitte vorangegangenen Funktionsbereichen ähneln. Unter „Neu“ 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a. Nachhaltigkeitslösungen: unterstützen die Erfassung, Standardisierung und Analyse von Umwelt-, Sozial- und Governance-Daten (ESG)
 
  b.	Retail-Lösungen: helfen bei der Verwaltung großer Datenmengen, der Integration von Daten aus verschiedenen Quellen und der Bereitstellung von Echtzeitanalysen für eine schnelle Entscheidungsfindung. Einzelhändler können diese Lösungen zur Bestandsoptimierung, Kundensegmentierung, Umsatzprognose, dynamischen Preisgestaltung und Betrugserkennung nutzen.
+
+ ![](../Images/lab2-image12.png)
+
+
 
 ### Aufgabe 5: Data Engineering-Funktionsbereich von Synapse
 
@@ -149,6 +171,9 @@ die drei Abschnitte vorangegangenen Funktionsbereichen ähneln. Unter „Neu“ 
 
     g.	Beispiel verwenden: Beispiellösung.
 
+![](../Images/lab2-image13.jpg)
+
+
 
 ### Aufgabe 6: Data Science-Funktionsbereich von Synapse
 
@@ -169,6 +194,9 @@ die drei Abschnitte vorangegangenen Funktionsbereichen ähneln. Unter „Neu“ 
 
 **Hinweis**: Elemente wie Notebook, Umgebung, Datenpipeline usw. sind in mehreren Funktionsbereichen verfügbar, da sie in jedem dieser Bereiche relevant sind.
 
+![](../Images/lab2-image14.jpg)
+
+
 ### Aufgabe 7: Data Warehouse-Funktionsbereich von Synapse
 
 1.	Wählen Sie unten links auf Ihrem Bildschirm das Symbol **Fabric-Funktionsbereichs-Auswahl**
@@ -179,6 +207,9 @@ die drei Abschnitte vorangegangenen Funktionsbereichen ähneln. Unter „Neu“ 
     a.	**Warehouse**: Dient dem Erstellen eines Data Warehouse.
 
     b.	**Datenpipeline**: Hiermit wird die Datenlösung orchestriert.
+
+    ![](../Images/lab2-image15.png)
+
 
 ### Aufgabe 8: Real-Time Analytics-Funktionsbereich
 
@@ -197,6 +228,9 @@ weitergeleitet. Auch hier gibt es drei Abschnitte: Unter „Neu“ sehen Sie die
 
     e.	**Beispiel verwenden**: Beispiellösung.
 
+    ![](../Images/lab2-image16.jpg)
+
+
 
 ## Fabric-Arbeitsbereich
 
@@ -205,6 +239,9 @@ weitergeleitet. Auch hier gibt es drei Abschnitte: Unter „Neu“ sehen Sie die
 1.	Erstellen wir jetzt einen Arbeitsbereich mit Fabric-Lizenz. Wählen Sie in der Navigationsleiste links die Option **Arbeitsbereiche** aus. Ein Dialogfeld wird geöffnet.
 
 2.	Klicken Sie auf Neuer **Arbeitsbereich**.
+
+    ![](../Images/lab2-image17.png)
+
 
 3.	Rechts im Browser wird das Dialogfeld **Arbeitsbereich erstellen** geöffnet.
 
@@ -216,9 +253,13 @@ weitergeleitet. Auch hier gibt es drei Abschnitte: Unter „Neu“ sehen Sie die
 
 6.	Erweitern Sie den Abschnitt mit **Erweitert**.
 
+    ![](../Images/lab2-image18.png)
+
 7.	Überprüfen Sie unter **Lizenzmodus**, dass die Option **Testversion** ausgewählt ist. (Standardmäßig ist dies der Fall.)
 
 8.	Erstellen Sie den neuen Arbeitsbereich durch Klicken auf **Apply**.
+
+    ![](../Images/lab2-image19.png)
 
 Ein neuer Arbeitsbereich wird erstellt, und Sie werden zu diesem weitergeleitet. Als Nächstes importieren wir Daten aus verschiedenen Quellen in das Lakehouse, entwickeln damit ein Modell und nutzen die Daten für Berichte. Erstellen wir zunächst ein Lakehouse.
 
@@ -228,7 +269,12 @@ Ein neuer Arbeitsbereich wird erstellt, und Sie werden zu diesem weitergeleitet.
 
 2.	Klicken Sie auf **Data Engineering**, um die Startseite von Data Engineering zu öffnen.
 
+    ![](../Images/lab2-image20.png)
+
 3.	Wählen Sie **Lakehouse** aus.
+
+    ![](../Images/lab2-image21.png)
+
 
 4.	Das Dialogfeld „Neues Lakehouse“ wird geöffnet. Geben Sie im Textfeld für den Namen die Bezeichnung **lh_FAIAD** ein.
 
@@ -236,15 +282,21 @@ Ein neuer Arbeitsbereich wird erstellt, und Sie werden zu diesem weitergeleitet.
 
 5.	Wählen Sie **Create in the screenshot** aus.
 
+    ![](../Images/lab2-image22.png)
+
 Das Lakehouse wird in kurzer Zeit erstellt, und Sie werden zur Lakehouse-Oberfläche weitergeleitet. Beachten Sie, dass links unter dem Arbeitsbereich jetzt das Lakehouse-Symbol zu sehen ist. Durch Klicken auf dieses Symbol können Sie das Lakehouse jederzeit aufrufen.
 
 Im Lakehouse-Explorer werden Tabels und Files angezeigt. In einem Lakehouse können im Abschnitt mit den Dateien auch Dateien von Azure Data Lake Storage Gen2 stehen, oder mit einem Dataflow können Daten in Lakehouse-Tabellen geladen werden. Es stehen mehrere Möglichkeiten zur Auswahl. In den folgenden Übungen werden einige dieser Möglichkeiten vorgestellt.
+
+![](../Images/lab2-image23.jpg)
 
 In dieser Übung haben wir die Fabric-Oberfläche kennengelernt sowie einen Fabric-Arbeitsbereich und ein Lakehouse erstellt. In der nächsten Übung lernen Sie, wie Sie mit Dataflow Gen2 eine Verbindung zu ADLS Gen2 herstellen, um Daten abzurufen, umzuwandeln und im Lakehouse zu erfassen.
 
 ## Referenzen
 
 Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie in der Hilfe (?) Links zu praktischen Informationen.
+
+![](../Images/lab2-image24.png)
 
 Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit Microsoft Fabric.
 
