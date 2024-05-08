@@ -35,7 +35,6 @@ Afin de tirer de précieux insights des données, vous extrayez les données de 
 - **Données collaborateur :** proviennent du système RH ; elles sont stockées sous forme de
 fichier d’exportation dans un dossier SharePoint. Elles sont mises à jour tous les matins à 9 h.
 
- 
 Vous créez actuellement un jeu de données dans Power BI Premium qui extrait les données des systèmes sources ci-dessus, afin de répondre à vos besoins en matière de reporting et de fournir un libre-service aux utilisateurs finaux. Vous mettez à jour votre modèle à l’aide de Power Query.
 
 **Vous êtes confronté aux défis suivants :**
@@ -96,7 +95,8 @@ cliquez sur la valeur hors norme en haut à droite (4e quadrant). Notez que le %
 5.	Cliquez sur la valeur Reseller hors norme dans le visuel Nuage de points pour **supprimer le filtre**.
 6.	Obtenons les détails produit par groupe de produits et revendeur. À partir du visuel Histogramme Ventes par groupe de produits et revendeur, **cliquez avec le bouton droit sur la barre Packaging Materials pour Tailspin Toys**, puis sélectionnez **Extraire -> Product Detail** dans la boîte de dialogue.
 
-Vous êtes alors redirigé vers la page qui fournit les détails produit. Notez que de futures commandes sont également en cours.
+    Vous êtes alors redirigé vers la page qui fournit les détails produit. Notez que de futures commandes sont également en cours.
+
 7.	Après avoir examiné cette page, revenez à l’état sur les ventes à l’aide du raccourci **Ctrl + flèche Précédent** en haut de la page à droite.
  
  
