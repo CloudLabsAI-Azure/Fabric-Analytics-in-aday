@@ -2,9 +2,10 @@
 ![](../Images/image4.1.png)
 
 ## Inhalt
-Einführung
 
-Dataflow Gen2
+- Einführung
+
+- Dataflow Gen2
   - Aufgabe 1: Snowflake-Abfragen in Dataflow kopieren
   - Aufgabe 2: Verbindung zu Snowflake erstellen
   - Aufgabe 3: Datenziel für die Abfragen „Supplier“ und „PO“ konfigurieren
@@ -18,7 +19,7 @@ Dataflow Gen2
   - Aufgabe 11: Datenziel für die Abfrage „People“ konfigurieren	
   - Aufgabe 12: SharePoint-Dataflow veröffentlichen und umbenennen
 	
-Referenzen	
+- Referenzen
 
 ## Einführung
 Bei unserem Anwendungsfall befinden sich die Lieferantendaten in Snowflake, die Kundendaten in Dataverse und die Mitarbeiterdaten in SharePoint. Alle diese Datenquellen werden zu verschiedenen Zeiten aktualisiert. Um die Anzahl der Datenaktualisierungen von Dataflows zu verringern, erstellen wir für jede dieser Datenquellen individuelle Dataflows.
