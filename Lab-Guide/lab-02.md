@@ -5,21 +5,21 @@
 
 ## 目次
 
-概要	3
-Fabric ライセンス	3
-タスク 1: Microsoft Fabric 試用版ライセンスを有効にする	3
-Fabric のエクスペリエンスの概要	6
-タスク 2: Data Factory のエクスペリエンス	6
-タスク 3: Data Activator のエクスペリエンス	8
-タスク 4: Industry Solutions のエクスペリエンス	9
-タスク 5: Synapse Data Engineering のエクスペリエンス	10
-タスク 6: Synapse Data Science のエクスペリエンス	11
-タスク 7: Synapse Data Warehouse のエクスペリエンス	13
-タスク 8: Real-Time Analytics のエクスペリエンス	14
-Fabric ワークスペース	15
-タスク 9: Fabric ワークスペースを作成する	15
-タスク 10: レイクハウスを作成する	17
-リファレンス	19
+概要	3 <br>
+Fabric ライセンス	3 <br>
+タスク 1: Microsoft Fabric 試用版ライセンスを有効にする	3 <br>
+Fabric のエクスペリエンスの概要	6 <br>
+タスク 2: Data Factory のエクスペリエンス	6 <br>
+タスク 3: Data Activator のエクスペリエンス	8 <br>
+タスク 4: Industry Solutions のエクスペリエンス	9 <br>
+タスク 5: Synapse Data Engineering のエクスペリエンス	10 <br>
+タスク 6: Synapse Data Science のエクスペリエンス	11 <br>
+タスク 7: Synapse Data Warehouse のエクスペリエンス	13 <br>
+タスク 8: Real-Time Analytics のエクスペリエンス	14 <br>
+Fabric ワークスペース	15 <br>
+タスク 9: Fabric ワークスペースを作成する	15 <br>
+タスク 10: レイクハウスを作成する	17 <br>
+リファレンス	19 <br>
 
  
 # 概要
