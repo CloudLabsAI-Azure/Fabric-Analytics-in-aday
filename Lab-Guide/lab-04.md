@@ -153,7 +153,7 @@ Dataflow Gen2	3<br>
 ## タスク 5: Dataverse のクエリをDataflow にコピーする
 1.	トップ メニューから、新規 -> データフロー(Gen2) を選択します。
 
-    ![](../Images/lab-04/image047.png)
+    ![](../Images/lab-04/image006.png)
     
     Dataflow のページが表示されます。ここまで Dataflow について説明してきました。次は、
     Power BI Desktop から Dataflow にクエリをコピーしましょう。
@@ -172,7 +172,7 @@ Dataflow Gen2	3<br>
 
 5.	右クリックしてコピーを選択します。
 
-    ![](../Images/lab-04/image050.jpg)
+    ![](../Images/lab-04/image047.png)
    
 6.	ブラウザーの Dataflow のページに戻ります。
 
@@ -184,7 +184,7 @@ Dataflow Gen2	3<br>
 5 つのクエリが貼り付けられ、左側に [クエリ] パネルが表示されています。Dataverse 用の接続が作成されていないため、接続を構成するよう求める警告メッセージが表示されます。
 1.	接続の構成を選択します。
 
-   ![](../Images/lab-04/image053.png)
+   ![](../Images/lab-04/image050.jpg)
    
 2.	[データ ソースへの接続] ダイアログが開きます。接続ドロップダウンで、新しい接続の作成が選択されていることを確認します。
 
@@ -192,7 +192,7 @@ Dataflow Gen2	3<br>
 
 4.	接続を選択します。
 
-    ![](../Images/lab-04/image056.png)
+    ![](../Images/lab-04/image053.png)
    
 ## タスク 7: Customer クエリのデータ送信先を作成する
 接続が確立され、プレビュー パネルにデータが表示されます。クエリの [適用されたステップ] を自由に見て回ってみましょう。Customer のデータは、カテゴリ別 (BabyBoomer、
@@ -200,20 +200,20 @@ GenX、GenY、GenZ) に入手できます。これら 4 つのクエリをアペ
  
 1.	前述したように、ここではこのデータを一切ステージングしません。そのため、[クエ リ] ペインの Customer クエリを右クリックし、ステージングを有効にするを選択して チェック マークを外します。
 
-    ![](../Images/lab-04/image059.jpg)
+    ![](../Images/lab-04/image056.png)
    
 2.	Customer クエリを選択します。
 
 3.	リボンからホーム -> データ同期先の追加 -> レイクハウスを選択します。
 
-   ![](../Images/lab-04/image062.png)
+   ![](../Images/lab-04/image059.jpg)
    
 4.	[データ変換先に接続] ダイアログが開きます。接続ドロップダウンから Lakehouse (なし)
     を選択します。
 
 5.	次へを選択します。
 
-   ![](../Images/lab-04/image065.png)
+   ![](../Images/lab-04/image062.png)
    
 6.	[宛先ターゲットの選択] ダイアログが開きます。新しいテーブルを作成しているため、
     新しいテーブル ラジオ ボタンがオンになっていることを確認してください。
@@ -227,12 +227,12 @@ GenX、GenY、GenZ) に入手できます。これら 4 つのクエリをアペ
 
 10.	次へを選択します。
 
-   ![](../Images/lab-04/image068.jpg)
+   ![](../Images/lab-04/image065.png)
     
 11.	[宛先の設定を選択する] ダイアログが開きます。今度は、自動設定を使用し、それに
     よってデータの完全な更新が行われます。また、必要に応じて列の名前も変更されま す。設定の保存を選択します。
 
-   ![](../Images/lab-04/image071.jpg)
+   ![](../Images/lab-04/image068.jpg)
    
 
 ## タスク 8: Dataverse のDataflow を公開して名前を変更する
@@ -240,11 +240,11 @@ GenX、GenY、GenZ) に入手できます。これら 4 つのクエリをアペ
 
 2.	右下隅の公開を選択します。
 
-   ![](../Images/lab-04/image074.jpg)
+   ![](../Images/lab-04/image071.jpg)
    
     注: FAIAD_<ユーザー名> ワークスペースに自動的に戻ります。Dataflow が公開されるまで、しばらくかかる場合があります。
 
-   ![](../Images/lab-04/image077.png)
+   ![](../Images/lab-04/image074.jpg)
     
 3.	ここで操作しているデータフローは Dataflow 2 です。先に進む前に名前を変更しましょう。Dataflow 2 の横にある 省略記号(…) をクリックします。プロパティを選択します。
 
@@ -255,14 +255,14 @@ GenX、GenY、GenZ) に入手できます。これら 4 つのクエリをアペ
 
 6.	保存を選択します。
 
-   ![](../Images/lab-04/image082.png)
+   ![](../Images/lab-04/image077.png)
    
     FAIAD_<ユーザー名> ワークスペースに自動的に戻ります。次は、SharePoint からデータを取り込むデータフローを作成しましょう。
  
 ## タスク 9: SharePoint のクエリをDataflow にコピーする
 1.	トップ メニューから、新規 -> データフロー(Gen2) を選択します。
 
-   ![](../Images/lab-04/image085.jpg)
+   ![](../Images/lab-04/image006.jpg)
    
     Dataflow のページが表示されます。ここまで Dataflow について説明してきました。次は、
     Power BI Desktop から Dataflow にクエリをコピーしましょう。
@@ -278,7 +278,7 @@ GenX、GenY、GenZ) に入手できます。これら 4 つのクエリをアペ
 5.	右クリックしてコピーを選択します。
  
  
-   ![](../Images/lab-04/image088.png)
+   ![](../Images/lab-04/image082.png)
    
 
 6.	ブラウザーの Dataflow の画面に戻ります。
@@ -291,7 +291,7 @@ GenX、GenY、GenZ) に入手できます。これら 4 つのクエリをアペ
 ## タスク 10: SharePoint への接続を作成する
 1.	接続の構成を選択します。
 
-   ![](../Images/lab-04/image091.png)
+   ![](../Images/lab-04/image085.jpg)
    
 2.	[データ ソースへの接続] ダイアログが開きます。接続ドロップダウンで、新しい接続の作成が選択されていることを確認します。
 
@@ -299,7 +299,7 @@ GenX、GenY、GenZ) に入手できます。これら 4 つのクエリをアペ
 
 4.	接続を選択します。
 
-   ![](../Images/lab-04/image094.jpg)
+   ![](../Images/lab-04/image088.png)
    
 
 ## タスク 11: People クエリのデータ送信先を構成する
@@ -307,18 +307,18 @@ GenX、GenY、GenZ) に入手できます。これら 4 つのクエリをアペ
  
 1.	前述したように、ここではこのデータを一切ステージングしません。そのため、[クエリ] ペインの People クエリを右クリックし、ステージングを有効にするを選択してチェックマークを外します。
 
-   ![](../Images/lab-04/image097.png)
+   ![](../Images/lab-04/image091.png)
    
 2.	People クエリを選択します。
 
 3.	リボンからホーム -> データ同期先の追加 -> レイクハウスを選択します。
 
-   ![](../Images/lab-04/image006.jpg)
+   ![](../Images/lab-04/image094.jpg)
    
 4.	[データ変換先に接続] ダイアログが開きます。接続ドロップダウンから Lakehouse (なし)
     を選択します。
 
-   ![](../Images/lab-04/image100.png)
+   ![](../Images/lab-04/image097.png)
    
 5.	次へを選択します。
  
@@ -334,11 +334,11 @@ GenX、GenY、GenZ) に入手できます。これら 4 つのクエリをアペ
 
 10.	次へを選択します。
 
-   ![](../Images/lab-04/image103.png)
+   ![](../Images/lab-04/image100.png)
    
 11.	[宛先の設定を選択する] ダイアログが開きます。今度は、自動設定を使用し、それによってデータの完全な更新が行われます。また、必要に応じて列の名前も変更されま す。設定の保存を選択します。
 
-   ![](../Images/lab-04/image106.jpg)
+   ![](../Images/lab-04/image103.png)
    
  
 ## タスク 12: SharePoint のDataflow を公開して名前を変更する
@@ -347,11 +347,11 @@ GenX、GenY、GenZ) に入手できます。これら 4 つのクエリをアペ
 
 2.	右下隅の公開を選択します。
 
-   ![](../Images/lab-04/image109.jpg)
+   ![](../Images/lab-04/image106.jpg)
    
     注: FAIAD_<ユーザー名> ワークスペースに自動的に戻ります。Dataflow が公開されるまで、しばらくかかる場合があります。
 
-   ![](../Images/lab-04/image113.png)
+   ![](../Images/lab-04/image109.jpg)
    
 3.	ここで操作しているデータフローは Dataflow 2 です。先に進む前に名前を変更しましょう。Dataflow 2 の横にある 省略記号(…) をクリックします。プロパティを選択します。
  
@@ -361,7 +361,7 @@ GenX、GenY、GenZ) に入手できます。これら 4 つのクエリをアペ
 
 6.	保存を選択します。
 
-   ![](../Images/lab-04/image115.png)
+   ![](../Images/lab-04/image113.png)
    
 FAIAD_<ユーザー名> ワークスペースに自動的に戻ります。これで、すべてのデータが
 Lakehouse に取り込まれました。次のラボでは、Dataflow の更新スケジュールを設定します。
@@ -369,7 +369,7 @@ Lakehouse に取り込まれました。次のラボでは、Dataflow の更新�
 リファレンス
 Fabric Analyst in a Day (FAIAD) では、Microsoft Fabric で使用できる主要な機能の一部をご紹介します。サービスのメニューにあるヘルプ (?) セクションには、いくつかの優れたリソースへのリンクがあります。
 
-   ![](../Images/lab-04/image006.jpg)
+   ![](../Images/lab-04/image115.png)
    
 Microsoft Fabric の次のステップに役立つリソースをいくつか以下に紹介します。
 
