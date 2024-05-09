@@ -1,3 +1,7 @@
+
+
+  ![](../Images/picture-01.png)
+
 Sommario
 Struttura del documento	3
 Scenario/Esposizione del problema	3
