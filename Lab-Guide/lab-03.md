@@ -23,42 +23,51 @@ In questo lab si imparerà a:
 2.	Se non si è usciti dopo il lab precedente, ci si trova nella schermata Lakehouse. Se si è usciti, non c'è problema. Selezionare l'icona selettore esperienza in Fabric in basso a sinistra della schermata.
 3.	Selezionare Data Factory dalla finestra delle esperienze in Fabric aperta. Data Factory offre i carichi di lavoro necessari per estrarre, trasformare e inserire dati.
  
-    ![](../Images/lab3/image003.png)
+    ![](../Images/lab-03/image006.png)
   	
 4.	Si apre la home page di Data Factory. In Nuovo selezionare Flusso di dati Gen2.
 
-    ![](../Images/lab3/image006.png)
+    ![](../Images/lab-03/image009.png)
 
 Si apre la pagina Flusso di dati. Questa schermata sembrerà familiare poiché è simile a quella di Flusso di dati Gen1 o Power Query. Sono disponibili opzioni per connettersi alle varie origini dati e per trasformare i dati. Effettuiamo la connessione all'origine dati ADLS Gen2 ed eseguiamo alcune trasformazioni.
  
 ### Attività 2 - Creazione della connessione ad ADLS Gen2
 1.	Nella barra multifunzione selezionare Home -> Recupera -> Altro…
 
-    ![](../Images/lab3/image009.png)
+    ![](../Images/lab-03/image012.jpg)
 
 2.	Si apre la finestra di dialogo Recupera dati Scegli origine dati. È possibile cercare l'origine dati digitando nella casella di ricerca. Notare che nel pannello di sinistra sono disponibili opzioni per usare una tabella vuota o una query vuota. Si troverà anche una nuova opzione per caricare il file. Esamineremo questa opzione in un lab successivo. Per il momento, facciamo clic su
 Visualizza altro -> nell'angolo destro dello schermo.
 
- 
+     ![](../Images/lab-03/image015.jpg)
+
+     ![](../Images/lab-03/image018.jpg)
+  
+  
 Ora è possibile visualizzare tutte le origini dati disponibili. Si ha la possibilità di filtrare le origini dati per file, database, Microsoft Fabric, Power Platform, Azure e così via.
 
 3.	Selezionare Azure dalle opzioni di filtro in alto per filtrare in base alle origini dati di Azure.
 4.	Selezionare Azure Data Lake Storage Gen2.
 
+     ![](../Images/lab-03/image021.jpg)
+
 5.	Si apre la finestra di dialogo Connetti all'origine dati. È necessario creare una connessione all'origine dati ADLS Gen2. In Impostazioni connessione -> URL immettere il seguente
 collegamento: https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta- Parquet-Format
  
- 
+     ![](../Images/lab-03/image024.jpg)
 
 6.	Selezionare Chiave account dal menu a discesa Tipo di autenticazione.
 7.	Copiare la chiave di accesso dell'account di archiviazione ADLS nella scheda Variabili di
-ambiente (accanto alla scheda Guida al lab) e incollarla nella casella di testo Chiave account.
+ambiente (accanto alla scheda Guida al lab) e incollarla nella casella di testo **Chiave account**.
 
+     ![](../Images/lab-03/image027.jpg)
 
-8.	Selezionare Avanti nella parte inferiore destra della schermata.
+8.	Selezionare **Avanti** nella parte inferiore destra della schermata.
  
 ### Attività 3 - Creazione di una query della cartella ADLS Gen2 di base
 1.	Una volta stabilita la connessione, si aprirà la schermata Anteprima dati cartella. La cartella ADLS Gen2 contiene molti file. Abbiamo bisogno di dati da alcuni di essi. Selezionare Crea per creare una connessione alla cartella.
+
+     ![](../Images/lab-03/image030.jpg)
 
 2.	Si torna alla finestra di dialogo Power Query. Questa sarà la connessione alla cartella radice di ADLS Gen2. Faremo riferimento a questa query nelle query successive. Nel pannello di destra, in Impostazioni query -> Proprietà -> Nome, cambiare il nome in ADLS Base Folder for Geo
 3.	Per impostazione predefinita, tutte le query di Flusso di dati Gen2 vengono caricate per
@@ -68,7 +77,7 @@ Nota: si usa lo staging quando è necessario effettuare un'ulteriore trasformazi
 
 4.	Disabilitare l'opzione Abilita staging.
 
-
+     ![](../Images/lab-03/image033.jpg)
  
 Notare che vi sono due formati di file nella cartella: JSON e Parquet.
 •	Parquet: è un formato di file open source creato per gestire formati di dati di archiviazione a colonne flat. Il formato Parquet funziona bene con dati complessi in grandi volumi, offre
@@ -80,6 +89,8 @@ prestazioni elevate nella compressione dei dati e consente di gestire di un'ampi
 6.	Deselezionare JSON in modo da filtrare i file Parquet.
 7.	Selezionare OK.
 
+     ![](../Images/lab-03/image036.jpg)
+   
 Ora abbiamo impostato la query Base. Possiamo fare riferimento a questa query per tutte le query Geo.
 
 
@@ -90,24 +101,34 @@ innanzitutto una query per ottenere la dimensione Geo. I dati geografici sono di
 •	Countries: Application.Countries
 •	State: Application.StateProvinces
 Dobbiamo combinare i dati di città, stato/provincia e Paese da questi tre file per creare la dimensione Geo.
+
 1.	Iniziamo con la città. Nel pannello di sinistra fare clic con il pulsante destro del mouse su ADLS Base Folder for Geo. Selezionare Riferimento per creare una nuova query che faccia riferimento alla query ADLS Base Folder for Geo.
  
- 
+      ![](../Images/lab-03/image039.jpg)
 
 2.	Selezionare la freccia a discesa della colonna Percorso cartella.
 
-3.	Selezionare Filtri testo -> Contiene…
+      ![](../Images/lab-03/image042.jpg)
+  	
+4.	Selezionare Filtri testo -> Contiene…
+ 	
+6.	Nella finestra di dialogo Filtra righe immettere Application.Cities Nota: questo campo fa distinzione tra maiuscole e minuscole.
 
-4.	Nella finestra di dialogo Filtra righe immettere Application.Cities Nota: questo campo fa distinzione tra maiuscole e minuscole.
+      ![](../Images/lab-03/image045.jpg)
  
-5.	Selezionare OK.
+7.	Selezionare OK.
 
-6.	I dati verranno filtrati per un'unica riga. Selezionare Binary nella colonna Content.
+      ![](../Images/lab-03/image048.jpg)
+  	
+9.	I dati verranno filtrati per un'unica riga. Selezionare Binary nella colonna Content.
 
-7.	Verranno visualizzati tutti i dettagli della città. Nel pannello di destra, in Impostazioni query -> Proprietà -> Nome, modificare il nome in Cities
+      ![](../Images/lab-03/image051.jpg)
+  	
+11.	Verranno visualizzati tutti i dettagli della città. Nel pannello di destra, in Impostazioni query -> Proprietà -> Nome, modificare il nome in Cities
 
 Nota: nell'angolo inferiore destro della schermata, assicurarsi che alla query siano applicati quattro passaggi e attendere che termini il caricamento della query. L'operazione può richiedere alcuni minuti.
 
+   ![](../Images/lab-03/image054.jpg)
 Nel pannello di destra, in Passaggi applicati verificare che tutti i passaggi siano registrati. Questo comportamento è analogo a Power Query. Ora seguiamo un processo simile per creare la query Country.
  
 ### Attività 5 - Creazione della query Countries
