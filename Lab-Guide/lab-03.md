@@ -1,24 +1,6 @@
- 	 
- 
-Sommario
-Introduzione	3
-Flusso di dati Gen2	3
-Attività 1 - Creazione di Flusso di dati Gen2	3
-Attività 2 - Creazione della connessione ad ADLS Gen2	5
-Attività 3 - Creazione di una query della cartella ADLS Gen2 di base	8
-Attività 4 - Creazione della query Cities	9
-Attività 5 - Creazione della query Countries	12
-Attività 6 - Creazione della query States mediante Copia – opzione 1	13
-Attività 7 - Creazione della query Geo mediante Copia – opzione 2	16
-Attività 8 - Configurazione della destinazione dei dati per la query Geo	19
-Attività 9 - Pubblicazione del flusso di dati	22
-Attività 10 - Ridenominazione del flusso di dati	24
-Attività 11 - Creazione delle query rimanenti nel flusso di dati	25
-Attività 12 - Configurazione della destinazione dei dati per le query rimanenti	27
-Riferimenti	30
+![](../Images/lab-03/lab3_main.png)
 
- 
-Introduzione
+## Introduzione
 Nel nostro scenario i dati di vendita provengono dal sistema ERP e sono archiviati in un ADLS Gen2. Vengono aggiornati alle 12.00 ogni giorno. Dobbiamo trasformare e inserire questi dati in Lakehouse e usarli nel nostro modello.
 Vi sono più modi per inserire questi dati.
 •	Collegamenti: non forniscono un modo per trasformare i dati.
@@ -35,20 +17,24 @@ In questo lab si imparerà a:
 •	Inserire dati in lakehouse
 
 
-Flusso di dati Gen2
-Attività 1 - Creazione di Flusso di dati Gen2
+## Flusso di dati Gen2
+### Attività 1 - Creazione di Flusso di dati Gen2
 1.	Torniamo all'area di lavoro di Fabric creata nel Lab 2, attività 9.
 2.	Se non si è usciti dopo il lab precedente, ci si trova nella schermata Lakehouse. Se si è usciti, non c'è problema. Selezionare l'icona selettore esperienza in Fabric in basso a sinistra della schermata.
 3.	Selezionare Data Factory dalla finestra delle esperienze in Fabric aperta. Data Factory offre i carichi di lavoro necessari per estrarre, trasformare e inserire dati.
  
- 
+    ![](../Images/lab3/image003.png)
+  	
 4.	Si apre la home page di Data Factory. In Nuovo selezionare Flusso di dati Gen2.
 
+    ![](../Images/lab3/image006.png)
 
 Si apre la pagina Flusso di dati. Questa schermata sembrerà familiare poiché è simile a quella di Flusso di dati Gen1 o Power Query. Sono disponibili opzioni per connettersi alle varie origini dati e per trasformare i dati. Effettuiamo la connessione all'origine dati ADLS Gen2 ed eseguiamo alcune trasformazioni.
  
-Attività 2 - Creazione della connessione ad ADLS Gen2
+### Attività 2 - Creazione della connessione ad ADLS Gen2
 1.	Nella barra multifunzione selezionare Home -> Recupera -> Altro…
+
+    ![](../Images/lab3/image009.png)
 
 2.	Si apre la finestra di dialogo Recupera dati Scegli origine dati. È possibile cercare l'origine dati digitando nella casella di ricerca. Notare che nel pannello di sinistra sono disponibili opzioni per usare una tabella vuota o una query vuota. Si troverà anche una nuova opzione per caricare il file. Esamineremo questa opzione in un lab successivo. Per il momento, facciamo clic su
 Visualizza altro -> nell'angolo destro dello schermo.
@@ -71,7 +57,7 @@ ambiente (accanto alla scheda Guida al lab) e incollarla nella casella di testo 
 
 8.	Selezionare Avanti nella parte inferiore destra della schermata.
  
-Attività 3 - Creazione di una query della cartella ADLS Gen2 di base
+### Attività 3 - Creazione di una query della cartella ADLS Gen2 di base
 1.	Una volta stabilita la connessione, si aprirà la schermata Anteprima dati cartella. La cartella ADLS Gen2 contiene molti file. Abbiamo bisogno di dati da alcuni di essi. Selezionare Crea per creare una connessione alla cartella.
 
 2.	Si torna alla finestra di dialogo Power Query. Questa sarà la connessione alla cartella radice di ADLS Gen2. Faremo riferimento a questa query nelle query successive. Nel pannello di destra, in Impostazioni query -> Proprietà -> Nome, cambiare il nome in ADLS Base Folder for Geo
@@ -97,7 +83,7 @@ prestazioni elevate nella compressione dei dati e consente di gestire di un'ampi
 Ora abbiamo impostato la query Base. Possiamo fare riferimento a questa query per tutte le query Geo.
 
 
-Attività 4 - Creazione della query Cities
+### Attività 4 - Creazione della query Cities
 I dati di vendita sono disponibili per granularità Geography, Product, Sales Person e Date. Creiamo
 innanzitutto una query per ottenere la dimensione Geo. I dati geografici sono disponibili in tre diversi file situati nelle seguenti sottocartelle:
 •	Cities: Application.Cities
@@ -124,7 +110,7 @@ Nota: nell'angolo inferiore destro della schermata, assicurarsi che alla query s
 
 Nel pannello di destra, in Passaggi applicati verificare che tutti i passaggi siano registrati. Questo comportamento è analogo a Power Query. Ora seguiamo un processo simile per creare la query Country.
  
-Attività 5 - Creazione della query Countries
+### Attività 5 - Creazione della query Countries
 1.	Nel pannello di sinistra fare clic con il pulsante destro del mouse su ADLS Base Folder for Geo. Selezionare Riferimento per creare una nuova query che faccia riferimento alla query ADLS Base Folder for Geo.
 
 
@@ -145,7 +131,7 @@ Nota: nell'angolo inferiore destro della schermata, assicurarsi che alla query s
 Successivamente dobbiamo inserire stato/provincia, ma i passaggi sono ripetitivi. Abbiamo già le query nel file Power BI Desktop. Verifichiamo se possiamo a copiare le query da tale file.
 
 
-Attività 6 - Creazione della query States mediante Copia – opzione 1
+### Attività 6 - Creazione della query States mediante Copia – opzione 1
 1.	Se non lo si è ancora aperto, aprire il file FAIAD.pbix nella cartella C:\FAIAD\Reports
 dell'ambiente lab.
 2.	Nella barra multifunzione selezionare Home -> Trasforma dati. Si apre la finestra Power Query.
@@ -175,7 +161,7 @@ Si copia anche ADLS Base Folder. Questo perché la query States fa riferimento a
 Nota: assicurarsi che alla query siano applicati quattro passaggi e attendere che termini il caricamento della query. L'operazione può richiedere alcuni minuti.
 
 
-Attività 7 - Creazione della query Geo mediante Copia – opzione 2
+### Attività 7 - Creazione della query Geo mediante Copia – opzione 2
 Ora dobbiamo unire queste query per creare la dimensione Geo. Copiamo nuovamente la query dal file Power BI Desktop. Questa volta copiamo il codice dall'Editor avanzato.
 
 1.	Tornare alla finestra di Power Query del file Power BI Desktop.
@@ -210,7 +196,7 @@ noterà che l'origine di questa query è un join tra Cities e States. Esaminando
 
 
 
-Attività 8 - Configurazione della destinazione dei dati per la query Geo
+### Attività 8 - Configurazione della destinazione dei dati per la query Geo
 Ora che abbiamo una dimensione, inseriamo questi dati in Lakehouse. Questa è la nuova funzionalità disponibile in Flusso di dati Gen2.
 1.	Come indicato in precedenza, non effettuiamo lo staging di questi dati. Quindi, fare clic con il
 pulsante destro del mouse sulla query Cities e selezionare Abilita staging per rimuovere il segno di spunta.
@@ -242,7 +228,7 @@ Usa impostazioni automatiche. I nomi delle colonne di destinazione vengono corre
 14.	È possibile usare il mapping delle colonne per mappare le colonne del flusso di dati alle colonne esistenti. Nel nostro caso, si tratta di una nuova tabella. Pertanto possiamo usare le impostazioni predefinite. Selezionare Salva impostazioni.
 
 
-Attività 9 - Pubblicazione del flusso di dati
+### Attività 9 - Pubblicazione del flusso di dati
 1.	Si apre nuovamente la finestra di Power Query. Nell'angolo in basso a destra notare che la
 Destinazione dati è impostata su Lakehouse.
 2.	Pubblichiamo queste query in modo da poter esaminare il Lakehouse. Torneremo per aggiungere ulteriori query. Nell'angolo inferiore destro selezionare Pubblica.
@@ -259,7 +245,7 @@ Destinazione dati è impostata su Lakehouse.
 È anche presente un endpoint SQL che è possibile usare per eseguire query su questa tabella.
 Esamineremo questa opzione in un lab successivo. Ora che sappiamo che i dati geografici sono stati inseriti in Lakehouse, importiamo il resto dei dati da ADLS Gen2.
  
-Attività 10 - Ridenominazione del flusso di dati
+### Attività 10 - Ridenominazione del flusso di dati
 1.	Nella barra dei menu a sinistra selezionare FAIAD_<nomeutente> per tornare all'area di lavoro.
 2.	Stiamo lavorando con Flusso di dati 1. Rinominiamolo prima di continuare. Fare clic sui puntini di sospensione (…) accanto a Flusso di dati 1. Selezionare Proprietà.
 
@@ -271,7 +257,7 @@ Nota: aggiungiamo "df" all'inizio del nome del flusso di dati per semplificare r
 5.	Selezionare Salva.
 
  
-Attività 11 - Creazione delle query rimanenti nel flusso di dati
+### Attività 11 - Creazione delle query rimanenti nel flusso di dati
 1.	Si tornerà all'area di lavoro FAIAD_<nome utente>. Selezionare il flusso di dati df_Sales_ADLS
 per tornare al flusso di dati.
 
@@ -311,7 +297,7 @@ Nota: se il caricamento è disabilitato in Power BI Desktop, non è necessario d
 Assicurarsi che vengano elaborate tutte le query. Al termine, inserire i dati in Lakehouse.
 
 
-Attività 12 - Configurazione della destinazione dei dati per le query rimanenti
+### Attività 12 - Configurazione della destinazione dei dati per le query rimanenti
 1.	Selezionare la query Product.
 2.	Nella barra multifunzione selezionare Home -> Aggiungi destinazione dati -> Lakehouse.
 
@@ -345,7 +331,7 @@ pubblicazione di questo flusso di dati. Selezionare Pubblica nell'angolo inferio
 Si tornerà all'area di lavoro FAIAD_<nome utente>. L'aggiornamento del flusso di dati potrebbe richiedere alcuni minuti.L'aggiornamento del flusso di dati potrebbe richiedere alcuni minuti.
 Nel prossimo lab inseriremo i dati dalle altre origini dati.
  
-Riferimenti
+### Riferimenti
 Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità chiave disponibili in Microsoft Fabric. Nel menu di servizio, la sezione Guida (?) include collegamenti ad alcune risorse utili.
 
 Di seguito sono riportate ulteriori risorse utili che consentiranno di progredire nell'uso di Microsoft Fabric.
