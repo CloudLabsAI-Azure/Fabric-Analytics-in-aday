@@ -66,3 +66,16 @@ modelagem de dados usando as ferramentas disponíveis no Fabric. Não nos concen
 Territory** (gráfico de dispersão). Observe que em Sales over time, Reseller Tailspin Toys tem mais vendas em comparação com Wingtip Toys em New England. Se você olhar o gráfico de colunas Sales YoY%, notará que o crescimento das vendas da Wingtip Toys foi baixo e diminuiu trimestre após trimestre durante o ano passado. Depois de uma pequena recuperação no terceiro
 trimestre, caiu novamente no quarto.
 ![](../Images/lab-01/image08.png)
+
+2.	Vamos comparar isso com a região **Rocky Mountain. Selecione o visual Rocky Mountain from
+Sales Territory** (gráfico de dispersão). Observe no gráfico de colunas Sales YoY% que as vendas da Wingtip Toys aumentaram drasticamente no quarto trimestre de 2022, depois de terem sido baixas nos dois trimestres anteriores.
+![](../Images/lab-01/image09.png)
+
+3.	Selecione o visual **Rocky Mountain from Sales Territory** para remover o filtro.
+4.	No visual Gráfico de dispersão, na parte inferior central da tela (Sales Orders por Sales), selecione a exceção no canto superior direito (4º quadrante). Observe que a margem percentual é de 52%, estando acima da média de 50%. Além disso, o Sales YoY% aumentou últimos dois trimestres
+de 2022.
+![](../Images/lab-01/image10.png)
+
+5.	Selecione a exceção Reseller no visual Gráfico de dispersão para **remover o filtro.**
+6.	Vamos obter os detalhes de Product por Product Group e Reseller. No visual do gráfico de barras Sales por Product Group e Reseller Company, **clique com o botão direito na barra Packaging Materials para Tailspin Toys** e, na caixa de diálogo, selecione **Drill through -> Product Detail.**
+![](../Images/lab-01/image11.png)
