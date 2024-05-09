@@ -55,7 +55,8 @@ no painel direito do ambiente de laboratório.
 10.	Selecione **Sign in**.
 11.	A caixa de diálogo Action Required é aberta solicitando a configuração da autenticação multifator. Não precisamos configurar isso, pois estamos em um ambiente de laboratório. Selecione **Ask later**.
 
-![](../Images/lab-01/image06.png)
+    ![](../Images/lab-01/image06.png)
+
 12.	Selecione **No, sign in the app only** na próxima caixa de diálogo. O Power BI Desktop será aberto.
 ### Tarefa 2: Analisar relatório do Power BI Desktop
 O relatório abaixo analisa as Sales da Fabrikam. Os KPIs estão listados no canto superior esquerdo da página. Os visuais restantes destacam as Sales over time, por Territory, Product Group e Reseller Company.
