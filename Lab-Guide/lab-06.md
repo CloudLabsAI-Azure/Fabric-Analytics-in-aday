@@ -27,6 +27,8 @@ découvrir comment effectuer ces activités de modélisation dans le service. À
 1.	Revenons à l’espace de travail **Fabric_<username>** que vous avez créé dans le labo 2, tâche 9.
 2.	Vous voyez trois types d’lh_FAIAD : Lakehouse, modèle sémantique et point de terminaison SQL. Nous avons exploré l’option Lakehouse dans un labo précédent. Sélectionnez l’option **Point de terminaison analytique SQL lh_FAIAD** pour explorer l’option SQL. Vous êtes alors redirigé vers la **vue SQL** de l’explorateur.
 
+    ![](../Images/lab-06/image005.jpg)
+
 Vous pouvez explorer les données avant de créer un modèle de données à l’aide de SQL. Examinons deux options permettant d’utiliser SQL : la première est conviviale pour les développeurs et la
 deuxième est destinée aux analystes.
 
@@ -36,6 +38,8 @@ Dans le volet gauche, notez que vous pouvez afficher les tables. Si vous dévelo
 vues, fonctions et procédures stockées SQL. Si vous avez une expérience SQL, n’hésitez pas à explorer ces options. Essayons d’écrire une requête SQL simple.
  
 3.	Dans le **menu supérieur**, cliquez sur **Nouvelle requête SQL** ou en **bas du volet gauche**, cliquez sur **Requête**. Vous êtes alors redirigé vers la vue Requête SQL.
+
+    ![](../Images/lab-06/image008.jpg)
 
 4.	Collez la **requête SQL ci-dessous** dans la **fenêtre Requête**. Cette requête renvoie les unités par nom de fournisseur. Pour y parvenir, elle joint la table Sales avec les tables Product et Supplier.
 
@@ -47,32 +51,42 @@ vues, fonctions et procédures stockées SQL. Si vous avez une expérience SQL, 
 5.	Cliquez sur **Run** pour afficher les résultats.
 6.	Notez qu’une option permet d’enregistrer cette requête en tant que vue en cliquant sur
 **Enregistrer en tant que vue**.
-7.	Dans le **volet gauche** Explorateur, sous la section **Queries**, cette requête est enregistrée sous **Mes requêtes** comme **SQL query 1**. Cela permet de renommer la requête et de l’enregistrer pour une utilisation ultérieure. En outre, une option permet d’afficher les requêtes partagées avec vous à
-l’aide du dossier **Requêtes partagées**.
+7.	Dans le **volet gauche** Explorateur, sous la section **Queries**, cette requête est enregistrée sous **Mes requêtes** comme **SQL query 1**. Cela permet de renommer la requête et de l’enregistrer pour une utilisation ultérieure. En outre, une option permet d’afficher les requêtes partagées avec vous à l’aide du dossier **Requêtes partagées**.
  
+    ![](../Images/lab-06/image011.jpg)
  
 ### Tâche 2 : visualiser le résultat T-SQL
 1.	Nous pouvons également visualiser le résultat de cette requête. **Mettez en surbrillance la requête** dans le volet de la requête et cliquez sur le volet **Résultats**, puis sur **Explorer ces données**.
 
+    ![](../Images/lab-06/image014.jpg)
+
 2.	La boîte de dialogue **Explorer la requête SQL** s’ouvre. Dans le volet **Données**, développez **SQL query 1**.
 3.	Sélectionnez les **champs Supplier_Name** et **Units**. Un graphique à barres groupées est créé.
 4.	Dans la section **Visualisation**, changez le type de visuel en sélectionnant l’**Histogramme empilé**.
+
+    ![](../Images/lab-06/image017.jpg)
  
  
 5.	**Développez Matrice** pour afficher les données sous forme de matrice.
 
+    ![](../Images/lab-06/image020.png)
+
 6.	Cliquez sur **Enregistrer - > Enregistrer en tant qu’état** en haut de l’écran à droite.
  
+    ![](../Images/lab-06/image023.jpg)
  
 7.	La boîte de dialogue Enregistrer votre rapport s’ouvre alors. Tapez **Units by Supplier** dans la zone de texte **Entrez un nom pour votre rapport**.
 8.	Assurez-vous que l’espace de travail de destination est votre espace de travail Fabric
 **FAIAD<username>**.
 9.	Cliquez sur **Enregistrer**.
 
+    ![](../Images/lab-06/image026.png)
+
 Vous serez alors dirigé vers l’expérience complète de l’état. Plusieurs options sont à votre disposition pour formater les visuels. Nous les verrons au cours du labo suivant.
 
 10.	Dans le volet gauche, cliquez sur **lh_FAIAD**.
  
+    ![](../Images/lab-06/image029.jpg)
  
 ### Tâche 3 : créer une requête visuelle
 Vous êtes alors redirigé vers la **vue de point de terminaison analytique SQL**. Si vous n’êtes pas familier avec SQL, vous pouvez exécuter une requête similaire à l’aide d’une requête visuelle.
@@ -80,7 +94,11 @@ Vous êtes alors redirigé vers la **vue de point de terminaison analytique SQL*
 2.	Dans le volet **Explorer** développez **Schémas -> dbo -> Tables**.
 3.	Faites glisser les tables **Sales, Product et Supplier** vers le volet de requête visuelle.
 
+    ![](../Images/lab-06/image032.png)
+
 4.	Une fois la table **Sales** sélectionnée, cliquez sur **Combiner -> Fusionner des requêtes** dans le menu du volet de requête visuelle.
+
+    ![](../Images/lab-06/image035.png)
  
  
 5.	La boîte de dialogue Fusionner s’ouvre alors. Dans la **liste déroulante Table de droite pour la fusion,** sélectionnez **Product**.
@@ -88,43 +106,59 @@ Vous êtes alors redirigé vers la **vue de point de terminaison analytique SQL*
 7.	Dans le champ **Type de jointure**, sélectionnez **Externe gauche**.
 8.	Cliquez sur **OK**.
 
+    ![](../Images/lab-06/image038.png)
+
 9.	Dans le volet des **résultats**, cliquez sur la **double flèche** en regard de la colonne **Product**.
 10.	Une boîte de dialogue s’ouvre alors : sélectionnez-y **SupplierID**.
 11.	Cliquez sur OK. Notez que les étapes Requêtes fusionnées et Product développé sont créées dans la table **Sales**.
- 
+
+    ![](../Images/lab-06/image041.jpg)
  
 12.	De même, fusionnons la table Supplier. Dans la table **Sales**, cliquez sur le signe **« + »** (situé après Product développé) pour ajouter une nouvelle étape. Une boîte de dialogue s’ouvre alors.
 13.	Cliquez sur **Combiner -> Fusionner des requêtes**.
+
+    ![](../Images/lab-06/image044.jpg)
 
 14.	La boîte de dialogue Fusionner s’ouvre alors. Dans la **liste déroulante Table de droite pour la fusion,** sélectionnez **Supplier**.
 15.	Sélectionnez **SupplierID** dans les tables **Sales** et **Supplier**. Cette opération permet de fusionner les tables Supplier et Sales.
 16.	Dans le champ **Type de jointure**, sélectionnez **Externe gauche**.
 17.	Cliquez sur **OK**.
+
+    ![](../Images/lab-06/image047.jpg)
  
  
 18.	Dans le volet des **résultats**, cliquez sur la **double flèche** en regard de la colonne **Supplier**.
 19.	Une boîte de dialogue s’ouvre alors : sélectionnez-y **Supplier_Name**.
 20.	Cliquez sur **OK**. Notez que dans la table Sales, **Requêtes fusionnées** est ajouté et que les **étapes sont enregistrées**.
 
+    ![](../Images/lab-06/image050.jpg)
+
 21.	Nous allons maintenant regrouper les données par nom Supplier pour obtenir la quantité par Supplier. Dans la table **Sales**, cliquez sur le signe **« + »** (situé après Expanded Supplier) pour ajouter une nouvelle étape. Une boîte de dialogue s’ouvre alors.
 22.	Sélectionnez **Transformer la table -> Grouper par**. La boîte de dialogue Grouper par s’ouvre.
  
- 
+    ![](../Images/lab-06/image053.jpg)
+
 23.	Dans la liste déroulante **Grouper par**, sélectionnez **Supplier_Name**.
 24.	Saisissez **Units** comme illustré dans la capture d’écran de la boîte de dialogue de la requête de fusion.
 25.	Définissez **Opération** sur **Somme**
 26.	Sélectionnez **Quantité** dans le menu déroulant **Colonne**.
 27.	Cliquez sur **OK**.
 
+    ![](../Images/lab-06/image056.png)
+
 Notez que toutes les étapes sont consignées dans le bloc Sales. (Reportez-vous à la première capture d’écran sous la tâche 4.)
  
 ### Tâche 4 : visualiser les résultats de la requête
 1.	Maintenant que la requête est prête, voyons le résultat. Cliquez sur **Visualiser les résultats** dans le volet des résultats.
 
+    ![](../Images/lab-06/image059.jpg)
+
 2.	La boîte de dialogue Visualiser les résultats s’ouvre alors. Dans le volet **Données** de droite,
 **développez Visual query1**.
 3.	Sélectionnez les champs **Supplier_Name** et **Units**.
 4.	Notez que le résultat ressemble au résultat de la requête SQL précédente. Si vous le souhaitez, vous pouvez enregistrer cet état. Puisque nous avons enregistré un état similaire précédemment, nous allons cliquer sur **Annuler**.
+
+    ![](../Images/lab-06/image062.jpg)
 
  
 ### Tâche 5 : créer des relations
@@ -133,12 +167,16 @@ Nous sommes maintenant prêts à créer le modèle, des relations entre les tabl
 2.	**Redimensionnez et réorganisez** les tables si nécessaire.
 3.	Créons une relation entre les tables Sales et Reseller. Sélectionnez la valeur **ResellerID** dans la table **Sales** et faites-la glisser vers la valeur **ResellerID** dans la table **Reseller**.
 
+    ![](../Images/lab-06/image065.jpg)
+
 4.	La boîte de dialogue Nouvelle relation s’ouvre alors. Assurez-vous que le champ **Table 1** est défini sur Sales et le paramètre **Colonne** sur **ResellerID**.
 5.	Assurez-vous que le champ **Table 2** est défini sur **Reseller** et le paramètre **Colonne** sur
 **ResellerID**.
 6.	Assurez-vous que le champ **Cardinalité** est défini sur **Plusieurs à un (*:1)**.
 7.	Assurez-vous que le champ **Direction du filtre croisé** est défini sur **Single**.
 8.	Cliquez sur **OK**.
+
+    ![](../Images/lab-06/image068.png)
 
 9.	De même, créez une relation entre les tables Sales et Date. Sélectionnez la valeur **InvoiceDate**
 dans la table **Sales** et faites-la glisser vers la valeur **Date** dans la table **Date**.
@@ -149,10 +187,16 @@ dans la table **Sales** et faites-la glisser vers la valeur **Date** dans la tab
 13.	Assurez-vous que le champ **Direction du filtre croisé** est défini sur **Single**.
 14.	Cliquez sur **OK**.
 
+    ![](../Images/lab-06/image071.png)
+
 15.	De même, créez une relation **plusieurs-à-un** entre les tables **Sales** et **Product**. Sélectionnez la valeur **StockItemID** dans la table **Sales** et la valeur **StockItemID** dans la table **Product**.
 16.	Dans le menu supérieur, **sélectionnez Reporting -> Mettre à jour automatiquement le modèle sémantique** pour enregistrer et mettre à jour le modèle.
 
+    ![](../Images/lab-06/image074.jpg)
+
 **Point de contrôle :** votre modèle devrait comporter les trois relations entre les tables Sales et Reseller, les tables Sales et Date, et les tables Sales et Product, comme illustré dans la capture d’écran ci-dessous :
+
+![](../Images/lab-06/image077.jpg)
  
  
 Pour gagner du temps, nous n’allons pas créer toutes les relations. Si le temps le permet, vous
@@ -167,6 +211,8 @@ Ajoutons quelques mesures dont nous avons besoin pour créer le tableau de bord 
 4.	Cliquez sur la **coche** à gauche de la barre de formule ou appuyez sur la touche **Entrée**.
 5.	Dans le volet Propriétés à droite, développez la section **Mise en forme**.
 6.	Dans la liste déroulante **Format**, sélectionnez **Nombre entier**.
+
+    ![](../Images/lab-06/image080.jpg)
  
  
 7.	Une fois la table **Sales** sélectionnée dans le menu supérieur, cliquez sur **Accueil -> Nouvelle mesure**. Notez que la barre de formule s’affiche.
@@ -175,13 +221,16 @@ Ajoutons quelques mesures dont nous avons besoin pour créer le tableau de bord 
 10.	Dans le volet Propriétés à droite, développez la section **Mise en forme**. (Le chargement du volet Propriétés peut prendre quelques instants.)
 11.	Dans la liste déroulante **Format**, sélectionnez **Nombre entier**.
 
+    ![](../Images/lab-06/image083.jpg)
+
 12.	Une fois la table **Sales** sélectionnée dans le menu supérieur, cliquez sur **Accueil -> Nouvelle mesure**. Notez que la barre de formule s’affiche.
 13.	Saisissez **Orders = DISTINCTCOUNT(Sales[InvoiceID])** dans la **barre de formule**.
 14.	Cliquez sur la **coche** à gauche de la barre de formule ou appuyez sur la touche **Entrée**.
 15.	Dans le volet Propriétés à droite, développez la section **Mise en forme**.
 16.	Dans la liste déroulante **Format**, sélectionnez **Nombre entier**.
  
- 
+    ![](../Images/lab-06/image086.jpg)
+
 Encore une fois, pour gagner du temps, nous n’allons pas créer toutes les mesures. Si le temps le permet, vous pouvez suivre la section facultative à la fin du labo. La section facultative passe en revue les étapes permettant de créer les mesures restantes.
 
 Nous avons créé un modèle de données et l’étape suivante consiste à créer un état. Nous allons le faire dans le prochain labo.
@@ -191,7 +240,9 @@ Ajoutons les relations restantes.
 
 1.	De même, créez une relation **plusieurs-à-un** entre les tables **Sales** et **People**. Sélectionnez la valeur **SalespersonPersonID** dans la table **Sales** et la valeur **PersonID** dans la table **People**.
 
-**Point de contrôle :** votre modèle devrait ressembler à la capture d’écran ci-dessous.
+    **Point de contrôle :** votre modèle devrait ressembler à la capture d’écran ci-dessous.
+
+    ![](../Images/lab-06/image089.jpg)
 
 2.	Créons maintenant une relation entre les tables Product et Supplier. Sélectionnez la valeur **SupplierID** dans la table **Product** et faites-la glisser vers la valeur **SupplierID** dans la table **Supplier**.
 3.	La boîte de dialogue Nouvelle relation s’ouvre alors. Assurez-vous que le champ **Table 1** est défini sur **Product** et le paramètre **Colonne** sur **SupplierID**.
@@ -200,6 +251,8 @@ Ajoutons les relations restantes.
 5.	Assurez-vous que le champ **Cardinalité** est défini sur **Plusieurs à un (*:1)**.
 6.	Assurez-vous que le champ **Direction du filtre croisé** est défini sur **À double sens**.
 7.	Cliquez sur **OK**.
+
+    ![](../Images/lab-06/image092.png)
 
 8.	De même, créez une relation **plusieurs-à-un** avec le champ **Direction du filtre croisé** défini sur **À double sens** entre les tables **Product_Details** et **Product**. Sélectionnez la valeur **StockItemID** dans la table **Product_Details** et la valeur **StockItemID** dans la table **Product**.
 9.	Créons maintenant une relation entre les tables Reseller et Geo. Sélectionnez la valeur
@@ -211,6 +264,8 @@ Ajoutons les relations restantes.
 13.	Assurez-vous que le champ **Direction du filtre croisé** est défini sur **À double sens**.
 14.	Cliquez sur **OK**.
 
+    ![](../Images/lab-06/image095.png)
+
 15.	Créons maintenant une relation entre les tables Customer et Reseller. Sélectionnez la valeur **ResellerID** dans la table **Customer** et faites-la glisser vers la valeur **ResellerID** dans la table Reseller.
 16.	La boîte de dialogue Nouvelle relation s’ouvre alors. Assurez-vous que le champ **Table 1** est défini sur **Customer** et le paramètre **Colonne** sur **ResellerID**.
 17.	Assurez-vous que le champ **Table 2** est défini sur **Reseller** et le paramètre **Colonne** sur
@@ -219,8 +274,12 @@ Ajoutons les relations restantes.
 19.	Assurez-vous que le champ **Direction du filtre croisé** est défini sur **Single**.
 20.	Cliquez sur **OK**.
 
- 
-**Point de contrôle**: votre modèle devrait ressembler à la capture d’écran ci-dessous.
+    ![](../Images/lab-06/image098.png)
+
+    
+    **Point de contrôle**: votre modèle devrait ressembler à la capture d’écran ci-dessous.
+
+    ![](../Images/lab-06/image101.jpg)
 
 21.	Créons maintenant une relation entre les tables PO et Date. Sélectionnez la valeur **Order_Date**
 dans la table **PO** et faites-la glisser vers la valeur **Date** dans la table **Date**.
@@ -230,6 +289,8 @@ dans la table **PO** et faites-la glisser vers la valeur **Date** dans la table 
 25.	Assurez-vous que le champ **Direction du filtre croisé** est défini sur **Single**.
 26.	Cliquez sur **OK**.
 
+    ![](../Images/lab-06/image104.png)
+
 27.	De même, créez une relation **plusieurs-à-un** entre les tables **PO** et **Product**. Sélectionnez la valeur **StockItemID** dans la table PO et la valeur **StockItemID** dans la table **Product**.
 28.	De même, créez une relation **plusieurs-à-un** entre les tables **PO** et **People**. Sélectionnez la valeur
 **ContactPersonID** dans la table **PO** et la valeur **PersonID** dans la table **People**.
@@ -238,6 +299,8 @@ Nous avons fini de créer toutes les relations.
 
 **Point de contrôle :** votre modèle devrait ressembler à la capture d’écran ci-dessous.
 
+![](../Images/lab-06/image107.jpg)
+
 ### Tâche 8 : section facultative - Créer des mesures
 Ajoutons les mesures restantes.
 1.	Sélectionnez la table **Sales** et dans le menu supérieur, cliquez sur **Outils de table -> Nouvelle mesure**.
@@ -245,6 +308,8 @@ Ajoutons les mesures restantes.
 3.	Cliquez sur la **coche** dans la barre de formule ou appuyez sur la touche Entrée.
 4.	Une fois la mesure enregistrée, notez l’option Outils de mesure dans le menu supérieur. Cliquez sur **Outils de mesure**.
 5.	Dans la liste déroulante Format, sélectionnez **Nombre décimal**.
+
+    ![](../Images/lab-06/image110.jpg)
  
  
 6. Suivez des étapes similaires pour ajouter les mesures suivantes :
@@ -258,7 +323,7 @@ Ajoutons les mesures restantes.
 ### Références
 Fabric Analyst in a Day (FAIAD) vous présente certaines des fonctions clés de Microsoft Fabric. Dans le menu du service, la section Aide (?) comporte des liens vers d’excellentes ressources.
 
-![](../Images/lab-05/image138.png)
+![](../Images/lab-06/image113.png)
 
 Voici quelques autres ressources qui vous aideront lors de vos prochaines étapes avec Microsoft Fabric :
 - Consultez le billet de blog pour lire l’intégralité de l’[annonce de la GA de Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23).
