@@ -35,7 +35,7 @@ Ao final deste laboratório, você terá aprendido:
 3. Você será direcionado à tela **Senha.** Insira a **Senha** disponível na guia **Variáveis de Ambiente**
 (ao lado do Guia de Laboratório), que o instrutor compartilhou com você.
 4. Clique em **Entrar** e siga as instruções para entrar no Fabric.
-![](../Images/lab-01/image02.png)
+![](../Images/lab-02/image02.png)
 5. Você será direcionado à conhecida **Página Inicial de Serviço do Power BI.**
 6. Presumimos que você esteja familiarizado com o layout do Serviço do Power BI. Se você tiver alguma dúvida, não hesite em perguntar ao instrutor.
 
