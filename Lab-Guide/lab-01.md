@@ -1,4 +1,4 @@
- 	 
+![](../Images/lab1.png)	 
  
 ## Sommaire
 
