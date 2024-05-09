@@ -249,9 +249,9 @@ Microsoft Fabric の次のステップに役立つリソースをいくつか以
 •	Microsoft Fabric のWeb サイトにアクセスする<br>
 •	Fabric の学習モジュールで新しいスキルを学ぶ<br>
 •	Fabric の技術ドキュメントを参照する<br>
- 
 •	Fabric 入門編の無料のe-book を読む<br>
 •	Fabric コミュニティに参加し、質問の投稿やフィードバックの共有を行い、他のユーザーから学びを得る<br>
+
 より詳しい Fabric エクスペリエンスのお知らせに関するブログを参照してください<br>
 
 •	Fabric の Data Factory エクスペリエンスに関するブログ<br>
