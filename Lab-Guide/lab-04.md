@@ -361,7 +361,7 @@ GenX、GenY、GenZ) に入手できます。これら 4 つのクエリをアペ
 
 6.	保存を選択します。
 
-    ![](../Images/lab-04/image113.png)
+   ![](../Images/lab-04/image113.png)
    
 FAIAD_<ユーザー名> ワークスペースに自動的に戻ります。これで、すべてのデータが
 Lakehouse に取り込まれました。次のラボでは、Dataflow の更新スケジュールを設定します。
