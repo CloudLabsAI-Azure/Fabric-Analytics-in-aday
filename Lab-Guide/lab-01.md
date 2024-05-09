@@ -44,3 +44,6 @@ no painel direito do ambiente de laboratório.
 3.	Copie os dados de **Username** e cole na caixa de texto Email da caixa de diálogo.
 4.	Selecione **Continue**.
 ![](../Images/lab-01/image03.png)
+5.	A caixa de diálogo Vamos entrar é aberta. Selecione **Conta corporativa ou de estudante.**
+6.	Selecione **Continuar.**
+![](../Images/lab-01/image04.png)
