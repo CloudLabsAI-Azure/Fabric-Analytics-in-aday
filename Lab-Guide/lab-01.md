@@ -80,3 +80,27 @@ de 2022.
 5.	Selecione a exceção Reseller no visual Gráfico de dispersão para **remover o filtro.**
 6.	Vamos obter os detalhes de Product por Product Group e Reseller. No visual do gráfico de barras Sales por Product Group e Reseller Company, **clique com o botão direito na barra Packaging Materials para Tailspin Toys** e, na caixa de diálogo, selecione **Drill through -> Product Detail.**
 ![](../Images/lab-01/image11.png)
+
+Você será direcionado para a página que fornece os Product Details. Observe que também existem algumas ordens futuras em andamento.
+
+7.	Quando terminar de revisar esta página, selecione **Ctrl+seta para voltar** na parte superior direita da página para "voltar ao Sales Report.
+
+![](../Images/lab-01/image12.png)
+
+8.	Fique à vontade para analisar o relatório posteriormente. Quando estiver pronto, vamos dar uma olhada na exibição do modelo. No painel esquerdo, selecione o **Ícone de exibição do modelo.** Observe que existem duas tabelas de fatos, Sales e PO.<br>
+**a.**	A granularidade dos dados de Sales é por Date, Reseller, Product e People. Date, Reseller, Product e People conectam-se a Sales.<br>
+**b.**	A granularidade dos dados de PO é por Date, Product e People. Date, Product e People conectam-se a PO.<br>
+**c.**	Temos dados de Supplier por Product. Supplier conecta-se a Product.<br>
+**d.**	Temos os dados de localização de Reseller por Geo. Geo conecta-se a Reseller.<br>
+**e.**	Temos informações de Customer por Reseller. Customer conecta-se a Reseller.
+### Tarefa 3: Revisar Power Queries
+1.	Vamos analisar o Power Query para entender as fontes de dados. Na faixa de opções, selecione **Página Inicial -> Transformar dados.**
+![](../Images/lab-01/image13.png)
+
+2.	A janela do Power Query é aberta. Na faixa de opções, selecione **Página Inicial -> Configuração da fonte de dados**. A caixa de diálogo Configuração da fonte de dados é aberta. Ao percorrer a lista, você notará que existem quatro fontes de dados, conforme mencionado na declaração do problema:<br>
+a.	Snowflake<br>
+b.	SharePoint<br>
+c.	ADLS Gen2<br>
+d.	Dataverse
+3.	Selecione Fechar para fechar a caixa de diálogo Configuração da fonte de dados.
+
