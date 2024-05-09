@@ -35,7 +35,7 @@ DirectLake 機能の使い方がわかります。
 
 # Fabric ライセンス
 
-タスク 1: Microsoft Fabric 試用版ライセンスを有効にする
+## タスク 1: Microsoft Fabric 試用版ライセンスを有効にする
 1.	ブラウザーを開いて、https://app.powerbi.com/ に移動します。ログイン ページが表示されます。
     注: ラボ環境を使用しておらず、Power BI アカウントを既にお持ちの場合は、ブラウザーをプライベートモードやシークレットモードで使用することをお勧めします。
 
@@ -48,7 +48,7 @@ DirectLake 機能の使い方がわかります。
 
 4.	Sign in をクリックし、プロンプトに従って Fabric にサインインします。
 
-   ![](../Images/lab-02/image009.png)
+    ![](../Images/lab-02/image009.png)
 
 5.	見慣れた Power BI サービスのホームページが表示されます。
 
@@ -59,36 +59,36 @@ DirectLake 機能の使い方がわかります。
 
 8.	Start trial を選択します。
 
-  ![](../Images/lab-02/image012.jpg)
+   ![](../Images/lab-02/image012.jpg)
  
 9.	[Microsoft Fabric の無料試用版へのアップグレード] ダイアログが開きます。無料体験す
     るを選択します。
 
-   ![](../Images/lab-02/image015.jpg)
+    ![](../Images/lab-02/image015.jpg)
 
 10.	最後にあと 1 ステップだけですダイアログの右上隅の X を選択して、ダイアログを閉じます。これはラボ環境であるため、これらの詳細は提供されません。
 
-    ![](../Images/lab-02/image018.jpg)
+     ![](../Images/lab-02/image018.jpg)
 
 11.	Microsoft Fabric に正常にアップグレードされたことを示すダイアログが開きます。
     Fabric Home Page を選択します。
 
-    ![](../Images/lab-02/image021.png)
+     ![](../Images/lab-02/image021.png)
  
 12.	Microsoft Fabric のホームページが開きます。
 
-    ![](../Images/lab-02/image024.jpg)
+     ![](../Images/lab-02/image024.jpg)
 
 # Fabric のエクスペリエンスの概要
 
-タスク 2: Data Factory のエクスペリエンス
+## タスク 2: Data Factory のエクスペリエンス
 1.	画面左下の Microsoft Fabric (Fabric エクスペリエンスセレクター) アイコンを選択します。ダイアログが開き、Fabric のエクスペリエンスの一覧が表示されます。Power BI、 Data Factory、Data Activator、Industry Solutions は独立したエクス     ペリエンスであることに注意してください。Data Engineering、Data Science、Data Warehouse、Real-Time
     Analytics はSynapse のエクスペリエンスであり、これら 4 つのエクスペリエンスは
     Synapse を利用します。詳しく見て行きましょう。
  
 2.	Data Factory を選択します。
 
-   ![](../Images/lab-02/image027.jpg)
+    ![](../Images/lab-02/image027.jpg)
 
 3.	Data Factory のホーム ページが表示されます。このページは 3 つのメインセクションに分かれています。
     a.	New: Data Factory で利用できるアイテムの一覧 (Dataflow Gen2 とデータ パイプライン) が表示されます。
@@ -97,21 +97,21 @@ DirectLake 機能の使い方がわかります。
     b.	Recommended: このセクションからクイック スタート学習ドキュメントにアクセスできます。
     c.	Quick access: このセクションには、最近使用したアイテムやお気に入りのアイテムの一覧が表示されます。
 
-   ![](../Images/lab-02/image030.jpg)
+    ![](../Images/lab-02/image030.jpg)
  
-タスク 3: Data Activator のエクスペリエンス
+## タスク 3: Data Activator のエクスペリエンス
 1.	画面の左下にある Fabric エクスペリエンスセレクターアイコン (現在は Data Factory に設定されています) を選択します。Fabric エクスペリエンスのダイアログが開きます。
 
-   ![](../Images/lab-02/image033.png)
+    ![](../Images/lab-02/image033.png)
 
 2.	ダイアログで Data Activator を選択します。Data Activator のホーム ページが表示されます。Data Activator は、変化するデータからパターンや条件が検出されたときに自動的にアクションを実行する、Microsoft Fabric のノーコードエクスペリエン     スです。3 つのセ
     クションは Data Factory のエクスペリエンスと似ています。[新規] セクションには次のアイテムがあります。
       a.	Reflex: データセット、クエリ、イベントストリームのパターンを監視するために使用されます。
       b.	Reflex サンプル: サンプルソリューション。
 
-   ![](../Images/lab-02/image036.png)
+    ![](../Images/lab-02/image036.png)
  
-タスク 4: Industry Solutions のエクスペリエンス
+## タスク 4: Industry Solutions のエクスペリエンス
 1.	画面の左下にある Fabric エクスペリエンスセレクターアイコン (現在は Data Activator に設定されています) を選択します。Fabric エクスペリエンスのダイアログが開きます。
 
 2.	ダイアログで Industry Solutions を選択します。Industry Solutions のホーム ページが表示
@@ -120,9 +120,9 @@ DirectLake 機能の使い方がわかります。
             取り込み、標準化、分析をサポートします。
         b.	小売ソリューション: 膨大なデータの管理、さまざまなソースのデータ統合、意思決定を加速させるリアルタイム分析の提供に役立ちます。小売業者は、在庫の最適化、顧客のセグメント化、売上予測、動的な価格、不正の検出に、これらのソリューシ              ョンを使用できます。
 
-   ![](../Images/lab-02/image039.png)
+    ![](../Images/lab-02/image039.png)
  
-タスク 5: Synapse Data Engineering のエクスペリエンス
+## タスク 5: Synapse Data Engineering のエクスペリエンス
 1.	画面の左下にある Fabric エクスペリエンスセレクターアイコン (現在はIndustry Solutions
     に設定されています) を選択します。Fabric エクスペリエンスのダイアログが開きます。
 
@@ -136,10 +136,10 @@ DirectLake 機能の使い方がわかります。
     f.	Import notebook: ローカルマシンからノートブックをインポートするために使用されます。
     g.	Use a sample: サンプルソリューション。
  
-  ![](../Images/lab-02/image042.jpg) 
+   ![](../Images/lab-02/image042.jpg) 
 
 
-タスク 6: Synapse Data Science のエクスペリエンス
+## タスク 6: Synapse Data Science のエクスペリエンス
 1.	画面の左下にある Fabric エクスペリエンスセレクターアイコン (現在は Data Engineering
     に設定されています) を選択します。Fabric エクスペリエンスのダイアログが開きます。
 
@@ -153,9 +153,9 @@ DirectLake 機能の使い方がわかります。
     f.	Use a sample: サンプルソリューション。
     注: ノートブック、環境、データ パイプラインなどのアイテムは、これらの各エクスペリエンスで関連しているので、複数のエクスペリエンスで使用できます。
 
-   ![](../Images/lab-02/image045.jpg)
+    ![](../Images/lab-02/image045.jpg)
  
-タスク 7: Synapse Data Warehouse のエクスペリエンス
+## タスク 7: Synapse Data Warehouse のエクスペリエンス
 1.	画面の左下にある Fabric エクスペリエンスセレクターアイコン (現在は Data Science に設定されています) を選択します。Fabric エクスペリエンスのダイアログが開きます。
 
 2.	Data Warehouse を選択します。Data Warehouse のホームページが表示されます。ここも
@@ -164,9 +164,9 @@ DirectLake 機能の使い方がわかります。
     a.	ウェアハウス: Data Warehouse の作成に使用されます。
     b.	データ パイプライン: データソリューションのオーケストレーションに使用されます。
 
-   ![](../Images/lab-02/image048.png)
+    ![](../Images/lab-02/image048.png)
  
-タスク 8: Real-Time Analytics のエクスペリエンス
+## タスク 8: Real-Time Analytics のエクスペリエンス
 1.	画面の左下にある Fabric エクスペリエンスセレクターアイコン (現在は Data Warehouse
     に設定されています) を選択します。Fabric エクスペリエンスのダイアログが開きます。
 
@@ -179,15 +179,16 @@ DirectLake 機能の使い方がわかります。
     d.	Eventstream: リアルタイムイベントストリームのキャプチャ、変換、ルーティングに使用されます。
     e.	サンプルを使用する: サンプルソリューション。
 
-   ![](../Images/lab-02/image051.jpg)
+    ![](../Images/lab-02/image051.jpg)
  
 Fabric ワークスペース
-タスク 9: Fabric ワークスペースを作成する
+
+## タスク 9: Fabric ワークスペースを作成する
 1.	次は、Fabric ライセンスを使用してワークスペースを作成しましょう。左ナビゲーション バーからワークスペースを選択します。ダイアログが開きます。
 
 2.	新しいワークスペースを選択します。
 
-   ![](../Images/lab-02/image054.png)
+    ![](../Images/lab-02/image054.png)
 
 3.	ワークスペースの作成ダイアログがブラウザーの右側に開きます。
 
@@ -198,26 +199,26 @@ Fabric ワークスペース
  
 6.	詳細をクリックしてセクションを展開します。
 
-   ![](../Images/lab-02/image057.png)
+    ![](../Images/lab-02/image057.png)
 
 7.	License mode で、Trial が選択されていることを確認します (既定で選択されています)。
 
 8.	Apply を選択して新しいワークスペースを作成します。
     新しくワークスペースが作成され、そのワークスペースが表示されます。さまざまなデータソースからレイクハウスにデータを取り込み、そのレイクハウスからのデータを使用してモデルを構築し、レポートを作成します。最初のステップでは、レイクハウスを作     成します。
 
-   ![](../Images/lab-02/image060.png)
+    ![](../Images/lab-02/image060.png)
  
-タスク 10: レイクハウスを作成する
+## タスク 10: レイクハウスを作成する
 1.	画面の左下にある Fabric エクスペリエンスセレクターアイコン (現在はReal-Time
     Analytics に設定されています) を選択します。Fabric エクスペリエンスのダイアログが開きます。
 
 2.	Data Engineering を選択すると、Data Engineering のホームページが表示されます。
 
-   ![](../Images/lab-02/image063.png)
+    ![](../Images/lab-02/image063.png)
 
 3.	レイクハウスを選択します。
 
-  ![](../Images/lab-02/image066.jpg)
+   ![](../Images/lab-02/image066.jpg)
 
 4.	[New lakehouse] ダイアログが開きます。[Name] テキストボックスに lh_FAIAD と入力します。
     注: ここでの lh はLakehouse を指します。識別と検索を容易にするために、接頭辞とし
@@ -225,7 +226,7 @@ Fabric ワークスペース
  
 5.	Create を選択します。
 
-   ![](../Images/lab-02/image069.png)
+    ![](../Images/lab-02/image069.png)
 
     しばらくするとLakehouse が作成され、Lakehouse のインターフェイスが表示されます。 左パネルの自分のワークスペースの下に Lakehouse のアイコンが表示されます。このアイコンをクリックすると、いつでも簡単にその Lakehouse に移動できます。
 
