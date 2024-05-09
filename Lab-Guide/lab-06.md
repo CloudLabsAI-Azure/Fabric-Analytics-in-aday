@@ -24,7 +24,7 @@ découvrir comment effectuer ces activités de modélisation dans le service. À
 
 ## Lakehouse
 ### Tâche 1 : interroger des données à l’aide de SQL
-1.	Revenons à l’espace de travail Fabric **8** que vous avez créé dans le labo 2, tâche 9.
+1.	Revenons à l’espace de travail **Fabric_<username>** que vous avez créé dans le labo 2, tâche 9.
 2.	Vous voyez trois types d’lh_FAIAD : Lakehouse, modèle sémantique et point de terminaison SQL. Nous avons exploré l’option Lakehouse dans un labo précédent. Sélectionnez l’option **Point de terminaison analytique SQL lh_FAIAD** pour explorer l’option SQL. Vous êtes alors redirigé vers la **vue SQL** de l’explorateur.
 
 Vous pouvez explorer les données avant de créer un modèle de données à l’aide de SQL. Examinons deux options permettant d’utiliser SQL : la première est conviviale pour les développeurs et la
