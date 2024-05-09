@@ -478,11 +478,11 @@ ADLS Base Folder もコピーされることに注意してください。これ
 11.	Power Query のウィンドウに戻ります。右下隅を見ると、データ同期先がレイクハウス
     に設定されています。
 
-12.	同様に、次のクエリのデータ同期先を設定します。
-    a.	Product Details
-    b.	Reseller
-    c.	Sales
-    d.	Date
+12.	同様に、次のクエリのデータ同期先を設定します。<br>
+    a.	Product Details<br>
+    b.	Reseller<br>
+    c.	Sales<br>
+    d.	Date<br>
 
     ![](../Images/lab-03/image166.jpg)
  
