@@ -52,9 +52,9 @@ Dataflow Gen2	4<br>
 
 3.	開いているFabric エクスペリエンスダイアログから Data Factory を選択します。Data Factory にはデータの抽出、変換、取り込みに必要なワークロードがあります。
 
-    ![](../Images/lab-03/image015.jpg)
+    ![](../Images/lab-03/image006.jpg)
 
-    ![](../Images/lab-03/image018.jpg)
+    ![](../Images/lab-03/image009.jpg)
  
 4.	Data Factory のホーム ページが表示されます。[新規] で、データフロー (Gen2) を選択します。
     Dataflow のページが表示されます。この画面は Dataflow Gen1 やPower Query の画面と似て
@@ -65,43 +65,43 @@ Dataflow Gen2	4<br>
 ## タスク 2:  ADLS Gen2 への接続を作成する
 1.	リボンでホーム -> データを取得 -> 詳細の順に選択します。
 
-    ![](../Images/lab-03/image021.jpg) 
+    ![](../Images/lab-03/image015.jpg) 
  
 2.	データを取得のデータ   ソースの選択ダイアログが表示されます。検索ボックスに入力す
     ることでデータ ソースを検索できます。左パネルには、空のテーブルまたは空のクエリを使用するオプションがあります。ファイルをアップロードするための新しいオプショ
 
-    ![](../Images/lab-03/image024.jpg)
+    ![](../Images/lab-03/image018.jpg)
 
     ンもあります。このオプションについては、後続のラボで詳しく見ていきます。ここで は、画面右隅にある詳細表示 -> をクリックしてみましょう。
     これで、利用可能なすべてのデータ ソースが表示されます。データ ソースをファイル、データベース、Microsoft Fabric、Power Platform、Azure などでフィルター処理するオプションがあります。
 
-    ![](../Images/lab-03/image027.jpg) 
+    ![](../Images/lab-03/image021.jpg) 
 
 3.	上部のフィルター オプションから Azure を選択して、Azure のデータ ソースに絞り込みます。
  
 4.	Azure Data Lake Storage Gen2 を選択します。
 
-    ![](../Images/lab-03/image030.jpg)
+    ![](../Images/lab-03/image024.jpg)
 
 5.	[データ ソースへの接続] ダイアログが表示されます。ADLS Gen2 データ ソースへの接続を作成する必要があります。接続設定 -> URL にリンク
     https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet-Format を
     入力します。
 
-    ![](../Images/lab-03/image033.jpg)
+    ![](../Images/lab-03/image027.jpg)
 
 6.	[認証の種類] ドロップダウンから、アカウント キーを選択します。
  
 7.	環境変数タブ ([ラボ ガイド] タブの横) から ADLS ストレージアカウントのアクセス キー
     をコピーし、アカウント キー テキストボックスに貼り付けます。
 
-    ![](../Images/lab-03/image036.jpg)
+    ![](../Images/lab-03/image030.jpg)
 
 8.	画面右下の次へを選択します。
 
 
 ## タスク 3: ADLS Gen2 フォルダーの基本クエリを作成する
 
-   ![](../Images/lab-03/image042.jpg)
+   ![](../Images/lab-03/image033.jpg)
 
 1.	接続が確立されると、フォルダー データのプレビュー画面が表示されます。ADLS  Gen2 フォルダーには多数のファイルがあります。その中のいくつかのファイルのデータが必 要です。作成を選択して、フォルダーへの接続を作成します。
  
@@ -114,7 +114,7 @@ Dataflow Gen2	4<br>
 
 4.	ステージングを有効にするオプションをオフにします。
 
-    ![](../Images/lab-03/image045.jpg)
+    ![](../Images/lab-03/image036.jpg)
 
     フォルダー内には、json と parquet という 2 つのファイル形式があります。
 
@@ -128,7 +128,7 @@ Dataflow Gen2	4<br>
 
 7.	OK を選択します。
 
-    ![](../Images/lab-03/image048.jpg)
+    ![](../Images/lab-03/image039.jpg)
 
 これで、基本クエリが設定されました。すべてのGeo クエリでこのクエリを参照できます。
 
@@ -142,15 +142,15 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
 
 1.	まずは City から始めましょう。左パネルで、ADLS Base Folder for Geo を右クリックします。参照を選択して、ADLS Base Folder for Geo クエリを参照する新しいクエリを作成します。
  
-    ![](../Images/lab-03/image051.jpg) 
+    ![](../Images/lab-03/image042.jpg) 
 
 2.	Folder Path 列のドロップダウン矢印を選択します。
 
-    ![](../Images/lab-03/image054.jpg)
+    ![](../Images/lab-03/image045.jpg)
 
 3.	テキスト フィルター-> 次の値を含む... を選択します。
 
-    ![](../Images/lab-03/image060.jpg)
+    ![](../Images/lab-03/image048.jpg)
 
 4.	行のフィルター処理ダイアログに、Application.Cities と入力します。
 
@@ -158,17 +158,17 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
  
 5.	OK を選択します。
 
-    ![](../Images/lab-03/image063.jpg)
+    ![](../Images/lab-03/image051.jpg)
 
 6.	データは 1 つの行に絞り込まれます。Content 列のBinary を選択します。
 
-    ![](../Images/lab-03/image066.jpg)
+    ![](../Images/lab-03/image054.jpg)
 
 7.	City のすべての詳細が表示されます。右パネルのクエリの設定 -> プロパティ-> 名前で、名前を Cities に変更します。
 
     注: スクリーンショットの右下隅で、クエリに適用されたステップが 4 つあることを確認し、クエリの読み込みが完了するのを待ちます。数分かかる場合があります。
 
-    ![](../Images/lab-03/image069.jpg)
+    ![](../Images/lab-03/image057.jpg)
 
     右パネルの適用されたステップに、すべてのステップが登録されています。この動作は
     Power Query と似ています。次は、同様のプロセスに従って、Country クエリを作成しましょう。
@@ -176,15 +176,15 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
 ## タスク 5: Countries クエリを作成する
 1.	左パネルで、ADLS Base Folder for Geo を右クリックします。参照を選択して、ADLS Base Folder for Geo クエリを参照する新しいクエリを作成します。
 
-    ![](../Images/lab-03/image072.jpg)
+    ![](../Images/lab-03/image060.jpg)
 
 2.	Folder Path 列のドロップダウンを選択します。
 
-    ![](../Images/lab-03/image075.jpg)
+    ![](../Images/lab-03/image063.jpg)
 
 3.	テキスト フィルター-> 次の値を含む... を選択します。
 
-    ![](../Images/lab-03/image081.jpg)
+    ![](../Images/lab-03/image066.jpg)
 
 4.	行のフィルター処理ダイアログに、Application.Countries と入力します。
 
@@ -192,18 +192,18 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
  
 5.	OK を選択します。
 
-    ![](../Images/lab-03/image083.jpg)
+    ![](../Images/lab-03/image069.jpg)
 
 6.	データは 1 つの行に絞り込まれます。Content 列の Binary を選択します。
 
-    ![](../Images/lab-03/image086.jpg)
+    ![](../Images/lab-03/image072.jpg)
 
 7.	Country のすべての詳細が表示されます。右パネルのクエリの設定 -> プロパティ-> 名前
     で、名前を Countries に変更します。
 
     注: スクリーンショットの右下隅で、クエリに適用されたステップが 4 つあることを確認し、クエリの読み込みが完了するのを待ちます。数分かかる場合があります。
 
-    ![](../Images/lab-03/image089.jpg)
+    ![](../Images/lab-03/image075.jpg)
 
 次はState を取り込む必要がありますが、同じステップの繰り返しです。Power BI Desktop ファイルには既にクエリがあります。そこからクエリをコピーできるかどうかを見てみましょう。
  
@@ -213,11 +213,11 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
 
 2.	リボンからホーム -> データの変換を選択します。Power Query ウィンドウが開きます。前のラボで確認したように、左パネルのクエリはデータ ソースごとに整理されています。
 
-    ![](../Images/lab-03/image098.jpg)
+    ![](../Images/lab-03/image078.jpg)
 
 3.	左パネルの ADLSData フォルダーにある States クエリを右クリックし、コピーを選択します。
 
-    ![](../Images/lab-03/image104.jpg)
+    ![](../Images/lab-03/image81.jpg)
 
 4.	ブラウザーに戻ります。作業中の Dataflow が表示されます。
 
@@ -227,7 +227,7 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
    注:  ラボ環境で作業している場合は、画面の右側にある省略記号を選択してください。スライダーを使用して VM ネイティブクリップボードを有効にします。ダイアログで[OK] を選択します。クエリの貼り付けが済んだら、このオプションを無効にしてかまいません。
 
 
-   ![](../Images/lab-03/image107.jpg)
+   ![](../Images/lab-03/image83.jpg)
 
 ADLS Base Folder もコピーされることに注意してください。これは、States クエリがPower BI Desktop のADLS Base Folder を参照しているものの、似たクエリが既に存在するためです。これを解決しましょう。
 
@@ -237,15 +237,15 @@ ADLS Base Folder もコピーされることに注意してください。これ
 
 8.	数式バーで、#"ADLS Base Folder" を #"ADLS Base Folder for Geo" に変更します。
 
-    ![](../Images/lab-03/image113.jpg)
+    ![](../Images/lab-03/image86.jpg)
  
 9.	数式バーの横にあるチェック マークをクリックするか、Enter  キーを押します。
 
-    ![](../Images/lab-03/image116.jpg)
+    ![](../Images/lab-03/image89.jpg)
 
 10.	これで ADLS Base Folder を削除できます。左パネルのクエリ セクションで ADLS Base Folder クエリを右クリックし、削除を選択します。
 
-    ![](../Images/lab-03/image125.jpg)
+    ![](../Images/lab-03/image92.jpg)
 
 11.	[クエリの削除] ダイアログが表示されます。削除を選択して確定します。
     注: クエリに適用されたステップが 4 つあることを確認し、クエリの読み込みが完了するまで待ちます。数分かかる場合があります。
@@ -259,13 +259,13 @@ ADLS Base Folder もコピーされることに注意してください。これ
  
 3.	リボンからホーム -> 詳細エディターを選択します。
 
-    ![](../Images/lab-03/image128.jpg)
+    ![](../Images/lab-03/image95.jpg)
 
 4.	詳細エディターのウィンドウが開きます。詳細エディターですべてのテキストを強調表 示します。
 
 5.	右クリックして Copy を選択します。
 
-    ![](../Images/lab-03/image131.jpg)
+    ![](../Images/lab-03/image98.jpg)
 
 6.	ウィンドウの右上隅にある X を選択するか、完了を選択して、詳細エディターのウィンドウを閉じます。
 
@@ -273,7 +273,7 @@ ADLS Base Folder もコピーされることに注意してください。これ
  
 8.	リボンからデータを取得 -> 空のクエリを選択します。
 
-    ![](../Images/lab-03/image134.jpg)
+    ![](../Images/lab-03/image101.jpg)
 
 9.	[データを取得] の[データソースへの接続] 詳細エディター ダイアログが開きます。エディターですべてのテキストを強調表示します。
 
@@ -283,7 +283,7 @@ ADLS Base Folder もコピーされることに注意してください。これ
 
 12.	次へを選択します。
 
-    ![](../Images/lab-03/image137.jpg)
+    ![](../Images/lab-03/image104.jpg)
  
 13.	これで、Geo ディメンションが作成されました。クエリの名前を変更しましょう。右パネルのクエリの設定 -> プロパティ-> 名前で、名前を Geo に変更します。
 
@@ -292,14 +292,14 @@ ADLS Base Folder もコピーされることに注意してください。これ
     Geo がどのように作成されたかを理解するために、そのステップを一通り見てみましょう。右側のパネルの適用したステップで、ソースを選択します。数式バーを見るか、[設定] をクリックすると、このクエリのソースが Cities と States の結合であること      がわかります。ス
     テップを進めていくと、最初の結合結果が今度は Countries  と結合されていることがわかります。したがって、3 つのクエリはすべて Geo ディメンションの作成に使用されています。
 
-     ![](../Images/lab-03/image143.jpg)
+     ![](../Images/lab-03/image107.jpg)
 
 
 ## タスク 8: Geo クエリのデータ送信先を構成する
 これでディメンションが作成されました。次は、このデータを Lakehouse に取り込みましょう。これは Dataflow Gen2 で利用できるようになった新機能です。
 
 
-   ![](../Images/lab-03/image155.jpg)
+   ![](../Images/lab-03/image110.jpg)
 
 1.	前述したように、ここではこのデータを一切ステージングしません。そのため、Cities クエリを右クリックし、ステージングを有効にするを選択してチェックマークを外します。
  
@@ -311,12 +311,12 @@ ADLS Base Folder もコピーされることに注意してください。これ
 
 5.	ダイアログでレイクハウスを選択します。
 
-    ![](../Images/lab-03/image164.jpg)
+    ![](../Images/lab-03/image113.jpg)
 
 6.	[データ変換先に接続] ダイアログが開きます。Lakehouse への新しい接続を作成する必要があります。接続ドロップダウンで新しい接続の作成を選択し、認証の種類を組織アカ
     ウントに設定して、次へを選択します。
 
-    ![](../Images/lab-03/image166.jpg)
+    ![](../Images/lab-03/image116.jpg)
 
 7.	接続が作成されると、[宛先ターゲットの選択] ダイアログが開きます。新しいテーブルを作成しているため、新しいテーブル ラジオ ボタンがオンになっていることを確認してください。
  
@@ -329,7 +329,7 @@ ADLS Base Folder もコピーされることに注意してください。これ
 
 11.	次へを選択します。
 
-     ![](../Images/lab-03/image006.png)
+     ![](../Images/lab-03/image119.png)
 
 12.	[宛先の設定を選択する] ダイアログが開きます。スライダーを使用して自動設定を無効にします。オプションを確認しましょう。
     既存のテーブルにデータを追加するオプションまたは置き換えるオプションがあること に注意してください。
@@ -338,26 +338,26 @@ ADLS Base Folder もコピーされることに注意してください。これ
     "一部の列名には、サポートされていない文字が含まれています。問題を解決する必要が ありますか?" という警告が表示されます。レイクハウスでは列名にスペースを使用できません。[修正する] を選択すると、アンダースコアが追加されて列名のスペースが      置き換えられます。
 注: [ソース] 列の右側のチェック ボックスを使用すると、レイクハウスに読み込む列だけを選択できます。
 
-    ![](../Images/lab-03/image009.png)
+    ![](../Images/lab-03/image122.png)
  
 13.	このシナリオでは、自動設定を使用します。自動設定を使用するスライダーを有効にし ます。宛先列の名前がアンダースコアで自動的に修正されることに注意してください。
 
 14.	列マッピングを使用して、データフロー列を既存の列にマップできます。この場合、 それは新しいテーブルです。そのため、既定値を使用できます。設定の保存を選択し ます。
 
-    ![](../Images/lab-03/image039.png)
+    ![](../Images/lab-03/image125.png)
 
  
 ## タスク 9: Dataflow を公開する
 1.	Power Query のウィンドウに戻ります。右下隅を見ると、データの同期先がレイクハウスに設定されています。
 
-    ![](../Images/lab-03/image057.png)
+    ![](../Images/lab-03/image128.png)
 
 2.	Lakehouse を確認できるように、これらのクエリを公開しましょう。後で戻ってきてさらにクエリを追加する予定です。右下隅の公開を選択します。
 
 3.	FAIAD_<ユーザー名> ワークスペースに自動的に戻ります。Dataflow が公開されるまで、しばらくかかる場合があります。済んだら、中央のペインまたは左側のパネルから
     lh_FAIAD レイクハウスを選択します。
 
-    ![](../Images/lab-03/image078.png)
+    ![](../Images/lab-03/image131.png)
  
 4.	Lakehouse のエクスプローラー画面が表示されます。左パネルで、lh_FAIAD -> テーブル
     を展開します。
@@ -366,7 +366,7 @@ ADLS Base Folder もコピーされることに注意してください。これ
 
 6.	Geo テーブルを選択すると、右パネルにデータ プレビューが開きます。
 
-    ![](../Images/lab-03/image092.png)
+    ![](../Images/lab-03/image134.png)
 
 このテーブルのクエリに使用できる SQL エンドポイントもあります。このオプションについては、後続のラボで見ていきます。Geo  データが Lakehouse  に到達したことがわかったので、残りのデータを ADLS Gen2 から取り込みましょう。
 
@@ -377,7 +377,7 @@ ADLS Base Folder もコピーされることに注意してください。これ
 2.	ここでは Dataflow 1 を操作しています。先に進む前に名前を変更しましょう。Dataflow 1
     の横にある 省略記号 (…) をクリックします。プロパティを選択します。
  
-    ![](../Images/lab-03/image095.png)
+    ![](../Images/lab-03/image137.png)
 
 3.	[Dataflow のプロパティ] ダイアログが開きます。名前を df_Sales_ADLS に変更します。
 
@@ -385,7 +385,7 @@ ADLS Base Folder もコピーされることに注意してください。これ
 
 4.	説明テキスト ボックスに、Dataflow to ingest Sales Data from ADLS to Lakehouse と入力します。
 
-    ![](../Images/lab-03/image101.png)
+    ![](../Images/lab-03/image140.png)
 
 5.	保存を選択します。
  
@@ -393,7 +393,7 @@ ADLS Base Folder もコピーされることに注意してください。これ
 1.	FAIAD_<ユーザー名>  ワークスペースに自動的に戻ります。データフロー df_Sales_ADLS
     を選択して、データフローに戻ります。
 
-    ![](../Images/lab-03/image110.png)
+    ![](../Images/lab-03/image143.png)
 
     容易に進められるように、Power BI Desktop からクエリをコピーできるかどうかを見てみましょう。
 
@@ -416,7 +416,7 @@ ADLS Base Folder もコピーされることに注意してください。これ
  
 5.	右クリックしてコピーを選択します。
 
-    ![](../Images/lab-03/image119.png)
+    ![](../Images/lab-03/image146.png)
 
 6.	ブラウザーの Dataflow df_Sales_ADLS のウィンドウに戻ります。
 
@@ -424,7 +424,7 @@ ADLS Base Folder もコピーされることに注意してください。これ
     注:  ラボ環境で作業している場合は、画面の右側にある省略記号を選択してください。スライダーを使用して VM ネイティブクリップボードを有効にします。ダイアログで[OK] を選択します。クエリの貼り付けが済んだら、このオプションを無効にしてかまい 
     ません。
 
-    ![](../Images/lab-03/image122.png)
+    ![](../Images/lab-03/image149.png)
  
 8.	前述したように、ここではこのデータを一切ステージングしません。そのため、次のクエ
     リを右クリックし、ステージングを有効にするを選択してチェック マークを外します。
@@ -437,7 +437,7 @@ ADLS Base Folder もコピーされることに注意してください。これ
     注: Power BI Desktop で読み込みが無効になっている場合、Dataflow のステージングを無
     効にする必要はありません。したがって、Product Item Group、Product Groups などのステージングを無効にする必要はありません。
    
-    ![](../Images/lab-03/image140.png)
+    ![](../Images/lab-03/image152.png)
  
     すべてのクエリが処理されていることを確認してください。完了したら、このデータを
     Lakehouse に取り込みましょう。
@@ -448,14 +448,14 @@ ADLS Base Folder もコピーされることに注意してください。これ
 
 2.	リボンからホーム -> データ同期先の追加 -> レイクハウスを選択します。
 
-    ![](../Images/lab-03/image146.png)
+    ![](../Images/lab-03/image155.png)
 
 3.	[データ変換先に接続] ダイアログが開きます。接続ドロップダウンから Lakehouse (なし)
     を選択します。
 
 4.	次へを選択します。
 
-    ![](../Images/lab-03/image149.png)
+    ![](../Images/lab-03/image158.png)
 
 5.	[宛先ターゲットの選択] ダイアログが開きます。新しいテーブルを作成しているため、
     新しいテーブル ラジオ ボタンがオンになっていることを確認してください。
@@ -467,13 +467,13 @@ ADLS Base Folder もコピーされることに注意してください。これ
 
 8.	テーブル名は Product のままにします。
 
-    ![](../Images/lab-03/image152.png)
+    ![](../Images/lab-03/image161.png)
  
 9.	次へを選択します。
 
 10.	[宛先の設定を選択する] ダイアログが開きます。今度は、自動設定を使用し、それによってデータの完全な更新が行われます。また、必要に応じて列の名前も変更されま す。設定の保存を選択します。
 
-    ![](../Images/lab-03/image158.png)
+    ![](../Images/lab-03/image164.png)
 
 11.	Power Query のウィンドウに戻ります。右下隅を見ると、データ同期先がレイクハウス
     に設定されています。
@@ -484,7 +484,7 @@ ADLS Base Folder もコピーされることに注意してください。これ
     c.	Sales
     d.	Date
 
-    ![](../Images/lab-03/image161.png)
+    ![](../Images/lab-03/image166.png)
  
 13.	ADLS から Lakehouse にデータを取り込むデータ フローがあります。このデータフローを公開してみましょう。右下隅の公開を選択します。
     FAIAD_<ユーザー名> ワークスペースに自動的に戻ります。データフローが更新されるまでに、数分かかる場合があります。
