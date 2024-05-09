@@ -21,7 +21,7 @@ Para obter insights valiosos dos dados, você extrai dados de vários sistemas, 
   - **Dados do Cliente:** são obtidos do Customer Insights e armazenados no Dataverse. Os dados estão sempre atualizados.
   - **Dados do Funcionário:** são obtidos do sistema de RH e armazenados como um arquivo de exportação em uma pasta do SharePoint. São atualizados todas as manhãs, às 9h.
 
-![](../Images/image01.png)
+![](../Images/lab-01/image01.png)
 No momento, você está criando um conjunto de dados no Power BI Premium que extrai os dados dos sistemas de origem acima para que você possa gerar relatórios e fornecer aos usuários finais o recurso de autoatendimento. Você usa o Power Query para atualizar seu modelo.
 
 ### Você está enfrentando os seguintes desafios:
@@ -38,9 +38,9 @@ Você ouviu falar do Microsoft Fabric e decidiu tentar ver se ele resolverá seu
 Antes de começarmos com o Fabric, vamos dar uma olhada no Relatório atual no Power BI Desktop para entender as transformações e o modelo.
 ### Tarefa 1: Configurar o Power BI Desktop no ambiente de laboratório
 1.	Abra o arquivo **FAIAD.pbix** que está na pasta **C:\FAIAD\Reports** do seu ambiente de laboratório. O arquivo será aberto no Power BI Desktop.
-![](../Images/image02.png)
+![](../Images/lab-01/image02.png)
 2.	Insira seu endereço de email na caixa de diálogo aberta. Navegue até a guia **Environment Details**.
 no painel direito do ambiente de laboratório.
 3.	Copie os dados de **Username** e cole na caixa de texto Email da caixa de diálogo.
 4.	Selecione **Continue**.
-![](../Images/image03.png)
+![](../Images/lab-01/image03.png)
