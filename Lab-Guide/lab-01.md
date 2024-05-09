@@ -1,8 +1,4 @@
-# Microsoft Fabric
-## Fabric Analyst in a Day
-ラボ 1
-バージョン: 2024 年 3 月
-
+  ![](../Images/lab-01/image002.png)  
 
 ## 目次
 ドキュメントの構造	3 <br>
