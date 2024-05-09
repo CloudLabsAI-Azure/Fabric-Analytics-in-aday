@@ -17,28 +17,6 @@ Attività 9 - Creazione di un'area di lavoro di Fabric	13
 Attività 10 - Creazione di un Lakehouse	15
 Riferimenti	17
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Introduzione
  
 Oggi si apprenderanno alcune funzionalità chiave di Microsoft Fabric. Questo è un workshop
@@ -48,8 +26,8 @@ In questo lab si imparerà a:
 •	Creare un lakehouse
 
 
-Licenza di Fabric
-Attività 1 - Abilitazione di una licenza di valutazione per Microsoft Fabric
+## Licenza di Fabric
+## Attività 1 - Abilitazione di una licenza di valutazione per Microsoft Fabric
 1.	Aprire il browser e andare all'indirizzo https://app.powerbi.com/. Si aprirà la pagina di accesso. Nota: se non si usa l'ambiente lab e si dispone di un account Power BI esistente, può essere opportuno usare il browser in modalità privata o in incognito.
 2.	Immettere il nome utente disponibile nella scheda Variabili di ambiente (accanto alla Guida al lab) in Email, quindi fare clic su Submit.
 3.	Si aprirà la schermata Password. Immettere la Password disponibile nella scheda Variabili di ambiente (accanto alla Guida al lab) fornita dall'istruttore.
@@ -75,8 +53,8 @@ A questo punto, ci si trova nell'Area di lavoro personale. Per lavorare con gli 
 12.	Si aprirà la home page di Microsoft Fabric.
 
 
-Panoramica delle esperienze in Fabric
-Attività 2 - Esperienza Data Factory
+## Panoramica delle esperienze in Fabric
+### Attività 2 - Esperienza Data Factory
 1.	Selezionare l'icona di Microsoft Fabric (selettore esperienza in Fabric) in basso a sinistra della schermata. Si apre una finestra di dialogo contenente l'elenco delle esperienze in Fabric. Si noti che Power BI, Data Factory, Data Activator e Industry Solutions sono esperienze indipendenti. Data Engineering, Data Science, Data Warehouse e Real-Time Analytics sono esperienze di
 Synapse e si basano su Synapse. Procediamo a esaminarle.
 2.	Selezionare Data Factory.
@@ -90,7 +68,7 @@ b.	Recommended: questa sezione fornisce accesso alla documentazione di apprendim
 c.	Quick access: questa sezione elenca gli elementi preferiti o usati di recente.
 
 
-Attività 3 - Esperienza Data Activator
+### Attività 3 - Esperienza Data Activator
 1.	Selezionare l'icona selettore esperienza in Fabric (attualmente impostata su Data Factory) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
 
  
@@ -100,7 +78,7 @@ b.	Esempio di Reflex: soluzione di esempio.
 
 
 
-Attività 4 - Esperienza Industry Solutions
+### Attività 4 - Esperienza Industry Solutions
 1.	Selezionare l'icona selettore esperienza in Fabric (attualmente impostata su Data Activator) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
 2.	Selezionare Industry Solutions nella finestra di dialogo. Si apre la home page di Industry Solutions. Microsoft Fabric include soluzioni di dati specifiche del settore che offrono una piattaforma affidabile per la gestione dei dati, l'analisi e il processo decisionale. Queste soluzioni di dati risolvono le problematiche specifiche affrontate da diversi settori, permettendo alle aziende di ottimizzare le operazioni, integrare dati provenienti da origini diverse e usare analisi avanzate. Si noti che le tre sezioni sono analoghe alle esperienze precedenti. Nella sezione Nuovo osservare gli elementi:
 a.	Soluzioni per la sostenibilità: supporta l'inserimento, la standardizzazione e l'analisi di dati ambientali, sociali e di governance (ESG).
@@ -109,7 +87,7 @@ tempestivo. I rivenditori possono usare queste soluzioni per l'ottimizzazione de
  
  
 
-Attività 5 - Esperienza Synapse Data Engineering
+### Attività 5 - Esperienza Synapse Data Engineering
 1.	Selezionare l'icona selettore esperienza in Fabric (attualmente impostata su Industry Solutions) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
 2.	Selezionare Data Engineering. Si apre la home page di Data Engineering. Anche in questo caso, la pagina contiene tre sezioni principali. Nella sezione New osservare gli elementi:
 a.	Lakehouse: permette di archiviare Big Data per operazioni di pulizia, query, reporting e condivisione.
@@ -123,7 +101,7 @@ g.	Use a sample: soluzione di esempio.
  
 
 
-Attività 6 - Esperienza Synapse Data Science
+### Attività 6 - Esperienza Synapse Data Science
 1.	Selezionare l'icona selettore esperienza in Fabric (attualmente impostata su Data Engineering) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
 2.	Selezionare Data Science. Si apre la home page di Data Science. Anche in questo caso sono presenti tre sezioni. Nella sezione New osservare gli elementi:
 a.	ML model: consente di creare modelli di Machine Learning.
@@ -137,7 +115,7 @@ Nota: elementi come Notebook, Environment, Data pipeline e così via sono dispon
  
 
 
-Attività 7 - Esperienza Synapse Data Warehouse
+### Attività 7 - Esperienza Synapse Data Warehouse
 1.	Selezionare l'icona selettore esperienza in Fabric (attualmente impostata su Data Science) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
 2.	Selezionare Data Warehouse. Si apre la home page di Data Warehouse. Anche in questo caso sono presenti tre sezioni. Nella sezione Nuovo osservare gli elementi:
 a.	Data warehouse: permette di creare un Data Warehouse.
@@ -146,7 +124,7 @@ b.	Pipeline di dati: permette di orchestrare la soluzione di dati.
  
 
 
-Attività 8 - Esperienza Real-Time Analytics
+### Attività 8 - Esperienza Real-Time Analytics
 1.	Selezionare l'icona selettore esperienza in Fabric (attualmente impostata su Data Warehouse) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
 2.	Selezionare Real-Time Analytics. Si apre la home page di Real-Time Analytics. Anche in questo caso sono presenti tre sezioni. Nella sezione Nuovo osservare gli elementi:
 a.	Casa eventi: permette di creare un'area di lavoro di database, che è possibile condividere tra progetti.
@@ -157,8 +135,8 @@ e.	Usare un esempio: soluzione di esempio.
  
  
 
-Area di lavoro di Fabric
-Attività 9 - Creazione di un'area di lavoro di Fabric
+## Area di lavoro di Fabric
+### Attività 9 - Creazione di un'area di lavoro di Fabric
 1.	Ora creeremo un'area di lavoro con licenza di Fabric. Selezionare Aree di lavoro nella barra di spostamento a sinistra. Si apre una finestra di dialogo.
 2.	Selezionare Nuova area di lavoro.
  
@@ -175,7 +153,7 @@ indicato "Questo nome è disponibile".
 Viene creata una nuova area di lavoro e si passa a tale area di lavoro. Importeremo dati da diverse origini dati in Lakehouse e useremo i dati da Lakehouse per creare il modello e il report relativi. Il primo passaggio consiste nel creare un Lakehouse.
 
 
-Attività 10 - Creazione di un Lakehouse
+### Attività 10 - Creazione di un Lakehouse
 1.	Selezionare l'icona selettore esperienza in Fabric (attualmente impostata su Real-Time Analytics) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
 2.	Selezionare Data Engineering per andare alla home page di Data Engineering.
 
@@ -192,7 +170,7 @@ Nell'interfaccia di esplorazione di Lakehouse si noteranno Tables e Files. Lakeh
 In questo lab abbiamo esplorato l'interfaccia di Fabric, creato uno spazio di lavoro di Fabric e un
 lakehouse. Nel prossimo lab si imparerà a usare Flusso di dati Gen2 per connettersi ad ADLS Gen2 per estrarre, trasformare e inserire dati nel lakehouse.
  
-Riferimenti
+## Riferimenti
 Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità chiave disponibili in Microsoft Fabric. Nel menu di servizio, la sezione Guida (?) include collegamenti ad alcune risorse utili.
 
 
