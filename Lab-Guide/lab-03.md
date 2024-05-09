@@ -134,18 +134,28 @@ Nel pannello di destra, in Passaggi applicati verificare che tutti i passaggi si
 ### Attività 5 - Creazione della query Countries
 1.	Nel pannello di sinistra fare clic con il pulsante destro del mouse su ADLS Base Folder for Geo. Selezionare Riferimento per creare una nuova query che faccia riferimento alla query ADLS Base Folder for Geo.
 
-
+   ![](../Images/lab-03/image057.jpg)
+    
 2.	Selezionare la freccia a discesa della colonna Percorso cartella.
 
+    ![](../Images/lab-03/image060.jpg)
+   
 3.	Selezionare Filtri testo -> Contiene…
 
+    ![](../Images/lab-03/image063.jpg)
  
 4.	Nella finestra di dialogo Filtra righe immettere Application.Countries Nota: questo campo fa distinzione tra maiuscole e minuscole.
 5.	Selezionare OK.
 
+    ![](../Images/lab-03/image066.jpg)
+    
 6.	I dati verranno filtrati per un'unica riga. Selezionare Binario nella colonna Contenuto.
 
-7.	Verranno visualizzati tutti i dettagli del Paese. Nel pannello di destra, in Impostazioni query -> Proprietà -> Nome, modificare il nome in Countries
+    ![](../Images/lab-03/image069.jpg)
+
+8.	Verranno visualizzati tutti i dettagli del Paese. Nel pannello di destra, in Impostazioni query -> Proprietà -> Nome, modificare il nome in Countries
+
+    ![](../Images/lab-03/image072.jpg)
 
 Nota: nell'angolo inferiore destro della schermata, assicurarsi che alla query siano applicati quattro passaggi e attendere che termini il caricamento della query. L'operazione può richiedere alcuni minuti.
 
@@ -158,27 +168,36 @@ dell'ambiente lab.
 2.	Nella barra multifunzione selezionare Home -> Trasforma dati. Si apre la finestra Power Query.
 Come si è notato nel lab precedente, le query nel pannello di sinistra sono organizzate per origine dati.
  
- 
+    ![](../Images/lab-03/image075.jpg)
+  
 3.	Dal pannello di sinistra, nella cartella ADLSData, fare clic con il pulsante destro del mouse sulla query States e selezionare Copia.
 
-4.	Tornare al browser. Ci si dovrebbe trovare nel flusso di dati su cui stavamo lavorando.
-5.	Nel pannello di sinistra selezionare il pannello Query e premere CTRL+V (l'opzione Incolla del menu del pulsante destro non è attualmente supportata). Se si usa un dispositivo MAC, usare Cmd+V per incollare.
-Nota: se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per abilitare Appunti nativi VM. Nella finestra di dialogo selezionare OK. Dopo aver incollato la query è possibile disabilitare questa opzione.
- 
- 
+    ![](../Images/lab-03/image078.png)
 
+5.	Tornare al browser. Ci si dovrebbe trovare nel flusso di dati su cui stavamo lavorando.
+6.	Nel pannello di sinistra selezionare il pannello Query e premere CTRL+V (l'opzione Incolla del menu del pulsante destro non è attualmente supportata). Se si usa un dispositivo MAC, usare Cmd+V per incollare.
+Nota: se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per abilitare Appunti nativi VM. Nella finestra di dialogo selezionare OK. Dopo aver incollato la query è possibile disabilitare questa opzione.
+
+    ![](../Images/lab-03/image081.png)
+
+    ![](../Images/lab-03/image084.png)
+ 
 Si copia anche ADLS Base Folder. Questo perché la query States fa riferimento ad ADLS Base Folder in Power BI Desktop, ma abbiamo già una query simile. Risolviamo questo aspetto.
 
 6.	Selezionare la query States.
 7.	Nel pannello di destra, in Passaggi applicati, selezionare Source.
 8.	Nella barra della formula modificare #"ADLS Base Folder" in #"ADLS Base Folder for Geo"
 
-9.	Fare clic sul segno di spunta accanto alla barra della formula o premere INVIO.
+   ![](../Images/lab-03/image087.png)
 
- 
-10.	Ora possiamo rimuovere ADLS Base Folder. Nel pannello di sinistra, nella sezione Query, fare clic con il pulsante destro del mouse sulla query ADLS Base Folder e selezionare Elimina.
+10.	Fare clic sul segno di spunta accanto alla barra della formula o premere INVIO.
 
-11.	Si apre la finestra di dialogo Elimina query. Selezionare Elimina per confermare.
+   ![](../Images/lab-03/image090.png)
+   ![](../Images/lab-03/image093.png)
+   
+11.	Ora possiamo rimuovere ADLS Base Folder. Nel pannello di sinistra, nella sezione Query, fare clic con il pulsante destro del mouse sulla query ADLS Base Folder e selezionare Elimina.
+
+12.	Si apre la finestra di dialogo Elimina query. Selezionare Elimina per confermare.
 Nota: assicurarsi che alla query siano applicati quattro passaggi e attendere che termini il caricamento della query. L'operazione può richiedere alcuni minuti.
 
 
