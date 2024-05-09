@@ -35,11 +35,17 @@ Commençons par utiliser l’option de création automatique d’un état. Plus 
 2.	Cliquez sur l’icône du **sélecteur de l’expérience Fabric** dans la partie inférieure du volet gauche.
 3.	La boîte de dialogue Expérience Fabric s’ouvre alors. Cliquez sur **Power BI**. Vous êtes alors redirigé vers la **page d’Accueil Power BI**.
 
+    ![](../Images/lab-07/image006.jpg)
+
  
 4.	Cliquez sur **Nouveau rapport** dans le menu supérieur.
 
+    ![](../Images/lab-07/image009.png)
+
 5.	Vous êtes alors redirigé vers l’écran **Créer votre premier rapport**. Des options permettent de
 saisir des données manuellement et créer un état ou choisir un modèle sémantique publié. Nous avons créé un modèle sémantique dans les labos précédents. Utilisons-le. Sélectionnez l’option **Choisir un modèle sémantique publié**.
+
+    ![](../Images/lab-07/image012.jpg)
 
 6.	Choisissez un jeu de données à utiliser sur la page de votre état qui s’ouvre. Notez que nous disposons de quatre options. Sélectionnez **lh_FAIAD :**
 
@@ -53,10 +59,12 @@ saisir des données manuellement et créer un état ou choisir un modèle séman
 
 7.	Cliquez sur la **flèche en regard du bouton Créer automatiquement un état**. Notez que deux options sont disponibles : Créer automatiquement un état et Créer un rapport vide. Essayons la création automatique, donc sélectionnons **Créer automatiquement un état**.
  
- 
+    ![](../Images/lab-07/image015.jpg)
 
 8.	Power BI commence alors à créer automatiquement l’état. Notez qu’une option permet de
 présélectionner des données, le cas échéant. Une fois l’état prêt, une boîte de dialogue s’affiche en haut de l’écran à droite. Cliquez sur **Afficher le rapport maintenant**.
+
+    ![](../Images/lab-07/image018.jpg)
 
 **Point de contrôle :** vous disposez d’un état qui ressemble à la capture d’écran ci-dessous. Quelques KPI et quelques visuels de tendance sont disponibles. Il s’agit d’un bon point de départ si vous
 analysez un nouveau modèle.
@@ -72,11 +80,15 @@ analysez un nouveau modèle.
  
 12.	Cliquez sur **Enregistrer**.
 
+    ![](../Images/lab-07/image021.jpg)
+
 **Remarque :** l’état créé automatiquement peut être différent pour vous, car il est « créé automatiquement ». Cela dépend également des relations et des mesures créées dans le labo précédent (Labo 6).
 
 La capture d’écran ci-dessus illustre à quoi **peut** ressembler l’état créé automatiquement si vous avez créé toutes les relations et mesures, y compris les relations facultatives (Labo 6).
 
 La capture d’écran ci-dessous illustre à quoi **peut** ressembler l’état créé automatiquement si vous n’avez pas créé les relations et mesures facultatives (Labo 6).
+
+![](../Images/lab-07/image024.jpg)
 
  
 ### Tâche 2 : configurer l’arrière-plan d’un nouvel état
@@ -86,16 +98,24 @@ Nous allons créer un nouvel état en utilisant un canevas vierge.
 pour naviguer dans l’espace de travail.
 2.	Dans le menu supérieur, cliquez sur **Nouveau -> État**. Vous êtes alors redirigé vers la page Créer votre premier état.
 
+    ![](../Images/lab-07/image027.png)
+
 3.	Sélectionnez **Choisir un modèle sémantique publié** pour pouvoir choisir le modèle que nous avons créé.
+
+    ![](../Images/lab-07/image030.jpg)
 
 4.	Choisissez un modèle sémantique à utiliser dans la boîte de dialogue de l’état qui s’ouvre. Sélectionnez **lh_FAIAD**.
  
 5.	Cliquez sur la **flèche en regard du bouton Créer automatiquement un état**. Cliquez sur **Créer un état vide**.
 
+    ![](../Images/lab-07/image033.jpg)
+
 6.	Si vous ne l’avez pas encore ouvert, ouvrez le fichier **FAIAD.pbix** situé dans le dossier
 **C:\FAIAD\Reports** de votre environnement de labo.
 
 Cet état va nous servir de référence. Nous allons commencer par ajouter l’arrière-plan du canevas. Nous allons créer l’en-tête de l’état, ajouter quelques KPI et créer le graphique en courbes Sales over time. Pour gagner du temps et étant entendu que vous avez de l’expérience dans la création de visuels dans Power BI Desktop, nous n’allons pas créer tous les visuels.
+
+![](../Images/lab-07/image036.jpg)
 
 7.	Revenez au **canevas Power BI** dans votre navigateur.
 8.	Cliquez sur l’**icône Mettre en forme la page** dans le volet Visualisation.
@@ -106,6 +126,8 @@ Cet état va nous servir de référence. Nous allons commencer par ajouter l’a
 12.	Sélectionnez **Summary Background.png**.
 13.	Définissez la liste déroulante **Ajustement de l’image** sur **Ajuster**.
 14.	Réglez le curseur Transparence sur **0 %**.
+
+    ![](../Images/lab-07/image039.jpg)
 
 
 ### Tâche 3 : ajouter un en-tête à l’état
@@ -119,12 +141,16 @@ Cet état va nous servir de référence. Nous allons commencer par ajouter l’a
 7.	Réglez le curseur **Arrière-plan** sur **Désactivé**.
 8.	Redimensionnez la **zone de texte pour l’adapter à la marge supérieure**.
 
+    ![](../Images/lab-07/image042.jpg)
+
  
 ### Tâche 4 : ajouter des KPI à l’état
 1.	Ajoutons l’indicateur de performance clé Sales. Cliquez sur l’**espace blanc** dans le canevas pour détourner le focus de la zone de texte.
 2.	Dans la **section Visualisations**, sélectionnez le visuel **Carte multiligne**.
 3.	Dans la section **Données**, développez la **table Sales**.
 4.	Sélectionnez la mesure **Sales**.
+
+    ![](../Images/lab-07/image045.jpg)
 
 5.	Une fois le visuel **Carte multiligne** sélectionné, cliquez sur l’icône **Mettre en forme le visuel dans**
 la section Visualisations.
@@ -134,14 +160,20 @@ la section Visualisations.
  
 9.	Définissez la valeur Hex sur **#004753**.
 
+    ![](../Images/lab-07/image048.jpg)
+
 10.	Développez la section **Cartes**.
  
 11.	Réglez le curseur **Barre d’accentuation** sur **Désactivé**.
+
+    ![](../Images/lab-07/image051.png)
 
 12.	Cliquez sur **Général** dans le volet Visualisations.
 13.	Développez la section **Effets**.
 14.	Réglez le curseur **Arrière-plan** sur **Désactivé**.
 15.	Redimensionnez le **visuel** et déplacez-le vers la **case gauche, comme illustré dans la capture d’écran**.
+
+    ![](../Images/lab-07/image054.jpg)
 
 16.	Ajoutons un autre KPI. Sélectionnez la **carte multiligne Sales** que vous venez de créer. **Copiez** le visuel à l’aide du raccourci clavier **Ctrl + C**.
 17.	**Collez** le visuel à l’aide du raccourci clavier **Ctrl + V**. Notez que le visuel est collé sur le canevas.
@@ -150,6 +182,8 @@ la section Visualisations.
 19.	Dans la section **Données**, développez la table Sales et sélectionnez la mesure **Units**.
 20.	Redimensionnez le **visuel** et **placez-le dans la case située sous le visuel Sales**.
 
+    ![](../Images/lab-07/image057.jpg)
+
 
 ### Tâche 5 : ajouter un graphique en courbes à l’état
 Créons un graphique en courbes pour visualiser Sales dans le temps par Reseller Company.
@@ -157,6 +191,8 @@ Créons un graphique en courbes pour visualiser Sales dans le temps par Reseller
 2.	Dans la **section Visualisations**, sélectionnez **Graphique en courbes**.
 3.	Dans la section **Données**, développez la table **Date**.
 4.	Cliquez sur le champ **Year**. Notez que le champ Year est une somme par défaut et ajouté à l’axe Y. Résolvons ce problème.
+
+    ![](../Images/lab-07/image060.jpg)
 
  
 ### Tâche 6 : enregistrer l’état
@@ -169,6 +205,8 @@ Nous allons enregistrer l’état avant de le quitter pour apporter des modifica
 3.	Assurez-vous que l’état est enregistré dans l’espace de travail **FAIAD_<username>**.
 4.	Cliquez sur **Enregistrer**.
 
+    ![](../Images/lab-07/image063.jpg)
+
  
 ### Tâche 7 : configurer la colonne Year de la table Date
 1.	Dans la **barre de menu de gauche**, sélectionnez **lh_FAIAD** pour accéder à la lakehouse.
@@ -177,12 +215,16 @@ Nous allons enregistrer l’état avant de le quitter pour apporter des modifica
 4.	Dans le volet **Propriétés** à droite, développez la section **Options avancées**.
 5.	Dans la liste déroulante **Totaliser par**, sélectionnez **Aucun**.
 
+    ![](../Images/lab-07/image066.jpg)
+
 6.	Revenez à l’état en sélectionnant **rpt_Sales_Report** dans la barre de menu de gauche.
 7.	Dans le menu supérieur, cliquez sur **Modifier**.
 8.	Dans le menu supérieur, cliquez sur **Actualiser**. Vous remarquerez que dans le volet Données, Year n’est pas un champ de somme.
 9.	Une fois le visuel **Graphique en courbes** sélectionné, **supprimez Somme de Year** de l’axe Y.
 10.	Sélectionnez le champ **Year** pour l’ajouter à l’**axe X**.
 11.	Développez la table **Sales** et sélectionnez la mesure **Sales**.
+
+    ![](../Images/lab-07/image069.jpg)
 
  
 ### Tâche 8 : configurer la colonne Short_Month_Name de la table Date
@@ -193,10 +235,16 @@ sous **Year** sur l’**axe X**. Notez que le visuel est trié selon Sales. Trio
 4.	Cliquez sur les **points de suspension (…)** dans le coin supérieur droit du visuel.
 5.	Sélectionnez **Trier axe -> Tri croissant**.
 
+    ![](../Images/lab-07/image072.jpg)
+
 **Remarque :** les mois sont triés par ordre alphabétique. Résolvons ce problème.
+
+![](../Images/lab-07/image075.png)
 
 6.	Dans la **barre de menu de gauche**, sélectionnez **lh_FAIAD** pour accéder à la lakehouse.
 7.	La boîte de dialogue **Modifications non enregistrées** s’ouvre alors. Cliquez sur **Enregistrer** pour enregistrer les modifications de l’état.
+
+    ![](../Images/lab-07/image078.jpg)
 
 8.	Vous serez redirigé vers la lakehouse lh_FAIAD. Dans le volet gauche Explorateur, développez
 **lhFAIAD -> Schemas -> dbo -> Tables -> Date**.
@@ -204,10 +252,13 @@ sous **Year** sur l’**axe X**. Notez que le visuel est trié selon Sales. Trio
 10.	Dans le volet **Propriétés** à droite, développez la section **Options avancées**.
 11.	Dans la liste déroulante **Trier par colonne**, sélectionnez **Month**.
  
+    ![](../Images/lab-07/image081.jpg)
  
 12.	Revenez à l’état en sélectionnant **rpt_Sales_Report** dans la barre de menu de gauche.
 13.	Dans le menu supérieur, cliquez sur **Modifier**.
 14.	Dans le menu supérieur, cliquez sur **Actualiser**. Notez maintenant que les mois sont triés correctement.
+
+    ![](../Images/lab-07/image084.jpg)
 
 
 ### Tâche 9 : mettre en forme le graphique en courbes
@@ -215,6 +266,8 @@ Notez à quel point il est facile de mettre à jour le modèle sémantique lors 
 
 1.	Une fois le visuel **Graphique en courbes** sélectionné, développez la table **Reseller** dans la section **Données**.
 2.	Faites glisser le champ **Reseller -> Reseller Company** vers la section **Légende**.
+
+    ![](../Images/lab-07/image087.jpg)
  
  
 3.	Une fois le visuel **Graphique en courbes** sélectionné, cliquez sur l’icône **Mettre en forme le visuel -> Général** dans la section **Visualisations**.
@@ -223,6 +276,8 @@ Notez à quel point il est facile de mettre à jour le modèle sémantique lors 
 6.	Développez la section **Effets**.
 7.	Réglez le curseur **Arrière-plan** sur **Désactivé**.
 
+    ![](../Images/lab-07/image090.png)
+
 8.	Dans la section **Visualisations**, cliquez sur l’icône **Mettre en forme le visuel -> Objet visuel**.
 9.	Développez la section **Lignes**.
 10.	Développez la section **Couleurs**.
@@ -230,7 +285,8 @@ Notez à quel point il est facile de mettre à jour le modèle sémantique lors 
 12.	Définissez la couleur **Tailspin Toys** sur **#F17925**.
 13.	Redimensionnez le **visuel** et déplacez-le vers la **case supérieure droite, comme illustré dans la capture d’écran**.
 14.	Faites défiler le visuel vers la droite et **notez que nous disposons de données jusqu’en avril 2023**.
- 
+
+    ![](../Images/lab-07/image093.png)
  
 15.	Enregistrons l’état en sélectionnant F**ichier -> Enregistrer** dans le menu.
 
@@ -246,7 +302,8 @@ environnement de formation, nous allons simuler cela en le connectant à un fich
 
 1.	Cliquez sur **FAIAD_<username>** à partir de la barre de menu de gauche pour accéder à la page d’accueil de l’espace de travail.
 2.	Sélectionnez **df_Sales_ADFS**, afin que nous puissions modifier le flux de données en ajoutant le nouveau fichier Parquet.
- 
+
+    ![](../Images/lab-07/image096.jpg)
  
 3.	Dans le ruban, cliquez sur **Accueil -> Obtenir les données -> Requête vide**.
 4.	La boîte de dialogue Connexion à une source des données s’ouvre alors. Sélectionnez **toutes les lignes dans l’éditeur et supprimez-les**.
@@ -265,11 +322,15 @@ environnement de formation, nous allons simuler cela en le connectant à un fich
     ```
 
 6.	Cliquez sur **Suivant**.
+
+    ![](../Images/lab-07/image099.jpg)
  
  
 7.	Une nouvelle requête est à nouveau créée. Nous allons la **renommer**. Renommez la requête
 **MayInvoice** dans le panneau de droite, sous **Paramètres de requête -> Propriétés -> Nom**.
 8.	Nous allons désactiver la mise en lots pour la nouvelle requête. **Cliquez avec le bouton droit de la souris** sur la requête MayInvoice et **décochez la case Activer la mise en lots**.
+
+    ![](../Images/lab-07/image102.jpg)
 
 9.	À présent, ajoutons les données May **Invoice** à la table Invoice. Sélectionnez la requête Invoice
 dans la section Requêtes.
@@ -279,7 +340,11 @@ dans la section Requêtes.
  
 12.	Cliquez sur **OK**.
 
+    ![](../Images/lab-07/image105.jpg)
+
 13.	Cliquez sur **Publier** Dans le coin inférieur droit pour enregistrer et publier les mises à jour.
+
+    ![](../Images/lab-07/image108.jpg)
 
 **Remarque :** une fois publié, le flux de données est actualisé. Cette opération peut prendre quelques minutes.
 
@@ -288,29 +353,32 @@ dans la section Requêtes.
 15.	Dans le menu supérieur, cliquez sur **Actualiser**. Notez maintenant que le graphique en courbes comporte des données pour mai 2023. Notez également que le montant Sales et Units a
 augmenté.
 
+![](../Images/lab-07/image111.jpg)
+
  
 Les Dataflows que nous avons créés dans les labos précédents sont actualisés dans les délais, les données sont ingérées dans la lakehouse. Le modèle de données de la lakehouse est mis à jour et les états sont actualisés. Nous n’avons pas besoin d’actualiser le modèle de données et de signaler
 l’actualisation de chacun des flux de données. Voilà l’avantage de Direct Lake.
 
 Revenons sur les défis répertoriés dans l’énoncé du problème :
 
-- Vous devez actualiser votre jeu de données au moins trois fois par jour pour tenir compte des différentes heures de mise à jour des différentes sources de données.
+- **Vous devez actualiser votre jeu de données au moins trois fois par jour pour tenir compte des différentes heures de mise à jour des différentes sources de données.**
 
 Nous avons résolu ce problème à l’aide de Direct Lake. Chaque flux de données individuel est actualisé selon son calendrier. Le jeu de données et l’état n’ont pas besoin d’être actualisés.
 
-- Vos actualisations prennent beaucoup de temps, car vous devez effectuer chaque fois une actualisation complète pour capturer toutes les mises à jour survenues sur les systèmes sources.
+- **Vos actualisations prennent beaucoup de temps, car vous devez effectuer chaque fois une actualisation complète pour capturer toutes les mises à jour survenues sur les systèmes sources.**
 
 Encore une fois, nous avons résolu ce problème à l’aide de Direct Lake. Chaque flux de données individuel est actualisé selon son calendrier. Le jeu de données et l’état n’ont pas besoin d’être actualisés, donc nous n’avons pas à nous soucier d’une actualisation complète.
 
-- Toute erreur dans l’une des sources de données à partir desquelles vous extrayez des données entraîne une interruption de l’actualisation de votre jeu de données. Il arrive souvent que le fichier collaborateur ne soit pas chargé à temps, ce qui aboutit à une
-interruption de l’actualisation de votre jeu de données.
+- **Toute erreur dans l’une des sources de données à partir desquelles vous extrayez des données entraîne une interruption de l’actualisation de votre jeu de données. Il arrive souvent que le fichier collaborateur ne soit pas chargé à temps, ce qui aboutit à une
+interruption de l’actualisation de votre jeu de données.**
 
 Le pipeline de données permet de résoudre ce problème, en permettant de réessayer d’effectuer une actualisation en cas d’échec et à différents intervalles.
 
-- Apporter des modifications à votre modèle de données prend beaucoup de temps, car Power Query en prend beaucoup pour actualiser vos aperçus, compte tenu du gros volume de données et des transformations complexes.
+- **Apporter des modifications à votre modèle de données prend beaucoup de temps, car Power Query en prend beaucoup pour actualiser vos aperçus, compte tenu du gros volume de données et des transformations complexes.**
 
 Nous avons remarqué que les flux de données sont efficaces et faciles à modifier. En général, le chargement de l’aperçu dans les flux de données ne prend pas beaucoup de temps.
-- Vous avez besoin d’un PC Windows pour utiliser Power BI Desktop, même si le standard de l’entreprise est Mac.
+
+- **Vous avez besoin d’un PC Windows pour utiliser Power BI Desktop, même si le standard de l’entreprise est Mac.**
 
 Microsoft Fabric est une offre SaaS. Il nous suffit d’un navigateur pour accéder au service. Nous n’avons pas besoin d’installer de logiciel sur nos bureaux.
  
@@ -320,17 +388,21 @@ Une fois que vous êtes prêt à nettoyer l’environnement de labo, procédez c
 1.	Sélectionnez l’espace de travail **FAIAD_<username>** à partir du panneau de gauche pour naviguer vers la page d’accueil de l’espace de travail.
 2.	Dans le menu supérieur, cliquez sur les **points de suspension (…)** en regard de Gérer l’accès et sélectionnez **Paramètres d’espace de travail**.
 
+    ![](../Images/lab-07/image114.jpg)
+
 3.	La boîte de dialogue Paramètres d’espace de travail s’ouvre alors. Cliquez sur **Autre** dans le menu gauche.
 4.	Cliquez sur **Supprimer cet espace de travail**.
 5.	La boîte de dialogue Supprimer l’espace de travail s’ouvre alors. Cliquez sur **Supprimer**.
  
 L’espace de travail et tous les éléments qu’il comporte sont alors supprimés.
 
+![](../Images/lab-07/image117.jpg)
+
  
 ### Références
 Fabric Analyst in a Day (FAIAD) vous présente certaines des fonctions clés de Microsoft Fabric. Dans le menu du service, la section Aide (?) comporte des liens vers d’excellentes ressources.
 
-![](../Images/lab-05/image138.png)
+![](../Images/lab-07/image120.png)
 
 Voici quelques autres ressources qui vous aideront lors de vos prochaines étapes avec Microsoft Fabric :
 - Consultez le billet de blog pour lire l’intégralité de l’[annonce de la GA de Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23).
