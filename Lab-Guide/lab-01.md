@@ -80,3 +80,7 @@ de 2022.
 5.	Selecione a exceção Reseller no visual Gráfico de dispersão para **remover o filtro.**
 6.	Vamos obter os detalhes de Product por Product Group e Reseller. No visual do gráfico de barras Sales por Product Group e Reseller Company, **clique com o botão direito na barra Packaging Materials para Tailspin Toys** e, na caixa de diálogo, selecione **Drill through -> Product Detail.**
 ![](../Images/lab-01/image11.png)
+
+Você será direcionado para a página que fornece os Product Details. Observe que também existem algumas ordens futuras em andamento.
+
+7.	Quando terminar de revisar esta página, selecione **Ctrl+seta para voltar** na parte superior direita da página para "voltar ao Sales Report.
