@@ -1,23 +1,7 @@
- 	 
- 
-Sommario
-Introduzione	2
-Licenza di Fabric	3
-Attività 1 - Abilitazione di una licenza di valutazione per Microsoft Fabric	3
-Panoramica delle esperienze in Fabric	6
-Attività 2 - Esperienza Data Factory	6
-Attività 3 - Esperienza Data Activator	7
-Attività 4 - Esperienza Industry Solutions	8
-Attività 5 - Esperienza Synapse Data Engineering	9
-Attività 6 - Esperienza Synapse Data Science	10
-Attività 7 - Esperienza Synapse Data Warehouse	11
-Attività 8 - Esperienza Real-Time Analytics	12
-Area di lavoro di Fabric	13
-Attività 9 - Creazione di un'area di lavoro di Fabric	13
-Attività 10 - Creazione di un Lakehouse	15
-Riferimenti	17
 
-Introduzione
+![](../Images/lab2_main.png)
+
+## Introduzione
  
 Oggi si apprenderanno alcune funzionalità chiave di Microsoft Fabric. Questo è un workshop
 introduttivo che ha lo scopo di presentare le diverse esperienze di uso del prodotto e i vari elementi disponibili in Fabric. Al termine del workshop, si imparerà a usare le funzionalità Lakehouse, Flusso di dati Gen2, Pipeline di dati e DirectLake.
@@ -31,34 +15,47 @@ In questo lab si imparerà a:
 1.	Aprire il browser e andare all'indirizzo https://app.powerbi.com/. Si aprirà la pagina di accesso. Nota: se non si usa l'ambiente lab e si dispone di un account Power BI esistente, può essere opportuno usare il browser in modalità privata o in incognito.
 2.	Immettere il nome utente disponibile nella scheda Variabili di ambiente (accanto alla Guida al lab) in Email, quindi fare clic su Submit.
 3.	Si aprirà la schermata Password. Immettere la Password disponibile nella scheda Variabili di ambiente (accanto alla Guida al lab) fornita dall'istruttore.
- 
+
+    ![](../Images/lab-02/image006.jpg)
+   
 4.	Fare clic su Sign in e seguire le istruzioni per accedere a Fabric.
 
+    ![](../Images/lab-02/image009.png)
+   
 5.	Si aprirà la home page abituale del servizio Power BI.
-6.	Si presuppone che si abbia familiarità con il layout del servizio Power BI. Per eventuali domande, rivolgersi all'istruttore.
+6.	Si presuppone che si abbia familiarità con il layout del servizio Power BI. Per eventuali domande, rivolgersi all'istruttore.A questo punto, ci si trova nell'Area di lavoro 
+   personale. Per lavorare con gli elementi di Fabric, sono necessarie una licenza di valutazione e un'area di lavoro con licenza di Fabric. Avviare la configurazione.
 
-A questo punto, ci si trova nell'Area di lavoro personale. Per lavorare con gli elementi di Fabric, sono necessarie una licenza di valutazione e un'area di lavoro con licenza di Fabric. Avviare la configurazione.
+    ![](../Images/lab-02/image012.jpg)
+  
+8.	Nell'angolo in alto a destra della schermata selezionare l'icona utente.
+9.	Selezionare Start trial.
 
-7.	Nell'angolo in alto a destra della schermata selezionare l'icona utente.
-8.	Selezionare Start trial.
+    ![](../Images/lab-02/image015.png)
+    
+10.	Si apre la finestra di dialogo Esegui l'aggiornamento a una versione di valutazione gratuita Microsoft Fabric. Selezionare Avvia versione di valutazione.
 
-9.	Si apre la finestra di dialogo Esegui l'aggiornamento a una versione di valutazione gratuita Microsoft Fabric. Selezionare Avvia versione di valutazione.
+    ![](../Images/lab-02/image018.png)
  
- 
-10.	Selezionare la "X" nell'angolo in alto a destra della finestra di dialogo Solo un ultimo passaggio per chiudere la finestra di dialogo. Non forniremo questi dettagli poiché si tratta di un ambiente lab.
+11.	Selezionare la "X" nell'angolo in alto a destra della finestra di dialogo Solo un ultimo passaggio per chiudere la finestra di dialogo. Non forniremo questi dettagli poiché si tratta di un ambiente lab.
 
-11.	Si apre la finestra di dialogo Aggiornamento a una versione di valutazione gratuita Microsoft Fabric completato. Selezionare Fabric Home Page.
+    ![](../Images/lab-02/image021.png)
+    
+12.	Si apre la finestra di dialogo Aggiornamento a una versione di valutazione gratuita Microsoft Fabric completato. Selezionare Fabric Home Page.
 
+    ![](../Images/lab-02/image024.jpg)
  
-12.	Si aprirà la home page di Microsoft Fabric.
+13.	Si aprirà la home page di Microsoft Fabric.
 
 
 ## Panoramica delle esperienze in Fabric
 ### Attività 2 - Esperienza Data Factory
 1.	Selezionare l'icona di Microsoft Fabric (selettore esperienza in Fabric) in basso a sinistra della schermata. Si apre una finestra di dialogo contenente l'elenco delle esperienze in Fabric. Si noti che Power BI, Data Factory, Data Activator e Industry Solutions sono esperienze indipendenti. Data Engineering, Data Science, Data Warehouse e Real-Time Analytics sono esperienze di
+   
 Synapse e si basano su Synapse. Procediamo a esaminarle.
 2.	Selezionare Data Factory.
 
+   ![](../Images/lab-02/image027.jpg)
  
 3.	Si apre la home page di Data Factory. La pagina contiene tre sezioni principali.
 a.	New: elenca gli elementi disponibili in Data Factory, ossia Dataflow Gen2 e Data pipeline.
@@ -68,14 +65,18 @@ b.	Recommended: questa sezione fornisce accesso alla documentazione di apprendim
 c.	Quick access: questa sezione elenca gli elementi preferiti o usati di recente.
 
 
+   ![](../Images/lab-02/image030.jpg)
+   
 ### Attività 3 - Esperienza Data Activator
 1.	Selezionare l'icona selettore esperienza in Fabric (attualmente impostata su Data Factory) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
 
+   ![](../Images/lab-02/image033.png)
  
 2.	Selezionare Data Activator nella finestra di dialogo. Si apre la home page di Data Activator. Data Activator è un'esperienza senza codice in Microsoft Fabric che consente di effettuare automaticamente azioni quando vengono rilevati schemi o condizioni nei dati che cambiano. Notare che le tre sezioni sono analoghe all'esperienza Data Factory. Nella sezione Nuovo osservare gli elementi:
 a.	Reflex: consente di monitorare set di dati, query e flussi di eventi per individuare schemi.
 b.	Esempio di Reflex: soluzione di esempio.
 
+   ![](../Images/lab-02/image036.png)
 
 
 ### Attività 4 - Esperienza Industry Solutions
@@ -85,7 +86,7 @@ a.	Soluzioni per la sostenibilità: supporta l'inserimento, la standardizzazione
 b.	Soluzioni retail: permette di gestire grandi volumi di dati, di integrare dati provenienti da origini varie e di fornire analisi in tempo reale per un processo decisionale rapido e
 tempestivo. I rivenditori possono usare queste soluzioni per l'ottimizzazione delle scorte, la segmentazione dei clienti, la previsione delle vendite, la determinazione dinamica dei prezzi e il rilevamento delle frodi.
  
- 
+    ![](../Images/lab-02/image039.png)
 
 ### Attività 5 - Esperienza Synapse Data Engineering
 1.	Selezionare l'icona selettore esperienza in Fabric (attualmente impostata su Industry Solutions) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
@@ -98,7 +99,7 @@ e.	Data pipeline: permette di orchestrare la soluzione di dati.
 f.	Import notebook: permette di importare notebook dal computer locale.
 g.	Use a sample: soluzione di esempio.
  
- 
+   ![](../Images/lab-02/image042.jpg)
 
 
 ### Attività 6 - Esperienza Synapse Data Science
@@ -112,7 +113,7 @@ e.	Import notebook: permette di importare notebook dal computer locale.
 f.	Use a sample: soluzione di esempio.
 Nota: elementi come Notebook, Environment, Data pipeline e così via sono disponibili in più esperienze poiché sono rilevanti in ciascuna di esse.
  
- 
+    ![](../Images/lab-02/image045.jpg)
 
 
 ### Attività 7 - Esperienza Synapse Data Warehouse
@@ -121,7 +122,7 @@ Nota: elementi come Notebook, Environment, Data pipeline e così via sono dispon
 a.	Data warehouse: permette di creare un Data Warehouse.
 b.	Pipeline di dati: permette di orchestrare la soluzione di dati.
  
- 
+    ![](../Images/lab-02/image048.png)
 
 
 ### Attività 8 - Esperienza Real-Time Analytics
@@ -133,23 +134,29 @@ c.	Set di query KQL: consente di eseguire query sui dati per produrre tabelle e 
 d.	Eventstream: permette di acquisire, trasformare e instradare il flusso di eventi in tempo reale.
 e.	Usare un esempio: soluzione di esempio.
  
- 
+    ![](../Images/lab-02/image051.jpg)
 
 ## Area di lavoro di Fabric
 ### Attività 9 - Creazione di un'area di lavoro di Fabric
 1.	Ora creeremo un'area di lavoro con licenza di Fabric. Selezionare Aree di lavoro nella barra di spostamento a sinistra. Si apre una finestra di dialogo.
 2.	Selezionare Nuova area di lavoro.
- 
+
+    ![](../Images/lab-02/image054.png)
  
 3.	Si apre la finestra di dialogo Crea un'area di lavoro sul lato destro del browser.
 4.	Nel campo Nome immettere FAIAD_<nome utente>
 Nota: il nome dell'area di lavoro deve essere univoco. Tuttavia, il nome dell'area di lavoro usato deve essere diverso. Assicurarsi che sotto il campo Nome sia presente un segno di spunta verde e che sia
 indicato "Questo nome è disponibile".
 5.	Se lo si desidera, è possibile immettere una Descrizione per l'area di lavoro. Questo campo è facoltativo.
-6.	Fare clic su Avanzate per espandere la sezione.
-7.	In License mode assicurarsi che si sia selezionato Trial (deve essere selezionato per impostazione predefinita).
+
+    ![](../Images/lab-02/image057.png)
+   
+7.	Fare clic su Avanzate per espandere la sezione.
+8.	In License mode assicurarsi che si sia selezionato Trial (deve essere selezionato per impostazione predefinita).
+
+    ![](../Images/lab-02/image060.png)
  
-8.	Selezionare Apply per creare una nuova area di lavoro.
+10.	Selezionare Apply per creare una nuova area di lavoro.
 Viene creata una nuova area di lavoro e si passa a tale area di lavoro. Importeremo dati da diverse origini dati in Lakehouse e useremo i dati da Lakehouse per creare il modello e il report relativi. Il primo passaggio consiste nel creare un Lakehouse.
 
 
@@ -157,15 +164,23 @@ Viene creata una nuova area di lavoro e si passa a tale area di lavoro. Importer
 1.	Selezionare l'icona selettore esperienza in Fabric (attualmente impostata su Real-Time Analytics) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
 2.	Selezionare Data Engineering per andare alla home page di Data Engineering.
 
+    ![](../Images/lab-02/image063.png)
  
 3.	Selezionare Lakehouse.
 
+    ![](../Images/lab-02/image066.jpg)
+     
 4.	Si apre la finestra di dialogo New lakehouse. Digitare lh_FAIAD nella casella di testo Name.
 Nota: lh indica Lakehouse. Aggiungiamo il prefisso lh per agevolarne l'identificazione e la ricerca.
-5.	Selezionare Create.
+
+    ![](../Images/lab-02/image069.png)
+   
+6.	Selezionare Create.
 Dopo qualche istante viene creato un lakehouse e si passerà all'interfaccia di Lakehouse.
 Nel pannello sinistro notare che sotto all'area di lavoro è ancora presente l'icona di Lakehouse. È possibile passare agevolmente a Lakehouse facendo clic su questa icona in qualsiasi momento.
 
+    ![](../Images/lab-02/image072.jpg)
+     
 Nell'interfaccia di esplorazione di Lakehouse si noteranno Tables e Files. Lakehouse può esporre file di Azure Data Lake Storage Gen2 nella sezione file oppure un flusso di dati può caricare dati nelle tabelle di Lakehouse. Sono disponibili varie opzioni. Mostreremo alcune di queste opzioni nei lab seguenti.
 In questo lab abbiamo esplorato l'interfaccia di Fabric, creato uno spazio di lavoro di Fabric e un
 lakehouse. Nel prossimo lab si imparerà a usare Flusso di dati Gen2 per connettersi ad ADLS Gen2 per estrarre, trasformare e inserire dati nel lakehouse.
@@ -173,7 +188,7 @@ lakehouse. Nel prossimo lab si imparerà a usare Flusso di dati Gen2 per connett
 ## Riferimenti
 Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità chiave disponibili in Microsoft Fabric. Nel menu di servizio, la sezione Guida (?) include collegamenti ad alcune risorse utili.
 
-
+   ![](../Images/lab-02/image075.png)
 
 Di seguito sono riportate ulteriori risorse utili che consentiranno di progredire nell'uso di Microsoft Fabric.
 •	Vedere il post di blog per leggere l'annuncio completo sulla disponibilità generale di Microsof t Fabric
