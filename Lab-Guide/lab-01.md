@@ -64,7 +64,7 @@ Fabric の説明を始める前に、変換とモデルについて理解する�
 
 1.	自分のラボ環境の **C:\FAIAD\Reports** フォルダーにある **FAIAD.pbix** を開きます。Power BI Desktop でファイルが開かれます。
 
-    ![](../Images/lab-01/image009.PNG)  
+    ![](../Images/lab-01/image009.png)  
 
 2.	[メール アドレスの入力] ダイアログが開きます。ラボ環境の右パネルにある環境の詳細タブに移動します。
 
@@ -78,7 +78,7 @@ Fabric の説明を始める前に、変換とモデルについて理解する�
  
 6.	続行を選択します。
 
-    ![](../Images/lab-01/image015.PNG)  
+    ![](../Images/lab-01/image015.png)  
 
 7.	[サインイン]  ダイアログが開きます。ユーザー名を環境の詳細タブからコピーしてもう一度入力します。
 
@@ -92,7 +92,7 @@ Fabric の説明を始める前に、変換とモデルについて理解する�
  
 11.	[Action Required] ダイアログが開き、多要素認証の設定が求められます。これはラボ環境であるため、設定する必要はありません。Ask later を選択します。
 
-    ![](../Images/lab-01/image021.PNG)  
+    ![](../Images/lab-01/image021.png)  
 
 12.	次のダイアログで、いいえ、このアプリのみにサインインしますを選択します。これで
 
@@ -191,7 +191,7 @@ b.	PO ファクトは、PO とPO Line Items のクエリをマージすること
 
 12.	SharepointData フォルダーには People ディメンションが含まれていることがわかります。
 
-    ![](../Images/lab-051/image051.PNG)  
+    ![](../Images/lab-051/image051.png)  
  
 これで、私たちが何を扱っているかがわかりました。以降のラボでは、Dataflow Gen2 を使って同様の Power Query を作成し、Lakehouse を使ってモデルを作成します。
 
@@ -200,7 +200,7 @@ Fabric Analyst in a Day (FAIAD) では、Microsoft Fabric で使用できる主�
 
 Microsoft Fabric の次のステップに役立つリソースをいくつか以下に紹介します。
 
-![](../Images/lab-054/image054.PNG)  
+![](../Images/lab-054/image054.png)  
 
 - ブログ記事で Microsof t Fabric のGA に関するお知らせの全文を確認する
 - ガイド付きツアーを通じて Fabric を探索する
