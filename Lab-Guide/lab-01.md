@@ -208,7 +208,6 @@ Microsoft Fabric の次のステップに役立つリソースをいくつか以
 - Microsof t Fabric の無料試用版にサインアップする
 - Microsof t Fabric のWeb サイトにアクセスする
 - Fabric の学習モジュールで新しいスキルを学ぶ
- 
 - Fabric の技術ドキュメントを参照する
 - Fabric 入門編の無料のe-book を読む
 - Fabric コミュニティに参加し、質問の投稿やフィードバックの共有を行い、他のユーザーから学びを得る
