@@ -20,6 +20,7 @@ Para obter insights valiosos dos dados, você extrai dados de vários sistemas, 
   - **Dados do Fornecedor:** são obtidos de diferentes fornecedores e armazenados em um banco de dados Snowflake. São atualizados à meia-noite/24h, todos os dias.
   - **Dados do Cliente:** são obtidos do Customer Insights e armazenados no Dataverse. Os dados estão sempre atualizados.
   - **Dados do Funcionário:** são obtidos do sistema de RH e armazenados como um arquivo de exportação em uma pasta do SharePoint. São atualizados todas as manhãs, às 9h.
+
 ![](../Images/lab-01/image01.png)
 No momento, você está criando um conjunto de dados no Power BI Premium que extrai os dados dos sistemas de origem acima para que você possa gerar relatórios e fornecer aos usuários finais o recurso de autoatendimento. Você usa o Power Query para atualizar seu modelo.
 
@@ -45,6 +46,7 @@ no painel direito do ambiente de laboratório.
 ![](../Images/lab-01/image03.png)
 5.	A caixa de diálogo Vamos entrar é aberta. Selecione **Conta corporativa ou de estudante.**
 6.	Selecione **Continuar.**
+
 ![](../Images/lab-01/image04.png)
 7.	A caixa de diálogo Sign in é aberta. Insira novamente os dados de **Username** copiando-os da guia **Environment Details.**
 8.	Selecione **Next**.
@@ -52,6 +54,7 @@ no painel direito do ambiente de laboratório.
 9.	Na próxima caixa de diálogo, insira os dados de **Password Credentials** copiando-os da guia **Environment Details.**
 10.	Selecione **Sign in**.
 11.	A caixa de diálogo Action Required é aberta solicitando a configuração da autenticação multifator. Não precisamos configurar isso, pois estamos em um ambiente de laboratório. Selecione **Ask later**.
+
 ![](../Images/lab-01/image06.png)
 12.	Selecione **No, sign in the app only** na próxima caixa de diálogo. O Power BI Desktop será aberto.
 ### Tarefa 2: Analisar relatório do Power BI Desktop
