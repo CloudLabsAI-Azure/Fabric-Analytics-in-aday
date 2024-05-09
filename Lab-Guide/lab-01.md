@@ -79,3 +79,187 @@ Fabrikam, Inc. 是一家经营创意商品的批发分销商。作为批发商�
 7.	登录对话框随即打开。通过从**环境详细信息**选项卡复制**用户名**的方式重新输入用户名。
 
 8.	选择**下一步**。
+
+![](../Images/lab-01/image5.jpg)
+
+9.	在下一个对话框中，通过从**环境详细信息**选项卡复制**密码凭据**的方式输入密码。
+
+10.	选择**登录**。
+
+11.	“Action Required”对话框随即打开，请求设置多重身份验证。我们不需要进行此设置， 因为这是实验环境。选择 **Ask Later。**
+
+![](../Images/lab-01/image6.png)
+
+12.	在下一个对话框中选择**否，仅登录应用。**Power BI Desktop 将打开。
+
+## 任务 2：分析Power BI Desktop 报表
+
+下面的报表分析了Fabrikam 的销售情况。页面左上角列出了KPI。其余的视觉对象突出显示了按区域、产品组和经销商公司划分的一段时间内的销售情况。
+
+![](../Images/lab-01/image7.jpg)
+
+**注意：** 在本次培训中，我们重点关注使用 Fabric 中提供的工具进行数据采集、转换和建模。我们不会专注于报表开发或导航。让我们花几分钟时间来理解该报表，然后继续执行后续步骤。
+
+1.	我们按销售区域分析数据。选择**销售区域中的新英格兰**（散点图）视觉对象。从一段时间 内的销售情况来看，经销商Tailspin Toys 在新英格兰的销售额高于Wingtip Toys。如果您查看销售额同比百分比柱形图，就会发现Wingtip Toys 的销售额增长率一直很低，并且在去年逐季下降。在第三季度小幅反弹后，第四季度再次下跌。
+
+    ![](../Images/lab-01/image8.jpg)
+
+2.	我们将其与落基山脉地区的情况进行比较。选择**销售区域中的落基山脉**（散点图）视觉对象。请注意，在销售额同比百分比柱形图中，Wingtip Toys 前两个季度的销售额一直很低， 但在 2022 年第四季度大幅增长。
+
+    ![](../Images/lab-01/image9.jpg)
+
+3.	选择**销售区域中的落基山脉**删除筛选器。
+
+4.	从屏幕底部中间的散点图视觉对象（按销售额划分的销售订单）中，选择右上角的离群值（第四象限）。请注意，利润率为 52%，高于 50% 的平均值。此外，2022 年最后两个季度的销售额同比增长。
+
+    ![](../Images/lab-01/image10.jpg)
+
+5.	在散点图视觉对象中选择离群值经销商以**删除筛选器。**
+
+6.	我们按产品组和经销商获取产品详细信息。从按产品组和经销商公司划分的销售条形图视 觉对象中，**右键单击 Tailspin Toys 的Packaging Materials 栏，**并从对话框中选择**钻取-> Product Detail**
+
+    ![](../Images/lab-01/image11.jpg)
+
+您将导航到提供产品详细信息的页面。请注意，还有一些未来的订单。
+
+7.	查看完此页面后，选择页面右上角的 **Ctrl + 后退箭头**可导航回到销售报表。
+
+    ![](../Images/lab-01/image12.jpg)
+
+8. 您可以自行进一步分析该报表。准备好后，我们来看看模型视图。在左侧面板中，选择**模 型视图图标。**请注意，有两个事实表：Sales 和PO。
+    - 销售数据的粒度是按日期、经销商、产品和人员。Date、Reseller、Product 和 People 连接到 Sales。
+
+    - PO 数据的粒度是按日期、经销商和人员。Date、Product 和People 连接到PO。
+
+    - 我们有按产品分类的供应商数据。Supplier 连接到Product。
+
+    - 我们有经销商的按地理划分的位置数据。Geo  连接到 Reseller。
+
+    - 我们有按经销商划分的客户信息。Customer 连接到Reseller。
+
+
+## 任务 3：查看Power Queries
+
+1.	下面我们通过Power Query 来了解数据源。从功能区中选择**主页 -> 转换数据**。
+
+    ![](../Images/lab-01/image13.jpg)
+
+2.	Power Query 窗口随即打开。从功能区中选择**主页-> 数据源设置。**数据源设置”对话框随即打开。滚动浏览列表时，您会注意到问题陈述中提到了四个数据源：
+
+    &nbsp;&nbsp;&nbsp; a.	Snowflake
+
+    &nbsp;&nbsp;&nbsp;b.	SharePoint
+
+    &nbsp;&nbsp;&nbsp;c.	ADLS Gen2
+
+    &nbsp;&nbsp;&nbsp;d.	Dataverse
+
+3.	选择**关闭**以关闭数据源设置对话框。
+
+    ![](../Images/lab-01/image14.jpg)
+
+4.	在左侧的“查询”面板中，请注意查询是按数据源分组的。
+
+5.	请注意，**DataverseData** 文件夹包含四个不同查询中可用的客户数据：BabyBoomer、
+GenX、GenY 和GenZ。追加这四个查询以创建 Customer 查询。
+
+6.	您可以通过输入**用户名和密码**来输入 Dataverse 数据源的凭据，该用户名和密码位于**环境变量**选项卡中（实验指南旁边）。请选择 Microsoft 帐户选项。
+
+    ![](../Images/lab-01/image15.png)
+
+7.	对于 ADLS 数据源，请使用**帐户密钥**选项并输入 **Adls storage account Access key，**其位于**环境变量**选项卡中（实验指南旁边）。
+
+8.	请注意，**ADLSData** 文件夹具有多个维度：Geo、Product、Reseller 和Date 还具有Sales 事实。<br>
+
+    a.	**Geo 维度**是通过合并 Cities、Countries 和 States 查询的数据而创建的。
+
+    b.	**Product 维度**是通过合并 Product Groups 和Product Item Group 查询中的数据而创建的。
+
+    c.	**Reseller 维度**是使用 BuyingGroup 查询筛选而来的。
+
+    d.	**Sales 事实**是通过合并InvoiceLineItems 与Invoice 查询而创建的。
+
+9.	对于 Snowflake 数据源，使用 **Snowflake Username 和 Snowflake Password**，其位于**环境变量**选项卡中（实验指南旁边）。
+
+10.	请注意，**SnowflakeData** 文件夹包含 Supplier 维度和PO（订单/支出）事实。<br>
+
+    a.	Supplier 维度是通过合并 Suppliers 查询与 SupplierCategories 查询而创建的。
+
+    b.	PO 事实是通过合并PO 与PO Line Items 查询而创建的。
+
+11.	对于 SharePoint 数据源，输入**用户名**和**密码**, 其位于**环境变量**其位于环境变量选项卡中（实验指南旁边）。请选择 Microsoft 帐户选项。
+
+12.	请注意，**SharepointData** 文件夹具有People 维度。
+
+    ![](../Images/lab-01/image16.png)
+
+现在我们知道我们正在处理的是什么了。在接下来的实验中，我们将使用数据流 Gen2 创建一个类似的 Power Query 并使用 Lakehouse 建模。
+
+
+### 参考
+
+Fabric Analyst in a Day (FAIAD) 介绍了Microsoft Fabric 中提供的一些主要功能。在服务菜单中， “帮助 (?)”部分包含指向一些优质资源的链接。
+
+![](../Images/lab-01/image17.png)
+
+以下更多参考资源可帮助您进行 Microsoft Fabric 相关的后续步骤。
+
+- 请参阅博客文章以阅读完整的[Microsof t Fabric GA 公告](https://aka.ms/Fabric-Hero-Blog-Ignite23)
+
+- 通过[引导式教程](https://aka.ms/Fabric-GuidedTour)探索 Fabric
+
+- 注册 [Microsof t Fabric 免费试用版](https://aka.ms/try-fabric)
+
+- 通过探索[Microsof t Fabric 网站](https://aka.ms/microsoft-fabric)
+
+- 通过探索 [Fabric 学习模块](https://aka.ms/learn-fabric)学习新技能
+
+- 探索 [Fabric 技术文档](https://aka.ms/fabric-docs)
+
+- 阅读[有关Fabric 入门指南的免费电子书](https://aka.ms/fabric-get-started-ebook)
+
+- 加入[Fabric 社区](https://aka.ms/fabric-community)发布问题、分享反馈并向他人学习
+
+阅读更多深度Fabric 体验公告博客：
+
+- [Fabric 中的Data Factory 体验博客](https://aka.ms/Fabric-Data-Factory-Blog)
+
+- [Fabric 中的Synapse Data Engineering 体验博客](https://aka.ms/Fabric-DE-Blog)
+
+- [Fabric 中的Synapse Data Science 体验博客](https://aka.ms/Fabric-DS-Blog)
+
+- [Fabric 中的Synapse Data Warehousing 体验博客](https://aka.ms/Fabric-DW-Blog)
+
+- [Fabric 中的Synapse Real-Time Analytics 体验博客](https://aka.ms/Fabric-RTA-Blog)
+
+- [Power BI 公告博客](https://aka.ms/Fabric-PBI-Blog)
+
+- [Fabric 中的Data Activator 博客](https://aka.ms/Fabric-DA-Blog)
+
+- [Fabric 中的管理和治理博客](https://aka.ms/Fabric-Admin-Gov-Blog)
+
+- [Fabric 中的OneLake 博客](https://aka.ms/Fabric-OneLake-Blog)
+
+- [Dataverse 和Microsof t Fabric 集成博客](https://aka.ms/Dataverse-Fabric-Blog)
+
+© 2023 Microsoft Corporation.保留所有权利。
+
+© 2023 Microsoft Corporation.保留所有权利。使用此演示/实验即表示您已同意以下条款: 
+本演示/实验中的技术/功能由 Microsoft Corporation 出于获取反馈和提供学习体验的目的提供。只能将本演示/实验用于评估这些技术特性和功能以及向Microsoft 提供反馈。不得用于任何其他用途。不得对此演示/实验或其任何部分进行修改、复制、分发、传送、显示、 执行、复制、公布、许可、转让、销售或基于以上内容创建衍生作品。
+严禁将本演示/实验（或其任何部分）复制到任何其他服务器或位置以便进一步复制或再  分发。
+
+本演示/实验出于上述目的，在不涉及复杂设置或安装操作的模拟环境中提供特定软件技术
+/产品特性和功能，包括潜在的新功能和概念。本演示/实验中展示的技术/概念可能不是完 整的功能，可能会以不同于最终版本的工作方式工作。我们也可能不会发布此类功能或概念的最终版本。在物理环境中使用此类特性和功能的体验可能也有所不同。
+
+**反馈**。如您针对本演示/实验中所述的技术特性、功能和/或概念向 Microsoft 提供反馈，则意味着您向Microsoft  无偿提供以任何方式、出于任何目的使用和分享您的反馈并将其商业化的权利。您同样无偿为第三方提供其产品、技术和服务使用或配合使用包含此反馈的
+Microsoft 软件或服务的任何特定部分所需的任何专利权。如果根据某项许可的规定，
+Microsoft  由于在其软件或文档中包含了您的反馈需要向第三方授予该软件或文档的许可， 请不要提供这样的反馈。这些权利在本协议终止后继续有效。
+反馈。如您针对本演示/实验中所述的技术特性、功能和/或概念向 Microsoft 提供反馈，则意味着您向Microsoft  无偿提供以任何方式、出于任何目的使用和分享您的反馈并将其商业化的权利。您同样无偿为第三方提供其产品、技术和服务使用或配合使用包含此反馈的
+Microsoft 软件或服务的任何特定部分所需的任何专利权。如果根据某项许可的规定，
+Microsoft  由于在其软件或文档中包含了您的反馈需要向第三方授予该软件或文档的许可， 请不要提供这样的反馈。这些权利在本协议终止后继续有效。
+
+对于本演示/实验，Microsoft Corporation 不提供任何明示、暗示或法定的保证和条件，包括有关适销性、针对特定目的的适用性、所有权和不侵权的所有保证和条件。对于使用本 演示/实验产生的结果或输出内容的准确性，或者出于任何目的包含本演示/实验中的信息的适用性，Microsoft 不做任何保证或陈述。
+
+**免责声明**
+
+本演示/实验仅包含 Microsoft Power BI 的部分新功能和增强功能。在产品的后续版本中， 部分功能可能有所更改。在本演示/实验中，可了解部分新功能，但并非全部新功能。
