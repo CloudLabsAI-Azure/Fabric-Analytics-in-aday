@@ -158,7 +158,7 @@ d.	Dataverse
 
 3.	閉じるを選択して [データソース設定]  ダイアログを閉じます。
 
-    ![](../Images/lab-045/image045.jpg)  
+    ![](../Images/lab-01/image045.jpg)
 
 4.	左側の [クエリ] パネルでは、各クエリがデータ ソースごとにグループ化されていることがわかります。
 
@@ -167,7 +167,7 @@ d.	Dataverse
 6.	Dataverse データソースの資格情報を入力するには、環境変数タブ ([ラボ ガイド] の隣)
 で確認できるユーザー名とパスワードを入力します。Microsoft  アカウントのオプションを選択してください。
  
-    ![](../Images/lab-048/image048.jpg)   
+    ![](../Images/lab-01/image048.jpg)
 
 7.	ADLS データソースの場合は、アカウントキー オプションを使用し、環境変数タブ ([ラボガイド] の隣) で確認できるADLS ストレージアカウントのアクセスキーを入力します。
 
@@ -191,7 +191,7 @@ b.	PO ファクトは、PO とPO Line Items のクエリをマージすること
 
 12.	SharepointData フォルダーには People ディメンションが含まれていることがわかります。
 
-    ![](../Images/lab-051/image051.png)  
+    ![](../Images/lab-01/image051.png) 
  
 これで、私たちが何を扱っているかがわかりました。以降のラボでは、Dataflow Gen2 を使って同様の Power Query を作成し、Lakehouse を使ってモデルを作成します。
 
@@ -200,7 +200,7 @@ Fabric Analyst in a Day (FAIAD) では、Microsoft Fabric で使用できる主�
 
 Microsoft Fabric の次のステップに役立つリソースをいくつか以下に紹介します。
 
-![](../Images/lab-054/image054.png)  
+![](../Images/lab-01/image054.png) 
 
 - ブログ記事で Microsof t Fabric のGA に関するお知らせの全文を確認する
 - ガイド付きツアーを通じて Fabric を探索する
