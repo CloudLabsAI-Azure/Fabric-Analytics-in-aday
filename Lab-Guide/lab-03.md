@@ -217,7 +217,7 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
 
 3.	左パネルの ADLSData フォルダーにある States クエリを右クリックし、コピーを選択します。
 
-    ![](../Images/lab-03/image81.jpg)
+    ![](../Images/lab-03/image081.jpg)
 
 4.	ブラウザーに戻ります。作業中の Dataflow が表示されます。
 
@@ -227,7 +227,7 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
    注:  ラボ環境で作業している場合は、画面の右側にある省略記号を選択してください。スライダーを使用して VM ネイティブクリップボードを有効にします。ダイアログで[OK] を選択します。クエリの貼り付けが済んだら、このオプションを無効にしてかまいません。
 
 
-   ![](../Images/lab-03/image83.jpg)
+   ![](../Images/lab-03/image083.jpg)
 
 ADLS Base Folder もコピーされることに注意してください。これは、States クエリがPower BI Desktop のADLS Base Folder を参照しているものの、似たクエリが既に存在するためです。これを解決しましょう。
 
@@ -237,15 +237,15 @@ ADLS Base Folder もコピーされることに注意してください。これ
 
 8.	数式バーで、#"ADLS Base Folder" を #"ADLS Base Folder for Geo" に変更します。
 
-    ![](../Images/lab-03/image86.jpg)
+    ![](../Images/lab-03/image086.jpg)
  
 9.	数式バーの横にあるチェック マークをクリックするか、Enter  キーを押します。
 
-    ![](../Images/lab-03/image89.jpg)
+    ![](../Images/lab-03/image089.jpg)
 
 10.	これで ADLS Base Folder を削除できます。左パネルのクエリ セクションで ADLS Base Folder クエリを右クリックし、削除を選択します。
 
-    ![](../Images/lab-03/image92.png)
+    ![](../Images/lab-03/image092.png)
 
 11.	[クエリの削除] ダイアログが表示されます。削除を選択して確定します。
     注: クエリに適用されたステップが 4 つあることを確認し、クエリの読み込みが完了するまで待ちます。数分かかる場合があります。
@@ -259,13 +259,13 @@ ADLS Base Folder もコピーされることに注意してください。これ
  
 3.	リボンからホーム -> 詳細エディターを選択します。
 
-    ![](../Images/lab-03/image95.png)
+    ![](../Images/lab-03/image095.png)
 
 4.	詳細エディターのウィンドウが開きます。詳細エディターですべてのテキストを強調表 示します。
 
 5.	右クリックして Copy を選択します。
 
-    ![](../Images/lab-03/image98.jpg)
+    ![](../Images/lab-03/image098.jpg)
 
 6.	ウィンドウの右上隅にある X を選択するか、完了を選択して、詳細エディターのウィンドウを閉じます。
 
