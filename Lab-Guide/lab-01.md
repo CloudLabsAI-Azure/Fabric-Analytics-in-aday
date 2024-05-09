@@ -49,3 +49,17 @@ no painel direito do ambiente de laboratório.
 7.	A caixa de diálogo Sign in é aberta. Insira novamente os dados de **Username** copiando-os da guia **Environment Details.**
 8.	Selecione **Next**.
 ![](../Images/lab-01/image05.png)
+9.	Na próxima caixa de diálogo, insira os dados de **Password Credentials** copiando-os da guia **Environment Details.**
+10.	Selecione **Sign in**.
+11.	A caixa de diálogo Action Required é aberta solicitando a configuração da autenticação multifator. Não precisamos configurar isso, pois estamos em um ambiente de laboratório. Selecione **Ask later**.
+![](../Images/lab-01/image06.png)
+12.	Selecione **No, sign in the app only** na próxima caixa de diálogo. O Power BI Desktop será aberto.
+### Tarefa 2: Analisar relatório do Power BI Desktop
+O relatório abaixo analisa as Sales da Fabrikam. Os KPIs estão listados no canto superior esquerdo da página. Os visuais restantes destacam as Sales over time, por Territory, Product Group e Reseller Company.
+![](../Images/lab-01/image07.png)
+**Observação:** Neste treinamento, estamos nos concentrando na aquisição, transformação e
+modelagem de dados usando as ferramentas disponíveis no Fabric. Não nos concentraremos no desenvolvimento ou na navegação de relatórios. Vamos reservar alguns minutos para entender o relatório e passar para as próximas etapas.
+1.	Vamos analisar os dados por Sales Territory. Selecione o visual **New England from the Sales
+Territory** (gráfico de dispersão). Observe que em Sales over time, Reseller Tailspin Toys tem mais vendas em comparação com Wingtip Toys em New England. Se você olhar o gráfico de colunas Sales YoY%, notará que o crescimento das vendas da Wingtip Toys foi baixo e diminuiu trimestre após trimestre durante o ano passado. Depois de uma pequena recuperação no terceiro
+trimestre, caiu novamente no quarto.
+![](../Images/lab-01/image08.png)
