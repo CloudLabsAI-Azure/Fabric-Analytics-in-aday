@@ -1,6 +1,6 @@
 
 
-  ![](../Images/picture-01.png)
+
 
 Sommario
 Struttura del documento	3
