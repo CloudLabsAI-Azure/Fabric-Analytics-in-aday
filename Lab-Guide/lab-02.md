@@ -52,7 +52,7 @@ l’onglet **Variables d’environnement** (en regard du Guide de labo) qui vous
 5.	Vous êtes alors redirigé vers la **page d’accueil Service Power BI** familière.
 6.	Nous supposons que vous connaissez la disposition du service Power BI. Si vous avez une question, n’hésitez pas à la poser au formateur.
 
-Vous êtes actuellement dans **Mon espace de travail**. Pour utiliser des éléments Fabric, vous avez besoin d’une licence d’essai et d’un espace de travail doté d’une licence Fabric. En avant pour la configuration.
+    Vous êtes actuellement dans **Mon espace de travail**. Pour utiliser des éléments Fabric, vous avez besoin d’une licence d’essai et d’un espace de travail doté d’une licence Fabric. En avant pour la configuration.
 
 7.	Dans le coin supérieur droit de l’écran, cliquez sur l’**icône utilisateur**.
 8.	Cliquez sur **Démarrer l’évaluation**.
@@ -231,7 +231,7 @@ Analytics) en bas à gauche de l’écran. La boîte de dialogue Expérience Fab
  
 4.	La boîte de dialogue Nouvelle lakehouse s’ouvre alors. Tapez **lh_FAIAD** dans la zone de texte Nom.
 
-**Remarque :** lh fait ici référence à la fonctionnalité Lakehouse. Nous ajoutons le préfixe lh afin de faciliter l’identification et la recherche.
+    **Remarque :** lh fait ici référence à la fonctionnalité Lakehouse. Nous ajoutons le préfixe lh afin de faciliter l’identification et la recherche.
  
 5.	Cliquez sur **Créer**.
 
