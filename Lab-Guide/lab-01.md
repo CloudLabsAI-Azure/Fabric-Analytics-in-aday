@@ -45,8 +45,7 @@ no painel direito do ambiente de laboratório.
 4.	Selecione **Continue**.
 ![](../Images/lab-01/image03.png)
 5.	A caixa de diálogo Vamos entrar é aberta. Selecione **Conta corporativa ou de estudante.**
-6.	Selecione **Continuar.**
-
+6.	Selecione **Continuar.**<br>
 ![](../Images/lab-01/image04.png)
 7.	A caixa de diálogo Sign in é aberta. Insira novamente os dados de **Username** copiando-os da guia **Environment Details.**
 8.	Selecione **Next**.
