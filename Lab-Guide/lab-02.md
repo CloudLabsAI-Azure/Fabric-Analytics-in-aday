@@ -243,27 +243,27 @@ Fabric Analyst in a Day (FAIAD) では、Microsoft Fabric で使用できる主�
 
 Microsoft Fabric の次のステップに役立つリソースをいくつか以下に紹介します。
 
-•	ブログ記事で Microsoft Fabric のGA に関するお知らせの全文を確認する
-•	ガイド付きツアーを通じて Fabric を探索する
-•	Microsoft Fabric の無料試用版にサインアップする
-•	Microsoft Fabric のWeb サイトにアクセスする
-•	Fabric の学習モジュールで新しいスキルを学ぶ
-•	Fabric の技術ドキュメントを参照する
+•	ブログ記事で Microsoft Fabric のGA に関するお知らせの全文を確認する<br>
+•	ガイド付きツアーを通じて Fabric を探索する<br>
+•	Microsoft Fabric の無料試用版にサインアップする<br>
+•	Microsoft Fabric のWeb サイトにアクセスする<br>
+•	Fabric の学習モジュールで新しいスキルを学ぶ<br>
+•	Fabric の技術ドキュメントを参照する<br>
  
-•	Fabric 入門編の無料のe-book を読む
-•	Fabric コミュニティに参加し、質問の投稿やフィードバックの共有を行い、他のユーザーから学びを得る
-より詳しい Fabric エクスペリエンスのお知らせに関するブログを参照してください。
+•	Fabric 入門編の無料のe-book を読む<br>
+•	Fabric コミュニティに参加し、質問の投稿やフィードバックの共有を行い、他のユーザーから学びを得る<br>
+より詳しい Fabric エクスペリエンスのお知らせに関するブログを参照してください<br>
 
-•	Fabric の Data Factory エクスペリエンスに関するブログ
-•	Fabric のSynapse Data Engineering エクスペリエンスに関するブログ
-•	Fabric のSynapse Data Science エクスペリエンスに関するブログ
-•	Fabric のSynapse Data Warehousing エクスペリエンスに関するブログ
-•	Fabric のSynapse Real-Time Analytics エクスペリエンスに関するブログ
-•	Power BI のお知らせに関するブログ
-•	Fabric の Data Activator エクスペリエンスに関するブログ
-•	Fabric の管理とガバナンスに関するブログ
-•	Fabric のOneLake に関するブログ
-•	Dataverse とMicrosoft Fabric の統合に関するブログ
+•	Fabric の Data Factory エクスペリエンスに関するブログ<br>
+•	Fabric のSynapse Data Engineering エクスペリエンスに関するブログ<br>
+•	Fabric のSynapse Data Science エクスペリエンスに関するブログ<br>
+•	Fabric のSynapse Data Warehousing エクスペリエンスに関するブログ<br>
+•	Fabric のSynapse Real-Time Analytics エクスペリエンスに関するブログ<br>
+•	Power BI のお知らせに関するブログ<br>
+•	Fabric の Data Activator エクスペリエンスに関するブログ<br>
+•	Fabric の管理とガバナンスに関するブログ<br>
+•	Fabric のOneLake に関するブログ<br>
+•	Dataverse とMicrosoft Fabric の統合に関するブログ<br>
 
 
 © 2023 Microsoft Corporation. All rights reserved.
