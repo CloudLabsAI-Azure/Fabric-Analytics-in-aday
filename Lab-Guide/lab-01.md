@@ -95,3 +95,16 @@ e.	Temos informações de Customer por Reseller. Customer conecta-se a Reseller.
 1.	Vamos analisar o Power Query para entender as fontes de dados. Na faixa de opções, selecione
 **Página Inicial -> Transformar dados.**
 ![](../Images/lab-01/image13.png)
+2.	A janela do Power Query é aberta. Na faixa de opções, selecione **Página Inicial -> Configuração da fonte de dados.** A caixa de diálogo Configuração da fonte de dados é aberta. Ao percorrer a lista, você notará que existem quatro fontes de dados, conforme mencionado na declaração do problema:<br>
+a.	Snowflake<br>
+b.	SharePoint<br>
+c.	ADLS Gen2<br>
+d.	Dataverse
+3.	Selecione **Fechar** para fechar a caixa de diálogo Configuração da fonte de dados.
+![](../Images/lab-01/image14.png)
+4.	No painel esquerdo Consultas, observe que as consultas estão agrupadas por fonte de dados.
+5.	Observe que a pasta **DataverseData** tem os dados de Customer disponíveis em quatro consultas diferentes: BabyBoomer, GenX, GenY e GenZ. Essas quatro consultas são acrescentadas para criar a consulta Customer.
+6.	Você pode inserir as credenciais para a fonte de dados Dataverse inserindo o **Username** e a
+**Password** disponíveis na guia Environment Variables (ao lado do Guia de Laboratório). Selecione a opção Conta Microsoft.
+![](../Images/lab-01/image15.png)
+
