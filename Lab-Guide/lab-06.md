@@ -1,4 +1,4 @@
- 
+![](../Images/lab-06/lab-06_main.png) 
 ## Introduzione
 Abbiamo inserito dati provenienti da diverse origini dati in Lakehouse. In questo lab si lavorerà con il modello di dati. In genere, eseguiamo attività di modellazione quali la creazione di relazioni, l'aggiunta di misure, ecc. in Power BI Desktop. Qui impareremo a eseguire queste attività di modellazione nel servizio.
 In questo lab si imparerà a:
