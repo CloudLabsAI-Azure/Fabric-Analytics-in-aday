@@ -261,7 +261,7 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
  
 3.	リボンから**ホーム -> 詳細エディター**を選択します。
 
-    ![](../Images/lab-03/image095.jpg)
+    ![](../Images/lab-03/image095.png)
 
 4.	詳細エディターのウィンドウが開きます。詳細エディターで**すべてのテキストを強調表 示**します。
 
