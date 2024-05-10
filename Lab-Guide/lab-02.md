@@ -110,7 +110,7 @@ Time Analytics sind Synapse-Funktionsbereiche und werden mit Technologien von Sy
 
     c. Quick Access: Hier finden Sie die zuletzt verwendeten oder bevorzugten Elemente.
 
-![](../Images/lab2-image9.jpg)
+    ![](../Images/lab2-image9.jpg)
 
 ### Aufgabe 3: Data Activator-Funktionsbereich
 
