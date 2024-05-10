@@ -1,13 +1,13 @@
 ![](../Images/lab-01/image.png)
 
 ## Sumário
-Estrutura do documento
-Cenário/Declaração do problema
+- Estrutura do documento
+- Cenário/Declaração do problema
 Visão geral do relatório do Power BI Desktop
   - Tarefa 1: Configurar o Power BI Desktop no ambiente de laboratório
   - Tarefa 2: Analisar relatório do Power BI Desktop
   - Tarefa 3: Revisar Power Queries
-Referências
+- Referências
 
 ## Estrutura do documento
 O laboratório inclui etapas a serem seguidas pelo usuário juntamente com as capturas de tela associadas que fornecem auxílio visual. Em cada captura de tela, as seções estão destacadas com caixas laranjas para indicar as áreas nas quais o usuário deve se concentrar.
