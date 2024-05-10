@@ -24,7 +24,7 @@ Lakehouse	3
 •	Lakehouse에서 데이터 모델링 탐색 방법 <br>
 
 ## Lakehouse
-작업 1: SQL을 사용한 데이터 쿼리
+### 작업 1: SQL을 사용한 데이터 쿼리
 1.	다시 랩 2, 작업 9에서 만든 Fabric 작업 영역, **FAIAD_<username>**(으)로 되돌아가 보겠습니다.
 2.	lh_FAIAD의 세 가지 유형(Lakehouse, 의미 체계 모델 및 SQL 엔드포인트)을 보게 됩니다. 이전 랩에서 Lakehouse 옵션을 탐색했습니다. **lh_FAIAD SQL 분석 엔드포인트** 옵션을 선택하여 SQL 옵션을 탐색합니다. 탐색기의 **SQL 보기**로 이동합니다.
 
