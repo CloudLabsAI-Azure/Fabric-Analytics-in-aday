@@ -42,9 +42,9 @@ Before we start with Fabric, let’s look at the current Report in Power BI Desk
 
 ### Task 1: Set up Power BI Desktop in lab environment
 
-1. Open the **FAIAD.pbix** located in the **Reports** folder on the **Desktop**. The file will open in Power BI Desktop. 
+1. Open the **FAIAD.pbix** located in the **C:\FAIAD\Reports** folder on in your lab environment. The file will open in Power BI Desktop. 
 
-   # ![](../media/L1T1S1.png)
+   # ![](../media/10-05-2024(1).png)
 
 2. Enter your email address dialog opens. Navigate to the **Environment Details** tab on the right panel in the lab environment.
 3. Copy the **Username** and paste it into the Email textbox of the dialog.
@@ -102,23 +102,33 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
    # ![](../media/img13.png)
   
-8. Feel free to further analyze the report. Once ready let’s look at the model view. From the left panel, select the Model View icon. Notice there are two fact tables, Sales and PO. 
-      1. The granularity of Sales data is by Date, Reseller, Product, and People. Date, Reseller, Product, and People connect to Sales.
-      2. The granularity of PO data is by Date, Product, and People. Date, Product, and People connect to PO.
-      3. We have Supplier data by Product. Supplier connects to Product.
-      4. We have Reseller’s location data by Geo. Geo connects to the Reseller.
-      5. We have Customer information by Reseller. The customer connects to the Reseller.
+8. Feel free to further analyze the report. Once ready let’s look at the model view. From the left panel, select **Model view icon**. Notice there are two fact tables, Sales and PO.
+
+   a.	Granularity of Sales data is by Date, Reseller, Product, and People. Date, Reseller, Product, and People connect to Sales.
+
+   b.	Granularity of PO data is by Date, Product, and People. Date, Product, and People connect to PO.
+
+   c.	We have Supplier data by Product. Supplier connects to Product.
+
+   d.	We have Reseller’s location data by Geo. Geo connects to Reseller.
+
+   e.	We have Customer information by Reseller. Customer connects to Reseller. 
+
 
 ### Task 3: Review Power Queries
-1. Let’s look at Power Query to understand the data sources. From the ribbon select Home -> Transform data.
+1. Let’s look at Power Query to understand the data sources. From the ribbon select **Home -> Transform data**.
 
    # ![](../media/img14.png)
  
-2. The Power Query window opens. From the ribbon, select Home -> Data source settings. The data source settings dialog opens. As you scroll through the list you will notice there are four data sources as mentioned in the problem statement:
-      1. Snowflake
-      2. SharePoint
-      3. ADLS Gen2
-      4. Dataverse
+2. The Power Query window opens. From the ribbon, select **Home -> Data source settings**. The data source settings dialog opens. As you scroll through the list you will notice there are four data sources as mentioned in the problem statement:
+      
+   a. Snowflake
+      
+   b. SharePoint
+      
+   c. ADLS Gen2
+      
+   d. Dataverse
 
 3. Select **Close** to close the Data source settings dialog.
 
@@ -132,19 +142,26 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
  
 7. For ADLS data source, use the **Account Key** option and enter the **Adls storage account Access key** that is available in the **Environment Variables** tab (next to the Lab Guide).
 8. Notice the **ADLSData** folder has multiple dimensions: Geo, Product, Reseller, and Date. It also has Sales facts. 
-   1. **Geo dimension** is created by merging data from the Cities, Countries, and States query.
-   2. **Product dimension** is created by merging data from Product Groups and Product Item Group query.
-   3. **Reseller dimension** is filtered using the BuyingGroup query.
-   4. **Sales fact** is created by merging InvoiceLineItems with Invoice query.
+   
+   a. **Geo dimension** is created by merging data from the Cities, Countries, and States query.
+   
+   b. **Product dimension** is created by merging data from Product Groups and Product Item Group query.
+   
+   c. **Reseller dimension** is filtered using the BuyingGroup query.
+   
+   d. **Sales fact** is created by merging InvoiceLineItems with Invoice query.
+
 9. For the Snowflake data source, use the Snowflake **Username** and Snowflake **Password** that is available in the **Environment Variables** tab (next to the Lab Guide).
+
 10. Notice the SnowflakeData folder has the Supplier dimension and PO (Order / Spend) fact.
 
-   1. **Supplier dimension** is created by merging the Suppliers query with the SupplierCategories query.
-   2. **PO fact** is created by merging PO with PO Line Items query.
+      a. **Supplier dimension** is created by merging the Suppliers query with the SupplierCategories query.
+      
+      b. **PO fact** is created by merging PO with PO Line Items query.
 
 11. For the SharePoint data source, enter the **Username** and **Password** available in **Environment Variables** tab (next to Lab guide). Please select the Microsoft account option.
 
-12. Notice the SharepointData folder has a People dimension.
+12. Notice the **SharepointData** folder has a People dimension.
 
     # ![](../media/img17.png) 
 
