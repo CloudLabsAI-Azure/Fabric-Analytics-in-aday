@@ -161,7 +161,7 @@ e. **Usar uma amostra:** solução de exemplo.
 2. Selecione **Novo workspace**.
 
     ![](../Images/lab-02/image17.png)
-    
+
 3. A caixa de diálogo **Criar um workspace** é aberta no lado direito do navegador.
 4. No campo **Nome**, insira **FAIAD_<nome de usuário>.**
 
@@ -173,10 +173,10 @@ e. **Usar uma amostra:** solução de exemplo.
     ![](../Images/lab-02/image18.png)
     
 7. Em **License mode**, verifique se **Trial** está selecionada. (Essa opção deve estar selecionada por padrão.)
+8. Selecione **Apply** para criar um novo workspace.
 
     ![](../Images/lab-02/image19.png)
 
-8.	Selecione **Apply** para criar um novo workspace.
 
 Um novo workspace é criado e você será direcionado para ele. Traremos dados de diferentes fontes de dados para o Lakehouse e usaremos os dados do Lakehouse para criar nosso modelo e relatá-lo. A primeira etapa é criar um Lakehouse.
  
