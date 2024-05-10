@@ -1,184 +1,216 @@
-Sumário
-Introdução	3
-Fluxo de dados Gen2	3
-Tarefa 1: Configurar atualização agendada para o Fluxo de dados Sales	3
-Tarefa 2: Configurar atualização agendada para o fluxo de dados Supplier e Customer	7
-Pipeline de dados	9
-Tarefa 3: Criar Pipeline de dados	9
-Tarefa 4: Criar Pipeline de dados simples	11
-Tarefa 5: Criar novo Pipeline de dados	12
-Tarefa 6: Criar atividade Until	13
-Tarefa 7: Criar variáveis	14
-Tarefa 8: Configurar atividade Until	15
-Tarefa 9: Configurar atividade Fluxo de dados	20
-Tarefa 10: Configurar 1ª atividade Definir variável	22
-Tarefa 11: Configurar 2ª atividade Definir variável	24
-Tarefa 12: Configurar 3ª atividade Definir variável	26
-Tarefa 13: Configurar atividade Wait	27
-Tarefa 14: Configurar atualização de agenda para o Pipeline de dados	30
-Referências	32
+## Sumário
+- Introdução
 
-Introdução
+- Fluxo de dados Gen2	
+  - Tarefa 1: Configurar atualização agendada para o Fluxo de dados Sales	
+  - Tarefa 2: Configurar atualização agendada para o fluxo de dados Supplier e Customer	
+
+- Pipeline de dados	
+  - Tarefa 3: Criar Pipeline de dados	
+  - Tarefa 4: Criar Pipeline de dados simples	
+  - Tarefa 5: Criar novo Pipeline de dados	
+  - Tarefa 6: Criar atividade Until	
+  - Tarefa 7: Criar variáveis	
+  - Tarefa 8: Configurar atividade Until	
+  - Tarefa 9: Configurar atividade Fluxo de dados	
+  - Tarefa 10: Configurar 1ª atividade Definir variável	
+  - Tarefa 11: Configurar 2ª atividade Definir variável	
+  - Tarefa 12: Configurar 3ª atividade Definir variável	
+  - Tarefa 13: Configurar atividade Wait	
+  - Tarefa 14: Configurar atualização de agenda para o Pipeline de dados	
+- Referências	
+
+## Introdução
 Temos ingerido dados de diversas fontes no Lakehouse. Neste laboratório, você configurará uma agenda de atualização para as fontes de dados. Apenas para recapitular o requisito:
-•	Dados de Venda: no ADLS são atualizados ao meio-dia/12h todos os dias.
-•	Dados do Fornecedor: no Snowflake, são atualizados à meia-noite/24h todos os dias.
-•	Dados do Cliente: no Dataverse, são sempre atualizados. Precisamos atualizá-los quatro vezes ao dia, à meia-noite/12h, 6h, meio-dia/12h e 18h.
-•	Dados do Funcionário: no SharePoint, são atualizados às 9h todos os dias. No entanto, observamos que, às vezes, há um atraso de 5 a 15 minutos. Precisamos criar uma agenda de atualização para acomodar isso.
+  - **Dados de Venda:** no ADLS são atualizados ao meio-dia/12h todos os dias.
+  - **Dados do Fornecedor:** no Snowflake, são atualizados à meia-noite/24h todos os dias.
+  - **Dados do Cliente:** no Dataverse, são sempre atualizados. Precisamos atualizá-los quatro vezes ao dia, à meia-noite/12h, 6h, meio-dia/12h e 18h.
+  - **Dados do Funcionário:** no SharePoint, são atualizados às 9h todos os dias. No entanto, observamos que, às vezes, há um atraso de 5 a 15 minutos. Precisamos criar uma agenda de atualização para acomodar isso.
+
 Ao final deste laboratório, você terá aprendido:
-•	Como configurar uma atualização agendada do Fluxo de dados Gen2
-•	Como criar um Pipeline de dados
-•	Como configurar uma atualização agendada do Pipeline de dados
+  - Como configurar uma atualização agendada do Fluxo de dados Gen2
+  - Como criar um Pipeline de dados
+  - Como configurar uma atualização agendada do Pipeline de dados
 
 
-Fluxo de dados Gen2
-Tarefa 1: Configurar atualização agendada para o Fluxo de dados Sales
+## Fluxo de dados Gen2
+### Tarefa 1: Configurar atualização agendada para o Fluxo de dados Sales
 Vamos começar configurando uma atualização agendada do Fluxo de dados Sales.
 
-1.	Vamos voltar ao workspace do Fabric, FAIAD_<nome de usuário>, que você criou no Laboratório 2, Tarefa 9.
-2.	Todos os artefatos que você criou estão listados aqui. No lado direito da tela, na Caixa de pesquisa, insira df. Isso filtrará os artefatos para Fluxos de dados.
+1. Vamos voltar ao workspace do Fabric, **FAIAD_<nome de usuário>,** que você criou no Laboratório 2, Tarefa 9.
+2. Todos os artefatos que você criou estão listados aqui. No lado direito da tela, na **Caixa de pesquisa,** insira **df.** Isso filtrará os artefatos para Fluxos de dados.
 
-3.	Passe o mouse sobre a linha df_Sales_ADLS. Observe que os conhecidos ícones Atualizar
-e Agendar Atualização estão disponíveis. Selecione as reticências (…).
-4.	Observe que há opção para Excluir, Editar e Exportar o Fluxo de dados. Podemos usar
-Propriedades para atualizar o nome e a descrição do Fluxo de dados. Veremos o histórico de atualização em breve. Selecione Configurações.
+    ![](../Images/lab-05/image01.png)
+
+3. Passe o mouse sobre a linha **df_Sales_ADLS.** Observe que os conhecidos ícones **Atualizar** e **Agendar Atualização** estão disponíveis. Selecione as **reticências (…).**
+4. Observe que há opção para Excluir, Editar e Exportar o Fluxo de dados. Podemos usar Propriedades para atualizar o nome e a descrição do Fluxo de dados. Veremos o histórico de atualização em breve. Selecione **Configurações.**
  
+    ![](../Images/lab-05/image02.png)
+    
+**Observação:** A página Configurações é aberta. No painel esquerdo, você encontrará todos os Fluxos de Dados listados.
+
+5. No painel central, selecione o link **Histórico de atualização.**
+
+![](../Images/lab-05/image03.png)
+
+6. A caixa de diálogo Histórico de atualização é aberta. Você terá algumas atualizações listadas. São atualizações que ocorreram quando o fluxo de dados foi publicado. Selecione o link **Hora de início.**
+
+    **Observação:** A hora de início será diferente para você.
+
+    ![](../Images/lab-05/image04.png)
+
+    A tela Detalhes será aberta. Ela fornecerá detalhes da atualização, listando o horário de início, de término e a duração. Ela também lista as tabelas/atividades que foram atualizadas. Caso haja uma falha, você pode clicar no nome da tabela/atividade para investigar mais detalhadamente.
  
+    ![](../Images/lab-05/image05.png)
 
-Observação: A página Configurações é aberta. No painel esquerdo, você encontrará todos os Fluxos de Dados listados.
+7. Vamos sair, clicando no **X** no canto superior direito. Você será direcionado de volta para a **página de configurações do fluxo de dados.**
+8. Em Conexão do gateway, expanda **Credenciais da fonte de dados.** Uma lista de conexões usadas no fluxo de dados é exibida. Neste caso, Lakehouse e ADLS.<br>
+a. **Lakehouse:** esta é a conexão para ingerir dados do Fluxo de dados.<br>
+b. **ADLS:** esta é a conexão com os dados de origem do ADLS.
 
-5.	No painel central, selecione o link Histórico de atualização.
+![](../Images/lab-05/image06.png)
 
-6.	A caixa de diálogo Histórico de atualização é aberta. Você terá algumas atualizações listadas. São atualizações que ocorreram quando o fluxo de dados foi publicado. Selecione o link Hora de início.
-Observação: A hora de início será diferente para você.
+9.	Expanda **Atualizar.**
+10.	Defina o controle deslizante **Configurar um agendamento de atualização** como **Ativado.**
+11.	Defina a **lista suspensa Atualizar frequência** como **Diariamente.** Observe que há uma opção para defini-la como Semanalmente também.
+12.	Defina **Fuso horário** como o seu fuso horário preferencial.
 
-A tela Detalhes será aberta. Ela fornecerá detalhes da atualização, listando o horário de início, de término e a duração. Ela também lista as tabelas/atividades que foram atualizadas. Caso haja uma falha, você pode clicar no nome da tabela/atividade para investigar mais detalhadamente.
+    **Observação:** Como este é um ambiente de laboratório, você pode definir o fuso horário de sua preferência. Em um cenário real, você definirá o fuso horário com base em sua localização ou na localização da fonte de dados.
+
+13.	Clique no link **Adicionar outra hora**. Observe que a opção Hora é exibida.
+14.	Defina **Hora** como **meio-dia.** Observe que você pode definir a atualização no início da hora ou meia hora.
  
- 
+15. Selecione **Aplicar** para salvar essa configuração.
 
-7.	Vamos sair, clicando no X no canto superior direito. Você será direcionado de volta para a página de configurações do fluxo de dados.
-8.	Em Conexão do gateway, expanda Credenciais da fonte de dados. Uma lista de conexões usadas no fluxo de dados é exibida. Neste caso, Lakehouse e ADLS.
-a.	Lakehouse: esta é a conexão para ingerir dados do Fluxo de dados.
-b.	ADLS: esta é a conexão com os dados de origem do ADLS.
+**Observação:** Ao clicar no link Adicionar outra hora, você pode adicionar vários horários de atualização.
 
-9.	Expanda Atualizar.
-10.	Defina o controle deslizante Configurar um agendamento de atualização como Ativado.
-11.	Defina a lista suspensa Atualizar frequência como Diariamente. Observe que há uma opção para defini-la como Semanalmente também.
-12.	Defina Fuso horário como o seu fuso horário preferencial.
-
-Observação: Como este é um ambiente de laboratório, você pode definir o fuso horário de sua preferência. Em um cenário real, você definirá o fuso horário com base em sua localização ou na localização da fonte de dados.
-
-13.	Clique no link Adicionar outra hora. Observe que a opção Hora é exibida.
-14.	Defina Hora como meio-dia. Observe que você pode definir a atualização no início da hora ou meia hora.
- 
-15.	Selecione Aplicar para salvar essa configuração.
-Observação: Ao clicar no link Adicionar outra hora, você pode adicionar vários horários de atualização.
 Você também pode enviar notificações de falha para o proprietário do fluxo de dados e outros contatos.
 
+![](../Images/lab-05/image07.png)
  
-Tarefa 2: Configurar atualização agendada para o fluxo de dados Supplier e Customer
-1.	No painel esquerdo, selecione df_Supplier_Snowflake.
-2.	Configure a agenda de atualização para atualizar todos os dias à meia-noite/24h.
-3.	Selecione Aplicar para salvar essa configuração.
+### Tarefa 2: Configurar atualização agendada para o fluxo de dados Supplier e Customer
+1. No painel esquerdo, selecione **df_Supplier_Snowflake.**
+2. Configure a agenda de atualização para atualizar **todos os dias à meia-noite/24h.**
+3. Selecione **Aplicar** para salvar essa configuração.
 
-4.	No painel esquerdo, selecione df_Customer_Dataverse.
-5.	Configure a agenda de atualização para quatro vezes ao dia: meia-noite/24h, 6h, meio-dia/12h e 18h.
-6.	Selecione Aplicar para salvar essa configuração.
+    ![](../Images/lab-05/image08.png)
+
+4. No painel esquerdo, selecione **df_Customer_Dataverse.**
+5. Configure a agenda de atualização para quatro vezes ao dia: **meia-noite/24h, 6h, meio-dia/12h e 18h.**
+6. Selecione **Aplicar** para salvar essa configuração.
  
- 
+    ![](../Images/lab-05/image09.png)
 
 Conforme mencionado anteriormente, precisamos criar uma lógica personalizada para lidar com o cenário em que o arquivo Employee no SharePoint não é entregue no prazo. Vamos usar o Pipeline de dados para resolver isso.
  
-Pipeline de dados
-Tarefa 3: Criar Pipeline de dados
-1.	Selecione o ícone Fabric experience selector na parte inferior esquerda da tela.
-2.	A caixa de diálogo do Microsoft Fabric será aberta. Selecione Data Factory. Você será direcionado à Página Inicial do Data Factory.
+## Pipeline de dados
+### Tarefa 3: Criar Pipeline de dados
+1. Selecione o ícone **Fabric experience selector** na parte inferior esquerda da tela.
+2. A caixa de diálogo do Microsoft Fabric será aberta. Selecione **Data Factory.** Você será direcionado à Página Inicial do Data Factory.
 
-3.	No painel superior, selecione Pipeline de dados para criar um novo pipeline.
-4.	A caixa de diálogo Novo pipeline é aberta. Nomeie o pipeline como
-pl_Refresh_People_SharePoint.
-5.	Selecione Criar.
+    ![](../Images/lab-05/image10.png)
 
+3. No painel superior, selecione **Pipeline de dados** para criar um novo pipeline.
+4. A caixa de diálogo Novo pipeline é aberta. Nomeie o pipeline como **pl_Refresh_People_SharePoint.**
+5. Selecione **Criar.**
+
+    ![](../Images/lab-05/image11.png) 
  
-Você é direcionado para a página Pipeline de dados. Se você trabalhou com o Azure Data Factory, esta tela será familiar. Vamos obter uma visão geral rápida do layout.
-Você está na tela Página Inicial. Se você olhar o menu superior, encontrará opções para adicionar as atividades comumente usadas: validar e executar um pipeline e visualizar o histórico de execuções. Além disso, no painel central, você encontrará opções rápidas para começar a criar o pipeline.
+Você é direcionado para a **página Pipeline de dados.** Se você trabalhou com o Azure Data Factory, esta tela será familiar. Vamos obter uma visão geral rápida do layout.
+Você está na tela **Página Inicial.** Se você olhar o menu superior, encontrará opções para adicionar as atividades comumente usadas: validar e executar um pipeline e visualizar o histórico de execuções. Além disso, no painel central, você encontrará opções rápidas para começar a criar o pipeline.
 
-6.	No menu superior, selecione Atividades. Agora, no menu, você encontrará uma lista de atividades comumente usadas.
-7.	Selecione as reticências (…) à direita no menu para ver todas as outras atividades disponíveis. Usaremos algumas destas atividades no laboratório.
+  ![](../Images/lab-05/image12.png)
 
-8.	No menu superior, clique em Executar. Você encontrará opções para executar e agendar a execução do pipeline. Você também encontrará a opção de visualizar o histórico de execuções usando Exibir histórico de execuções.
-9.	No menu superior, selecione Exibir. Aqui você encontrará opções para visualizar o código no formato JSON. Você também encontrará opções para formatar as atividades.
-Observação: Se você tiver um histórico de JSON, no fim do laboratório, fique à vontade para selecionar Exibir código JSON. Aqui você observará que toda a orquestração que está fazendo usando a visualização de design também pode ser escrita em JSON.
+6. No menu superior, selecione **Atividades**. Agora, no menu, você encontrará uma lista de atividades comumente usadas.
+7. Selecione as **reticências (…)** à direita no menu para ver todas as outras atividades disponíveis. Usaremos algumas destas atividades no laboratório.
 
+    ![](../Images/lab-05/image13.png)
+
+8. No menu superior, clique em **Executar.** Você encontrará opções para executar e agendar a execução do pipeline. Você também encontrará a opção de visualizar o histórico de execuções usando Exibir histórico de execuções.
+9.	No menu superior, selecione **Exibir.** Aqui você encontrará opções para visualizar o código no formato JSON. Você também encontrará opções para formatar as atividades.
+
+**Observação:** Se você tiver um histórico de JSON, no fim do laboratório, fique à vontade para selecionar Exibir código JSON. Aqui você observará que toda a orquestração que está fazendo usando a visualização de design também pode ser escrita em JSON.
+
+  ![](../Images/lab-05/image14.png)
  
-Tarefa 4: Criar Pipeline de dados simples
+### Tarefa 4: Criar Pipeline de dados simples
 Vamos começar a criar o pipeline. Precisamos de uma atividade para atualizar o Fluxo de dados. Vamos encontrar uma atividade que possamos usar.
-1.	No menu superior, selecione Atividades -> Fluxo de dados. A atividade Fluxo de dados
+1. No menu superior, selecione **Atividades -> Fluxo de dados.** A atividade Fluxo de dados
 é adicionada ao painel central de design. Observe que o painel inferior agora tem opções de configuração da atividade Fluxo de dados.
-2.	Vamos configurar a atividade para conectar-se à atividade df_People_SharePoint. No painel inferior, selecione Configurações.
-3.	Certifique-se de que o Workspace esteja definido como seu workspace do Fabric, FAIAD<nome de usuário>.
-4.	Na lista suspensa Fluxo de dados, selecione df_People_SharePoint. Quando esta atividade Fluxo de dados for executada, ela atualizará df_People_SharePoint. Isso foi fácil, certo? ◆:v◆
+2. Vamos configurar a atividade para conectar-se à atividade df_People_SharePoint. No **painel inferior,** selecione **Configurações.**
+3. Certifique-se de que o **Workspace** esteja definido como seu workspace do Fabric, **FAIAD<nome de usuário>.**
+4. Na lista suspensa **Fluxo de dados,** selecione **df_People_SharePoint.** Quando esta atividade Fluxo de dados for executada, ela atualizará **df_People_SharePoint.** Isso foi fácil, certo? 
 
-Observação: A Opção de Notificação está esmaecida no momento. Esse recurso será habilitado em breve. Você poderá configurar notificações sobre o êxito e a falha desta atividade.
+**Observação:** A Opção de Notificação está esmaecida no momento. Esse recurso será habilitado em breve. Você poderá configurar notificações sobre o êxito e a falha desta atividade.
+
 Em nosso cenário, os Dados de Employee não são atualizados na agenda. Às vezes, há um atraso. Vamos ver se podemos acomodar isso.
 
-5.	No painel inferior, selecione Geral. Vamos atribuir um nome e uma descrição à atividade.
-6.	No campo Nome, insira dfactivity_People_SharePoint.
-7.	No campo Descrição, insira Dataflow activity to refresh df_People_Sharepoint dataflow.
-8.	Observe que há uma opção para desativar uma atividade. Esse recurso é útil durante testes ou depuração. Deixe como Ativado.
-9.	Há uma opção para definir Tempo limite. Vamos deixar o valor padrão como está, o que deve dar tempo suficiente para a atualização do fluxo de dados.
+5. No **painel inferior,** selecione **Geral.** Vamos atribuir um nome e uma descrição à atividade.
+6. No campo **Nome,** insira **dfactivity_People_SharePoint.**
+7. No campo **Descrição,** insira **Dataflow activity to refresh df_People_Sharepoint dataflow.**
+8. Observe que há uma opção para desativar uma atividade. Esse recurso é útil durante testes ou depuração. Deixe como **Ativado.**
+9. Há uma opção para definir **Tempo limite.** Vamos deixar o **valor padrão** como está, o que deve dar tempo suficiente para a atualização do fluxo de dados.
  
-Observação: Se os dados não estiverem disponíveis na agenda, vamos definir a atividade para ser executada novamente a cada 10 minutos, três vezes. Se falhar também na terceira tentativa, será reportada uma falha.
-10.	Defina Tentar novamente como 3.
-11.	Expanda a seção Avançado.
-12.	Defina Intervalo de repetição segundos como 600.
-13.	No menu, selecione Página Inicial -> Salvar para salvar o pipeline.
+**Observação:** Se os dados não estiverem disponíveis na agenda, vamos definir a atividade para ser executada novamente a cada 10 minutos, três vezes. Se falhar também na terceira tentativa, será reportada uma falha.
+
+![](../Images/lab-05/image15.png)
+
+10.	Defina **Tentar novamente** como **3**.
+11.	Expanda a seção **Avançado**.
+12.	Defina **Intervalo de repetição segundos** como **600.**
+13.	No menu, selecione **Página Inicial -> Salvar** para salvar o pipeline.
+
+![](../Images/lab-05/image16.png)
 
 Observe a vantagem de usar o pipeline de dados em comparação com a configuração do fluxo de dados na atualização agendada (como fizemos para os fluxos de dados anteriores):
-•	O pipeline oferece a opção de tentar novamente várias vezes antes de a atualização falhar.
-•	O pipeline oferece o recurso de atualizar em segundos, enquanto com o fluxo de dados, a atualização agendada ocorre a cada 30 minutos.
+  - O pipeline oferece a opção de tentar novamente várias vezes antes de a atualização falhar.
+  - O pipeline oferece o recurso de atualizar em segundos, enquanto com o fluxo de dados, a atualização agendada ocorre a cada 30 minutos.
 
 
-Tarefa 5: Criar novo Pipeline de dados
+### Tarefa 5: Criar novo Pipeline de dados
 Vamos adicionar um pouco mais de complexidade ao nosso cenário. Observamos que, se os dados não estiverem disponíveis às 9h, normalmente estarão disponíveis em cinco minutos. Se a janela de tempo for perdida, levará 15 minutos para que o arquivo fique disponível. Queremos agendar as novas tentativas para 5 e 15 minutos. Vamos ver como isso pode ser alcançado criando um novo
 Pipeline de dados.
  
-1.	No painel esquerdo, clique em FAIAD_<nome de usuário> para navegar até a página inicial do workspace.
-2.	No menu superior, clique em Novo e na lista suspensa, clique em Pipeline de dados.
-3.	A caixa de diálogo Novo pipeline é aberta. Nomeie o pipeline como
-pl_Refresh_People_SharePoint_Option2.
-4.	Selecione Criar.
+1. No painel esquerdo, clique em **FAIAD_<nome de usuário>** para navegar até a página inicial do workspace.
+2. No menu superior, clique em **Novo** e na **lista suspensa,** clique em **Pipeline de dados.**
+3. A caixa de diálogo Novo pipeline é aberta. **Nomeie** o pipeline como **pl_Refresh_People_SharePoint_Option2.**
+4. Selecione **Criar.**
 
+![](../Images/lab-05/image17.png)
 
+### Tarefa 6: Criar atividade Until
+1. Você será direcionado de volta à tela Pipeline de dados. No menu, selecione **Atividades.**
+2. Clique nas **reticências(…)** no lado direito.
+3. Na lista de atividades, clique em **Until.**
 
-Tarefa 6: Criar atividade Until
-1.	Você será direcionado de volta à tela Pipeline de dados. No menu, selecione Atividades.
-2.	Clique nas reticências(…) no lado direito.
-3.	Na lista de atividades, clique em Until.
+    **Until:** é uma atividade usada para iterar até que uma condição seja satisfeita.
 
-Until: é uma atividade usada para iterar até que uma condição seja satisfeita.
-Em nosso cenário, vamos iterar e atualizar o fluxo de dados até que seja bem-sucedido ou tentamos três vezes.
+    Em nosso cenário, vamos iterar e atualizar o fluxo de dados até que seja bem-sucedido ou tentamos três vezes.
 
+    ![](../Images/lab-05/image18.png)
+
+### Tarefa 7: Criar variáveis
+1. Precisamos criar variáveis que serão usadas para iterar e definir status. Selecione a **área em branco** no painel de design do pipeline.
+2. Observe que o menu no painel inferior muda. Selecione **Variáveis.**
+3. Selecione **Novo** para adicionar uma nova variável.
+4. Observe que uma linha é exibida. Insira **varCounter** na **caixa de texto Nome.** Usaremos essa variável para iterar três vezes.
+5. Na **lista suspensa Tipo,** selecione **Integer.**
+6. Insira **Valor padrão** igual a **0.**
+
+    **Observação:** estamos acrescentando var aos nomes das variáveis, por isso é fácil encontrá-las e é uma boa prática.
+
+    ![](../Images/lab-05/image19.png)
+
+7. Selecione **Novo** para adicionar outra nova variável.
+8. Observe que uma linha é exibida. Insira **varTempCounter** na **caixa de texto Nome.** Vamos usar esta variável varCounter de incremento de variável.
+9. Na **lista suspensa Tipo,** selecione **Integer.**
+10. Insira **Valor padrão** igual a **0.**
+11.	Siga etapas semelhantes para adicionar mais três variáveis:<BR>
+  **a.** **varIsSuccess** do tipo **String** e valor padrão **Não.** Essa variável será usada para indicar se a atualização do fluxo de dados foi bem-sucedida.<BR>
+  **b.** **varSuccess** do tipo **String** e valor padrão **Sim.** Essa variável será usada para definir o valor de *varIsSuccess* se a atualização do fluxo de dados for bem-sucedida.<BR>
+  **c.** **varWaitTime** do tipo **Integer** e valor padrão **60.** Essa variável será usada para definir o tempo de espera se o fluxo de dados falhar (5 minutos/300 segundos ou 15 minutos/900 segundos).
  
-Tarefa 7: Criar variáveis
-1.	Precisamos criar variáveis que serão usadas para iterar e definir status. Selecione a área em branco no painel de design do pipeline.
-2.	Observe que o menu no painel inferior muda. Selecione Variáveis.
-3.	Selecione Novo para adicionar uma nova variável.
-4.	Observe que uma linha é exibida. Insira varCounter na caixa de texto Nome. Usaremos essa variável para iterar três vezes.
-5.	Na lista suspensa Tipo, selecione Integer.
-6.	Insira Valor padrão igual a 0.
-Observação: estamos acrescentando var aos nomes das variáveis, por isso é fácil encontrá-las e é uma boa prática.
-
-7.	Selecione Novo para adicionar outra nova variável.
-8.	Observe que uma linha é exibida. Insira varTempCounter na caixa de texto Nome. Vamos usar esta variável varCounter de incremento de variável.
-9.	Na lista suspensa Tipo, selecione Integer.
-10.	Insira Valor padrão igual a 0.
-11.	Siga etapas semelhantes para adicionar mais três variáveis:
-a.	varIsSuccess do tipo String e valor padrão Não. Essa variável será usada para indicar se a atualização do fluxo de dados foi bem-sucedida.
-b.	varSuccess do tipo String e valor padrão Sim. Essa variável será usada para definir o valor de varIsSuccess se a atualização do fluxo de dados for bem-sucedida.
-c.	varWaitTime do tipo Integer e valor padrão 60. Essa variável será usada para definir o
-tempo de espera se o fluxo de dados falhar (5 minutos/300 segundos ou 15 minutos/900 segundos).
- 
-Tarefa 8: Configurar atividade Until
+### Tarefa 8: Configurar atividade Until
 1.	Selecione a atividade Until.
 2.	No painel inferior, selecione Geral.
 3.	Insira Nome como Iterador.
