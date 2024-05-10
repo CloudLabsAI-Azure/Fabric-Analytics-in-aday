@@ -86,8 +86,6 @@ Bevor wir mit Fabric beginnen, sehen wir uns den aktuellen Bericht in Power BI D
 
 11. Wählen Sie **Anmelden** aus.
 
-    ![](../Images/lab1-image6.gif)
-
 12.	Das Dialogfeld „Action Required“ wird geöffnet. Darin werden Sie aufgefordert, die Multifaktor- Authentifizierung einzurichten. Weil dies eine Übungsumgebung ist, müssen wir das nicht tun. Wählen Sie **Ask Later** aus.
 
 13.	Wählen Sie im nächsten Dialogfeld die Option **Nein, nur in der App anmelden** aus. Nun wird Power BI Desktop geöffnet.
@@ -165,6 +163,7 @@ Sie gelangen zu der Seite mit den Produktinformationen. Dort sind auch einige zu
 7. Verwenden Sie bei der ADLS-Datenquelle die Option **Kontoschlüssel**, und geben Sie den **Zugriffsschlüssel für das Adls-Speicherkonto** ein. Diesen finden Sie auf der Registerkarte Environment Variables (neben der Übungsanleitung).
 
 8. Beachten Sie, dass der Ordner **ADLSData** mehrere Dimensionen beinhaltet: Geo, Product, Reseller und Date. Zudem ist das Sales-Element enthalten.
+    
     - **Die Geo-Dimension** ergibt sich durch die Zusammenführung von Daten aus den Abfragen „Cities“, „Countries“ und „States“.
 
     - **Die Product-Dimension** ergibt sich durch die Zusammenführung von Daten aus den Abfragen „Product Groups“ und „Product Item Group“.
@@ -179,8 +178,7 @@ Sie gelangen zu der Seite mit den Produktinformationen. Dort sind auch einige zu
 
 10. Beachten Sie, dass der Ordner SnowflakeData die Dimension „Supplier und das Element „PO“ (Bestellung/Ausgabe) enthält.
     
-    - Die Supplier-Dimension ergibt sich durch die Zusammenführung der Abfragen
-    „Suppliers“ und „SupplierCategories“.
+    - Die Supplier-Dimension ergibt sich durch die Zusammenführung der Abfragen „Suppliers“ und „SupplierCategories“.
 
     - Das Element „PO“ ergibt sich durch die Zusammenführung der Abfragen „PO“ und „PO Line Items“.
 
