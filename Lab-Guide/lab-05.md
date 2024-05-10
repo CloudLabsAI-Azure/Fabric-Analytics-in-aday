@@ -345,6 +345,7 @@ Dataflow Gen2	3<br>
   	
  
 23.	式は次のようになるはずです。
+
     **@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))**
 
 24.	**OK** を選択します。
@@ -374,7 +375,8 @@ Dataflow Gen2	3<br>
 
 8.	**ワークスペース**がご自身のワークスペース **FAIAD_<ユーザー名>** に設定されていることを確認します。
 
-9.	**データフロードロップダウン**から、**df_People_SharePoint** を選択します。このデータフロー アクティビティを実行すると、**df_People_SharePoint** が更新されます。
+9.	**データフロードロップダウン**から、**df_People_SharePoint** を選択します。このデータフロー アクティビティを実行すると、       
+   **df_People_SharePoint** が更新されます。 
  
      ![](../Images/lab-05/image096.jpg) 
   	
@@ -388,6 +390,7 @@ Dataflow Gen2	3<br>
 3.	**名前** フィールドに、**set_varIsSuccess** と入力します。
 
 4.	**説明**フィールドに、**Set variable varIsSuccess to Yes** と入力します。
+
     **注:** **データフローアクティビティ**の上にカーソルを合わせてください。アクティビティ ボックスの右側に 4 つのアイコンがあります。これらを使って、このアクティビティの結果に基づいて次のアクティビティに接続できます。<br>
     a.	アクティビティをスキップするときは**灰色の曲がった矢印**アイコンを使います。<br>
     b.	アクティビティの成功時は緑**色のチェック マーク** アイコンを使います。<br>
