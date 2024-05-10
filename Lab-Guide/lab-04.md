@@ -118,7 +118,7 @@ La connexion est alors établie et vous pouvez afficher les données dans le vol
 
     ![](../Images/lab-04/image033.png)
 
-11.	Vous êtes redirigé vers la **fenêtre Power Query**. Dans le **coin inférieur droit**, notez que la liste déroulante Destination des données est définie sur **Lakehouse**. De même, **configurez la
+11. Vous êtes redirigé vers la **fenêtre Power Query**. Dans le **coin inférieur droit**, notez que la liste déroulante Destination des données est définie sur **Lakehouse**. De même, **configurez la
 destination des données pour la requête PO**. Ensuite, la liste déroulante **Destination desdonnées** de votre requête PO devrait être définie sur **Lakehouse**, comme illustré dans la capture d’écran ci-dessous.
  
     ![](../Images/lab-04/image036.jpg)
