@@ -61,7 +61,7 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID <br> JOIN dbo.Supplier su on
 3.	**Supplier_Name** 및 **Units 필드를** 선택합니다. 묶은 가로 막대형 차트가 생성됩니다.
 4.	**시각화 섹션에서 누적 세로 막대형 차트를** 선택하여 시각적 개체 유형을 변경합니다.
  
- ![](../Images/Lab-06/image017.png)
+ ![](../Images/Lab-06/image017.jpg)
 
 5.	**매트릭스를 확장하여 데이터를** 매트릭스로 봅니다.
 
@@ -78,6 +78,7 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID <br> JOIN dbo.Supplier su on
 ![](../Images/Lab-06/image026.png)
 
 전체 보고서 환경으로 이동합니다. 시각적 형식을 지정하는 옵션이 있습니다. 다음 랩에서는 이러한 옵션을 살펴보겠습니다.
+
 10.	왼쪽 패널에서 **lh_FAIAD 를** 선택합니다.
  
  ![](../Images/Lab-06/image029.jpg)
@@ -280,8 +281,10 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID <br> JOIN dbo.Supplier su on
 ![](../Images/Lab-06/image104.png)
 
 27.	마찬가지로 **PO와 Product** 테이블 사이에 **다대일** 관계를 만듭니다. **PO**에서 **StockItemID**를 그리고 **Product**에서 **StockItemID**를 선택합니다.
-28.	마찬가지로 **PO**와 **People** 테이블 사이에 **다대일** 관계를 만듭니다. **PO**에서 **ContactPersonID**를 그리고 **People**에서 **PersonID**를 선택합니다.
+28.	마찬가지로 **PO**와 **People** 테이블 사이에 **다대일** 관계를 만듭니다. **PO**에서 **ContactPersonID**를 그리고 **People**에서 **PersonID**를 선택합니다.<br>
+
 모든 관계의 생성이 완료되♘습니다.
+
 **체크포인트:** 현재 모델이 아래 스크린샷과 유사해야 합니다.
 
 ![](../Images/Lab-06/image107.jpg)
