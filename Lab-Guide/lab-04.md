@@ -316,6 +316,135 @@ Shift+ 选择以下查询:
 
 ### 任务 11：为 People 查询配置数据目标
 
+连接已建立，您可以在预览面板中查看数据。请自行浏览查询的应用步骤。现在我们需要将人 员数据引入到 Lakehouse。
+
+1.	如前所述，我们不会暂存任何此类数据。因此右键单击查询窗格中的  People  查询，并选择
+启用暂存以删除复选标记。
+
+![](../Images/lab-04/image29.png)
+
+
+2.	选择 **People** 查询。
+
+3.	在功能区中，选择**主页-> 添加数据目标-> 湖屋。**
+
+![](../Images/lab-04/image30.jpg)
+
+4.	“连接到数据目标”对话框随即打开。从**连接下拉菜单中选择  Lakehouse（无）。**
+
+5.	选择**下一步**。
+
+![](../Images/lab-04/image31.png)
+
+6.	“选择目标”对话框随即打开。务必选中**新建表单选按钮**，因为我们要创建一个新表。
+
+7.	我们想要在之前创建的 Lakehouse 中创建表。在左侧面板中，导航到湖**屋-> FAIAD_<username>**。
+
+8.	选择 **lh_FAIAD**
+
+9.	将表名称保留为 **People**
+
+10.	选择**下一步**。
+
+![](../Images/lab-04/image32.png)
+
+11.	“选择目标设置”对话框随即打开。这次我们将使用自动设置，因为这将对数据进行全面 更新。此外，它还会根据需要重命名列。选择**保存**设置。
+
+![](../Images/lab-04/image33.png)
+
+### 任务 12：发布并重命名 SharePoint 数据流
+
+1.	您将会导航回到 **Power Query 窗口**。请注意，右下角的数据目标设置为湖屋。
+
+2.	在右下角，选择**发布。**
+
+![](../Images/lab-04/image34.jpg)
+
+**注意：**您将导航回到 **FAIAD_<username>  工作区**。发布数据流可能需要一些时间。
+
+3.	我们正在使用的数据流是 Dataflow 2。在继续下面的步骤之前，我们先将其重命名。点击Dataflow 2 旁边的**省略号 (…)。选择属性。**
+
+![](../Images/lab-04/image35.jpg)
+
+4.	“数据流属性”对话框随即打开。将**名称**更改为  **df_People_SharePoint**
+
+5.	在**说明**文本框中，添加 **Dataflow to ingest People data from SharePoint to Lakehouse。**
+
+6.	选择**保存**。
+
+![](../Images/lab-04/image36.png)
+
+您将导航回到 **FAIAD_<username> 工作区**。我们现在已将所有数据引入到 Lakehouse。在下一个实验中，我们将安排数据流刷新。
+
+### 参考
+
+Fabric Analyst in a Day (FAIAD) 介绍了Microsoft Fabric 中提供的一些主要功能。在服务菜单中， “帮助 (?)”部分包含指向一些优质资源的链接。
+
+![](../Images/lab-04/image37.png)
+
+以下更多参考资源可帮助您进行 Microsoft Fabric 相关的后续步骤。
+
+- 请参阅博客文章以阅读完整的[Microsof t Fabric GA 公告](https://aka.ms/Fabric-Hero-Blog-Ignite23)
+
+- 通过[引导式教程](https://aka.ms/Fabric-GuidedTour)探索 Fabric
+
+- 注册 [Microsof t Fabric 免费试用版](https://aka.ms/try-fabric)
+
+- 通过探索[Microsof t Fabric 网站](https://aka.ms/microsoft-fabric)
+
+- 通过探索 [Fabric 学习模块](https://aka.ms/learn-fabric)学习新技能
+
+- 探索 [Fabric 技术文档](https://aka.ms/fabric-docs)
+
+- 阅读[有关Fabric 入门指南的免费电子书](https://aka.ms/fabric-get-started-ebook)
+
+- 加入[Fabric 社区](https://aka.ms/fabric-community)发布问题、分享反馈并向他人学习
+
+阅读更多深度Fabric 体验公告博客：
+
+- [Fabric 中的Data Factory 体验博客](https://aka.ms/Fabric-Data-Factory-Blog)
+
+- [Fabric 中的Synapse Data Engineering 体验博客](https://aka.ms/Fabric-DE-Blog)
+
+- [Fabric 中的Synapse Data Science 体验博客](https://aka.ms/Fabric-DS-Blog)
+
+- [Fabric 中的Synapse Data Warehousing 体验博客](https://aka.ms/Fabric-DW-Blog)
+
+- [Fabric 中的Synapse Real-Time Analytics 体验博客](https://aka.ms/Fabric-RTA-Blog)
+
+- [Power BI 公告博客](https://aka.ms/Fabric-PBI-Blog)
+
+- [Fabric 中的Data Activator 博客](https://aka.ms/Fabric-DA-Blog)
+
+- [Fabric 中的管理和治理博客](https://aka.ms/Fabric-Admin-Gov-Blog)
+
+- [Fabric 中的OneLake 博客](https://aka.ms/Fabric-OneLake-Blog)
+
+- [Dataverse 和Microsof t Fabric 集成博客](https://aka.ms/Dataverse-Fabric-Blog)
+
+© 2023 Microsoft Corporation.保留所有权利。
+
+© 2023 Microsoft Corporation.保留所有权利。使用此演示/实验即表示您已同意以下条款: 
+本演示/实验中的技术/功能由 Microsoft Corporation 出于获取反馈和提供学习体验的目的提供。只能将本演示/实验用于评估这些技术特性和功能以及向Microsoft 提供反馈。不得用于任何其他用途。不得对此演示/实验或其任何部分进行修改、复制、分发、传送、显示、 执行、复制、公布、许可、转让、销售或基于以上内容创建衍生作品。
+严禁将本演示/实验（或其任何部分）复制到任何其他服务器或位置以便进一步复制或再  分发。
+
+本演示/实验出于上述目的，在不涉及复杂设置或安装操作的模拟环境中提供特定软件技术
+/产品特性和功能，包括潜在的新功能和概念。本演示/实验中展示的技术/概念可能不是完 整的功能，可能会以不同于最终版本的工作方式工作。我们也可能不会发布此类功能或概念的最终版本。在物理环境中使用此类特性和功能的体验可能也有所不同。
+
+**反馈**。如您针对本演示/实验中所述的技术特性、功能和/或概念向 Microsoft 提供反馈，则意味着您向Microsoft  无偿提供以任何方式、出于任何目的使用和分享您的反馈并将其商业化的权利。您同样无偿为第三方提供其产品、技术和服务使用或配合使用包含此反馈的
+Microsoft 软件或服务的任何特定部分所需的任何专利权。如果根据某项许可的规定，
+Microsoft  由于在其软件或文档中包含了您的反馈需要向第三方授予该软件或文档的许可， 请不要提供这样的反馈。这些权利在本协议终止后继续有效。
+反馈。如您针对本演示/实验中所述的技术特性、功能和/或概念向 Microsoft 提供反馈，则意味着您向Microsoft  无偿提供以任何方式、出于任何目的使用和分享您的反馈并将其商业化的权利。您同样无偿为第三方提供其产品、技术和服务使用或配合使用包含此反馈的
+Microsoft 软件或服务的任何特定部分所需的任何专利权。如果根据某项许可的规定，
+Microsoft  由于在其软件或文档中包含了您的反馈需要向第三方授予该软件或文档的许可， 请不要提供这样的反馈。这些权利在本协议终止后继续有效。
+
+对于本演示/实验，Microsoft Corporation 不提供任何明示、暗示或法定的保证和条件，包括有关适销性、针对特定目的的适用性、所有权和不侵权的所有保证和条件。对于使用本 演示/实验产生的结果或输出内容的准确性，或者出于任何目的包含本演示/实验中的信息的适用性，Microsoft 不做任何保证或陈述。
+
+**免责声明**
+
+本演示/实验仅包含 Microsoft Power BI 的部分新功能和增强功能。在产品的后续版本中， 部分功能可能有所更改。在本演示/实验中，可了解部分新功能，但并非全部新功能。
+
+
 
 
 
