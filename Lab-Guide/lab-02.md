@@ -66,7 +66,7 @@ DirectLake 機能の使い方がわかります。
 
      ![](../Images/lab-02/image018.jpg)
 
-11.	Microsoft Fabric に正常にアップグレードされたことを示すダイアログが開きます。
+11.	Microsoft Fabric に正常にアップグレードされたことを示すダイアログが開きます。<br>
    **Fabric Home Page** を選択します。
 
      ![](../Images/lab-02/image021.png)
