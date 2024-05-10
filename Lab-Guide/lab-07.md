@@ -221,11 +221,11 @@ Nous allons enregistrer l’état avant de le quitter pour apporter des modifica
 9. Une fois le visuel **Graphique en courbes** sélectionné, **supprimez Somme de Year** de l’axe Y.
 
 10.	Sélectionnez le champ **Year** pour l’ajouter à l’**axe X**.
-11.	Développez la table **Sales** et sélectionnez la mesure **Sales**.
+
+11. Développez la table **Sales** et sélectionnez la mesure **Sales**.
 
     ![](../Images/lab-07/image069.jpg)
 
- 
 ### Tâche 8 : configurer la colonne Short_Month_Name de la table Date
 1. Ajoutons le mois à ce graphique. Dans la table Date, faites glisser le champ **Short_Month_Name**
 sous **Year** sur l’**axe X**. Notez que le visuel est trié selon Sales. Trions-le selon Short_Month_Name.
@@ -245,10 +245,12 @@ sous **Year** sur l’**axe X**. Notez que le visuel est trié selon Sales. Trio
 
     ![](../Images/lab-07/image078.jpg)
 
-8. Vous serez redirigé vers la lakehouse lh_FAIAD. Dans le volet gauche Explorateur, développez
-**lhFAIAD -> Schemas -> dbo -> Tables -> Date**.
+8. Vous serez redirigé vers la lakehouse lh_FAIAD. Dans le volet gauche Explorateur, développez **lhFAIAD -> Schemas -> dbo -> Tables -> Date**.
+
 9. Sélectionnez la colonne **Short_Month_Name**.
+
 10. Dans le volet **Propriétés** à droite, développez la section **Options avancées**.
+
 11. Dans la liste déroulante **Trier par colonne**, sélectionnez **Month**.
  
     ![](../Images/lab-07/image081.jpg)
