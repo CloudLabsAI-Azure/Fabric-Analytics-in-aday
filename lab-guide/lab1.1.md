@@ -120,7 +120,7 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
 3. Select **Close** to close the Data source settings dialog.
 
-   # ![](../media/img15.png)
+   # ![](../media/faiadlab1-12.png)
  
 4. In the left Queries panel, notice the queries are grouped by data source. 
 5. Notice **DataverseData** folder has Customer data available in four different queries: BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create a Customer query.
