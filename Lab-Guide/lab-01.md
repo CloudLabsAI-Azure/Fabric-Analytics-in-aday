@@ -117,9 +117,9 @@ b.	A **dimensão Product** é criada mesclando dados da consulta Product Groups 
 c.	A d**imensão Reseller** é filtrada usando a consulta BuyingGroup.<br>
 d.	O **fato Sales** é criado mesclando InvoiceLineItems com a consulta Invoice.
 9.	Para a fonte de dados Snowflake, use o **SnowFlake Username** e a **SnowFlake Password** que estão disponíveis na guia **Environment Variables** (ao lado do Guia de Laboratório).
-10.	Observe que a pasta **SnowflakeData** tem a dimensão Supplier e o fato PO (Oder/Spend).
-a.	A **dimensão Supplier** é criada mesclando a consulta Suppliers com a consulta SupplierCategories.
-b.	O **fato PO** é criado mesclando PO com a consulta PO Line Items.
+10.	Observe que a pasta **SnowflakeData** tem a dimensão Supplier e o fato PO (Oder/Spend).<br>
+**a.** A **dimensão Supplier** é criada mesclando a consulta Suppliers com a consulta SupplierCategories.<br>
+**b.** O **fato PO** é criado mesclando PO com a consulta PO Line Items.
 11.	Para a fonte de dados SharePoint, insira o **Username** e a **Password** disponíveis na guia
 **Environment Variables** (ao lado do Guia de Laboratório). Selecione a opção Conta Microsoft.
 12.	Observe que a pasta **SharepointData** tem a dimensão People.
