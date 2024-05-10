@@ -402,17 +402,17 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
 
 3.	リボンから**ホーム -> 変換**を選択します。Power Query ウィンドウが開きます。
 
-4.	左の**クエリ** パネルで、**ADLSData** から次のクエリを **Ctrl+Select** を押しながら選択します。
-    a.	Product
-    b.	Product Groups
-    c.	Product Item Group
-    d.	Product Details
-    e.	Invoice
-    f.	InvoiceLineItems
-    g.	Sales
-    h.	BuyingGroup
-    i.	Reseller
-    j.	Date
+4.	左の**クエリ** パネルで、**ADLSData** から次のクエリを **Ctrl+Select** を押しながら選択します。<br>
+    a.	Product<br>
+    b.	Product Groups<br>
+    c.	Product Item Group<br>
+    d.	Product Details<br>
+    e.	Invoice<br>
+    f.	InvoiceLineItems<br>
+    g.	Sales<br>
+    h.	BuyingGroup<br>
+    i.	Reseller<br>
+    j.	Date<br>
  
 5.	**右クリック**して**コピー**を選択します。
 
@@ -427,12 +427,12 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
     ![](../Images/lab-03/image149.png)
  
 8.	前述したように、ここではこのデータを一切ステージングしません。そのため、次のクエ
-    リを**右クリック**し、**ステージングを有効にする**を選択してチェック マークを外します。
-    a.	Product
-    b.	Product Details
-    c.	Reseller
-    d.	Sales
-    e.	Date
+    リを**右クリック**し、**ステージングを有効にする**を選択してチェック マークを外します。<br>
+    a.	Product<br>
+    b.	Product Details<br>
+    c.	Reseller<br>
+    d.	Sales<br>
+    e.	Date<br>
 
     **注:** Power BI Desktop で読み込みが無効になっている場合、Dataflow のステージングを無
     効にする必要はありません。したがって、Product Item Group、Product Groups などのステージングを無効にする必要はありません。
