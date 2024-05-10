@@ -44,60 +44,75 @@ e Procedimentos Armazenados de SQL. Se você tiver experiência em SQL, fique à
         JOIN dbo.Product p on p.StockItemID = s.StockItemID
         JOIN dbo.Supplier su on su.SupplierID = p.SupplierID GROUP BY su.Supplier_Name
 
-5.	Clique em Executar para exibir os resultados.
-6.	Há uma opção para salvar essa consulta como uma Visualização selecionando Salvar como visualização.
-7.	No painel esquerdo Explorador, na seção Consultas, observe que esta consulta é salva em Minhas consultas como Consulta SQL 1. Isso fornece uma opção para renomear a consulta e salvá-la para uso futuro. Também há uma opção para visualizar consultas compartilhadas com você usando a pasta Consultas compartilhadas.
+5. Clique em **Executar** para exibir os resultados.
+6. Há uma opção para salvar essa consulta como uma Visualização selecionando **Salvar como visualização.**
+7. No painel **esquerdo Explorador,** na seção **Consultas,** observe que esta consulta é salva em **Minhas consultas** como **Consulta SQL 1.** Isso fornece uma opção para renomear a consulta e salvá-la para uso futuro. Também há uma opção para visualizar consultas compartilhadas com você usando a pasta **Consultas compartilhadas.**
 
+    ![](../Images/lab-06/image03.png) 
+
+### Tarefa 2: Visualizar resultado de T-SQL
+1. Também podemos visualizar o resultado desta consulta. **Realce a consulta** no painel de consultas, selecione o painel **Resultados** e selecione **Explorar estes dados.**
+
+    ![](../Images/lab-06/image04.png)
+
+2. A caixa de diálogo **Explorar consulta SQL query** é aberta. No painel **Dados,** expanda **Consulta SQL 1.**
+3. Selecione os **campos Supplier_Name** e **Units**. O gráfico de barras clusterizado é criado.
+4. Na seção **Visualizações,** altere o tipo de visual selecionando o **Gráfico de colunas empilhadas.**
+
+    ![](../Images/lab-06/image05.png)
  
-Tarefa 2: Visualizar resultado de T-SQL
-1.	Também podemos visualizar o resultado desta consulta. Realce a consulta no painel de consultas, selecione o painel Resultados e selecione Explorar estes dados.
+5. **Expanda Matriz** para exibir os dados como uma matriz.
 
-2.	A caixa de diálogo Explorar consulta SQL query é aberta. No painel Dados, expanda Consulta SQL 1.
-3.	Selecione os campos Supplier_Name e Units. O gráfico de barras clusterizado é criado.
-4.	Na seção Visualizações, altere o tipo de visual selecionando o Gráfico de colunas empilhadas.
+    ![](../Images/lab-06/image06.png)
 
+6. Selecione **Salvar -> Salvar como relatório** no canto superior direito da tela.
+
+    ![](../Images/lab-06/image07.png)
+
+7. A caixa de diálogo Salvar seu relatório é aberta. Digite **Unidades por Fornecedor** na caixa de texto **Inserir um nome para o relatório.**
+8. Certifique-se de que o espaço de trabalho de destino seja seu espaço de trabalho do Fabric,
+**FAIAD<nome de usuário>.**
  
-5.	Expanda Matriz para exibir os dados como uma matriz.
+9. Selecione **Salvar.**
 
-6.	Selecione Salvar -> Salvar como relatório no canto superior direito da tela.
+    ![](../Images/lab-06/image08.png)
 
-7.	A caixa de diálogo Salvar seu relatório é aberta. Digite Unidades por Fornecedor na caixa de texto Inserir um nome para o relatório.
-8.	Certifique-se de que o espaço de trabalho de destino seja seu espaço de trabalho do Fabric,
-FAIAD<nome de usuário>.
+    Você será direcionado para a experiência de relatório completa. Você tem opções para formatar os visuais. Veremos essas opções no próximo laboratório.
+10.	No painel esquerdo, selecione **lh_FAIAD.**
+
+    ![](../Images/lab-06/image09.png)
+
+### Tarefa 3: Criar consulta de visual
+Você será direcionado de volta à **visualização Ponto de extremidade de análise de SQL.** Se você não estiver familiarizado com SQL, poderá executar uma consulta semelhante usando a consulta de visual.
+1. No menu superior, selecione **Nova consulta de visual.** Um painel de consulta de visual é aberto.
+2. No painel do **Explorador,** expanda **Esquemas -> dbo -> Tabelas.**
+3. Arraste as tabelas **Sales, Product e Supplier** para o painel de consulta de visual.
  
-9.	Selecione Salvar.
+    ![](../Images/lab-06/image10.png)
 
-Você será direcionado para a experiência de relatório completa. Você tem opções para formatar os visuais. Veremos essas opções no próximo laboratório.
-10.	No painel esquerdo, selecione lh_FAIAD.
+4. Com a tabela **Sales** selecionada, no menu do painel Consulta de visual, selecione **Combinar -> Mesclar consultas.**
 
+    ![](../Images/lab-06/image11.png)
 
-
-Tarefa 3: Criar consulta de visual
-Você será direcionado de volta à visualização Ponto de extremidade de análise de SQL. Se você não estiver familiarizado com SQL, poderá executar uma consulta semelhante usando a consulta de visual.
-1.	No menu superior, selecione Nova consulta de visual. Um painel de consulta de visual é aberto.
-2.	No painel do Explorador, expanda Esquemas -> dbo -> Tabelas.
-3.	Arraste as tabelas Sales, Product e Supplier para o painel de consulta de visual.
+5.	A caixa de diálogo Mesclar é aberta. Na **lista suspensa Tabela direita para mesclagem,** selecione
+**Product**.
+6. Selecione **StockItemID** nas tabelas **Sales** e **Product.** Isso serve para mesclar as tabelas Product e Sales.
+7. Em **Tipo de junção,** selecione **Externa esquerda.**
  
+8. Selecione **OK.**
+
+    ![](../Images/lab-06/image12.png)
+
+9. No painel **Resultados,** clique na **seta dupla** ao lado da coluna **Product.**
+10. A caixa de diálogo é aberta. Selecione **SupplierID.**
+11.	Selecione **OK.** Observe que as etapas **Consultas mescladas** e **Produto Expandido** são criadas na tabela **Sales.**
+
+    ![](../Images/lab-06/image13.png)
+
+12.	Da mesma forma, vamos mesclar a tabela Supplier. Na tabela **Sales**, selecione **"+"** (localizado após Produto Expandido) para adicionar uma nova etapa. A caixa de diálogo é aberta.
+13.	Selecione **Combinar -> Mesclar consultas.**
  
-
-4.	Com a tabela Sales selecionada, no menu do painel Consulta de visual, selecione Combinar -> Mesclar consultas.
-
-5.	A caixa de diálogo Mesclar é aberta. Na lista suspensa Tabela direita para mesclagem, selecione
-Product.
-6.	Selecione StockItemID nas tabelas Sales e Product. Isso serve para mesclar as tabelas Product e Sales.
-7.	Em Tipo de junção, selecione Externa esquerda.
- 
-8.	Selecione OK.
-
-9.	No painel Resultados, clique na seta dupla ao lado da coluna Product.
-10.	A caixa de diálogo é aberta. Selecione SupplierID.
-11.	Selecione OK. Observe que as etapas Consultas mescladas e Produto Expandido são criadas na tabela Sales.
-
-
-12.	Da mesma forma, vamos mesclar a tabela Supplier. Na tabela Sales, selecione "+" (localizado após Produto Expandido) para adicionar uma nova etapa. A caixa de diálogo é aberta.
-13.	Selecione Combinar -> Mesclar consultas.
- 
- 
+    ![](../Images/lab-06/image14.png) 
 
 14.	A caixa de diálogo Mesclar é aberta. Na lista suspensa Tabela direita para mesclagem, selecione
 Supplier.
