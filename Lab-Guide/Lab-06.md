@@ -221,72 +221,88 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID <br> JOIN dbo.Supplier su on
 
 ![](../Images/Lab-06/image083.jpg)
 
-다시 시간 관계상 모든 측정값을 생성하지는 않습니다. 시간이 허락한다면 랩 마지막에 선택 섹션을 완료할 수 있습니다. 선택 섹션에서는 나머지 측정값을 만드는 단계를 안내합니다.
-데이터 모델을 만들♘으니, 다음 단계는 보고서를 만드는 것입니다. 그 작업은 다음 랩에서 하도록 하겠습니다.
+다시 시간 관계상 모든 측정값을 생성하지는 않습니다. 시간이 허락한다면 랩 마지막에 선택 섹션을 완료할 수 있습니다. 선택 섹션에서는 나머지 측정값을 만드는 단계**를** 안내합니다.
+데이터 모델을 만들♘으니, 다음 단계는 보고서**를** 만드는 것입니다. 그 작업은 다음 랩에서 하도록 하겠습니다.
  
 ## 작업 7: 선택 섹션 – 관계 만들기
 나머지 관계를 추가해 보겠습니다.
-1.	마찬가지로 Sales과 People 테이블 사이에 다대일 관계를 만듭니다. Sales에서 SalespersonPersonID를 그리고 People에서 PersonID를 선택합니다.
-체크포인트: 현재 모델이 아래 스크린샷과 유사해야 합니다.
+1.	마찬가지로 **Sales과 People** 테이블 사이에 **다대일** 관계를 만듭니다. **Sales**에서 **SalespersonPersonID를** 그리고 **People**에서 **PersonID를** 선택합니다.
+**체크포인트:** 현재 모델이 아래 스크린샷과 유사해야 합니다.
 
-2.	이제 Product와 Supplier 간의 관계를 만들어 보겠습니다. Product 테이블에서 SupplierID를 선택하여 Supplier 테이블의 SupplierID로 드래그합니다.
-3.	새 관계 대화 상자가 열립니다. Table 1이 Product이고 열이 SupplierID인지 확인합니다.
+![](../Images/Lab-06/image089.jpg)
+
+2.	이제 Product와 Supplier 간의 관계**를** 만들어 보겠습니다. **Product** 테이블에서 **SupplierID를** 선택하여 **Supplier** 테이블의 **SupplierID**로 드래그합니다.
+3.	새 관계 대화 상자가 열립니다. **Table 1이 Product**이고 **열**이 **SupplierID**인지 확인합니다.
 4.	Table 2가 Supplier이고 열이 SupplierID인지 확인합니다.
-5.	카디널리티가 다대일(*:1)인지 확인합니다.
-6.	교차 필터 방향이 모두인지 확인합니다.
-7.	확인을 선택합니다.
+5.	**카디널리티가 다대일(*:1)** 인지 확인합니다.
+6.	**교차 필터 방향이 모두**인지 확인합니다.
+7.	**확인**을 선택합니다.
  
+ ![](../Images/Lab-06/image092.jpg)
+
+8.	마찬가지로 **Product_Details과 Product** 간의 교차 필터 방향을 **모두로** 설정한 **다대일 관계를** 생성합니다. **Product_Details에서 StockItemID를** 그리고 **Product에서 StockItemID를** 선택합니다.
+9.	이제 Reseller과 Geo 간의 관계**를** 만들어 보겠습니다. **Reseller** 테이블에서 **PostalCityID**를 선택하여 **Geo** 테이블의 **CityID**로 드래그합니다.
+10.	새 관계 대화 상자가 열립니다. **Table 1이 Reseller**이고 **열**이 **PostalCityID**인지 확인합니다.
+11.	**Table 2가 Geo**이고 **열**이 **CityID**인지 확인합니다.
+12.	**카디널리티가 다대일(*:1)** 인지 확인합니다.
+13.	**교차 필터 방향**이 **모두**인지 확인합니다.
+14.	**확인**을 선택합니다.
+
+![](../Images/Lab-06/image095.png)
+
+15.	이제 Customer와 Reseller 간의 관계를 만들어 보겠습니다. **Customer** 테이블에서
+**ResellerID**를 선택하여 **Reseller** 테이블의 **ResellerID**로 드래그합니다.
+16.	새 관계 대화 상자가 열립니다. **Table 1이 Customer**이고 **열**이 **ResellerID**인지 확인합니다.
+17.	**Table 2가 Reseller이고 열이 ResellerID**인지 확인합니다.
  
+18.	**카디널리티가 다대일(*:1)** 인지 확인합니다.
+19.	**교차 필터 방향이 Single**인지 확인합니다.
+20.	**확인**을 선택합니다.
 
-8.	마찬가지로 Product_Details과 Product 간의 교차 필터 방향을 모두로 설정한 다대일 관계를 생성합니다. Product_Details에서 StockItemID를 그리고 Product에서 StockItemID를 선택합니다.
-9.	이제 Reseller과 Geo 간의 관계를 만들어 보겠습니다. Reseller 테이블에서 PostalCityID를 선택하여 Geo 테이블의 CityID로 드래그합니다.
-10.	새 관계 대화 상자가 열립니다. Table 1이 Reseller이고 열이 PostalCityID인지 확인합니다.
-11.	Table 2가 Geo이고 열이 CityID인지 확인합니다.
-12.	카디널리티가 다대일(*:1)인지 확인합니다.
-13.	교차 필터 방향이 모두인지 확인합니다.
-14.	확인을 선택합니다.
+![](../Images/Lab-06/image098.png)
 
-15.	이제 Customer와 Reseller 간의 관계를 만들어 보겠습니다. Customer 테이블에서
-ResellerID를 선택하여 Reseller 테이블의 ResellerID로 드래그합니다.
-16.	새 관계 대화 상자가 열립니다. Table 1이 Customer이고 열이 ResellerID인지 확인합니다.
-17.	Table 2가 Reseller이고 열이 ResellerID인지 확인합니다.
+**체크포인트:** 현재 모델이 아래 스크린샷과 유사해야 합니다.
+
+![](../Images/Lab-06/image0101.png)
+
+21.	이제 PO와 Date 간의 관계를 만들어 보겠습니다. **PO** 테이블에서 **Order_Date**를 선택하여
+**Date** 테이블의 **Date**로 드래그합니다.
+22.	새 관계 대화 상자가 열립니다. **Table 1**이 **PO**이고 **열**이 **Order_Date**인지 확인합니다.
+23.	**Table 2가 Date이고 열이 Date**인지 확인합니다.
+24.	**카디널리티가 다대일(*:1)** 인지 확인합니다.
  
-18.	카디널리티가 다대일(*:1)인지 확인합니다.
-19.	교차 필터 방향이 Single인지 확인합니다.
-20.	확인을 선택합니다.
+25.	**교차 필터 방향이 단일**인지 확인합니다.
+26.	**확인**을 선택합니다.
 
-체크포인트: 현재 모델이 아래 스크린샷과 유사해야 합니다.
+![](../Images/Lab-06/image104.jpg)
 
-21.	이제 PO와 Date 간의 관계를 만들어 보겠습니다. PO 테이블에서 Order_Date를 선택하여
-Date 테이블의 Date로 드래그합니다.
-22.	새 관계 대화 상자가 열립니다. Table 1이 PO이고 열이 Order_Date인지 확인합니다.
-23.	Table 2가 Date이고 열이 Date인지 확인합니다.
-24.	카디널리티가 다대일(*:1)인지 확인합니다.
- 
-25.	교차 필터 방향이 단일인지 확인합니다.
-26.	확인을 선택합니다.
-
-27.	마찬가지로 PO와 Product 테이블 사이에 다대일 관계를 만듭니다. PO에서 StockItemID를 그리고 Product에서 StockItemID를 선택합니다.
-28.	마찬가지로 PO와 People 테이블 사이에 다대일 관계를 만듭니다. PO에서 ContactPersonID를 그리고 People에서 PersonID를 선택합니다.
+27.	마찬가지로 **PO와 Product** 테이블 사이에 **다대일** 관계를 만듭니다. **PO**에서 **StockItemID**를 그리고 **Product**에서 **StockItemID**를 선택합니다.
+28.	마찬가지로 **PO**와 **People** 테이블 사이에 **다대일** 관계를 만듭니다. **PO**에서 **ContactPersonID**를 그리고 **People**에서 **PersonID**를 선택합니다.
 모든 관계의 생성이 완료되♘습니다.
-체크포인트: 현재 모델이 아래 스크린샷과 유사해야 합니다.
+**체크포인트:** 현재 모델이 아래 스크린샷과 유사해야 합니다.
+
+![](../Images/Lab-06/image107.jpg)
 
  
-작업 8: 선택 섹션 – 측정값 만들기
+## 작업 8: 선택 섹션 – 측정값 만들기
 나머지 측정값을 추가해 보겠습니다.
-1.	상단 메뉴에서 Sales테이블을 선택한 상태에서 테이블 도구 -> 새 측정값을 선택합니다.
-2.	수식 입력줄에 Avg Order = DIVIDE([Sales], [Orders]) 를 입력합니다.
-3.	수식 입력줄의 체크 표시를 클릭하거나 Enter 버튼을 클릭합니다.
-4.	측정값이 저장되면 상단 메뉴에서 측정 도구 옵션을 확인합니다. 측정 도구를 클릭합니다.
-5.	형식 드롭다운에서 10진수를 클릭합니다.
+1.	상단 메뉴에서 **Sales**테이블을 선택한 상태에서 **테이블 도구 -> 새 측정값**을 선택합니다.
+2.	수식 입력줄에 **Avg Order = DIVIDE([Sales], [Orders])** 를 입력합니다.
+3.	수식 입력줄의 **체크 표시**를 클릭하거나 Enter 버튼을 클릭합니다.
+4.	측정값이 저장되면 상단 메뉴에서 측정 도구 옵션을 확인합니다. **측정 도구**를 클릭합니다.
+5.	형식 드롭다운에서 **10진수**를 클릭합니다.
 
-6.	비슷한 단계에 따라 다음 측정값을 추가합니다.
-a.	GM = SUM(Sales[Line_Profit]) - 10진수 형식.
-b.	GM% = DIVIDE([GM], [Sales]) - 백분율 형식.
-c.	No of Customers = COUNTROWS(Customer) formatted as Whole Number
+![](../Images/Lab-06/image110.jpg)
+
+6.	비슷한 단계에 따라 다음 측정값을 추가합니다. <br>
+ a.	**GM = SUM(Sales[Line_Profit]) - 10진수 형식.** <br>
+ b.	**GM% = DIVIDE([GM], [Sales]) - 백분율 형식.** <br>
+ c.	**No of Customers = COUNTROWS(Customer) formatted as Whole Number** <br>
  
-참조
+## 참조
 Fabric Analyst in a Day(FAIAD)는 Microsoft Fabric에서 사용할 수 있는 몇 가지 주요 기능을 소개합니다. 서비스의 메뉴에 있는 도움말(?) 섹션에는 유용한 리소스로 연결되는 링크가 있습니다.
+
+![](../Images/Lab-06/image113.png)
 
 아래는 Microsoft Fabric의 다음 단계에 도움이 되는 몇 가지 추가 자료입니다.
 •	Microsof t Fabric GA 발표 전문을 블로그 포스트로 읽기
@@ -318,10 +334,11 @@ Fabric Analyst in a Day(FAIAD)는 Microsoft Fabric에서 사용할 수 있는 �
 이 데모/랩은 위에서 명시한 목적을 위해 복잡한 설정 또는 설치가 없는 시뮬레이션된 환경에서 잠재적인 새로운 기능과 개념을 포함하여 특정 소프트웨어 기술/제품의 특성 및 기능을 제공합니다. 이 데모/랩에서 서술된 기술/개념은 전체 기능을 나타내지 않을 수 있으며, 최종 버전이 작동하지 않을 수도 있습니다. 또한 해당 기능 또는 개념의 최종
 버전을 릴리스하지 않을 수도 있습니다. 또한 실제 환경에서 이러한 특성과 기능을 사용한 경험이 다를 수도 있습니다.
  
-피드백. 이 데모/랩에서 서술된 기술적 특성, 기능 및/또는 개념에 대한 사용자 의견을
+**피드백.** 이 데모/랩에서 서술된 기술적 특성, 기능 및/또는 개념에 대한 사용자 의견을
 Microsoft에 제시하면 Microsoft는 이 사용자 의견을 어떤 방식과 목적으로든 무료로 사용, 공유 및 상용화할 수 있습니다. 또한 제품, 기술 및 서비스에서 사용자 의견이 포함된
 Microsoft 소프트웨어 또는 서비스의 특정 부분을 사용하거나 인터페이스하는 데 필요한 모든 특허권을 제3자에게 무료로 제공합니다. Microsoft에서 사용자 의견을 포함하기 때문에 Microsoft에서 해당 소프트웨어 또는 설명서의 사용을 인가해야 하는 라이선스에 종속된 사용자 의견은 제공할 수 없습니다. 이러한 권리는 본 계약에 의거하여 유효합니다.
 Microsoft Corporation은 이에 따라 명시적, 묵시적 또는 법적 특정 목적에의 적합성, 권리 및 비침해 여부에 관계없이 모든 보증과 조건을 포함하여 데모/랩과 관련된 모든 보증 및 조건을 부인합니다. Microsoft는 어떤 목적으로든 결과의 정확성, 데모/랩의 사용으로 파생된 출력 또는 데모/랩에 포함된 정보의 적합성과 관련하여 어떠한 보증이나 진술도 하지 않습니다.
-고지 사항
+
+**고지 사항**
 이 데모/랩에는 Microsoft Power BI의 새로운 기능 및 향상된 기능 중 일부만 포함되어 있습니다. 일부 기능은 제품의 향후 릴리스에서 변경될 수 있습니다. 이 데모/랩에서는 새로운 기능 모두가 아닌 일부에 대해 학습하게 됩니다.
 
