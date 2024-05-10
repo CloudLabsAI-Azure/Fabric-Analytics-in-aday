@@ -223,6 +223,7 @@ Pipeline de dados.
 6. Selecione a **caixa de texto Expressão.** Precisamos inserir uma expressão nessa caixa de texto que será avaliada como verdadeira ou falsa. Iteradores da atividade Until enquanto esta expressão é avaliada como falsa. Depois que a expressão for avaliada como verdadeira, a iteração da atividade Until é interrompida.
 7. Selecione o link **Adicionar conteúdo dinâmico** que aparece abaixo da caixa de texto.
 
+    ![](../Images/lab-05/image46.png)
  
     Precisamos escrever uma expressão que seja executada até que o valor de **varCounter seja 3** ou o valor **de varIsSuccess seja Sim.** (varCounter e varIsSuccess são as variáveis que acabamos de criar.)
 
