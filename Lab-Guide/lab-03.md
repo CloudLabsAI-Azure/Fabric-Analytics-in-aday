@@ -63,35 +63,35 @@ Dataflow Gen2	4<br>
 ## タスク 2:  ADLS Gen2 への接続を作成する
 1.	リボンで**ホーム -> データを取得 -> 詳細**の順に選択します。
 
-    ![](../Images/lab-03/image015.jpg) 
+    ![](../Images/lab-03/image012.jpg) 
  
 2.	**データを取得のデータ   ソースの選択**ダイアログが表示されます。検索ボックスに入力す
     ることでデータ ソースを検索できます。左パネルには、空のテーブルまたは空のクエリを使用するオプションがあります。ファイルをアップロードするための新しいオプショ
 
-    ![](../Images/lab-03/image018.jpg)
+    ![](../Images/lab-03/image015.jpg)
 
     ンもあります。このオプションについては、後続のラボで詳しく見ていきます。ここで は、画面右隅にある**詳細表示** -> をクリックしてみましょう。
     これで、利用可能なすべてのデータ ソースが表示されます。データ ソースをファイル、データベース、Microsoft Fabric、Power Platform、Azure などでフィルター処理するオプションがあります。
 
-    ![](../Images/lab-03/image021.jpg) 
+    ![](../Images/lab-03/image018.jpg) 
 
 3.	上部のフィルター オプションから **Azure** を選択して、Azure のデータ ソースに絞り込みます。
  
 4.	**Azure Data Lake Storage Gen2** を選択します。
 
-    ![](../Images/lab-03/image024.jpg)
+    ![](../Images/lab-03/image021.jpg)
 
 5.	[データ ソースへの接続] ダイアログが表示されます。ADLS Gen2 データ ソースへの接続を作成する必要があります。**接続設定 -> URL** にリンク
     <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet-Format> を
     入力します。
 
-    ![](../Images/lab-03/image027.jpg)
+    ![](../Images/lab-03/image024.jpg)
 
 6.	[認証の種類] ドロップダウンから、**アカウント** **キー**を選択します。
  
 7. **環境変数**タブ ([ラボ ガイド] タブの横) から **ADLS ストレージアカウントのアクセス キー**
 
-     ![](../Images/lab-03/image030.jpg)
+     ![](../Images/lab-03/image027.jpg)
 
      をコピーし、**アカウント キー** テキストボックスに貼り付けます。
 
@@ -100,7 +100,7 @@ Dataflow Gen2	4<br>
 
 ## タスク 3: ADLS Gen2 フォルダーの基本クエリを作成する
 
-   ![](../Images/lab-03/image033.jpg)
+   ![](../Images/lab-03/image030.jpg)
 
 1.	接続が確立されると、**フォルダー データのプレビュー**画面が表示されます。ADLS  Gen2 フォルダーには多数のファイルがあります。その中のいくつかのファイルのデータが必 要です。**作成**を選択して、フォルダーへの接続を作成します。
  
@@ -113,7 +113,7 @@ Dataflow Gen2	4<br>
 
 4.	**ステージングを有効にする**オプションをオフにします。
 
-    ![](../Images/lab-03/image036.jpg)
+    ![](../Images/lab-03/image033.jpg)
 
     フォルダー内には、**json と parquet** という 2 つのファイル形式があります。
 
@@ -127,7 +127,7 @@ Dataflow Gen2	4<br>
 
 7.	**OK** を選択します。
 
-    ![](../Images/lab-03/image039.png)
+    ![](../Images/lab-03/image036.jpg)
 
 これで、基本クエリが設定されました。すべてのGeo クエリでこのクエリを参照できます。
 
@@ -141,15 +141,15 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
 
 1.	まずは City から始めましょう。左パネルで、**ADLS Base Folder for Geo を右クリックします。参照**を選択して、ADLS Base Folder for Geo クエリを参照する新しいクエリを作成します。
  
-    ![](../Images/lab-03/image042.jpg) 
+    ![](../Images/lab-03/image039.png) 
 
 2.	**Folder Path 列のドロップダウン矢印**を選択します。
 
-    ![](../Images/lab-03/image045.jpg)
+    ![](../Images/lab-03/image042.jpg)
 
 3.	**テキスト フィルター-> 次の値を含む...** を選択します。
 
-    ![](../Images/lab-03/image048.jpg)
+    ![](../Images/lab-03/image045.jpg)
 
 4. **行のフィルター処理**ダイアログに、**Application.Cities** と入力します。
 
@@ -157,17 +157,17 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
  
 5.	**OK** を選択します。
 
-    ![](../Images/lab-03/image051.jpg)
+    ![](../Images/lab-03/image048.jpg)
 
 6.	データは 1 つの行に絞り込まれます。**Content 列のBinary** を選択します。
 
-    ![](../Images/lab-03/image054.jpg)
+    ![](../Images/lab-03/image051.jpg)
 
 7.	City のすべての詳細が表示されます。**右パネルのクエリの設定 -> プロパティ-> 名前**で、名前を **Cities** に変更します。
 
     **注:** スクリーンショットの右下隅で、クエリに適用されたステップが 4 つあることを確認し、クエリの読み込みが完了するのを待ちます。数分かかる場合があります。
 
-    ![](../Images/lab-03/image057.png)
+    ![](../Images/lab-03/image054.jpg)
 
     右パネルの**適用されたステップ**に、すべてのステップが登録されています。この動作は
     Power Query と似ています。次は、同様のプロセスに従って、**Country** クエリを作成しましょう。
@@ -175,15 +175,15 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
 ## タスク 5: Countries クエリを作成する
 1.	左パネルで、**ADLS Base Folder for Geo を右クリックします。参照**を選択して、ADLS Base Folder for Geo クエリを参照する新しいクエリを作成します。
 
-    ![](../Images/lab-03/image060.jpg)
+    ![](../Images/lab-03/image057.png)
 
 2.	**Folder Path 列**の**ドロップダウン**を選択します。
 
-    ![](../Images/lab-03/image063.jpg)
+    ![](../Images/lab-03/image060.jpg)
 
 3.	**テキスト フィルター-> 次の値を含む...** を選択します。
 
-    ![](../Images/lab-03/image066.jpg)
+    ![](../Images/lab-03/image063.jpg)
 
 4.	**行のフィルター処理ダイアログに、Application.Countries** と入力します。
 
@@ -191,18 +191,18 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
  
 5.	**OK** を選択します。
 
-    ![](../Images/lab-03/image069.jpg)
+    ![](../Images/lab-03/image066.jpg)
 
 6.	データは 1 つの行に絞り込まれます。**Content 列**の **Binary** を選択します。
 
-    ![](../Images/lab-03/image072.jpg)
+    ![](../Images/lab-03/image069.jpg)
 
 7.	Country のすべての詳細が表示されます **。右パネルのクエリの設定 -> プロパティ-> 名前**
     で、名前を **Countries** に変更します。
 
     **注:** スクリーンショットの右下隅で、クエリに適用されたステップが 4 つあることを確認し、クエリの読み込みが完了するのを待ちます。数分かかる場合があります。
 
-    ![](../Images/lab-03/image075.jpg)
+    ![](../Images/lab-03/image072.jpg)
 
 次はState を取り込む必要がありますが、同じステップの繰り返しです。Power BI Desktop ファイルには既にクエリがあります。そこからクエリをコピーできるかどうかを見てみましょう。
  
@@ -212,11 +212,11 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
 
 2.	リボンから**ホーム -> データの変換**を選択します。Power Query ウィンドウが開きます。前のラボで確認したように、左パネルのクエリはデータ ソースごとに整理されています。
 
-    ![](../Images/lab-03/image078.png)
+    ![](../Images/lab-03/image075.jpg)
 
 3.	左パネルの ADLSData フォルダーにある **States クエリを右クリック**し、**コピー**を選択します。
 
-    ![](../Images/lab-03/image081.jpg)
+    ![](../Images/lab-03/image078.png)
 
 4.	ブ**ラウザー**に戻ります。作業中の Dataflow が表示されます。
 
@@ -225,6 +225,8 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
  
     **注:**  ラボ環境で作業している場合は、画面の右側にある省略記号を選択してください。スライダーを使用して **VM ネイティブクリップボードを有効**にします。ダイアログで[OK] を選択します。クエリの貼り付けが済んだら、このオプションを無効にし       てかまいません。
 
+
+    ![](../Images/lab-03/image081.jpg)
 
     ![](../Images/lab-03/image083.jpg)
 
@@ -259,13 +261,13 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
  
 3.	リボンから**ホーム -> 詳細エディター**を選択します。
 
-    ![](../Images/lab-03/image095.png)
+    ![](../Images/lab-03/image095.jpg)
 
 4.	詳細エディターのウィンドウが開きます。詳細エディターで**すべてのテキストを強調表 示**します。
 
 5.	**右クリック**して **Copy** を選択します。
 
-    ![](../Images/lab-03/image098.jpg)
+    ![](../Images/lab-03/image98.jpg)
 
 6.	ウィンドウの右上隅にある **X** を選択するか、**完了**を選択して、詳細エディターのウィンドウを閉じます。
 
@@ -283,7 +285,7 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
 
 12.	**次へ**を選択します。
 
-    ![](../Images/lab-03/image104.jpg)
+     ![](../Images/lab-03/image104.jpg)
  
 13.	これで、Geo ディメンションが作成されました。クエリの名前を変更しましょう。**右パネルのクエリの設定 -> プロパティ-> 名前**で、名前を **Geo** に変更します。
 
@@ -292,14 +294,14 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
     Geo がどのように作成されたかを理解するために、そのステップを一通り見てみましょう。右側のパネルの適用したステップで、**ソース**を選択します。数式バーを見るか、[設定] をクリックすると、このクエリのソースが Cities と States の結合であること      がわかります。ス
     テップを進めていくと、最初の結合結果が今度は Countries  と結合されていることがわかります。したがって、3 つのクエリはすべて Geo ディメンションの作成に使用されています。
 
-     ![](../Images/lab-03/image107.jpg)
+   ![](../Images/lab-03/image107.jpg)
 
 
 ## タスク 8: Geo クエリのデータ送信先を構成する
 これでディメンションが作成されました。次は、このデータを Lakehouse に取り込みましょう。これは Dataflow Gen2 で利用できるようになった新機能です。
 
-
    ![](../Images/lab-03/image110.png)
+
 
 1.	前述したように、ここではこのデータを一切ステージングしません。そのため、**Cities** クエリを**右クリック**し、**ステージングを有効にする**を選択してチェックマークを外します。
  
@@ -316,7 +318,7 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
 6.	[データ変換先に接続] ダイアログが開きます。Lakehouse への新しい接続を作成する必要があります。**接続ドロップダウン**で**新しい接続の作成**を選択し、**認証の種類を組織アカ**
     **ウント**に設定して、**次へ**を選択します。
 
-    ![](../Images/lab-03/image116.jpg)
+     ![](../Images/lab-03/image116.jpg)
 
 7.	接続が作成されると、[宛先ターゲットの選択] ダイアログが開きます。新しいテーブルを作成しているため、**新しいテーブル ラジオ ボタ**ンがオンになっていることを確認してください。
  
@@ -329,7 +331,7 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
 
 11.	**次へ**を選択します。
 
-     ![](../Images/lab-03/image119.png)
+    ![](../Images/lab-03/image119.png)
 
 12.	[宛先の設定を選択する] ダイアログが開きます。**スライダ**ーを使用して**自動設定を無効にします。** オプションを確認しましょう。
     既存のテーブルに**データを追加する**オプションまたは置き換えるオプションがあること に注意してください。
@@ -485,7 +487,7 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
     c.	Sales<br>
     d.	Date<br>
 
-    ![](../Images/lab-03/image166.jpg)
+   ![](../Images/lab-03/image166.jpg)
  
 13.	ADLS から Lakehouse にデータを取り込むデータ フローがあります。このデータフローを公開してみましょう。右下隅の**公開**を選択します。<br>
 
@@ -496,7 +498,7 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
 
 Fabric Analyst in a Day (FAIAD) では、Microsoft Fabric で使用できる主要な機能の一部をご紹介します。サービスのメニューにあるヘルプ (?) セクションには、いくつかの優れたリソースへのリンクがあります。
 
-   ![](../Images/lab-03/image168.png)
+   ![](../Images/lab-03/image166.png)
 
 Microsoft Fabric の次のステップに役立つリソースをいくつか以下に紹介します。
 
