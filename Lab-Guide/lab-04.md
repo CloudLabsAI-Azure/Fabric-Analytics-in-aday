@@ -1,9 +1,8 @@
 ![](../Images/lab-04/image.png)
 
 ## Sumário
-Introdução
-
-Fluxo de dados Gen2
+- Introdução
+- Fluxo de dados Gen2
   - Tarefa 1: Copiar consultas do Snowflake para o Fluxo de Dados
   - Tarefa 2: Criar conexão com o Snowflake
   - Tarefa 3: Configurar destino de dados para as consultas Supplier e PO
@@ -16,8 +15,7 @@ Fluxo de dados Gen2
   - Tarefa 10: Criar conexão do SharePoint	
   - Tarefa 11: Configurar destino de dados para a consulta People	
   - Tarefa 12: Publicar e renomear o Fluxo de Dados do SharePoint	
-
-Referências	
+- Referências	
 
 ## Introdução
 Em nosso cenário, os Dados do Fornecedor estão no Snowflake, os Dados do Cliente no Dataverse e os Dados do Funcionário no SharePoint. Todas essas fontes de dados são atualizadas em momentos diferentes. Para minimizar o número de atualizações de dados de Fluxos de Dados, criaremos fluxos de dados individuais para cada uma dessas fontes de dados.
