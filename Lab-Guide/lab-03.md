@@ -200,7 +200,7 @@ do seu ambiente de laboratório.
 
 **Observação:** se você estiver trabalhando no ambiente de laboratório, selecione as reticências no canto superior direito da tela. Use o controle deslizante para habilitar VM Native Clipboard. Selecione OK na caixa de diálogo. Depois que terminar de colar a consulta, você poderá desabilitar essa opção.
 
-![](../Images/lab-03/image26.png)
+![](../Images/lab-03/image56.png)
 
 ![](../Images/lab-03/image26.png)
  
