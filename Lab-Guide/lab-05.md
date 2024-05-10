@@ -211,168 +211,183 @@ Pipeline de dados.
   **c.** **varWaitTime** do tipo **Integer** e valor padrão **60.** Essa variável será usada para definir o tempo de espera se o fluxo de dados falhar (5 minutos/300 segundos ou 15 minutos/900 segundos).
  
 ### Tarefa 8: Configurar atividade Until
-1.	Selecione a atividade Until.
-2.	No painel inferior, selecione Geral.
-3.	Insira Nome como Iterador.
-4.	Insira Descrição como Iterator to refresh dataflow. It will retry up to 3 times.
+1. Selecione a atividade **Until.**
+2. No **painel inferior,** selecione **Geral.**
+3. Insira **Nome** como **Iterador.**
+4. Insira **Descrição** como **Iterator to refresh dataflow. It will retry up to 3 times.**
 
-5.	No painel inferior, selecione Configurações.
-6.	Selecione a caixa de texto Expressão. Precisamos inserir uma expressão nessa caixa de texto que será avaliada como verdadeira ou falsa. Iteradores da atividade Until enquanto esta expressão
-é avaliada como falsa. Depois que a expressão for avaliada como verdadeira, a iteração da atividade Until é interrompida.
-7.	Selecione o link Adicionar conteúdo dinâmico que aparece abaixo da caixa de texto.
+    ![](../Images/lab-05/image20.png)
 
- 
-Precisamos escrever uma expressão que seja executada até que o valor de varCounter seja 3 ou
-o valor de varIsSuccess seja Sim. (varCounter e varIsSuccess são as variáveis que acabamos de criar.)
-8.	A caixa de diálogo Construtor de expressão de pipeline é aberta. Na metade inferior da caixa de diálogo, você terá um menu:
-a.	Parâmetros: são constantes em um data factory que podem ser consumidas por um pipeline em qualquer expressão.
-b.	Variáveis do sistema: essas variáveis podem ser usadas em expressão ao definir
-entidades em qualquer serviço. Por exemplo, ID do pipeline, nome do pipeline, nome do gatilho, etc.
-c.	Funções: você pode chamar funções dentro de expressão. As funções são categorizadas em Collection, Conversion, Date, Logical, Math e String. Por exemplo, concat é uma função String, add é uma função Math, etc.
-d.	Variáveis: variáveis de pipeline são valores que podem ser definidos e modificados durante a execução de um pipeline. Ao contrário dos parâmetros do pipeline, que são definidos no nível do pipeline e não podem ser alterados durante a execução de pipeline, as variáveis do pipeline podem ser definidas e modificadas dentro de um pipeline usando uma atividade Definir Variável. Usaremos a atividade Definir Variável em breve.
+5. No painel inferior, selecione **Configurações.**
+6. Selecione a **caixa de texto Expressão.** Precisamos inserir uma expressão nessa caixa de texto que será avaliada como verdadeira ou falsa. Iteradores da atividade Until enquanto esta expressão é avaliada como falsa. Depois que a expressão for avaliada como verdadeira, a iteração da atividade Until é interrompida.
+7. Selecione o link **Adicionar conteúdo dinâmico** que aparece abaixo da caixa de texto.
 
  
-9.	Clique em Funções no menu inferior.
-10.	Na seção Funções Lógicas, selecione a função or. O aviso @or() é adicionado à caixa de texto da expressão dinâmica. A função "or" tem dois parâmetros. Estamos trabalhando no primeiro parâmetro.
+    Precisamos escrever uma expressão que seja executada até que o valor de **varCounter seja 3** ou o valor **de varIsSuccess seja Sim.** (varCounter e varIsSuccess são as variáveis que acabamos de criar.)
 
+8. A caixa de diálogo **Construtor de expressão de pipeline** é aberta. Na metade inferior da caixa de diálogo, você terá um menu:<br>
+**a. Parâmetros:** são constantes em um data factory que podem ser consumidas por um pipeline em qualquer expressão.<br>
+**b. Variáveis do sistema:** essas variáveis podem ser usadas em expressão ao definir
+entidades em qualquer serviço. Por exemplo, ID do pipeline, nome do pipeline, nome do gatilho, etc.<br>
+**c. Funções:** você pode chamar funções dentro de expressão. As funções são categorizadas em Collection, Conversion, Date, Logical, Math e String. Por exemplo, concat é uma função String, add é uma função Math, etc.<br>
+**d. Variáveis:** variáveis de pipeline são valores que podem ser definidos e modificados durante a execução de um pipeline. Ao contrário dos parâmetros do pipeline, que são definidos no nível do pipeline e não podem ser alterados durante a execução de pipeline, as variáveis do pipeline podem ser definidas e modificadas dentro de um pipeline usando uma atividade Definir Variável. Usaremos a atividade Definir Variável em breve.
+
+    ![](../Images/lab-05/image22.png)
  
-11.	Coloque o cursor entre os parênteses da função @or.
-12.	Na seção Funções Lógicas, selecione a função equals. Observe que isso é adicionado à caixa de texto da expressão dinâmica.
+9.	Clique em **Funções** no menu inferior.
+10.	Na seção **Funções Lógicas,** selecione a **função or.** O aviso **@or()** é adicionado à caixa de texto da expressão dinâmica. A função "or" tem dois parâmetros. Estamos trabalhando no primeiro parâmetro.
 
-Observação: Sua função deve ser semelhante a @or(equals()). A função equals também aceita dois parâmetros. Estaremos verificando se a variável varCounter é igual a 3.
-
-13.	Agora, coloque o cursor entre os parênteses da função @equals para adicionar os parâmetros.
-14.	No menu inferior, selecione Variáveis.
-15.	Selecione a variável varCounter que será o primeiro parâmetro.
-16.	Insira 3 como o segundo parâmetro da função equals. Como na captura de tela abaixo, sua expressão será @or(equals(variables('varCounter'),3)).
-
+    ![](../Images/lab-05/image23.png)
  
-17.	Precisamos adicionar o segundo parâmetro à função "or". Adicione uma vírgula entre os dois parênteses finais. Desta vez, tentaremos digitar o nome da função. Comece a digitar equ e você verá uma lista suspensa das funções disponíveis (isso é chamado de IntelliSense). Selecione
-a função equals.
+11.	Coloque o cursor **entre os parênteses** da função **@or.**
+12.	Na seção Funções Lógicas, selecione a função **equals.** Observe que isso é adicionado à caixa de texto da expressão dinâmica.
 
-18.	O primeiro parâmetro da função equals é uma variável. Coloque o cursor antes da vírgula.
-19.	Comece a digitar variables(
-20.	Com a ajuda do IntelliSense, selecione variables('varIsSuccess').
-21.	Após a vírgula, vamos inserir o segundo parâmetro. Comece a digitar variables(
-22.	Com a ajuda do IntelliSense, selecione variables('varSuccess'). Aqui estamos comparando o valor de varIsSuccess com o valor de varSuccess (Sim é o valor por padrão de varSuccess).
+    **Observação:** Sua função deve ser semelhante a **@or(equals()).** A função equals também aceita dois parâmetros. Estaremos verificando se a variável varCounter é igual a 3.
 
-23.	Sua expressão deve ser:
-@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))
+    ![](../Images/lab-05/image24.png)
+
+13.	Agora, coloque o cursor **entre os parênteses** da função **@equals** para adicionar os parâmetros.
+14.	No menu inferior, selecione **Variáveis.**
+15.	Selecione a variável **varCounter** que será o primeiro parâmetro.
+16.	Insira **3** como o segundo parâmetro da função equals. Como na captura de tela abaixo, sua expressão será **@or(equals(variables('varCounter'),3)).**
+
+    ![](../Images/lab-05/image25.png) 
+
+17.	Precisamos adicionar o segundo parâmetro à função "or". **Adicione uma vírgula** entre os dois parênteses finais. Desta vez, tentaremos digitar o nome da função. Comece a digitar equ e você verá uma lista suspensa das funções disponíveis (isso é chamado de IntelliSense). Selecione a função **equals.**
+
+    ![](../Images/lab-05/image26.png)
+
+18.	O primeiro parâmetro da função equals é uma variável. Coloque o **cursor antes da vírgula.**
+19.	Comece a digitar **variables(**
+20.	Com a ajuda do IntelliSense, selecione **variables('varIsSuccess').**
+21.	Após a vírgula, vamos inserir o segundo parâmetro. Comece a digitar !*!!*1
+22.	Com a ajuda do IntelliSense, selecione **variables('varSuccess').** Aqui estamos comparando o valor de varIsSuccess com o valor de varSuccess (Sim é o valor por padrão de varSuccess).
+
+    ![](../Images/lab-05/image27.png)
+
+23.	Sua expressão deve ser: **@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))**
  
-24.	Selecione OK.
+24.	Selecione **OK.**
 
+    ![](../Images/lab-05/image28.png)
 
+### Tarefa 9: Configurar atividade Fluxo de dados
+1. Você será direcionado de volta à tela de design. Com a **atividade Until** selecionada, no **painel inferior,** selecione **Atividades.** Agora adicionaremos as atividades que precisam ser executadas.
+2. Selecione o **ícone de Editar** na primeira linha. Você será direcionado para uma tela de design de iterador em branco.
 
-Tarefa 9: Configurar atividade Fluxo de dados
-1.	Você será direcionado de volta à tela de design. Com a atividade Until selecionada, no painel
-inferior, selecione Atividades. Agora adicionaremos as atividades que precisam ser executadas.
-2.	Selecione o ícone de Editar na primeira linha. Você será direcionado para uma tela de design de iterador em branco.
-
+    ![](../Images/lab-05/image29.png)
  
-3.	No menu superior, selecione Atividades -> Fluxo de dados. A atividade Fluxo de dados é adicionada ao painel de design.
-4.	Com atividade Fluxo de dados selecionada, no painel inferior, selecione Geral. Vamos atribuir um nome e uma descrição à atividade.
-5.	No campo Nome, insira dfactivity_People_SharePoint.
-6.	No campo Descrição, insira Dataflow activity to refresh df_People_Sharepoint dataflow.
+3. No menu superior, selecione **Atividades -> Fluxo de dados**. A atividade Fluxo de dados é adicionada ao painel de design.
+4.	Com **atividade Fluxo de dados selecionada,** no painel inferior, selecione **Geral.** Vamos atribuir um nome e uma descrição à atividade.
+5.	No campo **Nome,** insira **dfactivity_People_SharePoint.**
+6.	No campo **Descrição,** insira **Dataflow activity to refresh df_People_Sharepoint dataflow.**
 
-7.	Selecione Configurações no painel inferior.
-8.	Certifique-se de que o Workspace esteja definido como seu workspace FAIAD_<nome de usuário>.
-9.	Na lista suspensa Fluxo de dados, selecione df_People_SharePoint. Quando esta atividade Fluxo de dados for executada, ela atualizará df_People_SharePoint.
+    ![](../Images/lab-05/image30.png)
 
+7.	Selecione **Configurações** no painel inferior.
+8.	Certifique-se de que o **Workspace** esteja definido como seu workspace **FAIAD_<nome de usuário>.**
+9.	Na lista suspensa **Fluxo de dados,** selecione **df_People_SharePoint.** Quando esta atividade Fluxo de dados for executada, ela atualizará **df_People_SharePoint.**
+
+    ![](../Images/lab-05/image31.png)
  
-Tarefa 10: Configurar 1ª atividade Definir variável
+### Tarefa 10: Configurar 1ª atividade Definir variável
 Configuramos a atividade Fluxo de dados como fizemos anteriormente no laboratório. Agora, adicionaremos uma nova lógica. Se a atualização do fluxo de dados for bem-sucedida, precisaremos sair do iterador Until. Lembre-se de que uma das condições para a existência do iterador é definir
 o valor da variável varIsSuccess como Sim.
-1.	No menu superior, selecione Atividades -> Definir variável. A atividade Definir variável é adicionada à tela de design.
-2.	Com a atividade Definir variável selecionada, no painel inferior, selecione Geral. Vamos atribuir um nome e uma descrição à atividade.
-3.	No campo Nome, insira set_varIsSuccess.
-4.	No campo Descrição, insira Definir variável varIsSuccess como Sim.
-Observação: Passe o mouse sobre atividade Fluxo de dados. À direita da caixa de atividades existem quatro ícones. Eles podem ser usados para conectar-se à próxima atividade com base no resultado da atividade:
-a.	O ícone de seta curvada cinza é usado para pular a atividade.
-b.	O ícone de marca de seleção verde é usado no sucesso da atividade.
-c.	O ícone de marca x vermelho é usado na falha da atividade.
-d.	O ícone de seta reta azul é usado na conclusão da atividade.
+1. No menu superior, selecione **Atividades -> Definir variável.** A atividade Definir variável é adicionada à tela de design.
+2. Com a **atividade Definir variável** selecionada, no painel inferior, selecione **Geral.** Vamos atribuir um nome e uma descrição à atividade.
+3. No campo **Nome,** insira **set_varIsSuccess.**
+4. No campo **Descrição,** insira **Definir variável varIsSuccess como Sim.**
 
-5.	Clique na marca de seleção verde da atividade de Fluxo de dados dfactivity_People_SharePoint e arraste para se conectar à nova atividade Definir variável set_varIsSuccess. Portanto, se a
-atualização do fluxo de dados for bem-sucedida, queremos executar a atividade Definir variável.
+    **Observação:** Passe o mouse sobre **atividade Fluxo de dados.** À direita da caixa de atividades existem quatro ícones. Eles podem ser usados para conectar-se à próxima atividade com base no resultado da atividade:<br>
+a. O ícone de **seta curvada cinza** é usado para pular a atividade.<br>
+b. O ícone de **marca de seleção verde** é usado no sucesso da atividade.<br>
+c. O ícone de **marca x vermelho** é usado na falha da atividade.<br>
+d. O ícone de **seta reta azul** é usado na conclusão da atividade.
 
+5. Clique na **marca de seleção verde** da atividade de Fluxo de dados dfactivity_People_SharePoint e arraste para se conectar à nova **atividade Definir variável set_varIsSuccess.** Portanto, se a atualização do fluxo de dados for bem-sucedida, queremos executar a atividade Definir variável.
+
+    ![](../Images/lab-05/image32.png)
+
+6. Com a **atividade Definir variável** selecionada, clique em **Configurações** no menu inferior.
+7. No painel inferior, verifique se **Tipo de variável** é **Variável de pipeline.**
+8. No campo **Nome,** selecione **varIsSucces.** Esta é a variável cujo valor vamos definir.
+9. No campo **Valor,** selecione a **caixa de texto.** Selecione o link **Adicionar conteúdo dinâmico.**
+
+    ![](../Images/lab-05/image33.png)
+
+10.	A caixa de diálogo Construtor de expressão de pipeline é aberta. Selecione a área de texto **Adicionar conteúdo dinâmico abaixo usando qualquer combinação de expressão, funções e variáveis do sistema.**
+11.	No menu inferior, selecione **Variáveis -> varSuccess.** Observe que @variables('varSuccess') é inserido na área de texto Adicionar conteúdo dinâmico abaixo. Lembre-se de que quando criamos variáveis, predefinimos o valor da variável varSuccess como Sim. Portanto, estamos atribuindo o valor Sim à variável varIsSuccess.
+12.	Selecione **OK.** Você será direcionado de volta ao **painel de design do iterador.**
  
-6.	Com a atividade Definir variável selecionada, clique em Configurações no menu inferior.
-7.	No painel inferior, verifique se Tipo de variável é Variável de pipeline.
-8.	No campo Nome, selecione varIsSucces. Esta é a variável cujo valor vamos definir.
-9.	No campo Valor, selecione a caixa de texto. Selecione o link Adicionar conteúdo dinâmico.
+    ![](../Images/lab-05/image34.png) 
 
-
-10.	A caixa de diálogo Construtor de expressão de pipeline é aberta. Selecione a área de texto Adicionar conteúdo dinâmico abaixo usando qualquer combinação de expressão, funções e variáveis do sistema.
-11.	No menu inferior, selecione Variáveis -> varSuccess. Observe que @variables('varSuccess') é inserido na área de texto Adicionar conteúdo dinâmico abaixo. Lembre-se de que quando criamos variáveis, predefinimos o valor da variável varSuccess como Sim. Portanto, estamos atribuindo o valor Sim à variável varIsSuccess.
-12.	Selecione OK. Você será direcionado de volta ao painel de design do iterador.
- 
- 
-
-Agora, precisamos definir o contador se a atividade do fluxo de dados falhar. No Pipeline de dados, não podemos ter autorreferência de uma variável. O que significa que não podemos incrementar
+    Agora, precisamos definir o contador se a atividade do fluxo de dados falhar. No Pipeline de dados, não podemos ter autorreferência de uma variável. O que significa que não podemos incrementar
 a variável do contador varCounter adicionando um ao seu valor (varCounter = varCounter + 1). Então, usamos a variável varTempCounter.
 
 
-Tarefa 11: Configurar 2ª atividade Definir variável
-1.	No menu superior, selecione Atividades -> Definir variável. A atividade Definir variável é adicionada à tela de design.
-2.	Com a atividade Definir variável selecionada, no painel inferior, selecione Geral. Vamos atribuir um nome e uma descrição à atividade.
-3.	No campo Nome, insira set_varTempCounter.
-4.	No campo Descrição, insira Incrementar variável varTempCounter.
-5.	Clique na marca x vermelha da atividade Fluxo de dados para a nova atividade Definir variável. Portanto, se a atualização do fluxo de dados falhar, queremos executar a atividade Definir variável.
+### Tarefa 11: Configurar 2ª atividade Definir variável
+1. No menu superior, selecione **Atividades -> Definir variável.** A atividade Definir variável é adicionada à tela de design.
+2. Com a **atividade Definir variável** selecionada, no painel inferior, selecione **Geral.** Vamos atribuir um nome e uma descrição à atividade.
+3. No campo **Nome,** insira **set_varTempCounter.**
+4. No campo **Descrição,** insira Incrementar variável varTempCounter.
+5.	Clique na **marca x vermelha** da atividade Fluxo de dados para a nova atividade Definir variável. Portanto, se a atualização do fluxo de dados falhar, queremos executar a atividade Definir variável.
  
- 
+    ![](../Images/lab-05/image35.png)
 
-6.	Com a atividade Definir variável selecionada, escolha Configurações no menu inferior.
-7.	No painel inferior, verifique se Tipo de variável é Variável de pipeline.
-8.	No campo Nome, selecione varTempCounter. Esta é a variável cujo valor vamos definir.
-9.	No campo Valor, selecione a caixa de texto. Selecione o link Adicionar conteúdo dinâmico.
-10.	A caixa de diálogo Construtor de expressões de pipeline é aberta. Insira
-@add(variables('varCounter'),1).
+6. Com a **atividade Definir variável** selecionada, escolha **Configurações** no menu inferior.
+7. No painel inferior, verifique se **Tipo de variável** é **Variável de pipeline.**
+8. No campo **Nome,** selecione **varTempCounter.** Esta é a variável cujo valor vamos definir.
+9. No campo **Valor,** selecione a **caixa de texto.** Selecione o link **Adicionar conteúdo dinâmico.**
+10. A caixa de diálogo Construtor de expressões de pipeline é aberta. Insira **@add(variables('varCounter'),1).**
 
-Observação: Sinta-se à vontade para digitar esta expressão, usar o menu para selecionar as funções ou copiá-la e colá-la.
-Observação: Esta função define o valor da variável varTempCounter como o valor da variável varCounter mais um, (varTempCounter = varCounter + 1).
+    **Observação:** Sinta-se à vontade para digitar esta expressão, usar o menu para selecionar as funções ou copiá-la e colá-la.
+
+**Observação:** Esta função define o valor da variável varTempCounter como o valor da variável varCounter mais um, (varTempCounter = varCounter + 1).
  
- 
+  ![](../Images/lab-05/image36.png)
 
 Agora, precisamos definir o valor da variável varCounter como o valor de varTempCounter.
 
 
-Tarefa 12: Configurar 3ª atividade Definir variável
-1.	No menu superior, selecione Atividades -> Definir variável. A atividade Definir variável é adicionada à tela de design.
-2.	Com a atividade Definir variável selecionada, no painel inferior, selecione Geral. Vamos atribuir um nome e uma descrição à atividade.
-3.	No campo Nome, insira set_varCounter.
-4.	No campo Descrição, insira Incrementar variável varCounter.
-5.	Clique na marca de seleção verde da atividade Definir variável set_varTempCounter e arraste para se conectar à nova atividade Definir variável set_varCounter.
+### Tarefa 12: Configurar 3ª atividade Definir variável
+1. No menu superior, selecione **Atividades -> Definir variável.** A atividade Definir variável é adicionada à tela de design.
+2. Com a **atividade Definir variável** selecionada, no painel inferior, selecione **Geral.** Vamos atribuir um nome e uma descrição à atividade.
+3. No campo **Nome,** insira **set_varCounter.**
+4. No campo **Descrição,** insira **Incrementar variável varCounter.**
+5. Clique na **marca de seleção verde** da atividade Definir variável set_varTempCounter e arraste para se conectar à nova **atividade Definir variável set_varCounter**.
 
+    ![](../Images/lab-05/image37.png)
  
-6.	Com a atividade Definir variável set_varCounter selecionada, clique em Configurações no menu inferior.
-7.	No painel inferior, verifique se Tipo de variável é Variável de pipeline.
-8.	No campo Nome, selecione varCounter. Esta é a variável cujo valor vamos definir.
-9.	No campo Valor, selecione a caixa de texto. Selecione o link Adicionar conteúdo dinâmico.
-10.	A caixa de diálogo Construtor de expressões de pipeline é aberta. Insira @variables('varTempCounter'). Sinta-se à vontade para digitar esta expressão, usar o menu para selecionar as funções ou copiá- la e colá-la.
-Observação: Esta função define o valor da variável varCounter como o valor da variável varTempCounter (varCounter = varTempCounter). No final de cada iteração, varCounter e varTempCounter têm o mesmo valor.
+6. Com a **atividade Definir variável set_varCounter** selecionada, clique em **Configurações** no menu inferior.
+7. No painel inferior, verifique se **Tipo de variável é Variável de pipeline.**
+8. No campo **Nome,** selecione **varCounter.** Esta é a variável cujo valor vamos definir.
+9. No campo **Valor,** selecione a **caixa de texto.** Selecione o link **Adicionar conteúdo dinâmico.**
+10. A caixa de diálogo Construtor de expressões de pipeline é aberta. Insira **@variables('varTempCounter').** Sinta-se à vontade para digitar esta expressão, usar o menu para selecionar as funções ou copiá- la e colá-la.
 
+**Observação:** Esta função define o valor da variável varCounter como o valor da variável varTempCounter (varCounter = varTempCounter). No final de cada iteração, varCounter e varTempCounter têm o mesmo valor.
 
+![](../Images/lab-05/image38.png)
 
-Tarefa 13: Configurar atividade Wait
+### Tarefa 13: Configurar atividade Wait
 Em seguida, precisamos esperar 5 minutos/300 segundos se a atualização do fluxo de dados falhar na primeira vez antes de tentar novamente. SE a atualização do fluxo de dados falhar pela segunda vez, precisaremos esperar 15 minutos/900 segundos e tentar novamente. Usaremos a atividade Wait e a variável varWaitTime para definir o tempo de espera.
-1.	No menu superior, selecione Atividades -> reticências (…) -> Wait. A atividade Wait é adicionada à tela de design.
-2.	Com atividade Wait selecionada, no painel inferior, selecione Geral. Vamos atribuir um nome e uma descrição à atividade.
-3.	No campo Nome, insira wait_onFailure.
-4.	No campo Descrição, insira Aguarde 300 segundos na 2ª tentativa e 900 segundos na 3ª.
-5.	Clique na marca de seleção verde da atividade Definir variável set_varCounter e arraste para se conectar à nova atividade Wait wait_onFailure.
+1. No menu superior, selecione **Atividades -> reticências (…) -> Wait.** A atividade Wait é adicionada à tela de design.
+2. Com **atividade Wait** selecionada, no painel inferior, selecione Geral. Vamos atribuir um nome e uma descrição à atividade.
+3. No campo Nome, insira **wait_onFailure.**
+4. No campo **Descrição,** insira **Aguarde 300 segundos na 2ª tentativa e 900 segundos na 3ª.**
+5. Clique na **marca de seleção verde** da atividade Definir variável set_varCounter e arraste para se conectar à nova **atividade Wait wait_onFailure.**
  
- 
+    ![](../Images/lab-05/image39.png)
 
-6.	Com a atividade Wait selecionada, clique em Configurações no menu inferior.
-7.	No campo Tempo de espera em segundos, selecione a caixa de texto e selecione o link
-Adicionar conteúdo dinâmico.
-8.	A caixa de diálogo Construtor de expressão de pipeline é aberta. Insira
-@if(
-greater(variables(‘varCounter’), 1),
-if(equals(variables(‘varCounter’), 2), mul(variables(‘varWaitTime’),15 ), mul(variables(‘varWaitTime’), 0)
-),
-mul(variables(‘varWaitTime’),5 )
-)
+6. Com a **atividade Wait** selecionada, clique em **Configurações** no menu inferior.
+7. No campo **Tempo de espera em segundos,** selecione a **caixa de texto** e selecione o link **Adicionar conteúdo dinâmico.**
+8. A caixa de diálogo Construtor de expressão de pipeline é aberta. Insira
+
+        @if(
+        greater(variables(‘varCounter’), 1),
+        if(equals(variables(‘varCounter’), 2), mul(variables(‘varWaitTime’),15 ), mul(variables(‘varWaitTime’), 0)
+        ),
+        mul(variables(‘varWaitTime’),5 )
+        )
 
 Sinta-se à vontade para digitar esta expressão, usar o menu para selecionar as funções ou copiá-la e colá-la.
 
