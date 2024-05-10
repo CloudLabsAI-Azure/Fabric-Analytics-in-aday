@@ -351,10 +351,10 @@ GenX、GenY、GenZ) に入手できます。これら 4 つのクエリをアペ
    
     **注: FAIAD_<ユーザー名>** ワークスペースに自動的に戻ります。Dataflow が公開されるまで、しばらくかかる場合があります。
 
+3.	ここで操作しているデータフローは Dataflow 2 です。先に進む前に名前を変更しましょう。Dataflow 2 の横にある **省略記号(…)** をクリックします。**プロパティ**を選択します。
+
     ![](../Images/lab-04/image109.jpg)
    
-3.	ここで操作しているデータフローは Dataflow 2 です。先に進む前に名前を変更しましょう。Dataflow 2 の横にある **省略記号(…)** をクリックします。**プロパティ**を選択します。
- 
 4.	[Dataflow のプロパティ] ダイアログが開きます。**名前**を **df_People_SharePoint** に変更します。
 
 5.	**説明**テキスト ボックスに、**Dataflow to ingest People data from SharePoint to Lakehouse** と入力します。
