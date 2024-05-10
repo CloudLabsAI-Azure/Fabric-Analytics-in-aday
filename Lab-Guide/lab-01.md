@@ -132,13 +132,13 @@ Toys の売上は、2 回の四半期で低かった後 2022 年の第 4 四半�
 
     ![](../Images/lab-01/image039.jpg)  
  
-8.	自由にレポートをさらに分析してみてください。準備ができたら、モデル ビューを見てみましょう。左パネルで、**モデル ビュー アイコン**を選択します。Sales とPO という 2 つのファクト テーブルがあることがわかります。
-a.	Sales データの粒度は、Date、Reseller、Product、People によって提供されています。Date、Reseller、Product、People が Sales につながっています。
+8.	自由にレポートをさらに分析してみてください。準備ができたら、モデル ビューを見てみましょう。左パネルで、**モデル ビュー アイコン**を選択します。Sales とPO という 2 つのファクト テーブルがあることがわかります。<br>
+a.	Sales データの粒度は、Date、Reseller、Product、People によって提供されています。Date、Reseller、Product、People が Sales につながっています。<br>
 b.	PO データの粒度は、Date、Product、People によって提供されています。Date、
-    Product、People がPO につながっています。
-c.	Product ごとの Supplier データがあります。Supplier はProduct につながっています。
-d.	Geo によるReseller の場所データがあります。Geo はReseller につながっています。
-e.	Reseller ごとの Customer 情報があります。Customer はReseller につながっています。
+    Product、People がPO につながっています。<br>
+c.	Product ごとの Supplier データがあります。Supplier はProduct につながっています。<br>
+d.	Geo によるReseller の場所データがあります。Geo はReseller につながっています。<br>
+e.	Reseller ごとの Customer 情報があります。Customer はReseller につながっています。<br>
 
 ## タスク 3: Power Query を確認する
 
@@ -147,11 +147,11 @@ e.	Reseller ごとの Customer 情報があります。Customer はReseller に�
     ![](../Images/lab-01/image042.jpg)  
  
 2.	Power Query ウィンドウが開きます。リボンから**ホーム -> データ ソース設定**を選択しま
-す。[データ ソース設定] ダイアログが開きます。一覧をスクロールしていくと、問題の説明で述べたように 4 つのデータ ソースがあることがわかります。
-a.	Snowflake
-b.	SharePoint
-c.	ADLS Gen2
-d.	Dataverse
+す。[データ ソース設定] ダイアログが開きます。一覧をスクロールしていくと、問題の説明で述べたように 4 つのデータ ソースがあることがわかります。<br>
+a.	Snowflake<br>
+b.	SharePoint<br>
+c.	ADLS Gen2<br>
+d.	Dataverse<br>
 
 3.	**閉じる**を選択して [データソース設定]  ダイアログを閉じます。
 
