@@ -200,9 +200,9 @@ Fabric Analyst in a Day (FAIAD) では、Microsoft Fabric で使用できる主�
 
 Microsoft Fabric の次のステップに役立つリソースをいくつか以下に紹介します。
 
-- ブログ記事で [[Microsoft-Fabric-のGA-に関するお知らせの](#https://aka.ms/Fabric-Hero-Blog-Ignite23)] 全文を確認する
-- [ガイド付きツアーを](#ガイド付きツアーを) 通じ て Fabric を探索する
-- [Microsoft Fabric の無料試用版にサインアップする](#microsoft-fabric-の無料試用版にサインアップする)
+- ブログ記事で[ [[Microsoft-Fabric-のGA-に関するお知らせの](#https://aka.ms/Fabric-Hero-Blog-Ignite23)] ](https://aka.ms/Fabric-Hero-Blog-Ignite23)全文を確認する
+- [[ガイド付きツアーを](#ガイド付きツアーを)](https://aka.ms/Fabric-GuidedTour) 通じ て Fabric を探索する
+- [Microsoft Fabric の無料試用版にサインアップする](#microsoft-fabric-の無料試用版にサインアップする) にサインアップする
 - Microsof t Fabric のWeb サイトにアクセスする
 - Fabric の学習モジュールで新しいスキルを学ぶ
 - Fabric の技術ドキュメントを参照する
