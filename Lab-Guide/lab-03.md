@@ -267,7 +267,7 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
 
 5.	**右クリック**して **Copy** を選択します。
 
-    ![](../Images/lab-03/image98.jpg)
+    ![](../Images/lab-03/image098.jpg)
 
 6.	ウィンドウの右上隅にある **X** を選択するか、**完了**を選択して、詳細エディターのウィンドウを閉じます。
 
