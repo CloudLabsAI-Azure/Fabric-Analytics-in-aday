@@ -167,8 +167,7 @@ Dans le volet droit, sous **Étapes appliquées**, notez que toutes les étapes 
 
 ### Tâche 5 : créer une requête Countries
 
-1. Dans le volet gauche, **cliquez avec le bouton droit sur ADLS Base Folder for Geo**. Cliquez sur
-**Référence** pour créer une requête faisant référence à la requête ADLS Base Folder for Geo.
+1. Dans le volet gauche, **cliquez avec le bouton droit sur ADLS Base Folder for Geo**. Cliquez sur **Référence** pour créer une requête faisant référence à la requête ADLS Base Folder for Geo.
 
     ![](../Images/lab-03/image057.png)
 
@@ -236,8 +235,7 @@ Notez que ADLS Base Folder est également copié. En effet, la requête States f
 
     ![](../Images/lab-03/image089.jpg)
 
-10. Nous pouvons maintenant supprimer ADLS Base Folder. Dans le volet gauche, sous la section
-**Requêtes, cliquez avec le bouton droit sur la requête ADLS Base Folder** et sélectionnez **Supprimer**.
+10. Nous pouvons maintenant supprimer ADLS Base Folder. Dans le volet gauche, sous la section **Requêtes, cliquez avec le bouton droit sur la requête ADLS Base Folder** et sélectionnez **Supprimer**.
 
     ![](../Images/lab-03/image092.png)
 
@@ -285,7 +283,6 @@ Passons en revue les étapes pour comprendre comment la dimension Geo a été cr
 
 ![](../Images/lab-03/image107.jpg)
 
- 
 ### Tâche 8 : configurer la destination des données pour la requête Geo
 Maintenant que nous disposons d’une dimension, ingérons ces données dans Lakehouse. Il s’agit de la nouvelle fonctionnalité disponible dans Dataflow Gen2.
 1. Comme indiqué précédemment, nous ne mettons en lots aucune de ces données. Par conséquent, **cliquez avec le bouton droit** sur la requête **Cities** et sélectionnez **Activer la mise en scéne** pour supprimer la coche.
@@ -461,13 +458,13 @@ Assurez-vous que **toutes les requêtes sont traitées**. Ensuite, ingérons ces
 
 12.	De même, définissez la liste déroulante **Destination des données** pour les requêtes suivantes :
 
-    a.	Product Details
+    a. Product Details
 
-    b.	Reseller
+    b. Reseller
 
-    c.	Sales
+    c. Sales
 
-    d.	Date
+    d. Date
  
 13. Nous disposons d’un flux de données qui ingère des données d’ADLS vers Lakehouse. Publions ce flux de données. Cliquez sur **Publier** dans le coin inférieur droit.
 
