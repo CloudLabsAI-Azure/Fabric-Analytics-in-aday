@@ -1,8 +1,8 @@
 ![](../Images/lab-03/image.png)
 
 ## Sumário
-Introdução
-Fluxo de Dados Gen2
+- Introdução
+- Fluxo de Dados Gen2
   - Tarefa 1: Criar o Fluxo de Dados Gen2
   - Tarefa 2: Criar conexão com o ADLS Gen2
   - Tarefa 3: Criar consulta de pasta Base do ADLS Gen2
@@ -15,8 +15,7 @@ Fluxo de Dados Gen2
   - Tarefa 10: Renomear fluxo de dados	
   - Tarefa 11: Criar consultas restantes no Dataflow	
   - Tarefa 12: Configurar destino de dados para as consultas restantes	
-
-Referências	
+- Referências	
 
 ## Introdução
 Em nosso cenário, os Dados de Venda são obtidos do sistema ERP e armazenados em um ADLS Gen2. Eles são atualizados ao meio-dia/12h, todos os dias. Precisamos transformar e ingerir esses dados no Lakehouse e usá-los em nosso modelo.
@@ -43,12 +42,12 @@ Ao final deste laboratório, você terá aprendido:
 1. Vamos voltar ao **workspace do Fabric** que você criou no Laboratório 2, Tarefa 9.
 2. Se você não saiu do laboratório anterior, estará na tela Lakehouse. Caso contrário, não tem problema. Selecione o ícone **Fabric experience selector** na parte inferior esquerda da tela.
 3. Selecione **Data Factory** na caixa de diálogo de experiência do Fabric aberta. O Data Factory tem as cargas de trabalho necessárias para extrair, transformar e ingerir dados.
-![](../Images/lab-03/image01.png)
+    ![](../Images/lab-03/image01.png)
  
  
 4.	Você será direcionado para a Página Inicial do Data Factory. Em Novo, selecione **Fluxo de dados Gen2.**
 
-![](../Images/lab-03/image02.png)
+    ![](../Images/lab-03/image02.png)
 
 Você será direcionado para a **página do Fluxo de Dados.** Esta tela parecerá familiar, pois é semelhante ao Fluxo de Dados Gen1 ou Power Query. Você notará que as opções para se conectar a várias fontes de dados estão disponíveis, junto com o recurso para transformar dados. Vamos conectar à fonte de dados ADLS Gen2 e realizar algumas transformações.
  
