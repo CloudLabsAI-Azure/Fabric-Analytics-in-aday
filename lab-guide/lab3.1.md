@@ -90,7 +90,7 @@ You will be navigated to the **Dataflow page**. This screen will look familiar a
    ![A screenshot of Connect to data source](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.008.png)
 
 1. Select **Account Key** from the Authentication kind dropdown.
-1. Copy the **Adls storage account Access Key** from the **Environment Variables** tab (next to the Lab Guide tab) and paste it in the Account key text box.
+1. Copy the **Adls storage account Access Key** from the **Environment Variables** tab (next to the Lab Guide tab) and paste it in the **Account key text box**.
 
    ![A screenshot of Connect to data source](../media/new6.png)
 
@@ -123,7 +123,7 @@ You will be navigated to the **Dataflow page**. This screen will look familiar a
 
    ![A screenshot to filter out json files](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.012.png)
 
-Now we have the Base query set up. We can reference this for all the queries from the ADLS Gen2 source.
+Now we have the Base query set up. We can reference this query for all the Geo queries.
 
 ### Task 4: Create Cities query
 Sales Data is available by Geography, Product, salesperson, and Date granularity. Let’s first create a query to get the Geo dimension. Geo data is available in three different files located in the following subfolders:
@@ -134,7 +134,7 @@ Sales Data is available by Geography, Product, salesperson, and Date granularity
 
 We need to combine City, State, and Country data from these three files to create the Geo dimension.
 
-1. Let’s start with City. On the left panel, **right click on ADLS Base Folder**. Select **Reference** to create a new query that references the ADLS Base Folder query.
+1. Let’s start with City. On the left panel, right click on **ADLS Base Folder for Geo**. Select **Reference** to create a new query that references the ADLS Base Folder for Geo query.
 
    ![A screenshot to Reference ADLS Base folder](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.013.png)
 
@@ -165,7 +165,7 @@ In the right panel, under **Applied steps** notice all the steps are registered.
 
 ### Task 5: Create Countries query
 
-1. On the left panel, **right click on ADLS Base Folder**. Select **Reference** to create a new query that references the ADLS Base Folder query.
+1. On the left panel, right click on **ADLS Base Folder for Geo**. Select **Reference** to create a new query that references the ADLS Base Folder for Geo query.
 
    ![A screenshot to reference ADLS Base Folder](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.018.png)
 
@@ -183,7 +183,7 @@ In the right panel, under **Applied steps** notice all the steps are registered.
 
    ![A screenshot of Filter rows dialog](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.020.png)
 
-1. Data will be filtered to a single row. Select **Binary** under the **Content** column.
+1. Data will be filtered to a single row. Select **Binary** under the **Content column**.
 
    ![Screenshot of ADLS Base Folder(2)](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.021.png)
 
@@ -197,13 +197,13 @@ We need to bring in State next, but the steps are getting repetitive. We already
 
 ### Task 6: Create States using Copy – Option 1
 
-1. If you have not already opened it, open **FAIAD.pbix** located in the **Report** folder on the **Desktop** of your lab environment.
+1. If you have not already opened it, open **FAIAD.pbix** located in the **C:\FAIAD\Reports** folder of your lab environment. 
    
 1. From the ribbon select **Home -> Transform data**. The power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by the data source.
 
    ![A screenshot of Power BI Desktop report.](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.023.png)
 
-1. From the left panel, under the ADLSData folder, right-click on the **States** query and select **Copy**.
+1. From the left panel, under the ADLSData folder, **right-click on the States** query and select **Copy**.
 
    ![A screenshot Power Query window](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.024.png)
 
@@ -220,7 +220,7 @@ We need to bring in State next, but the steps are getting repetitive. We already
 
 1. Select the **States** query.
 1. From the **right panel**, under **Applied** **steps**, select **Source**.
-1. In the formula bar, change from **#"ADLS Base Folder (2)"** to **#"ADLS Base Folder"**
+1. In the formula bar, change from #”ADLS Base Folder” to **#”ADLS Base Folder for Geo”**
 
    ![A screenshot of States query Source step](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.026.png) 
 
@@ -302,8 +302,8 @@ Now we have a dimension, let’s ingest this data into Lakehouse. This is the ne
 
    ![A screenshot to Choose destination target](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.037.png)
 
-1. Choose destination settings dialog opens. Use the slider to disable automatic settings. Let’s check out the options.
-   Notice there are options to Append data to an existing table or Replace it. 
+1. Choose destination settings dialog opens. Use the **slider** to **disable automatic settings**. Let’s check out the options.
+   Notice there are options to **Append data** to an existing table or **Replace** it. 
    Also, notice there are Schema options on publish. You have the option of keeping the schema fixed, or if it is going to change over time there is a dynamic schema option.
 
 1. Notice there is a warning that "Some column names contain unsupported characters. Should we fix them for you?" Lakehouse does not support column names with space in it. If you choose to select Fix it, it will add underscores to replace space in column names.
@@ -325,7 +325,7 @@ Now we have a dimension, let’s ingest this data into Lakehouse. This is the ne
 
    ![A screenshot to Publish Dataflow](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.039.png)
 
-1. You will be navigated back to the **FAIAD_<username>** workspace. It may take a few moments for the Dataflow to Publish. Once done, select **lh_FAIAD Lakehouse** either from the center pane or the left panel.
+1. You will be navigated back to the **FAIAD_<username> workspace**. It may take a few moments for the Dataflow to Publish. Once done, select **lh_FAIAD Lakehouse** either from the center pane or the left panel.
 
    ![A screenshot to select Lakehouse](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.040.png)
 
@@ -358,7 +358,7 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 
 ### Task 11: Build remaining queries in Dataflow
 
-1. You will be navigated back to the **FAIAD_<username>** workspace. Select the Dataflow **df_Sales_ADLS** to navigate back into the dataflow.
+1. You will be navigated back to the **FAIAD_<username> workspace**. Select the Dataflow **df_Sales_ADLS** to navigate back into the dataflow.
 
    ![A screenshot to select df_Sales_ADLS](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.044.png)
 
@@ -369,16 +369,25 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 1. From the ribbon select **Home -> Transform**. The power Query window opens.
 1. From the **Queries** panel on the left, **Ctrl+Select** following queries from **ADLSData**.
    
-   1. Product
-   1. Product Groups
-   1. Product Item Group
-   1. Product Details
-   1. Invoice
-   1. InvoiceLineItems
-   1. Sales
-   1. BuyingGroup
-   1. Reseller
-   1. Date
+   a. Product
+   
+   b. Product Groups
+   
+   c. Product Item Group
+   
+   d. Product Details
+   
+   e. Invoice
+   
+   f. InvoiceLineItems
+   
+   g. Sales
+   
+   h. BuyingGroup
+   
+   i. Reseller
+   
+   j. Date
 
       ![A screenshot to copy queries from Power Query window](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.045.png)
 
@@ -390,20 +399,20 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 
 1. On the left panel under select **Queries** panel and enter **Ctrl+V** (currently right click Paste is not supported). If you are using **MAC device**, please use **Cmd+V** to paste.
 
-   >**Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to enable VM Native Clipboard. Select OK in the dialog. Once done pasting the queries you can disable this option.
+   >**Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
    ![A screenshot copying queries to dataflow](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.046.png)
 
 1. As mentioned earlier, we are not Staging any of this data. So **right click** on the following queries and select **Enable staging** to remove the check mark.
    
-   1. Product
+   a. Product
    
-   1. Product Details
+   b. Product Details
    
-   1. Reseller
+   c. Reseller
    
-   1. Date
+   d. Date
    
-   1. Sales
+   e. Sales
 
    >**Note:** If load is disabled in Power BI Desktop, we do not have to disable staging in Dataflow. Hence, we do not have to disable staging for Product Item Groups, Product Groups, etc.
 
@@ -414,7 +423,6 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 ### Task 12: Configure Data destination for remaining queries
 
 1. Select the **Product** query.
-1. On the bottom right corner select **+** next to **Data destination**.
 1. From the ribbon select **Home -> Add data destination -> Lakehouse**.
 
    ![A screenshot configure Data Destination for Product query](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.048.png)
@@ -436,13 +444,13 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 1. You will be navigated back to the **Power Query window**. Notice on the bottom right corner, **Data destination** is set to **Lakehouse**
 1. Similarly, set the **Data Destination** for the following queries:
       
-      1.	Product Details
+      a.	Product Details
       
-      2.	Reseller
+      b.	Reseller
       
-      3.	Sales
+      c.	Sales
       
-      4.	Date
+      d.	Date
 
 1. We have a data flow that ingests data from ADLS into Lakehouse. Let’s go ahead and publish this data flow. Select Publish in the bottom right corner.
 
@@ -452,7 +460,7 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 
    ![A screenshot of dataflow to Publish](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.052.png)
 
-   You will be navigated back to the Data Factory Home page. It will take a few minutes for the data to refresh.
+   You will be navigated back to **FAIAD_<username>** workspace. It will take a few minutes for the dataflow to refresh.
 
    In the next lab, we will ingest data from the other data sources.
 
