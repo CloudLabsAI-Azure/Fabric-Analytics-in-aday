@@ -4,7 +4,7 @@
 - Introdução	
 - Licença do Fabric
   - Tarefa 1: Habilitar uma licença de avaliação do Microsoft Fabric	
-Visão geral das experiências do Fabric	<br>
+- Visão geral das experiências do Fabric	<br>
   - Tarefa 2: Experiência do Data Factory<br>	
   - Tarefa 3: Experiência do Data Activator<br>	
   - Tarefa 4: Experiência do Industry Solutions<br>	
@@ -12,7 +12,7 @@ Visão geral das experiências do Fabric	<br>
   - Tarefa 6: Experiência do Synapse Data Science	<br>
   - Tarefa 7: Experiência do Synapse Data Warehouse	<br>
   - Tarefa 8: Experiência do Real-Time Analytics	<br>
-Workspace do Fabric	<br>
+- Workspace do Fabric	<br>
   - Tarefa 9: Criar um workspace do Fabric	<br>
   - Tarefa 10: Criar um Lakehouse	<br>
 - Referências	
