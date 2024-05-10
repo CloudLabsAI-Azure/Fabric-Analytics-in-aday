@@ -46,29 +46,27 @@ Before we start with Fabric, let’s look at the current Report in Power BI Desk
 
    # ![](../media/L1T1S1.png)
 
-2. Enter your email address dialog opens. Navigate to the **Environment Details** tab on the right panel in the lab environment.
-3. Copy the **Username** and paste it into the Email textbox of the dialog.
-4. Select **Continue**.
-
-   # ![](../media/img4.png)
+2. You'll see the **Enter your email address** tab. Here, enter your credential and select **Continue**:
  
-5. Let’s get you signed in dialog opens. Select **Work or school account**.
-6. Select **Continue**.
-
-   # ![](../media/img5.png)
+   - **Email:** <inject key="AzureAdUserEmail"></inject>
  
-7. Sign-in dialog opens. Reenter the **Username** by copying it from the **Environment Details** tab.
-8. Select **Next**.
-
-   # ![](../media/img6.png)
+    ![Enter Your Username](../media/faiadlab1-6.png)
  
-9. In the next dialog, enter the **Password Credentials** by copying it from the **Environment Details** tab.
-10. Select **Sign in**.
-11. Action Required dialog opens requesting to set up multifactor authentication. We do not need to set this up, since this is a lab environment. Select **Ask Later**.
-
-    # ![](../media/img7.png)
+3. You'll see the **Sign in** tab. Here, enter your credentials and select **Next**:
  
-12. Select **No, sign in the app only** in the next dialog. Power BI Desktop will now open.
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+ 
+    ![Enter Your Username](../media/faiadlab1-7.png)
+ 
+4. Next, provide your password and select **Sign in**:
+ 
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
+ 
+   ![Enter Your Password](../media/faiadlab1-8.png)
+ 
+5. Select **No, sign in to this app only** in the next dialog. Power BI Desktop will now open.
+
+    # ![](../media/faiadlab1-9.png)
 
 ### Task 2: Analyze Power BI Desktop Report
 The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of the page. The remaining visuals highlight Sales over time, by Territory, Product Group, and Reseller Company. 
@@ -110,9 +108,9 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
       5. We have Customer information by Reseller. The customer connects to the Reseller.
 
 ### Task 3: Review Power Queries
-1. Let’s look at Power Query to understand the data sources. From the ribbon select Home -> Transform data.
+1. Let’s look at Power Query to understand the data sources. From the ribbon select Home -> Transform data -> Transform data.
 
-   # ![](../media/img14.png)
+   # ![](../media/faiadlab1-11.png)
  
 2. The Power Query window opens. From the ribbon, select Home -> Data source settings. The data source settings dialog opens. As you scroll through the list you will notice there are four data sources as mentioned in the problem statement:
       1. Snowflake
