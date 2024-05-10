@@ -211,7 +211,7 @@ Microsoft Fabric の次のステップに役立つリソースをいくつか以
 
 より詳しい Fabric  エクスペリエンスのお知らせに関するブログを参照してください。
 
-- Fabric の Data Factory エクスペリエンスに関するブログ 
+- [Fabric の Data Factory エクスペリエンスに関するブログ](#fabric-の-data-factory-エクスペリエンスに関するブログ)
 - Fabric のSynapse Data Engineering エクスペリエンスに関するブログ
 - Fabric のSynapse Data Science エクスペリエンスに関するブログ
 - Fabric のSynapse Data Warehousing エクスペリエンスに関するブログ
