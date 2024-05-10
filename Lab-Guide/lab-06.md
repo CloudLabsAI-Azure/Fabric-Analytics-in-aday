@@ -48,8 +48,8 @@ Nous avons des données provenant de différentes sources ingérées dans la lak
     ```
 
 5. Cliquez sur **Run** pour afficher les résultats.
-6. Notez qu’une option permet d’enregistrer cette requête en tant que vue en cliquant sur
-**Enregistrer en tant que vue**.
+6. Notez qu’une option permet d’enregistrer cette requête en tant que vue en cliquant sur **Enregistrer en tant que vue**.
+
 7. Dans le **volet gauche** Explorateur, sous la section **Queries**, cette requête est enregistrée sous **Mes requêtes** comme **SQL query 1**. Cela permet de renommer la requête et de l’enregistrer pour une utilisation ultérieure. En outre, une option permet d’afficher les requêtes partagées avec vous à l’aide du dossier **Requêtes partagées**.
  
     ![](../Images/lab-06/image011.jpg)
@@ -151,9 +151,10 @@ Notez que toutes les étapes sont consignées dans le bloc Sales. (Reportez-vous
 
     ![](../Images/lab-06/image059.jpg)
 
-2. La boîte de dialogue Visualiser les résultats s’ouvre alors. Dans le volet **Données** de droite,
-**développez Visual query1**.
+2. La boîte de dialogue Visualiser les résultats s’ouvre alors. Dans le volet **Données** de droite, **développez Visual query1**.
+
 3. Sélectionnez les champs **Supplier_Name** et **Units**.
+
 4. Notez que le résultat ressemble au résultat de la requête SQL précédente. Si vous le souhaitez, vous pouvez enregistrer cet état. Puisque nous avons enregistré un état similaire précédemment, nous allons cliquer sur **Annuler**.
 
     ![](../Images/lab-06/image062.jpg)
@@ -167,10 +168,13 @@ Nous sommes maintenant prêts à créer le modèle, des relations entre les tabl
     ![](../Images/lab-06/image065.jpg)
 
 4. La boîte de dialogue Nouvelle relation s’ouvre alors. Assurez-vous que le champ **Table 1** est défini sur Sales et le paramètre **Colonne** sur **ResellerID**.
-5. Assurez-vous que le champ **Table 2** est défini sur **Reseller** et le paramètre **Colonne** sur
-**ResellerID**.
+
+5. Assurez-vous que le champ **Table 2** est défini sur **Reseller** et le paramètre **Colonne** sur **ResellerID**.
+
 6. Assurez-vous que le champ **Cardinalité** est défini sur **Plusieurs à un (*:1)**.
+
 7. Assurez-vous que le champ **Direction du filtre croisé** est défini sur **Single**.
+
 8. Cliquez sur **OK**.
 
     ![](../Images/lab-06/image068.png)
@@ -238,11 +242,15 @@ Ajoutons les relations restantes.
     ![](../Images/lab-06/image089.jpg)
 
 2. Créons maintenant une relation entre les tables Product et Supplier. Sélectionnez la valeur **SupplierID** dans la table **Product** et faites-la glisser vers la valeur **SupplierID** dans la table **Supplier**.
+
 3. La boîte de dialogue Nouvelle relation s’ouvre alors. Assurez-vous que le champ **Table 1** est défini sur **Product** et le paramètre **Colonne** sur **SupplierID**.
-4. Assurez-vous que le champ **Table 2** est défini sur **Supplier** et le paramètre **Colonne** sur
-**SupplierID**.
+
+4. Assurez-vous que le champ **Table 2** est défini sur **Supplier** et le paramètre **Colonne** sur **SupplierID**.
+
 5. Assurez-vous que le champ **Cardinalité** est défini sur **Plusieurs à un (*:1)**.
+
 6. Assurez-vous que le champ **Direction du filtre croisé** est défini sur **À double sens**.
+
 7. Cliquez sur **OK**.
 
     ![](../Images/lab-06/image092.png)
@@ -260,11 +268,15 @@ Ajoutons les relations restantes.
     ![](../Images/lab-06/image095.png)
 
 15. Créons maintenant une relation entre les tables Customer et Reseller. Sélectionnez la valeur **ResellerID** dans la table **Customer** et faites-la glisser vers la valeur **ResellerID** dans la table Reseller.
+
 16. La boîte de dialogue Nouvelle relation s’ouvre alors. Assurez-vous que le champ **Table 1** est défini sur **Customer** et le paramètre **Colonne** sur **ResellerID**.
-17. Assurez-vous que le champ **Table 2** est défini sur **Reseller** et le paramètre **Colonne** sur
-**ResellerID**.
+
+17. Assurez-vous que le champ **Table 2** est défini sur **Reseller** et le paramètre **Colonne** sur **ResellerID**.
+
 18. Assurez-vous que le champ **Cardinalité** est défini sur **Plusieurs à un (*:1)**.
+
 19. Assurez-vous que le champ **Direction du filtre croisé** est défini sur **Single**.
+
 20. Cliquez sur **OK**.
 
     ![](../Images/lab-06/image098.png)
