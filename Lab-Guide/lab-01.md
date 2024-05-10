@@ -178,10 +178,10 @@ d.	**Sales ファクト**は、InvoiceLineItems とInvoice のクエリをマー
 9.	Snowflake データソースの場合は、**環境変数**タブ ([ラボ ガイド] の隣) で確認できる
     **Snowflake ユーザー名と Snowflake パスワード**を使用します。
  
-10.	**SnowflakeData** フォルダーには、Supplier ディメンションとPO (Order / Spend) ファクトが含まれていることがわかります。
+10.	**SnowflakeData** フォルダーには、Supplier ディメンションとPO (Order / Spend) ファクトが含まれていることがわかります。<br>
 a.	**Supplier ディメンション**は、Suppliers クエリと SupplierCategories クエリをマージ
-    することで作成されます。
-b.	**PO ファクト**は、PO とPO Line Items のクエリをマージすることで作成されます。
+    することで作成されます。<br>
+b.	**PO ファクト**は、PO とPO Line Items のクエリをマージすることで作成されます。<br>
 
 11.	SharePoint データ ソースの場合は、**環境変数**タブ ([ラボ ガイド] の隣) で確認できる
     ユ**ーザー名**と**パスワード**を入力します。Microsoft  アカウントのオプションを選択してください。
@@ -192,10 +192,9 @@ b.	**PO ファクト**は、PO とPO Line Items のクエリをマージする�
  
 これで、私たちが何を扱っているかがわかりました。以降のラボでは、Dataflow Gen2 を使って同様の Power Query を作成し、Lakehouse を使ってモデルを作成します。
 
-リファレンス
-Fabric Analyst in a Day (FAIAD) では、Microsoft Fabric で使用できる主要な機能の一部をご紹介します。サービスのメニューにあるヘルプ (?) セクションには、いくつかの優れたリソースへのリンクがあります。
+# リファレンス
 
-Microsoft Fabric の次のステップに役立つリソースをいくつか以下に紹介します。
+Fabric Analyst in a Day (FAIAD) では、Microsoft Fabric で使用できる主要な機能の一部をご紹介します。サービスのメニューにあるヘルプ (?) セクションには、いくつかの優れたリソースへのリンクがあります。
 
 ![](../Images/lab-01/image054.png) 
 
