@@ -101,14 +101,14 @@ You will be navigated to the **Dataflow page**. This screen will look familiar a
 
    ![A screenshot of Preview folder dialog](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.010.png)
 
-1. You are back in the **Power Query** dialog. This will be the connection to the root folder of ADLS Gen2. We will reference this query in subsequent queries. Let’s rename the query. In the right panel, under **Query settings -> Properties -> Name**, change the name to **ADLS Base Folder for Geo**
-1. All queries from Dataflow Gen2 are loaded to a Staging Lakehouse by default. As part of this lab, we will not be staging data. To disable this load, in the **left panel, right-click on ADLS Base Folder** query. 
+1. You are back in the **Power Query** dialog. This will be the connection to the root folder of ADLS Gen2. We will reference this query in subsequent queries. Let’s rename the query. In the right panel, under **Query settings -> Properties -> Name**, change the name to **ADLS Base Folder for Geo** and press enter.
+1. All queries from Dataflow Gen2 are loaded to a Staging Lakehouse by default. As part of this lab, we will not be staging data. To disable this load, in the **left panel, right-click on ADLS Base Folder for Geo** query. 
 
    >**Note:** Staging is used when we need to stage data to be used in further transformation before it is ready for consumption. 
 
 1. **Uncheck Enable Staging** option.
 
-   ![A screenshot to disable Staging](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.011.png)
+   ![A screenshot to disable Staging](../media/faiadlab2-4.png)
 
    Notice there are two file formats in the folder, **json** and **parquet**.
    
@@ -134,9 +134,9 @@ Sales Data is available by Geography, Product, salesperson, and Date granularity
 
 We need to combine City, State, and Country data from these three files to create the Geo dimension.
 
-1. Let’s start with City. On the left panel, **right click on ADLS Base Folder**. Select **Reference** to create a new query that references the ADLS Base Folder query.
+1. Let’s start with City. On the left panel, **right click on ADLS Base Folder for Geo**. Select **Reference** to create a new query that references the ADLS Base Folder query.
 
-   ![A screenshot to Reference ADLS Base folder](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.013.png)
+   ![A screenshot to Reference ADLS Base folder](../media/faiadlab2-5.png)
 
 1. Select the **Folder Path column dropdown arrow**.
 1. Select **Text filters -> Contains...**
@@ -155,7 +155,7 @@ We need to combine City, State, and Country data from these three files to creat
 
    ![Screenshot of ADLS Base Folder(2)](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.016.png)
 
-1. Notice you will see all the City details. In the **right panel**, under **Query settings -> Properties -> Name**, change the name to **Cities**.
+1. Notice you will see all the City details. In the **right panel**, under **Query settings -> Properties -> Name**, change the name to **Cities** and press enter.
 
     >**Note:** In the bottom right corner of the screenshot please make sure the query has four steps and wait for the query to finish loading. It may take a few minutes.
    
@@ -165,9 +165,9 @@ In the right panel, under **Applied steps** notice all the steps are registered.
 
 ### Task 5: Create Countries query
 
-1. On the left panel, **right click on ADLS Base Folder**. Select **Reference** to create a new query that references the ADLS Base Folder query.
+1. On the left panel, **right click on ADLS Base Folder for Geo**. Select **Reference** to create a new query that references the ADLS Base Folder query.
 
-   ![A screenshot to reference ADLS Base Folder](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.018.png)
+   ![A screenshot to reference ADLS Base Folder](../media/faiadlab2-5.png)
 
 1. Select the **Folder Path column dropdown**.
 
@@ -187,7 +187,7 @@ In the right panel, under **Applied steps** notice all the steps are registered.
 
    ![Screenshot of ADLS Base Folder(2)](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.021.png)
 
-1. Notice you will see all the Country details. In the **right panel**, under **Query settings -> Properties -> Name**, change the name to **Countries**
+1. Notice you will see all the Country details. In the **right panel**, under **Query settings -> Properties -> Name**, change the name to **Countries** and press enter.
 
     >**Note:** In the bottom right corner of the screenshot please make sure the query has four applied steps and wait for the query to finish loading. It may take a few minutes
 
@@ -199,7 +199,7 @@ We need to bring in State next, but the steps are getting repetitive. We already
 
 1. If you have not already opened it, open **FAIAD.pbix** located in the **Report** folder on the **Desktop** of your lab environment.
    
-1. From the ribbon select **Home -> Transform data**. The power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by the data source.
+1. From the ribbon select **Home -> Transform data -> Transform data**. The power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by the data source.
 
    ![A screenshot of Power BI Desktop report.](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.023.png)
 
@@ -212,9 +212,7 @@ We need to bring in State next, but the steps are getting repetitive. We already
 
    >**Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to enable **VM Native Clipboard**. Select OK in the dialog. Once done pasting the query you can disable this option.
       
-      ![A screenshot Dataflow queries](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.025.png) 
-
-      ![A screenshot Dataflow queries](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.025.png) 
+      ![A screenshot Dataflow queries](../media/faiadlab2-6.png) 
 
       Notice that **ADLS Base Folder** is copied as well. This is because States refers to the ADLS Base Folder in Power BI Desktop, but we already have the ADLS Base Folder. Let’s resolve this.
 
