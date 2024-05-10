@@ -396,8 +396,8 @@ Em seguida, precisamos esperar 5 minutos/300 segundos se a atualização do flux
 ![](../Images/lab-05/image40.png)
  
 Estamos usando duas novas funções aqui:
-  - greater: usa dois números como parâmetros e compara qual deles é maior.
-  - mul: esta é uma função de multiplicação; ela usa dois parâmetros para multiplicar.
+  - **greater:** usa dois números como parâmetros e compara qual deles é maior.
+  - **mul:** esta é uma função de multiplicação; ela usa dois parâmetros para multiplicar.
 
 A expressão é uma instrução if aninhada. Ela está verificando se o valor da variável varCounter é maior que 1. Se for verdadeiro, ela verifica se o valor da variável varCounter é 2. Se for verdadeiro,
 ela define o tempo de espera para varWaitTime vezes 15. Lembre-se, definimos como padrão o valor de varWaitTime para 60. Isso seria 60*15 = 900 segundos. Se o valor da variável varCounter não for 2 (for maior que 2, o que significa que a atualização do fluxo de dados falhou 3 vezes, terminamos
