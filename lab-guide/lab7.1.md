@@ -60,7 +60,7 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 5. You will be navigated to **Build your first report screen**. There will be options to enter data manually and build a report or to pick a published semantic model. We have created a semantic model in the previous labs. Let’s use that. Select **Pick a published semantic model** option.
 
-    ![](../media/Lab_7.4.png)
+    ![](../media/faiadlab2-7.png)
  
 6. Pick a dataset to use in your report page opens. Notice we have four options. **Select lh_FAIAD:**
 a.	**lh_FAIAD:** This is the lakehouse with the dataset we created and want to use for the report.
@@ -260,8 +260,6 @@ Let’s save the report before we navigate away from the report to make changes 
 10. Select **Year** field and it will be added to the **X-axis**.
 
 11. Expand **Sales** table and select **Sales measure**.
-
-    ![](../media/Lab_7.23.png)
  
 ### <a name="_toc152166243"></a>Task 8: Configure Short_Month_Name column in Date table
 

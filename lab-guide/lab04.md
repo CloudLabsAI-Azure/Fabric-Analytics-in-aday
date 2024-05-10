@@ -240,9 +240,6 @@ Connection is established and you can view the data in the preview panel. Feel f
       **Note:** You will be navigated back to **Data Factory screen**. It may take a few moments for the Dataflow to Publish. 
 
 1. Dataflow 1 is the dataflow we were working on. Let’s rename it before we continue. Click on the **ellipsis (…)** next to Dataflow 1. Select **Properties**.
-
-      ![A screenshot to select Dataflow1 -> Properties](../media/Aspose.Words.76514971-fec6-4d06-9b79-6109687c7a81.025.png)
-
 2. Dataflow properties dialog opens. Change the **Name** to **df\_Customer\_Dataverse**.
 3. In the **Description** text box add **Dataflow to ingest Customer data from Dataverse to Lakehouse**.
 4. Select **Save**.

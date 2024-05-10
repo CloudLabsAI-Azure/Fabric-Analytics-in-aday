@@ -137,9 +137,9 @@ By the end of this lab, you will have learned:
 
 ### Task 5: Synapse Data Engineering Experience
 
-1. Select **Data Activator** on the bottom left of your screen. Fabric experience dialog opens.
+1. Select **Industry Solutions** on the bottom left of your screen. Fabric experience dialog opens.
 
-2. Select **Data Engineering**. You will be navigated to the **Data Engineering Home page**. Again, the page contains three main sections. In the New section, notice the items: 
+2. Select **Data Engineering**. You will be navigated to the **Synapse Data Engineering Home page**. Again, the page contains three main sections. In the New section, notice the items: 
    
    1. **Lakehouse:** Used to store big data for cleaning, querying, reporting, and sharing.
    
@@ -169,11 +169,11 @@ By the end of this lab, you will have learned:
     
     1. **Notebook**: Used to explore data and build machine learning solutions.
     
-    1. **Environment**: Used to set up shared libraries, spark compute settings and resources for notebooks and spark job definitions.
+    1. **Environment(Preview)**: Used to set up shared libraries, spark compute settings and resources for notebooks and spark job definitions.
     
     1. **Import Notebook:** Used to import notebooks from a local machine.
     
-    1. **Sample:** Sample solution.
+    1. **Use a Sample:** Sample solution.
 
    >**Note**: Items like Notebook, Environment, Data pipeline, etc. are available in multiple experiences as they are relevant in each of these experiences.
 
@@ -183,7 +183,7 @@ By the end of this lab, you will have learned:
 
 1. Select the **Fabric experience selector** icon (currently set to Data Science) on the bottom left of your screen. Fabric experience dialog opens.
 
-2. Select **Data Warehouse**. You will be navigated to the **Data Warehouse Home page**. Again, there are three sections. In the New section, notice the items. Notice Data Pipeline and Dataflow Gen2 are available here as well.
+2. Select **Data Warehouse**. You will be navigated to the **Synapse Data Warehouse Home page**. Again, there are three sections. In the New section, notice the items. Notice Data Pipeline and Dataflow Gen2 are available here as well.
 
    1. **Warehouse:** Used to provide strategic insights from multiple sources.
    
@@ -197,7 +197,7 @@ By the end of this lab, you will have learned:
 
 2. Select **Real-Time Analytics**. You will be navigated to the **Real-Time Analytics Home page**. Again, there are three sections. In the New section, notice the items:
    
-   1. **Eventhouse:** Used to create a workspace of the database, which can be shared across projects.
+   1. **Eventhouse(Preview):** Used to create a workspace of the database, which can be shared across projects.
    
    1. **KQL Database:** Used to rapidly load structured, unstructured, and streaming data for querying.
    
