@@ -176,6 +176,7 @@ c.	**Reseller ディメンション**は、BuyingGroup クエリを使ってフ�
 d.	**Sales ファクト**は、InvoiceLineItems とInvoice のクエリをマージすることで作成されます。<br>
 
 9.	Snowflake データソースの場合は、**環境変数**タブ ([ラボ ガイド] の隣) で確認できる
+
     **Snowflake ユーザー名と Snowflake パスワード**を使用します。
  
 10.	**SnowflakeData** フォルダーには、Supplier ディメンションとPO (Order / Spend) ファクトが含まれていることがわかります。<br>
