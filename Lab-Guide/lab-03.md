@@ -1,3 +1,5 @@
+![](../Images/lab-03/image.png)
+
 ## Sumário
 Introdução
 Fluxo de Dados Gen2

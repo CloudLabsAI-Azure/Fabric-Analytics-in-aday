@@ -1,3 +1,5 @@
+![](../Images/lab-01/image.png)
+
 ## Sumário
 Estrutura do documento
 Cenário/Declaração do problema

@@ -1,3 +1,5 @@
+![](../Images/lab-04/image.png)
+
 ## Sumário
 Introdução
 

@@ -1,3 +1,5 @@
+![](../Images/lab-06/image.png)
+
 ## Sumário
 - Introdução
 - Lakehouse

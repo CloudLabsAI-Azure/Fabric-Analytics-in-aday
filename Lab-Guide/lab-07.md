@@ -1,3 +1,5 @@
+![](../Images/lab-07/image.png)
+
 ## Sumário
 - Introdução
 - Power BI

@@ -1,3 +1,5 @@
+![](../Images/lab-02/image.png)
+
 ## Sumário
 Introdução<br>	
 Licença do Fabric	<br>
