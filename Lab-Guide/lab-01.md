@@ -70,16 +70,17 @@ Avant de prendre en main Fabric, examinons l’état actuel dans Power BI Deskto
 
     ![](../Images/lab-01/image015.png)
  
-7. La boîte de dialogue Se connecter s’ouvre alors. Saisissez à nouveau la valeur Informations d’identification du champ **Nom d’utilisateur** en la copiant depuis l’onglet **Détails de
-l’environnement**.
+7. La boîte de dialogue Se connecter s’ouvre alors. Saisissez à nouveau la valeur Informations d’identification du champ **Nom d’utilisateur** en la copiant depuis l’onglet **Détails de l’environnement**.
+
 8. Cliquez sur **Suivant**.
 
     ![](../Images/lab-01/image018.jpg)
 
-9. Dans la boîte de dialogue suivante, saisissez la valeur **Informations d’identification** du champ
-**Mot de passe** en la copiant depuis l’onglet **Détails de l’environnement**.
-10.	Cliquez sur **Se connecter**.
-11.	La boîte de dialogue Action Required s’ouvre alors et demande la configuration de l’authentification multifacteur. Nous n’avons pas besoin de la configurer, puisqu’il s’agit d’un environnement de labo. Cliquez sur **Ask Later**.
+9. Dans la boîte de dialogue suivante, saisissez la valeur **Informations d’identification** du champ **Mot de passe** en la copiant depuis l’onglet **Détails de l’environnement**.
+
+10. Cliquez sur **Se connecter**.
+
+11. La boîte de dialogue Action Required s’ouvre alors et demande la configuration de l’authentification multifacteur. Nous n’avons pas besoin de la configurer, puisqu’il s’agit d’un environnement de labo. Cliquez sur **Ask Later**.
 
     ![](../Images/lab-01/image021.png)
 
@@ -104,23 +105,25 @@ les ventes de Wingtip Toys ont considérablement augmenté au quatrième trimest
     ![](../Images/lab-01/image030.jpg)
 
 3. Cliquez sur **Rocky Mountain** dans le visuel Secteur de vente pour supprimer le filtre.
+
 4. Dans le visuel Nuage de points en bas au centre de l’écran (Commandes client par ventes),
 cliquez sur la valeur hors norme en haut à droite (4e quadrant). Notez que le % de marge est de 52 %, ce qui est supérieur à la moyenne de 50 %. En outre, le % des ventes en glissement annuel a augmenté au cours des deux derniers trimestres de 2022.
 
     ![](../Images/lab-01/image033.jpg)
  
-5.	Cliquez sur la valeur Reseller hors norme dans le visuel Nuage de points pour **supprimer le filtre**.
-6.	Obtenons les détails produit par groupe de produits et revendeur. À partir du visuel Histogramme Ventes par groupe de produits et revendeur, **cliquez avec le bouton droit sur la barre Packaging Materials pour Tailspin Toys**, puis sélectionnez **Extraire -> Product Detail** dans la boîte de dialogue.
+5. Cliquez sur la valeur Reseller hors norme dans le visuel Nuage de points pour **supprimer le filtre**.
+
+6. Obtenons les détails produit par groupe de produits et revendeur. À partir du visuel Histogramme Ventes par groupe de produits et revendeur, **cliquez avec le bouton droit sur la barre Packaging Materials pour Tailspin Toys**, puis sélectionnez **Extraire -> Product Detail** dans la boîte de dialogue.
 
     ![](../Images/lab-01/image036.jpg)
 
     Vous êtes alors redirigé vers la page qui fournit les détails produit. Notez que de futures commandes sont également en cours.
 
-7.	Après avoir examiné cette page, revenez à l’état sur les ventes à l’aide du raccourci **Ctrl + flèche Précédent** en haut de la page à droite.
+7. Après avoir examiné cette page, revenez à l’état sur les ventes à l’aide du raccourci **Ctrl + flèche Précédent** en haut de la page à droite.
  
     ![](../Images/lab-01/image039.jpg)
  
-8.	N’hésitez pas à analyser davantage l’état. Une fois prêt, jetez un œil à la vue de modèle. Dans le volet gauche, cliquez sur **Icône de vue** de modèle. Notez qu’il existe deux tables de fait : Sales et PO.
+8. N’hésitez pas à analyser davantage l’état. Une fois prêt, jetez un œil à la vue de modèle. Dans le volet gauche, cliquez sur **Icône de vue** de modèle. Notez qu’il existe deux tables de fait : Sales et PO.
 
     a. La granularité des données Sales est par date, revendeur, produit et personne. Les valeurs Date, Reseller, Product et People sont liées à la table Sales.
 
@@ -173,15 +176,15 @@ la source de données**. La boîte de dialogue Paramètres de la source de donn�
 
 9.	Pour la source de données Snowflake, utilisez le **Nom d’utilisateur Snowflake** et le **Mot de passe Snowflake** disponibles dans l’onglet **Variables d’environnement** (en regard de l’onglet Guide du labo).
 
-10.	Notez que le dossier **SnowflakeData** comporte une dimension Supplier et un fait PO (Commande/Dépense).
+10. Notez que le dossier **SnowflakeData** comporte une dimension Supplier et un fait PO (Commande/Dépense).
 
     a. **La dimension Supplier** est créée en fusionnant la requête Suppliers avec la requête SupplierCategories.
 
     b. **Le fait PO** est créé en fusionnant la requête PO avec la requête PO Line Items.
 
-11.	Pour la source de données SharePoint, saisissez le **Nom d’utilisateur** et le **Mot de passe** disponibles dans l’onglet **Variables d’environnement** (en regard de l’onglet Guide du labo). Veuillez sélectionner l’option Compte Microsoft.
+11. Pour la source de données SharePoint, saisissez le **Nom d’utilisateur** et le **Mot de passe** disponibles dans l’onglet **Variables d’environnement** (en regard de l’onglet Guide du labo). Veuillez sélectionner l’option Compte Microsoft.
  
-12.	Notez que le dossier **SharepointData** comporte la dimension People.
+12. Notez que le dossier **SharepointData** comporte la dimension People.
 
     ![](../Images/lab-01/image051.png)
 
