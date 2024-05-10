@@ -84,7 +84,7 @@ Bevor wir mit Fabric beginnen, sehen wir uns den aktuellen Bericht in Power BI D
 
 10.	Geben Sie im nächsten Dialogfeld das **Kennwort** und die **Anmeldeinformationen** ein, indem Sie beides aus der Registerkarte **Umgebungsdetails** kopieren.
 
-11.	Wählen Sie **Anmelden** aus.
+11. Wählen Sie **Anmelden** aus.
 
     ![](../Images/lab1-image6.gif)
 
@@ -177,19 +177,18 @@ Sie gelangen zu der Seite mit den Produktinformationen. Dort sind auch einige zu
 9. Bei der Datenquelle „Snowflake“ verwenden Sie den **Snowflake-Benutzernamen** und das
 **Snowflake-Kennwort** von der Registerkarte **Environment Variables** (neben der Übungsanleitung).
 
-10.	Beachten Sie, dass der Ordner SnowflakeData die Dimension „Supplier und das Element „PO“ (Bestellung/Ausgabe) enthält.
+10. Beachten Sie, dass der Ordner SnowflakeData die Dimension „Supplier und das Element „PO“ (Bestellung/Ausgabe) enthält.
     
     - Die Supplier-Dimension ergibt sich durch die Zusammenführung der Abfragen
     „Suppliers“ und „SupplierCategories“.
 
     - Das Element „PO“ ergibt sich durch die Zusammenführung der Abfragen „PO“ und „PO Line Items“.
 
-11.	Bei der SharePoint-Datenquelle geben Sie den auf der Registerkarte **Environment Variables** (neben der Übungsanleitung) angezeigten Username Password ein. Wählen Sie die Option „Microsoft-Konto“ aus.
+11. Bei der SharePoint-Datenquelle geben Sie den auf der Registerkarte **Environment Variables** (neben der Übungsanleitung) angezeigten Username Password ein. Wählen Sie die Option „Microsoft-Konto“ aus.
 
-12.	Beachten Sie, dass der Ordner **SharepointData** die Dimension „People“ enthält.
+12. Beachten Sie, dass der Ordner **SharepointData** die Dimension „People“ enthält.
 
     ![](../Images/lab1-image16.png)
-
 
 Nun wissen wir, worum es geht. In den folgenden Übungen erstellen wir eine ähnliche Power Query unter Nutzung der Dataflow Gen2-Datenbank und eines Modells mit Lakehouse.
 
