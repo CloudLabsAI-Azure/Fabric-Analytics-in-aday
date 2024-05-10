@@ -251,51 +251,56 @@ Vamos adicionar os relacionamentos restantes.
 
     ![](../Images/lab-06/image31.png)
 
-15.	Agora, vamos criar um relacionamento entre Customer e Reseller. Selecione ResellerID na tabela Customer e arraste-o para ResellerID na tabela Reseller.
-16.	A caixa de diálogo Novo relacionamento é aberta. Verifique se Tabela 1 é Customer e Coluna é ResellerID.
-17.	Verifique se Tabela 2 é Reseller e Coluna é ResellerID.
-18.	Verifique se Cardinalidade é Muitos para um (*:1).
-19.	Verifique se Direção de filtro cruzada é Única.
-20.	Selecione OK.
+15.	Agora, vamos criar um relacionamento entre Customer e Reseller. Selecione **ResellerID** na tabela **Customer** e arraste-o para **ResellerID** na tabela **Reseller**.
+16.	A caixa de diálogo Novo relacionamento é aberta. Verifique se **Tabela 1** é **Customer** e Coluna! é **ResellerID.**
+17.	Verifique se **Tabela 2** é **Reseller** e **Coluna** é **ResellerID.**
+18.	Verifique se **Cardinalidade** é **Muitos para um (*:1).**
+19.	Verifique se **Direção de filtro cruzada é Única.**
+20.	Selecione **OK.**
  
- 
+    ![](../Images/lab-06/image32.png)
 
-Ponto de verificação: Seu modelo deve ser semelhante à captura de tela abaixo.
+    **Ponto de verificação:** Seu modelo deve ser semelhante à captura de tela abaixo.
 
-21.	Agora, vamos criar um relacionamento entre PO e Date. Selecione Order_Date na tabela PO
-e arraste-o sobre Date na tabela Date.
-22.	A caixa de diálogo Novo relacionamento é aberta. Verifique se Tabela 1 é PO e Coluna
-é Order_Date.
-23.	Verifique se Tabela 2 é Date e Coluna é Date.
-24.	Verifique se Cardinalidade é Muitos para um (*:1).
-25.	Verifique se Direção de filtro cruzada é Única.
-26.	Selecione OK.
- 
- 
+    ![](../Images/lab-06/image33.png)
 
-27.	De maneira similar, crie um relacionamento muitos para um entre as tabelas PO e Product. Selecione StockItemID em PO e StockItemID em Product.
-28.	De maneira similar, crie um relacionamento muitos para um entre as tabelas PO e People. Selecione ContactPersonID em PO e PersonID em People.
+21.	Agora, vamos criar um relacionamento entre PO e Date. Selecione **Order_Date** na tabela **PO** e arraste-o sobre **Date** na tabela **Date.**
+22.	A caixa de diálogo Novo relacionamento é aberta. Verifique se **Tabela 1** é **PO** e **Coluna** é **Order_Date.**
+23.	Verifique se **Tabela 2** é **Date** e **Coluna** é **Date.**
+24.	Verifique se **Cardinalidade** é **Muitos para um (*:1).**
+25.	Verifique se **Direção de filtro cruzada** é **Única.**
+26.	Selecione **OK.**
+ 
+    ![](../Images/lab-06/image34.png)
+
+27.	De maneira similar, crie um relacionamento **muitos para um** entre as tabelas **PO** e **Product.** Selecione **StockItemID** em **PO** e **StockItemID** em **Product.**
+28.	De maneira similar, crie um relacionamento **muitos para um** entre as tabelas **PO** e **People.** Selecione **ContactPersonID** em **PO** e **PersonID** em **People.**
+
 Terminamos de criar todos os relacionamentos.
-Ponto de verificação: Seu modelo deve ser semelhante à captura de tela abaixo.
 
+**Ponto de verificação:** Seu modelo deve ser semelhante à captura de tela abaixo.
+
+  ![](../Images/lab-06/image35.png)
  
-Tarefa 8: Seção Opcional – Criar medidas
+### Tarefa 8: Seção Opcional – Criar medidas
 Vamos adicionar as medidas restantes.
-1.	Selecione a tabela Sales e, no menu superior, selecione Ferramentas da tabela -> Nova medida.
-2.	Insira Avg Order = DIVIDE([Sales], [Orders]) na barra de fórmulas.
-3.	Clique na marca de seleção na barra de fórmulas ou clique no botão Enter.
-4.	Depois que a medida for salva, observe a opção Ferramentas de medida no menu superior. Clique em Ferramentas de medida.
-5.	Na lista suspensa Formato, clique em Número decimal.
+1. Selecione a tabela Sales e, no menu superior, selecione **Ferramentas da tabela -> Nova medida.**
+2. Insira **Avg Order = DIVIDE([Sales], [Orders])** na barra de fórmulas.
+3. Clique na **marca de seleção** na barra de fórmulas ou clique no botão Enter.
+4. Depois que a medida for salva, observe a opção Ferramentas de medida no menu superior. Clique em **Ferramentas de medida.**
+5. Na lista suspensa Formato, clique em **Número decimal.**
 
-6.	Siga as etapas semelhantes para adicionar as seguintes medidas:
-a.	GM = SUM(Sales[Line_Profit]) formatada como Número decimal.
-b.	GM% = DIVIDE([GM], [Sales]) formatada como Porcentagem.
-c.	No of Customers = COUNTROWS(Customer) formatada como Número inteiro
+    ![](../Images/lab-06/image36.png)
+
+6. Siga as etapas semelhantes para adicionar as seguintes medidas:<br>
+**a. GM = SUM(Sales[Line_Profit])** formatada como **Número decimal.**<br>
+**b. GM% = DIVIDE([GM], [Sales])** formatada como **Porcentagem.**<br>
+**c. No of Customers = COUNTROWS(Customer)** formatada como **Número inteiro**
 
 ## Referências
 O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais funções disponíveis no Microsoft Fabric. No menu do serviço, a seção Ajuda (?) tem links para ótimos recursos.
 
-![](../Images/lab-01/image17.png)
+![](../Images/lab-06/image37.png)
 
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas do Microsoft Fabric.
   - Veja a postagem do blog para ler o [anúncio completo de GA do Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
