@@ -104,7 +104,7 @@ Dobbiamo combinare i dati di città, stato/provincia e Paese da questi tre file 
 
 1.	Iniziamo con la città. Nel pannello di sinistra fare clic con il pulsante destro del mouse su ADLS Base Folder for Geo. Selezionare Riferimento per creare una nuova query che faccia riferimento alla query ADLS Base Folder for Geo.
  
-      ![](../Images/lab-03/image039.jpg)
+      ![](../Images/lab-03/image039.png)
 
 2.	Selezionare la freccia a discesa della colonna Percorso cartella.
 
@@ -118,7 +118,7 @@ Dobbiamo combinare i dati di città, stato/provincia e Paese da questi tre file 
  
 7.	Selezionare OK.
 
-      ![](../Images/lab-03/image048.jpg)
+      ![](../Images/lab-03/image048.png)
   	
 9.	I dati verranno filtrati per un'unica riga. Selezionare Binary nella colonna Content.
 
@@ -134,7 +134,7 @@ Nel pannello di destra, in Passaggi applicati verificare che tutti i passaggi si
 ### Attività 5 - Creazione della query Countries
 1.	Nel pannello di sinistra fare clic con il pulsante destro del mouse su ADLS Base Folder for Geo. Selezionare Riferimento per creare una nuova query che faccia riferimento alla query ADLS Base Folder for Geo.
 
-   ![](../Images/lab-03/image057.jpg)
+   ![](../Images/lab-03/image057.png)
     
 2.	Selezionare la freccia a discesa della colonna Percorso cartella.
 
@@ -144,12 +144,14 @@ Nel pannello di destra, in Passaggi applicati verificare che tutti i passaggi si
 
     ![](../Images/lab-03/image063.jpg)
  
-4.	Nella finestra di dialogo Filtra righe immettere Application.Countries Nota: questo campo fa distinzione tra maiuscole e minuscole.
-5.	Selezionare OK.
+4.	Nella finestra di dialogo Filtra righe immettere Application.Countries
+
+  	Nota: questo campo fa distinzione tra maiuscole e minuscole.
+6.	Selezionare OK.
 
     ![](../Images/lab-03/image066.jpg)
     
-6.	I dati verranno filtrati per un'unica riga. Selezionare Binario nella colonna Contenuto.
+7.	I dati verranno filtrati per un'unica riga. Selezionare Binario nella colonna Contenuto.
 
     ![](../Images/lab-03/image069.jpg)
 
@@ -197,91 +199,106 @@ Si copia anche ADLS Base Folder. Questo perché la query States fa riferimento a
    
 11.	Ora possiamo rimuovere ADLS Base Folder. Nel pannello di sinistra, nella sezione Query, fare clic con il pulsante destro del mouse sulla query ADLS Base Folder e selezionare Elimina.
 
-12.	Si apre la finestra di dialogo Elimina query. Selezionare Elimina per confermare.
+     ![](../Images/lab-03/image096.png)
+   	
+13.	Si apre la finestra di dialogo Elimina query. Selezionare Elimina per confermare.
 Nota: assicurarsi che alla query siano applicati quattro passaggi e attendere che termini il caricamento della query. L'operazione può richiedere alcuni minuti.
 
 
 ### Attività 7 - Creazione della query Geo mediante Copia – opzione 2
 Ora dobbiamo unire queste query per creare la dimensione Geo. Copiamo nuovamente la query dal file Power BI Desktop. Questa volta copiamo il codice dall'Editor avanzato.
 
-1.	Tornare alla finestra di Power Query del file Power BI Desktop.
-2.	Dal pannello di sinistra, in Query selezionare la query Geo nella cartella ADLSData.
-3.	Nella barra multifunzione selezionare Home -> Editor avanzato.
+1.	Tornare alla **finestra di Power Query** del file Power BI Desktop.
+2.	Dal pannello di sinistra, in **Query** selezionare la query Geo nella cartella ADLSData.
+3.	Nella barra multifunzione selezionare **Home -> Editor avanzato**.
  
+    ![](../Images/lab-03/image099.jpg)
+
+4.	Si apre la finestra dell'Editor avanzato. **Evidenziare tutto il testo** nell'Editor avanzato.
+5.	**Fare clic con il pulsante destro del mouse** e selezionare **Copia**.
+
+    ![](../Images/lab-03/image102.jpg)
+
+6.	Selezionare la **X** nell'angolo in alto a destra della finestra o selezionare **Fatto** per chiudere la finestra dell'Editor avanzato.
+7.	Tornare alla finestra **Flusso di dati** nel browser.
+8.	Nella barra multifunzione selezionare **Recupera dati -> Query vuota**.
  
+     ![](../Images/lab-03/image105.jpg)
 
-4.	Si apre la finestra dell'Editor avanzato. Evidenziare tutto il testo nell'Editor avanzato.
-5.	Fare clic con il pulsante destro del mouse e selezionare Copia.
+9.	Si apre la finestra di dialogo Recupera dati, Connetti all'origine dati dell'Editor avanzato. **Evidenziare tutto il testo** nell'editor.
+10.	Premere **CANC** sulla tastiera per eliminare tutto il testo.
+11.	L'Editor avanzato dovrebbe essere vuoto. Ora premere **CTRL+V** per incollare il contenuto che copiato dall'Editor avanzato di Power BI Desktop.
+12.	Selezionare **Avanti**.
 
+     ![](../Images/lab-03/image108.jpg)
+   	
+14.	Ora abbiamo la dimensione Geo. Rinominiamo la query. Nel **pannello di destra**, in **Impostazioni query -> Proprietà -> Nome,** cambiare il nome in **Geo**
 
-6.	Selezionare la X nell'angolo in alto a destra della finestra o selezionare Fatto per chiudere la finestra dell'Editor avanzato.
-7.	Tornare alla finestra Flusso di dati nel browser.
-8.	Nella barra multifunzione selezionare Recupera dati -> Query vuota.
+**Nota**: attendere che termini il caricamento della query. L'operazione può richiedere alcuni minuti.
+
  
- 
+Esaminiamo i passaggi per capire come si è creata la query Geo. Nel pannello di destra, in Passaggi applicati, selezionare Source. Se si esamina la barra della formula o si fa clic su Impostazioni, si noterà che l'origine di questa query è un join tra Cities e States. Esaminando i passaggi, si noterà che il risultato del primo join è a sua volta unito a Countries. Pertanto, tutte e tre le query vengono usate per creare la dimensione Geo.
 
-9.	Si apre la finestra di dialogo Recupera dati, Connetti all'origine dati dell'Editor avanzato.
-Evidenziare tutto il testo nell'editor.
-10.	Premere CANC sulla tastiera per eliminare tutto il testo.
-11.	L'Editor avanzato dovrebbe essere vuoto. Ora premere CTRL+V per incollare il contenuto che copiato dall'Editor avanzato di Power BI Desktop.
-12.	Selezionare Avanti.
-
-
-13.	Ora abbiamo la dimensione Geo. Rinominiamo la query. Nel pannello di destra, in Impostazioni query -> Proprietà -> Nome, cambiare il nome in Geo
-
-Nota: attendere che termini il caricamento della query. L'operazione può richiedere alcuni minuti.
- 
-Esaminiamo i passaggi per capire come si è creata la query Geo. Nel pannello di destra, in Passaggi applicati, selezionare Source. Se si esamina la barra della formula o si fa clic su Impostazioni, si
-noterà che l'origine di questa query è un join tra Cities e States. Esaminando i passaggi, si noterà che il risultato del primo join è a sua volta unito a Countries. Pertanto, tutte e tre le query vengono usate per creare la dimensione Geo.
-
-
+   ![](../Images/lab-03/image111.png)
 
 ### Attività 8 - Configurazione della destinazione dei dati per la query Geo
 Ora che abbiamo una dimensione, inseriamo questi dati in Lakehouse. Questa è la nuova funzionalità disponibile in Flusso di dati Gen2.
-1.	Come indicato in precedenza, non effettuiamo lo staging di questi dati. Quindi, fare clic con il
-pulsante destro del mouse sulla query Cities e selezionare Abilita staging per rimuovere il segno di spunta.
+1.	Come indicato in precedenza, non effettuiamo lo staging di questi dati. Quindi, f**are clic con il
+pulsante destro del mouse** sulla query **Cities** e selezionare **Abilita staging** per rimuovere il segno di spunta.
 
-2.	Eseguire gli stessi passaggi per le query Countries e Geo per rimuovere il segno di spunta accanto a Abilita staging.
-3.	Selezionare la query Geo.
-4.	Nell'angolo inferiore destro selezionare "+" accanto a Destinazione dati.
-5.	Selezionare Lakehouse dalla finestra di dialogo.
- 
- 
-6.	Si apre la finestra di dialogo Connetti alla destinazione dati. Dobbiamo creare una nuova connessione a Lakehouse. Con l'opzione Crea nuova connessione selezionata nel menu a discesa Connessione e Tipo di autenticazione impostato su Account aziendale, selezionare Avanti.
+    ![](../Images/lab-03/image114.jpg)
+  	
+3.	Eseguire gli stessi passaggi per le query **Countries e Geo** per **rimuovere il segno di spunta** **accanto a Abilita staging**.
+4.	Selezionare la query **Geo**.
+5.	Nell'angolo inferiore destro selezionare "+" accanto a **Destinazione dati**.
+6.	Selezionare **Lakehouse** dalla finestra di dialogo.
 
-7.	Una volta creata la connessione, si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione Nuova tabella sia selezionato, poiché si sta creando una nuova tabella.
-8.	Vogliamo creare la tabella nel Lakehouse creato in precedenza. Nel pannello di sinistra andare a
-Lakehouse -> FAIAD_<nomeutente>.
-9.	Selezionare lh_FAIAD
-10.	Lasciare il nome della tabella Geo
-11.	Selezionare Avanti.
+     ![](../Images/lab-03/image117.jpg)
  
+7.	Si apre la finestra di dialogo Connetti alla destinazione dati. Dobbiamo **creare una nuova connessione** a Lakehouse. Con l'opzione Crea nuova connessione selezionata nel menu a discesa **Connessione e Tipo di autenticazione** impostato su **Account aziendale**, selezionare **Avanti**.
+
+     ![](../Images/lab-03/image120.png)
+  	
+9.	Una volta creata la connessione, si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione Nuova tabella sia selezionato, poiché si sta creando una **nuova tabella**.
+10.	Vogliamo creare la tabella nel Lakehouse creato in precedenza. Nel pannello di sinistra andare a
+**Lakehouse -> FAIAD_<nomeutente>**.
+11.	Selezionare **lh_FAIAD**
+12.	Lasciare il nome della tabella **Geo**
+13.	Selezionare **Avanti**.
+
+     ![](../Images/lab-03/image123.png)
  
-12.	Si apre la finestra di dialogo Scegli le impostazioni di destinazione. Usare il dispositivo di scorrimento per disabilitare le impostazioni automatiche. Diamo un'occhiata alle opzioni. Sono presenti opzioni per aggiungere dati alla tabella esistente o per sostituirli.
-Si notino inoltre le opzioni dello schema alla pubblicazione. Si ha la possibilità di mantenere lo schema fisso oppure, se cambierà nel tempo, esiste un'opzione di schema dinamico.
+14.	Si apre la finestra di dialogo Scegli le impostazioni di destinazione. Usare il **dispositivo di scorrimento** per **disabilitare le impostazioni automatiche**. Diamo un'occhiata alle opzioni. Sono presenti opzioni per **aggiungere dati** alla tabella esistente o per sostituirli.
+Si notino inoltre le **opzioni dello schema alla pubblicazione**. Si ha la possibilità di mantenere lo schema fisso oppure, se cambierà nel tempo, esiste un'opzione di schema dinamico.
 Notare che compare l'avviso: "Alcuni nomi di colonna contengono caratteri non supportati. È necessario correggerli automaticamente?" Lakehouse non supporta i nomi di colonne che contengono spazi. Se si sceglie di selezionare Correggi, si aggiungeranno caratteri di sottolineatura per sostituire gli spazi nei nomi di colonna.
-Nota: la casella di controllo a destra della colonna Source permette di selezionare solo le colonne da caricare nel Lakehouse.
+**Nota**: la casella di controllo a destra della colonna Source permette di selezionare solo le colonne da caricare nel Lakehouse.
 
-13.	Nel nostro scenario useremo le impostazioni automatiche. Abilitare il dispositivo di scorrimento
-Usa impostazioni automatiche. I nomi delle colonne di destinazione vengono corretti con caratteri di sottolineatura.
+     ![](../Images/lab-03/image126.jpg)
+   	
+16.	Nel nostro scenario useremo le impostazioni automatiche. Abilitare il dispositivo di scorrimento
+**Usa impostazioni** automatiche. I nomi delle colonne di destinazione vengono corretti con caratteri di sottolineatura.
  
-14.	È possibile usare il mapping delle colonne per mappare le colonne del flusso di dati alle colonne esistenti. Nel nostro caso, si tratta di una nuova tabella. Pertanto possiamo usare le impostazioni predefinite. Selezionare Salva impostazioni.
+17.	È possibile usare il mapping delle colonne per mappare le colonne del flusso di dati alle colonne esistenti. Nel nostro caso, si tratta di una nuova tabella. Pertanto possiamo usare le impostazioni predefinite. Selezionare Salva impostazioni.
 
+     ![](../Images/lab-03/image129.jpg)
 
 ### Attività 9 - Pubblicazione del flusso di dati
 1.	Si apre nuovamente la finestra di Power Query. Nell'angolo in basso a destra notare che la
 Destinazione dati è impostata su Lakehouse.
-2.	Pubblichiamo queste query in modo da poter esaminare il Lakehouse. Torneremo per aggiungere ulteriori query. Nell'angolo inferiore destro selezionare Pubblica.
+2.	Pubblichiamo queste query in modo da poter esaminare il Lakehouse. Torneremo per aggiungere ulteriori query. Nell'angolo inferiore destro selezionare **Pubblica**.
 
+     ![](../Images/lab-03/image132.jpg)
 
 3.	Si tornerà all'area di lavoro FAIAD_<nome utente>. La pubblicazione del flusso di dati potrebbe richiedere alcuni istanti. Al termine, selezionare lh_FAIAD Lakehouse dal riquadro centrale o dal pannello di sinistra.
  
- 
+     ![](../Images/lab-03/image135.jpg)
 
 4.	Si aprirà la schermata Explorer di Lakehouse. Nel pannello di sinistra espandere lh_FAIAD -> Tables.
 5.	Notare che ora abbiamo una tabella Geo in Lakehouse. Espandere Geo e osservare tutte le colonne visualizzate.
 6.	Selezionare la tabella Geo, l'anteprima si aprirà nel pannello di destra.
 
+  	 ![](../Images/lab-03/image138.jpg)
+  	
 È anche presente un endpoint SQL che è possibile usare per eseguire query su questa tabella.
 Esamineremo questa opzione in un lab successivo. Ora che sappiamo che i dati geografici sono stati inseriti in Lakehouse, importiamo il resto dei dati da ADLS Gen2.
  
@@ -289,23 +306,28 @@ Esamineremo questa opzione in un lab successivo. Ora che sappiamo che i dati geo
 1.	Nella barra dei menu a sinistra selezionare FAIAD_<nomeutente> per tornare all'area di lavoro.
 2.	Stiamo lavorando con Flusso di dati 1. Rinominiamolo prima di continuare. Fare clic sui puntini di sospensione (…) accanto a Flusso di dati 1. Selezionare Proprietà.
 
-3.	Si apre la finestra di dialogo Proprietà flusso di dati. Modificare il nome in df_Sales_ADLS
+    ![](../Images/lab-03/image141.png)
+  	
+4.	Si apre la finestra di dialogo Proprietà flusso di dati. Modificare il nome in df_Sales_ADLS
 
 Nota: aggiungiamo "df" all'inizio del nome del flusso di dati per semplificare ricerca e ordinamento.
 
 4.	Nella casella di testo Descrizione aggiungere Flusso di dati per inserire i dati di vendita da ADLS in Lakehouse
 5.	Selezionare Salva.
 
+    ![](../Images/lab-03/image144.jpg)
  
 ### Attività 11 - Creazione delle query rimanenti nel flusso di dati
-1.	Si tornerà all'area di lavoro FAIAD_<nome utente>. Selezionare il flusso di dati df_Sales_ADLS
+1.	Si tornerà all'area di lavoro **FAIAD_<nome utente>**. Selezionare il flusso di dati **df_Sales_ADLS**
 per tornare al flusso di dati.
 
+    ![](../Images/lab-03/image147.png)
+  	
 Per semplificare la procedura, verifichiamo se possiamo copiare le query da Power BI Desktop.
-2.	Se non lo si è ancora aperto, aprire il file FAIAD.pbix nella cartella C:\FAIAD\Reports
+3.	Se non lo si è ancora aperto, aprire il file **FAIAD.pbix** nella cartella **C:\FAIAD\Reports**
 dell'ambiente lab.
-3.	Nella barra multifunzione selezionare Home -> Trasforma. Si apre la finestra Power Query.
-4.	Dal pannello Query a sinistra, selezionare le seguenti query tenendo premuto il tasto CTRL da
+4.	Nella barra multifunzione selezionare Home -> Trasforma. Si apre la finestra Power Query.
+5.	Dal pannello Query a sinistra, selezionare le seguenti query tenendo premuto il tasto CTRL da
 ADLSData.
 a.	Product
 b.	Product Groups
@@ -318,14 +340,17 @@ h.	BuyingGroup
 i.	Reseller
 j.	Date
  
-5.	Fare clic con il pulsante destro del mouse e selezionare Copia.
+6.	Fare clic con il pulsante destro del mouse e selezionare Copia.
 
-6.	Tornare alla finestra del browser del flusso di dati df_Sales_ADLS.
-7.	Nel pannello di sinistra illustrato di seguito selezionare il pannello Query e premere CTRL+V (l'opzione Incolla del menu del pulsante destro non è attualmente supportata). Se si usa un dispositivo MAC, usare Cmd+V per incollare.
-Nota: se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per abilitare Appunti nativi VM. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
+   ![](../Images/lab-03/image150.png)
+   
+7.	Tornare alla finestra del browser del flusso di dati df_Sales_ADLS.
+8.	Nel pannello di sinistra illustrato di seguito selezionare il pannello Query e premere CTRL+V (l'opzione Incolla del menu del pulsante destro non è attualmente supportata). Se si usa un dispositivo MAC, usare Cmd+V per incollare.
+**Nota**: se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per abilitare Appunti nativi VM. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
 
- 
-8.	Come indicato in precedenza, non effettuiamo lo staging di questi dati. Quindi, fare clic con il pulsante destro del mouse sulle query seguenti e selezionare Abilita staging per rimuovere il segno di spunta.
+   ![](../Images/lab-03/image153.png)
+   
+9.	Come indicato in precedenza, non effettuiamo lo staging di questi dati. Quindi, fare clic con il pulsante destro del mouse sulle query seguenti e selezionare Abilita staging per rimuovere il segno di spunta.
 a.	Product
 b.	Product Details
 c.	Reseller
@@ -334,6 +359,8 @@ e.	Date
 
 Nota: se il caricamento è disabilitato in Power BI Desktop, non è necessario disabilitare lo staging nel flusso di dati. Pertanto, non dobbiamo disabilitare lo staging per Product Item Group, Product Groups e così via.
 
+   ![](../Images/lab-03/image156.jpg)
+   
 Assicurarsi che vengano elaborate tutte le query. Al termine, inserire i dati in Lakehouse.
 
 
@@ -341,31 +368,35 @@ Assicurarsi che vengano elaborate tutte le query. Al termine, inserire i dati in
 1.	Selezionare la query Product.
 2.	Nella barra multifunzione selezionare Home -> Aggiungi destinazione dati -> Lakehouse.
 
- 
-3.	Si apre la finestra di dialogo Connetti alla destinazione dati. Nel menu a discesa Connessione
+    ![](../Images/lab-03/image159.png)
+  	
+4.	Si apre la finestra di dialogo Connetti alla destinazione dati. Nel menu a discesa Connessione
 selezionare Lakehouse (nessuno).
-4.	Selezionare Avanti.
+5.	Selezionare Avanti.
 
+    ![](../Images/lab-03/image162.png)
 
-5.	Si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione Nuova tabella sia selezionato, poiché si sta creando una nuova tabella.
-6.	Vogliamo creare la tabella nel Lakehouse creato in precedenza. Nel pannello di sinistra andare a
+6.	Si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione Nuova tabella sia selezionato, poiché si sta creando una nuova tabella.
+7.	Vogliamo creare la tabella nel Lakehouse creato in precedenza. Nel pannello di sinistra andare a
 Lakehouse -> FAIAD_<nomeutente>.
-7.	Selezionare lh_FAIAD
-8.	Lasciare il nome della tabella Product
-9.	Selezionare Avanti.
+8.	Selezionare lh_FAIAD
+9.	Lasciare il nome della tabella Product
+10.	Selezionare Avanti.
 
+    ![](../Images/lab-03/image165.jpg)
 
-10.	Questa volta useremo le impostazioni automatiche perché i dati verranno aggiornati
+11.	Questa volta useremo le impostazioni automatiche perché i dati verranno aggiornati
 completamente. Inoltre, le colonne verranno rinominate secondo necessità. Selezionare Salva impostazioni.
+
+    ![](../Images/lab-03/image168.jpg)
  
- 
-11.	Si apre nuovamente la finestra di Power Query. Nell'angolo in basso a destra notare che la Destinazione dati è impostata su Lakehouse.
-12.	Analogamente, impostare la Destinazione dati per le seguenti query:
-a.	Product Details
-b.	Reseller
-c.	Sales
-d.	Date
-13.	Abbiamo un flusso di dati che inserisce dati da ADLS in Lakehouse. Procediamo con la
+12.	Si apre nuovamente la finestra di Power Query. Nell'angolo in basso a destra notare che la Destinazione dati è impostata su Lakehouse.
+13.	Analogamente, impostare la Destinazione dati per le seguenti query:
+   a.	Product Details
+   b.	Reseller
+   c.	Sales
+   d.	Date
+14.	Abbiamo un flusso di dati che inserisce dati da ADLS in Lakehouse. Procediamo con la
 pubblicazione di questo flusso di dati. Selezionare Pubblica nell'angolo inferiore destro.
 
 Si tornerà all'area di lavoro FAIAD_<nome utente>. L'aggiornamento del flusso di dati potrebbe richiedere alcuni minuti.L'aggiornamento del flusso di dati potrebbe richiedere alcuni minuti.
