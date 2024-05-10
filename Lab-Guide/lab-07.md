@@ -352,7 +352,7 @@ Beachten Sie, wie einfach es ist, das semantische Modell beim Erstellen der Beri
 
 13. Ändern Sie die Größe des Visuals, und verschieben Sie es in das **obere rechte Feld, wie im Screenshot dargestellt**.
 
-14.	Scrollen Sie im Visual nach rechts und **beachten Sie, dass Daten bis April 2023 verfügbar sind**.
+14. Scrollen Sie im Visual nach rechts und **beachten Sie, dass Daten bis April 2023 verfügbar sind**.
 
     ![](../Images/lab-07/image097.png)
 
@@ -369,7 +369,7 @@ In einem realen Szenario werden die Daten an der Quelle aktualisiert. Da wir uns
 
 1.	Wählen Sie in der linken Menüleiste **FAIAD_<Benutzername>** aus, um zur Startseite des Arbeitsbereichs zu wechseln.
 
-2.	Wählen Sie **df_Sales_ADFS** aus, damit wir den Dataflow bearbeiten können, indem wir die neue Parquet-Datei hinzufügen.
+2. Wählen Sie **df_Sales_ADFS** aus, damit wir den Dataflow bearbeiten können, indem wir die neue Parquet-Datei hinzufügen.
 
     ![](../Images/lab-07/image100.jpg)
 
@@ -407,9 +407,11 @@ In einem realen Szenario werden die Daten an der Quelle aktualisiert. Da wir uns
 
 9. Fügen wir nun die Rechnungsdaten vom Mai an die Invoice-Tabelle an. Wählen Sie im Abschnitt
 „Abfragen“ die Abfrage **„Invoice“** aus.
+
 10. Wählen Sie im Menüband **Start -> Anfragen anfügen** aus.
-11. Das Dialogfeld „Abfrage anfügen“ wird angezeigt. Wählen Sie aus der Dropdown-Liste
-**Anzufügende Tabelle** den Eintrag **MayInvoice** aus.
+
+11. Das Dialogfeld „Abfrage anfügen“ wird angezeigt. Wählen Sie aus der Dropdown-Liste **Anzufügende Tabelle** den Eintrag **MayInvoice** aus.
+
 12. Wählen Sie **OK** aus.
 
     ![](../Images/lab-07/image109.jpg)
