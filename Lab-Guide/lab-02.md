@@ -56,7 +56,7 @@ DirectLake 機能の使い方がわかります。
 
 8.	**Start trial** を選択します。
 
-   ![](../Images/lab-02/image012.jpg)
+    ![](../Images/lab-02/image012.jpg)
  
 9.	[Microsoft Fabric の無料試用版へのアップグレード] ダイアログが開きます。**無料体験する**を選択します。
 
