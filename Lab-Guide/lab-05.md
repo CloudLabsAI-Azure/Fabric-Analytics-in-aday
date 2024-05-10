@@ -145,6 +145,8 @@ Vamos começar a criar o pipeline. Precisamos de uma atividade para atualizar o 
 
 Em nosso cenário, os Dados de Employee não são atualizados na agenda. Às vezes, há um atraso. Vamos ver se podemos acomodar isso.
 
+![](../Images/lab-05/image15.png)
+
 5. No **painel inferior,** selecione **Geral.** Vamos atribuir um nome e uma descrição à atividade.
 6. No campo **Nome,** insira **dfactivity_People_SharePoint.**
 7. No campo **Descrição,** insira **Dataflow activity to refresh df_People_Sharepoint dataflow.**
@@ -153,7 +155,6 @@ Em nosso cenário, os Dados de Employee não são atualizados na agenda. Às vez
  
 **Observação:** Se os dados não estiverem disponíveis na agenda, vamos definir a atividade para ser executada novamente a cada 10 minutos, três vezes. Se falhar também na terceira tentativa, será reportada uma falha.
 
-![](../Images/lab-05/image15.png)
 
 10.	Defina **Tentar novamente** como **3**.
 11.	Expanda a seção **Avançado**.
