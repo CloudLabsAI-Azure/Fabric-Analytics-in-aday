@@ -420,7 +420,7 @@ In einem realen Szenario werden die Daten an der Quelle aktualisiert. Da wir uns
 
     ![](../Images/lab-07/image112.jpg)
 
-**Hinweis:** Nach der Veröffentlichung wird der Dataflow aktualisiert. Dies kann einige Minuten dauern.
+    **Hinweis:** Nach der Veröffentlichung wird der Dataflow aktualisiert. Dies kann einige Minuten dauern.
 
 14.	Wählen Sie in der linken Menüleiste **rpt_Sales_Report** aus, um zum Bericht zurückzukehren.
 
