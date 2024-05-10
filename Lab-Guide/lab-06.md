@@ -1,20 +1,5 @@
  
- 
-Sommario
-Introduzione	3
-Lakehouse	3
-Attività 1 - Query sui dati mediante SQL	3
-Attività 2 - Visualizzazione del risultato T-SQL	5
-Attività 3 - Creazione di una query visiva	7
-Attività 4 - Visualizzazione dei risultati della query	12
-Attività 5 - Creazione di relazioni	13
-Attività 6 - Creazione delle misure	16
-Attività 7 - Sezione facoltativa: creazione delle relazioni	18
-Attività 8 - Sezione facoltativa: creazione delle misure	22
-Riferimenti	23
-
- 
-Introduzione
+## Introduzione
 Abbiamo inserito dati provenienti da diverse origini dati in Lakehouse. In questo lab si lavorerà con il modello di dati. In genere, eseguiamo attività di modellazione quali la creazione di relazioni, l'aggiunta di misure, ecc. in Power BI Desktop. Qui impareremo a eseguire queste attività di modellazione nel servizio.
 In questo lab si imparerà a:
 •	Esplorare lakehouse
@@ -22,7 +7,7 @@ In questo lab si imparerà a:
 •	Esplorare la modellazione dei dati in lakehouse
 
 Lakehouse
-Attività 1 - Query sui dati mediante SQL
+## Attività 1 - Query sui dati mediante SQL
 1.	Torniamo all'area di lavoro di Fabric FAIAD_<nome utente> creata nel Lab 2, attività 9.
 2.	Saranno visibili tre tipi di lh_FAIAD, Lakehouse, modello semantico ed endpoint SQL. Abbiamo
 esplorato l'opzione Lakehouse in un lab precedente. Selezionare l'opzione lh_FAIAD - Endpoint di analisi SQL per esplorare l'opzione SQL. Si aprirà la vista SQL di Explorer.
@@ -47,7 +32,7 @@ inoltre presente un'opzione per visualizzare le query condivise con l'utente cor
 
  
 
-Attività 2 - Visualizzazione del risultato T-SQL
+## Attività 2 - Visualizzazione del risultato T-SQL
 1.	Possiamo anche visualizzare il risultato di questa query. Evidenziare la query nel riquadro della query, selezionare il riquadro dei risultati e selezionare Esplora questi dati.
 
 2.	Si apre la finestra di dialogo Esplora query SQL. Nel riquadro Dati espandere SQL query 1.
@@ -70,7 +55,7 @@ Si verrà indirizzati all'esperienza di report completa. Si dispone di opzioni p
 
 
 
-Attività 3 - Creazione di una query visiva
+## Attività 3 - Creazione di una query visiva
 Si aprirà nuovamente la vista Endpoint di analisi SQL. Se non si ha familiarità con SQL, è possibile eseguire una query simile usando la query visiva.
 1.	Nel menu in alto selezionare Nuova query visiva. Si apre un riquadro delle query visive.
 2.	Nel riquadro Esplora espandere Schemi -> dbo -> Tabelle.
@@ -118,7 +103,7 @@ Supplier.
 
 Tutti i passaggi vengono registrati nel blocco Sales. (Fare riferimento al primo screenshot nell'Attività 4.)
  
-Attività 4 - Visualizzazione dei risultati della query
+## Attività 4 - Visualizzazione dei risultati della query
 1.	Ora che la query è pronta, visualizziamone il risultato. Selezionare Visualizzare i risultati dal riquadro dei risultati.
 
 2.	Si apre la finestra di dialogo Visualizza risultati. Nel riquadro Dati a destra espandere Visual query1.
@@ -126,7 +111,7 @@ Attività 4 - Visualizzazione dei risultati della query
 4.	Notare che il risultato è simile a quello della query SQL precedente. Se lo si desidera, è possibile salvare questo report. Poiché abbiamo salvato in precedenza un report simile, ora selezioniamo Annulla.
 
  
-Attività 5 - Creazione di relazioni
+## Attività 5 - Creazione di relazioni
 Ora siamo pronti per creare il modello, le relazioni tra tabelle e le misure.
 1.	Nel pannello inferiore selezionare Modello. Il riquadro centrale è simile alla visualizzazione Modello presente in Power BI Desktop.
 2.	Ridimensionare e ridisporre le tabelle in base alle esigenze.
@@ -158,7 +143,7 @@ Checkpoint: il modello dovrebbe avere le tre relazioni tra le tabelle Sales e Re
 
 Per motivi di tempo, non creeremo tutte le relazioni. Se il tempo lo consente, è possibile completare la sezione facoltativa alla fine del laboratorio. La sezione facoltativa illustra i passaggi per creare le relazioni rimanenti.
  
-Attività 6 - Creazione delle misure
+## Attività 6 - Creazione delle misure
 Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
 1.	Selezionare la tabella Sales dalla vista del modello. Vogliamo aggiungere le misure alla tabella Sales.
 2.	Nel menu in alto selezionare Home -> Nuova misura. Notare che viene visualizzata la barra della formula.
@@ -183,7 +168,7 @@ Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
 Anche in questo caso, per motivi di tempo non creeremo tutte le misure. Se il tempo lo consente, è possibile completare la sezione facoltativa alla fine del laboratorio. La sezione facoltativa illustra i passaggi per creare le misure rimanenti.
 Abbiamo creato un modello di dati, il passaggio successivo è creare un report. Ce ne occuperemo nel prossimo lab.
  
-Attività 7 - Sezione facoltativa: creazione delle relazioni
+## Attività 7 - Sezione facoltativa: creazione delle relazioni
 Aggiungiamo le relazioni rimanenti.
 1.	Allo stesso modo, creare una relazione molti-a-uno tra le tabelle Sales e People. Selezionare
 SalespersonPersonID da Sales e PersonID da People.
@@ -239,7 +224,7 @@ Abbiamo creato tutte le relazioni.
 Checkpoint: il modello dovrebbe presentarsi come illustrato nello screenshot seguente.
 
  
-Attività 8 - Sezione facoltativa: creazione delle misure
+## Attività 8 - Sezione facoltativa: creazione delle misure
 Aggiungiamo le misure rimanenti.
 1.	Selezionare la tabella Sales e nel menu in alto selezionare Strumenti tabella -> Nuova misura.
 2.	Immettere Avg Order = DIVIDE([Sales], [Orders]) nella barra della formula.
@@ -252,7 +237,7 @@ a.	GM = SUM(Sales[Line_Profit]) formattato come numero decimale.
 b.	GM% = DIVIDE([GM], [Sales]) formattato come percentuale.
 c.	No of Customers = COUNTROWS(Customer) formattata come numero intero
  
-Riferimenti
+## Riferimenti
 Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità chiave disponibili in Microsoft Fabric. Nel menu di servizio, la sezione Guida (?) include collegamenti ad alcune risorse utili.
 
 Di seguito sono riportate ulteriori risorse utili che consentiranno di progredire nell'uso di Microsoft Fabric.
