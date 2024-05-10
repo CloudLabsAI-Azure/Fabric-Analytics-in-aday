@@ -140,8 +140,7 @@ Precisamos combinar os dados de City, State e Country desses três arquivos para
 
 ![](../Images/lab-03/image16.png)
 
-7. Observe que você verá todos os detalhes de City. No **painel direito,** em Configurações** de consulta
--> Propriedades -> Nome,** altere o nome para **Cities.**
+7. Observe que você verá todos os detalhes de City. No **painel direito,** em **Configurações de consulta -> Propriedades -> Nome,** altere o nome para **Cities.**
 
     **Observação:** No canto inferior direito da captura de tela, verifique se a consulta tem quatro etapas aplicadas e aguarde o término do carregamento da consulta. Isso pode levar alguns minutos.
 
