@@ -192,11 +192,11 @@ Um novo workspace é criado e você será direcionado para ele. Traremos dados d
 
 4. A caixa de diálogo New lakehouse é aberta. Digite **lh_FAIAD** na caixa de texto Nome.
 
-**Observação:** "lh" aqui se refere a Lakehouse. Estamos usando o prefixo "lh" para facilitar a identificação e a pesquisa.
+    **Observação:** "lh" aqui se refere a Lakehouse. Estamos usando o prefixo "lh" para facilitar a identificação e a pesquisa.
+5. Selecione **Create.**
 
 ![](../Images/lab-02/image22.png)
 
-5. Selecione **Create.**
  
 Em alguns instantes, um Lakehouse será criado e você será direcionado para a interface do Lakehouse. No **painel esquerdo**, observe que abaixo do seu workspace você terá o ícone Lakehouse. Você pode navegar facilmente até o Lakehouse clicando neste ícone a qualquer momento.
 
