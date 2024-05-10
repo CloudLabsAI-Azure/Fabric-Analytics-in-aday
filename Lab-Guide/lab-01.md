@@ -202,7 +202,7 @@ Microsoft Fabric の次のステップに役立つリソースをいくつか以
 
 - ブログ記事で [Microsoft Fabric のGA に関するお知らせの](#Microsoft-Fabric-のGA-に関するお知らせの) 全文を確認する
 - [ガイド付きツアーを](#ガイド付きツアーを) 通じ て Fabric を探索する
-- Microsof t Fabric の無料試用版にサインアップする
+- [Microsoft Fabric の無料試用版にサインアップする](#Microsoft-Fabric-の無料試用版にサインアップする)
 - Microsof t Fabric のWeb サイトにアクセスする
 - Fabric の学習モジュールで新しいスキルを学ぶ
 - Fabric の技術ドキュメントを参照する
