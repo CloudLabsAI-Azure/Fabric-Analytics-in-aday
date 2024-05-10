@@ -44,7 +44,8 @@ e Procedimentos Armazenados de SQL. Se você tiver experiência em SQL, fique à
         SELECT su.Supplier_Name, SUM(Quantity) as Units
         FROM dbo.Sales s
         JOIN dbo.Product p on p.StockItemID = s.StockItemID
-        JOIN dbo.Supplier su on su.SupplierID = p.SupplierID GROUP BY su.Supplier_Name
+        JOIN dbo.Supplier su on su.SupplierID = p.SupplierID 
+        GROUP BY su.Supplier_Name
 
 5. Clique em **Executar** para exibir os resultados.
 6. Há uma opção para salvar essa consulta como uma Visualização selecionando **Salvar como visualização.**
