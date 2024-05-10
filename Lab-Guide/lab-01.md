@@ -200,7 +200,7 @@ Fabric Analyst in a Day (FAIAD) では、Microsoft Fabric で使用できる主�
 
 Microsoft Fabric の次のステップに役立つリソースをいくつか以下に紹介します。
 
-- ブログ記事で [Microsof t Fabric のGA に関するお知らせ](#Microsoft-Fabric-のGA-に関するお知らせ) の全文を確認する
+- ブログ記事で [Microsof t Fabric のGA に関するお知らせの](#Microsoft-Fabric-のGA-に関するお知らせの) 全文を確認する
 - ガイド付きツアーを通じて Fabric を探索する
 - Microsof t Fabric の無料試用版にサインアップする
 - Microsof t Fabric のWeb サイトにアクセスする
