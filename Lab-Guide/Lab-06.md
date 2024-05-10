@@ -192,6 +192,8 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID <br> JOIN dbo.Supplier su on
 
 **체크포인트:** 현재 모델은 아래 스크린샷에 표시된 것처럼 Sales와 Reseller 테이블 간 및 Sales와 Date 그리고 Sales와 Product 테이블 간의 세 가지 관계가 있어야 합니다.
 
+![](../Images/Lab-06/image077.jpg)
+
 시간 관계상 모든 관계를 생성하지는 않습니다. 시간이 허락한다면 랩 마지막에 선택 섹션을 완료할 수 있습니다. 선택 섹션에서는 나머지 관계를 만드는 단계를 안내합니다.
  
 ## 작업 6: 측정값 만들기
@@ -203,7 +205,7 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID <br> JOIN dbo.Supplier su on
 5.	오른쪽 속성 패널에서 **서식** 섹션을 확장합니다.
 6.	**서식** 드롭다운 목록에서 **정수를** 선택합니다.
 
-![](../Images/Lab-06/image077.jpg)
+![](../Images/Lab-06/image080.jpg)
 
 7.	상단 메뉴에서 **Sales 테이**블 을 선택한 상태에서 **홈 -> 새 측정값**을 선택합니다. 수식 입력줄이 표시됩니다.
 8.	**수식 입력줄에 Units = SUM(Sales[Quantity])** 을 입력합니다.
@@ -211,7 +213,7 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID <br> JOIN dbo.Supplier su on
 10.	오른쪽의 속성 패널에서 **서식 적용**섹션을 확장합니다(속성 패널을 로드하는 데 몇 분 정도 걸릴 수 있습니다).
 11.	**서식** 드롭다운 목록에서 **정수를** 선택합니다.
  
- ![](../Images/Lab-06/image080.jpg)
+ ![](../Images/Lab-06/image083.jpg)
 
 12.	상단 메뉴에서 **Sales 테이블** 을 선택한 상태에서 **홈 -> 새 측정값**을 선택합니다. 수식 입력줄이 표시됩니다.
 13.	**수식 입력줄에 Orders = DISTINCTCOUNT(Sales[InvoiceID])** 를 입력합니다.
@@ -219,7 +221,7 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID <br> JOIN dbo.Supplier su on
 15.	오른쪽 속성 패널에서 **서식** 섹션을 확장합니다.
 16.	**서식** 드롭다운 목록에서 **정수를** 선택합니다.
 
-![](../Images/Lab-06/image083.jpg)
+![](../Images/Lab-06/image086.jpg)
 
 다시 시간 관계상 모든 측정값을 생성하지는 않습니다. 시간이 허락한다면 랩 마지막에 선택 섹션을 완료할 수 있습니다. 선택 섹션에서는 나머지 측정값을 만드는 단계**를** 안내합니다.
 데이터 모델을 만들♘으니, 다음 단계는 보고서**를** 만드는 것입니다. 그 작업은 다음 랩에서 하도록 하겠습니다.
@@ -238,7 +240,7 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID <br> JOIN dbo.Supplier su on
 6.	**교차 필터 방향이 모두**인지 확인합니다.
 7.	**확인**을 선택합니다.
  
- ![](../Images/Lab-06/image092.jpg)
+ ![](../Images/Lab-06/image092.png)
 
 8.	마찬가지로 **Product_Details과 Product** 간의 교차 필터 방향을 **모두로** 설정한 **다대일 관계를** 생성합니다. **Product_Details에서 StockItemID를** 그리고 **Product에서 StockItemID를** 선택합니다.
 9.	이제 Reseller과 Geo 간의 관계**를** 만들어 보겠습니다. **Reseller** 테이블에서 **PostalCityID**를 선택하여 **Geo** 테이블의 **CityID**로 드래그합니다.
@@ -263,7 +265,7 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID <br> JOIN dbo.Supplier su on
 
 **체크포인트:** 현재 모델이 아래 스크린샷과 유사해야 합니다.
 
-![](../Images/Lab-06/image0101.png)
+![](../Images/Lab-06/image101.jpg)
 
 21.	이제 PO와 Date 간의 관계를 만들어 보겠습니다. **PO** 테이블에서 **Order_Date**를 선택하여
 **Date** 테이블의 **Date**로 드래그합니다.
@@ -274,7 +276,7 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID <br> JOIN dbo.Supplier su on
 25.	**교차 필터 방향이 단일**인지 확인합니다.
 26.	**확인**을 선택합니다.
 
-![](../Images/Lab-06/image104.jpg)
+![](../Images/Lab-06/image104.png)
 
 27.	마찬가지로 **PO와 Product** 테이블 사이에 **다대일** 관계를 만듭니다. **PO**에서 **StockItemID**를 그리고 **Product**에서 **StockItemID**를 선택합니다.
 28.	마찬가지로 **PO**와 **People** 테이블 사이에 **다대일** 관계를 만듭니다. **PO**에서 **ContactPersonID**를 그리고 **People**에서 **PersonID**를 선택합니다.
@@ -305,26 +307,28 @@ Fabric Analyst in a Day(FAIAD)는 Microsoft Fabric에서 사용할 수 있는 �
 ![](../Images/Lab-06/image113.png)
 
 아래는 Microsoft Fabric의 다음 단계에 도움이 되는 몇 가지 추가 자료입니다.
-•	Microsof t Fabric GA 발표 전문을 블로그 포스트로 읽기
-•	가이드 투어로 Fabric 탐색
-•	Microsof t Fabric 무료 평가판 신청
-•	Microsof t Fabric 웹사이트 방문
-•	Fabric 학습 모듈을 탐색해서 새로운 기술 익히기
-•	Fabric 기술 문서 검토
-•	Fabric 시작하기 무료 e북 읽기
-•	Fabric 커뮤니티에 가입하여 질문을 게시하고 피드백을 공유하며 다른 사람들로부터 배우기
+
+- [Microsoft Fabric GA 발표](https://www.microsoft.com/en-us/microsoft-fabric/blog/2023/11/15/prepare-your-data-for-ai-innovation-with-microsoft-fabric-now-generally-available/) 발표 전문을 블로그 포스트로 읽기  
+-	 [가이드 투어](https://guidedtour.microsoft.com/en-us/guidedtour/microsoft-fabric/microsoft-fabric/1/1)로 Fabric 탐색 
+-	 [Microsof t Fabric 무료 평가판](https://www.microsoft.com/en-us/microsoft-fabric/getting-started)신청   
+-	[Microsof t Fabric 웹사이트](https://www.microsoft.com/en-in/microsoft-fabric) 방문  
+-	[Fabric 학습 모듈](https://learn.microsoft.com/en-us/training/browse/?products=fabric&resource_type=module)을 탐색해서 새로운 기술 익히기 
+-	[Fabric 기술 문서 ](https://learn.microsoft.com/en-us/fabric/)검토
+-	[Fabric 시작하기 무료 e북](https://info.microsoft.com/ww-landing-unlocking-transformative-data-value-with-microsoft-fabric.html)읽기
+-	[Fabric 커뮤니티](https://community.fabric.microsoft.com/)에 가입하여 질문을 게시하고 피드백을 공유하며 다른 사람들로부터 배우기 
  
 더 많은 심층 Fabric 환경 발표 블로그 포스트 읽기:
-•	Fabric 블로그의 Data Factory 환경
-•	Fabric 블로그의 Synapse Data Engineering 환경
-•	Fabric 블로그의 Synapse Data Science 환경
-•	Fabric 블로그의 Synapse Data Warehousing 환경
-•	Fabric 블로그의 Synapse Real-Time Analytics 환경
-•	Power BI 발표 블로그
-•	Fabric 블로그의 Data Activator 환경
-•	Fabric 블로그의 관리 및 거버넌스
-•	Fabric 블로그의 OneLake
-•	Dataverse 및 Microsof t Fabric 통합 블로그
+
+-	[Fabric 블로그의 Data Factory 환경](https://blog.fabric.microsoft.com/en-us/blog/introducing-data-factory-in-microsoft-fabric/)
+-	[Fabric 블로그의 Synapse Data Engineering 환경](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-engineering-in-microsoft-fabric/)
+-	[Fabric 블로그의 Synapse Data Science 환경](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-science-in-microsoft-fabric/)
+-	[Fabric 블로그의 Synapse Data Warehousing 환경](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-warehouse-in-microsoft-fabric/)
+-	[Fabric 블로그의 Synapse Real-Time Analytics 환경](https://blog.fabric.microsoft.com/en-us/blog/sense-analyze-and-generate-insights-with-synapse-real-time-analytics-in-microsoft-fabric/)
+-	[Power BI 발표 블로그](https://powerbi.microsoft.com/en-us/blog/empower-power-bi-users-with-microsoft-fabric-and-copilot/)
+-	[Fabric 블로그의 Data Activator 환경](https://blog.fabric.microsoft.com/en-us/blog/driving-actions-from-your-data-with-data-activator/)
+-	[Fabric 블로그의 관리 및 거버넌스](https://blog.fabric.microsoft.com/en-us/blog/administration-security-and-governance-in-microsoft-fabric/)
+-	[Fabric 블로그의 OneLake](https://blog.fabric.microsoft.com/en-us/blog/microsoft-onelake-in-fabric-the-onedrive-for-data/)
+-	[Dataverse 및 Microsof t Fabric 통합 블로그](https://cloudblogs.microsoft.com/dynamics365/it/2023/05/24/new-dataverse-enhancements-and-ai-powered-productivity-with-microsoft-365-copilot/)
 
 
 © 2023 Microsoft Corporation. All rights reserved.
