@@ -190,99 +190,110 @@ está selecionado, pois estamos criando uma nova tabela.
     ![](../Images/lab-04/image22.png)
  
 ### Tarefa 8: Publicar e renomear o Fluxo de Dados do Dataverse
-1.	Você será direcionado de volta à **janela Power Query.** No **canto inferior direito, Destino de dados** está definido como **Lakehouse.**
-2.	No canto inferior direito, selecione **Publicar.**
+1. Você será direcionado de volta à **janela Power Query.** No **canto inferior direito, Destino de dados** está definido como **Lakehouse.**
+2. No canto inferior direito, selecione **Publicar.**
 
     ![](../Images/lab-04/image23.png)
 
     **Observação:** você será direcionado de volta para o workspace FAIAD_<nome de usuário>. Pode levar alguns instantes para que Fluxo de Dados seja publicado.
-3.	Estamos trabalhando com o Fluxo de Dados 2. Vamos renomeá-lo antes de continuar. Clique nas **reticências (…)** ao lado de Fluxo de Dados 2. Selecione **Propriedades.**
+3. Estamos trabalhando com o Fluxo de Dados 2. Vamos renomeá-lo antes de continuar. Clique nas **reticências (…)** ao lado de Fluxo de Dados 2. Selecione **Propriedades.**
 
     ![](../Images/lab-04/image24.png)
  
-4.	A caixa de diálogo Propriedades do fluxo de dados é aberta. Altere o **Nome** para **df_Customer_Dataverse.**
+4. A caixa de diálogo Propriedades do fluxo de dados é aberta. Altere o **Nome** para **df_Customer_Dataverse.**
 5.	Na caixa de texto **Descrição,** adicione **Dataflow to ingest Supplier data from Snowflake to Lakehouse.**
-6.	Selecione **Salvar.**
+6. Selecione **Salvar.**
 
     ![](../Images/lab-04/image25.png)
 
 Você será direcionado de volta para o **workspace FAIAD_<nome de usuário>.** Agora vamos criar um fluxo de dados para mostrar dados do SharePoint.
  
-Tarefa 9: Copiar consultas do SharePoint para o Fluxo de Dados
-1.	No menu superior, selecione Novo -> Fluxo de dados Gen2.
+### Tarefa 9: Copiar consultas do SharePoint para o Fluxo de Dados
+1. No menu superior, selecione **Novo -> Fluxo de dados Gen2.**
 
+    ![](../Images/lab-04/image26.png)
 
-Você será direcionado à página do Fluxo de Dados. Agora que estamos familiarizados com o Fluxo de Dados, vamos continuar e copiar as consultas do Power BI Desktop no Fluxo de Dados.
+Você será direcionado à **página do Fluxo de Dados.** Agora que estamos familiarizados com o Fluxo de Dados, vamos continuar e copiar as consultas do Power BI Desktop no Fluxo de Dados.
 
-2.	Se você ainda não tiver aberto, abra o arquivo FAIAD.pbix que está na pasta C:\FAIAD\Reports
+2. Se você ainda não tiver aberto, abra o arquivo **FAIAD.pbix** que está na pasta **C:\FAIAD\Reports**
 do seu ambiente de laboratório.
-3.	Na faixa de opções, selecione Página Inicial -> Transformar dados. A janela do Power Query é aberta. Como você observou no laboratório anterior, as consultas no painel esquerdo são organizadas por fonte de dados.
-4.	A janela do Power Query é aberta. No painel esquerdo, na pasta SharepointData, selecione
-a consulta People.
-5.	Clique com o botão direito do mouse e selecione Copiar.
- 
- 
+3. Na faixa de opções, selecione **Página Inicial -> Transformar dados.** A janela do Power Query é aberta. Como você observou no laboratório anterior, as consultas no painel esquerdo são organizadas por fonte de dados.
+4. A janela do Power Query é aberta. No painel esquerdo, na pasta SharepointData, **selecione**
+a consulta **People.**
+5. **Clique com o botão direito do mouse** e selecione **Copiar.**
 
-6.	Volte para a tela Fluxo de Dados no navegador.
-7.	No painel Fluxo de Dados, pressione Ctrl+V (no momento, não é possível clicar com o botão direito do mouse em Colar).
-Observação: se você estiver trabalhando no ambiente de laboratório, selecione as reticências no canto superior direito da tela. Use o controle deslizante para habilitar VM Native Clipboard.
+    ![](../Images/lab-04/image27.png)
+
+6.	Volte para a tela **Fluxo de Dados** no navegador.
+7.	No **painel Fluxo de Dados,** pressione **Ctrl+V** (no momento, não é possível clicar com o botão direito do mouse em Colar).
+
+**Observação:** se você estiver trabalhando no ambiente de laboratório, selecione as reticências no canto superior direito da tela. Use o controle deslizante para **habilitar VM Native Clipboard.**
 Selecione OK na caixa de diálogo. Depois que terminar de colar as consultas, você poderá desabilitar essa opção.
 Observe se a consulta foi colada e se está disponível no painel esquerdo. Como não temos uma conexão criada para o SharePoint, você verá uma mensagem de aviso solicitando que configure a conexão.
  
-Tarefa 10: Criar conexão do SharePoint
-1.	Selecione Configurar conexão.
+### Tarefa 10: Criar conexão do SharePoint
+1.	Selecione **Configurar conexão.**
 
-2.	A caixa de diálogo Conectar-se à fonte de dados é aberta. Na lista suspensa Conexão, verifique se
-Criar nova conexão está selecionada.
-3.	O Tipo de autenticação deve ser Conta organizacional.
-4.	Selecione Conectar.
+    ![](../Images/lab-04/image28.png)
 
+2.	A caixa de diálogo Conectar-se à fonte de dados é aberta. Na lista suspensa **Conexão,** verifique se **Criar nova conexão** está selecionada.
+3.	O **Tipo de autenticação** deve ser **Conta organizacional.**
+4.	Selecione **Conectar.**
+
+    ![](../Images/lab-04/image29.png)
  
-Tarefa 11: Configurar destino de dados para a consulta People
+### Tarefa 11: Configurar destino de dados para a consulta People
 A conexão é estabelecida e você pode exibir os dados no painel de visualização. Fique à vontade para navegar pelas Etapas aplicadas das consultas. Agora precisamos ingerir os dados de People no Lakehouse.
-1.	Conforme mencionado anteriormente, não estamos preparando nenhum desses dados. Portanto, clique com o botão direito do mouse na consulta People no painel Consultas e selecione Habilitar o preparo para remover a marca de seleção.
+1.	Conforme mencionado anteriormente, não estamos preparando nenhum desses dados. Portanto, **clique com o botão direito do mouse** na consulta **People** no painel Consultas e selecione **Habilitar o preparo** para remover a marca de seleção.
 
-2.	Selecione a consulta People.
-3.	Na faixa de opções, selecione Página Inicial -> Adicionar destino de dados -> Lakehouse.
+    ![](../Images/lab-04/image30.png)
 
+2.	Selecione a consulta **People.**
+3.	Na faixa de opções, selecione **Página Inicial -> Adicionar destino de dados -> Lakehouse.**
+
+    ![](../Images/lab-04/image31.png)
  
-4.	A caixa de diálogo Conectar ao destino de dados é aberta. Na lista suspensa Conexão, selecione
-Lakehouse (nenhum).
-5.	Selecione Próximo.
+4.	A caixa de diálogo Conectar ao destino de dados é aberta. Na lista suspensa **Conexão,** selecione **Lakehouse (nenhum).**
+5.	Selecione **Próximo.**
 
-6.	A caixa de diálogo Escolher alvo de destino é aberta. Verifique se o botão de opção Nova tabela
-está selecionado, pois estamos criando uma nova tabela.
-7.	Queremos criar a tabela no Lakehouse que criamos anteriormente. No painel esquerdo, navegue para Lakehouse -> FAIAD_<nome de usuário>.
-8.	Selecione lh_FAIAD.
-9.	Deixe o nome da tabela como People.
-10.	Selecione Próximo.
+    ![](../Images/lab-04/image32.png)
 
+6.	A caixa de diálogo Escolher alvo de destino é aberta. Verifique se o botão de opção **Nova tabela **está selecionado, pois estamos criando uma nova tabela.
+7.	Queremos criar a tabela no Lakehouse que criamos anteriormente. No painel esquerdo, navegue para **Lakehouse -> FAIAD_<nome de usuário>.**
+8.	Selecione **lh_FAIAD.**
+9.	Deixe o nome da tabela como **People.**
+10.	Selecione **Próximo.**
+
+    ![](../Images/lab-04/image33.png)
  
-11.	A caixa de diálogo Escolher configurações de destino é aberta. Desta vez, usaremos as configurações automáticas, pois assim será feita uma atualização completa dos dados. Além disso, as colunas serão renomeadas conforme necessário. Selecione Salvar configurações.
+11.	A caixa de diálogo Escolher configurações de destino é aberta. Desta vez, usaremos as configurações automáticas, pois assim será feita uma atualização completa dos dados. Além disso, as colunas serão renomeadas conforme necessário. Selecione **Salvar configurações.**
 
+    ![](../Images/lab-04/image34.png)
 
-Tarefa 12: Publicar e renomear o Fluxo de Dados do SharePoint
-1.	Você será direcionado de volta à janela Power Query. No canto inferior direito, Destino de dados está definido como Lakehouse.
-2.	No canto inferior direito, selecione Publicar.
+### Tarefa 12: Publicar e renomear o Fluxo de Dados do SharePoint
+1.	Você será direcionado de volta à **janela Power Query.** No **canto inferior direito,** Destino de dados está definido como **Lakehouse.**
+2.	No canto inferior direito, selecione **Publicar.**
 
-Observação: você será direcionado de volta para o workspace FAIAD_<nome de usuário>. Pode levar alguns instantes para que Fluxo de Dados ser publicado.
+    ![](../Images/lab-04/image35.png)
+
+**Observação:** você será direcionado de volta para o **workspace FAIAD_<nome de usuário>.** Pode levar alguns instantes para que Fluxo de Dados ser publicado.
  
-3.	Estamos trabalhando com o Fluxo de Dados 2. Vamos renomeá-lo antes de continuar. Clique nas
-reticências (…) ao lado de Fluxo de Dados 2. Selecione Propriedades.
+3.	Estamos trabalhando com o Fluxo de Dados 2. Vamos renomeá-lo antes de continuar. Clique nas **reticências (…)** ao lado de Fluxo de Dados 2. Selecione **Propriedades.**
 
-4.	A caixa de diálogo Propriedades do fluxo de dados é aberta. Altere o nome para
-df_People_SharePoint.
-5.	Na caixa de texto Descrição, adicione Dataflow to ingest People data from SharePoint to Lakehouse.
-6.	Selecione Salvar.
- 
- 
+    ![](../Images/lab-04/image36.png)
 
-Você será direcionado de volta para o workspace FAIAD_<nome de usuário>. Agora ingerimos todos os dados no Lakehouse. No próximo laboratório, agendaremos a atualização do Fluxo de Dados.
+4.	A caixa de diálogo Propriedades do fluxo de dados é aberta. Altere o **nome** para **df_People_SharePoint.**
+5.	Na caixa de texto Descrição, adicione **Dataflow to ingest People data from SharePoint to Lakehouse.**
+6.	**Selecione Salvar.**
+ 
+    ![](../Images/lab-04/image37.png)
+
+    Você será direcionado de volta para o **workspace FAIAD_<nome de usuário>.** Agora ingerimos todos os dados no Lakehouse. No próximo laboratório, agendaremos a atualização do Fluxo de Dados.
 
 ## Referências
 O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais funções disponíveis no Microsoft Fabric. No menu do serviço, a seção Ajuda (?) tem links para ótimos recursos.
 
-![](../Images/lab-01/image17.png)
+![](../Images/lab-04/image38.png)
 
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas do Microsoft Fabric.
   - Veja a postagem do blog para ler o [anúncio completo de GA do Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
