@@ -262,8 +262,7 @@ erweiterten Editor.
 
     ![](../Images/lab-03/image104.jpg)
 
-13. Jetzt verfügen wir über die Geo-Dimension. Wir benennen die Abfrage um. Ändern Sie im
-**rechten Bereich** unter **Abfrageeinstellungen -> Eigenschaften -> Name** den Namen in **Geo**.
+13. Jetzt verfügen wir über die Geo-Dimension. Wir benennen die Abfrage um. Ändern Sie im **rechten Bereich** unter **Abfrageeinstellungen -> Eigenschaften -> Name** den Namen in **Geo**.
 
 **Hinweis:** Warten Sie, bis die Abfrage vollständig geladen ist. Dies kann einige Minuten dauern.
 
@@ -300,11 +299,14 @@ Stellen Sie sicher, dass das **Optionsfeld „Neue Tabelle“** ausgewählt ist,
     ![](../Images/lab-03/image119.png)
 
 12. Das Dialogfeld „Zieleinstellungen auswählen“ wird geöffnet. Verwenden Sie den **Schieberegler**, um **automatische Einstellungen zu deaktivieren**. Schauen wir uns die Optionen an.
-Beachten Sie, dass es Optionen zum **Anfügen von Daten** an eine vorhandene Tabelle oder zum
-**Ersetzen** gibt.
+
+    Beachten Sie, dass es Optionen zum **Anfügen von Daten** an eine vorhandene Tabelle oder zum
+    **Ersetzen** gibt.
 
     Beachten Sie außerdem, dass es für **das Veröffentlichen Schemaoptionen** gibt.
+        
     Sie haben die Möglichkeit, das Schema unverändert zu lassen. Wenn es sich im Laufe der Zeit ändern soll, steht Ihnen die Option eines dynamischen Schemas zur Verfügung.
+        
     Sie haben die Möglichkeit, das Schema unverändert zu lassen. Lakehouse unterstützt keine Spaltennamen mit Leerzeichen. Wenn Sie „Korrigieren“ auswählen, werden Leerzeichen in Spaltennamen durch Unterstriche ersetzt.
 
     **Hinweis:** Mit dem Kontrollkästchen rechts neben der Spalte „Quelle” können Sie nur die Spalten auswählen, die Sie in Lakehouse laden möchten.
@@ -317,8 +319,8 @@ Beachten Sie, dass es Optionen zum **Anfügen von Daten** an eine vorhandene Tab
     ![](../Images/lab-03/image125.jpg)
 
 ### Aufgabe 9: Dataflow veröffentlichen
-1. Sie werden zum **Power Query-Fenster** weitergeleitet. Beachten Sie, dass unten rechts das
-**Datenziel auf Lakehouse festgelegt ist**.
+1. Sie werden zum **Power Query-Fenster** weitergeleitet. Beachten Sie, dass unten rechts das **Datenziel auf Lakehouse festgelegt ist**.
+
 2. Lassen Sie uns diese Abfragen veröffentlichen, damit wir Lakehouse überprüfen können. Wir werden darauf zurückkommen, um weitere Abfragen hinzuzufügen. Wählen Sie unten rechts **Veröffentlichen** aus.
 
     ![](../Images/lab-03/image128.jpg)
@@ -337,10 +339,9 @@ Es ist auch ein SQL-Endpunkt vorhanden, der zum Abfragen dieser Tabelle verwende
 
 
 ### Aufgabe 10: Dataflow umbenennen
-1. Wählen Sie in der linken Menüleiste **FAIAD_<Benutzername>** aus, um zum **Arbeitsbereich**
-zurückzukehren.
-2. Wir arbeiten mit Dataflow 1. Benennen wir es um, bevor wir fortfahren. Klicken Sie auf die
-**Auslassungspunkte (…)** neben Dataflow 1. Wählen Sie **Eigenschaften** aus.
+1. Wählen Sie in der linken Menüleiste **FAIAD_<Benutzername>** aus, um zum **Arbeitsbereich** zurückzukehren.
+
+2. Wir arbeiten mit Dataflow 1. Benennen wir es um, bevor wir fortfahren. Klicken Sie auf die **Auslassungspunkte (…)** neben Dataflow 1. Wählen Sie **Eigenschaften** aus.
 
     ![](../Images/lab-03/image137.jpg)
 
@@ -361,28 +362,30 @@ zurückzukehren.
     Zur Vereinfachung prüfen wir jetzt, ob wir die Abfragen aus Power BI Desktop kopieren können.
 
 2. Öffnen Sie **FAIAD.pbix** im Ordner **C:\FAIAD\Reports** in Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
+
 3. Wählen Sie im Menüband **Start > Transformieren** aus. Das Power Query-Fenster wird geöffnet.
+
 4. Wählen Sie im Bereich **Abfragen** auf der linken Seite mit **STRG+Auswahl** die folgenden Abfragen aus **ADLSData** aus.<br>
 
-    &nbsp; &nbsp; a. Product<br>
+    a. Product
 
-    &nbsp; &nbsp; b. Product Groups<br>
+    b. Product Groups
 
-    &nbsp; &nbsp; c. Product Item Group<br>
+    c. Product Item Group
 
-    &nbsp; &nbsp; d. Product Details<br>
+    d. Product Details
 
-    &nbsp; &nbsp; e. Invoice<br>
+    e. Invoice
 
-    &nbsp; &nbsp; f. InvoiceLineItems<br>
+    f. InvoiceLineItems
 
-    &nbsp; &nbsp; g. Sales<br>
+    g. Sales
 
-    &nbsp; &nbsp; h. BuyingGroup<br>
+    h. BuyingGroup
 
-    &nbsp; &nbsp; i. Reseller<br>
+    i. Reseller
 
-    &nbsp; &nbsp; j. Date<br>
+    j. Date
 
 5. **Klicken Sie mit der rechten Maustaste**, und wählen Sie **Kopieren** aus.
 
@@ -395,12 +398,17 @@ zurückzukehren.
 
     ![](../Images/lab-03/image149.png)
 
-8. Wie bereits erwähnt, stellen wir keine dieser Daten bereit. Klicken Sie also **mit der rechten Maustaste** auf die folgenden Abfragen, und wählen Sie **Staging aktivieren** aus, um das Häkchen zu entfernen.<br>
-&nbsp; &nbsp; a. Product<br>
-&nbsp; &nbsp; b. Product Details<br>
-&nbsp; &nbsp; c. Reseller<br>
-&nbsp; &nbsp; d. Sales<br>
-&nbsp; &nbsp; e. Date<br>
+8. Wie bereits erwähnt, stellen wir keine dieser Daten bereit. Klicken Sie also **mit der rechten Maustaste** auf die folgenden Abfragen, und wählen Sie **Staging aktivieren** aus, um das Häkchen zu entfernen.
+
+    a. Product
+
+    b. Product Details
+
+    c. Reseller
+
+    d. Sales
+
+    e. Date
 
 **Hinweis:** Wenn das Laden in Power BI Desktop deaktiviert ist, müssen wir das Staging in Dataflow nicht deaktivieren. Daher müssen wir das Staging für „Product Item Group“, „Product Groups“ usw. nicht deaktivieren.
 
@@ -421,9 +429,13 @@ Stellen Sie sicher, dass **alle Abfragen verarbeitet werden**. Lassen Sie uns di
     ![](../Images/lab-03/image158.png)
 
 5. Das Dialogfeld „Ziel auswählen“ wird geöffnet. Stellen Sie sicher, dass das **Optionsfeld „Neue Tabelle“** ausgewählt ist, da wir eine neue Tabelle erstellen.
+
 6. Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen. Navigieren Sie im linken Bereich zu **Lakehouse -> FAIAD_<Benutzername>**.
+
 7. Wählen Sie **lh_FAIAD** aus.
+
 8. Behalten Sie den Tabellennamen **Product** bei.
+
 9. Wählen Sie **Weiter** aus.
 
     ![](../Images/lab-03/image161.png)
@@ -433,11 +445,15 @@ Stellen Sie sicher, dass **alle Abfragen verarbeitet werden**. Lassen Sie uns di
     ![](../Images/lab-03/image164.png)
 
 11. Sie werden zum **Power Query-Fenster** weitergeleitet. Beachten Sie, dass **unten rechts** das Datenziel auf **Lakehouse** festgelegt ist.
-12. Legen Sie ebenso das **Datenziel** für die folgenden Abfragen fest:<br>
-&nbsp; &nbsp; a. Product Details<br>
-&nbsp; &nbsp; b. Reseller<br>
-&nbsp; &nbsp; c. Sales<br>
-&nbsp; &nbsp; d. Date<br>
+12. Legen Sie ebenso das **Datenziel** für die folgenden Abfragen fest:
+
+    a. Product Details
+
+    b. Reseller
+
+    c. Sales
+
+    d. Date
 
 13. Wir haben einen Dataflow, der Daten aus ADLS in Lakehouse erfasst. Fahren wir fort und veröffentlichen diesen Dataflow. Wählen Sie unten rechts Veröffentlichen aus.
 

@@ -80,7 +80,7 @@ aus, um das Häkchen zu entfernen.
 
     ![](../Images/lab-04/image021.png)
 
-7.	Klicken Sie ebenfalls mit der rechten Maustaste auf die Abfrage **PO**. Entfernen Sie durch Auswahl von **Staging aktivieren** das Häkchen.
+7. Klicken Sie ebenfalls mit der rechten Maustaste auf die Abfrage **PO**. Entfernen Sie durch Auswahl von **Staging aktivieren** das Häkchen.
 **Hinweis:** Bei den anderen drei Abfragen muss das Staging nicht deaktiviert werden, weil die Option
 „Laden aktivieren“ in Power BI Desktop (aus dem diese Abfragen kopiert wurden) deaktiviert war.
 
