@@ -206,185 +206,223 @@ do seu ambiente de laboratório.
  
 Observe que a ADLS Base Folder também é copiada. Isso ocorre porque a consulta States se refere à ADLS Base Folder no Power BI Desktop, mas já temos uma consulta semelhante. Vamos resolver isso.
 
-6.	Selecione a consulta States.
-7.	No painel direito, em Etapas aplicadas, selecione Source.
-8.	Na barra de fórmulas, altere de #"ADLS Base Folder" para #”ADLS Base Folder for Geo”.
+6.	Selecione a consulta **States.**
+7.	No **painel direito,** em **Etapas aplicadas,** selecione **Source.**
+8.	Na barra de fórmulas, altere de **#"ADLS Base Folder" para #”ADLS Base Folder for Geo”.**
 
-9.	Clique na marca de verificação ao lado da barra de fórmulas ou pressione Enter.
+![](../Images/lab-03/image27.png)
 
-10.	Agora podemos remover a ADLS Base Folder. No painel esquerdo, na seção Consultas, clique com o botão direito do mouse na consulta ADLS Base Folder e selecione Excluir.
+9.	Clique na **marca de verificação** ao lado da barra de fórmulas ou pressione **Enter.**
 
-11.	A caixa de diálogo Excluir consulta é exibida. Selecione Excluir para confirmar.
-Observação: Verifique se a consulta tem quatro etapas aplicadas e aguarde o término do carregamento da consulta. Isso pode levar alguns minutos.
+![](../Images/lab-03/image28.png)
+
+10.	Agora podemos remover a ADLS Base Folder. No painel esquerdo, na seção **Consultas, clique com o botão direito do mouse na consulta ADLS Base Folder** e selecione **Excluir.**
+
+![](../Images/lab-03/image29.png)
+
+11.	A caixa de diálogo Excluir consulta é exibida. Selecione **Excluir** para confirmar.
+
+**Observação:** Verifique se a consulta tem quatro etapas aplicadas e aguarde o término do carregamento da consulta. Isso pode levar alguns minutos.
  
-Tarefa 7: Criar consulta Geo por Copiar – Opção 2
+### Tarefa 7: Criar consulta Geo por Copiar – Opção 2
 Agora precisamos mesclar essas consultas para criar a dimensão Geo. Vamos copiar a consulta novamente do arquivo Power BI Desktop. Desta vez, vamos copiar o código do Editor Avançado.
 
-1.	Volte para a janela Power Query do arquivo Power BI Desktop.
-2.	No painel esquerdo, em Consultas, selecione a consulta Geo na pasta ADLSData.
-3.	Na faixa de opções, selecione Página Inicial -> Editor Avançado.
+1. Volte para a **janela Power Query** do arquivo Power BI Desktop.
+2. No painel esquerdo, em **Consultas,** selecione a consulta **Geo** na pasta ADLSData.
+3. Na faixa de opções, selecione **Página Inicial -> Editor Avançado.**
 
-4.	A janela Editor Avançado é aberta. Realce todo o texto no Editor Avançado.
-5.	Clique com o botão direito do mouse e selecione Copiar.
+![](../Images/lab-03/image30.png)
 
- 
-6.	Selecione X no canto superior direito da janela ou selecione Concluído para fechar a janela Editor Avançado.
+4. A janela Editor Avançado é aberta. **Realce todo o texto** no Editor Avançado.
+5. **Clique com o botão direito do mouse** e selecione **Copiar.**
+
+![](../Images/lab-03/image31.png)
+
+6.	Selecione **X** no canto superior direito da janela ou selecione **Concluído** para fechar a janela Editor Avançado.
 7.	Volte para a janela Dataflow no navegador.
-8.	Na faixa de opções, selecione Obter dados -> Consulta em branco.
+8.	Na faixa de opções, selecione **Obter dados -> Consulta em branco.**
 
-9.	A caixa de diálogo Obter dados, Conectar-se à fonte de dados, Editor Avançado é aberta. Realce todo o texto no editor.
-10.	Selecione Delete no teclado para excluir todo o texto.
-11.	O Editor Avançado deve estar em branco. Agora, pressione Ctrl+V para colar o conteúdo que você copiou do Editor Avançado do Power BI Desktop.
-12.	Selecione Próximo.
+![](../Images/lab-03/image32.png)
 
+9.	A caixa de diálogo Obter dados, Conectar-se à fonte de dados, Editor Avançado é aberta. **Realce todo o texto** no editor.
+10.	Selecione **Delete** no teclado para excluir todo o texto.
+11.	O Editor Avançado deve estar em branco. Agora, pressione **Ctrl+V** para colar o conteúdo que você copiou do Editor Avançado do Power BI Desktop.
+12.	Selecione **Próximo.**
+
+![](../Images/lab-03/image33.png)
  
-13.	Agora temos a dimensão Geo. Vamos renomear a consulta. No painel direito, em Configurações de consulta -> Propriedades -> Nome, altere o nome para Geo.
+13.	Agora temos a dimensão Geo. Vamos renomear a consulta. No **painel direito,** em **Configurações de consulta -> Propriedades -> Nome, altere o nome** para **Geo.**
 
-Observação: Aguarde até que a consulta termine de carregar. Isso pode levar alguns minutos.
-Vamos seguir as etapas para entender como a dimensão Geo foi criada. No painel direito, em Etapas aplicadas, selecione Source. Se você olhar na barra de fórmulas ou clicar em Configurações, notará que a Source desta consulta é uma junção entre Cities e States. Ao percorrer as etapas, você
+    **Observação:** Aguarde até que a consulta termine de carregar. Isso pode levar alguns minutos.
+
+Vamos seguir as etapas para entender como a dimensão Geo foi criada. No painel direito, em Etapas aplicadas, selecione **Source.** Se você olhar na barra de fórmulas ou clicar em Configurações, notará que a Source desta consulta é uma junção entre Cities e States. Ao percorrer as etapas, você
 observará que o resultado da primeira junção é, por sua vez, unido a Countries. Portanto, todas as três consultas são usadas para criar a dimensão Geo.
 
+![](../Images/lab-03/image34.png)
 
-
-Tarefa 8: Configurar destino de dados para a consulta Geo
+### Tarefa 8: Configurar destino de dados para a consulta Geo
 Agora que temos uma dimensão, vamos ingerir esses dados no Lakehouse. Este é o novo recurso disponível no Fluxo de Dados Gen2.
-1.	Conforme mencionado anteriormente, não estamos preparando nenhum desses dados. Portanto, clique com o botão direito do mouse na consulta Cities e selecione Habilitar o preparo para remover a marca de seleção.
+1. Conforme mencionado anteriormente, não estamos preparando nenhum desses dados. Portanto, **clique com o botão direito do mouse** na consulta **Cities** e selecione **Habilitar o preparo** para remover a marca de seleção.
 
-2.	Siga as mesmas etapas para as consultas Countries e Geo para remover a marca de seleção ao lado de Habilitar o preparo.
-3.	Selecione a consulta Geo.
-4.	No canto inferior direito, selecione "+" ao lado de Destino de dados.
-5.	Selecione Lakehouse na caixa de diálogo.
- 
- 
-6.	A caixa de diálogo Conectar ao destino de dados é aberta. Precisamos criar uma nova Conexão com o Lakehouse. Com a opção Criar nova conexão selecionada na lista suspensa Conexão
-e Tipo de autenticação definido como Conta organizacional, selecione Próximo.
+![](../Images/lab-03/image35.png)
 
-7.	Depois que a conexão é criada, a caixa de diálogo Escolher alvo de destino é aberta. Verifique se o botão de opção Nova tabela está selecionado, pois estamos criando uma nova tabela.
-8.	Queremos criar a tabela no Lakehouse que criamos anteriormente. No painel esquerdo, navegue para Lakehouse -> FAIAD_<nome de usuário>.
-9.	Selecione lh_FAIAD.
-10.	Deixe o nome da tabela como Geo.
-11.	Selecione Próximo.
+2. Siga as mesmas etapas para as consultas **Countries e Geo** para **remover a marca de seleção ao lado de Habilitar o preparo.**
+3. Selecione a consulta **Geo.**
+4. No canto inferior direito, selecione "+" ao lado de **Destino de dados.**
+5. Selecione **Lakehouse** na caixa de diálogo.
  
- 
-12.	A caixa de diálogo Escolher configurações de destino é aberta. Use o controle deslizante para
-desabilitar as configurações automáticas. Vamos verificar as opções.
-Observe que há opções para Acrescentar dados à tabela existente ou Substituir.
-Além disso, observe que há Opções de esquema ao publicar. Você tem a opção de manter o esquema fixo ou, se ele vai mudar com o tempo, há uma opção de esquema dinâmico.
+![](../Images/lab-03/image36.png)
+
+6. A caixa de diálogo Conectar ao destino de dados é aberta. Precisamos criar uma nova Conexão com o Lakehouse. Com a opção **Criar nova conexão** selecionada na **lista suspensa Conexão** e **Tipo de autenticação** definido como **Conta organizacional,** selecione **Próximo.**
+
+![](../Images/lab-03/image37.png)
+
+7. Depois que a conexão é criada, a caixa de diálogo Escolher alvo de destino é aberta. Verifique se o botão de opção **Nova tabela** está selecionado, pois estamos criando uma nova tabela.
+8. Queremos criar a tabela no Lakehouse que criamos anteriormente. No painel esquerdo, navegue para **Lakehouse -> FAIAD_<nome de usuário>.**
+9. Selecione **lh_FAIAD.**
+10. Deixe o nome da tabela como **Geo.**
+11. Selecione **Próximo.**
+
+![](../Images/lab-03/image38.png) 
+
+12. A caixa de diálogo Escolher configurações de destino é aberta. Use o **controle deslizante** para **desabilitar as configurações automáticas.** Vamos verificar as opções.<br>
+Observe que há opções para **Acrescentar dados** à tabela existente ou **Substituir.**<br>
+Além disso, observe que há **Opções de esquema ao publicar.** Você tem a opção de manter o esquema fixo ou, se ele vai mudar com o tempo, há uma opção de esquema dinâmico.
 Observe que há um aviso "Alguns nomes de colunas contêm caracteres sem suporte. Devemos corrigi-los para você?". O Lakehouse não aceita nomes de coluna com espaço. Se você optar por selecionar Corrigir, serão adicionados sublinhados para substituir o espaço nos nomes de coluna.
-Observação: a caixa de seleção à direita da coluna Origem permite que você selecione somente as colunas que deseja carregar para o Lakehouse.
 
-13.	Em nosso cenário, usaremos configurações automáticas. Habilite o controle deslizante Usar
-configurações automáticas. Os nomes das colunas de destino são corrigidos automaticamente com um sublinhado.
+**Observação:** a caixa de seleção à direita da coluna Origem permite que você selecione somente as colunas que deseja carregar para o Lakehouse.
+
+![](../Images/lab-03/image39.png)
+
+13.	Em nosso cenário, usaremos configurações automáticas. Habilite o controle deslizante **Usar configurações automáticas.** Os nomes das colunas de destino são corrigidos automaticamente com um sublinhado.
  
-14.	O mapeamento de colunas pode ser usado para mapear colunas de fluxo de dados para colunas existentes. No nosso caso, é uma Nova Tabela. Portanto, podemos usar os valores padrão.
-Selecione Salvar configurações.
+14.	O mapeamento de colunas pode ser usado para mapear colunas de fluxo de dados para colunas existentes. No nosso caso, é uma Nova Tabela. Portanto, podemos usar os valores padrão. Selecione **Salvar configurações.**
 
+![](../Images/lab-03/image40.png)
 
+### Tarefa 9: Publicar fluxo de dados
+1. Você será direcionado de volta à **janela Power Query.** No canto inferior direito, **Destino de dados está definido como Lakehouse.**
+2. Vamos publicar essas consultas para que possamos revisar o Lakehouse. Voltaremos para adicionar mais consultas. No canto inferior direito, selecione **Publicar.**
 
-Tarefa 9: Publicar fluxo de dados
-1.	Você será direcionado de volta à janela Power Query. No canto inferior direito, Destino de dados está definido como Lakehouse.
-2.	Vamos publicar essas consultas para que possamos revisar o Lakehouse. Voltaremos para adicionar mais consultas. No canto inferior direito, selecione Publicar.
+![](../Images/lab-03/image41.png)
 
- 
-3.	Você será direcionado de volta para o workspace FAIAD_<nome de usuário>. Pode levar alguns instantes para que Fluxo de Dados seja publicado. Quando concluído, selecione o Lakehouse
-lh_FAIAD no painel central ou no painel esquerdo.
+3. Você será direcionado de volta para o **workspace FAIAD_<nome de usuário>.** Pode levar alguns instantes para que Fluxo de Dados seja publicado. Quando concluído, selecione o **Lakehouse lh_FAIAD** no painel central ou no painel esquerdo.
 
-4.	Você será direcionado à tela Explorador do Lakehouse. No painel esquerdo, expanda lh_FAIAD -> Tables.
-5.	Agora temos a tabela Geo no Lakehouse. Expanda Geo e observe todas as colunas.
-6.	Selecione a tabela Geo e a pré-visualização dos dados será aberta no painel direito.
+![](../Images/lab-03/image42.png)
+
+4. Você será direcionado à **tela Explorador do Lakehouse.** No painel esquerdo, expanda **lh_FAIAD -> Tables.**
+5. Agora temos a tabela Geo no Lakehouse. Expanda **Geo** e observe todas as colunas.
+6. **Selecione a tabela Geo** e a pré-visualização dos dados será aberta no painel direito.
+
+![](../Images/lab-03/image43.png)
 
 Também existe um Ponto de Extremidade SQL, que pode ser usado para consultar esta tabela.
 Veremos essa opção em um laboratório posterior. Agora que sabemos que os dados de Geo estão no Lakehouse, vamos trazer o restante dos dados do ADLS Gen2.
  
-Tarefa 10: Renomear fluxo de dados
-1.	Na barra de menus à esquerda, selecione FAIAD_<nome de usuário> para ser direcionado de volta ao workspace.
-2.	Estamos trabalhando com o Dataflow 1. Vamos renomeá-lo antes de continuar. Clique nas
-reticências (…) ao lado de Dataflow 1. Selecione Propriedades.
+### Tarefa 10: Renomear fluxo de dados
+1. Na barra de menus à esquerda, selecione **FAIAD_<nome de usuário>** para ser direcionado de volta ao **workspace.**
+2. Estamos trabalhando com o Dataflow 1. Vamos renomeá-lo antes de continuar. Clique nas **reticências (…)** ao lado de Dataflow 1. Selecione **Propriedades.**
 
-3.	A caixa de diálogo Propriedades do fluxo de dados é aberta. Altere o nome para df_Sales_ADLS
+![](../Images/lab-03/image44.png)
 
-Observação: Estamos acrescentando "df" ao nome do Dataflow. Isso facilitará a pesquisa e a classificação.
+3. A caixa de diálogo Propriedades do fluxo de dados é aberta. Altere o nome para **df_Sales_ADLS**
 
-4.	Na caixa de texto Descrição, adicione Dataflow to ingest Sales Data from ADLS to Lakehouse
-5.	Selecione Salvar.
+    **Observação:** Estamos acrescentando "**df"** ao nome do Dataflow. Isso facilitará a pesquisa e a classificação.
+
+4.	Na caixa de texto **Descrição,** adicione **Dataflow to ingest Sales Data from ADLS to Lakehouse**
+5.	Selecione **Salvar.**
  
- 
+![](../Images/lab-03/image45.png)
 
-Tarefa 11: Criar consultas restantes no Dataflow
-1.	Você será direcionado de volta para o workspace FAIAD_<nome de usuário>. Selecione o Fluxo de Dados df_Sales_ADLS para voltar ao fluxo de dados.
+### Tarefa 11: Criar consultas restantes no Dataflow
+1. Você será direcionado de volta para o **workspace FAIAD_<nome de usuário>.** Selecione o Fluxo de Dados **df_Sales_ADLS** para voltar ao fluxo de dados.
+
+![](../Images/lab-03/image46.png)
 
 Para facilitar, vamos ver se podemos copiar as consultas do Power BI Desktop.
-2.	Se você ainda não tiver aberto, abra o arquivo FAIAD.pbix que está na pasta C:\FAIAD\Reports
-do seu ambiente de laboratório.
-3.	Na faixa de opções, selecione Página Inicial -> Transformar. A janela do Power Query é aberta.
- 
-4.	No painel Consultas à esquerda, pressione Ctrl+Select seguindo as consultas de ADLSData.
-a.	Product
-b.	Product Groups
-c.	Product Item Group
-d.	Product Details
-e.	Invoice
-f.	InvoiceLineItems
-g.	Sales
-h.	BuyingGroup
-i.	Reseller
-j.	Date
-5.	Clique com o botão direito do mouse e selecione Copiar.
 
-6.	Volte para a janela de Dataflow df_Sales_ADLS do navegador.
-7.	No painel esquerdo, selecione o painel Consultas e pressione Ctrl+V (no momento, não
+2. Se você ainda não tiver aberto, abra o arquivo **FAIAD.pbix** que está na pasta **C:\FAIAD\Reports**
+do seu ambiente de laboratório.
+3. Na faixa de opções, selecione **Página Inicial -> Transformar.** A janela do Power Query é aberta.
+ 
+4.	No painel **Consultas** à esquerda, pressione **Ctrl+Select** seguindo as consultas de **ADLSData.**<br>
+a. Product<br>
+b. Product Groups<br>
+c. Product Item Group<br>
+d. Product Details<br>
+e. Invoice<br>
+f. InvoiceLineItems<br>
+g. Sales<br>
+h. BuyingGroup<br>
+i. Reseller<br>
+j. Date<br>
+5. **Clique com o botão direito do mouse** e selecione **Copiar.**
+
+![](../Images/lab-03/image47.png)
+
+6.	Volte para a janela de Dataflow **df_Sales_ADLS** do navegador.
+7.	No painel esquerdo, selecione o painel **Consultas** e pressione **Ctrl+V** (no momento, não
 é possível clicar com o botão direito do mouse em Colar). Se você estiver usando o dispositivo MAC, use Cmd+V para colar.
-Observação: se você estiver trabalhando no ambiente de laboratório, selecione as reticências no canto superior direito da tela. Use o controle deslizante para habilitar VM Native Clipboard.
+
+**Observação:** se você estiver trabalhando no ambiente de laboratório, selecione as reticências no canto superior direito da tela. Use o controle deslizante para **habilitar VM Native Clipboard.**
 Selecione OK na caixa de diálogo. Depois que terminar de colar as consultas, você poderá desabilitar essa opção.
  
+![](../Images/lab-03/image48.png) 
+
+8.	Conforme mencionado anteriormente, não estamos preparando nenhum desses dados. Portanto, **clique com o botão direito do mouse** nas consultas a seguir e selecione **Habilitar o preparo** para remover a marca de seleção.<br>
+a. Product<br>
+b. Product Details<br>
+c. Reseller<br>
+d. Sales<br>
+e. Date<br>
+
+**Observação:** Se o carregamento estiver desabilitado no Power BI Desktop, não será necessário desabilitar o preparo no Repetition. Portanto, não precisamos desabilitar o preparo para Product Item Group, Product Groups, etc.
+
+![](../Images/lab-03/image49.png)
+
+Verifique se **todas as consultas são processadas.** Quando terminar, vamos ingerir esses dados no Lakehouse.
  
-8.	Conforme mencionado anteriormente, não estamos preparando nenhum desses dados. Portanto, clique com o botão direito do mouse nas consultas a seguir e selecione Habilitar o preparo para remover a marca de seleção.
-a.	Product
-b.	Product Details
-c.	Reseller
-d.	Sales
-e.	Date
+### Tarefa 12: Configurar destino de dados para as consultas restantes
+1.	Selecione a consulta **Product.**
+2.	Na faixa de opções, selecione **Página Inicial -> Adicionar destino de dados -> Lakehouse.**
 
-Observação: Se o carregamento estiver desabilitado no Power BI Desktop, não será necessário desabilitar o preparo no Repetition. Portanto, não precisamos desabilitar o preparo para Product Item Group, Product Groups, etc.
+![](../Images/lab-03/image50.png)
 
-Verifique se todas as consultas são processadas. Quando terminar, vamos ingerir esses dados no Lakehouse.
+3.	A caixa de diálogo Conectar ao destino de dados é aberta. Na lista suspensa **Conexão,** selecione **Lakehouse (nenhum).**
+4.	Selecione **Próximo.**
+
+![](../Images/lab-03/image51.png) 
+
+5.	A caixa de diálogo Escolher alvo de destino é aberta. Verifique se o botão de opção **Nova tabela **está selecionado, pois estamos criando uma nova tabela.
+6.	Queremos criar a tabela no Lakehouse que criamos anteriormente. No painel esquerdo, navegue para **Lakehouse -> FAIAD_<nome de usuário>.**
+7.	Selecione **lh_FAIAD.**
+8.	Deixe o nome da tabela como **Product.**
+9.	Selecione **Próximo.**
+
+![](../Images/lab-03/image52.png)
+
+10.	A caixa de diálogo Escolher configurações de destino é aberta. Desta vez, usaremos as configurações automáticas, pois assim será feita uma atualização completa dos dados. Além disso, as colunas serão renomeadas conforme necessário. Selecione **Salvar configurações.**
+
+![](../Images/lab-03/image53.png)
  
-Tarefa 12: Configurar destino de dados para as consultas restantes
-1.	Selecione a consulta Product.
-2.	Na faixa de opções, selecione Página Inicial -> Adicionar destino de dados -> Lakehouse.
+11.	Você será direcionado de volta à **janela Power Query.** No **canto inferior direito,** Destino de dados está definido como **Lakehouse.**
+12.	Da mesma forma, defina o **Destino de dados** para as seguintes consultas:<br>
+a. Product Details<br>
+b. Reseller<br>
+c. Sales<br>
+d. Date
+13.	Temos um fluxo de dados que ingere dados do ADLS no Lakehouse. Vamos continuar e **publicar** este fluxo de dados. Selecione Publicar no canto inferior direito.
 
-3.	A caixa de diálogo Conectar ao destino de dados é aberta. Na lista suspensa Conexão, selecione
-Lakehouse (nenhum).
-4.	Selecione Próximo.
+![](../Images/lab-03/image54.png)
 
- 
-5.	A caixa de diálogo Escolher alvo de destino é aberta. Verifique se o botão de opção Nova tabela
-está selecionado, pois estamos criando uma nova tabela.
-6.	Queremos criar a tabela no Lakehouse que criamos anteriormente. No painel esquerdo, navegue para Lakehouse -> FAIAD_<nome de usuário>.
-7.	Selecione lh_FAIAD.
-8.	Deixe o nome da tabela como Product.
-9.	Selecione Próximo.
-
-10.	A caixa de diálogo Escolher configurações de destino é aberta. Desta vez, usaremos as
-configurações automáticas, pois assim será feita uma atualização completa dos dados. Além disso, as colunas serão renomeadas conforme necessário. Selecione Salvar configurações.
-
- 
-11.	Você será direcionado de volta à janela Power Query. No canto inferior direito, Destino de dados está definido como Lakehouse.
-12.	Da mesma forma, defina o Destino de dados para as seguintes consultas:
-a.	Product Details
-b.	Reseller
-c.	Sales
-d.	Date
-13.	Temos um fluxo de dados que ingere dados do ADLS no Lakehouse. Vamos continuar e publicar este fluxo de dados. Selecione Publicar no canto inferior direito.
-
-Você será direcionado de volta para o workspace FAIAD_<nome de usuário>. Levará alguns minutos para o fluxo de dados atualizar.
+Você será direcionado de volta para o **workspace FAIAD_<nome de usuário>.** Levará alguns minutos para o fluxo de dados atualizar.
 No próximo laboratório, ingeriremos dados de outras fontes de dados.
 
 
 ## Referências
 O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais funções disponíveis no Microsoft Fabric. No menu do serviço, a seção Ajuda (?) tem links para ótimos recursos.
 
-![](../Images/lab-01/image17.png)
+![](../Images/lab-03/image55.png)
 
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas do Microsoft Fabric.
   - Veja a postagem do blog para ler o [anúncio completo de GA do Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
