@@ -1,4 +1,4 @@
-![](../Images/lab-03/image002.png)
+![image](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/103175482/20e033bc-2f94-4396-ac33-5d3d2d172d82)![](../Images/lab-03/image002.png)
  	 
  
 ## 目次
@@ -486,7 +486,8 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
 
     ![](../Images/lab-03/image166.jpg)
  
-13.	ADLS から Lakehouse にデータを取り込むデータ フローがあります。このデータフローを公開してみましょう。右下隅の**公開**を選択します。
+13.	ADLS から Lakehouse にデータを取り込むデータ フローがあります。このデータフローを公開してみましょう。右下隅の**公開**を選択します。<br>
+
     **FAIAD_<ユーザー名> ワークスペース**に自動的に戻ります。データフローが更新されるまでに、数分かかる場合があります。
     次のラボでは、他のデータ ソースからデータを取り込みます。
  
