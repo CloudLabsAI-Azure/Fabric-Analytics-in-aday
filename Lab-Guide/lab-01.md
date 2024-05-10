@@ -150,27 +150,28 @@ Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità chiave dispo
 
    ![](../Images/Picture18.png)
      
-Di seguito sono riportate ulteriori risorse utili che consentiranno di progredire nell'uso di Microsoft Fabric.
-•	Vedere il post di blog per leggere l'annuncio completo sulla disponibilità generale di Microsoft Fabric
-•	Esplorare Fabric attraverso la Presentazione guidata
-•	Iscriversi alla versione di valutazione gratuita di Microsoft Fabric
-•	Visitare il sito Web di Microsoft Fabric
-•	Acquisire nuove competenze esplorando i moduli di apprendimento su Fabric
-•	Consultare la documentazione tecnica di Fabric
-•	Leggere l'e-book gratuito introduttivo a Fabric
-•	Unirsi alla community di Fabric per pubblicare domande, condividere feedback e imparare dagli altri
- 
+Di seguito sono riportate ulteriori risorse utili che consentiranno di progredire nell'uso di Microsoft Fabric.<br>
+- Vedere il post di blog per leggere l'[annuncio completo sulla disponibilità generale di Microsof t Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)<br>
+- Esplorare Fabric attraverso la [Presentazione guidata](https://aka.ms/Fabric-GuidedTour)<br>
+- Iscriversi alla [versione di valutazione gratuita di Microsof t Fabric](https://aka.ms/try-fabric)<br>
+- Visitare il [sito Web di Microsof t Fabric](https://aka.ms/microsoft-fabric)<br>
+- Acquisire nuove competenze esplorando i [moduli di apprendimento su Fabric](https://aka.ms/learn-fabric)<br>
+- Consultare la [documentazione tecnica di Fabric](https://aka.ms/fabric-docs)<br>
+- Leggere l'[e-book gratuito introduttivo a Fabric](https://aka.ms/fabric-get-started-ebook)<br>
+- Unirsi alla [community di Fabric](https://aka.ms/fabric-community) per pubblicare domande, condividere feedback e imparare dagli altri<br>
+
 Leggere i blog di annunci più approfonditi sull'esperienza in Fabric:
-•	Blog sull'esperienza Data Factory in Fabric
-•	Blog sull'esperienza Synapse Data Engineering in Fabric
-•	Blog sull'esperienza Synapse Data Science in Fabric
-•	Blog sull'esperienza Synapse Data Warehousing in Fabric
-•	Blog sull'esperienza Synapse Real-Time Analytics in Fabric
-•	Blog di annunci di Power BI
-•	Blog sull'esperienza Data Activator in Fabric
-•	Blog su amministrazione e governance in Fabric
-•	Blog su OneLake in Fabric
-•	Blog sull'integrazione di Dataverse e Microsoft Fabric
+
+- [Blog sull'esperienza Data Factory in Fabric](https://aka.ms/Fabric-Data-Factory-Blog)<br>
+- [Blog sull'esperienza Synapse Data Engineering in Fabric](https://aka.ms/Fabric-DE-Blog)<br>
+- [Blog sull'esperienza Synapse Data Science in Fabric](https://aka.ms/Fabric-DS-Blog)<br>
+- [Blog sull'esperienza Synapse Data Warehousing in Fabric](https://aka.ms/Fabric-DW-Blog)<br>
+- [Blog sull'esperienza Synapse Real-Time Analytics in Fabric](https://aka.ms/Fabric-RTA-Blog)<br>
+- [Blog di annunci di Power BI](https://aka.ms/Fabric-PBI-Blog)<br>
+- [Blog sull'esperienza Data Activator in Fabric](https://aka.ms/Fabric-DA-Blog)<br>
+- [Blog su amministrazione e governance in Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)<br>
+- [Blog su OneLake in Fabric](https://aka.ms/Fabric-OneLake-Blog)<br>
+- [Blog sull'integrazione di Dataverse e Microsof t Fabric](https://aka.ms/Dataverse-Fabric-Blog)<br>
 
 
 © 2023 Microsoft Corporation. Tutti i diritti sono riservati.
