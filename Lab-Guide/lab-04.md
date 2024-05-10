@@ -177,7 +177,117 @@ Shift+ 选择以下查询:
 
 3.	从功能区中选择**主页 -> 转换数据。**Power Query 窗口随即打开。您在之前的实验中注意到，左侧面板中的查询是按数据源整理的。
 
-4.	Power Query 窗口随即打开。在左侧面板中的DataverseData 文件夹下，按Ctrl+ 选择以下查询：
+4.	Power Query 窗口随即打开。在左侧面板中的DataverseData 文件夹下，按**Ctrl+ 选择**以下查询：
+
+&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a.	BabyBoomer
+
+&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b.	GenX
+
+&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c.	GenY
+
+&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; d.	GenZ
+
+&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e.	Customer
+
+5.	**右键单击**并选择**复制。**
+
+![](../Images/lab-04/image15.png)
+
+6.	导航回到浏览器中的数据流页面。
+
+7.	在数据流窗格中，输入 Ctrl+V（目前不支持右键单击粘贴）。如果您使用的是 MAC 设备， 请使用 Cmd+V 进行粘贴。
+
+**注意**：如果您在实验环境中工作，请选择屏幕右上角的省略号。使用滑块**启用 VM 本地剪贴板**。在对话框上，选择“确定”。粘贴查询后，您可以禁用此选项
+
+## 任务 6：创建与Dataverse 的连接
+
+请注意，五个查询已粘贴，现在左侧显示“查询”面板。由于我们没有为 Dataverse 创建连接，因此您将看到一条警告消息，要求您配置连接。
+
+1.	选择**配置连接。**
+
+![](../Images/lab-04/image16.jpg)
+
+2.	“连接到数据源”对话框随即打开。在**连接下拉列表**中，确保**选择创建新连接。**
+
+3.	**身份验证种类**中应为**组织帐户。**
+
+4.	选择**连接**。
+![](../Images/lab-04/image17.jpg)
+
+
+### 任务 7：为 Customer 查询创建数据目标
+
+连接已建立，您可以在预览面板中查看数据。请自行浏览查询的应用步骤。客户数据按类别提 供：BabyBoomer、GenX、GenY 和GenZ。追加这四个查询以创建 Customer 查询。现在我们需要将客户数据引入到 Lakehouse。
+
+1.	如前所述，我们不会暂存任何此类数据。因此**右键单击**查询窗格中的 **Customer** 查询，并选择**启用暂存**以删除复选标记。
+
+![](../Images/lab-04/image18.png)
+
+2.	选择 **Customer** 查询。
+
+3.	在功能区中，选择**主页-> 添加数据目标-> 湖屋。**
+
+![](../Images/lab-04/image19.jpg)
+
+4.	“连接到数据目标”对话框随即打开。从**连接下拉菜单**中选择  **Lakehouse（无）**。
+
+5.	选择**下一步**。
+
+![](../Images/lab-04/image20.png)
+
+6.	“选择目标”对话框随即打开。务必选中**新建表单选按钮**，因为我们要创建一个新表。
+
+7.	我们想要在之前创建的 Lakehouse 中创建表。在左侧面板中，导航到**湖屋-> FAIAD_<username>**
+
+8.	选择 **lh_FAIAD**
+
+9.	将表名称保留为 **Customer**
+
+10.	选择**下一步。**
+
+![](../Images/lab-04/image21.png)
+
+11.	“选择目标设置”对话框随即打开。这次我们将使用自动设置，因为这将对数据进行全面 更新。此外，它还会根据需要重命名列。选择**保存设置**。
+
+![](../Images/lab-04/image22.png)
+
+### 任务 8：发布并重命名Dataverse 数据流
+
+1.	您将会导航回到 **Power Query 窗口**。请注意，**右下角**的**数据目标**设置为**湖屋。**
+
+2.	在右下角，选择**发布**。
+
+![](../Images/lab-04/image23.jpg)
+
+**注意**：您将导航回到 **FAIAD_<username>**  **工作区**。发布数据流可能需要一些时间
+
+3.	我们正在使用的数据流是 Dataflow 2。在继续下面的步骤之前，我们先将其重命名。点击Dataflow 2 旁边的**省略号 (…)**。选择**属性**。
+![](../Images/lab-04/image24.jpg)
+
+4.	“数据流属性”对话框随即打开。将**名称**更改为 **df_Customer_Dataverse**
+
+5.	在**说明**文本框中，添加 **Dataflow to ingest Customer data from Dataverse to Lakehouse。**
+
+6.	选择**保存。**
+
+![](../Images/lab-04/image25.png)
+
+您将导航回到 **FAIAD_<username> 工作区**。现在我们创建一个从 SharePoint 引入数据的数据流。
+
+### 任务 9：将SharePoint 查询复制到数据流
+
+1.	在顶部菜单中，选择**新建-> 数据流 Gen2。**
+
+
+
+
+
+
+
+
+
+
+
 
 
 
