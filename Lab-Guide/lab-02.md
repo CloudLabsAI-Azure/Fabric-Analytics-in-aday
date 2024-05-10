@@ -158,9 +158,10 @@ e. **Usar uma amostra:** solução de exemplo.
 ## Workspace do Fabric
 ### Tarefa 9: Criar um workspace do Fabric
 1. Agora vamos criar um workspace com a licença do Fabric. Selecione **Workspaces** na barra de navegação esquerda. Uma caixa de diálogo é aberta.
+2. Selecione **Novo workspace**.
 
     ![](../Images/lab-02/image17.png)
-2. Selecione **Novo workspace**.
+    
 3. A caixa de diálogo **Criar um workspace** é aberta no lado direito do navegador.
 4. No campo **Nome**, insira **FAIAD_<nome de usuário>.**
 
