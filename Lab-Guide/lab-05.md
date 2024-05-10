@@ -1,27 +1,7 @@
  	 
- 
-Sommario
-Introduzione	3
-Flusso di dati Gen2	3
-Attività 1 - Configurazione dell'aggiornamento pianificato per il flusso di dati di vendita	3
-Attività 2 - Configurazione dell'aggiornamento pianificato del flusso di dati di fornitori
-e clienti	7
-Pipeline di dati	8
-Attività 3 - Creazione di una pipeline di dati	8
-Attività 4 - Creazione di una pipeline di dati semplice	10
-Attività 5 - Creazione di una nuova pipeline di dati	12
-Attività 6 - Creazione di un'attività Fino a	13
-Attività 7 - Creazione di variabili	13
-Attività 8 - Configurazione di un'attività Fino a	14
-Attività 9 - Configurazione di un'attività Flusso di dati	20
-Attività 10 - Configurazione della prima attività Imposta variabile	22
-Attività 11 - Configurazione della seconda attività Imposta variabile	24
-Attività 12 - Configurazione della terza attività Imposta variabile	25
-Attività 13 - Configurazione di un'attività Attesa	27
-Attività 14 - Configurazione dell'aggiornamento pianificato per la pipeline di dati	30
-Riferimenti	32
- 
-Introduzione
+![](../Images/lab-05/lab-05_main.png)
+
+# Introduzione
 Abbiamo inserito dati da diverse origini dati in Lakehouse. In questo lab si imposterà una pianificazione degli aggiornamenti per le origini dati. Riepilogo dei requisiti:
 •	Dati di vendita: in ADLS vengono aggiornati ogni giorno alle 12.00.
 •	Dati sui fornitori: in Snowflake vengono aggiornati alle 00.00 ogni giorno.
@@ -33,8 +13,8 @@ In questo lab si imparerà a:
 •	Configurare una pianificazione degli aggiornamenti di una pipeline di dati
 
 
-Flusso di dati Gen2
-Attività 1 - Configurazione dell'aggiornamento pianificato per il flusso di dati di vendita
+## Flusso di dati Gen2
+### Attività 1 - Configurazione dell'aggiornamento pianificato per il flusso di dati di vendita
 Iniziamo con la configurazione di un aggiornamento pianificato del flusso di dati di vendita.
 
 1.	Torniamo all'area di lavoro di Fabric FAIAD_<nome utente> creata nel Lab 2, attività 9.
@@ -74,7 +54,7 @@ Nota: poiché si tratta di un ambiente lab, è possibile impostare il fuso orari
 15.	Selezionare Applica per salvare l'impostazione.
 Nota: facendo clic sul collegamento Aggiungi un'altra ora, è possibile aggiungere più orari di aggiornamento. È anche possibile inviare le notifiche di errore al proprietario del flusso di dati e ad altri contatti.
  
-Attività 2 - Configurazione dell'aggiornamento pianificato del flusso di dati di fornitori e clienti
+### Attività 2 - Configurazione dell'aggiornamento pianificato del flusso di dati di fornitori e clienti
 1.	Nel pannello di sinistra selezionare df_Supplier_Snowflake.
 2.	Configurare la pianificazione per eseguire gli aggiornamenti ogni giorno alle 00:00.
 3.	Selezionare Applica per salvare l'impostazione.
@@ -87,7 +67,8 @@ Attività 2 - Configurazione dell'aggiornamento pianificato del flusso di dati d
 Come illustrato in precedenza, è necessario creare una logica personalizzata per gestire lo scenario in cui il file Employee in SharePoint non viene consegnato in tempo. Usiamo la pipeline di dati per
 risolvere questo problema.
 Pipeline di dati
-Attività 3 - Creazione di una pipeline di dati
+
+### Attività 3 - Creazione di una pipeline di dati
 1.	Selezionare l'icona selettore esperienza in Fabric in basso a sinistra della schermata.
 2.	Si apre la finestra di dialogo Microsoft Fabric. Selezionare Data Factory. Si apre la home page di Data Factory.
 
@@ -111,7 +92,7 @@ Nota: Se si ha familiarità con JSON, alla fine del lab è possibile selezionare
 
 
 
-Attività 4 - Creazione di una pipeline di dati semplice
+### Attività 4 - Creazione di una pipeline di dati semplice
 Iniziamo a creare la pipeline. Abbiamo bisogno di un'attività per aggiornare il flusso di dati. Troviamo un'attività che possiamo usare.
 1.	Nel menu in alto selezionare Attività -> Flusso di dati. L'attività Flusso di dati viene aggiunta al riquadro di progettazione centrale. Notare che il riquadro inferiore contiene ora opzioni di configurazione dell'attività Flusso di dati.
 2.	Configureremo l'attività per la connessione all'attività df_People_SharePoint. Nel riquadro inferiore selezionare Impostazioni.
@@ -137,7 +118,7 @@ Si notino i vantaggi offerti dall'uso della pipeline di dati rispetto all'impost
 •	La pipeline offre la possibilità di riprovare più volte prima che l'aggiornamento venga considerato non riuscito.
 •	La pipeline offre la possibilità di eseguire l'aggiornamento in pochi secondi mentre l'aggiornamento pianificato del flusso di dati avviene ogni 30 minuti.
 
-Attività 5 - Creazione di una nuova pipeline di dati
+### Attività 5 - Creazione di una nuova pipeline di dati
 Aggiungiamo un po' più di complessità al nostro scenario. Abbiamo notato che se i dati non sono disponibili alle 09:00, in genere lo sono entro cinque minuti. Se non viene rispettata la finestra
 temporale, saranno necessari 15 minuti affinché il file sia disponibile. Vogliamo pianificare i nuovi tentativi a cinque e 15 minuti. Vediamo come è possibile ottenere questo risultato creando una nuova pipeline di dati.
 1.	Nel pannello di sinistra fare clic su FAIAD_<nome utente> per andare alla home page dell'area di lavoro.
@@ -148,7 +129,7 @@ temporale, saranno necessari 15 minuti affinché il file sia disponibile. Voglia
  
 
 
-Attività 6 - Creazione di un'attività Fino a
+### Attività 6 - Creazione di un'attività Fino a
 1.	Si aprirà la schermata di Pipeline di dati. Nel menu selezionare Attività.
 2.	Fate clic sui puntini di sospensione (…) a destra.
 3.	Nell'elenco di attività fare clic su Fino a.
@@ -158,7 +139,7 @@ Nel nostro scenario, ripeteremo e aggiorneremo il flusso di dati finché non avr
 
 
 
-Attività 7 - Creazione di variabili
+### Attività 7 - Creazione di variabili
 1.	Dobbiamo creare variabili che verranno usate per l'iterazione e l'impostazione dello stato. Selezionare l'area vuota nel riquadro di progettazione della pipeline.
 2.	Notare che il menu nel riquadro inferiore cambia. Selezionare Variabili.
 3.	Selezionare Nuova per aggiungere una nuova variabile.
@@ -177,7 +158,7 @@ a.	varIsSuccess di tipo String con valore predefinito No. Questa variabile verr�
 b.	varSuccess di tipo String con valore predefinito Sì. Questa variabile verrà usata per impostare il valore di varIsSuccess se l'aggiornamento del flusso di dati ha esito positivo.
 c.	varWaitTime di tipo Integer con valore predefinito 60. Questa variabile verrà usata per impostare il tempo di attesa in caso il flusso di dati non riesca (5 minuti/300 secondi oppure 15 minuti/900 secondi).
 
-Attività 8 - Configurazione di un'attività Fino a
+### Attività 8 - Configurazione di un'attività Fino a
 1.	Selezionare l'attività Fino a.
 2.	Nel riquadro inferiore selezionare Generale.
 3.	Immettere il Nome: Iterator
@@ -229,7 +210,7 @@ IntelliSense). Seleziona la funzione equals.
 
 
 
-Attività 9 - Configurazione di un'attività Flusso di dati
+### Attività 9 - Configurazione di un'attività Flusso di dati
 1.	Si aprirà nuovamente la schermata di progettazione. Con l'attività Fino a selezionata, nel
 riquadro inferiore selezionare Attività. Aggiungeremo ora le attività che devono essere eseguite.
 2.	Selezionare l'icona Modifica nella prima riga. Si aprirà una schermata di progettazione dell'iteratore vuota.
@@ -245,7 +226,7 @@ riquadro inferiore selezionare Attività. Aggiungeremo ora le attività che devo
 9.	Nel menu a discesa Flusso di dati selezionare df_People_SharePoint. Quando questa attività Flusso di dati viene eseguita, aggiornerà df_People_SharePoint.
 
  
-Attività 10 - Configurazione della prima attività Imposta variabile
+### Attività 10 - Configurazione della prima attività Imposta variabile
 Abbiamo configurato l'attività Flusso di dati come abbiamo fatto in precedenza nel lab. Ora
 aggiungeremo nuova logica. Se l'aggiornamento del flusso di dati ha esito positivo, è necessario
 uscire dall'iteratore Fino a. Ricordare che una delle condizioni per uscire dell'iteratore è impostare il valore della variabile varIsSuccess su Sì.
@@ -276,7 +257,7 @@ varSuccess su Sì. Quindi, assegniamo il valore Sì alla variabile varIsSuccess.
 
 Ora dobbiamo impostare il contatore degli esiti negativi dell'attività Flusso di dati. Nella pipeline di dati una variabile non può fare riferimento a se stessa. Pertanto non possiamo incrementare la variabile contatore varCounter aggiungendo uno al suo valore (varCounter = varCounter + 1). Usiamo quindi la variabile varTempCounter.
  
-Attività 11 - Configurazione della seconda attività Imposta variabile
+### Attività 11 - Configurazione della seconda attività Imposta variabile
 1.	Nel menu in alto selezionare Attività -> Imposta variabile. L'attività Imposta variabile viene aggiunta al canvas di progettazione.
 2.	Con l'attività Imposta variabile selezionata, nel riquadro inferiore selezionare Generale. Assegniamo all'attività un nome e una descrizione.
 3.	Nel campo Nome immettere set_varTempCounter
@@ -297,7 +278,7 @@ Nota: questa funzione imposta il valore della variabile varTempCounter sul valor
 Ora dobbiamo impostare il valore della variabile varCounter sul valore di varTempCounter.
 
 
-Attività 12 - Configurazione della terza attività Imposta variabile
+### Attività 12 - Configurazione della terza attività Imposta variabile
 1.	Nel menu in alto selezionare Attività -> Imposta variabile. L'attività Imposta variabile viene aggiunta al canvas di progettazione.
 2.	Con l'attività Imposta variabile selezionata, nel riquadro inferiore selezionare Generale. Assegniamo all'attività un nome e una descrizione.
 3.	Nel campo Nome immettere set_varCounter.
@@ -316,7 +297,7 @@ Nota: questa funzione imposta il valore della variabile varCounter sul valore de
  
 
 
-Attività 13 - Configurazione di un'attività Attesa
+### Attività 13 - Configurazione di un'attività Attesa
 Quindi, dovremo impostare un'attesa di 5 minuti/300 secondi in caso di un primo esito negativo dell'aggiornamento del flusso di dati, prima di un nuovo tentativo. Se l'aggiornamento del flusso di dati non riesce per una seconda volta, dovrà intercorrere un'attesa di 15 minuti/900 secondi prima di un nuovo tentativo. Useremo l'attività Attesa e la variabile varWaitTime per impostare il tempo di attesa.
 1.	Nel menu in alto selezionare Attività -> puntini di sospensione (…) -> Attesa. L'attività Attesa viene aggiunta al canvas di progettazione.
 2.	Con l'attività Attesa selezionata, nel riquadro inferiore selezionare Generale. Assegniamo all'attività un nome e una descrizione.
@@ -355,7 +336,7 @@ per salvare la pipeline di dati.
 
 
 
-Attività 14 - Configurazione dell'aggiornamento pianificato per la pipeline di dati
+### Attività 14 - Configurazione dell'aggiornamento pianificato per la pipeline di dati
 1.	Possiamo testare la pipeline di dati selezionando Home -> Esegui.
 
 Nota: il completamento dell'aggiornamento della pipeline di dati potrebbe richiedere alcuni minuti. Questo è un ambiente di formazione, quindi il file in SharePoint è sempre disponibile. Pertanto, in questo caso la pipeline di dati non avrà mai esito negativo.
