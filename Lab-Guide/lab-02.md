@@ -1,21 +1,21 @@
 ![](../Images/lab-02/image.png)
 
 ## Sumário
-Introdução<br>	
-Licença do Fabric	<br>
-&nbsp; &nbsp; &nbsp; Tarefa 1: Habilitar uma licença de avaliação do Microsoft Fabric	
+- Introdução	
+- Licença do Fabric
+  - Tarefa 1: Habilitar uma licença de avaliação do Microsoft Fabric	
 Visão geral das experiências do Fabric	<br>
-&nbsp; &nbsp; &nbsp; Tarefa 2: Experiência do Data Factory<br>	
-&nbsp; &nbsp; &nbsp; Tarefa 3: Experiência do Data Activator<br>	
-&nbsp; &nbsp; &nbsp; Tarefa 4: Experiência do Industry Solutions<br>	
-&nbsp; &nbsp; &nbsp; Tarefa 5: Experiência do Synapse Data Engineering	<br>
-&nbsp; &nbsp; &nbsp; Tarefa 6: Experiência do Synapse Data Science	<br>
-&nbsp; &nbsp; &nbsp; Tarefa 7: Experiência do Synapse Data Warehouse	<br>
-&nbsp; &nbsp; &nbsp; Tarefa 8: Experiência do Real-Time Analytics	<br>
+  - Tarefa 2: Experiência do Data Factory<br>	
+  - Tarefa 3: Experiência do Data Activator<br>	
+  - Tarefa 4: Experiência do Industry Solutions<br>	
+  - Tarefa 5: Experiência do Synapse Data Engineering	<br>
+  - Tarefa 6: Experiência do Synapse Data Science	<br>
+  - Tarefa 7: Experiência do Synapse Data Warehouse	<br>
+  - Tarefa 8: Experiência do Real-Time Analytics	<br>
 Workspace do Fabric	<br>
-&nbsp; &nbsp; &nbsp; Tarefa 9: Criar um workspace do Fabric	<br>
-&nbsp; &nbsp; &nbsp; Tarefa 10: Criar um Lakehouse	<br>
-Referências	
+  - Tarefa 9: Criar um workspace do Fabric	<br>
+  - Tarefa 10: Criar um Lakehouse	<br>
+- Referências	
 
 ## Introdução
 Hoje você aprenderá sobre vários recursos importantes do Microsoft Fabric. Este é um workshop
