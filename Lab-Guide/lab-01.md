@@ -56,7 +56,7 @@ Fabric の説明を始める前に、変換とモデルについて理解する�
 
 のレポートを見てみましょう。
 
-タスク 1: ラボ環境でPower BI Desktop を設定する
+## タスク 1: ラボ環境でPower BI Desktop を設定する
 
 1.	自分のラボ環境の **C:\FAIAD\Reports** フォルダーにある **FAIAD.pbix** を開きます。Power BI Desktop でファイルが開かれます。
 
@@ -94,7 +94,7 @@ Fabric の説明を始める前に、変換とモデルについて理解する�
 
 Power BI Desktop が開きます。
 
-タスク 2: Power BI Desktop レポートを分析する
+## タスク 2: Power BI Desktop レポートを分析する
 
 以下のレポートでは、Fabrikam の売上を分析しています。ページの左上に KPI が一覧表示さ れています。残りのビジュアルは、担当地域、製品グループ、リセラー会社ごとの時系列に 沿った売上を強調しています。
 
@@ -140,7 +140,7 @@ c.	Product ごとの Supplier データがあります。Supplier はProduct に
 d.	Geo によるReseller の場所データがあります。Geo はReseller につながっています。
 e.	Reseller ごとの Customer 情報があります。Customer はReseller につながっています。
 
-タスク 3: Power Query を確認する
+## タスク 3: Power Query を確認する
 
 1.	Power Query を調べてデータ ソースについて理解しましょう。リボンから**ホーム -> データの変換**を選択します。
 
