@@ -168,12 +168,12 @@ d.	Dataverse
 
 7.	ADLS データソースの場合は、**アカウントキー** オプションを使用し、**環境変数**タブ ([ラボガイド] の隣) で確認できる**ADLS ストレージアカウントのアクセスキー**を入力します。
 
-8.	**ADLSData** フォルダーには複数のディメンション (Geo、Product、Reseller、Date) があることがわかります。Sales ファクトもあります。
+8.	**ADLSData** フォルダーには複数のディメンション (Geo、Product、Reseller、Date) があることがわかります。Sales ファクトもあります。<br>
 a.	**Geo ディメンション**は、Cities、Countries、States の各クエリからのデータをマー
-    ジすることで作成されます。
-b.	**Product ディメンション**は、Product Groups とProduct Item Group のクエリからのデータをマージすることで作成されます。
-c.	**Reseller ディメンション**は、BuyingGroup クエリを使ってフィルター処理されます。
-d.	**Sales ファクト**は、InvoiceLineItems とInvoice のクエリをマージすることで作成されます。
+    ジすることで作成されます。<br>
+b.	**Product ディメンション**は、Product Groups とProduct Item Group のクエリからのデータをマージすることで作成されます。<br>
+c.	**Reseller ディメンション**は、BuyingGroup クエリを使ってフィルター処理されます。<br>
+d.	**Sales ファクト**は、InvoiceLineItems とInvoice のクエリをマージすることで作成されます。<br>
 
 9.	Snowflake データソースの場合は、**環境変数**タブ ([ラボ ガイド] の隣) で確認できる
     **Snowflake ユーザー名と Snowflake パスワード**を使用します。
