@@ -132,7 +132,7 @@ DirectLake 機能の使い方がわかります。
     f.	**Import notebook**: ローカルマシンからノートブックをインポートするために使用されます。
     g.	**Use a sample**: サンプルソリューション。
  
-   ![](../Images/lab-02/image042.jpg) 
+    ![](../Images/lab-02/image042.jpg) 
 
 
 ## タスク 6: Synapse Data Science のエクスペリエンス
