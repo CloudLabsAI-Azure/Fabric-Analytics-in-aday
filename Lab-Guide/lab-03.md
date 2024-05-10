@@ -417,13 +417,15 @@ Es ist auch ein SQL-Endpunkt vorhanden, der zum Abfragen dieser Tabelle verwende
 Stellen Sie sicher, dass **alle Abfragen verarbeitet werden**. Lassen Sie uns diese Daten abschließend in Lakehouse erfassen.
 
 ### Aufgabe 12: Datenziel für verbleibende Abfragen konfigurieren
+
 1. Wählen Sie die Abfrage **Product** aus.
+
 2. Klicken Sie im Menüband auf **Start > Datenziel hinzufügen -> Lakehouse**.
 
     ![](../Images/lab-03/image155.jpg)
 
-3. Das Dialogfeld „Herstellen einer Verbindung mit dem Datenziel“ wird geöffnet. Wählen Sie im
-**Dropdown-Menü „Verbindung“** die Option **Lakehouse (keine)** aus.
+3. Das Dialogfeld „Herstellen einer Verbindung mit dem Datenziel“ wird geöffnet. Wählen Sie im **Dropdown-Menü „Verbindung“** die Option **Lakehouse (keine)** aus.
+
 4. Wählen Sie **Weiter** aus.
 
     ![](../Images/lab-03/image158.png)
