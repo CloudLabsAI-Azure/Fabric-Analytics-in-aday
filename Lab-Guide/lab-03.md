@@ -1,143 +1,190 @@
-Sumário
-Introdução	3
-Fluxo de Dados Gen2	3
-Tarefa 1: Criar o Fluxo de Dados Gen2	3
-Tarefa 2: Criar conexão com o ADLS Gen2	5
-Tarefa 3: Criar consulta de pasta Base do ADLS Gen2	7
-Tarefa 4: Criar consulta Cities	9
-Tarefa 5: Criar consulta Countries	11
-Tarefa 6: Criar States usando Copiar – Opção 1	12
-Tarefa 7: Criar consulta Geo por Copiar – Opção 2	15
-Tarefa 8: Configurar destino de dados para a consulta Geo	17
-Tarefa 9: Publicar fluxo de dados	20
-Tarefa 10: Renomear fluxo de dados	22
-Tarefa 11: Criar consultas restantes no Dataflow	23
-Tarefa 12: Configurar destino de dados para as consultas restantes	26
-Referências	29
+## Sumário
 Introdução
+Fluxo de Dados Gen2
+  - Tarefa 1: Criar o Fluxo de Dados Gen2
+  - Tarefa 2: Criar conexão com o ADLS Gen2
+  - Tarefa 3: Criar consulta de pasta Base do ADLS Gen2
+  - Tarefa 4: Criar consulta Cities
+  - Tarefa 5: Criar consulta Countries	
+  - Tarefa 6: Criar States usando Copiar – Opção 1	
+  - Tarefa 7: Criar consulta Geo por Copiar – Opção 2	
+  - Tarefa 8: Configurar destino de dados para a consulta Geo	
+  - Tarefa 9: Publicar fluxo de dados	
+  - Tarefa 10: Renomear fluxo de dados	
+  - Tarefa 11: Criar consultas restantes no Dataflow	
+  - Tarefa 12: Configurar destino de dados para as consultas restantes	
+
+Referências	
+
+## Introdução
 Em nosso cenário, os Dados de Venda são obtidos do sistema ERP e armazenados em um ADLS Gen2. Eles são atualizados ao meio-dia/12h, todos os dias. Precisamos transformar e ingerir esses dados no Lakehouse e usá-los em nosso modelo.
+
 Há várias maneiras de ingerir esses dados.
-•	Atalhos: isso não fornece uma maneira de transformar dados.
-•	Cadernos: isso exige que escrevamos código. É uma abordagem para desenvolvedores.
-•	Fluxo de Dados Gen2: você provavelmente conhece o Power Query ou o Fluxo de Dados Gen1. O Fluxo de Dados Gen2, como o nome indica, é a versão mais recente do Fluxo de Dados. Ele oferece todos os recursos do Power Query/Fluxo de Dados Gen1 com o recurso
+  - **Atalhos:** isso não fornece uma maneira de transformar dados.
+  - **Cadernos:** isso exige que escrevamos código. É uma abordagem para desenvolvedores.
+  - **Fluxo de Dados Gen2:** você provavelmente conhece o Power Query ou o Fluxo de Dados Gen1. O Fluxo de Dados Gen2, como o nome indica, é a versão mais recente do Fluxo de Dados. Ele oferece todos os recursos do Power Query/Fluxo de Dados Gen1 com o recurso
 adicional de transformar e ingerir dados em diversas fontes de dados. Apresentaremos isso nos próximos laboratórios.
-•	Pipeline de Dados: é uma ferramenta de orquestração. As atividades podem ser orquestradas para extrair, transformar e ingerir dados. Usaremos o Pipeline de Dados
+  - **Pipeline de Dados:** é uma ferramenta de orquestração. As atividades podem ser orquestradas para extrair, transformar e ingerir dados. Usaremos o Pipeline de Dados
 para executar a atividade do Fluxo de Dados Gen2 que, por sua vez, realizará a extração, a transformação e a ingestão.
+
 Começaremos com o Fluxo de Dados Gen2 para criar uma conexão com a fonte de dados e as
 transformações necessárias. Em seguida, usaremos o Pipeline de Dados para orquestrar/executar o Fluxo de Dados Gen2.
+
 Ao final deste laboratório, você terá aprendido:
-•	Como criar o Fluxo de dados Gen2
-•	Como conectar ao ADLS Gen2 usando o Fluxo de Dados Gen2 e transformar dados
-•	Como ingerir dados no Lakehouse
+  - Como criar o Fluxo de dados Gen2
+  - Como conectar ao ADLS Gen2 usando o Fluxo de Dados Gen2 e transformar dados
+  - Como ingerir dados no Lakehouse
 
 
-Fluxo de Dados Gen2
-Tarefa 1: Criar o Fluxo de Dados Gen2
-1.	Vamos voltar ao workspace do Fabric que você criou no Laboratório 2, Tarefa 9.
-2.	Se você não saiu do laboratório anterior, estará na tela Lakehouse. Caso contrário, não tem problema. Selecione o ícone Fabric experience selector na parte inferior esquerda da tela.
-3.	Selecione Data Factory na caixa de diálogo de experiência do Fabric aberta. O Data Factory tem as cargas de trabalho necessárias para extrair, transformar e ingerir dados.
+## Fluxo de Dados Gen2
+### Tarefa 1: Criar o Fluxo de Dados Gen2
+1. Vamos voltar ao **workspace do Fabric** que você criou no Laboratório 2, Tarefa 9.
+2. Se você não saiu do laboratório anterior, estará na tela Lakehouse. Caso contrário, não tem problema. Selecione o ícone **Fabric experience selector** na parte inferior esquerda da tela.
+3. Selecione **Data Factory** na caixa de diálogo de experiência do Fabric aberta. O Data Factory tem as cargas de trabalho necessárias para extrair, transformar e ingerir dados.
+![](../Images/lab-03/image01.png)
  
  
-4.	Você será direcionado para a Página Inicial do Data Factory. Em Novo, selecione Fluxo de dados Gen2.
+4.	Você será direcionado para a Página Inicial do Data Factory. Em Novo, selecione **Fluxo de dados Gen2.**
 
-Você será direcionado para a página do Fluxo de Dados. Esta tela parecerá familiar, pois é semelhante ao Fluxo de Dados Gen1 ou Power Query. Você notará que as opções para se conectar a várias fontes de dados estão disponíveis, junto com o recurso para transformar dados. Vamos conectar à fonte de dados ADLS Gen2 e realizar algumas transformações.
+![](../Images/lab-03/image02.png)
+
+Você será direcionado para a **página do Fluxo de Dados.** Esta tela parecerá familiar, pois é semelhante ao Fluxo de Dados Gen1 ou Power Query. Você notará que as opções para se conectar a várias fontes de dados estão disponíveis, junto com o recurso para transformar dados. Vamos conectar à fonte de dados ADLS Gen2 e realizar algumas transformações.
  
-Tarefa 2: Criar conexão com o ADLS Gen2
-1.	Na faixa de opções, selecione Página Inicial -> Obter Dados -> Mais...
+### Tarefa 2: Criar conexão com o ADLS Gen2
+1. Na faixa de opções, selecione **Página Inicial -> Obter Dados -> Mais...**
 
-2.	Você será direcionado para a caixa de diálogo Obter dados Escolher fonte de dados. Você pode procurar a fonte de dados digitando na caixa de pesquisa. No painel esquerdo, há opções para usar uma Tabela em branco ou uma Consulta em branco. Você também encontrará uma nova opção para carregar arquivo. Exploraremos essa opção em um laboratório posterior. Por enquanto, vamos clicar em Exibir mais -> no canto direito da tela.
+![](../Images/lab-03/image03.png)
+2. Você será direcionado para a caixa de diálogo **Obter dados Escolher fonte de dados.** Você pode procurar a fonte de dados digitando na caixa de pesquisa. No painel esquerdo, há opções para usar uma Tabela em branco ou uma Consulta em branco. Você também encontrará uma nova opção para carregar arquivo. Exploraremos essa opção em um laboratório posterior. Por enquanto, vamos clicar em **Exibir mais ->** no canto direito da tela.
+
+![](../Images/lab-03/image04.png)
 
 Agora você pode exibir todas as fontes de dados disponíveis. Você tem a opção de filtrar as fontes de dados por Arquivo, Banco de Dados, Microsoft Fabric, Power Platform, Azure, etc.
 
+![](../Images/lab-03/image05.png)
  
-3.	Selecione Azure nas principais opções de filtro para filtrar as fontes de dados do Azure.
-4.	Selecione Azure Data Lake Storage Gen2.
+3. Selecione **Azure** nas principais opções de filtro para filtrar as fontes de dados do Azure.
+4.	Selecione **Azure Data Lake Storage Gen2.**
 
-5.	Você será direcionado para a caixa de diálogo Conectar-se à fonte de dados. Você precisa criar uma conexão com a fonte de dados ADLS Gen2. Em Configurações de conexão -> URL, insira este link https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet-Format
+![](../Images/lab-03/image06.png)
 
-6.	Selecione Chave de conta no menu suspenso Tipo de autenticação.
-7.	Copie a Adls storage account e Chave de acesso da guia Variáveis de Ambiente (ao lado do Guia de Laboratório) e cole-a na caixa de texto Chave de conta.
+5. Você será direcionado para a caixa de diálogo Conectar-se à fonte de dados. Você precisa criar uma conexão com a fonte de dados ADLS Gen2. Em **Configurações de conexão -> URL**, insira este link https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet-Format
+
+![](../Images/lab-03/image07.png)
+
+6. Selecione **Chave de conta** no menu suspenso Tipo de autenticação.
+7. Copie a **Adls storage account e Chave de acesso** da guia **Variáveis de Ambiente** (ao lado do Guia de Laboratório) e cole-a na **caixa de texto Chave de conta.**
+
+![](../Images/lab-03/image08.png)
  
+8. Selecione **Próximo** na parte inferior direita da tela.
+
+
+### Tarefa 3: Criar consulta de pasta Base do ADLS Gen2
+1. Assim que a conexão for estabelecida, você será direcionado para a tela **Visualizar os dados da pasta.** Existem muitos arquivos na pasta ADLS Gen2. Precisamos de dados de alguns deles.
+Selecione Criar para **criar** uma conexão com a pasta.
+
+![](../Images/lab-03/image09.png)
+
+2. Você está de volta à caixa de diálogo **Power Query.** Esta será a conexão com a pasta raiz do ADLS Gen2. Faremos referência a essa consulta em consultas subsequentes. Vamos renomear a
+consulta. No **painel direito,** em **Configurações de consulta -> Propriedades -> Nome,** altere o nome para **ADLS Base Folder for Geo.**
  
-8.	Selecione Próximo na parte inferior direita da tela.
+3. Todas as consultas do Fluxo de Dados Gen2 são carregadas em um Staging Lakehouse por padrão. Como parte deste laboratório, não prepararemos os dados. Para desabilitar esse
+carregamento, no **painel esquerdo, clique com o botão direito na consulta ADLS Base Folder.**
 
+    **Observação:** O preparo é usado quando precisamos preparar dados para serem usados em transformações adicionais antes que estejam prontos para consumo.
 
-Tarefa 3: Criar consulta de pasta Base do ADLS Gen2
-1.	Assim que a conexão for estabelecida, você será direcionado para a tela Visualizar os dados da pasta. Existem muitos arquivos na pasta ADLS Gen2. Precisamos de dados de alguns deles.
-Selecione Criar para criar uma conexão com a pasta.
+4. Desmarque a opção **Habilitar o preparo.**
 
-2.	Você está de volta à caixa de diálogo Power Query. Esta será a conexão com a pasta raiz do ADLS Gen2. Faremos referência a essa consulta em consultas subsequentes. Vamos renomear a
-consulta. No painel direito, em Configurações de consulta -> Propriedades -> Nome, altere o nome para ADLS Base Folder for Geo.
- 
-3.	Todas as consultas do Fluxo de Dados Gen2 são carregadas em um Staging Lakehouse por padrão. Como parte deste laboratório, não prepararemos os dados. Para desabilitar esse
-carregamento, no painel esquerdo, clique com o botão direito na consulta ADLS Base Folder.
+![](../Images/lab-03/image10.png)
 
-
-Observação: O preparo é usado quando precisamos preparar dados para serem usados em transformações adicionais antes que estejam prontos para consumo.
-
-4.	Desmarque a opção Habilitar o preparo.
-
-Observe que há dois formatos de arquivo na pasta, json e parquet.
-•	Parquet: é um formato de arquivo de código aberto criado para lidar com formatos de dados de armazenamento colunares simples. O Parquet funciona bem com dados complexos em
+Observe que há dois formatos de arquivo na pasta, **json** e **parquet.**
+  - **Parquet:** é um formato de arquivo de código aberto criado para lidar com formatos de dados de armazenamento colunares simples. O Parquet funciona bem com dados complexos em
 grandes volumes e é conhecido por sua compactação de dados de alto desempenho e sua capacidade de lidar com uma ampla variedade de tipos de codificação.
-•	Json: o arquivo contém metadados, como esquema, tipo de dados do arquivo parquet.
-5.	Precisamos apenas do arquivo parquet, pois ele contém os dados necessários. Selecione a seta suspensa da coluna Extension.
-6.	Desmarque .json para que ele seja filtrado em arquivos .parquet.
-7.	Selecione OK.
+  - **Json:** o arquivo contém metadados, como esquema, tipo de dados do arquivo parquet.
+5. Precisamos apenas do arquivo parquet, pois ele contém os dados necessários. Selecione a **seta suspensa da coluna Extension.**
+6. **Desmarque .json** para que ele seja filtrado em arquivos .parquet.
+7. Selecione **OK.**
+
+![](../Images/lab-03/image11.png)
 
 Agora temos a consulta Base configurada. Podemos fazer referência a essa consulta para todas as consultas Geo.
  
-Tarefa 4: Criar consulta Cities
+### Tarefa 4: Criar consulta Cities
 Dados de Sales estão disponíveis pela granularidade Geography, Product, Sales Person e Date. Vamos primeiro criar uma consulta para obter a dimensão Geo. Os dados de Geo estão disponíveis em três arquivos diferentes, localizados nas seguintes subpastas:
-•	Cities: Application.Cities
-•	Countries: Application.Countries
-•	State: Application.StateProvinces
+  - **Cities:** Application.Cities
+  - **Countries:** Application.Countries
+  - **State:** Application.StateProvinces
+
 Precisamos combinar os dados de City, State e Country desses três arquivos para criar a dimensão Geo.
-1.	Vamos começar com City. No painel esquerdo, clique com o botão direito em ADLS Base Folder for Geo. Selecione Referência para criar uma nova consulta que faça referência à consulta ADLS Base Folder for Geo.
+1. Vamos começar com City. No painel esquerdo, **clique com o botão direito em ADLS Base Folder for Geo.** Selecione **Referência** para criar uma nova consulta que faça referência à consulta ADLS Base Folder for Geo.
 
-2.	Selecione a seta suspensa da coluna Folder Path.
+![](../Images/lab-03/image12.png)
 
+2. Selecione a **seta suspensa da coluna Folder Path.**
+
+![](../Images/lab-03/image13.png)
+
+3. Selecione **Filtros de texto -> Contém…**
+
+![](../Images/lab-03/image14.png)
+
+4. Na caixa de diálogo **Filtrar linhas,** insira **Application.Cities** 
+
+    **Observação:** Diferencia maiúsculas e minúsculas.
+5.	Selecione **OK.**
+
+![](../Images/lab-03/image15.png)
+
+6. Os dados serão filtrados em uma única linha. Selecione **Binary** na **coluna Content.**
+
+![](../Images/lab-03/image16.png)
+
+7. Observe que você verá todos os detalhes de City. No **painel direito,** em Configurações** de consulta
+-> Propriedades -> Nome,** altere o nome para **Cities.**
+
+    **Observação:** No canto inferior direito da captura de tela, verifique se a consulta tem quatro etapas aplicadas e aguarde o término do carregamento da consulta. Isso pode levar alguns minutos.
+
+![](../Images/lab-03/image17.png)
+
+No painel direito, em **Etapas aplicadas,** observe que todas as etapas estão registradas. Esse
+comportamento é semelhante ao do Power Query. Agora vamos seguir um processo semelhante para criar a consulta **Country.**
  
-3.	Selecione Filtros de texto -> Contém…
+### Tarefa 5: Criar consulta Countries
+1. No painel esquerdo, **clique com o botão direito em ADLS Base Folder for Geo.** Selecione
+**Referência** para criar uma nova consulta que faça referência à consulta ADLS Base Folder for Geo.
 
-4.	Na caixa de diálogo Filtrar linhas, insira Application.Cities Observação: Diferencia maiúsculas e minúsculas.
-5.	Selecione OK.
+![](../Images/lab-03/image18.png)
 
-6.	Os dados serão filtrados em uma única linha. Selecione Binary na coluna Content.
+2. Selecione a **seta suspensa da coluna Folder Path.**
 
-7.	Observe que você verá todos os detalhes de City. No painel direito, em Configurações de consulta
--> Propriedades -> Nome, altere o nome para Cities.
+![](../Images/lab-03/image19.png)
 
-Observação: No canto inferior direito da captura de tela, verifique se a consulta tem quatro etapas aplicadas e aguarde o término do carregamento da consulta. Isso pode levar alguns minutos.
+3. Selecione **Filtros de texto -> Contém…**
 
-No painel direito, em Etapas aplicadas, observe que todas as etapas estão registradas. Esse
-comportamento é semelhante ao do Power Query. Agora vamos seguir um processo semelhante para criar a consulta Country.
- 
-Tarefa 5: Criar consulta Countries
-1.	No painel esquerdo, clique com o botão direito em ADLS Base Folder for Geo. Selecione
-Referência para criar uma nova consulta que faça referência à consulta ADLS Base Folder for Geo.
+![](../Images/lab-03/image20.png)
 
-2.	Selecione a seta suspensa da coluna Folder Path.
+4. Na caixa de diálogo **Filtrar linhas,** insira **Application.Countries.**
 
-3.	Selecione Filtros de texto -> Contém…
+    **Observação:** Diferencia maiúsculas de minúsculas.
 
-4.	Na caixa de diálogo Filtrar linhas, insira Application.Countries.
+5. Selecione **OK.**
 
-Observação: Diferencia maiúsculas de minúsculas.
+![](../Images/lab-03/image21.png)
 
-5.	Selecione OK.
+6. Os dados serão filtrados em uma única linha. Selecione **Binary** na **coluna Content.**
 
- 
-6.	Os dados serão filtrados em uma única linha. Selecione Binary na coluna Content.
+![](../Images/lab-03/image22.png)
 
-7.	Observe que você verá todos os detalhes de Country. No painel direito, em Configurações de consulta -> Propriedades -> Nome, altere o nome para Countries.
+7.	Observe que você verá todos os detalhes de Country. No **painel direito,** em **Configurações de consulta -> Propriedades -> Nome,** altere o nome para **Countries.**
 
-Observação: No canto inferior direito da captura de tela, verifique se a consulta tem quatro etapas aplicadas e aguarde o término do carregamento da consulta. Isso pode levar alguns minutos.
+    **Observação:** No canto inferior direito da captura de tela, verifique se a consulta tem quatro etapas aplicadas e aguarde o término do carregamento da consulta. Isso pode levar alguns minutos.
+
+![](../Images/lab-03/image23.png)
 
 Precisamos mostrar State em seguida, mas as etapas estão ficando repetitivas. Já temos as consultas no arquivo Power BI Desktop. Vamos ver se podemos copiar as consultas de lá.
 
 
-Tarefa 6: Criar States usando Copiar – Opção 1
+### Tarefa 6: Criar States usando Copiar – Opção 1
 1.	Se você ainda não tiver aberto, abra o arquivo FAIAD.pbix que está na pasta C:\FAIAD\Reports
 do seu ambiente de laboratório.
 2.	Na faixa de opções, selecione Página Inicial -> Transformar dados. A janela do Power Query é aberta. Como você observou no laboratório anterior, as consultas no painel esquerdo são organizadas por fonte de dados.
