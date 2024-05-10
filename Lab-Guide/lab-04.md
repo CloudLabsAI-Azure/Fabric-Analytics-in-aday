@@ -23,9 +23,13 @@
 
 ## Einführung
 Bei unserem Anwendungsfall befinden sich die Lieferantendaten in Snowflake, die Kundendaten in Dataverse und die Mitarbeiterdaten in SharePoint. Alle diese Datenquellen werden zu verschiedenen Zeiten aktualisiert. Um die Anzahl der Datenaktualisierungen von Dataflows zu verringern, erstellen wir für jede dieser Datenquellen individuelle Dataflows.
+
 **Hinweis:** Ein einziger Dataflow berücksichtigt dabei mehrere Datenquellen. Inhalt dieser Übung:
+  
   - Mit Dataflow Gen2 eine Verbindung zu Snowflake herstellen und Daten im Lakehouse erfassen
+  
   - Mit Dataflow Gen2 eine Verbindung zu SharePoint herstellen und Daten im Lakehouse erfassen
+  
   - Mit Dataflow Gen2 eine Verbindung zu Dataverse herstellen und Daten im Lakehouse erfassen
 
 ## Dataflow Gen2
@@ -37,16 +41,22 @@ Bei unserem Anwendungsfall befinden sich die Lieferantendaten in Snowflake, die 
 
 Sie werden zur Dataflow-Seite weitergeleitet. Nachdem Sie Dataflow nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in Dataflow.
 
-3.	Öffnen Sie **FAIAD.pbix** im Ordner **C:\FAIAD\Reports** in Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
-4.	Wählen Sie im Menüband **Start > Daten transformieren** aus. Das Power Query-Fenster wird
+3. Öffnen Sie **FAIAD.pbix** im Ordner **C:\FAIAD\Reports** in Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
+
+4. Wählen Sie im Menüband **Start > Daten transformieren** aus. Das Power Query-Fenster wird
 geöffnet. Wie Sie in der vorherigen Übung festgestellt haben, sind die Abfragen im linken Bereich nach Datenquelle organisiert.
-5.	Das Power Query-Fenster wird geöffnet. Wählen Sie links unter dem Ordner „SnowflakeData“ mit
-**Strg+Auswahl** oder „Umschalt+Auswahl“ die folgenden Abfragen aus:<BR>
-&nbsp; &nbsp; a.	SupplierCategories<BR>
-&nbsp; &nbsp; b.	Suppliers<BR>
-&nbsp; &nbsp; c.	Supplier<BR>
-&nbsp; &nbsp; d.	PO<BR>
-&nbsp; &nbsp; e.	PO Line Items
+
+5. Das Power Query-Fenster wird geöffnet. Wählen Sie links unter dem Ordner „SnowflakeData“ mit **Strg+Auswahl** oder „Umschalt+Auswahl“ die folgenden Abfragen aus:
+
+    a. SupplierCategories
+
+    b. Suppliers
+
+    c. Supplier
+
+    d. PO
+
+    e. PO Line Items
 
 6. **Klicken Sie mit der rechten Maustaste**, und wählen Sie **Kopieren** aus.
 
@@ -73,7 +83,7 @@ Beachten Sie, dass die fünf Abfragen eingefügt wurden und dass der Bereich „
 
     ![](../Images/lab-04/image018.png)
 
-Die Verbindung wird hergestellt, und Sie können die Daten im Vorschaufenster ansehen. Wenn Sie möchten, sehen Sie sich die angewandten Schritte der Abfragen an. Grundsätzlich enthält die Suppliers-Abfrage Lieferanteninformationen und „SupplierCategories“, wie der Name schon sagt, Lieferantenkategorien. Diese beiden Tabellen werden zusammengeführt, um die Dimension „Supplier“ mit den erforderlichen Spalten zu erstellen. Auf ähnliche Weise wird „PO Line Items“ mit „PO“ zusammengeführt, um den Fakt „PO“ zu erstellen. Nun müssen die Daten von „Supplier“ und „PO“ im Lakehouse erfasst werden.
+    Die Verbindung wird hergestellt, und Sie können die Daten im Vorschaufenster ansehen. Wenn Sie möchten, sehen Sie sich die angewandten Schritte der Abfragen an. Grundsätzlich enthält die Suppliers-Abfrage Lieferanteninformationen und „SupplierCategories“, wie der Name schon sagt, Lieferantenkategorien. Diese beiden Tabellen werden zusammengeführt, um die Dimension „Supplier“ mit den erforderlichen Spalten zu erstellen. Auf ähnliche Weise wird „PO Line Items“ mit „PO“ zusammengeführt, um den Fakt „PO“ zu erstellen. Nun müssen die Daten von „Supplier“ und „PO“ im Lakehouse erfasst werden.
 
 6. Wie bereits erwähnt, stellen wir keine dieser Daten bereit. Klicken Sie im Bereich mit den Abfragen **mit der rechten Maustaste** auf die Abfrage **Supplier**, und wählen Sie **Staging aktivieren**
 aus, um das Häkchen zu entfernen.
@@ -121,7 +131,7 @@ aus, um das Häkchen zu entfernen.
 
 Sobald das erledigt ist, sollte bei der Abfrage „PO“ das **Datenziel**, wie im Screenshot unten zu sehen, **Lakehouse** lauten.
 
-    ![](../Images/lab-04/image036.jpg)
+![](../Images/lab-04/image036.jpg)
 
 ### Aufgabe 4: Snowflake-Dataflow umbenennen und veröffentlichen
 1. Wählen Sie oben auf dem Bildschirm den **Pfeil neben Dataflow 2** aus.
@@ -148,8 +158,7 @@ Sie werden zur **Dataflow-Seite** weitergeleitet. Nachdem Sie Dataflow nun kenne
 3. Wählen Sie im Menüband **Start > Daten transformieren** aus. Das Power Query-Fenster wird
 geöffnet. Wie Sie in der vorherigen Übung festgestellt haben, sind die Abfragen im linken Bereich nach Datenquelle organisiert.
 
-4. Das Power Query-Fenster wird geöffnet. Wählen Sie links im Ordner „DataverseData“ mit
-**Strg+Auswahl** die folgenden Abfragen aus:<br>
+4. Das Power Query-Fenster wird geöffnet. Wählen Sie links im Ordner „DataverseData“ mit **Strg+Auswahl** die folgenden Abfragen aus:
 
     a. BabyBoomer
 
@@ -231,13 +240,11 @@ Kategorie verfügbar: BabyBoomer, GenX, GenY und GenZ. Diese vier Abfragen werde
 
     **Hinweis:** Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet. Es kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
 
-3. Wir arbeiten mit Dataflow 2. Benennen wir ihn um, bevor wir fortfahren. Klicken Sie auf die
-**Auslassungspunkte (…)** neben Dataflow 2. Wählen Sie **Eigenschaften** aus.
+3. Wir arbeiten mit Dataflow 2. Benennen wir ihn um, bevor wir fortfahren. Klicken Sie auf die **Auslassungspunkte (…)** neben Dataflow 2. Wählen Sie **Eigenschaften** aus.
 
     ![](../Images/lab-04/image074.jpg)
 
-4. Das Dialogfeld „Dataflow-Eigenschaften“ wird geöffnet. Ändern Sie den **Namen** in
-**df_Customer_Dataverse**.
+4. Das Dialogfeld „Dataflow-Eigenschaften“ wird geöffnet. Ändern Sie den **Namen** in **df_Customer_Dataverse**.
 
 5. Ergänzen Sie im Textfeld **Beschreibung** den Text **Dataflow zur Erfassung von Kundendaten aus Dataverse im Lakehouse**.
 
@@ -255,9 +262,12 @@ Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet. Erstellen
     Sie werden zur **Dataflow-Seite** weitergeleitet. Nachdem Sie Dataflow nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in Dataflow.
 
 2. Öffnen Sie **FAIAD.pbix** im Ordner **C:\FAIAD\Reports** in Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
+
 3. Wählen Sie im Menüband **Start > Daten transformieren** aus. Das Power Query-Fenster wird
 geöffnet. Wie Sie in der vorherigen Übung festgestellt haben, sind die Abfragen im linken Bereich nach Datenquelle organisiert.
+
 4. Das Power Query-Fenster wird geöffnet. Wählen Sie links unter dem Ordner **SharepointData** die Abfrage **People** aus.
+
 5. **Klicken Sie mit der rechten Maustaste**, und wählen Sie **Kopieren** aus.
 
     ![](../Images/lab-04/image081.png)
@@ -297,8 +307,7 @@ Abfragen **mit der rechten Maustaste** auf die Abfrage **People**, und wählen S
 
     ![](../Images/lab-04/image093.jpg)
 
-4. Das Dialogfeld „Herstellen einer Verbindung mit dem Datenziel“ wird geöffnet. Wählen Sie im
-**Dropdown-Menü „Verbindung“** die Option **Lakehouse (keine)** aus.
+4. Das Dialogfeld „Herstellen einer Verbindung mit dem Datenziel“ wird geöffnet. Wählen Sie im **Dropdown-Menü „Verbindung“** die Option **Lakehouse (keine)** aus.
 
 5. Wählen Sie **Weiter** aus.
 
@@ -326,16 +335,13 @@ Abfragen **mit der rechten Maustaste** auf die Abfrage **People**, und wählen S
 
     ![](../Images/lab-04/image105.jpg)
 
-**Hinweis:** Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet. Es kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
+    **Hinweis:** Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet. Es kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
  
-3. Wir arbeiten mit Dataflow 2. Benennen wir ihn um, bevor wir fortfahren. Klicken Sie auf die
-**Auslassungspunkte (…)** neben Dataflow 2. Wählen Sie **Eigenschaften** aus.
+3. Wir arbeiten mit Dataflow 2. Benennen wir ihn um, bevor wir fortfahren. Klicken Sie auf die **Auslassungspunkte (…)** neben Dataflow 2. Wählen Sie **Eigenschaften** aus.
 
     ![](../Images/lab-04/image108.jpg)
 
-
-4. Das Dialogfeld „Dataflow-Eigenschaften“ wird geöffnet. Ändern Sie den **Namen** in
-**df_People_SharePoint**.
+4. Das Dialogfeld „Dataflow-Eigenschaften“ wird geöffnet. Ändern Sie den **Namen** in **df_People_SharePoint**.
 
 5. Ergänzen Sie im Textfeld **Beschreibung** den Text **Dataflow zur Erfassung der Personendaten aus SharePoint im Lakehouse**.
 6. Klicken Sie auf **Speichern**.
