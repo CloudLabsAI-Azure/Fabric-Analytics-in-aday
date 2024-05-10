@@ -31,152 +31,157 @@ données, nous allons créer des flux de données individuels pour chacune de ce
 
 ## Dataflow Gen2
 ### Tâche 1 : copier des requêtes Snowflake dans Dataflow
-1.	Revenons à l’espace de travail Fabric **FAIAD_<username>** que vous avez créé dans le labo 2, tâche 9.
-2.	Dans le menu supérieur, cliquez sur **Nouveau, puis sélectionnez Flux de données Gen2**.
+1. Revenons à l’espace de travail Fabric **FAIAD_<username>** que vous avez créé dans le labo 2, tâche 9.
+
+2. Dans le menu supérieur, cliquez sur **Nouveau, puis sélectionnez Flux de données Gen2**.
 
     ![](../Images/lab-04/image006.png)
 
-Vous êtes alors redirigé vers la **page Dataflow.** Maintenant que nous connaissons Dataflow, copions les requêtes de Power BI Desktop dans Dataflow.
+    Vous êtes alors redirigé vers la **page Dataflow.** Maintenant que nous connaissons Dataflow, copions les requêtes de Power BI Desktop dans Dataflow.
  
-3.	Si vous ne l’avez pas encore ouvert, ouvrez le fichier **FAIAD.pbix** situé dans le dossier
-**C:\FAIAD\Reports** de votre environnement de labo.
-4.	Dans le ruban, cliquez sur **Accueil -> Transformer les données**. Une fenêtre Power Query s’ouvre alors. Comme vous l’avez remarqué dans le labo précédent, les requêtes du volet gauche sont organisées par source de données.
-5.	Une fenêtre Power Query s’ouvre alors. Dans le volet gauche, sous le dossier SnowflakeData, appuyez sur la touche **Ctrl** ou Maj et sélectionnez les requêtes suivantes :
+3. Si vous ne l’avez pas encore ouvert, ouvrez le fichier **FAIAD.pbix** situé dans le dossier **C:\FAIAD\Reports** de votre environnement de labo.
+4. Dans le ruban, cliquez sur **Accueil -> Transformer les données**. Une fenêtre Power Query s’ouvre alors. Comme vous l’avez remarqué dans le labo précédent, les requêtes du volet gauche sont organisées par source de données.
+5. Une fenêtre Power Query s’ouvre alors. Dans le volet gauche, sous le dossier SnowflakeData, appuyez sur la touche **Ctrl** ou Maj et sélectionnez les requêtes suivantes :
 
-    a.	SupplierCategories
+    a. SupplierCategories
 
-    b.	Suppliers
+    b. Suppliers
 
-    c.	Supplier
+    c. Supplier
 
-    d.	PO
+    d. PO
 
-    e.	PO Line Items
+    e. PO Line Items
 
-6.	**Cliquez avec le bouton droit** et sélectionnez **Copier**.
+6. **Cliquez avec le bouton droit** et sélectionnez **Copier**.
 
     ![](../Images/lab-04/image009.png)
 
-7.	Revenez au **navigateur**.
-8.	Dans le **volet Dataflow**, cliquez sur le **volet central** et appuyez sur **Ctrl + V**. (À l’heure actuelle, le clic droit sur Coller n’est pas pris en charge.) Si vous utilisez un appareil MAC, utilisez Cmd+V pour coller.
+7. Revenez au **navigateur**.
+8. Dans le **volet Dataflow**, cliquez sur le **volet central** et appuyez sur **Ctrl + V**. (À l’heure actuelle, le clic droit sur Coller n’est pas pris en charge.) Si vous utilisez un appareil MAC, utilisez Cmd+V pour coller.
 
-**Remarque :** si vous travaillez dans un environnement de labo, sélectionnez les points de suspension en haut à droite de l’écran. Utilisez le curseur **pour activer le Presse-papiers natif de la machine virtuelle**. Cliquez sur OK dans la boîte de dialogue. Une fois que vous avez collé les requêtes, vous
-pouvez désactiver cette option.
+**Remarque :** si vous travaillez dans un environnement de labo, sélectionnez les points de suspension en haut à droite de l’écran. Utilisez le curseur **pour activer le Presse-papiers natif de la machine virtuelle**. Cliquez sur OK dans la boîte de dialogue. Une fois que vous avez collé les requêtes, vous pouvez désactiver cette option.
 
 ![](../Images/lab-04/image012.jpg)
  
  
 ### Tâche 2 : créer une connexion à Snowflake
 Notez que les cinq requêtes sont collées et que vous disposez désormais du volet Requêtes à gauche. Comme nous n’avons pas de connexion créée pour Snowflake, un message d’avertissement s’affiche pour vous demander de configurer la connexion.
-1.	Cliquez sur **Configurer la connection.**
+1. Cliquez sur **Configurer la connection.**
 
     ![](../Images/lab-04/image015.jpg)
 
-2.	La boîte de dialogue Connexion à une source de données s’ouvre alors. Dans la liste déroulante
-**Connexion**, assurez-vous que l’option **Créer une connexion** est sélectionnée.
-3.	Le champ Type d’authentification doit être défini sur **Snowflake**.
-4.	Saisissez le **Nom d’utilisateur et le Mot de passe Snowflake** disponibles dans l’onglet Variables d’environnement (en regard de l’onglet Guide du labo).
+2. La boîte de dialogue Connexion à une source de données s’ouvre alors. Dans la liste déroulante **Connexion**, assurez-vous que l’option **Créer une connexion** est sélectionnée.
+
+3. Le champ Type d’authentification doit être défini sur **Snowflake**.
+4. Saisissez le **Nom d’utilisateur et le Mot de passe Snowflake** disponibles dans l’onglet Variables d’environnement (en regard de l’onglet Guide du labo).
  
-5.	Cliquez sur **Connexion**.
+5. Cliquez sur **Connexion**.
 
     ![](../Images/lab-04/image018.png)
 
 La connexion est alors établie et vous pouvez afficher les données dans le volet d’aperçu. N’hésitez pas à parcourir les étapes appliquées des requêtes. En substance, la requête Suppliers comporte les détails des fournisseurs et la requête SupplierCategories, comme son nom l’indique, comporte des catégories de fournisseurs. Ces deux tables sont jointes pour créer la dimension Supplier, avec les colonnes dont nous avons besoin. De même, nous avons fusionné la requête PO Line Items avec la requête PO pour créer le fait PO. Nous devons maintenant ingérer les données Supplier et PO dans Lakehouse.
 
-6.	Comme indiqué précédemment, nous ne mettons en lots aucune de ces données. Par conséquent, **cliquez avec le bouton droit** sur la requête **Supplier** dans le volet Requêtes et sélectionnez **Activer la mise en scéne** pour supprimer la coche.
+6. Comme indiqué précédemment, nous ne mettons en lots aucune de ces données. Par conséquent, **cliquez avec le bouton droit** sur la requête **Supplier** dans le volet Requêtes et sélectionnez **Activer la mise en scéne** pour supprimer la coche.
 
     ![](../Images/lab-04/image021.png)
 
-7.	De même, cliquez avec le bouton droit sur la requête **PO**. Sélectionnez **Activer la mise en scéne** pour supprimer la coche.
+7. De même, cliquez avec le bouton droit sur la requête **PO**. Sélectionnez **Activer la mise en scéne** pour supprimer la coche.
 
 **Remarque :** nous n’avons pas besoin de désactiver la mise en lots pour les trois autres requêtes, car l’option Activer le chargement a été désactivée dans Power BI Desktop (d’où ces requêtes ont été copiées).
  
 ### Tâche 3 : configurer la destination des données pour les requêtes Supplier et PO
-1.	Sélectionnez la requête **Supplier**.
-2.	Dans le ruban, cliquez sur **Accueil -> Ajouter une destination de données -> Lakehouse**.
+1. Sélectionnez la requête **Supplier**.
+2. Dans le ruban, cliquez sur **Accueil -> Ajouter une destination de données -> Lakehouse**.
 
     ![](../Images/lab-04/image024.jpg)
 
-3.	La boîte de dialogue Se connecter à la destination des données s’ouvre alors. Dans la liste déroulante **Connexion**, sélectionnez **Lakehouse (aucun)**.
-4.	Cliquez sur **Suivant**.
+3. La boîte de dialogue Se connecter à la destination des données s’ouvre alors. Dans la liste déroulante **Connexion**, sélectionnez **Lakehouse (aucun)**.
+
+4. Cliquez sur **Suivant**.
 
     ![](../Images/lab-04/image027.png)
 
-5.	La boîte de dialogue Choisir la cible de destination s’ouvre alors. Assurez-vous que le **bouton radio Nouvelle table** est **coché**, car nous créons une table.
-6.	Nous souhaitons créer la table dans la lakehouse que nous avons créée plus tôt. Dans le volet gauche, accédez à **Lakehouse -> FAIAD_<username>**.
-7.	Sélectionnez **lh_FAIAD**.
-8.	Laissez le champ Nom de la table défini sur **Supplier**.
+5. La boîte de dialogue Choisir la cible de destination s’ouvre alors. Assurez-vous que le **bouton radio Nouvelle table** est **coché**, car nous créons une table.
+
+6. Nous souhaitons créer la table dans la lakehouse que nous avons créée plus tôt. Dans le volet gauche, accédez à **Lakehouse -> FAIAD_<username>**.
+
+7. Sélectionnez **lh_FAIAD**.
+
+8. Laissez le champ Nom de la table défini sur **Supplier**.
  
-9.	Cliquez sur **Suivant**.
+9. Cliquez sur **Suivant**.
 
     ![](../Images/lab-04/image030.png)
 
-10.	Cette fois-ci, nous utiliserons les paramètres automatiques, pour permettre une mise à jour complète des données. De plus, les colonnes seront renommées si nécessaire. Cliquez sur
-**Enregistrer les paramètres**.
+10. Cette fois-ci, nous utiliserons les paramètres automatiques, pour permettre une mise à jour complète des données. De plus, les colonnes seront renommées si nécessaire. Cliquez sur **Enregistrer les paramètres**.
 
     ![](../Images/lab-04/image033.png)
 
 11.	Vous êtes redirigé vers la **fenêtre Power Query**. Dans le **coin inférieur droit**, notez que la liste déroulante Destination des données est définie sur **Lakehouse**. De même, **configurez la
-destination des données pour la requête PO**. Ensuite, la liste déroulante **Destination des
-données** de votre requête PO devrait être définie sur **Lakehouse**, comme illustré dans la capture d’écran ci-dessous.
- 
+destination des données pour la requête PO**. Ensuite, la liste déroulante **Destination desdonnées** de votre requête PO devrait être définie sur **Lakehouse**, comme illustré dans la capture d’écran ci-dessous.
  
     ![](../Images/lab-04/image036.jpg)
 
 ### Tâche 4 : renommer et publier le flux de données Snowflake
-1.	En haut de l’écran, cliquez sur la **flèche en regard de Dataflow 2** pour le renommer.
-2.	Dans la boîte de dialogue, redéfinissez le nom sur **df_Supplier_Snowflake**.
-3.	Appuyez sur **Entrée** pour enregistrer le changement de nom.
+1. En haut de l’écran, cliquez sur la **flèche en regard de Dataflow 2** pour le renommer.
+2. Dans la boîte de dialogue, redéfinissez le nom sur **df_Supplier_Snowflake**.
+3. Appuyez sur **Entrée** pour enregistrer le changement de nom.
 
     ![](../Images/lab-04/image039.png)
- 
-4.	Dans le coin inférieur droit, cliquez sur **Publier**.
+
+4. Dans le coin inférieur droit, cliquez sur **Publier**.
 
     ![](../Images/lab-04/image042.jpg)
 
-Vous êtes alors redirigé vers l’espace de travail **FAIAD_<username>**. La publication du flux de données peut prendre quelques instants. Créons maintenant un flux de données permettant d’importer les données depuis Dataverse.
+    Vous êtes alors redirigé vers l’espace de travail **FAIAD_<username>**. La publication du flux de données peut prendre quelques instants. Créons maintenant un flux de données permettant d’importer les données depuis Dataverse.
 
 ### Tâche 5 : copier des requêtes Dataverse dans Dataflow
 
-1.	Dans le menu supérieur, cliquez sur **Nouveau, puis sélectionnez Flux de données Gen2**.
+1. Dans le menu supérieur, cliquez sur **Nouveau, puis sélectionnez Flux de données Gen2**.
 
     ![](../Images/lab-04/image006.png)
 
-Vous êtes alors redirigé vers la **page Dataflow**. Maintenant que nous connaissons Dataflow, copions les requêtes de Power BI Desktop dans Dataflow.
+    Vous êtes alors redirigé vers la **page Dataflow**. Maintenant que nous connaissons Dataflow, copions les requêtes de Power BI Desktop dans Dataflow.
  
-2.	Si vous ne l’avez pas encore ouvert, ouvrez le fichier **FAIAD.pbix** situé dans le dossier
-**C:\FAIAD\Reports** de votre environnement de labo.
-3.	Dans le ruban, cliquez sur **Accueil -> Transformer les données**. Une fenêtre Power Query s’ouvre alors. Comme vous l’avez remarqué dans le labo précédent, les requêtes du volet gauche sont organisées par source de données.
-4.	Une fenêtre Power Query s’ouvre alors. Dans le volet gauche, sous le dossier DataverseData, appuyez sur la touche **Ctrl et sélectionnez** les requêtes suivantes :
+2. Si vous ne l’avez pas encore ouvert, ouvrez le fichier **FAIAD.pbix** situé dans le dossier **C:\FAIAD\Reports** de votre environnement de labo.
 
-    a.	BabyBoomer
+3. Dans le ruban, cliquez sur **Accueil -> Transformer les données**. Une fenêtre Power Query s’ouvre alors. Comme vous l’avez remarqué dans le labo précédent, les requêtes du volet gauche sont organisées par source de données.
 
-    b.	GenX
+4. Une fenêtre Power Query s’ouvre alors. Dans le volet gauche, sous le dossier DataverseData, appuyez sur la touche **Ctrl et sélectionnez** les requêtes suivantes :
 
-    c.	GenY
+    a. BabyBoomer
 
-    d.	GenZ
+    b. GenX
 
-    e.	Customer
+    c. GenY
 
-5.	**Cliquez avec le bouton droit** et sélectionnez **Copier**.
+    d. GenZ
+
+    e. Customer
+
+5. **Cliquez avec le bouton droit** et sélectionnez **Copier**.
 
     ![](../Images/lab-04/image047.png)
 
-6.	Revenez à la **page Dataflow** dans votre navigateur.
-7.	Dans le **volet Dataflow**, appuyez sur **Ctrl + V**. (À l’heure actuelle, le clic droit sur Coller n’est pas pris en charge.) Si vous utilisez un appareil MAC, utilisez Cmd+V pour coller.
+6. Revenez à la **page Dataflow** dans votre navigateur.
+
+7. Dans le **volet Dataflow**, appuyez sur **Ctrl + V**. (À l’heure actuelle, le clic droit sur Coller n’est pas pris en charge.) Si vous utilisez un appareil MAC, utilisez Cmd+V pour coller.
 
 **Remarque :** si vous travaillez dans un environnement de labo, sélectionnez les points de suspension en haut à droite de l’écran. Utilisez le curseur pour **activer le Presse-papiers natif de la machine virtuelle**. Cliquez sur OK dans la boîte de dialogue. Une fois que vous avez collé les requêtes, vous pouvez désactiver cette option.
 
 ### Tâche 6 : créer une connexion à Dataverse
 Notez que les cinq requêtes sont collées et que vous disposez désormais du volet Requêtes à gauche. Comme nous n’avons pas de connexion créée pour Dataverse, un message d’avertissement s’affiche pour vous demander de configurer la connexion.
-1.	Cliquez sur **Configurer la connexion**.
+
+1. Cliquez sur **Configurer la connexion**.
 
     ![](../Images/lab-04/image050.jpg)
  
-2.	La boîte de dialogue Connexion à une source de données s’ouvre alors. Dans la **liste déroulante Connexion**, assurez-vous que l’option C**réer une connexion** est **sélectionnée**.
-3.	Le champ **Type d’authentification** devrait être défini sur **Compte professionnel**.
-4.	Cliquez sur **Connexion**.
+2. La boîte de dialogue Connexion à une source de données s’ouvre alors. Dans la **liste déroulante Connexion**, assurez-vous que l’option C**réer une connexion** est **sélectionnée**.
+
+3. Le champ **Type d’authentification** devrait être défini sur **Compte professionnel**.
+
+4. Cliquez sur **Connexion**.
 
     ![](../Images/lab-04/image053.jpg)
 
@@ -184,77 +189,77 @@ Notez que les cinq requêtes sont collées et que vous disposez désormais du vo
 La connexion est alors établie et vous pouvez afficher les données dans le volet d’aperçu. N’hésitez pas à parcourir les étapes appliquées des requêtes. Les données client sont disponibles par
 catégorie : BabyBoomer, GenX, GenY et GenZ. Ces quatre requêtes sont ajoutées pour créer la requête Customer. Nous devons maintenant ingérer les données Customer dans Lakehouse.
 
-1.	Comme indiqué précédemment, nous ne mettons en lots aucune de ces données. Par conséquent, **cliquez avec le bouton droit** sur la requête **Customer** dans le volet Requêtes et sélectionnez **Activer la mise en scéne** pour supprimer la coche.
+1. Comme indiqué précédemment, nous ne mettons en lots aucune de ces données. Par conséquent, **cliquez avec le bouton droit** sur la requête **Customer** dans le volet Requêtes et sélectionnez **Activer la mise en scéne** pour supprimer la coche.
 
     ![](../Images/lab-04/image056.png)
 
- 
-2.	Sélectionnez la requête **Customer**.
-3.	Dans le ruban, cliquez sur **Accueil -> Ajouter une destination de données -> Lakehouse**.
+2. Sélectionnez la requête **Customer**.
+
+3. Dans le ruban, cliquez sur **Accueil -> Ajouter une destination de données -> Lakehouse**.
 
     ![](../Images/lab-04/image059.jpg)
 
-4.	La boîte de dialogue Se connecter à la destination des données s’ouvre alors. Dans la liste déroulante **Connexion**, sélectionnez **Lakehouse (aucun)**.
-5.	Cliquez sur **Suivant**.
+4. La boîte de dialogue Se connecter à la destination des données s’ouvre alors. Dans la liste déroulante **Connexion**, sélectionnez **Lakehouse (aucun)**.
+
+5. Cliquez sur **Suivant**.
 
     ![](../Images/lab-04/image062.png)
 
-6.	La boîte de dialogue Choisir la cible de destination s’ouvre alors. Assurez-vous que le bouton radio **Nouvelle table** est coché, car nous créons une table.
-7.	Nous souhaitons créer la table dans la lakehouse que nous avons créée plus tôt. Dans le volet gauche, accédez à **Lakehouse -> FAIAD_<username>**.
-8.	Sélectionnez **lh_FAIAD**.
-9.	Laissez le champ Nom de la table défini sur **Customer**.
+6. La boîte de dialogue Choisir la cible de destination s’ouvre alors. Assurez-vous que le bouton radio **Nouvelle table** est coché, car nous créons une table.
+7. Nous souhaitons créer la table dans la lakehouse que nous avons créée plus tôt. Dans le volet gauche, accédez à **Lakehouse -> FAIAD_<username>**.
+8. Sélectionnez **lh_FAIAD**.
+9. Laissez le champ Nom de la table défini sur **Customer**.
  
-10.	Cliquez sur **Suivant**.
+10. Cliquez sur **Suivant**.
 
     ![](../Images/lab-04/image065.png)
 
-11.	La boîte de dialogue Choisir les paramètres de destination s’ouvre alors. Cette fois-ci, nous utiliserons les paramètres automatiques, pour permettre une mise à jour complète des données. De plus, les colonnes seront renommées si nécessaire. Cliquez sur **Enregistrer les paramètres**.
+11. La boîte de dialogue Choisir les paramètres de destination s’ouvre alors. Cette fois-ci, nous utiliserons les paramètres automatiques, pour permettre une mise à jour complète des données. De plus, les colonnes seront renommées si nécessaire. Cliquez sur **Enregistrer les paramètres**.
 
     ![](../Images/lab-04/image068.png)
 
-
 ### Tâche 8 : publier et renommer le flux de données Dataverse
-1.	Vous êtes redirigé vers la **fenêtre Power Query**. Dans le **coin inférieur droit**, notez que la liste déroulante **Destination des données** est définie sur **Lakehouse**.
-2.	Dans le coin inférieur droit, cliquez sur **Publier**.
+1. Vous êtes redirigé vers la **fenêtre Power Query**. Dans le **coin inférieur droit**, notez que la liste déroulante **Destination des données** est définie sur **Lakehouse**.
+2. Dans le coin inférieur droit, cliquez sur **Publier**.
 
     ![](../Images/lab-04/image071.jpg)
  
 **Remarque :** vous êtes alors redirigé vers l’espace de travail **FAIAD_<username>**. La publication du flux de données peut prendre quelques instants.
 
-3.	Dataflow 2 est le flux de données dans lequel nous travaillions. Renommons-le avant de continuer. Cliquez sur les **points de suspension (…)** en regard de Dataflow 2. Sélectionnez **Propriétés**.
+3. Dataflow 2 est le flux de données dans lequel nous travaillions. Renommons-le avant de continuer. Cliquez sur les **points de suspension (…)** en regard de Dataflow 2. Sélectionnez **Propriétés**.
 
     ![](../Images/lab-04/image074.jpg)
 
-4.	La boîte de dialogue des propriétés du flux de données s’ouvre alors. Redéfinissez le champ **Nom**
+4. La boîte de dialogue des propriétés du flux de données s’ouvre alors. Redéfinissez le champ **Nom**
 sur **df_Customer_Dataverse**.
-5.	Dans la zone de texte **Description**, ajoutez **Dataflow to ingest Customer data from Dataverse to Lakehouse**.
-6.	Cliquez sur **Enregistrer**.
 
-    ![](../Images/lab-04/image077.png)
- 
+5. Dans la zone de texte **Description**, ajoutez **Dataflow to ingest Customer data from Dataverse to Lakehouse**.
+
+6. Cliquez sur **Enregistrer**.
+
+![](../Images/lab-04/image077.png)
  
 Vous êtes alors redirigé vers l’espace de travail **FAIAD_<username>**. Créons maintenant un flux de données permettant d’importer les données de SharePoint.
 
-
 ### Tâche 9 : copier des requêtes SharePoint dans Dataflow
-1.	Dans le menu supérieur, cliquez sur **Nouveau, puis sélectionnez Flux de données Gen2**.
+1. Dans le menu supérieur, cliquez sur **Nouveau, puis sélectionnez Flux de données Gen2**.
 
     ![](../Images/lab-04/image006.png)
 
 Vous êtes alors redirigé vers la **page Dataflow**. Maintenant que nous connaissons Dataflow, copions les requêtes de Power BI Desktop dans Dataflow.
 
-2.	Si vous ne l’avez pas encore ouvert, ouvrez le fichier **FAIAD.pbix** situé dans le dossier
-**C:\FAIAD\Reports** de votre environnement de labo.
+2. Si vous ne l’avez pas encore ouvert, ouvrez le fichier **FAIAD.pbix** situé dans le dossier **C:\FAIAD\Reports** de votre environnement de labo.
  
-3.	Dans le ruban, cliquez sur **Accueil -> Transformer les données**. Une fenêtre Power Query s’ouvre alors. Comme vous l’avez remarqué dans le labo précédent, les requêtes du volet gauche sont organisées par source de données.
-4.	Une fenêtre Power Query s’ouvre alors. Dans le volet gauche, sous le dossier SharepointData,
-**sélectionnez** la requête **People**.
-5.	**Cliquez avec le bouton droit** et sélectionnez **Copier**.
+3. Dans le ruban, cliquez sur **Accueil -> Transformer les données**. Une fenêtre Power Query s’ouvre alors. Comme vous l’avez remarqué dans le labo précédent, les requêtes du volet gauche sont organisées par source de données.
+
+4. Une fenêtre Power Query s’ouvre alors. Dans le volet gauche, sous le dossier SharepointData, **sélectionnez** la requête **People**.
+
+5. **Cliquez avec le bouton droit** et sélectionnez **Copier**.
 
     ![](../Images/lab-04/image082.jpg)
 
-6.	Revenez à l’**écran Dataflow** dans le navigateur.
-7.	Dans le **volet Dataflow**, appuyez sur **Ctrl + V**. (À l’heure actuelle, le clic droit sur Coller n’est pas pris en charge.)
+6. Revenez à l’**écran Dataflow** dans le navigateur.
+7. Dans le **volet Dataflow**, appuyez sur **Ctrl + V**. (À l’heure actuelle, le clic droit sur Coller n’est pas pris en charge.)
 
 **Remarque :** si vous travaillez dans un environnement de labo, sélectionnez les points de suspension en haut à droite de l’écran. Utilisez le curseur pour **activer le Presse-papiers natif de la machine virtuelle**. Cliquez sur OK dans la boîte de dialogue. Une fois que vous avez collé les requêtes, vous
 pouvez désactiver cette option.
@@ -262,66 +267,65 @@ pouvez désactiver cette option.
 Notez que la requête est collée et disponible dans le volet gauche. Comme nous n’avons pas de connexion créée pour SharePoint, un message d’avertissement s’affiche pour vous demander de configurer la connexion.
  
 ### Tâche 10 : créer une connexion SharePoint
-1.	Cliquez sur **Configurer la connexion**.
+1. Cliquez sur **Configurer la connexion**.
 
     ![](../Images/lab-04/image085.jpg)
 
-2.	La boîte de dialogue Connexion à une source de données s’ouvre alors. Dans la liste déroulante
-**Connexion**, assurez-vous que l’option **Créer une connexion** est sélectionnée.
-3.	Le champ **Type d’authentification** devrait être défini sur **Compte professionnel**.
-4.	Cliquez sur **Connexion.**
+2. La boîte de dialogue Connexion à une source de données s’ouvre alors. Dans la liste déroulante **Connexion**, assurez-vous que l’option **Créer une connexion** est sélectionnée.
+
+3. Le champ **Type d’authentification** devrait être défini sur **Compte professionnel**.
+
+4. Cliquez sur **Connexion.**
 
     ![](../Images/lab-04/image088.jpg)
 
- 
 ### Tâche 11 : configurer la destination des données pour la requête People
 La connexion est alors établie et vous pouvez afficher les données dans le volet d’aperçu. N’hésitez pas à parcourir les étapes appliquées des requêtes. Nous devons maintenant ingérer les données People dans Lakehouse.
-1.	Comme indiqué précédemment, nous ne mettons en lots aucune de ces données. Par conséquent, **cliquez avec le bouton droit** sur la requête **People** dans le volet Requêtes et sélectionnez **Activer la mise en scéne** pour supprimer la coche.
+1. Comme indiqué précédemment, nous ne mettons en lots aucune de ces données. Par conséquent, **cliquez avec le bouton droit** sur la requête **People** dans le volet Requêtes et sélectionnez **Activer la mise en scéne** pour supprimer la coche.
 
     ![](../Images/lab-04/image091.png)
 
-2.	Sélectionnez la requête **People.**
-3.	Dans le ruban, cliquez sur **Accueil -> Ajouter une destination de données -> Lakehouse.**
+2. Sélectionnez la requête **People.**
+3. Dans le ruban, cliquez sur **Accueil -> Ajouter une destination de données -> Lakehouse.**
 
     ![](../Images/lab-04/image094.jpg)
 
-4.	La boîte de dialogue Se connecter à la destination des données s’ouvre alors. Dans la liste déroulante **Connexion**, sélectionnez **Lakehouse (aucun)**.
-5.	Cliquez sur **Suivant**.
+4. La boîte de dialogue Se connecter à la destination des données s’ouvre alors. Dans la liste déroulante **Connexion**, sélectionnez **Lakehouse (aucun)**.
+5. Cliquez sur **Suivant**.
  
     ![](../Images/lab-04/image097.png)
 
-6.	La boîte de dialogue Choisir la cible de destination s’ouvre alors. Assurez-vous que le bouton radio **Nouvelle table** est coché, car nous créons une table.
-7.	Nous souhaitons créer la table dans la lakehouse que nous avons créée plus tôt. Dans le volet gauche, accédez à **Lakehouse -> FAIAD_<username>.**
-8.	Sélectionnez **lh_FAIAD**.
-9.	Laissez le champ Nom de la table défini sur **People**.
-10.	Cliquez sur **Suivant**.
+6. La boîte de dialogue Choisir la cible de destination s’ouvre alors. Assurez-vous que le bouton radio **Nouvelle table** est coché, car nous créons une table.
+7. Nous souhaitons créer la table dans la lakehouse que nous avons créée plus tôt. Dans le volet gauche, accédez à **Lakehouse -> FAIAD_<username>.**
+8. Sélectionnez **lh_FAIAD**.
+9. Laissez le champ Nom de la table défini sur **People**.
+10. Cliquez sur **Suivant**.
 
     ![](../Images/lab-04/image100.png)
 
-11.	Cette fois-ci, nous utiliserons les paramètres automatiques, pour permettre une mise à jour complète des données. De plus, les colonnes seront renommées si nécessaire. Cliquez sur
-**Enregistrer les paramètres**.
+11. Cette fois-ci, nous utiliserons les paramètres automatiques, pour permettre une mise à jour complète des données. De plus, les colonnes seront renommées si nécessaire. Cliquez sur **Enregistrer les paramètres**.
 
     ![](../Images/lab-04/image103.png)
  
- 
 ### Tâche 12 : publier et renommer le flux de données SharePoint
-1.	Vous êtes redirigé vers la **fenêtre Power Query**. Dans le **coin inférieur droit**, notez que la liste déroulante Destination des données est définie sur **Lakehouse**.
-2.	Dans le coin inférieur droit, cliquez sur **Publier**.
+1. Vous êtes redirigé vers la **fenêtre Power Query**. Dans le **coin inférieur droit**, notez que la liste déroulante Destination des données est définie sur **Lakehouse**.
+2. Dans le coin inférieur droit, cliquez sur **Publier**.
 
     ![](../Images/lab-04/image106.jpg)
 
 **Remarque :** vous êtes alors redirigé vers l’espace de travail **FAIAD_<username>**. La publication du flux de données peut prendre quelques instants.
 
-3.	Dataflow 2 est le flux de données dans lequel nous travaillions. Renommons-le avant de continuer. Cliquez sur les **points de suspension (…)** en regard de Dataflow 2. Sélectionnez **Propriétés**.
+3. Dataflow 2 est le flux de données dans lequel nous travaillions. Renommons-le avant de continuer. Cliquez sur les **points de suspension (…)** en regard de Dataflow 2. Sélectionnez **Propriétés**.
  
     ![](../Images/lab-04/image109.jpg)
  
-4.	La boîte de dialogue Propriétés du flux de données s’ouvre alors. Redéfinissez le champ **Nom** sur
-**df_People_SharePoint**.
-5.	Dans la zone de texte **Description**, ajoutez **Dataflow to ingest People data from SharePoint to Lakehouse**.
-6.	Cliquez sur **Enregistrer**.
+4. La boîte de dialogue Propriétés du flux de données s’ouvre alors. Redéfinissez le champ **Nom** sur **df_People_SharePoint**.
 
-    ![](../Images/lab-04/image112.png)
+5. Dans la zone de texte **Description**, ajoutez **Dataflow to ingest People data from SharePoint to Lakehouse**.
+
+6. Cliquez sur **Enregistrer**.
+
+![](../Images/lab-04/image112.png)
 
 Vous êtes alors redirigé vers l’espace de travail **FAIAD_<username>**. Nous avons maintenant ingéré toutes les données dans Lakehouse. Dans le prochain labo, nous allons planifier l’actualisation de Dataflow.
  
