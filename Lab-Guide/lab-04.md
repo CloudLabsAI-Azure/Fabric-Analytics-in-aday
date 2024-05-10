@@ -1,96 +1,111 @@
-Sumário
-Introdução	3
-Fluxo de dados Gen2	3
-Tarefa 1: Copiar consultas do Snowflake para o Fluxo de Dados	3
-Tarefa 2: Criar conexão com o Snowflake	5
-Tarefa 3: Configurar destino de dados para as consultas Supplier e PO	6
-Tarefa 4: Renomear e publicar o fluxo de dados do Snowflake	9
-Tarefa 5: Copiar consultas do Dataverse para o Dataflow	10
-Tarefa 6: Criar conexão com o Dataverse	11
-Tarefa 7: Criar destino de dados para a consulta Customer	12
-Tarefa 8: Publicar e renomear o Fluxo de Dados do Dataverse	15
-Tarefa 9: Copiar consultas do SharePoint para o Fluxo de Dados	17
-Tarefa 10: Criar conexão do SharePoint	19
-Tarefa 11: Configurar destino de dados para a consulta People	20
-Tarefa 12: Publicar e renomear o Fluxo de Dados do SharePoint	22
-Referências	25
-
+## Sumário
 Introdução
-Em nosso cenário, os Dados do Fornecedor estão no Snowflake, os Dados do Cliente no Dataverse e os Dados do Funcionário no SharePoint. Todas essas fontes de dados são atualizadas em momentos diferentes. Para minimizar o número de atualizações de dados de Fluxos de Dados, criaremos fluxos de dados individuais para cada uma dessas fontes de dados.
-Observação: Várias fontes de dados são suportadas em um único Fluxo de Dados. Ao final deste laboratório, você terá aprendido:
-•	Como conectar ao Snowflake usando o Fluxo de dados Gen2 e ingerir dados no Lakehouse
-•	Como conectar ao SharePoint usando o Fluxo de dados Gen2 e ingerir dados no Lakehouse
-•	Como conectar ao Dataverse usando o Fluxo de dados Gen2 e ingerir dados no Lakehouse
-
 
 Fluxo de dados Gen2
-Tarefa 1: Copiar consultas do Snowflake para o Fluxo de Dados
-1.	Vamos voltar ao workspace do Fabric, FAIAD_<nome de usuário>, que você criou no Laboratório 2, Tarefa 9.
-2.	No menu superior, selecione Novo -> Fluxo de dados Gen2.
+  - Tarefa 1: Copiar consultas do Snowflake para o Fluxo de Dados
+  - Tarefa 2: Criar conexão com o Snowflake
+  - Tarefa 3: Configurar destino de dados para as consultas Supplier e PO
+  - Tarefa 4: Renomear e publicar o fluxo de dados do Snowflake
+  - Tarefa 5: Copiar consultas do Dataverse para o Dataflow	
+  - Tarefa 6: Criar conexão com o Dataverse	
+  - Tarefa 7: Criar destino de dados para a consulta Customer	
+  - Tarefa 8: Publicar e renomear o Fluxo de Dados do Dataverse	
+  - Tarefa 9: Copiar consultas do SharePoint para o Fluxo de Dados	
+  - Tarefa 10: Criar conexão do SharePoint	
+  - Tarefa 11: Configurar destino de dados para a consulta People	
+  - Tarefa 12: Publicar e renomear o Fluxo de Dados do SharePoint	
 
-Você será direcionado para a página do Fluxo de Dados. Agora que estamos familiarizados com o Fluxo de Dados, vamos continuar e copiar as consultas do Power BI Desktop no Fluxo de Dados.
+Referências	
 
-3.	Se você ainda não tiver aberto, abra o arquivo FAIAD.pbix que está na pasta C:\FAIAD\Reports
-do seu ambiente de laboratório.
+## Introdução
+Em nosso cenário, os Dados do Fornecedor estão no Snowflake, os Dados do Cliente no Dataverse e os Dados do Funcionário no SharePoint. Todas essas fontes de dados são atualizadas em momentos diferentes. Para minimizar o número de atualizações de dados de Fluxos de Dados, criaremos fluxos de dados individuais para cada uma dessas fontes de dados.
+
+**Observação:** Várias fontes de dados são suportadas em um único Fluxo de Dados. Ao final deste laboratório, você terá aprendido:
+  - Como conectar ao Snowflake usando o Fluxo de dados Gen2 e ingerir dados no Lakehouse
+  - Como conectar ao SharePoint usando o Fluxo de dados Gen2 e ingerir dados no Lakehouse
+  - Como conectar ao Dataverse usando o Fluxo de dados Gen2 e ingerir dados no Lakehouse
+
+
+## Fluxo de dados Gen2
+### Tarefa 1: Copiar consultas do Snowflake para o Fluxo de Dados
+1. Vamos voltar ao workspace do Fabric, **FAIAD_<nome de usuário>,** que você criou no Laboratório 2, Tarefa 9.
+2. No menu superior, selecione **Novo -> Fluxo de dados Gen2.**
+
+![](../Images/lab-04/image01.png)
+
+Você será direcionado para a **página do Fluxo de Dados.** Agora que estamos familiarizados com o Fluxo de Dados, vamos continuar e copiar as consultas do Power BI Desktop no Fluxo de Dados.
+
+3. Se você ainda não tiver aberto, abra o arquivo **FAIAD.pbix** que está na pasta **C:\FAIAD\Report** do seu ambiente de laboratório.
  
-4.	Na faixa de opções, selecione Página Inicial -> Transformar dados. A janela do Power Query é aberta. Como você observou no laboratório anterior, as consultas no painel esquerdo são organizadas por fonte de dados.
-5.	A janela do Power Query é aberta. No painel esquerdo, na pasta SnowflakeData, pressione
-Ctrl+Select ou Shift+Select para selecionar as seguintes consultas:
-a.	SupplierCategories
-b.	Suppliers
-c.	Supplier
-d.	PO
-e.	PO Line Items
-6.	Clique com o botão direito do mouse e selecione Copiar.
+4. Na faixa de opções, selecione **Página Inicial -> Transformar dados.** A janela do Power Query é aberta. Como você observou no laboratório anterior, as consultas no painel esquerdo são organizadas por fonte de dados.
+5. A janela do Power Query é aberta. No painel esquerdo, na pasta SnowflakeData, pressione **Ctrl+Select** ou Shift+Select para selecionar as seguintes consultas:<br>
+a. SupplierCategories<br>
+b. Suppliers<br>
+c. Supplier<br>
+d. PO<br>
+e. PO Line Items
+6.	**Clique com o botão direito do mouse** e selecione **Copiar.**
 
-7.	Volte para o navegador.
-8.	No painel Dataflow, selecione o painel central e pressione Ctrl+V (no momento, não é possível clicar com o botão direito do mouse em Colar). Se você estiver usando o dispositivo MAC, use Cmd+V para colar.
-Observação: se você estiver trabalhando no ambiente de laboratório, selecione as reticências no canto superior direito da tela. Use o controle deslizante para habilitar VM Native Clipboard. Selecione OK na caixa de diálogo. Depois que terminar de colar as consultas, você poderá desabilitar essa opção.
+    ![](../Images/lab-04/image02.png)
 
- 
-Tarefa 2: Criar conexão com o Snowflake
+7.	Volte para o **navegador.**
+8.	No **painel Dataflow,** selecione o **painel central** e pressione **Ctrl+V** (no momento, não é possível clicar com o botão direito do mouse em Colar). Se você estiver usando o dispositivo MAC, use Cmd+V para colar.
+
+**Observação:** se você estiver trabalhando no ambiente de laboratório, selecione as reticências no canto superior direito da tela. Use o controle deslizante para **habilitar VM Native Clipboard.** Selecione OK na caixa de diálogo. Depois que terminar de colar as consultas, você poderá desabilitar essa opção.
+
+![](../Images/lab-04/image03.png)
+
+### Tarefa 2: Criar conexão com o Snowflake
 Observe que as cinco consultas foram coladas e agora você tem o painel Consultas à esquerda. Como não temos uma conexão criada para o Snowflake, você verá uma mensagem de aviso solicitando que configure a conexão.
-1.	Selecione Configurar conexão.
+1. Selecione **Configurar conexão.**
 
-2.	A caixa de diálogo Conectar-se à fonte de dados é aberta. Na lista suspensa Conexão, verifique se
-Criar nova conexão está selecionada.
-3.	O Tipo de autenticação deve ser Snowflake.
-4.	Insira o Nome de usuário e a Senha do Snowflake disponíveis na guia Variáveis de Ambiente (ao lado do Guia de Laboratório).
-5.	Selecione Conectar.
+    ![](../Images/lab-04/image04.png)
+
+2. A caixa de diálogo Conectar-se à fonte de dados é aberta. Na lista suspensa **Conexão,** verifique se **Criar nova conexão** está selecionada.
+3. O **Tipo de autenticação** deve ser **Snowflake.**
+4. Insira o **Nome de usuário e a Senha do Snowflake** disponíveis na guia Variáveis de Ambiente (ao lado do Guia de Laboratório).
+5. Selecione **Conectar.**
+
+![](../Images/lab-04/image05.png)
 
 A conexão é estabelecida e você pode exibir os dados no painel de visualização. Fique à vontade para navegar pelas Etapas aplicadas das consultas. Basicamente, a consulta Suppliers tem os detalhes dos fornecedores e SupplierCategories, como o nome indica, tem categorias de fornecedores. Essas duas tabelas são unidas para criar a dimensão Supplier, com as colunas necessárias. Da mesma forma,
 temos a consulta PO Line Items mesclada com PO para criar o fato PO. Agora precisamos ingerir os dados de Supplier e PO no Lakehouse.
  
-6.	Conforme mencionado anteriormente, não estamos preparando nenhum desses dados. Portanto, clique com o botão direito do mouse na consulta Supplier no painel Consultas e selecione Habilitar o preparo para remover a marca de seleção.
+6. Conforme mencionado anteriormente, não estamos preparando nenhum desses dados. Portanto, **clique com o botão direito do mouse** na consulta **Supplier** no painel Consultas e selecione **Habilitar o preparo** para remover a marca de seleção.
 
-7.	Da mesma forma, clique com o botão direito do mouse na consulta PO. Selecione Habilitar o preparo para remover a marca de seleção.
-Observação: Não precisamos desabilitar o preparo para as outras três consultas porque Habilitar Carregamento foi desabilitado no Power BI Desktop (de onde essas consultas foram copiadas).
+![](../Images/lab-04/image06.png)
+
+7. Da mesma forma, clique com o botão direito do mouse na consulta **PO.** Selecione **Habilitar o preparo** para remover a marca de seleção.
+
+**Observação:** Não precisamos desabilitar o preparo para as outras três consultas porque Habilitar Carregamento foi desabilitado no Power BI Desktop (de onde essas consultas foram copiadas).
 
 
-Tarefa 3: Configurar destino de dados para as consultas Supplier e PO
-1.	Selecione a consulta Supplier.
-2.	Na faixa de opções, selecione Página Inicial -> Adicionar destino de dados -> Lakehouse.
+### Tarefa 3: Configurar destino de dados para as consultas Supplier e PO
+1. Selecione a consulta **Supplier.**
+2. Na faixa de opções, selecione **Página Inicial -> Adicionar destino de dados -> Lakehouse.**
 
-3.	A caixa de diálogo Conectar ao destino de dados é aberta. Na lista suspensa Conexão, selecione
-Lakehouse (nenhum).
-4.	Selecione Próximo.
+    ![](../Images/lab-04/image07.png)
+
+3. A caixa de diálogo Conectar ao destino de dados é aberta. Na lista suspensa **Conexão**, selecione **Lakehouse (nenhum).**
+4.	Selecione **Próximo.**
  
- 
+    ![](../Images/lab-04/image08.png)
 
-5.	A caixa de diálogo Escolher alvo de destino é aberta. Verifique se o botão de opção Nova tabela
-está selecionado, pois estamos criando uma nova tabela.
-6.	Queremos criar a tabela no Lakehouse que criamos anteriormente. No painel esquerdo, navegue para Lakehouse -> FAIAD_<nome de usuário>.
-7.	Selecione lh_FAIAD.
-8.	Deixe o nome da tabela como Supplier.
-9.	Selecione Próximo.
+5.	A caixa de diálogo Escolher alvo de destino é aberta. Verifique se o botão de opção **Nova tabela** está **selecionado,** pois estamos criando uma nova tabela.
+6.	Queremos criar a tabela no Lakehouse que criamos anteriormente. No painel esquerdo, navegue para **Lakehouse -> FAIAD_<nome de usuário>.**
+7.	Selecione **lh_FAIAD.**
+8.	Deixe o nome da tabela como **Supplier.**
+9.	Selecione **Próximo.**
 
- 
-10.	A caixa de diálogo Escolher configurações de destino é aberta. Desta vez, usaremos as configurações automáticas, pois assim será feita uma atualização completa dos dados. Além disso, as colunas serão renomeadas conforme necessário. Selecione Salvar configurações.
+    ![](../Images/lab-04/image09.png)
 
-11.	Você será direcionado de volta à janela Power Query. No canto inferior direito, Destino de dados está definido como Lakehouse. Da mesma forma, configure o Destino de dados para
-a consulta PO. Uma vez feito isso, sua consulta PO deverá ter Destino de dados definido como
-Lakehouse conforme mostrado na captura de tela abaixo.
+10.	A caixa de diálogo Escolher configurações de destino é aberta. Desta vez, usaremos as configurações automáticas, pois assim será feita uma atualização completa dos dados. Além disso, as colunas serão renomeadas conforme necessário. Selecione **Salvar configurações.**
 
+![](../Images/lab-04/image10.png)
+
+11.	Você será direcionado de volta à **janela Power Query.** No **canto inferior direito, Destino de dados** está definido como **Lakehouse.** Da mesma forma, **configure o Destino de dados para a consulta PO.** Uma vez feito isso, sua consulta PO deverá ter **Destino de dados** definido como **Lakehouse** conforme mostrado na captura de tela abaixo.
+
+![](../Images/lab-04/image11.png)
  
 Tarefa 4: Renomear e publicar o fluxo de dados do Snowflake
 1.	Na parte superior da tela, selecione a seta ao lado do Dataflow 2 para renomear.
