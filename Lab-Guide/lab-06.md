@@ -46,8 +46,8 @@ Lakehouse	3<br>
 4.	**以下の SQL  クエリをクエリ ウィンドウ**に貼り付けます。このクエリは、サプライヤー名
 ごとに単位数を返します。Sales テーブルをProduct テーブルおよび Supplier テーブルと結合して、これを実現します。
 
-SELECT su.Supplier_Name, SUM(Quantity) as Units FROM dbo.Sales s
-JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.SupplierID = p.SupplierID GROUP BY su.Supplier_Name
+   SELECT su.Supplier_Name, SUM(Quantity) as Units FROM dbo.Sales s
+   JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.SupplierID = p.SupplierID GROUP BY su.Supplier_Name
 
 5.	**実行**をクリックして結果を表示します。
 
@@ -59,7 +59,7 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.S
  
 ## タスク 2: T-SQL 結果を視覚化する
 1.	このクエリの結果を視覚化することもできます。クエリ  ペインで**クエリを強調表示**し、
-**結果ペイン**を選択してから、**このデータを探索する**を選択します。
+   **結果ペイン**を選択してから、**このデータを探索する**を選択します。
 
     ![](../Images/lab-06/image014.png) 
 
@@ -109,7 +109,7 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.S
     ![](../Images/lab-06/image035.png) 
  
 5.	[マージ]  ダイアログボックスが開きます。**マージ用の右テーブル ドロップダウン**で、
-**Product** を選択します。
+   **Product** を選択します。
 
 6.	**StockItemID** を **Sales** テーブルと **Product** テーブルの両方で選択します。これは、Product テーブルと Sales テーブルをマージするためです。
 
@@ -125,13 +125,13 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.S
 
 11.	**OK** を選択します。**クエリのマージ**と **Product の展開**のステップが **Sales** テーブルに作成されていることを確認します。
 
-    ![](../Images/lab-06/image041.jpg) 
+     ![](../Images/lab-06/image041.jpg) 
  
 12.	同様に、Supplier テーブルをマージしましょう。**Sales** テーブル内で + ([Product の展開] の後) を選択して新しいステップを追加します。ダイアログが開きます。
 
 13.	**結合 -> クエリのマージ**を選択します。
 
-    ![](../Images/lab-06/image044.jpg) 
+     ![](../Images/lab-06/image044.jpg) 
 
 14.	[マージ]  ダイアログボックスが開きます。**マージ用の右テーブル ドロップダウン**で、
 **Supplier** を選択します。
@@ -142,7 +142,7 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.S
 
 17.	**OK** を選択します。
 
-    ![](../Images/lab-06/image047.jpg) 
+     ![](../Images/lab-06/image047.jpg) 
  
 18.	**結果**ペインで、**Supplier** 列の横にある**二重矢印**をクリックします。
 
@@ -150,14 +150,14 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.S
 
 20.	**OK** を選択します。Sales テーブルで、**マージされたクエリ数**が追加され、**ステップが記録されている**ことに注意してください。
 
-    ![](../Images/lab-06/image050.jpg) 
+     ![](../Images/lab-06/image050.jpg) 
 
 21.	ここでは、Supplier 名でグループ化して、Supplier 別の数量を取得しましょう。**Sales**
 テーブル内で + ([Supplier の展開] の後) を選択して新しいステップを追加します。ダイアログが開きます。
 
 22.	テー**ブルの変換 -> グループ化**を選択します。[グループ化] ダイアログが開きます。
 
-    ![](../Images/lab-06/image053.jpg) 
+     ![](../Images/lab-06/image053.jpg) 
 
 23.	**グループ化**ドロップダウンから、**Supplier_Name** を選択します。
 
@@ -169,7 +169,7 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.S
 
 27.	**OK** を選択します。
 
-    ![](../Images/lab-06/image056.png)  
+     ![](../Images/lab-06/image056.png)  
  
 
 すべてのステップが Sales ブロックに記録されていることに注意してください。(タスク 4 の下の最初のスクリーン ショットを参照してください)。
@@ -269,7 +269,7 @@ Sales ダッシュボードを作成するために必要ないくつかのメ�
 
 11.	**書式**ドロップダウンで**整数**を選択します。
 
-    ![](../Images/lab-06/image083.jpg) 
+     ![](../Images/lab-06/image083.jpg) 
  
 12.	上部のメニューで **Sales テーブル**を選択した状態で、**ホーム -> 新しいメジャー**を選択します。数式バーが表示されます。
 
@@ -281,7 +281,7 @@ Sales ダッシュボードを作成するために必要ないくつかのメ�
 
 16.	**書式**ドロップダウンで**整数**を選択します。
 
-    ![](../Images/lab-06/image086.jpg) 
+     ![](../Images/lab-06/image086.jpg) 
 
 ここでも、時間の都合上、すべてのメジャーの作成は行いません。時間があれば、ラボの最 後にあるオプション セクションを完了してください。このオプション セクションでは、残りのメジャーを作成するステップについて説明しています。
 データ モデルを作成したところで、次のステップではレポートを作成します。これは次のラボで行います。
@@ -338,7 +338,7 @@ Sales ダッシュボードを作成するために必要ないくつかのメ�
 
 20.	**OK** を選択します。
 
-    ![](../Images/lab-06/image098.png) 
+     ![](../Images/lab-06/image098.png) 
 
 **チェックポイント:**   モデルは下のスクリーンショットのようになっているはずです。
 
@@ -357,7 +357,7 @@ Sales ダッシュボードを作成するために必要ないくつかのメ�
 
 26.	**OK** を選択します。
 
-    ![](../Images/lab-06/image103.png) 
+     ![](../Images/lab-06/image103.png) 
 
 27.	同様に、**PO** と **Product** の間の**多対一**リレーションシップを作成します。**PO** の
 **StockItemID** と **Product** の **StockItemID** を選択します。
@@ -367,9 +367,8 @@ Sales ダッシュボードを作成するために必要ないくつかのメ�
 
 **チェックポイント:**   モデルは下のスクリーンショットのようになっているはずです。
 
-    ![](../Images/lab-06/image106.jpg) 
+   ![](../Images/lab-06/image106.jpg) 
  
-
 
 ## タスク 8: オプションセクション– メジャーを作成する
 残りのメジャーを追加しましょう。
