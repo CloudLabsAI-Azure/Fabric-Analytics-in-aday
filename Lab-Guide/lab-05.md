@@ -389,55 +389,63 @@ Em seguida, precisamos esperar 5 minutos/300 segundos se a atualização do flux
         mul(variables(‘varWaitTime’),5 )
         )
 
-Sinta-se à vontade para digitar esta expressão, usar o menu para selecionar as funções ou copiá-la e colá-la.
+    Sinta-se à vontade para digitar esta expressão, usar o menu para selecionar as funções ou copiá-la e colá-la.
 
+![](../Images/lab-05/image40.png)
  
 Estamos usando duas novas funções aqui:
-•	greater: usa dois números como parâmetros e compara qual deles é maior.
-•	mul: esta é uma função de multiplicação; ela usa dois parâmetros para multiplicar.
+  - greater: usa dois números como parâmetros e compara qual deles é maior.
+  - mul: esta é uma função de multiplicação; ela usa dois parâmetros para multiplicar.
+
 A expressão é uma instrução if aninhada. Ela está verificando se o valor da variável varCounter é maior que 1. Se for verdadeiro, ela verifica se o valor da variável varCounter é 2. Se for verdadeiro,
 ela define o tempo de espera para varWaitTime vezes 15. Lembre-se, definimos como padrão o valor de varWaitTime para 60. Isso seria 60*15 = 900 segundos. Se o valor da variável varCounter não for 2 (for maior que 2, o que significa que a atualização do fluxo de dados falhou 3 vezes, terminamos
 a iteração. Não precisamos mais esperar), o tempo de espera é definido como varWaitTime * 0. Portanto, como 0. Se o valor da variável varCounter for 1, multiplicaremos varWaitTime * 5. Isso seria 60 * 5 = 300 segundos.
-9.	Selecione OK.
-Ponto de verificação: O iterador Until deve ser semelhante à captura de tela abaixo.
 
+9.	Selecione **OK.**
 
-10.	Na parte superior esquerda da tela de design, selecione
-pl_Refresh_People_Sharepoint_Option2 para sair do iterador Until.
+**Ponto de verificação:** O iterador Until deve ser semelhante à captura de tela abaixo.
 
+  ![](../Images/lab-05/image41.png)
+
+10.	Na parte superior esquerda da tela de design, selecione **pl_Refresh_People_Sharepoint_Option2** para sair do iterador Until.
+
+  ![](../Images/lab-05/image42.png)
  
-11.	Terminamos de criar o pipeline de dados. No menu superior, selecione Página Inicial -> ícone de Salvar para salvar o pipeline de dados.
+11.	Terminamos de criar o pipeline de dados. No menu superior, selecione **Página Inicial -> ícone de Salvar** para salvar o pipeline de dados.
 
-
+    ![](../Images/lab-05/image43.png)
 
 Tarefa 14: Configurar atualização de agenda para o Pipeline de dados
-1.	Podemos testar o pipeline de dados selecionando Página Inicial -> Executar.
+1. Podemos testar o pipeline de dados selecionando **Página Inicial -> Executar.**
 
-Observação: Pode levar alguns minutos para que o pipeline de dados seja atualizado. Este é um ambiente de treinamento, portanto o arquivo no SharePoint está sempre disponível.
+    **Observação:** Pode levar alguns minutos para que o pipeline de dados seja atualizado. Este é um ambiente de treinamento, portanto o arquivo no SharePoint está sempre disponível.
 Consequentemente, o pipeline de dados nunca falhará.
 
-2.	Podemos definir o pipeline de dados para ser executado de acordo com uma agenda. No menu superior, selecione Página Inicial > Agenda. A caixa de diálogo Agenda é aberta.
-3.	Defina o botão de opção Execução agendada como Ativado.
-4.	Defina a lista suspensa Repetir como Diariamente.
-5.	Defina Hora como 9:00.
-6.	Defina Data e hora de início como Hoje.
-7.	Defina Data e hora de término como uma data futura.
-8.	Defina seu Fuso horário.
-Observação: Como este é um ambiente de laboratório, você pode definir o fuso horário de sua preferência. Em um cenário real, você definirá o fuso horário com base em sua localização ou na localização da fonte de dados.
-9.	Selecione Aplicar.
-10.	Selecione a marca X na parte superior direita da caixa de diálogo para fechá-la.
- 
- 
+2. Podemos definir o pipeline de dados para ser executado de acordo com uma agenda. No menu superior, selecione **Página Inicial > Agenda.** A caixa de diálogo Agenda é aberta.
+3. Defina o botão de opção **Execução agendada** como **Ativado.**
+4. Defina a **lista suspensa Repetir** como **Diariamente.**
+5. Defina **Hora** como **9:00.**
+6. Defina **Data e hora de início** como **Hoje.**
+7. Defina **Data e hora de término** como uma **data futura.**
+8. Defina seu **Fuso horário.**
 
-11.	Selecione seu workspace do Fabric FAIAD_<nome de usuário> no painel esquerdo para navegar até o workspace.
-Observação: Na tela Agendamento, não há opção de notificação sobre sucesso ou falha (como Agendamento do Fluxo de dados). A notificação pode ser feita adicionando uma atividade no
+Observação: Como este é um ambiente de laboratório, você pode definir o fuso horário de sua preferência. Em um cenário real, você definirá o fuso horário com base em sua localização ou na localização da fonte de dados.
+
+9.	Selecione **Aplicar.**
+10.	Selecione a marca **X** na parte superior direita da caixa de diálogo para fechá-la.
+ 
+    ![](../Images/lab-05/image44.png)
+
+11.	Selecione seu workspace do Fabric **FAIAD_<nome de usuário>** no painel esquerdo para navegar até o workspace.
+
+**Observação:** Na tela Agendamento, não há opção de notificação sobre sucesso ou falha (como Agendamento do Fluxo de dados). A notificação pode ser feita adicionando uma atividade no
 Pipeline de dados. Não estamos fazendo isso neste laboratório, pois é um ambiente de laboratório.
 Agendamos atualizações para as diversas fontes de dados. Criaremos relacionamentos, medidas e realizaremos outras atividades de modelagem no próximo laboratório.
  
 ## Referências
 O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais funções disponíveis no Microsoft Fabric. No menu do serviço, a seção Ajuda (?) tem links para ótimos recursos.
 
-![](../Images/lab-01/image17.png)
+![](../Images/lab-05/image45.png)
 
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas do Microsoft Fabric.
   - Veja a postagem do blog para ler o [anúncio completo de GA do Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
