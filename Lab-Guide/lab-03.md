@@ -81,7 +81,7 @@ Dataflow Gen2	4<br>
     ![](../Images/lab-03/image024.jpg)
 
 5.	[データ ソースへの接続] ダイアログが表示されます。ADLS Gen2 データ ソースへの接続を作成する必要があります。**接続設定 -> URL** にリンク
-    [https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet-Format](#https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/delta-parquet-format) を
+    <https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet-Format> を
     入力します。
 
     ![](../Images/lab-03/image027.jpg)
