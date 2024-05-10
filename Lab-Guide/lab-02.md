@@ -240,27 +240,27 @@ Fabric Analyst in a Day (FAIAD) では、Microsoft Fabric で使用できる主�
 
 Microsoft Fabric の次のステップに役立つリソースをいくつか以下に紹介します。
 
-•	ブログ記事で Microsoft Fabric のGA に関するお知らせの全文を確認する<br>
-•	ガイド付きツアーを通じて Fabric を探索する<br>
-•	Microsoft Fabric の無料試用版にサインアップする<br>
-•	Microsoft Fabric のWeb サイトにアクセスする<br>
-•	Fabric の学習モジュールで新しいスキルを学ぶ<br>
-•	Fabric の技術ドキュメントを参照する<br>
-•	Fabric 入門編の無料のe-book を読む<br>
-•	Fabric コミュニティに参加し、質問の投稿やフィードバックの共有を行い、他のユーザーから学びを得る<br>
+- ブログ記事で [Microsoft-Fabric-のGA-に関するお知らせ](https://aka.ms/Fabric-Hero-Blog-Ignite23) の全文を確認する
+- [ガイド付きツアー](https://aka.ms/Fabric-GuidedTour) を通じて Fabric を探索する
+- [Microsoft Fabric の無料試用版](https://www.microsoft.com/en-us/microsoft-fabric/getting-started) にサインアップする
+- [Microsoft Fabric のWeb サイト](https://www.microsoft.com/en-in/microsoft-fabric) にアクセスする
+- [Fabric の学習モジュール](https://learn.microsoft.com/en-us/training/browse/?products=fabric&resource_type=module)で新しいスキルを学ぶ
+- [Fabric の技術ドキュメント](https://learn.microsoft.com/en-us/fabric/) を参照する
+- [Fabric 入門編の無料のe-book](https://info.microsoft.com/ww-landing-unlocking-transformative-data-value-with-microsoft-fabric.html) を読む
+- [Fabric コミュニティ](https://community.fabric.microsoft.com/)に参加し、質問の投稿やフィードバックの共有を行い、他のユーザーから学びを得る
 
-より詳しい Fabric エクスペリエンスのお知らせに関するブログを参照してください<br>
+より詳しい Fabric  エクスペリエンスのお知らせに関するブログを参照してください。
 
-•	Fabric の Data Factory エクスペリエンスに関するブログ<br>
-•	Fabric のSynapse Data Engineering エクスペリエンスに関するブログ<br>
-•	Fabric のSynapse Data Science エクスペリエンスに関するブログ<br>
-•	Fabric のSynapse Data Warehousing エクスペリエンスに関するブログ<br>
-•	Fabric のSynapse Real-Time Analytics エクスペリエンスに関するブログ<br>
-•	Power BI のお知らせに関するブログ<br>
-•	Fabric の Data Activator エクスペリエンスに関するブログ<br>
-•	Fabric の管理とガバナンスに関するブログ<br>
-•	Fabric のOneLake に関するブログ<br>
-•	Dataverse とMicrosoft Fabric の統合に関するブログ<br>
+- [Fabric の Data Factory エクスペリエンスに関するブログ](https://blog.fabric.microsoft.com/en-us/blog/introducing-data-factory-in-microsoft-fabric/)
+- [Fabric のSynapse Data Engineering エクスペリエンスに関するブログ](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-engineering-in-microsoft-fabric/)
+- [Fabric のSynapse Data Science エクスペリエンスに関するブログ](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-science-in-microsoft-fabric/)
+- [Fabric のSynapse Data Warehousing エクスペリエンスに関するブログ](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-warehouse-in-microsoft-fabric/)
+- [Fabric のSynapse Real-Time Analytics エクスペリエンスに関するブログ](https://blog.fabric.microsoft.com/en-us/blog/sense-analyze-and-generate-insights-with-synapse-real-time-analytics-in-microsoft-fabric/)
+- [Power BI のお知らせに関するブログ](https://powerbi.microsoft.com/en-us/blog/empower-power-bi-users-with-microsoft-fabric-and-copilot/)
+- [Fabric の Data Activator エクスペリエンスに関するブログ](https://blog.fabric.microsoft.com/en-us/blog/driving-actions-from-your-data-with-data-activator/)
+- [Fabric の管理とガバナンスに関するブログ](https://blog.fabric.microsoft.com/en-us/blog/administration-security-and-governance-in-microsoft-fabric/)
+- [Fabric の OneLake に関するブログ](https://blog.fabric.microsoft.com/en-us/blog/microsoft-onelake-in-fabric-the-onedrive-for-data/) 
+- [Dataverse とMicrosof t Fabric の統合に関するブログ](https://cloudblogs.microsoft.com/dynamics365/it/2023/05/24/new-dataverse-enhancements-and-ai-powered-productivity-with-microsoft-365-copilot/)
 
 
 © 2023 Microsoft Corporation. All rights reserved.
