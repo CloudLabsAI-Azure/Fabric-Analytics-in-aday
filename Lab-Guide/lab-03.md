@@ -439,7 +439,8 @@ Sales データは、Geography、Product、SalesPerson、Date の細分性で入
    
     ![](../Images/lab-03/image152.png)
  
-    **すべてのクエリが処理されていること**を確認してください。完了したら、このデータを
+    **すべてのクエリが処理されていること**を確認してください。完了したら、このデータを<br>
+
     Lakehouse に取り込みましょう。
 
 
