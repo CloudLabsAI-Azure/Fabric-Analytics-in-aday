@@ -460,7 +460,7 @@ Dataflow Gen2	3<br>
 
 3.	**名前**フィールドに、**set_varCounter** と入力します。
 
-4.**	説明**フィールドに、**Increment variable varCounter** と入力します。
+4. **説明**フィールドに、**Increment variable varCounter** と入力します。
  
 5.	set_varTempCounter 変数の設定アクティビティから**緑色のチェック マーク**をクリックしてドラッグし、新しい **set_varCounter 変数の設定アクティビティ**に接続します。
  
@@ -549,7 +549,7 @@ Dataflow Gen2	3<br>
 
 5.	**時刻を午前 9 時**に設定します。
 
-6.**	開始日時を今日**に設定します。
+6. **開始日時を今日**に設定します。
 
 7.	**終了日時を将来の日付**に設定します。
 
