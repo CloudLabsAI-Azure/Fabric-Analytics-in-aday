@@ -1,11 +1,3 @@
-> ![](./media/image2.png){width="3.0367432195975503in" height="2.3in"}
-
-![](../Images/picture2.png)
-
-**Microsoft**
-
-**Fabric**
-
 > **Microsoft Fabric**
 >
 > Fabric Analyst in a Day Laboratorio 1
@@ -80,7 +72,7 @@ Antes de comenzar con Fabric, veamos el informe actual en Power BI Desktop para 
 
 1.  Abra **FAIAD.pbix** que se encuentra en la carpeta **C:\\FAIAD\\Reports** de su entorno de laboratorio. El archivo se abrirá en Power BI Desktop.
 
-  ![](../Images/lab-01/image02.jpg)
+    ![](../Images/lab-01/image02.jpg)
 
 2.  Se abre el cuadro de diálogo Escriba su dirección de correo electrónico. Navegue a la pestaña
 
@@ -90,19 +82,19 @@ Antes de comenzar con Fabric, veamos el informe actual en Power BI Desktop para 
 
 4.  Seleccione **Continuar**.
 
-  ![](../Images/lab-01/image12.png)
+    ![](../Images/lab-01/image12.png)
 
 5.  Se abre el cuadro de diálogo Vamos a iniciar sesión. Seleccione **Cuenta profesional o educativa**.
 
 6.  Seleccione **Continuar**.
 
-  ![](../Images/lab-01/image13.png)
+    ![](../Images/lab-01/image13.png)
 
 7.  Se abre el cuadro de diálogo Iniciar sesión. Vuelva a introducir el **Nombre de usuario** copiándolo de la pestaña **Detalles del entorno**.
 
 8.  Seleccione **Siguiente**.
 
-  ![](../Images/lab-01/image03.jpg)
+    ![](../Images/lab-01/image03.jpg)
 
 9.  En el siguiente cuadro de diálogo, introduzca las **Credenciales** de **Contraseña** de la pestaña **Detalles del entorno.**
 
@@ -110,7 +102,7 @@ Antes de comenzar con Fabric, veamos el informe actual en Power BI Desktop para 
 
 11. Se abre el cuadro de diálogo Action Required, que solicita configurar la autenticación multifactor. No necesitamos configurar esto, ya que se trata de un entorno de laboratorio. Seleccione **Ask later**.
 
-    ![](../Images/lab-01/image06.jpg)
+    ![](../Images/lab-01/image14.png)
 
 12. Seleccione **No, iniciar sesión solo en la aplicación** en el siguiente cuadro de diálogo. Ahora se abrirá Power BI Desktop.
 
@@ -118,36 +110,36 @@ Antes de comenzar con Fabric, veamos el informe actual en Power BI Desktop para 
 
 El siguiente informe analiza las ventas de Fabrikam. Los KPI se enumeran en la parte superior izquierda de la página. Los objetos visuales restantes resaltan Sales a lo largo del tiempo, por territorio, grupo de productos y empresa revendedora.
 
-  ![](../Images/lab-01/image07.jpg)
+  ![](../Images/lab-01/image19.png)
 
 **Nota:** En esta capacitación, nos centraremos en la adquisición, transformación y modelado de datos mediante las herramientas disponibles en Fabric. No nos centraremos en el desarrollo de informes ni en la navegación. Dediquemos un par de minutos a comprender el informe y avancemos a los siguientes pasos.
 
 1.  Analicemos los datos por zona de ventas. Seleccione **New England en el objeto visual Sales Territory** (gráfico de dispersión). Vea que en las Ventas a lo largo del tiempo, el revendedor
     Tailspin Toys tiene más ventas en comparación con Wingtip Toys en New England. Si observa el gráfico de columnas de YoY% de ventas, notará que el crecimiento de las ventas de Wingtip Toys ha sido bajo y ha disminuido trimestre tras trimestre durante el año pasado. Tras un pequeño repunte en el tercer trimestre, volvió a bajar en el cuarto.
 
-  ![](../Images/lab-01/image05.jpg)
+    ![](../Images/lab-01/image05.jpg)
 
 2.  Comparemos esto con la zona de las Rocky Mountains. Seleccione **Rocky Mountains en el objeto visual Sales Territory** (gráfico de dispersión). Observe que en el gráfico de columnas YoY% de ventas, las ventas de Wingtip Toys aumentaron drásticamente en el cuarto trimestre de 2022 después de haber sido bajas durante los dos trimestres anteriores.
 
-  ![](../Images/lab-01/image06.jpg)  
+    ![](../Images/lab-01/image06.jpg)  
 
 3.  Seleccione **Rocky Mountains en el objeto visual Sales Territory** para eliminar el filtro.
 
 4.  Desde el objeto visual Gráfico de dispersión en la parte inferior central de la pantalla (Pedidos de venta por Sales), seleccione el valor atípico en la parte superior derecha (4.^º^ cuadrante). Observe que el porcentaje de margen es del 52 %, que está por encima del promedio del 50 %. Además, el YoY% de ventas ha aumentado en los dos últimos trimestres de 2022.
 
-  ![](../Images/lab-01/image07.jpg)
+    ![](../Images/lab-01/image07.jpg)
 
 5.  Seleccione el revendedor atípico en el objeto visual del gráfico de dispersión para **eliminar el filtro**.
 
 6.  Obtengamos los detalles del producto por grupo de productos y revendedor. En el objeto visual del gráfico de barras de Sales por Product Group y Reseller Company, **haga clic en la barra de Packaging Materials de Tailspin Toys** y, en el cuadro de diálogo, seleccione **Obtener detalles -\> Product Detail**.
 
-  ![](../Images/lab-01/image08.jpg)
+    ![](../Images/lab-01/image08.jpg)
 
 Se le dirigirá a la página que proporciona los detalles del producto. Tenga en cuenta que también hay algunos pedidos futuros.
 
 7.  Una vez que haya terminado de revisar esta página, seleccione **Ctrl+flecha hacia atrás** en la parte superior derecha de la página para volver al informe de ventas.
 
-  ![](../Images/lab-01/image09.jpg)
+    ![](../Images/lab-01/image09.jpg)
 
 8.  Analice el informe a su gusto. Una vez listo, veamos la vista del modelo. En el panel de la izquierda, seleccione el icono **Vista del modelo**. Observe que hay dos tablas de hechos, Sales y PO.
 
@@ -171,23 +163,23 @@ Se le dirigirá a la página que proporciona los detalles del producto. Tenga en
 
 1.  Echemos un vistazo a Power Query para entender los orígenes de datos. En la cinta de opciones, seleccione **Inicio -\> Transformar datos**.
 
-  ![](../Images/lab-01/image10.jpg)
+    ![](../Images/lab-01/image10.jpg)
 
 2.  Se abre la ventana de Power Query. En la cinta de opciones, seleccione **Inicio -\> Configuración de origen de datos**. Se abre el cuadro de diálogo Configuración de origen de datos. A medida que se desplaza por la lista, verá que hay cuatro orígenes de datos, como se menciona en el
 
-  planteamiento del problema:
+    planteamiento del problema:
 
-  a.  Snowflake
+      a.  Snowflake
 
-  b.  SharePoint
+      b.  SharePoint
 
-  c.  ADLS Gen2
+      c.  ADLS Gen2
 
-  d.  Dataverse
+      d.  Dataverse
 
 3.  Seleccione **Cerrar** para cerrar el cuadro de diálogo Configuración del origen de datos.
 
-  ![](../Images/lab-01/image11.jpg)
+    ![](../Images/lab-01/image11.jpg)
 
 4.  En el panel Consultas de la izquierda, observe que las consultas están agrupadas por origen de datos.
 
@@ -195,7 +187,7 @@ Se le dirigirá a la página que proporciona los detalles del producto. Tenga en
 
 6.  Puede introducir las credenciales para el origen de datos de Dataverse si escribe el **Nombre de usuario** y **Contraseña** disponibles en la pestaña **Variables de entorno** (junto a la Guía de laboratorio). Seleccione la opción de cuenta de Microsoft.
 
-  ![](../Images/lab-01/image15.png)
+    ![](../Images/lab-01/image15.png)
 
 7.  Para el origen de datos ADLS, utilice la opción **Clave de cuenta** e introduzca la **Clave de acceso de la cuenta de almacenamiento de ADLS** que está disponible en las **Variables de entorno** (al lado de la Guía de laboratorio).
 
@@ -233,47 +225,48 @@ de Power Query similar mediante el flujo de datos de segunda generación y un mo
 
 Fabric Analyst in a Day (FAIAD) le presenta algunas funciones clave disponibles en Microsoft Fabric. En el menú del servicio, la sección Ayuda (?) tiene vínculos a algunos recursos excelentes.
 
-  ![](../Images/lab-01/image18.png)
+  ![](../Images/lab-01/image16.png)
 
 Estos son algunos recursos más que podrán ayudarle a seguir avanzando con Microsoft Fabric.
 
--   Vea la publicación del blog para leer el [[anuncio de disponibilidad general de Microsoft Fabric]{.underline}](https://aka.ms/Fabric-Hero-Blog-Ignite23) completo.
+-   Vea la publicación del blog para leer el [anuncio de disponibilidad general de Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) completo.
 
--   Explore Fabric a través de la [[Visita guiada]{.underline}](https://aka.ms/Fabric-GuidedTour)
+-   Explore Fabric a través de la [Visita guiada](https://aka.ms/Fabric-GuidedTour)
 
--   Regístrese en la [[prueba gratuita de Microsoft Fabric]{.underline}](https://aka.ms/try-fabric)
+-   Regístrese en la [prueba gratuita de Microsoft Fabric](https://aka.ms/try-fabric)
 
--   Visite el [[sitio web de Microsoft Fabric]{.underline}](https://aka.ms/microsoft-fabric)
+-   Visite el [sitio web de Microsoft Fabric](https://aka.ms/microsoft-fabric)
 
--   Adquiera nuevas capacidades mediante la exploración de los [[módulos de aprendizaje de]{.underline}](https://aka.ms/learn-fabric) [[Fabric]{.underline}](https://aka.ms/learn-fabric)
+-   Adquiera nuevas capacidades mediante la exploración de los [módulos de aprendizaje de Fabric](https://aka.ms/learn-fabric)
 
--   Explore la [[documentación técnica de Fabric]{.underline}](https://aka.ms/fabric-docs)
+-   Explore la [documentación técnica de Fabric](https://aka.ms/fabric-docs)
 
--   Lea el [[libro electrónico gratuito sobre cómo empezar a usar Fabric]{.underline}](https://aka.ms/fabric-get-started-ebook)
+-   Lea el [libro electrónico gratuito sobre cómo empezar a usar Fabric](https://aka.ms/fabric-get-started-ebook)
 
--   Únase a la [[comunidad de Fabric]{.underline}](https://aka.ms/fabric-community) para publicar sus preguntas, compartir sus comentarios y aprender de otros.
+-   Únase a la [comunidad de Fabric](https://aka.ms/fabric-community) para publicar sus preguntas, compartir sus comentarios y aprender de otros.
 
 Obtenga más información en los blogs de anuncios de la experiencia Fabric:
 
--   [[Experiencia de Data Factory en el blog de Fabric]{.underline}](https://aka.ms/Fabric-Data-Factory-Blog)
+-   [Experiencia de Data Factory en el blog de Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
 
--   [[Experiencia de Synapse Data Engineering en el blog de Fabric]{.underline}](https://aka.ms/Fabric-DE-Blog)
+-   [Experiencia de Synapse Data Engineering en el blog de Fabric](https://aka.ms/Fabric-DE-Blog)
 
--   [[Experiencia de Synapse Data Science en el blog de Fabric]{.underline}](https://aka.ms/Fabric-DS-Blog)
+-   [Experiencia de Synapse Data Science en el blog de Fabric](https://aka.ms/Fabric-DS-Blog)
 
--   [[Experiencia de Synapse Data Warehousing en el blog de Fabric]{.underline}](https://aka.ms/Fabric-DW-Blog)
+-   [Experiencia de Synapse Data Warehousing en el blog de Fabric](https://aka.ms/Fabric-DW-Blog)
 
--   [[Experiencia de Synapse Real-Time Analytics en el blog de Fabric]{.underline}](https://aka.ms/Fabric-RTA-Blog)
+-   [Experiencia de Synapse Real-Time Analytics en el blog de Fabric](https://aka.ms/Fabric-RTA-Blog)
 
--   [[Blog de anuncios de Power BI]{.underline}](https://aka.ms/Fabric-PBI-Blog)
+-   [Blog de anuncios de Power BI](https://aka.ms/Fabric-PBI-Blog)
 
--   [[Experiencia de Data Activator en el blog de Fabric]{.underline}](https://aka.ms/Fabric-DA-Blog)
+-   [Experiencia de Data Activator en el blog de Fabric](https://aka.ms/Fabric-DA-Blog)
 
--   [[Administración y gobernanza en el blog de Fabric]{.underline}](https://aka.ms/Fabric-Admin-Gov-Blog)
+-   [Administración y gobernanza en el blog de Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 
--   [[OneLake](https://aka.ms/Fabric-OneLake-Blog) [en el blog de Fabric](https://aka.ms/Fabric-OneLake-Blog)]{.underline}
+-   [OneLake en el blog de Fabric](https://aka.ms/Fabric-OneLake-Blog)]
 
--   [[Blog de integración de Dataverse y Microsoft Fabric]{.underline}](https://aka.ms/Dataverse-Fabric-Blog)
+-   [Blog de integración de Dataverse y Microsoft Fabric](https://aka.ms/Dataverse-Fabric-Blog)
+
 
 © 2023 Microsoft Corporation. Todos los derechos reservados.
 
