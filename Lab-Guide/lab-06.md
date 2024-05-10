@@ -1,42 +1,45 @@
-Sumário
-Introdução	3
-Lakehouse	3
-Tarefa 1: Consultar dados usando SQL	3
-Tarefa 2: Visualizar resultado de T-SQL	5
-Tarefa 3: Criar consulta de visual	7
-Tarefa 4: Visualizar os resultados da consulta	12
-Tarefa 5: Criar relacionamentos	13
-Tarefa 6: Criar medidas	15
-Tarefa 7: Seção Opcional – Criar relacionamentos	17
-Tarefa 8: Seção Opcional – Criar medidas	21
-Referências	22
+## Sumário
+- Introdução
+- Lakehouse
+  - Tarefa 1: Consultar dados usando SQL
+  - Tarefa 2: Visualizar resultado de T-SQL
+  - Tarefa 3: Criar consulta de visual
+  - Tarefa 4: Visualizar os resultados da consulta	
+  - Tarefa 5: Criar relacionamentos	
+  - Tarefa 6: Criar medidas	
+  - Tarefa 7: Seção Opcional – Criar relacionamentos	
+  - Tarefa 8: Seção Opcional – Criar medidas	
+- Referências	
 
-Introdução
-Temos dados de diversas fontes ingeridos no Lakehouse. Neste laboratório, você trabalhará com
-o modelo de dados. Geralmente, realizamos atividades de modelagem, como criar relacionamentos, adicionar medidas, etc. no Power BI Desktop. Aqui aprenderemos como realizar essas atividades de modelagem no serviço.
+## Introdução
+Temos dados de diversas fontes ingeridos no Lakehouse. Neste laboratório, você trabalhará com o modelo de dados. Geralmente, realizamos atividades de modelagem, como criar relacionamentos, adicionar medidas, etc. no Power BI Desktop. Aqui aprenderemos como realizar essas atividades de modelagem no serviço.
+
 Ao final deste laboratório, você terá aprendido:
-•	Como explorar o Lakehouse
-•	Como explorar a exibição de SQL do Lakehouse
-•	Como explorar a modelagem de dados no Lakehouse
+  - Como explorar o Lakehouse
+  - Como explorar a exibição de SQL do Lakehouse
+  - Como explorar a modelagem de dados no Lakehouse
 
-Lakehouse
-Tarefa 1: Consultar dados usando SQL
-1.	Vamos voltar ao workspace do Fabric, FAIAD_<nome de usuário>, que você criou no Laboratório 2, Tarefa 9.
-2.	Você verá três tipos de lh_FAIAD: Lakehouse, Modelo semântico e Ponto de extremidade de SQL. Exploramos a opção Lakehouse em um laboratório anterior. Selecione a opção lh_FAIAD -> Ponto de extremidade de análise de SQL para explorar a opção SQL. Você será direcionado à exibição
-de SQL do explorador.
+## Lakehouse
+### Tarefa 1: Consultar dados usando SQL
+1. Vamos voltar ao workspace do Fabric, **FAIAD_<nome de usuário>,** que você criou no Laboratório 2, Tarefa 9.
+2. Você verá três tipos de lh_FAIAD: Lakehouse, Modelo semântico e Ponto de extremidade de SQL. Exploramos a opção Lakehouse em um laboratório anterior. Selecione a opção **lh_FAIAD -> Ponto de extremidade de análise de SQL** para explorar a opção SQL. Você será direcionado à **exibição de SQL** do explorador.
+
+    ![](../Images/lab-06/image01.png)
 
 Se desejar explorar os dados antes de criar um modelo de dados, você poderá usar SQL para fazer isso. Vejamos duas opções para usar SQL, a primeira é para desenvolvedor e a segunda opção é para analistas.
+
 Vamos supor que você queira descobrir rapidamente as Unidades vendidas por Fornecedor usando SQL. Temos duas opções: escrever uma instrução SQL ou usar um visual para criar a instrução SQL.
+
 No painel esquerdo, você pode visualizar as Tabelas. Se você expandir as tabelas, poderá visualizar as Colunas que compõem a tabela. Além disso, existem opções para criar Visualizações, Funções
 e Procedimentos Armazenados de SQL. Se você tiver experiência em SQL, fique à vontade para explorar essas opções. Vamos tentar escrever uma consulta SQL simples.
  
-3.	No menu superior selecione Nova consulta SQL ou na parte inferior o painel esquerdo, selecione Consulta. Você será direcionado à visualização da consulta SQL.
+3. No **menu superior** selecione **Nova consulta SQL** ou na **parte inferior o painel esquerdo,** selecione **Consulta.** Você será direcionado à visualização da consulta SQL.
 
+    ![](../Images/lab-06/image02.png)
 
-4.	Cole a consulta SQL abaixo na janela de consultas. Essa consulta retornará as unidades por Nome do Fornecedor. Para conseguir isso, una tabela Sales com as tabelas Product e Supplier.
+4. Cole a **consulta SQL abaixo** na **janela de consultas.** Essa consulta retornará as unidades por Nome do Fornecedor. Para conseguir isso, una tabela Sales com as tabelas Product e Supplier.
 
-SELECT su.Supplier_Name, SUM(Quantity) as Units FROM dbo.Sales s
-JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.SupplierID = p.SupplierID GROUP BY su.Supplier_Name
+        SELECT su.Supplier_Name, SUM(Quantity) as Units FROM dbo.Sales s JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.SupplierID = p.SupplierID GROUP BY su.Supplier_Name
 
 5.	Clique em Executar para exibir os resultados.
 6.	Há uma opção para salvar essa consulta como uma Visualização selecionando Salvar como visualização.
