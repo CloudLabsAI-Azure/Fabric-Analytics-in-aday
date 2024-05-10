@@ -175,7 +175,7 @@ comportamento é semelhante ao do Power Query. Agora vamos seguir um processo se
 
 ![](../Images/lab-03/image22.png)
 
-7.	Observe que você verá todos os detalhes de Country. No **painel direito,** em **Configurações de consulta -> Propriedades -> Nome,** altere o nome para **Countries.**
+7. Observe que você verá todos os detalhes de Country. No **painel direito,** em **Configurações de consulta -> Propriedades -> Nome,** altere o nome para **Countries.**
 
     **Observação:** No canto inferior direito da captura de tela, verifique se a consulta tem quatro etapas aplicadas e aguarde o término do carregamento da consulta. Isso pode levar alguns minutos.
 
@@ -185,20 +185,24 @@ Precisamos mostrar State em seguida, mas as etapas estão ficando repetitivas. J
 
 
 ### Tarefa 6: Criar States usando Copiar – Opção 1
-1.	Se você ainda não tiver aberto, abra o arquivo FAIAD.pbix que está na pasta C:\FAIAD\Reports
+1. Se você ainda não tiver aberto, abra o arquivo **FAIAD.pbix** que está na pasta **C:\FAIAD\Reports**
 do seu ambiente de laboratório.
-2.	Na faixa de opções, selecione Página Inicial -> Transformar dados. A janela do Power Query é aberta. Como você observou no laboratório anterior, as consultas no painel esquerdo são organizadas por fonte de dados.
+2.	Na faixa de opções, selecione **Página Inicial -> Transformar dados.** A janela do Power Query é aberta. Como você observou no laboratório anterior, as consultas no painel esquerdo são organizadas por fonte de dados.
 
- 
-3.	No painel esquerdo, na pasta ADLSData, clique com o botão direito na consulta States
-e selecione Copiar.
+![](../Images/lab-03/image24.png)
 
-4.	Volte para para o navegador. Você deve estar no Fluxo de Dados em que estávamos trabalhando.
-5.	No painel esquerdo, selecione o painel Consultas e pressione Ctrl+V (no momento, não
-é possível clicar com o botão direito do mouse em Colar). Se você estiver usando o dispositivo MAC, use Cmd+V para colar.
-Observação: se você estiver trabalhando no ambiente de laboratório, selecione as reticências no canto superior direito da tela. Use o controle deslizante para habilitar VM Native Clipboard. Selecione OK na caixa de diálogo. Depois que terminar de colar a consulta, você poderá desabilitar essa opção.
+3. No painel esquerdo, na pasta ADLSData, **clique com o botão direito na consulta States** e selecione **Copiar.**
 
+![](../Images/lab-03/image25.png)
 
+4. Volte para para o **navegador.** Você deve estar no Fluxo de Dados em que estávamos trabalhando.
+5. No painel esquerdo, selecione o painel **Consultas** e pressione **Ctrl+V** (no momento, não é possível clicar com o botão direito do mouse em Colar). Se você estiver usando o dispositivo MAC, use Cmd+V para colar.
+
+**Observação:** se você estiver trabalhando no ambiente de laboratório, selecione as reticências no canto superior direito da tela. Use o controle deslizante para habilitar VM Native Clipboard. Selecione OK na caixa de diálogo. Depois que terminar de colar a consulta, você poderá desabilitar essa opção.
+
+![](../Images/lab-03/image26.png)
+
+![](../Images/lab-03/image26.png)
  
 Observe que a ADLS Base Folder também é copiada. Isso ocorre porque a consulta States se refere à ADLS Base Folder no Power BI Desktop, mas já temos uma consulta semelhante. Vamos resolver isso.
 
