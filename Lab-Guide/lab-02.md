@@ -130,7 +130,8 @@ b. **Experiment:** usado para criar, executar e acompanhar o desenvolvimento de 
 c. **Notebook:** usado para explorar dados e criar soluções de machine learning.<br>
 d. **Environment:** usado para configurar bibliotecas compartilhadas, configurações de computação do Spark e recursos para notebooks e definições de trabalho do Spark.<br>
 e. **Import notebook:** usado para importar notebooks da máquina local.<br>
-f. Use a sample: solução de exemplo.<br>
+f. Use a sample: solução de exemplo.
+
 **Observação:** itens como Notebook, Environmente, Data pipeline estão disponíveis em várias experiências, pois são relevantes em cada uma dessas experiências.
 
 ![](../Images/lab-02/image14.png)
