@@ -218,7 +218,7 @@ DirectLake 機能の使い方がわかります。
 
     ![](../Images/lab-02/image066.jpg)
 
-4.	[New lakehouse] ダイアログが開きます。[Name] テキストボックスに **lh_FAIAD** と入力します。
+4.	[New lakehouse] ダイアログが開きます。[Name] テキストボックスに **lh_FAIAD** と入力します。<br>
     **注:** ここでの lh はLakehouse を指します。識別と検索を容易にするために、接頭辞とし
     て lh を付けています。
  
