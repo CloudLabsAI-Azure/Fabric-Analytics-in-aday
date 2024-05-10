@@ -2,11 +2,9 @@
 
 ## Sumário
 - Introdução
-
 - Fluxo de dados Gen2	
   - Tarefa 1: Configurar atualização agendada para o Fluxo de dados Sales	
   - Tarefa 2: Configurar atualização agendada para o fluxo de dados Supplier e Customer	
-
 - Pipeline de dados	
   - Tarefa 3: Criar Pipeline de dados	
   - Tarefa 4: Criar Pipeline de dados simples	
