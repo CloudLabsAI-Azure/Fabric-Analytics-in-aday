@@ -66,15 +66,15 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 
     ![](../Images/lab-07/image018.jpg) 
 
-**チェックポイント:** 以下のスクリーンショットのようなレポートが表示されます。少数の KPIといくつかの傾向のビジュアルがあります。新しいモデルを分析しようとしており、すぐに開始する必要がある場合、これは良いスタート地点となります。
+    **チェックポイント:** 以下のスクリーンショットのようなレポートが表示されます。少数の KPIといくつかの傾向のビジュアルがあります。新しいモデルを分析しようとしており、すぐに開始する必要がある場合、これは良いスタート地点となります。
 
 
-**注:** 上部のメニューには、レポートを編集したり、データをテーブルとして表示したりするオプションがあります。自由にこれらのオプションを試してみてください。
+    **注:** 上部のメニューには、レポートを編集したり、データをテーブルとして表示したりするオプションがあります。自由にこれらのオプションを試してみてください。
  
 9.	このレポートを保存しましょう。上部のメニューで **Save** を選択します。
 
 10.	[レポートの保存] ダイアログが開きます。レポートに **rpt_Sales_Auto_Report** という名前を付けます。
-**注:** レポート名の前にreport の省略形である rpt を付けています。
+    **注:** レポート名の前にreport の省略形である rpt を付けています。
 
 11.	レポートがワークスペース **FAIAD_<ユーザー名>** に保存されることを確認します。
 
@@ -112,11 +112,11 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
      ![](../Images/lab-07/image033.jpg) 
 
 6.	まだ開いていない場合は、自分のラボ環境の **C:\FAIAD\Reports** フォルダーにある
-**FAIAD.pbix** を開きます。
+    **FAIAD.pbix** を開きます。
  
-このレポートを参考として使用します。まず最初にキャンバスの背景を追加します。レポートヘッダーを作成し、いくつかの KPI を追加して、売上推移の折れ線グラフを作成します。時間の都合上、また出席者には Power BI Desktop でのビジュアル作成の経験があることをふまえ、すべてのビジュアルの作成は行いません。
+    このレポートを参考として使用します。まず最初にキャンバスの背景を追加します。レポートヘッダーを作成し、いくつかの KPI を追加して、売上推移の折れ線グラフを作成します。時間の都合上、また出席者には Power BI Desktop でのビジュアル作成の経      験があることをふまえ、すべてのビジュアルの作成は行いません。
 
-   ![](../Images/lab-07/image036.jpg) 
+    ![](../Images/lab-07/image036.jpg) 
 
 7.	ブラウザーで **Power BI** キャンバスに戻ります。
 
@@ -227,7 +227,7 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 2.	[レポートの保存] ダイアログが開きます。レポートに **rpt_Sales_Report** という名前を付けます。
 
 
-**注:** レポート名の前にreport の省略形である rpt を付けています。
+    **注:** レポート名の前にreport の省略形である rpt を付けています。
 
 3.	レポートが **FAIAD_<ユーザー名>** ワークスペースに保存されることを確認します。
 
@@ -277,9 +277,9 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 
     ![](../Images/lab-07/image072.jpg) 
  
-   **注:** 月がアルファベット順に並べられています。これを修正しましょう。
+    **注:** 月がアルファベット順に並べられています。これを修正しましょう。
 
-   ![](../Images/lab-07/image075.png)  
+    ![](../Images/lab-07/image075.png)  
 
 6.	**左メニュー バーで lh_FAIAD** を選択してレイクハウスに移動します。
 
@@ -288,7 +288,7 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
      ![](../Images/lab-07/image078.jpg) 
 
 8.	lh_FAIAD レイクハウスが表示されます。左側の [エクスプローラー] ペインで、**lhFAIAD ->
-スキーマ -> dbo -> テーブル-> Date** を展開します。
+    スキーマ -> dbo -> テーブル-> Date** を展開します。
 
 9.	**Short_Month_Name** 列を選択します。
 
@@ -365,15 +365,15 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 
 5.	下のコードをコピーして、エディターに貼り付けます。
 
-let
-  Source = #"ADLS Base Folder",
-  #"Filtered Rows" = Table.SelectRows(Source, each Text.Contains([Folder Path], "Sales.Invoices_May")),
- #"https://stvnextblobstorage dfs core windows net/fabrikam-sales/Delta-Parquet-Format/Sales Invoices_May/_0- 0ee085a3-716f-4833-a792-c3162c1de300-0 parquet" = #"Filtered Rows"{[#"Folder
-Path"="https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet- Format/Sales.Invoices_May/",Name="0-0ee085a3-716f-4833-a792-c3162c1de300-0.parquet"]}[Content],
- #"Imported Parquet" = Parquet.Document(#"https://stvnextblobstorage dfs core windows net/fabrikam-sales/Delta- Parquet-Format/Sales Invoices_May/_0-0ee085a3-716f-4833-a792-c3162c1de300-0 parquet")
-in
-  #"Imported Parquet"
- 
+     let
+       Source = #"ADLS Base Folder",
+       #"Filtered Rows" = Table.SelectRows(Source, each Text.Contains([Folder Path], "Sales.Invoices_May")),
+      #"https://stvnextblobstorage dfs core windows net/fabrikam-sales/Delta-Parquet-Format/Sales Invoices_May/_0- 0ee085a3-716f-4833-a792-c3162c1de300-0 parquet" = #"Filtered Rows"{[#"Folder
+     Path"="https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet- Format/Sales.Invoices_May/",Name="0-0ee085a3-716f-4833-a792-c3162c1de300-0.parquet"]}[Content],
+      #"Imported Parquet" = Parquet.Document(#"https://stvnextblobstorage dfs core windows net/fabrikam-sales/Delta- Parquet-Format/Sales Invoices_May/_0-0ee085a3-716f-4833-a792-c3162c1de300-0 parquet")
+     in
+       #"Imported Parquet"
+      
 6.	次へを選択します。
 
      ![](../Images/lab-07/image099.jpg) 
@@ -385,7 +385,7 @@ in
      ![](../Images/lab-07/image102.jpg) 
 
 9.	次に、5 月の請求書データを Invoice テーブルに追加しましょう。[クエリ] セクションで
-**Invoice** クエリを選択します。
+   **Invoice** クエリを選択します。
 
 10.	リボンで **ホーム-> クエリをアペンドする**を選択します。
 
@@ -399,7 +399,7 @@ in
 
      ![](../Images/lab-07/image108.jpg)   
  
-**注:** 公開されると、データフローが最新の情報に更新されます。これには数分かかる場合があります。
+     **注:** 公開されると、データフローが最新の情報に更新されます。これには数分かかる場合があります。
 
 14.	左メニュー バーから **rpt_Sales_Report** を選択して、レポートに戻ります。
 
