@@ -1,4 +1,4 @@
-![image](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/103175482/20e033bc-2f94-4396-ac33-5d3d2d172d82)![](../Images/lab-03/image002.png)
+![](../Images/lab-03/image002.png)
  	 
  
 ## 目次
