@@ -214,7 +214,7 @@ DirectLake 機能の使い方がわかります。
 
 3.	レイクハウスを選択します。
 
-   ![](../Images/lab-02/image066.jpg)
+    ![](../Images/lab-02/image066.jpg)
 
 4.	[New lakehouse] ダイアログが開きます。[Name] テキストボックスに **lh_FAIAD** と入力します。
     **注:** ここでの lh はLakehouse を指します。識別と検索を容易にするために、接頭辞とし
