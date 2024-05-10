@@ -223,8 +223,7 @@ Fügen wir unserem Szenario etwas mehr Komplexität hinzu. Wir haben festgestell
 
 ### Aufgabe 6: Bis-Aktivität erstellen
 
-1. Sie werden zum Bildschirm „Datenpipeline“ weitergeleitet. Wählen Sie im Menü die Option
-**Aktivitäten** aus.
+1. Sie werden zum Bildschirm „Datenpipeline“ weitergeleitet. Wählen Sie im Menü die Option **Aktivitäten** aus.
 
 2. Klicken Sie rechts auf die **Auslassungspunkte (...).**
 
@@ -550,9 +549,7 @@ Der Ausdruck ist eine geschachtelte if-Anweisung. Hiermit wird überprüft, ob d
 
     ![](../Images/lb5-img42.png)
 
- 11. Nun ist die Datenpipeline erstellt. Wählen Sie im oberen Menü **Startseite -> Symbol „Speichern“** aus, um die Datenpipeline zu speichern.
-     
-    ![](../Images/lb5-img43.png)
+ 11. Nun ist die Datenpipeline erstellt. Wählen Sie im oberen Menü **Startseite -> Symbol „Speicher“** aus, um die Datenpipeline zu speichern.
 
 ### Aufgabe 14: Geplante Aktualisierung für die Datenpipeline konfigurieren
 1. Wir können die Datenpipeline testen, indem wir **Startseite -> Ausführen** auswählen.
