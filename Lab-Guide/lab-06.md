@@ -114,131 +114,145 @@ Você será direcionado de volta à **visualização Ponto de extremidade de an�
  
     ![](../Images/lab-06/image14.png) 
 
-14.	A caixa de diálogo Mesclar é aberta. Na lista suspensa Tabela direita para mesclagem, selecione
-Supplier.
-15.	Selecione SupplierID nas tabelas Sales e Supplier. Isso serve para mesclar as tabelas Supplier e Sales.
-16.	Em Tipo de junção, selecione Externa esquerda.
-17.	Selecione OK.
+14.	A caixa de diálogo Mesclar é aberta. Na **lista suspensa Tabela direita para mesclagem,** selecione **Supplier.**
+15.	Selecione **SupplierID** nas tabelas **Sales** e **Supplier.** Isso serve para mesclar as tabelas Supplier e Sales.
+16.	**Em Tipo de junção,** selecione **Externa esquerda.**
+17.	Selecione **OK.**
 
-18.	No painel Resultados, clique na seta dupla ao lado da coluna Supplier.
-19.	A caixa de diálogo é aberta. Selecione Supplier_Name.
-20.	Selecione OK. Observe que, na tabela Sales, a etapa Consultas mescladas é adicionada e as etapas são registradas.
+    ![](../Images/lab-06/image15.png)
+
+18.	No painel **Resultados**, clique na **seta dupla** ao lado da coluna **Supplier.**
+19.	A caixa de diálogo é aberta. Selecione **Supplier_Name.**
+20.	Selecione **OK.** Observe que, na tabela Sales, a etapa **Consultas mescladas** é adicionada e **as etapas são registradas.**
  
- 
+    ![](../Images/lab-06/image16.png) 
 
-21.	Vamos agora agrupar por Nome de fornecedor para obter a quantidade por Fornecedor. Na tabela Sales, selecione "+" (localizado após Fornecedor Expandido) para adicionar uma nova etapa. A caixa de diálogo é aberta.
-22.	Selecione Transformar tabela -> Agrupar por. A caixa de diálogo Agrupar por será aberta.
+21.	Vamos agora agrupar por Nome de fornecedor para obter a quantidade por Fornecedor. Na tabela **Sales,** selecione "+" (localizado após Fornecedor Expandido) para adicionar uma nova etapa. A caixa de diálogo é aberta.
+22.	Selecione **Transformar tabela -> Agrupar por.** A caixa de diálogo Agrupar por será aberta.
 
-23.	Na lista suspensa Agrupar por, selecione Supplier_Name.
-24.	Insira Units como a captura de tela A da caixa de diálogo de consulta de mesclagem.
-25.	Defina Operação como Soma.
-26.	Selecione Quantidade na lista suspensa Coluna.
-27.	Selecione OK.
+    ![](../Images/lab-06/image17.png)
+
+23.	Na lista suspensa **Agrupar por,** selecione **Supplier_Name.**
+24.	Insira **Units** como a captura de tela A da caixa de diálogo de consulta de mesclagem.
+25.	Defina **Operação** como **Soma.**
+26.	Selecione **Quantidade** na lista suspensa **Coluna.**
+27.	Selecione **OK.**
+
+    ![](../Images/lab-06/image18.png)
 
 Observe que todas as etapas são registradas no bloco Vendas. (Veja a primeira captura de tela na Tarefa 4.)
  
-Tarefa 4: Visualizar os resultados da consulta
-1.	Agora que temos a consulta pronta, vamos ver o resultado. Selecione Visualizar os resultados no painel de resultados.
+### Tarefa 4: Visualizar os resultados da consulta
+1. Agora que temos a consulta pronta, vamos ver o resultado. Selecione **Visualizar os resultados** no painel de resultados.
 
-2.	A caixa de diálogo Visualizar os resultados é aberta. No painel Dados à direita, expanda Visual query1.
-3.	Selecione os campos Supplier_Name e Units.
-4.	Observe que o resultado é semelhante ao resultado da consulta SQL anterior. Se desejar, você pode salvar este relatório. Como salvamos um relatório semelhante anteriormente, selecionaremos Cancelar.
+    ![](../Images/lab-06/image19.png)
 
+2. A caixa de diálogo Visualizar os resultados é aberta. No painel **Dados** à direita, **expanda Visual query1.**
+3. Selecione os campos **Supplier_Name** e **Units.**
+4. Observe que o resultado é semelhante ao resultado da consulta SQL anterior. Se desejar, você pode salvar este relatório. Como salvamos um relatório semelhante anteriormente, selecionaremos **Cancelar.**
+
+    ![](../Images/lab-06/image20.png)
  
-Tarefa 5: Criar relacionamentos
+### Tarefa 5: Criar relacionamentos
 Ok, agora estamos prontos para criar o modelo, criar relacionamentos entre tabelas e criar medidas.
-1.	No painel inferior, selecione Modelo. Você observará que o painel central se parece com a visualização Modelo que vemos no Power BI Desktop.
-2.	Redimensione e reorganize as tabelas conforme necessário.
-3.	Vamos criar um relacionamento entre as tabelas Sales e Reseller. Selecione ResellerID na tabela
-Sales e arraste-o para ResellerID na tabela Reseller.
+1. No **painel inferior**, selecione **Modelo.** Você observará que o painel central se parece com a visualização Modelo que vemos no Power BI Desktop.
+2. **Redimensione e reorganize** as tabelas conforme necessário.
+3. Vamos criar um relacionamento entre as tabelas Sales e Reseller. Selecione **ResellerID** na tabela **Sales** e arraste-o para **ResellerID** na tabela **Reseller.**
 
-4.	A caixa de diálogo Novo relacionamento é aberta. Verifique se Tabela 1 é Sales e Coluna
-é ResellerID.
-5.	Verifique se Tabela 2 é Reseller e Coluna é ResellerID.
-6.	Verifique se Cardinalidade é Muitos para um (*:1).
-7.	Verifique se Direção de filtro cruzada é Única.
-8.	Selecione OK.
+    ![](../Images/lab-06/image21.png)
 
+4. A caixa de diálogo Novo relacionamento é aberta. Verifique se **Tabela 1** é **Sales** e **Coluna** é **ResellerID.**
+5. Verifique se **Tabela 2** é **Reseller** e **Coluna** é **ResellerID.**
+6. Verifique se **Cardinalidade** é **Muitos para um (*:1).**
+7. Verifique se **Direção de filtro cruzada** é **Única.**
+8. Selecione **OK.**
+
+    ![](../Images/lab-06/image22.png)
  
-9.	De maneira semelhante, crie um relacionamento entre as tabelas Sales e Date. Selecione
-InvoiceDate na tabela Sales e arraste-o para Date na tabela Date.
-10.	A caixa de diálogo Novo relacionamento é aberta. Verifique se Tabela 1 é Sales e Coluna
-é InvoiceDate.
-11.	Verifique se Tabela 2 é Date e Coluna é Date.
-12.	Verifique se Cardinalidade é Muitos para um (*:1).
-13.	Verifique se Direção de filtro cruzada é Única.
-14.	Selecione OK.
+9. De maneira semelhante, crie um relacionamento entre as tabelas Sales e Date. Selecione **InvoiceDate** na tabela **Sales** e arraste-o para **Date** na tabela **Date.**
+10.	A caixa de diálogo Novo relacionamento é aberta. Verifique se **Tabela 1** é **Sales** e **Coluna**
+é **InvoiceDate.**
+11.	Verifique se **Tabela 2** é **Date** e **Coluna** é **Date.**
+12.	Verifique se **Cardinalidade** é **Muitos para um (*:1).**
+13.	Verifique se **Direção de filtro cruzada** é **Única.**
+14.	Selecione **OK.**
 
-15.	De maneira similar, crie um relacionamento muitos para um entre as tabelas Sales e Product. Selecione StockItemID na tabela Sales e StockItemID na tabela Product.
-16.	No menu superior, selecione Relatórios -> Atualizar automaticamente o modelo semântico para salvar e atualizar o modelo.
+    ![](../Images/lab-06/image23.png)
 
-Ponto de verificação: seu modelo deve ter os três relacionamentos entre as tabelas Sales e Reseller, Sales e Date e Sales e Product, conforme mostrado na captura de tela abaixo:
+15.	De maneira similar, crie um relacionamento **muitos para um** entre as tabelas **Sales** e **Product.** Selecione **StockItemID** na tabela **Sales** e **StockItemID** na tabela **Product.**
+16.	No menu superior, selecione **Relatórios -> Atualizar automaticamente o modelo semântico** para salvar e atualizar o modelo.
+
+    ![](../Images/lab-06/image24.png)
+
+    **Ponto de verificação:** seu modelo deve ter os três relacionamentos entre as tabelas Sales e Reseller, Sales e Date e Sales e Product, conforme mostrado na captura de tela abaixo:
  
- 
+    ![](../Images/lab-06/image25.png)
 
-Por uma questão de tempo, não criaremos todos os relacionamentos. Se o tempo permitir, você poderá concluir a seção opcional no fim do laboratório. A seção opcional percorre as etapas para criar os relacionamentos restantes.
+    Por uma questão de tempo, não criaremos todos os relacionamentos. Se o tempo permitir, você poderá concluir a seção opcional no fim do laboratório. A seção opcional percorre as etapas para criar os relacionamentos restantes.
 
 
-Tarefa 6: Criar medidas
+### Tarefa 6: Criar medidas
 Vamos adicionar algumas medidas necessárias para criar o dashboard Sales.
-1.	Selecione a tabela Sales na visualização do modelo. Queremos adicionar as medidas à tabela Sales.
-2.	No menu superior, selecione Página Inicial -> Nova medida. Observe que a barra de fórmulas é exibida.
-3.	Insira Sales = SUM(Sales[Sales_Amount]) na barra de fórmulas.
-4.	Clique na marca de seleção à esquerda da barra de fórmulas ou clique no botão Enter.
-5.	No painel Propriedades, à direita, expanda a seção Formatação.
-6.	Na lista suspensa Formato, selecione Número inteiro.
+1. Selecione a tabela **Sales** na visualização do modelo. Queremos adicionar as medidas à tabela Sales.
+2. No menu superior, selecione **Página Inicial -> Nova medida.** Observe que a barra de fórmulas é exibida.
+3. Insira **Sales = SUM(Sales[Sales_Amount])** na **barra de fórmulas.**
+4. Clique na **marca de seleção** à esquerda da barra de fórmulas ou clique no botão **Enter.**
+5. No painel Propriedades, à direita, expanda a seção **Formatação.**
+6. Na lista suspensa **Formato,** selecione **Número inteiro.**
 
+    ![](../Images/lab-06/image26.png)
  
-7.	Com a tabela Sales selecionada no menu superior, selecione Página Inicial -> Nova medida. Observe que a barra de fórmulas é exibida.
-8.	Insira Units = SUM(Sales[Quantity]) na barra de fórmulas.
-9.	Clique na marca de seleção à esquerda da barra de fórmulas ou clique no botão Enter.
-10.	No painel Propriedades à direita, expanda a seção Formatação (pode levar alguns instantes para o painel Propriedades carregar).
-11.	Na lista suspensa Formato, selecione Número inteiro.
+7. Com a tabela **Sales** selecionada no menu superior, selecione **Página Inicial -> Nova medida.** Observe que a barra de fórmulas é exibida.
+8. Insira **Units = SUM(Sales[Quantity])** na **barra de fórmulas.**
+9. Clique na **marca de seleção** à esquerda da barra de fórmulas ou clique no botão **Enter.**
+10.	No painel Propriedades à direita, expanda a seção **Formatação** (pode levar alguns instantes para o painel Propriedades carregar).
+11.	Na lista suspensa **Formato,** selecione **Número inteiro.**
 
-12.	Com a tabela Sales selecionada no menu superior, selecione Página Inicial -> Nova medida. Observe que a barra de fórmulas é exibida.
-13.	Insira Orders = DISTINCTCOUNT(Sales[InvoiceID]) na barra de fórmulas.
-14.	Clique na marca de seleção à esquerda da barra de fórmulas ou clique no botão Enter.
-15.	No painel Propriedades, à direita, expanda a seção Formatação.
-16.	Na lista suspensa Formato, selecione Número inteiro.
+    ![](../Images/lab-06/image27.png)
 
+12.	Com a tabela **Sales** selecionada no menu superior, selecione **Página Inicial -> Nova medida.** Observe que a barra de fórmulas é exibida.
+13.	Insira **Orders = DISTINCTCOUNT(Sales[InvoiceID])** na **barra de fórmulas.**
+14.	Clique na **marca de seleção** à esquerda da barra de fórmulas ou clique no botão **Enter.**
+15.	No painel Propriedades, à direita, expanda a seção **Formatação.**
+16.	Na lista suspensa **Formato, **selecione **Número inteiro.**
+
+    ![](../Images/lab-06/image28.png)
  
-Novamente, por uma questão de tempo, não criaremos todas as medidas. Se o tempo permitir, você poderá concluir a seção opcional no fim do laboratório. A seção opcional percorre as etapas para
-criar as medidas restantes.
-Criamos um modelo de dados. A próxima etapa é criar um relatório. Faremos isso no próximo laboratório.
+    Novamente, por uma questão de tempo, não criaremos todas as medidas. Se o tempo permitir, você poderá concluir a seção opcional no fim do laboratório. A seção opcional percorre as etapas para criar as medidas restantes.
+
+    Criamos um modelo de dados. A próxima etapa é criar um relatório. Faremos isso no próximo laboratório.
 
 
-Tarefa 7: Seção Opcional – Criar relacionamentos
+### Tarefa 7: Seção Opcional – Criar relacionamentos
 Vamos adicionar os relacionamentos restantes.
-1.	De maneira similar, crie um relacionamento muitos para um entre as tabelas Sales e People. Selecione SalespersonPersonID de Sales e PersonID de People.
-Ponto de verificação: Seu modelo deve ser semelhante à captura de tela abaixo.
+1. De maneira similar, crie um relacionamento **muitos para um** entre as tabelas **Sales** e **People.** Selecione **SalespersonPersonID** de **Sales** e **PersonID** de **People.** 
 
-2.	Agora, vamos criar um relacionamento entre Product e Supplier. Selecione SupplierID na tabela
-Product e arraste-o para SupplierID na tabela Supplier.
-3.	A caixa de diálogo Novo relacionamento é aberta. Verifique se Tabela 1 é Product e Coluna
-é SupplierID.
-4.	Verifique se Tabela 2 é Supplier e Coluna é SupplierID.
-5.	Verifique se Cardinalidade é Muitos para um (*:1).
-6.	Verifique se Direção de filtro cruzada é Ambas.
-7.	Selecione OK.
+    **Ponto de verificação:** Seu modelo deve ser semelhante à captura de tela abaixo.
+
+    ![](../Images/lab-06/image29.png)
+
+2. Agora, vamos criar um relacionamento entre Product e Supplier. Selecione **SupplierID** na tabela **Product** e arraste-o para **SupplierID** na tabela **Supplier**.
+3. A caixa de diálogo Novo relacionamento é aberta. Verifique se **Tabela 1** é **Product** e **Coluna** é **SupplierID.**
+4. Verifique se **Tabela 2** é **Supplier** e **Coluna** é **SupplierID.**
+5. Verifique se **Cardinalidade** é **Muitos para um (*:1).**
+6. Verifique se **Direção de filtro cruzada** é **Ambas.**
+7. Selecione **OK.**
  
- 
+    ![](../Images/lab-06/image30.png)
 
-8.	Da mesma forma, crie um relacionamento muitos para um com Direção de filtro cruzada como
-Ambas entre Product_Details e Product. Selecione StockItemID em Product_Details e
-StockItemID em Product.
-9.	Agora, vamos criar um relacionamento entre Reseller e Geo. Selecione PostalCityID na tabela
-Reseller e arraste-o sobre CityID na tabela Geo.
-10.	A caixa de diálogo Novo relacionamento é aberta. Verifique se Tabela 1 é Reseller e Coluna
-é PostalCityID.
-11.	Verifique se Tabela 2 é Geo e Coluna é CityID.
-12.	Verifique se Cardinalidade é Muitos para um (*:1).
-13.	Verifique se Direção de filtro cruzada é Ambas.
-14.	Selecione OK.
+8. Da mesma forma, crie um relacionamento **muitos para um** com **Direção de filtro cruzada** como **Ambas** entre **Product_Details** e **Product.** Selecione **StockItemID** em **Product_Details** e
+**StockItemID** em **Product.**
+9. Agora, vamos criar um relacionamento entre Reseller e Geo. Selecione **PostalCityID** na tabela **Reseller** e arraste-o sobre **CityID** na tabela **Geo.**
+10.	A caixa de diálogo Novo relacionamento é aberta. Verifique se **Tabela 1** é **Reseller** e **Coluna** é **PostalCityID.**
+11.	Verifique se **Tabela 2** é **Geo** e **Coluna** é **CityID.**
+12.	Verifique se **Cardinalidade** é **Muitos para um (*:1).**
+13.	Verifique se **Direção de filtro cruzada** é **Ambas.**
+14.	Selecione **OK.**
 
-15.	Agora, vamos criar um relacionamento entre Customer e Reseller. Selecione ResellerID na tabela
-Customer e arraste-o para ResellerID na tabela Reseller.
-16.	A caixa de diálogo Novo relacionamento é aberta. Verifique se Tabela 1 é Customer e Coluna
-é ResellerID.
+    ![](../Images/lab-06/image31.png)
+
+15.	Agora, vamos criar um relacionamento entre Customer e Reseller. Selecione ResellerID na tabela Customer e arraste-o para ResellerID na tabela Reseller.
+16.	A caixa de diálogo Novo relacionamento é aberta. Verifique se Tabela 1 é Customer e Coluna é ResellerID.
 17.	Verifique se Tabela 2 é Reseller e Coluna é ResellerID.
 18.	Verifique se Cardinalidade é Muitos para um (*:1).
 19.	Verifique se Direção de filtro cruzada é Única.
