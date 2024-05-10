@@ -50,8 +50,6 @@ Inhalt dieser Übung:
 
 3. Wählen Sie im **Menü oben** die Option **Neue SQL-Abfrage** aus, oder klicken Sie **links unten** auf **Abfrage**. Die Ansicht „SQL-Abfrage“ wird geöffnet.
 
-    ![](../Images/lab6-image2.png)
-
 4. Fügen Sie die unten **stehende SQL-Abfrage** in das **Abfragefenster** ein. Mit dieser Abfrage werden die Units by Supplierenname ermittelt. Dazu wird die Tabelle „Sales“ mit den Tabellen „Product“ und „Supplier" verknüpft.
 
     ```
@@ -77,8 +75,7 @@ Inhalt dieser Übung:
 
     ![](../Images/lab6-image4.png)
 
-2. Das Dialogfeld **SQL-Abfrage erkunden** wird geöffnet Erweitern Sie im Bereich **Daten** den Eintrag
-**SQL-Abfrage 1**.
+2. Das Dialogfeld **SQL-Abfrage erkunden** wird geöffnet Erweitern Sie im Bereich **Daten** den Eintrag **SQL-Abfrage 1**.
 
 3. Wählen Sie die Felder **Supplier_Name** und **Units** aus. Es wird ein gruppiertes Balkendiagramm erstellt wird.
 
@@ -122,8 +119,7 @@ Sie werden zur Ansicht von **SQL-Analyse-Endpunkten** weitergeleitet. Wenn Sie S
 
     ![](../Images/lab6-image10.png)
  
-4. Wählen Sie bei Auswahl der Tabelle **Sales** im Menü des Bereichs für visuelle Abfragen die Option
-**Kombinieren -> Abfragen zusammenführen** aus.
+4. Wählen Sie bei Auswahl der Tabelle **Sales** im Menü des Bereichs für visuelle Abfragen die Option **Kombinieren -> Abfragen zusammenführen** aus.
 
     ![](../Images/lab6-image11.png)
 
