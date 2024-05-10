@@ -33,11 +33,15 @@ Ao final deste laboratório, você terá aprendido:
 **Observação:** Se você não estiver usando o ambiente de laboratório e já tiver uma conta do Power BI, talvez queira usar o navegador no modo privado/anônimo.
 
 2. Insira o **Nome de usuário** disponível na guia **Variáveis de Ambiente** (ao lado do Guia de Laboratório) como o **Email** e clique em **Enviar.**
+
 ![](../Images/lab-02/image01.png)
+
 3. Você será direcionado à tela **Senha.** Insira a **Senha** disponível na guia **Variáveis de Ambiente**
 (ao lado do Guia de Laboratório), que o instrutor compartilhou com você.
 4. Clique em **Entrar** e siga as instruções para entrar no Fabric.
+
 ![](../Images/lab-02/image02.png)
+
 5. Você será direcionado à conhecida **Página Inicial de Serviço do Power BI.**
 6. Presumimos que você esteja familiarizado com o layout do Serviço do Power BI. Se você tiver alguma dúvida, não hesite em perguntar ao instrutor.
 
@@ -45,18 +49,23 @@ Atualmente, você está em **Meu workspace**. Para trabalhar com itens do Fabric
 
 7. No canto superior direito da tela, selecione o **ícone de usuário**.
 8. Selecione **Start trial.**
+
 ![](../Images/lab-02/image03.png)
 
 9. A caixa de diálogo Atualizar para uma avaliação gratuita do Microsoft Fabric é aberta. Selecione **Iniciar avaliação.**
+
 ![](../Images/lab-02/image04.png)
  
 10. Selecione o **“X”** no canto superior direito da caixa de diálogo **Apenas uma última etapa** para fechá-la. Não forneceremos esses detalhes, pois se trata de um ambiente de laboratório.
+
 ![](../Images/lab-02/image05.png)
 
 11. A caixa de diálogo Atualizado com êxito para o Microsoft Fabric é aberta. Selecione **Fabric Home Page**.
+
 ![](../Images/lab-02/image06.png)
 
 12. Você será direcionado à **Página Inicial do Microsoft Fabric**.
+
 ![](../Images/lab-02/image07.png)
 
  
@@ -74,16 +83,19 @@ a. **New:** lista os itens disponíveis no Data Factory – Dataflow Gen2 e Data
 &nbsp; &nbsp; &nbsp;ii. Data pipeline é usado para orquestração de dados.<br>
 b. **Recommended:** esta seção fornece acesso à documentação de aprendizagem de início rápido.<br>
 c. **Quick access:** esta seção lista os itens favoritos ou usados recentemente.
+
 ![](../Images/lab-02/image09.png)
 
  
 ### Tarefa 3: Experiência do Data Activator
 1. Selecione o **ícone Fabric experience selector** (atualmente definido como Data Factory) na parte inferior esquerda da tela. A caixa de diálogo de experiência do Fabric é aberta.
+
 ![](../Images/lab-02/image10.png)
 
 2. Selecione **Data Activator** na caixa de diálogo. Você será direcionado para a **Página Inicial do Data Activator.** O Data Activator é uma experiência no-code no Microsoft Fabric para executar ações automaticamente quando padrões ou condições são detectados em dados alterados. Observe que as três seções são como a experiência do Data Factory. Na seção Novo, observe os itens:<br>
 &nbsp; &nbsp; &nbsp;a. **Reflex:** usado para monitorar conjuntos de dados, consultas e fluxos de eventos para padrões.<br>
 &nbsp; &nbsp; &nbsp;b. **Exemplo do Reflex:** solução de exemplo.
+
 ![](../Images/lab-02/image11.png)
 
  
@@ -95,6 +107,7 @@ Novo, observe os itens:
 
     a. **Soluções de sustentabilidade:** oferece suporte à ingestão, padronização e análise de dados de ESG (governança ambiental, social e corporativa).<br>
     b. **Soluções de varejo:** ajuda no gerenciamento de grandes volumes de dados, integrando dados de várias fontes e fornecendo análises em tempo real para tomada rápida de decisões. Os varejistas podem usar essas soluções para otimização de estoque, segmentação de clientes, previsão de vendas, preços dinâmicos e detecção de fraudes.
+
     ![](../Images/lab-02/image12.png)
 ### Tarefa 5: Experiência do Synapse Data Engineering
 1. Selecione o **ícone Fabric experience selector** (atualmente definido como Industry Solutions) na parte inferior esquerda da tela. A caixa de diálogo de experiência do Fabric é aberta.
@@ -144,6 +157,7 @@ e. **Usar uma amostra:** solução de exemplo.
 ## Workspace do Fabric
 ### Tarefa 9: Criar um workspace do Fabric
 1. Agora vamos criar um workspace com a licença do Fabric. Selecione **Workspaces** na barra de navegação esquerda. Uma caixa de diálogo é aberta.
+
     ![](../Images/lab-02/image17.png)
 2. Selecione **Novo workspace**.
 3. A caixa de diálogo **Criar um workspace** é aberta no lado direito do navegador.
@@ -155,6 +169,7 @@ e. **Usar uma amostra:** solução de exemplo.
 6. Clique em **Avançado** para expandir a seção.
 
     ![](../Images/lab-02/image18.png)
+    
 7. Em **License mode**, verifique se **Trial** está selecionada. (Essa opção deve estar selecionada por padrão.)
 
     ![](../Images/lab-02/image19.png)
