@@ -107,92 +107,106 @@ temos a consulta PO Line Items mesclada com PO para criar o fato PO. Agora preci
 
 ![](../Images/lab-04/image11.png)
  
-Tarefa 4: Renomear e publicar o fluxo de dados do Snowflake
-1.	Na parte superior da tela, selecione a seta ao lado do Dataflow 2 para renomear.
-2.	Na caixa de diálogo, altere o nome para df_Supplier_Snowflake.
-3.	Clique em Enter para salvar a alteração do nome.
+### Tarefa 4: Renomear e publicar o fluxo de dados do Snowflake
+1. Na parte superior da tela, selecione a **seta ao lado do Dataflow 2** para renomear.
+2. Na caixa de diálogo, altere o nome para **df_Supplier_Snowflake.**
+3. Clique em **Enter** para salvar a alteração do nome.
 
-4.	No canto inferior direito, selecione Publicar.
+    ![](../Images/lab-04/image12.png)
 
-Você será direcionado de volta para o workspace FAIAD_<nome de usuário>. Pode levar alguns
+4. No canto inferior direito, selecione **Publicar.**
+
+    ![](../Images/lab-04/image13.png)
+
+      Você será direcionado de volta para o **workspace FAIAD_<nome de usuário>.** Pode levar alguns
 instantes para que Fluxo de Dados seja publicado. Agora vamos criar um fluxo de dados para mostrar dados do Dataverse.
  
-Tarefa 5: Copiar consultas do Dataverse para o Dataflow
-1.	No menu superior, selecione Novo -> Fluxo de dados Gen2.
+### Tarefa 5: Copiar consultas do Dataverse para o Dataflow
+1. No menu superior, selecione **Novo -> Fluxo de dados Gen2.**
 
-Você será direcionado para a página do Fluxo de Dados. Agora que estamos familiarizados com o Fluxo de Dados, vamos continuar e copiar as consultas do Power BI Desktop no Fluxo de Dados.
+    ![](../Images/lab-04/image14.png)
 
-2.	Se você ainda não tiver aberto, abra o arquivo FAIAD.pbix que está na pasta C:\FAIAD\Reports
-do seu ambiente de laboratório.
-3.	Na faixa de opções, selecione Página Inicial -> Transformar dados. A janela do Power Query é aberta. Como você observou no laboratório anterior, as consultas no painel esquerdo são organizadas por fonte de dados.
-4.	A janela do Power Query é aberta. No painel esquerdo, na pasta DataverseData, pressione
-Ctrl+Select para selecionar as seguintes consultas:
-a.	BabyBoomer
-b.	GenX
-c.	GenY
-d.	GenZ
+Você será direcionado para a **página do Fluxo de Dados.** Agora que estamos familiarizados com o Fluxo de Dados, vamos continuar e copiar as consultas do Power BI Desktop no Fluxo de Dados.
+
+2. Se você ainda não tiver aberto, abra o arquivo **FAIAD.pbix** que está na pasta **C:\FAIAD\Reports** do seu ambiente de laboratório.
+3. Na faixa de opções, selecione **Página Inicial -> Transformar dados.** A janela do Power Query é aberta. Como você observou no laboratório anterior, as consultas no painel esquerdo são organizadas por fonte de dados.
+4. A janela do Power Query é aberta. No painel esquerdo, na pasta DataverseData, pressione **Ctrl+Select** para selecionar as seguintes consultas:<br>
+a.	BabyBoomer<br>
+b.	GenX<br>
+c.	GenY<br>
+d.	GenZ<br>
 e.	Customer
  
-5.	Clique com o botão direito do mouse e selecione Copiar.
+5. Clique **com o botão direito do mouse** e selecione **Copiar.**
 
-6.	Volte para a página Dataflow no navegador.
-7.	No painel Dataflow, pressione Ctrl+V (no momento, não é possível clicar com o botão direito do mouse em Colar). Se você estiver usando o dispositivo MAC, use Cmd+V para colar.
-Observação: se você estiver trabalhando no ambiente de laboratório, selecione as reticências no canto superior direito da tela. Use o controle deslizante para habilitar VM Native Clipboard. Selecione OK na caixa de diálogo. Depois que terminar de colar as consultas, você poderá desabilitar essa opção.
+    ![](../Images/lab-04/image15.png)
+
+6.	Volte para a **página Dataflow** no navegador.
+7. No **painel Dataflow,** pressione **Ctrl+V** (no momento, não é possível clicar com o botão direito do mouse em Colar). Se você estiver usando o dispositivo MAC, use Cmd+V para colar.
+
+**Observação:** se você estiver trabalhando no ambiente de laboratório, selecione as reticências no canto superior direito da tela. Use o controle deslizante para **habilitar VM Native Clipboard.** Selecione OK na caixa de diálogo. Depois que terminar de colar as consultas, você poderá desabilitar essa opção.
 
 
-Tarefa 6: Criar conexão com o Dataverse
+### Tarefa 6: Criar conexão com o Dataverse
 Observe que as cinco consultas foram coladas e agora você tem o painel Consultas à esquerda. Como não temos uma conexão criada para o Dataverse, você verá uma mensagem de aviso solicitando que configure a conexão.
-1.	Selecione Configurar conexão.
+1. Selecione **Configurar conexão.**
 
-2.	A caixa de diálogo Conectar-se à fonte de dados é aberta. Na lista suspensa Conexão, verifique se Criar nova conexão está selecionada.
-3.	O Tipo de autenticação deve ser Conta organizacional.
-4.	Selecione Conectar.
+    ![](../Images/lab-04/image16.png)
+
+2. A caixa de diálogo Conectar-se à fonte de dados é aberta. Na **lista suspensa Conexão,** verifique se Criar nova conexão está **selecionada.**
+3. O **Tipo de autenticação** deve ser **Conta organizacional.**
+4. Selecione **Conectar.**
  
- 
+    ![](../Images/lab-04/image17.png)
 
-
-
-Tarefa 7: Criar destino de dados para a consulta Customer
+### Tarefa 7: Criar destino de dados para a consulta Customer
 A conexão é estabelecida e você pode exibir os dados no painel de visualização. Fique à vontade para navegar pelas Etapas aplicadas das consultas. Os dados do cliente estão disponíveis por Categoria:
 BabyBoomer, GenX, GenY e GenZ. Essas quatro consultas são acrescentadas para criar a consulta Customer. Agora precisamos ingerir os dados de Customer no Lakehouse.
-1.	Conforme mencionado anteriormente, não estamos preparando nenhum desses dados. Portanto, clique com o botão direito do mouse na consulta Customer no painel Consultas e selecione Habilitar o preparo para remover a marca de seleção.
+1.	Conforme mencionado anteriormente, não estamos preparando nenhum desses dados. Portanto, **clique com o botão direito do mouse** na consulta **Customer** no painel Consultas e selecione **Habilitar o preparo** para remover a marca de seleção.
 
-2.	Selecione a consulta Customer.
-3.	Na faixa de opções, selecione Página Inicial -> Adicionar destino de dados -> Lakehouse.
+    ![](../Images/lab-04/image18.png)
+
+2.	Selecione a consulta **Customer.**
+3.	Na faixa de opções, selecione **Página Inicial -> Adicionar destino de dados -> Lakehouse.**
  
- 
+    ![](../Images/lab-04/image19.png)
 
-4.	A caixa de diálogo Conectar ao destino de dados é aberta. Na lista suspensa Conexão, selecione
-Lakehouse (nenhum).
-5.	Selecione Próximo.
+4.	A caixa de diálogo Conectar ao destino de dados é aberta. Na lista suspensa **Conexão,** **selecione Lakehouse (nenhum).**
+5.	Selecione **Próximo.**
 
-6.	A caixa de diálogo Escolher alvo de destino é aberta. Verifique se o botão de opção Nova tabela
+    ![](../Images/lab-04/image20.png)
+
+6.	A caixa de diálogo Escolher alvo de destino é aberta. Verifique se o botão de opção **Nova tabela**
 está selecionado, pois estamos criando uma nova tabela.
-7.	Queremos criar a tabela no Lakehouse que criamos anteriormente. No painel esquerdo, navegue para Lakehouse -> FAIAD_<nome de usuário>.
-8.	Selecione lh_FAIAD.
-9.	Deixe o nome da tabela como Customer.
-10.	Selecione Próximo.
+7.	Queremos criar a tabela no Lakehouse que criamos anteriormente. No painel esquerdo, navegue para **Lakehouse -> FAIAD_<nome de usuário>.**
+8.	Selecione **lh_FAIAD.**
+9.	Deixe o nome da tabela como **Customer.**
+10.	Selecione **Próximo.**
  
+    ![](../Images/lab-04/image21.png)
+
+11.	A caixa de diálogo Escolher configurações de destino é aberta. Desta vez, usaremos as configurações automáticas, pois assim será feita uma atualização completa dos dados. Além disso, as colunas serão renomeadas conforme necessário. Selecione **Salvar configurações.**
+
+    ![](../Images/lab-04/image22.png)
  
+### Tarefa 8: Publicar e renomear o Fluxo de Dados do Dataverse
+1.	Você será direcionado de volta à **janela Power Query.** No **canto inferior direito, Destino de dados** está definido como **Lakehouse.**
+2.	No canto inferior direito, selecione **Publicar.**
 
-11.	A caixa de diálogo Escolher configurações de destino é aberta. Desta vez, usaremos as configurações automáticas, pois assim será feita uma atualização completa dos dados. Além disso, as colunas serão renomeadas conforme necessário. Selecione Salvar configurações.
+    ![](../Images/lab-04/image23.png)
 
+    **Observação:** você será direcionado de volta para o workspace FAIAD_<nome de usuário>. Pode levar alguns instantes para que Fluxo de Dados seja publicado.
+3.	Estamos trabalhando com o Fluxo de Dados 2. Vamos renomeá-lo antes de continuar. Clique nas **reticências (…)** ao lado de Fluxo de Dados 2. Selecione **Propriedades.**
+
+    ![](../Images/lab-04/image24.png)
  
-Tarefa 8: Publicar e renomear o Fluxo de Dados do Dataverse
-1.	Você será direcionado de volta à janela Power Query. No canto inferior direito, Destino de dados está definido como Lakehouse.
-2.	No canto inferior direito, selecione Publicar.
+4.	A caixa de diálogo Propriedades do fluxo de dados é aberta. Altere o **Nome** para **df_Customer_Dataverse.**
+5.	Na caixa de texto **Descrição,** adicione **Dataflow to ingest Supplier data from Snowflake to Lakehouse.**
+6.	Selecione **Salvar.**
 
-Observação: você será direcionado de volta para o workspace FAIAD_<nome de usuário>. Pode levar alguns instantes para que Fluxo de Dados seja publicado.
-3.	Estamos trabalhando com o Fluxo de Dados 2. Vamos renomeá-lo antes de continuar. Clique nas
-reticências (…) ao lado de Fluxo de Dados 2. Selecione Propriedades.
+    ![](../Images/lab-04/image25.png)
 
- 
-4.	A caixa de diálogo Propriedades do fluxo de dados é aberta. Altere o Nome para
-df_Customer_Dataverse.
-5.	Na caixa de texto Descrição, adicione Dataflow to ingest Supplier data from Snowflake to Lakehouse.
-6.	Selecione Salvar.
-
-Você será direcionado de volta para o workspace FAIAD_<nome de usuário>. Agora vamos criar um fluxo de dados para mostrar dados do SharePoint.
+Você será direcionado de volta para o **workspace FAIAD_<nome de usuário>.** Agora vamos criar um fluxo de dados para mostrar dados do SharePoint.
  
 Tarefa 9: Copiar consultas do SharePoint para o Fluxo de Dados
 1.	No menu superior, selecione Novo -> Fluxo de dados Gen2.
