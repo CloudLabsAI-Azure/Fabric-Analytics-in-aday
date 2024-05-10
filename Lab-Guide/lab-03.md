@@ -456,7 +456,7 @@ Assurez-vous que **toutes les requêtes sont traitées**. Ensuite, ingérons ces
 
 11. Vous êtes redirigé vers la **fenêtre Power Query**. Dans le **coin inférieur droit**, notez que la liste déroulante Destination des données est définie sur **Lakehouse**.
 
-12.	De même, définissez la liste déroulante **Destination des données** pour les requêtes suivantes :
+12. De même, définissez la liste déroulante **Destination des données** pour les requêtes suivantes :
 
     a. Product Details
 
