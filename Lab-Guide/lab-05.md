@@ -277,14 +277,14 @@ entidades em qualquer serviço. Por exemplo, ID do pipeline, nome do pipeline, n
 1. Você será direcionado de volta à tela de design. Com a **atividade Until** selecionada, no **painel inferior,** selecione **Atividades.** Agora adicionaremos as atividades que precisam ser executadas.
 2. Selecione o **ícone de Editar** na primeira linha. Você será direcionado para uma tela de design de iterador em branco.
 
-   ![](../Images/lab-05/image29.png)
+![](../Images/lab-05/image29.png)
  
 3. No menu superior, selecione **Atividades -> Fluxo de dados**. A atividade Fluxo de dados é adicionada ao painel de design.
 4.	Com **atividade Fluxo de dados selecionada,** no painel inferior, selecione **Geral.** Vamos atribuir um nome e uma descrição à atividade.
 5.	No campo **Nome,** insira **dfactivity_People_SharePoint.**
 6.	No campo **Descrição,** insira **Dataflow activity to refresh df_People_Sharepoint dataflow.**
 
-    ![](../Images/lab-05/image30.png)
+![](../Images/lab-05/image30.png)
 
 7.	Selecione **Configurações** no painel inferior.
 8.	Certifique-se de que o **Workspace** esteja definido como seu workspace **FAIAD_<nome de usuário>.**
