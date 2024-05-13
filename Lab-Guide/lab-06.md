@@ -41,11 +41,13 @@ e Procedimentos Armazenados de SQL. Se você tiver experiência em SQL, fique à
 
 4. Cole a **consulta SQL abaixo** na **janela de consultas.** Essa consulta retornará as unidades por Nome do Fornecedor. Para conseguir isso, una tabela Sales com as tabelas Product e Supplier.
 
+```
 SELECT su.Supplier_Name, SUM(Quantity) as Units
 FROM dbo.Sales s
 JOIN dbo.Product p on p.StockItemID = s.StockItemID
 JOIN dbo.Supplier su on su.SupplierID = p.SupplierID 
 GROUP BY su.Supplier_Name
+```
 
 5. Clique em **Executar** para exibir os resultados.
 6. Há uma opção para salvar essa consulta como uma Visualização selecionando **Salvar como visualização.**
