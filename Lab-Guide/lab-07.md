@@ -72,7 +72,7 @@ Vamos começar usando a opção de criação automática de relatório. E, mais 
 11.	Verifique se o relatório está salvo no workspace, **FAIAD_<nome de usuário>.**
 12.	Selecione **Salvar.**
 
-    ![](../Images/lab-07/image06.png)
+![](../Images/lab-07/image06.png)
 
 **Observação:** A aparência do relatório criado automaticamente pode ser diferente para você, pois ele é "criado automaticamente". Depende também dos relacionamento e das medidas que você criou no laboratório anterior (Laboratório 6).
 
@@ -278,15 +278,16 @@ Em um cenário real, os dados são atualizados na fonte. Como estamos em um ambi
 4. A caixa de diálogo Conectar-se à fonte de dados é aberta. Selecione todas as linhas no editor e exclua-o.
 5. Copie o código abaixo e cole-o no editor.
 
-        let
-        Source = #"ADLS Base Folder",
-        #"Filtered Rows" = Table.SelectRows(Source, each Text.Contains([Folder Path], "Sales.Invoices_May")),
-        #"https://stvnextblobstorage dfs core windows net/fabrikam-sales/Delta-Parquet-Format/Sales Invoices_May/_0- 0ee085a3-716f-4833-a792-c3162c1de300-0 parquet" = #"Filtered Rows"{[#"Folder
-        Path"="https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet-
-        Format/Sales.Invoices_May/",Name="0-0ee085a3-716f-4833-a792-c3162c1de300-0.parquet"]}[Content],
-        #"Imported Parquet" = Parquet.Document(#"https://stvnextblobstorage dfs core windows net/fabrikam-sales/Delta- Parquet-Format/Sales Invoices_May/_0-0ee085a3-716f-4833-a792-c3162c1de300-0 parquet")
-        in
-        #"Imported Parquet"
+let
+Source = #"ADLS Base Folder",
+#"Filtered Rows" = Table.SelectRows(Source, each Text.Contains([Folder Path], "Sales.Invoices_May")),
+#"https://stvnextblobstorage dfs core windows net/fabrikam-sales/Delta-Parquet-Format/Sales Invoices_May/_0- 0ee085a3-716f-4833-a792-c3162c1de300-0 parquet" = #"Filtered Rows"{[#"Folder
+Path"="https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet-
+Format/Sales.Invoices_May/",Name="0-0ee085a3-716f-4833-a792-c3162c1de300-0.parquet"]}[Content],
+#"Imported Parquet" = Parquet.Document(#"https://stvnextblobstorage dfs core windows net/fabrikam-sales/Delta- Parquet-Format/Sales Invoices_May/_0-0ee085a3-716f-4833-a792-c3162c1de300-0 parquet")
+in
+#"Imported Parquet"
+
 6. Selecione **Próximo.**
 
    ![](../Images/lab-07/image32.png)
