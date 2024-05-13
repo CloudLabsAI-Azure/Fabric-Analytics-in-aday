@@ -111,7 +111,7 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 
 3.	Premere **INVIO** per salvare la modifica del nome.
 
-    ![](../Images/lab-04/image036.jpg)
+   ![](../Images/lab-04/image036.jpg)
 
 4.	Nell'angolo inferiore destro selezionare **Pubblica**.
 
@@ -174,13 +174,13 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
  
 3.	Nella barra multifunzione selezionare **Home -> Aggiungi destinazione dati -> Lakehouse**.
 
-      ![](../Images/lab-04/image059.jpg)
+   ![](../Images/lab-04/image059.jpg)
    
 4.	Si apre la finestra di dialogo Connetti alla destinazione dati. Nel menu a discesa Connessione selezionare **Lakehouse (nessuno)**.
 
 5.	Selezionare **Avanti**.
 
-      ![](../Images/lab-04/image062.png)
+   ![](../Images/lab-04/image062.png)
 
 6.	Si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione Nuova tabella sia selezionato, poiché si sta creando una nuova tabella.
 
@@ -261,10 +261,11 @@ creato una connessione a SharePoint, compare un messaggio di avviso che chiede d
  
 ### Attività 11 - Configurazione della destinazione dei dati per la query People
 Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello di anteprima. Esplorare i Passaggi applicati delle query. Ora dobbiamo inserire i dati di People in Lakehouse.
+
 1.	Come indicato in precedenza, non effettuiamo lo staging di questi dati. Quindi **fare clic con il pulsante destro del mouse** sulla query **People** nel riquadro Query e selezionare 
   **Abilita staging** per rimuovere il segno di spunta.
 
-      ![](../Images/lab-04/image090.png)
+   ![](../Images/lab-04/image090.png)
   	
 2.	Selezionare la query **People**.
    

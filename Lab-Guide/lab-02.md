@@ -113,16 +113,24 @@ Synapse e si basano su Synapse. Procediamo a esaminarle.
 
 ### Attività 6 - Esperienza Synapse Data Science
 1.	Selezionare l'icona selettore esperienza in Fabric (attualmente impostata su Data Engineering) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
+
 2.	Selezionare Data Science. Si apre la home page di Data Science. Anche in questo caso sono presenti tre sezioni. Nella sezione New osservare gli elementi:
-    a.	**ML model**: consente di creare modelli di Machine Learning.
-    b.	**Experiment**: consente di creare, eseguire e monitorare lo sviluppo di più modelli.
-    c.	**Notebook**: permette di esplorare dati e creare soluzioni di Machine Learning.
-    d.	**Environment**: usato per configurare librerie condivise, impostazioni di calcolo Spark e risorse per notebook e definizioni di processi Spark.
-    e.	**Import notebook**: permette di importare notebook dal computer locale.
-    f.	**Use a sample**: soluzione di esempio.
+
+    a. **ML model**: consente di creare modelli di Machine Learning.<br>
+
+    b. **Experiment**: consente di creare, eseguire e monitorare lo sviluppo di più modelli.<br>
+
+    c. **Notebook**: permette di esplorare dati e creare soluzioni di Machine Learning.<br>
+
+    d. **Environment**: usato per configurare librerie condivise, impostazioni di calcolo Spark e risorse per notebook e definizioni di processi Spark.<br>
+
+    e. **Import notebook**: permette di importare notebook dal computer locale.<br>
+
+    f. **Use a sample**: soluzione di esempio.
+    
 **Nota**: elementi come Notebook, Environment, Data pipeline e così via sono disponibili in più esperienze poiché sono rilevanti in ciascuna di esse.
  
-      ![](../Images/lab-02/image045.jpg)
+   ![](../Images/lab-02/image045.jpg)
 
 ### Attività 7 - Esperienza Synapse Data Warehouse
 1.	Selezionare l'icona **selettore esperienza in Fabric** (attualmente impostata su Data Science) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.

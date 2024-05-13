@@ -64,7 +64,9 @@ Prima di iniziare con Fabric, esaminiamo l'attuale report in Power BI Desktop pe
       ![](../Images/Picture7.png)
  
 11.	Nella finestra di dialogo successiva immettere le Credenziali e la Password copiandole dalla scheda **Dettagli ambiente**.
+
 12.	Selezionare **Accedi**.
+
 13.	Si apre la finestra di dialogo Azione richiesta che richiede di impostare l'autenticazione a più fattori. Non è necessario impostarla poiché si tratta di un ambiente lab. 
     Selezionare **Ask later**.
 
@@ -123,13 +125,13 @@ Si passerà alla pagina che fornisce i dettagli del prodotto. Notare che sono an
 
 3.	Si apre la finestra Power Query. Nella barra multifunzione selezionare Home -> Impostazioni origine dati. Scorrendo l'elenco si noterà che vi sono quattro **origini dati**, come indicato nell'esposizione del problema:
 
-    a. Snowflake
+    - Snowflake
     
-    b. SharePoint
+    - SharePoint
     
-    c. ADLS Gen2
+    - ADLS Gen2
     
-    d. Dataverse
+    - Dataverse
 
 5.	Selezionare **Chiudi** per chiudere la finestra di dialogo Impostazioni origine dati.
 
