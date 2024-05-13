@@ -108,7 +108,7 @@ Novo, observe os itens:
     **a.** **Soluções de sustentabilidade:** oferece suporte à ingestão, padronização e análise de dados de ESG (governança ambiental, social e corporativa).<br>
     **b.** **Soluções de varejo:** ajuda no gerenciamento de grandes volumes de dados, integrando dados de várias fontes e fornecendo análises em tempo real para tomada rápida de decisões. Os varejistas podem usar essas soluções para otimização de estoque, segmentação de clientes, previsão de vendas, preços dinâmicos e detecção de fraudes.
 
-    ![](../Images/lab-02/image12.png)
+![](../Images/lab-02/image12.png)
 ### Tarefa 5: Experiência do Synapse Data Engineering
 1. Selecione o **ícone Fabric experience selector** (atualmente definido como Industry Solutions) na parte inferior esquerda da tela. A caixa de diálogo de experiência do Fabric é aberta.
 2. Selecione **Data Engineering**. Você será direcionado para a *Página Inicial do Data Engineering.* Novamente, a página contém três seções principais. Na seção New, observe os itens:<br>
@@ -152,7 +152,7 @@ c. **Conjunto de Consultas KQL:** usado para executar consultas nos dados para p
 d. **Eventstream:** usado para capturar, transformar e rotear fluxo de eventos em tempo real.<br>
 e. **Usar uma amostra:** solução de exemplo.
 
-    ![](../Images/lab-02/image16.png)
+![](../Images/lab-02/image16.png)
 
  
 ## Workspace do Fabric
@@ -160,7 +160,7 @@ e. **Usar uma amostra:** solução de exemplo.
 1. Agora vamos criar um workspace com a licença do Fabric. Selecione **Workspaces** na barra de navegação esquerda. Uma caixa de diálogo é aberta.
 2. Selecione **Novo workspace**.
 
-    ![](../Images/lab-02/image17.png)
+![](../Images/lab-02/image17.png)
 
 3. A caixa de diálogo **Criar um workspace** é aberta no lado direito do navegador.
 4. No campo **Nome**, insira **FAIAD_<nome de usuário>.**
@@ -170,12 +170,12 @@ e. **Usar uma amostra:** solução de exemplo.
 5. Se preferir, você pode inserir uma **Descrição** para o workspace. Esse campo é opcional.
 6. Clique em **Avançado** para expandir a seção.
 
-    ![](../Images/lab-02/image18.png)
+![](../Images/lab-02/image18.png)
     
 7. Em **License mode**, verifique se **Trial** está selecionada. (Essa opção deve estar selecionada por padrão.)
 8. Selecione **Apply** para criar um novo workspace.
 
-    ![](../Images/lab-02/image19.png)
+![](../Images/lab-02/image19.png)
 
 
 Um novo workspace é criado e você será direcionado para ele. Traremos dados de diferentes fontes de dados para o Lakehouse e usaremos os dados do Lakehouse para criar nosso modelo e relatá-lo. A primeira etapa é criar um Lakehouse.

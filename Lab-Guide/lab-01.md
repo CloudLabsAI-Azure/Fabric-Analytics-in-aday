@@ -23,7 +23,7 @@ Para obter insights valiosos dos dados, você extrai dados de vários sistemas, 
   - **Dados do Cliente:** são obtidos do Customer Insights e armazenados no Dataverse. Os dados estão sempre atualizados.
   - **Dados do Funcionário:** são obtidos do sistema de RH e armazenados como um arquivo de exportação em uma pasta do SharePoint. São atualizados todas as manhãs, às 9h.
 
-      ![](../Images/lab-01/image01.png)
+![](../Images/lab-01/image01.png)
 
 No momento, você está criando um conjunto de dados no Power BI Premium que extrai os dados dos sistemas de origem acima para que você possa gerar relatórios e fornecer aos usuários finais o recurso de autoatendimento. Você usa o Power Query para atualizar seu modelo.
 
@@ -57,7 +57,7 @@ no painel direito do ambiente de laboratório.
 10.	Selecione **Sign in**.
 11.	A caixa de diálogo Action Required é aberta solicitando a configuração da autenticação multifator. Não precisamos configurar isso, pois estamos em um ambiente de laboratório. Selecione **Ask later**.
 
-    ![](../Images/lab-01/image06.png)
+![](../Images/lab-01/image06.png)
 
 12.	Selecione **No, sign in the app only** na próxima caixa de diálogo. O Power BI Desktop será aberto.
 ### Tarefa 2: Analisar relatório do Power BI Desktop
