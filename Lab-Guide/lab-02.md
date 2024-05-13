@@ -71,22 +71,22 @@ Synapse e si basano su Synapse. Procediamo a esaminarle.
 
    ![](../Images/lab-02/image033.png)
  
-2.	Selezionare **Data Activator**00 nella finestra di dialogo. Si apre la **home page di Data Activator**. Data Activator è un'esperienza senza codice in Microsoft Fabric che consente di effettuare automaticamente azioni quando vengono rilevati schemi o condizioni nei dati che cambiano. Notare che le tre sezioni sono analoghe all'esperienza Data Factory. Nella sezione Nuovo osservare gli elementi:
-     a.	**Reflex**: consente di monitorare set di dati, query e flussi di eventi per individuare schemi.
-     b.	**Esempio di Reflex**: soluzione di esempio.
+2.	Selezionare **Data Activator**00 nella finestra di dialogo. Si apre la **home page di Data Activator**. Data Activator è un'esperienza senza codice in Microsoft Fabric che consente di effettuare automaticamente azioni quando vengono rilevati schemi o condizioni nei dati che cambiano. Notare che le tre sezioni sono analoghe all'esperienza Data Factory. Nella sezione Nuovo osservare gli elementi:<br>
+     a.	**Reflex**: consente di monitorare set di dati, query e flussi di eventi per individuare schemi.<br>
+     b.	**Esempio di Reflex**: soluzione di esempio.<br>
 
    ![](../Images/lab-02/image036.png)
 
 
 ### Attività 4 - Esperienza Industry Solutions
 1.	Selezionare l'icona **selettore esperienza in Fabric** (attualmente impostata su Data Activator) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
-2.	Selezionare **Industry Solutions** nella finestra di dialogo. Si apre la **home page di Industry Solutions**. Microsoft Fabric include soluzioni di dati specifiche del settore che offrono una piattaforma affidabile per la gestione dei dati, l'analisi e il processo decisionale. Queste soluzioni di dati risolvono le problematiche specifiche affrontate da diversi settori, permettendo alle aziende di ottimizzare le operazioni, integrare dati provenienti da origini diverse e usare analisi avanzate. Si noti che le tre sezioni sono analoghe alle esperienze precedenti. Nella sezione Nuovo osservare gli elementi:
+2.	Selezionare **Industry Solutions** nella finestra di dialogo. Si apre la **home page di Industry Solutions**. Microsoft Fabric include soluzioni di dati specifiche del settore che offrono una piattaforma affidabile per la gestione dei dati, l'analisi e il processo decisionale. Queste soluzioni di dati risolvono le problematiche specifiche affrontate da diversi settori, permettendo alle aziende di ottimizzare le operazioni, integrare dati provenienti da origini diverse e usare analisi avanzate. Si noti che le tre sezioni sono analoghe alle esperienze precedenti. Nella sezione Nuovo osservare gli elementi:<br>
         a.	Soluzioni per la sostenibilità: supporta l'inserimento, la standardizzazione e l'analisi di dati ambientali, sociali e di governance (ESG).<br>
         b.	Soluzioni retail: permette di gestire grandi volumi di dati, di integrare dati provenienti da origini varie e di fornire analisi in tempo reale per un processo decisionale 
            rapido etempestivo. I rivenditori possono usare queste soluzioni per l'ottimizzazione delle scorte, la segmentazione dei clienti, la previsione delle vendite, la 
            determinazione dinamica  dei prezzi e il rilevamento delle frodi.<br>
          
-    ![](../Images/lab-02/image039.png)
+   ![](../Images/lab-02/image039.png)
 
 ### Attività 5 - Esperienza Synapse Data Engineering
 1.	Selezionare l'icona **selettore esperienza in Fabric** (attualmente impostata su Industry Solutions) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
@@ -171,7 +171,7 @@ Viene creata una nuova area di lavoro e si passa a tale area di lavoro. Importer
      
 4.	Si apre la finestra di dialogo New lakehouse. Digitare **lh_FAIAD** nella casella di testo Name.
    
-**Nota**: lh indica Lakehouse. Aggiungiamo il prefisso lh per agevolarne l'identificazione e la ricerca.
+ **Nota**: lh indica Lakehouse. Aggiungiamo il prefisso lh per agevolarne l'identificazione e la ricerca.
 
    ![](../Images/lab-02/image069.png)
    
