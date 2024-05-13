@@ -68,7 +68,7 @@ Agora você pode exibir todas as fontes de dados disponíveis. Você tem a opç�
 3. Selecione **Azure** nas principais opções de filtro para filtrar as fontes de dados do Azure.
 4.	Selecione **Azure Data Lake Storage Gen2.**
 
-    ![](../Images/lab-03/image06.png).
+    ![](../Images/lab-03/image06.png)
 
 5. Você será direcionado para a caixa de diálogo Conectar-se à fonte de dados. Você precisa criar uma conexão com a fonte de dados ADLS Gen2. Em **Configurações de conexão -> URL**, insira este link https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet-Format
 
