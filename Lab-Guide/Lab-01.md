@@ -17,14 +17,6 @@ Power BI Desktop 보고 개요
 
 참조
 
-=======
-- 문서 구조
-- 시나리오/문제 설명
-- Power BI Desktop 보고 개요
-    - 작업 1: 랩 환경에서 Power BI Desktop 을 설정하는 방법
-    - 작업 2: Power BI Desktop 보고서 분석
-    - 작업 3: Power Query 검토	
-- 참조	
 
 
 ## 문서 구조
