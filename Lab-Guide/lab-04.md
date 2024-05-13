@@ -238,19 +238,17 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 
   	![](../Images/lab-04/image093.jpg)
   	
-6.	Si apre la finestra di dialogo Connetti alla destinazione dati. Nel menu a discesa Connessione
-selezionare **Lakehouse (nessuno)**.
+4.	Si apre la finestra di dialogo Connetti alla destinazione dati. Nel menu a discesa Connessioneselezionare **Lakehouse (nessuno)**.
  
-7.	Selezionare **Avanti**.
+5.	Selezionare **Avanti**.
    
    ![](../Images/lab-04/image093.jpg)
   	
-9.	Si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione **Nuova tabella** sia selezionato, poiché si sta creando una nuova tabella.
-10. Vogliamo creare la tabella nel Lakehouse creato in precedenza. Nel pannello di sinistra andare a
-**Lakehouse -> FAIAD_<nomeutente>**.
-11. Selezionare **lh_FAIAD**
-12. Lasciare il nome della tabella **People**
-13. Selezionare **Avanti.**
+6.	Si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione **Nuova tabella** sia selezionato, poiché si sta creando una nuova tabella.
+7. Vogliamo creare la tabella nel Lakehouse creato in precedenza. Nel pannello di sinistra andare a**Lakehouse -> FAIAD_<nomeutente>**.
+8. Selezionare **lh_FAIAD**.
+9. Lasciare il nome della tabella **People**.
+10. Selezionare **Avanti**.
 
     ![](../Images/lab-04/image096.png)
  
