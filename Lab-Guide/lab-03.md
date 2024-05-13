@@ -151,7 +151,7 @@ Nel pannello di destra, in **Passaggi applicati** verificare che tutti i passagg
   	
 6.	Selezionare **OK**.
 
-    ![](../Images/lab-03/image066.jpg)
+    ![](../Images/lab-03/image066.png)
     
 7.	I dati verranno filtrati per un'unica riga. Selezionare **Binario** nella **colonna Contenuto**.
 
@@ -183,9 +183,9 @@ Come si è notato nel lab precedente, le query nel pannello di sinistra sono org
    
 **Nota**: se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per **abilitare Appunti nativi VM**. Nella finestra di dialogo selezionare OK. Dopo aver incollato la query è possibile disabilitare questa opzione.
 
-   ![](../Images/lab-03/image081.png)
+   ![](../Images/lab-03/image081.jpg)
 
-   ![](../Images/lab-03/image084.png)
+   ![](../Images/lab-03/image084.jpg)
  
 Si copia anche ADLS Base Folder. Questo perché la query States fa riferimento ad ADLS Base Folder in Power BI Desktop, ma abbiamo già una query simile. Risolviamo questo aspetto.
 
@@ -193,11 +193,11 @@ Si copia anche ADLS Base Folder. Questo perché la query States fa riferimento a
 7.	Nel **pannello di destra**, in **Passaggi applicati**, selezionare **Source**.
 8.	Nella barra della formula modificare **#**"ADLS Base Folder" in **#"ADLS Base Folder for Geo"**
 
-   ![](../Images/lab-03/image087.png)
+   ![](../Images/lab-03/image087.jpg)
 
 10.	Fare clic sul **segno di spunta** accanto alla barra della formula o premere **INVIO**.
 
-   ![](../Images/lab-03/image090.png)
+   ![](../Images/lab-03/image090.jpg)
    ![](../Images/lab-03/image093.png)
    
 11.	Ora possiamo rimuovere ADLS Base Folder. Nel pannello di sinistra, nella sezione** Query, fare clic con il pulsante destro del mouse sulla query ADLS Base Folder** e selezionare 
@@ -293,11 +293,11 @@ Notare che compare l'avviso: "Alcuni nomi di colonna contengono caratteri non su
    
 2.	Pubblichiamo queste query in modo da poter esaminare il Lakehouse. Torneremo per aggiungere ulteriori query. Nell'angolo inferiore destro selezionare **Pubblica**.
 
-     ![](../Images/lab-03/image132.jpg)
+     ![](../Images/lab-03/image132.png)
 
 4.	Si tornerà all'area di lavoro **FAIAD_<nome utente>**. La pubblicazione del flusso di dati potrebbe richiedere alcuni istanti. Al termine, selezionare **lh_FAIAD Lakehouse** dal riquadro centrale o dal pannello di sinistra.
  
-     ![](../Images/lab-03/image135.jpg)
+     ![](../Images/lab-03/image135.ipg)
 
 5.	Si aprirà la **schermata Explorer di Lakehouse**. Nel pannello di sinistra espandere **lh_FAIAD -> Tables**.
 6.	Notare che ora abbiamo una tabella Geo in Lakehouse. Espandere **Geo** e osservare tutte le colonne visualizzate.
@@ -408,6 +408,8 @@ Nel prossimo lab inseriremo i dati dalle altre origini dati.
 ### Riferimenti
 Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità chiave disponibili in Microsoft Fabric. Nel menu di servizio, la sezione Guida (?) include collegamenti ad alcune risorse utili.
 
+   ![](../Images/lab-03/image171.png)
+ 
 Di seguito sono riportate ulteriori risorse utili che consentiranno di progredire nell'uso di Microsoft Fabric.<br>
 - Vedere il post di blog per leggere l'[annuncio completo sulla disponibilità generale di Microsof t Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)<br>
 - Esplorare Fabric attraverso la [Presentazione guidata](https://aka.ms/Fabric-GuidedTour)<br>
