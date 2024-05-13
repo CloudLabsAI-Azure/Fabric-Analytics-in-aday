@@ -1,7 +1,3 @@
-# Microsoft Fabric
-## Fabric Analyst in a Day
-랩 1
-2024년 3월 버전
 
 ## 목차
 문서 구조	3<br>
