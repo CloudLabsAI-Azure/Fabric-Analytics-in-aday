@@ -56,13 +56,13 @@ GROUP BY su.Supplier_Name
 ### Tarefa 2: Visualizar resultado de T-SQL
 1. Também podemos visualizar o resultado desta consulta. **Realce a consulta** no painel de consultas, selecione o painel **Resultados** e selecione **Explorar estes dados.**
 
-   ![](../Images/lab-05/image04.png)
+![](../Images/lab-05/image04.png)
 
 2. A caixa de diálogo **Explorar consulta SQL query** é aberta. No painel **Dados,** expanda **Consulta SQL 1.**
 3. Selecione os **campos Supplier_Name** e **Units**. O gráfico de barras clusterizado é criado.
 4. Na seção **Visualizações,** altere o tipo de visual selecionando o **Gráfico de colunas empilhadas.**
 
-   ![](../Images/lab-05/image05.png)
+![](../Images/lab-05/image05.png)
  
 5. **Expanda Matriz** para exibir os dados como uma matriz   
 
