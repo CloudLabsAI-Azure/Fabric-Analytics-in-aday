@@ -1,46 +1,36 @@
- ![](./media/image2.png){width="3.035277777777778in" height="2.3in"}
+ ![](../Images/lab-02/image.png)
 
-**Microsoft**
+## Contenido
 
-**Fabric**
+[Introducción](#introducción)
 
- **Microsoft Fabric**
+[Licencia de Fabric](#licencia-de-fabric)
 
- Fabric Analyst in a Day Laboratorio 2
+ - [Tarea 1: Habilitar una licencia de prueba de Microsoft Fabric](#tarea-1-habilitar-una-licencia-de-prueba-de-microsoft-fabric)
 
- Versión: marzo de 2024
+ - [Información general de las experiencias de Fabric](#información-general-de-las-experiencias-de-fabric)
 
- Contenido
+ - [Tarea 2: Experiencia de Data Factory](#tarea-2-experiencia-de-data-factory)
 
-[Introducción 3](#introducción)
+ - [Tarea 3: Experiencia de Data Activator](#tarea-3-experiencia-de-data-activator)
 
-[Licencia de Fabric 3](#licencia-de-fabric)
+ - [Tarea 4: Experiencia de Industry Solutions](#tarea-4-experiencia-de-industry-solutions)
 
-[Tarea 1: Habilitar una licencia de prueba de Microsoft Fabric 3](#tarea-1-habilitar-una-licencia-de-prueba-de-microsoft-fabric)
+ - [Tarea 5: Experiencia de Synapse Data Engineering](#tarea-5-experiencia-de-synapse-data-engineering)
 
-[Información general de las experiencias de Fabric 6](#información-general-de-las-experiencias-de-fabric)
+ - [Tarea 6: Experiencia de Synapse Data Science](#tarea-6-experiencia-de-synapse-data-science)
 
-[Tarea 2: Experiencia de Data Factory 6](#tarea-2-experiencia-de-data-factory)
+ - [Tarea 7: Experiencia de Data Warehouse de Synapse](#tarea-7-experiencia-de-data-warehouse-de-synapse)
 
-[Tarea 3: Experiencia de Data Activator 7](#tarea-3-experiencia-de-data-activator)
+ - [Tarea 8: Experiencia de Real-Time Analytics](#tarea-8-experiencia-de-real-time-analytics)
 
-[Tarea 4: Experiencia de Industry Solutions 8](#tarea-4-experiencia-de-industry-solutions)
+[Área de trabajo de Fabric](#área-de-trabajo-de-fabric)
 
-[Tarea 5: Experiencia de Synapse Data Engineering 9](#tarea-5-experiencia-de-synapse-data-engineering)
+ - [Tarea 9: Crear un área de trabajo de Fabric](#tarea-9-crear-un-área-de-trabajo-de-fabric)
 
-[Tarea 6: Experiencia de Synapse Data Science 10](#tarea-6-experiencia-de-synapse-data-science)
+ - [Tarea 10: Crear un Lakehouse](#tarea-10-crear-un-lakehouse)
 
-[Tarea 7: Experiencia de Data Warehouse de Synapse 11](#tarea-7-experiencia-de-data-warehouse-de-synapse)
-
-[Tarea 8: Experiencia de Real-Time Analytics 12](#tarea-8-experiencia-de-real-time-analytics)
-
-[Área de trabajo de Fabric 13](#área-de-trabajo-de-fabric)
-
-[Tarea 9: Crear un área de trabajo de Fabric 13](#tarea-9-crear-un-área-de-trabajo-de-fabric)
-
-[Tarea 10: Crear un Lakehouse 15](#tarea-10-crear-un-lakehouse)
-
-[Referencias 17](#referencias)
+[Referencias](#referencias)
 
 # Introducción
 
@@ -116,9 +106,9 @@ Actualmente, está en **Mi área de trabajo**. Para trabajar con elementos de Fa
 
     a.  **New**: enumera los elementos disponibles en Data Factory: el flujo de datos de segunda generación y la canalización de datos.
 
-        i.  El flujo de datos de segunda generación es la nueva generación de flujos de datos.
+     - El flujo de datos de segunda generación es la nueva generación de flujos de datos.
 
-        ii. La canalización de datos se utiliza para la orquestación de datos.
+     - La canalización de datos se utiliza para la orquestación de datos.
 
     b.  **Recommended**: esta sección proporciona acceso a documentación de aprendizaje de inicio rápido.
 

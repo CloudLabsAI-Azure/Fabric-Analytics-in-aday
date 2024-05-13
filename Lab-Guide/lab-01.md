@@ -1,24 +1,20 @@
-> **Microsoft Fabric**
->
-> Fabric Analyst in a Day Laboratorio 1
->
-> Versión: Marzo de 2024
->
-> Contenido
+ ![](../Images/lab-01/image.png)
 
-[Estructura del documento 3](#estructura-del-documento)
+## Contenido
 
-[Escenario/planteamiento del problema 3](#escenarioplanteamiento-del-problema)
+[Estructura del documento](#estructura-del-documento)
 
-[Información general del informe de Power BI Desktop 4](#información-general-del-informe-de-power-bi-desktop)
+[Escenario/planteamiento del problema](#escenarioplanteamiento-del-problema)
 
-[Tarea 1: Configurar Power BI Desktop en un entorno de laboratorio 4](#tarea-1-configurar-power-bi-desktop-en-un-entorno-de-laboratorio)
+[Información general del informe de Power BI Desktop](#información-general-del-informe-de-power-bi-desktop)
 
-[Tarea 2: Analizar el informe de Power BI Desktop 7](#tarea-2-analizar-el-informe-de-power-bi-desktop)
+ - [Tarea 1: Configurar Power BI Desktop en un entorno de laboratorio](#tarea-1-configurar-power-bi-desktop-en-un-entorno-de-laboratorio)
 
-[Tarea 3: Revisar consultas de Power Query 11](#tarea-3-revisar-consultas-de-power-query)
+ - [Tarea 2: Analizar el informe de Power BI Desktop](#tarea-2-analizar-el-informe-de-power-bi-desktop)
 
-[Referencias 15](#referencias)
+ - [Tarea 3: Revisar consultas de Power Query](#tarea-3-revisar-consultas-de-power-query)
+
+[Referencias](#referencias)
 
 # Estructura del documento
 

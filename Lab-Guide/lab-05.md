@@ -1,54 +1,42 @@
- ![](./media/image2.png){width="3.035277777777778in" height="2.3in"}
+ ![](../Images/lab-05/image.png)
 
-**Microsoft**
-
-**Fabric**
-
- **Microsoft Fabric**
-
-Fabric Analyst in a Day Laboratorio 5
-
-Versión: Marzo de 2024
-
-Contenido
+## Content
 
 [Presentación ](#presentación)
 
 [Flujo de datos de segunda generación](#flujo-de-datos-de-segunda-generación)
 
-[Tarea 1: Configurar la actualización programada para el flujo de datos
+ - [Tarea 1: Configurar la actualización programada para el flujo de datos
 de ventas](#tarea-1-configurar-la-actualización-programada-para-el-flujo-de-datos-de-ventas)
 
-[Tarea 2: Configurar la actualización programada para el flujo de datos
-de proveedores](#tarea-2-configurar-la-actualización-programada-para-el-flujo-de-datos-de-proveedores-y-clientes)
-
-[y clientes](#tarea-2-configurar-la-actualización-programada-para-el-flujo-de-datos-de-proveedores-y-clientes)
+ - [Tarea 2: Configurar la actualización programada para el flujo de datos
+de proveedores y clientes](#tarea-2-configurar-la-actualización-programada-para-el-flujo-de-datos-de-proveedores-y-clientes)
 
 [Canalización de datos](#canalización-de-datos)
 
-[Tarea 3: Crear una canalización de datos](#tarea-3-crear-una-canalización-de-datos)
+ - [Tarea 3: Crear una canalización de datos](#tarea-3-crear-una-canalización-de-datos)
 
-[Tarea 4: Crear una canalización de datos simple](#tarea-4-crear-una-canalización-de-datos-simple)
+ - [Tarea 4: Crear una canalización de datos simple](#tarea-4-crear-una-canalización-de-datos-simple)
 
-[Tarea 5: Crear una nueva canalización de datos](#tarea-5-crear-una-nueva-canalización-de-datos)
+ - [Tarea 5: Crear una nueva canalización de datos](#tarea-5-crear-una-nueva-canalización-de-datos)
 
-[Tarea 6: Crear actividad Hasta](#tarea-6-crear-actividad-hasta)
+ - [Tarea 6: Crear actividad Hasta](#tarea-6-crear-actividad-hasta)
 
-[Tarea 7: Crear variables](#tarea-7-crear-variables)
+ - [Tarea 7: Crear variables](#tarea-7-crear-variables)
 
-[Tarea 8: Configurar la actividad Hasta](#tarea-8-configurar-la-actividad-hasta)
+ - [Tarea 8: Configurar la actividad Hasta](#tarea-8-configurar-la-actividad-hasta)
 
-[Tarea 9: Configurar la actividad del flujo de datos](#tarea-9-configurar-la-actividad-del-flujo-de-datos)
+ - [Tarea 9: Configurar la actividad del flujo de datos](#tarea-9-configurar-la-actividad-del-flujo-de-datos)
 
-[Tarea 10: Configure la primera actividad de Establecer variable](#tarea-10-configure-la-primera-actividad-de-establecer-variable)
+ - [Tarea 10: Configure la primera actividad de Establecer variable](#tarea-10-configure-la-primera-actividad-de-establecer-variable)
 
-[Tarea 11: Configure la segunda actividad de Establecer variable](#tarea-11-configure-la-segunda-actividad-de-establecer-variable)
+ - [Tarea 11: Configure la segunda actividad de Establecer variable](#tarea-11-configure-la-segunda-actividad-de-establecer-variable)
 
-[Tarea 12: Configure la tercera actividad de Establecer variable](#tarea-12-configure-la-tercera-actividad-de-establecer-variable)
+ - [Tarea 12: Configure la tercera actividad de Establecer variable](#tarea-12-configure-la-tercera-actividad-de-establecer-variable)
 
-[Tarea 13: Configurar la actividad Esperar](#tarea-13-configurar-la-actividad-esperar)
+ - [Tarea 13: Configurar la actividad Esperar](#tarea-13-configurar-la-actividad-esperar)
 
-[Tarea 14: Configurar la actualización programada para la canalización
+ - [Tarea 14: Configurar la actualización programada para la canalización
 de datos](#tarea-14-configurar-la-actualización-programada-para-la-canalización-de-datos)
 
 [Referencias](#referencias)
@@ -357,10 +345,9 @@ Necesitamos escribir una expresión que se ejecute hasta que el valor de **varCo
 9.  Haga clic en **Funciones** el menú inferior.
 
 10.  En la sección **Funciones lógicas**, seleccione la **función or**. Observe que **\@or()** se agrega al cuadro de texto de expresión dinámica. La función or toma dos parámetros; estamos trabajando en el
+primero.
 
-    primero.
-
-    ![](../Images/lab-05/image072.png)
+![](../Images/lab-05/image072.png)
 
 11. Coloque el cursor **entre los paréntesis** de la función **\@or**.
 
@@ -707,7 +694,6 @@ Obtenga más información en los blogs de anuncios de la experiencia Fabric:
 
 -   [Blog de integración de Dataverse y Microsoft Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
- 
  
 © 2023 Microsoft Corporation. Todos los derechos reservados.
 

@@ -1,45 +1,35 @@
- ![](./media/image2.png){width="3.0394936570428697in" height="2.3in"}
+ ![](../Images/lab-04/image.png)
 
-**Microsoft**
-
-**Fabric**
-
-**Microsoft Fabric**
-
-Fabric Analyst in a Day Laboratorio 4
-
-Versión: Marzo de 2024
-
-Contenido
+## Content
 
 [Presentación](#presentación)
 
 [Flujo de datos Gen2](#flujo-de-datos-gen2)
 
-[Tarea 1: Copiar consultas de Snowflake al flujo de datos](#tarea-1-copiar-consultas-de-snowflake-al-flujo-de-datos)
+ - [Tarea 1: Copiar consultas de Snowflake al flujo de datos](#tarea-1-copiar-consultas-de-snowflake-al-flujo-de-datos)
 
-[Tarea 2: Crear una conexión a Snowflake](#tarea-2-crear-una-conexión-a-snowflake)
+ - [Tarea 2: Crear una conexión a Snowflake](#tarea-2-crear-una-conexión-a-snowflake)
 
-[Tarea 3: Configurar el destino de datos para las consultas de Supplier
+ - [Tarea 3: Configurar el destino de datos para las consultas de Supplier
 y PO](#tarea-3-configurar-el-destino-de-datos-para-las-consultas-de-supplier-y-po)
 
-[Tarea 4: Cambiar el nombre y publicar el flujo de datos de Snowflake](#tarea-4-cambiar-el-nombre-y-publicar-el-flujo-de-datos-de-snowflake)
+ - [Tarea 4: Cambiar el nombre y publicar el flujo de datos de Snowflake](#tarea-4-cambiar-el-nombre-y-publicar-el-flujo-de-datos-de-snowflake)
 
-[Tarea 5: Copiar consultas de Dataverse al flujo de datos](#tarea-5-copiar-consultas-de-dataverse-al-flujo-de-datos)
+ - [Tarea 5: Copiar consultas de Dataverse al flujo de datos](#tarea-5-copiar-consultas-de-dataverse-al-flujo-de-datos)
 
-[Tarea 6: Crear una conexión a Dataverse](#tarea-6-crear-una-conexión-a-dataverse)
+ - [Tarea 6: Crear una conexión a Dataverse](#tarea-6-crear-una-conexión-a-dataverse)
 
-[Tarea 7: Crear un destino de datos para la consulta Customer](#tarea-7-crear-un-destino-de-datos-para-la-consulta-customer)
+ - [Tarea 7: Crear un destino de datos para la consulta Customer](#tarea-7-crear-un-destino-de-datos-para-la-consulta-customer)
 
-[Tarea 8: Publicar y cambiar el nombre del flujo de datos de Dataverse](#tarea-8-publicar-y-cambiar-el-nombre-del-flujo-de-datos-de-dataverse)
+ - [Tarea 8: Publicar y cambiar el nombre del flujo de datos de Dataverse](#tarea-8-publicar-y-cambiar-el-nombre-del-flujo-de-datos-de-dataverse)
 
-[Tarea 9: Copiar consultas de SharePoint al flujo de datos](#tarea-9-copiar-consultas-de-sharepoint-al-flujo-de-datos)
+ - [Tarea 9: Copiar consultas de SharePoint al flujo de datos](#tarea-9-copiar-consultas-de-sharepoint-al-flujo-de-datos)
 
-[Tarea 10: Crear una conexión a SharePoint](#tarea-10-crear-una-conexión-a-sharepoint)
+ - [Tarea 10: Crear una conexión a SharePoint](#tarea-10-crear-una-conexión-a-sharepoint)
 
-[Tarea 11: Configurar el destino de datos para la consulta People](#tarea-11-configurar-el-destino-de-datos-para-la-consulta-people)
+ - [Tarea 11: Configurar el destino de datos para la consulta People](#tarea-11-configurar-el-destino-de-datos-para-la-consulta-people)
 
-[Tarea 12: Publicar y cambiar el nombre del flujo de datos de SharePoint](#tarea-12-publicar-y-cambiar-el-nombre-del-flujo-de-datos-de-sharepoint)
+ - [Tarea 12: Publicar y cambiar el nombre del flujo de datos de SharePoint](#tarea-12-publicar-y-cambiar-el-nombre-del-flujo-de-datos-de-sharepoint)
 
 [Referencias](#referencias)
 

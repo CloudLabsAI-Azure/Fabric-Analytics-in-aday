@@ -1,44 +1,34 @@
- ![](./media/image2.png){width="3.035277777777778in" height="2.3in"}
+ ![](../Images/lab-03/image.png)
 
-**Microsoft**
-
-**Fabric**
-
-**Microsoft Fabric**
-
-Fabric Analyst in a Day Laboratorio 3
-
-Versión: Marzo de 2024
-
-Content
+## Content
 
 [Presentación](#presentación)
 
 [Flujo de datos Gen2](#flujo-de-datos-gen2)
 
-[Tarea 1: Crear flujo de datos Gen2](#tarea-1-crear-flujo-de-datos-gen2)
+ - [Tarea 1: Crear flujo de datos Gen2](#tarea-1-crear-flujo-de-datos-gen2)
 
-[Tarea 2: Crear una conexión a ADLS Gen2](#tarea-2-crear-una-conexión-a-adls-gen2)
+ - [Tarea 2: Crear una conexión a ADLS Gen2](#tarea-2-crear-una-conexión-a-adls-gen2)
 
-[Tarea 3: Crear consulta de carpeta base de ADLS Gen2](#tarea-3-crear-consulta-de-carpeta-base-de-adls-gen2)
+ - [Tarea 3: Crear consulta de carpeta base de ADLS Gen2](#tarea-3-crear-consulta-de-carpeta-base-de-adls-gen2)
 
-[Tarea 4: Crear consulta Cities](#tarea-4-crear-consulta-cities)
+ - [Tarea 4: Crear consulta Cities](#tarea-4-crear-consulta-cities)
 
-[Tarea 5: Crear consulta Countries](#tarea-5-crear-consulta-countries)
+ - [Tarea 5: Crear consulta Countries](#tarea-5-crear-consulta-countries)
 
-[Tarea 6: Crear States mediante Copiar: opción 1](#tarea-6-crear-states-mediante-copiar-opción-1)
+ - [Tarea 6: Crear States mediante Copiar: opción 1](#tarea-6-crear-states-mediante-copiar-opción-1)
 
-[Tarea 7: Crear una consulta Geo mediante Copiar: opción 2](#tarea-7-crear-una-consulta-geo-mediante-copiar-opción-2)
+ - [Tarea 7: Crear una consulta Geo mediante Copiar: opción 2](#tarea-7-crear-una-consulta-geo-mediante-copiar-opción-2)
 
-[Tarea 8: Configurar el destino de datos para la consulta Geo](#tarea-8-configurar-el-destino-de-datos-para-la-consulta-geo)
+ - [Tarea 8: Configurar el destino de datos para la consulta Geo](#tarea-8-configurar-el-destino-de-datos-para-la-consulta-geo)
 
-[Tarea 9: Publicar el flujo de datos](#tarea-9-publicar-el-flujo-de-datos)
+ - [Tarea 9: Publicar el flujo de datos](#tarea-9-publicar-el-flujo-de-datos)
 
-[Tarea 10: Cambio del nombre del flujo de datos](#tarea-10-cambio-del-nombre-del-flujo-de-datos)
+ - [Tarea 10: Cambio del nombre del flujo de datos](#tarea-10-cambio-del-nombre-del-flujo-de-datos)
 
-[Tarea 11: Crear consultas restantes en el flujo de datos](#tarea-11-crear-consultas-restantes-en-el-flujo-de-datos)
+ - [Tarea 11: Crear consultas restantes en el flujo de datos](#tarea-11-crear-consultas-restantes-en-el-flujo-de-datos)
 
-[Tarea 12: Configurar el destino de datos para las consultas restantes](#tarea-12-configurar-el-destino-de-datos-para-las-consultas-restantes)
+ - [Tarea 12: Configurar el destino de datos para las consultas restantes](#tarea-12-configurar-el-destino-de-datos-para-las-consultas-restantes)
 
 [Referencias](#referencias)
 
