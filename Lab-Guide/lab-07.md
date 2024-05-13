@@ -278,6 +278,7 @@ Em um cenário real, os dados são atualizados na fonte. Como estamos em um ambi
 4. A caixa de diálogo Conectar-se à fonte de dados é aberta. Selecione todas as linhas no editor e exclua-o.
 5. Copie o código abaixo e cole-o no editor.
 
+```
 let <br>
 Source = #"ADLS Base Folder",<br>
 #"Filtered Rows" = Table.SelectRows(Source, each Text.Contains([Folder Path], "Sales.Invoices_May")), <br>
@@ -286,6 +287,7 @@ Path"="https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parq
 #"Imported Parquet" = Parquet.Document(#"https://stvnextblobstorage dfs core windows net/fabrikam-sales/Delta- Parquet-Format/Sales Invoices_May/_0-0ee085a3-716f-4833-a792-c3162c1de300-0 parquet") <br>
 in <br>
 #"Imported Parquet" <br>
+```
 
 6. Selecione **Próximo.**
 
