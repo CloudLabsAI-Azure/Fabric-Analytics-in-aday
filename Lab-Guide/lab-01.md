@@ -43,12 +43,12 @@ Prima di iniziare con Fabric, esaminiamo l'attuale report in Power BI Desktop pe
 4.	Copiare il **Nome utente** e incollarlo nella casella di testo E-mail della finestra di dialogo.
 5.	Selezionare **Continua**.
 
-    ![](../Images/picture4.png)
+   ![](../Images/picture4.png)
   	
 7.	Si apre la finestra di dialogo Effettua l'accesso. Selezionare Account aziendale o dell'istituto di **istruzione**.
 8.	Selezionare **Continua**.
 
-  	 ![](../Images/Picture6.png)
+  	![](../Images/Picture6.png)
   	
 9.	Si apre la finestra di dialogo Accedi. Immettere nuovamente il Nome utente copiandolo nella scheda **Dettagli ambiente**.
 10.	Selezionare **Avanti**.
