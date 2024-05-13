@@ -235,7 +235,7 @@ Ora dobbiamo unire queste query per creare la dimensione Geo. Copiamo nuovamente
 11.	L'Editor avanzato dovrebbe essere vuoto. Ora premere **CTRL+V** per incollare il contenuto che copiato dall'Editor avanzato di Power BI Desktop.
 12.	Selezionare **Avanti**.
 
-   ![](../Images/lab-03/image108.jpg)
+    ![](../Images/lab-03/image108.jpg)
    	
 13.	Ora abbiamo la dimensione Geo. Rinominiamo la query. Nel **pannello di destra**, in **Impostazioni query -> Proprietà -> Nome,** cambiare il nome in **Geo**
 
@@ -388,7 +388,7 @@ Assicurarsi che vengano elaborate tutte le query. Al termine, inserire i dati in
 8.	Lasciare il nome della tabella **Product**
 9.	Selezionare **Avanti**.
 
-    ![](../Images/lab-03/image165.jpg)
+   ![](../Images/lab-03/image165.jpg)
 
 10.	Questa volta useremo le impostazioni automatiche perché i dati verranno aggiornati completamente. Inoltre, le colonne verranno rinominate secondo necessità. Selezionare **Salva 
      impostazioni**.
