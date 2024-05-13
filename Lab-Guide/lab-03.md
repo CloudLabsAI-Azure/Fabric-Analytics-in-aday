@@ -42,12 +42,13 @@ Ao final deste laboratório, você terá aprendido:
 1. Vamos voltar ao **workspace do Fabric** que você criou no Laboratório 2, Tarefa 9.
 2. Se você não saiu do laboratório anterior, estará na tela Lakehouse. Caso contrário, não tem problema. Selecione o ícone **Fabric experience selector** na parte inferior esquerda da tela.
 3. Selecione **Data Factory** na caixa de diálogo de experiência do Fabric aberta. O Data Factory tem as cargas de trabalho necessárias para extrair, transformar e ingerir dados.
-    ![](../Images/lab-03/image01.png)
+
+![](../Images/lab-03/image01.png)
  
  
 4.	Você será direcionado para a Página Inicial do Data Factory. Em Novo, selecione **Fluxo de dados Gen2.**
 
-    ![](../Images/lab-03/image02.png)
+![](../Images/lab-03/image02.png)
 
 Você será direcionado para a **página do Fluxo de Dados.** Esta tela parecerá familiar, pois é semelhante ao Fluxo de Dados Gen1 ou Power Query. Você notará que as opções para se conectar a várias fontes de dados estão disponíveis, junto com o recurso para transformar dados. Vamos conectar à fonte de dados ADLS Gen2 e realizar algumas transformações.
  
@@ -55,13 +56,14 @@ Você será direcionado para a **página do Fluxo de Dados.** Esta tela parecer�
 1. Na faixa de opções, selecione **Página Inicial -> Obter Dados -> Mais...**
 
 ![](../Images/lab-03/image03.png)
+
 2. Você será direcionado para a caixa de diálogo **Obter dados Escolher fonte de dados.** Você pode procurar a fonte de dados digitando na caixa de pesquisa. No painel esquerdo, há opções para usar uma Tabela em branco ou uma Consulta em branco. Você também encontrará uma nova opção para carregar arquivo. Exploraremos essa opção em um laboratório posterior. Por enquanto, vamos clicar em **Exibir mais ->** no canto direito da tela.
 
 ![](../Images/lab-03/image04.png)
 
 Agora você pode exibir todas as fontes de dados disponíveis. Você tem a opção de filtrar as fontes de dados por Arquivo, Banco de Dados, Microsoft Fabric, Power Platform, Azure, etc.
 
-  ![](../Images/lab-03/image05.png)
+![](../Images/lab-03/image05.png)
  
 3. Selecione **Azure** nas principais opções de filtro para filtrar as fontes de dados do Azure.
 4.	Selecione **Azure Data Lake Storage Gen2.**
