@@ -515,10 +515,11 @@ Lakehouse 中的地理数据，让我们引入ADLS Gen2 中的其余数据。
 
 在下一个实验中，我们将从其他数据源引入数据。
 
-## 参考
+### 参考
 
 Fabric Analyst in a Day (FAIAD) 介绍了Microsoft Fabric 中提供的一些主要功能。在服务菜单中， “帮助 (?)”部分包含指向一些优质资源的链接。
-![](../Images/lab-03/image54.png)
+
+![](../Images/lab-04/image37.png)
 
 以下更多参考资源可帮助您进行 Microsoft Fabric 相关的后续步骤。
 

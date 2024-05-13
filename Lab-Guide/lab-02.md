@@ -270,11 +270,11 @@ Lakehouse 很快就会创建完毕，您将导航到 Lakehouse 界面。
 
 在本实验中，我们探索了Fabric 界面，创建了Fabric 工作区和Lakehouse。在下一个实验中，我们将学习如何使用数据流 Gen2 连接到 ADLS Gen2 以提取、转换数据并将数据引入 Lakehouse
 
-## 参考
+### 参考
 
 Fabric Analyst in a Day (FAIAD) 介绍了Microsoft Fabric 中提供的一些主要功能。在服务菜单中， “帮助 (?)”部分包含指向一些优质资源的链接。
 
-![](../Images/lab-02/image24.png)
+![](../Images/lab-04/image37.png)
 
 以下更多参考资源可帮助您进行 Microsoft Fabric 相关的后续步骤。
 

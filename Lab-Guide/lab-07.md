@@ -466,10 +466,11 @@ Microsoft Fabric 是一种 SaaS 产品/服务。我们只需要使用浏览器�
 
 ![](../Images/lab-07/image38.jpg)
  
-## 参考
+### 参考
+
 Fabric Analyst in a Day (FAIAD) 介绍了Microsoft Fabric 中提供的一些主要功能。在服务菜单中， “帮助 (?)”部分包含指向一些优质资源的链接。
 
-![](../Images/lab-07/image39.png)
+![](../Images/lab-04/image37.png)
 
 以下更多参考资源可帮助您进行 Microsoft Fabric 相关的后续步骤。
 
