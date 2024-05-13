@@ -58,15 +58,15 @@ Antes de começarmos com o Fabric, vamos dar uma olhada no Relatório atual no P
 
     ![](../Images/lab-01/image04.png)
 
-7.	A caixa de diálogo Sign in é aberta. Insira novamente os dados de **Username** copiando-os da guia **Environment Details.**
+7. A caixa de diálogo Sign in é aberta. Insira novamente os dados de **Username** copiando-os da guia **Environment Details.**
 
-8.	Selecione **Next**.
+8. Selecione **Next**.
 
     ![](../Images/lab-01/image05.png)
 
 9.	Na próxima caixa de diálogo, insira os dados de **Password Credentials** copiando-os da guia **Environment Details.**
 
-10.	Selecione **Sign in**.
+10. Selecione **Sign in**.
 
 11.	A caixa de diálogo Action Required é aberta solicitando a configuração da autenticação multifator. Não precisamos configurar isso, pois estamos em um ambiente de laboratório. Selecione **Ask later**.
 
@@ -122,8 +122,8 @@ Sales Territory** (gráfico de dispersão). Observe no gráfico de colunas Sales
     e. Temos informações de Customer por Reseller. Customer conecta-se a Reseller.
 
 ### Tarefa 3: Revisar Power Queries
-1. Vamos analisar o Power Query para entender as fontes de dados. Na faixa de opções, selecione
-**Página Inicial -> Transformar dados.**
+
+1. Vamos analisar o Power Query para entender as fontes de dados. Na faixa de opções, selecione **Página Inicial -> Transformar dados.**
 
     ![](../Images/lab-01/image13.png)
 
