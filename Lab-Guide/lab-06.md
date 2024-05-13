@@ -99,7 +99,9 @@ Você será direcionado de volta à **visualização Ponto de extremidade de an�
 
 5.	A caixa de diálogo Mesclar é aberta. Na **lista suspensa Tabela direita para mesclagem,** selecione
 **Product**.
+
 6. Selecione **StockItemID** nas tabelas **Sales** e **Product.** Isso serve para mesclar as tabelas Product e Sales.
+
 7. Em **Tipo de junção,** selecione **Externa esquerda.**
  
 8. Selecione **OK.**   
