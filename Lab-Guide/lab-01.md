@@ -187,9 +187,9 @@ GenX、GenY 和GenZ。追加这四个查询以创建 Customer 查询。
 
 10.	请注意，**SnowflakeData** 文件夹包含 Supplier 维度和PO（订单/支出）事实。<br>
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Supplier 维度是通过合并 Suppliers 查询与 SupplierCategories 查询而创建的。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a.Supplier 维度是通过合并 Suppliers 查询与 SupplierCategories 查询而创建的。
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;PO 事实是通过合并PO 与PO Line Items 查询而创建的。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;b.PO 事实是通过合并PO 与PO Line Items 查询而创建的。
 
 11.	对于 SharePoint 数据源，输入**用户名**和**密码**, 其位于**环境变量**其位于环境变量选项卡中（实验指南旁边）。请选择 Microsoft 帐户选项。
 
