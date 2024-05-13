@@ -166,9 +166,9 @@ Sales Territory** (gráfico de dispersão). Observe no gráfico de colunas Sales
 
 10. Observe que a pasta **SnowflakeData** tem a dimensão Supplier e o fato PO (Oder/Spend).<br>
 
-    **a.** A **dimensão Supplier** é criada mesclando a consulta Suppliers com a consulta SupplierCategories.<br>
+    a. A **dimensão Supplier** é criada mesclando a consulta Suppliers com a consulta SupplierCategories.<br>
 
-    **b.** O **fato PO** é criado mesclando PO com a consulta PO Line Items.
+    b. O **fato PO** é criado mesclando PO com a consulta PO Line Items.
 
 11. Para a fonte de dados SharePoint, insira o **Username** e a **Password** disponíveis na guia
 **Environment Variables** (ao lado do Guia de Laboratório). Selecione a opção Conta Microsoft.
@@ -178,6 +178,7 @@ Sales Territory** (gráfico de dispersão). Observe no gráfico de colunas Sales
 ![](../Images/lab-01/image16.png)
 
 Agora sabemos com o que estamos lidando. Nos laboratórios a seguir, criaremos um Power Query semelhante usando o Fluxo de Dados Gen2 e um modelo usando Lakehouse.
+
 ## Referências
 O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais funções disponíveis no Microsoft Fabric. No menu do serviço, a seção Ajuda (?) tem links para ótimos recursos.
 
