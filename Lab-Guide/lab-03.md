@@ -270,7 +270,7 @@ pulsante destro del mouse** sulla query **Cities** e selezionare **Abilita stagi
   	
 7. Una volta creata la connessione, si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione Nuova tabella sia selezionato, poiché si sta creando una **nuova tabella**.
 
-8.	 Vogliamo creare la tabella nel Lakehouse creato in precedenza. Nel pannello di sinistra andare a **Lakehouse -> FAIAD_<nomeutente>**.
+8. Vogliamo creare la tabella nel Lakehouse creato in precedenza. Nel pannello di sinistra andare a **Lakehouse -> FAIAD_<nomeutente>**.
 
 9. Selezionare **lh_FAIAD**
 10. Lasciare il nome della tabella **Geo**.
