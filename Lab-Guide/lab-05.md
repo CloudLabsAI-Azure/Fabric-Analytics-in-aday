@@ -505,12 +505,16 @@ varTempCounter)。各反復の終わりには、varCounter とvarTempCounter の
 
 8.	パイプライン式ビルダーダイアログが開きます。以下を入力します
 
-**@if( <br>
-greater(variables('varCounter'), 1),<br>
-if(equals(variables('varCounter'), 2), mul(variables('varWaitTime'),15 ), mul(variables('varWaitTime'), 0)<br>
-),<br>
-mul(variables('varWaitTime'),5 )<br>
-)**<br>
+```
+@if(
+greater(variables(‘varCounter’), 1),
+
+if(equals(variables(‘varCounter’), 2),mul(variables(‘varWaitTime’),15 ), mul(variables(‘varWaitTime’), 0)
+),
+
+mul(variables(‘varWaitTime’),5 )
+)   
+```
 
 この式を入力しても、メニューを使って関数を選択しても、またはコピーして貼り付けても 構いません。
  
