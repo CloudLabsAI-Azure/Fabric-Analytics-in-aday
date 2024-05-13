@@ -213,12 +213,12 @@ Dobbiamo scrivere un'espressione che verrà eseguita finché il valore di varCou
 9.	Si apre la finestra di dialogo **Generatore di espressioni della pipeline**. Nella metà inferiore della finestra di dialogo è presente un menu:<br>
    - **Parametri**: sono costanti in una data factory che possono essere usate da una pipeline in qualsiasi espressione.<br>
    - **Variabili di sistema**: queste variabili possono essere usate nelle espressioni quando si definiscono entità all'interno di uno dei servizi. Ad esempio, ID pipeline, nome 
-          pipeline, nome trigger e così via. <br>
+     pipeline, nome trigger e così via. <br>
    - **Funzioni**: è possibile chiamare funzioni all'interno delle espressioni. Le funzioni sono classificate in funzioni Raccolta, Conversione, Data, Logica, Matematica e Stringa. 
-            Ad esempio, concat è una funzione Stringa, add è una funzione Matematica e così via.<br>
+     Ad esempio, concat è una funzione Stringa, add è una funzione Matematica e così via.<br>
    - **Variabili**: le variabili della pipeline sono valori che è possibile impostare e modificare durante l'esecuzione della pipeline. A differenza dei parametri della pipeline,che 
-          sono definiti a livello di pipeline e non possono essere modificati durante l'esecuzione della pipeline, le variabili della pipeline possono essere impostate e modificate 
-           all'interno di una pipeline usando un'attività Imposta variabile. Useremo a breve l'attività Imposta variabile.<br>
+     sono definiti a livello di pipeline e non possono essere modificati durante l'esecuzione della pipeline, le variabili della pipeline possono essere impostate e modificate 
+     all'interno di una pipeline usando un'attività Imposta variabile. Useremo a breve l'attività Imposta variabile.<br>
            
      ![](../Images/lab-05/image069.jpg)
 
