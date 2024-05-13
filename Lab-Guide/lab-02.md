@@ -142,19 +142,19 @@ a. **New:** 这里列出了 Data Factory - Dataflow Gen2 和 Data pipeline 中�
 
 2.	选择 **Data Engineering。** 您将导航到 **Data Engineering 主页。** 该页面也包含三个主要部分。在“New”部分中，请注意以下项：<br>
 
-a.	**Lakehouse：** 用于存储大数据以供清理、查询、报告和共享
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a.**Lakehouse：** 用于存储大数据以供清理、查询、报告和共享
 
-b.	**Notebook：** 使用 Python、R 和Scala 等各种语言进行数据引入、准备、分析和其他与数据相关的任务。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;b.**Notebook：** 使用 Python、R 和Scala 等各种语言进行数据引入、准备、分析和其他与数据相关的任务。
 
-c. **Environment**：用于为笔记本和spark 作业定义设置共享库、spark 计算设置和资源。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;c.**Environment**：用于为笔记本和spark 作业定义设置共享库、spark 计算设置和资源。
 
-d.	**Spark Job Definition：** 用于定义、计划和管理 Apache 作业。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;d.**Spark Job Definition：** 用于定义、计划和管理 Apache 作业。
 
-e.	**Data pipeline：** 用于编排数据解决方案。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;e.**Data pipeline：** 用于编排数据解决方案。
 
-f.	**Import notebook：** 用于从本地计算机导入笔记本。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;f.**Import notebook：** 用于从本地计算机导入笔记本。
 
-g.	**Use a sample：** 示例解决方案
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;g.**Use a sample：** 示例解决方案
 
 ![](../Images/lab-02/image13.jpg)
 
@@ -164,17 +164,17 @@ g.	**Use a sample：** 示例解决方案
 
 2.	选择 **Data Science。** 您将导航到 Data Science **主页**。这里也有三个部分。在“New”部分中，请注意以下项：
 
-a.	**ML model：**用于创建机器学习模型。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a.**ML model：**用于创建机器学习模型。
 
-b.	**Experiment：**用于创建、运行和跟踪多个模型的开发。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;b.**Experiment：**用于创建、运行和跟踪多个模型的开发。
 
-c.	**Notebook：** 用于探索数据和构建机器学习解决方案。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;c.**Notebook：** 用于探索数据和构建机器学习解决方案。
 
-d.	**Environment：** 用于为笔记本和spark 作业定义设置共享库、spark 计算设置和资源。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;d.**Environment：** 用于为笔记本和spark 作业定义设置共享库、spark 计算设置和资源。
 
-e.	**Import Notebook：** 用于从本地计算机导入笔记本。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;e.**Import Notebook：** 用于从本地计算机导入笔记本。
 
-f.	**Use a sample：** 示例解决方案。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;f.**Use a sample：** 示例解决方案。
 
 **注意：** 笔记本、环境、数据管道等项目在多种体验中可用，因为它们与每种体验都相关。
 
