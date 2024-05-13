@@ -39,19 +39,23 @@ Prima di iniziare con Fabric, esaminiamo l'attuale report in Power BI Desktop pe
 
    ![](../Images/Picture3.png)
   	
-3.	Si apre la finestra di dialogo Immettere l'indirizzo e-mail. Andare alla scheda Environment Details sul pannello di destra nell'ambiente lab.
-4.	Copiare il **Nome utente** e incollarlo nella casella di testo E-mail della finestra di dialogo.
-5.	Selezionare **Continua**.
+2.	Si apre la finestra di dialogo Immettere l'indirizzo e-mail. Andare alla scheda Environment Details sul pannello di destra nell'ambiente lab.
+   
+3.	Copiare il **Nome utente** e incollarlo nella casella di testo E-mail della finestra di dialogo.
+   
+4.	Selezionare **Continua**.
 
    ![](../Images/picture4.png)
   	
-7.	Si apre la finestra di dialogo Effettua l'accesso. Selezionare Account aziendale o dell'istituto di **istruzione**.
-8.	Selezionare **Continua**.
+5.	Si apre la finestra di dialogo Effettua l'accesso. Selezionare Account aziendale o dell'istituto di **istruzione**.
+   
+6.	Selezionare **Continua**.
 
   	![](../Images/Picture6.png)
   	
-9.	Si apre la finestra di dialogo Accedi. Immettere nuovamente il Nome utente copiandolo nella scheda **Dettagli ambiente**.
-10.	Selezionare **Avanti**.
+7.	Si apre la finestra di dialogo Accedi. Immettere nuovamente il Nome utente copiandolo nella scheda **Dettagli ambiente**.
+   
+8.	Selezionare **Avanti**.
 
     ![](../Images/Picture7.png)
  
