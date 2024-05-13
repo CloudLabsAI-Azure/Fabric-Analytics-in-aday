@@ -47,16 +47,16 @@ Notare che le cinque query vengono incollate e sulla sinistra è visualizzato il
    
    ![](../Images/lab-04/image015.jpg)
   	
-3.	Si apre la finestra di dialogo Connetti a origine dati. Assicurarsi che nel menu a discesa **Connessione** sia selezionato **Crea nuova connessione**.
-4.	Il **Tipo di autenticazione** dovrebbe essere impostato su **Snowflak**e.
-5.	Immettere **nome utente e password di Snowflake** disponibili nella scheda Variabili di ambiente (accanto alla scheda Guida al lab).
-6.	Selezionare **Connetti**.
+2.	Si apre la finestra di dialogo Connetti a origine dati. Assicurarsi che nel menu a discesa **Connessione** sia selezionato **Crea nuova connessione**.
+3.	Il **Tipo di autenticazione** dovrebbe essere impostato su **Snowflak**e.
+4.	Immettere **nome utente e password di Snowflake** disponibili nella scheda Variabili di ambiente (accanto alla scheda Guida al lab).
+5.	Selezionare **Connetti**.
    
    ![](../Images/lab-04/image018.png)
 
 Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello di anteprima. Esplorare i Passaggi applicati delle query. In genere, la query Suppliers contiene i dettagli sui fornitori e SupplierCategories contiene le categorie di fornitori. Queste due tabelle vengono unite per creare la dimensione Supplier, con le colonne necessarie. Analogamente, PO Line Items viene unita con PO per creare il fatto PO. Ora dobbiamo inserire i dati di Supplier e PO in Lakehouse.
 
-7.	Come indicato in precedenza, non effettuiamo lo staging di questi dati. Quindi **fare clic con ilpulsante destro del mouse** sulla query **Supplier** nel riquadro Query e selezionare **Abilita staging** per rimuovere il segno di spunta.
+6.	Come indicato in precedenza, non effettuiamo lo staging di questi dati. Quindi **fare clic con ilpulsante destro del mouse** sulla query **Supplier** nel riquadro Query e selezionare **Abilita staging** per rimuovere il segno di spunta.
  
    ![](../Images/lab-04/image021.png)
 
@@ -232,8 +232,9 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 
    ![](../Images/lab-04/image090.png)
   	
-3.	Selezionare la query **People**.
-4.	Nella barra multifunzione selezionare **Home -> Aggiungi destinazione dati -> Lakehouse**.
+2.	Selezionare la query **People**.
+   
+3.	Nella barra multifunzione selezionare **Home -> Aggiungi destinazione dati -> Lakehouse**.
 
   	![](../Images/lab-04/image093.jpg)
   	
