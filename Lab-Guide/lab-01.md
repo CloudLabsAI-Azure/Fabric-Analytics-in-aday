@@ -89,6 +89,7 @@ selezionare l'outlier in alto a destra (4° quadrante). Notare che la percentual
    ![](../Images/picture11.png)
  
 7.	Selezionare il rivenditore outlier nel grafico a dispersione per rimuovere il filtro.
+
 8.	Otteniamo i dettagli del prodotto per gruppo di prodotti e rivenditore. Nel grafico a barre Vendite per gruppo di prodotti e azienda rivenditrice **fare clic con il pulsante destro del mouse sulla barra Packaging Materials per Tailspin Toys**x e nella finestra di dialogo selezionare **Drill-through -> Product Detail**.
 
    ![](../Images/Picture12.png)
@@ -100,31 +101,40 @@ Si passerà alla pagina che fornisce i dettagli del prodotto. Notare che sono an
    ![](../Images/Picture13.png)
 
 9.	Se lo si desidera, analizzare ulteriormente il report, dopodiché esamineremo la vista modello. Nel pannello a sinistra selezionare l'**icona della vista modello**. Notare che vi sono due tabelle dei fatti Sales e PO.
-      a.	La granularità dei dati di Sales è per Date, Reseller, Product e People. Date, Reseller, Product e People si collegano a Sales.
-      b.	La granularità dei dati di PO è per Date, Product e People. Date, Product e People si collegano a PO.
-      c.	Abbiamo dati di Supplier per Product. Supplier si collega a Product.
-      d.	Abbiamo dati località di Reseller per Geo. Geo si collega a Reseller.
-      e.	Abbiamo informazioni di Customer per Reseller. Customer si collega a Reseller.
+      
+      a. La granularità dei dati di Sales è per Date, Reseller, Product e People. Date, Reseller, Product e People si collegano a Sales.
+      
+      b. La granularità dei dati di PO è per Date, Product e People. Date, Product e People si collegano a PO.
+      
+      c. Abbiamo dati di Supplier per Product. Supplier si collega a Product.
+      
+      d. Abbiamo dati località di Reseller per Geo. Geo si collega a Reseller.
+      
+      e. Abbiamo informazioni di Customer per Reseller. Customer si collega a Reseller.
  
 ### Attività 3 - Analisi delle query in Power Query
 1.	Osserviamo Power Query per comprendere le origini dati. Nella barra multifunzione selezionare **Home -> Trasforma dati**.
 
    ![](../Images/Picture14.png)
 
-3.	Si apre la finestra Power Query. Nella barra multifunzione selezionare Home -> Impostazioni origine dati. Scorrendo l'elenco si noterà che vi sono quattro **origini dati**, come indicato
-nell'esposizione del problema:
-    a.	Snowflake
-    b.	SharePoint
-    c.	ADLS Gen2
-    d.	Dataverse
+3.	Si apre la finestra Power Query. Nella barra multifunzione selezionare Home -> Impostazioni origine dati. Scorrendo l'elenco si noterà che vi sono quattro **origini dati**, come indicato nell'esposizione del problema:
+
+    a. Snowflake
+    
+    b. SharePoint
+    
+    c. ADLS Gen2
+    
+    d. Dataverse
 
 5.	Selezionare **Chiudi** per chiudere la finestra di dialogo Impostazioni origine dati.
 
    ![](../Images/Picture15.png)
  
 6.	Nel pannello Query a sinistra, notare che le query sono raggruppate per origine dati.
-7.	Notare che la cartella **DataverseData** contiene dati sul cliente disponibili in quattro query
-diverse: BabyBoomer, GenX, GenY e GenZ. Queste quattro query vengono aggiunte per creare la query Customer.
+
+7.	Notare che la cartella **DataverseData** contiene dati sul cliente disponibili in quattro query diverse: BabyBoomer, GenX, GenY e GenZ. Queste quattro query vengono aggiunte per creare la query Customer.
+
 8.	È possibile immettere le credenziali per l'origine dati Dataverse immettendo **Nome utente** e **Password** disponibili nella scheda **Variabili di ambiente** (accanto alla guida al lab). Selezionare l'opzione dell'account Microsoft.
 
    ![](../Images/Picture16.png)
