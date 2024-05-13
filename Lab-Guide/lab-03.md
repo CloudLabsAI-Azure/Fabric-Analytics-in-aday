@@ -68,16 +68,16 @@ Agora você pode exibir todas as fontes de dados disponíveis. Você tem a opç�
 3. Selecione **Azure** nas principais opções de filtro para filtrar as fontes de dados do Azure.
 4.	Selecione **Azure Data Lake Storage Gen2.**
 
-    ![](../Images/lab-03/image06.png)
+![](../Images/lab-03/image06.png)
 
 5. Você será direcionado para a caixa de diálogo Conectar-se à fonte de dados. Você precisa criar uma conexão com a fonte de dados ADLS Gen2. Em **Configurações de conexão -> URL**, insira este link https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet-Format
 
-    ![](../Images/lab-03/image07.png)
+![](../Images/lab-03/image07.png)
 
 6. Selecione **Chave de conta** no menu suspenso Tipo de autenticação.
 7. Copie a **Adls storage account e Chave de acesso** da guia **Variáveis de Ambiente** (ao lado do Guia de Laboratório) e cole-a na **caixa de texto Chave de conta.**
 
-    ![](../Images/lab-03/image08.png)
+![](../Images/lab-03/image08.png)
  
 8. Selecione **Próximo** na parte inferior direita da tela.
 
