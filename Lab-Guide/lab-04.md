@@ -73,18 +73,18 @@ Nota: non è necessario disabilitare lo staging per le altre tre query poiché l
 
    ![](../Images/lab-04/image027.png)
    
-6.	Si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione **Nuova tabella** sia selezionato, poiché si sta creando una nuova tabella.
-7.	Vogliamo creare la tabella nel Lakehouse creato in precedenza. Nel pannello di sinistra andare a **Lakehouse -> FAIAD_<nomeutente>**.
-8.	Selezionare **lh_FAIAD**
-9.	Lasciare il nome della tabella **Supplier**
-10. Selezionare Avanti.
+5.	Si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione **Nuova tabella** sia selezionato, poiché si sta creando una nuova tabella.
+6.	Vogliamo creare la tabella nel Lakehouse creato in precedenza. Nel pannello di sinistra andare a **Lakehouse -> FAIAD_<nomeutente>**.
+7.	Selezionare **lh_FAIAD**
+8.	Lasciare il nome della tabella **Supplier**
+9. Selezionare Avanti.
 
     ![](../Images/lab-04/image030.png)
  
-11. Questa volta useremo le impostazioni automatiche perché i dati verranno aggiornati completamente. Inoltre, le colonne verranno rinominate secondo necessità. Selezionare
+10. Questa volta useremo le impostazioni automatiche perché i dati verranno aggiornati completamente. Inoltre, le colonne verranno rinominate secondo necessità. Selezionare
     **Salva impostazioni**.
 
-12. Si apre nuovamente la **finestra di Power Query**. Nell'angolo in basso a destra notare che la Destinazione dati è impostata su **Lakehouse**. Allo stesso modo, **impostare la 
+11. Si apre nuovamente la **finestra di Power Query**. Nell'angolo in basso a destra notare che la Destinazione dati è impostata su **Lakehouse**. Allo stesso modo, **impostare la 
     **Destinazione dati per la query PO**. Al termine, la Destinazione dati della query PO dovrebbe essere impostata su **Lakehouse** come illustrato nello screenshot.
 
     ![](../Images/lab-04/image033.png)
@@ -94,18 +94,18 @@ Nota: non è necessario disabilitare lo staging per le altre tre query poiché l
 2.	Nella finestra di dialogo cambiarne il nome in **df_Supplier_Snowflake**
 3.	Premere **INVIO** per salvare la modifica del nome.
 
-    ![](../Images/lab-04/image036.jpg)
+   ![](../Images/lab-04/image036.jpg)
 
 4.	Nell'angolo inferiore destro selezionare **Pubblica**.
 
-    ![](../Images/lab-04/image039.png)
+   ![](../Images/lab-04/image039.png)
   	
 Si tornerà all'area di lavoro **FAIAD_<nome utente>**. La pubblicazione del flusso di dati potrebbe richiedere alcuni istanti. Ora creeremo un flusso di dati per importare dati da Dataverse.
  
 ### Attività 5 - Copia di query Dataverse nel flusso di dati
 1.	Nel menu in alto selezionare **Nuovo -> Flusso di dati Gen2**.
 
-    ![](../Images/lab-04/image042.jpg)
+   ![](../Images/lab-04/image042.jpg)
    
 Si apre la pagina **Flusso di dati**. Ora che abbiamo familiarità con Flusso di dati, procediamo con la copia delle query da Power BI Desktop a Flusso di dati.
 
@@ -121,10 +121,11 @@ Come si è notato nel lab precedente, le query nel pannello di sinistra sono org
  
 5.	**Fare clic con il pulsante destro del mouse** e selezionare **Copia**.
 
-     ![](../Images/lab-04/image047.png)
+   ![](../Images/lab-04/image047.png)
    
 6.	Tornare alla pagina **Flusso di dati** nel browser.
 7.	Nel riquadro **Flusso di dati** premere **CTRL+V** (l'opzione Incolla del menu del pulsante destro non è attualmente supportata). Se si usa un dispositivo MAC, usare Cmd+V per incollare.
+   
 **Nota:** se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per abilitare Appunti nativi VM. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
 
 
@@ -162,14 +163,12 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 6.	Si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione Nuova tabella sia selezionato, poiché si sta creando una nuova tabella.
 7.	Vogliamo creare la tabella nel Lakehouse creato in precedenza. Nel pannello di sinistra andare a **Lakehouse -> FAIAD_<nomeutente>**
 8.	Selezionare **lh_FAIAD**
-9.	Lasciare il nome della tabella **Customer**
- 
-10.	Selezionare **Avanti**.
+9.	Lasciare il nome della tabella **Customer** 
+10. Selezionare **Avanti**.
 
    ![](../Images/lab-04/image065.png)
     
-11.	Si apre la finestra di dialogo Scegli le impostazioni di destinazione. Questa volta useremo le
-impostazioni automatiche perché i dati verranno aggiornati completamente. Inoltre, le colonne verranno rinominate secondo necessità. Selezionare **Salva impostazioni.**
+11. Si apre la finestra di dialogo Scegli le impostazioni di destinazione. Questa volta useremo le impostazioni automatiche perché i dati verranno aggiornati completamente. Inoltre, le colonne verranno rinominate secondo necessità. Selezionare **Salva impostazioni.**
 
    ![](../Images/lab-04/image068.png)
  
@@ -179,7 +178,7 @@ impostazioni automatiche perché i dati verranno aggiornati completamente. Inolt
 
    ![](../Images/lab-04/image071.jpg)
    
-Nota: si tornerà all'**area di lavoro FAIAD_<nome utente>.** La pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
+**Nota**: si tornerà all'**area di lavoro FAIAD_<nome utente>.** La pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
 3.	Stiamo lavorando in Flusso di dati 2. Rinominiamolo prima di continuare. Fare clic sui puntini di **sospensione (…)** accanto a Flusso di dati 2. Selezionare **Proprietà**.
 
    ![](../Images/lab-04/image071.jpg)
@@ -196,18 +195,20 @@ Si tornerà all'area di lavoro **FAIAD_<nome utente>**. Ora creiamo un flusso di
 1.	Nel menu in alto selezionare **Nuovo -> Flusso di dati Gen2**.
 
    ![](../Images/lab-04/image077.png)
+   
 Si apre la pagina **Flusso di dati**. Ora che abbiamo familiarità con Flusso di dati, procediamo con la copia delle query da Power BI Desktop a Flusso di dati.
 
 2.	Se non lo si è ancora aperto, aprire il file **FAIAD.pbix** contenuto nella cartella **C:\FAIAD\Reports** dell'ambiente lab.
  
-3.	Nella barra multifunzione selezionare **Home -> Trasforma dati**. Si apre la finestra Power Query.
-Come si è notato nel lab precedente, le query nel pannello di sinistra sono organizzate per origine dati.
+3.	Nella barra multifunzione selezionare **Home -> Trasforma dati**. Si apre la finestra Power Query.Come si è notato nel lab precedente, le query nel pannello di sinistra sono organizzate per origine dati.
 4.	Si apre la finestra Power Query. Dal pannello di sinistra **selezionare** la query **People** nella cartella SharepointData.
 5.	**Fare clic con il pulsante destro del mouse** e selezionare **Copia**.
 
    ![](../Images/lab-04/image081.png)
+   
 6.	Tornare alla schermata **Flusso di dati** nel browser.
 7.	Nel riquadro **Flusso di dati** premere **CTRL+V** (l'opzione Incolla del menu del pulsante destro non è attualmente supportata).
+   
 **Nota**: se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per **abilitare Appunti nativi VM**. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
 Notare che la query viene incollata ed è disponibile nel pannello di sinistra. Poiché non abbiamo
 creato una connessione a SharePoint, compare un messaggio di avviso che chiede di configurare la connessione.
@@ -228,30 +229,30 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 1.	Come indicato in precedenza, non effettuiamo lo staging di questi dati. Quindi **fare clic con il pulsante destro del mouse** sulla query **People** nel riquadro Query e selezionare 
   **Abilita staging** per rimuovere il segno di spunta.
 
-    ![](../Images/lab-04/image090.png)
+   ![](../Images/lab-04/image090.png)
   	
 3.	Selezionare la query **People**.
 4.	Nella barra multifunzione selezionare **Home -> Aggiungi destinazione dati -> Lakehouse**.
 
-  	 ![](../Images/lab-04/image093.jpg)
+  	![](../Images/lab-04/image093.jpg)
   	
 6.	Si apre la finestra di dialogo Connetti alla destinazione dati. Nel menu a discesa Connessione
 selezionare **Lakehouse (nessuno)**.
  
 7.	Selezionare **Avanti**.
    
-    ![](../Images/lab-04/image093.jpg)
+   ![](../Images/lab-04/image093.jpg)
   	
 9.	Si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione **Nuova tabella** sia selezionato, poiché si sta creando una nuova tabella.
-10.	Vogliamo creare la tabella nel Lakehouse creato in precedenza. Nel pannello di sinistra andare a
+10. Vogliamo creare la tabella nel Lakehouse creato in precedenza. Nel pannello di sinistra andare a
 **Lakehouse -> FAIAD_<nomeutente>**.
-11.	Selezionare **lh_FAIAD**
-12.	Lasciare il nome della tabella **People**
-13.	Selezionare **Avanti.**
+11. Selezionare **lh_FAIAD**
+12. Lasciare il nome della tabella **People**
+13. Selezionare **Avanti.**
 
     ![](../Images/lab-04/image096.png)
  
-14.	Questa volta useremo le impostazioni automatiche perché i dati verranno aggiornati completamente. Inoltre, le colonne verranno rinominate secondo necessità. Selezionare
+14. Questa volta useremo le impostazioni automatiche perché i dati verranno aggiornati completamente. Inoltre, le colonne verranno rinominate secondo necessità. Selezionare
       **Salva impostazioni**.
 
     ![](../Images/lab-04/image099.png)
@@ -262,7 +263,7 @@ selezionare **Lakehouse (nessuno)**.
 
    ![](../Images/lab-04/image102.png)
 
-Nota: si tornerà all'**area di lavoro FAIAD_<nome utente>**. La pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
+**Nota**: si tornerà all'**area di lavoro FAIAD_<nome utente>**. La pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
  
 3.	Stiamo lavorando in Flusso di dati 2. Rinominiamolo prima di continuare. Fare clic sui puntini di **sospensione (…)** accanto a Flusso di dati 2. Selezionare **Proprietà**.
 
