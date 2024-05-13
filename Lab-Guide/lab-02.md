@@ -66,7 +66,7 @@ Atualmente, você está em **Meu workspace**. Para trabalhar com itens do Fabric
 
 12. Você será direcionado à **Página Inicial do Microsoft Fabric**.
 
-   ![](../Images/lab-02/image07.png)
+    ![](../Images/lab-02/image07.png)
 
  
 ## Visão geral das experiências do Fabric
