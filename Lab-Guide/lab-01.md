@@ -150,13 +150,13 @@ Fabrikam, Inc. 是一家经营创意商品的批发分销商。作为批发商�
 
 2.	Power Query 窗口随即打开。从功能区中选择**主页-> 数据源设置。**数据源设置”对话框随即打开。滚动浏览列表时，您会注意到问题陈述中提到了四个数据源：
 
-a.Snowflake
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a.Snowflake
 
-b.SharePoint
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;b.SharePoint
 
-c.ADLS Gen2
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;c.ADLS Gen2
 
-d.Dataverse
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;d.Dataverse
 
 3.	选择**关闭**以关闭数据源设置对话框。
 
