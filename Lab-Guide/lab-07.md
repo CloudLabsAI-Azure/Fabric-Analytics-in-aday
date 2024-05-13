@@ -37,17 +37,17 @@ Power BI	3<br>
 3.	Fabric エクスペリエンスのダイアログが開きます。**Power BI** を選択します。**Power BI**
 ホーム ページが表示されます。
 
-     ![](../Images/lab-07/image006.png)  
+![](../Images/lab-07/image006.png)  
  
 4.	上部のメニューから**新しいレポート**を選択します。
 
-     ![](../Images/lab-07/image009.png) 
+![](../Images/lab-07/image009.png) 
  
 5.	**最初のレポートの作成画面**が表示されます。データを手動で入力してレポートを作成す
 ることも、公開されているセマンティック モデルを選択することもできます。前のラボではセマンティック モデルを作成しました。それを使ってみましょう。**公開されたセマ**
 **ンティック モデルを選択**オプションを選択します。
 
-     ![](../Images/lab-07/image012.jpg) 
+![](../Images/lab-07/image012.jpg) 
 
 6.	[レポートで使用するデータセットを選択] ページが開きます。4 つのオプションがあります。**lh_FAIAD を選択します。** <br>
 a.	**lh_FAIAD:** これは、作成したデータセットを含む lakehouse です。これをレポート
@@ -59,28 +59,28 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 7.	**レポートの自動作成ボタンの横の矢印**をクリックします。[レポートの自動作成] と[空の
 レポートの作成] という 2 つのオプションがあることに注意してください。自動作成を試してみましょう。**レポートを自動作成する**を選択します。
 
-     ![](../Images/lab-07/image015.jpg) 
+![](../Images/lab-07/image015.jpg) 
  
 
 8.	Power BI によって、レポートの自動作成が開始されます。[データの事前選択] オプションを選択することもできます。レポートの準備が完了すると、画面の右上にダイアログが表示されます。**View report now** を選択します。
 
-    ![](../Images/lab-07/image018.jpg) 
+![](../Images/lab-07/image018.jpg) 
 
-    **チェックポイント:** 以下のスクリーンショットのようなレポートが表示されます。少数の KPIといくつかの傾向のビジュアルがあります。新しいモデルを分析しようとしており、すぐに開始する必要がある場合、これは良いスタート地点となります。
+**チェックポイント:** 以下のスクリーンショットのようなレポートが表示されます。少数の KPIといくつかの傾向のビジュアルがあります。新しいモデルを分析しようとしており、すぐに開始する必要がある場合、これは良いスタート地点となります。
 
 
-    **注:** 上部のメニューには、レポートを編集したり、データをテーブルとして表示したりするオプションがあります。自由にこれらのオプションを試してみてください。
+**注:** 上部のメニューには、レポートを編集したり、データをテーブルとして表示したりするオプションがあります。自由にこれらのオプションを試してみてください。
  
 9.	このレポートを保存しましょう。上部のメニューで **Save** を選択します。
 
 10.	[レポートの保存] ダイアログが開きます。レポートに **rpt_Sales_Auto_Report** という名前を付けます。
-    **注:** レポート名の前にreport の省略形である rpt を付けています。
+**注:** レポート名の前にreport の省略形である rpt を付けています。
 
 11.	レポートがワークスペース **FAIAD_<ユーザー名>** に保存されることを確認します。
 
 12.	**保存**を選択します。
 
-     ![](../Images/lab-07/image021.jpg) 
+![](../Images/lab-07/image021.jpg) 
 
 **注:** 自動作成レポートは、"自動作成" されるのでユーザーによって外観が異なる場合があります。また、前のラボ(ラボ 6) で作成したリレーションシップとメジャーにも依存します。
 
@@ -89,7 +89,7 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 
 下のスクリーンショットは、オプションのリレーションシップとメジャー (ラボ 6) の作成をスキップした場合に、自動作成レポートがどのように表示される**可能性があるか**を示したものです。
 
-   ![](../Images/lab-07/image024.jpg) 
+![](../Images/lab-07/image024.jpg) 
  
 ## タスク 2: 新しいレポートの背景を構成する
 
@@ -98,26 +98,26 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 
 2.	上部のメニューから**新規 -> レポート**を選択します。[最初のレポートを作成する] ページが表示されます。
 
-    ![](../Images/lab-07/image027.png)  
+![](../Images/lab-07/image027.png)  
  
 3.	作成したモデルを選択できるように、**公開されたセマンティック モデルを選択**を選択し
 ます。
 
-     ![](../Images/lab-07/image030.jpg) 
+![](../Images/lab-07/image030.jpg) 
 
 4.	[レポートで使用するセマンティック モデルを選択する] ダイアログが開きます。
 **lh_FAIAD** を選択します。
 
 5.	**レポートの自動作成ボタンの横の矢印**をクリックします。**空のレポートを作成する**を選択します。
 
-     ![](../Images/lab-07/image033.jpg) 
+![](../Images/lab-07/image033.jpg) 
 
 6.	まだ開いていない場合は、自分のラボ環境の **C:\FAIAD\Reports** フォルダーにある
-    **FAIAD.pbix** を開きます。
+**FAIAD.pbix** を開きます。
  
-    このレポートを参考として使用します。まず最初にキャンバスの背景を追加します。レポートヘッダーを作成し、いくつかの KPI を追加して、売上推移の折れ線グラフを作成します。時間の都合上、また出席者には Power BI Desktop でのビジュアル作成の経      験があることをふまえ、すべてのビジュアルの作成は行いません。
+このレポートを参考として使用します。まず最初にキャンバスの背景を追加します。レポートヘッダーを作成し、いくつかの KPI を追加して、売上推移の折れ線グラフを作成します。時間の都合上、また出席者には Power BI Desktop でのビジュアル作成の経      験があることをふまえ、すべてのビジュアルの作成は行いません。
 
-    ![](../Images/lab-07/image036.jpg) 
+![](../Images/lab-07/image036.jpg) 
 
 7.	ブラウザーで **Power BI** キャンバスに戻ります。
 
@@ -135,7 +135,7 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 
 14.	[透過性] を **0%** に設定します。
 
-     ![](../Images/lab-07/image039.jpg) 
+![](../Images/lab-07/image039.jpg) 
  
 ## タスク 3: レポートにヘッダーを追加する
 1.	上部の余白にヘッダーを追加しましょう。**メニュー**で、**テキスト ボックス**を選択します。
@@ -155,7 +155,7 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 
 8.	**上部の余白に収まるようにテキスト ボックス**のサイズを変更します。
 
-     ![](../Images/lab-07/image042.jpg) 
+![](../Images/lab-07/image042.jpg) 
  
 ## タスク 4: レポートに KPI を追加する
 1.	Sales KPI を追加しましょう。キャンバス内で**空白**を選択し、テキスト ボックスからフォーカスを外します。
@@ -166,7 +166,7 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 
 4.	**Sales メジャー**を選択します。
 
-    ![](../Images/lab-07/image045.jpg) 
+![](../Images/lab-07/image045.jpg) 
 
 5. **複数行カード ビジュアルを選択**した状態で、[視覚化] セクションの**ビジュアルの書式設定アイコン**を選択します。
 
@@ -178,13 +178,13 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 
 9.	[16 進] の値を **#004753** に設定します。
 
-     ![](../Images/lab-07/image048.png)   
+![](../Images/lab-07/image048.png)   
  
 10.	**カード** セクションを展開します。
 
 11.	**アクセント バー** スライダーを使用して、**オフ**に設定します。
 
-     ![](../Images/lab-07/image051.png)  
+![](../Images/lab-07/image051.png)  
  
 12.	[視覚化] ペインで**全般**を選択します。
 
@@ -194,7 +194,7 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 
 15.	**ビジュアル**のサイズを変更して、**スクリーンショットに表示されている左のボックス**に移動します。
 
-     ![](../Images/lab-07/image054.jpg) 
+![](../Images/lab-07/image054.jpg) 
 
 16.	別のKPI を追加してみましょう。先ほど作成した **Sales 複数行カード**を選択します。キーボードの **Ctrl+C** を使用して、ビジュアルをコピーします。
 
@@ -207,7 +207,7 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 
 20.	**ビジュアル**のサイズを変更し、**Sales ビジュアルの下のボックスに配置**します。
 
-     ![](../Images/lab-07/image057.jpg) 
+![](../Images/lab-07/image057.jpg) 
  
 ## タスク 5: レポートに折れ線グラフを追加する
 折れ線グラフを作成して、リセラー会社ごとの売上の推移を視覚化しましょう。
@@ -219,7 +219,7 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 
 4.	**Year** フィールドを選択します。Year は既定で合計され、Y 軸に追加されることに注意してください。これを修正しましょう。
 
-    ![](../Images/lab-07/image060.jpg) 
+![](../Images/lab-07/image060.jpg) 
 
 ## タスク 6: レポートを保存する
 レポートから移動してモデルを変更する前にレポートを保存しましょう。
@@ -228,13 +228,13 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 2.	[レポートの保存] ダイアログが開きます。レポートに **rpt_Sales_Report** という名前を付けます。
 
 
-    **注:** レポート名の前にreport の省略形である rpt を付けています。
+**注:** レポート名の前にreport の省略形である rpt を付けています。
 
 3.	レポートが **FAIAD_<ユーザー名>** ワークスペースに保存されることを確認します。
 
 4.	**保存**を選択します。
 
-     ![](../Images/lab-07/image063.jpg) 
+![](../Images/lab-07/image063.jpg) 
  
 
 ## タスク 7: Date テーブルのYear 列を構成する
@@ -248,7 +248,7 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 
 5.	**集計の方法**ドロップダウン リストで、**なし**を選択します。
 
-     ![](../Images/lab-07/image066.jpg) 
+![](../Images/lab-07/image066.jpg) 
 
 6.	左メニュー バーから **rpt_Sales_Report** を選択して、レポートに戻ります。
 
@@ -263,7 +263,7 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 
 11.	**Sales** テーブルを展開し、**Sales メジャー**を選択します。
 
-     ![](../Images/lab-07/image069.jpg) 
+![](../Images/lab-07/image069.jpg) 
 
 ## タスク 8: Date テーブルのShort_Month_Name 列を構成する
 1.	このグラフに月を追加してみましょう。Date テーブルの **Short_Month_Name** フィールドを **X 軸**の **Year** の下にドラッグします。ビジュアルが Sales の順に並べ替えられていることに注目してください。Short_Month_Name の順に並べ替えてみましょう。
@@ -276,20 +276,20 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 
 5.	**軸の並べ替え-> 昇順で並べ替え**を選択します。
 
-    ![](../Images/lab-07/image072.jpg) 
+![](../Images/lab-07/image072.jpg) 
  
-    **注:** 月がアルファベット順に並べられています。これを修正しましょう。
+**注:** 月がアルファベット順に並べられています。これを修正しましょう。
 
-    ![](../Images/lab-07/image075.png)  
+![](../Images/lab-07/image075.png)  
 
 6.	**左メニュー バーで lh_FAIAD** を選択してレイクハウスに移動します。
 
 7.	**未保存の変更**ダイアログが開きます。**保存**を選択して、レポートへの変更を保存します。
 
-     ![](../Images/lab-07/image078.jpg) 
+![](../Images/lab-07/image078.jpg) 
 
 8.	lh_FAIAD レイクハウスが表示されます。左側の [エクスプローラー] ペインで、**lhFAIAD ->
-    スキーマ -> dbo -> テーブル-> Date** を展開します。
+スキーマ -> dbo -> テーブル-> Date** を展開します。
 
 9.	**Short_Month_Name** 列を選択します。
 
@@ -297,7 +297,7 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 
 11.	**列で並べ替え**ドロップダウンで **Month** を選択します。
 
-     ![](../Images/lab-07/image081.jpg) 
+![](../Images/lab-07/image081.jpg) 
 
 12.	左メニュー バーから **rpt_Sales_Report** を選択して、レポートに戻ります。
 
@@ -305,7 +305,7 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
  
 14.	上部のメニューで、**更新**を選択します。月が正しく並べ替えられました。
 
-     ![](../Images/lab-07/image084.png)  
+![](../Images/lab-07/image084.png)  
 
 ## タスク 9: 折れ線グラフを書式設定する
 レポートの作成中にセマンティック モデルを更新することがいかに簡単であるかに注目してください。これによりPower BI Desktop のようなシームレスな対話型操作が実現します。
@@ -313,7 +313,7 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 
 2.	**Reseller -> Reseller Company** フィールドを**凡例**セクションにドラッグします。
 
-     ![](../Images/lab-07/image087.jpg) 
+![](../Images/lab-07/image087.jpg) 
 
 3.	**折れ線グラフビジュアルを選択**した状態で、**視覚化**セクションで **ビジュアルの書式設定アイコン-> 全般**を選択します。
 
@@ -325,7 +325,7 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 
 7.	**背景**スライダーを使用して、**オフ**に設定します。
 
-     ![](../Images/lab-07/image090.png)  
+![](../Images/lab-07/image090.png)  
 
 8. **視覚化**セクションで**ビジュアルの書式設定アイコン -> ビジュアル**を選択します。
 
@@ -342,7 +342,7 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 
 14.	ビジュアルの右までスクロールして、**2023 年 4 月までのデータがあることを確認します。**
 
-     ![](../Images/lab-07/image093.png)   
+![](../Images/lab-07/image093.png)   
  
 15.	レポートを保存しましょう。メニュ**ーでファイル -> 保存**を選択します。
 
@@ -358,7 +358,7 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 
 2.	**df_Sales_ADFS** を選択すると、データフローを編集して新しい Parquet ファイルを追加できるようになります。
 
-     ![](../Images/lab-07/image096.jpg) 
+![](../Images/lab-07/image096.jpg) 
 
 3.	リボンで**ホーム -> データの取得 -> 空のクエリ**を選択します。
 
@@ -366,27 +366,28 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 
 5.	下のコードをコピーして、エディターに貼り付けます。
 
-     let <br>
-       Source = #"ADLS Base Folder",<br>
-       #"Filtered Rows" = Table.SelectRows(Source, each Text.Contains([Folder Path], "Sales.Invoices_May")),<br>
-      #"https://stvnextblobstorage dfs core windows net/fabrikam-sales/Delta-Parquet-Format/Sales Invoices_May/_0- 0ee085a3-716f-4833-a792-c3162c1de300-0 parquet" = #"Filtered Rows"{[#"Folder<br>
+let <br>
+    Source = #"ADLS Base Folder",<br>
+    #"Filtered Rows" = Table.SelectRows(Source, each Text.Contains([Folder Path], "Sales.Invoices_May")),<br>
+    #"https://stvnextblobstorage dfs core windows net/fabrikam-sales/Delta-Parquet-Format/Sales Invoices_May/_0- 0ee085a3-716f-4833-a792-c3162c1de300-0 parquet" = #"Filtered Rows
+{[#"Folder<br>
      Path"="https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet- Format/Sales.Invoices_May/",Name="0-0ee085a3-716f-4833-a792-c3162c1de300-0.parquet"]}[Content],<br>
-      #"Imported Parquet" = Parquet.Document(#"https://stvnextblobstorage dfs core windows net/fabrikam-sales/Delta- Parquet-Format/Sales Invoices_May/_0-0ee085a3-716f-4833-a792-c3162c1de300-0 parquet")<br>
-     in<br>
-       #"Imported Parquet"<br>
+    #"Imported Parquet" = Parquet.Document(#"https://stvnextblobstorage dfs core windows net/fabrikam-sales/Delta- Parquet-Format/Sales Invoices_May/_0-0ee085a3-716f-4833-a792-c3162c1de300-0 parquet")<br>
+  in<br>
+    #"Imported Parquet"<br>
       
 6.	次へを選択します。
 
-     ![](../Images/lab-07/image099.jpg) 
+![](../Images/lab-07/image099.jpg) 
 
 7.	新しいクエリが再び作成されます。その**名前を変更**しましょう。右パネルの**クエリの設定->プロパティ-> 名前**で、クエリの名前を **MayInvoice** に変更します。
 
 8.	新しいクエリのステージングを無効にします。MayInvoice クエリを**右クリック**し、**ステージングを有効にする**をオフにします。
 
-     ![](../Images/lab-07/image102.jpg) 
+![](../Images/lab-07/image102.jpg) 
 
 9.	次に、5 月の請求書データを Invoice テーブルに追加しましょう。[クエリ] セクションで
-   **Invoice** クエリを選択します。
+**Invoice** クエリを選択します。
 
 10.	リボンで **ホーム-> クエリをアペンドする**を選択します。
 
@@ -394,19 +395,19 @@ d.	**DataflowsStagingLakehouse:** これは既定で作成されるステージ�
 
 12.	**OK** を選択します。
 
-     ![](../Images/lab-07/image105.jpg) 
+![](../Images/lab-07/image105.jpg) 
  
 13.	右下隅の**公開**を選択して、変更内容を保存して公開します。
 
-     ![](../Images/lab-07/image108.jpg)   
+![](../Images/lab-07/image108.jpg)   
  
-     **注:** 公開されると、データフローが最新の情報に更新されます。これには数分かかる場合があります。
+**注:** 公開されると、データフローが最新の情報に更新されます。これには数分かかる場合があります。
 
 14.	左メニュー バーから **rpt_Sales_Report** を選択して、レポートに戻ります。
 
 15.	上部のメニューで、**更新**を選択します。折れ線グラフに 2023 年 5 月のデータがあります。また、Sales の金額と Units も増加しています。
 
-     ![](../Images/lab-07/image111.jpg) 
+![](../Images/lab-07/image111.jpg) 
  
 前のラボで作成したデータフローがスケジュールに従って更新され、データがレイクハウスに取り込まれます。Lakehouse 内のデータ モデルが更新され、レポートが最新の情報に更新されます。各データフローが更新されるときに、データ モデルとレポートを更新する必要はありません。これがDirect Lake の利点です。
 問題の内容にリストされている課題をもう一度見てみましょう。
@@ -431,7 +432,7 @@ Microsoft Fabric は SaaS オファリングです。必要となるのは、サ
 
 2.	上部のメニューで [アクセスの管理] の横にある**省略記号 (…)** を選択し、**ワークスペースの設定**を選択します。
 
-     ![](../Images/lab-07/image114.jpg) 
+![](../Images/lab-07/image114.jpg) 
 
 3.	[ワークスペースの設定] ダイアログが開きます。左側のメニューから、**その他**を選択します。
 
@@ -441,13 +442,13 @@ Microsoft Fabric は SaaS オファリングです。必要となるのは、サ
  
 これで、ワークスペースとワークスペースに含まれていたすべての項目が削除されます。
 
-   ![](../Images/lab-07/image117.jpg) 
+![](../Images/lab-07/image117.jpg) 
  
 # リファレンス
 
 Fabric Analyst in a Day (FAIAD) では、Microsoft Fabric で使用できる主要な機能の一部をご紹介します。サービスのメニューにあるヘルプ (?) セクションには、いくつかの優れたリソースへのリンクがあります。
 
-   ![](../Images/lab-07/image120.png)   
+![](../Images/lab-07/image120.png)   
 
 Microsoft Fabric の次のステップに役立つリソースをいくつか以下に紹介します。
 
