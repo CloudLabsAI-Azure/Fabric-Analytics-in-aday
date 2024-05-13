@@ -49,21 +49,21 @@ verifichi un errore, è possibile fare clic sul nome della tabella/attività per
       a.	**Lakehouse**: questa è la connessione per importare dati dal flusso di dati.
       b.	**ADLS**: questa è la connessione ai dati dell'origine ADLS.
 
-   ![](../Images/lab-05/image021.jpg)
+    ![](../Images/lab-05/image021.jpg)
    
 9.	Espandere **Aggiorna**.
 10.	Impostare il dispositivo di scorrimento **Configurare una pianificazione di aggiornamento** su **Attivato**.
 11.	Impostare il** menu a discesa Frequenza di aggiornamento** su **Ogni giorno**. Notare che anche presente un'opzione per impostarla su Settimanale.
 12.	Impostare **Fuso orario** sul fuso orario preferito.
 
-**Nota**: poiché si tratta di un ambiente lab, è possibile impostare il fuso orario sul fuso orario preferito. In uno scenario reale, si imposterà il fuso orario in base alla propria ubicazione o all'ubicazione dell'origine dati.
+>**Nota**: poiché si tratta di un ambiente lab, è possibile impostare il fuso orario sul fuso orario preferito. In uno scenario reale, si imposterà il fuso orario in base alla propria ubicazione o all'ubicazione dell'origine dati.
 
 13.	Fai clic sul collegamento **Aggiungi un'altra ora**. Notare che l'opzione Ora è visualizzata.
      
 14.	Impostare **Ora** su **12.00**. Notare che è possibile impostare l'aggiornamento sull'ora o sulla mezz'ora.
 15.	Selezionare **Applica** per salvare l'impostazione.
     
-**Nota:** facendo clic sul collegamento Aggiungi un'altra ora, è possibile aggiungere più orari di aggiornamento. È anche possibile inviare le notifiche di errore al proprietario del flusso di dati e ad altri contatti.
+>**Nota:** facendo clic sul collegamento Aggiungi un'altra ora, è possibile aggiungere più orari di aggiornamento. È anche possibile inviare le notifiche di errore al proprietario del flusso di dati e ad altri contatti.
 
   ![](../Images/lab-05/image024.jpg)
     
@@ -113,7 +113,7 @@ Ci si trova nella schermata **Home**. Se si osserva il menu in alto, si possono 
    
 10.	Nel menu in alto selezionare **Visualizza**. Qui si troveranno le opzioni per visualizzare il codice in formato JSON. Si troveranno anche le opzioni per formattare le attività.
     
- **Nota**: Se si ha familiarità con JSON, alla fine del lab è possibile selezionare Visualizza codice JSON. Qui si può notare che tutta l'orchestrazione effettuata usando la visualizzazione di progettazione può anche essere scritta in JSON.
+ >**Nota**: Se si ha familiarità con JSON, alla fine del lab è possibile selezionare Visualizza codice JSON. Qui si può notare che tutta l'orchestrazione effettuata usando la visualizzazione di progettazione può anche essere scritta in JSON.
 
   ![](../Images/lab-05/image045.png)
  
@@ -125,7 +125,7 @@ Iniziamo a creare la pipeline. Abbiamo bisogno di un'attività per aggiornare il
 3.	Assicurarsi che l'**Area di lavoro** sia impostata sull'area di lavoro di Fabric **FAIAD_<nomeutente>**.
 4.	Nel menu a discesa **Flusso di dati** selezionare **df_People_SharePoint**. Quando questa attività Flusso di dati viene eseguita, aggiornerà df_People_SharePoint. Questa procedura è molto semplice. ●¨v
    
- **Nota:** l'opzione Notifica è attualmente disabilitata. Questa funzione sarà abilitata a breve. Sarà possibile configurare le notifiche relative all'esito positivo o negativo di questa attività.
+>**Nota:** l'opzione Notifica è attualmente disabilitata. Questa funzione sarà abilitata a breve. Sarà possibile configurare le notifiche relative all'esito positivo o negativo di questa attività.
  
 Nel nostro scenario, i dati sui dipendenti non vengono aggiornati nei tempi previsti. A volte c'è un ritardo. Vediamo come possiamo risolvere questo problema.
 
@@ -136,14 +136,14 @@ Nel nostro scenario, i dati sui dipendenti non vengono aggiornati nei tempi prev
 7.	Nel campo **Descrizione** immettere **Attività Flusso di dati per aggiornare il flusso di dati df_People_Sharepoint**.
 8.	Notare che è disponibile un'opzione per disattivare un'attività. Questa funzionalità è utile durante il test o il debug. Lasciarla impostata su **Attivata**.
 9.	È presente un'opzione per impostare il **Timeout**. Lasciamo il **valore predefinito** poiché dovrebbe fornire tempo sufficiente per l'aggiornamento del flusso di dati.
-    **Nota:** se i dati non sono disponibili nei tempi previsti, impostiamo l'attività in modo che venga eseguita nuovamente ogni 10 minuti, per tre volte. Se anche al terzo tentativo 
+>**Nota:** se i dati non sono disponibili nei tempi previsti, impostiamo l'attività in modo che venga eseguita nuovamente ogni 10 minuti, per tre volte. Se anche al terzo tentativo 
             non riesce, verrà segnalato un esito negativo.
 10.	Impostare **Riprova** su **3**
 11.	Espandere la sezione **Avanzate**.
 12.	Impostare **Intervallo tra i tentativi (sec)** su **600**.
 13.	Nel menu selezionare l'icona **Home -> Salva** per salvare la pipeline.
 
-    ![](../Images/lab-05/image051.png)
+   ![](../Images/lab-05/image051.png)
  
 Si notino i vantaggi offerti dall'uso della pipeline di dati rispetto all'impostazione del flusso di dati su un aggiornamento pianificato (come abbiamo fatto per i flussi di dati precedenti):
 •	La pipeline offre la possibilità di riprovare più volte prima che l'aggiornamento venga considerato non riuscito.
@@ -178,7 +178,7 @@ temporale, saranno necessari 15 minuti affinché il file sia disponibile. Voglia
 5.	Nel **menu a discesa Tipo** selezionare **Integer**.
 6.	Immettere il **Valore predefinito** di **0**.
  
-   **Nota**: aggiungiamo var all'inizio dei nomi delle variabili per renderne più agevole la ricerca.
+>**Nota**: aggiungiamo var all'inizio dei nomi delle variabili per renderne più agevole la ricerca.
 
    ![](../Images/lab-05/image060.png)
    
