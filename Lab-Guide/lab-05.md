@@ -230,7 +230,7 @@ Dobbiamo scrivere un'espressione che verrà eseguita finché il valore di varCou
 12.	Posizionare il cursore **tra le parentesi** della funzione **@or**.
 13.	Nella sezione **Funzioni logiche** selezionare la funzione **equals**. Notare che questo viene aggiunto nella casella di testo dell'espressione dinamica.
 
-   **Nota**: La funzione dovrebbe essere **@or(equals())**. Anche la funzione equals accetta due parametri . Controlleremo se la variabile varCounter è uguale a 3.
+ >**Nota**: La funzione dovrebbe essere **@or(equals())**. Anche la funzione equals accetta due parametri . Controlleremo se la variabile varCounter è uguale a 3.
 
    ![](../Images/lab-05/image075.png)
  
@@ -288,7 +288,7 @@ Abbiamo configurato l'attività Flusso di dati come abbiamo fatto in precedenza 
 3.	Nel campo **Nome** immettere **set_varIsSuccess**
 4.	Nel campo **Descrizione** immettere **Impostare la variabile varIsSuccess su Sì**.
    
-**Nota**: passare il puntatore del mouse sull'attività Flusso di dati. A destra del riquadro dell'attività sono presenti quattro icone. Tali icone si possono usare per la connessione all'attività successiva in base al risultato dell'attività:
+>**Nota**: passare il puntatore del mouse sull'attività Flusso di dati. A destra del riquadro dell'attività sono presenti quattro icone. Tali icone si possono usare per la connessione all'attività successiva in base al risultato dell'attività:
      a.	L'icona **freccia curva grigia** si usa per saltare l'attività.
      b.	L'icona **segno di spunta verde** si usa in caso di esito positivo dell'attività.
      c.	L'icona **segno X rosso** si usa in caso di esito negativo dell'attività.
@@ -331,9 +331,10 @@ Ora dobbiamo impostare il contatore degli esiti negativi dell'attività Flusso d
 10.	Si apre la finestra di dialogo Generatore di espressioni della pipeline. Immettere
 **@add(variables('varCounter'),1)**
 
-    **Nota**: è possibile digitare l'espressione, usare il menu per selezionare le funzioni o copiare e incollare l'espressione.
+>**Nota**: è possibile digitare l'espressione, usare il menu per selezionare le funzioni o copiare e incollare l'espressione.
  
-    **Nota**: questa funzione imposta il valore della variabile varTempCounter sul valore della variabile varCounter più uno (varTempCounter = varCounter + 1).
+>**Nota**: questa funzione imposta il valore della variabile varTempCounter sul valore della variabile varCounter più uno (varTempCounter = varCounter + 1).
+
 
    ![](../Images/lab-05/image111.jpg)
     
@@ -410,7 +411,7 @@ l'iterazione si conclude, non occorre attendere oltre), il tempo di attesa è im
 ### Attività 14 - Configurazione dell'aggiornamento pianificato per la pipeline di dati
 1.	Possiamo testare la pipeline di dati selezionando **Home -> Esegui**.
 
-**Nota**: il completamento dell'aggiornamento della pipeline di dati potrebbe richiedere alcuni minuti. Questo è un ambiente di formazione, quindi il file in SharePoint è sempre disponibile. Pertanto, in questo caso la pipeline di dati non avrà mai esito negativo.
+>**Nota**: il completamento dell'aggiornamento della pipeline di dati potrebbe richiedere alcuni minuti. Questo è un ambiente di formazione, quindi il file in SharePoint è sempre disponibile. Pertanto, in questo caso la pipeline di dati non avrà mai esito negativo.
 
 2.	Possiamo impostare la pipeline di dati in modo che venga eseguita in base a una pianificazione. Nel menu in alto selezionare **Home -> Pianificazione**. Si apre la finestra Pianificazione.
 3.	Impostare il pulsante di opzione **Esecuzione pianificata** su **Attivato**.
