@@ -69,13 +69,13 @@
 6.	“选择要在报表中使用的语义模型”页面随即打开。请注意，我们有四个选项。选择
 **lh_FAIAD：**
 
-    a.	**lh_FAIAD**：这是  Lakehouse，其中包含我们创建并希望用于报表的数据集。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a.**lh_FAIAD**：这是  Lakehouse，其中包含我们创建并希望用于报表的数据集。
 
-    b.	**Units by Supplier**：这是我们使用T-SQL 创建的数据集。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;b.**Units by Supplier**：这是我们使用T-SQL 创建的数据集。
 
-    c. **DataflowsStagingWarehouse**：这是默认创建的暂存仓库。由于我们没有暂存数据， 因此我们没有使用它。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;c.**DataflowsStagingWarehouse**：这是默认创建的暂存仓库。由于我们没有暂存数据， 因此我们没有使用它。
 
-    d.	**DataflowsStagingLakehouse**：这是默认创建的暂存湖屋。由于我们没有暂存数据， 因此我们没有使用它。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;d.**DataflowsStagingLakehouse**：这是默认创建的暂存湖屋。由于我们没有暂存数据， 因此我们没有使用它。
  
 7.	点击“**自动创建报表”按钮旁边的箭头**。请注意，有两个选项：“自动创建报表”和“创建空白报表”。我们来尝试自动创建报表，因此选择**自动创建报表**。
 
@@ -387,16 +387,15 @@
  
 5.	复制以下代码并将其粘贴到编辑器中。
 
-    Source = #"ADLS Base Folder",
-    #"Filtered Rows" = Table.SelectRows(Source, each Text.Contains([Folder Path], "Sales.Invoices_May")),
+Source = #"ADLS Base Folder",
+#"Filtered Rows" = Table.SelectRows(Source, each Text.Contains([Folder Path], "Sales.Invoices_May")),
 
-    #"https://stvnextblobstorage dfs core windows net/fabrikam-sales/Delta-Parquet-Format/Sales Invoices_May/_0- 0ee085a3-716f-4833-a792-c3162c1de300-0 parquet" = #"Filtered Rows"{[#"Folder
-    Path"="https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet-
-    Format/Sales.Invoices_May/",Name="0-0ee085a3-716f-4833-a792-c3162c1de300-0.parquet"]}[Content],
+#"https://stvnextblobstorage dfs core windows net/fabrikam-sales/Delta-Parquet-Format/Sales Invoices_May/_0- 0ee085a3-716f-4833-a792-c3162c1de300-0 parquet" = #"Filtered Rows"{[#"Folder
+Path"="https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet-
+Format/Sales.Invoices_May/",Name="0-0ee085a3-716f-4833-a792-c3162c1de300-0.parquet"]}[Content],
 
-    #"Imported Parquet" = Parquet.Document(#"https://stvnextblobstorage dfs core windows net/fabrikam-sales/Delta- Parquet-Format/Sales Invoices_May/_0-0ee085a3-716f-4833-a792-c3162c1de300-0 parquet")
-in
-    #"Imported Parquet"
+#"Imported Parquet" = Parquet.Document(#"https://stvnextblobstorage dfs core windows net/fabrikam-sales/Delta- Parquet-Format/Sales Invoices_May/_0-0ee085a3-716f-4833-a792-c3162c1de300-0 parquet")
+in #"Imported Parquet"
 
 6.	选择**下一步**。
 ![](../Images/lab-07/image32.jpg)
