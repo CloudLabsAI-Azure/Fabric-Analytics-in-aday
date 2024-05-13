@@ -116,19 +116,19 @@ Fabrikam, Inc. 是一家经营创意商品的批发分销商。作为批发商�
 
 4.	从屏幕底部中间的散点图视觉对象（按销售额划分的销售订单）中，选择右上角的离群值（第四象限）。请注意，利润率为 52%，高于 50% 的平均值。此外，2022 年最后两个季度的销售额同比增长。
 
-    ![](../Images/lab-01/image10.jpg)
+![](../Images/lab-01/image10.jpg)
 
 5.	在散点图视觉对象中选择离群值经销商以**删除筛选器。**
 
 6.	我们按产品组和经销商获取产品详细信息。从按产品组和经销商公司划分的销售条形图视 觉对象中，**右键单击 Tailspin Toys 的Packaging Materials 栏，**并从对话框中选择**钻取-> Product Detail**
 
-    ![](../Images/lab-01/image11.jpg)
+![](../Images/lab-01/image11.jpg)
 
 您将导航到提供产品详细信息的页面。请注意，还有一些未来的订单。
 
 7.	查看完此页面后，选择页面右上角的 **Ctrl + 后退箭头**可导航回到销售报表。
 
-    ![](../Images/lab-01/image12.jpg)
+![](../Images/lab-01/image12.jpg)
 
 8. 您可以自行进一步分析该报表。准备好后，我们来看看模型视图。在左侧面板中，选择**模 型视图图标。**请注意，有两个事实表：Sales 和PO。
     - 销售数据的粒度是按日期、经销商、产品和人员。Date、Reseller、Product 和 People 连接到 Sales。
@@ -146,21 +146,21 @@ Fabrikam, Inc. 是一家经营创意商品的批发分销商。作为批发商�
 
 1.	下面我们通过Power Query 来了解数据源。从功能区中选择**主页 -> 转换数据**。
 
-    ![](../Images/lab-01/image13.jpg)
+![](../Images/lab-01/image13.jpg)
 
 2.	Power Query 窗口随即打开。从功能区中选择**主页-> 数据源设置。**数据源设置”对话框随即打开。滚动浏览列表时，您会注意到问题陈述中提到了四个数据源：
 
-    &nbsp;&nbsp;&nbsp; a.	Snowflake
+    a.Snowflake
 
-    &nbsp;&nbsp;&nbsp;b.	SharePoint
+    b.SharePoint
 
-    &nbsp;&nbsp;&nbsp;c.	ADLS Gen2
+    c.ADLS Gen2
 
-    &nbsp;&nbsp;&nbsp;d.	Dataverse
+    d.Dataverse
 
 3.	选择**关闭**以关闭数据源设置对话框。
 
-    ![](../Images/lab-01/image14.jpg)
+![](../Images/lab-01/image14.jpg)
 
 4.	在左侧的“查询”面板中，请注意查询是按数据源分组的。
 
@@ -169,27 +169,27 @@ GenX、GenY 和GenZ。追加这四个查询以创建 Customer 查询。
 
 6.	您可以通过输入**用户名和密码**来输入 Dataverse 数据源的凭据，该用户名和密码位于**环境变量**选项卡中（实验指南旁边）。请选择 Microsoft 帐户选项。
 
-    ![](../Images/lab-01/image15.png)
+![](../Images/lab-01/image15.png)
 
 7.	对于 ADLS 数据源，请使用**帐户密钥**选项并输入 **Adls storage account Access key，**其位于**环境变量**选项卡中（实验指南旁边）。
 
 8.	请注意，**ADLSData** 文件夹具有多个维度：Geo、Product、Reseller 和Date 还具有Sales 事实。<br>
 
-    a.	**Geo 维度**是通过合并 Cities、Countries 和 States 查询的数据而创建的。
+    a.**Geo 维度**是通过合并 Cities、Countries 和 States 查询的数据而创建的。
 
-    b.	**Product 维度**是通过合并 Product Groups 和Product Item Group 查询中的数据而创建的。
+    b.**Product 维度**是通过合并 Product Groups 和Product Item Group 查询中的数据而创建的。
 
-    c.	**Reseller 维度**是使用 BuyingGroup 查询筛选而来的。
+    c.**Reseller 维度**是使用 BuyingGroup 查询筛选而来的。
 
-    d.	**Sales 事实**是通过合并InvoiceLineItems 与Invoice 查询而创建的。
+    d.**Sales 事实**是通过合并InvoiceLineItems 与Invoice 查询而创建的。
 
 9.	对于 Snowflake 数据源，使用 **Snowflake Username 和 Snowflake Password**，其位于**环境变量**选项卡中（实验指南旁边）。
 
 10.	请注意，**SnowflakeData** 文件夹包含 Supplier 维度和PO（订单/支出）事实。<br>
 
-    a.	Supplier 维度是通过合并 Suppliers 查询与 SupplierCategories 查询而创建的。
+    a.Supplier 维度是通过合并 Suppliers 查询与 SupplierCategories 查询而创建的。
 
-    b.	PO 事实是通过合并PO 与PO Line Items 查询而创建的。
+    b.PO 事实是通过合并PO 与PO Line Items 查询而创建的。
 
 11.	对于 SharePoint 数据源，输入**用户名**和**密码**, 其位于**环境变量**其位于环境变量选项卡中（实验指南旁边）。请选择 Microsoft 帐户选项。
 
