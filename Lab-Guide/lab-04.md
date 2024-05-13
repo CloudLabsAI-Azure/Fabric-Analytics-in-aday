@@ -251,11 +251,11 @@ creato una connessione a SharePoint, compare un messaggio di avviso che chiede d
 
   	![](../Images/lab-04/image084.jpg)
   	
-3.	Si apre la finestra di dialogo Connetti a origine dati. Assicurarsi che nel menu a discesa **Connessione** sia selezionato **Crea nuova connessione**.
+2.	Si apre la finestra di dialogo Connetti a origine dati. Assicurarsi che nel menu a discesa **Connessione** sia selezionato **Crea nuova connessione**.
 
-4.	Il **Tipo di autenticazione** dovrebbe essere **Account aziendale**.
+3.	Il **Tipo di autenticazione** dovrebbe essere **Account aziendale**.
 
-5.	Selezionare **Connetti**.
+4.	Selezionare **Connetti**.
 
       ![](../Images/lab-04/image087.png)
  
@@ -271,7 +271,7 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
    
 3.	Nella barra multifunzione selezionare **Home -> Aggiungi destinazione dati -> Lakehouse**.
 
-  	   ![](../Images/lab-04/image093.jpg)
+  	![](../Images/lab-04/image093.jpg)
   	
 4.	Si apre la finestra di dialogo Connetti alla destinazione dati. Nel menu a discesa Connessioneselezionare **Lakehouse (nessuno)**.
  

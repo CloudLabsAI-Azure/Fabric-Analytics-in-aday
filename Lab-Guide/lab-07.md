@@ -18,7 +18,7 @@ Iniziamo usando l'opzione di creazione automatica del report. Più avanti nel la
 
 3.	Si apre la finestra di dialogo delle esperienze in Fabric. Selezionare **Power BI**. Si aprirà la **Home page di Power BI**.
 
-   ![](../Images/lab-07/image006.png)
+    ![](../Images/lab-07/image006.png)
  
 4.	Selezionare **Nuovo report** dal menu in alto.
 
@@ -27,7 +27,7 @@ Iniziamo usando l'opzione di creazione automatica del report. Più avanti nel la
 5.	Si aprirà la schermata **Creare il primo report**. Saranno disponibili opzioni per immettere
 manualmente e creare un report o selezionare un modello semantico pubblicato. Abbiamo creato un modello semantico nei lab precedenti, che useremo ora. **Selezionare l'opzione Selezionare un modello semantico pubblicato**.
 
-   ![](../Images/lab-07/image012.jpg)
+    ![](../Images/lab-07/image012.jpg)
   	
 6.	Scegliere un set di dati da usare nella pagina del report che si apre. Notare che sono presenti quattro opzioni. **Selezionare lh_FAIAD**:<br>
       a.	**lh_FAIAD**: questo è il lakehouse con il set di dati che abbiamo creato e che vogliamo usare per il report.<br>
@@ -36,7 +36,7 @@ manualmente e creare un report o selezionare un modello semantico pubblicato. Ab
       d.	**DataflowsStagingLakehouse**: si tratta del Lakehouse di staging creato per impostazione predefinita. Non l'abbiamo usato poiché non abbiamo eseguito lo staging dei dati.<br>
 9.	Fare clic sulla **freccia accanto al pulsante Crea automaticamente** il report. Notare che vi sono due opzioni: **Crea automaticamente il report** e Crea un report vuoto. Vogliamo provare la creazione automatica, quindi selezioniamo **Crea automaticamente il report**.
  
-   ![](../Images/lab-07/image015.png)
+    ![](../Images/lab-07/image015.png)
 
 10. Power BI avvierà la creazione automatica del report. Si noti la presenza di un'opzione per preselezionare i dati, se lo desideriamo. Quando il report è pronto, in alto a destra della schermata si apre una finestra di dialogo. Selezionare **View report now**.
 
@@ -63,7 +63,7 @@ manualmente e creare un report o selezionare un modello semantico pubblicato. Ab
 - Lo screenshot precedente mostra come **potrebbe** apparire il report creato automaticamente se si fossero create tutte le relazioni e le misure, incluse le relazioni facoltative (Lab 6).
 - Lo screenshot seguente mostra come **potrebbe** apparire il report creato automaticamente se non si fossero create le relazioni e le misure facoltative (Lab 6).
     
-![](../Images/lab-07/image024.jpg)
+  ![](../Images/lab-07/image024.jpg)
  
 ## Attività 2 - Configurazione dello sfondo per un nuovo report
 
@@ -72,7 +72,7 @@ Creiamo un nuovo report usando un'area di disegno vuota.
 
 2.	Nel menu in alto selezionare **Nuovo -> Report**. Si aprirà la pagina per creare il primo report.
 
-   ![](../Images/lab-07/image027.png)
+    ![](../Images/lab-07/image027.png)
   	
 3.	Fare clic su **Selezionare un modello semantico pubblicato** per poter scegliere il modello creato.
 
@@ -82,13 +82,13 @@ Creiamo un nuovo report usando un'area di disegno vuota.
  
 5.	Fare clic sulla **freccia accanto al pulsante Crea automaticamente il report**. Selezionare **Crea un report vuoto**.
    
-   ![](../Images/lab-07/image033.jpg)
+    ![](../Images/lab-07/image033.jpg)
   	
 6.	Se non lo si è ancora aperto, aprire il file **FAIAD.pbix** contenuto nella cartella **C:\FAIAD\Reports**
 dell'ambiente lab.
 Useremo questo report come riferimento. Inizieremo aggiungendo lo sfondo del canvas. Creeremo l'intestazione del report, aggiungeremo un paio di KPI e creeremo il grafico a linee Sales over time. Per risparmiare tempo, presupponendo che si abbia esperienza nella creazione di oggetti visivi in Power BI Desktop, non creeremo tutti gli oggetti visivi.
 
-   ![](../Images/lab-07/image036.jpg)
+    ![](../Images/lab-07/image036.jpg)
       	
 7. Tornare al **Power BI canvas** nel browser.
 
@@ -125,7 +125,7 @@ Useremo questo report come riferimento. Inizieremo aggiungendo lo sfondo del can
 
 8.	Ridimensionare la **casella di testo per adattarla al margine superiore**.
 
-   ![](../Images/lab-07/image042.jpg)
+    ![](../Images/lab-07/image042.jpg)
  
 ### Attività 4 - Aggiunta di KPI al report
 1.	Aggiungiamo l'indicatore KPI delle vendite. Selezionare lo **spazio vuoto** nell'area di disegno per spostare lo stato attivo fuori dalla casella di testo.
@@ -136,7 +136,7 @@ Useremo questo report come riferimento. Inizieremo aggiungendo lo sfondo del can
 
 4.	Selezionare la **misura Sales**.
 
-   ![](../Images/lab-07/image045.jpg)
+    ![](../Images/lab-07/image045.jpg)
   	
 5.	Con l'**oggetto visivo Scheda con più righe selezionato**, selezionare l'icona **Formatta oggetto visivo** dalla sezione Visualizzazioni.
 
@@ -189,7 +189,7 @@ Creiamo un grafico a linee per visualizzare le vendite nel tempo per azienda riv
 
 4.	Selezionare il campo **Year**. Si noti che Year viene sommato per impostazione predefinita e aggiunto all'asse Y. Correggiamo.
 
-   ![](../Images/lab-07/image060.png)
+    ![](../Images/lab-07/image060.png)
  
 ### Attività 6 - Salvataggio del report
 Salviamo il report prima di uscire da esso per apportare modifiche al modello.
@@ -204,7 +204,7 @@ Salviamo il report prima di uscire da esso per apportare modifiche al modello.
 
 4.	Selezionare **Salva**.
 
-   ![](../Images/lab-07/image063.jpg)
+    ![](../Images/lab-07/image063.jpg)
 
 ### Attività 7 - Configurazione della colonna Year nella tabella Date
 1.	Nella **barra dei menu a sinistra** selezionare **lh_FAIAD** per spostarsi sul Lakehouse.
@@ -217,7 +217,7 @@ Salviamo il report prima di uscire da esso per apportare modifiche al modello.
 
 5.	Nell'elenco a discesa **Riepiloga per** selezionare **Nessuno**.
 
-   ![](../Images/lab-07/image066.jpg)
+    ![](../Images/lab-07/image066.jpg)
   	
 6.	Tornare al report selezionando **rpt_Sales_Report** nella barra dei menu a sinistra.
 
@@ -246,7 +246,7 @@ Salviamo il report prima di uscire da esso per apportare modifiche al modello.
 
 5.	Selezionare **Ordina asse -> Ordinamento crescente**.
 
-   ![](../Images/lab-07/image072.jpg)
+    ![](../Images/lab-07/image072.jpg)
    
 >**Nota**: i mesi sono ordinati in ordine alfabetico. Correggiamo.
 
@@ -256,7 +256,7 @@ Salviamo il report prima di uscire da esso per apportare modifiche al modello.
 
 7.	Si apre la finestra di dialogo **Modifiche non salvate**. Selezionare **Salva** per salvare le modifiche al report.
 
-   ![](../Images/lab-07/image078.jpg)
+    ![](../Images/lab-07/image078.jpg)
   	
 8.	Si passerà al Lakehouse lh_FAIAD. Nel riquadro Explorer di sinistra espandere **lhFAIAD -> Schemas -> dbo -> Tables -> Date**.
 
@@ -282,7 +282,7 @@ Salviamo il report prima di uscire da esso per apportare modifiche al modello.
 
 2.	Trascinare il campo **Reseller -> Reseller Company** nella sezione **Legenda**.
    
-   ![](../Images/lab-07/image087.jpg)
+    ![](../Images/lab-07/image087.jpg)
   	
 3.	Con l'**oggetto visivo grafico a linee selezionato**, nella sezione Visualizzazioni selezionare l'icona **Formatta oggetto visivo -> Generale**.
 
@@ -324,11 +324,12 @@ In uno scenario reale, i dati vengono aggiornati nell'origine. Poiché ci trovia
 
 2.	Selezionare **df_Sales_ADFS** per poter modificare il flusso di dati aggiungendo il nuovo file Parquet.
 
-   ![](../Images/lab-07/image096.jpg)
+    ![](../Images/lab-07/image096.jpg)
   	
 3.	Nella barra multifunzione selezionare **Home -> Recupera -> Query vuota**.
 
 4.	Si apre la finestra di dialogo Connetti a origine dati. Selezionare **tutte le righe nell'editor ed eliminarle**.
+
 5.	Copiare il codice seguente e incollarlo nell'editor.
 
 ```
@@ -345,16 +346,20 @@ in
 
 6.	Selezionare **Avanti**.
 
-   ![](../Images/lab-07/image099.jpg)
+    ![](../Images/lab-07/image099.jpg)
   	
-8.	Si ricrea una nuova query. **Rinominarla**. Rinominare la query in **MayInvoice** nel pannello di destra in **Impostazioni query -> Proprietà -> Nome**.
-9.	Disabilitiamo lo staging per la nuova query. **Fare clic con il pulsante destro del mouse** sulla query MayInvoice e **deselezionare Abilita staging**.
+7.	Si ricrea una nuova query. **Rinominarla**. Rinominare la query in **MayInvoice** nel pannello di destra in **Impostazioni query -> Proprietà -> Nome**.
 
-   ![](../Images/lab-07/image102.jpg)
+8.	Disabilitiamo lo staging per la nuova query. **Fare clic con il pulsante destro del mouse** sulla query MayInvoice e **deselezionare Abilita staging**.
+
+    ![](../Images/lab-07/image102.jpg)
   	
-10. Ora aggiungiamo i dati di MayInvoice alla tabella Invoice. Selezionare la query Invoice dalla sezione Query.
+9. Ora aggiungiamo i dati di MayInvoice alla tabella Invoice. Selezionare la query Invoice dalla sezione Query.
+
 11. Nella barra multifunzione selezionare **Home -> Accoda query**.
+
 12. Si apre la finestra di dialogo Accoda. Nel menu a discesa **Tabella da accodare** selezionare **MayInvoice**. 
+
 13. Selezionare **OK**.
     
     ![](../Images/lab-07/image105.jpg)
@@ -367,9 +372,9 @@ in
    	
 15. Selezionare **rpt_Sales_Report** nella barra dei menu di sinistra per tornare al report.
 
-15. Nel menu in alto selezionare **Aggiorna**. Si noti che ora nel grafico a linee sono presenti dati per maggio 2023. Si noti, inoltre, che l'importo delle vendite e l'unità sono aumentati.
+16. Nel menu in alto selezionare **Aggiorna**. Si noti che ora nel grafico a linee sono presenti dati per maggio 2023. Si noti, inoltre, che l'importo delle vendite e l'unità sono aumentati.
 
-   ![](../Images/lab-07/image111.jpg)
+    ![](../Images/lab-07/image111.jpg)
  
 I flussi di dati creati nei lab precedenti vengono aggiornati secondo pianificazione, i dati vengono inseriti nel lakehouse. Il modello di dati nel lakehouse e i report vengono aggiornati. Non è
 necessario aggiornare il modello di dati e il report quando ciascun flusso di dati viene aggiornato. Questo è il vantaggio di Direct Lake.
@@ -402,7 +407,7 @@ Quando si è pronti a eseguire la pulizia dell'ambiente lab, effettuare i passag
 
 2.	Nel menu in alto selezionare i **puntini di sospensione (…)** accanto a Gestisci accesso e selezionare **Impostazioni area di lavoro**.
 
-   ![](../Images/lab-07/image114.jpg)
+    ![](../Images/lab-07/image114.jpg)
   	
 3.	Si apre la finestra di dialogo Impostazioni area di lavoro. Nel menu a sinistra selezionare **Altro**.
 
@@ -412,7 +417,7 @@ Quando si è pronti a eseguire la pulizia dell'ambiente lab, effettuare i passag
 
   	In questo modo si elimineranno l'area di lavoro e tutti gli elementi che contiene.
 
-   ![](../Images/lab-07/image117.jpg)
+    ![](../Images/lab-07/image117.jpg)
   	
 ## Riferimenti
 
