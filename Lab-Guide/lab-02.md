@@ -31,11 +31,11 @@ In questo lab si imparerà a:
 8.	Nell'angolo in alto a destra della schermata selezionare l'**icona utente**.
 9.	Selezionare **Start trial**.
 
-   ![](../Images/lab-02/image015.png)
+    ![](../Images/lab-02/image015.png)
     
 10.	Si apre la finestra di dialogo Esegui l'aggiornamento a una versione di valutazione gratuita Microsoft Fabric. Selezionare **Avvia versione di valutazione**.
 
-    ![](../Images/lab-02/image018.png)
+     ![](../Images/lab-02/image018.png)
  
 11.	Selezionare la **"X"** nell'angolo in alto a destra della finestra di dialogo **Solo un ultimo passaggio** per chiudere la finestra di dialogo. Non forniremo questi dettagli poiché si tratta di un ambiente lab.
 
@@ -43,7 +43,7 @@ In questo lab si imparerà a:
     
 12.	Si apre la finestra di dialogo Aggiornamento a una versione di valutazione gratuita Microsoft Fabric completato. Selezionare **Fabric Home Page**.
 
-    ![](../Images/lab-02/image024.jpg)
+     ![](../Images/lab-02/image024.jpg)
  
 13.	Si aprirà la **home page** di **Microsoft Fabric**.
 
@@ -58,11 +58,11 @@ Synapse e si basano su Synapse. Procediamo a esaminarle.
    ![](../Images/lab-02/image027.jpg)
  
 3.	Si apre la **home page** di **Data Factory**. La pagina contiene tre sezioni principali.
-       a.	**New**: elenca gli elementi disponibili in Data Factory, ossia Dataflow Gen2 e Data pipeline.
-       i.	Dataflow Gen2 è la nuova generazione di Flusso di dati.
-       ii.	Data pipeline si usa per l'orchestrazione dei dati.
-       b.	**Recommended**: questa sezione fornisce accesso alla documentazione di apprendimento per l'avvio rapido.
-       c.	**Quick access**: questa sezione elenca gli elementi preferiti o usati di recente.
+       a.	**New**: elenca gli elementi disponibili in Data Factory, ossia Dataflow Gen2 e Data pipeline.<br>
+       i.	Dataflow Gen2 è la nuova generazione di Flusso di dati.<br>
+       ii.	Data pipeline si usa per l'orchestrazione dei dati.<br>
+       b.	**Recommended**: questa sezione fornisce accesso alla documentazione di apprendimento per l'avvio rapido.<br>
+       c.	**Quick access**: questa sezione elenca gli elementi preferiti o usati di recente.<br>
 
    ![](../Images/lab-02/image030.jpg)
    
