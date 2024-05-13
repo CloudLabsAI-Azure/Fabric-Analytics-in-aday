@@ -46,11 +46,13 @@ Lakehouse	3<br>
 4.	**以下の SQL  クエリをクエリ ウィンドウ**に貼り付けます。このクエリは、サプライヤー名
 ごとに単位数を返します。Sales テーブルをProduct テーブルおよび Supplier テーブルと結合して、これを実現します。
 
-SELECT su.Supplier_Name, SUM(Quantity) as Units <br>
-FROM dbo.Sales s<br>
-JOIN dbo.Product p on p.StockItemID = s.StockItemID <br>
-JOIN dbo.Supplier su on su.SupplierID = p.SupplierID <br>
-GROUP BY su.Supplier_Name<br>
+```
+SELECT su.Supplier_Name, SUM(Quantity) as Units 
+FROM dbo.Sales s
+JOIN dbo.Product p on p.StockItemID = s.StockItemID 
+JOIN dbo.Supplier su on su.SupplierID = p.SupplierID 
+GROUP BY su.Supplier_Name
+```
 
 5.	**実行**をクリックして結果を表示します。
 
