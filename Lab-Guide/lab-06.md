@@ -64,78 +64,97 @@ GROUP BY su.Supplier_Name
 
    ![](../Images/lab-05/image05.png)
  
-5. **Expanda Matriz** para exibir os dados como uma matriz   ![](../Images/lab-05/image06.png)
+5. **Expanda Matriz** para exibir os dados como uma matriz   
 
-6. Selecione **Salvar -> Salvar como relatório** no canto superior direito da tela   ![](../Images/lab-05/image07.png)
+![](../Images/lab-05/image06.png)
+
+6. Selecione **Salvar -> Salvar como relatório** no canto superior direito da tela   
+
+![](../Images/lab-05/image07.png)
 
 7. A caixa de diálogo Salvar seu relatório é aberta. Digite **Unidades por Fornecedor** na caixa de texto **Inserir um nome para o relatório.**
 8. Certifique-se de que o espaço de trabalho de destino seja seu espaço de trabalho do Fabric,
 **FAIAD<nome de usuário>.**
  
-9. Selecione **Salvar.*   ![](../Images/lab-05/image08.png)
+9. Selecione **Salvar.*   
 
-    Você será direcionado para a experiência de relatório completa. Você tem opções para formatar os visuais. Veremos essas opções no próximo laboratório.
-10.	No painel esquerdo, selecione **lh_FAIAD.*   ![](../Images/lab-05/image09.png)
+![](../Images/lab-05/image08.png)
+
+Você será direcionado para a experiência de relatório completa. Você tem opções para formatar os visuais. Veremos essas opções no próximo laboratório.
+10.	No painel esquerdo, selecione **lh_FAIAD.*   
+
+![](../Images/lab-05/image09.png)
 
 ### Tarefa 3: Criar consulta de visual
 Você será direcionado de volta à **visualização Ponto de extremidade de análise de SQL.** Se você não estiver familiarizado com SQL, poderá executar uma consulta semelhante usando a consulta de visual.
 1. No menu superior, selecione **Nova consulta de visual.** Um painel de consulta de visual é aberto.
 2. No painel do **Explorador,** expanda **Esquemas -> dbo -> Tabelas.**
 3. Arraste as tabelas **Sales, Product e Supplier** para o painel de consulta de visual.
-   ![](../Images/lab-05/image10.png)
 
-4. Com a tabela **Sales** selecionada, no menu do painel Consulta de visual, selecione **Combinar -> Mesclar consultas.**   ![](../Images/lab-05/image11.png)
+![](../Images/lab-05/image10.png)
+
+4. Com a tabela **Sales** selecionada, no menu do painel Consulta de visual, selecione **Combinar -> Mesclar consultas.**   
+
+![](../Images/lab-05/image11.png)
 
 5.	A caixa de diálogo Mesclar é aberta. Na **lista suspensa Tabela direita para mesclagem,** selecione
 **Product**.
 6. Selecione **StockItemID** nas tabelas **Sales** e **Product.** Isso serve para mesclar as tabelas Product e Sales.
 7. Em **Tipo de junção,** selecione **Externa esquerda.**
  
-8. Selecione **OK.**   ![](../Images/lab-05/image12.png)
+8. Selecione **OK.**   
+
+![](../Images/lab-05/image12.png)
 
 9. No painel **Resultados,** clique na **seta dupla** ao lado da coluna **Product.**
 10. A caixa de diálogo é aberta. Selecione **SupplierID.**
-11.	Selecione **OK.** Observe que as etapas **Consultas mescladas** e **Produto Expandido** são criadas na tabela **Sales.**   ![](../Images/lab-05/image13.png)
+11.	Selecione **OK.** Observe que as etapas **Consultas mescladas** e **Produto Expandido** são criadas na tabela **Sales.**   
+
+![](../Images/lab-05/image13.png)
 
 12.	Da mesma forma, vamos mesclar a tabela Supplier. Na tabela **Sales**, selecione **"+"** (localizado após Produto Expandido) para adicionar uma nova etapa. A caixa de diálogo é aberta.
 13.	Selecione **Combinar -> Mesclar consultas.**
-   ![](../Images/lab-05/image14.png) 
+
+![](../Images/lab-05/image14.png) 
 
 14.	A caixa de diálogo Mesclar é aberta. Na **lista suspensa Tabela direita para mesclagem,** selecione **Supplier.**
 15.	Selecione **SupplierID** nas tabelas **Sales** e **Supplier.** Isso serve para mesclar as tabelas Supplier e Sales.
 16.	**Em Tipo de junção,** selecione **Externa esquerda.**
 17.	Selecione **OK.**
-   ![](../Images/lab-05/image15.png)
+   
+![](../Images/lab-05/image15.png)
 
 18.	No painel **Resultados**, clique na **seta dupla** ao lado da coluna **Supplier.**
 19.	A caixa de diálogo é aberta. Selecione **Supplier_Name.**
 20.	Selecione **OK.** Observe que, na tabela Sales, a etapa **Consultas mescladas** é adicionada e **as etapas são registradas.**
-    ![](../Images/lab-05/image16.png) 
 
-21.	Vamos agora agrupar por Nome de fornecedor para obter a quantidade por Fornecedor. Na tabela **Sales,** selecione "+" (localizado após Fornecedor Expandido) para adicionar uma nova etapa. A caixa de diálogo é aberta.
-22.	Selecione **Transformar tabela -> Agrupar por.** A caixa de diálogo Agrupar por será aberta.
-   ![](../Images/lab-05/image17.png)
+![](../Images/lab-05/image16.png) 
 
-23.	Na lista suspensa **Agrupar por,** selecione **Supplier_Name.**
-24.	Insira **Units** como a captura de tela A da caixa de diálogo de consulta de mesclagem.
-25.	Defina **Operação** como **Soma.**
-26.	Selecione **Quantidade** na lista suspensa **Coluna.**
-27.	Selecione **OK.**
+22.	Vamos agora agrupar por Nome de fornecedor para obter a quantidade por Fornecedor. Na tabela **Sales,** selecione "+" (localizado após Fornecedor Expandido) para adicionar uma nova etapa. A caixa de diálogo é aberta.
+23.	Selecione **Transformar tabela -> Agrupar por.** A caixa de diálogo Agrupar por será aberta.
 
-   ![](../Images/lab-05/image18.png)
+![](../Images/lab-05/image17.png)
+
+24.	Na lista suspensa **Agrupar por,** selecione **Supplier_Name.**
+25.	Insira **Units** como a captura de tela A da caixa de diálogo de consulta de mesclagem.
+26.	Defina **Operação** como **Soma.**
+27.	Selecione **Quantidade** na lista suspensa **Coluna.**
+28.	Selecione **OK.**
+
+![](../Images/lab-05/image18.png)
 
 Observe que todas as etapas são registradas no bloco Vendas. (Veja a primeira captura de tela na Tarefa 4.)
  
 ### Tarefa 4: Visualizar os resultados da consulta
 1. Agora que temos a consulta pronta, vamos ver o resultado. Selecione **Visualizar os resultados** no painel de resultados.
 
-   ![](../Images/lab-05/image19.png)
+![](../Images/lab-05/image19.png)
 
 2. A caixa de diálogo Visualizar os resultados é aberta. No painel **Dados** à direita, **expanda Visual query1.**
 3. Selecione os campos **Supplier_Name** e **Units.**
 4. Observe que o resultado é semelhante ao resultado da consulta SQL anterior. Se desejar, você pode salvar este relatório. Como salvamos um relatório semelhante anteriormente, selecionaremos **Cancelar.**
 
-   ![](../Images/lab-05/image20.png)
+![](../Images/lab-05/image20.png)
  
 ### Tarefa 5: Criar relacionamentos
 Ok, agora estamos prontos para criar o modelo, criar relacionamentos entre tabelas e criar medidas.
