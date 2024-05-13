@@ -164,9 +164,11 @@ Ok, agora estamos prontos para criar o modelo, criar relacionamentos entre tabel
 15.	De maneira similar, crie um relacionamento **muitos para um** entre as tabelas **Sales** e **Product.** Selecione **StockItemID** na tabela **Sales** e **StockItemID** na tabela **Product.**
 16.	No menu superior, selecione **Relatórios -> Atualizar automaticamente o modelo semântico** para salvar e atualizar o modelo![](../Images/lab-06/image24.png)
 
-    **Ponto de verificação:** seu modelo deve ter os três relacionamentos entre as tabelas Sales e Reseller, Sales e Date e Sales e Product, conforme mostrado na captura de tela abaixo:![](../Images/lab-06/image25.png)
+**Ponto de verificação:** seu modelo deve ter os três relacionamentos entre as tabelas Sales e Reseller, Sales e Date e Sales e Product, conforme mostrado na captura de tela abaixo:!
 
-    Por uma questão de tempo, não criaremos todos os relacionamentos. Se o tempo permitir, você poderá concluir a seção opcional no fim do laboratório. A seção opcional percorre as etapas para criar os relacionamentos restantes.
+[](../Images/lab-06/image25.png)
+
+Por uma questão de tempo, não criaremos todos os relacionamentos. Se o tempo permitir, você poderá concluir a seção opcional no fim do laboratório. A seção opcional percorre as etapas para criar os relacionamentos restantes.
 
 
 ### Tarefa 6: Criar medidas

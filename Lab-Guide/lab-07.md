@@ -32,12 +32,15 @@ Vamos começar usando a opção de criação automática de relatório. E, mais 
 1. Vamos voltar ao **workspace do Fabric** que você criou no laboratório anterior.
 2. Na parte inferior esquerda da tela, selecione o ícone **Fabric experience selector.**
 3. A caixa de diálogo de experiência do Fabric é aberta. Selecione **Power BI.** Você será direcionado a uma **Página Inicial do Power BI.**
+
 ![](../Images/lab-07/image01.png)
  
 4. No menu superior, selecione **Novo relatório.**
+
 ![](../Images/lab-07/image02.png)
 
 5. Você será direcionado para **Criar seu primeiro relatório.** Haverá opções para inserir dados manualmente e criar um relatório ou escolher um modelo semântico publicado. Criamos um modelo semântico nos laboratórios anteriores. Vamos usá-lo. Selecione a opção **Escolher um modelo semântico publicado.**
+
 ![](../Images/lab-07/image03.png)
 
 6. Escolha um conjunto de dados para usar quando a página do relatório é aberta. Observe que temos quatro opções. **Selecione lh_FAIAD:**<br>
@@ -73,18 +76,26 @@ Vamos começar usando a opção de criação automática de relatório. E, mais 
 A captura de tela acima mostra como o relatório criado automaticamente poderá ser exibido se você tiver criado todos os relacionamentos e medidas, incluindo os relacionamentos opcionais
 (Laboratório 6).
 
-A captura de tela abaixo mostra como o relatório criado automaticamente poderá ser exibido se você tiver pulado a criação de relacionamentos e medidas opcionais (Laboratório ![](../Images/lab-07/image07.png)
+A captura de tela abaixo mostra como o relatório criado automaticamente poderá ser exibido se você tiver pulado a criação de relacionamentos e medidas opcionais (Laboratório 
+
+![](../Images/lab-07/image07.png)
  
 ### Tarefa 2: Configurar plano de fundo para um Novo relatório
 
 Vamos criar um novo relatório usando uma tela em branco.
 1. No **painel esquerdo,** selecione o nome do seu workspace, **FAIAD_<nome de usuário>** para ser direcionado para o workspace.
-2. No menu superior, selecione **Novo -> Relatório.** Você será direcionado para criar sua primeira página de relatóri![](../Images/lab-07/image08.png)
+2. No menu superior, selecione **Novo -> Relatório.** Você será direcionado para criar sua primeira página de relatóri
 
-3. Selecione **Escolher um modelo semântico publicado,** para que possamos escolher o modelo que criamo![](../Images/lab-07/image09.png)
+![](../Images/lab-07/image08.png)
+
+3. Selecione **Escolher um modelo semântico publicado,** para que possamos escolher o modelo que criamo!
+
+[](../Images/lab-07/image09.png)
 
 4. Escolha um modelo semântico para usar quando a caixa de diálogo do relatório é aberta. Selecione **lh_FAIAD.**
-5. Clique na **seta ao lado do botão Relatório de criação automática.** Selecione **Criar um relatório em branco.*![](../Images/lab-07/image10.png)
+5. Clique na **seta ao lado do botão Relatório de criação automática.** Selecione **Criar um relatório em branco.**
+
+![](../Images/lab-07/image10.png)
 
 6. Se você ainda não tiver aberto, abra o arquivo **FAIAD.pbix** que está na pasta **C:\FAIAD\Reports** do seu ambiente de laboratório.
 
@@ -99,7 +110,9 @@ Usaremos este relatório como referência. Começaremos adicionando o plano de f
 11.	Navegue até a pasta **C:\FAIAD\Reports** do seu ambiente de laboratório.
 12.	Selecione **Summary Background.png.**
 13.	Defina a lista suspensa **Ajuste da imagem** como **Ajuste.**
-14.	Defina Transparência como **0%.*![](../Images/lab-07/image12.png)
+14.	Defina Transparência como **0%.*
+
+![](../Images/lab-07/image12.png)
 
 ### Tarefa 3: Adicionar cabeçalho ao relatório
 1. Vamos adicionar o cabeçalho na margem superior. No **menu,** selecione **Caixa de texto.**
@@ -109,35 +122,45 @@ Usaremos este relatório como referência. Começaremos adicionando o plano de f
 5. Realce **Sales Report** e defina a **fonte** como **Segoe UI** e **tamanho da fonte** como **14.**
 6. Com a **caixa de texto selecionada,** no painel Formatar caixa de texto à direita, **expanda Efeitos.**
 7. Use o controle deslizante **Tela de fundo** para defini-lo como **Desativado.**
-8. Redimensione a **caixa de texto para caber na margem superior.*![](../Images/lab-07/image13.png)
+8. Redimensione a **caixa de texto para caber na margem superior.*
+
+![](../Images/lab-07/image13.png)
 
 ### Tarefa 4: Adicionar KPIs ao relatório
 1. Vamos adicionar KPI de vendas. Selecione o **espaço em branco** na tela para tirar o foco da caixa de texto.
 2. Na **seção Visualizações,** selecione o **visual de cartão de várias linhas.**
 3. Na **seção Dados,** expanda a **tabela Sales.**
-4. Selecione a **medida Sales.**![](../Images/lab-07/image14.png)
+4. Selecione a **medida Sales.**
+
+![](../Images/lab-07/image14.png)
 
 5. Com o **visual de cartão de várias linhas selecionado,** selecione o **ícone Formatar visual** na seção Visualizações.
 6. Expanda a seção **Rótulos da categoria.**
 7. Aumente o **tamanho da fonte** para **14.**
 8. Selecione a **lista suspensa Cor.** A caixa de diálogo Paleta de cores é aberta.
 9. Defina o valor Hex **#004753.**
+
 ![](../Images/lab-07/image15.png)
 
 10. Expanda a seção **Cartões.**
 11.	Use o controle deslizante **Barra de destaque** para defini-lo como **Desativado.**
+
 ![](../Images/lab-07/image16.png)
 
 12.	Selecione **Geral** no painel Visualizações.
 13.	Expanda a seção **Efeitos.**
 14.	Use o controle deslizante **Tela de fundo** para defini-lo como **Desativado.**
-15.	Redimensione o **visual** e mova-o para a **caixa esquerda como mostrado na captura de tela.**![](../Images/lab-07/image17.png)
+15.	Redimensione o **visual** e mova-o para a **caixa esquerda como mostrado na captura de tela.**
+
+![](../Images/lab-07/image17.png)
  
 16.	Vamos adicionar outro KPI. Selecione o **cartão de várias linhas Sales** que acabamos de criar. **Copie** o visual pressionando **Ctrl+C** no teclado.
 17.	**Copie** o visual pressionando **Ctrl+V** no teclado. O visual é colado na tela.
 18.	Com o **novo visual realçado,** no **painel Visualizações -> Criar visual -> seção Campos,** remova a medida **Sales.**
 19.	Na seção **Dados,** expanda a tabela **Sales** e selecione a medida **Units.**
-20.	Redimensione o **visual** e **coloque-o na caixa abaixo do visual Sales.**![](../Images/lab-07/image18.png)
+20.	Redimensione o **visual** e **coloque-o na caixa abaixo do visual Sales.**
+
+![](../Images/lab-07/image18.png)
 
 ### Tarefa 5: Adicionar gráfico de linhas ao relatório
 Vamos criar um gráfico de linhas para visualizar Vendas ao longo do tempo por Reseller Company.
@@ -145,6 +168,7 @@ Vamos criar um gráfico de linhas para visualizar Vendas ao longo do tempo por R
 2. Na **seção Visualizações,** selecione **Gráfico de linhas.**
 3.	Na seção **Dados,** expanda a tabela **Date.**
 4. Selecione o campo **Year.** Observe que Year é somado por padrão e adicionado ao eixo Y. Vamos retificar isso.
+
 ![](../Images/lab-07/image19.png)
  
 ### Tarefa 6: Salvar o relatório
@@ -155,6 +179,7 @@ Para fazer as alterações no modelo, salve o relatório antes de sair.
     **Observação:** estamos prefixando o nome do relatório com rpt, que é a abreviação de relatório.
 3. Verifique se o relatório está salvo no workspace **FAIAD_<nome de usuário>.**
 4. Selecione **Salvar.**
+
 ![](../Images/lab-07/image20.png)
 
 ### Tarefa 7: Configurar a coluna Year na tabela Date
@@ -163,6 +188,7 @@ Para fazer as alterações no modelo, salve o relatório antes de sair.
 3. Selecione a coluna **Year.**
 4. No painel **Propriedades,** à direita, expanda a seção **Avançado.**
 5. Na lista suspensa **Resumir por,** selecione **Nenhum.**
+
 ![](../Images/lab-07/image21.png)
 
 6. Volte para o relatório selecionando **rpt_Sales_Report** na barra de menus à esquerda.
@@ -171,6 +197,7 @@ Para fazer as alterações no modelo, salve o relatório antes de sair.
 9. Com o **Visual de gráfico de linhas selecionado, remova Soma de Year** do eixo Y.
 10.	Selecione o campo **Year** e ele será adicionado ao **Eixo X.**
 11.	Expanda a tabela **Sales** e selecione a **medida Sales.**
+
 ![](../Images/lab-07/image22.png)
 
 ### Tarefa 8: Configurar a coluna Short_Month_Name na tabela Date

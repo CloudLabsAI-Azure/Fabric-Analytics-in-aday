@@ -118,7 +118,7 @@ temos a consulta PO Line Items mesclada com PO para criar o fato PO. Agora preci
 
 ![](../Images/lab-04/image13.png)
 
-      Você será direcionado de volta para o **workspace FAIAD_<nome de usuário>.** Pode levar alguns
+Você será direcionado de volta para o **workspace FAIAD_<nome de usuário>.** Pode levar alguns
 instantes para que Fluxo de Dados seja publicado. Agora vamos criar um fluxo de dados para mostrar dados do Dataverse.
  
 ### Tarefa 5: Copiar consultas do Dataverse para o Dataflow
@@ -195,7 +195,7 @@ está selecionado, pois estamos criando uma nova tabela.
 
 ![](../Images/lab-04/image23.png)
 
-    **Observação:** você será direcionado de volta para o workspace FAIAD_<nome de usuário>. Pode levar alguns instantes para que Fluxo de Dados seja publicado.
+**Observação:** você será direcionado de volta para o workspace FAIAD_<nome de usuário>. Pode levar alguns instantes para que Fluxo de Dados seja publicado.
 3. Estamos trabalhando com o Fluxo de Dados 2. Vamos renomeá-lo antes de continuar. Clique nas **reticências (…)** ao lado de Fluxo de Dados 2. Selecione **Propriedades.**
 
 ![](../Images/lab-04/image24.png)
@@ -288,7 +288,7 @@ A conexão é estabelecida e você pode exibir os dados no painel de visualizaç
  
 ![](../Images/lab-04/image37.png)
 
-    Você será direcionado de volta para o **workspace FAIAD_<nome de usuário>.** Agora ingerimos todos os dados no Lakehouse. No próximo laboratório, agendaremos a atualização do Fluxo de Dados.
+Você será direcionado de volta para o **workspace FAIAD_<nome de usuário>.** Agora ingerimos todos os dados no Lakehouse. No próximo laboratório, agendaremos a atualização do Fluxo de Dados.
 
 ## Referências
 O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais funções disponíveis no Microsoft Fabric. No menu do serviço, a seção Ajuda (?) tem links para ótimos recursos.

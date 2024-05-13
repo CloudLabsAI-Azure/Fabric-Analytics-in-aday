@@ -255,7 +255,7 @@ Agora precisamos mesclar essas consultas para criar a dimensão Geo. Vamos copia
  
 13.	Agora temos a dimensão Geo. Vamos renomear a consulta. No **painel direito,** em **Configurações de consulta -> Propriedades -> Nome, altere o nome** para **Geo.**
 
-    **Observação:** Aguarde até que a consulta termine de carregar. Isso pode levar alguns minutos.
+**Observação:** Aguarde até que a consulta termine de carregar. Isso pode levar alguns minutos.
 
 Vamos seguir as etapas para entender como a dimensão Geo foi criada. No painel direito, em Etapas aplicadas, selecione **Source.** Se você olhar na barra de fórmulas ou clicar em Configurações, notará que a Source desta consulta é uma junção entre Cities e States. Ao percorrer as etapas, você
 observará que o resultado da primeira junção é, por sua vez, unido a Countries. Portanto, todas as três consultas são usadas para criar a dimensão Geo.
