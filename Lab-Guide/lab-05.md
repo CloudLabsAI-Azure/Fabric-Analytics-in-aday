@@ -473,12 +473,11 @@ Quindi, dovremo impostare un'attesa di 5 minuti/300 secondi in caso di un primo 
    @if(
    greater(variables(‘varCounter’), 1),
 
-     if(equals(variables(‘varCounter’), 2),mul(variables(‘varWaitTime’),15 ), mul(variables(‘varWaitTime’), 0)
-     ),
+   if(equals(variables(‘varCounter’), 2),mul(variables(‘varWaitTime’),15 ), mul(variables(‘varWaitTime’), 0)
+   ),
 
-     mul(variables(‘varWaitTime’),5 )
-     )
-     
+   mul(variables(‘varWaitTime’),5 )
+   )   
    ```
   	
   È possibile digitare l'espressione, usare il menu per selezionare le funzioni o copiare e incollare l'espressione.
