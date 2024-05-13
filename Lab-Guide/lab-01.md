@@ -131,17 +131,27 @@ diverse: BabyBoomer, GenX, GenY e GenZ. Queste quattro query vengono aggiunte pe
  
 9.	Per l'origine dati ADLS, usare l'opzione **Chiave account** e immettere la **chiave di accesso**
 **dell'account di archiviazione ADLS**, disponibile nella scheda **Variabili di ambiente** (accanto alla guida al lab).
-10.	Notare che la cartella **ADLSData** include più dimensioni: Geo, Product, Reseller e Date. Include anche il fatto Sales.
-a.	La **dimensione Geo** è creata unendo i dati dalle query Cities, Countries e States.
-b.	La **dimensione Product** è creata unendo i dati dalle query Product Groups e Product Item Group.
-c.	La **dimensione Reseller** è filtrata usando la query BuyingGroup.
-d.	Il **fatto Sales** è creato unendo le query InvoiceLineItems e Invoice.
-11.	Per l'origine dati Snowflake, usare il **Nome utente Snowflake** e la **Password Snowflake** disponibili nella scheda Variabili di ambiente (accanto alla guida al lab).
-12.	Notare che la cartella **SnowflakeData** include la dimensione Supplier e il fatto PO (ordine/spesa).
-a.	La **dimensione Supplier** è creata unendo le query Suppliers e SupplierCategories.
-b.	Il **fatto PO** è creato unendo le query PO e PO Line Items.
-13.	Per l'origine dati SharePoint, immettere il **Nome utente** e **la Password** disponibili nella scheda
+
+10. Notare che la cartella **ADLSData** include più dimensioni: Geo, Product, Reseller e Date. Include anche il fatto Sales.
+
+      a. La **dimensione Geo** è creata unendo i dati dalle query Cities, Countries e States.
+
+      b. La **dimensione Product** è creata unendo i dati dalle query Product Groups e Product Item Group.
+
+      c. La **dimensione Reseller** è filtrata usando la query BuyingGroup.
+
+      d. Il **fatto Sales** è creato unendo le query InvoiceLineItems e Invoice.
+
+11. Per l'origine dati Snowflake, usare il **Nome utente Snowflake** e la **Password Snowflake** disponibili nella scheda Variabili di ambiente (accanto alla guida al lab).
+12. Notare che la cartella **SnowflakeData** include la dimensione Supplier e il fatto PO (ordine/spesa).
+
+      a. La **dimensione Supplier** è creata unendo le query Suppliers e SupplierCategories.
+
+      b. Il **fatto PO** è creato unendo le query PO e PO Line Items.
+
+13. Per l'origine dati SharePoint, immettere il **Nome utente** e **la Password** disponibili nella scheda
 Variabili di ambiente**** (accanto alla guida al lab). Selezionare l'opzione dell'account Microsoft.
+
 14. Notare che la cartella **SharepointData** include la dimensione People.
     
    ![](../Images/Picture17.png)
@@ -176,17 +186,20 @@ Leggere i blog di annunci più approfonditi sull'esperienza in Fabric:
 - [Blog su OneLake in Fabric](https://aka.ms/Fabric-OneLake-Blog)<br>
 - [Blog sull'integrazione di Dataverse e Microsof t Fabric](https://aka.ms/Dataverse-Fabric-Blog)<br>
 
-
 © 2023 Microsoft Corporation. Tutti i diritti sono riservati.
 L'uso della demo/del lab implica l'accettazione delle seguenti condizioni:
 La tecnologia/le funzionalità descritte nella demo/nel lab sono fornite da Microsoft Corporation allo scopo di ottenere feedback dall'utente e offrire un'esperienza di apprendimento. L'utilizzo della demo/del lab è consentito solo per la valutazione delle caratteristiche e delle funzionalità di tale tecnologia e per l'invio di feedback a Microsoft. L'utilizzo per qualsiasi altro scopo non è consentito. È vietato modificare, copiare, distribuire, trasmettere, visualizzare, eseguire,
 riprodurre, pubblicare, concedere in licenza, usare per la creazione di lavori derivati, trasferire o vendere questa demo/questo lab o parte di essi.
+
 SONO ESPLICITAMENTE PROIBITE LA COPIA E LA RIPRODUZIONE DELLA DEMO/DEL LAB (O DI QUALSIASI PARTE DI ESSI) IN QUALSIASI ALTRO SERVER O IN QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O RIDISTRIBUZIONE.
 QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON UN'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI IN QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L'ESPERIENZA D'USO DI TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ INOLTRE RISULTARE DIVERSA IN UN AMBIENTE FISICO.
-FEEDBACK. L'invio a Microsoft di feedback sulle caratteristiche, sulle funzionalità e/o sui concetti della tecnologia descritti in questa demo/questo lab implica la concessione a Microsoft, a titolo gratuito, del diritto di utilizzare, condividere e commercializzare tale feedback in qualsiasi modo e per qualsiasi scopo. Implica anche la concessione a titolo gratuito a terze parti del diritto di utilizzo di eventuali brevetti necessari per i loro prodotti, le loro tecnologie e i loro servizi al fine di utilizzare o interfacciarsi ai componenti software o ai servizi Microsoft specifici che includono il feedback. L'utente si impegna a non inviare feedback la cui inclusione all'interno di software o
+
+**FEEDBACK.** L'invio a Microsoft di feedback sulle caratteristiche, sulle funzionalità e/o sui concetti della tecnologia descritti in questa demo/questo lab implica la concessione a Microsoft, a titolo gratuito, del diritto di utilizzare, condividere e commercializzare tale feedback in qualsiasi modo e per qualsiasi scopo. Implica anche la concessione a titolo gratuito a terze parti del diritto di utilizzo di eventuali brevetti necessari per i loro prodotti, le loro tecnologie e i loro servizi al fine di utilizzare o interfacciarsi ai componenti software o ai servizi Microsoft specifici che includono il feedback. L'utente si impegna a non inviare feedback la cui inclusione all'interno di software o
 documentazione Microsoft imponga a Microsoft di concedere in licenza a terze parti tale software o documentazione. Questi diritti sussisteranno anche dopo la scadenza del presente contratto.
  
 CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA O CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O PRESCRITTE DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO, TITOLARITÀ E NON VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE O RAPPRESENTAZIONI IN RELAZIONE ALL'ACCURATEZZA DEI RISULTATI E DELL'OUTPUT DERIVANTI DALL'USO DELLA DEMO/DEL LAB O ALL'ADEGUATEZZA DELLE INFORMAZIONI CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.
-CLAUSOLA DI RESPONSABILITÀ
+
+**CLAUSOLA DI RESPONSABILITÀ**
+
 Questa demo/questo lab contiene solo una parte delle nuove funzionalità e dei miglioramenti in Microsoft Power BI. Alcune funzionalità potrebbero cambiare nelle versioni future del prodotto. In questa demo/in questo lab si apprendono alcune delle nuove funzionalità, ma non tutte.
 
