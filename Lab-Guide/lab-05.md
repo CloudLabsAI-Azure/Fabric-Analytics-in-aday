@@ -220,7 +220,7 @@ Dobbiamo scrivere un'espressione che verrà eseguita finché il valore di varCou
           sono definiti a livello di pipeline e non possono essere modificati durante l'esecuzione della pipeline, le variabili della pipeline possono essere impostate e modificate 
            all'interno di una pipeline usando un'attività Imposta variabile. Useremo a breve l'attività Imposta variabile.<br>
            
-   ![](../Images/lab-05/image069.jpg)
+     ![](../Images/lab-05/image069.jpg)
 
 10.	Fare clic su **Funzioni** nel menu in basso.
 11.	Nella sezione **Funzioni logiche** selezionare la funzione or. Notare che **@or()** viene aggiunto nella casella di testo dell'espressione dinamica. La funzione or accetta due parametri, stiamo lavorando sul primo parametro.
