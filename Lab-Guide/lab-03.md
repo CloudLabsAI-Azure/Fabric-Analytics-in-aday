@@ -222,7 +222,7 @@ Ora dobbiamo unire queste query per creare la dimensione Geo. Copiamo nuovamente
 4.	Si apre la finestra dell'Editor avanzato. **Evidenziare tutto il testo** nell'Editor avanzato.
 5.	**Fare clic con il pulsante destro del mouse** e selezionare **Copia**.
 
-    ![](../Images/lab-03/image102.jpg)
+   ![](../Images/lab-03/image102.jpg)
 
 6.	Selezionare la **X** nell'angolo in alto a destra della finestra o selezionare **Fatto** per chiudere la finestra dell'Editor avanzato.
 7.	Tornare alla finestra **Flusso di dati** nel browser.
@@ -235,9 +235,9 @@ Ora dobbiamo unire queste query per creare la dimensione Geo. Copiamo nuovamente
 11.	L'Editor avanzato dovrebbe essere vuoto. Ora premere **CTRL+V** per incollare il contenuto che copiato dall'Editor avanzato di Power BI Desktop.
 12.	Selezionare **Avanti**.
 
-    ![](../Images/lab-03/image108.jpg)
+   ![](../Images/lab-03/image108.jpg)
    	
-14.	Ora abbiamo la dimensione Geo. Rinominiamo la query. Nel **pannello di destra**, in **Impostazioni query -> Proprietà -> Nome,** cambiare il nome in **Geo**
+13.	Ora abbiamo la dimensione Geo. Rinominiamo la query. Nel **pannello di destra**, in **Impostazioni query -> Proprietà -> Nome,** cambiare il nome in **Geo**
 
 >**Nota**: attendere che termini il caricamento della query. L'operazione può richiedere alcuni minuti.
 
