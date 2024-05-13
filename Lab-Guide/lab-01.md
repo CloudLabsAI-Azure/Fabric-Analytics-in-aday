@@ -51,17 +51,18 @@ Prima di iniziare con Fabric, esaminiamo l'attuale report in Power BI Desktop pe
    
 6.	Selezionare **Continua**.
 
-![](../Images/Picture6.png)
+   ![](../Images/Picture6.png)
   	
 7.	Si apre la finestra di dialogo Accedi. Immettere nuovamente il Nome utente copiandolo nella scheda **Dettagli ambiente**.
    
 8.	Selezionare **Avanti**.
 
-     ![](../Images/Picture7.png)
+   ![](../Images/Picture7.png)
  
 11.	Nella finestra di dialogo successiva immettere le Credenziali e la Password copiandole dalla scheda **Dettagli ambiente**.
 12.	Selezionare **Accedi**.
-13.	Si apre la finestra di dialogo Azione richiesta che richiede di impostare l'autenticazione a più fattori. Non è necessario impostarla poiché si tratta di un ambiente lab. Selezionare **Ask later**.
+13.	Si apre la finestra di dialogo Azione richiesta che richiede di impostare l'autenticazione a più fattori. Non è necessario impostarla poiché si tratta di un ambiente lab. 
+    Selezionare **Ask later**.
 
     ![](../Images/Picture8.png)
 
@@ -74,11 +75,11 @@ Il report seguente analizza le vendite per Fabrikam. I KPI sono elencati in alto
 
 1.	Analizziamo i dati per area di vendita. Selezionare **New England nel grafico a dispersione Sales Territory**. In Sales over time notare che il rivenditore Tailspin Toys presenta più vendite di Wingtip Toys in New England. Se si considera l'istogramma % vendite rispetto all'anno precedente, si noterà che la crescita delle vendite di Wingtip Toys è stata bassa ed è calata di trimestre nello scorso anno. Dopo un leggero rialzo nel terzo trimestre è nuovamente calata nel quarto.
  
-    ![](../Images/Picture9.png)
+   ![](../Images/Picture9.png)
  
 2.	Confrontiamo questi dati con l'area delle Montagne Rocciose. Selezionare **Rocky Mountain nel****grafico a dispersione Sales Territory**. Dall'istogramma % vendite rispetto all'anno precedente risulta che le vendite per Wingtip Toys sono aumentate notevolmente nel quarto trimestre del 2022 dopo essere state basse nei due trimestri precedenti.
 
-    ![](../Images/picture10.png)
+   ![](../Images/picture10.png)
 
 4.	Selezionare **Rocky Mountain in Sales Territory** per rimuovere il filtro.
    
