@@ -3,9 +3,9 @@
 Abbiamo inserito dati provenienti da diverse origini dati in Lakehouse, abbiamo presentato
 Lakehouse, impostato la pianificazione di un aggiornamento per le origini dati e creato un modello di dati. Ora creeremo un report.
 In questo lab si imparerà a:
-•	Creare automaticamente un report
-•	Creare un report iniziando da un canvas vuoto
-•	Usare la modalità Direct Lake che comporta l'aggiornamento automatico dei dati
+- Creare automaticamente un report
+- Creare un report iniziando da un canvas vuoto
+- Usare la modalità Direct Lake che comporta l'aggiornamento automatico dei dati
 
 
 ## Power BI
@@ -13,7 +13,9 @@ In questo lab si imparerà a:
 Iniziamo usando l'opzione di creazione automatica del report. Più avanti nel lab, creeremo nuovamente il report presente in Power BI.
 
 1.	Torniamo all'**area di lavoro di Fabric** creata nel lab precedente.
+
 2.	Nella parte inferiore del pannello di sinistra selezionare l'icona **selettore esperienza in Fabric**.
+
 3.	Si apre la finestra di dialogo delle esperienze in Fabric. Selezionare **Power BI**. Si aprirà la **Home page di Power BI**.
 
    ![](../Images/lab-07/image006.png)
@@ -27,7 +29,7 @@ manualmente e creare un report o selezionare un modello semantico pubblicato. Ab
 
    ![](../Images/lab-07/image012.jpg)
   	
-6.	Scegliere un set di dati da usare nella pagina del report che si apre. Notare che sono presenti quattro opzioni. **Selezionare lh_FAIAD**:
+6.	Scegliere un set di dati da usare nella pagina del report che si apre. Notare che sono presenti quattro opzioni. **Selezionare lh_FAIAD**:<br>
       a.	**lh_FAIAD**: questo è il lakehouse con il set di dati che abbiamo creato e che vogliamo usare per il report.<br>
       b.	**Units by Supplier**: questo è il set di dati che abbiamo creato mediante T-SQL.<br>
       c.	**DataflowsStagingWarehouse**: si tratta del warehouse di staging creato per impostazione predefinita. Non l'abbiamo usato poiché non abbiamo eseguito lo staging dei dati.<br>
@@ -45,13 +47,14 @@ manualmente e creare un report o selezionare un modello semantico pubblicato. Ab
 >**Nota**: nel menu in alto è presente l'opzione per modificare il report o visualizzare i dati sotto forma di tabelle. Esplorare liberamente queste opzioni.
 
 9.	Salviamo il report. Nel menu in alto selezionare **Salva**.
+
 10. Si apre la finestra di dialogo Salva report. Assegnare al report il nome **rpt_Sales_Auto_Report**.
 
 >**Nota**: all'inizio del nome del report aggiungiamo il prefisso rpt, ovvero l'abbreviazione di report.
 
 11. Assicurarsi che il report sia salvato nell'area di lavoro **FAIAD_<nome utente>**.
     
-13. Selezionare **Salva**.
+12. Selezionare **Salva**.
 
     ![](../Images/lab-07/image021.jpg)
    	
@@ -66,60 +69,81 @@ manualmente e creare un report o selezionare un modello semantico pubblicato. Ab
 
 Creiamo un nuovo report usando un'area di disegno vuota.
 1.	Nel **pannello di sinistra** selezionare il nome dell'area di lavoro, **FAIAD_<nome utente>**, per tornare a essa.
+
 2.	Nel menu in alto selezionare **Nuovo -> Report**. Si aprirà la pagina per creare il primo report.
 
    ![](../Images/lab-07/image027.png)
   	
-4.	Fare clic su **Selezionare un modello semantico pubblicato** per poter scegliere il modello creato.
+3.	Fare clic su **Selezionare un modello semantico pubblicato** per poter scegliere il modello creato.
 
    ![](../Images/lab-07/image030.jpg)
   	
-6.	Scegliere un modello semantico da usare nella finestra di dialogo report che viene visualizzata. Selezionare **lh_FAIAD**.
+4.	Scegliere un modello semantico da usare nella finestra di dialogo report che viene visualizzata. Selezionare **lh_FAIAD**.
  
-7.	Fare clic sulla **freccia accanto al pulsante Crea automaticamente il report**. Selezionare **Crea un report vuoto**.
+5.	Fare clic sulla **freccia accanto al pulsante Crea automaticamente il report**. Selezionare **Crea un report vuoto**.
    
    ![](../Images/lab-07/image033.jpg)
   	
-9.	Se non lo si è ancora aperto, aprire il file **FAIAD.pbix** contenuto nella cartella **C:\FAIAD\Reports**
+6.	Se non lo si è ancora aperto, aprire il file **FAIAD.pbix** contenuto nella cartella **C:\FAIAD\Reports**
 dell'ambiente lab.
 Useremo questo report come riferimento. Inizieremo aggiungendo lo sfondo del canvas. Creeremo l'intestazione del report, aggiungeremo un paio di KPI e creeremo il grafico a linee Sales over time. Per risparmiare tempo, presupponendo che si abbia esperienza nella creazione di oggetti visivi in Power BI Desktop, non creeremo tutti gli oggetti visivi.
 
    ![](../Images/lab-07/image036.jpg)
       	
-11. Tornare al **Power BI canvas** nel browser.
-12. Selezionare l'icona **Formatta pagina** nel riquadro Visualizzazioni.
-13. Espandere la sezione **Sfondo canvas**.
-14. Selezionare **Sfoglia** dall'opzione **Immagine**. Si apre la finestra di dialogo Esplora file.
-15. Andare alla cartella **C:\FAIAD\Reports** dell'ambiente lab.
-16. Selezionare **Summary Background.png**.
-17. Impostare l'elenco a discesa **Adattamento immagine** su **Adatta**.
-18. Impostare Trasparenza su **0%**.
+7. Tornare al **Power BI canvas** nel browser.
+
+8. Selezionare l'icona **Formatta pagina** nel riquadro Visualizzazioni.
+
+9. Espandere la sezione **Sfondo canvas**.
+
+10. Selezionare **Sfoglia** dall'opzione **Immagine**. Si apre la finestra di dialogo Esplora file.
+
+11. Andare alla cartella **C:\FAIAD\Reports** dell'ambiente lab.
+
+12. Selezionare **Summary Background.png**.
+
+13. Impostare l'elenco a discesa **Adattamento immagine** su **Adatta**.
+
+14. Impostare Trasparenza su **0%**.
 
     ![](../Images/lab-07/image039.jpg)
    	
 ### Attività 3 - Aggiunta dell'intestazione al report
 1.	Aggiungiamo l'intestazione nel margine superiore. Nel **menu** selezionare **Casella di testo**.
+
 2.	Immettere **Fabrikam Company** come prima riga nella casella di testo.
+
 3.	Immettere **Sales Report** come seconda riga nella casella di testo.
+
 4.	Evidenziare **Fabrikam Company** e impostare **Tipo di carattere** su **Segoe UI** e **Dimensioni carattere** su 1**8, grassetto**.
+
 5.	Evidenziare **Report vendite** e impostare **Tipo di carattere** su **Segoe UI** e **Dimensioni carattere** su **14**.
+
 6.	Con la **casella di testo selezionata**, nel riquadro Casella di testo Formato sulla destra espandere **Effetti**.
+
 7.	Impostare il dispositivo di scorrimento **Sfondo** su **Disattivato**.
+
 8.	Ridimensionare la **casella di testo per adattarla al margine superiore**.
 
    ![](../Images/lab-07/image042.jpg)
  
 ### Attività 4 - Aggiunta di KPI al report
 1.	Aggiungiamo l'indicatore KPI delle vendite. Selezionare lo **spazio vuoto** nell'area di disegno per spostare lo stato attivo fuori dalla casella di testo.
+
 2.	Nella sezione **Visualizzazioni** selezionare l'oggetto visivo **Scheda con più righe**.
+
 3.	Nella sezione **Dati** espandere la tabella **Sales**.
+
 4.	Selezionare la **misura Sales**.
 
    ![](../Images/lab-07/image045.jpg)
   	
 5.	Con l'**oggetto visivo Scheda con più righe selezionato**, selezionare l'icona **Formatta oggetto visivo** dalla sezione Visualizzazioni.
+
 6.	Espandere la sezione **Etichette categorie**.
+
 7.	Aumentare la **dimensione del carattere** a **14**.
+
 8.	Selezionare il menu a discesa **Colore**. Si apre la finestra di dialogo Tavolozza dei colori.
  
 9. Impostare il valore Esadecimale su **#004753**.
@@ -133,56 +157,78 @@ Useremo questo report come riferimento. Inizieremo aggiungendo lo sfondo del can
      ![](../Images/lab-07/image051.png)
    	
 12. Selezionare **Generale** nel riquadro Visualizzazioni.
+
 13. Espandere la sezione **Effetti**.
+
 14. Impostare il dispositivo di scorrimento **Sfondo** su **Disattivato**.
+
 15. Ridimensionare l'**oggetto visivo** e spostarlo nella **casella di sinistra come illustrato nello screenshot**.
     
     ![](../Images/lab-07/image054.png)
    	
 16. Aggiungiamo un altro indicatore KPI. Selezionare la **scheda con più righe Sales** appena creata. **Copiare** l'oggetto visivo premendo **CTRL+C** sulla tastiera.
+
 17. **Incollare** l'oggetto visivo premendo **CTRL+V** sulla tastiera. Notare che l'oggetto visivo viene incollato nel canvas. 
+
 18. Con il **nuovo oggetto visivo evidenziato**, in **riquadro Visualizzazioni** **-> Compila oggetto visivo -> Campi** rimuovere la misura **Sales**.
+
 19. Nella sezione **Dati** espandere la tabella Sales e selezionare la misura **Units**.
+
 20. Ridimensionare l'**oggetto visivo** e **posizionarlo nella casella sotto l'oggetto visivo Sales**.
 
     ![](../Images/lab-07/image057.jpg)
    	
 ### Attività 5 - Aggiunta di un grafico a linee al report
 Creiamo un grafico a linee per visualizzare le vendite nel tempo per azienda rivenditrice.
+
 1.	Selezionare lo **spazio vuoto** nel canvas per spostare lo stato attivo fuori dall'oggetto visivo scheda con più righe.
+
 2.	Nella sezione **Visualizzazioni** selezionare **Grafico a linee**.
+
 3.	Nella sezione **Dati** espandere la tabella **Date**.
+
 4.	Selezionare il campo **Year**. Si noti che Year viene sommato per impostazione predefinita e aggiunto all'asse Y. Correggiamo.
 
    ![](../Images/lab-07/image060.png)
  
 ### Attività 6 - Salvataggio del report
 Salviamo il report prima di uscire da esso per apportare modifiche al modello.
+
 1.	Nel menu selezionare **File -> Salva**.
+
 2.	Si apre la finestra di dialogo Salva report. Assegnare al report il nome **rpt_Sales_Report**.
    
 >**Nota:** all'inizio del nome del report aggiungiamo il prefisso rpt, ovvero l'abbreviazione di report.
 
 3.	Assicurarsi che il report sia salvato nell'area di lavoro **FAIAD_<nome utente>**.
+
 4.	Selezionare **Salva**.
 
    ![](../Images/lab-07/image063.jpg)
 
 ### Attività 7 - Configurazione della colonna Year nella tabella Date
 1.	Nella **barra dei menu a sinistra** selezionare **lh_FAIAD** per spostarsi sul Lakehouse.
+
 2.	Nel riquadro Explorer di sinistra espandere **lhFAIAD -> Schemas -> dbo -> Tables -> Date**.
+
 3.	Selezionare la colonna **Year**.
+
 4.	Nel riquadro **Proprietà** a destra espandere la sezione **Avanzate**.
+
 5.	Nell'elenco a discesa **Riepiloga per** selezionare **Nessuno**.
 
    ![](../Images/lab-07/image066.jpg)
   	
 6.	Tornare al report selezionando **rpt_Sales_Report** nella barra dei menu a sinistra.
+
 7.	Selezionare **Modifica** dal menu in alto.
  
 8.	Nel menu in alto selezionare **Aggiorna**. Si noti che nel pannello Dati, Year non è un campo di somma.
+
 9. Con l'**oggetto visivo grafico a linee selezionato, rimuovere Somma di Year** dall'asse Y.
+
 10. Selezionare il campo **Year** per aggiungerlo all'**asse X**.
+
 11. Espandere la tabella **Sales** e selezionare la **misura Sales**.
 
     ![](../Images/lab-07/image069.jpg)
@@ -191,9 +237,13 @@ Salviamo il report prima di uscire da esso per apportare modifiche al modello.
 
 1.	Aggiungiamo il mese al grafico. Nella tabella Date trascinare il campo **Short_Month_Name** sotto
 **Year** sull'**asse X**. Notare che l'oggetto visivo è ordinato in base a Sales. Ordiniamolo in base a Short_Month_Name.
+
 2.	Selezionare i **puntini di sospensione** (…) nell'angolo superiore destro dell'oggetto visivo.
+
 3.	Selezionare **Ordina asse -> Year Short_Month_Name**.
+
 4.	Selezionare i **puntini di sospensione (…)** nell'angolo superiore destro dell'oggetto visivo.
+
 5.	Selezionare **Ordina asse -> Ordinamento crescente**.
 
    ![](../Images/lab-07/image072.jpg)
@@ -203,34 +253,43 @@ Salviamo il report prima di uscire da esso per apportare modifiche al modello.
    ![](../Images/lab-07/image075.png)
  
 6.	Nella **barra dei menu a sinistra** selezionare **lh_FAIAD** per spostarsi sul Lakehouse.
+
 7.	Si apre la finestra di dialogo **Modifiche non salvate**. Selezionare **Salva** per salvare le modifiche al report.
 
    ![](../Images/lab-07/image078.jpg)
   	
-9.	Si passerà al Lakehouse lh_FAIAD. Nel riquadro Explorer di sinistra espandere **lhFAIAD -> Schemas -> dbo -> Tables -> Date**.
-10. Selezionare la colonna **Short_Month_Name**.
+8.	Si passerà al Lakehouse lh_FAIAD. Nel riquadro Explorer di sinistra espandere **lhFAIAD -> Schemas -> dbo -> Tables -> Date**.
+
+9. Selezionare la colonna **Short_Month_Name**.
 11. Nel riquadro **Proprietà** a destra espandere la sezione **Avanzate**.
 12. Nell'elenco a discesa **Ordina per colonna** selezionare **Month**.
 
     ![](../Images/lab-07/image081.jpg)
    	
-13. Tornare al report selezionando **rpt_Sales_Report** nella barra dei menu a sinistra.
-14. Selezionare **Modifica** dal menu in alto.
-15. Nel menu in alto selezionare **Aggiorna**. Si noti che i mesi sono ordinati correttamente.
+10. Tornare al report selezionando **rpt_Sales_Report** nella barra dei menu a sinistra.
+
+11. Selezionare **Modifica** dal menu in alto.
+
+12. Nel menu in alto selezionare **Aggiorna**. Si noti che i mesi sono ordinati correttamente.
  
     ![](../Images/lab-07/image084.png)
    	
 ### Attività 9 – Formattazione del grafico a linee
 
 È molto semplice aggiornare il modello semantico durante la creazione dei report. Ciò fornisce un'interazione fluida come Power BI Desktop.
+
 1.	Con l'**oggetto visivo grafico a linee selezionato**, nella sezione **Dati** espandere la tabella **Reseller**.
+
 2.	Trascinare il campo **Reseller -> Reseller Company** nella sezione **Legenda**.
    
    ![](../Images/lab-07/image087.jpg)
   	
 3.	Con l'**oggetto visivo grafico a linee selezionato**, nella sezione Visualizzazioni selezionare l'icona **Formatta oggetto visivo -> Generale**.
+
 4.	Espandere la sezione **Titolo**.
+
 5.	Impostare il testo di **Titolo** su **Sales over time**.
+
 6.	Espandere la sezione **Effetti**.
  
 7.	Impostare il dispositivo di scorrimento **Sfondo** su **Disattivato**.
@@ -238,11 +297,17 @@ Salviamo il report prima di uscire da esso per apportare modifiche al modello.
       ![](../Images/lab-07/image090.png)
   	
 8.	Nella sezione **Visualizzazione** selezionare l'icona **Formatta oggetto visivo -> Oggetto visivo**.
+
 9.	Espandere la sezione **Righe**.
+
 10. Espandere la sezione **Colore**.
+
 11. Impostare il colore di **Wingtip Toys** su **#004753**
+
 12. Impostare il colore di **Tailspin Toys** su **#F17925**
+
 13. Ridimensionare l'**oggetto visivo e spostarlo nella casella in alto a destra come illustrato nello screenshot**.
+
 14. Scorrere verso destra l'oggetto visivo e si **noti che sono presenti dati fino ad aprile 2023**.
 
     ![](../Images/lab-07/image093.png)
@@ -256,15 +321,17 @@ In genere, in modalità Import, dopo aver aggiornato i dati nell'origine è nece
 In uno scenario reale, i dati vengono aggiornati nell'origine. Poiché ci troviamo in un ambiente di formazione, simuleremo questo comportamento collegando un file Parquet ai dati relativi a maggio 2023.
 
 1.	Selezionare **FAIAD_<nome utente>** nella barra dei menu di sinistra per andare alla home page dell'area di lavoro.
+
 2.	Selezionare **df_Sales_ADFS** per poter modificare il flusso di dati aggiungendo il nuovo file Parquet.
 
    ![](../Images/lab-07/image096.jpg)
   	
 3.	Nella barra multifunzione selezionare **Home -> Recupera -> Query vuota**.
+
 4.	Si apre la finestra di dialogo Connetti a origine dati. Selezionare **tutte le righe nell'editor ed eliminarle**.
 5.	Copiare il codice seguente e incollarlo nell'editor.
 
-`let
+`   let
   Source = #"ADLS Base Folder",
   #"Filtered Rows" = Table.SelectRows(Source, each Text.Contains([Folder Path], "Sales.Invoices_May")),
  
@@ -305,26 +372,40 @@ in
 I flussi di dati creati nei lab precedenti vengono aggiornati secondo pianificazione, i dati vengono inseriti nel lakehouse. Il modello di dati nel lakehouse e i report vengono aggiornati. Non è
 necessario aggiornare il modello di dati e il report quando ciascun flusso di dati viene aggiornato. Questo è il vantaggio di Direct Lake.
 Ricontrolliamo le problematiche elencate nell'esposizione del problema:
-•	**È necessario aggiornare il set di dati almeno tre volte al giorno per adattarsi ai diversi tempi di aggiornamento delle diverse origini dati.**
+
+- **È necessario aggiornare il set di dati almeno tre volte al giorno per adattarsi ai diversi tempi di aggiornamento delle diverse origini dati.**
+
 Abbiamo risolto questo problema usando Direct Lake. Ogni singolo flusso di dati viene aggiornato in base alla propria pianificazione. Non è necessario aggiornare il set di dati e il report.
-•	**Gli aggiornamenti richiedono molto tempo in quanto è necessario eseguire un aggiornamento completo ogni volta per acquisire eventuali aggiornamenti dei sistemi di origine.**
+
+- **Gli aggiornamenti richiedono molto tempo in quanto è necessario eseguire un aggiornamento completo ogni volta per acquisire eventuali aggiornamenti dei sistemi di origine.**
+
 Abbiamo risolto anche questo problema usando Direct Lake. Ogni singolo flusso di dati viene aggiornato in base alla propria pianificazione. Non è necessario aggiornare il set di dati e il report, perciò non è richiesto un aggiornamento completo.
-•	**Se si verificano errori in qualsiasi delle origini dati da cui si estraggono i dati, l'aggiornamento del set di dati si interrompe. Spesso il file dei dipendenti non viene caricato in tempo e ciò causa l'interruzione dell'aggiornamento del set di dati.**
+
+- **Se si verificano errori in qualsiasi delle origini dati da cui si estraggono i dati, l'aggiornamento del set di dati si interrompe. Spesso il file dei dipendenti non viene caricato in tempo e ciò causa l'interruzione dell'aggiornamento del set di dati.**
+
 Pipeline di dati aiuta a risolvere questo problema, consentendo di provare più volte a eseguire l'aggiornamento a intervalli diversi.
-•	**Eventuali modifiche al modello di dati richiedono molto tempo in quanto Power Query richiede molto tempo per l'aggiornamento delle anteprime, date le dimensioni elevate dei dati e le trasformazioni complesse.**
+
+- **Eventuali modifiche al modello di dati richiedono molto tempo in quanto Power Query richiede molto tempo per l'aggiornamento delle anteprime, date le dimensioni elevate dei dati e le trasformazioni complesse.**
+
 Abbiamo notato che i flussi di dati sono efficienti e facili da modificare. In genere, il caricamento dell'anteprima nei flussi di dati non richiede molto tempo.
-•	**È necessario un PC Windows per usare Power BI Desktop anche se lo standard aziendale è Mac.**
+
+- **È necessario un PC Windows per usare Power BI Desktop anche se lo standard aziendale è Mac.**
+
 Microsoft Fabric è un'offerta SaaS. Tutto ciò di cui abbiamo bisogno è un browser per accedere al servizio. Non dobbiamo installare alcun software nei nostri desktop.
  
 ### Pulizia dell'ambiente lab
 Quando si è pronti a eseguire la pulizia dell'ambiente lab, effettuare i passaggi seguenti.
+
 1.	Selezionare l'area di lavoro **FAIAD_<nome utente>** nel pannello di sinistra per andare alla home page dell'area di lavoro.
+
 2.	Nel menu in alto selezionare i **puntini di sospensione (…)** accanto a Gestisci accesso e selezionare **Impostazioni area di lavoro**.
 
    ![](../Images/lab-07/image114.jpg)
   	
 3.	Si apre la finestra di dialogo Impostazioni area di lavoro. Nel menu a sinistra selezionare **Altro**.
+
 4.	Selezionare **Rimuovere questa area di lavoro**.
+
 5.	Si apre la finestra di dialogo Eliminare l'area di lavoro?. Selezionare **Elimina**.
 
   	In questo modo si elimineranno l'area di lavoro e tutti gli elementi che contiene.
@@ -367,9 +448,11 @@ La tecnologia/le funzionalità descritte nella demo/nel lab sono fornite da Micr
 consentito. È vietato modificare, copiare, distribuire, trasmettere, visualizzare, eseguire, riprodurre, pubblicare, concedere in licenza, usare per la creazione di lavori derivati, trasferire o vendere questa demo/questo lab o parte di essi.
 SONO ESPLICITAMENTE PROIBITE LA COPIA E LA RIPRODUZIONE DELLA DEMO/DEL LAB (O DI QUALSIASI PARTE DI ESSI) IN QUALSIASI ALTRO SERVER O IN QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O RIDISTRIBUZIONE.
 QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON UN'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI IN QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L'ESPERIENZA D'USO DI TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ INOLTRE RISULTARE DIVERSA IN UN AMBIENTE FISICO.
-FEEDBACK. L'invio a Microsoft di feedback sulle caratteristiche, sulle funzionalità e/o sui concetti della tecnologia descritti in questa demo/questo lab implica la concessione a Microsoft, a titolo gratuito, del diritto di utilizzare, condividere e commercializzare tale feedback in qualsiasi modo e per qualsiasi scopo. Implica anche la concessione a titolo gratuito a terze parti del diritto di utilizzo di eventuali brevetti necessari per i loro prodotti, le loro tecnologie e i loro servizi al fine di utilizzare o interfacciarsi ai componenti software o ai servizi Microsoft specifici che includono il feedback. L'utente si impegna a non inviare feedback la cui inclusione all'interno di software o
+
+**FEEDBACK**. L'invio a Microsoft di feedback sulle caratteristiche, sulle funzionalità e/o sui concetti della tecnologia descritti in questa demo/questo lab implica la concessione a Microsoft, a titolo gratuito, del diritto di utilizzare, condividere e commercializzare tale feedback in qualsiasi modo e per qualsiasi scopo. Implica anche la concessione a titolo gratuito a terze parti del diritto di utilizzo di eventuali brevetti necessari per i loro prodotti, le loro tecnologie e i loro servizi al fine di utilizzare o interfacciarsi ai componenti software o ai servizi Microsoft specifici che includono il feedback. L'utente si impegna a non inviare feedback la cui inclusione all'interno di software o
 documentazione Microsoft imponga a Microsoft di concedere in licenza a terze parti tale software o documentazione. Questi diritti sussisteranno anche dopo la scadenza del presente contratto.
  
 CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA O CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O PRESCRITTE DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO, TITOLARITÀ E NON VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE O RAPPRESENTAZIONI IN RELAZIONE ALL'ACCURATEZZA DEI RISULTATI E DELL'OUTPUT DERIVANTI DALL'USO DELLA DEMO/DEL LAB O ALL'ADEGUATEZZA DELLE INFORMAZIONI CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.
+
 CLAUSOLA DI RESPONSABILITÀ
 Questa demo/questo lab contiene solo una parte delle nuove funzionalità e dei miglioramenti in Microsoft Power BI. Alcune funzionalità potrebbero cambiare nelle versioni future del prodotto. In questa demo/in questo lab si apprendono alcune delle nuove funzionalità, ma non tutte.

@@ -1,14 +1,17 @@
 ![](../Images/lab-06/lab-06_main.png) 
 ## Introduzione
 Abbiamo inserito dati provenienti da diverse origini dati in Lakehouse. In questo lab si lavorerà con il modello di dati. In genere, eseguiamo attività di modellazione quali la creazione di relazioni, l'aggiunta di misure, ecc. in Power BI Desktop. Qui impareremo a eseguire queste attività di modellazione nel servizio.
+
 In questo lab si imparerà a:
-•	Esplorare lakehouse
-•	Esplorare la vista SQL di lakehouse
-•	Esplorare la modellazione dei dati in lakehouse
+- Esplorare lakehouse
+- Esplorare la vista SQL di lakehouse
+- Esplorare la modellazione dei dati in lakehouse
 
 Lakehouse
 ## Attività 1 - Query sui dati mediante SQL
+
 1.	Torniamo all'area di lavoro di Fabric **FAIAD_<nome utente>** creata nel Lab 2, attività 9.
+
 2.	Saranno visibili tre tipi di lh_FAIAD, Lakehouse, modello semantico ed endpoint SQL. Abbiamo
 esplorato l'opzione Lakehouse in un lab precedente. Selezionare l'opzione l**h_FAIAD - Endpoint di analisi SQL** per esplorare l'opzione SQL. Si aprirà la **vista SQL** di Explorer.
 
@@ -30,7 +33,9 @@ SELECT su.Supplier_Name, SUM(Quantity) as Units FROM dbo.Sales s
 JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.SupplierID = p.SupplierID GROUP BY su.Supplier_Name
 
 5.	Fare clic su **Run** per visualizzare i risultati.
+
 6.	Notare che è disponibile un'opzione per salvare questa query come vista selezionando Salva **come visualizzazione**.
+
 7.	Nel pannello di **sinistra Explorer**, nella sezione **Query** notare che questa query è salvata in **Query personali** come SQL query 1. Ciò consente di rinominare la query e salvarla per l'uso futuro. È inoltre presente un'opzione per visualizzare le query condivise con l'utente corrente mediante la cartella **Query condivise**.
 
   ![](../Images/lab-06/image011.jpg)
@@ -39,36 +44,39 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.S
 1.	Possiamo anche visualizzare il risultato di questa query. **Evidenziare la query** nel riquadro della query, selezionare il **riquadro dei risultati** e selezionare **Esplora questi dati.**
    ![](../Images/lab-06/image014.png)
   	
-3.	Si apre la finestra di dialogo **Esplora query SQL**. Nel riquadro **Dati** espandere **SQL query 1**.
-4.	Selezionare i campi **Supplier_Name** e **Units**. Si crea un grafico a barre raggruppate.
-5.	Nella sezione **Visualizzazioni** cambiare il tipo di oggetto visivo selezionando l'**istogramma in pila**.
+2.	Si apre la finestra di dialogo **Esplora query SQL**. Nel riquadro **Dati** espandere **SQL query 1**.
+3.	Selezionare i campi **Supplier_Name** e **Units**. Si crea un grafico a barre raggruppate.
+4.	Nella sezione **Visualizzazioni** cambiare il tipo di oggetto visivo selezionando l'**istogramma in pila**.
 
    ![](../Images/lab-06/image017.png)
  
-6.	E**spandere la matrice** per visualizzare i dati come una matrice.
+5.	E**spandere la matrice** per visualizzare i dati come una matrice.
 
    ![](../Images/lab-06/image020.png)
   	
-8.	Selezionare **Salva - > Salva come report** in alto a destra della schermata.
+6.	Selezionare **Salva - > Salva come report** in alto a destra della schermata.
 
    ![](../Images/lab-06/image023.jpg)
   	
-9. Si apre la finestra di dialogo Salva report. Digitare **Unità per fornitore** nella casella di testo Immettere un nome per il report.
-10. Assicurarsi che l'area di lavoro di destinazione sia l'area di lavoro di Fabric **FAIAD<nomeutente>** 
-11. Selezionare **Salva**.
+7. Si apre la finestra di dialogo Salva report. Digitare **Unità per fornitore** nella casella di testo Immettere un nome per il report.
+8. Assicurarsi che l'area di lavoro di destinazione sia l'area di lavoro di Fabric **FAIAD<nomeutente>** 
+9. Selezionare **Salva**.
     
     ![](../Images/lab-06/image026.png)
    	
 Si verrà indirizzati all'esperienza di report completa. Si dispone di opzioni per formattare gli oggetti visivi. Vedremo queste opzioni nel lab successivo.
 
-12. Nel pannello a sinistra selezionare **lh_FAIAD**.
+10. Nel pannello a sinistra selezionare **lh_FAIAD**.
 
     ![](../Images/lab-06/image029.jpg)
 
 ## Attività 3 - Creazione di una query visiva
 Si aprirà nuovamente la vista **Endpoint di analisi SQL**. Se non si ha familiarità con SQL, è possibile eseguire una query simile usando la query visiva.
+
 1.	Nel menu in alto selezionare **Nuova query visiva**. Si apre un riquadro delle query visive.
+
 2.	Nel riquadro Esplora espandere **Schemi -> dbo -> Tabelle**.
+
 3.	Trascinare le tabelle **Sales, Product e Supplier** nel riquadro delle query visive.
     
    ![](../Images/lab-06/image032.png)
@@ -78,7 +86,9 @@ Si aprirà nuovamente la vista **Endpoint di analisi SQL**. Se non si ha familia
    ![](../Images/lab-06/image035.png)
   	
 5.	Si apre la finestra di dialogo Merge. Nel menu a discesa **Tabella destra per l'unione** selezionare **Product**.
+
 6.	Selezionare **StockItemID** in entrambe le tabelle **Sales** e **Product**. In questo modo si uniscono le tabelle Product e Sales.
+
 7.	In **Tipo di join** selezionare **Left outer**.
  
 8.	Selezionare **OK**.
@@ -86,39 +96,51 @@ Si aprirà nuovamente la vista **Endpoint di analisi SQL**. Se non si ha familia
    ![](../Images/lab-06/image038.png)
   	
 9.	Nel **riquadro dei risultati** fare clic sulla **freccia doppia** accanto alla colonna **Product**.
+
 10. Nella finestra di dialogo che si apre, selezionare **SupplierID**.
+
 11. Selezionare **OK**. Notare che i passaggi **Merge di query** e **Product espansa** vengono creati nella tabella **Sales**.
 
     ![](../Images/lab-06/image041.jpg)
    	
 12. Uniamo allo stesso modo la tabella Supplier. Nella tabella **Sales** selezionare “+” (dopo Product espansa) per aggiungere un nuovo passaggio. Si apre la finestra di dialogo.
+
 13. Selezionare **Combina -> Esegui merge di query**.
 
     ![](../Images/lab-06/image044.jpg)
    	
 14. Si apre la finestra di dialogo Merge. Nel menu a discesa **Tabella destra per l'unione** selezionare **Supplier**.
+
 15. Selezionare **SupplierID** in entrambe le tabelle **Sales** e **Supplier**. In questo modo si uniscono le tabelle Supplier e Sales.
+
 16. In **Tipo di join** selezionare **Left outer**.
+
 17. Selezionare **OK**.
 
     ![](../Images/lab-06/image047.jpg)
    	
 18. Nel **riquadro dei risultati** fare clic sulla **freccia doppia** accanto alla colonna **Supplier**.
+
 19. Nella finestra di dialogo che si apre, selezionare **Supplier_Name**.
+
 20. Selezionare **OK**. Nella tabella Sales si aggiunge **Merge di query** e **si registrano i passaggi**.
 
     ![](../Images/lab-06/image050.jpg)
    	
-21. Raggruppiamo ora per nome del fornitore per ottenere la quantità per fornitore. Nella tabella **Sales** selezionare "+" (dopo Supplier espansa) per aggiungere un nuovo passaggio. 
-      Si apre la finestra di dialogo.
+21. Raggruppiamo ora per nome del fornitore per ottenere la quantità per fornitore. Nella tabella **Sales** selezionare "+" (dopo Supplier espansa) per aggiungere un nuovo passaggio. Si apre la finestra di dialogo.
+
 22. Selezionare **Trasforma tabella** **-> Raggruppa per**. Si apre la finestra di dialogo Raggruppa per.
  
     ![](../Images/lab-06/image053.jpg)
 
 23. Nell'elenco a discesa **Raggruppa per** selezionare **Supplier_Name**.
+
 24. Immettere **Unità** come screenshot A della finestra di dialogo Merge di query.
+
 25. Impostare **Operazione** su **Somma**.
+
 26. Selezionare **Quantità** dall'elenco a discesa **Colonna**.
+
 27. Selezionare **OK**.
 
     ![](../Images/lab-06/image056.jpg)
@@ -131,7 +153,9 @@ Tutti i passaggi vengono registrati nel blocco Sales. (Fare riferimento al primo
    ![](../Images/lab-06/image059.jpg)
     
 2.	Si apre la finestra di dialogo Visualizza risultati. Nel riquadro **Dati** a destra **espandere Visual query1**.
+
 3.	Selezionare i campi **Supplier_Name e Units**.
+
 4.	Notare che il risultato è simile a quello della query SQL precedente. Se lo si desidera, è possibile salvare questo report. Poiché abbiamo salvato in precedenza un report simile, ora 
    selezioniamo **Annulla**.
 
@@ -141,31 +165,43 @@ Tutti i passaggi vengono registrati nel blocco Sales. (Fare riferimento al primo
 Ora siamo pronti per creare il modello, le relazioni tra tabelle e le misure.
 
 1.	Nel **pannello inferiore** selezionare **Modello**. Il riquadro centrale è simile alla visualizzazione Modello presente in Power BI Desktop.
+
 2.	**Ridimensionare e ridisporre** le tabelle in base alle esigenze.
+
 3.	Creiamo una relazione tra le tabelle Sales e Reseller. Selezionare **ResellerID** dalla tabella **Sales** e trascinarlo su **ResellerID** nella tabella **Reseller**.
 
    ![](../Images/lab-06/image065.jpg)
   	
-5.	Si apre la finestra di dialogo Nuova relazione. Assicurarsi che la **Tabella** 1 sia **Sales** e che la
+4.	Si apre la finestra di dialogo Nuova relazione. Assicurarsi che la **Tabella** 1 sia **Sales** e che la
    **Colonna** sia **ResellerID**.
-6.	Assicurarsi che la **Tabella 2** sia **Reseller** e che la **Colonna** sia **ResellerID**.
-7.	Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (*:1)**.
-8.	Assicurarsi che il campo **Direzione filtro incrociato** sia impostato su **Singola**.
-9.	Selezionare **OK**.
+
+5.	Assicurarsi che la **Tabella 2** sia **Reseller** e che la **Colonna** sia **ResellerID**.
+
+6.	Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (*:1)**.
+
+7.	Assicurarsi che il campo **Direzione filtro incrociato** sia impostato su **Singola**.
+
+8.	Selezionare **OK**.
 
    ![](../Images/lab-06/image068.png)
   	
-10. Allo stesso modo, creiamo una relazione tra le tabelle Sales e **Date**. Selezionare **InvoiceDate** dalla tabella **Sales** e trascinarlo su **Date** nella tabella **Date**.
-11. Si apre la finestra di dialogo Nuova relazione. Assicurarsi che la **Tabella 1** sia Sales e che la **Colonna** sia **InvoiceDate**.
-12. Assicurarsi che la **Tabella 2** sia **Date** e che la **Colonna** sia **Date**.
-13. Assicurarsi che il campo C**ardinalità** sia impostato su **Molti a uno (*:1)**.
-14. Assicurarsi che il campo **Direzione filtro incrociato** sia impostato su **Singola**.
-15. Selezionare **OK**.
+9. Allo stesso modo, creiamo una relazione tra le tabelle Sales e **Date**. Selezionare **InvoiceDate** dalla tabella **Sales** e trascinarlo su **Date** nella tabella **Date**.
+
+10. Si apre la finestra di dialogo Nuova relazione. Assicurarsi che la **Tabella 1** sia Sales e che la **Colonna** sia **InvoiceDate**.
+
+11. Assicurarsi che la **Tabella 2** sia **Date** e che la **Colonna** sia **Date**.
+
+12. Assicurarsi che il campo C**ardinalità** sia impostato su **Molti a uno (*:1)**.
+
+13. Assicurarsi che il campo **Direzione filtro incrociato** sia impostato su **Singola**.
+
+14. Selezionare **OK**.
     
     ![](../Images/lab-06/image071.png)
    	
-16. Analogamente, creare una relazione **molti-a-uno** tra le tabelle **Sales e Product**. Selezionare **StockItemID** dalla tabella Sales e StockItemID dalla tabella **Product**.    
-17. Nel menu in alto selezionare **Reporting -> Aggiorna automaticamente il modello semantico** per salvare e aggiornare il modello.
+15. Analogamente, creare una relazione **molti-a-uno** tra le tabelle **Sales e Product**. Selezionare **StockItemID** dalla tabella Sales e StockItemID dalla tabella **Product**.    
+
+16. Nel menu in alto selezionare **Reporting -> Aggiorna automaticamente il modello semantico** per salvare e aggiornare il modello.
 
    ![](../Images/lab-06/image074.jpg)
    	
@@ -179,26 +215,38 @@ Per motivi di tempo, non creeremo tutte le relazioni. Se il tempo lo consente, �
 Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
 
 1.	Selezionare la tabella **Sales** dalla vista del modello. Vogliamo aggiungere le misure alla tabella Sales.
+
 2.	Nel menu in alto selezionare **Home -> Nuova misura**. Notare che viene visualizzata la barra della formula.
+
 3.	Immettere **Sales = SUM(Sales[Sales_Amount])** nella **barra della formula**.
+
 4.	Fare clic sul **segno di spunta** a sinistra della barra della formula o premere il tasto **INVIO**.
+
 5.	Nel pannello Proprietà a destra espandere la sezione **Formattazione**.
+
 6.	Nell'elenco a discesa **Formato** selezionare **Numero intero**.
 
    ![](../Images/lab-06/image080.jpg)
    
 7.	Con la tabella Sales selezionata nel menu in alto, selezionare Home -> Nuova misura. Notare che viene visualizzata la barra della formula.
+
 8.	Immettere Units = SUM(Sales[Quantity]) nella barra della formula.
 9.	Fare clic sul segno di spunta a sinistra della barra della formula o premere il tasto INVIO.
+
 10. Nel pannello Proprietà a destra espandere la sezione Formattazione (il caricamento del pannello Proprietà potrebbe richiedere alcuni istanti).
+
 11. Nel menu a discesa Formato selezionare Numero intero.
 
     ![](../Images/lab-06/image083.jpg)
    	
 13. Con la tabella **Sales** selezionata nel menu in alto, selezionare **Home -> Nuova misura**. Notare che viene visualizzata la barra della formula.
+
 14. Immettere **Orders = DISTINCTCOUNT**(Sales[InvoiceID]) nella barra della formula.
+
 15. Fare clic sul segno di spunta a sinistra della barra della formula o premere il tasto INVIO.
+
 16. Nel pannello Proprietà a destra espandere la sezione **Formattazione**.
+
 17. Nel menu a discesa **Formato** selezionare **Numero intero**.
     
     ![](../Images/lab-06/image086.jpg)
@@ -218,29 +266,45 @@ Aggiungiamo le relazioni rimanenti.
    ![](../Images/lab-06/image089.jpg)
   	
 2.	Creiamo ora una relazione tra Product e Supplier. Selezionare **SupplierID** dalla tabella **Product** e trascinarlo su **SupplierID** nella tabella Supplier.
+
 3.	Si apre la finestra di dialogo Nuova relazione. Assicurarsi che la Tabella 1 sia Product e che la **Colonna** sia **SupplierID**.
+
 4.	Assicurarsi che la **Tabella 2** sia **Supplier** e che la **Colonna** sia **SupplierID**.
+
 5.	Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno** (*:1).
+
 6.	Assicurarsi che il campo **Direzione filtro incrociat**o sia impostato su **Entrambi**.
-7.	Selezionare O**K**.
+
+7.	Selezionare **OK**.
 
    ![](../Images/lab-06/image092.png)
  
 9.	Allo stesso modo, creare una relazione **molti-a-uno** con **Direzione filtro incrociato** impostato su **Entrambi** tra **Product_Details** e **Product**. Selezionare **StockItemID** da **Product_Details** e **StockItemID** da **Product**.
+
 10. Creiamo ora una relazione tra Reseller e Geo. Selezionare **PostalCityID** dalla tabella **Reseller** e trascinarlo su **CityID** nella tabella Geo.
+
 11. Si apre la finestra di dialogo Nuova relazione. Assicurarsi che la **Tabella 1** sia **Reseller** e che la **Colonna** sia **PostalCityID**.
+
 12. Assicurarsi che la **Tabella 2** sia Geo e che la **Colonna** sia **CityID**.
+
 13. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (*:1)**.
+
 14. Assicurarsi che il campo **Direzione filtro incrociato** sia impostato su **Entrambi**.
+
 15. Selezionare **OK.**
 
     ![](../Images/lab-06/image095.png)
    	
 16. Creiamo ora una relazione tra Customer e Reseller. Selezionare **ResellerID** dalla tabella Customer e trascinarlo su ResellerID nella tabella Reseller.
+
 17. Si apre la finestra di dialogo Nuova relazione. Assicurarsi che la **Tabella 1** sia **Customer** e che la Colonna sia **ResellerID**.
+
 18. Assicurarsi che la **Tabella 2** sia **Reseller** e che la **Colonna** sia **ResellerID**.
+
 19. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (*:1)**.
+
 20. Assicurarsi che il campo **Direzione filtro incrociato** sia impostato su **Singola**.
+
 21. Selezionare **OK**.
 
     ![](../Images/lab-06/image098.png)
@@ -250,15 +314,21 @@ Aggiungiamo le relazioni rimanenti.
    ![](../Images/lab-06/image101.jpg)
      
 22. Creiamo ora una relazione tra PO e Date. Selezionare **Order_Date** dalla tabella PO e trascinarlo su Date nella tabella Date.
+
 23. Si apre la finestra di dialogo Nuova relazione. Assicurarsi che la **Tabella 1** sia PO e che la Colonna sia Order_Date.
+
 24. Assicurarsi che la **Tabella** 2 sia Date e che la **Colonna** sia **Date**.
+
 25. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (*:1)**.
+
 26. Assicurarsi che il campo **Direzione filtro incrociato** sia impostato su **Singola**.
+
 27. Selezionare **OK**.
 
     ![](../Images/lab-06/image104.png)
    	
 28. Allo stesso modo, creare una relazione **molti-a-uno** tra le tabelle **PO** e **Product**. Selezionare **StockItemID** da **PO** e StockItemID da Product.
+
 29. Allo stesso modo, creare una relazione **molti-a-uno** tra le tabelle **PO** e **People**. Selezionare ContactPersonID da PO e PersonID da People.
 
    	Abbiamo creato tutte le relazioni.
@@ -270,16 +340,20 @@ Aggiungiamo le relazioni rimanenti.
 ## Attività 8 - Sezione facoltativa: creazione delle misure
 Aggiungiamo le misure rimanenti.
 1.	Selezionare la tabella **Sales** e nel menu in alto selezionare **Strumenti tabella -> Nuova misura**.
+
 2.	Immettere **Avg Order = DIVIDE([Sales], [Orders])** nella barra della formula.
+
 3.	Fare clic sul **segno di spunta** nella barra della formula o premere il tasto INVIO.
+
 4.	Dopo aver salvato la misura, notare che l'opzione Strumenti misura visualizzata nel menu in alto. Fare clic su **Strumenti misura**.
+
 5.	Nell'elenco a discesa Formato fare clic su **Numero decimale**.
 
    ![](../Images/lab-06/image110.jpg)
   	
-7.	Seguire passaggi analoghi per aggiungere le seguenti misure:
-a.	**GM = SUM(Sales[Line_Profit])** formattato come **numero decimale**.
-b.	**GM% = DIVIDE([GM], [Sales])** formattato come **percentuale**.
+7.	Seguire passaggi analoghi per aggiungere le seguenti misure:<BR>  
+a.	**GM = SUM(Sales[Line_Profit])** formattato come **numero decimale**.<br>
+b.	**GM% = DIVIDE([GM], [Sales])** formattato come **percentuale**.<BR>
 c.	**No of Customers = COUNTROWS(Customer)** formattata come **numero intero**
  
 ## Riferimenti
@@ -320,6 +394,7 @@ AMBIENTE SIMULATO, CON UN'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSIT
 QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ COMPLETE E
 IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI FUNZIONALITÀ O CONCETTI NON VENGA
 RILASCIATA. L'ESPERIENZA D'USO DI TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ INOLTRE RISULTARE DIVERSA IN UN AMBIENTE FISICO.
+
 **FEEDBACK**. L'invio a Microsoft di feedback sulle caratteristiche, sulle funzionalità e/o sui concetti della tecnologia descritti in questa demo/questo lab implica la concessione a Microsoft, a titolo gratuito, del diritto di utilizzare, condividere e commercializzare tale feedback in qualsiasi modo e per qualsiasi scopo. Implica anche la concessione a titolo gratuito a terze parti del diritto di utilizzo di eventuali brevetti necessari per i loro prodotti, le loro tecnologie e i loro servizi al fine di utilizzare o interfacciarsi ai componenti software o ai servizi Microsoft specifici che includono il feedback. L'utente si impegna a non inviare feedback la cui inclusione all'interno di software o documentazione Microsoft imponga a Microsoft di concedere in licenza a terze parti tale software o documentazione. Questi diritti sussisteranno anche dopo la scadenza del presente contratto.
  
 CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA O CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O PRESCRITTE DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO, TITOLARITÀ E NON VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE O RAPPRESENTAZIONI IN RELAZIONE ALL'ACCURATEZZA DEI RISULTATI E DELL'OUTPUT DERIVANTI DALL'USO DELLA DEMO/DEL LAB O ALL'ADEGUATEZZA DELLE INFORMAZIONI CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.
