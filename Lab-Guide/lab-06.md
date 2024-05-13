@@ -15,7 +15,7 @@ Lakehouse
 2.	Saranno visibili tre tipi di lh_FAIAD, Lakehouse, modello semantico ed endpoint SQL. Abbiamo
 esplorato l'opzione Lakehouse in un lab precedente. Selezionare l'opzione l**h_FAIAD - Endpoint di analisi SQL** per esplorare l'opzione SQL. Si aprirà la **vista SQL** di Explorer.
 
-    ![](../Images/lab-06/image005.jpg)
+   ![](../Images/lab-06/image005.jpg)
    
 Se si desidera esplorare i dati prima di creare un modello di dati, è possibile usare SQL a questo fine. Osserviamo le due opzioni per l'uso di SQL, la prima è pensata per gli sviluppatori mentre la seconda è destinata agli analisti.
 Supponiamo che si voglia conoscere rapidamente le unità vendute dal fornitore mediante SQL.
@@ -25,7 +25,7 @@ visualizzare le colonne che compongono la tabella. Vi sono inoltre opzioni per l
  
 3.	Nel **menu in alto** selezionare **Nuova query SQL** oppure nella **parte inferiore del pannello di sinistra** selezionare **Query**. Si aprirà la vista della query SQL.
 
-    ![](../Images/lab-06/image008.jpg)
+   ![](../Images/lab-06/image008.jpg)
    
 4.	Incollare la **query SQL seguente** nella **finestra della query**. Questa query restituirà le unità in base al nome del fornitore. Per ottenere questo risultato è necessario unire la tabella Sales alle tabelle Product e Supplier.
 
@@ -48,15 +48,15 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.S
 3.	Selezionare i campi **Supplier_Name** e **Units**. Si crea un grafico a barre raggruppate.
 4.	Nella sezione **Visualizzazioni** cambiare il tipo di oggetto visivo selezionando l'**istogramma in pila**.
 
-    ![](../Images/lab-06/image017.png)
+      ![](../Images/lab-06/image017.png)
  
 5.	E**spandere la matrice** per visualizzare i dati come una matrice.
 
-    ![](../Images/lab-06/image020.png)
+      ![](../Images/lab-06/image020.png)
   	
 6.	Selezionare **Salva - > Salva come report** in alto a destra della schermata.
 
-   ![](../Images/lab-06/image023.jpg)
+      ![](../Images/lab-06/image023.jpg)
   	
 7. Si apre la finestra di dialogo Salva report. Digitare **Unità per fornitore** nella casella di testo Immettere un nome per il report.
 
@@ -70,7 +70,7 @@ Si verrà indirizzati all'esperienza di report completa. Si dispone di opzioni p
 
 10. Nel pannello a sinistra selezionare **lh_FAIAD**.
 
-    ![](../Images/lab-06/image029.jpg)
+      ![](../Images/lab-06/image029.jpg)
 
 ## Attività 3 - Creazione di una query visiva
 Si aprirà nuovamente la vista **Endpoint di analisi SQL**. Se non si ha familiarità con SQL, è possibile eseguire una query simile usando la query visiva.
@@ -81,11 +81,11 @@ Si aprirà nuovamente la vista **Endpoint di analisi SQL**. Se non si ha familia
 
 3.	Trascinare le tabelle **Sales, Product e Supplier** nel riquadro delle query visive.
     
-    ![](../Images/lab-06/image032.png)
+   ![](../Images/lab-06/image032.png)
 
 4.	Con la tabella **Sales** selezionata, nel menu del riquadro delle query visive selezionare **Combina -> Esegui merge di query**.
 
-    ![](../Images/lab-06/image035.png)
+   ![](../Images/lab-06/image035.png)
   	
 5.	Si apre la finestra di dialogo Merge. Nel menu a discesa **Tabella destra per l'unione** selezionare **Product**.
 
@@ -95,7 +95,7 @@ Si aprirà nuovamente la vista **Endpoint di analisi SQL**. Se non si ha familia
  
 8.	Selezionare **OK**.
 
-    ![](../Images/lab-06/image038.png)
+      ![](../Images/lab-06/image038.png)
   	
 9.	Nel **riquadro dei risultati** fare clic sulla **freccia doppia** accanto alla colonna **Product**.
 
@@ -103,13 +103,13 @@ Si aprirà nuovamente la vista **Endpoint di analisi SQL**. Se non si ha familia
 
 11. Selezionare **OK**. Notare che i passaggi **Merge di query** e **Product espansa** vengono creati nella tabella **Sales**.
 
-    ![](../Images/lab-06/image041.jpg)
+      ![](../Images/lab-06/image041.jpg)
    	
 12. Uniamo allo stesso modo la tabella Supplier. Nella tabella **Sales** selezionare “+” (dopo Product espansa) per aggiungere un nuovo passaggio. Si apre la finestra di dialogo.
 
 13. Selezionare **Combina -> Esegui merge di query**.
 
-    ![](../Images/lab-06/image044.jpg)
+      ![](../Images/lab-06/image044.jpg)
    	
 14. Si apre la finestra di dialogo Merge. Nel menu a discesa **Tabella destra per l'unione** selezionare **Supplier**.
 
@@ -119,7 +119,7 @@ Si aprirà nuovamente la vista **Endpoint di analisi SQL**. Se non si ha familia
 
 17. Selezionare **OK**.
 
-    ![](../Images/lab-06/image047.jpg)
+      ![](../Images/lab-06/image047.jpg)
    	
 18. Nel **riquadro dei risultati** fare clic sulla **freccia doppia** accanto alla colonna **Supplier**.
 
@@ -127,13 +127,13 @@ Si aprirà nuovamente la vista **Endpoint di analisi SQL**. Se non si ha familia
 
 20. Selezionare **OK**. Nella tabella Sales si aggiunge **Merge di query** e **si registrano i passaggi**.
 
-    ![](../Images/lab-06/image050.jpg)
+      ![](../Images/lab-06/image050.jpg)
    	
 21. Raggruppiamo ora per nome del fornitore per ottenere la quantità per fornitore. Nella tabella **Sales** selezionare "+" (dopo Supplier espansa) per aggiungere un nuovo passaggio. Si apre la finestra di dialogo.
 
 22. Selezionare **Trasforma tabella** **-> Raggruppa per**. Si apre la finestra di dialogo Raggruppa per.
  
-    ![](../Images/lab-06/image053.jpg)
+      ![](../Images/lab-06/image053.jpg)
 
 23. Nell'elenco a discesa **Raggruppa per** selezionare **Supplier_Name**.
 
@@ -145,14 +145,14 @@ Si aprirà nuovamente la vista **Endpoint di analisi SQL**. Se non si ha familia
 
 27. Selezionare **OK**.
 
-    ![](../Images/lab-06/image056.png)
+      ![](../Images/lab-06/image056.png)
    	
 Tutti i passaggi vengono registrati nel blocco Sales. (Fare riferimento al primo screenshot nell'Attività 4.)
  
 ## Attività 4 - Visualizzazione dei risultati della query
 1.	Ora che la query è pronta, visualizziamone il risultato. Selezionare **Visualizzare i risultati** dal riquadro dei risultati.
 
-    ![](../Images/lab-06/image059.jpg)
+      ![](../Images/lab-06/image059.jpg)
     
 2.	Si apre la finestra di dialogo Visualizza risultati. Nel riquadro **Dati** a destra **espandere Visual query1**.
 
@@ -161,7 +161,7 @@ Tutti i passaggi vengono registrati nel blocco Sales. (Fare riferimento al primo
 4.	Notare che il risultato è simile a quello della query SQL precedente. Se lo si desidera, è possibile salvare questo report. Poiché abbiamo salvato in precedenza un report simile, ora 
    selezioniamo **Annulla**.
 
-    ![](../Images/lab-06/image062.jpg)
+      ![](../Images/lab-06/image062.jpg)
  
 ## Attività 5 - Creazione di relazioni
 Ora siamo pronti per creare il modello, le relazioni tra tabelle e le misure.
@@ -172,7 +172,7 @@ Ora siamo pronti per creare il modello, le relazioni tra tabelle e le misure.
 
 3.	Creiamo una relazione tra le tabelle Sales e Reseller. Selezionare **ResellerID** dalla tabella **Sales** e trascinarlo su **ResellerID** nella tabella **Reseller**.
 
-    ![](../Images/lab-06/image065.jpg)
+      ![](../Images/lab-06/image065.jpg)
   	
 4.	Si apre la finestra di dialogo Nuova relazione. Assicurarsi che la **Tabella** 1 sia **Sales** e che la
    **Colonna** sia **ResellerID**.
@@ -185,7 +185,7 @@ Ora siamo pronti per creare il modello, le relazioni tra tabelle e le misure.
 
 8.	Selezionare **OK**.
 
-    ![](../Images/lab-06/image068.png)
+      ![](../Images/lab-06/image068.png)
   	
 9. Allo stesso modo, creiamo una relazione tra le tabelle Sales e **Date**. Selezionare **InvoiceDate** dalla tabella **Sales** e trascinarlo su **Date** nella tabella **Date**.
 
@@ -199,13 +199,13 @@ Ora siamo pronti per creare il modello, le relazioni tra tabelle e le misure.
 
 14. Selezionare **OK**.
     
-     ![](../Images/lab-06/image071.png)
+      ![](../Images/lab-06/image071.png)
    	
 15. Analogamente, creare una relazione **molti-a-uno** tra le tabelle **Sales e Product**. Selezionare **StockItemID** dalla tabella Sales e StockItemID dalla tabella **Product**.    
 
 16. Nel menu in alto selezionare **Reporting -> Aggiorna automaticamente il modello semantico** per salvare e aggiornare il modello.
 
-    ![](../Images/lab-06/image074.jpg)
+      ![](../Images/lab-06/image074.jpg)
    	
 **Checkpoint**: il modello dovrebbe avere le tre relazioni tra le tabelle Sales e Reseller e le tabelle Sales e Date e Sales e Product come mostrato nello screenshot seguente:
  
@@ -228,7 +228,7 @@ Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
 
 6.	Nell'elenco a discesa **Formato** selezionare **Numero intero**.
 
-    ![](../Images/lab-06/image080.jpg)
+      ![](../Images/lab-06/image080.jpg)
    
 7.	Con la tabella Sales selezionata nel menu in alto, selezionare Home -> Nuova misura. Notare che viene visualizzata la barra della formula.
 
@@ -239,7 +239,7 @@ Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
 
 11. Nel menu a discesa Formato selezionare Numero intero.
 
-    ![](../Images/lab-06/image083.jpg)
+      ![](../Images/lab-06/image083.jpg)
    	
 13. Con la tabella **Sales** selezionata nel menu in alto, selezionare **Home -> Nuova misura**. Notare che viene visualizzata la barra della formula.
 
@@ -251,7 +251,7 @@ Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
 
 17. Nel menu a discesa **Formato** selezionare **Numero intero**.
     
-    ![](../Images/lab-06/image086.jpg)
+      ![](../Images/lab-06/image086.jpg)
    	
 Anche in questo caso, per motivi di tempo non creeremo tutte le misure. Se il tempo lo consente, è possibile completare la sezione facoltativa alla fine del laboratorio. La sezione facoltativa illustra i passaggi per creare le misure rimanenti.
 Abbiamo creato un modello di dati, il passaggio successivo è creare un report. Ce ne occuperemo nel prossimo lab.
@@ -295,7 +295,7 @@ Aggiungiamo le relazioni rimanenti.
 
 15. Selezionare **OK.**
 
-    ![](../Images/lab-06/image095.png)
+      ![](../Images/lab-06/image095.png)
    	
 16. Creiamo ora una relazione tra Customer e Reseller. Selezionare **ResellerID** dalla tabella Customer e trascinarlo su ResellerID nella tabella Reseller.
 
@@ -309,7 +309,7 @@ Aggiungiamo le relazioni rimanenti.
 
 21. Selezionare **OK**.
 
-    ![](../Images/lab-06/image098.png)
+      ![](../Images/lab-06/image098.png)
    
 **Checkpoint**: il modello dovrebbe presentarsi come illustrato nello screenshot seguente.
 
@@ -327,7 +327,7 @@ Aggiungiamo le relazioni rimanenti.
 
 27. Selezionare **OK**.
 
-    ![](../Images/lab-06/image104.png)
+      ![](../Images/lab-06/image104.png)
    	
 28. Allo stesso modo, creare una relazione **molti-a-uno** tra le tabelle **PO** e **Product**. Selezionare **StockItemID** da **PO** e StockItemID da Product.
 
@@ -351,7 +351,7 @@ Aggiungiamo le misure rimanenti.
 
 5.	Nell'elenco a discesa Formato fare clic su **Numero decimale**.
 
-    ![](../Images/lab-06/image110.jpg)
+      ![](../Images/lab-06/image110.jpg)
   	
 7.	Seguire passaggi analoghi per aggiungere le seguenti misure:<BR>  
 a.	**GM = SUM(Sales[Line_Profit])** formattato come **numero decimale**.<br>
