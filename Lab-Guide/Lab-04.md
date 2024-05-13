@@ -1,3 +1,5 @@
+![](../Images/Lab-04/lab4.png)
+
 # Microsoft Fabric
 ## Fabric Analyst in a Day
 ## 랩 4

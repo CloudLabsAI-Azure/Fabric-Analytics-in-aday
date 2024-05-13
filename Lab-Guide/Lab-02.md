@@ -1,3 +1,5 @@
+![](../Images/Lab-02/lab2.png)
+
 # Microsoft Fabric
 ## Fabric Analyst in a Day
 랩 2

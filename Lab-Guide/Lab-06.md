@@ -1,6 +1,6 @@
-# Microsoft Fabric
-## Fabric Analyst in a Day
-## 랩 6
+![](../Images/Lab-06/lab6.png)
+
+
 2024년 3월 버전
 
 ## 목차
