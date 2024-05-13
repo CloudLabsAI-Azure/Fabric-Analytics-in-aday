@@ -175,7 +175,7 @@ GenX、GenY 和GenZ。追加这四个查询以创建 Customer 查询。
 
 8.	请注意，**ADLSData** 文件夹具有多个维度：Geo、Product、Reseller 和Date 还具有Sales 事实。<br>
 
-    a.**Geo 维度**是通过合并 Cities、Countries 和 States 查询的数据而创建的。
+a.**Geo 维度**是通过合并 Cities、Countries 和 States 查询的数据而创建的。
 
     b.**Product 维度**是通过合并 Product Groups 和Product Item Group 查询中的数据而创建的。
 
