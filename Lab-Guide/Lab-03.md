@@ -1,9 +1,5 @@
 ![](../Images/Lab-03/lab3.png)
 
-# Microsoft Fabric
-## Fabric Analyst in a Day
-## 랩 3
-2024년 3월 버전
 
 ## 목차
 서문	3

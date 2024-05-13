@@ -1,9 +1,6 @@
 ![](../Images/Lab-02/lab2.png)
 
-# Microsoft Fabric
-## Fabric Analyst in a Day
-랩 2
-버전: 2024년 3월
+
 
 ### 목차
 소개	3 <br>
