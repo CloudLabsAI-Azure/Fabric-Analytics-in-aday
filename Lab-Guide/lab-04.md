@@ -18,7 +18,7 @@ Nel nostro scenario, i dati sui fornitori si trovano in Snowflake, i dati sui cl
 
 2.	Nel menu in alto selezionare **Nuovo -> Flusso di dati Gen2**.
 
-   ![](../Images/lab-04/image006.png)
+      ![](../Images/lab-04/image006.png)
    
 Si apre la pagina **Flusso di dati**. Ora che abbiamo familiarità con Flusso di dati, procediamo con la copia delle query da Power BI Desktop a Flusso di dati.
 
@@ -36,21 +36,21 @@ d.	PO<br>
 e.	PO Line Items<br>
 6.	Fare clic con il pulsante destro del mouse e selezionare Copia.<br>
 
-   ![](../Images/lab-04/image009.png)
+      ![](../Images/lab-04/image009.png)
    
 7.	Tornare al **browser**.
 
 8.	Nel **riquadro Flusso di dati** selezionare il **riquadro centrale** e premere **CTRL+V** (l'opzione Incolla del menu del pulsante destro non è attualmente supportata). Se si usa un dispositivo MAC, usare Cmd+V per incollare.
 Nota: se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per **abilitare Appunti nativi VM**. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
 
-   ![](../Images/lab-04/image012.jpg)
+      ![](../Images/lab-04/image012.jpg)
  
 ### Attività 2 - Creazione della connessione a Snowflake
 Notare che le cinque query vengono incollate e sulla sinistra è visualizzato il pannello Query. Poiché non abbiamo creato una connessione a Snowflake, compare un messaggio di avviso che chiede di configurare la connessione.
 
 1.	Selezionare **Configura connessione**.
    
-   ![](../Images/lab-04/image015.jpg)
+      ![](../Images/lab-04/image015.jpg)
   	
 2.	Si apre la finestra di dialogo Connetti a origine dati. Assicurarsi che nel menu a discesa **Connessione** sia selezionato **Crea nuova connessione**.
 
@@ -60,28 +60,29 @@ Notare che le cinque query vengono incollate e sulla sinistra è visualizzato il
 
 5.	Selezionare **Connetti**.
    
-   ![](../Images/lab-04/image018.png)
+      ![](../Images/lab-04/image018.png)
 
 Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello di anteprima. Esplorare i Passaggi applicati delle query. In genere, la query Suppliers contiene i dettagli sui fornitori e SupplierCategories contiene le categorie di fornitori. Queste due tabelle vengono unite per creare la dimensione Supplier, con le colonne necessarie. Analogamente, PO Line Items viene unita con PO per creare il fatto PO. Ora dobbiamo inserire i dati di Supplier e PO in Lakehouse.
 
 6.	Come indicato in precedenza, non effettuiamo lo staging di questi dati. Quindi **fare clic con ilpulsante destro del mouse** sulla query **Supplier** nel riquadro Query e selezionare **Abilita staging** per rimuovere il segno di spunta.
  
-   ![](../Images/lab-04/image021.png)
+      ![](../Images/lab-04/image021.png)
 
 7.	Allo stesso modo, fare clic con il pulsante destro del mouse sulla query PO. Selezionare Abilita staging per rimuovere il segno di spunta.
 **Nota**: non è necessario disabilitare lo staging per le altre tre query poiché l'opzione Abilita caricamento era disattivata in Power BI Desktop (da cui sono state copiate le query).
 
 ### Attività 3 - Configurazione della destinazione dei dati per le query Supplier e PO
 1.	Seleziona la query **Supplier**.
+
 2.	Nella barra multifunzione selezionare **Home -> Aggiungi destinazione dati -> Lakehouse**.
 
-   ![](../Images/lab-04/image024.jpg)
+      ![](../Images/lab-04/image024.jpg)
    
 3.	Si apre la finestra di dialogo Connetti alla destinazione dati. Nel menu a discesa Connessione selezionare **Lakehouse (nessuno)**. 
 
 4.	Selezionare **Avanti**.
 
-   ![](../Images/lab-04/image027.png)
+      ![](../Images/lab-04/image027.png)
    
 5.	Si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione **Nuova tabella** sia selezionato, poiché si sta creando una nuova tabella.
 
@@ -105,21 +106,23 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
  
 ### Attività 4 - Ridenominazione e pubblicazione del flusso di dati Snowflake
 1.	Nella parte superiore dello schermo selezionare la **freccia accanto a Flusso di dati 2** per rinominarlo.
+
 2.	Nella finestra di dialogo cambiarne il nome in **df_Supplier_Snowflake**
+
 3.	Premere **INVIO** per salvare la modifica del nome.
 
-   ![](../Images/lab-04/image036.jpg)
+    ![](../Images/lab-04/image036.jpg)
 
 4.	Nell'angolo inferiore destro selezionare **Pubblica**.
 
-   ![](../Images/lab-04/image039.png)
+      ![](../Images/lab-04/image039.png)
   	
 Si tornerà all'area di lavoro **FAIAD_<nome utente>**. La pubblicazione del flusso di dati potrebbe richiedere alcuni istanti. Ora creeremo un flusso di dati per importare dati da Dataverse.
  
 ### Attività 5 - Copia di query Dataverse nel flusso di dati
 1.	Nel menu in alto selezionare **Nuovo -> Flusso di dati Gen2**.
 
-   ![](../Images/lab-04/image042.jpg)
+      ![](../Images/lab-04/image042.jpg)
    
 Si apre la pagina **Flusso di dati**. Ora che abbiamo familiarità con Flusso di dati, procediamo con la copia delle query da Power BI Desktop a Flusso di dati.
 
@@ -135,7 +138,7 @@ Come si è notato nel lab precedente, le query nel pannello di sinistra sono org
  
 5.	**Fare clic con il pulsante destro del mouse** e selezionare **Copia**.
 
-   ![](../Images/lab-04/image047.png)
+      ![](../Images/lab-04/image047.png)
    
 6.	Tornare alla pagina **Flusso di dati** nel browser.
 
@@ -149,7 +152,7 @@ Notare che le cinque query vengono incollate e sulla sinistra è visualizzato il
 
 1.	Selezionare **Configura connessione**.
 
-   ![](../Images/lab-04/image050.jpg)
+      ![](../Images/lab-04/image050.jpg)
    
 2.	Si apre la finestra di dialogo Connetti a origine dati. Assicurarsi che nel **menu a discesa Connessione** sia **selezionato Crea nuova connessione**.
 
@@ -157,7 +160,7 @@ Notare che le cinque query vengono incollate e sulla sinistra è visualizzato il
 
 4.	Selezionare **Connetti**.
  
-   ![](../Images/lab-04/image053.jpg)
+      ![](../Images/lab-04/image053.png)
 
 
 ### Attività 7 - Creazione della destinazione dati per la query Customer
@@ -165,19 +168,19 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 
 1.	Come indicato in precedenza, non effettuiamo lo staging di questi dati. Quindi **fare clic con il pulsante destro del mouse** sulla query Customer nel riquadro Query e selezionare **Abilita staging** per rimuovere il segno di spunta.
 
-   ![](../Images/lab-04/image056.png)
+      ![](../Images/lab-04/image056.png)
    
 2.	Selezionare la query **Customer**.
  
 3.	Nella barra multifunzione selezionare **Home -> Aggiungi destinazione dati -> Lakehouse**.
 
-   ![](../Images/lab-04/image059.jpg)
+      ![](../Images/lab-04/image059.jpg)
    
 4.	Si apre la finestra di dialogo Connetti alla destinazione dati. Nel menu a discesa Connessione selezionare **Lakehouse (nessuno)**.
 
 5.	Selezionare **Avanti**.
 
-   ![](../Images/lab-04/image062.png)
+      ![](../Images/lab-04/image062.png)
 
 6.	Si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione Nuova tabella sia selezionato, poiché si sta creando una nuova tabella.
 
@@ -189,24 +192,24 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 
 10. Selezionare **Avanti**.
 
-   ![](../Images/lab-04/image065.png)
+      ![](../Images/lab-04/image065.png)
     
 11. Si apre la finestra di dialogo Scegli le impostazioni di destinazione. Questa volta useremo le impostazioni automatiche perché i dati verranno aggiornati completamente. Inoltre, le colonne verranno rinominate secondo necessità. Selezionare **Salva impostazioni.**
 
-   ![](../Images/lab-04/image068.png)
+      ![](../Images/lab-04/image068.jpg)
  
 ### Attività 8 - Pubblicazione e ridenominazione del flusso di dati Dataverse
 1.	Si apre nuovamente la **finestra di Power Query**. Nell'**angolo in basso a destra** notare che la**Destinazione dati** è impostata su **Lakehouse**.
 
 2.	Nell'angolo inferiore destro selezionare **Pubblica**.
 
-   ![](../Images/lab-04/image071.jpg)
+      ![](../Images/lab-04/image071.jpg)
    
 >**Nota**: si tornerà all'**area di lavoro FAIAD_<nome utente>.** La pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
 
 3.	Stiamo lavorando in Flusso di dati 2. Rinominiamolo prima di continuare. Fare clic sui puntini di **sospensione (…)** accanto a Flusso di dati 2. Selezionare **Proprietà**.
 
-   ![](../Images/lab-04/image071.jpg)
+      ![](../Images/lab-04/image071.jpg)
    
 4.	Si apre la finestra di dialogo Proprietà flusso di dati. Cambiarne il **Nome** in **df_Customer_Dataverse**.
 
@@ -214,14 +217,14 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 
 6.	Selezionare **Salva**.
 
-   ![](../Images/lab-04/image074.jpg)
+      ![](../Images/lab-04/image074.jpg)
 
 Si tornerà all'area di lavoro **FAIAD_<nome utente>**. Ora creiamo un flusso di dati per importare i dati da SharePoint.
 
 ### Attività 9 - Copia di query SharePoint nel flusso di dati
 1.	Nel menu in alto selezionare **Nuovo -> Flusso di dati Gen2**.
 
-   ![](../Images/lab-04/image077.png)
+      ![](../Images/lab-04/image077.png)
    
 Si apre la pagina **Flusso di dati**. Ora che abbiamo familiarità con Flusso di dati, procediamo con la copia delle query da Power BI Desktop a Flusso di dati.
 
@@ -233,7 +236,7 @@ Si apre la pagina **Flusso di dati**. Ora che abbiamo familiarità con Flusso di
 
 5.	**Fare clic con il pulsante destro del mouse** e selezionare **Copia**.
 
-   ![](../Images/lab-04/image081.png)
+      ![](../Images/lab-04/image081.png)
    
 6.	Tornare alla schermata **Flusso di dati** nel browser.
 
@@ -254,26 +257,26 @@ creato una connessione a SharePoint, compare un messaggio di avviso che chiede d
 
 5.	Selezionare **Connetti**.
 
-   ![](../Images/lab-04/image087.png)
+      ![](../Images/lab-04/image087.png)
  
 ### Attività 11 - Configurazione della destinazione dei dati per la query People
 Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello di anteprima. Esplorare i Passaggi applicati delle query. Ora dobbiamo inserire i dati di People in Lakehouse.
 1.	Come indicato in precedenza, non effettuiamo lo staging di questi dati. Quindi **fare clic con il pulsante destro del mouse** sulla query **People** nel riquadro Query e selezionare 
   **Abilita staging** per rimuovere il segno di spunta.
 
-   ![](../Images/lab-04/image090.png)
+      ![](../Images/lab-04/image090.png)
   	
 2.	Selezionare la query **People**.
    
 3.	Nella barra multifunzione selezionare **Home -> Aggiungi destinazione dati -> Lakehouse**.
 
-  	![](../Images/lab-04/image093.jpg)
+  	   ![](../Images/lab-04/image093.jpg)
   	
 4.	Si apre la finestra di dialogo Connetti alla destinazione dati. Nel menu a discesa Connessioneselezionare **Lakehouse (nessuno)**.
  
 5.	Selezionare **Avanti**.
    
-   ![](../Images/lab-04/image093.jpg)
+      ![](../Images/lab-04/image093.jpg)
   	
 6.	Si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione **Nuova tabella** sia selezionato, poiché si sta creando una nuova tabella.
 7. Vogliamo creare la tabella nel Lakehouse creato in precedenza. Nel pannello di sinistra andare a**Lakehouse -> FAIAD_<nomeutente>**.
@@ -294,19 +297,19 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 1.	Si apre nuovamente la **finestra di Power Query**. Nell'a**ngolo in basso a destra** notare che la Destinazione dati è impostata su **Lakehouse**.
 2.	Nell'angolo inferiore destro selezionare **Pubblica**.
 
-   ![](../Images/lab-04/image102.png)
+      ![](../Images/lab-04/image102.png)
 
 >**Nota**: si tornerà all'**area di lavoro FAIAD_<nome utente>**. La pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
  
 3.	Stiamo lavorando in Flusso di dati 2. Rinominiamolo prima di continuare. Fare clic sui puntini di **sospensione (…)** accanto a Flusso di dati 2. Selezionare **Proprietà**.
 
-   ![](../Images/lab-04/image105.jpg)
+      ![](../Images/lab-04/image105.jpg)
    
 4.	Si apre la finestra di dialogo Proprietà flusso di dati. Cambiarne il **Nome** in **df_People_SharePoint**
 5.	Nella casella di testo **Descrizione** aggiungere **Flusso di dati per inserire i dati del personale da SharePoint in Lakehouse**.
 6.	Selezionare **Salva**.
 
-   ![](../Images/lab-04/image108.jpg)
+      ![](../Images/lab-04/image108.jpg)
    
 Si tornerà all'**area di lavoro FAIAD_<nome utente>**. Ora abbiamo inserito tutti i dati in Lakehouse. Nel prossimo lab pianificheremo l'aggiornamento del flusso di dati.
  
