@@ -224,7 +224,7 @@ Ora dobbiamo unire queste query per creare la dimensione Geo. Copiamo nuovamente
 4.	Si apre la finestra dell'Editor avanzato. **Evidenziare tutto il testo** nell'Editor avanzato.
 5.	**Fare clic con il pulsante destro del mouse** e selezionare **Copia**.
 
-   ![](../Images/lab-03/image102.jpg)
+   ![](../Images/lab-03/image102.png)
 
 6.	Selezionare la **X** nell'angolo in alto a destra della finestra o selezionare **Fatto** per chiudere la finestra dell'Editor avanzato.
 7.	Tornare alla finestra **Flusso di dati** nel browser.
@@ -304,7 +304,7 @@ Notare che compare l'avviso: "Alcuni nomi di colonna contengono caratteri non su
 
 3.	Si tornerà all'area di lavoro **FAIAD_<nome utente>**. La pubblicazione del flusso di dati potrebbe richiedere alcuni istanti. Al termine, selezionare **lh_FAIAD Lakehouse** dal riquadro centrale o dal pannello di sinistra.
  
-   ![](../Images/lab-03/image135.ipg)
+    ![](../Images/lab-03/image135.ipg)
 
 4.	Si aprirà la **schermata Explorer di Lakehouse**. Nel pannello di sinistra espandere **lh_FAIAD -> Tables**.
 5.	Notare che ora abbiamo una tabella Geo in Lakehouse. Espandere **Geo** e osservare tutte le colonne visualizzate.
