@@ -191,20 +191,20 @@ Precisamos mostrar State em seguida, mas as etapas estão ficando repetitivas. J
 do seu ambiente de laboratório.
 2.	Na faixa de opções, selecione **Página Inicial -> Transformar dados.** A janela do Power Query é aberta. Como você observou no laboratório anterior, as consultas no painel esquerdo são organizadas por fonte de dados.
 
-    ![](../Images/lab-03/image24.png)
+![](../Images/lab-03/image24.png)
 
 3. No painel esquerdo, na pasta ADLSData, **clique com o botão direito na consulta States** e selecione **Copiar.**
 
-   ![](../Images/lab-03/image25.png)
+![](../Images/lab-03/image25.png)
 
 4. Volte para para o **navegador.** Você deve estar no Fluxo de Dados em que estávamos trabalhando.
 5. No painel esquerdo, selecione o painel **Consultas** e pressione **Ctrl+V** (no momento, não é possível clicar com o botão direito do mouse em Colar). Se você estiver usando o dispositivo MAC, use Cmd+V para colar.
 
 **Observação:** se você estiver trabalhando no ambiente de laboratório, selecione as reticências no canto superior direito da tela. Use o controle deslizante para **habilitar VM Native Clipboard.** Selecione OK na caixa de diálogo. Depois que terminar de colar a consulta, você poderá desabilitar essa opção.
 
-   ![](../Images/lab-03/image56.png)
+![](../Images/lab-03/image56.png)
 
-   ![](../Images/lab-03/image26.png)
+![](../Images/lab-03/image26.png)
  
 Observe que a ADLS Base Folder também é copiada. Isso ocorre porque a consulta States se refere à ADLS Base Folder no Power BI Desktop, mas já temos uma consulta semelhante. Vamos resolver isso.
 
@@ -212,15 +212,15 @@ Observe que a ADLS Base Folder também é copiada. Isso ocorre porque a consulta
 7.	No **painel direito,** em **Etapas aplicadas,** selecione **Source.**
 8.	Na barra de fórmulas, altere de **#"ADLS Base Folder" para #”ADLS Base Folder for Geo”.**
 
-    ![](../Images/lab-03/image27.png)
+![](../Images/lab-03/image27.png)
 
 9.	Clique na **marca de verificação** ao lado da barra de fórmulas ou pressione **Enter.**
 
-    ![](../Images/lab-03/image28.png)
+![](../Images/lab-03/image28.png)
 
 10.	Agora podemos remover a ADLS Base Folder. No painel esquerdo, na seção **Consultas, clique com o botão direito do mouse na consulta ADLS Base Folder** e selecione **Excluir.**
 
-    ![](../Images/lab-03/image29.png)
+![](../Images/lab-03/image29.png)
 
 11.	A caixa de diálogo Excluir consulta é exibida. Selecione **Excluir** para confirmar.
 
@@ -244,14 +244,14 @@ Agora precisamos mesclar essas consultas para criar a dimensão Geo. Vamos copia
 7.	Volte para a janela Dataflow no navegador.
 8.	Na faixa de opções, selecione **Obter dados -> Consulta em branco.**
 
-    ![](../Images/lab-03/image32.png)
+![](../Images/lab-03/image32.png)
 
 9.	A caixa de diálogo Obter dados, Conectar-se à fonte de dados, Editor Avançado é aberta. **Realce todo o texto** no editor.
 10.	Selecione **Delete** no teclado para excluir todo o texto.
 11.	O Editor Avançado deve estar em branco. Agora, pressione **Ctrl+V** para colar o conteúdo que você copiou do Editor Avançado do Power BI Desktop.
 12.	Selecione **Próximo.**
 
-      ![](../Images/lab-03/image33.png)
+![](../Images/lab-03/image33.png)
  
 13.	Agora temos a dimensão Geo. Vamos renomear a consulta. No **painel direito,** em **Configurações de consulta -> Propriedades -> Nome, altere o nome** para **Geo.**
 
@@ -300,7 +300,7 @@ Observe que há um aviso "Alguns nomes de colunas contêm caracteres sem suporte
  
 14.	O mapeamento de colunas pode ser usado para mapear colunas de fluxo de dados para colunas existentes. No nosso caso, é uma Nova Tabela. Portanto, podemos usar os valores padrão. Selecione **Salvar configurações.**
 
-    ![](../Images/lab-03/image40.png)
+![](../Images/lab-03/image40.png)
 
 ### Tarefa 9: Publicar fluxo de dados
 1. Você será direcionado de volta à **janela Power Query.** No canto inferior direito, **Destino de dados está definido como Lakehouse.**
@@ -334,7 +334,7 @@ Veremos essa opção em um laboratório posterior. Agora que sabemos que os dado
 4.	Na caixa de texto **Descrição,** adicione **Dataflow to ingest Sales Data from ADLS to Lakehouse**
 5.	Selecione **Salvar.**
  
-    ![](../Images/lab-03/image45.png)
+![](../Images/lab-03/image45.png)
 
 ### Tarefa 11: Criar consultas restantes no Dataflow
 1. Você será direcionado de volta para o **workspace FAIAD_<nome de usuário>.** Selecione o Fluxo de Dados **df_Sales_ADLS** para voltar ao fluxo de dados.
@@ -388,12 +388,12 @@ Verifique se **todas as consultas são processadas.** Quando terminar, vamos ing
 1.	Selecione a consulta **Product.**
 2.	Na faixa de opções, selecione **Página Inicial -> Adicionar destino de dados -> Lakehouse.**
 
-    ![](../Images/lab-03/image50.png)
+![](../Images/lab-03/image50.png)
 
 3.	A caixa de diálogo Conectar ao destino de dados é aberta. Na lista suspensa **Conexão,** selecione **Lakehouse (nenhum).**
 4.	Selecione **Próximo.**
 
-    ![](../Images/lab-03/image51.png) 
+![](../Images/lab-03/image51.png) 
 
 5.	A caixa de diálogo Escolher alvo de destino é aberta. Verifique se o botão de opção **Nova tabela **está selecionado, pois estamos criando uma nova tabela.
 6.	Queremos criar a tabela no Lakehouse que criamos anteriormente. No painel esquerdo, navegue para **Lakehouse -> FAIAD_<nome de usuário>.**
@@ -401,11 +401,11 @@ Verifique se **todas as consultas são processadas.** Quando terminar, vamos ing
 8.	Deixe o nome da tabela como **Product.**
 9.	Selecione **Próximo.**
 
-    ![](../Images/lab-03/image52.png)
+![](../Images/lab-03/image52.png)
 
 10.	A caixa de diálogo Escolher configurações de destino é aberta. Desta vez, usaremos as configurações automáticas, pois assim será feita uma atualização completa dos dados. Além disso, as colunas serão renomeadas conforme necessário. Selecione **Salvar configurações.**
 
-    ![](../Images/lab-03/image53.png)
+ ![](../Images/lab-03/image53.png)
  
 11.	Você será direcionado de volta à **janela Power Query.** No **canto inferior direito,** Destino de dados está definido como **Lakehouse.**
 12.	Da mesma forma, defina o **Destino de dados** para as seguintes consultas:<br>
@@ -415,7 +415,7 @@ c. Sales<br>
 d. Date
 13.	Temos um fluxo de dados que ingere dados do ADLS no Lakehouse. Vamos continuar e **publicar** este fluxo de dados. Selecione Publicar no canto inferior direito.
 
-    ![](../Images/lab-03/image54.png)
+![](../Images/lab-03/image54.png)
 
 Você será direcionado de volta para o **workspace FAIAD_<nome de usuário>.** Levará alguns minutos para o fluxo de dados atualizar.
 No próximo laboratório, ingeriremos dados de outras fontes de dados.
@@ -424,7 +424,7 @@ No próximo laboratório, ingeriremos dados de outras fontes de dados.
 ## Referências
 O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais funções disponíveis no Microsoft Fabric. No menu do serviço, a seção Ajuda (?) tem links para ótimos recursos.
 
-  ![](../Images/lab-03/image55.png)
+![](../Images/lab-03/image55.png)
 
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas do Microsoft Fabric.
   - Veja a postagem do blog para ler o [anúncio completo de GA do Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
