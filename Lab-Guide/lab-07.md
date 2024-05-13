@@ -331,7 +331,8 @@ In uno scenario reale, i dati vengono aggiornati nell'origine. Poiché ci trovia
 4.	Si apre la finestra di dialogo Connetti a origine dati. Selezionare **tutte le righe nell'editor ed eliminarle**.
 5.	Copiare il codice seguente e incollarlo nell'editor.
 
-`   let
+```
+  let
   Source = #"ADLS Base Folder",
   #"Filtered Rows" = Table.SelectRows(Source, each Text.Contains([Folder Path], "Sales.Invoices_May")),
  
@@ -340,7 +341,8 @@ Path"="https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parq
  #"Imported Parquet" = Parquet.Document(#"https://stvnextblobstorage dfs core windows net/fabrikam-sales/Delta- Parquet-Format/Sales Invoices_May/_0-0ee085a3-716f-4833-a792-c3162c1de300-0 parquet")
 in
   #"Imported Parquet"`
-  
+```
+
 6.	Selezionare **Avanti**.
 
    ![](../Images/lab-07/image099.jpg)
