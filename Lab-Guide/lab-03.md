@@ -196,15 +196,15 @@ Si copia anche ADLS Base Folder. Questo perché la query States fa riferimento a
 
 9.	Fare clic sul **segno di spunta** accanto alla barra della formula o premere **INVIO**.
 
-   ![](../Images/lab-03/image090.jpg)
-   ![](../Images/lab-03/image093.png)
+    ![](../Images/lab-03/image090.jpg)
    
-10.	Ora possiamo rimuovere ADLS Base Folder. Nel pannello di sinistra, nella sezione** Query, fare clic con il pulsante destro del mouse sulla query ADLS Base Folder** e selezionare 
-    **Elimina**.
+    ![](../Images/lab-03/image093.png)
+   
+10. Ora possiamo rimuovere ADLS Base Folder. Nel pannello di sinistra, nella sezione **Query, fare clic con il pulsante destro del mouse sulla query ADLS Base Folder** e selezionare **Elimina**.
 
     ![](../Images/lab-03/image096.png)
    	
-11.	Si apre la finestra di dialogo Elimina query. Selezionare **Elimina** per confermare.
+11. Si apre la finestra di dialogo Elimina query. Selezionare **Elimina** per confermare.
 
 >**Nota**: assicurarsi che alla query siano applicati quattro passaggi e attendere che termini il caricamento della query. L'operazione può richiedere alcuni minuti.
 
@@ -230,13 +230,14 @@ Ora dobbiamo unire queste query per creare la dimensione Geo. Copiamo nuovamente
    ![](../Images/lab-03/image105.jpg)
 
 9.	Si apre la finestra di dialogo Recupera dati, Connetti all'origine dati dell'Editor avanzato. **Evidenziare tutto il testo** nell'editor.
-10.	Premere **CANC** sulla tastiera per eliminare tutto il testo.
-11.	L'Editor avanzato dovrebbe essere vuoto. Ora premere **CTRL+V** per incollare il contenuto che copiato dall'Editor avanzato di Power BI Desktop.
-12.	Selezionare **Avanti**.
+10. Premere **CANC** sulla tastiera per eliminare tutto il testo.
+11. L'Editor avanzato dovrebbe essere vuoto. Ora premere **CTRL+V** per incollare il contenuto che copiato dall'Editor avanzato di Power BI Desktop.
+
+12. Selezionare **Avanti**.
 
     ![](../Images/lab-03/image108.jpg)
    	
-13.	Ora abbiamo la dimensione Geo. Rinominiamo la query. Nel **pannello di destra**, in **Impostazioni query -> Proprietà -> Nome,** cambiare il nome in **Geo**
+13. Ora abbiamo la dimensione Geo. Rinominiamo la query. Nel **pannello di destra**, in **Impostazioni query -> Proprietà -> Nome,** cambiare il nome in **Geo**
 
 >**Nota**: attendere che termini il caricamento della query. L'operazione può richiedere alcuni minuti.
 
@@ -264,17 +265,20 @@ pulsante destro del mouse** sulla query **Cities** e selezionare **Abilita stagi
 
    ![](../Images/lab-03/image120.png)
   	
-7.	Una volta creata la connessione, si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione Nuova tabella sia selezionato, poiché si 
-   sta creando una **nuova tabella**.
-8.	 Vogliamo creare la tabella nel Lakehouse creato in precedenza. Nel pannello di sinistra andare a**Lakehouse -> FAIAD_<nomeutente>**.
-9.	 Selezionare **lh_FAIAD**
-10.	Lasciare il nome della tabella **Geo**.
-11.	Selezionare **Avanti**.
+7.	Una volta creata la connessione, si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione Nuova tabella sia selezionato, poiché si sta creando una **nuova tabella**.
+
+8.	 Vogliamo creare la tabella nel Lakehouse creato in precedenza. Nel pannello di sinistra andare a **Lakehouse -> FAIAD_<nomeutente>**.
+
+9. Selezionare **lh_FAIAD**
+10. Lasciare il nome della tabella **Geo**.
+11. Selezionare **Avanti**.
     
     ![](../Images/lab-03/image123.png)
  
-12.	Si apre la finestra di dialogo Scegli le impostazioni di destinazione. Usare il **dispositivo di scorrimento** per **disabilitare le impostazioni automatiche**. Diamo un'occhiata alle opzioni. Sono presenti opzioni per **aggiungere dati** alla tabella esistente o per sostituirli.
+12. Si apre la finestra di dialogo Scegli le impostazioni di destinazione. Usare il **dispositivo di scorrimento** per **disabilitare le impostazioni automatiche**. Diamo un'occhiata alle opzioni. Sono presenti opzioni per **aggiungere dati** alla tabella esistente o per sostituirli.
+
 Si notino inoltre le **opzioni dello schema alla pubblicazione**. Si ha la possibilità di mantenere lo schema fisso oppure, se cambierà nel tempo, esiste un'opzione di schema dinamico.
+
 Notare che compare l'avviso: "Alcuni nomi di colonna contengono caratteri non supportati. È necessario correggerli automaticamente?" Lakehouse non supporta i nomi di colonne che contengono spazi. Se si sceglie di selezionare Correggi, si aggiungeranno caratteri di sottolineatura per sostituire gli spazi nei nomi di colonna.
 
 >**Nota**: la casella di controllo a destra della colonna Source permette di selezionare solo le colonne da caricare nel Lakehouse.
@@ -389,21 +393,26 @@ Assicurarsi che vengano elaborate tutte le query. Al termine, inserire i dati in
 
    ![](../Images/lab-03/image165.jpg)
 
-10.	Questa volta useremo le impostazioni automatiche perché i dati verranno aggiornati completamente. Inoltre, le colonne verranno rinominate secondo necessità. Selezionare **Salva 
-    impostazioni**.
+10. Questa volta useremo le impostazioni automatiche perché i dati verranno aggiornati completamente. Inoltre, le colonne verranno rinominate secondo necessità. Selezionare **Salva impostazioni**.
 
     ![](../Images/lab-03/image168.jpg)
  
 11.	Si apre nuovamente la **finestra di Power Query**. Nell'**angolo in basso a destra**notare che la Destinazione dati è impostata su **Lakehouse**.
-12.	Analogamente, impostare la **Destinazione dati** per le seguenti query:
+12. Analogamente, impostare la **Destinazione dati** per le seguenti query:
+   
    a.	Product Details
+   
    b.	Reseller
+   
    c.	Sales
+   
    d.	Date
-13.	Abbiamo un flusso di dati che inserisce dati da ADLS in Lakehouse. Procediamo con la
+
+13. Abbiamo un flusso di dati che inserisce dati da ADLS in Lakehouse. Procediamo con la
 pubblicazione di questo flusso di dati. Selezionare **Pubblica** nell'angolo inferiore destro.
 
 Si tornerà all'area di lavoro **FAIAD_<nome utente>**. L'aggiornamento del flusso di dati potrebbe richiedere alcuni minuti.L'aggiornamento del flusso di dati potrebbe richiedere alcuni minuti.
+
 Nel prossimo lab inseriremo i dati dalle altre origini dati.
  
 ### Riferimenti

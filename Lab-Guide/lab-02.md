@@ -5,9 +5,11 @@
  
 Oggi si apprenderanno alcune funzionalità chiave di Microsoft Fabric. Questo è un workshop
 introduttivo che ha lo scopo di presentare le diverse esperienze di uso del prodotto e i vari elementi disponibili in Fabric. Al termine del workshop, si imparerà a usare le funzionalità Lakehouse, Flusso di dati Gen2, Pipeline di dati e DirectLake.
+
 In questo lab si imparerà a:
-•	Creare un'area di lavoro Fabric
-•	Creare un lakehouse
+
+- Creare un'area di lavoro Fabric
+- Creare un lakehouse
 
 
 ## Licenza di Fabric
@@ -33,19 +35,19 @@ In questo lab si imparerà a:
 
    ![](../Images/lab-02/image015.png)
     
-10.	Si apre la finestra di dialogo Esegui l'aggiornamento a una versione di valutazione gratuita Microsoft Fabric. Selezionare **Avvia versione di valutazione**.
+10. Si apre la finestra di dialogo Esegui l'aggiornamento a una versione di valutazione gratuita Microsoft Fabric. Selezionare **Avvia versione di valutazione**.
 
     ![](../Images/lab-02/image018.png)
  
-11.	Selezionare la **"X"** nell'angolo in alto a destra della finestra di dialogo **Solo un ultimo passaggio** per chiudere la finestra di dialogo. Non forniremo questi dettagli poiché si tratta di un ambiente lab.
+11. Selezionare la **"X"** nell'angolo in alto a destra della finestra di dialogo **Solo un ultimo passaggio** per chiudere la finestra di dialogo. Non forniremo questi dettagli poiché si tratta di un ambiente lab.
 
     ![](../Images/lab-02/image021.png)
     
-12.	Si apre la finestra di dialogo Aggiornamento a una versione di valutazione gratuita Microsoft Fabric completato. Selezionare **Fabric Home Page**.
+12. Si apre la finestra di dialogo Aggiornamento a una versione di valutazione gratuita Microsoft Fabric completato. Selezionare **Fabric Home Page**.
 
     ![](../Images/lab-02/image024.jpg)
  
-13.	Si aprirà la **home page** di **Microsoft Fabric**.
+13. Si aprirà la **home page** di **Microsoft Fabric**.
 
 
 ## Panoramica delle esperienze in Fabric
@@ -58,13 +60,18 @@ Synapse e si basano su Synapse. Procediamo a esaminarle.
    ![](../Images/lab-02/image027.jpg)
  
 3.	Si apre la **home page** di **Data Factory**. La pagina contiene tre sezioni principali.
-       a.	**New**: elenca gli elementi disponibili in Data Factory, ossia Dataflow Gen2 e Data pipeline.<br>
-       i.	Dataflow Gen2 è la nuova generazione di Flusso di dati.<br>
-       ii.	Data pipeline si usa per l'orchestrazione dei dati.<br>
-       b.	**Recommended**: questa sezione fornisce accesso alla documentazione di apprendimento per l'avvio rapido.<br>
-       c.	**Quick access**: questa sezione elenca gli elementi preferiti o usati di recente.<br>
+      
+      a. **New**: elenca gli elementi disponibili in Data Factory, ossia Dataflow Gen2 e Data pipeline.<br>
+       
+      i. Dataflow Gen2 è la nuova generazione di Flusso di dati.<br>
+       
+      ii. Data pipeline si usa per l'orchestrazione dei dati.<br>
+       
+      b. **Recommended**: questa sezione fornisce accesso alla documentazione di apprendimento per l'avvio rapido.<br>
+       
+      c. **Quick access**: questa sezione elenca gli elementi preferiti o usati di recente.<br>
 
-   ![](../Images/lab-02/image030.jpg)
+    ![](../Images/lab-02/image030.jpg)
    
 ### Attività 3 - Esperienza Data Activator
 1.	Selezionare l'icona **selettore esperienza in Fabric** (attualmente impostata su Data Factory) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
@@ -79,13 +86,14 @@ Synapse e si basano su Synapse. Procediamo a esaminarle.
 
 ### Attività 4 - Esperienza Industry Solutions
 1.	Selezionare l'icona **selettore esperienza in Fabric** (attualmente impostata su Data Activator) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
-2.	Selezionare **Industry Solutions** nella finestra di dialogo. Si apre la **home page di Industry Solutions**. Microsoft Fabric include soluzioni di dati specifiche del settore che offrono una piattaforma affidabile per la gestione dei dati, l'analisi e il processo decisionale. Queste soluzioni di dati risolvono le problematiche specifiche affrontate da diversi settori, permettendo alle aziende di ottimizzare le operazioni, integrare dati provenienti da origini diverse e usare analisi avanzate. Si noti che le tre sezioni sono analoghe alle esperienze precedenti. Nella sezione Nuovo osservare gli elementi:<br>
-        a.	Soluzioni per la sostenibilità: supporta l'inserimento, la standardizzazione e l'analisi di dati ambientali, sociali e di governance (ESG).<br>
-        b.	Soluzioni retail: permette di gestire grandi volumi di dati, di integrare dati provenienti da origini varie e di fornire analisi in tempo reale per un processo decisionale 
-           rapido etempestivo. I rivenditori possono usare queste soluzioni per l'ottimizzazione delle scorte, la segmentazione dei clienti, la previsione delle vendite, la 
-           determinazione dinamica  dei prezzi e il rilevamento delle frodi.<br>
+
+2.	Selezionare **Industry Solutions** nella finestra di dialogo. Si apre la **home page di Industry Solutions**. Microsoft Fabric include soluzioni di dati specifiche del settore che offrono una piattaforma affidabile per la gestione dei dati, l'analisi e il processo decisionale. Queste soluzioni di dati risolvono le problematiche specifiche affrontate da diversi settori, permettendo alle aziende di ottimizzare le operazioni, integrare dati provenienti da origini diverse e usare analisi avanzate. Si noti che le tre sezioni sono analoghe alle esperienze precedenti. Nella sezione Nuovo osservare gli elementi:
+
+      a. Soluzioni per la sostenibilità: supporta l'inserimento, la standardizzazione e l'analisi di dati ambientali, sociali e di governance (ESG).
+        
+      b. Soluzioni retail: permette di gestire grandi volumi di dati, di integrare dati provenienti da origini varie e di fornire analisi in tempo reale per un processo decisionale rapido etempestivo. I rivenditori possono usare queste soluzioni per l'ottimizzazione delle scorte, la segmentazione dei clienti, la previsione delle vendite, la determinazione dinamica  dei prezzi e il rilevamento delle frodi.
          
-   ![](../Images/lab-02/image039.png)
+      ![](../Images/lab-02/image039.png)
 
 ### Attività 5 - Esperienza Synapse Data Engineering
 1.	Selezionare l'icona **selettore esperienza in Fabric** (attualmente impostata su Industry Solutions) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
@@ -115,7 +123,6 @@ Synapse e si basano su Synapse. Procediamo a esaminarle.
  
    ![](../Images/lab-02/image045.jpg)
 
-
 ### Attività 7 - Esperienza Synapse Data Warehouse
 1.	Selezionare l'icona **selettore esperienza in Fabric** (attualmente impostata su Data Science) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
 2.	Selezionare **Data Warehouse**. Si apre la **home page di Data Warehouse**. Anche in questo caso sono presenti tre sezioni. Nella sezione Nuovo osservare gli elementi:
@@ -128,13 +135,18 @@ Synapse e si basano su Synapse. Procediamo a esaminarle.
 ### Attività 8 - Esperienza Real-Time Analytics
 1.	Selezionare l'icona **selettore esperienza in Fabric** (attualmente impostata su Data Warehouse) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
 2.	Selezionare **Real-Time Analytics**. Si apre la **home page di Real-Time Analytics**. Anche in questo caso sono presenti tre sezioni. Nella sezione Nuovo osservare gli elementi:
-         a.	**Casa eventi**: permette di creare un'area di lavoro di database, che è possibile condividere tra progetti.
-         b.	**Database KQL**: permette di caricare rapidamente e di archiviare dati strutturati, non strutturati e in streaming per l'esecuzione di query.
-         c.	**Set di query KQL**: consente di eseguire query sui dati per produrre tabelle e oggetti visivi condivisibili.
-         d.	**Eventstream**: permette di acquisire, trasformare e instradare il flusso di eventi in tempo reale.
-         e.	**Usare un esempio**: soluzione di esempio.
+      
+      a. **Casa eventi**: permette di creare un'area di lavoro di database, che è possibile condividere tra progetti.
+      
+      b. **Database KQL**: permette di caricare rapidamente e di archiviare dati strutturati, non strutturati e in streaming per l'esecuzione di query.
+         
+      c. **Set di query KQL**: consente di eseguire query sui dati per produrre tabelle e oggetti visivi condivisibili.
+         
+      d. **Eventstream**: permette di acquisire, trasformare e instradare il flusso di eventi in tempo reale.
+         
+      e. **Usare un esempio**: soluzione di esempio.
  
-   ![](../Images/lab-02/image051.jpg)
+      ![](../Images/lab-02/image051.jpg)
 
 ## Area di lavoro di Fabric
 ### Attività 9 - Creazione di un'area di lavoro di Fabric
