@@ -175,21 +175,21 @@ GenX、GenY 和GenZ。追加这四个查询以创建 Customer 查询。
 
 8.	请注意，**ADLSData** 文件夹具有多个维度：Geo、Product、Reseller 和Date 还具有Sales 事实。<br>
 
-a.**Geo 维度**是通过合并 Cities、Countries 和 States 查询的数据而创建的。
+    a.**Geo 维度**是通过合并 Cities、Countries 和 States 查询的数据而创建的。
 
-b.**Product 维度**是通过合并 Product Groups 和Product Item Group 查询中的数据而创建的。
+    b.**Product 维度**是通过合并 Product Groups 和Product Item Group 查询中的数据而创建的。
 
-c.**Reseller 维度**是使用 BuyingGroup 查询筛选而来的。
+    c.**Reseller 维度**是使用 BuyingGroup 查询筛选而来的。
 
-d.**Sales 事实**是通过合并InvoiceLineItems 与Invoice 查询而创建的。
+    d.**Sales 事实**是通过合并InvoiceLineItems 与Invoice 查询而创建的。
 
 9.	对于 Snowflake 数据源，使用 **Snowflake Username 和 Snowflake Password**，其位于**环境变量**选项卡中（实验指南旁边）。
 
 10.	请注意，**SnowflakeData** 文件夹包含 Supplier 维度和PO（订单/支出）事实。<br>
 
-- a.Supplier 维度是通过合并 Suppliers 查询与 SupplierCategories 查询而创建的。
+- Supplier 维度是通过合并 Suppliers 查询与 SupplierCategories 查询而创建的。
 
-- b.PO 事实是通过合并PO 与PO Line Items 查询而创建的。
+- PO 事实是通过合并PO 与PO Line Items 查询而创建的。
 
 11.	对于 SharePoint 数据源，输入**用户名**和**密码**, 其位于**环境变量**其位于环境变量选项卡中（实验指南旁边）。请选择 Microsoft 帐户选项。
 
