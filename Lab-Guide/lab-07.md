@@ -20,44 +20,47 @@ Iniziamo usando l'opzione di creazione automatica del report. Più avanti nel la
  
 4.	Selezionare **Nuovo report** dal menu in alto.
 
-    ![](../Images/lab-07/image009.png)
+   ![](../Images/lab-07/image009.png)
   	
-6.	Si aprirà la schermata **Creare il primo report**. Saranno disponibili opzioni per immettere
+5.	Si aprirà la schermata **Creare il primo report**. Saranno disponibili opzioni per immettere
 manualmente e creare un report o selezionare un modello semantico pubblicato. Abbiamo creato un modello semantico nei lab precedenti, che useremo ora. **Selezionare l'opzione Selezionare un modello semantico pubblicato**.
 
-    ![](../Images/lab-07/image012.jpg)
+   ![](../Images/lab-07/image012.jpg)
   	
-8.	Scegliere un set di dati da usare nella pagina del report che si apre. Notare che sono presenti quattro opzioni. **Selezionare lh_FAIAD**:
-a.	**lh_FAIAD**: questo è il lakehouse con il set di dati che abbiamo creato e che vogliamo usare per il report.
-b.	**Units by Supplier**: questo è il set di dati che abbiamo creato mediante T-SQL.
-c.	**DataflowsStagingWarehouse**: si tratta del warehouse di staging creato per impostazione predefinita. Non l'abbiamo usato poiché non abbiamo eseguito lo staging dei dati.
-d.	**DataflowsStagingLakehouse**: si tratta del Lakehouse di staging creato per impostazione predefinita. Non l'abbiamo usato poiché non abbiamo eseguito lo staging dei dati.
+6.	Scegliere un set di dati da usare nella pagina del report che si apre. Notare che sono presenti quattro opzioni. **Selezionare lh_FAIAD**:
+      a.	**lh_FAIAD**: questo è il lakehouse con il set di dati che abbiamo creato e che vogliamo usare per il report.<br>
+      b.	**Units by Supplier**: questo è il set di dati che abbiamo creato mediante T-SQL.<br>
+      c.	**DataflowsStagingWarehouse**: si tratta del warehouse di staging creato per impostazione predefinita. Non l'abbiamo usato poiché non abbiamo eseguito lo staging dei dati.<br>
+      d.	**DataflowsStagingLakehouse**: si tratta del Lakehouse di staging creato per impostazione predefinita. Non l'abbiamo usato poiché non abbiamo eseguito lo staging dei dati.<br>
 9.	Fare clic sulla **freccia accanto al pulsante Crea automaticamente** il report. Notare che vi sono due opzioni: **Crea automaticamente il report** e Crea un report vuoto. Vogliamo provare la creazione automatica, quindi selezioniamo **Crea automaticamente il report**.
  
-    ![](../Images/lab-07/image015.png)
+   ![](../Images/lab-07/image015.png)
 
-10.	Power BI avvierà la creazione automatica del report. Si noti la presenza di un'opzione per preselezionare i dati, se lo desideriamo. Quando il report è pronto, in alto a destra della schermata si apre una finestra di dialogo. Selezionare **View report now**.
+10. Power BI avvierà la creazione automatica del report. Si noti la presenza di un'opzione per preselezionare i dati, se lo desideriamo. Quando il report è pronto, in alto a destra della schermata si apre una finestra di dialogo. Selezionare **View report now**.
 
     ![](../Images/lab-07/image018.jpg)
    	
-**Checkpoint**: il report sarà simile a quello illustrato nello screenshot seguente. Sono presenti alcuni KPI e alcuni oggetti visivi sulle tendenze. Questo è buon inizio se si sta analizzando un nuovo modello ed è necessario un iniziare rapidamente.
+>**Checkpoint**: il report sarà simile a quello illustrato nello screenshot seguente. Sono presenti alcuni KPI e alcuni oggetti visivi sulle tendenze. Questo è buon inizio se si sta analizzando un nuovo modello ed è necessario un iniziare rapidamente.
 
-**Nota**: nel menu in alto è presente l'opzione per modificare il report o visualizzare i dati sotto forma di tabelle. Esplorare liberamente queste opzioni.
+>**Nota**: nel menu in alto è presente l'opzione per modificare il report o visualizzare i dati sotto forma di tabelle. Esplorare liberamente queste opzioni.
 
 9.	Salviamo il report. Nel menu in alto selezionare **Salva**.
-10.	Si apre la finestra di dialogo Salva report. Assegnare al report il nome **rpt_Sales_Auto_Report**.
-Nota: all'inizio del nome del report aggiungiamo il prefisso rpt, ovvero l'abbreviazione di report.
-11.	Assicurarsi che il report sia salvato nell'area di lavoro **FAIAD_<nome utente>**. 
-12.	Selezionare **Salva**.
+10. Si apre la finestra di dialogo Salva report. Assegnare al report il nome **rpt_Sales_Auto_Report**.
 
-     ![](../Images/lab-07/image021.jpg)
+>**Nota**: all'inizio del nome del report aggiungiamo il prefisso rpt, ovvero l'abbreviazione di report.
+
+11. Assicurarsi che il report sia salvato nell'area di lavoro **FAIAD_<nome utente>**.
+    
+13. Selezionare **Salva**.
+
+    ![](../Images/lab-07/image021.jpg)
    	
-**Nota**: il report creato automaticamente potrebbe avere un aspetto diverso poiché è stato "creato automaticamente". Dipende anche dalle relazioni e dalle misure create nel lab precedente (Lab 6).
+>**Nota**: il report creato automaticamente potrebbe avere un aspetto diverso poiché è stato "creato automaticamente". Dipende anche dalle relazioni e dalle misure create nel lab precedente (Lab 6).
 
-Lo screenshot precedente mostra come **potrebbe** apparire il report creato automaticamente se si fossero create tutte le relazioni e le misure, incluse le relazioni facoltative (Lab 6).
-
-Lo screenshot seguente mostra come **potrebbe** apparire il report creato automaticamente se non si fossero create le relazioni e le misure facoltative (Lab 6).
-    ![](../Images/lab-07/image024.jpg)
+- Lo screenshot precedente mostra come **potrebbe** apparire il report creato automaticamente se si fossero create tutte le relazioni e le misure, incluse le relazioni facoltative (Lab 6).
+- Lo screenshot seguente mostra come **potrebbe** apparire il report creato automaticamente se non si fossero create le relazioni e le misure facoltative (Lab 6).
+    
+![](../Images/lab-07/image024.jpg)
  
 ## Attività 2 - Configurazione dello sfondo per un nuovo report
 
@@ -65,25 +68,24 @@ Creiamo un nuovo report usando un'area di disegno vuota.
 1.	Nel **pannello di sinistra** selezionare il nome dell'area di lavoro, **FAIAD_<nome utente>**, per tornare a essa.
 2.	Nel menu in alto selezionare **Nuovo -> Report**. Si aprirà la pagina per creare il primo report.
 
-     ![](../Images/lab-07/image027.png)
+   ![](../Images/lab-07/image027.png)
   	
 4.	Fare clic su **Selezionare un modello semantico pubblicato** per poter scegliere il modello creato.
 
-     ![](../Images/lab-07/image030.jpg)
+   ![](../Images/lab-07/image030.jpg)
   	
 6.	Scegliere un modello semantico da usare nella finestra di dialogo report che viene visualizzata. Selezionare **lh_FAIAD**.
  
 7.	Fare clic sulla **freccia accanto al pulsante Crea automaticamente il report**. Selezionare **Crea un report vuoto**.
    
-      ![](../Images/lab-07/image033.jpg)
+   ![](../Images/lab-07/image033.jpg)
   	
 9.	Se non lo si è ancora aperto, aprire il file **FAIAD.pbix** contenuto nella cartella **C:\FAIAD\Reports**
 dell'ambiente lab.
 Useremo questo report come riferimento. Inizieremo aggiungendo lo sfondo del canvas. Creeremo l'intestazione del report, aggiungeremo un paio di KPI e creeremo il grafico a linee Sales over time. Per risparmiare tempo, presupponendo che si abbia esperienza nella creazione di oggetti visivi in Power BI Desktop, non creeremo tutti gli oggetti visivi.
 
-      ![](../Images/lab-07/image036.jpg)
-    
-  	
+   ![](../Images/lab-07/image036.jpg)
+      	
 11. Tornare al **Power BI canvas** nel browser.
 12. Selezionare l'icona **Formatta pagina** nel riquadro Visualizzazioni.
 13. Espandere la sezione **Sfondo canvas**.
@@ -93,7 +95,7 @@ Useremo questo report come riferimento. Inizieremo aggiungendo lo sfondo del can
 17. Impostare l'elenco a discesa **Adattamento immagine** su **Adatta**.
 18. Impostare Trasparenza su **0%**.
 
-     ![](../Images/lab-07/image039.jpg)
+    ![](../Images/lab-07/image039.jpg)
    	
 ### Attività 3 - Aggiunta dell'intestazione al report
 1.	Aggiungiamo l'intestazione nel margine superiore. Nel **menu** selezionare **Casella di testo**.
@@ -105,7 +107,7 @@ Useremo questo report come riferimento. Inizieremo aggiungendo lo sfondo del can
 7.	Impostare il dispositivo di scorrimento **Sfondo** su **Disattivato**.
 8.	Ridimensionare la **casella di testo per adattarla al margine superiore**.
 
-     ![](../Images/lab-07/image042.jpg)
+   ![](../Images/lab-07/image042.jpg)
  
 ### Attività 4 - Aggiunta di KPI al report
 1.	Aggiungiamo l'indicatore KPI delle vendite. Selezionare lo **spazio vuoto** nell'area di disegno per spostare lo stato attivo fuori dalla casella di testo.
@@ -113,39 +115,37 @@ Useremo questo report come riferimento. Inizieremo aggiungendo lo sfondo del can
 3.	Nella sezione **Dati** espandere la tabella **Sales**.
 4.	Selezionare la **misura Sales**.
 
-    ![](../Images/lab-07/image045.jpg)
+   ![](../Images/lab-07/image045.jpg)
   	
-6.	Con l'**oggetto visivo Scheda con più righe selezionato**, selezionare l'icona **Formatta oggetto visivo** dalla sezione Visualizzazioni.
-7.	Espandere la sezione **Etichette categorie**.
-8.	Aumentare la **dimensione del carattere** a **14**.
-9.	Selezionare il menu a discesa **Colore**. Si apre la finestra di dialogo Tavolozza dei colori.
+5.	Con l'**oggetto visivo Scheda con più righe selezionato**, selezionare l'icona **Formatta oggetto visivo** dalla sezione Visualizzazioni.
+6.	Espandere la sezione **Etichette categorie**.
+7.	Aumentare la **dimensione del carattere** a **14**.
+8.	Selezionare il menu a discesa **Colore**. Si apre la finestra di dialogo Tavolozza dei colori.
  
-10. Impostare il valore Esadecimale su **#004753**.
+9. Impostare il valore Esadecimale su **#004753**.
 
-     ![](../Images/lab-07/image048.jpg)
+   ![](../Images/lab-07/image048.jpg)
    	
-11. Espandere la sezione **Schede**.
+10. Espandere la sezione **Schede**.
  
-12. Impostare il dispositivo di scorrimento **Barra evidenziatore** su **Disattivato**.
+11. Impostare il dispositivo di scorrimento **Barra evidenziatore** su **Disattivato**.
     
      ![](../Images/lab-07/image051.png)
    	
-13. Selezionare **Generale** nel riquadro Visualizzazioni.
-14. Espandere la sezione **Effetti**.
-15. Impostare il dispositivo di scorrimento **Sfondo** su **Disattivato**.
-16. Ridimensionare l'**oggetto visivo** e spostarlo nella **casella di sinistra come illustrato nello screenshot**.
+12. Selezionare **Generale** nel riquadro Visualizzazioni.
+13. Espandere la sezione **Effetti**.
+14. Impostare il dispositivo di scorrimento **Sfondo** su **Disattivato**.
+15. Ridimensionare l'**oggetto visivo** e spostarlo nella **casella di sinistra come illustrato nello screenshot**.
     
-     ![](../Images/lab-07/image054.png)
+    ![](../Images/lab-07/image054.png)
    	
-17. Aggiungiamo un altro indicatore KPI. Selezionare la **scheda con più righe Sales** appena creata.
-**Copiare** l'oggetto visivo premendo **CTRL+C** sulla tastiera.
-18. **Incollare** l'oggetto visivo premendo **CTRL+V** sulla tastiera. Notare che l'oggetto visivo viene incollato nel canvas.
- 
-19. Con il **nuovo oggetto visivo evidenziato**, in **riquadro Visualizzazioni** **-> Compila oggetto visivo -> Campi** rimuovere la misura **Sales**.
-20. Nella sezione **Dati** espandere la tabella Sales e selezionare la misura **Units**.
-21. Ridimensionare l'**oggetto visivo** e **posizionarlo nella casella sotto l'oggetto visivo Sales**.
+16. Aggiungiamo un altro indicatore KPI. Selezionare la **scheda con più righe Sales** appena creata. **Copiare** l'oggetto visivo premendo **CTRL+C** sulla tastiera.
+17. **Incollare** l'oggetto visivo premendo **CTRL+V** sulla tastiera. Notare che l'oggetto visivo viene incollato nel canvas. 
+18. Con il **nuovo oggetto visivo evidenziato**, in **riquadro Visualizzazioni** **-> Compila oggetto visivo -> Campi** rimuovere la misura **Sales**.
+19. Nella sezione **Dati** espandere la tabella Sales e selezionare la misura **Units**.
+20. Ridimensionare l'**oggetto visivo** e **posizionarlo nella casella sotto l'oggetto visivo Sales**.
 
-     ![](../Images/lab-07/image057.jpg)
+    ![](../Images/lab-07/image057.jpg)
    	
 ### Attività 5 - Aggiunta di un grafico a linee al report
 Creiamo un grafico a linee per visualizzare le vendite nel tempo per azienda rivenditrice.
@@ -154,17 +154,19 @@ Creiamo un grafico a linee per visualizzare le vendite nel tempo per azienda riv
 3.	Nella sezione **Dati** espandere la tabella **Date**.
 4.	Selezionare il campo **Year**. Si noti che Year viene sommato per impostazione predefinita e aggiunto all'asse Y. Correggiamo.
 
-    ![](../Images/lab-07/image060.png)
+   ![](../Images/lab-07/image060.png)
  
 ### Attività 6 - Salvataggio del report
 Salviamo il report prima di uscire da esso per apportare modifiche al modello.
 1.	Nel menu selezionare **File -> Salva**.
-2.	Si apre la finestra di dialogo Salva report. Assegnare al report il nome rpt_Sales_Report
-    **Nota:** all'inizio del nome del report aggiungiamo il prefisso rpt, ovvero l'abbreviazione di report.
-3.	Assicurarsi che il report sia salvato nell'area di lavoro FAIAD_<nome utente>.
+2.	Si apre la finestra di dialogo Salva report. Assegnare al report il nome **rpt_Sales_Report**.
+   
+>**Nota:** all'inizio del nome del report aggiungiamo il prefisso rpt, ovvero l'abbreviazione di report.
+
+3.	Assicurarsi che il report sia salvato nell'area di lavoro **FAIAD_<nome utente>**.
 4.	Selezionare **Salva**.
 
-     ![](../Images/lab-07/image063.jpg)
+   ![](../Images/lab-07/image063.jpg)
 
 ### Attività 7 - Configurazione della colonna Year nella tabella Date
 1.	Nella **barra dei menu a sinistra** selezionare **lh_FAIAD** per spostarsi sul Lakehouse.
@@ -173,19 +175,20 @@ Salviamo il report prima di uscire da esso per apportare modifiche al modello.
 4.	Nel riquadro **Proprietà** a destra espandere la sezione **Avanzate**.
 5.	Nell'elenco a discesa **Riepiloga per** selezionare **Nessuno**.
 
-      ![](../Images/lab-07/image066.jpg)
+   ![](../Images/lab-07/image066.jpg)
   	
-7.	Tornare al report selezionando **rpt_Sales_Report** nella barra dei menu a sinistra.
-8.	Selezionare **Modifica** dal menu in alto.
+6.	Tornare al report selezionando **rpt_Sales_Report** nella barra dei menu a sinistra.
+7.	Selezionare **Modifica** dal menu in alto.
  
-9.	Nel menu in alto selezionare **Aggiorna**. Si noti che nel pannello Dati, Year non è un campo di somma.
-10.	Con l'**oggetto visivo grafico a linee selezionato, rimuovere Somma di Year** dall'asse Y.
-11.	Selezionare il campo **Year** per aggiungerlo all'**asse X**.
-12.	Espandere la tabella **Sales** e selezionare la **misura Sales**.
+8.	Nel menu in alto selezionare **Aggiorna**. Si noti che nel pannello Dati, Year non è un campo di somma.
+9. Con l'**oggetto visivo grafico a linee selezionato, rimuovere Somma di Year** dall'asse Y.
+10. Selezionare il campo **Year** per aggiungerlo all'**asse X**.
+11. Espandere la tabella **Sales** e selezionare la **misura Sales**.
 
-      ![](../Images/lab-07/image069.jpg)
+    ![](../Images/lab-07/image069.jpg)
 
 ### Attività 8 - Configurazione della colonna Short_Month_Name nella tabella Date
+
 1.	Aggiungiamo il mese al grafico. Nella tabella Date trascinare il campo **Short_Month_Name** sotto
 **Year** sull'**asse X**. Notare che l'oggetto visivo è ordinato in base a Sales. Ordiniamolo in base a Short_Month_Name.
 2.	Selezionare i **puntini di sospensione** (…) nell'angolo superiore destro dell'oggetto visivo.
@@ -193,60 +196,58 @@ Salviamo il report prima di uscire da esso per apportare modifiche al modello.
 4.	Selezionare i **puntini di sospensione (…)** nell'angolo superiore destro dell'oggetto visivo.
 5.	Selezionare **Ordina asse -> Ordinamento crescente**.
 
-      ![](../Images/lab-07/image072.jpg)
+   ![](../Images/lab-07/image072.jpg)
    
-    **Nota**: i mesi sono ordinati in ordine alfabetico. Correggiamo.
+>**Nota**: i mesi sono ordinati in ordine alfabetico. Correggiamo.
 
    ![](../Images/lab-07/image075.png)
  
 6.	Nella **barra dei menu a sinistra** selezionare **lh_FAIAD** per spostarsi sul Lakehouse.
 7.	Si apre la finestra di dialogo **Modifiche non salvate**. Selezionare **Salva** per salvare le modifiche al report.
 
-    ![](../Images/lab-07/image078.jpg)
+   ![](../Images/lab-07/image078.jpg)
   	
 9.	Si passerà al Lakehouse lh_FAIAD. Nel riquadro Explorer di sinistra espandere **lhFAIAD -> Schemas -> dbo -> Tables -> Date**.
-10.	Selezionare la colonna **Short_Month_Name**.
-11.	Nel riquadro **Proprietà** a destra espandere la sezione **Avanzate**.
-12.	Nell'elenco a discesa **Ordina per colonna** selezionare **Month**.
+10. Selezionare la colonna **Short_Month_Name**.
+11. Nel riquadro **Proprietà** a destra espandere la sezione **Avanzate**.
+12. Nell'elenco a discesa **Ordina per colonna** selezionare **Month**.
 
-     ![](../Images/lab-07/image081.jpg)
+    ![](../Images/lab-07/image081.jpg)
    	
-14.	Tornare al report selezionando **rpt_Sales_Report** nella barra dei menu a sinistra.
-15.	Selezionare **Modifica** dal menu in alto.
-16.	Nel menu in alto selezionare **Aggiorna**. Si noti che i mesi sono ordinati correttamente.
+13. Tornare al report selezionando **rpt_Sales_Report** nella barra dei menu a sinistra.
+14. Selezionare **Modifica** dal menu in alto.
+15. Nel menu in alto selezionare **Aggiorna**. Si noti che i mesi sono ordinati correttamente.
  
-     ![](../Images/lab-07/image084.png)
+    ![](../Images/lab-07/image084.png)
    	
 ### Attività 9 – Formattazione del grafico a linee
+
 È molto semplice aggiornare il modello semantico durante la creazione dei report. Ciò fornisce un'interazione fluida come Power BI Desktop.
 1.	Con l'**oggetto visivo grafico a linee selezionato**, nella sezione **Dati** espandere la tabella **Reseller**.
 2.	Trascinare il campo **Reseller -> Reseller Company** nella sezione **Legenda**.
    
-      ![](../Images/lab-07/image087.jpg)
+   ![](../Images/lab-07/image087.jpg)
   	
-4.	Con l'**oggetto visivo grafico a linee selezionato**, nella sezione Visualizzazioni selezionare l'icona
-**Formatta oggetto visivo -> Generale**.
-5.	Espandere la sezione **Titolo**.
-6.	Impostare il testo di **Titolo** su **Sales over time**.
-7.	Espandere la sezione **Effetti**.
+3.	Con l'**oggetto visivo grafico a linee selezionato**, nella sezione Visualizzazioni selezionare l'icona **Formatta oggetto visivo -> Generale**.
+4.	Espandere la sezione **Titolo**.
+5.	Impostare il testo di **Titolo** su **Sales over time**.
+6.	Espandere la sezione **Effetti**.
  
-8.	Impostare il dispositivo di scorrimento **Sfondo** su **Disattivato**.
+7.	Impostare il dispositivo di scorrimento **Sfondo** su **Disattivato**.
    
       ![](../Images/lab-07/image090.png)
   	
-10.	Nella sezione **Visualizzazione** selezionare l'icona **Formatta oggetto visivo -> Oggetto visivo**.
-11.	Espandere la sezione **Righe**.
-12.	Espandere la sezione **Colore**.
-13.	Impostare il colore di **Wingtip Toys** su **#004753**
-14.	Impostare il colore di **Tailspin Toys** su **#F17925**
-15.	Ridimensionare l'**oggetto visivo e spostarlo nella casella in alto a destra come illustrato nello screenshot**.
-16.	Scorrere verso destra l'oggetto visivo e si **noti che sono presenti dati fino ad aprile 2023**.
+8.	Nella sezione **Visualizzazione** selezionare l'icona **Formatta oggetto visivo -> Oggetto visivo**.
+9.	Espandere la sezione **Righe**.
+10. Espandere la sezione **Colore**.
+11. Impostare il colore di **Wingtip Toys** su **#004753**
+12. Impostare il colore di **Tailspin Toys** su **#F17925**
+13. Ridimensionare l'**oggetto visivo e spostarlo nella casella in alto a destra come illustrato nello screenshot**.
+14. Scorrere verso destra l'oggetto visivo e si **noti che sono presenti dati fino ad aprile 2023**.
 
-       ![](../Images/lab-07/image093.png)
+    ![](../Images/lab-07/image093.png)
    	
-18.	Per salvare il report, nel menu selezionare **File -> Salva**.
-Come indicato in precedenza, non creeremo tutti gli oggetti visivi in questo lab. Se si desidera, aggiungere ulteriori oggetti visivi.
-
+15. Per salvare il report, nel menu selezionare **File -> Salva**.Come indicato in precedenza, non creeremo tutti gli oggetti visivi in questo lab. Se si desidera, aggiungere ulteriori oggetti visivi.
 
 ### Attività 10 - Aggiunta di nuovi dati per simulare la modalità Direct Lake
 
@@ -257,11 +258,11 @@ In uno scenario reale, i dati vengono aggiornati nell'origine. Poiché ci trovia
 1.	Selezionare **FAIAD_<nome utente>** nella barra dei menu di sinistra per andare alla home page dell'area di lavoro.
 2.	Selezionare **df_Sales_ADFS** per poter modificare il flusso di dati aggiungendo il nuovo file Parquet.
 
-      ![](../Images/lab-07/image096.jpg)
+   ![](../Images/lab-07/image096.jpg)
   	
-4.	Nella barra multifunzione selezionare **Home -> Recupera -> Query vuota**.
-5.	Si apre la finestra di dialogo Connetti a origine dati. Selezionare **tutte le righe nell'editor ed eliminarle**.
-6.	Copiare il codice seguente e incollarlo nell'editor.
+3.	Nella barra multifunzione selezionare **Home -> Recupera -> Query vuota**.
+4.	Si apre la finestra di dialogo Connetti a origine dati. Selezionare **tutte le righe nell'editor ed eliminarle**.
+5.	Copiare il codice seguente e incollarlo nell'editor.
 
 `let
   Source = #"ADLS Base Folder",
@@ -275,28 +276,27 @@ in
   
 6.	Selezionare **Avanti**.
 
-    ![](../Images/lab-07/image099.jpg)
+   ![](../Images/lab-07/image099.jpg)
   	
 8.	Si ricrea una nuova query. **Rinominarla**. Rinominare la query in **MayInvoice** nel pannello di destra in **Impostazioni query -> Proprietà -> Nome**.
 9.	Disabilitiamo lo staging per la nuova query. **Fare clic con il pulsante destro del mouse** sulla query MayInvoice e **deselezionare Abilita staging**.
 
-    ![](../Images/lab-07/image102.jpg)
+   ![](../Images/lab-07/image102.jpg)
   	
-11. Ora aggiungiamo i dati di MayInvoice alla tabella Invoice. Selezionare la query Invoice dalla sezione Query.
-12. Nella barra multifunzione selezionare **Home -> Accoda query**.
-13. Si apre la finestra di dialogo Accoda. Nel menu a discesa **Tabella da accodare** selezionare **MayInvoice**.
- 
-15. Selezionare **OK**.
+10. Ora aggiungiamo i dati di MayInvoice alla tabella Invoice. Selezionare la query Invoice dalla sezione Query.
+11. Nella barra multifunzione selezionare **Home -> Accoda query**.
+12. Si apre la finestra di dialogo Accoda. Nel menu a discesa **Tabella da accodare** selezionare **MayInvoice**. 
+13. Selezionare **OK**.
     
-     ![](../Images/lab-07/image105.jpg)
+    ![](../Images/lab-07/image105.jpg)
    	
-16. Selezionare **Pubblica** nell'angolo inferiore destro per salvare e pubblicare gli aggiornamenti.
+14. Selezionare **Pubblica** nell'angolo inferiore destro per salvare e pubblicare gli aggiornamenti.
 
-     ![](../Images/lab-07/image108.jpg)
+    ![](../Images/lab-07/image108.jpg)
    	
-      **Nota**: una volta pubblicato, il flusso di dati verrà aggiornato. L'operazione potrebbe richiedere alcuni minuti.
+>**Nota**: una volta pubblicato, il flusso di dati verrà aggiornato. L'operazione potrebbe richiedere alcuni minuti.
    	
-14. Selezionare **rpt_Sales_Report** nella barra dei menu di sinistra per tornare al report.
+15. Selezionare **rpt_Sales_Report** nella barra dei menu di sinistra per tornare al report.
 
 15. Nel menu in alto selezionare **Aggiorna**. Si noti che ora nel grafico a linee sono presenti dati per maggio 2023. Si noti, inoltre, che l'importo delle vendite e l'unità sono aumentati.
 
@@ -321,15 +321,15 @@ Quando si è pronti a eseguire la pulizia dell'ambiente lab, effettuare i passag
 1.	Selezionare l'area di lavoro **FAIAD_<nome utente>** nel pannello di sinistra per andare alla home page dell'area di lavoro.
 2.	Nel menu in alto selezionare i **puntini di sospensione (…)** accanto a Gestisci accesso e selezionare **Impostazioni area di lavoro**.
 
-    ![](../Images/lab-07/image114.jpg)
+   ![](../Images/lab-07/image114.jpg)
   	
-4.	Si apre la finestra di dialogo Impostazioni area di lavoro. Nel menu a sinistra selezionare **Altro**.
-5.	Selezionare **Rimuovere questa area di lavoro**.
-6.	Si apre la finestra di dialogo Eliminare l'area di lavoro?. Selezionare **Elimina**.
+3.	Si apre la finestra di dialogo Impostazioni area di lavoro. Nel menu a sinistra selezionare **Altro**.
+4.	Selezionare **Rimuovere questa area di lavoro**.
+5.	Si apre la finestra di dialogo Eliminare l'area di lavoro?. Selezionare **Elimina**.
 
   	In questo modo si elimineranno l'area di lavoro e tutti gli elementi che contiene.
 
-    ![](../Images/lab-07/image117.jpg)
+   ![](../Images/lab-07/image117.jpg)
   	
 ## Riferimenti
 
