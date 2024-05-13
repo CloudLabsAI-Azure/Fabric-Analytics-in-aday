@@ -211,12 +211,12 @@ temporale, saranno necessari 15 minuti affinché il file sia disponibile. Voglia
 Dobbiamo scrivere un'espressione che verrà eseguita finché il valore di varCounter è 3 o il valore di varIsSuccess è Sì**** (varCounter e varIsSuccess sono le variabili che abbiamo appena creato).
 
 9.	Si apre la finestra di dialogo **Generatore di espressioni della pipeline**. Nella metà inferiore della finestra di dialogo è presente un menu:<br>
-      a.	**Parametri**: sono costanti in una data factory che possono essere usate da una pipeline in qualsiasi espressione.<br>
-      b.	**Variabili di sistema**: queste variabili possono essere usate nelle espressioni quando si definiscono entità all'interno di uno dei servizi. Ad esempio, ID pipeline, nome 
+   a.	**Parametri**: sono costanti in una data factory che possono essere usate da una pipeline in qualsiasi espressione.<br>
+   b.	**Variabili di sistema**: queste variabili possono essere usate nelle espressioni quando si definiscono entità all'interno di uno dei servizi. Ad esempio, ID pipeline, nome 
           pipeline, nome trigger e così via. <br>
-      c.	**Funzioni**: è possibile chiamare funzioni all'interno delle espressioni. Le funzioni sono classificate in funzioni Raccolta, Conversione, Data, Logica, Matematica e Stringa. 
+   c.	**Funzioni**: è possibile chiamare funzioni all'interno delle espressioni. Le funzioni sono classificate in funzioni Raccolta, Conversione, Data, Logica, Matematica e Stringa. 
             Ad esempio, concat è una funzione Stringa, add è una funzione Matematica e così via.<br>
-      d.	**Variabili**: le variabili della pipeline sono valori che è possibile impostare e modificare durante l'esecuzione della pipeline. A differenza dei parametri della pipeline,che 
+   d.	**Variabili**: le variabili della pipeline sono valori che è possibile impostare e modificare durante l'esecuzione della pipeline. A differenza dei parametri della pipeline,che 
           sono definiti a livello di pipeline e non possono essere modificati durante l'esecuzione della pipeline, le variabili della pipeline possono essere impostate e modificate 
            all'interno di una pipeline usando un'attività Imposta variabile. Useremo a breve l'attività Imposta variabile.<br>
            
