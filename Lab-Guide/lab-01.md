@@ -15,7 +15,7 @@ Per ottenere informazioni utili, si estraggono, puliscono e organizzano insieme 
 •	**Dati sui clienti:** provengono da Customer Insights e sono archiviati in Dataverse. I dati sono sempre aggiornati.<br>
 •	**Dati sui dipendenti:** provengono dal sistema HR e sono archiviati in un file di esportazione in una cartella di SharePoint. Vengono aggiornati ogni mattina alle 9.00.<br>
 
-   ![](../Images/picture2.png)
+![](../Images/picture2.png)
  
 Attualmente si sta creando un set di dati in Power BI Premium che estrae i dati dai sistemi di origine sopraelencati per soddisfare le esigenze di reporting e per fornire agli utenti finali possibilità di uso self-service. Si usa Power Query per aggiornare il modello.
 
@@ -37,29 +37,31 @@ Prima di iniziare con Fabric, esaminiamo l'attuale report in Power BI Desktop pe
 
 1.	Aprire il file **FAIAD.pbix** contenuto nella cartella **C:\FAIAD\Reports** nell'ambiente lab. Il file si aprirà in Power BI Desktop.
 
-    ![](../Images/Picture3.png)   
-2.	Si apre la finestra di dialogo Immettere l'indirizzo e-mail. Andare alla scheda Environment Details sul pannello di destra nell'ambiente lab.
-3.	Copiare il **Nome utente** e incollarlo nella casella di testo E-mail della finestra di dialogo.
-4.	Selezionare **Continua**.
+   ![](../Images/Picture3.png)
+  	
+3.	Si apre la finestra di dialogo Immettere l'indirizzo e-mail. Andare alla scheda Environment Details sul pannello di destra nell'ambiente lab.
+4.	Copiare il **Nome utente** e incollarlo nella casella di testo E-mail della finestra di dialogo.
+5.	Selezionare **Continua**.
 
-    ![](../Images/picture4.png) 
-5.	Si apre la finestra di dialogo Effettua l'accesso. Selezionare Account aziendale o dell'istituto di **istruzione**.
-6.	Selezionare **Continua**.
+    ![](../Images/picture4.png)
+  	
+7.	Si apre la finestra di dialogo Effettua l'accesso. Selezionare Account aziendale o dell'istituto di **istruzione**.
+8.	Selezionare **Continua**.
 
   	 ![](../Images/Picture6.png)
   	
-8.	Si apre la finestra di dialogo Accedi. Immettere nuovamente il Nome utente copiandolo nella scheda **Dettagli ambiente**.
-9.	Selezionare **Avanti**.
+9.	Si apre la finestra di dialogo Accedi. Immettere nuovamente il Nome utente copiandolo nella scheda **Dettagli ambiente**.
+10.	Selezionare **Avanti**.
 
     ![](../Images/Picture7.png)
  
-10.	Nella finestra di dialogo successiva immettere le Credenziali e la Password copiandole dalla scheda **Dettagli ambiente**.
-11.	Selezionare **Accedi**.
-12.	Si apre la finestra di dialogo Azione richiesta che richiede di impostare l'autenticazione a più fattori. Non è necessario impostarla poiché si tratta di un ambiente lab. Selezionare **Ask later**.
+11.	Nella finestra di dialogo successiva immettere le Credenziali e la Password copiandole dalla scheda **Dettagli ambiente**.
+12.	Selezionare **Accedi**.
+13.	Si apre la finestra di dialogo Azione richiesta che richiede di impostare l'autenticazione a più fattori. Non è necessario impostarla poiché si tratta di un ambiente lab. Selezionare **Ask later**.
 
     ![](../Images/Picture8.png)
 
-13.	Selezionare **No, accedi solo all'app** nella finestra di dialogo successiva. Si aprirà Power BI Desktop.
+14.	Selezionare **No, accedi solo all'app** nella finestra di dialogo successiva. Si aprirà Power BI Desktop.
  
 ### Attività 2 - Analisi del report di Power BI Desktop
 Il report seguente analizza le vendite per Fabrikam. I KPI sono elencati in alto a sinistra nella pagina. Gli oggetti visivi rimanenti evidenziano le vendite nel tempo, per area, gruppo di prodotti e azienda rivenditrice.
