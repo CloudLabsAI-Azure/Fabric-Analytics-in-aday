@@ -46,7 +46,7 @@ d. PO<br>
 e. PO Line Items
 6.	**Clique com o botão direito do mouse** e selecione **Copiar.**
 
-    ![](../Images/lab-04/image02.png)
+![](../Images/lab-04/image02.png)
 
 7.	Volte para o **navegador.**
 8.	No **painel Dataflow,** selecione o **painel central** e pressione **Ctrl+V** (no momento, não é possível clicar com o botão direito do mouse em Colar). Se você estiver usando o dispositivo MAC, use Cmd+V para colar.
@@ -84,12 +84,12 @@ temos a consulta PO Line Items mesclada com PO para criar o fato PO. Agora preci
 1. Selecione a consulta **Supplier.**
 2. Na faixa de opções, selecione **Página Inicial -> Adicionar destino de dados -> Lakehouse.**
 
-   ![](../Images/lab-04/image07.png)
+![](../Images/lab-04/image07.png)
 
 3. A caixa de diálogo Conectar ao destino de dados é aberta. Na lista suspensa **Conexão**, selecione **Lakehouse (nenhum).**
 4.	Selecione **Próximo.**
  
-    ![](../Images/lab-04/image08.png)
+![](../Images/lab-04/image08.png)
 
 5.	A caixa de diálogo Escolher alvo de destino é aberta. Verifique se o botão de opção **Nova tabela** está **selecionado,** pois estamos criando uma nova tabela.
 6.	Queremos criar a tabela no Lakehouse que criamos anteriormente. No painel esquerdo, navegue para **Lakehouse -> FAIAD_<nome de usuário>.**
@@ -97,15 +97,15 @@ temos a consulta PO Line Items mesclada com PO para criar o fato PO. Agora preci
 8.	Deixe o nome da tabela como **Supplier.**
 9.	Selecione **Próximo.**
 
-    ![](../Images/lab-04/image09.png)
+![](../Images/lab-04/image09.png)
 
 10.	A caixa de diálogo Escolher configurações de destino é aberta. Desta vez, usaremos as configurações automáticas, pois assim será feita uma atualização completa dos dados. Além disso, as colunas serão renomeadas conforme necessário. Selecione **Salvar configurações.**
 
-    ![](../Images/lab-04/image10.png)
+![](../Images/lab-04/image10.png)
 
 11.	Você será direcionado de volta à **janela Power Query.** No **canto inferior direito, Destino de dados** está definido como **Lakehouse.** Da mesma forma, **configure o Destino de dados para a consulta PO.** Uma vez feito isso, sua consulta PO deverá ter **Destino de dados** definido como **Lakehouse** conforme mostrado na captura de tela abaixo.
 
-    ![](../Images/lab-04/image11.png)
+![](../Images/lab-04/image11.png)
  
 ### Tarefa 4: Renomear e publicar o fluxo de dados do Snowflake
 1. Na parte superior da tela, selecione a **seta ao lado do Dataflow 2** para renomear.
@@ -164,17 +164,17 @@ A conexão é estabelecida e você pode exibir os dados no painel de visualizaç
 BabyBoomer, GenX, GenY e GenZ. Essas quatro consultas são acrescentadas para criar a consulta Customer. Agora precisamos ingerir os dados de Customer no Lakehouse.
 1.	Conforme mencionado anteriormente, não estamos preparando nenhum desses dados. Portanto, **clique com o botão direito do mouse** na consulta **Customer** no painel Consultas e selecione **Habilitar o preparo** para remover a marca de seleção.
 
-    ![](../Images/lab-04/image18.png)
+![](../Images/lab-04/image18.png)
 
 2.	Selecione a consulta **Customer.**
 3.	Na faixa de opções, selecione **Página Inicial -> Adicionar destino de dados -> Lakehouse.**
  
-    ![](../Images/lab-04/image19.png)
+![](../Images/lab-04/image19.png)
 
 4.	A caixa de diálogo Conectar ao destino de dados é aberta. Na lista suspensa **Conexão,** **selecione Lakehouse (nenhum).**
 5.	Selecione **Próximo.**
 
-    ![](../Images/lab-04/image20.png)
+![](../Images/lab-04/image20.png)
 
 6.	A caixa de diálogo Escolher alvo de destino é aberta. Verifique se o botão de opção **Nova tabela**
 está selecionado, pois estamos criando uma nova tabela.
@@ -183,11 +183,11 @@ está selecionado, pois estamos criando uma nova tabela.
 9.	Deixe o nome da tabela como **Customer.**
 10.	Selecione **Próximo.**
  
-    ![](../Images/lab-04/image21.png)
+![](../Images/lab-04/image21.png)
 
 11.	A caixa de diálogo Escolher configurações de destino é aberta. Desta vez, usaremos as configurações automáticas, pois assim será feita uma atualização completa dos dados. Além disso, as colunas serão renomeadas conforme necessário. Selecione **Salvar configurações.**
 
-    ![](../Images/lab-04/image22.png)
+![](../Images/lab-04/image22.png)
  
 ### Tarefa 8: Publicar e renomear o Fluxo de Dados do Dataverse
 1. Você será direcionado de volta à **janela Power Query.** No **canto inferior direito, Destino de dados** está definido como **Lakehouse.**
@@ -235,29 +235,29 @@ Observe se a consulta foi colada e se está disponível no painel esquerdo. Como
 ### Tarefa 10: Criar conexão do SharePoint
 1.	Selecione **Configurar conexão.**
 
-    ![](../Images/lab-04/image28.png)
+![](../Images/lab-04/image28.png)
 
 2.	A caixa de diálogo Conectar-se à fonte de dados é aberta. Na lista suspensa **Conexão,** verifique se **Criar nova conexão** está selecionada.
 3.	O **Tipo de autenticação** deve ser **Conta organizacional.**
 4.	Selecione **Conectar.**
 
-    ![](../Images/lab-04/image29.png)
+![](../Images/lab-04/image29.png)
  
 ### Tarefa 11: Configurar destino de dados para a consulta People
 A conexão é estabelecida e você pode exibir os dados no painel de visualização. Fique à vontade para navegar pelas Etapas aplicadas das consultas. Agora precisamos ingerir os dados de People no Lakehouse.
 1.	Conforme mencionado anteriormente, não estamos preparando nenhum desses dados. Portanto, **clique com o botão direito do mouse** na consulta **People** no painel Consultas e selecione **Habilitar o preparo** para remover a marca de seleção.
 
-    ![](../Images/lab-04/image30.png)
+![](../Images/lab-04/image30.png)
 
 2.	Selecione a consulta **People.**
 3.	Na faixa de opções, selecione **Página Inicial -> Adicionar destino de dados -> Lakehouse.**
 
-    ![](../Images/lab-04/image31.png)
+![](../Images/lab-04/image31.png)
  
 4.	A caixa de diálogo Conectar ao destino de dados é aberta. Na lista suspensa **Conexão,** selecione **Lakehouse (nenhum).**
 5.	Selecione **Próximo.**
 
-    ![](../Images/lab-04/image32.png)
+![](../Images/lab-04/image32.png)
 
 6.	A caixa de diálogo Escolher alvo de destino é aberta. Verifique se o botão de opção **Nova tabela **está selecionado, pois estamos criando uma nova tabela.
 7.	Queremos criar a tabela no Lakehouse que criamos anteriormente. No painel esquerdo, navegue para **Lakehouse -> FAIAD_<nome de usuário>.**
@@ -265,36 +265,36 @@ A conexão é estabelecida e você pode exibir os dados no painel de visualizaç
 9.	Deixe o nome da tabela como **People.**
 10.	Selecione **Próximo.**
 
-    ![](../Images/lab-04/image33.png)
+![](../Images/lab-04/image33.png)
  
 11.	A caixa de diálogo Escolher configurações de destino é aberta. Desta vez, usaremos as configurações automáticas, pois assim será feita uma atualização completa dos dados. Além disso, as colunas serão renomeadas conforme necessário. Selecione **Salvar configurações.**
 
-    ![](../Images/lab-04/image34.png)
+![](../Images/lab-04/image34.png)
 
 ### Tarefa 12: Publicar e renomear o Fluxo de Dados do SharePoint
 1.	Você será direcionado de volta à **janela Power Query.** No **canto inferior direito,** Destino de dados está definido como **Lakehouse.**
 2.	No canto inferior direito, selecione **Publicar.**
 
-    ![](../Images/lab-04/image35.png)
+![](../Images/lab-04/image35.png)
 
 **Observação:** você será direcionado de volta para o **workspace FAIAD_<nome de usuário>.** Pode levar alguns instantes para que Fluxo de Dados ser publicado.
  
 3.	Estamos trabalhando com o Fluxo de Dados 2. Vamos renomeá-lo antes de continuar. Clique nas **reticências (…)** ao lado de Fluxo de Dados 2. Selecione **Propriedades.**
 
-    ![](../Images/lab-04/image36.png)
+![](../Images/lab-04/image36.png)
 
 4.	A caixa de diálogo Propriedades do fluxo de dados é aberta. Altere o **nome** para **df_People_SharePoint.**
 5.	Na caixa de texto Descrição, adicione **Dataflow to ingest People data from SharePoint to Lakehouse.**
 6.	**Selecione Salvar.**
  
-    ![](../Images/lab-04/image37.png)
+![](../Images/lab-04/image37.png)
 
 Você será direcionado de volta para o **workspace FAIAD_<nome de usuário>.** Agora ingerimos todos os dados no Lakehouse. No próximo laboratório, agendaremos a atualização do Fluxo de Dados.
 
 ## Referências
 O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais funções disponíveis no Microsoft Fabric. No menu do serviço, a seção Ajuda (?) tem links para ótimos recursos.
 
-  ![](../Images/lab-04/image38.png)
+![](../Images/lab-04/image38.png)
 
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas do Microsoft Fabric.
   - Veja a postagem do blog para ler o [anúncio completo de GA do Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
