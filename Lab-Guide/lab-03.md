@@ -266,15 +266,15 @@ pulsante destro del mouse** sulla query **Cities** e selezionare **Abilita stagi
    ![](../Images/lab-03/image120.png)
   	
 7.	Una volta creata la connessione, si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione Nuova tabella sia selezionato, poiché si 
-sta creando una **nuova tabella**.
-8.	Vogliamo creare la tabella nel Lakehouse creato in precedenza. Nel pannello di sinistra andare a**Lakehouse -> FAIAD_<nomeutente>**.
-9.	Selezionare **lh_FAIAD**
-10.	Lasciare il nome della tabella **Geo**
+   sta creando una **nuova tabella**.
+8.	 Vogliamo creare la tabella nel Lakehouse creato in precedenza. Nel pannello di sinistra andare a**Lakehouse -> FAIAD_<nomeutente>**.
+9.	 Selezionare **lh_FAIAD**
+10.	Lasciare il nome della tabella **Geo**.
 11.	Selezionare **Avanti**.
-
+    
     ![](../Images/lab-03/image123.png)
  
-12.	Si apre la finestra di dialogo Scegli le impostazioni di destinazione. Usare il **dispositivo di scorrimento** per **disabilitare le impostazioni automatiche**. Diamo un'occhiata alle opzioni. Sono presenti opzioni per **aggiungere dati** alla tabella esistente o per sostituirli.
+13.	Si apre la finestra di dialogo Scegli le impostazioni di destinazione. Usare il **dispositivo di scorrimento** per **disabilitare le impostazioni automatiche**. Diamo un'occhiata alle opzioni. Sono presenti opzioni per **aggiungere dati** alla tabella esistente o per sostituirli.
 Si notino inoltre le **opzioni dello schema alla pubblicazione**. Si ha la possibilità di mantenere lo schema fisso oppure, se cambierà nel tempo, esiste un'opzione di schema dinamico.
 Notare che compare l'avviso: "Alcuni nomi di colonna contengono caratteri non supportati. È necessario correggerli automaticamente?" Lakehouse non supporta i nomi di colonne che contengono spazi. Se si sceglie di selezionare Correggi, si aggiungeranno caratteri di sottolineatura per sostituire gli spazi nei nomi di colonna.
 
@@ -391,7 +391,7 @@ Assicurarsi che vengano elaborate tutte le query. Al termine, inserire i dati in
    ![](../Images/lab-03/image165.jpg)
 
 10.	Questa volta useremo le impostazioni automatiche perché i dati verranno aggiornati completamente. Inoltre, le colonne verranno rinominate secondo necessità. Selezionare **Salva 
-     impostazioni**.
+    impostazioni**.
 
     ![](../Images/lab-03/image168.jpg)
  
