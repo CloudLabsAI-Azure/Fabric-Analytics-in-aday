@@ -187,9 +187,9 @@ d.**Sales 事实**是通过合并InvoiceLineItems 与Invoice 查询而创建的�
 
 10.	请注意，**SnowflakeData** 文件夹包含 Supplier 维度和PO（订单/支出）事实。<br>
 
-a.Supplier 维度是通过合并 Suppliers 查询与 SupplierCategories 查询而创建的。
+- a.Supplier 维度是通过合并 Suppliers 查询与 SupplierCategories 查询而创建的。
 
-b.PO 事实是通过合并PO 与PO Line Items 查询而创建的。
+- b.PO 事实是通过合并PO 与PO Line Items 查询而创建的。
 
 11.	对于 SharePoint 数据源，输入**用户名**和**密码**, 其位于**环境变量**其位于环境变量选项卡中（实验指南旁边）。请选择 Microsoft 帐户选项。
 
