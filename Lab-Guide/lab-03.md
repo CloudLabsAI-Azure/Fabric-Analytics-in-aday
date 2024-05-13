@@ -136,7 +136,7 @@ Precisamos combinar os dados de City, State e Country desses três arquivos para
     **Observação:** Diferencia maiúsculas e minúsculas.
 5.	Selecione **OK.**
 
-   ![](../Images/lab-03/image15.png)
+    ![](../Images/lab-03/image15.png)
 
 6. Os dados serão filtrados em uma única linha. Selecione **Binary** na **coluna Content.**
 
@@ -212,15 +212,15 @@ Observe que a ADLS Base Folder também é copiada. Isso ocorre porque a consulta
 7.	No **painel direito,** em **Etapas aplicadas,** selecione **Source.**
 8.	Na barra de fórmulas, altere de **#"ADLS Base Folder" para #”ADLS Base Folder for Geo”.**
 
-   ![](../Images/lab-03/image27.png)
+    ![](../Images/lab-03/image27.png)
 
 9.	Clique na **marca de verificação** ao lado da barra de fórmulas ou pressione **Enter.**
 
-   ![](../Images/lab-03/image28.png)
+    ![](../Images/lab-03/image28.png)
 
 10.	Agora podemos remover a ADLS Base Folder. No painel esquerdo, na seção **Consultas, clique com o botão direito do mouse na consulta ADLS Base Folder** e selecione **Excluir.**
 
-   ![](../Images/lab-03/image29.png)
+    ![](../Images/lab-03/image29.png)
 
 11.	A caixa de diálogo Excluir consulta é exibida. Selecione **Excluir** para confirmar.
 
@@ -334,7 +334,7 @@ Veremos essa opção em um laboratório posterior. Agora que sabemos que os dado
 4.	Na caixa de texto **Descrição,** adicione **Dataflow to ingest Sales Data from ADLS to Lakehouse**
 5.	Selecione **Salvar.**
  
-   ![](../Images/lab-03/image45.png)
+    ![](../Images/lab-03/image45.png)
 
 ### Tarefa 11: Criar consultas restantes no Dataflow
 1. Você será direcionado de volta para o **workspace FAIAD_<nome de usuário>.** Selecione o Fluxo de Dados **df_Sales_ADLS** para voltar ao fluxo de dados.
