@@ -37,7 +37,7 @@ Prima di iniziare con Fabric, esaminiamo l'attuale report in Power BI Desktop pe
 
 1.	Aprire il file **FAIAD.pbix** contenuto nella cartella **C:\FAIAD\Reports** nell'ambiente lab. Il file si aprirà in Power BI Desktop.
 
-   ![](../Images/Picture3.png)
+![](../Images/Picture3.png)
   	
 2.	Si apre la finestra di dialogo Immettere l'indirizzo e-mail. Andare alla scheda Environment Details sul pannello di destra nell'ambiente lab.
    
@@ -45,13 +45,13 @@ Prima di iniziare con Fabric, esaminiamo l'attuale report in Power BI Desktop pe
    
 4.	Selezionare **Continua**.
 
-   ![](../Images/picture4.png)
+![](../Images/picture4.png)
   	
 5.	Si apre la finestra di dialogo Effettua l'accesso. Selezionare Account aziendale o dell'istituto di **istruzione**.
    
 6.	Selezionare **Continua**.
 
-  	![](../Images/Picture6.png)
+![](../Images/Picture6.png)
   	
 7.	Si apre la finestra di dialogo Accedi. Immettere nuovamente il Nome utente copiandolo nella scheda **Dettagli ambiente**.
    
