@@ -384,12 +384,14 @@ Em seguida, precisamos esperar 5 minutos/300 segundos se a atualização do flux
 7. No campo **Tempo de espera em segundos,** selecione a **caixa de texto** e selecione o link **Adicionar conteúdo dinâmico.**
 8. A caixa de diálogo Construtor de expressão de pipeline é aberta. Insira
 
+```
 @if(
 greater(variables(‘varCounter’), 1),
 if(equals(variables(‘varCounter’), 2), mul(variables(‘varWaitTime’),15 ), mul(variables(‘varWaitTime’), 0)
 ),
 mul(variables(‘varWaitTime’),5 )
 )
+```
 
 Sinta-se à vontade para digitar esta expressão, usar o menu para selecionar as funções ou copiá-la e colá-la.
 
