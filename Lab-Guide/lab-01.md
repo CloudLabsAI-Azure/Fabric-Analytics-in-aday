@@ -150,13 +150,13 @@ Fabrikam, Inc. 是一家经营创意商品的批发分销商。作为批发商�
 
 2.	Power Query 窗口随即打开。从功能区中选择**主页-> 数据源设置。**数据源设置”对话框随即打开。滚动浏览列表时，您会注意到问题陈述中提到了四个数据源：
 
-    a.Snowflake
+a.Snowflake
 
-    b.SharePoint
+b.SharePoint
 
-    c.ADLS Gen2
+c.ADLS Gen2
 
-    d.Dataverse
+d.Dataverse
 
 3.	选择**关闭**以关闭数据源设置对话框。
 
@@ -175,27 +175,27 @@ GenX、GenY 和GenZ。追加这四个查询以创建 Customer 查询。
 
 8.	请注意，**ADLSData** 文件夹具有多个维度：Geo、Product、Reseller 和Date 还具有Sales 事实。<br>
 
-    a.**Geo 维度**是通过合并 Cities、Countries 和 States 查询的数据而创建的。
+a.**Geo 维度**是通过合并 Cities、Countries 和 States 查询的数据而创建的。
 
-    b.**Product 维度**是通过合并 Product Groups 和Product Item Group 查询中的数据而创建的。
+b.**Product 维度**是通过合并 Product Groups 和Product Item Group 查询中的数据而创建的。
 
-    c.**Reseller 维度**是使用 BuyingGroup 查询筛选而来的。
+c.**Reseller 维度**是使用 BuyingGroup 查询筛选而来的。
 
-    d.**Sales 事实**是通过合并InvoiceLineItems 与Invoice 查询而创建的。
+d.**Sales 事实**是通过合并InvoiceLineItems 与Invoice 查询而创建的。
 
 9.	对于 Snowflake 数据源，使用 **Snowflake Username 和 Snowflake Password**，其位于**环境变量**选项卡中（实验指南旁边）。
 
 10.	请注意，**SnowflakeData** 文件夹包含 Supplier 维度和PO（订单/支出）事实。<br>
 
-    a.Supplier 维度是通过合并 Suppliers 查询与 SupplierCategories 查询而创建的。
+a.Supplier 维度是通过合并 Suppliers 查询与 SupplierCategories 查询而创建的。
 
-    b.PO 事实是通过合并PO 与PO Line Items 查询而创建的。
+b.PO 事实是通过合并PO 与PO Line Items 查询而创建的。
 
 11.	对于 SharePoint 数据源，输入**用户名**和**密码**, 其位于**环境变量**其位于环境变量选项卡中（实验指南旁边）。请选择 Microsoft 帐户选项。
 
 12.	请注意，**SharepointData** 文件夹具有People 维度。
 
-    ![](../Images/lab-01/image16.png)
+![](../Images/lab-01/image16.png)
 
 现在我们知道我们正在处理的是什么了。在接下来的实验中，我们将使用数据流 Gen2 创建一个类似的 Power Query 并使用 Lakehouse 建模。
 
