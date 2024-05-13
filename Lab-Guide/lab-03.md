@@ -136,7 +136,7 @@ Precisamos combinar os dados de City, State e Country desses três arquivos para
     **Observação:** Diferencia maiúsculas e minúsculas.
 5.	Selecione **OK.**
 
-    ![](../Images/lab-03/image15.png)
+  ![](../Images/lab-03/image15.png)
 
 6. Os dados serão filtrados em uma única linha. Selecione **Binary** na **coluna Content.**
 
