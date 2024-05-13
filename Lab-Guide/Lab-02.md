@@ -98,7 +98,7 @@ a.**Reflex:** 패턴에 대한 데이터 세트, 쿼리 및 Eventstreams를 모�
 
 b.**Reflex 샘플:** 샘플 솔루션.
     
-  ![](../Images/Lab-02/image036.png)
+![](../Images/Lab-02/image036.png)
  
 ## 작업 4: Industry Solutions 경험
 1.화면 왼쪽 하단에 있는 **Fabric 환경 선택기 아이콘**(현재 Data Activator로 설정됨)을 선택합니다. Fabric 환경 대화 상자가 열립니다.
@@ -214,13 +214,13 @@ e.**샘플 사용:** 샘플 솔루션.
  
 5.**만들기**를 선택합니다.
 
-   ![](../Images/Lab-02/image069.png)
+![](../Images/Lab-02/image069.png)
 
 몇 분 안에 Lakehouse가 생성되고 Lakehouse 인터페이스로 이동하게 됩니다.
 
 **왼쪽 패널에**서 작업 영역 아래에 Lakehouse 아이콘이 있는 것을 확인합니다. 언제든지 이 아이콘을 클릭하면 Lakehouse로 쉽게 이동할 수 있습니다.
 
-   ![](../Images/Lab-02/image072.jpg)
+![](../Images/Lab-02/image072.jpg)
 
 Lakehouse 탐색기에는 **테이블 및 파일**이 표시됩니다. Lakehouse는 파일 섹션 아래에 Azure Data Lake Storage Gen2 파일을 노출하거나 데이터 흐름이 Lakehouse 테이블에 데이터를 로드할 수 있습니다. 사용할 수 있는 다양한 옵션이 있습니다. 다음 랩에서와 같이 몇 가지 옵션을 보여 드리겠습니다.
 
@@ -229,7 +229,7 @@ Lakehouse 탐색기에는 **테이블 및 파일**이 표시됩니다. Lakehouse
 ## 참조
 Fabric Analyst in a Day(FAIAD)는 Microsoft Fabric에서 사용할 수 있는 몇 가지 주요 기능을 소개합니다. 서비스의 메뉴에 있는 도움말(?) 섹션에는 유용한 리소스로 연결되는 링크가 있습니다.
 
-   ![](../Images/Lab-02/image075.png)
+![](../Images/Lab-02/image075.png)
 
 아래는 Microsoft Fabric의 다음 단계에 도움이 되는 몇 가지 추가 자료입니다.
 - [Microsoft Fabric GA 발표](https://aka.ms/Fabric-Hero-Blog-Ignite23) 전문을 블로그 포스트로 읽기
