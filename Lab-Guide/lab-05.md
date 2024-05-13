@@ -60,8 +60,9 @@ verifichi un errore, è possibile fare clic sul nome della tabella/attività per
 
 13.	Fai clic sul collegamento **Aggiungi un'altra ora**. Notare che l'opzione Ora è visualizzata.
      
-15.	Impostare **Ora** su **12.00**. Notare che è possibile impostare l'aggiornamento sull'ora o sulla mezz'ora.
-16.	Selezionare **Applica** per salvare l'impostazione.
+14.	Impostare **Ora** su **12.00**. Notare che è possibile impostare l'aggiornamento sull'ora o sulla mezz'ora.
+15.	Selezionare **Applica** per salvare l'impostazione.
+    
 **Nota:** facendo clic sul collegamento Aggiungi un'altra ora, è possibile aggiungere più orari di aggiornamento. È anche possibile inviare le notifiche di errore al proprietario del flusso di dati e ad altri contatti.
 
     ![](../Images/lab-05/image024.jpg)
@@ -79,8 +80,7 @@ verifichi un errore, è possibile fare clic sul nome della tabella/attività per
 
     ![](../Images/lab-05/image030.jpg)
  
-Come illustrato in precedenza, è necessario creare una logica personalizzata per gestire lo scenario in cui il file Employee in SharePoint non viene consegnato in tempo. Usiamo la pipeline di dati per
-risolvere questo problema.
+Come illustrato in precedenza, è necessario creare una logica personalizzata per gestire lo scenario in cui il file Employee in SharePoint non viene consegnato in tempo. Usiamo la pipeline di dati per risolvere questo problema.
 
 ## Pipeline di dati
 
@@ -108,7 +108,8 @@ Ci si trova nella schermata **Home**. Se si osserva il menu in alto, si possono 
 
     ![](../Images/lab-05/image042.jpg)
     
-8.	Nel menu in alto fare clic su **Esegui**. Si troveranno opzioni per eseguire e pianificare l'esecuzione della pipeline. È anche possibile visualizzare la cronologia di esecuzione mediante l'opzione Visualizza cronologia di esecuzione.
+8.	Nel menu in alto fare clic su **Esegui**. Si troveranno opzioni per eseguire e pianificare l'esecuzione della pipeline. È anche possibile visualizzare la cronologia di esecuzione 
+   mediante l'opzione Visualizza cronologia di esecuzione.
    
 10.	Nel menu in alto selezionare **Visualizza**. Qui si troveranno le opzioni per visualizzare il codice in formato JSON. Si troveranno anche le opzioni per formattare le attività.
     
@@ -163,8 +164,9 @@ temporale, saranno necessari 15 minuti affinché il file sia disponibile. Voglia
 2.	Fate clic sui **puntini di sospensione (…**) a destra.
 3.	Nell'elenco di attività fare clic su **Fino a**.
 
-**Fino a**: è un'attività usata per eseguire l'iterazione finché una condizione non viene soddisfatta.
-Nel nostro scenario, ripeteremo e aggiorneremo il flusso di dati finché non avrà esito positivo o finché non avremo provato tre volte.
+  **Fino a**: è un'attività usata per eseguire l'iterazione finché una condizione non viene soddisfatta.
+
+  Nel nostro scenario, ripeteremo e aggiorneremo il flusso di dati finché non avrà esito positivo o finché non avremo provato tre volte.
 
    ![](../Images/lab-05/image057.jpg)
 
@@ -181,63 +183,66 @@ Nel nostro scenario, ripeteremo e aggiorneremo il flusso di dati finché non avr
    ![](../Images/lab-05/image060.png)
    
 7.	Selezionare **Nuova** per aggiungere un'altra variabile.
-8.	Notare che compare una riga. Immettere **varTempCounter** nella casella di testo Nome. Useremo questa variabile per incrementare la variabile varCounter.
+8.	Notare che compare una riga. Immettere **varTempCounter** nella casella di testo **Nome**. Useremo questa variabile per incrementare la variabile varCounter.
 9.	Nel **menu a discesa Tipo** selezionare **Integer**.
 10.	Immettere il **Valore predefinito** di **0**.
-11.	Eseguire passaggi analoghi per aggiungere altre tre variabili:
-     a.	**varIsSuccess** di tipo **String** con valore predefinito **No**. Questa variabile verrà usata per indicare se l'aggiornamento del flusso di dati ha avuto esito positivo.
-     b.	**varSuccess** di tipo **String** con valore predefinito **Sì**. Questa variabile verrà usata per impostare il valore di varIsSuccess se l'aggiornamento del flusso di dati ha esito positivo.
-     c.	**varWaitTime** di tipo **Integer** con valore predefinito **60**. Questa variabile verrà usata per impostare il tempo di attesa in caso il flusso di dati non riesca (5 minuti/300 secondi oppure 15 minuti/900 secondi).
+11.	Eseguire passaggi analoghi per aggiungere altre tre variabili:<br>
+     a.	**varIsSuccess** di tipo **String** con valore predefinito **No**. Questa variabile verrà usata per indicare se l'aggiornamento del flusso di dati ha avuto esito positivo.<br>
+     b.	**varSuccess** di tipo **String** con valore predefinito **Sì**. Questa variabile verrà usata per impostare il valore di varIsSuccess se l'aggiornamento del flusso di dati ha 
+        esito positivo.<br>
+     c.	**varWaitTime** di tipo **Integer** con valore predefinito **60**. Questa variabile verrà usata per impostare il tempo di attesa in caso il flusso di dati non riesca (5 
+        minuti/300 secondi oppure 15 minuti/900 secondi).<br>
 
 ### Attività 8 - Configurazione di un'attività Fino a
 1.	Selezionare l'attività **Fino a**.
 2.	Nel **riquadro inferiore** selezionare **Generale**.
-3.	Immettere il Nome: Iterator****
+3.	Immettere il **Nome: Iterator****
 4.	Immettere la **Descrizione: Iteratore per aggiornare il flusso di dati. Riproverà fino a 3 volte**.
  
-    ![](../Images/lab-05/image060.png)
+    ![](../Images/lab-05/image063.png)
   	
 6.	Nel riquadro inferiore selezionare **Impostazioni**.
 7.	Seleziona la casella di testo **Espressione**. In questa casella di testo dobbiamo immettere un'espressione che restituirà true o false. L'attività Fino a verrà iterata finché questa espressione restituisce false. Quando l'espressione restituisce true, l'iterazione dell'attività Fino a si interrompe.
-9.	Selezionare il collegamento **Aggiungi contenuto dinamico** visualizzato sotto la casella di testo.
+8.	Selezionare il collegamento **Aggiungi contenuto dinamico** visualizzato sotto la casella di testo.
 
-     ![](../Images/lab-05/image063.png)
+     ![](../Images/lab-05/image066.png)
 
 Dobbiamo scrivere un'espressione che verrà eseguita finché il valore di varCounter è 3 o il valore di varIsSuccess è Sì**** (varCounter e varIsSuccess sono le variabili che abbiamo appena creato).
-8.	Si apre la finestra di dialogo **Generatore di espressioni della pipeline**. Nella metà inferiore della finestra di dialogo è presente un menu:
-      a.	**Parametri**: sono costanti in una data factory che possono essere usate da una pipeline in qualsiasi espressione.
-      b.	**Variabili di sistema**: queste variabili possono essere usate nelle espressioni quando si
-            definiscono entità all'interno di uno dei servizi. Ad esempio, ID pipeline, nome pipeline, nome trigger e così via. 
+9.	Si apre la finestra di dialogo **Generatore di espressioni della pipeline**. Nella metà inferiore della finestra di dialogo è presente un menu:<br>
+      a.	**Parametri**: sono costanti in una data factory che possono essere usate da una pipeline in qualsiasi espressione.<br>
+      b.	**Variabili di sistema**: queste variabili possono essere usate nelle espressioni quando si definiscono entità all'interno di uno dei servizi. Ad esempio, ID pipeline, nome 
+          pipeline, nome trigger e così via. <br>
       c.	**Funzioni**: è possibile chiamare funzioni all'interno delle espressioni. Le funzioni sono classificate in funzioni Raccolta, Conversione, Data, Logica, Matematica e Stringa. 
-            Ad esempio, concat è una funzione Stringa, add è una funzione Matematica e così via.
+            Ad esempio, concat è una funzione Stringa, add è una funzione Matematica e così via.<br>
       d.	**Variabili**: le variabili della pipeline sono valori che è possibile impostare e modificare durante l'esecuzione della pipeline. A differenza dei parametri della pipeline,che 
           sono definiti a livello di pipeline e non possono essere modificati durante l'esecuzione della pipeline, le variabili della pipeline possono essere impostate e modificate 
-           all'interno di una pipeline usando un'attività Imposta variabile. Useremo a breve l'attività Imposta variabile.
+           all'interno di una pipeline usando un'attività Imposta variabile. Useremo a breve l'attività Imposta variabile.<br>
 
-   ![](../Images/lab-05/image066.png)
+   ![](../Images/lab-05/image069.jpg)
 
-9.	Fare clic su **Funzioni** nel menu in basso.
-10.	Nella sezione **Funzioni logiche** selezionare la funzione or. Notare che **@or()** viene aggiunto nella casella di testo dell'espressione dinamica. La funzione or accetta due parametri, stiamo lavorando sul primo parametro.
+10.	Fare clic su **Funzioni** nel menu in basso.
+11.	Nella sezione **Funzioni logiche** selezionare la funzione or. Notare che **@or()** viene aggiunto nella casella di testo dell'espressione dinamica. La funzione or accetta due parametri, stiamo lavorando sul primo parametro.
  
-    ![](../Images/lab-05/image066.png)
-11.	Posizionare il cursore **tra le parentesi** della funzione **@or**.
-12.	Nella sezione **Funzioni logiche** selezionare la funzione **equals**. Notare che questo viene aggiunto nella casella di testo dell'espressione dinamica.
+    ![](../Images/lab-05/image072.png)
+   	
+12.	Posizionare il cursore **tra le parentesi** della funzione **@or**.
+13.	Nella sezione **Funzioni logiche** selezionare la funzione **equals**. Notare che questo viene aggiunto nella casella di testo dell'espressione dinamica.
 
    **Nota**: La funzione dovrebbe essere **@or(equals())**. Anche la funzione equals accetta due parametri . Controlleremo se la variabile varCounter è uguale a 3.
 
-   ![](../Images/lab-05/image069.jpg)
+   ![](../Images/lab-05/image075.png)
  
-13.	Ora posizionare il cursore **tra le parentesi** della funzione **@equals** per aggiungere i parametri.
-14.	Nel menu in basso selezionare **Variabili**.
-15.	Seleziona la variabile **varCounter** che sarà il primo parametro.
-16.	Immettere **3** come secondo parametro della funzione equals. Come illustrato nello screenshot seguente, l'espressione sarà **@or(equals(variables('varCounter'),3))**
+14.	Ora posizionare il cursore **tra le parentesi** della funzione **@equals** per aggiungere i parametri.
+15.	Nel menu in basso selezionare **Variabili**.
+16.	Seleziona la variabile **varCounter** che sarà il primo parametro.
+17.	Immettere **3** come secondo parametro della funzione equals. Come illustrato nello screenshot seguente, l'espressione sarà **@or(equals(variables('varCounter'),3))**
 
-    ![](../Images/lab-05/image075.png)
+    ![](../Images/lab-05/image078.jpg)
    	
 18.	Dobbiamo aggiungere il secondo parametro alla funzione or. **Aggiungere una virgola** tra le due parentesi finali. Questa volta proveremo a digitare il nome della funzione. Iniziare a digitare **equ** e si otterrà un elenco a discesa delle funzioni disponibili (questa funzionalità è denominata
 IntelliSense). Seleziona la funzione **equals**.
 
-    ![](../Images/lab-05/image078.png)
+    ![](../Images/lab-05/image081.jpg)
  
 19.	Il primo parametro della funzione equals è una variabile. Posiziona il **cursore prima della virgola**.
 20.	Inizia a digitare **variables(**
@@ -245,31 +250,31 @@ IntelliSense). Seleziona la funzione **equals**.
 22.	Dopo la virgola, inseriamo il secondo parametro. Inizia a digitare **variables(**
 23.	Con l'aiuto di IntelliSense selezionare **variables('varSuccess')**. Qui stiamo confrontando il valore di varIsSuccess con il valore di varSuccess (il valore predefinito di varSuccess è Sì).
 
-    ![](../Images/lab-05/image081.jpg)
+    ![](../Images/lab-05/image084.jpg)
     
 24.	L'espressione dovrebbe essere:
     **@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))**
  
 25.	Selezionare **OK**.
 
-     ![](../Images/lab-05/image084.jpg)
+     ![](../Images/lab-05/image087.png)
 
 ### Attività 9 - Configurazione di un'attività Flusso di dati
 1.	Si aprirà nuovamente la schermata di progettazione. Con l'**attività Fino a** selezionata, nel **riquadro inferiore** selezionare **Attività**. Aggiungeremo ora le attività che devono essere eseguite.
 2.	Selezionare l'icona **Modifica** nella prima riga. Si aprirà una schermata di progettazione dell'iteratore vuota.
 
-     ![](../Images/lab-05/image087.jpg)
+     ![](../Images/lab-05/image090.jpg)
   	
-4.	Nel menu in alto selezionare **Attività -> Flusso di dati**. L'attività Flusso di dati viene aggiunta al riquadro di progettazione.
-5.	Con l'**attività Flusso di dati selezionata**, nel riquadro inferiore selezionare **Generale**. Assegniamo all'attività un nome e una descrizione. 
-6.	Nel campo **Nome** immettere **dfactivity_People_SharePoint**.
+3.	Nel menu in alto selezionare **Attività -> Flusso di dati**. L'attività Flusso di dati viene aggiunta al riquadro di progettazione.
+4.	Con l'**attività Flusso di dati selezionata**, nel riquadro inferiore selezionare **Generale**. Assegniamo all'attività un nome e una descrizione. 
+5.	Nel campo **Nome** immettere **dfactivity_People_SharePoint**.
 
      ![](../Images/lab-05/image093.png)
   	
-8.	Nel campo **Descrizione** immettere **Attività Flusso di dati per aggiornare il flusso di dati df_People_Sharepoint**.  	
-10.	Selezionare **Impostazioni** nel riquadro inferiore.
-11.	Assicurarsi che l'**Area di lavoro** sia impostata sulla propria area di lavoro **FAIAD_<nomeutente>**.
-12.	Nel menu a discesa Flusso di dati selezionare **df_People_SharePoint**. Quando questa attività Flusso di dati viene eseguita, aggiornerà **df_People_SharePoint**.
+6.	Nel campo **Descrizione** immettere **Attività Flusso di dati per aggiornare il flusso di dati df_People_Sharepoint**.  	
+7.	Selezionare **Impostazioni** nel riquadro inferiore.
+8.	Assicurarsi che l'**Area di lavoro** sia impostata sulla propria area di lavoro **FAIAD_<nomeutente>**.
+9.	Nel menu a discesa Flusso di dati selezionare **df_People_SharePoint**. Quando questa attività Flusso di dati viene eseguita, aggiornerà **df_People_SharePoint**.
 
     ![](../Images/lab-05/image096.jpg)
  
@@ -287,24 +292,24 @@ Abbiamo configurato l'attività Flusso di dati come abbiamo fatto in precedenza 
      c.	L'icona **segno X rosso** si usa in caso di esito negativo dell'attività.
      d.	L'icona **freccia dritta blu** si usa al completamento dell'attività.
 
-6.	Fare clic sul **segno di spunta verde** dall'attività Flusso di dati dfactivity_People_SharePoint e
+5.	Fare clic sul **segno di spunta verde** dall'attività Flusso di dati dfactivity_People_SharePoint e
 trascinare per connettere la nuova **attività Imposta variabile set_varIsSuccess**. In caso di esito positivo dell'aggiornamento del flusso di dati, vogliamo eseguire l'attività Imposta variabile.
 
      ![](../Images/lab-05/image099.png)
   	
-7.	Con l'attività **Imposta variabile** selezionata, fare clic su **Impostazioni** nel menu in basso.
-8.	Nel riquadro inferiore assicurarsi che il **Tipo di variabile** sia **Variabile della pipeline**. 
-9.	Nel campo **Nome** selezionare **varIsSucces**. Questa è la variabile di cui imposteremo il valore.
-10.	Nel campo Valore selezionare la casella di testo. Selezionare il collegamento **Aggiungi contenuto dinamico**.
+6.	Con l'attività **Imposta variabile** selezionata, fare clic su **Impostazioni** nel menu in basso.
+7.	Nel riquadro inferiore assicurarsi che il **Tipo di variabile** sia **Variabile della pipeline**. 
+8.	Nel campo **Nome** selezionare **varIsSucces**. Questa è la variabile di cui imposteremo il valore.
+9.	Nel campo Valore selezionare la casella di testo. Selezionare il collegamento **Aggiungi contenuto dinamico**.
 
      ![](../Images/lab-05/image102.jpg)
    	
-12.	Si apre la finestra di dialogo Generatore di espressioni della pipeline. Selezionare l'area di testo
+10.	Si apre la finestra di dialogo Generatore di espressioni della pipeline. Selezionare l'area di testo
    **Aggiungere contenuto dinamico di seguito usando qualsiasi combinazione di espressioni, funzioni e variabili di sistema.**
-13.	Nel menu in basso selezionare **Variabili -> varSuccess**. Notare che @variables(‘varSuccess’) viene immesso nell'area di testo Aggiungere contenuto dinamico di seguito. Tenere presente 
+11.	Nel menu in basso selezionare **Variabili -> varSuccess**. Notare che @variables(‘varSuccess’) viene immesso nell'area di testo Aggiungere contenuto dinamico di seguito. Tenere presente 
 che quando abbiamo creato le variabili, abbiamo impostato il valore predefinito della variabile
 varSuccess su Sì. Quindi, assegniamo il valore Sì alla variabile varIsSuccess.
-14.	Selezionare **OK**. Si aprirà nuovamente il **riquadro di progettazione dell'iteratore**.
+12.	Selezionare **OK**. Si aprirà nuovamente il **riquadro di progettazione dell'iteratore**.
     
      ![](../Images/lab-05/image105.png)
    	
@@ -317,13 +322,13 @@ Ora dobbiamo impostare il contatore degli esiti negativi dell'attività Flusso d
 4.	Nel campo Descrizione immettere **Incrementare la variabile varTempCounter**.
 5.	Fare clic sul **segno X rosso** dall'attività Flusso di dati all'attività Imposta variabile. In caso di esito negativo dell'aggiornamento del flusso di dati, vogliamo eseguire questa attività Imposta variabile.
    
-     ![](../Images/lab-05/image108.jpg)
+     ![](../Images/lab-05/image108.png)
   	
-7.	Con l'attività **Imposta variabile** selezionata, selezionare **Impostazioni** dal menu in basso.
-8.	Nel riquadro inferiore assicurarsi che il **Tipo di variabile** sia **Variabile della pipeline**.
-9.	Nel campo **Nome** selezionare **varTempCounter**. Questa è la variabile di cui imposteremo il valore.
-10.	Nel campo **Valore** selezionare la **casella di testo**. Selezionare il collegamento **Aggiungi contenuto dinamico**.
-11.	Si apre la finestra di dialogo Generatore di espressioni della pipeline. Immettere
+6.	Con l'attività **Imposta variabile** selezionata, selezionare **Impostazioni** dal menu in basso.
+7.	Nel riquadro inferiore assicurarsi che il **Tipo di variabile** sia **Variabile della pipeline**.
+8.	Nel campo **Nome** selezionare **varTempCounter**. Questa è la variabile di cui imposteremo il valore.
+9.	Nel campo **Valore** selezionare la **casella di testo**. Selezionare il collegamento **Aggiungi contenuto dinamico**.
+10.	Si apre la finestra di dialogo Generatore di espressioni della pipeline. Immettere
 **@add(variables('varCounter'),1)**
 
     **Nota**: è possibile digitare l'espressione, usare il menu per selezionare le funzioni o copiare e incollare l'espressione.
@@ -352,7 +357,7 @@ Ora dobbiamo impostare il contatore degli esiti negativi dell'attività Flusso d
 **@variables('varTempCounter')**. È possibile digitare l'espressione, usare il menu per selezionare le funzioni o copiare e incollare l'espressione.
 **Nota:** questa funzione imposta il valore della variabile varCounter sul valore della variabile varTempCounter (varCounter = varTempCounter). Alla fine di ogni iterazione varCounter e varTempCounter hanno lo stesso valore.
  
-   ![](../Images/lab-05/image117.png)
+   ![](../Images/lab-05/image117.jpg)
 
 
 ### Attività 13 - Configurazione di un'attività Attesa
@@ -369,16 +374,16 @@ Quindi, dovremo impostare un'attesa di 5 minuti/300 secondi in caso di un primo 
 7.	Nel campo **Tempo di attesa in secondi** selezionare la **casella di testo** e selezionare il contenuto dinamico **Aggiungi contenuto dinamico**.
 8.	Si apre la finestra di dialogo Generatore di espressioni della pipeline. Immettere
    
-     @if(
+**` @if(
      greater(variables(‘varCounter’), 1),
      if(equals(variables(‘varCounter’), 2), mul(variables(‘varWaitTime’),15 ), mul(variables(‘varWaitTime’), 0)
      ),
      mul(variables(‘varWaitTime’),5 )
-     )
+     )`**
   	
   È possibile digitare l'espressione, usare il menu per selezionare le funzioni o copiare e incollare l'espressione.
 
-    ![](../Images/lab-05/image122.png)
+   ![](../Images/lab-05/image122.jpg)
  
 Qui usiamo due nuove funzioni:
 - **greater**: prende due numeri come parametri e li confronta per indicare qual è il maggiore.
@@ -397,9 +402,9 @@ l'iterazione si conclude, non occorre attendere oltre), il tempo di attesa è im
 
     ![](../Images/lab-05/image128.jpg)
    	
-12.	La creazione della pipeline di dati è conclusa. Nel menu in alto selezionare l'icona **Home -> Salva** per salvare la pipeline di dati.
+11.	La creazione della pipeline di dati è conclusa. Nel menu in alto selezionare l'icona **Home -> Salva** per salvare la pipeline di dati.
 
-     ![](../Images/lab-05/image131.jpg)
+     ![](../Images/lab-05/image131.png)
 
 ### Attività 14 - Configurazione dell'aggiornamento pianificato per la pipeline di dati
 1.	Possiamo testare la pipeline di dati selezionando **Home -> Esegui**.
@@ -414,14 +419,14 @@ l'iterazione si conclude, non occorre attendere oltre), il tempo di attesa è im
 7.	Impostare **Data e ora di fine** su una **data futura**.
 8.	Impostare il proprio **Fuso orario**.
    
-**Nota**: poiché si tratta di un ambiente lab, è possibile impostare il fuso orario sul fuso orario preferito.
-In uno scenario reale, si imposterà il fuso orario in base alla propria ubicazione o all'ubicazione dell'origine dati.
-10.	Selezionare **Applica**.
-11.	Selezionare la **X** nell'angolo superiore destro della finestra di dialogo per chiuderla.
+**Nota**: poiché si tratta di un ambiente lab, è possibile impostare il fuso orario sul fuso orario preferito.In uno scenario reale, si imposterà il fuso orario in base alla propria ubicazione o all'ubicazione dell'origine dati.
+
+9.	Selezionare **Applica**.
+10.	Selezionare la **X** nell'angolo superiore destro della finestra di dialogo per chiuderla.
 
    ![](../Images/lab-05/image134.jpg)
  
-12.	Selezionare l'area di lavoro di Fabric **FAIAD_<nome utente>** nel pannello di sinistra per andare all'area di lavoro.
+11.	Selezionare l'area di lavoro di Fabric **FAIAD_<nome utente>** nel pannello di sinistra per andare all'area di lavoro.
 **Nota**: nella schermata Pianificazione non vi è un'opzione per la notifica dell'esito positivo o negativo (come nella pianificazione del flusso di dati). È possibile impostare la notifica aggiungendo un'attività nella pipeline di dati. Non effettueremo questa impostazione in questo lab poiché si tratta di un ambiente lab.
 Abbiamo pianificato gli aggiornamenti per le diverse origini dati. Nel prossimo lab creeremo relazioni, misure ed eseguiremo altre attività di modellazione.
  
