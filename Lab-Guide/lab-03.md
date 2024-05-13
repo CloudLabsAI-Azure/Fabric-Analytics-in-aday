@@ -84,7 +84,6 @@ Notare che vi sono due formati di file nella cartella: **JSON e Parquet**.
 prestazioni elevate nella compressione dei dati e consente di gestire di un'ampia varietà di tipi di codifica.
 •	**JSON**: è un formato di file che contiene metadati quali schema e tipo di dati del file Parquet.
 
-
 5.	Abbiamo bisogno solo del file Parquet poiché contiene i dati di cui abbiamo bisogno. Selezionare la **freccia a discesa della colonna Estensione**.
 6.	**Deselezionare JSON** in modo da filtrare i file Parquet.
 7.	Selezionare **OK**.
@@ -147,7 +146,7 @@ Nel pannello di destra, in **Passaggi applicati** verificare che tutti i passagg
  
 4.	Nella finestra di dialogo **Filtra righe** immettere **Application.Countries**
 
-**Nota**: questo campo fa distinzione tra maiuscole e minuscole.
+>**Nota**: questo campo fa distinzione tra maiuscole e minuscole.
   	
 5.	Selezionare **OK**.
 
@@ -252,7 +251,7 @@ Ora che abbiamo una dimensione, inseriamo questi dati in Lakehouse. Questa è la
 1.	Come indicato in precedenza, non effettuiamo lo staging di questi dati. Quindi, f**are clic con il
 pulsante destro del mouse** sulla query **Cities** e selezionare **Abilita staging** per rimuovere il segno di spunta.
 
-   ![](../Images/lab-03/image114.jpg)
+  ![](../Images/lab-03/image114.jpg)
   	
 2.	Eseguire gli stessi passaggi per le query **Countries e Geo** per **rimuovere il segno di spunta** **accanto a Abilita staging**.
 3.	Selezionare la query **Geo**.
@@ -274,7 +273,7 @@ pulsante destro del mouse** sulla query **Cities** e selezionare **Abilita stagi
     
     ![](../Images/lab-03/image123.png)
  
-13.	Si apre la finestra di dialogo Scegli le impostazioni di destinazione. Usare il **dispositivo di scorrimento** per **disabilitare le impostazioni automatiche**. Diamo un'occhiata alle opzioni. Sono presenti opzioni per **aggiungere dati** alla tabella esistente o per sostituirli.
+12.	Si apre la finestra di dialogo Scegli le impostazioni di destinazione. Usare il **dispositivo di scorrimento** per **disabilitare le impostazioni automatiche**. Diamo un'occhiata alle opzioni. Sono presenti opzioni per **aggiungere dati** alla tabella esistente o per sostituirli.
 Si notino inoltre le **opzioni dello schema alla pubblicazione**. Si ha la possibilità di mantenere lo schema fisso oppure, se cambierà nel tempo, esiste un'opzione di schema dinamico.
 Notare che compare l'avviso: "Alcuni nomi di colonna contengono caratteri non supportati. È necessario correggerli automaticamente?" Lakehouse non supporta i nomi di colonne che contengono spazi. Se si sceglie di selezionare Correggi, si aggiungeranno caratteri di sottolineatura per sostituire gli spazi nei nomi di colonna.
 
