@@ -64,7 +64,7 @@ Prima di iniziare con Fabric, esaminiamo l'attuale report in Power BI Desktop pe
 13.	Si apre la finestra di dialogo Azione richiesta che richiede di impostare l'autenticazione a più fattori. Non è necessario impostarla poiché si tratta di un ambiente lab. 
     Selezionare **Ask later**.
 
-    ![](../Images/Picture8.png)
+   ![](../Images/Picture8.png)
 
 14.	Selezionare **No, accedi solo all'app** nella finestra di dialogo successiva. Si aprirà Power BI Desktop.
  
