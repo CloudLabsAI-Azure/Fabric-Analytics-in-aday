@@ -45,7 +45,7 @@ Antes de começarmos com o Fabric, vamos dar uma olhada no Relatório atual no P
 2.	Insira seu endereço de email na caixa de diálogo aberta. Navegue até a guia **Environment Details**.
 no painel direito do ambiente de laboratório.
 3.	Copie os dados de **Username** e cole na caixa de texto Email da caixa de diálogo.
-4.	Selecione **Continue**.
+4.	Selecione **Continue**.<br>
 ![](../Images/lab-01/image03.png)
 5.	A caixa de diálogo Vamos entrar é aberta. Selecione **Conta corporativa ou de estudante.**
 6.	Selecione **Continuar.**<br>
