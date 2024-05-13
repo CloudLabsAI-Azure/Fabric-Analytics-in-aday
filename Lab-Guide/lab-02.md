@@ -51,13 +51,13 @@ Fabric 工作区
 
 2.	输入**用户名**，其位于**环境变量**选项卡中（“实验指南”选项卡旁边），作为**电子邮件地址，**然后点击 **Submit。**
 
-    ![](../Images/lab-02/image1.jpg)
+![](../Images/lab-02/image1.jpg)
 
 3.	您将导航到**密码**屏幕。输入讲师提供给您的**密码**，其位于**环境变量**选项卡中（“实验指南”选项卡旁边）。
 
 4.	点击 **Sign in** 并按照提示登录Fabric。
 
-    ![](../Images/lab-02/image2.png)
+![](../Images/lab-02/image2.png)
 
 5.	您将导航到熟悉的 **Power BI 服务主页。**
 
@@ -69,22 +69,22 @@ Fabric 工作区
 
 8.	选择 **Start trial。**
 
-    ![](../Images/lab-02/image3.jpg)
+![](../Images/lab-02/image3.jpg)
 
 9.	“升级到 Microsoft Fabric 免费试用版”对话框随即打开。选择**开始试用。**
 
-    ![](../Images/lab-02/image4.jpg)
+![](../Images/lab-02/image4.jpg)
 
 10.	选择 **Just one last step** 对话框右上角的“X”关闭对话框。这是一个实验环境，因此我们不会提供这些详细信息。
 
-    ![](../Images/lab-02/image5.jpg)
+![](../Images/lab-02/image5.jpg)
 
 11.	“已成功升级到Microsoft Fabric”对话框随即打开。选择 **Fabric Home Page。**
     ![](../Images/lab-02/image6.png)
 
 12.	您将导航到 **Microsoft Fabric 主页。**
 
-    ![](../Images/lab-02/image7.jpg)
+![](../Images/lab-02/image7.jpg)
 
 ## Fabric 体验概述
 
@@ -94,21 +94,21 @@ Fabric 工作区
 
 2.	选择 **Data Factory。**
 
-    ![](../Images/lab-02/image8.jpg)
+![](../Images/lab-02/image8.jpg)
 
 3.	您将导航到 **Data Factory 主页页面**。该页面包含三个主要部分。
 
-    a. **New:** 这里列出了 Data Factory - Dataflow Gen2 和 Data pipeline 中的可用项目。
+a. **New:** 这里列出了 Data Factory - Dataflow Gen2 和 Data pipeline 中的可用项目。
 
-    - Dataflow Gen2 是新一代数据流。
+- Dataflow Gen2 是新一代数据流。
 
-    - Data pipeline 用于数据编排。
+- Data pipeline 用于数据编排。
 
-    **b.Recommended：** 这一部分可用于访问快速入门学习文档。
+**b.Recommended：** 这一部分可用于访问快速入门学习文档。
 
-    **c.Quick Access**：这一部分列出了最近使用或收藏的项目。
+**c.Quick Access**：这一部分列出了最近使用或收藏的项目。
 
-    ![](../Images/lab-02/image8.jpg)
+![](../Images/lab-02/image8.jpg)
 
 ### 任务 3：Data Activator 体验
 
@@ -118,9 +118,9 @@ Fabric 工作区
 
 2.	从对话框选择 Data Activator。您将导航到 Data Activator 主页。Data Activator 是Microsoft Fabric 中的一种无代码体验，在数据变化中检测到模式或条件时自动采取操作。请注意，这三个部分与 Data Factory 体验相似。在“新建”部分中，请注意以下项：
 
-    - Reflex：用于监视数据集、查询和事件流中的模式。
+- Reflex：用于监视数据集、查询和事件流中的模式。
 
-    - Reflex 示例：示例解决方案
+- Reflex 示例：示例解决方案
 
 ![](../Images/lab-02/image11.png)
 
@@ -130,9 +130,9 @@ Fabric 工作区
 
 2.	从对话框中选择 Industry Solutions。您将导航到 Industry Solutions 主页。Microsoft Fabric提供特定于行业的数据解决方案，这些解决方案为数据管理、分析和决策提供强大的平 台。这些数据解决方案解决了不同行业面临的独特挑战，助力企业优化运营、整合来自不同来源的数据并使用丰富的分析。请注意，这三个部分与之前的体验相似。在“新建”部分中，请注意以下项：
 
-    - **可持续性解决方案：** 支持引入、标准化和分析环境、社会和治理 (ESG) 数据。
+- **可持续性解决方案：** 支持引入、标准化和分析环境、社会和治理 (ESG) 数据。
 
-    - **零售解决方案：** 有助于管理大量数据，整合来自各个来源的数据，并提供实时分析以促进及时做出决策。零售商可以使用这些解决方案进行库存优化、客户细分、销售预测、动态定价和欺诈检测。
+- **零售解决方案：** 有助于管理大量数据，整合来自各个来源的数据，并提供实时分析以促进及时做出决策。零售商可以使用这些解决方案进行库存优化、客户细分、销售预测、动态定价和欺诈检测。
 
 ![](../Images/lab-02/image12.png)
 
@@ -142,21 +142,21 @@ Fabric 工作区
 
 2.	选择 **Data Engineering。** 您将导航到 **Data Engineering 主页。** 该页面也包含三个主要部分。在“New”部分中，请注意以下项：<br>
 
-    a.	**Lakehouse：** 用于存储大数据以供清理、查询、报告和共享
+a.	**Lakehouse：** 用于存储大数据以供清理、查询、报告和共享
 
-    b.	**Notebook：** 使用 Python、R 和Scala 等各种语言进行数据引入、准备、分析和其他与数据相关的任务。
+b.	**Notebook：** 使用 Python、R 和Scala 等各种语言进行数据引入、准备、分析和其他与数据相关的任务。
 
-    c. **Environment**：用于为笔记本和spark 作业定义设置共享库、spark 计算设置和资源。
+c. **Environment**：用于为笔记本和spark 作业定义设置共享库、spark 计算设置和资源。
 
-    d.	**Spark Job Definition：** 用于定义、计划和管理 Apache 作业。
+d.	**Spark Job Definition：** 用于定义、计划和管理 Apache 作业。
 
-    e.	**Data pipeline：** 用于编排数据解决方案。
+e.	**Data pipeline：** 用于编排数据解决方案。
 
-    f.	**Import notebook：** 用于从本地计算机导入笔记本。
+f.	**Import notebook：** 用于从本地计算机导入笔记本。
 
-    g.	**Use a sample：** 示例解决方案
+g.	**Use a sample：** 示例解决方案
 
-    ![](../Images/lab-02/image13.jpg)
+![](../Images/lab-02/image13.jpg)
 
 ### 任务 6：Synapse Data Science 体验
 
@@ -164,17 +164,17 @@ Fabric 工作区
 
 2.	选择 **Data Science。** 您将导航到 Data Science **主页**。这里也有三个部分。在“New”部分中，请注意以下项：
 
-    a.	**ML model：**用于创建机器学习模型。
+a.	**ML model：**用于创建机器学习模型。
 
-    b.	**Experiment：**用于创建、运行和跟踪多个模型的开发。
+b.	**Experiment：**用于创建、运行和跟踪多个模型的开发。
 
-    c.	**Notebook：** 用于探索数据和构建机器学习解决方案。
+c.	**Notebook：** 用于探索数据和构建机器学习解决方案。
 
-    d.	**Environment：** 用于为笔记本和spark 作业定义设置共享库、spark 计算设置和资源。
+d.	**Environment：** 用于为笔记本和spark 作业定义设置共享库、spark 计算设置和资源。
 
-    e.	**Import Notebook：** 用于从本地计算机导入笔记本。
+e.	**Import Notebook：** 用于从本地计算机导入笔记本。
 
-    f.	**Use a sample：** 示例解决方案。
+f.	**Use a sample：** 示例解决方案。
 
 **注意：** 笔记本、环境、数据管道等项目在多种体验中可用，因为它们与每种体验都相关。
 
@@ -187,9 +187,9 @@ Fabric 工作区
 
 2.	选择 **Data Warehouse。** 您将导航到 **Data Warehouse 主页**。 这里也有三个部分。在“新建”部分中，请注意以下项：
 
-    a.**仓库：** 用于创建 Data Warehouse。
+- **仓库：** 用于创建 Data Warehouse。
 
-    b.**数据管道**：用于编排数据解决方案。
+- **数据管道**：用于编排数据解决方案。
 
     ![](../Images/lab-02/image15.png)
 
@@ -199,17 +199,17 @@ Fabric 工作区
 
 2.	选择 **Real-Time Analytics。** 您将导航到 **Real-Time Analytics 主页** 。这里也有三个部分。在“新建”部分中，请注意以下项：
 
-    a.	**事件仓库：** 用于创建数据库的工作区，可跨项目共享。
+a.**事件仓库：** 用于创建数据库的工作区，可跨项目共享。
 
-    b.	**KQL 数据库** ：用于快速加载和存储结构化、非结构化和流式数据进行查询。
+b.**KQL 数据库** ：用于快速加载和存储结构化、非结构化和流式数据进行查询。
 
-    c.	**KQL 查询集** ：用于对数据运行查询以生成可共享的表和视觉对象。
+c.**KQL 查询集** ：用于对数据运行查询以生成可共享的表和视觉对象。
 
-    d.	**Eventstream：** 用于捕获、转换和路由实时事件流。
+d.**Eventstream：** 用于捕获、转换和路由实时事件流。
 
-    e.	**使用示例：** 示例解决方案。
+e.**使用示例：** 示例解决方案。
 
-    ![](../Images/lab-02/image16.jpg)
+![](../Images/lab-02/image16.jpg)
 
 
 ## Fabric 工作区
@@ -220,7 +220,7 @@ Fabric 工作区
 
 2.	选择**新建工作区**。
 
-    ![](../Images/lab-02/image17.png)
+![](../Images/lab-02/image17.png)
 
 3. 浏览器右侧将打开**创建工作区** 对话框。
 
@@ -232,7 +232,7 @@ Fabric 工作区
 
 6.	点击高**级**以展开此部分。
 
-    ![](../Images/lab-02/image18.png)
+![](../Images/lab-02/image18.png)
 
 7.	在 **License mode** 下，确保选择 **Trial。**（这应该已默认选中。）
 
@@ -261,7 +261,7 @@ Lakehouse，并使用 Lakehouse 中的数据来构建模型并生成报表。第
 
 5.	选择 **Create**。
 
-    ![](../Images/lab-02/image22.png)
+![](../Images/lab-02/image22.png)
 
 Lakehouse 很快就会创建完毕，您将导航到 Lakehouse 界面。
 在**左侧面板** 中，请注意工作区下方有一个 Lakehouse 图标。您可以随时点击此图标轻松导航到 Lakehouse。
