@@ -65,14 +65,13 @@ Prima di iniziare con Fabric, esaminiamo l'attuale report in Power BI Desktop pe
  
 11.	Nella finestra di dialogo successiva immettere le Credenziali e la Password copiandole dalla scheda **Dettagli ambiente**.
 
-12.	Selezionare **Accedi**.
+12. Selezionare **Accedi**.
 
-13.	Si apre la finestra di dialogo Azione richiesta che richiede di impostare l'autenticazione a più fattori. Non è necessario impostarla poiché si tratta di un ambiente lab. 
-    Selezionare **Ask later**.
+13. Si apre la finestra di dialogo Azione richiesta che richiede di impostare l'autenticazione a più fattori. Non è necessario impostarla poiché si tratta di un ambiente lab.Selezionare **Ask later**.
 
-      ![](../Images/Picture8.png)
+   ![](../Images/Picture8.png)
 
-14.	Selezionare **No, accedi solo all'app** nella finestra di dialogo successiva. Si aprirà Power BI Desktop.
+14. Selezionare **No, accedi solo all'app** nella finestra di dialogo successiva. Si aprirà Power BI Desktop.
  
 ### Attività 2 - Analisi del report di Power BI Desktop
 Il report seguente analizza le vendite per Fabrikam. I KPI sono elencati in alto a sinistra nella pagina. Gli oggetti visivi rimanenti evidenziano le vendite nel tempo, per area, gruppo di prodotti e azienda rivenditrice.
