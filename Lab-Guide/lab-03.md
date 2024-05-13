@@ -509,7 +509,7 @@ Lakehouse 中的地理数据，让我们引入ADLS Gen2 中的其余数据。
 
 &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;d.	Date
 
-13.	我们有一个数据流将数据从ADLS 引入到湖屋。我们接下来发布此数据流。在右下角选择 **发布。** 您将导航回到**FAIAD_<username>** 工作区。刷新数据流可能需要几分钟时间。
+13. 我们有一个数据流将数据从ADLS 引入到湖屋。我们接下来发布此数据流。在右下角选择 **发布。** 您将导航回到**FAIAD_<username>** 工作区。刷新数据流可能需要几分钟时间。
 
 ![](../Images/lab-03/image53.jpg)
 
