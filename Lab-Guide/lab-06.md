@@ -144,7 +144,7 @@ Ora siamo pronti per creare il modello, le relazioni tra tabelle e le misure.
 2.	**Ridimensionare e ridisporre** le tabelle in base alle esigenze.
 3.	Creiamo una relazione tra le tabelle Sales e Reseller. Selezionare **ResellerID** dalla tabella **Sales** e trascinarlo su **ResellerID** nella tabella **Reseller**.
 
-    ![](../Images/lab-06/image065.jpg)
+   ![](../Images/lab-06/image065.jpg)
   	
 5.	Si apre la finestra di dialogo Nuova relazione. Assicurarsi che la **Tabella** 1 sia **Sales** e che la
    **Colonna** sia **ResellerID**.
