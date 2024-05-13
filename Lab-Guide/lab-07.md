@@ -33,13 +33,16 @@ Vamos começar usando a opção de criação automática de relatório. E, mais 
 2. Na parte inferior esquerda da tela, selecione o ícone **Fabric experience selector.**
 3. A caixa de diálogo de experiência do Fabric é aberta. Selecione **Power BI.** Você será direcionado a uma **Página Inicial do Power BI.**
 
+
 ![](../Images/lab-07/image01.png)
  
 4. No menu superior, selecione **Novo relatório.**
 
+
 ![](../Images/lab-07/image02.png)
 
 5. Você será direcionado para **Criar seu primeiro relatório.** Haverá opções para inserir dados manualmente e criar um relatório ou escolher um modelo semântico publicado. Criamos um modelo semântico nos laboratórios anteriores. Vamos usá-lo. Selecione a opção **Escolher um modelo semântico publicado.**
+
 
 ![](../Images/lab-07/image03.png)
 
@@ -85,6 +88,7 @@ A captura de tela abaixo mostra como o relatório criado automaticamente poderá
 Vamos criar um novo relatório usando uma tela em branco.
 1. No **painel esquerdo,** selecione o nome do seu workspace, **FAIAD_<nome de usuário>** para ser direcionado para o workspace.
 2. No menu superior, selecione **Novo -> Relatório.** Você será direcionado para criar sua primeira página de relatóri
+
 
 ![](../Images/lab-07/image08.png)
 
