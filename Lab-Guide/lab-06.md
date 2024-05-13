@@ -58,8 +58,8 @@
 
 4.	将**以下 SQL 查询**粘贴到**查询窗口**中。此查询将按供应商名称返回单位数量。它将 Sales 表与Product 和 Supplier 表联接起来以实现此目的。
 
-    SELECT su.Supplier_Name, SUM(Quantity) as Units FROM dbo.Sales s
-    JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.SupplierID = p.SupplierID按su.Supplier_Name 分组
+SELECT su.Supplier_Name, SUM(Quantity) as Units FROM dbo.Sales s
+JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.SupplierID = p.SupplierID按su.Supplier_Name 分组
 
 5.	点击 **Run** 查看结果。
 
@@ -333,9 +333,11 @@
 12.	确保**基数**为**多对一 (*:1)**。
 
 13.	确保**交叉筛选器方向**为**两者**。
+
 14.	选择 **Ok。**
 
 ![](../Images/lab-06/image33.png)
+
 
 15.	我们接下来在 Customer 和Reseller 之间创建关系。从 **Customer** 表中选择 **ResellerID**，并将其拖至 **Reseller** 表的 **ResellerID** 中。
 
@@ -349,9 +351,13 @@
 
 20.	选择 **Ok**。
 
+
 ![](../Images/lab-06/image34.png)
+
  
 **检查点：**您的模型应类似于下面的屏幕截图所示。
+
+
 ![](../Images/lab-06/image35.jpg)
 
 21.	我们接下来在**PO** 和 Date 之间创建关系。从 PO  表中选择 **Order_Date**，并将其拖至 **Date** 表中的 **Date**。
@@ -396,11 +402,12 @@
 ![](../Images/lab-06/image38.png)
 
 6.	按照相似的步骤添加以下度量：
-    a.	**GM = SUM(Sales[Line_Profit])** 格式设为**小数。**
 
-    b.**	GM% = DIVIDE([GM], [Sales])** 格式设为**百分数**。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a.**GM = SUM(Sales[Line_Profit])** 格式设为**小数。**
 
-    c.	**No of Customers = COUNTROWS(Customer)**，格式设置为**整数**
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;b.**GM% = DIVIDE([GM], [Sales])** 格式设为**百分数**。
+
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;c.**No of Customers = COUNTROWS(Customer)**，格式设置为**整数**
  
 ## 参考
 Fabric Analyst in a Day (FAIAD) 介绍了Microsoft Fabric 中提供的一些主要功能。在服务菜单中， “帮助 (?)”部分包含指向一些优质资源的链接。
