@@ -180,7 +180,9 @@ Ok, agora estamos prontos para criar o modelo, criar relacionamentos entre tabel
 11.	Verifique se **Tabela 2** é **Date** e **Coluna** é **Date.**
 12.	Verifique se **Cardinalidade** é **Muitos para um (*:1).**
 13.	Verifique se **Direção de filtro cruzada** é **Única.**
-14.	Selecione **OK.*   ![](../Images/lab-05/image23.png)
+14.	Selecione **OK.*   
+
+![](../Images/lab-05/image23.png)
 
 15.	De maneira similar, crie um relacionamento **muitos para um** entre as tabelas **Sales** e **Product.** Selecione **StockItemID** na tabela **Sales** e **StockItemID** na tabela **Product.**
 16.	No menu superior, selecione **Relatórios -> Atualizar automaticamente o modelo semântico** para salvar e atualizar o modelo   ![](../Images/lab-05/image24.png)
@@ -199,19 +201,25 @@ Vamos adicionar algumas medidas necessárias para criar o dashboard Sales.
 3. Insira **Sales = SUM(Sales[Sales_Amount])** na **barra de fórmulas.**
 4. Clique na **marca de seleção** à esquerda da barra de fórmulas ou clique no botão **Enter.**
 5. No painel Propriedades, à direita, expanda a seção **Formatação.**
-6. Na lista suspensa **Formato,** selecione **Número inteiro.**   ![](../Images/lab-05/image26.png)
+6. Na lista suspensa **Formato,** selecione **Número inteiro.**   
+
+![](../Images/lab-05/image26.png)
  
 7. Com a tabela **Sales** selecionada no menu superior, selecione **Página Inicial -> Nova medida.** Observe que a barra de fórmulas é exibida.
 8. Insira **Units = SUM(Sales[Quantity])** na **barra de fórmulas.**
 9. Clique na **marca de seleção** à esquerda da barra de fórmulas ou clique no botão **Enter.**
 10.	No painel Propriedades à direita, expanda a seção **Formatação** (pode levar alguns instantes para o painel Propriedades carregar).
-11.	Na lista suspensa **Formato,** selecione **Número inteiro.**   ![](../Images/lab-05/image27.png)
+11.	Na lista suspensa **Formato,** selecione **Número inteiro.**   
+
+![](../Images/lab-05/image27.png)
 
 12.	Com a tabela **Sales** selecionada no menu superior, selecione **Página Inicial -> Nova medida.** Observe que a barra de fórmulas é exibida.
 13.	Insira **Orders = DISTINCTCOUNT(Sales[InvoiceID])** na **barra de fórmulas.**
 14.	Clique na **marca de seleção** à esquerda da barra de fórmulas ou clique no botão **Enter.**
 15.	No painel Propriedades, à direita, expanda a seção **Formatação.**
-16.	Na lista suspensa **Formato, **selecione **Número inteiro.**   ![](../Images/lab-05/image28.png)
+16.	Na lista suspensa **Formato, **selecione **Número inteiro.**   
+
+![](../Images/lab-05/image28.png)
  
 Novamente, por uma questão de tempo, não criaremos todas as medidas. Se o tempo permitir, você poderá concluir a seção opcional no fim do laboratório. A seção opcional percorre as etapas para criar as medidas restantes.
 
