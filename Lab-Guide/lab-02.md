@@ -116,18 +116,18 @@ Synapse e si basano su Synapse. Procediamo a esaminarle.
 
 2.	Selezionare Data Science. Si apre la home page di Data Science. Anche in questo caso sono presenti tre sezioni. Nella sezione New osservare gli elementi:
 
-    a. **ML model**: consente di creare modelli di Machine Learning.<br>
+   a. **ML model**: consente di creare modelli di Machine Learning.<br>
 
-    b. **Experiment**: consente di creare, eseguire e monitorare lo sviluppo di più modelli.<br>
+   b. **Experiment**: consente di creare, eseguire e monitorare lo sviluppo di più modelli.<br>
 
-    c. **Notebook**: permette di esplorare dati e creare soluzioni di Machine Learning.<br>
+   c. **Notebook**: permette di esplorare dati e creare soluzioni di Machine Learning.<br>
 
-    d. **Environment**: usato per configurare librerie condivise, impostazioni di calcolo Spark e risorse per notebook e definizioni di processi Spark.<br>
+   d. **Environment**: usato per configurare librerie condivise, impostazioni di calcolo Spark e risorse per notebook e definizioni di processi Spark.<br>
 
-    e. **Import notebook**: permette di importare notebook dal computer locale.<br>
+   e. **Import notebook**: permette di importare notebook dal computer locale.<br>
 
-    f. **Use a sample**: soluzione di esempio.
-    
+   f. **Use a sample**: soluzione di esempio.
+
 **Nota**: elementi come Notebook, Environment, Data pipeline e così via sono disponibili in più esperienze poiché sono rilevanti in ciascuna di esse.
  
    ![](../Images/lab-02/image045.jpg)
