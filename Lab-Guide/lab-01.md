@@ -180,7 +180,7 @@ d.	**Sales ファクト**は、InvoiceLineItems とInvoice のクエリをマー
 
 9.	Snowflake データソースの場合は、**環境変数**タブ ([ラボ ガイド] の隣) で確認できる
 
-    **Snowflake ユーザー名と Snowflake パスワード**を使用します。
+**Snowflake ユーザー名と Snowflake パスワード**を使用します。
  
 10.	**SnowflakeData** フォルダーには、Supplier ディメンションとPO (Order / Spend) ファクトが含まれていることがわかります。<br>
 a.	**Supplier ディメンション**は、Suppliers クエリと SupplierCategories クエリをマージ
