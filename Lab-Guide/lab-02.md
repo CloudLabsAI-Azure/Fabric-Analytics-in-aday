@@ -108,7 +108,8 @@ Novo, observe os itens:
     **a.** **Soluções de sustentabilidade:** oferece suporte à ingestão, padronização e análise de dados de ESG (governança ambiental, social e corporativa).<br>
     **b.** **Soluções de varejo:** ajuda no gerenciamento de grandes volumes de dados, integrando dados de várias fontes e fornecendo análises em tempo real para tomada rápida de decisões. Os varejistas podem usar essas soluções para otimização de estoque, segmentação de clientes, previsão de vendas, preços dinâmicos e detecção de fraudes.
 
-   ![](../Images/lab-02/image12.png)
+![](../Images/lab-02/image12.png)
+
 ### Tarefa 5: Experiência do Synapse Data Engineering
 1. Selecione o **ícone Fabric experience selector** (atualmente definido como Industry Solutions) na parte inferior esquerda da tela. A caixa de diálogo de experiência do Fabric é aberta.
 2. Selecione **Data Engineering**. Você será direcionado para a *Página Inicial do Data Engineering.* Novamente, a página contém três seções principais. Na seção New, observe os itens:<br>
