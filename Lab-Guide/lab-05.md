@@ -27,7 +27,7 @@ Iniziamo con la configurazione di un aggiornamento pianificato del flusso di dat
 
    ![](../Images/lab-05/image009.jpg)
  
-   **Nota**: si apre la pagina Impostazioni. Nel pannello di sinistra sono elencati tutti i flussi di dati.
+ >**Nota**: si apre la pagina Impostazioni. Nel pannello di sinistra sono elencati tutti i flussi di dati.
 
 5.	Nel riquadro centrale selezionare il collegamento **Cronologia aggiornamenti**.
 
@@ -35,7 +35,7 @@ Iniziamo con la configurazione di un aggiornamento pianificato del flusso di dat
    
 6.	Si apre la finestra di dialogo Cronologia aggiornamenti in cui è elencato almeno un aggiornamento. Saranno elencati alcuni aggiornamenti . Si tratta degli aggiornamenti che si sono verificati alla pubblicazione del flusso di dati. Selezionare il collegamento **Ora di inizio**.
  
- **Nota**: l'ora di inizio effettiva sarà diversa.
+>**Nota**: l'ora di inizio effettiva sarà diversa.
 
   ![](../Images/lab-05/image015.jpg)
    
@@ -355,7 +355,8 @@ Ora dobbiamo impostare il contatore degli esiti negativi dell'attività Flusso d
 9.	Nel campo Valore selezionare la casella di testo. Selezionare il collegamento **Aggiungi contenuto dinamico**.
 10.	Si apre la finestra di dialogo Generatore di espressioni della pipeline. Immettere
 **@variables('varTempCounter')**. È possibile digitare l'espressione, usare il menu per selezionare le funzioni o copiare e incollare l'espressione.
-**Nota:** questa funzione imposta il valore della variabile varCounter sul valore della variabile varTempCounter (varCounter = varTempCounter). Alla fine di ogni iterazione varCounter e varTempCounter hanno lo stesso valore.
+
+>**Nota:** questa funzione imposta il valore della variabile varCounter sul valore della variabile varTempCounter (varCounter = varTempCounter). Alla fine di ogni iterazione varCounter e varTempCounter hanno lo stesso valore.
  
    ![](../Images/lab-05/image117.jpg)
 
@@ -419,7 +420,7 @@ l'iterazione si conclude, non occorre attendere oltre), il tempo di attesa è im
 7.	Impostare **Data e ora di fine** su una **data futura**.
 8.	Impostare il proprio **Fuso orario**.
    
-**Nota**: poiché si tratta di un ambiente lab, è possibile impostare il fuso orario sul fuso orario preferito.In uno scenario reale, si imposterà il fuso orario in base alla propria ubicazione o all'ubicazione dell'origine dati.
+>**Nota**: poiché si tratta di un ambiente lab, è possibile impostare il fuso orario sul fuso orario preferito.In uno scenario reale, si imposterà il fuso orario in base alla propria ubicazione o all'ubicazione dell'origine dati.
 
 9.	Selezionare **Applica**.
 10. Selezionare la **X** nell'angolo superiore destro della finestra di dialogo per chiuderla.
@@ -427,7 +428,8 @@ l'iterazione si conclude, non occorre attendere oltre), il tempo di attesa è im
    ![](../Images/lab-05/image134.jpg)
  
 11.	Selezionare l'area di lavoro di Fabric **FAIAD_<nome utente>** nel pannello di sinistra per andare all'area di lavoro.
-**Nota**: nella schermata Pianificazione non vi è un'opzione per la notifica dell'esito positivo o negativo (come nella pianificazione del flusso di dati). È possibile impostare la notifica aggiungendo un'attività nella pipeline di dati. Non effettueremo questa impostazione in questo lab poiché si tratta di un ambiente lab.
+
+>**Nota**: nella schermata Pianificazione non vi è un'opzione per la notifica dell'esito positivo o negativo (come nella pianificazione del flusso di dati). È possibile impostare la notifica aggiungendo un'attività nella pipeline di dati. Non effettueremo questa impostazione in questo lab poiché si tratta di un ambiente lab.
 Abbiamo pianificato gli aggiornamenti per le diverse origini dati. Nel prossimo lab creeremo relazioni, misure ed eseguiremo altre attività di modellazione.
  
 ## Riferimenti
