@@ -199,15 +199,15 @@ f.	**Use a sample：** 示例解决方案。
 
 2.	选择 **Real-Time Analytics。** 您将导航到 **Real-Time Analytics 主页** 。这里也有三个部分。在“新建”部分中，请注意以下项：
 
-a.**事件仓库：** 用于创建数据库的工作区，可跨项目共享。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a.**事件仓库：** 用于创建数据库的工作区，可跨项目共享。
 
-b.**KQL 数据库** ：用于快速加载和存储结构化、非结构化和流式数据进行查询。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;b.**KQL 数据库** ：用于快速加载和存储结构化、非结构化和流式数据进行查询。
 
-c.**KQL 查询集** ：用于对数据运行查询以生成可共享的表和视觉对象。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;c.**KQL 查询集** ：用于对数据运行查询以生成可共享的表和视觉对象。
 
-d.**Eventstream：** 用于捕获、转换和路由实时事件流。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;d.**Eventstream：** 用于捕获、转换和路由实时事件流。
 
-e.**使用示例：** 示例解决方案。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;e.**使用示例：** 示例解决方案。
 
 ![](../Images/lab-02/image16.jpg)
 
