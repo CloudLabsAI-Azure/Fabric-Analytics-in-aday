@@ -41,9 +41,9 @@ Si apre la pagina **Flusso di dati**. Questa schermata sembrerà familiare poich
 2.	Si apre la finestra di dialogo **Recupera dati Scegli origine dati**. È possibile cercare l'origine dati digitando nella casella di ricerca. Notare che nel pannello di sinistra sono disponibili opzioni per usare una tabella vuota o una query vuota. Si troverà anche una nuova opzione per caricare il file. Esamineremo questa opzione in un lab successivo. Per il momento, facciamo clic su
 **Visualizza altro** -> nell'angolo destro dello schermo.
 
-      ![](../Images/lab-03/image015.jpg)
+   ![](../Images/lab-03/image015.jpg)
 
-      ![](../Images/lab-03/image018.jpg)
+   ![](../Images/lab-03/image018.jpg)
   
   
 Ora è possibile visualizzare tutte le origini dati disponibili. Si ha la possibilità di filtrare le origini dati per file, database, Microsoft Fabric, Power Platform, Azure e così via.
@@ -297,9 +297,9 @@ Notare che compare l'avviso: "Alcuni nomi di colonna contengono caratteri non su
 13.	Nel nostro scenario useremo le impostazioni automatiche. Abilitare il dispositivo di scorrimento
 **Usa impostazioni** automatiche. I nomi delle colonne di destinazione vengono corretti con caratteri di sottolineatura.
  
-14.	È possibile usare il mapping delle colonne per mappare le colonne del flusso di dati alle colonne esistenti. Nel nostro caso, si tratta di una nuova tabella. Pertanto possiamo usare le impostazioni predefinite. Selezionare Salva impostazioni.
+14. È possibile usare il mapping delle colonne per mappare le colonne del flusso di dati alle colonne esistenti. Nel nostro caso, si tratta di una nuova tabella. Pertanto possiamo usare le impostazioni predefinite. Selezionare Salva impostazioni.
 
-      ![](../Images/lab-03/image129.jpg)
+   ![](../Images/lab-03/image129.jpg)
 
 ### Attività 9 - Pubblicazione del flusso di dati
 1.	Si apre nuovamente la **finestra di Power Query**. Nell'angolo in basso a destra notare che la **Destinazione dati è impostata su Lakehouse**.
@@ -313,10 +313,13 @@ Notare che compare l'avviso: "Alcuni nomi di colonna contengono caratteri non su
       ![](../Images/lab-03/image135.jpg)
 
 4.	Si aprirà la **schermata Explorer di Lakehouse**. Nel pannello di sinistra espandere **lh_FAIAD -> Tables**.
-5.	Notare che ora abbiamo una tabella Geo in Lakehouse. Espandere **Geo** e osservare tutte le colonne visualizzate.
-6.	Selezionare la tabella **Geo**, l'anteprima si aprirà nel pannello di destra.
 
-  	   ![](../Images/lab-03/image138.jpg)
+5.	Notare che ora abbiamo una tabella Geo in Lakehouse. Espandere **Geo** e osservare tutte le colonne visualizzate.
+
+6.	Selezionare la tabella **Geo**, 
+l'anteprima si aprirà nel pannello di destra.
+
+  	![](../Images/lab-03/image138.jpg)
   	
 È anche presente un endpoint SQL che è possibile usare per eseguire query su questa tabella.
 Esamineremo questa opzione in un lab successivo. Ora che sappiamo che i dati geografici sono stati inseriti in Lakehouse, importiamo il resto dei dati da ADLS Gen2.
