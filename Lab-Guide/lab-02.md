@@ -38,14 +38,14 @@ DirectLake 機能の使い方がわかります。
 
 2.	**環境変数**タブ ([ラボ ガイド] タブの横) で確認できる**ユーザー名を電子メール**として入力して、**Submit** をクリックします。
 
-   ![](../Images/lab-02/image006.jpg)
+![](../Images/lab-02/image006.jpg)
  
 3.	**パスワード**画面が表示されます。**環境変数**タブ ([ラボ ガイド] タブの横) で確認できる、
     講師から提供された**パスワード**を入力します。
 
 4.	**Sign in** をクリックし、プロンプトに従って Fabric にサインインします。
 
-   ![](../Images/lab-02/image009.png)
+![](../Images/lab-02/image009.png)
 
 5.	見慣れた **Power BI** サービスのホームページが表示されます。
 
@@ -56,24 +56,24 @@ DirectLake 機能の使い方がわかります。
 
 8.	**Start trial** を選択します。
 
-   ![](../Images/lab-02/image012.jpg)
+![](../Images/lab-02/image012.jpg)
  
 9.	[Microsoft Fabric の無料試用版へのアップグレード] ダイアログが開きます。**無料体験する**を選択します。
 
-   ![](../Images/lab-02/image015.jpg)
+![](../Images/lab-02/image015.jpg)
 
 10.	**最後にあと 1**ステップだけで**す**ダイアログの右上隅の **X** を選択して、ダイアログを閉じます。これはラボ環境であるため、これらの詳細は提供されません。
 
-   ![](../Images/lab-02/image018.jpg)
+![](../Images/lab-02/image018.jpg)
 
 11.	Microsoft Fabric に正常にアップグレードされたことを示すダイアログが開きます。<br>
    **Fabric Home Page** を選択します。
 
-   ![](../Images/lab-02/image021.png)
+![](../Images/lab-02/image021.png)
  
 12.	**Microsoft Fabric** のホームページが開きます。
 
-   ![](../Images/lab-02/image024.jpg)
+![](../Images/lab-02/image024.jpg)
 
 # Fabric のエクスペリエンスの概要
 
@@ -84,7 +84,7 @@ DirectLake 機能の使い方がわかります。
  
 2.	**Data Factory** を選択します。
 
-   ![](../Images/lab-02/image027.jpg)
+![](../Images/lab-02/image027.jpg)
 
 3.	**Data Factory** **のホーム ペー**ジが表示されます。このページは 3 つのメインセクションに分かれています。<br>
    a.	**New**: Data Factory で利用できるアイテムの一覧 (Dataflow Gen2 とデータ パイプライン) が表示されます。
@@ -102,7 +102,7 @@ DirectLake 機能の使い方がわかります。
 ## タスク 3: Data Activator のエクスペリエンス
 1.	画面の左下にある **Fabric** **エクスペリエンスセレクターアイコン** (現在は Data Factory に設定されています) を選択します。Fabric エクスペリエンスのダイアログが開きます。
 
-   ![](../Images/lab-02/image033.png)
+![](../Images/lab-02/image033.png)
 
 2.	ダイアログで **Data Activator** を選択します。**Data Activator** のホーム ページが表示されます。Data Activator は、変化するデータからパターンや条件が検出されたときに自動的にアクションを実行する、Microsoft Fabric のノーコードエクスペリエン     スです。3 つのセ
     クションは Data Factory のエクスペリエンスと似ています。[新規] セクションには次のアイテムがあります。<br>
@@ -110,7 +110,7 @@ DirectLake 機能の使い方がわかります。
       a.	**Reflex**: データセット、クエリ、イベントストリームのパターンを監視するために使用されます。<br>
       b.	**Reflex** サンプル: サンプルソリューション。<br>
 
-   ![](../Images/lab-02/image036.png)
+![](../Images/lab-02/image036.png)
  
 ## タスク 4: Industry Solutions のエクスペリエンス
 1.	画面の左下にある **Fabric** エクスペリエンスセレクターアイコン (現在は Data Activator に設定されています) を選択します。Fabric エクスペリエンスのダイアログが開きます。
@@ -123,7 +123,7 @@ DirectLake 機能の使い方がわかります。
 
    b.	**小売ソリューション**: 膨大なデータの管理、さまざまなソースのデータ統合、意思決定を加速させるリアルタイム分析の提供に役立ちます。小売業者は、在庫の最適化、顧客のセグメント化、売上予測、動的な価格、不正の検出に、これらのソリューシ              ョンを使用できます。<br>
 
-   ![](../Images/lab-02/image039.png)
+![](../Images/lab-02/image039.png)
  
 ## タスク 5: Synapse Data Engineering のエクスペリエンス
 1.	画面の左下にある **Fabric** **エクスペリエンスセレクターアイコン** (現在はIndustry Solutions
@@ -139,7 +139,7 @@ DirectLake 機能の使い方がわかります。
     f.	**Import notebook**: ローカルマシンからノートブックをインポートするために使用されます。<br>
     g.	**Use a sample**: サンプルソリューション。
  
-   ![](../Images/lab-02/image042.jpg) 
+![](../Images/lab-02/image042.jpg) 
 
 
 ## タスク 6: Synapse Data Science のエクスペリエンス
@@ -156,7 +156,7 @@ DirectLake 機能の使い方がわかります。
 
    **注:** ノートブック、環境、データ パイプラインなどのアイテムは、これらの各エクスペリエンスで関連しているので、複数のエクスペリエンスで使用できます。<br>
 
-   ![](../Images/lab-02/image045.jpg)
+![](../Images/lab-02/image045.jpg)
  
 ## タスク 7: Synapse Data Warehouse のエクスペリエンス
 1.	画面の左下にある **Fabric** **エクスペリエンスセレクターアイコン** (現在は Data Science に設定されています) を選択します。Fabric エクスペリエンスのダイアログが開きます。
@@ -167,7 +167,7 @@ DirectLake 機能の使い方がわかります。
     a.	ウェアハウス: Data Warehouse の作成に使用されます。<br>
     b.	データ パイプライン: データソリューションのオーケストレーションに使用されます。<br>
 
-   ![](../Images/lab-02/image048.png)
+![](../Images/lab-02/image048.png)
  
 ## タスク 8: Real-Time Analytics のエクスペリエンス
 1.	画面の左下にある **Fabric** エクスペリエンスセレクターアイコン (現在は Data Warehouse
@@ -183,7 +183,7 @@ DirectLake 機能の使い方がわかります。
    **d.	Eventstream:** リアルタイムイベントストリームのキャプチャ、変換、ルーティングに使用されます。<br>
    **e.	サンプルを使用する:** サンプルソリューション。<br>
 
-   ![](../Images/lab-02/image051.jpg)
+![](../Images/lab-02/image051.jpg)
  
 # Fabric ワークスペース
 
@@ -192,7 +192,7 @@ DirectLake 機能の使い方がわかります。
 
 2.	**新しいワークスペース**を選択します。
 
-   ![](../Images/lab-02/image054.png)
+![](../Images/lab-02/image054.png)
 
 3.	**ワークスペースの作成ダ**イアログがブラウザーの右側に開きます。
 
@@ -203,15 +203,15 @@ DirectLake 機能の使い方がわかります。
  
 6.	**詳細**をクリックしてセクションを展開します。
 
-   ![](../Images/lab-02/image057.png)
+![](../Images/lab-02/image057.png)
 
 7.	**License mode** で、**Trial** が選択されていることを確認します (既定で選択されています)。
 
 8.	**Apply** を選択して新しいワークスペースを作成します。
 
-   ![](../Images/lab-02/image060.png)
+![](../Images/lab-02/image060.png)
 
-   新しくワークスペースが作成され、そのワークスペースが表示されます。さまざまなデータソースからレイクハウスにデータを取り込み、そのレイクハウスからのデータを使用してモデルを構築し、レポートを作成します。最初のステップでは、レイクハウスを作     成します。
+新しくワークスペースが作成され、そのワークスペースが表示されます。さまざまなデータソースからレイクハウスにデータを取り込み、そのレイクハウスからのデータを使用してモデルを構築し、レポートを作成します。最初のステップでは、レイクハウスを作     成します。
  
 ## タスク 10: レイクハウスを作成する
 1.	画面の左下にある **Fabric** **エクスペリエンスセレクターアイコン** (現在はReal-Time
@@ -219,11 +219,11 @@ DirectLake 機能の使い方がわかります。
 
 2.	**Data Engineering** を選択すると、Data Engineering のホームページが表示されます。
 
-   ![](../Images/lab-02/image063.png)
+![](../Images/lab-02/image063.png)
 
 3.	レイクハウスを選択します。
 
-   ![](../Images/lab-02/image066.jpg)
+![](../Images/lab-02/image066.jpg)
 
 4.	[New lakehouse] ダイアログが開きます。[Name] テキストボックスに **lh_FAIAD** と入力します。<br>
     **注:** ここでの lh はLakehouse を指します。識別と検索を容易にするために、接頭辞とし
@@ -231,7 +231,7 @@ DirectLake 機能の使い方がわかります。
  
 5.	**Create** を選択します。
 
-   ![](../Images/lab-02/image069.png)
+![](../Images/lab-02/image069.png)
 
    しばらくするとLakehouse が作成され、Lakehouse のインターフェイスが表示されます。 **左パネル**の自分のワークスペースの下に Lakehouse のアイコンが表示されます。このアイコンをクリックすると、いつでも簡単にその Lakehouse に移動できます。
 
