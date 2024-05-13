@@ -59,7 +59,7 @@ Vamos começar configurando uma atualização agendada do Fluxo de dados Sales.
 
 ![](../Images/lab-05/image04.png)
 
-    A tela Detalhes será aberta. Ela fornecerá detalhes da atualização, listando o horário de início, de término e a duração. Ela também lista as tabelas/atividades que foram atualizadas. Caso haja uma falha, você pode clicar no nome da tabela/atividade para investigar mais detalhadamente.
+A tela Detalhes será aberta. Ela fornecerá detalhes da atualização, listando o horário de início, de término e a duração. Ela também lista as tabelas/atividades que foram atualizadas. Caso haja uma falha, você pode clicar no nome da tabela/atividade para investigar mais detalhadamente.
  
 ![](../Images/lab-05/image05.png)
 
@@ -75,7 +75,7 @@ b. **ADLS:** esta é a conexão com os dados de origem do ADLS.
 11.	Defina a **lista suspensa Atualizar frequência** como **Diariamente.** Observe que há uma opção para defini-la como Semanalmente também.
 12.	Defina **Fuso horário** como o seu fuso horário preferencial.
 
-    **Observação:** Como este é um ambiente de laboratório, você pode definir o fuso horário de sua preferência. Em um cenário real, você definirá o fuso horário com base em sua localização ou na localização da fonte de dados.
+**Observação:** Como este é um ambiente de laboratório, você pode definir o fuso horário de sua preferência. Em um cenário real, você definirá o fuso horário com base em sua localização ou na localização da fonte de dados.
 
 13.	Clique no link **Adicionar outra hora**. Observe que a opção Hora é exibida.
 14.	Defina **Hora** como **meio-dia.** Observe que você pode definir a atualização no início da hora ou meia hora.
@@ -225,7 +225,7 @@ Pipeline de dados.
 
 ![](../Images/lab-05/image46.png)
  
-    Precisamos escrever uma expressão que seja executada até que o valor de **varCounter seja 3** ou o valor **de varIsSuccess seja Sim.** (varCounter e varIsSuccess são as variáveis que acabamos de criar.)
+Precisamos escrever uma expressão que seja executada até que o valor de **varCounter seja 3** ou o valor **de varIsSuccess seja Sim.** (varCounter e varIsSuccess são as variáveis que acabamos de criar.)
 
 8. A caixa de diálogo **Construtor de expressão de pipeline** é aberta. Na metade inferior da caixa de diálogo, você terá um menu:<br>
 **a. Parâmetros:** são constantes em um data factory que podem ser consumidas por um pipeline em qualquer expressão.<br>
@@ -244,7 +244,7 @@ entidades em qualquer serviço. Por exemplo, ID do pipeline, nome do pipeline, n
 11.	Coloque o cursor **entre os parênteses** da função **@or.**
 12.	Na seção Funções Lógicas, selecione a função **equals.** Observe que isso é adicionado à caixa de texto da expressão dinâmica.
 
-    **Observação:** Sua função deve ser semelhante a **@or(equals()).** A função equals também aceita dois parâmetros. Estaremos verificando se a variável varCounter é igual a 3.
+**Observação:** Sua função deve ser semelhante a **@or(equals()).** A função equals também aceita dois parâmetros. Estaremos verificando se a variável varCounter é igual a 3.
 
 ![](../Images/lab-05/image24.png)
 
@@ -323,7 +323,7 @@ d. O ícone de **seta reta azul** é usado na conclusão da atividade.
  
 ![](../Images/lab-05/image34.png) 
 
-    Agora, precisamos definir o contador se a atividade do fluxo de dados falhar. No Pipeline de dados, não podemos ter autorreferência de uma variável. O que significa que não podemos incrementar
+Agora, precisamos definir o contador se a atividade do fluxo de dados falhar. No Pipeline de dados, não podemos ter autorreferência de uma variável. O que significa que não podemos incrementar
 a variável do contador varCounter adicionando um ao seu valor (varCounter = varCounter + 1). Então, usamos a variável varTempCounter.
 
 

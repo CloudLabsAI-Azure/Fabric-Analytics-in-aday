@@ -276,7 +276,7 @@ Em um cenário real, os dados são atualizados na fonte. Como estamos em um ambi
 
 ![](../Images/lab-07/image35.png)
 
-    **Observação:** Depois de publicado, o fluxo de dados será atualizado. Isso pode levar alguns minutos.
+**Observação:** Depois de publicado, o fluxo de dados será atualizado. Isso pode levar alguns minutos.
 
 14.	Selecione **rpt_Sales_Report** na barra de menus à esquerda para voltar para o relatório.
 15.	No menu superior, selecione **Atualizar.** Observe agora no gráfico de linhas que há dados para maio de 2023. Observe também que o valor de Sales e Units aumentou.

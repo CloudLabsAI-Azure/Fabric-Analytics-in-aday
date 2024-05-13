@@ -190,16 +190,17 @@ Vamos adicionar algumas medidas necessárias para criar o dashboard Sales.
 15.	No painel Propriedades, à direita, expanda a seção **Formatação.**
 16.	Na lista suspensa **Formato, **selecione **Número inteiro.**![](../Images/lab-06/image28.png)
  
-    Novamente, por uma questão de tempo, não criaremos todas as medidas. Se o tempo permitir, você poderá concluir a seção opcional no fim do laboratório. A seção opcional percorre as etapas para criar as medidas restantes.
+Novamente, por uma questão de tempo, não criaremos todas as medidas. Se o tempo permitir, você poderá concluir a seção opcional no fim do laboratório. A seção opcional percorre as etapas para criar as medidas restantes.
 
-    Criamos um modelo de dados. A próxima etapa é criar um relatório. Faremos isso no próximo laboratório.
+Criamos um modelo de dados. A próxima etapa é criar um relatório. Faremos isso no próximo laboratório.
 
 
 ### Tarefa 7: Seção Opcional – Criar relacionamentos
 Vamos adicionar os relacionamentos restantes.
 1. De maneira similar, crie um relacionamento **muitos para um** entre as tabelas **Sales** e **People.** Selecione **SalespersonPersonID** de **Sales** e **PersonID** de **People.** 
 
-    **Ponto de verificação:** Seu modelo deve ser semelhante à captura de tela abaixo.
+**Ponto de verificação:** Seu modelo deve ser semelhante à captura de tela abaixo.
+
 ![](../Images/lab-06/image29.png)
 
 2. Agora, vamos criar um relacionamento entre Product e Supplier. Selecione **SupplierID** na tabela **Product** e arraste-o para **SupplierID** na tabela **Supplier**.
@@ -208,6 +209,7 @@ Vamos adicionar os relacionamentos restantes.
 5. Verifique se **Cardinalidade** é **Muitos para um (*:1).**
 6. Verifique se **Direção de filtro cruzada** é **Ambas.**
 7. Selecione **OK.**
+
  ![](../Images/lab-06/image30.png)
 
 8. Da mesma forma, crie um relacionamento **muitos para um** com **Direção de filtro cruzada** como **Ambas** entre **Product_Details** e **Product.** Selecione **StockItemID** em **Product_Details** e
@@ -218,6 +220,7 @@ Vamos adicionar os relacionamentos restantes.
 12.	Verifique se **Cardinalidade** é **Muitos para um (*:1).**
 13.	Verifique se **Direção de filtro cruzada** é **Ambas.**
 14.	Selecione **OK.**
+
 ![](../Images/lab-06/image31.png)
 
 15.	Agora, vamos criar um relacionamento entre Customer e Reseller. Selecione **ResellerID** na tabela **Customer** e arraste-o para **ResellerID** na tabela **Reseller**.
@@ -228,7 +231,8 @@ Vamos adicionar os relacionamentos restantes.
 20.	Selecione **OK.**
  ![](../Images/lab-06/image32.png)
 
-    **Ponto de verificação:** Seu modelo deve ser semelhante à captura de tela abaixo.
+**Ponto de verificação:** Seu modelo deve ser semelhante à captura de tela abaixo.
+
 ![](../Images/lab-06/image33.png)
 
 21.	Agora, vamos criar um relacionamento entre PO e Date. Selecione **Order_Date** na tabela **PO** e arraste-o sobre **Date** na tabela **Date.**
