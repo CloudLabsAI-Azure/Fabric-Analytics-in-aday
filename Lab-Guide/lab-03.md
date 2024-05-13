@@ -2,19 +2,19 @@
 
 ## Introduzione
 Nel nostro scenario i dati di vendita provengono dal sistema ERP e sono archiviati in un ADLS Gen2. Vengono aggiornati alle 12.00 ogni giorno. Dobbiamo trasformare e inserire questi dati in Lakehouse e usarli nel nostro modello.
-Vi sono più modi per inserire questi dati.
-•	**Collegamenti**: non forniscono un modo per trasformare i dati.
-•	**Notebook**: richiedono la scrittura di codice. È un approccio pensato per gli sviluppatori.
-•	**Flusso di dati Gen2**: probabilmente si ha familiarità con Power Query o Flusso di dati Gen1. Flusso di dati Gen2, come indica il nome, è la versione più recente di Flusso di dati. Fornisce tutte le funzionalità di Power Query/Flusso di dati Gen1 con la possibilità aggiuntiva di
-trasformare e inserire dati in più origini dati. Ne parleremo nei prossimi due lab.
-•	**Pipeline di dati**: questo è uno strumento di orchestrazione. Le attività possono essere
+Vi sono più modi per inserire questi dati.<br>
+•	**Collegamenti**: non forniscono un modo per trasformare i dati.<br>
+•	**Notebook**: richiedono la scrittura di codice. È un approccio pensato per gli sviluppatori.<br>
+•	**Flusso di dati Gen2**: probabilmente si ha familiarità con Power Query o Flusso di dati Gen1. Flusso di dati Gen2, come indica il nome, è la versione più recente di Flusso di dati. Fornisce tutte le funzionalità di Power Query/Flusso di dati Gen1 con la possibilità aggiuntiva di trasformare e inserire dati in più origini dati. Ne parleremo nei prossimi due lab.
+•	**Pipeline di dati**: questo è uno strumento di orchestrazione. Le attività possono essere.<br>
 orchestrate per estrarre, trasformare e acquisire dati. Useremo Pipeline di dati per eseguire l'attività di Flusso di dati Gen2 che a sua volta eseguirà l'estrazione, la trasformazione e
-l'acquisizione.
-Inizieremo con Flusso di dati Gen2 per creare una connessione all'origine dati e le trasformazioni necessarie. Quindi useremo Pipeline di dati per orchestrare/eseguire Flusso di dati Gen2.
-In questo lab si imparerà a:
-•	Creare Flusso di dati Gen2
-•	Connettere ADLS Gen2 mediante Flusso di dati Gen2 e trasformare i dati
-•	Inserire dati in lakehouse
+l'acquisizione.<br>
+
+Inizieremo con Flusso di dati Gen2 per creare una connessione all'origine dati e le trasformazioni necessarie. Quindi useremo Pipeline di dati per orchestrare/eseguire Flusso di dati Gen2.<br>
+In questo lab si imparerà a:<br>
+•	Creare Flusso di dati Gen2<br>
+•	Connettere ADLS Gen2 mediante Flusso di dati Gen2 e trasformare i dati<br>
+•	Inserire dati in lakehouse<br>
 
 
 ## Flusso di dati Gen2
