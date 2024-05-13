@@ -31,11 +31,11 @@ In questo lab si imparerà a:
 8.	Nell'angolo in alto a destra della schermata selezionare l'**icona utente**.
 9.	Selezionare **Start trial**.
 
-    ![](../Images/lab-02/image015.png)
+   ![](../Images/lab-02/image015.png)
     
 10.	Si apre la finestra di dialogo Esegui l'aggiornamento a una versione di valutazione gratuita Microsoft Fabric. Selezionare **Avvia versione di valutazione**.
 
-     ![](../Images/lab-02/image018.png)
+    ![](../Images/lab-02/image018.png)
  
 11.	Selezionare la **"X"** nell'angolo in alto a destra della finestra di dialogo **Solo un ultimo passaggio** per chiudere la finestra di dialogo. Non forniremo questi dettagli poiché si tratta di un ambiente lab.
 
@@ -43,7 +43,7 @@ In questo lab si imparerà a:
     
 12.	Si apre la finestra di dialogo Aggiornamento a una versione di valutazione gratuita Microsoft Fabric completato. Selezionare **Fabric Home Page**.
 
-     ![](../Images/lab-02/image024.jpg)
+    ![](../Images/lab-02/image024.jpg)
  
 13.	Si aprirà la **home page** di **Microsoft Fabric**.
 
@@ -77,7 +77,6 @@ Synapse e si basano su Synapse. Procediamo a esaminarle.
 
    ![](../Images/lab-02/image036.png)
 
-
 ### Attività 4 - Esperienza Industry Solutions
 1.	Selezionare l'icona **selettore esperienza in Fabric** (attualmente impostata su Data Activator) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
 2.	Selezionare **Industry Solutions** nella finestra di dialogo. Si apre la **home page di Industry Solutions**. Microsoft Fabric include soluzioni di dati specifiche del settore che offrono una piattaforma affidabile per la gestione dei dati, l'analisi e il processo decisionale. Queste soluzioni di dati risolvono le problematiche specifiche affrontate da diversi settori, permettendo alle aziende di ottimizzare le operazioni, integrare dati provenienti da origini diverse e usare analisi avanzate. Si noti che le tre sezioni sono analoghe alle esperienze precedenti. Nella sezione Nuovo osservare gli elementi:<br>
@@ -91,6 +90,7 @@ Synapse e si basano su Synapse. Procediamo a esaminarle.
 ### Attività 5 - Esperienza Synapse Data Engineering
 1.	Selezionare l'icona **selettore esperienza in Fabric** (attualmente impostata su Industry Solutions) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
 2.	Selezionare **Data Engineering**. Si apre la **home page di Data Engineering**. Anche in questo caso, la pagina contiene tre sezioni principali. Nella sezione New osservare gli elementi:
+   
       a.	**Lakehouse**: permette di archiviare Big Data per operazioni di pulizia, query, reporting e condivisione.<br>
       b.	**Notebook**: usato per l'inserimento, la preparazione, l'analisi e altre attività correlate ai dati usando linguaggi vari come Python, R e Scala.<br>
       c.	**Environment**: usato per configurare librerie condivise, impostazioni di calcolo Spark e risorse per notebook e definizioni di processi Spark.<br>
@@ -145,7 +145,9 @@ Synapse e si basano su Synapse. Procediamo a esaminarle.
  
 3.	Si apre la finestra di dialogo **Crea un'area di lavoro** sul lato destro del browser.
 4.	Nel campo **Nome** immettere **FAIAD_<nome utente>**
+   
 **Nota**: il nome dell'area di lavoro deve essere univoco. Tuttavia, il nome dell'area di lavoro usato deve essere diverso. Assicurarsi che sotto il campo Nome sia presente un segno di spunta verde e che sia indicato **"Questo nome è disponibile".**
+
 5.	Se lo si desidera, è possibile immettere una Descrizione per l'area di lavoro. Questo campo è facoltativo.
 
    ![](../Images/lab-02/image057.png)
