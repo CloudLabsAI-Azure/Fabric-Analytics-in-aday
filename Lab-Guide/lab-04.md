@@ -388,9 +388,9 @@ Fabric Analyst in a Day (FAIAD) 介绍了Microsoft Fabric 中提供的一些主�
 
 - 通过[引导式教程](https://aka.ms/Fabric-GuidedTour)探索 Fabric
 
-- 注册 [Microsof t Fabric 免费试用版](https://aka.ms/try-fabric)
+- 注册 [Microsoft Fabric 免费试用版](https://aka.ms/try-fabric)
 
-- 通过探索[Microsof t Fabric 网站](https://aka.ms/microsoft-fabric)
+- 通过探索[Microsoft Fabric 网站](https://aka.ms/microsoft-fabric)
 
 - 通过探索 [Fabric 学习模块](https://aka.ms/learn-fabric)学习新技能
 
