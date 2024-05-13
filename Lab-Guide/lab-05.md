@@ -284,13 +284,13 @@ entidades em qualquer serviço. Por exemplo, ID do pipeline, nome do pipeline, n
 5.	No campo **Nome,** insira **dfactivity_People_SharePoint.**
 6.	No campo **Descrição,** insira **Dataflow activity to refresh df_People_Sharepoint dataflow.**
 
-  ![](../Images/lab-05/image30.png)
+    ![](../Images/lab-05/image30.png)
 
 7.	Selecione **Configurações** no painel inferior.
 8.	Certifique-se de que o **Workspace** esteja definido como seu workspace **FAIAD_<nome de usuário>.**
 9.	Na lista suspensa **Fluxo de dados,** selecione **df_People_SharePoint.** Quando esta atividade Fluxo de dados for executada, ela atualizará **df_People_SharePoint.**
 
-  ![](../Images/lab-05/image31.png)
+    ![](../Images/lab-05/image31.png)
  
 ### Tarefa 10: Configurar 1ª atividade Definir variável
 Configuramos a atividade Fluxo de dados como fizemos anteriormente no laboratório. Agora, adicionaremos uma nova lógica. Se a atualização do fluxo de dados for bem-sucedida, precisaremos sair do iterador Until. Lembre-se de que uma das condições para a existência do iterador é definir
@@ -308,20 +308,20 @@ d. O ícone de **seta reta azul** é usado na conclusão da atividade.
 
 5. Clique na **marca de seleção verde** da atividade de Fluxo de dados dfactivity_People_SharePoint e arraste para se conectar à nova **atividade Definir variável set_varIsSuccess.** Portanto, se a atualização do fluxo de dados for bem-sucedida, queremos executar a atividade Definir variável.
 
-  ![](../Images/lab-05/image32.png)
+   ![](../Images/lab-05/image32.png)
 
 6. Com a **atividade Definir variável** selecionada, clique em **Configurações** no menu inferior.
 7. No painel inferior, verifique se **Tipo de variável** é **Variável de pipeline.**
 8. No campo **Nome,** selecione **varIsSucces.** Esta é a variável cujo valor vamos definir.
 9. No campo **Valor,** selecione a **caixa de texto.** Selecione o link **Adicionar conteúdo dinâmico.**
 
-  ![](../Images/lab-05/image33.png)
+   ![](../Images/lab-05/image33.png)
 
 10.	A caixa de diálogo Construtor de expressão de pipeline é aberta. Selecione a área de texto **Adicionar conteúdo dinâmico abaixo usando qualquer combinação de expressão, funções e variáveis do sistema.**
 11.	No menu inferior, selecione **Variáveis -> varSuccess.** Observe que @variables('varSuccess') é inserido na área de texto Adicionar conteúdo dinâmico abaixo. Lembre-se de que quando criamos variáveis, predefinimos o valor da variável varSuccess como Sim. Portanto, estamos atribuindo o valor Sim à variável varIsSuccess.
 12.	Selecione **OK.** Você será direcionado de volta ao **painel de design do iterador.**
  
-  ![](../Images/lab-05/image34.png) 
+    ![](../Images/lab-05/image34.png) 
 
 Agora, precisamos definir o contador se a atividade do fluxo de dados falhar. No Pipeline de dados, não podemos ter autorreferência de uma variável. O que significa que não podemos incrementar
 a variável do contador varCounter adicionando um ao seu valor (varCounter = varCounter + 1). Então, usamos a variável varTempCounter.
@@ -334,7 +334,7 @@ a variável do contador varCounter adicionando um ao seu valor (varCounter = var
 4. No campo **Descrição,** insira Incrementar variável varTempCounter.
 5.	Clique na **marca x vermelha** da atividade Fluxo de dados para a nova atividade Definir variável. Portanto, se a atualização do fluxo de dados falhar, queremos executar a atividade Definir variável.
  
-  ![](../Images/lab-05/image35.png)
+    ![](../Images/lab-05/image35.png)
 
 6. Com a **atividade Definir variável** selecionada, escolha **Configurações** no menu inferior.
 7. No painel inferior, verifique se **Tipo de variável** é **Variável de pipeline.**
@@ -358,7 +358,7 @@ Agora, precisamos definir o valor da variável varCounter como o valor de varTem
 4. No campo **Descrição,** insira **Incrementar variável varCounter.**
 5. Clique na **marca de seleção verde** da atividade Definir variável set_varTempCounter e arraste para se conectar à nova **atividade Definir variável set_varCounter**.
 
-  ![](../Images/lab-05/image37.png)
+   ![](../Images/lab-05/image37.png)
  
 6. Com a **atividade Definir variável set_varCounter** selecionada, clique em **Configurações** no menu inferior.
 7. No painel inferior, verifique se **Tipo de variável é Variável de pipeline.**
@@ -393,7 +393,7 @@ Em seguida, precisamos esperar 5 minutos/300 segundos se a atualização do flux
 
     Sinta-se à vontade para digitar esta expressão, usar o menu para selecionar as funções ou copiá-la e colá-la.
 
-  ![](../Images/lab-05/image40.png)
+   ![](../Images/lab-05/image40.png)
  
 Estamos usando duas novas funções aqui:
   - **greater:** usa dois números como parâmetros e compara qual deles é maior.
@@ -411,11 +411,11 @@ a iteração. Não precisamos mais esperar), o tempo de espera é definido como 
 
 10.	Na parte superior esquerda da tela de design, selecione **pl_Refresh_People_Sharepoint_Option2** para sair do iterador Until.
 
-  ![](../Images/lab-05/image42.png)
+    ![](../Images/lab-05/image42.png)
  
-11.	Terminamos de criar o pipeline de dados. No menu superior, selecione **Página Inicial -> ícone de Salvar** para salvar o pipeline de dados.
+11.	Terminamos de criar o pipeline de dados. No menu superior, selecione **Página Inicial -> ícone de Salvar** para salvar o pipeline de dados. 
 
-  ![](../Images/lab-05/image43.png)
+    ![](../Images/lab-05/image43.png)
 
 Tarefa 14: Configurar atualização de agenda para o Pipeline de dados
 1. Podemos testar o pipeline de dados selecionando **Página Inicial -> Executar.**
@@ -436,7 +436,7 @@ Observação: Como este é um ambiente de laboratório, você pode definir o fus
 9.	Selecione **Aplicar.**
 10.	Selecione a marca **X** na parte superior direita da caixa de diálogo para fechá-la.
  
-  ![](../Images/lab-05/image44.png)
+    ![](../Images/lab-05/image44.png)
 
 11.	Selecione seu workspace do Fabric **FAIAD_<nome de usuário>** no painel esquerdo para navegar até o workspace.
 
