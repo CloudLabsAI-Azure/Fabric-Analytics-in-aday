@@ -68,7 +68,7 @@ Antes de começarmos com o Fabric, vamos dar uma olhada no Relatório atual no P
 
 10. Selecione **Sign in**.
 
-11.	A caixa de diálogo Action Required é aberta solicitando a configuração da autenticação multifator. Não precisamos configurar isso, pois estamos em um ambiente de laboratório. Selecione **Ask later**.
+11. A caixa de diálogo Action Required é aberta solicitando a configuração da autenticação multifator. Não precisamos configurar isso, pois estamos em um ambiente de laboratório. Selecione **Ask later**.
 
     ![](../Images/lab-01/image06.png)
 
