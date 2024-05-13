@@ -41,11 +41,11 @@ e Procedimentos Armazenados de SQL. Se você tiver experiência em SQL, fique à
 
 4. Cole a **consulta SQL abaixo** na **janela de consultas.** Essa consulta retornará as unidades por Nome do Fornecedor. Para conseguir isso, una tabela Sales com as tabelas Product e Supplier.
 
-        SELECT su.Supplier_Name, SUM(Quantity) as Units
-        FROM dbo.Sales s
-        JOIN dbo.Product p on p.StockItemID = s.StockItemID
-        JOIN dbo.Supplier su on su.SupplierID = p.SupplierID 
-        GROUP BY su.Supplier_Name
+SELECT su.Supplier_Name, SUM(Quantity) as Units
+FROM dbo.Sales s
+JOIN dbo.Product p on p.StockItemID = s.StockItemID
+JOIN dbo.Supplier su on su.SupplierID = p.SupplierID 
+GROUP BY su.Supplier_Name
 
 5. Clique em **Executar** para exibir os resultados.
 6. Há uma opção para salvar essa consulta como uma Visualização selecionando **Salvar como visualização.**
@@ -216,14 +216,20 @@ Vamos adicionar os relacionamentos restantes.
 
 8. Da mesma forma, crie um relacionamento **muitos para um** com **Direção de filtro cruzada** como **Ambas** entre **Product_Details** e **Product.** Selecione **StockItemID** em **Product_Details** e
 **StockItemID** em **Product.**
+
 9. Agora, vamos criar um relacionamento entre Reseller e Geo. Selecione **PostalCityID** na tabela **Reseller** e arraste-o sobre **CityID** na tabela **Geo.**
+
 10.	A caixa de diálogo Novo relacionamento é aberta. Verifique se **Tabela 1** é **Reseller** e **Coluna** é **PostalCityID.**
+
 11.	Verifique se **Tabela 2** é **Geo** e **Coluna** é **CityID.**
+
 12.	Verifique se **Cardinalidade** é **Muitos para um (*:1).**
+
 13.	Verifique se **Direção de filtro cruzada** é **Ambas.**
+
 14.	Selecione **OK.**
 
-    ![](../Images/lab-05/image31.png)
+![](../Images/lab-05/image31.png)
 
 15.	Agora, vamos criar um relacionamento entre Customer e Reseller. Selecione **ResellerID** na tabela **Customer** e arraste-o para **ResellerID** na tabela **Reseller**.
 16.	A caixa de diálogo Novo relacionamento é aberta. Verifique se **Tabela 1** é **Customer** e Coluna! é **ResellerID.**
