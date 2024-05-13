@@ -86,7 +86,8 @@ DirectLake 機能の使い方がわかります。
 
 ![](../Images/lab-02/image027.jpg)
 
-3.	**Data Factory** **のホーム ペー**ジが表示されます。このページは 3 つのメインセクションに分かれています。<br>
+3.	**Data Factory** **のホーム ペー**ジが表示されます。このページは 3 つのメインセクションに分かれています。
+
 a.	**New**: Data Factory で利用できるアイテムの一覧 (Dataflow Gen2 とデータ パイプライン) が表示されます。
 
 - Dataflow Gen2 とは、次世代の Dataflow のことです。
