@@ -70,8 +70,8 @@ ambiente** (accanto alla scheda Guida al lab) e incollarla nella casella di test
    ![](../Images/lab-03/image030.jpg)
 
 2.	Si torna alla finestra di dialogo **Power Query**. Questa sarà la connessione alla cartella radice di ADLS Gen2. Faremo riferimento a questa query nelle query successive. Nel **pannello di destra**, in **Impostazioni query -> Proprietà -> Nome**, cambiare il nome in **ADLS Base Folder for Geo**
-3.	Per impostazione predefinita, tutte le query di Flusso di dati Gen2 vengono caricate per
-impostazione predefinita in un lakehouse di staging. Nell'ambito di questo lab, non effettueremo lo staging dei dati. Per disabilitare questo carico, nel **pannello di sinistra fare clic con il pulsante destro del mouse sulla query ADLS Base Folder.**
+
+3.	Per impostazione predefinita, tutte le query di Flusso di dati Gen2 vengono caricate per impostazione predefinita in un lakehouse di staging. Nell'ambito di questo lab, non effettueremo lo staging dei dati. Per disabilitare questo carico, nel **pannello di sinistra fare clic con il pulsante destro del mouse sulla query ADLS Base Folder.**
 
 **Nota**: si usa lo staging quando è necessario effettuare un'ulteriore trasformazione dei dati da usare in prima che siano pronti per il consumo.
 
@@ -80,12 +80,15 @@ impostazione predefinita in un lakehouse di staging. Nell'ambito di questo lab, 
    ![](../Images/lab-03/image033.jpg)
  
 Notare che vi sono due formati di file nella cartella: **JSON e Parquet**.
-•	**Parquet**: è un formato di file open source creato per gestire formati di dati di archiviazione a colonne flat. Il formato Parquet funziona bene con dati complessi in grandi volumi, offre
-prestazioni elevate nella compressione dei dati e consente di gestire di un'ampia varietà di tipi di codifica.
-•	**JSON**: è un formato di file che contiene metadati quali schema e tipo di dati del file Parquet.
+
+- **Parquet**: è un formato di file open source creato per gestire formati di dati di archiviazione a colonne flat. Il formato Parquet funziona bene con dati complessi in grandi volumi, offre prestazioni elevate nella compressione dei dati e consente di gestire di un'ampia varietà di tipi di codifica.
+
+- **JSON**: è un formato di file che contiene metadati quali schema e tipo di dati del file Parquet.
 
 5.	Abbiamo bisogno solo del file Parquet poiché contiene i dati di cui abbiamo bisogno. Selezionare la **freccia a discesa della colonna Estensione**.
+
 6.	**Deselezionare JSON** in modo da filtrare i file Parquet.
+
 7.	Selezionare **OK**.
 
    ![](../Images/lab-03/image036.jpg)
@@ -194,7 +197,7 @@ Si copia anche ADLS Base Folder. Questo perché la query States fa riferimento a
 
    ![](../Images/lab-03/image087.jpg)
 
-9.	Fare clic sul **segno di spunta** accanto alla barra della formula o premere **INVIO**.
+9. Fare clic sul **segno di spunta** accanto alla barra della formula o premere **INVIO**.
 
     ![](../Images/lab-03/image090.jpg)
    
@@ -265,7 +268,7 @@ pulsante destro del mouse** sulla query **Cities** e selezionare **Abilita stagi
 
    ![](../Images/lab-03/image120.png)
   	
-7.	Una volta creata la connessione, si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione Nuova tabella sia selezionato, poiché si sta creando una **nuova tabella**.
+7. Una volta creata la connessione, si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione Nuova tabella sia selezionato, poiché si sta creando una **nuova tabella**.
 
 8.	 Vogliamo creare la tabella nel Lakehouse creato in precedenza. Nel pannello di sinistra andare a **Lakehouse -> FAIAD_<nomeutente>**.
 

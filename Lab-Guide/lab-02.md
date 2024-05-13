@@ -49,7 +49,6 @@ In questo lab si imparerà a:
  
 13. Si aprirà la **home page** di **Microsoft Fabric**.
 
-
 ## Panoramica delle esperienze in Fabric
 ### Attività 2 - Esperienza Data Factory
 1.	Selezionare l'icona di **Microsoft Fabric** (selettore esperienza in Fabric) in basso a sinistra della schermata. Si apre una finestra di dialogo contenente l'elenco delle esperienze in Fabric. Si noti che Power BI, Data Factory, Data Activator e Industry Solutions sono esperienze indipendenti. Data Engineering, Data Science, Data Warehouse e Real-Time Analytics sono esperienze di
@@ -71,7 +70,7 @@ Synapse e si basano su Synapse. Procediamo a esaminarle.
        
       c. **Quick access**: questa sezione elenca gli elementi preferiti o usati di recente.<br>
 
-    ![](../Images/lab-02/image030.jpg)
+      ![](../Images/lab-02/image030.jpg)
    
 ### Attività 3 - Esperienza Data Activator
 1.	Selezionare l'icona **selettore esperienza in Fabric** (attualmente impostata su Data Factory) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
