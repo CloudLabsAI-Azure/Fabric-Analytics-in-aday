@@ -3,7 +3,8 @@
 
 # Introduzione
 Nel nostro scenario, i dati sui fornitori si trovano in Snowflake, i dati sui clienti si trovano in Dataverse e i dati sui dipendenti si trovano in SharePoint. Tutte queste origini dati vengono aggiornate in momenti diversi. Per ridurre al minimo il numero di aggiornamenti dei dati dei flussi di dati, creeremo flussi di dati individuali per ciascuna di queste origini dati.
-**Nota**: è supportata la presenza di più origini dati in un unico flusso di dati. In questo lab si imparerà a:
+
+>**Nota**: è supportata la presenza di più origini dati in un unico flusso di dati. In questo lab si imparerà a:
 •	Connettersi a Snowflake mediante Flusso di dati Gen2 e inserire dati in lakehouse
 •	Connettersi a SharePoint mediante Flusso di dati Gen2 e inserire dati in lakehouse
 •	Connettersi a Dataverse mediante Flusso di dati Gen2 e inserire dati in lakehouse
@@ -126,7 +127,7 @@ Come si è notato nel lab precedente, le query nel pannello di sinistra sono org
 6.	Tornare alla pagina **Flusso di dati** nel browser.
 7.	Nel riquadro **Flusso di dati** premere **CTRL+V** (l'opzione Incolla del menu del pulsante destro non è attualmente supportata). Se si usa un dispositivo MAC, usare Cmd+V per incollare.
    
-**Nota:** se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per abilitare Appunti nativi VM. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
+>**Nota:** se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per abilitare Appunti nativi VM. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
 
 
 ### Attività 6 - Creazione della connessione a Dataverse
@@ -178,7 +179,7 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 
    ![](../Images/lab-04/image071.jpg)
    
-**Nota**: si tornerà all'**area di lavoro FAIAD_<nome utente>.** La pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
+>**Nota**: si tornerà all'**area di lavoro FAIAD_<nome utente>.** La pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
 3.	Stiamo lavorando in Flusso di dati 2. Rinominiamolo prima di continuare. Fare clic sui puntini di **sospensione (…)** accanto a Flusso di dati 2. Selezionare **Proprietà**.
 
    ![](../Images/lab-04/image071.jpg)
@@ -208,8 +209,8 @@ Si apre la pagina **Flusso di dati**. Ora che abbiamo familiarità con Flusso di
    
 6.	Tornare alla schermata **Flusso di dati** nel browser.
 7.	Nel riquadro **Flusso di dati** premere **CTRL+V** (l'opzione Incolla del menu del pulsante destro non è attualmente supportata).
-   
-**Nota**: se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per **abilitare Appunti nativi VM**. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
+
+>**Nota**: se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per **abilitare Appunti nativi VM**. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
 Notare che la query viene incollata ed è disponibile nel pannello di sinistra. Poiché non abbiamo
 creato una connessione a SharePoint, compare un messaggio di avviso che chiede di configurare la connessione.
  
@@ -263,7 +264,7 @@ selezionare **Lakehouse (nessuno)**.
 
    ![](../Images/lab-04/image102.png)
 
-**Nota**: si tornerà all'**area di lavoro FAIAD_<nome utente>**. La pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
+>**Nota**: si tornerà all'**area di lavoro FAIAD_<nome utente>**. La pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
  
 3.	Stiamo lavorando in Flusso di dati 2. Rinominiamolo prima di continuare. Fare clic sui puntini di **sospensione (…)** accanto a Flusso di dati 2. Selezionare **Proprietà**.
 
