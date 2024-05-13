@@ -82,7 +82,7 @@
 
 2.	您将导航到**获取数据选择数据源** 对话框。您可以通过在搜索框中键入内容来搜索数据源。请注意，左侧面板上有使用空白表或空白查询的选项。您还会看到一个新的“上传文件”选项。我们将在稍后的实验中探索该选项。现在，我们点击屏幕右上角的**查看更多->。**
 
-    ![](../Images/lab-03/image4.jpg)
+![](../Images/lab-03/image4.jpg)
 
 现在您可以查看所有可用的数据源。您可以选择按文件、数据库 Microsoft Fabric、Power Platform、Azure 等筛选数据源。
 
@@ -95,7 +95,7 @@
 
 5.	您将导航到“连接到数据源”对话框。您需要创建与ADLS Gen2 数据源的连接。在连接设置-> URL 下，输入链接
 
-    https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet-Format
+https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet-Format
 
 ![](../Images/lab-03/image7.jpg)
 
@@ -103,7 +103,7 @@
 
 7.	从 **“环境变量”** **选项卡**（位于“实验指南”选项卡旁边）复制 **Adls 存**储帐户访问密钥，并将其粘贴到**帐户密钥文本框中**。
 
-    ![](../Images/lab-03/image8.jpg)
+![](../Images/lab-03/image8.jpg)
 
 8.	选择屏幕右下角的**下一步。**
 
@@ -112,7 +112,7 @@
 
 1.	建立连**接后，您将导**航到预览文件夹数据屏幕。ADLS Gen2 文件夹中有很多文件。我们需要其中一些文件的数据。选择**创建**以创建与文件夹的连接。
 
-    ![](../Images/lab-03/image9.jpg)
+![](../Images/lab-03/image9.jpg)
 
 2.	您已返回到 Power Query 对话框。这将连接到ADLS Gen2 根文件夹。我们将在后续查询中引用该查询。我们为该查询重命名。在**右侧面板**中的**查询设置 -> 属性-> 名称下**，将名称更改为 **ADLS Base Folder for Geo**
 
@@ -155,15 +155,15 @@ Sales 数据按 Geography、Product、Sales Person 和 Date 粒度提供。我�
 
 1.	我们从 City 开始。在左侧面板上，**右键单击 ADLS Base Folder for Geo。** 选择引用，创建**引用**ADLS Base Folder for Geo 查询的新查询。
 
-    ![](../Images/lab-03/image11.jpg)
+![](../Images/lab-03/image11.jpg)
 
 2.	选择 **Folder Path 列下拉箭头**。
 
-    ![](../Images/lab-03/image12.jpg)
+![](../Images/lab-03/image12.jpg)
 
 3.	选择**文本筛选器 -> 包含…**
 
-    ![](../Images/lab-03/image13.jpg)
+![](../Images/lab-03/image13.jpg)
 
 4.	在**筛选行**对话框中，输入 **Application.Cities**
 
@@ -175,7 +175,7 @@ Sales 数据按 Geography、Product、Sales Person 和 Date 粒度提供。我�
 
 6.	数据将筛选到单行。在 **Content 列**下选择 **Binary。**
 
-    ![](../Images/lab-03/image15.jpg)
+![](../Images/lab-03/image15.jpg)
 
 7.	请注意，您将看到所有城市详细信息。在右侧面板中的**查询设置 -> 属性-> 名称**中，将名称更改为 **Cities**
 
@@ -228,7 +228,7 @@ Sales 数据按 Geography、Product、Sales Person 和 Date 粒度提供。我�
 
 2.	从功能区中选择**主页 -> 转换数据**。Power Query 窗口随即打开。您在之前的实验中注意到，左侧面板中的查询是按数据源整理的。
 
-    ![](../Images/lab-03/image22.jpg)
+![](../Images/lab-03/image22.jpg)
 
 3.	在左侧面板的ADLSData 文件夹下，**右键单击 States** 查询，并选择**复制。**
 
@@ -329,7 +329,7 @@ Sales 数据按 Geography、Product、Sales Person 和 Date 粒度提供。我�
 
 6.	“连接到数据目标”对话框随即打开。我们需要创建一个到湖屋的新连接。在**连接下拉列表**中选择创建新连接并将身份验证种类设置为组织帐户后，选择**下一步。**
 
-    ![](../Images/lab-03/image36.png)
+![](../Images/lab-03/image36.png)
 
 7.	创建连接后，“选择目标”对话框随即打开。务必选中**新建表单选按钮**，因为我们要创建一个新表。
 
@@ -341,7 +341,7 @@ Sales 数据按 Geography、Product、Sales Person 和 Date 粒度提供。我�
 
 11.	选择**下一步。**
 
-    ![](../Images/lab-03/image37.png)
+![](../Images/lab-03/image37.png)
 
 12.	“选择目标设置”对话框随即打开。使用滑块禁用自动设置。让我们看看这些选项。请注意，选项有追加数据到现有表或**替换。**
 
