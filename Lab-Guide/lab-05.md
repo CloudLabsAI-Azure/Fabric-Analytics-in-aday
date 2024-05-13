@@ -508,10 +508,8 @@ varTempCounter)。各反復の終わりには、varCounter とvarTempCounter の
 ```
 @if(
 greater(variables(‘varCounter’), 1),
-
 if(equals(variables(‘varCounter’), 2),mul(variables(‘varWaitTime’),15 ), mul(variables(‘varWaitTime’), 0)
 ),
-
 mul(variables(‘varWaitTime’),5 )
 )   
 ```
