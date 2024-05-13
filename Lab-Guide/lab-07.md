@@ -61,7 +61,7 @@ Vamos começar usando a opção de criação automática de relatório. E, mais 
 9. Vamos salvar este relatório. No menu superior, selecione **Salvar.**
 10.	A caixa de diálogo Salvar seu relatório é aberta. Nomeie o relatório como **rpt_Sales_Auto_Report.**
 
-    **Observação:** estamos prefixando o nome do relatório com rpt, que é a abreviação de relatório.
+**Observação:** estamos prefixando o nome do relatório com rpt, que é a abreviação de relatório.
  
 11.	Verifique se o relatório está salvo no workspace, **FAIAD_<nome de usuário>.**
 12.	Selecione **Salvar.**
