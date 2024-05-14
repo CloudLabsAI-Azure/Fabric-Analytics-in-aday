@@ -102,9 +102,9 @@
 
 8.	게이트웨이 연결에서 **데이터 원본 자격 증명**을 확장합니다. 데이터 흐름에 사용된 연결 목록이 표시됩니다. 이 경우에는 Lakehouse와 ADLS가 있습니다.
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a.	**Lakehouse:** 이는 데이터 흐름에서 데이터를 수집하기 위한 연결입니다.
+    a.	**Lakehouse:** 이는 데이터 흐름에서 데이터를 수집하기 위한 연결입니다.
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;b.	**ADLS:** 이는 ADLS 원본 데이터에 대한 연결입니다.
+    b.	**ADLS:** 이는 ADLS 원본 데이터에 대한 연결입니다.
 
 
 ![](../Images/Lab-05/image021.jpg)
