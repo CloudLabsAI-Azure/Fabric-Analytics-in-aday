@@ -85,7 +85,7 @@ You will be navigated to the **Dataflow page**. Now that we are familiar with Da
  
 7. Navigate back to the **browser**.
 
-8. In the Dataflow pane select the **center pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using a MAC device, please use Cmd+V to paste.
+8. In the **Dataflow pane** select the **center pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using a MAC device, please use Cmd+V to paste.
 
     >**Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
@@ -118,7 +118,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
  
 7. Similarly, right-click on the **PO** query. Select **Enable staging** to remove the check mark.
 
-   > **Note**: We do not have to disable staging for the other three queries because Enable Load was disabled in Power BI Desktop (from where these queries were copied).
+   > **Note**: We do not have to disable staging for the other three queries because Enable Load was disabled in Power BI Desktop (from where these queries were copied from).
 
 ## Task 3: Configure Data Destination for Supplier and PO queries
 
@@ -176,7 +176,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
     ![](../media/Lab_4.1_15.png)
  
-    You will be navigated to the Dataflow page. Now that we are familiar with Dataflow, let’s go ahead and copy the queries from Power BI Desktop into Dataflow.
+    You will be navigated to the **Dataflow page**. Now that we are familiar with Dataflow, let’s go ahead and copy the queries from Power BI Desktop into Dataflow.
 
 2. If you have not already opened it, open **FAIAD.pbix** located in the **C:\FAIAD\Reports** folder of your lab environment. 
 
@@ -202,7 +202,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
 7. In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using a MAC device, please use Cmd+V to paste.
 
-    **Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to enable VM Native Clipboard. Select OK in the dialog. Once done pasting the queries you can disable this option.
+    **Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
 ## Task 6: Create connection to Dataverse
 
@@ -282,7 +282,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 ## Task 9: Copy SharePoint queries to Dataflow
 
-1. From the top menu, select **New -> Dataflow Gen2**.
+1. From the top menu, select **+ New -> Dataflow Gen2**.
 
     ![](../media/Lab_4.1_27.png)
  
