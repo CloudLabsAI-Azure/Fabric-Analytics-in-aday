@@ -1,10 +1,30 @@
 
 ![](../Images/lab-04/lab-4_main.png)
 
+
+## Sommario
+- Introduzione	
+- Flusso di dati Gen2	
+   - Attività 1 - Copia di query di Snowflake nel flusso di dati	
+   - Attività 2 - Creazione della connessione a Snowflake	
+   - Attività 3 - Configurazione della destinazione dei dati per le query Supplier e PO	
+   - Attività 4 - Ridenominazione e pubblicazione del flusso di dati Snowflake	
+   - Attività 5 - Copia di query Dataverse nel flusso di dati	
+   - Attività 6 - Creazione della connessione a Dataverse	
+   - Attività 7 - Creazione della destinazione dati per la query Customer	
+   - Attività 8 - Pubblicazione e ridenominazione del flusso di dati Dataverse	
+   - Attività 9 - Copia di query SharePoint nel flusso di dati	
+   - Attività 10 - Creazione della connessione a SharePoint	
+   - Attività 11 - Configurazione della destinazione dei dati per la query People	
+   - Attività 12 - Pubblicazione e ridenominazione del flusso di dati SharePoint	
+- Riferimenti	
+
+
 # Introduzione
 Nel nostro scenario, i dati sui fornitori si trovano in Snowflake, i dati sui clienti si trovano in Dataverse e i dati sui dipendenti si trovano in SharePoint. Tutte queste origini dati vengono aggiornate in momenti diversi. Per ridurre al minimo il numero di aggiornamenti dei dati dei flussi di dati, creeremo flussi di dati individuali per ciascuna di queste origini dati.
 
 >**Nota**: è supportata la presenza di più origini dati in un unico flusso di dati. In questo lab si imparerà a:
+
 - Connettersi a Snowflake mediante Flusso di dati Gen2 e inserire dati in lakehouse
 
 - Connettersi a SharePoint mediante Flusso di dati Gen2 e inserire dati in lakehouse
@@ -24,6 +44,7 @@ Si apre la pagina **Flusso di dati**. Ora che abbiamo familiarità con Flusso di
 
 3.	Se non lo si è ancora aperto, aprire il file **FAIAD.pbix** contenuto nella cartella **C:\FAIAD\Reports**
 dell'ambiente lab.
+
 4.	Nella barra multifunzione selezionare **Home -> Trasforma dati**.
  Si apre la finestra Power Query.
 Come si è notato nel lab precedente, le query nel pannello di sinistra sono organizzate per origine dati.
@@ -41,9 +62,10 @@ e.	PO Line Items<br>
 7.	Tornare al **browser**.
 
 8.	Nel **riquadro Flusso di dati** selezionare il **riquadro centrale** e premere **CTRL+V** (l'opzione Incolla del menu del pulsante destro non è attualmente supportata). Se si usa un dispositivo MAC, usare Cmd+V per incollare.
-Nota: se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per **abilitare Appunti nativi VM**. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
 
-      ![](../Images/lab-04/image012.jpg)
+**Nota**: se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per **abilitare Appunti nativi VM**. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
+
+   ![](../Images/lab-04/image012.jpg)
  
 ### Attività 2 - Creazione della connessione a Snowflake
 Notare che le cinque query vengono incollate e sulla sinistra è visualizzato il pannello Query. Poiché non abbiamo creato una connessione a Snowflake, compare un messaggio di avviso che chiede di configurare la connessione.
@@ -69,6 +91,7 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
       ![](../Images/lab-04/image021.png)
 
 7.	Allo stesso modo, fare clic con il pulsante destro del mouse sulla query PO. Selezionare Abilita staging per rimuovere il segno di spunta.
+
 **Nota**: non è necessario disabilitare lo staging per le altre tre query poiché l'opzione Abilita caricamento era disattivata in Power BI Desktop (da cui sono state copiate le query).
 
 ### Attività 3 - Configurazione della destinazione dei dati per le query Supplier e PO
@@ -92,17 +115,19 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 
 8.	Lasciare il nome della tabella **Supplier**
 
-9. Selezionare Avanti.
+9. Selezionare **Avanti**.
 
     ![](../Images/lab-04/image030.png)
  
 10. Questa volta useremo le impostazioni automatiche perché i dati verranno aggiornati completamente. Inoltre, le colonne verranno rinominate secondo necessità. Selezionare
     **Salva impostazioni**.
 
+    ![](../Images/lab-04/image033.png)
+
 11. Si apre nuovamente la **finestra di Power Query**. Nell'angolo in basso a destra notare che la Destinazione dati è impostata su **Lakehouse**. Allo stesso modo, impostare la 
     **Destinazione dati per la query PO**. Al termine, la Destinazione dati della query PO dovrebbe essere impostata su **Lakehouse** come illustrato nello screenshot.
 
-    ![](../Images/lab-04/image033.png)
+    ![](../Images/lab-04/image036.jpg)
  
 ### Attività 4 - Ridenominazione e pubblicazione del flusso di dati Snowflake
 1.	Nella parte superiore dello schermo selezionare la **freccia accanto a Flusso di dati 2** per rinominarlo.
@@ -111,24 +136,24 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 
 3.	Premere **INVIO** per salvare la modifica del nome.
 
-   ![](../Images/lab-04/image036.jpg)
+   ![](../Images/lab-04/image039.png)
 
 4.	Nell'angolo inferiore destro selezionare **Pubblica**.
 
-      ![](../Images/lab-04/image039.png)
+      ![](../Images/lab-04/image042.jpg)
   	
 Si tornerà all'area di lavoro **FAIAD_<nome utente>**. La pubblicazione del flusso di dati potrebbe richiedere alcuni istanti. Ora creeremo un flusso di dati per importare dati da Dataverse.
  
 ### Attività 5 - Copia di query Dataverse nel flusso di dati
 1.	Nel menu in alto selezionare **Nuovo -> Flusso di dati Gen2**.
-
-      ![](../Images/lab-04/image042.jpg)
    
 Si apre la pagina **Flusso di dati**. Ora che abbiamo familiarità con Flusso di dati, procediamo con la copia delle query da Power BI Desktop a Flusso di dati.
 
 2.	Se non lo si è ancora aperto, aprire il file **FAIAD.pbix** nella cartella **C:\FAIAD\Reports** dell'ambiente lab.
+
 3.	Nella barra multifunzione selezionare **Home -> Trasforma dati**. Si apre la finestra Power Query.
 Come si è notato nel lab precedente, le query nel pannello di sinistra sono organizzate per origine dati.
+
 4.	Si apre la finestra Power Query. Dal pannello di sinistra, selezionare le seguenti query nella cartella DataverseData tenendo premuto il tasto **CTR**L:
       a.	BabyBoomer
       b.	GenX
@@ -209,7 +234,7 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 
 3.	Stiamo lavorando in Flusso di dati 2. Rinominiamolo prima di continuare. Fare clic sui puntini di **sospensione (…)** accanto a Flusso di dati 2. Selezionare **Proprietà**.
 
-      ![](../Images/lab-04/image071.jpg)
+      ![](../Images/lab-04/image074.jpg)
    
 4.	Si apre la finestra di dialogo Proprietà flusso di dati. Cambiarne il **Nome** in **df_Customer_Dataverse**.
 
@@ -217,14 +242,13 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 
 6.	Selezionare **Salva**.
 
-      ![](../Images/lab-04/image074.jpg)
+      ![](../Images/lab-04/image077.png)
 
 Si tornerà all'area di lavoro **FAIAD_<nome utente>**. Ora creiamo un flusso di dati per importare i dati da SharePoint.
 
 ### Attività 9 - Copia di query SharePoint nel flusso di dati
 1.	Nel menu in alto selezionare **Nuovo -> Flusso di dati Gen2**.
 
-      ![](../Images/lab-04/image077.png)
    
 Si apre la pagina **Flusso di dati**. Ora che abbiamo familiarità con Flusso di dati, procediamo con la copia delle query da Power BI Desktop a Flusso di dati.
 
@@ -277,7 +301,7 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
  
 5.	Selezionare **Avanti**.
    
-      ![](../Images/lab-04/image093.jpg)
+      ![](../Images/lab-04/image096.png)
   	
 6.	Si apre la finestra di dialogo Scegliere il target di destinazione. Assicurarsi che il pulsante di opzione **Nuova tabella** sia selezionato, poiché si sta creando una nuova tabella.
 7. Vogliamo creare la tabella nel Lakehouse creato in precedenza. Nel pannello di sinistra andare a**Lakehouse -> FAIAD_<nomeutente>**.
@@ -287,37 +311,37 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 
 10. Selezionare **Avanti**.
 
-    ![](../Images/lab-04/image096.png)
+    ![](../Images/lab-04/image099.png)
  
 11. Questa volta useremo le impostazioni automatiche perché i dati verranno aggiornati completamente. Inoltre, le colonne verranno rinominate secondo necessità. Selezionare
       **Salva impostazioni**.
 
-    ![](../Images/lab-04/image099.png)
+    ![](../Images/lab-04/image102.png)
 
 ### Attività 12 - Pubblicazione e ridenominazione del flusso di dati SharePoint
 1.	Si apre nuovamente la **finestra di Power Query**. Nell'a**ngolo in basso a destra** notare che la Destinazione dati è impostata su **Lakehouse**.
 2.	Nell'angolo inferiore destro selezionare **Pubblica**.
 
-      ![](../Images/lab-04/image102.png)
+      ![](../Images/lab-04/image105.jpg)
 
 >**Nota**: si tornerà all'**area di lavoro FAIAD_<nome utente>**. La pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
  
 3.	Stiamo lavorando in Flusso di dati 2. Rinominiamolo prima di continuare. Fare clic sui puntini di **sospensione (…)** accanto a Flusso di dati 2. Selezionare **Proprietà**.
 
-      ![](../Images/lab-04/image105.jpg)
+      ![](../Images/lab-04/image108.jpg)
    
 4.	Si apre la finestra di dialogo Proprietà flusso di dati. Cambiarne il **Nome** in **df_People_SharePoint**
 5.	Nella casella di testo **Descrizione** aggiungere **Flusso di dati per inserire i dati del personale da SharePoint in Lakehouse**.
 6.	Selezionare **Salva**.
 
-      ![](../Images/lab-04/image108.jpg)
+      ![](../Images/lab-04/image111.png)
    
 Si tornerà all'**area di lavoro FAIAD_<nome utente>**. Ora abbiamo inserito tutti i dati in Lakehouse. Nel prossimo lab pianificheremo l'aggiornamento del flusso di dati.
  
 ## Riferimenti
 Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità chiave disponibili in Microsoft Fabric. Nel menu di servizio, la sezione Guida (?) include collegamenti ad alcune risorse utili.
 
-   ![](../Images/lab-04/image111.png)
+   ![](../Images/lab-04/image114.png)
    
 Di seguito sono riportate ulteriori risorse utili che consentiranno di progredire nell'uso di Microsoft Fabric.<br>
 - Vedere il post di blog per leggere l'[annuncio completo sulla disponibilità generale di Microsof t Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)<br>
