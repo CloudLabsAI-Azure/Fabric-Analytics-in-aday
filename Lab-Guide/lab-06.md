@@ -303,7 +303,7 @@ Vamos adicionar as medidas restantes.
 4. Depois que a medida for salva, observe a opção Ferramentas de medida no menu superior. Clique em **Ferramentas de medida.**
 5. Na lista suspensa Formato, clique em **Número decimal.**
 
-![](../Images/lab-05/image110.jpg)
+![](../Images/lab-06/image110.jpg)
 
 6. Siga as etapas semelhantes para adicionar as seguintes medidas:<br>
 **a. GM = SUM(Sales[Line_Profit])** formatada como **Número decimal.**<br>
@@ -313,7 +313,7 @@ Vamos adicionar as medidas restantes.
 ## Referências
 O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais funções disponíveis no Microsoft Fabric. No menu do serviço, a seção Ajuda (?) tem links para ótimos recursos.
 
-![](../Images/lab-05/image113.png)
+![](../Images/lab-06/image113.png)
 
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas do Microsoft Fabric.
   - Veja a postagem do blog para ler o [anúncio completo de GA do Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
