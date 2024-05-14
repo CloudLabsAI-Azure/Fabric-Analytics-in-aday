@@ -24,7 +24,9 @@
 - Lakehouse 만드는 방법
 
 ## Fabric 라이선스
-작업 1: Microsoft Fabric 평가판 라이선스 활성화
+
+### 작업 1: Microsoft Fabric 평가판 라이선스 활성화
+
 1.**브라우저**를 열어서 https://app.powerbi.com/으로 이동합니다. 로그인 페이지가 열립니다. **참고:** 랩 환경을 사용하지 않고 기존 Power BI 계정이 있는 경우 브라우저를 비공개/익명 모드로 사용하기를 원할 수도 있습니다.
 2.**환경 변수**탭(랩 가이드 옆)에 있는 **사용자 이름**을 **이메일**로 입력하고 **Submit**을 클릭합니다.
 
@@ -62,8 +64,10 @@
 
 ![](../Images/Lab-02/image024.jpg)
 
-# Fabric 환경 개요
-## 작업 2: Data Factory 환경
+## Fabric 환경 개요
+
+### 작업 2: Data Factory 환경
+
 1.화면 왼쪽 하단에 있는 **Microsoft Fabric**(Fabric 환경 선택기) 아이콘을 선택합니다. Fabric 환경 목록이 포함된 대화 상자가 열립니다. Power BI, Data Factory, Data Activator 및 Industry Solutions는 독립적인 환경입니다. Data Engineering, Data Science, Data Warehouse 및 Real-
 Time Analytics은 Synapse 환경이며 이 네 가지 환경은 Synapse에서 제공됩니다. 한번 살펴보겠습니다!
  
@@ -85,7 +89,8 @@ Time Analytics은 Synapse 환경이며 이 네 가지 환경은 Synapse에서 �
 
   ![](../Images/Lab-02/image030.jpg)
  
-## 작업 3: Data Activator 환경
+### 작업 3: Data Activator 환경
+
 1.화면 왼쪽 하단에 있는 **Fabric 환경 선택기 아이콘**(현재 Data Factory로 설정됨)을 선택합니다. Fabric 환경 대화 상자가 열립니다.
 
 ![](../Images/Lab-02/image033.png)
@@ -98,7 +103,7 @@ b.**Reflex 샘플:** 샘플 솔루션.
     
 ![](../Images/Lab-02/image036.png)
  
-## 작업 4: Industry Solutions 경험
+### 작업 4: Industry Solutions 경험
 1.화면 왼쪽 하단에 있는 **Fabric 환경 선택기 아이콘**(현재 Data Activator로 설정됨)을 선택합니다. Fabric 환경 대화 상자가 열립니다.
 2.대화 상자에서 **Industry Solutions**를 선택합니다. **Industry Solutions 홈 페이지**로 이동됩니다. Microsoft Fabric에서는 데이터 관리, 분석 및 의사 결정을 위한 강력한 산업별 플랫폼을 제공합니다. 이러한 데이터 솔루션은 다양한 산업이 직면한 고유한 문제를 해결하여 기업이 운영을 최적화하고, 다양한 소스의 데이터를 통합하고, 풍부한 분석을 사용할 수 있도록 지원합니다. 세 가지 섹션은 이전 환경과 유사합니다. 새로 만들기 섹션에서 다음 항목을 확인합니다.
 
@@ -108,7 +113,7 @@ b.**리테일 솔루션:** 대량의 데이터를 관리하고, 다양한 소스
 
 ![](../Images/Lab-02/image039.png)
  
-## 작업 5: Synapse Data Engineering 환경
+### 작업 5: Synapse Data Engineering 환경
 1.화면 왼쪽 하단에 있는 **Fabric 환경 선택기 아이콘**(현재 Industry Solutions로 설정됨)을 선택합니다. Fabric 환경 대화 상자가 열립니다.<br>
 2.**Data Engineering**을 선택합니다. **Data Engineering 홈 페이지**로 이동됩니다. 이번에도 이 페이지에는 세 가지 주요 섹션이 있습니다. 새로 만들기 섹션에서 다음 항목을 확인합니다.
 
@@ -128,7 +133,7 @@ g.**Use a sample:** 샘플 솔루션.
 
  ![](..Images/Lab-02/image042.jpg)
  
-## 작업 6: Synapse Data Science 환경
+### 작업 6: Synapse Data Science 환경
 1.화면 왼쪽 하단에 있는 **Fabric 환경 선택기 아이콘**(현재 Data Engineering으로 설정됨)을 선택합니다. Fabric 환경 대화 상자가 열립니다.
 2.**Data Science**를 선택합니다. **Data Science 홈 페이지**로 이동됩니다. 여기에도 역시 세 개의 섹션이 있습니다. 새로 만들기 섹션에서 다음 항목을 확인합니다.
 
@@ -148,7 +153,7 @@ f.**Use a sample:** 샘플 솔루션.
 
 ![](../Images/Lab-02/image045.jpg)
  
-## 작업 7: Synapse Data Warehouse 환경
+### 작업 7: Synapse Data Warehouse 환경
 1.화면 왼쪽 하단에 있는 **Fabric 환경 선택기 아이콘**(현재 Data Science로 설정됨)을 선택합니다. Fabric 환경 대화 상자가 열립니다.
 2.**Data Warehouse**를 선택합니다. **Data Warehouse 홈 페이지로** 이동됩니다. 여기에도 역시 세 개의 섹션이 있습니다. 새로 만들기 섹션에서 다음 항목을 확인합니다.
 
@@ -158,7 +163,7 @@ b.**데이터 파이프라인:** 데이터 솔루션 조정에 사용됩니다.
 
 ![](../Images/Lab-02/image048.png)
 
-## 작업 8: Real-Time Analytics 환경
+### 작업 8: Real-Time Analytics 환경
 1.화면 왼쪽 하단에 있는 **Fabric 환경 선택기 아이콘**(현재 Data Warehouse로 설정됨)을 선택합니다. Fabric 환경 대화 상자가 열립니다.
 2.**Real-Time Analytics**을 선택합니다. **Real-Time Analytics 홈 페이지**로 이동됩니다. 여기에도 역시 세 개의 섹션이 있습니다. 새로 만들기 섹션에서 다음 항목을 확인합니다.
 
@@ -174,23 +179,30 @@ e.**샘플 사용:** 샘플 솔루션.
 
  ![](../Images/Lab-02/image051.jpg)
  
-# Fabric 작업 영역
-## 작업 9: Fabric 작업 영역 만들기
+## Fabric 작업 영역
+
+### 작업 9: Fabric 작업 영역 만들기
+
 1.이제 Fabric 라이선스로 작업 영역을 만들어 보겠습니다. 왼쪽 탐색 모음에서 **작업 영역**을 선택합니다. 대화 상자가 열립니다.
+
 2.**새 작업 영역**을 선택합니다.
 
 ![](../Images/Lab-02/image054.png)
 
 3.브라우저 오른쪽에 **작업 영역 만들기** 대화상자가 열립니다.
+
 4.**이름** 필드에 **FAIAD_<username>**을 입력합니다.
 
 **참고:** 작업 영역 이름은 고유해야 합니다. 그러나 참여자의 작업 영역 이름은 이와 달라야 합니다. 이름 필드 아래에 "**이 이름을 사용할 수 있습니다.**"라는 문구와 함께 녹색 확인 표시가 있는지 확인합니다.
+
 5.원하는 경우 작업 영역에 대한 **설명**을 입력할 수 있습니다. 이는 선택적 필드입니다.
+
 6.**고급**을 클릭하여 섹션을 확장합니다.
 
 ![](../Images/Lab-02/image057.png)
  
 7.**라이선스 모**드에서 **평가판** 이 선택되어 있는지 확인합니다. (기본적으로 선택되어 있어야 합니다.)
+
 8.**Apply**을 선택하여 새 작업 영역을 만듭니다.
 
  ![](../Images/Lab-02/image060.png)
@@ -198,8 +210,10 @@ e.**샘플 사용:** 샘플 솔루션.
 
 새 작업 영역이 만들어지면 그 작업 영역으로 전환됩니다. 다양한 데이터 원본의 데이터를 Lakehouse로 가져오고 Lakehouse의 데이터를 사용하여 모델을 구축하고 이에 대해 보고할 것입니다. 첫 번째 단계로 Lakehouse를 선택합니다.
  
-작업 10: 레이크하우스 만들기
+### 작업 10: 레이크하우스 만들기
+
 1.화면 왼쪽 하단에 있는 **Fabric 환경 선택기 아이**콘(현재 Real-Time Analytics로 설정됨)을 선택합니다. Fabric 환경 대화 상자가 열립니다.
+
 2.Data Engineering 홈페이지로 이동하려면 **Data Engineering**을 선택합니다.
 
  ![](../Images/Lab-02/image063.png)
@@ -225,6 +239,7 @@ Lakehouse 탐색기에는 **테이블 및 파일**이 표시됩니다. Lakehouse
 이 랩에서는 Fabric 인터페이스를 살펴보고 Fabric 작업 영역과 Lakehouse를 만들었습니다. 다음 랩에서는 Dataflow Gen2를 사용하여 ADLS Gen2에 연결하여 데이터를 Lakehouse로 추출, 변환, 수집하는 방법을 알아봅니다.
  
 ## 참조
+
 Fabric Analyst in a Day(FAIAD)는 Microsoft Fabric에서 사용할 수 있는 몇 가지 주요 기능을 소개합니다. 서비스의 메뉴에 있는 도움말(?) 섹션에는 유용한 리소스로 연결되는 링크가 있습니다.
 
 ![](../Images/Lab-02/image075.png)
