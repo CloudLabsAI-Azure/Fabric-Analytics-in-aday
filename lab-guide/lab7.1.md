@@ -63,10 +63,15 @@ Let’s start by using the auto-create report option. And later in the lab, we w
     ![](../media/Lab_7.4.png)
  
 6. Pick a dataset to use in your report page opens. Notice we have four options. **Select lh_FAIAD:**
-a.	**lh_FAIAD:** This is the lakehouse with the dataset we created and want to use for the report.
-b.	**Units by Supplier:** This is the dataset we created using T-SQL.
-c.	**DataflowsStagingWarehouse:** This is the staging warehouse which is created by default. We did not use this as we did not stage data.
-d.	**DataflowsStagingLakehouse:** This is the staging lakehouse which is created by default. We did not use this as we did not stage data.
+
+    a. **lh_FAIAD:** This is the lakehouse with the dataset we created and want to use for the report.
+
+    b. **Units by Supplier:** This is the dataset we created using T-SQL.
+
+    c. **DataflowsStagingWarehouse:** This is the staging warehouse which is created by default. We did not use this as we did not stage data.
+
+    d. **DataflowsStagingLakehouse:** This is the staging lakehouse which is created by default. We did not use this as we did not stage data.
+
 7. Click the **arrow next to the Auto-create report button**. Notice there are two options, Auto-create report and Create a blank report. Let’s try auto-creating, so select **Auto-create report**.
 
     ![](../media/Lab_7.5.png)
@@ -76,18 +81,25 @@ d.	**DataflowsStagingLakehouse:** This is the staging lakehouse which is created
     ![](../media/Lab_7.6.png)
  
    >**Checkpoint:** You will have a report which looks like the screenshot below. There are a few KPIs and some trend visuals. This is a good start if you are analyzing a new model and need a jumpstart.
+
    >**Note:** Notice on the top menu, that you have the option to Edit the report or view some of the data as tables. Feel free to explore these options.
 
 9. Let’s save this report. From the top menu, select **Save**.
+
 10. Save your report dialog opens. Name the report as **rpt_Sales_Auto_Report**
+    
     >**Note:** We are prefixing the report name with rpt which is short for the report.
+
 11. Make sure the report is saved in your workspace, **FAIAD_<username>**.
+
 12. Select **Save**.
 
     ![](../media/Lab_7.7.png)
  
     >**Note:** Auto-created report may look different for you as it is “auto-created”. It also depends on the relationships and measures you created in the previous lab (Lab 6). 
+    
     The above screenshot is how the auto-created report **may** look if you created all the relationships and measures including the optional relationships (Lab 6).
+
     The below screenshot is how the auto-created report **may** look if you skipped creating the optional relationships and measures (Lab 6).
 
     ![](../media/Lab_7.8.png)
@@ -107,6 +119,7 @@ Let’s create a new report using a blank canvas.
    ![](../media/Lab_7.10.png)
  
 4. Pick a semantic model to use in your report dialog opens. Select **lh_FAIAD**.
+
 5. Click the **arrow next to Auto-create report button**. Select **Create a blank report**.
 
     ![](../media/Lab_7.11.png)
@@ -117,7 +130,7 @@ Let’s create a new report using a blank canvas.
 
     ![](../media/Lab_7.12.png)
  
-7. Navigate back to **Power BI** canvas in your browser.
+7. Navigate back to **Power BI canvas** in your browser.
 
 8. Select **Format page icon** in Visualization pane.
 
@@ -195,11 +208,11 @@ Let’s create a new report using a blank canvas.
 
     ![](../media/Lab_7.18.png)
  
-16. Let’s add another KPI. Select the *Sales multi-row card** we just created. **Copy** the visual by selecting Ctrl+C from your keyboard.
+16. Let’s add another KPI. Select the **Sales multi-row card** we just created. **Copy** the visual by selecting **Ctrl+C** from your keyboard.
 
 17. **Paste** the visual by selecting **Ctrl+V** from your keyboard. Notice the visual is pasted onto the canvas.
 
-18. With the **new visual highlighted,** in the **Visualization pane -> Build visual -> Fields** section remove Sales measure.
+18. With the **new visual highlighted,** in the **Visualization pane -> Build visual -> Fields** section remove **Sales** measure.
 
 19. From the **Data** section, expand **Sales** table and select **Units** measure.
 
@@ -255,7 +268,7 @@ Let’s save the report before we navigate away from the report to make changes 
 
 8. From the top menu select **Refresh**. Notice in the Data panel the year is not a summation field. 
 
-9. With the **Line chart visual selected, remove Sum of Year**** from the Y-axis.
+9. With the **Line chart visual selected, remove Sum of Year** from the Y-axis.
 
 10. Select **Year** field and it will be added to the **X-axis**.
 
@@ -338,6 +351,7 @@ As mentioned earlier, we will not build all the visuals in this lab. At your lei
 ### <a name="_toc152166245"></a>Task 10: Add new data to simulate Direct Lake Mode
 
 Typically, in Import mode, once data in the source is refreshed, we need to refresh the Power BI model after which the data in the report is updated. With Direct Query mode, once data is refreshed in the source, it is available in the Power BI report. However direct query mode is typically slow. To solve this problem, Microsoft Fabric has introduced Direct Lake mode. Direct Lake is a fast path to load the data from the lake straight into the Power BI engine, ready for analysis. Let’s explore this.
+
 In a real scenario, data is updated at the source. Since we are in a training environment, we will simulate this by connecting it to a parquet file with data for May 2023. 
 
 1. Select **FAIAD_<username>**  from the left menu bar to navigate to workspace home.
@@ -369,9 +383,12 @@ In a real scenario, data is updated at the source. Since we are in a training en
 
    ![](../media/Lab_7.34.png)
  
-10. Now, let’s append the May **invoice** data with the Invoice table. Select Invoice query from the Queries section.
+10. Now, let’s append the May invoice data with the Invoice table. Select **Invoice** query from the Queries section.
+
 11. From the ribbon, select **Home -> Append** queries.
+
 12. Append query dialog appears. From the **Table to append** dropdown select **MayInvoice**.
+
 13. Select **OK**.
 
     ![](../media/Lab_7.35.png)
