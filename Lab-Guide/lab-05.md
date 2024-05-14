@@ -1,6 +1,27 @@
  	 
 ![](../Images/lab-05/lab-05_main.png)
 
+## Sommario
+- Introduzione
+- Flusso di dati Gen2
+   - Attività 1 - Configurazione dell'aggiornamento pianificato per il flusso di dati di vendita	
+   - Attività 2 - Configurazione dell'aggiornamento pianificato del flusso di dati di fornitori e clienti	
+- Pipeline di dati	
+   - Attività 3 - Creazione di una pipeline di dati	
+   - Attività 4 - Creazione di una pipeline di dati semplice	
+   - Attività 5 - Creazione di una nuova pipeline di dati	
+   - Attività 6 - Creazione di un'attività Fino a	
+   - Attività 7 - Creazione di variabili	
+   - Attività 8 - Configurazione di un'attività Fino a	
+   - Attività 9 - Configurazione di un'attività Flusso di dati	
+   - Attività 10 - Configurazione della prima attività Imposta variabile
+   - Attività 11 - Configurazione della seconda attività Imposta variabile	
+   - Attività 12 - Configurazione della terza attività Imposta variabile	
+   - Attività 13 - Configurazione di un'attività Attesa	
+   - Attività 14 - Configurazione dell'aggiornamento pianificato per la pipeline di dati	
+- Riferimenti	
+
+
 # Introduzione
 Abbiamo inserito dati da diverse origini dati in Lakehouse. In questo lab si imposterà una pianificazione degli aggiornamenti per le origini dati. Riepilogo dei requisiti:
 
