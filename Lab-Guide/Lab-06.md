@@ -338,7 +338,7 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.S
 
 14. **확인**을 선택합니다.
 
-![](../Images/Lab-06/image098.jpg)
+![](../Images/Lab-06/image098.png)
 
 15. 이제 Customer와 Reseller 간의 관계를 만들어 보겠습니다. **Customer** 테이블에서
 
@@ -424,7 +424,7 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.S
 
 Fabric Analyst in a Day(FAIAD)는 Microsoft Fabric에서 사용할 수 있는 몇 가지 주요 기능을 소개합니다. 서비스의 메뉴에 있는 도움말(?) 섹션에는 유용한 리소스로 연결되는 링크가 있습니다.
 
-   ![](../Images/Lab-01/image054.png)
+![](../Images/Lab-01/image054.png)
 
 아래는 Microsoft Fabric의 다음 단계에 도움이 되는 몇 가지 추가 자료입니다.
 - [Microsof t Fabric GA 발표](https://www.microsoft.com/en-us/microsoft-fabric/blog/2023/11/15/prepare-your-data-for-ai-innovation-with-microsoft-fabric-now-generally-available/) 전문을 블로그 포스트로 읽기
