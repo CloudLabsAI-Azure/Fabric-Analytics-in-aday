@@ -392,7 +392,7 @@ in
 
       ![](../Images/lab-07/image108.jpg)
    	
->**Nota**: una volta pubblicato, il flusso di dati verrà aggiornato. L'operazione potrebbe richiedere alcuni minuti.
+      >**Nota**: una volta pubblicato, il flusso di dati verrà aggiornato. L'operazione potrebbe richiedere alcuni minuti.
    	
 15. Selezionare **rpt_Sales_Report** nella barra dei menu di sinistra per tornare al report.
 
