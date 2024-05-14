@@ -161,8 +161,7 @@
 
 3. 리본 메뉴에서 **홈 -> 데이터 변환**을 선택합니다. Power Query 창이 열립니다. 이전 랩에서 알아본 것 처럼 왼쪽 패널의 쿼리는 데이터 원본별로 구성됩니다.
 
-4. Power Query 창이 열립니다. 왼쪽 패널, DataverseData 폴더에서 다음 쿼리를
-**Ctrl+선택**합니다.
+4. Power Query 창이 열립니다. 왼쪽 패널, DataverseData 폴더에서 다음 쿼리를**Ctrl+선택**합니다.
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a.	BabyBoomer
 
@@ -274,8 +273,7 @@
 
 3. 리본 메뉴에서 **홈 -> 데이터 변환**을 선택합니다. Power Query 창이 열립니다. 이전 랩에서 알아본 것 처럼 왼쪽 패널의 쿼리는 데이터 원본별로 구성됩니다.
 
-4. Power Query 창이 열립니다. 왼쪽 패널의 SharepointData 폴더에서 **People** 쿼리를
-**선택**합니다.
+4. Power Query 창이 열립니다. 왼쪽 패널의 SharepointData 폴더에서 **People** 쿼리를**선택**합니다.
 
 5. **마우스 우클릭**하고 **복사**를 선택합니다.
 
@@ -351,7 +349,7 @@
  
 3. 데이터 흐름 2가 작업 중인 데이터 흐름입니다. 계속하기 전에 이름을 바꿔 보겠습니다. Dataflow 2 옆에 있는 **줄임표(...)** 를 클릭합니다. **속성**을 클릭합니다.
 
-![](../Images/Lab-04/image107.png)
+![](../Images/Lab-04/image107.jpg)
 
 4. 데이터 흐름 속성 대화 상자가 열립니다. **이름을 df_People_SharePoint**로 변경합니다.
 

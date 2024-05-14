@@ -80,9 +80,7 @@
 
 5. 데이터 원본에 연결하기 대화 상자로 이동됩니다. ADLS Gen2 데이터 원본에 대한 연결을 만들어야 합니다. **연결 설정 -> URL**에서 다음 링크를 입력합니다.
 
-```
 https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parquet-Format
-```
  
 ![](../Images/Lab-03/image024.png)
 
@@ -281,8 +279,7 @@ ADLS Base Folder도 복사됩니다. 이는 States 쿼리가 Power BI Desktop의
  
 ![](../Images/Lab-03/image101.png)
 
-9. 데이터 가져오기, 데이터 원본에 연결 고급 편집기 대화 상자가 열립니다. 고급 편집기에서
-**모든 텍스트를 강조**합니다.
+9. 데이터 가져오기, 데이터 원본에 연결 고급 편집기 대화 상자가 열립니다. 고급 편집기에서**모든 텍스트를 강조**합니다.
 
 10. 모든 텍스트를 삭제하려면 키보드에서 **삭제**를 선택합니다.
 
