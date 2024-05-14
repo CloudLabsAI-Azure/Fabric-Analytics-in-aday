@@ -1,6 +1,18 @@
 
 ![](../Images/picture-01.png)
  
+
+## Sommario
+
+- Struttura del documento<br>
+- Scenario/Esposizione del problema<br>
+- Panoramica del report di Power BI Desktop<br>
+   - Attività 1 - Impostazione di Power BI Desktop nell'ambiente lab<br>
+   - Attività 2 - Analisi del report di Power BI Desktop<br>
+   - Attività 3 - Analisi delle query in Power Query<br>
+- Riferimenti
+
+
 ## Struttura del documento
 Il lab include i passaggi che l'utente deve seguire con gli screenshot associati che forniscono un aiuto visivo. In ogni screenshot vi sono sezioni evidenziate con riquadri arancioni che indicano le aree su
 cui l'utente deve concentrarsi.
@@ -55,26 +67,28 @@ Prima di iniziare con Fabric, esaminiamo l'attuale report in Power BI Desktop pe
    
 6.	Selezionare **Continua**.
 
-      ![](../Images/Picture6.png)
+      ![](../Images/Picture5.png)
   	
 7.	Si apre la finestra di dialogo Accedi. Immettere nuovamente il Nome utente copiandolo nella scheda **Dettagli ambiente**.
    
 8.	Selezionare **Avanti**.
 
-      ![](../Images/Picture7.png)
+      ![](../Images/Picture6.png)
  
-11.	Nella finestra di dialogo successiva immettere le Credenziali e la Password copiandole dalla scheda **Dettagli ambiente**.
+11. Nella finestra di dialogo successiva immettere le Credenziali e la Password copiandole dalla scheda **Dettagli ambiente**.
 
 12. Selezionare **Accedi**.
 
 13. Si apre la finestra di dialogo Azione richiesta che richiede di impostare l'autenticazione a più fattori. Non è necessario impostarla poiché si tratta di un ambiente lab.Selezionare **Ask later**.
 
-      ![](../Images/Picture8.png)
+      ![](../Images/Picture7.png)
 
 14. Selezionare **No, accedi solo all'app** nella finestra di dialogo successiva. Si aprirà Power BI Desktop.
  
 ### Attività 2 - Analisi del report di Power BI Desktop
 Il report seguente analizza le vendite per Fabrikam. I KPI sono elencati in alto a sinistra nella pagina. Gli oggetti visivi rimanenti evidenziano le vendite nel tempo, per area, gruppo di prodotti e azienda rivenditrice.
+
+   ![](../Images/Picture8.png)
 
 **Nota**: in questo corso di formazione ci concentreremo sull'acquisizione, la trasformazione e la modellazione dei dati mediante gli strumenti disponibili in Fabric. Non ci concentreremo sullo sviluppo di report né sullo spostamento al loro interno. Dedichiamo qualche minuto alla comprensione del report prima di procedere ai passaggi successivi.
 
@@ -82,7 +96,7 @@ Il report seguente analizza le vendite per Fabrikam. I KPI sono elencati in alto
  
       ![](../Images/Picture9.png)
  
-2.	Confrontiamo questi dati con l'area delle Montagne Rocciose. Selezionare **Rocky Mountain nel****grafico a dispersione Sales Territory**. Dall'istogramma % vendite rispetto all'anno precedente risulta che le vendite per Wingtip Toys sono aumentate notevolmente nel quarto trimestre del 2022 dopo essere state basse nei due trimestri precedenti.
+2.	Confrontiamo questi dati con l'area delle Montagne Rocciose. Selezionare **Rocky Mountain nel grafico a dispersione Sales Territory**. Dall'istogramma % vendite rispetto all'anno precedente risulta che le vendite per Wingtip Toys sono aumentate notevolmente nel quarto trimestre del 2022 dopo essere state basse nei due trimestri precedenti.
 
       ![](../Images/picture10.png)
 
@@ -91,11 +105,12 @@ Il report seguente analizza le vendite per Fabrikam. I KPI sono elencati in alto
 6.	Nel grafico a dispersione in basso al centro della schermata (ordini cliente rispetto alle vendite)
 selezionare l'outlier in alto a destra (4° quadrante). Notare che la percentuale di margine è il 52%, superiore alla media del 50%. Anche, la percentuale di vendite rispetto all'anno precedente è aumentata negli ultimi due trimestri del 2022.
 
-      ![](../Images/picture11.png)
+     ![](../Images/picture11.png)
+      
  
 7.	Selezionare il rivenditore outlier nel grafico a dispersione per rimuovere il filtro.
 
-8.	Otteniamo i dettagli del prodotto per gruppo di prodotti e rivenditore. Nel grafico a barre Vendite per gruppo di prodotti e azienda rivenditrice **fare clic con il pulsante destro del mouse sulla barra Packaging Materials per Tailspin Toys**x e nella finestra di dialogo selezionare **Drill-through -> Product Detail**.
+8.	Otteniamo i dettagli del prodotto per gruppo di prodotti e rivenditore. Nel grafico a barre Vendite per gruppo di prodotti e azienda rivenditrice **fare clic con il pulsante destro del mouse sulla barra Packaging Materials per Tailspin Toys** x e nella finestra di dialogo selezionare **Drill-through -> Product Detail**.
 
       ![](../Images/Picture12.png)
 
@@ -124,13 +139,13 @@ Si passerà alla pagina che fornisce i dettagli del prodotto. Notare che sono an
 
 3.	Si apre la finestra Power Query. Nella barra multifunzione selezionare Home -> Impostazioni origine dati. Scorrendo l'elenco si noterà che vi sono quattro **origini dati**, come indicato nell'esposizione del problema:
 
-    - Snowflake
+      a. Snowflake
     
-    - SharePoint
+      b. SharePoint
     
-    - ADLS Gen2
+      c. ADLS Gen2
     
-    - Dataverse
+      d. Dataverse
 
 5.	Selezionare **Chiudi** per chiudere la finestra di dialogo Impostazioni origine dati.
 
@@ -158,6 +173,7 @@ Si passerà alla pagina che fornisce i dettagli del prodotto. Notare che sono an
       d. Il **fatto Sales** è creato unendo le query InvoiceLineItems e Invoice.
 
 11. Per l'origine dati Snowflake, usare il **Nome utente Snowflake** e la **Password Snowflake** disponibili nella scheda Variabili di ambiente (accanto alla guida al lab).
+
 12. Notare che la cartella **SnowflakeData** include la dimensione Supplier e il fatto PO (ordine/spesa).
 
       a. La **dimensione Supplier** è creata unendo le query Suppliers e SupplierCategories.
