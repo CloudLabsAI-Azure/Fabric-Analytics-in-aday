@@ -1,4 +1,19 @@
 ![](../Images/lab-06/lab-06_main.png) 
+
+## Sommario
+- Introduzione	
+- Lakehouse
+   - Attività 1 - Query sui dati mediante SQL	
+   - Attività 2 - Visualizzazione del risultato T-SQL	
+   - Attività 3 - Creazione di una query visiva	
+   - Attività 4 - Visualizzazione dei risultati della query	
+   - Attività 5 - Creazione di relazioni	
+   - Attività 6 - Creazione delle misure	
+   - Attività 7 - Sezione facoltativa: creazione delle relazioni	
+   - Attività 8 - Sezione facoltativa: creazione delle misure	
+- Riferimenti	
+
+
 ## Introduzione
 Abbiamo inserito dati provenienti da diverse origini dati in Lakehouse. In questo lab si lavorerà con il modello di dati. In genere, eseguiamo attività di modellazione quali la creazione di relazioni, l'aggiunta di misure, ecc. in Power BI Desktop. Qui impareremo a eseguire queste attività di modellazione nel servizio.
 
