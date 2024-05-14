@@ -330,7 +330,7 @@ varCounter 变量。
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;d.**变量**：管道变量是在管道运行期间可以设置和修改的值。它与管道参数不同，管道参数在管道级别定义，且在管道运行期间无法更改，而管道变量可以通过“设置变量”活动在管道内进行设置和修改。我们稍后将使用“设置变量”活动。
  
- ![](../Images/lab-05/image19.png)
+ ![](../Images/lab-05/image19.jpg)
  
 9.	在底部菜单中点击**函数**。
 
@@ -345,7 +345,7 @@ varCounter 变量。
 **注意**：您的函数应类似于 **@or(equals())**。equals 函数也有两个参数。我们将检查变量
 varCounter 是否等于 3。
 
-![](../Images/lab-05/image21.png)
+![](../Images/lab-05/image21.jpg)
 
 13.	现在将光标置于 **@equals** 函数**的括号之间**以添加参数。
 
@@ -392,7 +392,6 @@ varSuccess 的值进行比较。（varSuccess 默认为“Yes”。）
 
 ![](../Images/lab-05/image26.png)
 
- 
 3.	在顶部菜单中，选择**活动-> 数据流**。数据流活动已添加到设计窗格中。
 
 4.**选择数据流活动**后，在底部窗格中选择**常规**。我们为活动指定名称和说明。
@@ -502,11 +501,9 @@ set_varIsSuccess 设置变量活动。因此，在数据流刷新成功后，我
 
 4.	在**说明**字段中，输入 **Increment variable varCounter**。
 
-5.	点击 set_varTempCounter 设置变量活动中的**绿色复选标记**，并拖动以连接到新的
-**set_varCounter 设置变量活动。**
+5.	点击 set_varTempCounter 设置变量活动中的**绿色复选标记**，并拖动以连接到新的 **set_varCounter 设置变量活动。**
 
 ![](../Images/lab-05/image34.jpg)
- 
  
 6.	选择 **set_varCounter 设置变量活动**后，点击底部菜单中的**设置**。
 
@@ -577,7 +574,7 @@ varWaitTime * 5，那就是 60*5 = 300 秒。
 
 11.	我们已经完成了数据管道的创建。从顶部菜单中，选择主页-> 保存图标以保存数据管道。
 
-![](../Images/lab-05/image40.jpg)
+![](../Images/lab-05/image40.png)
 
  
 ### 任务 14：为数据管道配置计划刷新

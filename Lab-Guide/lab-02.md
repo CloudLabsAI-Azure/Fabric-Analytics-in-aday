@@ -79,7 +79,8 @@ Fabric 工作区
 
 ![](../Images/lab-02/image5.jpg)
 
-11.	“已成功升级到Microsoft Fabric”对话框随即打开。选择 **Fabric Home Page。**
+11. “已成功升级到Microsoft Fabric”对话框随即打开。选择 **Fabric Home Page。**
+
     ![](../Images/lab-02/image6.png)
 
 12.	您将导航到 **Microsoft Fabric 主页。**

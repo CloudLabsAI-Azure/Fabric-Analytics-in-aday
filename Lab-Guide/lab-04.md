@@ -2,36 +2,35 @@
 
 ## 目录
 
-简介
+- 简介
 
-数据流 Gen2
+- 数据流 Gen2
 
-- 任务 1：将Snowflake 查询复制到数据流
+    - 任务 1：将Snowflake 查询复制到数据流
 
-- 任务 2：创建与Snowflake 的连接
+    - 任务 2：创建与Snowflake 的连接
 
-- 任务 3：为Supplier 和PO 查询配置数据目标
+    - 任务 3：为Supplier 和PO 查询配置数据目标
 
-- 任务 4：重命名并发布 Snowflake 数据流
+    - 任务 4：重命名并发布 Snowflake 数据流
 
-- 任务 5：将Dataverse 查询复制到数据流
+    - 任务 5：将Dataverse 查询复制到数据流
 
-- 任务 6：创建与 Dataverse 的连接	
+    - 任务 6：创建与 Dataverse 的连接	
 
-- 任务 7：为Customer 查询创建数据目标
+    - 任务 7：为Customer 查询创建数据目标
 
-- 任务 8：发布并重命名 Dataverse 数据流
+    - 任务 8：发布并重命名 Dataverse 数据流
 
+    - 任务 9：将SharePoint 查询复制到数据流
 
-- 任务 9：将SharePoint 查询复制到数据流
+    - 任务 10：创建 SharePoint 连接	
 
-- 任务 10：创建 SharePoint 连接	
+    - 任务 11：为People 查询配置数据目标	
 
-- 任务 11：为People 查询配置数据目标	
+    - 任务 12：发布并重命名 SharePoint 数据流	
 
-- 任务 12：发布并重命名 SharePoint 数据流	
-
-参考
+- 参考
 
 ## 简介
 
@@ -261,7 +260,8 @@ Shift+ 选择以下查询:
 
 **注意**：您将导航回到 **FAIAD_<username>**  **工作区**。发布数据流可能需要一些时间
 
-3.	我们正在使用的数据流是 Dataflow 2。在继续下面的步骤之前，我们先将其重命名。点击Dataflow 2 旁边的**省略号 (…)**。选择**属性**。
+3. 我们正在使用的数据流是 Dataflow 2。在继续下面的步骤之前，我们先将其重命名。点击Dataflow 2 旁边的**省略号 (…)**。选择**属性**。
+
 ![](../Images/lab-04/image24.jpg)
 
 4.	“数据流属性”对话框随即打开。将**名称**更改为 **df_Customer_Dataverse**
@@ -276,7 +276,8 @@ Shift+ 选择以下查询:
 
 ### 任务 9：将SharePoint 查询复制到数据流
 
-1.	在顶部菜单中，选择**新建-> 数据流 Gen2。**
+1. 在顶部菜单中，选择**新建-> 数据流 Gen2。**
+
 ![](../Images/lab-04/image1.png)
 
 您将导航到数据流页面。现在我们已经熟悉了数据流，我们接下来从Power BI Desktop 复制查询到数据流

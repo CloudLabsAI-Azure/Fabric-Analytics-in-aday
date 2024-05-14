@@ -66,10 +66,9 @@
 ![](../Images/lab-07/image3.jpg)
 
 
-6.	“选择要在报表中使用的语义模型”页面随即打开。请注意，我们有四个选项。选择
-**lh_FAIAD：**
+6.	“选择要在报表中使用的语义模型”页面随即打开。请注意，我们有四个选项。选择 **lh_FAIAD：**
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a.**lh_FAIAD**：这是  Lakehouse，其中包含我们创建并希望用于报表的数据集。
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a.**lh_FAIAD**：这是  Lakehouse，其中包含我们创建并希望用于报表的数据集。
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;b.**Units by Supplier**：这是我们使用T-SQL 创建的数据集。
 
@@ -303,7 +302,6 @@
  
  ![](../Images/lab-07/image24.jpg)
 
-
 6.	从**左侧菜单栏**中，选择 **lh_FAIAD** 以导航到湖屋。
 
 7.	**更改尚未保存**对话框随即打开。选择**保存**，将更改**保存**到报表。
@@ -387,6 +385,8 @@
  
 5.	复制以下代码并将其粘贴到编辑器中。
 
+```
+let
 Source = #"ADLS Base Folder",
 #"Filtered Rows" = Table.SelectRows(Source, each Text.Contains([Folder Path], "Sales.Invoices_May")),
 
@@ -395,7 +395,9 @@ Path"="https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta-Parq
 Format/Sales.Invoices_May/",Name="0-0ee085a3-716f-4833-a792-c3162c1de300-0.parquet"]}[Content],
 
 #"Imported Parquet" = Parquet.Document(#"https://stvnextblobstorage dfs core windows net/fabrikam-sales/Delta- Parquet-Format/Sales Invoices_May/_0-0ee085a3-716f-4833-a792-c3162c1de300-0 parquet")
-in #"Imported Parquet"
+in
+#"Imported Parquet"
+```
 
 6.	选择**下一步**。
 ![](../Images/lab-07/image32.jpg)

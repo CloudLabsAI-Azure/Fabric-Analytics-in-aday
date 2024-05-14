@@ -194,7 +194,7 @@ Sales 数据按 Geography、Product、Sales Person 和 Date 粒度提供。我�
 
 2.	选择 **Folder Path 列下拉箭头**。
 
-![](../Images/lab-03/image18.png)
+![](../Images/lab-03/image18.jpg)
 
 3.	选择**文本筛选器 -> 包含…**
 
@@ -210,11 +210,11 @@ Sales 数据按 Geography、Product、Sales Person 和 Date 粒度提供。我�
 
 6.	数据将筛选到单行。在 Content 列下选择 Binary。
 
-6.	数据将筛选到单行。在 **Content 列**下选择 **Binary。**
+7.	数据将筛选到单行。在 **Content 列**下选择 **Binary。**
 
 ![](../Images/lab-03/image20.jpg)
 
-7.	请注意，您将看到所有国家/地区详细信息。在**右侧面板** 中的**查询设置 -> 属性 -> 名**称中，将名称更改为 **Countries**
+8.	请注意，您将看到所有国家/地区详细信息。在**右侧面板** 中的**查询设置 -> 属性 -> 名**称中，将名称更改为 **Countries**
 
 **注意：** 在屏幕截图的右下角，请确保查询有四个应用的步骤并等待查询加载完成。这可能需要几分钟时间。
 
@@ -290,7 +290,7 @@ Sales 数据按 Geography、Product、Sales Person 和 Date 粒度提供。我�
 
 8.	从功能区中选择获**取数据-> 空白查询。**
 
-![](../Images/lab-03/image32.png)
+![](../Images/lab-03/image32.jpg)
 
 9.	“获取数据，连接到数据源”高级编辑器对话框随即打开。在编辑器中**突出显示所有文本。**
 
@@ -451,7 +451,7 @@ Lakehouse 中的地理数据，让我们引入ADLS Gen2 中的其余数据。
 
 8.	如前所述，我们不会暂存任何此类数据。因此右键单击以下查询并选择启用暂存以删除复选标记。
 
-&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a.	Product
+&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a.	Product
 
 &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;b.	Product Details
 
@@ -479,7 +479,7 @@ Lakehouse 中的地理数据，让我们引入ADLS Gen2 中的其余数据。
 
 4.	选择**下一步。**
 
-![](../Images/lab-03/image50.jpg)
+![](../Images/lab-03/image50.png)
 
 5.	“选择目标”对话框随即打开。务必选中**新建表单选按钮**，因为我们要创建一个新表。
 

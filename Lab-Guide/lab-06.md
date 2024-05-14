@@ -21,7 +21,7 @@
 
     - 任务 8：可选部分- 创建度量
 
-参考
+- 参考
 
 
 ## 简介
@@ -58,8 +58,10 @@
 
 4.	将**以下 SQL 查询**粘贴到**查询窗口**中。此查询将按供应商名称返回单位数量。它将 Sales 表与Product 和 Supplier 表联接起来以实现此目的。
 
-SELECT su.Supplier_Name, SUM(Quantity) as Units FROM dbo.Sales s
-JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.SupplierID = p.SupplierID按su.Supplier_Name 分组
+    ```
+    SELECT su.Supplier_Name, SUM(Quantity) as Units FROM dbo.Sales s
+    JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.SupplierID = p.SupplierID按su.Supplier_Name 分组
+    ```
 
 5.	点击 **Run** 查看结果。
 
@@ -306,7 +308,7 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.S
 
 **检查点：** 您的模型应类似于下面的屏幕截图所示。
 
-![](../Images/lab-06/image5.jpg)
+![](../Images/lab-06/image5.png)
 
 2.	我们接下来在**Product** 和 **Supplier** 之间创建关系。从 **Product** 表中选择 **SupplierID**，并将其拖至 **Supplier** 表的 **SupplierID** 中。
 
@@ -367,7 +369,7 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.S
 23.	确保 **Table 2** 是 **Date，列**是 **Date。**
 
 24.	确保**基数为**多**对一 (*:1)。
-**
+
 25.	确保**交叉筛选器**方向为 **Single。**
 
 26.	选择 **Ok**。
