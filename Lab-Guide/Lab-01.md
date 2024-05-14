@@ -123,13 +123,13 @@ e.Reseller별 고객 정보가 있습니다. Customer가 Reseller에 연결됩�
  
 2.Power Query 창이 열립니다. 리본 메뉴에서 홈 -> **데이터 원본 설정**을 선택합니다. 데이터 원본 설정 대화 상자가 열립니다. 목록을 스크롤하면 문제 설명에 언급된 대로 네 가지 데이터 원본이 있음을 알 수 있습니다.
 
-a.Snowflake
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a.Snowflake
 
-b.SharePoint
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;b.SharePoint
 
-c.ADLS Gen2
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;c.ADLS Gen2
 
-d.Dataverse
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;d.Dataverse
 
 3.**닫기**를 선택하여 데이터 원본 설정 대화 상자를 닫습니다.
 
