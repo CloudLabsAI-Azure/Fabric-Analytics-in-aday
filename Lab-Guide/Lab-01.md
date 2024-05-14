@@ -143,26 +143,29 @@ d.Dataverse
 
 7.ADLS 데이터 원본의 경우 **계정 키** 옵션을 선택하고 **환경 변수** 탭(랩 가이드 옆)에 있는 **Adls
 스토리지 계정 액세스 키**를 입력합니다.
+
 8.ADLSData 폴더에는 Geo, Product, Reseller, Date 등 다양한 차원(dimension)이 있습니다. Sales
 팩트도 있습니다.
 
-a.**Geo 차원**은 Cities, Countries, 및 States 쿼리의 데이터를 병합하여 생성됩니다.
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a.**Geo 차원**은 Cities, Countries, 및 States 쿼리의 데이터를 병합하여 생성됩니다.
 
-b.**Product 차원**은 Product Groups 및 Product Item Group 쿼리의 데이터를 병합하여 생성됩니다.
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;b.**Product 차원**은 Product Groups 및 Product Item Group 쿼리의 데이터를 병합하여 생성됩니다.
 
-c.**Reseller 차원**은 BuyingGroup 쿼리를 사용하여 필터링됩니다.
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;c.**Reseller 차원**은 BuyingGroup 쿼리를 사용하여 필터링됩니다.
 
-d.**Sales 팩트**는 InvoiceLineItems를 Invoice 쿼리와 병합하여 생성됩니다.
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;d.**Sales 팩트**는 InvoiceLineItems를 Invoice 쿼리와 병합하여 생성됩니다.
 
 9.Snowflake 데이터 원본의 경우, **환경 변수** 탭(랩 가이드 옆)에 있는 **Snowflake 사용자 이름**
 및 **Snowflake 암호**를 사용합니다.
+
 10.**SnowflakeData** 폴더에는 Supplier 차원과 PO(주문/지출) 팩트가 있습니다.
 
-a.**Supplier 차원**은 Suppliers 쿼리와 SupplierCategories 쿼리를 병합하여 생성됩니다.
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a.**Supplier 차원**은 Suppliers 쿼리와 SupplierCategories 쿼리를 병합하여 생성됩니다.
 
-b.**PO 팩트**는 PO와 PO Line Items 쿼리를 병합하여 생성됩니다.
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;b.**PO 팩트**는 PO와 PO Line Items 쿼리를 병합하여 생성됩니다.
 
 11.	SharePoint 데이터 원본의 경우, **환경 변수** 탭(랩 가이드 옆)에 있는 **사용자 이름** 및 **암호**를 입력합니다. Microsoft 계정 옵션을 선택합니다.
+    
 12.**SharepointData** 폴더에는 People 차원이 있습니다.
  
   ![](../Images/Lab-01/image051.png)
