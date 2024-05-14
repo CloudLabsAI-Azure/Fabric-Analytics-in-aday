@@ -166,7 +166,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
  
 4. On the bottom right corner, select **Publish**.
 
-    ![](../media/Lab_4.1_14.png)
+   ![](../media/Lab_4.1_14.png)
  
     You will be navigated back to **FAIAD_<username> workspace**. It may take a few moments for the Dataflow to Publish. Now let’s create a dataflow to bring in data from Dataverse.
 
