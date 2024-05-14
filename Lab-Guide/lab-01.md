@@ -105,7 +105,7 @@ Il report seguente analizza le vendite per Fabrikam. I KPI sono elencati in alto
 6. Nel grafico a dispersione in basso al centro della schermata (ordini cliente rispetto alle vendite)
 selezionare l'outlier in alto a destra (4° quadrante). Notare che la percentuale di margine è il 52%, superiore alla media del 50%. Anche, la percentuale di vendite rispetto all'anno precedente è aumentata negli ultimi due trimestri del 2022.
 
-     ![](./Images/picture11.png)
+      ![](../Images/picture11.png)
       
 7.	Selezionare il rivenditore outlier nel grafico a dispersione per rimuovere il filtro.
 
