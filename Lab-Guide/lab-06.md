@@ -187,7 +187,7 @@ Ok, agora estamos prontos para criar o modelo, criar relacionamentos entre tabel
 ![](../Images/lab-06/image071.png)
 
 15.	De maneira similar, crie um relacionamento **muitos para um** entre as tabelas **Sales** e **Product.** Selecione **StockItemID** na tabela **Sales** e **StockItemID** na tabela **Product.**
-16.	No menu superior, selecione **Relatórios -> Atualizar automaticamente o modelo semântico** para salvar e atualizar o modelo   ![](../Images/lab-05/image24.png)
+16.	No menu superior, selecione **Relatórios -> Atualizar automaticamente o modelo semântico** para salvar e atualizar o modelo   
 
 [](../Images/lab-06/image074.png)
 
