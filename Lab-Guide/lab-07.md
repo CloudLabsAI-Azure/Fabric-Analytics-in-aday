@@ -1,4 +1,23 @@
 ![](../Images/lab-07/lab-07_main.png)
+
+
+## Sommario
+- Introduzione	
+- Power BI	
+   - Attività 1 - Creazione automatica del report	
+   - Attività 2 - Configurazione dello sfondo per un nuovo report	
+   - Attività 3 - Aggiunta dell'intestazione al report	
+   - Attività 4 - Aggiunta di KPI al report	
+   - Attività 5 - Aggiunta di un grafico a linee al report	
+   - Attività 6 - Salvataggio del report	
+   - Attività 7 - Configurazione della colonna Year nella tabella Date	
+  - Attività 8 - Configurazione della colonna Short_Month_Name nella tabella Date	
+   - Attività 9 – Formattazione del grafico a linee	
+   - Attività 10 - Aggiunta di nuovi dati per simulare la modalità Direct Lake	
+- Pulizia dell'ambiente lab	
+- Riferimenti	
+
+
 # Introduzione
 Abbiamo inserito dati provenienti da diverse origini dati in Lakehouse, abbiamo presentato
 Lakehouse, impostato la pianificazione di un aggiornamento per le origini dati e creato un modello di dati. Ora creeremo un report.
