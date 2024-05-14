@@ -1,6 +1,25 @@
 
 ![](../Images/lab2_main.png)
 
+
+## Sommario
+- Introduzione	
+- Licenza di Fabric	
+   - Attività 1 - Abilitazione di una licenza di valutazione per Microsoft Fabric
+- Panoramica delle esperienze in Fabric
+   - Attività 2 - Esperienza Data Factory
+   - Attività 3 - Esperienza Data Activator
+   - Attività 4 - Esperienza Industry Solutions
+   - Attività 5 - Esperienza Synapse Data Engineering	
+   - Attività 6 - Esperienza Synapse Data Science
+   - Attività 7 - Esperienza Synapse Data Warehouse
+   - Attività 8 - Esperienza Real-Time Analytics
+- Area di lavoro di Fabric	13
+   - Attività 9 - Creazione di un'area di lavoro di Fabric	
+   - Attività 10 - Creazione di un Lakehouse
+- Riferimenti	
+
+
 ## Introduzione
  
 Oggi si apprenderanno alcune funzionalità chiave di Microsoft Fabric. Questo è un workshop
@@ -27,29 +46,34 @@ In questo lab si imparerà a:
    ![](../Images/lab-02/image009.png)
    
 5.	Si aprirà la **home page abituale del servizio Power BI**.
-6.	Si presuppone che si abbia familiarità con il layout del servizio Power BI. Per eventuali domande, rivolgersi all'istruttore.A questo punto, ci si trova nell'Area di lavoro 
-   personale. Per lavorare con gli elementi di Fabric, sono necessarie una licenza di valutazione e un'area di lavoro con licenza di Fabric. Avviare la configurazione.
 
-      ![](../Images/lab-02/image012.jpg)
+6.	Si presuppone che si abbia familiarità con il layout del servizio Power BI. Per eventuali domande, rivolgersi all'istruttore.
+
+A questo punto, ci si trova nell'Area di lavoro personale. Per lavorare con gli elementi di Fabric, sono necessarie una licenza di valutazione e un'area di lavoro con licenza di Fabric. Avviare la configurazione.
+
+   
   
 8.	Nell'angolo in alto a destra della schermata selezionare l'**icona utente**.
+
 9.	Selezionare **Start trial**.
 
-      ![](../Images/lab-02/image015.png)
+      ![](../Images/lab-02/image012.jpg)
     
 10. Si apre la finestra di dialogo Esegui l'aggiornamento a una versione di valutazione gratuita Microsoft Fabric. Selezionare **Avvia versione di valutazione**.
 
-    ![](../Images/lab-02/image018.png)
+    ![](../Images/lab-02/image015.png)
  
 11. Selezionare la **"X"** nell'angolo in alto a destra della finestra di dialogo **Solo un ultimo passaggio** per chiudere la finestra di dialogo. Non forniremo questi dettagli poiché si tratta di un ambiente lab.
 
-    ![](../Images/lab-02/image021.png)
+    ![](../Images/lab-02/image018.png)
     
 12. Si apre la finestra di dialogo Aggiornamento a una versione di valutazione gratuita Microsoft Fabric completato. Selezionare **Fabric Home Page**.
 
-    ![](../Images/lab-02/image024.jpg)
+    ![](../Images/lab-02/image021.png)
  
 13. Si aprirà la **home page** di **Microsoft Fabric**.
+    
+    ![](../Images/lab-02/image024.jpg)
 
 ## Panoramica delle esperienze in Fabric
 ### Attività 2 - Esperienza Data Factory
@@ -101,11 +125,17 @@ Synapse e si basano su Synapse. Procediamo a esaminarle.
 2.	Selezionare **Data Engineering**. Si apre la **home page di Data Engineering**. Anche in questo caso, la pagina contiene tre sezioni principali. Nella sezione New osservare gli elementi:
    
       a.	**Lakehouse**: permette di archiviare Big Data per operazioni di pulizia, query, reporting e condivisione.<br>
+
       b.	**Notebook**: usato per l'inserimento, la preparazione, l'analisi e altre attività correlate ai dati usando linguaggi vari come Python, R e Scala.<br>
+
       c.	**Environment**: usato per configurare librerie condivise, impostazioni di calcolo Spark e risorse per notebook e definizioni di processi Spark.<br>
+
       d.	**Spark Job Definition**: permette di definire, pianificare e gestire i processi Apache.<br>
+
       e.	**Data pipeline**: permette di orchestrare la soluzione di dati.<br>
+
       f.	**Import notebook**: permette di importare notebook dal computer locale.<br>
+
       g.	**Use a sample**: soluzione di esempio.<br>
  
       ![](../Images/lab-02/image042.jpg)
@@ -116,17 +146,17 @@ Synapse e si basano su Synapse. Procediamo a esaminarle.
 
 2.	Selezionare Data Science. Si apre la home page di Data Science. Anche in questo caso sono presenti tre sezioni. Nella sezione New osservare gli elementi:
 
-   a. **ML model**: consente di creare modelli di Machine Learning.<br>
+      a. **ML model**: consente di creare modelli di Machine Learning.<br>
 
-   b. **Experiment**: consente di creare, eseguire e monitorare lo sviluppo di più modelli.<br>
+      b. **Experiment**: consente di creare, eseguire e monitorare lo sviluppo di più modelli.<br>
 
-   c. **Notebook**: permette di esplorare dati e creare soluzioni di Machine Learning.<br>
+      c. **Notebook**: permette di esplorare dati e creare soluzioni di Machine Learning.<br>
 
-   d. **Environment**: usato per configurare librerie condivise, impostazioni di calcolo Spark e risorse per notebook e definizioni di processi Spark.<br>
+      d. **Environment**: usato per configurare librerie condivise, impostazioni di calcolo Spark e risorse per notebook e definizioni di processi Spark.<br>
 
-   e. **Import notebook**: permette di importare notebook dal computer locale.<br>
+    e. **Import notebook**: permette di importare notebook dal computer locale.<br>
 
-   f. **Use a sample**: soluzione di esempio.
+      f. **Use a sample**: soluzione di esempio.
 
 **Nota**: elementi come Notebook, Environment, Data pipeline e così via sono disponibili in più esperienze poiché sono rilevanti in ciascuna di esse.
  
@@ -134,15 +164,18 @@ Synapse e si basano su Synapse. Procediamo a esaminarle.
 
 ### Attività 7 - Esperienza Synapse Data Warehouse
 1.	Selezionare l'icona **selettore esperienza in Fabric** (attualmente impostata su Data Science) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
-2.	Selezionare **Data Warehouse**. Si apre la **home page di Data Warehouse**. Anche in questo caso sono presenti tre sezioni. Nella sezione Nuovo osservare gli elementi:
-      a.	**Data warehouse**: permette di creare un Data Warehouse.
-      b.	**Pipeline di dati**: permette di orchestrare la soluzione di dati.
+
+2.	Selezionare **Data Warehouse**. Si apre la **home page di Data Warehouse**. Anche in questo caso sono presenti tre sezioni. Nella sezione Nuovo osservare gli elementi:<br>
+
+      a.	**Data warehouse**: permette di creare un Data Warehouse.<br>
+      b.	**Pipeline di dati**: permette di orchestrare la soluzione di dati.<br>
  
    ![](../Images/lab-02/image048.png)
 
 
 ### Attività 8 - Esperienza Real-Time Analytics
 1.	Selezionare l'icona **selettore esperienza in Fabric** (attualmente impostata su Data Warehouse) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
+
 2.	Selezionare **Real-Time Analytics**. Si apre la **home page di Real-Time Analytics**. Anche in questo caso sono presenti tre sezioni. Nella sezione Nuovo osservare gli elementi:
       
       a. **Casa eventi**: permette di creare un'area di lavoro di database, che è possibile condividere tra progetti.
@@ -160,30 +193,38 @@ Synapse e si basano su Synapse. Procediamo a esaminarle.
 ## Area di lavoro di Fabric
 ### Attività 9 - Creazione di un'area di lavoro di Fabric
 1.	Ora creeremo un'area di lavoro con licenza di Fabric. Selezionare** Aree di lavoro** nella barra di spostamento a sinistra. Si apre una finestra di dialogo.
+
 2.	Selezionare **Nuova area di lavoro**.
 
       ![](../Images/lab-02/image054.png)
  
 3.	Si apre la finestra di dialogo **Crea un'area di lavoro** sul lato destro del browser.
+
 4.	Nel campo **Nome** immettere **FAIAD_<nome utente>**
    
 **Nota**: il nome dell'area di lavoro deve essere univoco. Tuttavia, il nome dell'area di lavoro usato deve essere diverso. Assicurarsi che sotto il campo Nome sia presente un segno di spunta verde e che sia indicato **"Questo nome è disponibile".**
 
 5.	Se lo si desidera, è possibile immettere una Descrizione per l'area di lavoro. Questo campo è facoltativo.
 
-      ![](../Images/lab-02/image057.png)
    
-7.	Fare clic su **Avanzate** per espandere la sezione.
-8.	In **License mode** assicurarsi che si sia selezionato **Trial** (deve essere selezionato per impostazione predefinita).
+6.	Fare clic su **Avanzate** per espandere la sezione.
+
+     ![](../Images/lab-02/image057.png)
+
+7.	In **License mode** assicurarsi che si sia selezionato **Trial** (deve essere selezionato per impostazione predefinita).
+
+ 
+8.	Selezionare **Apply** per creare una nuova area di lavoro.
 
       ![](../Images/lab-02/image060.png)
- 
-10.	Selezionare **Apply** per creare una nuova area di lavoro.
-Viene creata una nuova area di lavoro e si passa a tale area di lavoro. Importeremo dati da diverse origini dati in Lakehouse e useremo i dati da Lakehouse per creare il modello e il report relativi. Il primo passaggio consiste nel creare un Lakehouse.
 
+Viene creata una nuova area di lavoro e si passa a tale area di lavoro. Importeremo dati da diverse origini dati in Lakehouse e useremo i dati da Lakehouse per creare il modello e il report relativi. Il primo passaggio consiste nel creare un Lakehouse.
+    
+      
 
 ### Attività 10 - Creazione di un Lakehouse
 1.	Selezionare l'icona **selettore esperienza in Fabric** (attualmente impostata su Real-Time Analytics) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
+
 2.	Selezionare **Data Engineering** per andare alla home page di Data Engineering.
 
       ![](../Images/lab-02/image063.png)
@@ -196,15 +237,19 @@ Viene creata una nuova area di lavoro e si passa a tale area di lavoro. Importer
    
  **Nota**: lh indica Lakehouse. Aggiungiamo il prefisso lh per agevolarne l'identificazione e la ricerca.
 
-   ![](../Images/lab-02/image069.png)
    
-6.	Selezionare **Create**.
+5.	Selezionare **Create**.
+   
+   ![](../Images/lab-02/image069.png)
+
 Dopo qualche istante viene creato un lakehouse e si passerà all'interfaccia di Lakehouse.
 Nel **pannello sinistro** notare che sotto all'area di lavoro è ancora presente l'icona di Lakehouse. È possibile passare agevolmente a Lakehouse facendo clic su questa icona in qualsiasi momento.
-
-      ![](../Images/lab-02/image072.jpg)
+    
      
 Nell'interfaccia di esplorazione di Lakehouse si noteranno **Tables e Files**. Lakehouse può esporre file di Azure Data Lake Storage Gen2 nella sezione file oppure un flusso di dati può caricare dati nelle tabelle di Lakehouse. Sono disponibili varie opzioni. Mostreremo alcune di queste opzioni nei lab seguenti.
+
+  ![](../Images/lab-02/image072.jpg)
+
 In questo lab abbiamo esplorato l'interfaccia di Fabric, creato uno spazio di lavoro di Fabric e un
 lakehouse. Nel prossimo lab si imparerà a usare Flusso di dati Gen2 per connettersi ad ADLS Gen2 per estrarre, trasformare e inserire dati nel lakehouse.
  
