@@ -138,7 +138,7 @@ Synapse e si basano su Synapse. Procediamo a esaminarle.
       a.	**Data warehouse**: permette di creare un Data Warehouse.
       b.	**Pipeline di dati**: permette di orchestrare la soluzione di dati.
  
-      ![](../Images/lab-02/image048.png)
+   ![](../Images/lab-02/image048.png)
 
 
 ### Attività 8 - Esperienza Real-Time Analytics
