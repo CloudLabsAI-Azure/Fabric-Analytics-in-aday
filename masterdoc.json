@@ -6,31 +6,31 @@
       "Files": [
                 
           {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/main/lab-guide/lab1.1.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/English/lab-guide/lab1.1.md",
           "Order": 1
         },
           {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/main/lab-guide/lab2.1.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/English/lab-guide/lab2.1.md",
           "Order": 2
         },
            {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/main/lab-guide/lab3.1.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/English/lab-guide/lab3.1.md",
           "Order": 3
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/main/lab-guide/lab4.1.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/English/lab-guide/lab4.1.md",
           "Order": 4
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/main/lab-guide/lab5.1.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/English/lab-guide/lab5.1.md",
           "Order": 5
         },
         {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/main/lab-guide/lab6.1.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/English/lab-guide/lab6.1.md",
           "Order": 6
         },
             {
-          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/main/lab-guide/lab7.1.md",
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/English/lab-guide/lab7.1.md",
           "Order": 7
         }
       ]
