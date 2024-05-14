@@ -505,7 +505,7 @@ varSuccess 값과 비교합니다. (varSuccess의 기본값은 Yes입니다.)
 
 5.	set_varTempCounter 변수 설정 활동에서 **녹색 확인 표시**를 클릭하여 새로운 **set_varCounter 변수 설정 활동**으로 드래그하여 연결합니다.
  
-![](../Images/Lab-05/image0114.png)
+![](../Images/Lab-05/image114.png)
  
 6.	**set_varCounter 변수 설정 활동**을 선택하고 하단 메뉴에서 **설정**을 클릭합니다.
 
