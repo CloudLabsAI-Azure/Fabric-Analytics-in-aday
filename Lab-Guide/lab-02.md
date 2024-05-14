@@ -154,7 +154,7 @@ Synapse e si basano su Synapse. Procediamo a esaminarle.
 
       d. **Environment**: usato per configurare librerie condivise, impostazioni di calcolo Spark e risorse per notebook e definizioni di processi Spark.<br>
 
-    e. **Import notebook**: permette di importare notebook dal computer locale.<br>
+      e. **Import notebook**: permette di importare notebook dal computer locale.<br>
 
       f. **Use a sample**: soluzione di esempio.
 
@@ -192,7 +192,7 @@ Synapse e si basano su Synapse. Procediamo a esaminarle.
 
 ## Area di lavoro di Fabric
 ### Attività 9 - Creazione di un'area di lavoro di Fabric
-1.	Ora creeremo un'area di lavoro con licenza di Fabric. Selezionare** Aree di lavoro** nella barra di spostamento a sinistra. Si apre una finestra di dialogo.
+1. Ora creeremo un'area di lavoro con licenza di Fabric. Selezionare **Aree di lavoro** nella barra di spostamento a sinistra. Si apre una finestra di dialogo.
 
 2.	Selezionare **Nuova area di lavoro**.
 
@@ -207,14 +207,13 @@ Synapse e si basano su Synapse. Procediamo a esaminarle.
 5.	Se lo si desidera, è possibile immettere una Descrizione per l'area di lavoro. Questo campo è facoltativo.
 
    
-6.	Fare clic su **Avanzate** per espandere la sezione.
+6. Fare clic su **Avanzate** per espandere la sezione.
 
-     ![](../Images/lab-02/image057.png)
+      ![](../Images/lab-02/image057.png)
 
-7.	In **License mode** assicurarsi che si sia selezionato **Trial** (deve essere selezionato per impostazione predefinita).
-
+7. In **License mode** assicurarsi che si sia selezionato **Trial** (deve essere selezionato per impostazione predefinita).
  
-8.	Selezionare **Apply** per creare una nuova area di lavoro.
+8. Selezionare **Apply** per creare una nuova area di lavoro.
 
       ![](../Images/lab-02/image060.png)
 

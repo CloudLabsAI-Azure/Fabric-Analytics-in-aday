@@ -44,10 +44,10 @@ visualizzare le colonne che compongono la tabella. Vi sono inoltre opzioni per l
 
    ![](../Images/lab-06/image008.jpg)
    
-4.	Incollare la **query SQL seguente** nella **finestra della query**. Questa query restituirà le unità in base al nome del fornitore. Per ottenere questo risultato è necessario unire la tabella Sales alle tabelle Product e Supplier.
+4. Incollare la **query SQL seguente** nella **finestra della query**. Questa query restituirà le unità in base al nome del fornitore. Per ottenere questo risultato è necessario unire la tabella Sales alle tabelle Product e Supplier.
 
    ```
-  SELECT su.Supplier_Name, SUM(Quantity) as Units 
+   SELECT su.Supplier_Name, SUM(Quantity) as Units 
    FROM dbo.Sales s
    JOIN dbo.Product p on p.StockItemID = s.StockItemID 
    JOIN dbo.Supplier su on su.SupplierID = p.SupplierID 

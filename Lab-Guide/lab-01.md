@@ -102,12 +102,11 @@ Il report seguente analizza le vendite per Fabrikam. I KPI sono elencati in alto
 
 4.	Selezionare **Rocky Mountain in Sales Territory** per rimuovere il filtro.
    
-6.	Nel grafico a dispersione in basso al centro della schermata (ordini cliente rispetto alle vendite)
+6. Nel grafico a dispersione in basso al centro della schermata (ordini cliente rispetto alle vendite)
 selezionare l'outlier in alto a destra (4° quadrante). Notare che la percentuale di margine è il 52%, superiore alla media del 50%. Anche, la percentuale di vendite rispetto all'anno precedente è aumentata negli ultimi due trimestri del 2022.
 
-     ![](../Images/picture11.png)
+     ![](./Images/picture11.png)
       
- 
 7.	Selezionare il rivenditore outlier nel grafico a dispersione per rimuovere il filtro.
 
 8.	Otteniamo i dettagli del prodotto per gruppo di prodotti e rivenditore. Nel grafico a barre Vendite per gruppo di prodotti e azienda rivenditrice **fare clic con il pulsante destro del mouse sulla barra Packaging Materials per Tailspin Toys** x e nella finestra di dialogo selezionare **Drill-through -> Product Detail**.
