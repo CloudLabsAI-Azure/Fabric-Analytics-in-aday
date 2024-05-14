@@ -136,7 +136,7 @@ f. **Import notebook:** 로컬 컴퓨터에서 Notebook을 가져오는 데 사�
 
 g. **Use a sample:** 샘플 솔루션.
 
-  ![](..Images/Lab-02/image042.jpg)
+  ![](../Images/Lab-02/image042.jpg)
  
 ### 작업 6: Synapse Data Science 환경
 
