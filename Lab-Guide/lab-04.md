@@ -154,12 +154,12 @@ Si apre la pagina **Flusso di dati**. Ora che abbiamo familiarità con Flusso di
 3.	Nella barra multifunzione selezionare **Home -> Trasforma dati**. Si apre la finestra Power Query.
 Come si è notato nel lab precedente, le query nel pannello di sinistra sono organizzate per origine dati.
 
-4.	Si apre la finestra Power Query. Dal pannello di sinistra, selezionare le seguenti query nella cartella DataverseData tenendo premuto il tasto **CTR**L:
-      a.	BabyBoomer
-      b.	GenX
-      c.	GenY
-      d.	GenZ
-      e.	Customer
+4.	Si apre la finestra Power Query. Dal pannello di sinistra, selezionare le seguenti query nella cartella DataverseData tenendo premuto il tasto **CTR**L:<br>
+      a.	BabyBoomer<br>
+      b.	GenX<br>
+      c.	GenY<br>
+      d.	GenZ<br>
+      e.	Customer<br>
  
 5.	**Fare clic con il pulsante destro del mouse** e selezionare **Copia**.
 
