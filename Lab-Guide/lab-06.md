@@ -46,14 +46,19 @@ visualizzare le colonne che compongono la tabella. Vi sono inoltre opzioni per l
    
 4.	Incollare la **query SQL seguente** nella **finestra della query**. Questa query restituirà le unità in base al nome del fornitore. Per ottenere questo risultato è necessario unire la tabella Sales alle tabelle Product e Supplier.
 
-SELECT su.Supplier_Name, SUM(Quantity) as Units FROM dbo.Sales s
-JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.SupplierID = p.SupplierID GROUP BY su.Supplier_Name
+   ```
+  SELECT su.Supplier_Name, SUM(Quantity) as Units 
+   FROM dbo.Sales s
+   JOIN dbo.Product p on p.StockItemID = s.StockItemID 
+   JOIN dbo.Supplier su on su.SupplierID = p.SupplierID 
+   GROUP BY su.Supplier_Name
+   ```
+   
+6.	Fare clic su **Run** per visualizzare i risultati.
 
-5.	Fare clic su **Run** per visualizzare i risultati.
+7.	Notare che è disponibile un'opzione per salvare questa query come vista selezionando Salva **come visualizzazione**.
 
-6.	Notare che è disponibile un'opzione per salvare questa query come vista selezionando Salva **come visualizzazione**.
-
-7.	Nel pannello di **sinistra Explorer**, nella sezione **Query** notare che questa query è salvata in **Query personali** come SQL query 1. Ciò consente di rinominare la query e salvarla per l'uso futuro. È inoltre presente un'opzione per visualizzare le query condivise con l'utente corrente mediante la cartella **Query condivise**.
+8.	Nel pannello di **sinistra Explorer**, nella sezione **Query** notare che questa query è salvata in **Query personali** come SQL query 1. Ciò consente di rinominare la query e salvarla per l'uso futuro. È inoltre presente un'opzione per visualizzare le query condivise con l'utente corrente mediante la cartella **Query condivise**.
 
    ![](../Images/lab-06/image011.jpg)
 
