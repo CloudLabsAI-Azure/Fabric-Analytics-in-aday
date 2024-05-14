@@ -307,135 +307,27 @@ JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.S
 
 ![](../Images/Lab-06/image089.jpg)
 
-2.	이제 Product와 Supplier 간의 관계**를** 만들어 보겠습니다. **Product** 테이블에서 **SupplierID를** 선택하여 **Supplier** 테이블의 **SupplierID**로 드래그합니다.
-
-3.	새 관계 대화 상자가 열립니다. **Table 1이 Product**이고 **열**이 **SupplierID**인지 확인합니다.
-
-4.	Table 2가 Supplier이고 열이 SupplierID인지 확인합니다.
-
-5.	**카디널리티가 다대일(*:1)** 인지 확인합니다.
-
-6.	**교차 필터 방향이 모두**인지 확인합니다.
-
-7.	**확인**을 선택합니다.
- 
- ![](../Images/Lab-06/image092.png)
-
-8.	마찬가지로 **Product_Details과 Product** 간의 교차 필터 방향을 **모두로** 설정한 **다대일 관계를** 생성합니다. **Product_Details에서 StockItemID를** 그리고 **Product에서 StockItemID를** 선택합니다.
-
-9.	이제 Reseller과 Geo 간의 관계**를** 만들어 보겠습니다. **Reseller** 테이블에서 **PostalCityID**를 선택하여 **Geo** 테이블의 **CityID**로 드래그합니다.
-
-10.	새 관계 대화 상자가 열립니다. **Table 1이 Reseller**이고 **열**이 **PostalCityID**인지 확인합니다.
-
-11.	**Table 2가 Geo**이고 **열**이 **CityID**인지 확인합니다.
-
-12.	**카디널리티가 다대일(*:1)** 인지 확인합니다.
-
-13.	**교차 필터 방향**이 **모두**인지 확인합니다.
-
-14.	**확인**을 선택합니다.
-
-![](../Images/Lab-06/image095.png)
-
-15.	이제 Customer와 Reseller 간의 관계를 만들어 보겠습니다. **Customer** 테이블에서
-**ResellerID**를 선택하여 **Reseller** 테이블의 **ResellerID**로 드래그합니다.
-
-16.	새 관계 대화 상자가 열립니다. **Table 1이 Customer**이고 **열**이 **ResellerID**인지 확인합니다.
-
-17.	**Table 2가 Reseller이고 열이 ResellerID**인지 확인합니다.
- 
-18.	**카디널리티가 다대일(*:1)** 인지 확인합니다.
-
-19.	**교차 필터 방향이 Single**인지 확인합니다.
-
-20.	**확인**을 선택합니다.
-
-![](../Images/Lab-06/image098.png)
-
-**체크포인트:** 현재 모델이 아래 스크린샷과 유사해야 합니다.
-
-![](../Images/Lab-06/image101.jpg)
-
-21.	이제 PO와 Date 간의 관계를 만들어 보겠습니다. **PO** 테이블에서 **Order_Date**를 선택하여
-**Date** 테이블의 **Date**로 드래그합니다.
-
-22.	새 관계 대화 상자가 열립니다. **Table 1**이 **PO**이고 **열**이 **Order_Date**인지 확인합니다.
-
-23.	**Table 2가 Date이고 열이 Date**인지 확인합니다.
-
-24.	**카디널리티가 다대일(*:1)** 인지 확인합니다.
- 
-25.	**교차 필터 방향이 단일**인지 확인합니다.
-
-26.	**확인**을 선택합니다.
-
-![](../Images/Lab-06/image104.png)
-
-27.	마찬가지로 **PO와 Product** 테이블 사이에 **다대일** 관계를 만듭니다. **PO**에서 **StockItemID**를 그리고 **Product**에서 **StockItemID**를 선택합니다.
-
-28.	마찬가지로 **PO**와 **People** 테이블 사이에 **다대일** 관계를 만듭니다. **PO**에서 **ContactPersonID**를 그리고 **People**에서 **PersonID**를 선택합니다.
-
-모든 관계의 생성이 완료되♘습니다.
-
-**체크포인트:** 현재 모델이 아래 스크린샷과 유사해야 합니다.
-
-![](../Images/Lab-06/image107.jpg)
-
- 
-### 작업 8: 선택 섹션 – 측정값 만들기
-
-나머지 측정값을 추가해 보겠습니다.
-
-1.	상단 메뉴에서 **Sales**테이블을 선택한 상태에서 **테이블 도구 -> 새 측정값**을 선택합니다.
-
-2.	수식 입력줄에 **Avg Order = DIVIDE([Sales], [Orders])** 를 입력합니다.
-
-3.	수식 입력줄의 **체크 표시**를 클릭하거나 Enter 버튼을 클릭합니다.
-
-4.	측정값이 저장되면 상단 메뉴에서 측정 도구 옵션을 확인합니다. **측정 도구**를 클릭합니다.
-
-5.	형식 드롭다운에서 **10진수**를 클릭합니다.
-
-![](../Images/Lab-06/image110.jpg)
-
-6.	비슷한 단계에 따라 다음 측정값을 추가합니다.
-
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a.	**GM = SUM(Sales[Line_Profit]) - 10진수 형식.**
-
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;b.	**GM% = DIVIDE([GM], [Sales]) - 백분율 형식.**
-
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;c.	**No of Customers = COUNTROWS(Customer) formatted as Whole Number** 
-
- 
-## 참조
-Fabric Analyst in a Day(FAIAD)는 Microsoft Fabric에서 사용할 수 있는 몇 가지 주요 기능을 소개합니다. 서비스의 메뉴에 있는 도움말(?) 섹션에는 유용한 리소스로 연결되는 링크가 있습니다.
-
-![](../Images/Lab-06/image113.png)
-
 아래는 Microsoft Fabric의 다음 단계에 도움이 되는 몇 가지 추가 자료입니다.
-
-- [Microsoft Fabric GA 발표](https://www.microsoft.com/en-us/microsoft-fabric/blog/2023/11/15/prepare-your-data-for-ai-innovation-with-microsoft-fabric-now-generally-available/) 발표 전문을 블로그 포스트로 읽기  
--	 [가이드 투어](https://guidedtour.microsoft.com/en-us/guidedtour/microsoft-fabric/microsoft-fabric/1/1)로 Fabric 탐색 
--	 [Microsof t Fabric 무료 평가판](https://www.microsoft.com/en-us/microsoft-fabric/getting-started)신청   
--	[Microsof t Fabric 웹사이트](https://www.microsoft.com/en-in/microsoft-fabric) 방문  
--	[Fabric 학습 모듈](https://learn.microsoft.com/en-us/training/browse/?products=fabric&resource_type=module)을 탐색해서 새로운 기술 익히기 
--	[Fabric 기술 문서 ](https://learn.microsoft.com/en-us/fabric/)검토
--	[Fabric 시작하기 무료 e북](https://info.microsoft.com/ww-landing-unlocking-transformative-data-value-with-microsoft-fabric.html)읽기
--	[Fabric 커뮤니티](https://community.fabric.microsoft.com/)에 가입하여 질문을 게시하고 피드백을 공유하며 다른 사람들로부터 배우기 
+- [Microsoft Fabric GA 발표](https://aka.ms/Fabric-Hero-Blog-Ignite23) 전문을 블로그 포스트로 읽기
+- [가이드 투어](https://aka.ms/Fabric-GuidedTour)로 Fabric 탐색
+- [Microsoft Fabric 무료 평가판](https://aka.ms/try-fabric) 신청
+- [Microsoft Fabric 웹사이트](https://aka.ms/microsoft-fabric) 방문
+- [Fabric 학습 모듈](https://aka.ms/learn-fabric)을 탐색해서 새로운 기술 익히기
+- [Fabric 기술 문서](https://aka.ms/fabric-docs) 검토
+- [Fabric 시작하기 무료 e북](https://aka.ms/fabric-get-started-ebook) 읽기
+- [Fabric 커뮤니티](https://aka.ms/fabric-community)에 가입하여 질문을 게시하고 피드백을 공유하며 다른 사람들로부터 배우기
  
 더 많은 심층 Fabric 환경 발표 블로그 포스트 읽기:
-
--	[Fabric 블로그의 Data Factory 환경](https://blog.fabric.microsoft.com/en-us/blog/introducing-data-factory-in-microsoft-fabric/)
--	[Fabric 블로그의 Synapse Data Engineering 환경](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-engineering-in-microsoft-fabric/)
--	[Fabric 블로그의 Synapse Data Science 환경](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-science-in-microsoft-fabric/)
--	[Fabric 블로그의 Synapse Data Warehousing 환경](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-warehouse-in-microsoft-fabric/)
--	[Fabric 블로그의 Synapse Real-Time Analytics 환경](https://blog.fabric.microsoft.com/en-us/blog/sense-analyze-and-generate-insights-with-synapse-real-time-analytics-in-microsoft-fabric/)
--	[Power BI 발표 블로그](https://powerbi.microsoft.com/en-us/blog/empower-power-bi-users-with-microsoft-fabric-and-copilot/)
--	[Fabric 블로그의 Data Activator 환경](https://blog.fabric.microsoft.com/en-us/blog/driving-actions-from-your-data-with-data-activator/)
--	[Fabric 블로그의 관리 및 거버넌스](https://blog.fabric.microsoft.com/en-us/blog/administration-security-and-governance-in-microsoft-fabric/)
--	[Fabric 블로그의 OneLake](https://blog.fabric.microsoft.com/en-us/blog/microsoft-onelake-in-fabric-the-onedrive-for-data/)
--	[Dataverse 및 Microsof t Fabric 통합 블로그](https://cloudblogs.microsoft.com/dynamics365/it/2023/05/24/new-dataverse-enhancements-and-ai-powered-productivity-with-microsoft-365-copilot/)
-
+- [Fabric 블로그의 Data Factory 환경](https://aka.ms/Fabric-Data-Factory-Blog)
+- [Fabric 블로그의 Synapse Data Engineering 환경](https://aka.ms/Fabric-DE-Blog)
+- [Fabric 블로그의 Synapse Data Science 환경](https://aka.ms/Fabric-DS-Blog)
+- [Fabric 블로그의 Synapse Data Warehousing 환경](https://aka.ms/Fabric-DW-Blog)
+- [Fabric 블로그의 Synapse Real-Time Analytics 환경](https://aka.ms/Fabric-RTA-Blog)
+- [Power BI 발표 블로그](https://aka.ms/Fabric-PBI-Blog)
+- [Fabric 블로그의 Data Activator 환경](https://aka.ms/Fabric-DA-Blog)
+- [Fabric 블로그의 관리 및 거버넌스](https://aka.ms/Fabric-Admin-Gov-Blog)
+- [Fabric 블로그의 OneLake](https://aka.ms/Fabric-OneLake-Blog)
+- [Dataverse 및 Microsoft Fabric 통합 블로그](https://aka.ms/Dataverse-Fabric-Blog)
 
 © 2023 Microsoft Corporation. All rights reserved.
 이 데모/랩을 사용하면 다음 조건에 동의하게 됩니다.
@@ -444,11 +336,10 @@ Fabric Analyst in a Day(FAIAD)는 Microsoft Fabric에서 사용할 수 있는 �
 이 데모/랩은 위에서 명시한 목적을 위해 복잡한 설정 또는 설치가 없는 시뮬레이션된 환경에서 잠재적인 새로운 기능과 개념을 포함하여 특정 소프트웨어 기술/제품의 특성 및 기능을 제공합니다. 이 데모/랩에서 서술된 기술/개념은 전체 기능을 나타내지 않을 수 있으며, 최종 버전이 작동하지 않을 수도 있습니다. 또한 해당 기능 또는 개념의 최종
 버전을 릴리스하지 않을 수도 있습니다. 또한 실제 환경에서 이러한 특성과 기능을 사용한 경험이 다를 수도 있습니다.
  
-**피드백.** 이 데모/랩에서 서술된 기술적 특성, 기능 및/또는 개념에 대한 사용자 의견을
+피드백. 이 데모/랩에서 서술된 기술적 특성, 기능 및/또는 개념에 대한 사용자 의견을
 Microsoft에 제시하면 Microsoft는 이 사용자 의견을 어떤 방식과 목적으로든 무료로 사용, 공유 및 상용화할 수 있습니다. 또한 제품, 기술 및 서비스에서 사용자 의견이 포함된
 Microsoft 소프트웨어 또는 서비스의 특정 부분을 사용하거나 인터페이스하는 데 필요한 모든 특허권을 제3자에게 무료로 제공합니다. Microsoft에서 사용자 의견을 포함하기 때문에 Microsoft에서 해당 소프트웨어 또는 설명서의 사용을 인가해야 하는 라이선스에 종속된 사용자 의견은 제공할 수 없습니다. 이러한 권리는 본 계약에 의거하여 유효합니다.
 Microsoft Corporation은 이에 따라 명시적, 묵시적 또는 법적 특정 목적에의 적합성, 권리 및 비침해 여부에 관계없이 모든 보증과 조건을 포함하여 데모/랩과 관련된 모든 보증 및 조건을 부인합니다. Microsoft는 어떤 목적으로든 결과의 정확성, 데모/랩의 사용으로 파생된 출력 또는 데모/랩에 포함된 정보의 적합성과 관련하여 어떠한 보증이나 진술도 하지 않습니다.
-
-**고지 사항**
+고지 사항
 이 데모/랩에는 Microsoft Power BI의 새로운 기능 및 향상된 기능 중 일부만 포함되어 있습니다. 일부 기능은 제품의 향후 릴리스에서 변경될 수 있습니다. 이 데모/랩에서는 새로운 기능 모두가 아닌 일부에 대해 학습하게 됩니다.
 
