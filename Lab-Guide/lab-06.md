@@ -1,4 +1,4 @@
-![](../Images/lab-05/image.png)
+![](../Images/lab-06/image003.png)
 
 ## Sumário
 - Introdução
@@ -26,7 +26,7 @@ Ao final deste laboratório, você terá aprendido:
 1. Vamos voltar ao workspace do Fabric, **FAIAD_<nome de usuário>,** que você criou no Laboratório 2, Tarefa 9.
 2. Você verá três tipos de lh_FAIAD: Lakehouse, Modelo semântico e Ponto de extremidade de SQL. Exploramos a opção Lakehouse em um laboratório anterior. Selecione a opção **lh_FAIAD -> Ponto de extremidade de análise de SQL** para explorar a opção SQL. Você será direcionado à **exibição de SQL** do explorador.
 
-   ![](../Images/lab-05/image01.png)
+![](../Images/lab-06/image005.jpg)
 
 Se desejar explorar os dados antes de criar um modelo de dados, você poderá usar SQL para fazer isso. Vejamos duas opções para usar SQL, a primeira é para desenvolvedor e a segunda opção é para analistas.
 
@@ -37,7 +37,7 @@ e Procedimentos Armazenados de SQL. Se você tiver experiência em SQL, fique à
  
 3. No **menu superior** selecione **Nova consulta SQL** ou na **parte inferior o painel esquerdo,** selecione **Consulta.** Você será direcionado à visualização da consulta SQL.
 
-   ![](../Images/lab-05/image02.png)
+![](../Images/lab-06/image008.jpg)
 
 4. Cole a **consulta SQL abaixo** na **janela de consultas.** Essa consulta retornará as unidades por Nome do Fornecedor. Para conseguir isso, una tabela Sales com as tabelas Product e Supplier.
 
@@ -53,26 +53,26 @@ GROUP BY su.Supplier_Name
 6. Há uma opção para salvar essa consulta como uma Visualização selecionando **Salvar como visualização.**
 7. No painel **esquerdo Explorador,** na seção **Consultas,** observe que esta consulta é salva em **Minhas consultas** como **Consulta SQL 1.** Isso fornece uma opção para renomear a consulta e salvá-la para uso futuro. Também há uma opção para visualizar consultas compartilhadas com você usando a pasta **Consultas compartilhadas.**
 
-   ![](../Images/lab-05/image03.png) 
+![](../Images/lab-06/image011.jpg)
 
 ### Tarefa 2: Visualizar resultado de T-SQL
 1. Também podemos visualizar o resultado desta consulta. **Realce a consulta** no painel de consultas, selecione o painel **Resultados** e selecione **Explorar estes dados.**
 
-![](../Images/lab-05/image04.png)
+![](../Images/lab-06/image014.png)
 
 2. A caixa de diálogo **Explorar consulta SQL query** é aberta. No painel **Dados,** expanda **Consulta SQL 1.**
 3. Selecione os **campos Supplier_Name** e **Units**. O gráfico de barras clusterizado é criado.
 4. Na seção **Visualizações,** altere o tipo de visual selecionando o **Gráfico de colunas empilhadas.**
 
-![](../Images/lab-05/image05.png)
+![](../Images/lab-06/image017.jpg)
  
 5. **Expanda Matriz** para exibir os dados como uma matriz   
 
-![](../Images/lab-05/image06.png)
+![](../Images/lab-06/image020.png)
 
 6. Selecione **Salvar -> Salvar como relatório** no canto superior direito da tela   
 
-![](../Images/lab-05/image07.png)
+![](../Images/lab-06/image023.jpg)
 
 7. A caixa de diálogo Salvar seu relatório é aberta. Digite **Unidades por Fornecedor** na caixa de texto **Inserir um nome para o relatório.**
 8. Certifique-se de que o espaço de trabalho de destino seja seu espaço de trabalho do Fabric,
@@ -80,12 +80,12 @@ GROUP BY su.Supplier_Name
  
 9. Selecione **Salvar.*   
 
-![](../Images/lab-05/image08.png)
+![](../Images/lab-06/image026.png)
 
 Você será direcionado para a experiência de relatório completa. Você tem opções para formatar os visuais. Veremos essas opções no próximo laboratório.
 10.	No painel esquerdo, selecione **lh_FAIAD.*   
 
-![](../Images/lab-05/image09.png)
+![](../Images/lab-06/image029.jpg)
 
 ### Tarefa 3: Criar consulta de visual
 Você será direcionado de volta à **visualização Ponto de extremidade de análise de SQL.** Se você não estiver familiarizado com SQL, poderá executar uma consulta semelhante usando a consulta de visual.
@@ -93,11 +93,11 @@ Você será direcionado de volta à **visualização Ponto de extremidade de an�
 2. No painel do **Explorador,** expanda **Esquemas -> dbo -> Tabelas.**
 3. Arraste as tabelas **Sales, Product e Supplier** para o painel de consulta de visual.
 
-![](../Images/lab-05/image10.png)
+![](../Images/lab-06/image032.png)
 
 4. Com a tabela **Sales** selecionada, no menu do painel Consulta de visual, selecione **Combinar -> Mesclar consultas.**   
 
-![](../Images/lab-05/image11.png)
+![](../Images/lab-06/image035.png)
 
 5.	A caixa de diálogo Mesclar é aberta. Na **lista suspensa Tabela direita para mesclagem,** selecione
 **Product**.
@@ -108,57 +108,57 @@ Você será direcionado de volta à **visualização Ponto de extremidade de an�
  
 8. Selecione **OK.**   
 
-![](../Images/lab-05/image12.png)
+![](../Images/lab-06/image038.png)
 
 9. No painel **Resultados,** clique na **seta dupla** ao lado da coluna **Product.**
 10. A caixa de diálogo é aberta. Selecione **SupplierID.**
 11.	Selecione **OK.** Observe que as etapas **Consultas mescladas** e **Produto Expandido** são criadas na tabela **Sales.**   
 
-![](../Images/lab-05/image13.png)
+![](../Images/lab-06/image041.jpg)
 
 12.	Da mesma forma, vamos mesclar a tabela Supplier. Na tabela **Sales**, selecione **"+"** (localizado após Produto Expandido) para adicionar uma nova etapa. A caixa de diálogo é aberta.
 13.	Selecione **Combinar -> Mesclar consultas.**
 
-![](../Images/lab-05/image14.png) 
+![](../Images/lab-06/image044.jpg)
 
 14.	A caixa de diálogo Mesclar é aberta. Na **lista suspensa Tabela direita para mesclagem,** selecione **Supplier.**
 15.	Selecione **SupplierID** nas tabelas **Sales** e **Supplier.** Isso serve para mesclar as tabelas Supplier e Sales.
 16.	**Em Tipo de junção,** selecione **Externa esquerda.**
 17.	Selecione **OK.**
    
-![](../Images/lab-05/image15.png)
+![](../Images/lab-06/image047.jpg)
 
 18.	No painel **Resultados**, clique na **seta dupla** ao lado da coluna **Supplier.**
 19.	A caixa de diálogo é aberta. Selecione **Supplier_Name.**
 20.	Selecione **OK.** Observe que, na tabela Sales, a etapa **Consultas mescladas** é adicionada e **as etapas são registradas.**
 
-![](../Images/lab-05/image16.png) 
+![](../Images/lab-06/image050.jpg)
 
-22.	Vamos agora agrupar por Nome de fornecedor para obter a quantidade por Fornecedor. Na tabela **Sales,** selecione "+" (localizado após Fornecedor Expandido) para adicionar uma nova etapa. A caixa de diálogo é aberta.
-23.	Selecione **Transformar tabela -> Agrupar por.** A caixa de diálogo Agrupar por será aberta.
+21.	Vamos agora agrupar por Nome de fornecedor para obter a quantidade por Fornecedor. Na tabela **Sales,** selecione "+" (localizado após Fornecedor Expandido) para adicionar uma nova etapa. A caixa de diálogo é aberta.
+22.	Selecione **Transformar tabela -> Agrupar por.** A caixa de diálogo Agrupar por será aberta.
 
-![](../Images/lab-05/image17.png)
+![](../Images/lab-06/image053.jpg)
 
-24.	Na lista suspensa **Agrupar por,** selecione **Supplier_Name.**
-25.	Insira **Units** como a captura de tela A da caixa de diálogo de consulta de mesclagem.
-26.	Defina **Operação** como **Soma.**
-27.	Selecione **Quantidade** na lista suspensa **Coluna.**
-28.	Selecione **OK.**
+23.	Na lista suspensa **Agrupar por,** selecione **Supplier_Name.**
+24.	Insira **Units** como a captura de tela A da caixa de diálogo de consulta de mesclagem.
+25.	Defina **Operação** como **Soma.**
+26.	Selecione **Quantidade** na lista suspensa **Coluna.**
+27.	Selecione **OK.**
 
-![](../Images/lab-05/image18.png)
+![](../Images/lab-06/image056.png)
 
 Observe que todas as etapas são registradas no bloco Vendas. (Veja a primeira captura de tela na Tarefa 4.)
  
 ### Tarefa 4: Visualizar os resultados da consulta
 1. Agora que temos a consulta pronta, vamos ver o resultado. Selecione **Visualizar os resultados** no painel de resultados.
 
-![](../Images/lab-05/image19.png)
+![](../Images/lab-06/image059.jpg)
 
 2. A caixa de diálogo Visualizar os resultados é aberta. No painel **Dados** à direita, **expanda Visual query1.**
 3. Selecione os campos **Supplier_Name** e **Units.**
 4. Observe que o resultado é semelhante ao resultado da consulta SQL anterior. Se desejar, você pode salvar este relatório. Como salvamos um relatório semelhante anteriormente, selecionaremos **Cancelar.**
 
-![](../Images/lab-05/image20.png)
+![](../Images/lab-06/image062.jpg)
  
 ### Tarefa 5: Criar relacionamentos
 Ok, agora estamos prontos para criar o modelo, criar relacionamentos entre tabelas e criar medidas.
@@ -166,7 +166,7 @@ Ok, agora estamos prontos para criar o modelo, criar relacionamentos entre tabel
 2. **Redimensione e reorganize** as tabelas conforme necessário.
 3. Vamos criar um relacionamento entre as tabelas Sales e Reseller. Selecione **ResellerID** na tabela **Sales** e arraste-o para **ResellerID** na tabela **Reseller.**
 
-   ![](../Images/lab-05/image21.png)
+![](../Images/lab-06/image065.jpg)
 
 4. A caixa de diálogo Novo relacionamento é aberta. Verifique se **Tabela 1** é **Sales** e **Coluna** é **ResellerID.**
 5. Verifique se **Tabela 2** é **Reseller** e **Coluna** é **ResellerID.**
@@ -174,7 +174,7 @@ Ok, agora estamos prontos para criar o modelo, criar relacionamentos entre tabel
 7. Verifique se **Direção de filtro cruzada** é **Única.**
 8. Selecione **OK.**
 
-   ![](../Images/lab-05/image22.png)
+![](../Images/lab-06/image068.png)
  
 9. De maneira semelhante, crie um relacionamento entre as tabelas Sales e Date. Selecione **InvoiceDate** na tabela **Sales** e arraste-o para **Date** na tabela **Date.**
 10.	A caixa de diálogo Novo relacionamento é aberta. Verifique se **Tabela 1** é **Sales** e **Coluna**
@@ -184,14 +184,16 @@ Ok, agora estamos prontos para criar o modelo, criar relacionamentos entre tabel
 13.	Verifique se **Direção de filtro cruzada** é **Única.**
 14.	Selecione **OK.*   
 
-![](../Images/lab-05/image23.png)
+![](../Images/lab-06/image071.png)
 
 15.	De maneira similar, crie um relacionamento **muitos para um** entre as tabelas **Sales** e **Product.** Selecione **StockItemID** na tabela **Sales** e **StockItemID** na tabela **Product.**
 16.	No menu superior, selecione **Relatórios -> Atualizar automaticamente o modelo semântico** para salvar e atualizar o modelo   ![](../Images/lab-05/image24.png)
 
+[](../Images/lab-06/image074.png)
+
 **Ponto de verificação:** seu modelo deve ter os três relacionamentos entre as tabelas Sales e Reseller, Sales e Date e Sales e Product, conforme mostrado na captura de tela abaixo:!
 
-[](../Images/lab-06/image25.png)
+![](../Images/lab-06/image077.jpg)
 
 Por uma questão de tempo, não criaremos todos os relacionamentos. Se o tempo permitir, você poderá concluir a seção opcional no fim do laboratório. A seção opcional percorre as etapas para criar os relacionamentos restantes.
 
@@ -205,7 +207,7 @@ Vamos adicionar algumas medidas necessárias para criar o dashboard Sales.
 5. No painel Propriedades, à direita, expanda a seção **Formatação.**
 6. Na lista suspensa **Formato,** selecione **Número inteiro.**   
 
-![](../Images/lab-05/image26.png)
+![](../Images/lab-06/image080.jpg)
  
 7. Com a tabela **Sales** selecionada no menu superior, selecione **Página Inicial -> Nova medida.** Observe que a barra de fórmulas é exibida.
 8. Insira **Units = SUM(Sales[Quantity])** na **barra de fórmulas.**
@@ -213,7 +215,7 @@ Vamos adicionar algumas medidas necessárias para criar o dashboard Sales.
 10.	No painel Propriedades à direita, expanda a seção **Formatação** (pode levar alguns instantes para o painel Propriedades carregar).
 11.	Na lista suspensa **Formato,** selecione **Número inteiro.**   
 
-![](../Images/lab-05/image27.png)
+![](../Images/lab-06/image083.jpg)
 
 12.	Com a tabela **Sales** selecionada no menu superior, selecione **Página Inicial -> Nova medida.** Observe que a barra de fórmulas é exibida.
 13.	Insira **Orders = DISTINCTCOUNT(Sales[InvoiceID])** na **barra de fórmulas.**
@@ -221,7 +223,7 @@ Vamos adicionar algumas medidas necessárias para criar o dashboard Sales.
 15.	No painel Propriedades, à direita, expanda a seção **Formatação.**
 16.	Na lista suspensa **Formato, **selecione **Número inteiro.**   
 
-![](../Images/lab-05/image28.png)
+![](../Images/lab-06/image086.jpg)
  
 Novamente, por uma questão de tempo, não criaremos todas as medidas. Se o tempo permitir, você poderá concluir a seção opcional no fim do laboratório. A seção opcional percorre as etapas para criar as medidas restantes.
 
@@ -234,7 +236,7 @@ Vamos adicionar os relacionamentos restantes.
 
 **Ponto de verificação:** Seu modelo deve ser semelhante à captura de tela abaixo.
 
-   ![](../Images/lab-05/image29.png)
+![](../Images/lab-06/image089.jpg)
 
 2. Agora, vamos criar um relacionamento entre Product e Supplier. Selecione **SupplierID** na tabela **Product** e arraste-o para **SupplierID** na tabela **Supplier**.
 3. A caixa de diálogo Novo relacionamento é aberta. Verifique se **Tabela 1** é **Product** e **Coluna** é **SupplierID.**
@@ -243,7 +245,7 @@ Vamos adicionar os relacionamentos restantes.
 6. Verifique se **Direção de filtro cruzada** é **Ambas.**
 7. Selecione **OK.**
 
-    ![](../Images/lab-05/image30.png)
+![](../Images/lab-06/image092.png)
 
 8. Da mesma forma, crie um relacionamento **muitos para um** com **Direção de filtro cruzada** como **Ambas** entre **Product_Details** e **Product.** Selecione **StockItemID** em **Product_Details** e
 **StockItemID** em **Product.**
@@ -260,7 +262,7 @@ Vamos adicionar os relacionamentos restantes.
 
 14.	Selecione **OK.**
 
-![](../Images/lab-05/image31.png)
+![](../Images/lab-06/image095.png)
 
 15.	Agora, vamos criar um relacionamento entre Customer e Reseller. Selecione **ResellerID** na tabela **Customer** e arraste-o para **ResellerID** na tabela **Reseller**.
 16.	A caixa de diálogo Novo relacionamento é aberta. Verifique se **Tabela 1** é **Customer** e Coluna! é **ResellerID.**
@@ -268,20 +270,21 @@ Vamos adicionar os relacionamentos restantes.
 18.	Verifique se **Cardinalidade** é **Muitos para um (*:1).**
 19.	Verifique se **Direção de filtro cruzada é Única.**
 20.	Selecione **OK.**
-    ![](../Images/lab-05/image32.png)
+
+ ![](../Images/lab-06/image098.png)
 
 **Ponto de verificação:** Seu modelo deve ser semelhante à captura de tela abaixo.
 
-   ![](../Images/lab-05/image33.png)
-
+![](../Images/lab-06/image101.jpg)
+  
 21.	Agora, vamos criar um relacionamento entre PO e Date. Selecione **Order_Date** na tabela **PO** e arraste-o sobre **Date** na tabela **Date.**
 22.	A caixa de diálogo Novo relacionamento é aberta. Verifique se **Tabela 1** é **PO** e **Coluna** é **Order_Date.**
 23.	Verifique se **Tabela 2** é **Date** e **Coluna** é **Date.**
 24.	Verifique se **Cardinalidade** é **Muitos para um (*:1).**
 25.	Verifique se **Direção de filtro cruzada** é **Única.**
 26.	Selecione **OK.**
- 
-   ![](../Images/lab-05/image34.png)
+
+![](../Images/lab-06/image104.png) 
 
 27.	De maneira similar, crie um relacionamento **muitos para um** entre as tabelas **PO** e **Product.** Selecione **StockItemID** em **PO** e **StockItemID** em **Product.**
 28.	De maneira similar, crie um relacionamento **muitos para um** entre as tabelas **PO** e **People.** Selecione **ContactPersonID** em **PO** e **PersonID** em **People.**
@@ -290,7 +293,7 @@ Terminamos de criar todos os relacionamentos.
 
 **Ponto de verificação:** Seu modelo deve ser semelhante à captura de tela abaixo.
 
-   ![](../Images/lab-05/image35.png)
+![](../Images/lab-06/image107.jpg)
  
 ### Tarefa 8: Seção Opcional – Criar medidas
 Vamos adicionar as medidas restantes.
@@ -300,7 +303,7 @@ Vamos adicionar as medidas restantes.
 4. Depois que a medida for salva, observe a opção Ferramentas de medida no menu superior. Clique em **Ferramentas de medida.**
 5. Na lista suspensa Formato, clique em **Número decimal.**
 
-   ![](../Images/lab-05/image36.png)
+![](../Images/lab-05/image110.jpg)
 
 6. Siga as etapas semelhantes para adicionar as seguintes medidas:<br>
 **a. GM = SUM(Sales[Line_Profit])** formatada como **Número decimal.**<br>
@@ -310,7 +313,7 @@ Vamos adicionar as medidas restantes.
 ## Referências
 O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais funções disponíveis no Microsoft Fabric. No menu do serviço, a seção Ajuda (?) tem links para ótimos recursos.
 
-   ![](../Images/lab-05/image37.png)
+![](../Images/lab-05/image113.png)
 
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas do Microsoft Fabric.
   - Veja a postagem do blog para ler o [anúncio completo de GA do Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)
