@@ -158,8 +158,7 @@ Si passerà alla pagina che fornisce i dettagli del prodotto. Notare che sono an
 
       ![](../Images/Picture16.png)
  
-9.	Per l'origine dati ADLS, usare l'opzione **Chiave account** e immettere la **chiave di accesso**
-**dell'account di archiviazione ADLS**, disponibile nella scheda **Variabili di ambiente** (accanto alla guida al lab).
+9. Per l'origine dati ADLS, usare l'opzione **Chiave account** e immettere la **chiave di accesso** **dell'account di archiviazione ADLS**, disponibile nella scheda **Variabili di ambiente** (accanto alla guida al lab).
 
 10. Notare che la cartella **ADLSData** include più dimensioni: Geo, Product, Reseller e Date. Include anche il fatto Sales.
 

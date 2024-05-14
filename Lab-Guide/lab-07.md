@@ -49,10 +49,15 @@ manualmente e creare un report o selezionare un modello semantico pubblicato. Ab
       ![](../Images/lab-07/image012.jpg)
   	
 6.	Scegliere un set di dati da usare nella pagina del report che si apre. Notare che sono presenti quattro opzioni. **Selezionare lh_FAIAD**:<br>
-      a.	**lh_FAIAD**: questo è il lakehouse con il set di dati che abbiamo creato e che vogliamo usare per il report.<br>
-      b.	**Units by Supplier**: questo è il set di dati che abbiamo creato mediante T-SQL.<br>
-      c.	**DataflowsStagingWarehouse**: si tratta del warehouse di staging creato per impostazione predefinita. Non l'abbiamo usato poiché non abbiamo eseguito lo staging dei dati.<br>
-      d.	**DataflowsStagingLakehouse**: si tratta del Lakehouse di staging creato per impostazione predefinita. Non l'abbiamo usato poiché non abbiamo eseguito lo staging dei dati.<br>
+
+      a. **lh_FAIAD**: questo è il lakehouse con il set di dati che abbiamo creato e che vogliamo usare per il report.<br>
+
+      b. **Units by Supplier**: questo è il set di dati che abbiamo creato mediante T-SQL.<br>
+
+      c. **DataflowsStagingWarehouse**: si tratta del warehouse di staging creato per impostazione predefinita. Non l'abbiamo usato poiché non abbiamo eseguito lo staging dei dati.<br>
+
+      d. **DataflowsStagingLakehouse**: si tratta del Lakehouse di staging creato per impostazione predefinita. Non l'abbiamo usato poiché non abbiamo eseguito lo staging dei dati.<br>
+
 9.	Fare clic sulla **freccia accanto al pulsante Crea automaticamente** il report. Notare che vi sono due opzioni: **Crea automaticamente il report** e Crea un report vuoto. Vogliamo provare la creazione automatica, quindi selezioniamo **Crea automaticamente il report**.
  
       ![](../Images/lab-07/image015.png)
@@ -75,11 +80,12 @@ manualmente e creare un report o selezionare un modello semantico pubblicato. Ab
     
 12. Selezionare **Salva**.
 
-      ![](../Images/lab-07/image021.jpg)
+![](../Images/lab-07/image021.jpg)
    	
 >**Nota**: il report creato automaticamente potrebbe avere un aspetto diverso poiché è stato "creato automaticamente". Dipende anche dalle relazioni e dalle misure create nel lab precedente (Lab 6).
 
 - Lo screenshot precedente mostra come **potrebbe** apparire il report creato automaticamente se si fossero create tutte le relazioni e le misure, incluse le relazioni facoltative (Lab 6).
+
 - Lo screenshot seguente mostra come **potrebbe** apparire il report creato automaticamente se non si fossero create le relazioni e le misure facoltative (Lab 6).
     
   ![](../Images/lab-07/image024.jpg)
@@ -134,7 +140,7 @@ Useremo questo report come riferimento. Inizieremo aggiungendo lo sfondo del can
 
 3.	Immettere **Sales Report** come seconda riga nella casella di testo.
 
-4.	Evidenziare **Fabrikam Company** e impostare **Tipo di carattere** su **Segoe UI** e **Dimensioni carattere** su 1**8, grassetto**.
+4.	Evidenziare **Fabrikam Company** e impostare **Tipo di carattere** su **Segoe UI** e **Dimensioni carattere** su **18, grassetto**.
 
 5.	Evidenziare **Report vendite** e impostare **Tipo di carattere** su **Segoe UI** e **Dimensioni carattere** su **14**.
 
@@ -254,8 +260,7 @@ Salviamo il report prima di uscire da esso per apportare modifiche al modello.
 
 ### Attività 8 - Configurazione della colonna Short_Month_Name nella tabella Date
 
-1.	Aggiungiamo il mese al grafico. Nella tabella Date trascinare il campo **Short_Month_Name** sotto
-**Year** sull'**asse X**. Notare che l'oggetto visivo è ordinato in base a Sales. Ordiniamolo in base a Short_Month_Name.
+1.	Aggiungiamo il mese al grafico. Nella tabella Date trascinare il campo **Short_Month_Name** sotto **Year** sull'**asse X**. Notare che l'oggetto visivo è ordinato in base a Sales. Ordiniamolo in base a Short_Month_Name.
 
 2.	Selezionare i **puntini di sospensione** (…) nell'angolo superiore destro dell'oggetto visivo.
 

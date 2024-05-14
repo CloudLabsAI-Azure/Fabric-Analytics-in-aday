@@ -196,8 +196,7 @@ Ora siamo pronti per creare il modello, le relazioni tra tabelle e le misure.
 
       ![](../Images/lab-06/image065.jpg)
   	
-4.	Si apre la finestra di dialogo Nuova relazione. Assicurarsi che la **Tabella** 1 sia **Sales** e che la
-   **Colonna** sia **ResellerID**.
+4.	Si apre la finestra di dialogo Nuova relazione. Assicurarsi che la **Tabella** 1 sia **Sales** e che la **Colonna** sia **ResellerID**.
 
 5.	Assicurarsi che la **Tabella 2** sia **Reseller** e che la **Colonna** sia **ResellerID**.
 
@@ -252,14 +251,14 @@ Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
 
       ![](../Images/lab-06/image080.jpg)
    
-7.	Con la tabella Sales selezionata nel menu in alto, selezionare Home -> Nuova misura. Notare che viene visualizzata la barra della formula.
+7.	Con la tabella **Sales** selezionata nel menu in alto, selezionare **Home -> Nuova misura**. Notare che viene visualizzata la barra della formula.
 
-8.	Immettere Units = SUM(Sales[Quantity]) nella barra della formula.
-9.	Fare clic sul segno di spunta a sinistra della barra della formula o premere il tasto INVIO.
+8.	Immettere **Units = SUM(Sales[Quantity])** nella **barra della formula**.
+9.	Fare clic sul **segno di spunta** a sinistra della barra della formula o premere il tasto **INVIO**.
 
-10. Nel pannello Proprietà a destra espandere la sezione Formattazione (il caricamento del pannello Proprietà potrebbe richiedere alcuni istanti).
+10. Nel pannello Proprietà a destra espandere la sezione **Formattazione** (il caricamento del pannello Proprietà potrebbe richiedere alcuni istanti).
 
-11. Nel menu a discesa Formato selezionare Numero intero.
+11. Nel menu a discesa **Formato** selezionare **Numero intero**.
 
       ![](../Images/lab-06/image083.jpg)
    	
@@ -281,9 +280,7 @@ Abbiamo creato un modello di dati, il passaggio successivo è creare un report. 
 ## Attività 7 - Sezione facoltativa: creazione delle relazioni
 Aggiungiamo le relazioni rimanenti.
 
-1.	Allo stesso modo, creare una relazione **molti-a-uno** tra le tabelle **Sales e People**. Selezionare
-   
-**SalespersonPersonID** da **Sales** e **PersonID** da **People**.
+1.	Allo stesso modo, creare una relazione **molti-a-uno** tra le tabelle **Sales e People**. Selezionare **SalespersonPersonID** da **Sales** e **PersonID** da **People**.
 
 **Checkpoint**: il modello dovrebbe presentarsi come illustrato nello screenshot seguente.
 
@@ -351,9 +348,9 @@ Aggiungiamo le relazioni rimanenti.
 
       ![](../Images/lab-06/image104.png)
    	
-28. Allo stesso modo, creare una relazione **molti-a-uno** tra le tabelle **PO** e **Product**. Selezionare **StockItemID** da **PO** e StockItemID da Product.
+28. Allo stesso modo, creare una relazione **molti-a-uno** tra le tabelle **PO** e **Product**. Selezionare **StockItemID** da **PO** e **StockItemID** da **Product**.
 
-29. Allo stesso modo, creare una relazione **molti-a-uno** tra le tabelle **PO** e **People**. Selezionare ContactPersonID da PO e PersonID da People.
+29. Allo stesso modo, creare una relazione **molti-a-uno** tra le tabelle **PO** e **People**. Selezionare **ContactPersonID** da **PO** e **PersonID** da **People**.
 
    	Abbiamo creato tutte le relazioni.
  

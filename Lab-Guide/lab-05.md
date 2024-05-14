@@ -31,7 +31,7 @@ Abbiamo inserito dati da diverse origini dati in Lakehouse. In questo lab si imp
 
 - **Dati sui clienti**: in Dataverse sono sempre aggiornati. Dobbiamo aggiornarli quattro volte al giorno: alle 00.00, alle 6.00, alle 12.00 e alle 18.00.
 
--**Dati sui dipendenti**: in SharePoint vengono aggiornati ogni giorno alle 9:00. Tuttavia, abbiamo notato che a volte si verifica un ritardo di 5-15 minuti. Dobbiamo creare una pianificazione degli aggiornamenti per far fronte a questa situazione.
+- **Dati sui dipendenti**: in SharePoint vengono aggiornati ogni giorno alle 9:00. Tuttavia, abbiamo notato che a volte si verifica un ritardo di 5-15 minuti. Dobbiamo creare una pianificazione degli aggiornamenti per far fronte a questa situazione.
 
 In questo lab si imparerà a:
 - Configurare una pianificazione degli aggiornamenti di Flusso di dati Gen2
@@ -84,7 +84,7 @@ verifichi un errore, è possibile fare clic sul nome della tabella/attività per
 
 10. Impostare il dispositivo di scorrimento **Configurare una pianificazione di aggiornamento** su **Attivato**.
 
-11. Impostare il** menu a discesa Frequenza di aggiornamento** su **Ogni giorno**. Notare che anche presente un'opzione per impostarla su Settimanale.
+11. Impostare il **menu a discesa Frequenza di aggiornamento** su **Ogni giorno**. Notare che anche presente un'opzione per impostarla su Settimanale.
 
 12. Impostare **Fuso orario** sul fuso orario preferito.
 
@@ -166,7 +166,7 @@ Iniziamo a creare la pipeline. Abbiamo bisogno di un'attività per aggiornare il
 
 3.	Assicurarsi che l'**Area di lavoro** sia impostata sull'area di lavoro di Fabric **FAIAD_<nomeutente>**.
 
-4.	Nel menu a discesa **Flusso di dati** selezionare **df_People_SharePoint**. Quando questa attività Flusso di dati viene eseguita, aggiornerà df_People_SharePoint. Questa procedura è molto semplice. ●¨v
+4.	Nel menu a discesa **Flusso di dati** selezionare **df_People_SharePoint**. Quando questa attività Flusso di dati viene eseguita, aggiornerà df_People_SharePoint. Questa procedura è molto semplice.
    
 >**Nota:** l'opzione Notifica è attualmente disabilitata. Questa funzione sarà abilitata a breve. Sarà possibile configurare le notifiche relative all'esito positivo o negativo di questa attività.
  
@@ -262,7 +262,7 @@ temporale, saranno necessari 15 minuti affinché il file sia disponibile. Voglia
 
 2.	Nel **riquadro inferiore** selezionare **Generale**.
 
-3.	Immettere il **Nome: Iterator****
+3.	Immettere il **Nome: Iterator**
 
 4.	Immettere la **Descrizione: Iteratore per aggiornare il flusso di dati. Riproverà fino a 3 volte**.
  
@@ -276,7 +276,7 @@ temporale, saranno necessari 15 minuti affinché il file sia disponibile. Voglia
 
     ![](../Images/lab-05/image066.png)
 
-Dobbiamo scrivere un'espressione che verrà eseguita finché il valore di varCounter è 3 o il valore di varIsSuccess è Sì**** (varCounter e varIsSuccess sono le variabili che abbiamo appena creato).
+Dobbiamo scrivere un'espressione che verrà eseguita finché il valore di varCounter è 3 o il valore di varIsSuccess è Sì (varCounter e varIsSuccess sono le variabili che abbiamo appena creato).
 
 9.	Si apre la finestra di dialogo **Generatore di espressioni della pipeline**. Nella metà inferiore della finestra di dialogo è presente un menu:<br>
    - **Parametri**: sono costanti in una data factory che possono essere usate da una pipeline in qualsiasi espressione.<br>
@@ -347,8 +347,7 @@ IntelliSense). Seleziona la funzione **equals**.
 
 4.	Con l'**attività Flusso di dati selezionata**, nel riquadro inferiore selezionare **Generale**. Assegniamo all'attività un nome e una descrizione.
 
-5.	Nel campo **Nome** immettere 
-**dfactivity_People_SharePoint**.
+5.	Nel campo **Nome** immettere **dfactivity_People_SharePoint**.
 
     ![](../Images/lab-05/image093.png)
   	
@@ -373,13 +372,17 @@ Abbiamo configurato l'attività Flusso di dati come abbiamo fatto in precedenza 
 
 4.	Nel campo **Descrizione** immettere **Impostare la variabile varIsSuccess su Sì**.
    
->**Nota**: passare il puntatore del mouse sull'attività Flusso di dati. A destra del riquadro dell'attività sono presenti quattro icone. Tali icone si possono usare per la connessione all'attività successiva in base al risultato dell'attività:
-     a.	L'icona **freccia curva grigia** si usa per saltare l'attività.<br>
-     b.	L'icona **segno di spunta verde** si usa in caso di esito positivo dell'attività.<br>
-     c.	L'icona **segno X rosso** si usa in caso di esito negativo dell'attività.<br>
-     d.	L'icona **freccia dritta blu** si usa al completamento dell'attività.<br>
+    >**Nota**: passare il puntatore del mouse sull'attività Flusso di dati. A destra del riquadro dell'attività sono presenti quattro icone. Tali icone si possono usare per la connessione all'attività successiva in base al risultato dell'attività:
 
-5.	Fare clic sul **segno di spunta verde** dall'attività Flusso di dati dfactivity_People_SharePoint e
+    a. L'icona **freccia curva grigia** si usa per saltare l'attività.<br>
+
+    b. L'icona **segno di spunta verde** si usa in caso di esito positivo dell'attività.<br>
+
+    c. L'icona **segno X rosso** si usa in caso di esito negativo dell'attività.<br>
+
+    d. L'icona **freccia dritta blu** si usa al completamento dell'attività.<br>
+
+5. Fare clic sul **segno di spunta verde** dall'attività Flusso di dati dfactivity_People_SharePoint e
 trascinare per connettere la nuova **attività Imposta variabile set_varIsSuccess**. In caso di esito positivo dell'aggiornamento del flusso di dati, vogliamo eseguire l'attività Imposta variabile.
 
     ![](../Images/lab-05/image099.png)
@@ -394,8 +397,7 @@ trascinare per connettere la nuova **attività Imposta variabile set_varIsSucces
 
     ![](../Images/lab-05/image102.jpg)
    	
-10.	Si apre la finestra di dialogo Generatore di espressioni della pipeline. Selezionare l'area di testo
-   **Aggiungere contenuto dinamico di seguito usando qualsiasi combinazione di espressioni, funzioni e variabili di sistema.**
+10.	Si apre la finestra di dialogo Generatore di espressioni della pipeline. Selezionare l'area di testo **Aggiungere contenuto dinamico di seguito usando qualsiasi combinazione di espressioni, funzioni e variabili di sistema.**
 
 11.	Nel menu in basso selezionare **Variabili -> varSuccess**. Notare che @variables(‘varSuccess’) viene immesso nell'area di testo Aggiungere contenuto dinamico di seguito. Tenere presente che quando abbiamo creato le variabili, abbiamo impostato il valore predefinito della variabile varSuccess su Sì. Quindi, assegniamo il valore Sì alla variabile varIsSuccess.
 
@@ -426,18 +428,15 @@ Ora dobbiamo impostare il contatore degli esiti negativi dell'attività Flusso d
 
 9.	Nel campo **Valore** selezionare la **casella di testo**. Selezionare il collegamento **Aggiungi contenuto dinamico**.
 
-10.	Si apre la finestra di dialogo Generatore di espressioni della pipeline. Immettere
-**@add(variables('varCounter'),1)**
+10.	Si apre la finestra di dialogo Generatore di espressioni della pipeline. Immettere **@add(variables('varCounter'),1)**
 
 >**Nota**: è possibile digitare l'espressione, usare il menu per selezionare le funzioni o copiare e incollare l'espressione.
  
 >**Nota**: questa funzione imposta il valore della variabile varTempCounter sul valore della variabile varCounter più uno (varTempCounter = varCounter + 1).
 
-
    ![](../Images/lab-05/image111.jpg)
     
    Ora dobbiamo impostare il valore della variabile varCounter sul valore di varTempCounter.
-
 
 ### Attività 12 - Configurazione della terza attività Imposta variabile
 1.	Nel menu in alto selezionare **Attività -> Imposta variabile**. L'attività Imposta variabile viene aggiunta al canvas di progettazione.
@@ -460,8 +459,7 @@ Ora dobbiamo impostare il contatore degli esiti negativi dell'attività Flusso d
 
 9.	Nel campo Valore selezionare la casella di testo. Selezionare il collegamento **Aggiungi contenuto dinamico**.
 
-10.	Si apre la finestra di dialogo Generatore di espressioni della pipeline. Immettere
-**@variables('varTempCounter')**. È possibile digitare l'espressione, usare il menu per selezionare le funzioni o copiare e incollare l'espressione.
+10.	Si apre la finestra di dialogo Generatore di espressioni della pipeline. Immettere **@variables('varTempCounter')**. È possibile digitare l'espressione, usare il menu per selezionare le funzioni o copiare e incollare l'espressione.
 
 >**Nota:** questa funzione imposta il valore della variabile varCounter sul valore della variabile varTempCounter (varCounter = varTempCounter). Alla fine di ogni iterazione varCounter e varTempCounter hanno lo stesso valore.
  
@@ -488,18 +486,17 @@ Quindi, dovremo impostare un'attesa di 5 minuti/300 secondi in caso di un primo 
 7.	Nel campo **Tempo di attesa in secondi** selezionare la **casella di testo** e selezionare il contenuto dinamico **Aggiungi contenuto dinamico**.
 
 8.	Si apre la finestra di dialogo Generatore di espressioni della pipeline. Immettere
-   
-   
-```
-@if(
-greater(variables(‘varCounter’), 1),
 
-if(equals(variables(‘varCounter’), 2),mul(variables(‘varWaitTime’),15 ), mul(variables(‘varWaitTime’), 0)
-),
-
-mul(variables(‘varWaitTime’),5 )
-)   
-```
+    ```
+    @if(
+    greater(variables(‘varCounter’), 1),
+    if(equals(variables(‘varCounter’), 2),
+    mul(variables(‘varWaitTime’),15 ), 
+    mul(variables(‘varWaitTime’), 0)
+    ),
+    mul(variables(‘varWaitTime’),5 )
+    )
+    ```
   	
 È possibile digitare l'espressione, usare il menu per selezionare le funzioni o copiare e incollare l'espressione.
 
@@ -507,10 +504,10 @@ mul(variables(‘varWaitTime’),5 )
  
 Qui usiamo due nuove funzioni:
 - **greater**: prende due numeri come parametri e li confronta per indicare qual è il maggiore.
+
 - **mul**: questa è una funzione di moltiplicazione, prende due parametri da moltiplicare.
-L'espressione è un'istruzione if annidata. Controlla se il valore della variabile varCounter è maggiore di 1. Se è true, controlla se il valore della variabile varCounter è 2. Se è true, imposta il tempo di attesa su varWaitTime per 15. Ricordare che abbiamo impostato il valore predefinito di 60 per la variabile varWaitTime. Il risultato sarebbe 60*15 = 900 secondi. Se il valore della variabile varCounter è diverso da 2 (è maggiore di 2, ossia l'aggiornamento del flusso di dati non è riuscito per 3 volte e
-l'iterazione si conclude, non occorre attendere oltre), il tempo di attesa è impostato su varWaitTime
-* 0. Pertanto è pari a 0. Se il valore della variabile varCounter è 1, moltiplicheremo varWaitTime * 5. Il risultato sarebbe 60*5 = 300 secondi.
+
+L'espressione è un'istruzione if annidata. Controlla se il valore della variabile varCounter è maggiore di 1. Se è true, controlla se il valore della variabile varCounter è 2. Se è true, imposta il tempo di attesa su varWaitTime per 15. Ricordare che abbiamo impostato il valore predefinito di 60 per la variabile varWaitTime. Il risultato sarebbe 60*15 = 900 secondi. Se il valore della variabile varCounter è diverso da 2 (è maggiore di 2, ossia l'aggiornamento del flusso di dati non è riuscito per 3 volte el'iterazione si conclude, non occorre attendere oltre), il tempo di attesa è impostato su varWaitTime * 0. Pertanto è pari a 0. Se il valore della variabile varCounter è 1, moltiplicheremo varWaitTime * 5. Il risultato sarebbe 60*5 = 300 secondi.
      
 9.	Selezionare **OK**.
     
@@ -588,9 +585,13 @@ Leggere i blog di annunci più approfonditi sull'esperienza in Fabric:
 
 
 © 2023 Microsoft Corporation. Tutti i diritti sono riservati.
+
 L'uso della demo/del lab implica l'accettazione delle seguenti condizioni:
+
 La tecnologia/le funzionalità descritte nella demo/nel lab sono fornite da Microsoft Corporation allo scopo di ottenere feedback dall'utente e offrire un'esperienza di apprendimento. L'utilizzo della demo/del lab è consentito solo per la valutazione delle caratteristiche e delle funzionalità di tale tecnologia e per l'invio di feedback a Microsoft. L'utilizzo per qualsiasi altro scopo non è consentito. È vietato modificare, copiare, distribuire, trasmettere, visualizzare, eseguire, riprodurre, pubblicare, concedere in licenza, usare per la creazione di lavori derivati, trasferire o vendere questa demo/questo lab o parte di essi.
+
 SONO ESPLICITAMENTE PROIBITE LA COPIA E LA RIPRODUZIONE DELLA DEMO/DEL LAB (O DI QUALSIASI PARTE DI ESSI) IN QUALSIASI ALTRO SERVER O IN QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O RIDISTRIBUZIONE.
+
 QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON UN'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI IN QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L'ESPERIENZA D'USO DI TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ INOLTRE RISULTARE DIVERSA IN UN AMBIENTE FISICO.
 
 **FEEDBACK**. L'invio a Microsoft di feedback sulle caratteristiche, sulle funzionalità e/o sui concetti della tecnologia descritti in questa demo/questo lab implica la concessione a Microsoft, a titolo gratuito, del diritto di utilizzare, condividere e commercializzare tale feedback in qualsiasi modo e per qualsiasi scopo. Implica anche la concessione a titolo gratuito a terze parti del diritto di utilizzo di eventuali brevetti necessari per i loro prodotti, le loro tecnologie e i loro servizi al fine di utilizzare o interfacciarsi ai componenti software o ai servizi Microsoft specifici che includono il feedback. L'utente si impegna a non inviare feedback la cui inclusione all'interno di software o
@@ -599,4 +600,5 @@ documentazione Microsoft imponga a Microsoft di concedere in licenza a terze par
 CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA O CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O PRESCRITTE DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO, TITOLARITÀ E NON VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE O RAPPRESENTAZIONI IN RELAZIONE ALL'ACCURATEZZA DEI RISULTATI E DELL'OUTPUT DERIVANTI DALL'USO DELLA DEMO/DEL LAB O ALL'ADEGUATEZZA DELLE INFORMAZIONI CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.
 
 **CLAUSOLA DI RESPONSABILITÀ**
+
 Questa demo/questo lab contiene solo una parte delle nuove funzionalità e dei miglioramenti in Microsoft Power BI. Alcune funzionalità potrebbero cambiare nelle versioni future del prodotto. In questa demo/in questo lab si apprendono alcune delle nuove funzionalità, ma non tutte.

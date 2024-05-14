@@ -11,12 +11,12 @@
     - Attività 5 - Creazione della query Countries	
    - Attività 6 - Creazione della query States mediante Copia – opzione 1	
    - Attività 7 - Creazione della query Geo mediante Copia – opzione 2	
-   - Attività 8 - Configurazione della destinazione dei dati per la query Geo	19
-   - Attività 9 - Pubblicazione del flusso di dati	22
-   - Attività 10 - Ridenominazione del flusso di dati	24
-   - Attività 11 - Creazione delle query rimanenti nel flusso di dati	25
-   - Attività 12 - Configurazione della destinazione dei dati per le query rimanenti	27
- - Riferimenti	30
+   - Attività 8 - Configurazione della destinazione dei dati per la query Geo
+   - Attività 9 - Pubblicazione del flusso di dati
+   - Attività 10 - Ridenominazione del flusso di dati
+   - Attività 11 - Creazione delle query rimanenti nel flusso di dati
+   - Attività 12 - Configurazione della destinazione dei dati per le query rimanenti
+ - Riferimenti
 
 
 ## Introduzione
@@ -78,9 +78,12 @@ Ora è possibile visualizzare tutte le origini dati disponibili. Si ha la possib
 
       ![](../Images/lab-03/image021.jpg)
 
-5.	Si apre la finestra di dialogo Connetti all'origine dati. È necessario creare una connessione all'origine dati ADLS Gen2. In **Impostazioni connessione -> URL** immettere il seguente
-collegamento: https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta- Parquet-Format
- 
+5.	Si apre la finestra di dialogo Connetti all'origine dati. È necessario creare una connessione all'origine dati ADLS Gen2. In **Impostazioni connessione -> URL** immettere il seguente collegamento:
+
+      ``` 
+      https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales/Delta- Parquet-Format
+      ```
+
       ![](../Images/lab-03/image024.jpg)
 
 6.	Selezionare **Chiave account** dal menu a discesa Tipo di autenticazione.
