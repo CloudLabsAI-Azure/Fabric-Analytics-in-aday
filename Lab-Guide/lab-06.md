@@ -33,8 +33,10 @@ esplorato l'opzione Lakehouse in un lab precedente. Selezionare l'opzione l**h_F
    ![](../Images/lab-06/image005.jpg)
    
 Se si desidera esplorare i dati prima di creare un modello di dati, è possibile usare SQL a questo fine. Osserviamo le due opzioni per l'uso di SQL, la prima è pensata per gli sviluppatori mentre la seconda è destinata agli analisti.
+
 Supponiamo che si voglia conoscere rapidamente le unità vendute dal fornitore mediante SQL.
 Abbiamo due opzioni: scrivere un'istruzione SQL o usare un oggetto visivo per creare l'istruzione SQL.
+
 Sul pannello di sinistra si possono visualizzare le tabelle. Espandendo le tabelle, si possono
 visualizzare le colonne che compongono la tabella. Vi sono inoltre opzioni per la creazione di viste SQL, funzioni e stored procedure. Se si ha familiarità con SQL, è possibile esplorare queste opzioni. Proviamo a scrivere una semplice query SQL.
  
