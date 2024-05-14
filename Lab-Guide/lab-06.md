@@ -190,8 +190,7 @@ Ok, agora estamos prontos para criar o modelo, criar relacionamentos entre tabel
 
 16.	No menu superior, selecione **Relatórios -> Atualizar automaticamente o modelo semântico** para salvar e atualizar o modelo.
 
-
-[](../Images/lab-06/image074.png)
+![](../Images/lab-06/image074.png)
 
 **Ponto de verificação:** seu modelo deve ter os três relacionamentos entre as tabelas Sales e Reseller, Sales e Date e Sales e Product, conforme mostrado na captura de tela abaixo:!
 
