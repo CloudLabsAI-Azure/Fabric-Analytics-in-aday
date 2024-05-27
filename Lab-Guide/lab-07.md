@@ -143,7 +143,7 @@ geöffnet. Wählen Sie **lh_FAIAD** aus.
 
 10. Wählen Sie **Durchsuchen** über die Option **Bild** aus. Das Dialogfeld „Datei-Explorer“ wird geöffnet.
 
-11. Navigieren Sie zum Ordner **C:\FAIAD\Reports** in Ihrer Übungsumgebung.
+11. Navigieren Sie zum Ordner **C:\Users\Public\Desktop\Reports** in Ihrer Übungsumgebung.
 
 12. Wählen Sie **Summary Background.png** aus.
 
