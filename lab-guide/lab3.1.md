@@ -101,7 +101,7 @@ You will be navigated to the **Dataflow page**. This screen will look familiar a
 
    ![A screenshot of Preview folder dialog](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.010.png)
 
-1. You are back in the **Power Query** dialog. This will be the connection to the root folder of ADLS Gen2. We will reference this query in subsequent queries. Let’s rename the query. In the right panel, under **Query settings -> Properties -> Name**, change the name to **ADLS Base Folder for Geo**
+1. You are back in the **Power Query** dialog. This will be the connection to the root folder of ADLS Gen2. We will reference this query in subsequent queries. Let’s rename the query. In the right panel, under **Query settings -> Properties -> Name**, change the name to **ADLS Base Folder** for Geo
 1. All queries from Dataflow Gen2 are loaded to a Staging Lakehouse by default. As part of this lab, we will not be staging data. To disable this load, in the **left panel, right-click on ADLS Base Folder** query. 
 
    >**Note:** Staging is used when we need to stage data to be used in further transformation before it is ready for consumption. 
@@ -134,7 +134,7 @@ Sales Data is available by Geography, Product, salesperson, and Date granularity
 
 We need to combine City, State, and Country data from these three files to create the Geo dimension.
 
-1. Let’s start with City. On the left panel, right click on **ADLS Base Folder for Geo**. Select **Reference** to create a new query that references the ADLS Base Folder for Geo query.
+1. Let’s start with City. On the left panel, right click on **ADLS Base Folder** for Geo. Select **Reference** to create a new query that references the ADLS Base Folder for Geo query.
 
    ![A screenshot to Reference ADLS Base folder](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.013.png)
 
@@ -165,7 +165,7 @@ In the right panel, under **Applied steps** notice all the steps are registered.
 
 ### Task 5: Create Countries query
 
-1. On the left panel, right click on **ADLS Base Folder for Geo**. Select **Reference** to create a new query that references the ADLS Base Folder for Geo query.
+1. On the left panel, right-click on **ADLS Base Folder for Geo**. Select **Reference** to create a new query that references the ADLS Base Folder for Geo query.
 
    ![A screenshot to reference ADLS Base Folder](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.018.png)
 
