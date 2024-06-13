@@ -43,6 +43,7 @@ By the end of this lab, you will have learned:
   - How to create a Lakehouse  
 
 # Fabric License
+
 ### Task 1: Enable a Microsoft Fabric trial license
 
 1. Open the **browser** and navigate to https://app.powerbi.com/. You will be navigated to the login page.
@@ -60,9 +61,7 @@ By the end of this lab, you will have learned:
    ![](../media/2-3.png)
 
 1. You will be navigated to the familiar **Power BI Service Home page**.
-1. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor.
-
-    Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has a Fabric license. Let’s do this.
+1. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor. Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has a Fabric license. Let’s do this.
 
 1. On the top right corner of the screen, select the **user icon**.
 
@@ -112,7 +111,7 @@ By the end of this lab, you will have learned:
 
 ### Task 3: Data Activator Experience
 
-1. Select **Fabric experience selector icon** (currently set to Data Factory) on the bottom left of your screen. Fabric experience dialog opens.
+1. Select the **Fabric experience selector icon** (currently set to Data Factory) on the bottom left of your screen. Fabric experience dialog opens.
 
     ![](../media/2-11.png)
 
@@ -122,24 +121,23 @@ By the end of this lab, you will have learned:
     
     b. **Reflex sample:** Sample solution.
 
-    ![](../media/2-12.png)
+     ![](../media/2-12.png)
 
 ### Task 4: Industry Solutions Experience
 
-1. Select **Fabric experience selector icon** (currently set to Data Activator) on the bottom left of your screen. Fabric experience dialog opens.
+1. Select the **Fabric experience selector icon** (currently set to Data Activator) on the bottom left of your screen. Fabric experience dialog opens.
 
-2. Select **Industry Solutions** from the dialog. You will be navigated to **Industry Solutions Home page**. Microsoft Fabric offers industry-specific data solutions that provide a robust platform for data management, analytics, and decision-making. These data solutions address the unique challenges faced by different industries, enabling businesses to optimize operations, integrate data from different sources, and use rich analytics. Notice the three sections are like the previous experiences. In the New section, notice the items:
+2. Select **Industry Solutions** from the dialog. You will be navigated to the **Industry Solutions Home page**. Microsoft Fabric offers industry-specific data solutions that provide a robust platform for data management, analytics, and decision-making. These data solutions address the unique challenges faced by different industries, enabling businesses to optimize operations, integrate data from different sources, and use rich analytics. Notice the three sections are like the previous experiences. In the New section, notice the items:
 
     a. **Sustainability solutions:** supports the ingestion, standardization, and analysis of Environmental, Social, and Governance (ESG) data.
 
     b. **Retail solutions:** helps in managing large volumes of data, integrating data from various sources, and providing real-time analytics for prompt decision-making. Retailers can use these solutions for inventory optimization, customer segmentation, sales forecasting, dynamic pricing, and fraud detection.
 
-
     ![](../media/2-13.png)
 
 ### Task 5: Synapse Data Engineering Experience
 
-1. Select **Fabric experience selector icon** (currently set to Industry Solutions) on the bottom left of your screen. Fabric experience dialog opens.
+1. Select the **Fabric experience selector icon** (currently set to Industry Solutions) on the bottom left of your screen. Fabric experience dialog opens.
 
 2. Select **Data Engineering**. You will be navigated to the **Data Engineering Home page**. Again, the page contains three main sections. In the New section, notice the items: 
    
@@ -216,22 +214,26 @@ By the end of this lab, you will have learned:
 ### Task 9: Create a Fabric Workspace
 
 1. Now let’s create a workspace with a Fabric license. Select **Workspaces** from the left navigation bar. A dialog opens.
-2. Select **+ New workspace**.
+
+1. Select **+ New workspace**.
 
     # ![](../media/2-18.png)
 
-3. **Create a workspace** dialog opens on the right side of the browser.
-4. In the **Name** field enter **FAIAD_username**.
+1. **Create a workspace** dialog opens on the right side of the browser.
+   
+1. In the **Name** field enter **FAIAD_username**.
 
     >**Note:** Workspace name must be unique. We are using FAIAD as the workspace name for this document. However, your workspace name must be different. Make sure a green check mark with **This name is available** is displayed below the Name field.
    
-6. If you choose, you can enter a **Description** for the workspace. This is an optional field.
-7. Click on **Advanced** to expand the section.
+1. If you choose, you can enter a **Description** for the workspace. This is an optional field.
+
+1. Click on **Advanced** to expand the section.
 
     # ![](../media/2-19.png)
 
-8. Under **License mode**, make sure **Trial** is selected. (It should be selected by default.)
-9. Select **Apply** to create a new workspace.
+1. Under **License mode**, make sure **Trial** is selected. (It should be selected by default.)
+
+1. Select **Apply** to create a new workspace.
 
    # ![](../media/2-20.png)
 
@@ -310,4 +312,3 @@ MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD
 **DISCLAIMER**
 
 This demo/lab contains only a portion of new features and enhancements in Microsoft Power BI. Some of the features might change in future releases of the product. In this demo/lab, you will learn about some, but not all, new features.
-
