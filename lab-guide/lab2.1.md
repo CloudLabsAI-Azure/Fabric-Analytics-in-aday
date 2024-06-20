@@ -47,8 +47,6 @@ By the end of this lab, you will have learned:
 ### Task 1: Enable a Microsoft Fabric trial license
 
 1. Open the **browser** and navigate to https://app.powerbi.com/. You will be navigated to the login page.
-
-    >**Note:** If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private / incognito mode.
     
 1. Enter the **Username** available in the **Environment Variables** tab (next to the Lab Guide) as the Email and click **Submit**.  
 
