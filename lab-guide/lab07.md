@@ -379,13 +379,13 @@ Once you are ready to clean up the lab environment, follow the steps below.
 
      ![A screenshot to select Workspace settings](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.039.png)
 
-1. Workspace settings dialog opens. Select **Other** from the left menu.
-1. Select **Remove this workspace**.
+1. Workspace settings dialog opens. In **General** section from the left menu.
+1. Scroll down to see the option **Remove this workspace**.
 1. Delete workspace dialog opens. Select **Delete**.
 
 This will delete the workspace and all the items that were contained in the workspace.
 
-   ![A screenshot of Workspace settings dialog](../media/Aspose.Words.e28fdc47-8e4b-4442-9628-9e34dc2360ff.040.png)
+   ![A screenshot of Workspace settings dialog](../media/L7CleanupS5.png)
 
 # <a name="_toc150777627"></a><a name="_toc150779083"></a><a name="_toc152166247"></a>**References**
 
