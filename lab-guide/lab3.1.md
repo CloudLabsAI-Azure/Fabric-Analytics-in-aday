@@ -442,6 +442,9 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
    ![A screenshot of Choose destination target](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.050.png)
 
 1. Choose destination settings dialog opens. This time around we will use the automatic settings as this will do a full update of the data. Also, it will rename the columns as needed. Select **Save settings**.
+
+   ![A screenshot of Choose destination settings](../media/Fabrichey2.png)
+
 1. You will be navigated back to the **Power Query window**. Notice on the bottom right corner, **Data destination** is set to **Lakehouse**
 1. Similarly, set the **Data Destination** for the following queries:
       
@@ -452,10 +455,6 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
       c.	Sales
       
       d.	Date
-
-1. We have a data flow that ingests data from ADLS into Lakehouse. Let’s go ahead and publish this data flow. Select Publish in the bottom right corner.
-
-   ![A screenshot of Choose destination settings](../media/Fabrichey2.png)
 
 1. We have a data flow that ingests data from ADLS into Lakehouse. Let’s go ahead and publish this data flow. Select **Publish** in the bottom right corner.
 
