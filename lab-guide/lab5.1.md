@@ -70,11 +70,11 @@ Let’s start by configuring a scheduled refresh of Sales Dataflow.
 
 1. Let’s navigate back to the Fabric workspace, **FAIAD_** you created in Lab 2, Task 9.
 
-2. All the artifacts you have created are listed here. On the right of the screen, in the **Search box** enter **df**. This will filter the artifacts to Dataflows.
+2. All the artifacts you have created are listed here. On the right of the screen, in the **Filter by keyword** box enter **df**. This will filter the artifacts to Dataflows.
 
     ![](../media/Lab_5.2.png)
  
-3. Hover on the **df_Sales_ADLS** row. Notice that the familiar **Refresh** and **Schedule Refresh icons** are available. Select the **ellipsis (…)**.
+3. Hover on the **df_Sales_ADLS** row. Notice that the familiar **Refresh Now** and **Schedule Refresh icons** are available. Select the **ellipsis (…)**.
 
 4. Notice there is an option to Delete, Edit, and Export the Dataflow. We can use Properties to update the name and description of the Dataflow. We will look at Refresh history shortly. Select **Settings**.
 
