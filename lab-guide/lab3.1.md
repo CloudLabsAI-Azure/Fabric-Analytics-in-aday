@@ -9,7 +9,7 @@
 
      * Task 1: Create Dataflow Gen2
 
-     * Task 2: Create connection to ADLS Gen2
+     * Task 2: Create a connection to ADLS Gen2
 
      * Task 3: Create Base ADLS Gen2 folder query
 
@@ -53,7 +53,9 @@ By the end of this lab, you will have learned:
 
 
 # **Dataflow Gen2**
+
 ### Task 1: Create Dataflow Gen2
+
 1. Let’s navigate back to the **Fabric workspace** you created in the earlier Lab 2, Task 9.
 1. If you have not navigated away after the previous lab, you will be in the Lakehouse screen. If you have navigated away that is fine. Select the **Fabric experience selector** icon from the bottom left of your screen.
 1. Select **Data Factory** from the open Fabric experience dialog. Data Factory has workloads needed to extract, transform, and ingest data.
@@ -65,7 +67,9 @@ By the end of this lab, you will have learned:
    ![A screenshot of Data Factory Home selecting Dataflow Gen2](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.003.png)
 
 You will be navigated to the **Dataflow page**. This screen will look familiar as it is like Dataflow Gen1 or Power Query. You will notice the options to connect to various data sources are available, along with the ability to transform data. Let’s connect to the ADLS Gen2 data source and perform some transformations.
-### Task 2: Create connection to ADLS Gen2
+
+### Task 2: Create a connection to ADLS Gen2
+
 1. From the ribbon, select **Home -> Get data -> More…** 
 
    ![A screenshot of Dataflow screen to select Get Data](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.004.png)
@@ -97,6 +101,7 @@ You will be navigated to the **Dataflow page**. This screen will look familiar a
 1. Select **Next** on the bottom right of the screen.
 
 ### Task 3: Create Base ADLS Gen2 folder query
+
 1. Once the connection is established, you will be navigated to the **Preview folder data** screen. There are a lot of files in the ADLS Gen2 folder. We need data from a few of them. Select **Create** to create a connection to the folder.
 
    ![A screenshot of Preview folder dialog](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.010.png)
@@ -197,7 +202,9 @@ We need to bring in State next, but the steps are getting repetitive. We already
 
 ### Task 6: Create States using Copy – Option 1
 
-1. If you have not already opened it, open **FAIAD.pbix** located in the **C:\FAIAD\Reports** folder of your lab environment. 
+1. If you have not already opened it, open the **FAIAD.pbix** located in the **Report** folder on the **Desktop** of your lab environment. The file will open in Power BI Desktop.
+
+      ![Picture2FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/ce64a7c3-6bb5-45d0-8ced-fc923145805c) 
    
 1. From the ribbon select **Home -> Transform data**. The power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by the data source.
 
@@ -284,7 +291,7 @@ Now we have a dimension, let’s ingest this data into Lakehouse. This is the ne
 
 1. Select **Geo** query.
 
-1. On the bottom right corner select **+** next to **Data destination.**
+1. On the bottom right corner select **+** next to **Data destination**.
 
 1. Select **Lakehouse** from the dialog.
 
@@ -315,7 +322,6 @@ Now we have a dimension, let’s ingest this data into Lakehouse. This is the ne
 1. Column mapping can be used to map dataflow columns to existing columns. In our case, it is a New Table. Hence, we can use the defaults. Select **Save settings**.
 
    ![A screenshot to Choose destination settings](../media/Fabrichey1.png)
-
 
 ### Task 9: Publish Dataflow
 
@@ -364,7 +370,9 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 
    To make things easy, let’s see if we can copy over the queries from Power BI Desktop.
 
-1. If you have not already opened it, open **FAIAD.pbix** located in the **C:\FAIAD\Reports** folder of your lab environment.
+1. If you have not already opened it, open the **FAIAD.pbix** located in the **Report** folder on the **Desktop** of your lab environment. The file will open in Power BI Desktop.
+
+      ![Picture2FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/ce64a7c3-6bb5-45d0-8ced-fc923145805c)
 
 1. From the ribbon select **Home -> Transform**. The power Query window opens.
 1. From the **Queries** panel on the left, **Ctrl+Select** following queries from **ADLSData**.
@@ -460,7 +468,7 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 
    ![A screenshot of dataflow to Publish](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.052.png)
 
-   You will be navigated back to **FAIAD_username** workspace. It will take a few minutes for the dataflow to refresh.
+   You will be navigated back to the **FAIAD_username** workspace. It will take a few minutes for the dataflow to refresh.
 
    In the next lab, we will ingest data from the other data sources.
 
