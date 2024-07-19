@@ -55,7 +55,7 @@ By the end of this lab, you will have learned:
 
 ## Task 1: Copy Snowflake queries to Dataflow
 
-1. Let’s navigate back to the Fabric workspace, **FAIAD_<username>** you created in Lab 2, Task 9.
+1. Let’s navigate back to the Fabric workspace, **FAIAD_username** you created in Lab 2, Task 9.
 
 2. From the top menu, select **+ New -> Dataflow Gen2**.
   
@@ -136,7 +136,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
 5. Choose destination target dialog opens. Make sure the **New table radio button** is **selected**, since we are creating a new table.
 
-6. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<username>**. 
+6. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_username**. 
 
 7. Select **lh_FAIAD**
 
@@ -168,7 +168,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
    ![](../media/Lab_4.1_14.png)
  
-    You will be navigated back to **FAIAD_<username> workspace**. It may take a few moments for the Dataflow to Publish. Now let’s create a dataflow to bring in data from Dataverse.
+    You will be navigated back to **FAIAD_username workspace**. It may take a few moments for the Dataflow to Publish. Now let’s create a dataflow to bring in data from Dataverse.
 
 ## Task 5: Copy Dataverse queries to Dataflow
 
@@ -242,7 +242,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 6. Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
 
-7. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<username>**
+7. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_username**
 
 8. Select **lh_FAIAD**
 
@@ -264,7 +264,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 
     ![](../media/Lab_4.1_24.png)
  
-    **Note**: You will be navigated back to **FAIAD_<username> workspace**. It may take a few moments for the Dataflow to Publish. 
+    **Note**: You will be navigated back to **FAIAD_username workspace**. It may take a few moments for the Dataflow to Publish. 
 
 3. Dataflow 2 is the dataflow we were working on. Let’s rename it before we continue. Click on the **ellipsis (…)** next to Dataflow 1. Select **Properties**.
 
@@ -278,7 +278,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 
     ![](../media/Lab_4.1_26.png)
  
-    You will be navigated back to **FAIAD_<username> workspace**. Now let’s create a dataflow to bring in data from SharePoint.
+    You will be navigated back to **FAIAD_username workspace**. Now let’s create a dataflow to bring in data from SharePoint.
 
 ## Task 9: Copy SharePoint queries to Dataflow
 
@@ -342,7 +342,7 @@ Connection is established and you can view the data in the preview panel. Feel f
  
 6. Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
 
-7. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<username>**. 
+7. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_username**. 
 
 8. Select **lh_FAIAD**
 
@@ -364,7 +364,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 
     ![](../media/Lab_4.1_36.png)
  
-    **Note**: You will be navigated back to **FAIAD_<username> workspace**. It may take a few moments for the Dataflow to Publish. 
+    **Note**: You will be navigated back to **FAIAD_username workspace**. It may take a few moments for the Dataflow to Publish. 
 
 3. Dataflow 2 is the dataflow we were working on. Let’s rename it before we continue. Click on the **ellipsis (…)** next to Dataflow 2. Select **Properties**.
 
@@ -378,7 +378,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 
    ![](../media/Lab_4.1_38.png)
  
-You will be navigated back to **FAIAD_<username> workspace**. We have now ingested all the data into Lakehouse. In the next lab, we will schedule a Dataflow refresh.
+You will be navigated back to **FAIAD_username workspace**. We have now ingested all the data into Lakehouse. In the next lab, we will schedule a Dataflow refresh.
 
 # References
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.

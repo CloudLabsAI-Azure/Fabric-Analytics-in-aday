@@ -90,7 +90,7 @@ Let’s start by using the auto-create report option. And later in the lab, we w
     
     >**Note:** We are prefixing the report name with rpt which is short for the report.
 
-11. Make sure the report is saved in your workspace, **FAIAD_<username>**.
+11. Make sure the report is saved in your workspace, **FAIAD_username**.
 
 12. Select **Save**.
 
@@ -108,11 +108,11 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 Let’s create a new report using a blank canvas.
 
-1. In the **left panel,** select your workspace name, **FAIAD_<username>** to be navigated to the workspace.
-
-   ![](../media/Lab_7.9.png)
+1. In the **left panel,** select your workspace name, **FAIAD_username** to be navigated to the workspace.
 
 2. From the top menu, select **New -> Report**. You will be navigated to build your first report page.
+
+    ![](../media/Lab_7.9.png)
  
 3. Select **Pick a published semantic model,** so we can pick the model we have created.
 
@@ -241,7 +241,7 @@ Let’s save the report before we navigate away from the report to make changes 
 
     >**Note:** We are prefixing the report name with rpt which is short for the report.
 
-3. Make sure the report is saved in **FAIAD_<username>** workspace.
+3. Make sure the report is saved in **FAIAD_username** workspace.
 
 4. Select **Save**.
 
@@ -354,7 +354,7 @@ Typically, in Import mode, once data in the source is refreshed, we need to refr
 
 In a real scenario, data is updated at the source. Since we are in a training environment, we will simulate this by connecting it to a parquet file with data for May 2023. 
 
-1. Select **FAIAD_<username>**  from the left menu bar to navigate to workspace home.
+1. Select **FAIAD_username**  from the left menu bar to navigate to workspace home.
 2. Select **df_Sales_ADFS** so we can edit the dataflow by adding the new Parquet file.
 
    ![](../media/Lab_7.32.png)
@@ -422,17 +422,18 @@ Microsoft Fabric is a SaaS offering. All we need is a browser to access the serv
 
 Once you are ready to clean up the lab environment, follow the steps below.
 
-1. Select **FAIAD_<username>** workspace from the left panel to navigate to the workspace home.
+1. Select **FAIAD_username** workspace from the left panel to navigate to the workspace home.
 2. From the top menu, select the **ellipsis (…)** next to Manage access and select **Workspace settings**.
 
    ![](../media/Lab_7.38.png)
  
-3. Workspace settings dialog opens. Select **Other** from the left menu.
+3. Workspace settings dialog opens. Select **General** from the left menu.
 4. Select **Remove this workspace**.
+
+    ![](../media/Lab_7.39-1.png)
+
 5. Delete workspace dialog opens. Select **Delete**.
 This will delete the workspace and all the items that were contained in the workspace.
-
-   ![](../media/Lab_7.39.png)
  
 # <a name="_toc150777627"></a><a name="_toc150779083"></a><a name="_toc152166247"></a>References
 

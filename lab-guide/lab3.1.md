@@ -325,7 +325,7 @@ Now we have a dimension, let’s ingest this data into Lakehouse. This is the ne
 
    ![A screenshot to Publish Dataflow](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.039.png)
 
-1. You will be navigated back to the **FAIAD_<username> workspace**. It may take a few moments for the Dataflow to Publish. Once done, select **lh_FAIAD Lakehouse** either from the center pane or the left panel.
+1. You will be navigated back to the **FAIAD_username workspace**. It may take a few moments for the Dataflow to Publish. Once done, select **lh_FAIAD Lakehouse** either from the center pane or the left panel.
 
    ![A screenshot to select Lakehouse](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.040.png)
 
@@ -358,7 +358,7 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 
 ### Task 11: Build remaining queries in Dataflow
 
-1. You will be navigated back to the **FAIAD_<username> workspace**. Select the Dataflow **df_Sales_ADLS** to navigate back into the dataflow.
+1. You will be navigated back to the **FAIAD_username workspace**. Select the Dataflow **df_Sales_ADLS** to navigate back into the dataflow.
 
    ![A screenshot to select df_Sales_ADLS](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.044.png)
 
@@ -442,6 +442,9 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
    ![A screenshot of Choose destination target](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.050.png)
 
 1. Choose destination settings dialog opens. This time around we will use the automatic settings as this will do a full update of the data. Also, it will rename the columns as needed. Select **Save settings**.
+
+   ![A screenshot of Choose destination settings](../media/Fabrichey2.png)
+
 1. You will be navigated back to the **Power Query window**. Notice on the bottom right corner, **Data destination** is set to **Lakehouse**
 1. Similarly, set the **Data Destination** for the following queries:
       
@@ -453,15 +456,11 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
       
       d.	Date
 
-1. We have a data flow that ingests data from ADLS into Lakehouse. Let’s go ahead and publish this data flow. Select Publish in the bottom right corner.
-
-   ![A screenshot of Choose destination settings](../media/Fabrichey2.png)
-
 1. We have a data flow that ingests data from ADLS into Lakehouse. Let’s go ahead and publish this data flow. Select **Publish** in the bottom right corner.
 
    ![A screenshot of dataflow to Publish](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.052.png)
 
-   You will be navigated back to **FAIAD_<username>** workspace. It will take a few minutes for the dataflow to refresh.
+   You will be navigated back to **FAIAD_username** workspace. It will take a few minutes for the dataflow to refresh.
 
    In the next lab, we will ingest data from the other data sources.
 
