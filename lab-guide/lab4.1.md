@@ -11,7 +11,7 @@
 
     - Task 1: Copy Snowflake queries to Dataflow	
 
-    - Task 2: Create connection to Snowflake	
+    - Task 2: Create a connection to Snowflake	
 
     - Task 3: Configure Data Destination for Supplier and PO queries	
 
@@ -19,7 +19,7 @@
 
     - Task 5: Copy Dataverse queries to Dataflow	
     
-    - Task 6: Create connection to Dataverse	
+    - Task 6: Create a connection to Dataverse	
 
     - Task 7: Create Data destination for Customer query
 
@@ -50,7 +50,6 @@ By the end of this lab, you will have learned:
 
 - How to connect to Dataverse using Dataflow Gen2 and ingest data into Lakehouse
 
-
 # Dataflow Gen2
 
 ## Task 1: Copy Snowflake queries to Dataflow
@@ -63,7 +62,9 @@ By the end of this lab, you will have learned:
 
 You will be navigated to the **Dataflow page**. Now that we are familiar with Dataflow, let’s go ahead and copy the queries from Power BI Desktop into Dataflow.
 
-3. If you have not already opened it, open the **FAIAD.pbix** located in the **C:\FAIAD\Reports** folder of your lab environment.
+3. If you have not already opened it, open the **FAIAD.pbix** located in the **Report** folder on the **Desktop** of your lab environment. The file will open in Power BI Desktop.
+
+      ![Picture2FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/ce64a7c3-6bb5-45d0-8ced-fc923145805c)
 
 4. From the ribbon select **Home -> Transform data**. The power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by the data source.
 
@@ -91,8 +92,7 @@ You will be navigated to the **Dataflow page**. Now that we are familiar with Da
 
     ![](../media/Lab_4.1_4.png)
  
-
-## Task 2: Create connection to Snowflake
+## Task 2: Create a connection to Snowflake
 
 Notice the five queries are pasted and now you have the Queries panel on the left. Since we do not have a connection created for Snowflake, you will see a warning message requesting you to configure the connection.
 
@@ -178,7 +178,9 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
  
     You will be navigated to the **Dataflow page**. Now that we are familiar with Dataflow, let’s go ahead and copy the queries from Power BI Desktop into Dataflow.
 
-2. If you have not already opened it, open **FAIAD.pbix** located in the **C:\FAIAD\Reports** folder of your lab environment. 
+2. If you have not already opened it, open the **FAIAD.pbix** located in the **Report** folder on the **Desktop** of your lab environment. The file will open in Power BI Desktop.
+
+      ![Picture2FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/ce64a7c3-6bb5-45d0-8ced-fc923145805c)
 
 3. From the ribbon select **Home -> Transform data**. The power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by the data source.
 
@@ -204,7 +206,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
     **Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
-## Task 6: Create connection to Dataverse
+## Task 6: Create a connection to Dataverse
 
 Notice the five queries are pasted and now you have the Queries panel on the left. Since we do not have a connection created for Dataverse, you will see a warning message requesting you to configure the connection.
 
@@ -212,7 +214,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
     
     ![](../media/Lab_4.1_17.png)
  
-2. Connect to data source dialog opens. In the **Connection dropdown** make sure, **Create new connection** is **selected**.
+2. Connect to data source dialog opens. In the **Connection dropdown** make sure, that **Create new connection** is **selected**.
 
 3. **Authentication kind** should be **Organizational Account**.
 
@@ -242,7 +244,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 6. Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
 
-7. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_username**
+7. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_username**.
 
 8. Select **lh_FAIAD**
 
@@ -288,7 +290,9 @@ Connection is established and you can view the data in the preview panel. Feel f
  
     You will be navigated to the **Dataflow page**. Now that we are familiar with Dataflow, let’s go ahead and copy the queries from Power BI Desktop into Dataflow.
 
-7. If you have not already opened it, open the **FAIAD.pbix** located in the **C:\FAIAD\Reports** folder of your lab environment. 
+7. If you have not already opened it, open the **FAIAD.pbix** located in the **Report** folder on the **Desktop** of your lab environment. The file will open in Power BI Desktop.
+
+      ![Picture2FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/ce64a7c3-6bb5-45d0-8ced-fc923145805c)
 
 8. From the ribbon select **Home -> Transform data**. The power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by the data source.
 
@@ -306,7 +310,7 @@ Connection is established and you can view the data in the preview panel. Feel f
     >
     > **Note**: Notice the query pasted and is available in the left panel. Since we do not have a connection created to SharePoint, you will see a warning message requesting you to configure the connection.
 
-## Task 10: Create SharePoint connection
+## Task 10: Create a SharePoint connection
 
 1. Select **Configure connection**.
  
@@ -344,9 +348,9 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 7. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_username**. 
 
-8. Select **lh_FAIAD**
+8. Select **lh_FAIAD**.
 
-9. Leave the table name as **People**
+9. Leave the table name as **People**.
 
 10. Select **Next**.
 
@@ -358,7 +362,7 @@ Connection is established and you can view the data in the preview panel. Feel f
  
 ## Task 12: Publish and Rename SharePoint Dataflow
 
-1. You will be navigated back to the **Power Query window**. Notice on the bottom **right corner**, Data destination is set to **Lakehouse**.
+1. You will be navigated back to the **Power Query window**. Notice on the bottom **right corner** that the Data destination is set to **Lakehouse**.
 
 2. On the bottom right corner, select **Publish**.
 
