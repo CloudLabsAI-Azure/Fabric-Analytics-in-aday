@@ -124,7 +124,9 @@ Let’s create a new report using a blank canvas.
 
     ![](../media/Lab_7.11.png)
  
-6. If you have not already opened it, open the **FAIAD.pbix** located in the **C:\FAIAD\Reports** folder of your lab environment. 
+6. If you have not already opened it, open the **FAIAD.pbix** located in the **Report** folder on the **Desktop** of your lab environment. The file will open in Power BI Desktop.
+
+      ![Picture2FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/ce64a7c3-6bb5-45d0-8ced-fc923145805c) 
 
     We are going to use this report as a reference. We will start by adding the canvas background. We will create the report header, add a couple of KPIs, and create the Sales over a line chart. In the interest of time and with the understanding that you have experience with building visuals in Power BI Desktop, we will not be creating all the visuals. 
 
@@ -138,13 +140,13 @@ Let’s create a new report using a blank canvas.
 
 10. Select **Browse** from **Image** option. File explorer dialog opens.
 
-11. Navigate to **C:\FAIAD\Reports** folder of your lab environment. 
+11. Navigate to **Desktop** of your lab environment and open the **Report** folder
 
-12. Select **Summary Background.png**.
+13. Select **Summary Background.png**.
 
-13. Set **Image fit** dropdown to Fit.
+14. Set **Image fit** dropdown to Fit.
 
-14. Set Transparency to **0%**
+15. Set Transparency to **0%**
 
     ![](../media/Lab_7.13.png)
  
@@ -221,7 +223,9 @@ Let’s create a new report using a blank canvas.
     ![](../media/Lab_7.19.png)
  
 ### <a name="_toc152166240"></a>Task 5: Add Line chart to the report
+
 Let’s create a line chart to visualize Sales over time by Reseller Company.
+
 1. Select the **white space** in the canvas to take the focus off the multi-row card visual.
 
 2. From the **Visualizations section** select **Line chart**.
@@ -235,18 +239,18 @@ Let’s create a line chart to visualize Sales over time by Reseller Company.
 ### <a name="_toc152166241"></a>Task 6: Save the report
 
 Let’s save the report before we navigate away from the report to make changes to the model. 
+
 1. From the menu select **File -> Save**.
 
 2. Save your report dialog opens. Name the report as **rpt_Sales_Report**
 
     >**Note:** We are prefixing the report name with rpt which is short for the report.
 
-3. Make sure the report is saved in **FAIAD_username** workspace.
+3. Make sure the report is saved in the **FAIAD_username** workspace.
 
 4. Select **Save**.
 
     ![](../media/Lab_7.21.png)
-
 
 ### <a name="_toc152166242"></a>Task 7: Configure Year column in Date table
 
@@ -383,7 +387,7 @@ In a real scenario, data is updated at the source. Since we are in a training en
 
    ![](../media/Lab_7.34.png)
  
-10. Now, let’s append the May invoice data with the Invoice table. Select **Invoice** query from the Queries section.
+10. Now, let’s append the May invoice data to the Invoice table. Select the **Invoice** query from the Queries section.
 
 11. From the ribbon, select **Home -> Append** queries.
 
