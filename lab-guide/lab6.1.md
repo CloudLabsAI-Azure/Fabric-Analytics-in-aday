@@ -61,11 +61,11 @@ Notice on the left panel, you can view the Tables. If you expand the tables, you
 4. Paste the **below SQL query** into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
 
     ```
-    SELECT su.Supplier_Name, SUM(Quantity) as Units
+    SELECT su.SupplierName, SUM(Quantity) as Units
     FROM dbo.Sales s
     JOIN dbo.Product p on p.StockItemID = s.StockItemID
-    JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
-    GROUP BY su.Supplier_Name
+    JOIN dbo.Suppliers su on su.SupplierID = p.SupplierID
+    GROUP BY su.SupplierName
     ```
 
 5. Click **Run** to view the results.
@@ -152,7 +152,7 @@ You will be navigated back to the **SQL analytics endpoint view**. If you are no
 
     ![](../media/Lab_6.15.png)
  
-14. Merge dialog opens. From the **Right table for merge dropdown** select **Supplier**.
+14. Merge dialog opens. From the **Right table for merge dropdown** select **Suppliers**.
 
 15. Select **SupplierID** from both **Sales** and **Supplier** table. This is to merge the Supplier and Sales tables.
 
@@ -176,9 +176,9 @@ You will be navigated back to the **SQL analytics endpoint view**. If you are no
  
     ![](../media/Lab_6.18.png)
 
-23. From the **Group by** dropdown select **Supplier_Name**.
+23. From the **Group by** dropdown select **SupplierName**.
 
-24. Enter **Units** as the A screenshot of the merge query dialog.
+24. Enter **Units** in the **New column name**.
 
 25. Set **Operation** to **Sum**
 
@@ -225,7 +225,7 @@ Ok, now we are ready to build the model, build relationships between tables, and
 
 7. Make sure **Cross filter direction** is **Single**.
 
-8. Select **Ok**.
+8. Select **Save**.
  
     ![](../media/Lab_6.23.png)
 
@@ -239,11 +239,11 @@ Ok, now we are ready to build the model, build relationships between tables, and
 
 13. Make sure **Cross filter direction** is **Single**.
 
-14. Select **Ok**.
+14. Select **Save**.
 
     ![](../media/Lab_6.24.png)
  
-15. Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID** from the **Sales** table and **StockItemID** from the **Product** table.
+15. Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID** from the **Sales** table and drag it over to **StockItemID** in the **Product** table.
 
 16. From the top menu select **Reporting -> Automatically update semantic model** to save and update the model. 
 

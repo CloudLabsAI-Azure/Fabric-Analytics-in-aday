@@ -110,9 +110,9 @@ Let’s create a new report using a blank canvas.
 
 1. In the **left panel,** select your workspace name, **FAIAD_<username>** to be navigated to the workspace.
 
-   ![](../media/Lab_7.9.png)
-
 2. From the top menu, select **New -> Report**. You will be navigated to build your first report page.
+
+    ![](../media/Lab_7.9.png)
  
 3. Select **Pick a published semantic model,** so we can pick the model we have created.
 
@@ -427,12 +427,13 @@ Once you are ready to clean up the lab environment, follow the steps below.
 
    ![](../media/Lab_7.38.png)
  
-3. Workspace settings dialog opens. Select **Other** from the left menu.
+3. Workspace settings dialog opens. Select **General** from the left menu.
 4. Select **Remove this workspace**.
+
+    ![](../media/Lab_7.39-1.png)
+
 5. Delete workspace dialog opens. Select **Delete**.
 This will delete the workspace and all the items that were contained in the workspace.
-
-   ![](../media/Lab_7.39.png)
  
 # <a name="_toc150777627"></a><a name="_toc150779083"></a><a name="_toc152166247"></a>References
 
