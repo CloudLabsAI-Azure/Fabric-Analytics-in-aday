@@ -42,7 +42,7 @@ By the end of this lab, you will have learned:
 
 ## Task 1: Query data using SQL
 
-1. Let’s navigate back to the Fabric workspace, **FAIAD_<username>** you created in Lab 2, Task 9.
+1. Let’s navigate back to the Fabric workspace, **FAIAD_username** you created in Lab 2, Task 9.
 
 2. You will see three types of lh_FAIAD – Lakehouse, Semantic model and SQL endpoint. We explored the Lakehouse option in an earlier lab. Select the **lh_FAIAD SQL analytics endpoint** option to explore the SQL option. You will be navigated to the **SQL view** of the explorer.
 
@@ -100,7 +100,7 @@ Notice on the left panel, you can view the Tables. If you expand the tables, you
  
 7. Save your report dialog opens. Type **Units by Supplier** in the **Enter a name for your report textbox**.
 
-8. Make sure the destination workspace is your Fabric workspace, **FAIAD<username>**
+8. Make sure the destination workspace is your Fabric workspace, **FAIAD_username**
 
 9. Select **Save**.
 
