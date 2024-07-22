@@ -218,7 +218,9 @@ We need to bring in State next, but the steps are getting repetitive. We already
 1. On the left panel select the **Queries** panel and enter **Ctrl+V** (currently right click Paste is not supported). If you are using **MAC device**, please use **Cmd+V** to paste.
 
    >**Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to enable **VM Native Clipboard**. Select OK in the dialog. Once done pasting the query you can disable this option.
-      
+   
+      ![A screenshot Dataflow queries](../media/22-07-2024.png)
+
       ![A screenshot Dataflow queries](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.025.png) 
 
       ![A screenshot Dataflow queries](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.025.png) 
@@ -408,6 +410,8 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 1. On the left panel under select **Queries** panel and enter **Ctrl+V** (currently right click Paste is not supported). If you are using **MAC device**, please use **Cmd+V** to paste.
 
    >**Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
+
+   ![A screenshot Dataflow queries](../media/22-07-2024.png)
    
    ![A screenshot copying queries to dataflow](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.046.png)
 
