@@ -94,7 +94,7 @@ You will be navigated to the **Dataflow page**. Now that we are familiar with Da
  
 ## Task 2: Create a connection to Snowflake
 
-Notice the five queries are pasted and now you have the Queries panel on the left. Since we do not have a connection created for Snowflake, you will see a warning message requesting you to configure the connection.
+Notice the five queries are pasted and now you have the Queries panel on the left. Since we do not have a connection created for Snowflake, you will see a warning message requesting that you configure the connection.
 
 1. Select **Configure connection**.
  
@@ -146,7 +146,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
     ![](../media/Lab_4.1_10.png)
  
-10. Choose destination settings dialog opens. This time around we will use the automatic settings as this will do a full update of the data. Also, it will rename the columns as needed. Select **Save settings**.
+10. Choose destination settings dialog opens. This time around we will use the automatic settings as this will do a full update of the data. Also, the columns will be renamed as needed. Select **Save settings**.
 
     ![](../media/Lab_4.1_11.png)
 
