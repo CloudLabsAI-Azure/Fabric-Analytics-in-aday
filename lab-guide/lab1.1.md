@@ -116,7 +116,7 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
 
 ### Task 3: Review Power Queries
-1. In the **Model view** Let’s look at Power Query to understand the data sources. From the ribbon select **Home -> Transform data**.
+1. In the **Model view**, Let’s look at Power Query to understand the data sources. From the ribbon select **Home -> Transform data**.
 
    # ![](../media/img14.png)
  
