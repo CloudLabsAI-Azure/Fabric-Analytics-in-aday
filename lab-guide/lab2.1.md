@@ -71,7 +71,7 @@ By the end of this lab, you will have learned:
 
     ![](../media/2-5.png)
 
-1. Select the **“X”** on the top right corner of the **Just one last step** dialog to close the dialog. We will not be providing these details as this is a lab environment.
+1. If **Just one last step** dialog box appears select the **“X”** on the top right corner to close the dialog. We will not be providing these details as this is a lab environment.
 
     ![](../media/2-6.png)
 
@@ -119,7 +119,7 @@ By the end of this lab, you will have learned:
     
     b. **Reflex sample:** Sample solution.
 
-     ![](../media/2-12.png)
+     ![](../media/fab1.png)
 
 ### Task 4: Industry Solutions Experience
 
@@ -131,13 +131,13 @@ By the end of this lab, you will have learned:
 
     b. **Retail solutions:** helps in managing large volumes of data, integrating data from various sources, and providing real-time analytics for prompt decision-making. Retailers can use these solutions for inventory optimization, customer segmentation, sales forecasting, dynamic pricing, and fraud detection.
 
-    ![](../media/2-13.png)
+    ![](../media/fab2.png)
 
 ### Task 5: Synapse Data Engineering Experience
 
 1. Select the **Fabric experience selector icon** (currently set to Industry Solutions) on the bottom left of your screen. Fabric experience dialog opens.
 
-2. Select **Data Engineering**. You will be navigated to the **Data Engineering Home page**. Again, the page contains three main sections. In the New section, notice the items: 
+2. Select **Data Engineering**. You will be navigated to the **Data Engineering Home page**. Again, the page contains three main sections. In the New section, notice the items, Click on **>** to view other items: 
    
    a. **Lakehouse:** Used to store big data for cleaning, querying, reporting, and sharing.
    
@@ -148,19 +148,20 @@ By the end of this lab, you will have learned:
    d. **Spark Job Definition:** Used to define, schedule, and manage Apache jobs.
    
    e. **Data pipeline:** Used to orchestrate data solution.
-   
-   f. **Import notebook:** Used to import notebooks from local machine.
-   
-   g. **Use a sample:** Sample solution.
 
-      ![](../media/2-14.png)
+   f. **API for GraphQL(Preview):** Used to create an API for GraphQL to easily connect your application to fabric data sources.
+   
+   g. **Import notebook:** Used to import notebooks from local machine.
+   
+      ![](../media/fab3.png)
+   
 
 ### Task 6: Synapse Data Science Experience
 
 1. Select the **Fabric experience selector icon** (currently set to Data Engineering) on the bottom left of your screen. Fabric experience dialog opens.
 
-2. Select **Data Science**. You will be navigated to the **Data Science Home page**. Again, there are three sections. In the New section, notice the items:
-    
+2. Select **Data Science**. You will be navigated to the **Data Science Home page**. Again, there are three sections. In the New section, notice the items. Click on **>** to view other items: 
+       
     a. **ML model:** Used to create machine learning models.
     
     b. **Experiment:** Used to create, run, and track the development of multiple models.
@@ -168,14 +169,15 @@ By the end of this lab, you will have learned:
     c. **Notebook**: Used to explore data and build machine learning solutions.
     
     d. **Environment**: Used to set up shared libraries, spark compute settings and resources for notebooks and spark job definitions.
-    
-    e. **Import Notebook:** Used to import notebooks from a local machine.
-    
-    f. **Sample:** Sample solution.
 
+    e. **AI Skill(Preview):** Used to create AI-powered workflows over your data, and connect these to Copilots and applications across Fabric.
+    
+    f. **Import Notebook:** Used to import notebooks from a local machine.
+    
+   
    >**Note**: Items like Notebook, Environment, Data pipeline, etc. are available in multiple experiences as they are relevant in each of these experiences.
 
-    # ![](../media/2-15.png)
+    # ![](../media/fab4.png)
 
 ### Task 7: Synapse Data Warehouse Experience
 
@@ -189,23 +191,23 @@ By the end of this lab, you will have learned:
 
       ![](../media/2-16.png)
 
-### Task 8: Real-Time Analytics Experience
+### Task 8: Real-Time Intelligence Experience
 
 1. Select the **Fabric experience selector icon** (currently set to Data Warehouse) on the bottom left of your screen. Fabric experience dialog opens.
 
-2. Select **Real-Time Analytics**. You will be navigated to the **Real-Time Analytics Home page**. Again, there are three sections. In the New section, notice the items:
+2. Select **Real-Time Intelligence**. You will be navigated to the **Real-Time Intelligence Home page**. Again, there are three sections. In the New section, notice the items. Click on **>** to view other items::
    
    a. **Eventhouse:** Used to create a workspace of the database, which can be shared across projects.
-   
-   b. **KQL Database:** Used to rapidly load structured, unstructured, and streaming data for querying.
-   
-   c. **KQL Queryset:** Used to run queries on the data to produce shareable tables and visuals.
-   
-   d. **Eventstream:** Used to capture, transform, and route real-time event stream.
-   
-   e. **Use a sample:** Used to create a sample.
+  
+   b. **KQL Queryset:** Used to run queries on the data to produce shareable tables and visuals.
 
-      ![](../media/2-17.png)
+   c. **Real-Time Dashboard:** Used to visualize key insights to share with your team
+   
+   c. **Eventstream:** Used to capture, transform, and route real-time event stream.
+
+   d. **Reflex(Preview):** Used to monitor datasets, queries, and event streams for patterns to trigger actions and alerts.
+   
+      ![](../media/fab5.png)
 
 # Fabric Workspace
 
@@ -239,7 +241,7 @@ By the end of this lab, you will have learned:
 
 ### Task 10: Create a Lakehouse
 
-1. Select the **Fabric experience selector icon** (currently set to Real-Time Analytics) on the bottom left of your screen. Fabric experience dialog opens.
+1. Select the **Fabric experience selector icon** (currently set to Real-Time Intelligence) on the bottom left of your screen. Fabric experience dialog opens.
 
 1. Select **Data Engineering** to be navigated to the Data Engineering Home page.
 
@@ -247,7 +249,7 @@ By the end of this lab, you will have learned:
     
 1. Select **Lakehouse**.
 
-    # ![](../media/2-22.png)
+    # ![](../media/fab6.png)
 
 1. New lakehouse dialog opens. Type **lh_FAIAD** in the Name textbox.
  
