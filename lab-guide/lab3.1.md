@@ -96,7 +96,7 @@ You will be navigated to the **Dataflow page**. This screen will look familiar a
 1. Select **Account Key** from the Authentication kind dropdown.
 1. Copy the **Adls storage account Access Key** from the **Environment Variables** tab (next to the Lab Guide tab) and paste it in the **Account key text box**.
 
-   ![A screenshot of Connect to data source](../media/new6.png)
+   ![A screenshot of Connect to data source](../media/fab7.png)
 
 1. Select **Next** on the bottom right of the screen.
 
@@ -113,7 +113,7 @@ You will be navigated to the **Dataflow page**. This screen will look familiar a
 
 1. **Uncheck Enable Staging** option.
 
-   ![A screenshot to disable Staging](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.011.png)
+   ![A screenshot to disable Staging](../media/fab8.png)
 
    Notice there are two file formats in the folder, **json** and **parquet**.
    
@@ -143,10 +143,10 @@ We need to combine City, State, and Country data from these three files to creat
 
    ![A screenshot to Reference ADLS Base folder](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.013.png)
 
-1. Select the **Folder Path column dropdown arrow**.
-1. Select **Text filters -> Contains...**
+1. Select the **Folder Path column dropdown arrow(1)**.
+1. Select **Text filters(2) -> Contains...(3)**.
 
-   ![A screenshot to filter Folder Path](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.014.png)
+   ![A screenshot to filter Folder Path](../media/fab9.png)
 
 1. In the **Filter rows** dialog enter **Application.Cities** 
    
@@ -154,11 +154,11 @@ We need to combine City, State, and Country data from these three files to creat
 
 1. Select **OK**.
 
-   ![A screenshot of Filter Rows dialog](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.015.png)
+   ![A screenshot of Filter Rows dialog](../media/fab10.png)
 
 1. Data will be filtered to a single row. Select **Binary** under the **Content** column.
 
-   ![Screenshot of ADLS Base Folder(2)](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.016.png)
+   ![Screenshot of ADLS Base Folder(2)](../media/fab11.png)
 
 1. Notice you will see all the City details. In the **right panel**, under **Query settings -> Properties -> Name**, change the name to **Cities**.
 
@@ -174,11 +174,11 @@ In the right panel, under **Applied steps** notice all the steps are registered.
 
    ![A screenshot to reference ADLS Base Folder](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.018.png)
 
-1. Select the **Folder Path column dropdown**.
+1. Select the **Folder Path column dropdown(1)**.
 
-1. Select **Text filters -> Contains...**
+1. Select **Text filters(2) -> Contains...(3)**
 
-   ![A screenshot to filter by Folder Path](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.019.png)
+   ![A screenshot to filter by Folder Path](../media/fab12.png)
 
 1. In the **Filter rows dialog** enter **Application.Countries** 
 
@@ -186,7 +186,7 @@ In the right panel, under **Applied steps** notice all the steps are registered.
 
 1. Select **OK**.
 
-   ![A screenshot of Filter rows dialog](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.020.png)
+   ![A screenshot of Filter rows dialog](../media/fab13.png)
 
 1. Data will be filtered to a single row. Select **Binary** under the **Content column**.
 
@@ -253,12 +253,12 @@ Now we need to merge these queries to create the Geo dimension. Let’s copy the
 1. From the left panel, under **Queries** select **Geo** query in ADLSData folder.
 1. From the ribbon select **Home -> Advanced Editor**.
 
-   ![A screenshot of Power Query window from Power BI Desktop](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.029.png)
+   ![A screenshot of Power Query window from Power BI Desktop](../media/fab14.png)
 
 1. Advanced Editor window open. **Highlight all the text** in Advanced Editor.
 1. **Right click** and select **Copy**.
 
-   ![A screen shot of Advanced Editor](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.030.png)
+   ![A screen shot of Advanced Editor](../media/fab15.png)
 
 1. Select **X** on the top right corner of the window or select **Done** to close the Advanced Editor window.
 1. Navigate back to the **Dataflow** window in the browser. 
@@ -299,9 +299,9 @@ Now we have a dimension, let’s ingest this data into Lakehouse. This is the ne
 
    ![A screenshot select Data Destination](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.035.png)
 
-1. Connect to data destination dialog opens. We need to create a new Connection to the Lakehouse. With **Create new connection** selected in the **Connection dropdown** and **Authentication kind** set to **Organizational account**, select **Next**.
+1. Connect to data destination dialog opens. We need to create a new Connection to the Lakehouse.From the Connection dropdown select **Lakehouse (none)** and then select **Next**.
 
-   ![A screenshot of Connect to data destination](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.036.png)
+   ![A screenshot of Connect to data destination](../media/Lab_4.1_9.png)
 
 1. Once the connection is created, the choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
 1. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_username**.

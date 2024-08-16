@@ -116,7 +116,7 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 
 
 ### Task 3: Review Power Queries
-1. Let’s look at Power Query to understand the data sources. From the ribbon select **Home -> Transform data**.
+1. In the **Model view**, Let’s look at Power Query to understand the data sources. From the ribbon select **Home -> Transform data**.
 
    # ![](../media/img14.png)
  
@@ -136,7 +136,7 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
  
 4. In the left Queries panel, notice the queries are grouped by data source. 
 5. Notice **DataverseData** folder has Customer data available in four different queries: BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create a Customer query.
-6. You can enter the credentials for the Dataverse data source by entering the **Username** and **Password** available in the **Environment Variables** tab (next to the Lab Guide). Please select the Microsoft account option.
+6. You can enter the credentials by Clicking on Enter credentials for the Dataverse data source by entering the **Username** and **Password** available in the **Environment Variables** tab (next to the Lab Guide). Please select the Microsoft account option.
 
    # ![](../media/img16.png)
  

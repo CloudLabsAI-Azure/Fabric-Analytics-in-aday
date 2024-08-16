@@ -292,27 +292,27 @@ Connection is established and you can view the data in the preview panel. Feel f
  
     You will be navigated to the **Dataflow page**. Now that we are familiar with Dataflow, let’s go ahead and copy the queries from Power BI Desktop into Dataflow.
 
-7. If you have not already opened it, open the **FAIAD.pbix** located in the **Report** folder on the **Desktop** of your lab environment. The file will open in Power BI Desktop.
+1. If you have not already opened it, open the **FAIAD.pbix** located in the **Report** folder on the **Desktop** of your lab environment. The file will open in Power BI Desktop.
 
       ![Picture2FAID](https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/assets/121504071/ce64a7c3-6bb5-45d0-8ced-fc923145805c)
 
-8. From the ribbon select **Home -> Transform data**. The power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by the data source.
+1. From the ribbon select **Home -> Transform data**. The power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by the data source.
 
-9. The Power Query window opens. From the left panel, under the SharepointData folder **select People** query.
+1. The Power Query window opens. From the left panel, under the SharepointData folder **select People** query.
 
-10. **Right click** and select **Copy**.
+1. **Right click** and select **Copy**.
   
     ![](../media/Lab_4.1_28.png)
 
-11. Navigate back to the **Dataflow screen** in the browser.
+1. Navigate back to the **Dataflow screen** in the browser.
 
-12.	In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported).
+1. In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported).
 
-   	> **Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
-    >
-    > **Note**: Notice the query pasted and is available in the left panel. Since we do not have a connection created to SharePoint, you will see a warning message requesting you to configure the connection.
+   > **Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
+   >
+   > **Note**: Notice the query pasted and is available in the left panel. Since we do not have a connection created to SharePoint, you will see a warning message requesting you to configure the connection.
     
-    ![](../media/Lab_4.1_4.png)
+   ![](../media/Lab_4.1_4.png)
 
 ## Task 10: Create a SharePoint connection
 

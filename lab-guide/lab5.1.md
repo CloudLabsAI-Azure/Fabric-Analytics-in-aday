@@ -170,13 +170,13 @@ Let’s start by configuring a scheduled refresh of Sales Dataflow.
 
     You are on the **Home** screen. If you look at the top menu, you will find options to add the commonly used activities: validate, run a pipeline, and view the run history. Also, in the center pane, you will find quick options to start building the pipeline.
 
-    ![](../media/Lab_5.13.png)
+    ![](../media/fab17.png)
  
 6. From the top menu select **Activities**. Now in the menu, you will find a list of commonly used Activities.
 
 7. Select the **ellipsis (…)** on the right of the menu to view all the other available Activities. We are going to use a few of these Activities in the lab.
 
-    ![](../media/Lab_5.14.png)
+    ![](../media/fab18.png)
  
 8. From the top menu click **Run**. You will find options to run and schedule the pipeline execution. You will also find the option to view execution history by using View Run History.
 
@@ -184,7 +184,7 @@ Let’s start by configuring a scheduled refresh of Sales Dataflow.
 
     **Note**: If you have a JSON background, at the end of the lab, feel free to select View JSON code. Here you will notice all the orchestration you are doing using the design view can also be written in JSON. 
 
-    ![](../media/Lab_5.15.png)
+    ![](../media/fab19.png)
  
 ## Task 4: Build simple Data Pipeline
 
