@@ -306,13 +306,13 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 1. Navigate back to the **Dataflow screen** in the browser.
 
-1.	In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported).
+1. In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported).
 
-   	> **Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
-    >
-    > **Note**: Notice the query pasted and is available in the left panel. Since we do not have a connection created to SharePoint, you will see a warning message requesting you to configure the connection.
+   > **Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
+   >
+   > **Note**: Notice the query pasted and is available in the left panel. Since we do not have a connection created to SharePoint, you will see a warning message requesting you to configure the connection.
     
-    ![](../media/Lab_4.1_4.png)
+   ![](../media/Lab_4.1_4.png)
 
 ## Task 10: Create a SharePoint connection
 
