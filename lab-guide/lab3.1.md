@@ -299,9 +299,9 @@ Now we have a dimension, let’s ingest this data into Lakehouse. This is the ne
 
    ![A screenshot select Data Destination](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.035.png)
 
-1. Connect to data destination dialog opens. We need to create a new Connection to the Lakehouse. With **Create new connection** selected in the **Connection dropdown** and **Authentication kind** set to **Organizational account**, select **Next**.
+1. Connect to data destination dialog opens. We need to create a new Connection to the Lakehouse.From the Connection dropdown select **Lakehouse (none)** and then select **Next**.
 
-   ![A screenshot of Connect to data destination](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.036.png)
+   ![A screenshot of Connect to data destination](../media/Lab_4.1_9.png)
 
 1. Once the connection is created, the choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
 1. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_username**.
