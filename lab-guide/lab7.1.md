@@ -94,7 +94,9 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 12. Select **Save**.
 
-    ![](../media/Lab_7.7.png)
+    ![](../media/fab24.png)
+
+    ![](../media/fab25.png)
  
     >**Note:** Auto-created report may look different for you as it is “auto-created”. It also depends on the relationships and measures you created in the previous lab (Lab 6). 
     
@@ -178,7 +180,7 @@ Let’s create a new report using a blank canvas.
 
 3. From the **Data section** expand **Sales table**.
 
-4. Select **Sales measure**.
+4. Select **Sales** measure.
 
     ![](../media/Lab_7.15.png)
  
@@ -250,11 +252,11 @@ Let’s save the report before we navigate away from the report to make changes 
 
 4. Select **Save**.
 
-    ![](../media/Lab_7.21.png)
+    ![](../media/fab28.png)
 
 ### <a name="_toc152166242"></a>Task 7: Configure Year column in Date table
 
-1. From the **left menu bar,** select **lh_FAIAD** to navigate to the lakehouse.
+1. Navigate to your workspace **FAIAD_username**, select **lh_FAIAD (SQL analytics endpoint)** to navigate to the lakehouse.
 
 2. From the left Explorer pane, expand **lhFAIAD -> Schemas -> dbo -> Tables -> Date**.
 
