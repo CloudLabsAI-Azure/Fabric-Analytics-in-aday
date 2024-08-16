@@ -61,11 +61,11 @@ Notice on the left panel, you can view the Tables. If you expand the tables, you
 4. Paste the **below SQL query** into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
 
     ```
-    SELECT su.SupplierName, SUM(Quantity) as Units
+    SELECT su.Supplier_Name, SUM(Quantity) as Units
     FROM dbo.Sales s
     JOIN dbo.Product p on p.StockItemID = s.StockItemID
-    JOIN dbo.Suppliers su on su.SupplierID = p.SupplierID
-    GROUP BY su.SupplierName
+    JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+    GROUP BY su.Supplier_Name
     ```
 
 5. Click **Run** to view the results.
@@ -88,7 +88,7 @@ Notice on the left panel, you can view the Tables. If you expand the tables, you
 
 4. From the **Visualization** section, change the visual type by selecting the **Stacked column chart**.
 
-    ![](../media/Lab_6.6.png)
+    ![](../media/fab20.png)
  
 5. **Expand Matrix** to view the data as a matrix. 
 
@@ -96,7 +96,7 @@ Notice on the left panel, you can view the Tables. If you expand the tables, you
  
 6. Select **Save - > Save as report** on the top right of the screen.
 
-    ![](../media/Lab_6.8.png)
+    ![](../media/fab21.png)
  
 7. Save your report dialog opens. Type **Units by Supplier** in the **Enter a name for your report textbox**.
 
@@ -104,13 +104,13 @@ Notice on the left panel, you can view the Tables. If you expand the tables, you
 
 9. Select **Save**.
 
-    ![](../media/Lab_6.9.png)
+    ![](../media/fab22.png)
    
     You will be navigated to the full report experience. You have options to format the visuals. We will look at these options in the next lab.
 
-10. From the left panel, select **lh_FAIAD**.
+10. From the left panel, select **Units by Supplier**.
 
-    ![](../media/Lab_6.10.png)
+    ![](../media/fab29.png)
  
 ## Task 3: Create Visual query
 
@@ -176,7 +176,7 @@ You will be navigated back to the **SQL analytics endpoint view**. If you are no
  
     ![](../media/Lab_6.18.png)
 
-23. From the **Group by** dropdown select **SupplierName**.
+23. From the **Group by** dropdown select **Supplier_Name**.
 
 24. Enter **Units** in the **New column name**.
 
