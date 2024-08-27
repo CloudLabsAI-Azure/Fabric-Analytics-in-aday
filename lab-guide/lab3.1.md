@@ -218,7 +218,7 @@ We need to bring in State next, but the steps are getting repetitive. We already
 
 1. Select the **States** query.
 1. From the **right panel**, under **Applied** **steps**, select **Source**.
-1. In the formula bar, change from **#"ADLS Base Folder (2)"** to **#"ADLS Base Folder"**
+1. In the formula bar, change from **#"ADLS Base Folder"** to **#"ADLS Base Folder for Geo"**
 
    ![A screenshot of States query Source step](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.026.png) 
 
