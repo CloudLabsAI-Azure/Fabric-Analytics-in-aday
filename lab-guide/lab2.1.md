@@ -174,10 +174,9 @@ By the end of this lab, you will have learned:
     
     f. **Import Notebook:** Used to import notebooks from a local machine.
     
-   
    >**Note**: Items like Notebook, Environment, Data pipeline, etc. are available in multiple experiences as they are relevant in each of these experiences.
 
-    # ![](../media/fab4.png)
+     ![](../media/fab4.png)
 
 ### Task 7: Synapse Data Warehouse Experience
 
@@ -217,7 +216,7 @@ By the end of this lab, you will have learned:
 
 1. Select **+ New workspace**.
 
-    # ![](../media/2-18.png)
+     ![](../media/2-18.png)
 
 1. **Create a workspace** dialog opens on the right side of the browser.
    
@@ -229,15 +228,15 @@ By the end of this lab, you will have learned:
 
 1. Click on **Advanced** to expand the section.
 
-    # ![](../media/2-19.png)
+    ![](../media/2-19.png)
 
 1. Under **License mode**, make sure **Trial** is selected. (It should be selected by default.)
 
 1. Select **Apply** to create a new workspace.
 
-   # ![](../media/2-20.png)
+    ![](../media/2-20.png)
 
-    A new workspace is created, and you will be navigated into this workspace. We will bring data from the different data sources into Lakehouse and use the data from the Lakehouse to build our model and report on it. The first step is to create a Lakehouse.
+    A new workspace has been created, and you will be able to navigate into this workspace. We will bring data from the different data sources into Lakehouse and use the data from the Lakehouse to build our model and report on it. The first step is to create a Lakehouse.
 
 ### Task 10: Create a Lakehouse
 
@@ -245,11 +244,11 @@ By the end of this lab, you will have learned:
 
 1. Select **Data Engineering** to be navigated to the Data Engineering Home page.
 
-    # ![](../media/2-21.png)
+    ![](../media/2-21.png)
     
 1. Select **Lakehouse**.
 
-    # ![](../media/fab6.png)
+    ![](../media/fab6.png)
 
 1. New lakehouse dialog opens. Type **lh_FAIAD** in the Name textbox.
  
@@ -257,13 +256,15 @@ By the end of this lab, you will have learned:
     
 1. Select **Create**.
 
-   # ![](../media/2-23.png)
+    ![](../media/28-08-2024(4).png)
+
+   >**Note:** Ensure that the "Lakehouse schemas (Public Preview)" checkbox is not selected.
 
       Within a few moments, a Lakehouse is created, and you will be navigated to the Lakehouse interface. On the **left panel**, notice that below your workspace, you will have the Lakehouse icon. You can easily navigate to the Lakehouse by clicking on this icon at any time.
 
       Within the Lakehouse Explorer, you will notice **Tables** and **Files**. Lakehouse could expose Azure Data Lake Storage Gen2 files under the files section, or a dataflow could load data to Lakehouse tables. There are various options available. We are going to show you some of the options in the following labs.
 
-    # ![](../media/2-24.png)
+      ![](../media/2-24.png)
 
       In this lab, we explored the Fabric interface and created a Fabric workspace and a Lakehouse. In the next lab, we will learn how to use Dataflow Gen2 to connect to ADLS Gen2 to extract, transform, and ingest data into the Lakehouse.
 
