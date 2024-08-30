@@ -74,7 +74,7 @@ You will be navigated to the **Dataflow page**. This screen will look familiar a
 
    ![A screenshot of Dataflow screen to select Get Data](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.004.png)
 
-1. You will be navigated to the **Get data Choose data source** dialog. You can search for the data source by typing in the search box. Notice, on the left panel, there are options to use a Blank table or Blank query. You will also find a new option to Upload files. We will explore this option in a later lab. For now, let’s click on **View more ->** on the right corner of your screen. 
+1. You'll be directed to the  **Get data Choose data source** dialog where you can search for your data source using the search box. On the left panel, you'll see options for **Blank table**, **Blank query**, and **Upload files** (to be explored in a later lab). For now, click **View more ->** in the top-right corner of the screen.
 
    ![A screenshot of Choose data source](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.005.png)
 
@@ -162,9 +162,13 @@ We need to combine City, State, and Country data from these three files to creat
 
 1. Notice you will see all the City details. In the **right panel**, under **Query settings -> Properties -> Name**, change the name to **Cities**.
 
-    >**Note:** In the bottom right corner of the screenshot please make sure the query has four steps and wait for the query to finish loading. It may take a few minutes.
+>**Note:** In the bottom right corner of the screenshot please make sure the query has four steps and wait for the query to finish loading. It may take a few minutes.
    
-      ![A screenshot to Rename query](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.017.png)
+  ![A screenshot to Rename query](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.017.png)
+
+>**Note:** If you can't see the source, click the arrow next to **Properties** to make it visible.
+
+  ![A screenshot to Rename query](../media/source-1.png)
 
 In the right panel, under **Applied steps** notice all the steps are registered. This behavior is like Power Query. Now let’s follow a similar process to create a **Country** query.
 
