@@ -1,7 +1,4 @@
-
-
-# Microsoft Fabric - Fabric Analyst in a Day - Lab 1
-
+![](../media/lab-01/main1.png)
 
 # Contents
 - Document Structure
@@ -33,7 +30,7 @@ In order to draw valuable insights from the data, you pull data from multiple sy
 
 - **Employee Data:** comes from the HR system; it is stored as an export file in a SharePoint folder. It gets updated every morning at 9 AM.
 
-    ![](../media/lab-01/lab-01/image006.jpg)
+    ![](../media/lab-01/image006.jpg)
 
 You are currently building a dataset on Power BI Premium that pulls the data from the above source systems to satisfy your reporting needs as well as provide end users with the ability to self-serve. You use Power Query to update your model.
 
