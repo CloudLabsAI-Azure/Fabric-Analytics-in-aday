@@ -1,3 +1,4 @@
+![](../media/lab-02/main2.png)
 
 # Contents
 
