@@ -33,7 +33,7 @@ In order to draw valuable insights from the data, you pull data from multiple sy
 
 - **Employee Data:** comes from the HR system; it is stored as an export file in a SharePoint folder. It gets updated every morning at 9 AM.
 
-    
+    ![](../media/image006.jpg)
 
 You are currently building a dataset on Power BI Premium that pulls the data from the above source systems to satisfy your reporting needs as well as provide end users with the ability to self-serve. You use Power Query to update your model.
 
@@ -53,19 +53,25 @@ Before we start with Fabric, let’s look at the current Report in Power BI Desk
 
 ## Task 1: Set up Power BI Desktop in lab environment
 1.	Open the **FAIAD.pbix** located in **Reports** folder on the **desktop** of your lab environment. The file will open in Power BI Desktop.
- 
+
+    ![](../media/image009.png)
  
 2.	Enter your email address dialog opens. Navigate to **Environment Details** tab on the right panel in the lab environment.
 3.	Copy the **Username** and paste it in the **Email** textbox of the dialog.
 4.	Select **Continue**.
 
+    ![](../media/image012.png)
+
 5.	Sign in dialog opens. Reenter the **Username** by copying it from the **Environment Details** tab.
 6.	Select **Next**.
 7.	In the next dialog, enter the **Password Credentials** by copying it from the **Environment Details** tab.
 8.	Select **Sign in**.
- 
+
+    ![](../media/image015.jpg)
  
 9.	**Stay Signed in to all your apps** dialog opens. Select **OK**.
+
+    ![](../media/image018.jpg)
 
 10.	**You’re all set!** dialog opens. Select **Done**.
  
@@ -73,28 +79,37 @@ Power BI Desktop will now open.
 
 ## Task 2: Analyze Power BI Desktop Report
 The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of the page. The remaining visuals highlight Sales over time, by Territory, Product Group, and Reseller Company.
- 
+
+![](../media/image021.jpg)
  
 **Note:** In this training, we are focusing on data acquisition, transformation, and modeling using tools
 available in Fabric. We will not be focusing on report development or navigation. Let’s spend a couple of minutes understanding the report and move to the next steps.
 
 1.	Let’s analyze data by Sales Territory. Select **New England from the Sales Territory** (Scatter plot) visual. Notice from the Sales over time, Reseller Tailspin Toys has more sales compared to Wingtip Toys in New England. If you look at the Sales YoY% column chart you will notice that Wingtip Toys sales growth has been low and declining quarter over quarter during the past year. After a small rebound in Q3 it went down again in Q4.
- 
+
+    ![](../media/image024.jpg)
  
 2.	Let’s compare this to the Rocky Mountain territory. Select **Rocky Mountain from Sales Territory**
 (Scatter plot) visual. Notice in the Sales YoY% column chart, sales for Wingtip Toys has increased dramatically in 2023 Q4 after being low for the previous two quarters.
+
+    ![](../media/image027.jpg)
 
 3.	Select **Rocky Mountain from Sales Territory** to remove the filter.
  
 4.	From the Scatter plot visual on the bottom center of the screen (Sales Orders by Sales) select the outlier on the top right (4th quadrant). Notice the margin % is 52%, which is above the average of 50%. Also, the Sales YoY% has gone up the last two quarters of 2023.
 
+    ![](../media/image030.jpg)
+
 5.	Select the outlier Reseller in the Scatter plot visual to **remove the filter**.
 6.	Let’s get the Product details by Product Group and Reseller. From the Sales by Product Group and Reseller Company bar chart visual, **right click on the Packaging Materials bar for Tailspin Toys** and from the dialog select **Drill through -> Product Detail**.
+
+    ![](../media/image033.jpg)
  
- 
-You will be navigated to the page which provides the Product Details. Notice there are some future orders in place as well.
+    You will be navigated to the page which provides the Product Details. Notice there are some future orders in place as well.
 
 7.	Once you are done reviewing this page, select the **Ctrl+back arrow** on the top right of the page to be navigated back to the Sales Report.
+
+    ![](../media/image036.jpg)
 
 8.	Feel free to further analyze the report. Once ready let’s look at the model view. From the left panel, select **Model view icon**. Notice there are two fact tables, Sales and PO.
  
@@ -112,6 +127,8 @@ You will be navigated to the page which provides the Product Details. Notice the
 ## Task 3: Review Power Queries
 1.	Let’s look at Power Query to understand the data sources. From the ribbon select **Home -> Transform data**.
 
+    ![](../media/image039.jpg)
+
 2.	Power Query window opens. From the ribbon, select **Home -> Data source settings**. Data source settings dialog opens. As you scroll through the list you will notice there are four data sources as mentioned in the problem statement:
 
     a. Snowflake
@@ -124,11 +141,13 @@ You will be navigated to the page which provides the Product Details. Notice the
 
 3.	Select **Close** to close the Data source settings dialog.
  
+    ![](../media/image042.jpg)
  
 4.	In the left Queries panel, notice the queries are grouped by data source.
 5.	Notice **DataverseData** folder has Customer data available in four different queries: BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create Customer query.
 6.	You can enter the credentials for the Dataverse data source by entering the **Username** and **Password** available in the **Environment Variables** tab (next to the Lab Guide). Please select Microsoft account option.
- 
+
+    ![](../media/image045.png)
  
 7.	For ADLS data source, use the **Account Key** option and enter the **Adls storage account Access key** that is available in the **Environment Variables** tab (next to the Lab Guide).
 8.	Notice the **ADLSData** folder has multiple dimensions: Geo, Product, Reseller, and Date. It also has Sales fact.
@@ -150,7 +169,9 @@ You will be navigated to the page which provides the Product Details. Notice the
 
 11.	For the SharePoint data source, enter the **Username** and **Password** available in **Environment Variables** tab (next to Lab guide). Please select Microsoft account option.
  
-12.	Notice the SharepointData folder has People dimension.
+12.	Notice the **SharepointData** folder has People dimension.
+
+    ![](../media/image048.png)
 
 Now we know what we are dealing with. In the following labs, we will create a similar Power Query using Dataflow Gen2 and model using Lakehouse.
 
@@ -158,7 +179,7 @@ Now we know what we are dealing with. In the following labs, we will create a si
 # References
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
 
-
+![](../media/image051.png)
  
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
