@@ -2,39 +2,39 @@
 
 ## Contents
 
-* Introduction 3
+* Introduction 
 
-* Dataflow Gen2 3
+* Dataflow Gen2 
 
-    * Task 1: Configure scheduled refresh for Supplier Dataflow 3
+    * Task 1: Configure scheduled refresh for Supplier Dataflow 
 
 * Data Pipeline 7
 
-    * Task 2: Create Data Pipeline 7
+    * Task 2: Create Data Pipeline 
 
-    * Task 3: Build simple Data Pipeline 10
+    * Task 3: Build simple Data Pipeline 
 
-    * Task 4: Create new Data Pipeline 12
+    * Task 4: Create new Data Pipeline 
 
-    * Task 5: Create Until Activity 12
+    * Task 5: Create Until Activity 
 
-    * Task 6: Create Variables 13
+    * Task 6: Create Variables 
 
-    * Task 7: Configure Until Activity 15
+    * Task 7: Configure Until Activity 
 
-    * Task 8: Configure Dataflow Activity 21
+    * Task 8: Configure Dataflow Activity 
 
-    * Task 9: Configure 1st Set variable Activity 22
+    * Task 9: Configure 1st Set variable Activity 
 
-    * Task 10: Configure 2nd Set variable Activity 24
+    * Task 10: Configure 2nd Set variable Activity 
 
-    * Task 11: Configure 3rd Set variable Activity 26
+    * Task 11: Configure 3rd Set variable Activity 
 
-    * Task 12: Configure Wait Activity 28
+    * Task 12: Configure Wait Activity 
 
-    * Task 13: Configure Schedule Refresh for Data Pipeline 31
+    * Task 13: Configure Schedule Refresh for Data Pipeline 
 
-* References 32
+* References 
 
 # Introduction
 
@@ -168,13 +168,13 @@ You are on the **Home** screen. If you look at the top menu, you will find optio
 
 Let's start building the pipeline. We need an activity to refresh the Dataflow. Let's find an activity which we can use.
 
-1. From the top menu select **Activities -\Dataflow**. Dataflow activity is added to the center design pane. Notice the bottom pane now has configuration options of the Dataflow activity.
+1. From the top menu select **Activities ->Dataflow**. Dataflow activity is added to the center design pane. Notice the bottom pane now has configuration options of the Dataflow activity.
 
 2. We are going to configure the activity to connect to df_People_SharePoint activity. From the **bottom pane**, select **Settings**.
 
 3. Make sure **Workspace** is set to your Fabric workspace, **FAIAD\_\<username\>.**
 
-4. From the **Dataflow dropdown** select **df_People_SharePoint**. When this Dataflow activity is executed, it is going to refresh **df_People_SharePoint.** That was easy, right? ●•\^-
+4. From the **Dataflow dropdown** select **df_People_SharePoint**. When this Dataflow activity is executed, it is going to refresh **df_People_SharePoint.** That was easy, right?
 
 In our scenario, Employee Data is not updated on schedule. Sometimes there is a delay. Let's see if we can accommodate this.
 
@@ -368,7 +368,7 @@ We need to write an expression which would execute until either the value of **v
 
    ![](../media/lab-05/image31.png)
 
-3. From the top menu, select **Activities -\Dataflow**. Dataflow activity is added to the design pane.
+3. From the top menu, select **Activities ->Dataflow**. Dataflow activity is added to the design pane.
 
 4. With **Dataflow activity selected**, in the bottom pane select **General**. Let's give the activity a name and description.
 
@@ -386,7 +386,7 @@ We need to write an expression which would execute until either the value of **v
 
    ![](../media/lab-05/image33.png)
 
-## Task 9: Configure 1^st^ Set variable Activity
+## Task 9: Configure 1st Set variable Activity
 
 We have configured the Dataflow activity like we did earlier in the lab. Now we will add new logic. If the dataflow refresh is successful, we need to exit out of the Until iterator. Remember one of the conditions to exit the iterator is to set the value of varIsSuccess variable to Yes.
 
@@ -434,7 +434,7 @@ Now we need to set the counter if the dataflow activity fails. In Data Pipeline,
 
 ## Task 10: Configure 2nd Set variable Activity 
 
-1. From the top menu, select **Activities -\Set variable**. Set variable activity is added to the design canvas.
+1. From the top menu, select **Activities ->Set variable**. Set variable activity is added to the design canvas.
 
 2. With **Set variable activity** selected, in the bottom pane select **General**. Let's give the activity a name and description.
 
@@ -464,7 +464,7 @@ Now we need to set the value of varCounter variable to the value of varTempCount
 
 ## Task 11: Configure 3rd Set variable Activity 
 
-1. From the top menu, select **Activities -\Set variable**. Set variable activity is added to the design canvas.
+1. From the top menu, select **Activities ->Set variable**. Set variable activity is added to the design canvas.
 
 2. With **Set variable activity** selected, in the bottom pane select **General**. Let's give the activity a name and description.
 
@@ -494,7 +494,7 @@ Now we need to set the value of varCounter variable to the value of varTempCount
 
 Next, we need to wait for 5 minutes/300 seconds if dataflow refresh fails the first time before trying again. If the dataflow refresh fails for the second time, we need to wait 15 minutes/900 seconds and try again. We are going to use Wait activity and variable varWaitTime to set the wait time.
 
-1. From the top menu, select **Activities -\ellipsis (...) -\Wait**. Wait activity is added to the design canvas.
+1. From the top menu, select **Activities ->ellipsis (...) -\Wait**. Wait activity is added to the design canvas.
 
 2. With **Wait activity** selected, in the bottom pane select **General**. Let's give the activity a name and description.
 
@@ -552,11 +552,11 @@ The expression is a nested if statement. It is checking if the value of varCount
 
 ## Task 13: Configure Schedule Refresh for Data Pipeline 
 
-1. We can test the data pipeline, by selecting **Home -\Run.**
+1. We can test the data pipeline, by selecting **Home ->Run.**
 
 **Note:** It may take a few minutes for the data pipeline to complete refresh. This is a training environment, so the file in SharePoint is always available. Hence, your data pipeline will never fail.
 
-2. We can set the data pipeline to execute on a schedule. From the top menu, select **Home -\Schedule**. Schedule dialog opens.
+2. We can set the data pipeline to execute on a schedule. From the top menu, select **Home ->Schedule**. Schedule dialog opens.
 
 3. Set **Scheduled run** radio button to **On**.
 
