@@ -5,17 +5,17 @@
 
 - Shortcut to ADLS Gen2
 
-    - Task 1: Create Shortcut
+  - Task 1: Create Shortcut
 
 - Transform data using Visual Query
     
-    - Task 2: Create Geo view using Visual Query
+  - Task 2: Create Geo view using Visual Query
     
-    - Task 3: Create Reseller view using Visual Query
+  - Task 3: Create Reseller view using Visual Query
     
-    - Task 4: Create Sales view using Visual query
+  - Task 4: Create Sales view using Visual query
     
-    - Task 5: Create Product view using Visual query
+  - Task 5: Create Product view using Visual query
 
 - References
 
