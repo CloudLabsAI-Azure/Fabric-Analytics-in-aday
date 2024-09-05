@@ -167,7 +167,7 @@ You will navigate to the new semantic model with the selected tables. Feel free 
 
    ![](../media/lab-06/image018.png)
 
-The first step is to create relationships between these tables.
+   The first step is to create relationships between these tables.
 
 1. Let’s create a relationship between Sales and Reseller tables. Select **ResellerID** from the **Sales** table and drag it over to **ResellerID** in the **Reseller** table.
 

@@ -112,7 +112,7 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
 
 13. Set **Time Zone** to your preferred time zone.
 
-**Note**: Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
+   **Note**: Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
 
 14. Click **Add another time** link. Notice **Time** option is displayed.
 
@@ -120,11 +120,11 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
 
 16. Select **Apply** to save this setting.
 
-   **Note:** By clicking on Add another time link, you can add multiple refresh times. You can also send failure notifications to the dataflow owner and other contacts.
+    **Note:** By clicking on Add another time link, you can add multiple refresh times. You can also send failure notifications to the dataflow owner and other contacts.
 
-   ![](../media/lab-05/image10.png) 
+    ![](../media/lab-05/image10.png) 
 
-   As mentioned earlier, we need to build a custom logic to handle the scenario where the Employee file in SharePoint is not delivered on time. Let's use Data Pipeline to solve this.
+    As mentioned earlier, we need to build a custom logic to handle the scenario where the Employee file in SharePoint is not delivered on time. Let's use Data Pipeline to solve this.
 
 # Data Pipeline
 

@@ -205,8 +205,8 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
     ![](../media/lab-04/image060.png)
  
 5. Choose destination target dialog opens. Make sure the **New table radio button** is **selected**, since we are creating a new table.
-6. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to
-**Lakehouse -> FAIAD_<username>**.
+6. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<username>**.
+
 7. Select **lh_FAIAD**
 8. Leave the table name as **Supplier**
 9. Select **Next**.
