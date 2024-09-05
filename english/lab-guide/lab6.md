@@ -1,4 +1,4 @@
-   ![](../media/lab-07/image003.png)
+   ![](../media/lab-06/image003.png)
 
 # Contents
 
@@ -43,7 +43,7 @@ By the end of this lab, you will have learned:
    
 3. You will see three types of lh\_FAIAD – Lakehouse, Semantic model and SQL endpoint. We explored Lakehouse and created visual queries using SQL analytics endpoint in an earlier lab. Select **lh\_FAIAD SQL analytics endpoint** option to continue to explore this option. You will be navigated to the **SQL view** of the explorer.
 
-   ![](../media/lab-07/image007.png)
+   ![](../media/lab-06/image007.png)
 
 If you would like to explore the data before creating a data model, you can use SQL to do so. There are two options to use SQL. Option one is visual query, which we used in the earlier lab. Option 2 is writing TSQL code. This is a developer friendly option. Let’s explore this.
 
@@ -55,7 +55,7 @@ Views, Functions, and Stored Procedures. If you have a SQL background, feel free
 
 4. From the **top menu** select **New SQL query** or from the **bottom of the left panel** select **Query**. You will be navigated to SQL query view.
 
-   ![](../media/lab-07/image008.png)
+   ![](../media/lab-06/image008.png)
 
 5. Paste the **below SQL query** into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
 
@@ -75,7 +75,7 @@ Views, Functions, and Stored Procedures. If you have a SQL background, feel free
 
 **Note**: Visual queries you had created in earlier labs are also available under My queries folder.
 
-   ![](../media/lab-07/image009.png)
+   ![](../media/lab-06/image009.png)
 
 ## Task 2: Visualize T-SQL result
 
@@ -83,7 +83,7 @@ Views, Functions, and Stored Procedures. If you have a SQL background, feel free
    
 2. In the Results pane menu, select **Explore this data (preview) -> Visualize results**.
 
-   ![](../media/lab-07/image010.png)
+   ![](../media/lab-06/image010.png)
 
 3. **Visualize results** dialog opens. Select **Continue**.
 
@@ -93,13 +93,13 @@ Views, Functions, and Stored Procedures. If you have a SQL background, feel free
    
 5. Select **Supplier\_Name** and **Units fields**. Table visual is created.
 
-   ![](../media/lab-07/image011.png)
+   ![](../media/lab-06/image011.png)
 
 6. From the **Visualization** section, change the visual type by selecting the **Stacked column chart**.
    
 7. Select **Save as report** on the bottom right of the screen.
 
-   ![](../media/lab-07/image012.png)
+   ![](../media/lab-06/image012.png)
 
 8. Save your report dialog opens. Type **Units by Supplier** in the **Enter a name for your report textbox**.
    
@@ -107,7 +107,7 @@ Views, Functions, and Stored Procedures. If you have a SQL background, feel free
    
 10. Select **Save.**
 
-     ![](../media/lab-07/image013.png)
+     ![](../media/lab-06/image013.png)
 
 You will be navigated to back to the SQL query screen.
 
@@ -117,7 +117,7 @@ You will be navigated to back to the SQL query screen.
 
 1. From the **bottom panel** select **Model**. You will notice the center pane looks like the Model view we see in Power BI Desktop.
 
-   ![](../media/lab-07/image014.png)
+   ![](../media/lab-06/image014.png)
 
 This is the default model the Lakehouse creates. However, there are some limitations with the default model (like ability to format measures, etc). Also, we need only a subset of the tables in our model. So we will create a new semantic model.
 
@@ -125,7 +125,7 @@ This is the default model the Lakehouse creates. However, there are some limitat
    
 3. Select **Lakehouse** to be navigated to the Lakehouse view.
 
-   ![](../media/lab-07/image015.png)
+   ![](../media/lab-06/image015.png)
 
 4. From the menu select **Home -> New semantic model.**
    
@@ -133,7 +133,7 @@ This is the default model the Lakehouse creates. However, there are some limitat
    
 6. We have the option to select a subset of the tables by default. Remember, we created views in the earlier lab. We want to include these views in the model. **Click** on the **icon** in the **Search bar** and select **Show views**. Now we have the option to view and select views.
 
-   ![](../media/lab-07/image016.png)
+   ![](../media/lab-06/image016.png)
 
 7. **Select** the following tables/views:
    
@@ -157,7 +157,7 @@ This is the default model the Lakehouse creates. However, there are some limitat
 
 9. Select **Confirm.**
 
-   ![](../media/lab-07/image017.png)
+   ![](../media/lab-06/image017.png)
 
 ## Task 4: Create Relationships
 
@@ -165,13 +165,13 @@ You will navigate to the new semantic model with the selected tables. Feel free 
 
 **Note**: Direct lake mode is faster than direct query mode.
 
-   ![](../media/lab-07/image018.png)
+   ![](../media/lab-06/image018.png)
 
 The first step is to create relationships between these tables.
 
 1. Let’s create a relationship between Sales and Reseller tables. Select **ResellerID** from the **Sales** table and drag it over to **ResellerID** in the **Reseller** table.
 
-   ![](../media/lab-07/image020.png)
+   ![](../media/lab-06/image020.png)
 
 2. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **ResellerID.**
 
@@ -183,7 +183,7 @@ The first step is to create relationships between these tables.
 
 6. Select **Save**.
 
-   ![](../media/lab-07/image021.png)
+   ![](../media/lab-06/image021.png)
 
 7. Similarly, create a relationship between Sales and Date tables. Select **InvoiceDate** from the **Sales**
 
@@ -199,7 +199,7 @@ The first step is to create relationships between these tables.
 
 12. Select **Save**.
 
-     ![](../media/lab-07/image023.png)
+     ![](../media/lab-06/image023.png)
 
 13. Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID** from the **Sales** table and **StockItemID** from the **Product** table.
 
@@ -207,7 +207,7 @@ The first step is to create relationships between these tables.
 
 **Checkpoint:** Your model should have the three relationships between Sales and Reseller tables, Sales and Date and Sales and Product tables as shown in the below screenshot:
 
-   ![](../media/lab-07/image024.png)
+   ![](../media/lab-06/image024.png)
 
 In the interest of time, we will not be creating all the relationships. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the remaining relationships.
 
@@ -231,7 +231,7 @@ Let’s add a few measures we need to create the Sales dashboard.
 
 8. Set Decimal places to **0**.
 
-   ![](../media/lab-07/image025.png)
+   ![](../media/lab-06/image025.png)
 
 9. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
@@ -245,7 +245,7 @@ Let’s add a few measures we need to create the Sales dashboard.
 
 14. Use the slider to set **Thousands separator** to **Yes**.
 
-     ![](../media/lab-07/image026.png)
+     ![](../media/lab-06/image026.png)
 
 15. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
@@ -259,7 +259,7 @@ Let’s add a few measures we need to create the Sales dashboard.
 
 20. Use the slider to set **Thousands separator** to **Yes**.
 
-    ![](../media/lab-07/image027.png)
+    ![](../media/lab-06/image027.png)
 
 21. In the **Data panel** (on the right), select **Model**. Notice this provides a view that will help organize all the items in the semantic model.
 
@@ -267,7 +267,7 @@ Let’s add a few measures we need to create the Sales dashboard.
 
 23. You can also **expand individual Tables** to view the Columns, Hierarchies and Measures in each one of them.
 
-    ![](../media/lab-07/image028.png)
+    ![](../media/lab-06/image028.png)
 
 Again, in the interest of time, we will not be creating all the measures. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the remaining measures.
 
@@ -281,7 +281,7 @@ Let’s add the remaining relationships.
 
 2. Manage relationships dialog opens. Select New relationship.
 
-   ![](../media/lab-07/image029.png)
+   ![](../media/lab-06/image029.png)
 
 3. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **SalespersonPersonID.**
 
@@ -293,7 +293,7 @@ Let’s add the remaining relationships.
 
 7. Select **Save**. Manage relationships dialog opens with the new relationship added.
 
-   ![](../media/lab-07/image030.png)
+   ![](../media/lab-06/image030.png)
 
 8. Now let’s create a relationship between Product and Supplier. Select **New relationship**.
 
@@ -307,7 +307,7 @@ Let’s add the remaining relationships.
 
 13. Select **Save**.
 
-     ![](../media/lab-07/image031.png)
+     ![](../media/lab-06/image031.png)
 
 14. Now let’s create a relationship between Reseller and Geo. Select **New relationship**.
 
@@ -321,7 +321,7 @@ Let’s add the remaining relationships.
 
 19. Select **Save**.
 
-     ![](../media/lab-07/image032.png)
+     ![](../media/lab-06/image032.png)
 
 20. Similarly, create a relationship between Customer and Reseller. Select **New relationship**.
 
@@ -337,7 +337,7 @@ Let’s add the remaining relationships.
 
 **Checkpoint:** Manage relationships should look like screenshot below.
 
-   ![](../media/lab-07/image033.png)
+   ![](../media/lab-06/image033.png)
 
 26. Similarly, create a **many to one** relationship between **PO** and **Date**. Select **Order\_Date** from **PO** and **Date** from **Date**.
 
@@ -349,7 +349,7 @@ Let’s add the remaining relationships.
 
 **Checkpoint:** Your model should look like the screenshot below.
 
-   ![](../media/lab-07/image034.png)
+   ![](../media/lab-06/image034.png)
 
 ## Task 7: Optional section – Create Measures
 
@@ -369,7 +369,7 @@ Let’s add the remaining measures.
 
 7. Set Decimal places to 0.
 
-   ![](../media/lab-07/image036.png)
+   ![](../media/lab-06/image036.png)
 
 8. Follow similar steps to add the following measures:
 
