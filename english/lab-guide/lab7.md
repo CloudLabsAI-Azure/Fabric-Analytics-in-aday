@@ -6,42 +6,44 @@
 
 - Power BI
     
-    - Task 1: Auto-Create Report
+  - Task 1: Auto-Create Report
     
-    - Task 2: Configure background for a New report
+  - Task 2: Configure background for a New report
     
-    - Task 3: Add Header to the report
+  - Task 3: Add Header to the report
     
-    - Task 4: Add KPIs to the report
+  - Task 4: Add KPIs to the report
     
-    - Task 5: Add Line chart to the report
+  - Task 5: Add Line chart to the report
     
-    - Task 6: Save the report
+  - Task 6: Save the report
     
-    - Task 7: Configure Year column in Date table
+  - Task 7: Configure Year column in Date table
     
-    - Task 8: Configure Month Name column in Date table
+  - Task 8: Configure Month Name column in Date table
     
-    - Task 9: Format Line chart
+  - Task 9: Format Line chart
     
-    - Task 10: Connect Power BI Desktop to Semantic model
+  - Task 10: Connect Power BI Desktop to Semantic model
 
-    - Task 11: Add new data to simulate Direct Lake Mode
+  - Task 11: Add new data to simulate Direct Lake Mode
       
 - Clean up Lab environment
 
 - References
 
 ## Introduction 
-
 We are introduced to Lakehouse, ingested data from different data sources into the Lakehouse, set a refresh schedule for the data sources and created a data model. Now we are going to create a report. 
 
 By the end of this lab, you will have learned: 
 
-  - How to auto-create a report 
-  - How to build a report starting from a blank canvas 
-  - How to build a report using Power BI Desktop 
-  - How to experience Direct Lake mode resulting in data automatically refreshing
+- How to auto-create a report 
+  
+- How to build a report starting from a blank canvas 
+  
+- How to build a report using Power BI Desktop 
+  
+- How to experience Direct Lake mode resulting in data automatically refreshing
 
 # Power BI 
 
@@ -55,10 +57,15 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 3. Fabric experience dialog opens. Select **Power BI**. You will be navigated to **Power BI Home page**.
 
+   ![](../media/lab-07/image006.png)
+
 4. Select **New Report** from the top menu.
+
+   ![](../media/lab-07/image009.png)
 
 5. You will be navigated to **Build your first report screen**. There will be options to build report using excel, csv, enter data manually or to pick a published semantic model. We have created a semantic model in the previous labs. Let’s use that. Select **Pick a published semantic model** option.
 
+   ![](../media/lab-07/image012.jpg)
 
 6. Pick a dataset to use in your report page opens. Notice we have four options. **Select sm_FAIAD**. 
 
@@ -74,7 +81,11 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 7. Click the **arrow next to Auto-create report button**. Notice there are two options, Auto-create report and Create a blank report. Let’s try auto-creating, so select **Auto-create report**.
 
+   ![](../media/lab-07/image015.jpg)
+
 8. Power BI will start auto creating the report. Notice there is an option to Pre-select data, if we choose too. Once the report is ready, a dialog appears on the top right of the screen. Select **View report now or it will autoload in a few seconds**.
+
+   ![](../media/lab-07/image018.jpg)
 
    **Checkpoint**: You will have a report which looks like the screenshot below. There are a few KPIs and some trend visuals. This is a good start if you are analyzing a new model and need a jumpstart. 
 
@@ -88,11 +99,15 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 12. Select **Save**.
 
+    ![](../media/lab-07/image021.jpg)
+
     **Note:** Auto-created report may look different for you as it is “auto-created”. It also depends on the relationships and measures you created in the previous lab (Lab 6). 
 
     Above screenshot is how the auto-created report may look if you created all the relationships and measures including the optional relationships (Lab 6). 
 
-    Below screenshot is how the auto-created report may look if you skipped creating the optional relationships and measures (Lab 6). 
+    Below screenshot is how the auto-created report may look if you skipped creating the optional relationships and measures (Lab 6).
+
+    ![](../media/lab-07/image024.jpg)
 
 ## Task 2: Configure background for a New report 
 
@@ -102,16 +117,23 @@ Let’s create a new report using a blank canvas.
 
 2. From the top menu, select **New -> Report**. You will be navigated to build your first report page.
 
+   ![](../media/lab-07/image027.png)
+
 3. Select **Pick a published semantic model**, so we can pick the model we have created.
+
+   ![](../media/lab-07/image012.jpg)
 
 4. Pick a semantic model to use in your report dialog opens. Select **sm_FAIAD**.
 
 5. Click the **arrow next** to **Auto-create report button**. Select **Create a blank report**. You will be navigated to a report page which looks similar to the Power BI Desktop report page.
 
+   ![](../media/lab-07/image032.jpg)
 
 6. If you have not already opened it, open the **FAIAD.pbix** located **Reports** folder on the **desktop** of your lab environment. 
 
-   We are going to use this report as a reference. We will start by adding the canvas background. We will create the report header, add a couple of KPIs, and create the Sales over time line chart. In the interest of time and with the understanding that you have experience with building visuals in Power BI Desktop, we will not be creating all the visuals. 
+   We are going to use this report as a reference. We will start by adding the canvas background. We will create the report header, add a couple of KPIs, and create the Sales over time line chart. In the interest of time and with the understanding that you have experience with building visuals in Power BI Desktop, we will not be creating all the visuals.
+
+   ![](../media/lab-07/image035.jpg)
 
 7. Navigate back to **Power BI canvas** in your browser.
 
@@ -127,7 +149,9 @@ Let’s create a new report using a blank canvas.
 
 13. Set **Image fit** dropdown to Fit. 
 
-14. Set Transparency to 0%.
+14. Set Transparency to **0%**.
+
+    ![](../media/lab-07/image038.jpg)
 
 ## Task 3: Add Header to the report 
 
@@ -147,6 +171,8 @@ Let’s create a new report using a blank canvas.
 
 8. Resize the **text box to fit in the top margin**.
 
+   ![](../media/lab-07/image041.jpg)
+
 ## Task 4: Add KPIs to the report 
 
 1. Let’s add Sales KPI. Select the **white space** in the canvas to take focus off the text box. 
@@ -156,6 +182,8 @@ Let’s create a new report using a blank canvas.
 3. From the **Data section** expand **Sales table**.
 
 4. Select **Sales measure**. 
+
+   ![](../media/lab-07/image044.jpg)
 
 5. With **multi-row card visual selected**, select **Format visual icon** from **Visualizations** section. 
 
@@ -169,10 +197,13 @@ Let’s create a new report using a blank canvas.
 
 10. Set Hex value to **#004753**.
 
+    ![](../media/lab-07/image047.jpg)
+
 11. Expand **Cards** section
 
 12. Use **Accent bar** slider to set it to **Off**.
 
+    ![](../media/lab-07/image050.png)
 
 13. Select **General** in the Visualizations pane. 
 
@@ -182,6 +213,7 @@ Let’s create a new report using a blank canvas.
 
 16. Resize the **visual** and move it to the **left box as shown in the screenshot**.
 
+    ![](../media/lab-07/image053.jpg)
 
 17. Let’s add another KPI. Select the **Sales multi-row card** we just created. **Copy** the visual by selecting **Ctrl+C** from your keyboard. 
 
@@ -193,7 +225,8 @@ Let’s create a new report using a blank canvas.
 
 21. Resize the **visual** and **place it in the box below the Sales visual**.
 
-
+    ![](../media/lab-07/image056.jpg)
+ 
 ## Task 5: Add Line chart to the report 
 
 Let’s create a line chart to visualize Sales over time by Reseller Company. 
@@ -206,7 +239,7 @@ Let’s create a line chart to visualize Sales over time by Reseller Company.
 
 4. Select **Year** field. Notice Year is a summed by default and added to the Y-axis. Let’s rectify this. 
 
-
+   ![](../media/lab-07/image059.png)
 
 ## Task 6: Save the report 
 
@@ -219,12 +252,16 @@ Let’s save the report before we navigate away from the report to make changes 
 3. Make sure the report is saved in **FAIAD_<username>** workspace. 
 
 4. Select **Save**. Notice the report is saved and you are in view mode.
+
+   ![](../media/lab-07/image062.png)
    
 ## Task 7: Configure Year column in Date table 
 
 1. From the **top menu**, select **Edit** to go back into Edit mode. 
 
 2. From the **top menu**, select **Open data model**. Notice semantic model is opened in a new browser window/tab.
+
+   ![](../media/lab-07/image065.png)
    
 3. From the **Data panel on the right**, select Tables. 
 
@@ -234,7 +271,9 @@ Let’s save the report before we navigate away from the report to make changes 
 
 6. In the **Properties** pane on the right, expand **Advanced** section. 
 
-7. In the **Summarize by** drop down select **None**. 
+7. In the **Summarize by** drop down select **None**.
+
+   ![](../media/lab-07/image068.jpg)
 
 8. Navigate back to **report window/tab** of the browser.
 
@@ -246,7 +285,7 @@ Let’s save the report before we navigate away from the report to make changes 
 
 12. Expand **Sales** table and select **Sales measure**.
 
-
+    ![](../media/lab-07/image071.jpg)
 
 ## Task 8: Configure Month Name column in Date table 
 
@@ -258,9 +297,13 @@ Let’s save the report before we navigate away from the report to make changes 
 
 4. Select the **ellipsis (…)** on the top right corner of the visual. 
 
-5. Select **Sort axis -> Sort ascending**. 
+5. Select **Sort axis -> Sort ascending**.
 
-   **Note:** The months are sorted alphabetically. Let’s fix this. 
+   ![](../media/lab-07/image074.jpg)
+
+   **Note:** The months are sorted alphabetically. Let’s fix this.
+
+   ![](../media/lab-07/image077.png)
 
 6. Navigate back to the **browser window/tab** where you have the semantic model open. 
 
@@ -270,10 +313,13 @@ Let’s save the report before we navigate away from the report to make changes 
 
 9. In the **Properties** pane on the right, expand **Advanced** section. 
 
-10. In the **Sort by column** drop down select **Month**. 
+10. In the **Sort by column** drop down select **Month**.
 
+    ![](../media/lab-07/image080.jpg)
 
-11. Navigate back to **report window/tab** of the browser. Notice now months are sorted properly. 
+11. Navigate back to **report window/tab** of the browser. Notice now months are sorted properly.
+
+    ![](../media/lab-07/image083.png)
  
 
 ## Task 9: Format Line chart 
@@ -282,7 +328,9 @@ Notice how easy it is to update the semantic model while building the reports. T
 
 1. With the **Line chart visual selected**, in the **Data section** expand **Reseller table**. 
 
-2. Drag **Reseller -> Reseller Company** field to the **Legend** section. 
+2. Drag **Reseller -> Reseller Company** field to the **Legend** section.
+
+   ![](../media/lab-07/image086.jpg)
 
 3. With the **Line chart visual selected**, from the **Visualization** section select **Format visual icon -> General**. 
 
@@ -292,7 +340,9 @@ Notice how easy it is to update the semantic model while building the reports. T
 
 6. Expand **Effects** section.
 
-7. Use **Background** slider to set it to **Off**. 
+7. Use **Background** slider to set it to **Off**.
+
+   ![](../media/lab-07/image089.png)
 
 8. From the **Visualization** section select **Format visual icon -> Visual**.
 
@@ -310,8 +360,9 @@ Notice how easy it is to update the semantic model while building the reports. T
 
 15. Resize the **visual** and move it to the **top right box as shown in the screenshot**. 
 
-16. Scroll to the right on the visual and notice **we have data through April 2024**. 
+16. Scroll to the right on the visual and notice **we have data through April 2024**.
 
+    ![](../media/lab-07/image092.png)
 
 17. Let’s save the report, from the menu select **File -> Save**. 
 
@@ -325,13 +376,17 @@ Now let’s see how easy it is to connect Power BI Desktop to the semantic model
 
 2. From the ribbon select **Home -> OneLake data hub -> Power BI semantic models**. 
 
+   ![](../media/lab-07/image095.jpg)
  
 3. OneLake data hub dialog opens. Select **sm_FAIAD**, the semantic model we have created. 
 
 4. Select **Connect**. Notice in the Data pane, we have the tables from the semantic model. 
 
+   ![](../media/lab-07/image098.jpg)
 
 5. From the **left panel**, select **Model view**. Notice we can view the relationship between tables. 
+
+   ![](../media/lab-07/image101.jpg)
 
 6. From the **left panel**, select **Report view** to navigate back to the Report view. 
 
@@ -341,13 +396,17 @@ Now let’s see how easy it is to connect Power BI Desktop to the semantic model
 
 9. From the ribbon, select **Home -> Copy**. 
 
- 
+   ![](../media/lab-07/image104.png)
+
 10. Navigate to **FAIADTemplate.pbix** and select the report canvas. 
 
 11. From the ribbon, select **Home -> Paste**. 
 
+    ![](../media/lab-07/image107.png)
  
 12. Similarly copy and paste the **Sales and Units KPIs**. FYI – multiple visuals can be copied and pasted together. 
+
+    ![](../media/lab-07/image110.png)
  
     Notice it is easy to copy visuals from an existing report and paste it to a report that connects to semantic model. Note that the table names, column names, measure names must be the same for copy and paste to work. If they are not the same you may have an error, but this can be easily resolved. 
 
@@ -359,11 +418,15 @@ Now let’s see how easy it is to connect Power BI Desktop to the semantic model
 
 16. From the ribbon, select **Home -> Paste**. Notice that the visual does not render. This is because currently semantic model does not create hierarchy from date field.
 
-17. Let’s fix this. In **Visualization** panel, under **X-axis** delete **StartOfMonth**. 
+17. Let’s fix this. In **Visualization** panel, under **X-axis** delete **StartOfMonth**.
+
+    ![](../media/lab-07/image113.jpg)
 
 18. From the **Data pane**, expand **Date** table.
 
-19. Drag **StartOfMonth** field into **X-axis**. This fixes the visual. You may have to format the visual. 
+19. Drag **StartOfMonth** field into **X-axis**. This fixes the visual. You may have to format the visual.
+
+    ![](../media/lab-07/image116.jpg)
 
 20. Let’s save the report, from the ribbon select **File -> Save**. 
 
@@ -380,24 +443,31 @@ In a real scenario, data is updated at the source. Since we are in a training en
 
 3. Select **lh_FAIAD** to navigate into the Lakehouse. 
 
+   ![](../media/lab-07/image119.jpg)
+
 4. From the **Explorer pane** on the left, select the **ellipsis** next to **Tables**.
 
 5. Select **New** shortcut. 
 
+   ![](../media/lab-07/image122.png)
 
 6. New shortcut dialog opens. Under **External sources**, select **Azure Data Lake Storage Gen2**. 
 
-7. **Under Connection Settings -> URL** enter this link 
-https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales 
+   ![](../media/lab-07/image125.jpg)
+
+7. **Under Connection Settings -> URL** enter this link `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
 
 8. Since we have created the connection earlier, it is recognized. Select **Next**. 
 
+   ![](../media/lab-07/image128.jpg)
  
 9. You will be connected to ADLS Gen2 with the directory structure displayed in the left panel. Expand **Delta-Parquet-Format-FY25**. 
 
 10. Select **Sales.Invoices_May**.
 
-11. Select **Next**. 
+11. Select **Next**.
+
+    ![](../media/lab-07/image131.jpg)
 
 12. You will be navigated to the next dialog where we can edit the names. Select the Edit icon under Actions for **Sales.Invoices_May**. 
 
@@ -407,13 +477,13 @@ https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 
 15. Select **Create**. 
 
- 
+    ![](../media/lab-07/image134.jpg)
 
     Notice in the **Explorer pane** on the left, we have InvoicesMay table. Now we need to update Sales view. 
 
 16. On the **top right** of the screen, select **Lakehouse -> SQL analytics endpoint**. 
 
- 
+    ![](../media/lab-07/image137.jpg)
 
 17. From the top menu, select **Home -> New SQL query**. A new SQL query pane opens. 
 
@@ -561,14 +631,15 @@ https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 
 19. From the visual query menu, select **Run** to execute the code. 
 
-    Once the code is executed, we have updated Sales table to include May 2024 data. 
+    Once the code is executed, we have updated Sales table to include May 2024 data.
 
+    ![](../media/lab-07/image143.jpg)
 
 20. Select **rpt_Sales_Report** from the left menu bar to navigate back to the report. 
 
 21. From the top menu select **Refresh**. Notice now in the Line chart there is data for May 2024. Also, notice the Sales amount and Units has increased. 
 
- 
+    ![](../media/lab-07/image146.jpg)
 
     We do not have to refresh the data model and report when data changes. This is the advantage of Direct Lake and Direct query. 
 
@@ -592,15 +663,15 @@ https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 
   - **You need a Windows PC to use Power BI Desktop even though the corporate standard is Mac**.
   
-  Microsoft Fabric is a SaaS offering. All we need is a browser to access the service. We do not have to install any software on our desktops. 
-
- 
+  Microsoft Fabric is a SaaS offering. All we need is a browser to access the service. We do not have to install any software on our desktops.
 
 ## Clean up Lab environment 
 
 Once you are ready to clean up the lab environment, follow the steps below. 
 
-1. Select **FAIAD_<username>** workspace from the left panel to navigate to the workspace home. 
+1. Select **FAIAD_<username>** workspace from the left panel to navigate to the workspace home.
+
+   ![](../media/lab-07/image149.jpg)
 
 2. From the top menu, select **Workspace settings**. 
  
@@ -610,12 +681,15 @@ Once you are ready to clean up the lab environment, follow the steps below.
 
 5. Delete workspace dialog opens. Select **Delete**. 
 
-This will delete the workspace and all the items that were contained in the workspace. 
+This will delete the workspace and all the items that were contained in the workspace.
+
+![](../media/lab-07/image152.jpg)
 
 # References
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
 
- 
+![](../media/lab-07/image155.png)
+
 Here are a few more resources that will help you with your next steps with Microsoft Fabric.
 
 - See the blog post to read the full [Microsoft Fabric GA announcement](https://aka.ms/Fabric-Hero-Blog-Ignite23)
