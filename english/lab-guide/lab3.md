@@ -2,7 +2,6 @@
 ![](../media/lab-03/main3.png)
 
 # Contents
-
 - Introduction
 
 - Shortcut to ADLS Gen2
