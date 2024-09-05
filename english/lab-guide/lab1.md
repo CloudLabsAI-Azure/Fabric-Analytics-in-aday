@@ -58,7 +58,7 @@ Before we start with Fabric, let’s look at the current Report in Power BI Desk
 ## Task 1: Set up Power BI Desktop in lab environment
 1. Open the **FAIAD.pbix** located in **Reports** folder on the **desktop** of your lab environment. The file will open in Power BI Desktop.
 
-    ![](../media/lab-01/image009.png)
+   ![](../media/lab-01/image009.png)
  
 2. Enter your email address dialog opens. Navigate to **Environment Details** tab on the right panel in the lab environment.
 3. Copy the **Username** and paste it in the **Email** textbox of the dialog.
