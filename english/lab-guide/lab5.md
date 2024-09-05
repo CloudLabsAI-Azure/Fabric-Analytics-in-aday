@@ -62,7 +62,7 @@ By the end of this lab, you will have learned:
 
 Let's start by configuring a scheduled refresh of Supplier Dataflow.
 
-1. Let's navigate back to the Fabric workspace, **FAIAD\_\<username\>** by selecting the workspace in the left panel.
+1. Let's navigate back to the Fabric workspace, **FAIAD_<username\>** by selecting the workspace in the left panel.
 
 2. To maximize the panel with the list of artifacts, select the double arrow on the top right of the panel.
 
@@ -172,7 +172,7 @@ Let's start building the pipeline. We need an activity to refresh the Dataflow. 
 
 2. We are going to configure the activity to connect to df_People_SharePoint activity. From the **bottom pane**, select **Settings**.
 
-3. Make sure **Workspace** is set to your Fabric workspace, **FAIAD\_\<username\>.**
+3. Make sure **Workspace** is set to your Fabric workspace, **FAIAD_<username\>.**
 
 4. From the **Dataflow dropdown** select **df_People_SharePoint**. When this Dataflow activity is executed, it is going to refresh **df_People_SharePoint.** That was easy, right?
 
@@ -212,7 +212,7 @@ Notice the advantage of using the data pipeline compared to setting the dataflow
 
 Let's add a little more complexity to our scenario. We have noticed that if the data is not available at 9 AM, then typically it is available within five minutes. If the time window is missed, then it takes 15 minutes for the file to be available. We want to schedule the retries at five and 15 minutes. Let's see how this can be achieved by creating a new Data Pipeline.
 
-1. From the left panel, click **FAIAD\_\<username\>**, to be navigated to the workspace home.
+1. From the left panel, click **FAIAD_<username\>**, to be navigated to the workspace home.
 
 2. From the top menu, click **New** and from the **dropdown**, click **Data pipeline**.
 
@@ -380,7 +380,7 @@ We need to write an expression which would execute until either the value of **v
 
 7. Select **Settings** from the bottom pane.
 
-8. Make sure **Workspace** is set to your workspace, **FAIAD\_\<username\>.**
+8. Make sure **Workspace** is set to your workspace, **FAIAD_<username\>.**
 
 9. From the **Dataflow dropdown** select **df_People_SharePoint**. When this Dataflow activity is executed, it is going to refresh **df_People_SharePoint.**
 
@@ -578,7 +578,7 @@ The expression is a nested if statement. It is checking if the value of varCount
 
     ![](../media/lab-05/image46.png)
 
-11. Select your Fabric workspace **FAIAD\_\<username\>** in the left panel to navigate to the workspace**.**
+11. Select your Fabric workspace **FAIAD_<username\>** in the left panel to navigate to the workspace**.**
 
 **Note**: In the Schedule screen, there is no option to notify on success or failure (like Dataflow Schedule). Notification can be done by adding an activity in the Data Pipeline. We are not doing it in this lab as it is a lab environment. We have scheduled refreshes for the various data sources. We will create a semantic model with relationships, measures and other modeling operations in the next lab.
 
