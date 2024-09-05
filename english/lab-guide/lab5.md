@@ -502,11 +502,9 @@ Next, we need to wait for 5 minutes/300 seconds if dataflow refresh fails the fi
 
 4. In the **Description** field, enter **Wait for 300 seconds on 2nd try and 900 seconds on 3rd try.**
 
-5. Click the **green check mark** from set_varCounter Set variable activity and drag to connect to the new.
+5. Click the **green check mark** from set_varCounter Set variable activity and drag to connect to the new **wait_onFailure Wait activity**.
 
-   ![](../media/lab-05/image41.png)
-
-### wait_onFailure Wait activity. 
+   ![](../media/lab-05/image41.png) 
 
 6. With **Wait activity** selected, click **Settings** from the bottom menu.
 
