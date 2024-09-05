@@ -27,104 +27,111 @@ In our scenario, Sales Data comes from the ERP system and is stored in an ADLS G
 There are multiple ways to ingest this data.
 
 - **Shortcuts:** This creates a link to the data, and we can use Visual query views to transform it. We are going to use Shortcuts in this lab.
+
 - **Notebooks:** This requires us to write code. It is a developer friendly approach.
+
 - **Dataflow Gen2:** You are probably familiar with Power Query or Dataflow Gen1. Dataflow Gen2, as the name indicates, is the newer version of Dataflow. It provides all the capabilities of Power Query / Dataflow Gen1 with the added ability to transform and ingest data into multiple data sources. We are going to introduce this in the next couple of labs.
+
 - **Data Pipeline:** This is an orchestration tool. Activities can be orchestrated to extract, transform, and ingest data. We will be using Data Pipeline to execute Dataflow Gen2 activity which in turn will perform extraction, transformation, and ingestion.
 
 We will start by creating a Shortcut to ingest data into Lakehouse from ADLS Gen2 data source. Once ingested, we are going to use Visual query views to transform it.
 
 By the end of this lab, you will have learned:
+
 - How to create Shortcut to Lakehouse
+
 - How to transform data using Visual query
+
 # Shortcut to ADLS Gen2
+
 ## Task 1: Create Shortcut
 Shortcut is used to create a link to the target location. This is like creating shortcuts in Windows desktop.
-1.	Let’s navigate back to the **Fabric workspace** you created in the Lab 2, Task 9.
-2.	If you have not navigated away after the previous lab, you will be in the Lakehouse screen. If you have navigated away that is fine. Select **lh_FAIAD** to navigate to the Lakehouse.
-3.	In the **Explorer** panel, select the **ellipsis** next to **Tables**.
-4.	Select **New Shortcut**.
+1. Let’s navigate back to the **Fabric workspace** you created in the Lab 2, Task 9.
+2. If you have not navigated away after the previous lab, you will be in the Lakehouse screen. If you have navigated away that is fine. Select **lh_FAIAD** to navigate to the Lakehouse.
+3. In the **Explorer** panel, select the **ellipsis** next to **Tables**.
+4. Select **New Shortcut**.
 
     ![](../media/lab-03/image006.jpg) 
  
-5.	**New Shortcut** dialog opens. Under **External sources**, select **Azure Data Lake Storage Gen2**.
+5. **New Shortcut** dialog opens. Under **External sources**, select **Azure Data Lake Storage Gen2**.
 
     ![](../media/lab-03/image009.jpg)
 
-6.	You need to create a connection to the ADLS Gen2 data source. Under Connection Settings -> URL enter this link `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
-7.	Select **Account key** from the Authentication kind dropdown.
-8.	Copy the **Adls storage account Access Key** from the **Environment Variables** tab (next to the Lab Guide tab) and paste it in the **Account key text box**.
-9.	Select **Next** on the bottom right of the screen.
+6. You need to create a connection to the ADLS Gen2 data source. Under Connection Settings -> URL enter this link `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
+7. Select **Account key** from the Authentication kind dropdown.
+8. Copy the **Adls storage account Access Key** from the **Environment Variables** tab (next to the Lab Guide tab) and paste it in the **Account key text box**.
+9. Select **Next** on the bottom right of the screen.
 
     ![](../media/lab-03/image012.jpg)
  
-10.	You will be connected to ADLS Gen2 with the directory structure displayed in the left panel. Expand
+10. You will be connected to ADLS Gen2 with the directory structure displayed in the left panel. Expand
 **Delta-Parquet-Format-FY25**.
 
-11.	**Select** the following directories:
+11. **Select** the following directories:
 
-    a.	Application.Cities
+    a. Application.Cities
     
-    b.	Application.Countries
+    b. Application.Countries
     
-    c.	Application.StateProvinces
+    c. Application.StateProvinces
     
-    d.	DateDim
+    d. DateDim
     
-    e.	Sales.BuyingGroups
+    e. Sales.BuyingGroups
     
-    f.	Sales.Customers
+    f. Sales.Customers
     
-    g.	Sales.Invoices
+    g. Sales.Invoices
     
-    h.	Sales.InvoiceLines
+    h. Sales.InvoiceLines
     
-    i.	Warehouse.StockItems
+    i. Warehouse.StockItems
     
-    j.	Warehouse.StockGroups
+    j. Warehouse.StockGroups
     
-    k.	Warehouse.StockItemStockGroups
+    k. Warehouse.StockItemStockGroups
 
     **Note:** Sales.Invoices_May is the only directory that is **not** selected.
 
-12.	Select **Next**.
+12. Select **Next**.
 
     ![](../media/lab-03/image015.png)
  
-13.	You will be navigated to the next dialog where we can edit the names. Select the **Edit icon** under Actions for **Application.Cities**.
-14.	Rename **Application.Cities** to **Cities**.
-15.	Select the check mark next to the name to save the change.
+13. You will be navigated to the next dialog where we can edit the names. Select the **Edit icon** under Actions for **Application.Cities**.
+14. Rename **Application.Cities** to **Cities**.
+15. Select the check mark next to the name to save the change.
 
     ![](../media/lab-03/image018.jpg)
 
-16.	Similarly, rename the Shortcut Names as below:
+16. Similarly, rename the Shortcut Names as below:
     
-    a.	Application.Countries to **Countries**
+    a. Application.Countries to **Countries**
     
-    b.	Application.StateProvinces to **States**
+    b. Application.StateProvinces to **States**
     
-    c.	DateDim to **Date**
+    c. DateDim to **Date**
     
-    d.	Sales.BuyingGroups to **BuyingGroups**
+    d. Sales.BuyingGroups to **BuyingGroups**
     
-    e.	Sales.Customers to **Customers**
+    e. Sales.Customers to **Customers**
     
-    f.	Sales.InvoiceLines to **InvoiceLineItems**
+    f. Sales.InvoiceLines to **InvoiceLineItems**
     
-    g.	Sales.Invoices to **Invoices**
+    g. Sales.Invoices to **Invoices**
     
-    h.	Warehouse.StockGroups to **ProductGroups**
+    h. Warehouse.StockGroups to **ProductGroups**
     
-    i.	Warehouse.StockItemStockGroups to **ProductItemGroup**
+    i. Warehouse.StockItemStockGroups to **ProductItemGroup**
     
-    j.	Warehouse.StockItems to **ProductItem**
+    j. Warehouse.StockItems to **ProductItem**
 
     **Note:** Double check the names. A typo may cause errors during the lab.
 
-17.	Select **Create** to create the Shortcut.
+17. Select **Create** to create the Shortcut.
 
     ![](../media/lab-03/image021.jpg)
 
-18.	Notice all the Shortcuts are created as Tables. Select **BuyingGroups** table and notice we can see a preview of the data in the data panel.
+18. Notice all the Shortcuts are created as Tables. Select **BuyingGroups** table and notice we can see a preview of the data in the data panel.
 
     ![](../media/lab-03/image024.png)
  
@@ -132,8 +139,10 @@ Shortcut is used to create a link to the target location. This is like creating 
 The next step is to transform the data, so we can create a semantic model. We are going to create views to transform the data.
 
 # Transform data using Visual Query
+
 ## Task 2: Create Geo view using Visual Query
-1.	We can access the lakehouse using a SQL endpoint. This provides the ability to query the data and create views. On the **top right** of the screen, select **Lakehouse -> SQL analytics endpoint**.
+
+1. We can access the lakehouse using a SQL endpoint. This provides the ability to query the data and create views. On the **top right** of the screen, select **Lakehouse -> SQL analytics endpoint**.
 
     ![](../media/lab-03/image027.jpg)
 
@@ -141,117 +150,117 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
     We will start by creating Geo view. We need to merge data from Cities, States and Countries query to create Geo.
 
-2.	From the top menu, select **New visual query**.
+2. From the top menu, select **New visual query**.
 
     ![](../media/lab-03/image030.jpg)
  
-3.	We need to drag tables to the Visual query panel to build a query. Let’s drag, Cities, States and Countries query into the visual query panel.
+3. We need to drag tables to the Visual query panel to build a query. Let’s drag, Cities, States and Countries query into the visual query panel.
 
     ![](../media/lab-03/image033.jpg)
  
     We need to merge these queries. And visual query comes with the option to use Power Query editor. Let’s use this, since we are familiar with this.
 
-4.	From the menu in Visual query editor, select the **Focus mode** icon (towards the right). You will be navigated to Power Query editor.
+4. From the menu in Visual query editor, select the **Focus mode** icon (towards the right). You will be navigated to Power Query editor.
 
     ![](../media/lab-03/image036.png)
 
-5.	With Cities query selected, from the Power Query editor ribbon, select **Home - > Merge queries -> Merge queries as new**. Merge queries dialog opens.
+5. With Cities query selected, from the Power Query editor ribbon, select **Home - > Merge queries -> Merge queries as new**. Merge queries dialog opens.
 
     ![](../media/lab-03/image039.jpg)
 
-6.	In the **left table to merge**, select **Cities**.
-7.	In the **right table to merge**, select **States**.
-8.	Select **StateProvinceID** columns from both the tables. We are going to join using this column.
-9.	Select Inner as the **Join kind**.
-10.	Select **OK**.
+6. In the **left table to merge**, select **Cities**.
+7. In the **right table to merge**, select **States**.
+8. Select **StateProvinceID** columns from both the tables. We are going to join using this column.
+9. Select Inner as the **Join kind**.
+10. Select **OK**.
 
     ![](../media/lab-03/image042.jpg)
  
     Notice a new query called Merge has been created. We need a few columns from States.
 
-11.	In the **Data view** (bottom panel), click on the **double arrow** next to the **States** column (last column to the right).
-12.	A panel opens. **Select** following columns:
+11. In the **Data view** (bottom panel), click on the **double arrow** next to the **States** column (last column to the right).
+12. A panel opens. **Select** following columns:
 
-    a.	StateProvinceCode
+    a. StateProvinceCode
     
-    b.	StateProvinceName
+    b. StateProvinceName
     
-    c.	CountryID
+    c. CountryID
     
-    d.	SalesTerritory
+    d. SalesTerritory
 
-13.	Select **OK**.
+13. Select **OK**.
  
     ![](../media/lab-03/image045.jpg)
 
     We need to merge Countries query now.
 
-14.	With Merge query selected, select **Home -> Merge queries -> Merge queries** from the ribbon.
+14. With Merge query selected, select **Home -> Merge queries -> Merge queries** from the ribbon.
 
     ![](../media/lab-03/image048.jpg)
 
-15.	Merge query dialog opens. In the **right table to merge**, select **Countries**.
-16.	Select **CountryID** columns from both the tables. We are going to join using this column.
-17.	Select **Inner** as the **Join kind**.
-18.	Select **OK**.
+15. Merge query dialog opens. In the **right table to merge**, select **Countries**.
+16. Select **CountryID** columns from both the tables. We are going to join using this column.
+17. Select **Inner** as the **Join kind**.
+18. Select **OK**.
 
     ![](../media/lab-03/image051.jpg)
  
     We need a few columns from Countries.
 
-19.	In the **Data view** (bottom panel), click on the **double arrow** next to the **Countries** column.
-20.	A panel opens. Select following columns:
+19. In the **Data view** (bottom panel), click on the **double arrow** next to the **Countries** column.
+20. A panel opens. Select following columns:
 
-    a.	CountryName
+    a. CountryName
     
-    b.	FormalName
+    b. FormalName
     
-    c.	IsoAlpha3Code
+    c. IsoAlpha3Code
     
-    d.	IsoNumericCode
+    d. IsoNumericCode
     
-    e.	CountryType
+    e. CountryType
     
-    f.	Continent
+    f. Continent
     
-    g.	Region
+    g. Region
     
-    h.	Subregion
+    h. Subregion
 
-21.	Select **OK**.
+21. Select **OK**.
 
     ![](../media/lab-03/image054.jpg)
  
     We do not need all the columns. Let’s select only those we need.
 
-22.	With Merge query selected, from the ribbon select **Home -> Choose columns -> Choose columns**.
+22. With Merge query selected, from the ribbon select **Home -> Choose columns -> Choose columns**.
 
     ![](../media/lab-03/image057.jpg)
 
-23.	Choose columns dialog opens. **Uncheck** the following columns.
+23. Choose columns dialog opens. **Uncheck** the following columns.
 
-    a.	StateProvinceID
+    a. StateProvinceID
     
-    b.	Location
+    b. Location
     
-    c.	LastEditedBy
+    c. LastEditedBy
     
-    d.	ValidFrom
+    d. ValidFrom
     
-    e.	ValidTo
+    e. ValidTo
     
-    f.	CountryID
+    f. CountryID
 
-24.	Select **OK**.
+24. Select **OK**.
 
     ![](../media/lab-03/image060.png)
  
     Notice the process is like Power Query, we have all the steps recorded both in the Applied Steps panel on the right and the visual view. Let’s rename Merge query and Enable load, so that the data is loaded from this query.
 
-25.	**Right click on Merge** query in the Queries (left) panel. Select **Rename** and rename the query to **Geo**.
-26.	**Right click on Geo** query in the Queries (left) panel. Select **Enable Load** to enable this query.
-27.	Make sure that Cities, States and Countries queries are **disabled**.
-28.	Select **Save**.
+25. **Right click on Merge** query in the Queries (left) panel. Select **Rename** and rename the query to **Geo**.
+26. **Right click on Geo** query in the Queries (left) panel. Select **Enable Load** to enable this query.
+27. Make sure that Cities, States and Countries queries are **disabled**.
+28. Select **Save**.
 
     ![](../media/lab-03/image063.jpg)
 
@@ -259,119 +268,119 @@ The next step is to transform the data, so we can create a semantic model. We ar
     
     **Note:** All the steps we performed using Power Query editor can be performed using Visual query editor as well.
 
-29.	From the Visual query editor menu select **Save as view**.
+29. From the Visual query editor menu select **Save as view**.
 
     ![](../media/lab-03/image066.jpg)
 
     Save as view dialog opens. Notice the SQL query is available. You can review it, if you choose it.
 
-30.	Enter **Geo** as **View name**.
-31.	Select **OK** to save the view.
+30. Enter **Geo** as **View name**.
+31. Select **OK** to save the view.
 
     ![](../media/lab-03/image069.png)
 
     You will get an alert once the view is saved.
 
-32.	In the Explorer (left) panel, expand **Views**. We have the newly created Geo view.
+32. In the Explorer (left) panel, expand **Views**. We have the newly created Geo view.
  
     ![](../media/lab-03/image072.png)
  
 ## Task 3: Create Reseller view using Visual Query
 Let’s create Reseller view which is created by merging Customers table with BuyingGroups table. This time around we will create the view using Visual query.
 
-1.	From the Lakehouse menu bar, select **Home -> New visual query**. A new visual query opens.
-2.	From Explorer section, drag Customers and BuyingGroups tables to the visual query section.
+1. From the Lakehouse menu bar, select **Home -> New visual query**. A new visual query opens.
+2. From Explorer section, drag Customers and BuyingGroups tables to the visual query section.
 
     ![](../media/lab-03/image075.jpg)
  
-3.	**Select Customers** query. When selected, Customers will have a blue border and there is a “+” sign
+3. **Select Customers** query. When selected, Customers will have a blue border and there is a “+” sign
 after Table (this indicates we are adding a step after Table. If you do not see the “+” sign after table, you may have selected a different step. Select Table and you will be good to go).
-4.	From the Visual query menu, select **Combine -> Merge queries**.
+4. From the Visual query menu, select **Combine -> Merge queries**.
 
     ![](../media/lab-03/image078.jpg)
 
     Merge dialog opens with Customers selected as the top table.
 
-5.	In the **right table to merge**, select **BuyingGroups**.
-6.	Select **BuyingGroupID** columns from both the tables. We are going to join using this column.
-7.	Select **Inner** as the **Join kind**.
-8.	Select **OK**.
+5. In the **right table to merge**, select **BuyingGroups**.
+6. Select **BuyingGroupID** columns from both the tables. We are going to join using this column.
+7. Select **Inner** as the **Join kind**.
+8. Select **OK**.
 
     ![](../media/lab-03/image081.jpg)
 
-9.	In the **Data view** (bottom panel), click on the **double arrow** next to the **BuyingGroups** column (last column to the right) to select the columns we need from BuyingGroups.
+9. In the **Data view** (bottom panel), click on the **double arrow** next to the **BuyingGroups** column (last column to the right) to select the columns we need from BuyingGroups.
  
-10.	A panel opens. Select **BuyingGroupName** column.
-11.	Select **OK**.
+10. A panel opens. Select **BuyingGroupName** column.
+11. Select **OK**.
 
     ![](../media/lab-03/image084.jpg)
 
     We do not need all the columns. Let’s select only those we need.
 
-12.	From the Visual query menu, select **Manage columns -> Choose columns**.
+12. From the Visual query menu, select **Manage columns -> Choose columns**.
 
     ![](../media/lab-03/image087.jpg)
 
-13.	Choose columns dialog opens. **Select** the following columns.
+13. Choose columns dialog opens. **Select** the following columns.
 
-    a.	ResellerID
+    a. ResellerID
     
-    b.	ResellerName
+    b. ResellerName
     
-    c.	PostalCityID
+    c. PostalCityID
     
-    d.	PhoneNumber
+    d. PhoneNumber
     
-    e.	FaxNumber
+    e. FaxNumber
     
-    f.	WebsiteURL
+    f. WebsiteURL
     
-    g.	DeliveryAddressLine1
+    g. DeliveryAddressLine1
     
-    h.	DeliveryAddressLine2
+    h. DeliveryAddressLine2
     
-    i.	DeliveryPostalCode
+    i. DeliveryPostalCode
     
-    j.	PostalAddressLine1
+    j. PostalAddressLine1
     
-    k.	PostalAddressLine2
+    k. PostalAddressLine2
     
-    l.	PostalPostalCode
+    l. PostalPostalCode
     
-    m.	BuyingGroupName
+    m. BuyingGroupName
 
-14.	Select **OK**.
+14. Select **OK**.
 
     ![](../media/lab-03/image090.png)
  
-15.	Let’s rename BuyingGroupName column. In the **Data view, double click on BuyingGroupName** column header to make it editable.
-16.	**Rename** the column to **ResellerCompany**.
+15. Let’s rename BuyingGroupName column. In the **Data view, double click on BuyingGroupName** column header to make it editable.
+16. **Rename** the column to **ResellerCompany**.
 
     ![](../media/lab-03/image093.jpg)
 
     Notice the Customer table has all the steps documented. Now let’s save this view.
 
-17.	We need to save the Customer query as it has all the steps. We need to Enable load. Select the **ellipsis** in the **Customer** query box.
-18.	Make sure **Enable load** is checked.
+17. We need to save the Customer query as it has all the steps. We need to Enable load. Select the **ellipsis** in the **Customer** query box.
+18. Make sure **Enable load** is checked.
 
     ![](../media/lab-03/image096.jpg)
  
     **Note: Customer box** should have a blue border if enable load is checked.
 
-19.	From the Visual query menu, select **Save as view**.
+19. From the Visual query menu, select **Save as view**.
 
     ![](../media/lab-03/image099.jpg)
 
     Save as view dialog opens. Notice the SQL query is available. You can review it, if you choose it.
 
-20.	Enter **Reseller** as **View name**.
-21.	Select **OK** to save the view.
+20. Enter **Reseller** as **View name**.
+21. Select **OK** to save the view.
  
     ![](../media/lab-03/image102.png)
  
     You will get an alert once the view is saved.
 
-22.	In the Explorer (left) panel, expand **Views**. We have the newly created Reseller view.
+22. In the Explorer (left) panel, expand **Views**. We have the newly created Reseller view.
 
     ![](../media/lab-03/image105.png)
 
@@ -379,61 +388,61 @@ after Table (this indicates we are adding a step after Table. If you do not see 
 Let’s create Sales view, which is created by merging InvoiceLineItems and Invoices table and Reseller
 view. We have this query in Power BI Desktop. We will copy the code from Advanced Editor. But before copying the code, we need to create a merge table using Visual query as creating a blank query is not possible in Visual query. Let’s give this method a try.
 
-1.	From the Lakehouse menu bar, select **Home -> New visual query**. A new visual query opens.
-2.	From **Explorer -> Table** section, drag **InvoiceLineItems, Invoices** tables to the visual query section
-3.	From **Explorer -> Views** section, drag **Reseller** view to the visual query section
-4.	From the Visual query editor, select the **Focus mode icon** to open Power Query editor.
+1. From the Lakehouse menu bar, select **Home -> New visual query**. A new visual query opens.
+2. From **Explorer -> Table** section, drag **InvoiceLineItems, Invoices** tables to the visual query section
+3. From **Explorer -> Views** section, drag **Reseller** view to the visual query section
+4. From the Visual query editor, select the **Focus mode icon** to open Power Query editor.
 
     ![](../media/lab-03/image108.jpg)
 
-5.	With InvoiceLineItems query selected, from the ribbon select **Home - > Merge queries - > Merge queries as new**.
+5. With InvoiceLineItems query selected, from the ribbon select **Home - > Merge queries - > Merge queries as new**.
 
     ![](../media/lab-03/image111.jpg)
  
     Merge dialog opens.
 
-6.	In the **left table to merge**, select **InvoiceLineItems**.
-7.	In the **right table to merge**, select **Invoices**.
-8.	Select **InvoiceID** columns from both the tables. We are going to join using this column.
-9.	Select **Inner** as the **Join kind**.
-10.	Select **OK**.
+6. In the **left table to merge**, select **InvoiceLineItems**.
+7. In the **right table to merge**, select **Invoices**.
+8. Select **InvoiceID** columns from both the tables. We are going to join using this column.
+9. Select **Inner** as the **Join kind**.
+10. Select **OK**.
 
     ![](../media/lab-03/image114.jpg)
 
     We are going to copy code from Power BI Desktop and paste it using Advanced Editor.
 
-11.	If you have not already opened it, open **FAIAD.pbix** located in the **Reports** folder on the desktop of your lab environment.
-12.	From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
+11. If you have not already opened it, open **FAIAD.pbix** located in the **Reports** folder on the desktop of your lab environment.
+12. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
 
     ![](../media/lab-03/image117.jpg)
  
-13.	From the left panel, under the ADLSData folder, select **Sales** query.
-14.	From the ribbon select **Home - > Advanced Editor**. Advanced Editor dialog opens.
+13. From the left panel, under the ADLSData folder, select **Sales** query.
+14. From the ribbon select **Home - > Advanced Editor**. Advanced Editor dialog opens.
 
     ![](../media/lab-03/image120.jpg)
 
-15.	**Select code from Line 3** (#"Expanded Invoice" …) all the way through to the last line of code.
-16.	**Right click** and select **Copy**.
-17.	Select **Cancel** to close Advanced Editor.
+15. **Select code from Line 3** (#"Expanded Invoice" …) all the way through to the last line of code.
+16. **Right click** and select **Copy**.
+17. Select **Cancel** to close Advanced Editor.
 
     ![](../media/lab-03/image123.jpg)
  
-18.	**Navigate back to the browser** where you have the Power Query Editor open.
-19.	Make sure you have **Merge** query selected.
-20.	From the ribbon select **Home -> Advanced Editor**. Advanced Editor dialog opens.
+18. **Navigate back to the browser** where you have the Power Query Editor open.
+19. Make sure you have **Merge** query selected.
+20. From the ribbon select **Home -> Advanced Editor**. Advanced Editor dialog opens.
 
     ![](../media/lab-03/image126.jpg)
 
-21.	At the **end of line 2 add a comma** (Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner)
-22.	Click **Enter** to start a new line.
-23.	Enter **Ctrl+V** on your keyboard to paste the code you copied from Power BI Desktop.
+21. At the **end of line 2 add a comma** (Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner)
+22. Click **Enter** to start a new line.
+23. Enter **Ctrl+V** on your keyboard to paste the code you copied from Power BI Desktop.
 
     **Note:** If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
     ![](../media/lab-03/image129.jpg)
  
-24.	Highlight the last two lines of code ( in Source) and **delete** it.
-25.	Select **OK** to save the changes.
+24. Highlight the last two lines of code ( in Source) and **delete** it.
+25. Select **OK** to save the changes.
 
     ![](../media/lab-03/image132.jpg)
 
@@ -455,51 +464,51 @@ view. We have this query in Power BI Desktop. We will copy the code from Advance
     #"Removed Columns"
     ```
 
-26.	You will be navigated back to Power Query Editor. In the left, Queries panel, **double click on Merge** query to rename it.
-27.	**Rename** Merge query to **Sales**.
-28.	Right click on Sales query and select **Enable load** to enable the query to be loaded.
+26. You will be navigated back to Power Query Editor. In the left, Queries panel, **double click on Merge** query to rename it.
+27. **Rename** Merge query to **Sales**.
+28. Right click on Sales query and select **Enable load** to enable the query to be loaded.
 
     ![](../media/lab-03/image135.png)
 
-29.	Select **Save** to Save and Close the Power Query dialog. You will be navigated to Visual query.
-30.	From the Visual query menu, select **Save as view**. Save as view dialog opens. Notice the SQL query is available. You can review it, if you choose it.
-31.	Enter **Sales** as **View name**.
-32.	Select **OK** to save the view.
+29. Select **Save** to Save and Close the Power Query dialog. You will be navigated to Visual query.
+30. From the Visual query menu, select **Save as view**. Save as view dialog opens. Notice the SQL query is available. You can review it, if you choose it.
+31. Enter **Sales** as **View name**.
+32. Select **OK** to save the view.
 
     ![](../media/lab-03/image138.png)
  
     You will get an alert once the view is saved.
 
-33.	In the Explorer (left) panel, expand **Views**. We have the newly created Sales view.
+33. In the Explorer (left) panel, expand **Views**. We have the newly created Sales view.
 
     ![](../media/lab-03/image141.jpg)
  
 ## Task 5: Create Product view using Visual query
 Let’s create Product view, which is created by merging ProductItem, ProductItemGroup and ProductGroups tables. To move things along, we are going to copy code into Advanced Editor.
-1.	From the Lakehouse menu bar, select **Home -> New visual query**. A new visual query opens.
-2.	From Explorer section, drag **ProductItem**, **ProductItemGroup** and **ProductGroups** tables to the visual query section
-3.	From the Visual query editor, select the **Focus mode icon** to open Power Query editor.
+1. From the Lakehouse menu bar, select **Home -> New visual query**. A new visual query opens.
+2. From Explorer section, drag **ProductItem**, **ProductItemGroup** and **ProductGroups** tables to the visual query section
+3. From the Visual query editor, select the **Focus mode icon** to open Power Query editor.
 
     ![](../media/lab-03/image144.jpg)
 
-4.	With **ProductItem** query selected, from the ribbon select **Home -> Merge queries -> Merge queries as new**. Merge dialog opens.
+4. With **ProductItem** query selected, from the ribbon select **Home -> Merge queries -> Merge queries as new**. Merge dialog opens.
 
     ![](../media/lab-03/image147.jpg)
 
-5.	In the **left table to merge**, select **ProductItem**.
-6.	In the **right table to merge**, select **ProductItemGroup**.
-7.	Select **StockItemID** columns from both the tables. We are going to join using this column.
-8.	Select **Left outer** as the **Join kind**.
-9.	Select **OK**. New Merge query is created.
+5. In the **left table to merge**, select **ProductItem**.
+6. In the **right table to merge**, select **ProductItemGroup**.
+7. Select **StockItemID** columns from both the tables. We are going to join using this column.
+8. Select **Left outer** as the **Join kind**.
+9. Select **OK**. New Merge query is created.
 
     ![](../media/lab-03/image150.png)
  
-10.	With Merge query selected, from the ribbon, select **Home -> Advanced editor**. Advanced editor dialog opens.
+10. With Merge query selected, from the ribbon, select **Home -> Advanced editor**. Advanced editor dialog opens.
 
     ![](../media/lab-03/image153.jpg)
 
-11.	**Select all the code** in Advanced editor and **delete** it.
-12.	**Paste** the below code into Advanced editor. 
+11. **Select all the code** in Advanced editor and **delete** it.
+12. **Paste** the below code into Advanced editor. 
 
     ```
     let
@@ -515,26 +524,26 @@ Let’s create Product view, which is created by merging ProductItem, ProductIte
     #"Choose columns"
     ```
 
-13.	Select **OK** to close Advanced Editor. You will be navigated back to Power Query editor.
+13. Select **OK** to close Advanced Editor. You will be navigated back to Power Query editor.
 
     ![](../media/lab-03/image156.jpg)
 
-14.	In the left, Queries panel, **double click on Merge** query to rename it.
-15.	**Rename** Merge query to **Product**.
-16.	Right click on Product query and select **Enable load** to enable the query to be loaded.
-17.	Select **Save** to Save and Close the Power Query dialog. You will be navigated to Visual query.
+14. In the left, Queries panel, **double click on Merge** query to rename it.
+15. **Rename** Merge query to **Product**.
+16. Right click on Product query and select **Enable load** to enable the query to be loaded.
+17. Select **Save** to Save and Close the Power Query dialog. You will be navigated to Visual query.
 
     ![](../media/lab-03/image159.jpg)
  
-18.	From the Visual query menu, select **Save as view**. Save as view dialog opens. Notice the SQL query is available. You can review it, if you choose it.
-19.	Enter **Product** as **View name**.
-20.	Select **OK** to save the view.
+18. From the Visual query menu, select **Save as view**. Save as view dialog opens. Notice the SQL query is available. You can review it, if you choose it.
+19. Enter **Product** as **View name**.
+20. Select **OK** to save the view.
 
     ![](../media/lab-03/image162.png)
 
     You will get an alert once the view is saved.
 
-21.	In the Explorer (left) panel, expand **Views**. We have the newly created Product view.
+21. In the Explorer (left) panel, expand **Views**. We have the newly created Product view.
 
     ![](../media/lab-03/image165.jpg)
  
