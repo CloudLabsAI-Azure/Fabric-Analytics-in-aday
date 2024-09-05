@@ -47,7 +47,7 @@ By the end of this lab, you will have learned:
 
 # Dataflow Gen2
 ## Task 1: Copy SharePoint queries to Dataflow
-1. Let’s navigate back to the Fabric workspace, **FAIAD_username** you created in Lab 2, Task 9.
+1. Let’s navigate back to the Fabric workspace, **FAIAD_<username\>** you created in Lab 2, Task 9.
 2. Select **Fabric experience selector icon** on the bottom left of your screen. Fabric experience dialog opens
 3. Select **Data Factory** from the dialog. You will navigate to **Data Factory Home page**.
 
@@ -102,7 +102,7 @@ Connection is established and you can view the data in the preview panel. Feel f
     ![](../media/lab-04/image024.png)
 
 4. Choose destination target dialog opens. Make sure the **New table radio button** is selected, since we are creating a new table.
-5. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<username>**.
+5. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<username\>**.
 6. Select **lh_FAIAD**
 7. Leave the table name as **People**
 8. Select **Next**.
@@ -123,7 +123,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 
     ![](../media/lab-04/image033.jpg)
 
-    **Note:** You will be navigated back to **FAIAD_<username> workspace**. It may take a few moments for the Dataflow to Publish.
+    **Note:** You will be navigated back to **FAIAD_<username\> workspace**. It may take a few moments for the Dataflow to Publish.
 
 3. Dataflow 1 is the dataflow we were working in. Let’s rename it before we continue. Click on the **ellipsis (…)** next to Dataflow 1. Select **Properties**.
 
@@ -135,7 +135,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 
     ![](../media/lab-04/image039.png)
 
-    You will be navigated back to **FAIAD_<username> workspace**.
+    You will be navigated back to **FAIAD_<username\> workspace**.
 
 7. Select **lh_FAIAD** to navigate to the lakehouse.
 8. Make sure you are in Lakehouse view (not SQL analytics endpoint).
@@ -146,7 +146,7 @@ Connection is established and you can view the data in the preview panel. Feel f
     We have now ingested all the data into Lakehouse. In the next lab, we will schedule Dataflow refresh.
 
 ## Task 5: Copy Snowflake queries to Dataflow
-1. Let’s navigate back to the Fabric workspace, **FAIAD_<username>**
+1. Let’s navigate back to the Fabric workspace, **FAIAD_<username\>**
 2. From the top menu, select **New -> Dataflow Gen2**.
 
     ![](../media/lab-04/image042.png)
@@ -205,7 +205,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
     ![](../media/lab-04/image060.png)
  
 5. Choose destination target dialog opens. Make sure the **New table radio button** is **selected**, since we are creating a new table.
-6. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<username>**.
+6. We want to create the table in the Lakehouse we created earlier. In the left panel, navigate to **Lakehouse -> FAIAD_<username\>**.
 
 7. Select **lh_FAIAD**
 8. Leave the table name as **Supplier**
@@ -232,7 +232,7 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
     ![](../media/lab-04/image075.jpg)
 
-    You will be navigated back to **FAIAD_<username> workspace**. It may take a few moments for the Dataflow to Publish.
+    You will be navigated back to **FAIAD_<username\> workspace**. It may take a few moments for the Dataflow to Publish.
 
 5. Select **lh_FAIAD** to navigate to the lakehouse.
 6. Make sure you are in Lakehouse view (not SQL analytics endpoint).

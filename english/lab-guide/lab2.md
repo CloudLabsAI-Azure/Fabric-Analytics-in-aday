@@ -222,7 +222,7 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
     ![](../media/lab-02/image051.png)
  
 3. **Create a workspace** dialog opens on the right side of the browser.
-4. In the **Name** field enter **FAIAD_username**
+4. In the **Name** field enter **FAIAD_<username\>**
 
     **Note:** Workspace name must be unique. However, your workspace name must be different. Make sure a green check mark with **“This name is available”** is displayed below the Name field.
 

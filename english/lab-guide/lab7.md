@@ -96,7 +96,7 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 10. Save your report dialog opens. Name the report as **rpt_Sales_Auto_Report Note:** we are prefixing report name with rpt which is short for report.
 
-11. Make sure the report is saved in your workspace, **FAIAD_<username>**.
+11. Make sure the report is saved in your workspace, **FAIAD_<username\>**.
 
 12. Select **Save**.
 
@@ -114,7 +114,7 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 Let’s create a new report using a blank canvas. 
 
-1. In the **left panel**, select your workspace name, **FAIAD_<username>** to be navigated to the workspace. 
+1. In the **left panel**, select your workspace name, **FAIAD_<username\>** to be navigated to the workspace. 
 
 2. From the top menu, select **New -> Report**. You will be navigated to build your first report page.
 
@@ -250,7 +250,7 @@ Let’s save the report before we navigate away from the report to make changes 
 
 2. Save your report dialog opens. Name the report as **rpt_Sales_Report Note:** We are prefixing report name with rpt which is short for report. 
 
-3. Make sure the report is saved in **FAIAD_<username>** workspace. 
+3. Make sure the report is saved in **FAIAD_<username\>** workspace. 
 
 4. Select **Save**. Notice the report is saved and you are in view mode.
 
@@ -440,7 +440,7 @@ In a real scenario, data is updated at the source. Since we are in a training en
 
 1. Navigate back to the **browser**. 
 
-2. Select **FAIAD_<username>** from the left menu bar to navigate to workspace home.
+2. Select **FAIAD_<username\>** from the left menu bar to navigate to workspace home.
 
 3. Select **lh_FAIAD** to navigate into the Lakehouse. 
 
@@ -670,7 +670,7 @@ In a real scenario, data is updated at the source. Since we are in a training en
 
 Once you are ready to clean up the lab environment, follow the steps below. 
 
-1. Select **FAIAD_<username>** workspace from the left panel to navigate to the workspace home.
+1. Select **FAIAD_<username\>** workspace from the left panel to navigate to the workspace home.
 
    ![](../media/lab-07/image149.jpg)
 
