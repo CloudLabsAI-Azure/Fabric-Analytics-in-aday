@@ -1,4 +1,4 @@
-   ![](../media/lab-06/image003.png)
+![](../media/lab-06/image003.png)
 
 # Contents
 
@@ -185,9 +185,7 @@ The first step is to create relationships between these tables.
 
    ![](../media/lab-06/image021.png)
 
-7. Similarly, create a relationship between Sales and Date tables. Select **InvoiceDate** from the **Sales**
-
-   table and drag it over to **Date** in the **Date** table.
+7. Similarly, create a relationship between Sales and Date tables. Select **InvoiceDate** from the **Sales** table and drag it over to **Date** in the **Date** table.
 
 8. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **InvoiceDate.**
    
