@@ -1,11 +1,10 @@
- 	 
 ![](../media/lab-03/main3.png)
 
 # Contents
 - Introduction
 
 - Shortcut to ADLS Gen2
-    
+
     - Task 1: Create Shortcut
 
 - Transform data using Visual Query
