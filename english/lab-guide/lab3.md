@@ -63,8 +63,7 @@ Shortcut is used to create a link to the target location. This is like creating 
 
     ![](../media/lab-03/image012.jpg)
  
-10. You will be connected to ADLS Gen2 with the directory structure displayed in the left panel. Expand
-**Delta-Parquet-Format-FY25**.
+10. You will be connected to ADLS Gen2 with the directory structure displayed in the left panel. Expand **Delta-Parquet-Format-FY25**.
 
 11. **Select** the following directories:
 
