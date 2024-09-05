@@ -1,6 +1,6 @@
    ![](../media/lab-07/image003.png)
 
-## Contents
+# Contents
 
 * Introduction
 
@@ -26,9 +26,7 @@
 
 # Introduction
 
-We have data from various sources ingested into the Lakehouse. In this lab, you will work with the semantic model. Typically, we performed modeling activities like creating relationships, adding
-
-measures, etc. in Power BI Desktop. Here we will learn how to perform these modeling activities in the service.
+We have data from various sources ingested into the Lakehouse. In this lab, you will work with the semantic model. Typically, we performed modeling activities like creating relationships, adding measures, etc. in Power BI Desktop. Here we will learn how to perform these modeling activities in the service.
 
 By the end of this lab, you will have learned:
 
@@ -39,7 +37,7 @@ By the end of this lab, you will have learned:
 
 ## Task 1: Query data using SQL
 
-1. Let’s navigate back to the Fabric workspace, **FAIAD\_<username>** you created in Lab 2, Task 9.
+1. Let’s navigate back to the Fabric workspace, **FAIAD_<username\>** you created in Lab 2, Task 9.
   
 2. If you choose to, **Minimize the task flow** to view the entire list of items.
    
@@ -105,7 +103,7 @@ Views, Functions, and Stored Procedures. If you have a SQL background, feel free
 
 8. Save your report dialog opens. Type **Units by Supplier** in the **Enter a name for your report textbox**.
    
-9. Make sure the destination workspace is your Fabric workspace, **FAIAD<username>**.
+9. Make sure the destination workspace is your Fabric workspace, **FAIAD<username\>**.
    
 10. Select **Save.**
 
@@ -203,9 +201,7 @@ The first step is to create relationships between these tables.
 
      ![](../media/lab-07/image023.png)
 
-13. Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID**
-
-   from the **Sales** table and **StockItemID** from the **Product** table.
+13. Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID** from the **Sales** table and **StockItemID** from the **Product** table.
 
 **Note:** All our updates are automatically saved.
 
@@ -263,7 +259,7 @@ Let’s add a few measures we need to create the Sales dashboard.
 
 20. Use the slider to set **Thousands separator** to **Yes**.
 
-   ![](../media/lab-07/image027.png)
+    ![](../media/lab-07/image027.png)
 
 21. In the **Data panel** (on the right), select **Model**. Notice this provides a view that will help organize all the items in the semantic model.
 
@@ -271,7 +267,7 @@ Let’s add a few measures we need to create the Sales dashboard.
 
 23. You can also **expand individual Tables** to view the Columns, Hierarchies and Measures in each one of them.
 
-   ![](../media/lab-07/image028.png)
+    ![](../media/lab-07/image028.png)
 
 Again, in the interest of time, we will not be creating all the measures. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the remaining measures.
 
@@ -311,7 +307,7 @@ Let’s add the remaining relationships.
 
 13. Select **Save**.
 
-   ![](../media/lab-07/image031.png)
+     ![](../media/lab-07/image031.png)
 
 14. Now let’s create a relationship between Reseller and Geo. Select **New relationship**.
 
@@ -325,7 +321,7 @@ Let’s add the remaining relationships.
 
 19. Select **Save**.
 
-   ![](../media/lab-07/image032.png)
+     ![](../media/lab-07/image032.png)
 
 20. Similarly, create a relationship between Customer and Reseller. Select **New relationship**.
 
@@ -349,7 +345,9 @@ Let’s add the remaining relationships.
 
 28. Similarly, create a **many to one** relationship between **PO** and **People**. Select **ContactPersonID** from **PO** and **PersonID** from **People**.
 
-29. Select **Close** to close Manage relationships dialog. We are done creating all the relationships. **Checkpoint:** Your model should look like the screenshot below.
+29. Select **Close** to close Manage relationships dialog. We are done creating all the relationships.
+
+**Checkpoint:** Your model should look like the screenshot below.
 
    ![](../media/lab-07/image034.png)
 
@@ -374,9 +372,12 @@ Let’s add the remaining measures.
    ![](../media/lab-07/image036.png)
 
 8. Follow similar steps to add the following measures:
-   1. In **Sales** table, **GM = SUM(Sales[LineProfit])** formatted as **Currency with 0 decimal places.**
-   1. In **Sales** table, **GM% = DIVIDE([GM], [Sales])** formatted as **Percentage with 0 decimal places.**
-   1. In **Customer** table **, No of Customers = COUNTROWS(Customer)** formatted as **Whole Number with Thousands separator enabled.**
+
+   a. In **Sales** table, **GM = SUM(Sales[LineProfit])** formatted as **Currency with 0 decimal places.**
+
+   b. In **Sales** table, **GM% = DIVIDE([GM], [Sales])** formatted as **Percentage with 0 decimal places.**
+
+   c. In **Customer** table **, No of Customers = COUNTROWS(Customer)** formatted as **Whole Number with Thousands separator enabled.**
 
 # References
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
@@ -429,13 +430,7 @@ ABOVE. THE TECHNOLOGY/CONCEPTS REPRESENTED IN THIS DEMO/LAB MAY NOT REPRESENT FU
 
 DIFFERENT.
 
-**FEEDBACK**. If you give feedback about the technology features, functionality and/or concepts described in this demo/lab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third
-
-parties, without charge, any patent rights needed for their products, technologies and services to
-
-use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive
-
-this agreement.
+**FEEDBACK**. If you give feedback about the technology features, functionality and/or concepts described in this demo/lab to Microsoft, you give to Microsoft, without charge, the right to use, share and commercialize your feedback in any way and for any purpose. You also give to third parties, without charge, any patent rights needed for their products, technologies and services to use or interface with any specific parts of a Microsoft software or service that includes the feedback. You will not give feedback that is subject to a license that requires Microsoft to license its software or documentation to third parties because we include your feedback in them. These rights survive this agreement.
 
 MICROSOFT CORPORATION HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH REGARD TO THE DEMO/LAB, INCLUDING ALL WARRANTIES AND CONDITIONS OF MERCHANTABILITY,
 
