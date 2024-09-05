@@ -355,8 +355,7 @@ Notice in the Explorer pane on the left, we have InvoicesMay table. Now we need 
 17. From the top menu, select **Home -> New SQL query**. A new SQL query pane opens. 
 18. **Copy** the below code and paste it into the SQL query pane. 
 
- 
-
+```
 ALTER VIEW [dbo].[Sales] AS ( 
 select [$Outer].[InvoiceLineID] as [InvoiceLineID], 
   [$Outer].[InvoiceID] as [InvoiceID], 
@@ -494,6 +493,7 @@ from [lh_FAIAD].[dbo].[Reseller] as [$Table]
  where [$Outer].[CustomerID] = [$Inner].[ResellerID] or [$Outer].[CustomerID] is null and [$Inner].[ResellerID] is null 
 ) 
 ) 
+```
 
 19. From the visual query menu, select Run to execute the code. 
 Once the code is executed, we have updated Sales table to include May 2024 data. 
