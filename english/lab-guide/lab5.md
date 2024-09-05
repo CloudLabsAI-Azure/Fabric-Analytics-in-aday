@@ -200,7 +200,7 @@ In our scenario, Employee Data is not updated on schedule. Sometimes there is a 
 
 13. From the menu select **Home -> Save** icon to save the pipeline.
 
-   ![](../media/lab-05/image17.png) 
+     ![](../media/lab-05/image17.png) 
 
 Notice the advantage of using the data pipeline compared to setting the dataflow on scheduled refresh (like we did for the earlier dataflows):
 
@@ -348,17 +348,17 @@ We need to write an expression which would execute until either the value of **v
 
 22. With the help of IntelliSense select **variables(\'varSuccess\')**. Here we are comparing the value of varIsSuccess to the value of varSuccess. (varSuccess is defaulted to Yes.)
 
-   ![](../media/lab-05/image29.png)
+     ![](../media/lab-05/image29.png)
 
 23. Your expression should be:
 
-  ```
-  @or(equals(variables(\'varCounter\'),3),equals(variables(\'varIsSuccess\'), variables(\'varSuccess\'))) 
-  ```
+     ```
+     @or(equals(variables(\'varCounter\'),3),equals(variables(\'varIsSuccess\'), variables(\'varSuccess\'))) 
+     ```
 
 24. Select **OK**.
 
-   ![](../media/lab-05/image30.png)
+     ![](../media/lab-05/image30.png)
 
 ## Task 8: Configure Dataflow Activity
 
@@ -428,7 +428,7 @@ d. **Blue straight arrow** icon is used on completion of the activity.
 
 12. Select **OK**. You will be navigated back to the **iterator design pane**.
 
-   ![](../media/lab-05/image36.png)
+     ![](../media/lab-05/image36.png)
 
 Now we need to set the counter if the dataflow activity fails. In Data Pipeline, we cannot self-reference a variable. Which means we cannot increment the counter variable varCounter by adding one to its value (varCounter = varCounter + 1). So, we make use of the varTempCounter variable.
 
@@ -514,17 +514,17 @@ Next, we need to wait for 5 minutes/300 seconds if dataflow refresh fails the fi
 
 8. Pipeline expression builder dialog opens. Enter
 
-  ```
-  @if(  
-    greater(variables('varCounter'), 1),  
-    if(  
-     equals(variables('varCounter'), 2),  
-     mul(variables('varWaitTime'), 15),  
-     mul(variables('varWaitTime'), 0)  
-    ),  
-    mul(variables('varWaitTime'), 5)  
-  )
-  ```
+     ```
+     @if(  
+       greater(variables('varCounter'), 1),  
+       if(  
+        equals(variables('varCounter'), 2),  
+        mul(variables('varWaitTime'), 15),  
+        mul(variables('varWaitTime'), 0)  
+       ),  
+       mul(variables('varWaitTime'), 5)  
+     )
+     ```
 
 Feel free to type this expression in, or use the menu to select the functions, or copy and paste it in. We are using two new functions here:
 
