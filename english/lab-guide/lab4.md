@@ -71,6 +71,7 @@ Notice the query pasted and is available in the left panel. Since we do not have
 2.	Connect to data source dialog opens. In the **Connection** dropdown make sure **Create new connection** is selected.
 3.	**Authentication kind** should be **Organizational Account**.
 4.	Select **Connect**.
+
 **Note**: You will be signed in using your credentials. They will be different than the screenshot below.
 
 
@@ -89,7 +90,9 @@ Connection is established and you can view the data in the preview panel. Feel f
 8.	Select **Next**.
  
 9.	Choose destination settings dialog opens. Make sure **“Use automatic settings”** is **enabled**.
+
 **Note**: You can disable automatic settings and notice you have options to set Update method and Schema options. Once done exploring, make sure **“Use automatic settings”** is **enabled**.
+
 10.	Select **Save settings**.
 
  
@@ -98,6 +101,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 2.	On the bottom right corner, select **Publish**.
 
 Note: You will be navigated back to FAIAD_<username> workspace. It may take a few moments for the Dataflow to Publish.
+
 3.	Dataflow 1 is the dataflow we were working in. Let’s rename it before we continue. Click on the **ellipsis (…)** next to Dataflow 1. Select **Properties**.
 
  
