@@ -46,45 +46,47 @@ By the end of this lab, you will have learned:
 # Power BI 
 
 ## Task 1: Auto-Create Report
+
 Let’s start by using the auto-create report option. And later in the lab, we will re-create the report we have in Power BI. 
 
-1. Let’s navigate back to the **Fabric workspace** you created in the earlier lab. 
-2.From the bottom of the left panel select **Fabric experience selector** icon. 
-3.Fabric experience dialog opens. Select **Power BI**. You will be navigated to **Power BI Home page**.
+1.Let’s navigate back to the **Fabric workspace** you created in the earlier lab. 
 
+2.From the bottom of the left panel select **Fabric experience selector** icon.
+
+3.Fabric experience dialog opens. Select **Power BI**. You will be navigated to **Power BI Home page**.
 
 4.Select **New Report** from the top menu.
 
-
-5. You will be navigated to **Build your first report screen**. There will be options to build report using excel, csv, enter data manually or to pick a published semantic model. We have created a semantic model in the previous labs. Let’s use that. Select **Pick a published semantic model** option.
-
-
-6. Pick a dataset to use in your report page opens. Notice we have four options. **Select sm_FAIAD**. 
-
-   a. **sm_FAIAD**: This is the semantic model we have created and want to use to build the report.
-   
-   b. **lh_FAIAD**: This is the lakehouse where we ingested all the data into.
-
-   c. **Units by Supplier**: This is the dataset we created using T-SQL.
-   
-   d. **DataflowsStagingWarehouse**: This is the staging warehouse which is created by default. We did not use this as we did not stage data.
-   
-   e. **DataflowsStagingLakehouse**: This is the staging lakehouse which is created by default. We did not use this as we did not stage data.
-
-7. Click the **arrow next to Auto-create report button**. Notice there are two options, Auto-create report and Create a blank report. Let’s try auto-creating, so select **Auto-create report**.
+5.You will be navigated to **Build your first report screen**. There will be options to build report using excel, csv, enter data manually or to pick a published semantic model. We have created a semantic model in the previous labs. Let’s use that. Select **Pick a published semantic model** option.
 
 
-8. Power BI will start auto creating the report. Notice there is an option to Pre-select data, if we choose too. Once the report is ready, a dialog appears on the top right of the screen. Select **View report now or it will autoload in a few seconds**.
+6.Pick a dataset to use in your report page opens. Notice we have four options. **Select sm_FAIAD**. 
+
+  a. **sm_FAIAD**: This is the semantic model we have created and want to use to build the report.
+    
+  b. **lh_FAIAD**: This is the lakehouse where we ingested all the data into.
+
+  c. **Units by Supplier**: This is the dataset we created using T-SQL.
+    
+  d. **DataflowsStagingWarehouse**: This is the staging warehouse which is created by default. We did not use this as we did not stage data.
+    
+  e. **DataflowsStagingLakehouse**: This is the staging lakehouse which is created by default. We did not use this as we did not stage data.
+
+7.Click the **arrow next to Auto-create report button**. Notice there are two options, Auto-create report and Create a blank report. Let’s try auto-creating, so select **Auto-create report**.
+
+8.Power BI will start auto creating the report. Notice there is an option to Pre-select data, if we choose too. Once the report is ready, a dialog appears on the top right of the screen. Select **View report now or it will autoload in a few seconds**.
 
 **Checkpoint**: You will have a report which looks like the screenshot below. There are a few KPIs and some trend visuals. This is a good start if you are analyzing a new model and need a jumpstart. 
 
 **Note:** Notice on the top menu, you have the option to Edit the report or view some of the data as tables. Feel free to explore these options. 
 
 9. Let’s save this report. From the top menu, select **Save**.
-10. Save your report dialog opens. Name the report as **rpt_Sales_Auto_Report Note:** we are prefixing report name with rpt which is short for report.
-11. Make sure the report is saved in your workspace, **FAIAD_<username>**.
-12. Select **Save**.
 
+10. Save your report dialog opens. Name the report as **rpt_Sales_Auto_Report Note:** we are prefixing report name with rpt which is short for report.
+
+11. Make sure the report is saved in your workspace, **FAIAD_<username>**.
+
+12. Select **Save**.
 
 **Note:** Auto-created report may look different for you as it is “auto-created”. It also depends on the relationships and measures you created in the previous lab (Lab 6). 
 
@@ -93,18 +95,18 @@ Above screenshot is how the auto-created report may look if you created all the 
 Below screenshot is how the auto-created report may look if you skipped creating the optional relationships and measures (Lab 6). 
 
 
-
 ## Task 2: Configure background for a New report 
 
 Let’s create a new report using a blank canvas. 
-1. In the **left panel**, select your workspace name, **FAIAD_<username>** to be navigated to the workspace. 
-2. From the top menu, select **New -> Report**. You will be navigated to build your first report page.
 
+1. In the **left panel**, select your workspace name, **FAIAD_<username>** to be navigated to the workspace. 
+
+2. From the top menu, select **New -> Report**. You will be navigated to build your first report page.
 
 3. Select **Pick a published semantic model**, so we can pick the model we have created.
 
-
 4. Pick a semantic model to use in your report dialog opens. Select **sm_FAIAD**.
+
 5. Click the **arrow next** to **Auto-create report button**. Select **Create a blank report**. You will be navigated to a report page which looks similar to the Power BI Desktop report page.
 
 
@@ -114,60 +116,85 @@ We are going to use this report as a reference. We will start by adding the canv
 
 
 7. Navigate back to **Power BI canvas** in your browser.
-8. Select **Format page icon in Visualization** pane. 
-9. Expand **Canvas background section**.
-10. Select **Browse** from **Image** option. File explorer dialog opens. 
-11. Navigate to **Reports** folder on the **desktop** of your lab environment. 
-12. Select **Summary Background.png**. 
-13. Set **Image fit** dropdown to Fit. 
-14. Set Transparency to 0%.
 
+8. Select **Format page icon in Visualization** pane. 
+
+9. Expand **Canvas background section**.
+
+10. Select **Browse** from **Image** option. File explorer dialog opens. 
+
+11. Navigate to **Reports** folder on the **desktop** of your lab environment. 
+
+12. Select **Summary Background.png**. 
+
+13. Set **Image fit** dropdown to Fit. 
+
+14. Set Transparency to 0%.
 
 ## Task 3: Add Header to the report 
 
 1. Let’s add the header in the top margin. From the menu, select **Text box**. 
-2. Enter **Fabrikam Company** as the first line in the text box. 
+
+2. Enter **Fabrikam Company** as the first line in the text box.
+
 3. Enter **Sales Report** as the second line in the text box. 
+
 4. Highlight **Fabrikam Company** and set Font to **Segoe UI** and **font size** to **18**, **bold**. 
+
 5. Highlight **Sales Report** and set **Font to Segoe UI** and **font size** to **14**. 
+
 6. With the **text box selected**, in the Format text box pane on the right, **expand Effects**. 
+
 7. Use **Background** slider to set it to **Off**. 
+
 8. Resize the **text box to fit in the top margin**.
    
-
 
 ## Task 4: Add KPIs to the report 
 
 1. Let’s add Sales KPI. Select the **white space** in the canvas to take focus off the text box. 
-2. From the Visualizations section select **Multi-row card visual**. 
-3. From the **Data section** expand **Sales table**. 
+
+2. From the **Visualizations section** select **Multi-row card visual**. 
+
+3. From the **Data section** expand **Sales table**.
+
 4. Select **Sales measure**. 
 
-
 5. With **multi-row card visual selected**, select **Format visual icon** from **Visualizations** section. 
-6. Expand **Category labels** section. 
+
+6. Expand **Category labels** section.
+
 7. Increase **font size** to **14**. 
+
 8. Select **Color drop down**. Color palette dialog opens.
+
 9. Select **More Colors**.
+
 10. Set Hex value to **#004753**.
 
-
 11. Expand **Cards** section
+
 12. Use **Accent bar** slider to set it to **Off**.
 
 
 13. Select **General** in the Visualizations pane. 
+
 14. Expand **Effects section**. 
+
 15. Use **Background** slider to set it to **Off**. 
+
 16. Resize the **visual** and move it to the **left box as shown in the screenshot**.
 
 
 17. Let’s add another KPI. Select the **Sales multi-row card** we just created. **Copy** the visual by selecting **Ctrl+C** from your keyboard. 
-18. **Paste** the visual by selecting **Ctrl+V** from your keyboard. Notice the visual is pasted onto the canvas. 
-19. With the **new visual highlighted**, in the **Visualization pane -> Build visual -> Fields** section remove **Sales** measure. 
-20. From the **Data** section, expand **Sales** table and select **Units** measure. 
-21. Resize the **visual** and **place it in the box below the Sales visual**.
 
+18. **Paste** the visual by selecting **Ctrl+V** from your keyboard. Notice the visual is pasted onto the canvas.
+
+19. With the **new visual highlighted**, in the **Visualization pane -> Build visual -> Fields** section remove **Sales** measure. 
+
+20. From the **Data** section, expand **Sales** table and select **Units** measure. 
+
+21. Resize the **visual** and **place it in the box below the Sales visual**.
 
 
 ## Task 5: Add Line chart to the report 
@@ -175,62 +202,81 @@ We are going to use this report as a reference. We will start by adding the canv
 Let’s create a line chart to visualize Sales over time by Reseller Company. 
 
 1. Select the **white space** in the canvas to take focus off the multi-row card visual. 
+
 2. From the **Visualizations section** select **Line chart**. 
+
 3. From the **Data section** expand **Date** table. 
+
 4. Select **Year** field. Notice Year is a summed by default and added to the Y-axis. Let’s rectify this. 
 
 
 
 ## Task 6: Save the report 
+
 Let’s save the report before we navigate away from the report to make changes to the model. 
+
 1. From the menu select **File -> Save**. 
+
 2. Save your report dialog opens. Name the report as **rpt_Sales_Report Note:** We are prefixing report name with rpt which is short for report. 
+
 3. Make sure the report is saved in **FAIAD_<username>** workspace. 
+
 4. Select **Save**. Notice the report is saved and you are in view mode.
    
- 
-
 ## Task 7: Configure Year column in Date table 
+
 1. From the **top menu**, select **Edit** to go back into Edit mode. 
+
 2. From the **top menu**, select **Open data model**. Notice semantic model is opened in a new browser window/tab.
    
-
 3. From the **Data panel on the right**, select Tables. 
+
 4. Expand **Date** table. 
+
 5. Select **Year** column. 
+
 6. In the **Properties** pane on the right, expand **Advanced** section. 
+
 7. In the **Summarize by** drop down select **None**. 
 
- 
+8. Navigate back to **report window/tab** of the browser.
 
-8. Navigate back to **report window/tab** of the browser. 
 9. On the **Data pane** of the right, expand **Date** table. Notice Year is not a summation field. 
+
 10. With the **Line chart visual selected**, **remove Sum of Year** from the Y-axis. 
+
 11. Select **Year** field and it will be added to the **X-axis**. 
+
 12. Expand **Sales** table and select **Sales measure**.
 
 
 
 ## Task 8: Configure Month Name column in Date table 
 
-1. Let’s add Month to this chart. From the Date table, drag **MonthNameShort** field below **Year** in the **X- axis**. Notice the visual is sorted by Sales. Let’s sort it by **MonthNameShort**. 
-2. Select the **ellipsis (…)** on the top right corner of the visual. 
-3. Select **Sort axis -> Year Short_Month_Name**. 
-4. Select the **ellipsis (…)** on the top right corner of the visual. 
-5. Select **Sort axis -> Sort ascending**. 
+1.Let’s add Month to this chart. From the Date table, drag **MonthNameShort** field below **Year** in the **X- axis**. Notice the visual is sorted by Sales. Let’s sort it by **MonthNameShort**. 
 
+2.Select the **ellipsis (…)** on the top right corner of the visual.
+
+3.Select **Sort axis -> Year Short_Month_Name**. 
+
+4.Select the **ellipsis (…)** on the top right corner of the visual. 
+
+5.Select **Sort axis -> Sort ascending**. 
 
 **Note:** The months are sorted alphabetically. Let’s fix this. 
 
+6.Navigate back to the **browser window/tab** where you have the semantic model open. 
 
-6. Navigate back to the **browser window/tab** where you have the semantic model open. 
-7. In the **Data** pane, expand **Date** table. 
-8. Select **MonthNameShort** column. 
+7.In the **Data** pane, expand **Date** table.
+
+8.Select **MonthNameShort** column. 
+
 9.In the **Properties** pane on the right, expand **Advanced** section. 
-10. In the **Sort by** column drop down select **Month**. 
+
+10.In the **Sort by column** drop down select **Month**. 
 
 
-11. Navigate back to **report window/tab** of the browser. Notice now months are sorted properly. 
+11.Navigate back to **report window/tab** of the browser. Notice now months are sorted properly. 
  
 
 ## Task 9: Format Line chart 
@@ -238,122 +284,145 @@ Let’s save the report before we navigate away from the report to make changes 
 Notice how easy it is to update the semantic model while building the reports. This gives a seamless interaction like Power BI Desktop. 
 
 1. With the **Line chart visual selected**, in the **Data section** expand **Reseller table**. 
+
 2. Drag **Reseller -> Reseller Company** field to the **Legend** section. 
 
- 
 3. With the **Line chart visual selected**, from the **Visualization** section select **Format visual icon -> General**. 
+
 4. Expand **Title** section. 
-5. Set **Title** text to **Sales over time**. 
-6. Expand **Effects** section. 
+
+5. Set **Title** text to **Sales over time**.
+
+6. Expand **Effects** section.
+
 7. Use **Background** slider to set it to **Off**. 
 
- 
-8. From the **Visualization** section select **Format visual icon -> Visual**. 
-9. Expand **Lines** section. 
-10. In the **Apply settings to -> Series dropdown**, select **Tailspin Toys**. 
-11. Expand **Colors** section. 
+8. From the **Visualization** section select **Format visual icon -> Visual**.
+
+9. Expand **Lines** section.
+
+10. In the **Apply settings to -> Series dropdown**, select **Tailspin Toys**.
+
+11. Expand **Colors** section.
+
 12. Set **color** to **#F17925** 
-13. In the **Apply settings to -> Series dropdown**, select **Wingtip Toys**. 
-14. Set **color** to **#004753** 
-15. Resize the **visual** and move it to the **top right box as shown in the screenshot**. 
-16. Scroll to the right on the visual and notice **we have data through April 2024**. 
+
+13. In the **Apply settings to -> Series dropdown**, select **Wingtip Toys**.
+
+14. Set **color** to **#004753**
+
+15.Resize the **visual** and move it to the **top right box as shown in the screenshot**. 
+
+16.Scroll to the right on the visual and notice **we have data through April 2024**. 
 
 
-17. Let’s save the report, from the menu select **File -> Save**. 
+17.Let’s save the report, from the menu select **File -> Save**. 
+
 As mentioned earlier, we will not build all the visuals in this lab. At your leisure, feel free to build more visuals. 
 
 ## Task 10: Connect Power BI Desktop to Semantic model 
+
 Now let’s see how easy it is to connect Power BI Desktop to the semantic model and build visuals. 
-1. Open the **FAIADTemplate.pbix** located **Reports** folder on the desktop of your lab environment. 
-2. From the ribbon select **Home -> OneLake data hub -> Power BI semantic models**. 
+
+1.Open the **FAIADTemplate.pbix** located **Reports** folder on the **desktop** of your lab environment.
+
+2.From the ribbon select **Home -> OneLake data hub -> Power BI semantic models**. 
 
  
-3. OneLake data hub dialog opens. Select **sm_FAIAD**, the semantic model we have created. 
-4. Select Connect. Notice in the Data pane, we have the tables from the semantic model. 
+3.OneLake data hub dialog opens. Select **sm_FAIAD**, the semantic model we have created. 
+
+4.Select **Connect**. Notice in the Data pane, we have the tables from the semantic model. 
 
 
-5. From the **left panel**, select **Model view**. Notice we can view the relationship between tables. 
+5.From the **left panel**, select **Model view**. Notice we can view the relationship between tables. 
 
- 
+6.From the **left panel**, select **Report view** to navigate back to the Report view. 
 
-6. From the **left panel**, select **Report view** to navigate back to the Report view. 
-7. If you have not already done so, open the **FAIAD.pbix** located **Reports** folder on the **desktop** of your lab environment. 
-8. Select the **report title visual**. 
-9. From the ribbon, select **Home -> Copy**. 
+7.If you have not already done so, open the **FAIAD.pbix** located **Reports** folder on the **desktop** of your lab environment. 
 
- 
-10. Navigate to **FAIADTemplate.pbix** and select the report canvas. 
-11. From the ribbon, select **Home -> Paste**. 
+8.Select the **report title visual**. 
+
+9.From the ribbon, select **Home -> Copy**. 
 
  
-12. Similarly copy and paste the **Sales and Units KPIs**. FYI – multiple visuals can be copied and pasted together. 
+10.Navigate to **FAIADTemplate.pbix** and select the report canvas. 
 
+11.From the ribbon, select **Home -> Paste**. 
+
+ 
+12.Similarly copy and paste the **Sales and Units KPIs**. FYI – multiple visuals can be copied and pasted together. 
  
 Notice it is easy to copy visuals from an existing report and paste it to a report that connects to semantic model. Note that the table names, column names, measure names must be the same for copy and paste to work. If they are not the same you may have an error, but this can be easily resolved. 
 
-13. Navigate to **FAIAD.pbix** and select Sales over time line chart. 
-14. From the ribbon, select **Home -> Copy**. 
-15. Navigate to **FAIADTemplate.pbix** and select the report canvas. 
-16. From the ribbon, select **Home -> Paste**. Notice that the visual does not render. This is because currently semantic model does not create hierarchy from date field. 
-17. Let’s fix this. In **Visualization** panel, under **X-axis** delete **StartOfMonth**. 
+13.Navigate to **FAIAD.pbix** and select Sales over time line chart.
 
- 
-18. From the **Data pane**, expand **Date** table. 
-19. Drag **StartOfMonth** field into **X-axis**. This fixes the visual. You may have to format the visual. 
+14.From the ribbon, select **Home -> Copy**.
 
- 
+15.Navigate to **FAIADTemplate.pbix** and select the report canvas.
 
-20. Let’s save the report, from the ribbon select **File -> Save**. 
+16.From the ribbon, select **Home -> Paste**. Notice that the visual does not render. This is because currently semantic model does not create hierarchy from date field.
+
+17.Let’s fix this. In **Visualization** panel, under **X-axis** delete **StartOfMonth**. 
+
+18.From the **Data pane**, expand **Date** table.
+
+19.Drag **StartOfMonth** field into **X-axis**. This fixes the visual. You may have to format the visual. 
+
+
+20.Let’s save the report, from the ribbon select **File -> Save**. 
 
 ## Task 11: Add new data to simulate Direct Lake Mode 
-Typically, in Import mode, once data in the source is refreshed, we need to refresh the Power BI model after which the data in the report is updated. With Direct Query mode, once data is refreshed in source, it is available in Power BI report. However direct query mode is typically slow. To solve this problem, 
-Microsoft Fabric has introduced Direct Lake mode. Direct Lake is a fast path to load the data from the lake straight into the Power BI engine, ready for analysis. 
+Typically, in Import mode, once data in the source is refreshed, we need to refresh the Power BI model after which the data in the report is updated. With Direct Query mode, once data is refreshed in source, it is available in Power BI report. However direct query mode is typically slow. To solve this problem, Microsoft Fabric has introduced Direct Lake mode. Direct Lake is a fast path to load the data from the lake straight into the Power BI engine, ready for analysis. 
 
 Let’s explore the scenario where data is updated in the ADLS Gen2 and the changes are immediately reflected in Power BI report without running any refreshes. 
 
 In a real scenario, data is updated at the source. Since we are in a training environment, we will simulate this. We have Sales data through April 2024. Let’s add Sales data for May 2024 by creating a shortcut to the May 2024 file in ADLS Gen2 and updating the Sales view. 
 
-1. Navigate back to the **browser**. 
-2. Select **FAIAD_<username>** from the left menu bar to navigate to workspace home. 
-3. Select **lh_FAIAD** to navigate into the Lakehouse. 
+1.Navigate back to the **browser**. 
 
- 
+2.Select **FAIAD_<username>** from the left menu bar to navigate to workspace home.
 
-4. From the **Explorer pane** on the left, select the **ellipsis** next to **Tables**. 
-5. Select **New** shortcut. 
+3.Select **lh_FAIAD** to navigate into the Lakehouse. 
 
- 
+4.From the **Explorer pane** on the left, select the **ellipsis** next to **Tables**.
 
-6. New shortcut dialog opens. Under **External sources**, select **Azure Data Lake Storage Gen2**. 
+5.Select **New** shortcut. 
 
- 
 
-7. **Under Connection Settings -> URL** enter this link 
+6.New shortcut dialog opens. Under **External sources**, select **Azure Data Lake Storage Gen2**. 
 
+7.**Under Connection Settings -> URL** enter this link 
 https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales 
-8. Since we have created the connection earlier, it is recognized. Select **Next**. 
+
+8.Since we have created the connection earlier, it is recognized. Select **Next**. 
 
  
-9. You will be connected to ADLS Gen2 with the directory structure displayed in the left panel. Expand **Delta-Parquet-Format-FY25**. 
-10. Select **Sales.Invoices_May**. 
-11. Select **Next**. 
+9.You will be connected to ADLS Gen2 with the directory structure displayed in the left panel. Expand **Delta-Parquet-Format-FY25**. 
+
+10.Select **Sales.Invoices_May**.
+
+11.Select **Next**. 
+ 
+
+12.You will be navigated to the next dialog where we can edit the names. Select the Edit icon under Actions for **Sales.Invoices_May**. 
+
+13.Rename **Sales.Invoices_May to InvoicesMay**. 
+
+14.Select the **check mark** next to the name to save the change. 
+
+15.Select **Create**. 
 
  
 
-12. You will be navigated to the next dialog where we can edit the names. Select the Edit icon under Actions for **Sales.Invoices_May**. 
-13. Rename **Sales.Invoices_May to InvoicesMay**. 
-14. Select the **check mark** next to the name to save the change. 
-15. Select **Create**. 
+Notice in the **Explorer pane** on the left, we have InvoicesMay table. Now we need to update Sales view. 
+
+16.On the **top right** of the screen, select **Lakehouse -> SQL analytics endpoint**. 
 
  
 
-Notice in the Explorer pane on the left, we have InvoicesMay table. Now we need to update Sales view. 
-16. On the **top right** of the screen, select **Lakehouse -> SQL analytics endpoint**. 
+17.From the top menu, select **Home -> New SQL query**. A new SQL query pane opens. 
 
- 
-
-17. From the top menu, select **Home -> New SQL query**. A new SQL query pane opens. 
-18. **Copy** the below code and paste it into the SQL query pane. 
+18.**Copy** the below code and paste it into the SQL query pane. 
 
 ```
 ALTER VIEW [dbo].[Sales] AS ( 
@@ -495,12 +564,13 @@ from [lh_FAIAD].[dbo].[Reseller] as [$Table]
 ) 
 ```
 
-19. From the visual query menu, select Run to execute the code. 
+19.From the visual query menu, select **Run** to execute the code. 
+
 Once the code is executed, we have updated Sales table to include May 2024 data. 
 
  
 
-20. Select **rpt_Sales_Report** from the left menu bar to navigate back to the report. 
+20.Select **rpt_Sales_Report** from the left menu bar to navigate back to the report. 
 21. From the top menu select **Refresh**. Notice now in the Line chart there is data for May 2024. Also, notice the Sales amount and Units has increased. 
 
  
