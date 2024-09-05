@@ -3,35 +3,35 @@
 
 # Contents
 
-  * Introduction
+- Introduction
 
-  * Fabric License
+- Fabric License
 
-      * Task 1: Enable a Microsoft Fabric trial license
+    - Task 1: Enable a Microsoft Fabric trial license
 
-  * Overview of Fabric Experiences:
+- Overview of Fabric Experiences:
 
-      * Task 2: Data Factory Experience
+    - Task 2: Data Factory Experience
   
-      * Task 3: Data Activator Experience
+    - Task 3: Data Activator Experience
      
-      * Task 4: Industry Solutions Experience
+    - Task 4: Industry Solutions Experience
 
-      * Task 5: Real-Time Intelligence Experience
+    - Task 5: Real-Time Intelligence Experience
 
-      * Task 6: Synapse Data Engineering Experience
+    - Task 6: Synapse Data Engineering Experience
   
-      * Task 7: Synapse Data Science Experience
+    - Task 7: Synapse Data Science Experience
   
-      * Task 8: Synapse Data Warehouse Experience
+    - Task 8: Synapse Data Warehouse Experience
 
-  * Fabric Workspace
+- Fabric Workspace
 
-      * Task 9: Create a Fabric Workspace
+    - Task 9: Create a Fabric Workspace
   
-      * Task 10: Create a Lakehouse
+    - Task 10: Create a Lakehouse
 
-  * References
+- References
  
 # Introduction
 Today you will learn about various key features of Microsoft Fabric. This is an introductory workshop intended to introduce you to the various product experiences and items available in Fabric. By the end of this workshop, you will learn how to use Lakehouse, Dataflow Gen2, Data Pipeline, DirectLake and more.
