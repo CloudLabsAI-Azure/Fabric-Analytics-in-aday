@@ -21,6 +21,7 @@
 - References
 
 # Introduction
+
 In our scenario, Sales Data comes from the ERP system and is stored in an ADLS Gen2. It gets updated at noon / 12 PM every day. We need to transform and ingest this data into Lakehouse and use it in our model.
 
 There are multiple ways to ingest this data.
