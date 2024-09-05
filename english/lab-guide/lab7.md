@@ -62,15 +62,15 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 6.Pick a dataset to use in your report page opens. Notice we have four options. **Select sm_FAIAD**. 
 
-  a. **sm_FAIAD**: This is the semantic model we have created and want to use to build the report.
+ -  a. **sm_FAIAD**: This is the semantic model we have created and want to use to build the report.
     
-  b. **lh_FAIAD**: This is the lakehouse where we ingested all the data into.
+  - b. **lh_FAIAD**: This is the lakehouse where we ingested all the data into.
 
-  c. **Units by Supplier**: This is the dataset we created using T-SQL.
+  - c. **Units by Supplier**: This is the dataset we created using T-SQL.
     
-  d. **DataflowsStagingWarehouse**: This is the staging warehouse which is created by default. We did not use this as we did not stage data.
+  - d. **DataflowsStagingWarehouse**: This is the staging warehouse which is created by default. We did not use this as we did not stage data.
     
-  e. **DataflowsStagingLakehouse**: This is the staging lakehouse which is created by default. We did not use this as we did not stage data.
+  - e. **DataflowsStagingLakehouse**: This is the staging lakehouse which is created by default. We did not use this as we did not stage data.
 
 7.Click the **arrow next to Auto-create report button**. Notice there are two options, Auto-create report and Create a blank report. Let’s try auto-creating, so select **Auto-create report**.
 
@@ -80,13 +80,13 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
 **Note:** Notice on the top menu, you have the option to Edit the report or view some of the data as tables. Feel free to explore these options. 
 
-9. Let’s save this report. From the top menu, select **Save**.
+9.Let’s save this report. From the top menu, select **Save**.
 
-10. Save your report dialog opens. Name the report as **rpt_Sales_Auto_Report Note:** we are prefixing report name with rpt which is short for report.
+10.Save your report dialog opens. Name the report as **rpt_Sales_Auto_Report Note:** we are prefixing report name with rpt which is short for report.
 
-11. Make sure the report is saved in your workspace, **FAIAD_<username>**.
+11.Make sure the report is saved in your workspace, **FAIAD_<username>**.
 
-12. Select **Save**.
+12.Select **Save**.
 
 **Note:** Auto-created report may look different for you as it is “auto-created”. It also depends on the relationships and measures you created in the previous lab (Lab 6). 
 
@@ -99,115 +99,115 @@ Below screenshot is how the auto-created report may look if you skipped creating
 
 Let’s create a new report using a blank canvas. 
 
-1. In the **left panel**, select your workspace name, **FAIAD_<username>** to be navigated to the workspace. 
+1.In the **left panel**, select your workspace name, **FAIAD_<username>** to be navigated to the workspace. 
 
-2. From the top menu, select **New -> Report**. You will be navigated to build your first report page.
+2.From the top menu, select **New -> Report**. You will be navigated to build your first report page.
 
-3. Select **Pick a published semantic model**, so we can pick the model we have created.
+3.Select **Pick a published semantic model**, so we can pick the model we have created.
 
-4. Pick a semantic model to use in your report dialog opens. Select **sm_FAIAD**.
+4.Pick a semantic model to use in your report dialog opens. Select **sm_FAIAD**.
 
-5. Click the **arrow next** to **Auto-create report button**. Select **Create a blank report**. You will be navigated to a report page which looks similar to the Power BI Desktop report page.
+5.Click the **arrow next** to **Auto-create report button**. Select **Create a blank report**. You will be navigated to a report page which looks similar to the Power BI Desktop report page.
 
 
-6. If you have not already opened it, open the **FAIAD.pbix** located **Reports** folder on the **desktop** of your lab environment. 
+6.If you have not already opened it, open the **FAIAD.pbix** located **Reports** folder on the **desktop** of your lab environment. 
 
 We are going to use this report as a reference. We will start by adding the canvas background. We will create the report header, add a couple of KPIs, and create the Sales over time line chart. In the interest of time and with the understanding that you have experience with building visuals in Power BI Desktop, we will not be creating all the visuals. 
 
 
-7. Navigate back to **Power BI canvas** in your browser.
+7.Navigate back to **Power BI canvas** in your browser.
 
-8. Select **Format page icon in Visualization** pane. 
+8.Select **Format page icon in Visualization** pane. 
 
-9. Expand **Canvas background section**.
+9.Expand **Canvas background section**.
 
-10. Select **Browse** from **Image** option. File explorer dialog opens. 
+10.Select **Browse** from **Image** option. File explorer dialog opens. 
 
-11. Navigate to **Reports** folder on the **desktop** of your lab environment. 
+11.Navigate to **Reports** folder on the **desktop** of your lab environment. 
 
-12. Select **Summary Background.png**. 
+12.Select **Summary Background.png**. 
 
-13. Set **Image fit** dropdown to Fit. 
+13.Set **Image fit** dropdown to Fit. 
 
-14. Set Transparency to 0%.
+14.Set Transparency to 0%.
 
 ## Task 3: Add Header to the report 
 
-1. Let’s add the header in the top margin. From the menu, select **Text box**. 
+1.Let’s add the header in the top margin. From the menu, select **Text box**. 
 
-2. Enter **Fabrikam Company** as the first line in the text box.
+2.Enter **Fabrikam Company** as the first line in the text box.
 
-3. Enter **Sales Report** as the second line in the text box. 
+3.Enter **Sales Report** as the second line in the text box. 
 
-4. Highlight **Fabrikam Company** and set Font to **Segoe UI** and **font size** to **18**, **bold**. 
+4.Highlight **Fabrikam Company** and set Font to **Segoe UI** and **font size** to **18**, **bold**. 
 
-5. Highlight **Sales Report** and set **Font to Segoe UI** and **font size** to **14**. 
+5.Highlight **Sales Report** and set **Font to Segoe UI** and **font size** to **14**. 
 
-6. With the **text box selected**, in the Format text box pane on the right, **expand Effects**. 
+6.With the **text box selected**, in the Format text box pane on the right, **expand Effects**. 
 
-7. Use **Background** slider to set it to **Off**. 
+7.Use **Background** slider to set it to **Off**. 
 
-8. Resize the **text box to fit in the top margin**.
+8.Resize the **text box to fit in the top margin**.
    
 
 ## Task 4: Add KPIs to the report 
 
-1. Let’s add Sales KPI. Select the **white space** in the canvas to take focus off the text box. 
+1.Let’s add Sales KPI. Select the **white space** in the canvas to take focus off the text box. 
 
-2. From the **Visualizations section** select **Multi-row card visual**. 
+2.From the **Visualizations section** select **Multi-row card visual**. 
 
-3. From the **Data section** expand **Sales table**.
+3.From the **Data section** expand **Sales table**.
 
-4. Select **Sales measure**. 
+4.Select **Sales measure**. 
 
-5. With **multi-row card visual selected**, select **Format visual icon** from **Visualizations** section. 
+5.With **multi-row card visual selected**, select **Format visual icon** from **Visualizations** section. 
 
-6. Expand **Category labels** section.
+6.Expand **Category labels** section.
 
-7. Increase **font size** to **14**. 
+7.Increase **font size** to **14**. 
 
-8. Select **Color drop down**. Color palette dialog opens.
+8.Select **Color drop down**. Color palette dialog opens.
 
-9. Select **More Colors**.
+9.Select **More Colors**.
 
-10. Set Hex value to **#004753**.
+10.Set Hex value to **#004753**.
 
-11. Expand **Cards** section
+11.Expand **Cards** section
 
-12. Use **Accent bar** slider to set it to **Off**.
-
-
-13. Select **General** in the Visualizations pane. 
-
-14. Expand **Effects section**. 
-
-15. Use **Background** slider to set it to **Off**. 
-
-16. Resize the **visual** and move it to the **left box as shown in the screenshot**.
+12.Use **Accent bar** slider to set it to **Off**.
 
 
-17. Let’s add another KPI. Select the **Sales multi-row card** we just created. **Copy** the visual by selecting **Ctrl+C** from your keyboard. 
+13.Select **General** in the Visualizations pane. 
 
-18. **Paste** the visual by selecting **Ctrl+V** from your keyboard. Notice the visual is pasted onto the canvas.
+14.Expand **Effects section**. 
 
-19. With the **new visual highlighted**, in the **Visualization pane -> Build visual -> Fields** section remove **Sales** measure. 
+15.Use **Background** slider to set it to **Off**. 
 
-20. From the **Data** section, expand **Sales** table and select **Units** measure. 
+16.Resize the **visual** and move it to the **left box as shown in the screenshot**.
 
-21. Resize the **visual** and **place it in the box below the Sales visual**.
+
+17.Let’s add another KPI. Select the **Sales multi-row card** we just created. **Copy** the visual by selecting **Ctrl+C** from your keyboard. 
+
+18.**Paste** the visual by selecting **Ctrl+V** from your keyboard. Notice the visual is pasted onto the canvas.
+
+19.With the **new visual highlighted**, in the **Visualization pane -> Build visual -> Fields** section remove **Sales** measure. 
+
+20.From the **Data** section, expand **Sales** table and select **Units** measure. 
+
+21.Resize the **visual** and **place it in the box below the Sales visual**.
 
 
 ## Task 5: Add Line chart to the report 
 
 Let’s create a line chart to visualize Sales over time by Reseller Company. 
 
-1. Select the **white space** in the canvas to take focus off the multi-row card visual. 
+1.Select the **white space** in the canvas to take focus off the multi-row card visual. 
 
-2. From the **Visualizations section** select **Line chart**. 
+2.From the **Visualizations section** select **Line chart**. 
 
-3. From the **Data section** expand **Date** table. 
+3.From the **Data section** expand **Date** table. 
 
-4. Select **Year** field. Notice Year is a summed by default and added to the Y-axis. Let’s rectify this. 
+4.Select **Year** field. Notice Year is a summed by default and added to the Y-axis. Let’s rectify this. 
 
 
 
@@ -215,39 +215,39 @@ Let’s create a line chart to visualize Sales over time by Reseller Company.
 
 Let’s save the report before we navigate away from the report to make changes to the model. 
 
-1. From the menu select **File -> Save**. 
+1.From the menu select **File -> Save**. 
 
-2. Save your report dialog opens. Name the report as **rpt_Sales_Report Note:** We are prefixing report name with rpt which is short for report. 
+2.Save your report dialog opens. Name the report as **rpt_Sales_Report Note:** We are prefixing report name with rpt which is short for report. 
 
-3. Make sure the report is saved in **FAIAD_<username>** workspace. 
+3.Make sure the report is saved in **FAIAD_<username>** workspace. 
 
-4. Select **Save**. Notice the report is saved and you are in view mode.
+4.Select **Save**. Notice the report is saved and you are in view mode.
    
 ## Task 7: Configure Year column in Date table 
 
-1. From the **top menu**, select **Edit** to go back into Edit mode. 
+1.From the **top menu**, select **Edit** to go back into Edit mode. 
 
-2. From the **top menu**, select **Open data model**. Notice semantic model is opened in a new browser window/tab.
+2.From the **top menu**, select **Open data model**. Notice semantic model is opened in a new browser window/tab.
    
-3. From the **Data panel on the right**, select Tables. 
+3.From the **Data panel on the right**, select Tables. 
 
-4. Expand **Date** table. 
+4.Expand **Date** table. 
 
-5. Select **Year** column. 
+5.Select **Year** column. 
 
-6. In the **Properties** pane on the right, expand **Advanced** section. 
+6.In the **Properties** pane on the right, expand **Advanced** section. 
 
-7. In the **Summarize by** drop down select **None**. 
+7.In the **Summarize by** drop down select **None**. 
 
-8. Navigate back to **report window/tab** of the browser.
+8.Navigate back to **report window/tab** of the browser.
 
-9. On the **Data pane** of the right, expand **Date** table. Notice Year is not a summation field. 
+9.On the **Data pane** of the right, expand **Date** table. Notice Year is not a summation field. 
 
-10. With the **Line chart visual selected**, **remove Sum of Year** from the Y-axis. 
+10.With the **Line chart visual selected**, **remove Sum of Year** from the Y-axis. 
 
-11. Select **Year** field and it will be added to the **X-axis**. 
+11.Select **Year** field and it will be added to the **X-axis**. 
 
-12. Expand **Sales** table and select **Sales measure**.
+12.Expand **Sales** table and select **Sales measure**.
 
 
 
@@ -309,7 +309,7 @@ Notice how easy it is to update the semantic model while building the reports. T
 
 13.In the **Apply settings to -> Series dropdown**, select **Wingtip Toys**.
 
-14. Set **color** to **#004753**
+14.Set **color** to **#004753**
 
 15.Resize the **visual** and move it to the **top right box as shown in the screenshot**. 
 
@@ -368,7 +368,6 @@ Notice it is easy to copy visuals from an existing report and paste it to a repo
 
 19.Drag **StartOfMonth** field into **X-axis**. This fixes the visual. You may have to format the visual. 
 
-
 20.Let’s save the report, from the ribbon select **File -> Save**. 
 
 ## Task 11: Add new data to simulate Direct Lake Mode 
@@ -402,7 +401,6 @@ https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 10.Select **Sales.Invoices_May**.
 
 11.Select **Next**. 
- 
 
 12.You will be navigated to the next dialog where we can edit the names. Select the Edit icon under Actions for **Sales.Invoices_May**. 
 
@@ -568,9 +566,9 @@ from [lh_FAIAD].[dbo].[Reseller] as [$Table]
 
 Once the code is executed, we have updated Sales table to include May 2024 data. 
 
- 
 
 20.Select **rpt_Sales_Report** from the left menu bar to navigate back to the report. 
+
 21. From the top menu select **Refresh**. Notice now in the Line chart there is data for May 2024. Also, notice the Sales amount and Units has increased. 
 
  
@@ -579,29 +577,34 @@ We do not have to refresh the data model and report when data changes. This is t
 
 Let’s revisit the challenges that are listed in the problem statement: 
 
-- **You need to refresh your dataset at least three times a day to accommodate the different update times for the different data sources**. 
-We solved this using Direct Lake. Each individual Dataflow is refreshed on its schedule. Dataset and report do not have to be refreshed. 
-- **Your refreshes take a long time as you need to do a full refresh every time to capture any updates that happened to the source systems**. 
-Again, we solved this using Direct Lake. Each individual Dataflow is refreshed on its schedule. Dataset and report do not have to be refreshed, so we do not have to worry about full refresh. 
-- **Any errors in any of the data sources that you are pulling from will result in your dataset refresh breaking. A lot of times the employee file doesn’t upload on time resulting in your dataset refresh breaking**. 
-Data Pipeline helps to solve this problem, by providing the ability to retry refresh on failure and at different intervals. 
+  - **You need to refresh your dataset at least three times a day to accommodate the different update times for the different data sources**. 
+  We solved this using Direct Lake. Each individual Dataflow is refreshed on its schedule. Dataset and report do not have to be refreshed.
 
-- **It takes a very long time to make any changes to your data model as Power Query takes a long time to refresh your previews, given the large data sizes and complex transformations**. 
-We noticed Dataflows and Lakehouse are efficient and easy to make changes. Typically, preview in Dataflows and Lakehouse do not take long to load. 
+  - **Your refreshes take a long time as you need to do a full refresh every time to capture any updates that happened to the source systems**. 
+  Again, we solved this using Direct Lake. Each individual Dataflow is refreshed on its schedule. Dataset and report do not have to be refreshed, so we do not have to worry about full refresh. 
 
-- **You need a Windows PC to use Power BI Desktop even though the corporate standard is Mac**. Microsoft Fabric is a SaaS offering. All we need is a browser to access the service. We do not have to install any software on our desktops. 
+  - **Any errors in any of the data sources that you are pulling from will result in your dataset refresh breaking. A lot of times the employee file doesn’t upload on time resulting in your dataset refresh breaking**. 
+  Data Pipeline helps to solve this problem, by providing the ability to retry refresh on failure and at different intervals. 
+
+  - **It takes a very long time to make any changes to your data model as Power Query takes a long time to refresh your previews, given the large data sizes and complex transformations**. 
+  We noticed Dataflows and Lakehouse are efficient and easy to make changes. Typically, preview in Dataflows and Lakehouse do not take long to load. 
+
+  - **You need a Windows PC to use Power BI Desktop even though the corporate standard is Mac**. Microsoft Fabric is a SaaS offering. All we need is a browser to access the service. We do not have to install any software on our desktops. 
 
  
 
 ## Clean up Lab environment 
 
 Once you are ready to clean up the lab environment, follow the steps below. 
-1. Select **FAIAD_<username>** workspace from the left panel to navigate to the workspace home. 
-2. From the top menu, select **Workspace settings**. 
 
+1. Select **FAIAD_<username>** workspace from the left panel to navigate to the workspace home. 
+
+2. From the top menu, select **Workspace settings**. 
  
 3. Workspace settings dialog opens. In **General** section, scroll down. 
-4. Select **Remove this workspace**. 
+
+4. Select **Remove this workspace**.
+
 5. Delete workspace dialog opens. Select **Delete**. 
 
 This will delete the workspace and all the items that were contained in the workspace. 
