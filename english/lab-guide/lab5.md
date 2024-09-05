@@ -168,7 +168,7 @@ You are on the **Home** screen. If you look at the top menu, you will find optio
 
 Let's start building the pipeline. We need an activity to refresh the Dataflow. Let's find an activity which we can use.
 
-1. From the top menu select **Activities ->Dataflow**. Dataflow activity is added to the center design pane. Notice the bottom pane now has configuration options of the Dataflow activity.
+1. From the top menu select **Activities -> Dataflow**. Dataflow activity is added to the center design pane. Notice the bottom pane now has configuration options of the Dataflow activity.
 
 2. We are going to configure the activity to connect to df_People_SharePoint activity. From the **bottom pane**, select **Settings**.
 
@@ -198,7 +198,7 @@ In our scenario, Employee Data is not updated on schedule. Sometimes there is a 
 
 12. Set **Retry interval (sec)** to **600**.
 
-13. From the menu select **Home -\Save** icon to save the pipeline.
+13. From the menu select **Home -> Save** icon to save the pipeline.
 
    ![](../media/lab-05/image17.png) 
 
@@ -368,7 +368,7 @@ We need to write an expression which would execute until either the value of **v
 
    ![](../media/lab-05/image31.png)
 
-3. From the top menu, select **Activities ->Dataflow**. Dataflow activity is added to the design pane.
+3. From the top menu, select **Activities -> Dataflow**. Dataflow activity is added to the design pane.
 
 4. With **Dataflow activity selected**, in the bottom pane select **General**. Let's give the activity a name and description.
 
@@ -390,7 +390,7 @@ We need to write an expression which would execute until either the value of **v
 
 We have configured the Dataflow activity like we did earlier in the lab. Now we will add new logic. If the dataflow refresh is successful, we need to exit out of the Until iterator. Remember one of the conditions to exit the iterator is to set the value of varIsSuccess variable to Yes.
 
-1. From the top menu, select **Activities -\Set variable**. Setvariable activity is added to the design canvas.
+1. From the top menu, select **Activities -> Set variable**. Setvariable activity is added to the design canvas.
 
 2. With **Set variable activity** selected, in the bottom pane select **General**. Let's give the activity a name and description.
 
@@ -424,7 +424,7 @@ d. **Blue straight arrow** icon is used on completion of the activity.
 
 10. Pipeline expression builder dialog opens. Select the **Add dynamic content below using any combination of expressions, functions, and system variables text area**.
 
-11. From the bottom menu select **Variables -\varSuccess**. Notice \@variables('varSuccess') is entered in the Add dynamic content below text area. Remember when we created variables, we had preset the value of varSuccess variable to Yes. So, we are assigning the value of Yes to the varIsSuccess variable.
+11. From the bottom menu select **Variables -> varSuccess**. Notice \@variables('varSuccess') is entered in the Add dynamic content below text area. Remember when we created variables, we had preset the value of varSuccess variable to Yes. So, we are assigning the value of Yes to the varIsSuccess variable.
 
 12. Select **OK**. You will be navigated back to the **iterator design pane**.
 
@@ -434,7 +434,7 @@ Now we need to set the counter if the dataflow activity fails. In Data Pipeline,
 
 ## Task 10: Configure 2nd Set variable Activity 
 
-1. From the top menu, select **Activities ->Set variable**. Set variable activity is added to the design canvas.
+1. From the top menu, select **Activities -> Set variable**. Set variable activity is added to the design canvas.
 
 2. With **Set variable activity** selected, in the bottom pane select **General**. Let's give the activity a name and description.
 
@@ -464,7 +464,7 @@ Now we need to set the value of varCounter variable to the value of varTempCount
 
 ## Task 11: Configure 3rd Set variable Activity 
 
-1. From the top menu, select **Activities ->Set variable**. Set variable activity is added to the design canvas.
+1. From the top menu, select **Activities -> Set variable**. Set variable activity is added to the design canvas.
 
 2. With **Set variable activity** selected, in the bottom pane select **General**. Let's give the activity a name and description.
 
@@ -494,7 +494,7 @@ Now we need to set the value of varCounter variable to the value of varTempCount
 
 Next, we need to wait for 5 minutes/300 seconds if dataflow refresh fails the first time before trying again. If the dataflow refresh fails for the second time, we need to wait 15 minutes/900 seconds and try again. We are going to use Wait activity and variable varWaitTime to set the wait time.
 
-1. From the top menu, select **Activities ->ellipsis (...) -\Wait**. Wait activity is added to the design canvas.
+1. From the top menu, select **Activities -> ellipsis (...) -\Wait**. Wait activity is added to the design canvas.
 
 2. With **Wait activity** selected, in the bottom pane select **General**. Let's give the activity a name and description.
 
@@ -546,17 +546,17 @@ The expression is a nested if statement. It is checking if the value of varCount
 
     ![](../media/lab-05/image44.png)
 
-11. We are done creating the data pipeline. From the top menu, select **Home -\Save icon** to save the data pipeline.
+11. We are done creating the data pipeline. From the top menu, select **Home -> Save icon** to save the data pipeline.
 
     ![](../media/lab-05/image45.png)
 
 ## Task 13: Configure Schedule Refresh for Data Pipeline 
 
-1. We can test the data pipeline, by selecting **Home ->Run.**
+1. We can test the data pipeline, by selecting **Home -> Run.**
 
 **Note:** It may take a few minutes for the data pipeline to complete refresh. This is a training environment, so the file in SharePoint is always available. Hence, your data pipeline will never fail.
 
-2. We can set the data pipeline to execute on a schedule. From the top menu, select **Home ->Schedule**. Schedule dialog opens.
+2. We can set the data pipeline to execute on a schedule. From the top menu, select **Home -> Schedule**. Schedule dialog opens.
 
 3. Set **Scheduled run** radio button to **On**.
 
@@ -578,7 +578,7 @@ The expression is a nested if statement. It is checking if the value of varCount
 
     ![](../media/lab-05/image46.png)
 
-11. Select your Fabric workspace **FAIAD_<username\>** in the left panel to navigate to the workspace**.**
+11. Select your Fabric workspace **FAIAD_<username\>** in the left panel to navigate to the workspace.
 
 **Note**: In the Schedule screen, there is no option to notify on success or failure (like Dataflow Schedule). Notification can be done by adding an activity in the Data Pipeline. We are not doing it in this lab as it is a lab environment. We have scheduled refreshes for the various data sources. We will create a semantic model with relationships, measures and other modeling operations in the next lab.
 
