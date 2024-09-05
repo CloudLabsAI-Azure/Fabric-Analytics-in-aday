@@ -283,31 +283,31 @@ Let’s save the report before we navigate away from the report to make changes 
 
 Notice how easy it is to update the semantic model while building the reports. This gives a seamless interaction like Power BI Desktop. 
 
-1. With the **Line chart visual selected**, in the **Data section** expand **Reseller table**. 
+1.With the **Line chart visual selected**, in the **Data section** expand **Reseller table**. 
 
-2. Drag **Reseller -> Reseller Company** field to the **Legend** section. 
+2.Drag **Reseller -> Reseller Company** field to the **Legend** section. 
 
-3. With the **Line chart visual selected**, from the **Visualization** section select **Format visual icon -> General**. 
+3.With the **Line chart visual selected**, from the **Visualization** section select **Format visual icon -> General**. 
 
-4. Expand **Title** section. 
+4.Expand **Title** section. 
 
-5. Set **Title** text to **Sales over time**.
+5.Set **Title** text to **Sales over time**.
 
-6. Expand **Effects** section.
+6.Expand **Effects** section.
 
-7. Use **Background** slider to set it to **Off**. 
+7.Use **Background** slider to set it to **Off**. 
 
-8. From the **Visualization** section select **Format visual icon -> Visual**.
+8.From the **Visualization** section select **Format visual icon -> Visual**.
 
-9. Expand **Lines** section.
+9.Expand **Lines** section.
 
-10. In the **Apply settings to -> Series dropdown**, select **Tailspin Toys**.
+10.In the **Apply settings to -> Series dropdown**, select **Tailspin Toys**.
 
-11. Expand **Colors** section.
+11.Expand **Colors** section.
 
-12. Set **color** to **#F17925** 
+12.Set **color** to **#F17925** 
 
-13. In the **Apply settings to -> Series dropdown**, select **Wingtip Toys**.
+13.In the **Apply settings to -> Series dropdown**, select **Wingtip Toys**.
 
 14. Set **color** to **#004753**
 
