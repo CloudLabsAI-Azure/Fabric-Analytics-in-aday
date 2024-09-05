@@ -1,6 +1,6 @@
 ![](../media/lab-05/image2.png)
 
-## Contents
+# Contents
 
 * Introduction 
 
@@ -8,7 +8,7 @@
 
     * Task 1: Configure scheduled refresh for Supplier Dataflow 
 
-* Data Pipeline 7
+* Data Pipeline 
 
     * Task 2: Create Data Pipeline 
 
