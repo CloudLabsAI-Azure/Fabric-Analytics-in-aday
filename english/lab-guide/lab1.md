@@ -1,12 +1,19 @@
+
 ![](../media/lab-01/main1.png)
 
 # Contents
 - Document Structure
+
 - Scenario / Problem Statement
+
 - Overview of Power BI Desktop Report
+   
    - Task 1: Set up Power BI Desktop in lab environment
+   
    - Task 2: Analyze Power BI Desktop Report
+   
    - Task 3: Review Power Queries
+
 - References 	 
  
  
@@ -49,24 +56,24 @@ You heard about Microsoft Fabric, and decided to try it to see if it will addres
 Before we start with Fabric, let’s look at the current Report in Power BI Desktop to understand the transformations and the model.
 
 ## Task 1: Set up Power BI Desktop in lab environment
-1.	Open the **FAIAD.pbix** located in **Reports** folder on the **desktop** of your lab environment. The file will open in Power BI Desktop.
+1. Open the **FAIAD.pbix** located in **Reports** folder on the **desktop** of your lab environment. The file will open in Power BI Desktop.
 
     ![](../media/lab-01/image009.png)
  
-2.	Enter your email address dialog opens. Navigate to **Environment Details** tab on the right panel in the lab environment.
-3.	Copy the **Username** and paste it in the **Email** textbox of the dialog.
-4.	Select **Continue**.
+2. Enter your email address dialog opens. Navigate to **Environment Details** tab on the right panel in the lab environment.
+3. Copy the **Username** and paste it in the **Email** textbox of the dialog.
+4. Select **Continue**.
 
     ![](../media/lab-01/image012.png)
 
-5.	Sign in dialog opens. Reenter the **Username** by copying it from the **Environment Details** tab.
-6.	Select **Next**.
-7.	In the next dialog, enter the **Password Credentials** by copying it from the **Environment Details** tab.
-8.	Select **Sign in**.
+5. Sign in dialog opens. Reenter the **Username** by copying it from the **Environment Details** tab.
+6. Select **Next**.
+7. In the next dialog, enter the **Password Credentials** by copying it from the **Environment Details** tab.
+8. Select **Sign in**.
 
     ![](../media/lab-01/image015.jpg)
  
-9.	**Stay Signed in to all your apps** dialog opens. Select **OK**.
+9. **Stay Signed in to all your apps** dialog opens. Select **OK**.
 
     ![](../media/lab-01/image018.jpg)
 
