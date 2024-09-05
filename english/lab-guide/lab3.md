@@ -1,3 +1,5 @@
+# Microsoft Fabric - Fabric Analyst in a Day - Lab 3
+
 ![](../media/lab-03/main3.png)
 
 # Contents
