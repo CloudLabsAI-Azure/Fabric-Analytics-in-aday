@@ -89,33 +89,33 @@ The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of
 **Note:** In this training, we are focusing on data acquisition, transformation, and modeling using tools
 available in Fabric. We will not be focusing on report development or navigation. Let’s spend a couple of minutes understanding the report and move to the next steps.
 
-1.	Let’s analyze data by Sales Territory. Select **New England from the Sales Territory** (Scatter plot) visual. Notice from the Sales over time, Reseller Tailspin Toys has more sales compared to Wingtip Toys in New England. If you look at the Sales YoY% column chart you will notice that Wingtip Toys sales growth has been low and declining quarter over quarter during the past year. After a small rebound in Q3 it went down again in Q4.
+1. Let’s analyze data by Sales Territory. Select **New England from the Sales Territory** (Scatter plot) visual. Notice from the Sales over time, Reseller Tailspin Toys has more sales compared to Wingtip Toys in New England. If you look at the Sales YoY% column chart you will notice that Wingtip Toys sales growth has been low and declining quarter over quarter during the past year. After a small rebound in Q3 it went down again in Q4.
 
     ![](../media/lab-01/image024.jpg)
  
-2.	Let’s compare this to the Rocky Mountain territory. Select **Rocky Mountain from Sales Territory**
+2. Let’s compare this to the Rocky Mountain territory. Select **Rocky Mountain from Sales Territory**
 (Scatter plot) visual. Notice in the Sales YoY% column chart, sales for Wingtip Toys has increased dramatically in 2023 Q4 after being low for the previous two quarters.
 
     ![](../media/lab-01/image027.jpg)
 
-3.	Select **Rocky Mountain from Sales Territory** to remove the filter.
+3. Select **Rocky Mountain from Sales Territory** to remove the filter.
  
-4.	From the Scatter plot visual on the bottom center of the screen (Sales Orders by Sales) select the outlier on the top right (4th quadrant). Notice the margin % is 52%, which is above the average of 50%. Also, the Sales YoY% has gone up the last two quarters of 2023.
+4. From the Scatter plot visual on the bottom center of the screen (Sales Orders by Sales) select the outlier on the top right (4th quadrant). Notice the margin % is 52%, which is above the average of 50%. Also, the Sales YoY% has gone up the last two quarters of 2023.
 
     ![](../media/lab-01/image030.jpg)
 
-5.	Select the outlier Reseller in the Scatter plot visual to **remove the filter**.
-6.	Let’s get the Product details by Product Group and Reseller. From the Sales by Product Group and Reseller Company bar chart visual, **right click on the Packaging Materials bar for Tailspin Toys** and from the dialog select **Drill through -> Product Detail**.
+5. Select the outlier Reseller in the Scatter plot visual to **remove the filter**.
+6. Let’s get the Product details by Product Group and Reseller. From the Sales by Product Group and Reseller Company bar chart visual, **right click on the Packaging Materials bar for Tailspin Toys** and from the dialog select **Drill through -> Product Detail**.
 
     ![](../media/lab-01/image033.jpg)
  
     You will be navigated to the page which provides the Product Details. Notice there are some future orders in place as well.
 
-7.	Once you are done reviewing this page, select the **Ctrl+back arrow** on the top right of the page to be navigated back to the Sales Report.
+7. Once you are done reviewing this page, select the **Ctrl+back arrow** on the top right of the page to be navigated back to the Sales Report.
 
     ![](../media/lab-01/image036.jpg)
 
-8.	Feel free to further analyze the report. Once ready let’s look at the model view. From the left panel, select **Model view icon**. Notice there are two fact tables, Sales and PO.
+8. Feel free to further analyze the report. Once ready let’s look at the model view. From the left panel, select **Model view icon**. Notice there are two fact tables, Sales and PO.
  
     a. Granularity of Sales data is by Date, Reseller, Product, and People. Date, Reseller, Product, and People connect to Sales.
 
@@ -129,11 +129,11 @@ available in Fabric. We will not be focusing on report development or navigation
 
 
 ## Task 3: Review Power Queries
-1.	Let’s look at Power Query to understand the data sources. From the ribbon select **Home -> Transform data**.
+1. Let’s look at Power Query to understand the data sources. From the ribbon select **Home -> Transform data**.
 
     ![](../media/lab-01/image039.jpg)
 
-2.	Power Query window opens. From the ribbon, select **Home -> Data source settings**. Data source settings dialog opens. As you scroll through the list you will notice there are four data sources as mentioned in the problem statement:
+2. Power Query window opens. From the ribbon, select **Home -> Data source settings**. Data source settings dialog opens. As you scroll through the list you will notice there are four data sources as mentioned in the problem statement:
 
     a. Snowflake
     
@@ -143,18 +143,18 @@ available in Fabric. We will not be focusing on report development or navigation
     
     d. Dataverse
 
-3.	Select **Close** to close the Data source settings dialog.
+3. Select **Close** to close the Data source settings dialog.
  
     ![](../media/lab-01/image042.jpg)
  
-4.	In the left Queries panel, notice the queries are grouped by data source.
-5.	Notice **DataverseData** folder has Customer data available in four different queries: BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create Customer query.
-6.	You can enter the credentials for the Dataverse data source by entering the **Username** and **Password** available in the **Environment Variables** tab (next to the Lab Guide). Please select Microsoft account option.
+4. In the left Queries panel, notice the queries are grouped by data source.
+5. Notice **DataverseData** folder has Customer data available in four different queries: BabyBoomer, GenX, GenY, and GenZ. These four queries are appended to create Customer query.
+6. You can enter the credentials for the Dataverse data source by entering the **Username** and **Password** available in the **Environment Variables** tab (next to the Lab Guide). Please select Microsoft account option.
 
     ![](../media/lab-01/image045.png)
  
-7.	For ADLS data source, use the **Account Key** option and enter the **Adls storage account Access key** that is available in the **Environment Variables** tab (next to the Lab Guide).
-8.	Notice the **ADLSData** folder has multiple dimensions: Geo, Product, Reseller, and Date. It also has Sales fact.
+7. For ADLS data source, use the **Account Key** option and enter the **Adls storage account Access key** that is available in the **Environment Variables** tab (next to the Lab Guide).
+8. Notice the **ADLSData** folder has multiple dimensions: Geo, Product, Reseller, and Date. It also has Sales fact.
 
     a. **Geo dimension** is created by merging data from Cities, Countries, and States query.
     
@@ -164,21 +164,20 @@ available in Fabric. We will not be focusing on report development or navigation
     
     d. **Sales fact** is created by merging InvoiceLineItems with Invoice query.
 
-9.	For the Snowflake data source, use the **Snowflake Username** and **Snowflake Password** that is available in the **Environment Variables** tab (next to the Lab Guide).
-10.	Notice the **SnowflakeData** folder has Supplier dimension and PO (Order / Spend) fact.
+9. For the Snowflake data source, use the **Snowflake Username** and **Snowflake Password** that is available in the **Environment Variables** tab (next to the Lab Guide).
+10. Notice the **SnowflakeData** folder has Supplier dimension and PO (Order / Spend) fact.
 
     a. **Supplier dimension** is created by merging Suppliers query with SupplierCategories query.
     
     b. **PO fact** is created by merging PO with PO Line Items query.
 
-11.	For the SharePoint data source, enter the **Username** and **Password** available in **Environment Variables** tab (next to Lab guide). Please select Microsoft account option.
+11. For the SharePoint data source, enter the **Username** and **Password** available in **Environment Variables** tab (next to Lab guide). Please select Microsoft account option.
  
-12.	Notice the **SharepointData** folder has People dimension.
+12. Notice the **SharepointData** folder has People dimension.
 
     ![](../media/lab-01/image048.png)
 
 Now we know what we are dealing with. In the following labs, we will create a similar Power Query using Dataflow Gen2 and model using Lakehouse.
-
 
 # References
 Fabric Analyst in a Day (FAIAD) introduces you to some of the key functions available in Microsoft Fabric. In the menu of the service, the Help (?) section has links to some great resources.
