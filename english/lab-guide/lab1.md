@@ -15,8 +15,7 @@
    - Task 3: Review Power Queries
 
 - References 	 
- 
- 
+
 # Document Structure
 The lab includes steps for the user to follow along with associated screenshots that provide visual aid. In each screenshot, sections are highlighted with orange boxes to indicate the area(s) user should focus on.
 
@@ -77,7 +76,7 @@ Before we start with Fabric, let’s look at the current Report in Power BI Desk
 
     ![](../media/lab-01/image018.jpg)
 
-10.	**You’re all set!** dialog opens. Select **Done**.
+1. **You’re all set!** dialog opens. Select **Done**.
  
 Power BI Desktop will now open.
 
@@ -126,7 +125,6 @@ available in Fabric. We will not be focusing on report development or navigation
     d. We have Reseller’s location data by Geo. Geo connects to Reseller.
 
     e. We have Customer information by Reseller. Customer connects to Reseller.
-
 
 ## Task 3: Review Power Queries
 1. Let’s look at Power Query to understand the data sources. From the ribbon select **Home -> Transform data**.
