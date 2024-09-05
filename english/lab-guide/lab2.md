@@ -43,7 +43,7 @@ By the end of this lab, you will have learned:
 ## Task 1: Enable a Microsoft Fabric trial license
 1.	Open the **browser** and navigate to https://app.powerbi.com/. You will be navigated to the login page. 
 
-**Note:** If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private / incognito mode.
+    **Note:** If you are not using the lab environment and have an existing Power BI account, you may want to use the browser in private / incognito mode.
 
 2.	Enter the **Username** available in the **Environment Variables** tab (next to the Lab Guide) as the **Email**
 and click **Submit**.
@@ -56,9 +56,10 @@ and click **Submit**.
     ![](../media/lab-02/image009.png)
  
 5.	You will be navigated to the familiar **Power BI Service Home page**.
+
 6.	We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor.
 
-Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license assigned. Let’s set this up.
+    Currently, you are in **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license assigned. Let’s set this up.
 
 7.	On the top right corner of the screen, select the **user icon**.
 8.	Select **Free trial**.
@@ -148,9 +149,9 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
     
     f.	**Use a sample:** Sample solution.
 
-**Note:** Reflex is available in Data Activator experiences as well.
+    **Note:** Reflex is available in Data Activator experiences as well.
 
-![](../media/lab-02/image039.jpg)
+    ![](../media/lab-02/image039.jpg)
  
  
 ## Task 6: Synapse Data Engineering Experience
@@ -195,9 +196,9 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
     
     g.	**Use a sample:** Sample solution.
 
-**Note:** Items like Notebook, Environment, Data pipeline, etc. are available in multiple experiences as they are relevant in each of these experiences.
+    **Note:** Items like Notebook, Environment, Data pipeline, etc. are available in multiple experiences as they are relevant in each of these experiences.
 
-![](../media/lab-02/image045.jpg)
+    ![](../media/lab-02/image045.jpg)
  
  
 ## Task 8: Synapse Data Warehouse Experience
@@ -228,7 +229,7 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
 3.	**Create a workspace** dialog opens on the right side of the browser.
 4.	In the **Name** field enter **FAIAD_username**
 
-**Note:** Workspace name must be unique. However, your workspace name must be different. Make sure a green check mark with **“This name is available”** is displayed below the Name field.
+    **Note:** Workspace name must be unique. However, your workspace name must be different. Make sure a green check mark with **“This name is available”** is displayed below the Name field.
 
 5.	If you choose, you can enter a **Description** for the workspace. This is an optional field.
 6.	Click on **Advanced** to expand the section.
@@ -254,7 +255,7 @@ A new workspace is created, and you will be navigated into this workspace. We wi
  
 4.	New lakehouse dialog opens. Type **lh_FAIAD** in the Name textbox.
 
-**Note:** lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.
+    **Note:** lh here refers to Lakehouse. We are prefixing lh so that it is easy to identify and search.
 
 5.	Select **Create**.
 

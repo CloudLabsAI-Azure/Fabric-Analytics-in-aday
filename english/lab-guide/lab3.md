@@ -84,7 +84,7 @@ Shortcut is used to create a link to the target location. This is like creating 
     
     k.	Warehouse.StockItemStockGroups
 
-**Note:** Sales.Invoices_May is the only directory that is **not** selected.
+    **Note:** Sales.Invoices_May is the only directory that is **not** selected.
 
 12.	Select **Next**.
 
@@ -118,7 +118,7 @@ Shortcut is used to create a link to the target location. This is like creating 
     
     j.	Warehouse.StockItems to **ProductItem**
 
-**Note:** Double check the names. A typo may cause errors during the lab.
+    **Note:** Double check the names. A typo may cause errors during the lab.
 
 17.	Select **Create** to create the Shortcut.
 
@@ -137,9 +137,9 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
     ![](../media/lab-03/image027.jpg)
 
-You will be navigated to SQL analytics endpoint. Notice the Explorer panel has changed. You now can create views, stored procedures, queries and more. We are going to create a visual query as it provides a Power Query like interface and save this as a view.
+    You will be navigated to SQL analytics endpoint. Notice the Explorer panel has changed. You now can create views, stored procedures, queries and more. We are going to create a visual query as it provides a Power Query like interface and save this as a view.
 
-We will start by creating Geo view. We need to merge data from Cities, States and Countries query to create Geo.
+    We will start by creating Geo view. We need to merge data from Cities, States and Countries query to create Geo.
 
 2.	From the top menu, select **New visual query**.
 
@@ -149,7 +149,7 @@ We will start by creating Geo view. We need to merge data from Cities, States an
 
     ![](../media/lab-03/image033.jpg)
  
-We need to merge these queries. And visual query comes with the option to use Power Query editor. Let’s use this, since we are familiar with this.
+    We need to merge these queries. And visual query comes with the option to use Power Query editor. Let’s use this, since we are familiar with this.
 
 4.	From the menu in Visual query editor, select the **Focus mode** icon (towards the right). You will be navigated to Power Query editor.
 
@@ -167,7 +167,7 @@ We need to merge these queries. And visual query comes with the option to use Po
 
     ![](../media/lab-03/image042.jpg)
  
-Notice a new query called Merge has been created. We need a few columns from States.
+    Notice a new query called Merge has been created. We need a few columns from States.
 
 11.	In the **Data view** (bottom panel), click on the **double arrow** next to the **States** column (last column to the right).
 12.	A panel opens. **Select** following columns:
@@ -184,7 +184,7 @@ Notice a new query called Merge has been created. We need a few columns from Sta
  
     ![](../media/lab-03/image045.jpg)
 
-We need to merge Countries query now.
+    We need to merge Countries query now.
 
 14.	With Merge query selected, select **Home -> Merge queries -> Merge queries** from the ribbon.
 
@@ -197,7 +197,7 @@ We need to merge Countries query now.
 
     ![](../media/lab-03/image051.jpg)
  
-We need a few columns from Countries.
+    We need a few columns from Countries.
 
 19.	In the **Data view** (bottom panel), click on the **double arrow** next to the **Countries** column.
 20.	A panel opens. Select following columns:
@@ -222,7 +222,7 @@ We need a few columns from Countries.
 
     ![](../media/lab-03/image054.jpg)
  
-We do not need all the columns. Let’s select only those we need.
+    We do not need all the columns. Let’s select only those we need.
 
 22.	With Merge query selected, from the ribbon select **Home -> Choose columns -> Choose columns**.
 
@@ -246,7 +246,7 @@ We do not need all the columns. Let’s select only those we need.
 
     ![](../media/lab-03/image060.png)
  
-Notice the process is like Power Query, we have all the steps recorded both in the Applied Steps panel on the right and the visual view. Let’s rename Merge query and Enable load, so that the data is loaded from this query.
+    Notice the process is like Power Query, we have all the steps recorded both in the Applied Steps panel on the right and the visual view. Let’s rename Merge query and Enable load, so that the data is loaded from this query.
 
 25.	**Right click on Merge** query in the Queries (left) panel. Select **Rename** and rename the query to **Geo**.
 26.	**Right click on Geo** query in the Queries (left) panel. Select **Enable Load** to enable this query.
@@ -255,22 +255,22 @@ Notice the process is like Power Query, we have all the steps recorded both in t
 
     ![](../media/lab-03/image063.jpg)
 
-We will be navigated to Visual query editor. Let’s now save this query as a view.
- 
-**Note:** All the steps we performed using Power Query editor can be performed using Visual query editor as well.
+    We will be navigated to Visual query editor. Let’s now save this query as a view.
+    
+    **Note:** All the steps we performed using Power Query editor can be performed using Visual query editor as well.
 
 29.	From the Visual query editor menu select **Save as view**.
 
     ![](../media/lab-03/image066.jpg)
 
-Save as view dialog opens. Notice the SQL query is available. You can review it, if you choose it.
+    Save as view dialog opens. Notice the SQL query is available. You can review it, if you choose it.
 
 30.	Enter **Geo** as **View name**.
 31.	Select **OK** to save the view.
 
     ![](../media/lab-03/image069.png)
 
-You will get an alert once the view is saved.
+    You will get an alert once the view is saved.
 
 32.	In the Explorer (left) panel, expand **Views**. We have the newly created Geo view.
  
@@ -290,7 +290,7 @@ after Table (this indicates we are adding a step after Table. If you do not see 
 
     ![](../media/lab-03/image078.jpg)
 
-Merge dialog opens with Customers selected as the top table.
+    Merge dialog opens with Customers selected as the top table.
 
 5.	In the **right table to merge**, select **BuyingGroups**.
 6.	Select **BuyingGroupID** columns from both the tables. We are going to join using this column.
@@ -306,7 +306,7 @@ Merge dialog opens with Customers selected as the top table.
 
     ![](../media/lab-03/image084.jpg)
 
-We do not need all the columns. Let’s select only those we need.
+    We do not need all the columns. Let’s select only those we need.
 
 12.	From the Visual query menu, select **Manage columns -> Choose columns**.
 
@@ -349,27 +349,27 @@ We do not need all the columns. Let’s select only those we need.
 
     ![](../media/lab-03/image093.jpg)
 
-Notice the Customer table has all the steps documented. Now let’s save this view.
+    Notice the Customer table has all the steps documented. Now let’s save this view.
 
 17.	We need to save the Customer query as it has all the steps. We need to Enable load. Select the **ellipsis** in the **Customer** query box.
 18.	Make sure **Enable load** is checked.
 
     ![](../media/lab-03/image096.jpg)
  
-**Note: Customer box** should have a blue border if enable load is checked.
+    **Note: Customer box** should have a blue border if enable load is checked.
 
 19.	From the Visual query menu, select **Save as view**.
 
     ![](../media/lab-03/image099.jpg)
 
-Save as view dialog opens. Notice the SQL query is available. You can review it, if you choose it.
+    Save as view dialog opens. Notice the SQL query is available. You can review it, if you choose it.
 
 20.	Enter **Reseller** as **View name**.
 21.	Select **OK** to save the view.
  
     ![](../media/lab-03/image102.png)
  
-You will get an alert once the view is saved.
+    You will get an alert once the view is saved.
 
 22.	In the Explorer (left) panel, expand **Views**. We have the newly created Reseller view.
 
@@ -390,7 +390,7 @@ view. We have this query in Power BI Desktop. We will copy the code from Advance
 
     ![](../media/lab-03/image111.jpg)
  
-Merge dialog opens.
+    Merge dialog opens.
 
 6.	In the **left table to merge**, select **InvoiceLineItems**.
 7.	In the **right table to merge**, select **Invoices**.
@@ -400,7 +400,7 @@ Merge dialog opens.
 
     ![](../media/lab-03/image114.jpg)
 
-We are going to copy code from Power BI Desktop and paste it using Advanced Editor.
+    We are going to copy code from Power BI Desktop and paste it using Advanced Editor.
 
 11.	If you have not already opened it, open **FAIAD.pbix** located in the **Reports** folder on the desktop of your lab environment.
 12.	From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
@@ -428,32 +428,32 @@ We are going to copy code from Power BI Desktop and paste it using Advanced Edit
 22.	Click **Enter** to start a new line.
 23.	Enter **Ctrl+V** on your keyboard to paste the code you copied from Power BI Desktop.
 
-**Note:** If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
+    **Note:** If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
-![](../media/lab-03/image129.jpg)
+    ![](../media/lab-03/image129.jpg)
  
 24.	Highlight the last two lines of code ( in Source) and **delete** it.
 25.	Select **OK** to save the changes.
 
     ![](../media/lab-03/image132.jpg)
 
-If it is easier, delete all the code in the Advanced Editor and paste the below code into Advanced Editor.
+    If it is easier, delete all the code in the Advanced Editor and paste the below code into Advanced Editor.
 
-```
-let
- Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
-  #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID",
-"BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
- #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
- #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"CustomerID", "ResellerID"}}),
- 
-  #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller,
-{"ResellerID"}, "Customer", JoinKind.Inner),
- #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each [ExtendedPrice] - [TaxAmount]),
- #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", type number}}),
- #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"}) in
-  #"Removed Columns"
-```
+    ```
+    let
+    Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
+    #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID",
+    "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
+    #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
+    #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"CustomerID", "ResellerID"}}),
+    
+    #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller,
+    {"ResellerID"}, "Customer", JoinKind.Inner),
+    #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each [ExtendedPrice] - [TaxAmount]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", type number}}),
+    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"}) in
+    #"Removed Columns"
+    ```
 
 26.	You will be navigated back to Power Query Editor. In the left, Queries panel, **double click on Merge** query to rename it.
 27.	**Rename** Merge query to **Sales**.
@@ -468,7 +468,7 @@ let
 
     ![](../media/lab-03/image138.png)
  
-You will get an alert once the view is saved.
+    You will get an alert once the view is saved.
 
 33.	In the Explorer (left) panel, expand **Views**. We have the newly created Sales view.
 
@@ -501,19 +501,19 @@ Let’s create Product view, which is created by merging ProductItem, ProductIte
 11.	**Select all the code** in Advanced editor and **delete** it.
 12.	**Paste** the below code into Advanced editor. 
 
-```
-let
- Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
-  #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup",
-{"StockGroupID"}, {"StockGroupID"}),
- #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
- #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
- 
- #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice",
-"RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
- in
- #"Choose columns"
-```
+    ```
+    let
+    Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
+    #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup",
+    {"StockGroupID"}, {"StockGroupID"}),
+    #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
+    #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
+    
+    #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice",
+    "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
+    in
+    #"Choose columns"
+    ```
 
 13.	Select **OK** to close Advanced Editor. You will be navigated back to Power Query editor.
 
@@ -532,7 +532,7 @@ let
 
     ![](../media/lab-03/image162.png)
 
-You will get an alert once the view is saved.
+    You will get an alert once the view is saved.
 
 21.	In the Explorer (left) panel, expand **Views**. We have the newly created Product view.
 

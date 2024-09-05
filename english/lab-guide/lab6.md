@@ -45,13 +45,13 @@ By the end of this lab, you will have learned:
 
    ![](../media/lab-06/image007.png)
 
-If you would like to explore the data before creating a data model, you can use SQL to do so. There are two options to use SQL. Option one is visual query, which we used in the earlier lab. Option 2 is writing TSQL code. This is a developer friendly option. Let’s explore this.
+   If you would like to explore the data before creating a data model, you can use SQL to do so. There are two options to use SQL. Option one is visual query, which we used in the earlier lab. Option 2 is writing TSQL code. This is a developer friendly option. Let’s explore this.
 
-Let’s assume you want to quickly find out the Units sold by Supplier using SQL.
+   Let’s assume you want to quickly find out the Units sold by Supplier using SQL.
 
-In the Lakehouse, SQL analytics endpoint, notice on the left panel, you can view the Tables. If you expand the tables, you can view the Columns that make up the table. Also, there are options to create SQL
+   In the Lakehouse, SQL analytics endpoint, notice on the left panel, you can view the Tables. If you expand the tables, you can view the Columns that make up the table. Also, there are options to create SQL
 
-Views, Functions, and Stored Procedures. If you have a SQL background, feel free to explore these options. Let’s try to write a simple SQL query.
+   Views, Functions, and Stored Procedures. If you have a SQL background, feel free to explore these options. Let’s try to write a simple SQL query.
 
 4. From the **top menu** select **New SQL query** or from the **bottom of the left panel** select **Query**. You will be navigated to SQL query view.
 
@@ -73,7 +73,7 @@ Views, Functions, and Stored Procedures. If you have a SQL background, feel free
    
 8. On the **left Explorer** panel, under **Queries** section notice this query is saved under **My queries** as **SQL query 1**. This provides an option to rename the query and save it for future use. There is also an option to view queries that are shared with you using the **Shared queries** folder.
 
-**Note**: Visual queries you had created in earlier labs are also available under My queries folder.
+   **Note**: Visual queries you had created in earlier labs are also available under My queries folder.
 
    ![](../media/lab-06/image009.png)
 
@@ -87,7 +87,7 @@ Views, Functions, and Stored Procedures. If you have a SQL background, feel free
 
 3. **Visualize results** dialog opens. Select **Continue**.
 
-**Visualize results** dialog opens and looks like Power BI Desktop report view. This has all the features available in Power BI Desktop report view, you can format the page, select different visuals, format visuals, add filters, etc. We will not be exploring these options on this course.
+   **Visualize results** dialog opens and looks like Power BI Desktop report view. This has all the features available in Power BI Desktop report view, you can format the page, select different visuals, format visuals, add filters, etc. We will not be exploring these options on this course.
 
 4. Expand **Data** pane and expand **SQL query 1**.
    
@@ -119,7 +119,7 @@ You will be navigated to back to the SQL query screen.
 
    ![](../media/lab-06/image014.png)
 
-This is the default model the Lakehouse creates. However, there are some limitations with the default model (like ability to format measures, etc). Also, we need only a subset of the tables in our model. So we will create a new semantic model.
+   This is the default model the Lakehouse creates. However, there are some limitations with the default model (like ability to format measures, etc). Also, we need only a subset of the tables in our model. So we will create a new semantic model.
 
 2. From the menu **,** on the top right **select the arrow next to SQL analytics endpoint**.
    
@@ -201,13 +201,13 @@ The first step is to create relationships between these tables.
 
 13. Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID** from the **Sales** table and **StockItemID** from the **Product** table.
 
-**Note:** All our updates are automatically saved.
+    **Note:** All our updates are automatically saved.
 
-**Checkpoint:** Your model should have the three relationships between Sales and Reseller tables, Sales and Date and Sales and Product tables as shown in the below screenshot:
+    **Checkpoint:** Your model should have the three relationships between Sales and Reseller tables, Sales and Date and Sales and Product tables as shown in the below screenshot:
 
-   ![](../media/lab-06/image024.png)
+    ![](../media/lab-06/image024.png)
 
-In the interest of time, we will not be creating all the relationships. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the remaining relationships.
+    In the interest of time, we will not be creating all the relationships. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the remaining relationships.
 
 ## Task 5: Create Measures
 
@@ -267,9 +267,9 @@ Let’s add a few measures we need to create the Sales dashboard.
 
     ![](../media/lab-06/image028.png)
 
-Again, in the interest of time, we will not be creating all the measures. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the remaining measures.
+    Again, in the interest of time, we will not be creating all the measures. If time permits, you can complete the optional section at the end of the lab. The optional section walks through the steps to create the remaining measures.
 
-We have created a semantic model, the next step is to create a report. We will do it in the next lab.
+    We have created a semantic model, the next step is to create a report. We will do it in the next lab.
 
 ## Task 6: Optional section – Create Relationships
 
@@ -333,9 +333,9 @@ Let’s add the remaining relationships.
 
 25. Select **Save**.
 
-**Checkpoint:** Manage relationships should look like screenshot below.
+    **Checkpoint:** Manage relationships should look like screenshot below.
 
-   ![](../media/lab-06/image033.png)
+    ![](../media/lab-06/image033.png)
 
 26. Similarly, create a **many to one** relationship between **PO** and **Date**. Select **Order\_Date** from **PO** and **Date** from **Date**.
 
@@ -345,9 +345,9 @@ Let’s add the remaining relationships.
 
 29. Select **Close** to close Manage relationships dialog. We are done creating all the relationships.
 
-**Checkpoint:** Your model should look like the screenshot below.
+    **Checkpoint:** Your model should look like the screenshot below.
 
-   ![](../media/lab-06/image034.png)
+    ![](../media/lab-06/image034.png)
 
 ## Task 7: Optional section – Create Measures
 
