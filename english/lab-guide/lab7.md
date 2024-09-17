@@ -117,7 +117,7 @@ Let’s create a new report using a blank canvas.
 
 1. In the **left panel**, select your workspace name, **FAIAD_<username\>** to be navigated to the workspace. 
 
-2. From the top menu, select **New item -> Report**. You will be navigated to build your first report page.
+2. From the top menu, select **+ New item -> Report**. You will be navigated to build your first report page.
 
    ![](../media/lab-07/image027u.png)
 
@@ -240,7 +240,7 @@ Let’s create a line chart to visualize Sales over time by Reseller Company.
 3. From the **Data section** expand **Date** table. 
 
 4. Select **Year** field. Notice Year is a summed by default and added to the Y-axis. Let’s rectify this. 
-   >**Note** :If the year is already in the X-axis, simply drag it to the Y-axis
+   >**Note** :If the year is already in the X-axis, Please drag it to the Y-axis
    
    ![](../media/lab-07/image059.png)
 
