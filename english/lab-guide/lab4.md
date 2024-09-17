@@ -71,9 +71,9 @@ By the end of this lab, you will have learned:
 9. Navigate back to the **Dataflow screen** in the browser.
 10. In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.
 
-    **Note:** If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
+    **Note:** If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **FILE_TRANSFER**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
-    ![](../media/lab-04/image048.jpg)
+    ![](../media/lab-04/image048u.png)
 
     Notice the query pasted and is available in the left panel. Since we do not have a connection created to SharePoint, you will see a warning message requesting you to configure the connection.
 
@@ -149,9 +149,9 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 ## Task 5: Copy Snowflake queries to Dataflow
 1. Let’s navigate back to the Fabric workspace, **FAIAD_<username\>**
-2. From the top menu, select **New -> Dataflow Gen2**.
+2. From the top menu, select **+ New item -> Dataflow Gen2**.
 
-    ![](../media/lab-04/image042.png)
+    ![](../media/lab-04/image042u.png)
  
     You will be navigated to the **Dataflow page**. Now that we are familiar with Dataflow, let’s go ahead and copy the queries from Power BI Desktop into Dataflow.
 
@@ -176,9 +176,9 @@ Connection is established and you can view the data in the preview panel. Feel f
 7. Navigate back to the **browser**.
 8. In the **Dataflow pane** select the **center pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using MAC device, please use Cmd+V to paste.
 
-    **Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **enable VM Native Clipboard**. Select OK in the dialog. Once done pasting the queries you can disable this option.
+    **Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **FILE_TRANSFER**. Select OK in the dialog. Once done pasting the queries you can disable this option.
 
-    ![](../media/lab-04/image048.jpg)
+    ![](../media/lab-04/image048u.png)
  
 ## Task 6: Create connection to Snowflake
 Notice the five queries are pasted and now you have the Queries panel on the left. Since we do not have a connection created for Snowflake, you will see a warning message requesting you to configure the connection.
