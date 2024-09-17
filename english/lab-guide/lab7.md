@@ -240,7 +240,8 @@ Let’s create a line chart to visualize Sales over time by Reseller Company.
 3. From the **Data section** expand **Date** table. 
 
 4. Select **Year** field. Notice Year is a summed by default and added to the Y-axis. Let’s rectify this. 
-
+   >**Note** :If the year is already in the X-axis, simply drag it to the Y-axis
+   
    ![](../media/lab-07/image059.png)
 
 ## Task 6: Save the report 
