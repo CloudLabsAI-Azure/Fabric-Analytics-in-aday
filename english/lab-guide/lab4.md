@@ -149,7 +149,7 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 ## Task 5: Copy Snowflake queries to Dataflow
 1. Let’s navigate back to the Fabric workspace, **FAIAD_<username\>**
-2. From the top menu, select **New item -> Dataflow Gen2**.
+2. From the top menu, select **+ New item -> Dataflow Gen2**.
 
     ![](../media/lab-04/image042u.png)
  
