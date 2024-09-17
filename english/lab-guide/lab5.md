@@ -216,13 +216,13 @@ Let's add a little more complexity to our scenario. We have noticed that if the 
 
 1. From the left panel, click **FAIAD_<username\>**, to be navigated to the workspace home.
 
-2. From the top menu, click **New** and from the **dropdown**, click **Data pipeline**.
+2. From the top menu, click **New item** , select **Data pipeline**.
 
 3. New pipeline dialog opens. **Name** the pipeline as **pl_Refresh_People_SharePoint_Option2**
 
 4. Select **Create**.
 
-   ![](../media/lab-05/image18.png) 
+   ![](../media/lab-05/image18u.png) 
 
 ## Task 5: Create Until Activity
 
