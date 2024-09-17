@@ -70,7 +70,7 @@ and click **Submit**.
 
 9. Activate your 60-day free Fabric trail capacity. Select **Activate**.
 
-    ![](../media/lab-02/image015u.jpg)
+    ![](../media/lab-02/image015u.png)
  
 10. Successfully upgraded to Microsoft Fabric dialog opens. Select **Fabric Home Page**.
 
@@ -115,7 +115,7 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
 
     a. **Reflex:** Used to monitor datasets, queries, and event streams for patterns.
 
-    ![](../media/lab-02/image033u.jpg)
+    ![](../media/lab-02/image033u.png)
 
 
 ## Task 4: Industry Solutions Experience
@@ -148,7 +148,7 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
 
     **Note:** Reflex is available in Data Activator experiences as well.
 
-    ![](../media/lab-02/image039u.jpg)
+    ![](../media/lab-02/image039u.png)
  
 ## Task 6: Synapse Data Engineering Experience
 1. Select **Fabric experience selector icon** (currently set to Real-Time Intelligence) on the bottom left of your screen. Fabric experience dialog opens.
@@ -189,7 +189,7 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
 
     **Note:** Items like Notebook, Environment, Data pipeline, etc. are available in multiple experiences as they are relevant in each of these experiences.
 
-    ![](../media/lab-02/image045u.jpg)
+    ![](../media/lab-02/image045u.png)
  
 ## Task 8: Synapse Data Warehouse Experience
 1. Select **Fabric experience selector icon** (currently set to Data Science) on the bottom left of your screen. Fabric experience dialog opens.
