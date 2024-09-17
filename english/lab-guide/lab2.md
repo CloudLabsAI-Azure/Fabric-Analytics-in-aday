@@ -68,9 +68,9 @@ and click **Submit**.
 
     ![](../media/lab-02/image012.jpg)
 
-9. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Start trial**.
+9. Activate your 60-day free Fabric trail capacity. Select **Activate**.
 
-    ![](../media/lab-02/image015.jpg)
+    ![](../media/lab-02/image015u.jpg)
  
 10. Successfully upgraded to Microsoft Fabric dialog opens. Select **Fabric Home Page**.
 
@@ -114,10 +114,8 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
 2. Select **Data Activator** from the dialog. You will be navigated to **Data Activator Home page**. Data Activator is a no-code experience in Microsoft Fabric for automatically taking actions when patterns or conditions are detected in changing data. Notice the three sections are like the Data Factory experience. In the Recommended section, notice the items:
 
     a. **Reflex:** Used to monitor datasets, queries, and event streams for patterns.
- 
-    b. **Reflex sample:** Sample solution.
 
-    ![](../media/lab-02/image033.jpg)
+    ![](../media/lab-02/image033u.jpg)
 
 
 ## Task 4: Industry Solutions Experience
@@ -147,11 +145,10 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
     
     e. **Reflex:** Used to monitor datasets, queries, and event streams for patterns.
     
-    f. **Use a sample:** Sample solution.
 
     **Note:** Reflex is available in Data Activator experiences as well.
 
-    ![](../media/lab-02/image039.jpg)
+    ![](../media/lab-02/image039u.jpg)
  
 ## Task 6: Synapse Data Engineering Experience
 1. Select **Fabric experience selector icon** (currently set to Real-Time Intelligence) on the bottom left of your screen. Fabric experience dialog opens.
@@ -172,8 +169,6 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
 
     g. **Import notebook:** Used to import notebooks from local machine.
 
-    h. **Use a sample:** Sample solution.
-
     ![](../media/lab-02/image042.jpg)
  
 ## Task 7: Synapse Data Science Experience
@@ -191,12 +186,10 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
     e. **AI Skill:** Used to build your own generative AI experience.
     
     f. **Import Notebook:** Used to import notebooks from local machine.
-    
-    g. **Use a sample:** Sample solution.
 
     **Note:** Items like Notebook, Environment, Data pipeline, etc. are available in multiple experiences as they are relevant in each of these experiences.
 
-    ![](../media/lab-02/image045.jpg)
+    ![](../media/lab-02/image045u.jpg)
  
 ## Task 8: Synapse Data Warehouse Experience
 1. Select **Fabric experience selector icon** (currently set to Data Science) on the bottom left of your screen. Fabric experience dialog opens.
