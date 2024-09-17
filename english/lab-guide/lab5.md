@@ -216,7 +216,7 @@ Let's add a little more complexity to our scenario. We have noticed that if the 
 
 1. From the left panel, click **FAIAD_<username\>**, to be navigated to the workspace home.
 
-2. From the top menu, click **+ New item** ,then select **Data pipeline**.
+2. From the top menu, click **+ New item**,then select **Data pipeline**.
 
 3. New pipeline dialog opens. **Name** the pipeline as **pl_Refresh_People_SharePoint_Option2**
 
