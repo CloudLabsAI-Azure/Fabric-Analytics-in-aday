@@ -96,7 +96,7 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
     
     ii. Data pipeline is used for data orchestration.
         
-    iii. Data workflow is the workflow orchestration manager.
+    iii. Apache Airflow job workflow is the workflow orchestration manager.
         
     iv. API for GraphQL is API to query multiple data sources.
 
@@ -104,7 +104,7 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
     
     c. **Quick Access:** This section lists the recently used or favorite items.
 
-    ![](../media/lab-02/image027.jpg)
+    ![](../media/lab-02/image027u.png)
  
 ## Task 3: Data Activator Experience
 1. Select **Fabric experience selector icon** (currently set to Data Factory) on the bottom left of your screen. Fabric experience dialog opens.
