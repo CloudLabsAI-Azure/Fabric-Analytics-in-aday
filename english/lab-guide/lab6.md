@@ -87,7 +87,7 @@ By the end of this lab, you will have learned:
 
    ![](../media/lab-06/image010.png)
  
-   >**Note** :If you're unable to see the Visualize results option, click the **ellipsis (…)** in the top-right corner of your browser window and set the zoom percentage to 90.
+   >**Note**:If you're unable to see the Visualize results option, click the **ellipsis (…)** in the top-right corner of your browser window and set the zoom percentage to 90.
 
     ![](../media/lab-06/imagezoom.png)
    
