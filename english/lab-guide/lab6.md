@@ -86,7 +86,11 @@ By the end of this lab, you will have learned:
 2. In the Results pane menu, select **Explore this data (preview) -> Visualize results**.
 
    ![](../media/lab-06/image010.png)
+ 
+   >**Note** :If you're unable  see the visualize results, click the **ellipsis (...)** in the top-right corner of the browser window and please set the zoom percentage to 90.
 
+    ![](../media/lab-06/imagezoom.png)
+   
 3. **Visualize results** dialog opens. Select **Continue**.
 
    **Visualize results** dialog opens and looks like Power BI Desktop report view. This has all the features available in Power BI Desktop report view, you can format the page, select different visuals, format visuals, add filters, etc. We will not be exploring these options on this course.
