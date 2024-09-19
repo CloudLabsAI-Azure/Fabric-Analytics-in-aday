@@ -95,9 +95,9 @@ Connection is established and you can view the data in the preview panel. Feel f
 
 1. Select **People** query.
  
-2. From the ribbon select **Home -> Add data destination -> Lakehouse**.
+2. From the ribbon select **Home -> Query -> Add data destination -> Lakehouse**.
 
-    ![](../media/lab-04/image021.jpg)
+    ![](../media/lab-04/19-09-2024(8).png)
 
 3. Connect to data destination dialog opens. We need to create a new Connection to the Lakehouse. With **Create new connection** selected in the **Connection dropdown** and **Authentication kind** set to **Organizational account**, select **Next**.
 
@@ -197,9 +197,9 @@ Notice the five queries are pasted and now you have the Queries panel on the lef
 
 ## Task 7: Configure Data Destination for Supplier and PO queries
 1. Select the **Supplier** query.
-2. From the ribbon select **Home -> Add data destination -> Lakehouse**.
+2. From the ribbon select **Home -> Query -> Add data destination -> Lakehouse**.
 
-    ![](../media/lab-04/image057.jpg)
+    ![](../media/lab-04/19-09-2024(9).png)
 
 3. Connect to data destination dialog opens. From the **Connection dropdown** select **Lakehouse (none)**.
 4. Select **Next**.
