@@ -49,7 +49,7 @@ By the end of this lab, you will have learned:
 The shortcut is used to create a link to the target location. This is like creating shortcuts on a Windows desktop.
 1. Let’s navigate back to the **Fabric workspace** you created in Lab 2, Task 9.
 2. If you have not navigated away after the previous lab, you will be in the Lakehouse screen. If you have navigated away that is fine. Select **lh_FAIAD** to navigate to the Lakehouse.
-3. In the **Explorer** panel, select the **ellipsis** next to **Tables**.
+3. In the **Explorer** panel, select the **ellipsis(...)** next to **Tables**.
 4. Select **New Shortcut**.
 
     ![](../media/lab-03/image006.jpg) 
@@ -59,6 +59,7 @@ The shortcut is used to create a link to the target location. This is like creat
     ![](../media/lab-03/image009.jpg)
 
 6. You need to create a connection to the ADLS Gen2 data source. Under Connection Settings -> URL enter this link `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
+
 7. Select **Account key** from the Authentication kind dropdown.
 8. Copy the **Adls storage account Access Key** from the **Environment Variables** tab (next to the Lab Guide tab) and paste it in the **Account key text box**.
 9. Select **Next** on the bottom right of the screen.
@@ -69,47 +70,65 @@ The shortcut is used to create a link to the target location. This is like creat
 
 11. **Select** the following directories:
 
-    a. Cities
+    a. Application.Cities
     
-    b. Countries
+    b. Application.Countries
     
-    c. States
+    c. Application.StateProvinces
     
-    d. Date
+    d. DateDim
     
-    e. BuyingGroups
+    e. Sales.BuyingGroups
     
-    f. Customers
+    f. Sales.Customers
     
-    g. Invoices
+    g. Sales.Invoices
     
-    h. InvoiceLines
+    h. Sales.InvoiceLines
     
-    i. StockItems
+    i. Warehouse.StockItems
     
-    j. StockGroups
+    j. Warehouse.StockGroups
     
-    k. StockItemStockGroups
+    k. Warehouse.StockItemStockGroups
+
 
     **Note:** Sales.Invoices_May is the only directory that is **not** selected.
 
 12. Select **Next**.
 
-    ![](../media/lab-03/01.png)
+    ![](../media/lab-03/image015.png)
  
-13. You will be navigated to the next dialog where we can edit the names. Select the **Edit icon** under Actions for **StockGroups**.
-14. Rename **StockGroups** to **ProductGroups**.
+13. You will be navigated to the next dialog where we can edit the names. Select the **Edit icon** under Actions for **Application.Cities**.
+
+14. Rename **Application.Cities** to **Cities**.
 15. Select the check mark next to the name to save the change.
 
-    ![](../media/lab-03/001.png)
+    ![](../media/lab-03/image018.jpg)
 
-16. Similarly, rename the Shortcut Names as below:
+16.  Similarly, rename the Shortcut Names as below:
     
-    a. StockItemStockGroups to **ProductItemGroup**
+     a. Application.Countries to **Countries**
     
-    b. StockItems to **ProductItem**
+     b. Application.StateProvinces to **States**
+    
+     c. DateDim to **Date**
+    
+     d. Sales.BuyingGroups to **BuyingGroups**
+    
+     e. Sales.Customers to **Customers**
+    
+     f. Sales.InvoiceLines to **InvoiceLineItems**
+    
+     g. Sales.Invoices to **Invoices**
+    
+     h. Warehouse.StockGroups to **ProductGroups**
+    
+     i. Warehouse.StockItemStockGroups to **ProductItemGroup**
+    
+     j. Warehouse.StockItems to **ProductItem**
 
-    **Note:** Double-check the names. A typo may cause errors during the lab.
+     **Note:** Double check the names. A typo may cause errors during the lab.
 
 17. Select **Create** to create the Shortcut.
 
@@ -367,35 +386,35 @@ after Table (this indicates we are adding a step after Table. If you do not see 
 
     ![](../media/lab-03/image105.png)
 
-## Task 4: Create a Sales view using Visual query
-Let’s create a Sales view, which is created by merging the InvoiceLines and Invoices table and the Reseller
+## Task 4: Create Sales view using Visual query
+Let’s create Sales view, which is created by merging InvoiceLineItems and Invoices table and Reseller
 view. We have this query in Power BI Desktop. We will copy the code from Advanced Editor. But before copying the code, we need to create a merge table using Visual query as creating a blank query is not possible in Visual query. Let’s give this method a try.
 
 1. From the Lakehouse menu bar, select **Home -> New visual query**. A new visual query opens.
-2. From **Explorer -> Table** section, drag **InvoiceLines, Invoices** tables to the visual query section
+2. From **Explorer -> Table** section, drag **InvoiceLineItems, Invoices** tables to the visual query section
 3. From **Explorer -> Views** section, drag **Reseller** view to the visual query section
-4. From the Visual query editor, select the **Open in popup** to open the Power Query editor.
+4. From the Visual query editor, select the **Focus mode icon** to open Power Query editor.
 
-    ![](../media/lab-03/19-09-2024(3).png)
+    ![](../media/lab-03/image108.jpg)
 
-5. With the InvoiceLines query selected, from the ribbon select **Home -> Combine -> Merge queries -> Merge queries as new**.
+5. With InvoiceLineItems query selected, from the ribbon select **Home - > Merge queries - > Merge queries as new**.
 
-    ![](../media/lab-03/19-09-2024(4).png)
+    ![](../media/lab-03/image111.jpg)
  
     Merge dialog opens.
 
-6. In the **left table to merge**, select **InvoiceLines**.
+6. In the **left table to merge**, select **InvoiceLineItems**.
 7. In the **right table to merge**, select **Invoices**.
 8. Select **InvoiceID** columns from both the tables. We are going to join using this column.
 9. Select **Inner** as the **Join kind**.
 10. Select **OK**.
 
-    ![](../media/lab-03/19-09-2024(5).png)
+    ![](../media/lab-03/image114.jpg)
 
-    We are going to copy the code from Power BI Desktop and paste it using Advanced Editor.
+    We are going to copy code from Power BI Desktop and paste it using Advanced Editor.
 
 11. If you have not already opened it, open **FAIAD.pbix** located in the **Reports** folder on the desktop of your lab environment.
-12. From the ribbon select **Home -> Transform data**. The power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by the data source.
+12. From the ribbon select **Home -> Transform data**. Power Query window opens. As you have noticed in the earlier lab, queries in the left panel are organized by data source.
 
     ![](../media/lab-03/image117.jpg)
  
@@ -411,12 +430,12 @@ view. We have this query in Power BI Desktop. We will copy the code from Advance
     ![](../media/lab-03/image123.jpg)
  
 18. **Navigate back to the browser** where you have the Power Query Editor open.
-19. Make sure you have the **Merge** query selected.
+19. Make sure you have **Merge** query selected.
 20. From the ribbon select **Home -> Advanced Editor**. Advanced Editor dialog opens.
 
     ![](../media/lab-03/image126.jpg)
 
-21. At the **end of line 2 add a comma** (Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
+21. At the **end of line 2 add a comma** (Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner)
 22. Click **Enter** to start a new line.
 23. Enter **Ctrl+V** on your keyboard to paste the code you copied from Power BI Desktop.
 
@@ -429,14 +448,32 @@ view. We have this query in Power BI Desktop. We will copy the code from Advance
 
     ![](../media/lab-03/image132.jpg)
 
+    If it is easier, delete all the code in the Advanced Editor and paste the below code into Advanced Editor.
+
+    ```
+    let
+    Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
+    #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID",
+    "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
+    #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
+    #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"CustomerID", "ResellerID"}}),
+    
+    #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller,
+    {"ResellerID"}, "Customer", JoinKind.Inner),
+    #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each [ExtendedPrice] - [TaxAmount]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", type number}}),
+    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"}) in
+    #"Removed Columns"
+    ```
+
 26. You will be navigated back to Power Query Editor. In the left, Queries panel, **double click on Merge** query to rename it.
 27. **Rename** Merge query to **Sales**.
-28. Right-click on the Sales query and select **Enable load** to enable the query to be loaded.
+28. Right click on Sales query and select **Enable load** to enable the query to be loaded.
 
     ![](../media/lab-03/image135.png)
 
 29. Select **Save** to Save and Close the Power Query dialog. You will be navigated to Visual query.
-30. From the Visual query menu, select **Save as view**. Save as view dialog opens. Notice the SQL query is available. You can review it if you choose it.
+30. From the Visual query menu, select **Save as view**. Save as view dialog opens. Notice the SQL query is available. You can review it, if you choose it.
 31. Enter **Sales** as **View name**.
 32. Select **OK** to save the view.
 
@@ -446,7 +483,7 @@ view. We have this query in Power BI Desktop. We will copy the code from Advance
 
 33. In the Explorer (left) panel, expand **Views**. We have the newly created Sales view.
 
-    ![](../media/lab-03/19-09-2024(6).png)
+    ![](../media/lab-03/image141.jpg)
  
 ## Task 5: Create a Product view using Visual query
 Let’s create Product view, which is created by merging ProductItem, ProductItemGroup and ProductGroups tables. To move things along, we are going to copy the code into Advanced Editor.
@@ -508,7 +545,7 @@ Let’s create Product view, which is created by merging ProductItem, ProductIte
 
     You will get an alert once the view is saved.
 
-21. In the Explorer (left) panel, expand **Views**. We have the newly created Product view.
+21. In the Explorer (left) panel, expand **Views**. We have the newly created **Product** view.
 
     ![](../media/lab-03/image165.jpg)
  
