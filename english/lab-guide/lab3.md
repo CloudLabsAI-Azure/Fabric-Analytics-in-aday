@@ -156,7 +156,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
     ![](../media/lab-03/image030.jpg)
  
-3. We need to drag tables to the Visual query panel to build a query. Let’s drag, the Cities, States and Countries query into the visual query panel.
+3. We need to drag tables to the Visual query panel to build a query. Let’s drag, the **Cities**, **States** and **Countries** query into the visual query panel.
 
     ![](../media/lab-03/image033.jpg)
  
