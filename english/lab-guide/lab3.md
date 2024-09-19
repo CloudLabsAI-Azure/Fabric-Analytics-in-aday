@@ -92,7 +92,7 @@ The shortcut is used to create a link to the target location. This is like creat
     
     k. Warehouse.StockItemStockGroups
 
-     **Note:** Sales.Invoices_May is the only directory that is **not** selected.
+    **Note:** Sales.Invoices_May is the only directory that is **not** selected.
 
 12. Select **Next**.
 
