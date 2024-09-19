@@ -73,13 +73,13 @@ The shortcut is used to create a link to the target location. This is like creat
     
     b. Countries
     
-    c. StateProvinces
+    c. States
     
     d. Date
     
     e. BuyingGroups
     
-    f. Sales.Customers
+    f. Customers
     
     g. Invoices
     
