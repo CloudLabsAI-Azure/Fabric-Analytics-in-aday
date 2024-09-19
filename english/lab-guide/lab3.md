@@ -46,8 +46,8 @@ By the end of this lab, you will have learned:
 # Shortcut to ADLS Gen2
 
 ## Task 1: Create Shortcut
-Shortcut is used to create a link to the target location. This is like creating shortcuts in Windows desktop.
-1. Let’s navigate back to the **Fabric workspace** you created in the Lab 2, Task 9.
+The shortcut is used to create a link to the target location. This is like creating shortcuts on a Windows desktop.
+1. Let’s navigate back to the **Fabric workspace** you created in Lab 2, Task 9.
 2. If you have not navigated away after the previous lab, you will be in the Lakehouse screen. If you have navigated away that is fine. Select **lh_FAIAD** to navigate to the Lakehouse.
 3. In the **Explorer** panel, select the **ellipsis** next to **Tables**.
 4. Select **New Shortcut**.
@@ -69,63 +69,47 @@ Shortcut is used to create a link to the target location. This is like creating 
 
 11. **Select** the following directories:
 
-    a. Application.Cities
+    a. Cities
     
-    b. Application.Countries
+    b. Countries
     
-    c. Application.StateProvinces
+    c. StateProvinces
     
-    d. DateDim
+    d. Date
     
-    e. Sales.BuyingGroups
+    e. BuyingGroups
     
     f. Sales.Customers
     
-    g. Sales.Invoices
+    g. Invoices
     
-    h. Sales.InvoiceLines
+    h. InvoiceLines
     
-    i. Warehouse.StockItems
+    i. StockItems
     
-    j. Warehouse.StockGroups
+    j. StockGroups
     
-    k. Warehouse.StockItemStockGroups
+    k. StockItemStockGroups
 
     **Note:** Sales.Invoices_May is the only directory that is **not** selected.
 
 12. Select **Next**.
 
-    ![](../media/lab-03/image015.png)
+    ![](../media/lab-03/01.png)
  
-13. You will be navigated to the next dialog where we can edit the names. Select the **Edit icon** under Actions for **Application.Cities**.
-14. Rename **Application.Cities** to **Cities**.
+13. You will be navigated to the next dialog where we can edit the names. Select the **Edit icon** under Actions for **StockGroups**.
+14. Rename **StockGroups** to **ProductGroups**.
 15. Select the check mark next to the name to save the change.
 
-    ![](../media/lab-03/image018.jpg)
+    ![](../media/lab-03/001.png)
 
 16. Similarly, rename the Shortcut Names as below:
     
-    a. Application.Countries to **Countries**
+    a. StockItemStockGroups to **ProductItemGroup**
     
-    b. Application.StateProvinces to **States**
-    
-    c. DateDim to **Date**
-    
-    d. Sales.BuyingGroups to **BuyingGroups**
-    
-    e. Sales.Customers to **Customers**
-    
-    f. Sales.InvoiceLines to **InvoiceLineItems**
-    
-    g. Sales.Invoices to **Invoices**
-    
-    h. Warehouse.StockGroups to **ProductGroups**
-    
-    i. Warehouse.StockItemStockGroups to **ProductItemGroup**
-    
-    j. Warehouse.StockItems to **ProductItem**
+    b. StockItems to **ProductItem**
 
-    **Note:** Double check the names. A typo may cause errors during the lab.
+    **Note:** Double-check the names. A typo may cause errors during the lab.
 
 17. Select **Create** to create the Shortcut.
 
