@@ -147,7 +147,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
     ![](../media/lab-03/image036.png)
 
-5. With the Cities query selected, from the Power Query editor ribbon, select **Home - > Combine - > Merge queries -> Merge queries as new**. Merge queries dialog opens.
+5. With the Cities query selected, from the Power Query editor ribbon, select **Home -> Combine -> Merge queries -> Merge queries as new**. Merge queries dialog opens.
 
     ![](../media/lab-03/19-09-2024(1).png)
 
@@ -178,7 +178,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
     We need to merge the Countries query now.
 
-14. With Merge query selected, select **Home -> Combine - > Merge queries -> Merge queries** from the ribbon.
+14. With Merge query selected, select **Home -> Combine -> Merge queries -> Merge queries** from the ribbon.
 
     ![](../media/lab-03/19-09-2024(2).png)
 
@@ -378,7 +378,7 @@ view. We have this query in Power BI Desktop. We will copy the code from Advance
 
     ![](../media/lab-03/19-09-2024(3).png)
 
-5. With the InvoiceLines query selected, from the ribbon select **Home - > Combine - > Merge queries - > Merge queries as new**.
+5. With the InvoiceLines query selected, from the ribbon select **Home -> Combine -> Merge queries -> Merge queries as new**.
 
     ![](../media/lab-03/19-09-2024(4).png)
  
@@ -431,7 +431,7 @@ view. We have this query in Power BI Desktop. We will copy the code from Advance
 
 26. You will be navigated back to Power Query Editor. In the left, Queries panel, **double click on Merge** query to rename it.
 27. **Rename** Merge query to **Sales**.
-28. Right-click on Sales query and select **Enable load** to enable the query to be loaded.
+28. Right-click on the Sales query and select **Enable load** to enable the query to be loaded.
 
     ![](../media/lab-03/image135.png)
 
@@ -456,7 +456,7 @@ Let’s create Product view, which is created by merging ProductItem, ProductIte
 
     ![](../media/lab-03/image144.jpg)
 
-4. With **ProductItem** query selected, from the ribbon select **Home -> Combine - > Merge queries -> Merge queries as new**. Merge dialog opens.
+4. With **ProductItem** query selected, from the ribbon select **Home -> Combine -> Merge queries -> Merge queries as new**. Merge dialog opens.
 
     ![](../media/lab-03/19-09-2024(7).png)
 
