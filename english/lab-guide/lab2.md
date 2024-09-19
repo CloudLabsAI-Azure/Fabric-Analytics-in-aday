@@ -114,9 +114,10 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
 2. Select **Data Activator** from the dialog. You will be navigated to **Data Activator Home page**. Data Activator is a no-code experience in Microsoft Fabric for automatically taking actions when patterns or conditions are detected in changing data. Notice the three sections are like the Data Factory experience. In the Recommended section, notice the items:
 
     a. **Reflex:** Used to monitor datasets, queries, and event streams for patterns.
+    
     b. **Reflex sample:** Sample solution.
 
-    ![](../media/lab-02/image033u.png)
+    ![](../media/lab-03/19-09-2024.png)
 
 ## Task 4: Industry Solutions Experience
 1. Select **Fabric experience selector icon** (currently set to Data Activator) on the bottom left of your screen. Fabric experience dialog opens.

@@ -144,18 +144,18 @@ The next step is to transform the data, so we can create a semantic model. We ar
  
     We need to merge these queries. And visual query comes with the option to use Power Query editor. Let’s use this, since we are familiar with this.
 
-4. From the menu in Visual query editor, select the **Focus mode** icon (towards the right). You will be navigated to Power Query editor.
+4. From the menu in Visual query editor, select the **Open in popup** icon (towards the right). You will be navigated to Power Query editor.
 
     ![](../media/lab-03/image036.png)
 
-5. With Cities query selected, from the Power Query editor ribbon, select **Home - > Merge queries -> Merge queries as new**. Merge queries dialog opens.
+5. With Cities query selected, from the Power Query editor ribbon, select **Home - > Combine - > Merge queries -> Merge queries as new**. Merge queries dialog opens.
 
-    ![](../media/lab-03/image039.jpg)
+    ![](../media/lab-03/19-09-2024(1).png)
 
 6. In the **left table to merge**, select **Cities**.
 7. In the **right table to merge**, select **States**.
 8. Select **StateProvinceID** columns from both the tables. We are going to join using this column.
-9. Select Inner as the **Join kind**.
+9. Select **Inner** as the **Join kind**.
 10. Select **OK**.
 
     ![](../media/lab-03/image042.jpg)
@@ -179,9 +179,9 @@ The next step is to transform the data, so we can create a semantic model. We ar
 
     We need to merge Countries query now.
 
-14. With Merge query selected, select **Home -> Merge queries -> Merge queries** from the ribbon.
+14. With Merge query selected, select **Home -> Combine - > Merge queries -> Merge queries** from the ribbon.
 
-    ![](../media/lab-03/image048.jpg)
+    ![](../media/lab-03/19-09-2024(2).png)
 
 15. Merge query dialog opens. In the **right table to merge**, select **Countries**.
 16. Select **CountryID** columns from both the tables. We are going to join using this column.
@@ -273,7 +273,7 @@ The next step is to transform the data, so we can create a semantic model. We ar
 Let’s create Reseller view which is created by merging Customers table with BuyingGroups table. This time around we will create the view using Visual query.
 
 1. From the Lakehouse menu bar, select **Home -> New visual query**. A new visual query opens.
-2. From Explorer section, drag Customers and BuyingGroups tables to the visual query section.
+2. From Explorer section, drag **Customers** and **BuyingGroups** tables to the visual query section.
 
     ![](../media/lab-03/image075.jpg)
  
@@ -344,7 +344,7 @@ after Table (this indicates we are adding a step after Table. If you do not see 
 
     Notice the Customer table has all the steps documented. Now let’s save this view.
 
-17. We need to save the Customer query as it has all the steps. We need to Enable load. Select the **ellipsis** in the **Customer** query box.
+17. We need to save the Customers query as it has all the steps. We need to Enable load. Select the **ellipsis** in the **Customer** query box.
 18. Make sure **Enable load** is checked.
 
     ![](../media/lab-03/image096.jpg)
@@ -369,29 +369,29 @@ after Table (this indicates we are adding a step after Table. If you do not see 
     ![](../media/lab-03/image105.png)
 
 ## Task 4: Create Sales view using Visual query
-Let’s create Sales view, which is created by merging InvoiceLineItems and Invoices table and Reseller
+Let’s create Sales view, which is created by merging InvoiceLines and Invoices table and Reseller
 view. We have this query in Power BI Desktop. We will copy the code from Advanced Editor. But before copying the code, we need to create a merge table using Visual query as creating a blank query is not possible in Visual query. Let’s give this method a try.
 
 1. From the Lakehouse menu bar, select **Home -> New visual query**. A new visual query opens.
-2. From **Explorer -> Table** section, drag **InvoiceLineItems, Invoices** tables to the visual query section
+2. From **Explorer -> Table** section, drag **InvoiceLines, Invoices** tables to the visual query section
 3. From **Explorer -> Views** section, drag **Reseller** view to the visual query section
-4. From the Visual query editor, select the **Focus mode icon** to open Power Query editor.
+4. From the Visual query editor, select the **Open in popup** to open Power Query editor.
 
-    ![](../media/lab-03/image108.jpg)
+    ![](../media/lab-03/19-09-2024(3).png)
 
-5. With InvoiceLineItems query selected, from the ribbon select **Home - > Merge queries - > Merge queries as new**.
+5. With InvoiceLines query selected, from the ribbon select **Home - > Combine - > Merge queries - > Merge queries as new**.
 
-    ![](../media/lab-03/image111.jpg)
+    ![](../media/lab-03/19-09-2024(4).png)
  
     Merge dialog opens.
 
-6. In the **left table to merge**, select **InvoiceLineItems**.
+6. In the **left table to merge**, select **InvoiceLines**.
 7. In the **right table to merge**, select **Invoices**.
 8. Select **InvoiceID** columns from both the tables. We are going to join using this column.
 9. Select **Inner** as the **Join kind**.
 10. Select **OK**.
 
-    ![](../media/lab-03/image114.jpg)
+    ![](../media/lab-03/19-09-2024(5).png)
 
     We are going to copy code from Power BI Desktop and paste it using Advanced Editor.
 
@@ -417,7 +417,7 @@ view. We have this query in Power BI Desktop. We will copy the code from Advance
 
     ![](../media/lab-03/image126.jpg)
 
-21. At the **end of line 2 add a comma** (Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner)
+21. At the **end of line 2 add a comma** (Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
 22. Click **Enter** to start a new line.
 23. Enter **Ctrl+V** on your keyboard to paste the code you copied from Power BI Desktop.
 
@@ -429,24 +429,6 @@ view. We have this query in Power BI Desktop. We will copy the code from Advance
 25. Select **OK** to save the changes.
 
     ![](../media/lab-03/image132.jpg)
-
-    If it is easier, delete all the code in the Advanced Editor and paste the below code into Advanced Editor.
-
-    ```
-    let
-    Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
-    #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID",
-    "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
-    #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
-    #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"CustomerID", "ResellerID"}}),
-    
-    #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller,
-    {"ResellerID"}, "Customer", JoinKind.Inner),
-    #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each [ExtendedPrice] - [TaxAmount]),
-    #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", type number}}),
-    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"}) in
-    #"Removed Columns"
-    ```
 
 26. You will be navigated back to Power Query Editor. In the left, Queries panel, **double click on Merge** query to rename it.
 27. **Rename** Merge query to **Sales**.
@@ -465,19 +447,19 @@ view. We have this query in Power BI Desktop. We will copy the code from Advance
 
 33. In the Explorer (left) panel, expand **Views**. We have the newly created Sales view.
 
-    ![](../media/lab-03/image141.jpg)
+    ![](../media/lab-03/19-09-2024(6).png)
  
 ## Task 5: Create Product view using Visual query
 Let’s create Product view, which is created by merging ProductItem, ProductItemGroup and ProductGroups tables. To move things along, we are going to copy code into Advanced Editor.
 1. From the Lakehouse menu bar, select **Home -> New visual query**. A new visual query opens.
 2. From Explorer section, drag **ProductItem**, **ProductItemGroup** and **ProductGroups** tables to the visual query section
-3. From the Visual query editor, select the **Focus mode icon** to open Power Query editor.
+3. From the Visual query editor, select the **Open in popup** to open Power Query editor.
 
     ![](../media/lab-03/image144.jpg)
 
-4. With **ProductItem** query selected, from the ribbon select **Home -> Merge queries -> Merge queries as new**. Merge dialog opens.
+4. With **ProductItem** query selected, from the ribbon select **Home -> Combine - > Merge queries -> Merge queries as new**. Merge dialog opens.
 
-    ![](../media/lab-03/image147.jpg)
+    ![](../media/lab-03/19-09-2024(7).png)
 
 5. In the **left table to merge**, select **ProductItem**.
 6. In the **right table to merge**, select **ProductItemGroup**.
