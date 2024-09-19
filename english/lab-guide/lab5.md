@@ -114,7 +114,7 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
 
 13. Set **Time Zone** to your preferred time zone.
 
-   **Note**: Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
+    **Note**: Since this is a lab environment, you can set the time zone to your preferred time zone. In a real scenario, you will be setting the time zone based on your / data source location.
 
 14. Click **Add another time** link. Notice **Time** option is displayed.
 
@@ -220,9 +220,9 @@ Let's add a little more complexity to our scenario. We have noticed that if the 
 
 3. New pipeline dialog opens. **Name** the pipeline as **pl_Refresh_People_SharePoint_Option2**
 
-4. Select **Create**.
+    ![](../media/lab-05/image18u.png)
 
-   ![](../media/lab-05/image18u.png) 
+4. Select **Create**. 
 
 ## Task 5: Create Until Activity
 
@@ -244,7 +244,7 @@ Let's add a little more complexity to our scenario. We have noticed that if the 
 
 2. Notice the menu in the bottom pane changes. Select **Variables**.
 
-3. Select **New** to add a new variable.
+3. Select **+ New** to add a new variable.
 
 4. Notice a row appears. Enter **varCounter** in the **Name text box**. We will use this variable to iterate three times.
 
@@ -256,7 +256,7 @@ Let's add a little more complexity to our scenario. We have noticed that if the 
 
    ![](../media/lab-05/image20.png)
 
-7. Select **New** to add another new variable.
+7. Select **+ New** to add another new variable.
 
 8. Notice a row appears. Enter **varTempCounter** in the **Name textbox**. We are going to use this variable increment varCounter variable.
 
