@@ -355,7 +355,7 @@ Let's add a little more complexity to our scenario. We have noticed that if the 
 23. Your expression should be:
 
      ```
-     @or(equals(variables(\'varCounter\'),3),equals(variables(\'varIsSuccess\'), variables(\'varSuccess\'))) 
+     @or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess'))) 
      ```
 
 24. Select **OK**.
