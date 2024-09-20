@@ -43,11 +43,11 @@ By the end of this lab, you will have learned:
   
 2. If you choose to, **Minimize the task flow** to view the entire list of items.
    
-3. You will see three types of lh\_FAIAD – Lakehouse, Semantic model and SQL endpoint. We explored Lakehouse and created visual queries using SQL analytics endpoint in an earlier lab. Select **lh\_FAIAD SQL analytics endpoint** option to continue to explore this option. You will be navigated to the **SQL view** of the explorer.
+3. You will see three types of lh\_FAIAD – Lakehouse, Semantic model and SQL endpoint. We explored Lakehouse and created visual queries using the SQL analytics endpoint in an earlier lab. Select the **lh\_FAIAD SQL analytics endpoint** option to continue to explore this option. You will be navigated to the **SQL view** of the explorer.
 
    ![](../media/lab-06/image007.png)
 
-   If you would like to explore the data before creating a data model, you can use SQL to do so. There are two options to use SQL. Option one is visual query, which we used in the earlier lab. Option 2 is writing TSQL code. This is a developer friendly option. Let’s explore this.
+   If you would like to explore the data before creating a data model, you can use SQL to do so. There are two options to use SQL. Option one is the visual query, which we used in the earlier lab. Option 2 is writing TSQL code. This is a developer-friendly option. Let’s explore this.
 
    Let’s assume you want to quickly find out the Units sold by Supplier using SQL.
 
@@ -55,7 +55,7 @@ By the end of this lab, you will have learned:
 
    Views, Functions, and Stored Procedures. If you have a SQL background, feel free to explore these options. Let’s try to write a simple SQL query.
 
-4. From the **top menu** select **New SQL query** or from the **bottom of the left panel** select **Query**. You will be navigated to SQL query view.
+4. From the **top menu** select **New SQL query** or from the **bottom of the left panel** select **Query**. You will be navigated to the SQL query view.
 
    ![](../media/lab-06/image008.png)
 
@@ -75,7 +75,7 @@ By the end of this lab, you will have learned:
    
 8. On the **left Explorer** panel, under **Queries** section notice this query is saved under **My queries** as **SQL query 1**. This provides an option to rename the query and save it for future use. There is also an option to view queries that are shared with you using the **Shared queries** folder.
 
-   **Note**: Visual queries you had created in earlier labs are also available under My queries folder.
+   **Note**: Visual queries you had created in earlier labs are also available under the My queries folder.
 
    ![](../media/lab-06/image009.png)
 
@@ -93,11 +93,11 @@ By the end of this lab, you will have learned:
    
 3. **Visualize results** dialog opens. Select **Continue**.
 
-   **Visualize results** dialog opens and looks like Power BI Desktop report view. This has all the features available in Power BI Desktop report view, you can format the page, select different visuals, format visuals, add filters, etc. We will not be exploring these options on this course.
+   **Visualize results** dialog opens and looks like the Power BI Desktop report view. This has all the features available in the Power BI Desktop report view, you can format the page, select different visuals, format visuals, add filters, etc. We will not be exploring these options in this course.
 
 4. Expand **Data** pane and expand **SQL query 1**.
    
-5. Select **Supplier\_Name** and **Units fields**. Table visual is created.
+5. Select **Supplier\_Name** and **Units fields**. A table visual is created.
 
    ![](../media/lab-06/image011.png)
 
@@ -115,7 +115,7 @@ By the end of this lab, you will have learned:
 
      ![](../media/lab-06/image013.png)
 
-You will be navigated to back to the SQL query screen.
+You will be navigated back to the SQL query screen.
 
 # Lakehouse – Semantic Modeling
 
@@ -125,7 +125,7 @@ You will be navigated to back to the SQL query screen.
 
    ![](../media/lab-06/image014.png)
 
-   This is the default model the Lakehouse creates. However, there are some limitations with the default model (like ability to format measures, etc). Also, we need only a subset of the tables in our model. So we will create a new semantic model.
+   This is the default model the Lakehouse creates. However, there are some limitations with the default model (like the ability to format measures, etc). Also, we need only a subset of the tables in our model. So we will create a new semantic model.
 
 2. From the menu **,** on the top right **select the arrow next to SQL analytics endpoint**.
    
@@ -135,7 +135,7 @@ You will be navigated to back to the SQL query screen.
 
 4. From the menu select **Home -> New semantic model.**
    
-5. New semantic model dialog opens. Enter **sm\_FAIAD** as the Direct Lake semantic model name.
+5. A new semantic model dialog opens. Enter **sm\_FAIAD** as the Direct Lake semantic model name.
    
 6. We have the option to select a subset of the tables by default. Remember, we created views in the earlier lab. We want to include these views in the model. **Click** on the **icon** in the **Search bar** and select **Show views**. Now we have the option to view and select views.
 
@@ -191,7 +191,7 @@ You will navigate to the new semantic model with the selected tables. Feel free 
 
    ![](../media/lab-06/image021.png)
 
-7. Similarly, create a relationship between Sales and Date tables. Select **InvoiceDate** from the **Sales** table and drag it over to **Date** in the **Date** table.
+7. Similarly, create a relationship between the Sales and Date tables. Select **InvoiceDate** from the **Sales** table and drag it over to **Date** in the **Date** table.
 
 8. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **InvoiceDate.**
    
@@ -239,7 +239,7 @@ Let’s add a few measures we need to create the Sales dashboard.
 
 9. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
-10. Enter **Units = SUM(Sales[Quantity])** in the **formula bar.**
+10. Enter **Units = SUM(Sales[Quantity])** in the **formula bar**.
 
 11. Click the **check mark** left of the formula bar or click the **Enter** button.
 
@@ -299,7 +299,7 @@ Let’s add the remaining relationships.
 
    ![](../media/lab-06/image030.png)
 
-8. Now let’s create a relationship between Product and Supplier. Select **New relationship**.
+8. Now let’s create a relationship between the Product and the Supplier. Select **New relationship**.
 
 9. Make sure **From table** is **Product** and **Column** is **SupplierID.**
 
@@ -327,7 +327,7 @@ Let’s add the remaining relationships.
 
      ![](../media/lab-06/image032.png)
 
-20. Similarly, create a relationship between Customer and Reseller. Select **New relationship**.
+20. Similarly, create a relationship between the Customer and the Reseller. Select **New relationship**.
 
 21. New relationship dialog opens. Make sure **From table** is **Customer** and **Column** is **ResellerID.**
 
@@ -339,7 +339,7 @@ Let’s add the remaining relationships.
 
 25. Select **Save**.
 
-    **Checkpoint:** Manage relationships should look like screenshot below.
+    **Checkpoint:** Manage relationships should look like the screenshot below.
 
     ![](../media/lab-06/image033.png)
 
@@ -349,7 +349,7 @@ Let’s add the remaining relationships.
 
 28. Similarly, create a **many to one** relationship between **PO** and **People**. Select **ContactPersonID** from **PO** and **PersonID** from **People**.
 
-29. Select **Close** to close Manage relationships dialog. We are done creating all the relationships.
+29. Select **Close** to close the Manage Relationships dialog. We are done creating all the relationships.
 
     **Checkpoint:** Your model should look like the screenshot below.
 
@@ -363,7 +363,7 @@ Let’s add the remaining measures.
 
 2. Enter **Avg Order = DIVIDE([Sales], [Sales Orders])** in the formula bar.
 
-3. Click the **check mark** in the formula bar or click Enter button.
+3. Click the **check mark** in the formula bar or click the Enter button.
 
 4. Expand the Properties panel on the right.
 
