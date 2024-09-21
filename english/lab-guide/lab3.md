@@ -64,7 +64,7 @@ The shortcut is used to create a link to the target location. This is like creat
 8. Copy the **SAS token** from the **Environment Variables** tab (next to the Lab Guide tab) and paste it into the **SAS token** box.
 9. Select **Next** on the bottom right of the screen.
 
-    ![](../media/lab-03/image012.jpg)
+    ![](../media/lab-01/19-09-2024(10).png)
  
 10. You will be connected to ADLS Gen2 with the directory structure displayed in the left panel. Expand **Delta-Parquet-Format-FY25**.
 
