@@ -60,8 +60,8 @@ The shortcut is used to create a link to the target location. This is like creat
 
 6. You need to create a connection to the ADLS Gen2 data source. Under Connection Settings -> URL enter this link `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
 
-7. Select **Account key** from the Authentication kind dropdown.
-8. Copy the **Adls storage account Access Key** from the **Environment Variables** tab (next to the Lab Guide tab) and paste it in the **Account key text box**.
+7. Select **Shared Access Signature (SAS)** from the Authentication kind dropdown.
+8. Copy the **SAS token** from the **Environment Variables** tab (next to the Lab Guide tab) and paste it into the **SAS token** box.
 9. Select **Next** on the bottom right of the screen.
 
     ![](../media/lab-03/image012.jpg)
