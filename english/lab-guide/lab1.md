@@ -152,7 +152,7 @@ available in Fabric. We will not be focusing on report development or navigation
 
     ![](../media/lab-01/image045.png)
  
-7. For ADLS data source, use the **Account Key** option and enter the **Adls storage account Access key** that is available in the **Environment Variables** tab (next to the Lab Guide).
+7. For ADLS data source, use the **Shared access signature (SAS)** option and enter the **SAS token** that is available in the **Environment Variables** tab (next to the Lab Guide).
 8. Notice the **ADLSData** folder has multiple dimensions: Geo, Product, Reseller, and Date. It also has Sales fact.
 
     a. **Geo dimension** is created by merging data from Cities, Countries, and States query.
