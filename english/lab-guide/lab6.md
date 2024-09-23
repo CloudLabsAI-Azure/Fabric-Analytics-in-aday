@@ -137,8 +137,6 @@ You will be navigated back to the SQL query screen.
    
 5. A new semantic model dialog opens. Enter **sm\_FAIAD** as the Direct Lake semantic model name.
    
-6. We have the option to select a subset of the tables by default. Remember, we created views in the earlier lab. We want to include these views in the model. **Click** on the **icon** in the **Search bar** and select **Show views**. Now we have the option to view and select views.
-
    ![](../media/lab-06/image016.png)
 
 7. **Select** the following tables/views:
