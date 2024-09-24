@@ -71,9 +71,9 @@ By the end of this lab, you will have learned:
 9. Navigate back to the **Dataflow screen** in the browser.
 10. In the **Dataflow pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using a MAC device, please use Cmd+V to paste.
 
-    **Note:** If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **FILE_TRANSFER**. Select OK in the dialog. Once done pasting the queries you can disable this option.
+    **Note:** If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **VM Native Clipboard**. Select **OK** in the dialog. Once done pasting the queries you can disable this option.
 
-    ![](../media/lab-04/image048u.png)
+    ![](../media/lab-04/faiaid-lab4-vmnative.png)
 
     Notice the query is pasted and is available in the left panel. Since we do not have a connection created to SharePoint, you will see a warning message requesting you to configure the connection.
 
