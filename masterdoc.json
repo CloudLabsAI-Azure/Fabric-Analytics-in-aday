@@ -69,12 +69,11 @@
         }
       ]
     },
-        {
+    {
       "Name": "Fabric - Analyst in a day",
       "Language": "German",
       "BaseURL": "https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/tree/German/Lab-Guide",
-      "Files": [
-                
+      "Files": [            
           {
           "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/German/Lab-Guide/lab-01.md",
           "Order": 1
@@ -110,7 +109,6 @@
       "Language": "Italian",
       "BaseURL": "https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/tree/Italian/Lab-Guide",
       "Files": [
-                
           {
           "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Italian/Lab-Guide/lab-01.md",
           "Order": 1
