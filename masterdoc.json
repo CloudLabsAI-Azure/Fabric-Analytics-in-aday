@@ -2,9 +2,8 @@
     {
       "Name": "Fabric - Analyst in a day",
       "Language": "English",
-      "BaseURL": "https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/blob/main/lab-guide/",
-      "Files": [
-                
+      "BaseURL": "https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/tree/English/Lab-Guide",
+      "Files": [  
           {
           "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/English/lab-guide/lab1.1.md",
           "Order": 1
@@ -31,6 +30,288 @@
         },
             {
           "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/English/lab-guide/lab7.1.md",
+          "Order": 7
+        }
+      ]
+    },
+    {
+      "Name": "Fabric - Analyst in a day",
+      "Language": "French",
+      "BaseURL": "https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/tree/French/Lab-Guide",
+      "Files": [   
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/French/Lab-Guide/lab-01.md",
+          "Order": 1
+        },
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/French/Lab-Guide/lab-02.md",
+          "Order": 2
+        },
+           {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/French/Lab-Guide/lab-03.md",
+          "Order": 3
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/French/Lab-Guide/lab-04.md",
+          "Order": 4
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/French/Lab-Guide/lab-05.md",
+          "Order": 5
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/French/Lab-Guide/lab-06.md",
+          "Order": 6
+        },
+            {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/French/Lab-Guide/lab-07.md",
+          "Order": 7
+        }
+      ]
+    },
+        {
+      "Name": "Fabric - Analyst in a day",
+      "Language": "German",
+      "BaseURL": "https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/tree/German/Lab-Guide",
+      "Files": [
+                
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/German/Lab-Guide/lab-01.md",
+          "Order": 1
+        },
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/German/Lab-Guide/lab-02.md",
+          "Order": 2
+        },
+           {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/German/Lab-Guide/lab-03.md",
+          "Order": 3
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/German/Lab-Guide/lab-04.md",
+          "Order": 4
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/German/Lab-Guide/lab-05.md",
+          "Order": 5
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/German/Lab-Guide/lab-06.md",
+          "Order": 6
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/German/Lab-Guide/lab-07.md",
+          "Order": 7
+        }
+      ]
+    },
+    {
+      "Name": "Fabric - Analyst in a day",
+      "Language": "Italian",
+      "BaseURL": "https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/tree/Italian/Lab-Guide",
+      "Files": [
+                
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Italian/Lab-Guide/lab-01.md",
+          "Order": 1
+        },
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Italian/Lab-Guide/lab-02.md",
+          "Order": 2
+        },
+           {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Italian/Lab-Guide/lab-03.md",
+          "Order": 3
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Italian/Lab-Guide/lab-04.md",
+          "Order": 4
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Italian/Lab-Guide/lab-05.md",
+          "Order": 5
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Italian/Lab-Guide/lab-06.md",
+          "Order": 6
+        },
+            {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Italian/Lab-Guide/lab-07.md",
+          "Order": 7
+        }
+      ]
+    },
+    {
+      "Name": "Fabric - Analyst in a day",
+      "Language": "Korean",
+      "BaseURL": "https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/tree/Korean/Lab-Guide",
+      "Files": [      
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Korean/Lab-Guide/Lab-01.md",
+          "Order": 1
+        },
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Korean/Lab-Guide/Lab-02.md",
+          "Order": 2
+        },
+           {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Korean/Lab-Guide/Lab-03.md",
+          "Order": 3
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Korean/Lab-Guide/Lab-04.md",
+          "Order": 4
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Korean/Lab-Guide/Lab-05.md",
+          "Order": 5
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Korean/Lab-Guide/Lab-06.md",
+          "Order": 6
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Korean/Lab-Guide/Lab-07.md",
+          "Order": 7
+        }
+      ]
+    },
+    {
+      "Name": "Fabric - Analyst in a day",
+      "Language": "Portuguese",
+      "BaseURL": "https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/tree/Portuguese/Lab-Guide",
+      "Files": [  
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Portuguese/Lab-Guide/lab-01.md",
+          "Order": 1
+        },
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Portuguese/Lab-Guide/lab-02.md",
+          "Order": 2
+        },
+           {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Portuguese/Lab-Guide/lab-03.md",
+          "Order": 3
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Portuguese/Lab-Guide/lab-04.md",
+          "Order": 4
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Portuguese/Lab-Guide/lab-05.md",
+          "Order": 5
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Portuguese/Lab-Guide/lab-06.md",
+          "Order": 6
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Portuguese/Lab-Guide/lab-07.md",
+          "Order": 7
+        }
+      ]
+    },
+    {
+      "Name": "Fabric - Analyst in a day",
+      "Language": "Spanish",
+      "BaseURL": "https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/tree/Spanish/Lab-Guide",
+      "Files": [ 
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Spanish/Lab-Guide/lab-01.md",
+          "Order": 1
+        },
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Spanish/Lab-Guide/lab-02.md",
+          "Order": 2
+        },
+           {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Spanish/Lab-Guide/lab-03.md",
+          "Order": 3
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Spanish/Lab-Guide/lab-04.md",
+          "Order": 4
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Spanish/Lab-Guide/lab-05.md",
+          "Order": 5
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Spanish/Lab-Guide/lab-06.md",
+          "Order": 6
+        },
+            {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Spanish/Lab-Guide/lab-07.md",
+          "Order": 7
+        }
+      ]
+    },
+    {
+      "Name": "Fabric - Analyst in a day",
+      "Language": "japanese",
+      "BaseURL": "https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/tree/japanese/Lab-Guide",
+      "Files": [        
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/japanese/Lab-Guide/lab-01.md",
+          "Order": 1
+        },
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/japanese/Lab-Guide/lab-02.md",
+          "Order": 2
+        },
+           {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/japanese/Lab-Guide/lab-03.md",
+          "Order": 3
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/japanese/Lab-Guide/lab-04.md",
+          "Order": 4
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/japanese/Lab-Guide/lab-05.md",
+          "Order": 5
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/japanese/Lab-Guide/lab-06.md",
+          "Order": 6
+        },
+            {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/japanese/Lab-Guide/lab-07.md",
+          "Order": 7
+        }
+      ]
+    },
+    {
+      "Name": "Fabric - Analyst in a day",
+      "Language": "Chinese",
+      "BaseURL": "https://github.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/tree/Chinese/Lab-Guide",
+      "Files": [     
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Chinese/Lab-Guide/lab-01.md",
+          "Order": 1
+        },
+          {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Chinese/Lab-Guide/lab-02.md",
+          "Order": 2
+        },
+           {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Chinese/Lab-Guide/lab-03.md",
+          "Order": 3
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Chinese/Lab-Guide/lab-04.md",
+          "Order": 4
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Chinese/Lab-Guide/lab-05.md",
+          "Order": 5
+        },
+        {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Chinese/Lab-Guide/lab-06.md",
+          "Order": 6
+        },
+            {
+          "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/Fabric-Analytics-in-aday/Chinese/Lab-Guide/lab-07.md",
           "Order": 7
         }
       ]
