@@ -176,9 +176,9 @@ Connection is established and you can view the data in the preview panel. Feel f
 7. Navigate back to the **browser**.
 8. In the **Dataflow pane** select the **center pane**, enter **Ctrl+V** (currently right click Paste is not supported). If you are using a MAC device, please use Cmd+V to paste.
 
-    **Note**: If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **FILE_TRANSFER**. Select OK in the dialog. Once done pasting the queries you can disable this option.
+    **Note:** If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **VM Native Clipboard**. Select **OK** in the dialog. Once done pasting the queries you can disable this option.
 
-    ![](../media/lab-04/image048u.png)
+    ![](../media/lab-04/faiaid-lab4-vmnative.png)
  
 ## Task 6: Create a connection to Snowflake
 Notice the five queries are pasted and now you have the Queries panel on the left. Since we do not have a connection created for Snowflake, you will see a warning message requesting you to configure the connection.
