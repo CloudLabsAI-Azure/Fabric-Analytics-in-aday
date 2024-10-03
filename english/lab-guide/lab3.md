@@ -438,9 +438,9 @@ view. We have this query in Power BI Desktop. We will copy the code from Advance
 22. Click **Enter** to start a new line.
 23. Enter **Ctrl+V** on your keyboard to paste the code you copied from Power BI Desktop.
 
-    **Note:** If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **FILE_TRANSFER**. Select OK in the dialog. Once done pasting the queries you can disable this option.
+    **Note:** If you are working in the lab environment, please select the ellipsis on the top right of the screen. Use the slider to **VM Native Clipboard**. Select **OK** in the dialog. Once done pasting the queries you can disable this option.
 
-    ![](../media/lab-03/image048u.png)
+    ![](../media/lab-04/faiaid-lab4-vmnative.png)
  
 24. Highlight the last two lines of code ( in Source) and **delete** it.
 25. Select **OK** to save the changes.
