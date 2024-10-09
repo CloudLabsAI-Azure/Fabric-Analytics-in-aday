@@ -1,46 +1,29 @@
-Inhalt 
-Dokumentstruktur	3
-Anwendungsfall/Problemstellung	3
-Überblick über den Power BI Desktop-Bericht	4
-Aufgabe 1: Power BI Desktop in einer Übungsumgebung einrichten	4
-Aufgabe 2: Power BI Desktop-Bericht analysieren	6
-Aufgabe 3: Power Query-Abfragen überprüfen	10
-Referenzen	14
+## Inhalt 
+- Dokumentstruktur
+- Anwendungsfall/Problemstellung
+- Überblick über den Power BI Desktop-Bericht
+    - Aufgabe 1: Power BI Desktop in einer Übungsumgebung einrichten
+    - Aufgabe 2: Power BI Desktop-Bericht analysieren
+    - Aufgabe 3: Power Query-Abfragen überprüfen
+- Referenzen
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Dokumentstruktur
+## Dokumentstruktur
 Die Übung enthält die Schritte, die der Benutzer durchführen muss, sowie zugehörige Screenshots zur visuellen Unterstützung. Wichtige Abschnitte sind in den Screenshots mit einem orangefarbenen Kasten gekennzeichnet.
 
-Hinweis: Einige der Screenshots können aufgrund laufender Produktaktualisierungen veraltet sein.
-Anwendungsfall/Problemstellung
+**Hinweis:** Einige der Screenshots können aufgrund laufender Produktaktualisierungen veraltet sein.
+
+## Anwendungsfall/Problemstellung
 Fabrikam, Inc. vertreibt Livestyle-Artikel. Die Kunden von Fabrikam sind zumeist Unternehmen, die die Artikel an den Endverbraucher weiterverkaufen. Fabrikam verkauft an Einzelhandelskunden in den USA, darunter Fachgeschäfte, Supermärkte, Computergeschäfte und Souvenirläden. Fabrikam vertreibt seine Waren über ein Netzwerk von Vertretern, die die Produkte im Namen von Fabrikam bewerben, auch an andere Großhändler. Derzeit sind alle Kunden von Fabrikam in den USA ansässig. Das Unternehmen plant aber eine Expansion in andere Länder oder Regionen.
+
 Sie arbeiten als Data Analyst im Vertriebsteam. Ihre Aufgabe ist das Sammeln, Bereinigen und Auswerten von Datasets zur Lösung geschäftlicher Probleme. Außerdem fertigen Sie Diagramme und Visualisierungen an, schreiben Berichte und präsentieren diese den Entscheidungsträgern in der Organisation.
+
 Um wertvolle Erkenntnisse aus den Daten zu ziehen, rufen Sie Daten aus mehreren Systemen ab, bereinigen diese und führen sie zusammen. Dabei beziehen Sie folgende Daten aus folgenden Quellen:
-•	Vertriebsdaten: Diese stammen aus dem ERP-System und werden in einer ADLS Gen2-Datenbank abgelegt. Jeden Tag um 12 Uhr mittags werden die Daten aktualisiert.
-•	Lieferantendaten: Diese kommen von verschiedenen Lieferanten und werden in einer Snowflake-Datenbank gespeichert. Jeden Tag um Mitternacht werden die Daten aktualisiert.
-•	Kundendaten: Diese stammen aus Customer Insights und werden in Dataverse gespeichert. Die Daten sind immer auf dem neuesten Stand.
-•	Mitarbeiterdaten: Diese stammen aus dem Personalsystem und werden als Exportdatei in einem SharePoint-Ordner gespeichert. Die Daten werden jeden Morgen um 9 Uhr aktualisiert. 
+
+- **Vertriebsdaten:** Diese stammen aus dem ERP-System und werden in einer ADLS Gen2-Datenbank abgelegt. Jeden Tag um 12 Uhr mittags werden die Daten aktualisiert.
+- **Lieferantendaten:** Diese kommen von verschiedenen Lieferanten und werden in einer Snowflake-Datenbank gespeichert. Jeden Tag um Mitternacht werden die Daten aktualisiert.
+- **Kundendaten:** Diese stammen aus Customer Insights und werden in Dataverse gespeichert. Die Daten sind immer auf dem neuesten Stand.
+- **Mitarbeiterdaten:** Diese stammen aus dem Personalsystem und werden als Exportdatei in einem SharePoint-Ordner gespeichert. Die Daten werden jeden Morgen um 9 Uhr aktualisiert. 
 
  
 Derzeit arbeiten Sie an einem Dataset in Power BI Premium, mit dem die Daten aus den oben genannten Quellsystemen abgerufen werden sollen, damit Sie Ihre Berichte schreiben können und Endanwender die Möglichkeit erhalten, Self-Service-Angebote zu nutzen. Das Modell aktualisieren Sie mit Power Query. 
@@ -55,20 +38,20 @@ Sie haben von Microsoft Fabric gehört und möchten es gerne ausprobieren, um al
 Überblick über den Power BI Desktop-Bericht
 Bevor wir mit Fabric beginnen, sehen wir uns den aktuellen Bericht in Power BI Desktop an, um die Transformationen und das Modell zu verstehen.
 Aufgabe 1: Power BI Desktop in einer Übungsumgebung einrichten
-1. 	Öffnen Sie in der Übungsumgebung auf dem Desktop im Ordner Reports die Datei FAIAD.pbix. Die Datei wird in Power BI Desktop geöffnet.
+1. Öffnen Sie in der Übungsumgebung auf dem Desktop im Ordner Reports die Datei FAIAD.pbix. Die Datei wird in Power BI Desktop geöffnet.
  
-2. 	Geben Sie im Dialogfeld Ihre E-Mail-Adresse ein. Öffnen Sie rechts in der Übungsumgebung die Registerkarte Environment Details.
-3. 	Kopieren Sie den Benutzernamen und fügen Sie ihn im Dialogfeld in das Textfeld für die E-Mail-Adresse ein.
-4. 	Wählen Sie Continue aus.
+2. Geben Sie im Dialogfeld Ihre E-Mail-Adresse ein. Öffnen Sie rechts in der Übungsumgebung die Registerkarte Environment Details.
+3. Kopieren Sie den Benutzernamen und fügen Sie ihn im Dialogfeld in das Textfeld für die E-Mail-Adresse ein.
+4. Wählen Sie Continue aus.
  
-5. 	Das Dialogfeld „Anmelden“ wird geöffnet. Geben Sie den Benutzernamen erneut ein, indem Sie ihn aus der Registerkarte Umgebungsdetails kopieren.
-6. 	Wählen Sie Next aus.
-7. 	Geben Sie im nächsten Dialogfeld das Kennwort und die Anmeldeinformationen ein, indem Sie beides aus der Registerkarte Umgebungsdetails kopieren.
-8. 	Wählen Sie Anmelden aus.
+5. Das Dialogfeld „Anmelden“ wird geöffnet. Geben Sie den Benutzernamen erneut ein, indem Sie ihn aus der Registerkarte Umgebungsdetails kopieren.
+6. Wählen Sie Next aus.
+7. Geben Sie im nächsten Dialogfeld das Kennwort und die Anmeldeinformationen ein, indem Sie beides aus der Registerkarte Umgebungsdetails kopieren.
+8. Wählen Sie Anmelden aus.
  
-9. 	Das Dialogfeld Bei allen Apps angemeldet bleiben wird geöffnet. Wählen Sie OK aus.
+9. Das Dialogfeld Bei allen Apps angemeldet bleiben wird geöffnet. Wählen Sie OK aus.
  
-10. 	Das Dialogfeld Die Einrichtung ist abgeschlossen! wird geöffnet. Klicken Sie auf Fertig.
+10. Das Dialogfeld Die Einrichtung ist abgeschlossen! wird geöffnet. Klicken Sie auf Fertig.
 Nun wird Power BI Desktop geöffnet.
 Aufgabe 2: Power BI Desktop-Bericht analysieren
 Im nachstehenden Bericht werden die Verkäufe von Fabrikam analysiert. Die KPIs stehen oben links auf der Seite. Die restlichen Visuals zeigen die Verkaufszahlen im Laufe der Zeit, nach Gebiet, Produktgruppe und Wiederverkäuferfirma. 
