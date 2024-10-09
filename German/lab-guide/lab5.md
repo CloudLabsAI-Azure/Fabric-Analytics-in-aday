@@ -1,29 +1,33 @@
- 	 
- 
-Inhalt
-Einführung	3
-Dataflow Gen2	3
-Aufgabe 1: Geplante Aktualisierung für den Lieferanten-Dataflow konfigurieren	3
-Datenpipeline	7
-Aufgabe 2: Datenpipeline erstellen	7
-Aufgabe 3: Einfache Datenpipeline erstellen	9
-Aufgabe 4: Neue Datenpipeline erstellen	10
-Aufgabe 5: Until-Aktivität erstellen	11
-Aufgabe 6: Variablen erstellen	12
-Aufgabe 7: Until-Aktivität konfigurieren	13
-Aufgabe 8: Dataflow-Aktivität konfigurieren	18
-Aufgabe 9: Erste Aktivität „Variable festlegen“ konfigurieren	20
-Aufgabe 10: Zweite Aktivität „Variable festlegen“ konfigurieren	22
-Aufgabe 11: Dritte Aktivität „Variable festlegen“ konfigurieren	23
-Aufgabe 12: Wait-Aktivität konfigurieren	24
-Aufgabe 13: Geplante Aktualisierung für die Datenpipeline konfigurieren	27
-Referenzen	29
+# Inhalt
+
+- Einführung
+
+- Dataflow Gen2
+
+    - Aufgabe 1: Geplante Aktualisierung für den Lieferanten-Dataflow konfigurieren
+
+- Datenpipeline
+    - Aufgabe 2: Datenpipeline erstellen
+    - Aufgabe 3: Einfache Datenpipeline erstellen
+    - Aufgabe 4: Neue Datenpipeline erstellen
+    - Aufgabe 5: Until-Aktivität erstellen
+    - Aufgabe 6: Variablen erstellen
+    - Aufgabe 7: Until-Aktivität konfigurieren
+    - Aufgabe 8: Dataflow-Aktivität konfigurieren
+    - Aufgabe 9: Erste Aktivität „Variable festlegen“ konfigurieren
+    - Aufgabe 10: Zweite Aktivität „Variable festlegen“ konfigurieren
+    - Aufgabe 11: Dritte Aktivität „Variable festlegen“ konfigurieren
+    - Aufgabe 12: Wait-Aktivität konfigurieren
+    - Aufgabe 13: Geplante Aktualisierung für die Datenpipeline konfigurieren
+- Referenzen
 
  
-Einführung
+# Einführung
+
 Wir haben Daten aus verschiedenen Datenquellen in Lakehouse erfasst. In dieser Übung richten Sie einen Aktualisierungszeitplan für die Datenquellen ein. Zusammenfassung der Anforderung:
-•	Lieferantendaten:Snowflake wird täglich um Mitternacht/00:00 Uhr aktualisiert.
-•	Mitarbeiterdaten: Diese werden in SharePoint täglich um 9:00 Uhr aktualisiert. Wir haben jedoch festgestellt, dass es manchmal zu einer Verzögerung von 5 bis 15 Minuten kommt. Wir müssen einen Aktualisierungsplan erstellen, um dies zu berücksichtigen.
+- **Lieferantendaten**: Snowflake wird täglich um Mitternacht/00:00 Uhr aktualisiert.
+
+- **Mitarbeiterdaten**: Diese werden in SharePoint täglich um 9:00 Uhr aktualisiert. Wir haben jedoch festgestellt, dass es manchmal zu einer Verzögerung von 5 bis 15 Minuten kommt. Wir müssen einen Aktualisierungsplan erstellen, um dies zu berücksichtigen.
 •	Kundendaten: Diese sind in Dataverse immer auf dem neuesten Stand. Zuvor haben wir
 diese viermal täglich aktualisiert, um Mitternacht bzw. 00:00 Uhr, um 6:00 Uhr, mittags bzw. um 12:00 Uhr und um 18:00 Uhr. Jetzt hat das IT-Team eine Verknüpfung zu Dataverse
 erstellt, um diese Daten in einem Administrator-Lakehouse zu erfassen. Sie haben diese Daten auch transformiert. Wir müssen keine Aktualisierung einrichten, da wir eine Verknüpfung mit dem vom IT-Team bereitgestellt Lakehouse herstellen.
@@ -38,8 +42,8 @@ Dataflow Gen2
 Aufgabe 1: Geplante Aktualisierung für den Lieferanten-Dataflow konfigurieren
 Beginnen wir damit, eine geplante Aktualisierung des Lieferanten-Dataflows zu konfigurieren.
 
-1.	Wir navigieren zurück zum Fabric-Arbeitsbereich,FAIAD_<Benutzername>, indem wir den Arbeitsbereich im linken Bereich auswählen.
-2.	Zum Maximieren des Bereichs mit der Liste der Artefakte wählen Sie den Doppelpfeil oben rechts im Bereich aus.
+1. Wir navigieren zurück zum Fabric-Arbeitsbereich,FAIAD_<Benutzername>, indem wir den Arbeitsbereich im linken Bereich auswählen.
+2. Zum Maximieren des Bereichs mit der Liste der Artefakte wählen Sie den Doppelpfeil oben rechts im Bereich aus.
  
 3.	Alle von Ihnen erstellten Artefakte werden hier aufgelistet. Geben Sie rechts im Bildschirm df in das Suchfeld ein. Dadurch werden die Artefakte nach Dataflows gefiltert.
 
