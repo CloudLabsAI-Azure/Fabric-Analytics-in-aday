@@ -1,4 +1,4 @@
-
+![](../media/lab-03/img1.png)
 
 ## Contenido 
 
@@ -43,8 +43,12 @@ El acceso directo se utiliza para crear un vínculo a la ubicación de destino. 
 3. En el panel del explorador de la izquierda, seleccione los puntos suspensivos al lado de las Tablas.
 
 4. Seleccione **Nuevo acceso directo**.
+
+   ![](../media/lab-03/image006.jpg)
  
 5. Se abre el cuadro de diálogo **Nuevo acceso directo**. En **Orígenes externos**, seleccione **Azure Data Lake Storage Gen2**.
+
+   ![](../media/lab-03/image009.jpg)
  
 6. Debe crear una conexión al origen de datos ADLS Gen2. En **Configuración de conexión -> Dirección URL**, introduzca este vínculo https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 
@@ -53,6 +57,8 @@ El acceso directo se utiliza para crear un vínculo a la ubicación de destino. 
 8. Copie la **Clave de acceso de la cuenta de almacenamiento de ADLS** de la **pestaña Variables de entorno** (al lado de la pestaña Guía de laboratorio) y péguela en el **cuadro de texto Clave de cuenta**.
 
 9. Seleccione **Siguiente** en la esquina inferior derecha de la pantalla.
+
+   ![](../media/lab-03/image012.jpg)
  
 10. Se conectará a ADLS Gen2 con la estructura de directorios que se muestra en el panel izquierdo. Expanda **Delta-Parquet-Format-FY25**.
 
@@ -83,12 +89,16 @@ El acceso directo se utiliza para crear un vínculo a la ubicación de destino. 
 **Nota:** Sales.Invoices_May es el único directorio que no está seleccionado.
 
 12. Seleccione **Siguiente**.
+
+    ![](../media/lab-03/image015.jpg)
  
 13. Se le dirigirá al siguiente cuadro de diálogo, donde podemos editar los nombres. Seleccione el **icono Editar** en Acciones para **Application.Cities**.
 
 14. Cambie el nombre de **Application.Cities a Cities**.
 
 15. Seleccione la marca de verificación al lado del nombre para guardar el cambio.
+
+    ![](../media/lab-03/image018.jpg)
  
 16. Del mismo modo, cambie el nombre de los nombres de acceso directo como se muestra a continuación:
 
@@ -115,8 +125,12 @@ El acceso directo se utiliza para crear un vínculo a la ubicación de destino. 
 **Nota:** Compruebe dos veces los nombres. Un error tipográfico puede causar errores durante el laboratorio.
 
 17. Seleccione **Crear** para crear el acceso directo.
+
+    ![](../media/lab-03/image021.jpg)
  
 18. Observe que todos los accesos directos se crean como tablas. Seleccione la tabla **BuyingGroups** y observe que podemos ver una versión preliminar de los datos en el panel de datos.
+
+    ![](../media/lab-03/image024.png)
  
 El siguiente paso es transformar los datos, para que podamos crear un modelo semántico. Vamos a crear vistas para transformar los datos.
 
@@ -125,20 +139,30 @@ El siguiente paso es transformar los datos, para que podamos crear un modelo sem
 ### Tarea 2: Crear una vista Geo con consultas visuales
 
 1. Podemos tener acceso al almacén de lago de datos mediante un punto de conexión SQL. Esto permite consultar los datos y crear vistas. En la parte superior derecha de la pantalla, seleccione **Lakehouse -> Punto de conexión de análisis SQL**.
+
+   ![](../media/lab-03/image027.jpg)
  
 Esto le llevará al punto de conexión de análisis de SQL. Observe que el panel del Explorador ha cambiado. Ahora puede crear vistas, procedimientos almacenados, consultas y mucho más. Vamos a crear una consulta visual, ya que proporciona una interfaz similar a Power Query, y la guardaremos como una vista.
 
 Comenzaremos creando la vista Geo. Necesitamos fusionar los datos de la consulta Cities, States y Countries para crear Geo.
 
 2. En el menú superior, seleccione **Nueva consulta visual**.
+
+   ![](../media/lab-03/image030.jpg)
  
 3. Tendremos que arrastrar tablas al panel Consulta de objeto visual para crear una consulta. Vamos a arrastrar la consulta Cities, States y Countries al panel de consulta de objeto visual.
+
+   ![](../media/lab-03/image033.png)
  
 Necesitamos fusionar estas consultas. Y la consulta visual viene con la opción de usar el Editor de Power Query. Usemos esto, ya que estamos familiarizados con esto.
 
 4. En el menú del editor de consultas visuales, seleccione el icono **Modo de enfoque** (hacia la derecha). Se le llevará al Editor de Power Query.
+
+   ![](../media/lab-03/image036.png)
  
 5. Con la consulta Cities seleccionada, en la cinta del Editor de Power Query, seleccione **Inicio - > Combinar consultas -> Combinar consultas como nuevas**. Se abrirá el cuadro de diálogo Combinar consultas.
+
+   ![](../media/lab-03/image039.jpg)
  
 6. En **Tabla izquierda para combinación**, seleccione Cities.
 
@@ -149,6 +173,8 @@ Necesitamos fusionar estas consultas. Y la consulta visual viene con la opción 
 9. Seleccione **Interior** como el Tipo de combinación.
 
 10. Seleccione **Aceptar**.
+
+    ![](../media/lab-03/image042.jpg)
  
 Observe que se ha creado una nueva consulta llamada Merge. Necesitamos algunas columnas de States.
 
@@ -165,10 +191,14 @@ Observe que se ha creado una nueva consulta llamada Merge. Necesitamos algunas c
     d. SalesTerritory
 
 13. Seleccione **Aceptar**.
+
+    ![](../media/lab-03/image045.jpg)
  
-Necesitamos fusionar la consulta Countries ahora. 
+    Necesitamos fusionar la consulta Countries ahora. 
 
 14. Con la consulta de combinación seleccionada, seleccione **Inicio -> Combinar consultas -> Combinar consultas** de la cinta de opciones.
+
+    ![](../media/lab-03/image048.jpg)
  
 15. Se abrirá el cuadro de diálogo Combinar consulta. En **Tabla derecha para combinación**, seleccione **Countries**.
 
@@ -177,6 +207,8 @@ Necesitamos fusionar la consulta Countries ahora.
 17. Seleccione **Interior** como el **Tipo de combinación**.
 
 18. Seleccione **Aceptar**.
+
+    ![](../media/lab-03/image051.jpg)
  
 Necesitamos algunas columnas de Countries.
 
@@ -201,10 +233,14 @@ Necesitamos algunas columnas de Countries.
     h.	Subregion
 
 21. Seleccione **Aceptar**.
+
+    ![](../media/lab-03/image054.jpg)
  
 No necesitamos todas las columnas. Seleccione solo aquellos que necesitamos.
 
 22. Con la consulta de combinación seleccionada, en la cinta de opciones seleccione **Inicio -> Elegir columnas -> Elegir columnas**.
+
+    ![](../media/lab-03/image057.jpg)
  
 23. Se abrirá el cuadro de diálogo Elegir columnas. **Desmarque** las siguientes columnas.
 
@@ -217,6 +253,8 @@ No necesitamos todas las columnas. Seleccione solo aquellos que necesitamos.
 
 24. Seleccione **Aceptar**.
 
+    ![](../media/lab-03/image060.png)
+
 Observe que el proceso es como el de Power Query, tenemos todos los pasos registrados tanto en el panel Pasos aplicados de la derecha como en la vista visual. Vamos a cambiar el nombre de Combinar consulta a Habilitar carga de modo que se carguen los datos desde esta consulta.
 
 25. **Haga clic con el botón derecho en Combinar** consulta en el panel Consultas (izquierda). Seleccione Cambiar nombre y cambie el nombre de la consulta a Geo.
@@ -226,22 +264,30 @@ Observe que el proceso es como el de Power Query, tenemos todos los pasos regist
 27. Asegúrese de que las consultas de Cities, States y Countries estén **deshabilitadas**.
 
 28. Seleccione **Guardar**.
+
+    ![](../media/lab-03/image063.jpg)
  
 Se nos dirigirá al editor de consultas visuales. Guardemos ahora esta consulta como una vista.
 
 **Nota:** Todos los pasos que hemos realizado con el Editor de Power Query también se pueden llevar a cabo con el editor de consultas visuales.
 
 29. En el menú del editor de consultas visuales, seleccione **Guardar como copia**.
+
+    ![](../media/lab-03/image066.jpg)
  
 Se abre el cuadro de diálogo Guardar como copia. Observe que la consulta SQL está disponible. Puede revisarlo, si así lo desea. 
 
 30. Escriba Geo como **Nombre de la vista**.
 
 31. Seleccione **Aceptar** para guardar la vista. 
+
+    ![](../media/lab-03/image069.png)
  
 Recibirá una alerta una vez que se guarde la vista. 
 
 32. En el panel Explorador (izquierda), expanda **Views**. Tenemos la vista Geo recién creada.
+
+    ![](../media/lab-03/image072.png)
  
 ### Tarea 3: Crear una vista Reseller con consultas visuales
 
@@ -250,10 +296,14 @@ Vamos a crear una vista Reseller, que se crea al combinar la tabla Customers con
 1. En la barra de menús de Almacén de lago de datos, seleccione **Inicio -> Nueva consulta visual**. Se abre una nueva consulta de objeto visual.
 
 2. En la sección Explorador, arrastre las tablas Customers y BuyingGroups a la sección de consulta de objeto visual.
+
+   ![](../media/lab-03/image075.jpg)
  
 3. **Seleccione la consulta Customers**. Cuando se selecciona, Customers tendrá un borde azul y hay un signo "+" después de Tabla (esto indica que estamos agregando un paso después de Tabla. Si no ve el signo "+" después de la tabla, es posible que haya seleccionado un paso diferente. Seleccione Tabla y estará listo).
 
 4. En el menú Consulta visual, seleccione **Combinar -> Combinar consultas**.
+
+   ![](../media/lab-03/image078.png)
  
 Se abre el cuadro de diálogo Combinar con Customers seleccionado como la tabla superior. 
 
@@ -264,16 +314,22 @@ Se abre el cuadro de diálogo Combinar con Customers seleccionado como la tabla 
 7 Seleccione **Interior** como el **Tipo de combinación**.
 
 8 Seleccione **Aceptar**.
+
+   ![](../media/lab-03/image081.jpg)
  
 9 En la **Vista de datos** (panel inferior), haga clic en la doble flecha al lado de la columna BuyingGroups (última columna a la derecha) para seleccionar las columnas que necesitamos de BuyingGroups.
 
 10. Se abre un panel. **Seleccione la columna BuyingGroupName**.
 
 11. Seleccione **Aceptar**.
+
+    ![](../media/lab-03/image084.jpg)
   
 No necesitamos todas las columnas. Seleccione solo aquellos que necesitamos.
 
 12. En el menú Consulta visual, seleccione **Administrar columnas -> Elegir columnas**.
+
+    ![](../media/lab-03/image087.png)
  
 13. Se abrirá el cuadro de diálogo Elegir columnas. **Seleccione** las siguientes columnas.
 
@@ -304,24 +360,34 @@ No necesitamos todas las columnas. Seleccione solo aquellos que necesitamos.
     m. BuyingGroupName
 
 14. Seleccione **Aceptar**.
+
+    ![](../media/lab-03/image090.png)
  
 15. Vamos a cambiar el nombre de la columna BuyingGroupName. En la **vista Datos, haga doble clic en el encabezado de columna BuyingGroupName** para hacer que sea editable.
 
 16. **Cambie el nombre** de la columna a **ResellerCompany**.
+
+    ![](../media/lab-03/image093.jpg)
  
 Observe que la tabla Cliente tiene todos los pasos documentados. Ahora guardemos esta vista.
 
 17. En el menú de consultas visuales, seleccione **Guardar como copia**.
+
+    ![](../media/lab-03/image096.png)
  
 Se abre el cuadro de diálogo Guardar como copia. Observe que la consulta SQL está disponible. Puede revisarlo, si así lo desea. 
 
 18. Escriba **Reseller** como **Nombre de la vista**.
 
 19. Seleccione **Aceptar** para guardar la vista. 
+
+    ![](../media/lab-03/image099.png)
  
 Recibirá una alerta una vez que se guarde la vista.
 
 20. En el panel Explorador (izquierda), expanda Views. Tenemos la vista Reseller recién creada.
+
+    ![](../media/lab-03/image102.png)
  
 ### Tarea 4: Crear una vista Sales con consultas visuales
 
@@ -334,8 +400,12 @@ Vamos a crear la vista Sales, que se crea combinando la tabla InvoiceLineItems e
 3. En la sección **Explorador -> Views**, arrastre la vista Reseller a la sección de consulta visual 
 
 4. En el editor de consultas visuales, seleccione el **icono de modo de enfoque** para abrir el Editor de Power Query.
+
+   ![](../media/lab-03/image105.jpg)
  
 5. Con la consulta InvoiceLineItems seleccionada, en la cinta del editor, seleccione **Inicio - > Combinar consultas -> Combinar consultas como nuevas**.
+
+   ![](../media/lab-03/image108.jpg)
  
    Se abrirá el cuadro de diálogo Combinar.
 
@@ -348,28 +418,38 @@ Vamos a crear la vista Sales, que se crea combinando la tabla InvoiceLineItems e
 9. Seleccione **Interior** como el **Tipo de combinación**.
 
 10. Seleccione **Aceptar**.
+
+    ![](../media/lab-03/image111.jpg)
  
     Vamos a copiar el código de Power BI Desktop y pegarlo con el Editor avanzado.
 
 11. Si aún no lo ha abierto, abra **FAIAD.pbix**, que se encuentra en la carpeta **Reports** en el escritorio de su entorno de laboratorio.
 
 12. En la cinta de opciones, seleccione **Inicio -> Transformar datos**. Se abre la ventana de Power Query. Como habrá notado en la práctica de laboratorio anterior, las consultas en el panel izquierdo están organizadas por orígenes de datos.
+
+    ![](../media/lab-03/image114.jpg)
  
 13. En el panel izquierdo, en la carpeta ADLSData, seleccione la consulta **Sales**.
 
 14. En la cinta de opciones, seleccione **Inicio -> Editor avanzado**. Se abre el cuadro de diálogo del Editor avanzado.
+
+    ![](../media/lab-03/image117.jpg)
  
 15. **Seleccione el código de la Línea 3** (#"Expanded Invoice" …) hasta la última línea de código.
 
 16. **Haga clic con el botón derecho** y seleccione **Copy**.
 
 17. Seleccione **Cancelar** para cerrar el Editor avanzado.
+
+    ![](../media/lab-03/image120.jpg)
  
 18. **Regrese a la ventana/pestaña del navegador** donde tiene abierto el Editor de Power Query.
 
 19. Asegúrese de que se ha seleccionado la consulta **Combinar**.
 
 20. En la cinta de opciones, seleccione **Inicio -> Editor avanzado**. Se abre el cuadro de diálogo del Editor avanzado.
+
+    ![](../media/lab-03/image123.jpg)
  
 21. Al final de la **línea 2 agregue una coma** (Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID", Invoices,}"InvoiceID" {}, "Invoices", JoinKind.Inner)
 
@@ -378,13 +458,17 @@ Vamos a crear la vista Sales, que se crea combinando la tabla InvoiceLineItems e
 23. Introduzca **Ctrl+V** en el teclado para pegar el código que Power BI Desktop ha copiado.
 
 **Nota:** Si está trabajando en el entorno de laboratorio, seleccione los puntos suspensivos en la parte superior derecha de la pantalla. Utilice el control deslizante para habilitar Portapapeles nativo de VM. Seleccione Aceptar en el cuadro de diálogo. Una vez que haya terminado de pegar las consultas, puede desactivar esta opción.
+
+![](../media/lab-03/image126.jpg)
  
 24. Resalte las dos últimas líneas de código (en Origen) y **elimínelas**.
 
 25. Seleccione **Aceptar** para guardar las modificaciones.
+
+    ![](../media/lab-03/image129.jpg)
  
-Si resulta más fácil, elimine todo el código del Editor avanzado y pegue el siguiente código en el Editor avanzado.
-   ```
+    Si resulta más fácil, elimine todo el código del Editor avanzado y pegue el siguiente código en el Editor avanzado.
+    ```
     let
     Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
         #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
@@ -396,13 +480,15 @@ Si resulta más fácil, elimine todo el código del Editor avanzado y pegue el s
         #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"})
     in
         #"Removed Columns"
-   ```
+    ```
 
 26. Se le llevará de vuelta al Editor de Power Query. En el panel de consultas izquierdo, **haga doble clic en Combinar** consulta para cambiar su nombre.
 
 27. **Cambie el nombre** de la consulta de combinación a **Sales**.
 
 28. Haga clic con el botón derecho en la consulta de Sales y seleccione **Habilitar** carga para permitir que se cargue la consulta.
+
+    ![](../media/lab-03/image132.png)
  
 29. Seleccione **Guardar** para guardar y cerrar el cuadro de diálogo de Power Query. Esto le llevará a la consulta visual.
 
@@ -411,10 +497,14 @@ Si resulta más fácil, elimine todo el código del Editor avanzado y pegue el s
 31. Escriba **Sales** como **Nombre de la vista**.
 
 32. Seleccione **Aceptar** para guardar la vista. 
+
+    ![](../media/lab-03/image135.png)
  
     Recibirá una alerta una vez que se guarde la vista. 
 
 33. En el panel Explorador (izquierda), expanda Views. Tenemos la vista Sales recién creada.
+
+    ![](../media/lab-03/image138.png)
  
 ### Tarea 5: Crear una vista de producto con consultas visuales
 
@@ -425,8 +515,12 @@ Vamos a crear la vista Producto, que se crea mediante la combinación de las tab
 2. En la sección Explorador, arrastre las tablas **ProductItem, ProductItemGroup y ProductGroups** a la sección de consulta visual 
 
 3. En el editor de consultas visuales, seleccione el icono **de modo de enfoque** para abrir el Editor de Power Query.
+
+    ![](../media/lab-03/image141.jpg)
  
-4. Con la consulta **ProductItem** seleccionada, en la cinta del editor, seleccione **Inicio - > Combinar consultas -> Combinar consultas como nuevas**. Se abrirá el cuadro de diálogo Combinar. 
+4. Con la consulta **ProductItem** seleccionada, en la cinta del editor, seleccione **Inicio - > Combinar consultas -> Combinar consultas como nuevas**. Se abrirá el cuadro de diálogo Combinar.
+
+    ![](../media/lab-03/image144.jpg)
  
 5. En **Tabla izquierda para combinación**, seleccione **ProductItem**.
 
@@ -437,8 +531,12 @@ Vamos a crear la vista Producto, que se crea mediante la combinación de las tab
 8. Seleccione **Externa izquierda** como **Tipo de combinación**.
 
 9. Seleccione **Aceptar**. Se crea la nueva consulta de combinación.
+
+   ![](../media/lab-03/image147.jpg)
  
 10. Con la consulta de combinación seleccionada, en la cinta de opciones, seleccione **Inicio -> Editor avanzado**. Se abre el cuadro de diálogo del Editor avanzado.
+
+    ![](../media/lab-03/image150.jpg)
  
 11. **Seleccione todo el código** en el Editor avanzado y **elimínelo**.
 
@@ -456,6 +554,8 @@ Vamos a crear la vista Producto, que se crea mediante la combinación de las tab
    ```
 
 13. Seleccione **Aceptar** para cerrar el Editor avanzado. Se le llevará de vuelta al Editor de Power Query.
+
+    ![](../media/lab-03/image153.jpg)
  
 14. En el panel de consultas izquierdo, **haga doble clic en Combinar** consulta para cambiar su nombre.
 
@@ -465,16 +565,22 @@ Vamos a crear la vista Producto, que se crea mediante la combinación de las tab
 seleccione **Habilitar** carga para permitir que se cargue la consulta.
 
 17. Seleccione **Guardar** para guardar y cerrar el cuadro de diálogo de Power Query. Esto le llevará a la consulta visual.
+
+    ![](../media/lab-03/image156.jpg)
  
 18. En el menú de consultas visuales, seleccione **Guardar como copia**. Se abre el cuadro de diálogo Guardar como copia. Observe que la consulta SQL está disponible. Puede revisarlo, si así lo desea.
 
 19. Escriba **Product** como **Nombre de la vista**.
 
 20. Seleccione **Aceptar** para guardar la vista. 
+
+    ![](../media/lab-03/image159.png)
  
     Recibirá una alerta una vez que se guarde la vista. 
 
 21. En el panel Explorador (izquierda), expanda **Views**. Tenemos la vista Product recién creada.
+
+    ![](../media/lab-03/image162.jpg)
  
 Hemos transformado los datos del origen de datos ADLS Gen2. En este laboratorio, hemos aprendido a crear accesos directos y hemos explorado diversas opciones para usar vistas de consulta visual para transformar datos.
 
@@ -484,6 +590,7 @@ En la siguiente práctica de laboratorio, aprenderemos a usar el flujo de datos 
 
 Fabric Analyst in a Day (FAIAD) le presenta algunas funciones clave disponibles en Microsoft Fabric. En el menú del servicio, la sección Ayuda (?) tiene vínculos a algunos recursos excelentes.
 
+![](../media/lab-03/image165.png)
  
 Estos son algunos recursos más que podrán ayudarle a seguir avanzando con Microsoft Fabric.
 
