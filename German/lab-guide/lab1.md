@@ -1,4 +1,4 @@
-# Microsoft Fabric - Fabric Analyst in a Day - Lab 1
+# Microsoft Fabric - Fabric Analyst in a Day - Übung 1
 
 ![](../media/lab-01/intro-german.png)
 
