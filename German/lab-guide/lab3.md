@@ -378,21 +378,21 @@ Wir erstellen die Ansicht „Reseller“, indem wir die Tabelle „Customers“ 
 
 15.	Wir benennen die Spalte „BuyingGroupName“ um. **Doppelklicken Sie in der Datenansicht auf die Spaltenüberschrift „BuyingGroupName“**, damit sie bearbeitet werden kann.
  
-16.	Benennen Sie die Spalte in ResellerCompany um.
+16.	**Benennen** Sie die Spalte in **ResellerCompany** um.
 
 Beachten Sie, dass in der Tabelle „Customers“ alle Schritte dokumentiert sind. Jetzt speichern wir diese Ansicht.
 
-17.	Wählen Sie im Menü der Visual-Abfrage Als Ansicht speichern aus.
+17.	Wählen Sie im Menü der Visual-Abfrage **Als Ansicht speichern** aus.
 
 Das Dialogfeld „Als Ansicht speichern“ wird geöffnet. Beachten Sie, dass die SQL-Abfrage verfügbar ist. Sie können sie bei Bedarf überprüfen.
 
-18.	Geben Sie als Ansichtsname Reseller ein.
+18.	Geben Sie als **Ansichtsname Reseller** ein.
 
-19.	Wählen Sie OK aus, um die Ansicht zu speichern.
+19.	Wählen Sie **OK** aus, um die Ansicht zu speichern.
 
 Sie erhalten eine Benachrichtigung, nachdem die Ansicht gespeichert wurde.
  
-20.	Erweitern Sie im Explorer-Bereich (links) Ansichten. Wir haben die neu erstellte Ansicht „Reseller“.
+20.	Erweitern Sie im Explorer-Bereich (links) **Ansichten**. Wir haben die neu erstellte Ansicht „Reseller“.
 
 ### Aufgabe 4: Ansicht „Sales“ mithilfe einer Visual-Abfrage erstellen
 
@@ -400,53 +400,64 @@ Lassen Sie uns die Ansicht „Sales“ erstellen, die durch das Zusammenführen 
 „InvoiceLineItems“ und „Invoices“ sowie der Ansicht „Reseller“ erstellt wird. Wir haben diese Abfrage in Power BI Desktop. Wir kopieren den Code aus „Erweiterter Editor“. Aber bevor wir den Code
 kopieren, müssen wir mit der Visual-Abfrage eine Zusammenführungstabelle erstellen, da in der
 Visual-Abfrage keine leere Abfrage erstellt werden kann. Lassen Sie uns diese Methode ausprobieren.
-1. Wählen Sie in der Menüleiste von Lakehouse Start -> Neue Visual-Abfrage aus. Es wird eine neue Visual-Abfrage geöffnet.
-2. Ziehen Sie aus dem Abschnitt Explorer -> Tabelle die Tabellen InvoiceLineItems, Invoices in den Abschnitt für Visual-Abfragen.
-3. Ziehen Sie aus dem Abschnitt Explorer -> Ansichten die Ansicht Reseller in den Abschnitt für Visual-Abfragen.
- 
-4. Wählen Sie im Editor für Visual-Abfragen das Symbol für den Fokusmodus aus, um den Power Query-Editor zu öffnen.
 
-5. Wählen Sie bei ausgewählter Abfrage „InvoiceLineItems“ im Menüband Start -> Merge-Abfragen
--> Abfragen als neue Abfrage zusammenführen aus.
+1. Wählen Sie in der Menüleiste von Lakehouse **Start -> Neue Visual-Abfrage** aus. Es wird eine neue Visual-Abfrage geöffnet.
+
+2. Ziehen Sie aus dem Abschnitt **Explorer -> Tabelle** die Tabellen **InvoiceLineItems, Invoices** in den Abschnitt für Visual-Abfragen.
+
+3. Ziehen Sie aus dem Abschnitt **Explorer -> Ansichten** die Ansicht **Reseller** in den Abschnitt für Visual-Abfragen.
+ 
+4. Wählen Sie im Editor für Visual-Abfragen das **Symbol für den Fokusmodus** aus, um den Power Query-Editor zu öffnen.
+
+5. Wählen Sie bei ausgewählter Abfrage „InvoiceLineItems“ im Menüband **Start -> Merge-Abfragen
+-> Abfragen als neue Abfrage zusammenführen** aus.
 
 Das Dialogfeld zum Zusammenführen wird geöffnet.
-6. Wählen Sie in der linken zusammenzuführenden Tabelle die Option InvoiceLineItems aus.
-7. Wählen Sie in der rechten zusammenzuführenden Tabelle die Option Invoices aus.
-8. Wählen Sie InvoiceID-Spalten aus beiden Tabellen aus. Wir führen eine Verknüpfung über diese Spalte aus.
-9. Wählen Sie Innerer als Art des Joins aus.
+
+6. Wählen Sie in der **linken zusammenzuführenden Tabelle die Option InvoiceLineItems** aus.
+
+7. Wählen Sie in der **rechten zusammenzuführenden Tabelle die Option Invoices** aus.
+
+8. Wählen Sie **InvoiceID**-Spalten aus beiden Tabellen aus. Wir führen eine Verknüpfung über diese Spalte aus.
+
+9. Wählen Sie **Innerer** als **Art des Joins** aus.
  
-10.	Wählen Sie OK aus.
+10.	Wählen Sie **OK** aus.
 
 Wir kopieren den Code aus Power BI Desktop, und fügen ihn über „Erweiterter Editor“ ein.
-11.	Öffnen Sie FAIAD.pbix im Ordner Report auf dem Desktop Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
-12.	Wählen Sie im Menüband Start > Daten transformieren aus. Das Power Query-Fenster wird
-geöffnet. Wie Sie in der vorherigen Übung festgestellt haben, sind die Abfragen im linken Bereich nach Datenquelle organisiert.
 
-13.	Wählen Sie links unter dem Ordner „ADLSData“ die Abfrage Sales aus.
+11.	Öffnen Sie **FAIAD.pbix** im Ordner **Report** auf dem Desktop Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
+
+12.	Wählen Sie im Menüband **Start > Daten transformieren** aus. Das Power Query-Fenster wird geöffnet. Wie Sie in der vorherigen Übung festgestellt haben, sind die Abfragen im linken Bereich nach Datenquelle organisiert.
+
+13.	Wählen Sie links unter dem Ordner „ADLSData“ die Abfrage **Sales** aus.
  
-14.	Wählen Sie im Menüband die Registerkarte Start -> Erweiterter Editor aus. Das Dialogfenster
+14.	Wählen Sie im Menüband die Registerkarte **Start -> Erweiterter Editor** aus. Das Dialogfenster
 „Erweiterter Editor“ wird geöffnet.
 
-15.	Wählen Sie Code aus Zeile 3 (#"Expanded Invoice" …) bis zur letzten Codezeile aus.
-16.	Klicken Sie mit der rechten Maustaste, und wählen Sie Kopieren aus.
-17.	Wählen Sie Abbrechen aus, um „Erweiterter Editor“ zu schließen.
+15.	**Wählen Sie Code aus Zeile 3** (#"Expanded Invoice" …) bis zur letzten Codezeile aus.
 
-18.	Navigieren Sie zurück zum Browser, in dem der Power Query-Editor geöffnet ist.
-19.	Stellen Sie sicher, dass Sie die Abfrage Merge ausgewählt haben.
+16.	**Klicken Sie mit der rechten Maustaste**, und wählen Sie **Kopieren** aus.
+
+17.	Wählen Sie **Abbrechen** aus, um „Erweiterter Editor“ zu schließen.
+
+18.	**Navigieren Sie zurück zum Browser**, in dem der Power Query-Editor geöffnet ist.
+
+19.	Stellen Sie sicher, dass Sie die Abfrage **Merge** ausgewählt haben.
  
-20.	Wählen Sie im Menüband die Registerkarte Start -> Erweiterter Editor aus. Das Dialogfenster
-„Erweiterter Editor“ wird geöffnet.
+20.	Wählen Sie im Menüband die Registerkarte **Start -> Erweiterter Editor** aus. Das Dialogfenster „Erweiterter Editor“ wird geöffnet.
 
-21.	Fügen Sie am Ende von Zeile 2 ein Komma hinzu (Source = Table.NestedJoin(InvoiceLineItems,
-{"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner).
-22.	Klicken Sie auf die Eingabetaste, um eine neue Zeile zu beginnen.
-23.	Geben Sie auf Ihrer Tastatur STRG+V ein, um den Code einzufügen, den Sie aus Power BI Desktop kopiert haben.
-Hinweis: Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den Schieberegler, um das VM Native Clipboard zu
-aktivieren. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben, können Sie diese Option deaktivieren.
+21.	Fügen Sie am **Ende von Zeile 2 ein Komma** hinzu (Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner).
 
-24.	Markieren Sie die letzten beiden Codezeilen (in der Quelle) und löschen Sie sie.
+22.	Klicken Sie auf die **Eingabetaste**, um eine neue Zeile zu beginnen.
+
+23.	Geben Sie auf Ihrer Tastatur **STRG+V** ein, um den Code einzufügen, den Sie aus Power BI Desktop kopiert haben.
+
+**Hinweis**: Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den Schieberegler, um das **VM Native Clipboard zu aktivieren**. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben, können Sie diese Option deaktivieren.
+
+24.	Markieren Sie die letzten beiden Codezeilen (in der Quelle) und **löschen** Sie sie.
  
-25.	Wählen Sie OK aus, um die Änderungen zu speichern.
+25.	Wählen Sie **OK** aus, um die Änderungen zu speichern.
 
 Wenn es einfacher ist, löschen Sie den gesamten Code im erweiterten Editor, und fügen Sie den folgenden Code in „Erweiterter Editor“ ein.
 let
@@ -462,46 +473,50 @@ let
   #"Removed Columns"
 
 
-26.	Sie werden zum Power Query-Editor weitergeleitet. Im linken Bereich „Abfragen“ müssen Sie
-kauf die „Merge-Abfrage doppelklicken, um sie umzubenennen.
-27.	Benennen Sie Merge-Abfrage in Sales um.
- 
-28.	Klicken Sie mit der rechten Maustaste auf die Abfrage „Sales“, und wählen Sie Laden aktivieren
-aus, damit die Abfrage geladen werden kann.
+26.	Sie werden zum Power Query-Editor weitergeleitet. Im linken Bereich „Abfragen“ müssen Sie **kauf die „Merge-Abfrage doppelklicken**, um sie umzubenennen.
 
-29.	Wählen Sie Speichern aus, um das Power Query-Dialogfeld zu speichern und zu schließen. Die werden zur visuellen Abfrage weitergeleitet.
-30.	Wählen Sie im Menü der Visual-Abfrage Als Ansicht speichern aus. Das Dialogfeld „Als Ansicht speichern“ wird geöffnet. Beachten Sie, dass die SQL-Abfrage verfügbar ist. Sie können sie bei Bedarf überprüfen.
-31.	Geben Sie als Ansichtsname Sales ein.
-32.	Wählen Sie OK aus, um die Ansicht zu speichern.
+27.	**Benennen** Sie Merge-Abfrage in **Sales** um.
+
+28.	Klicken Sie mit der rechten Maustaste auf die Abfrage „Sales“, und wählen Sie **Laden aktivieren** aus, damit die Abfrage geladen werden kann.
+
+29.	Wählen Sie **Speichern** aus, um das Power Query-Dialogfeld zu speichern und zu schließen. Die werden zur visuellen Abfrage weitergeleitet.
+
+30.	Wählen Sie im Menü der Visual-Abfrage **Als Ansicht speichern** aus. Das Dialogfeld „Als Ansicht speichern“ wird geöffnet. Beachten Sie, dass die SQL-Abfrage verfügbar ist. Sie können sie bei Bedarf überprüfen.
+
+31.	Geben Sie als **Ansichtsname Sales** ein.
+
+32.	Wählen Sie **OK** aus, um die Ansicht zu speichern.
 
 Sie erhalten eine Benachrichtigung, nachdem die Ansicht gespeichert wurde.
  
-33.	Erweitern Sie im Explorer-Bereich (links) Ansichten. Wir haben die neu erstellte Ansicht „Sales“.
-
-
+33.	Erweitern Sie im Explorer-Bereich (links) **Ansichten**. Wir haben die neu erstellte Ansicht „Sales“.
 
 ### Aufgabe 5: Ansicht „Product“ mithilfe einer Visual-Abfrage erstellen
 
-Wir erstellen die Ansicht „Product“, die durch das Zusammenführen der Tabellen „ProductItem“,
-„ProductItemGroup“ und „ProductGroups“ erstellt wird. Um voranzukommen, kopieren wir den Code in „Erweiterter Editor“.
-1. Wählen Sie in der Menüleiste von Lakehouse Start -> Neue Visual-Abfrage aus. Es wird eine neue Visual-Abfrage geöffnet.
-2. Ziehen Sie die Tabellen ProductItem, ProductItemGroup und ProductGroups aus dem Abschnitt
-„Explorer“ in den Abschnitt für visuelle Abfragen.
-3. Wählen Sie im Editor für Visual-Abfragen das Symbol für den Fokusmodus aus, um den Power Query-Editor zu öffnen.
+Wir erstellen die Ansicht „Product“, die durch das Zusammenführen der Tabellen „ProductItem“, „ProductItemGroup“ und „ProductGroups“ erstellt wird. Um voranzukommen, kopieren wir den Code in „Erweiterter Editor“.
+
+1. Wählen Sie in der Menüleiste von Lakehouse **Start -> Neue Visual-Abfrage** aus. Es wird eine neue Visual-Abfrage geöffnet.
+
+2. Ziehen Sie die Tabellen **ProductItem, ProductItemGroup und ProductGroups** aus dem Abschnitt „Explorer“ in den Abschnitt für visuelle Abfragen.
+
+3. Wählen Sie im Editor für Visual-Abfragen das **Symbol für den Fokusmodus** aus, um den Power Query-Editor zu öffnen.
  
-4. Wählen Sie bei ausgewählter Abfrage ProductItem im Menüband Start -> Abfragen
-zusammenführen -> Abfragen als neue Abfrage zusammenführen aus. Das Dialogfeld zum Zusammenführen wird geöffnet.
+4. Wählen Sie bei ausgewählter Abfrage **ProductItem** im Menüband **Start -> Abfragen zusammenführen -> Abfragen als neue Abfrage zusammenführen** aus. Das Dialogfeld zum Zusammenführen wird geöffnet.
 
-5. Wählen Sie in der linken zusammenzuführenden Tabelle die Option ProductItem aus.
-6. Wählen Sie in der rechten zusammenzuführenden Tabelle die Option ProductItemGroup aus.
-7. Wählen Sie StockItemID-Spalten aus beiden Tabellen aus. Wir führen eine Verknüpfung über diese Spalte aus.
-8. Wählen Sie als Art des Joins die Option linker äußerer Join aus.
-9. Wählen Sie OK aus. Es wird eine neue Merge-Abfrage erstellt.
+5. Wählen Sie in der **linken zusammenzuführenden Tabelle** die Option **ProductItem** aus.
 
- 
-10.	Wählen Sie bei ausgewählter Merge-Abfrage im Menüband Start -> Erweiterter Editor aus. Das Dialogfenster „Erweiterter Editor“ wird geöffnet.
+6. Wählen Sie in der **rechten zusammenzuführenden Tabelle** die Option **ProductItemGroup** aus.
 
-11.	Wählen Sie den gesamten Code in „Erweiterter Editor“ aus, und löschen Sie ihn.
+7. Wählen Sie **StockItemID**-Spalten aus beiden Tabellen aus. Wir führen eine Verknüpfung über diese Spalte aus.
+
+8. Wählen Sie als **Art des Joins** die Option **linker äußerer Join** aus.
+
+9. Wählen Sie **OK aus**. Es wird eine neue Merge-Abfrage erstellt.
+
+10.	Wählen Sie bei ausgewählter Merge-Abfrage im Menüband **Start -> Erweiterter** Editor aus. Das Dialogfenster „Erweiterter Editor“ wird geöffnet.
+
+11.	**Wählen Sie den gesamten Code** in „Erweiterter Editor“ aus, und **löschen** Sie ihn.
+
 12.	Fügen Sie den folgenden Code in „Erweiterter Editor“ ein. let
  Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup,
 {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
@@ -513,27 +528,34 @@ zusammenführen -> Abfragen als neue Abfrage zusammenführen aus. Das Dialogfeld
 "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
  in
  #"Choose columns"
-13.	Wählen Sie OK aus, um „Erweiterter Editor“ zu schließen. Sie werden zum Power Query-Editor weitergeleitet.
+
+13.	Wählen Sie **OK** aus, um „Erweiterter Editor“ zu schließen. Sie werden zum Power Query-Editor weitergeleitet.
 
  
-14.	Im linken Bereich „Abfragen“ müssen Sie kauf die „Merge-Abfrage doppelklicken, um sie umzubenennen.
-15.	Benennen Sie Merge-Abfrage in Product um.
-16.	Klicken Sie mit der rechten Maustaste auf die Abfrage „Product“, und wählen Sie Laden aktivieren aus, damit die Abfrage geladen werden kann.
-17.	Wählen Sie Speichern aus, um das Power Query-Dialogfeld zu speichern und zu schließen. Die werden zur visuellen Abfrage weitergeleitet.
+14.	Im linken Bereich „Abfragen“ müssen Sie **kauf die „Merge-Abfrage doppelklicken**, um sie umzubenennen.
 
-18.	Wählen Sie im Menü der Visual-Abfrage Als Ansicht speichern aus. Das Dialogfeld „Als Ansicht speichern“ wird geöffnet. Beachten Sie, dass die SQL-Abfrage verfügbar ist. Sie können sie bei Bedarf überprüfen.
-19.	Geben Sie als Ansichtsname Product ein.
-20.	Wählen Sie OK aus, um die Ansicht zu speichern.
+15.	**Benennen** Sie Merge-Abfrage in **Product** um.
+
+16.	Klicken Sie mit der rechten Maustaste auf die Abfrage „Product“, und wählen Sie **Laden aktivieren** aus, damit die Abfrage geladen werden kann.
+
+17.	Wählen Sie **Speichern** aus, um das Power Query-Dialogfeld zu speichern und zu schließen. Die werden zur visuellen Abfrage weitergeleitet.
+
+18.	Wählen Sie im Menü der Visual-Abfrage **Als Ansicht speichern** aus. Das Dialogfeld „Als Ansicht speichern“ wird geöffnet. Beachten Sie, dass die SQL-Abfrage verfügbar ist. Sie können sie bei Bedarf überprüfen.
+
+19.	Geben Sie als **Ansichtsname Product** ein.
+
+20.	Wählen Sie **OK** aus, um die Ansicht zu speichern.
 
 Sie erhalten eine Benachrichtigung, nachdem die Ansicht gespeichert wurde.
  
-21.	Erweitern Sie im Explorer-Bereich (links) Ansichten. Wir haben die neu erstellte Ansicht
+21.	Erweitern Sie im Explorer-Bereich (links) **Ansichten**. Wir haben die neu erstellte Ansicht
 „Product“.
 
 Wir haben die Daten aus der ADLS Gen2-Datenquelle transformiert. In dieser Übung haben wir gelernt, wie man Verknüpfungen erstellt und verschiedene Optionen zur Verwendung von Ansichten für Visual-Abfragen zum Transformieren von Daten erkundet.
 In der nächsten Übung erfahren wir, wie man Dataflow Gen2 verwendet und eine Verknüpfung zu einem anderen Lakehouse erstellt.
- 
-Referenzen
+
+## Referenzen
+
 Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie in der Hilfe (?) Links zu praktischen Informationen.
 
 Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit Microsoft Fabric.
