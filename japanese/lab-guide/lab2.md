@@ -1,3 +1,6 @@
+
+![](../media/lab-02/image001l2.png)
+
 ## ​目次	
 概要
 
@@ -40,12 +43,13 @@ Fabric ワークスペース
 
 2. **環境変数**タブ ([ラボ ガイド] タブの横) で確認できる**ユーザー名を電子メール**として入力して、**Submit** をクリックします。 
 
-	 
+	 ![](../media/lab-02/image006.jpg)
 
 3. **パスワード**画面が表示されます。**環境変数**タブ ([ラボ ガイド] タブの横) で確認できる、講師から提供された**パスワード**を入力します。 
 
 4. **Sign in** をクリックし、プロンプトに従って Fabric にサインインします。 
-
+     
+     ![](../media/lab-02/image009.png)
 
 5. 見慣れた **Power BI サービスのホーム ページ**が表示されます。 
 
@@ -57,17 +61,19 @@ Fabric ワークスペース
 
 8. **無料試用版**を選択します。 
 
- 
+    ![](../media/lab-02/image012.jpg)
 
 9. [Microsoft Fabric の無料試用版へのアップグレード] ダイアログが開きます。**無料体験する**を選択します。 
 
- 
+    ![](../media/lab-02/image015.jpg)
 
 10. Microsoft Fabric に正常にアップグレードされたことを示すダイアログが開きます。**Fabric Home Page** を選択します。 
-
+  
+     ![](../media/lab-02/image018.png)
 
 11.**Microsoft Fabric のホーム ページ**が開きます。 
 
+![](../media/lab-02/image021.jpg)
 
 ## Fabric のエクスペリエンスの概要 
 
@@ -76,6 +82,8 @@ Fabric ワークスペース
 1. 画面左下の **Microsoft Fabric** (Fabric エクスペリエンス セレクター) アイコンを選択します。ダイアログが開き、Fabric のエクスペリエンスの一覧が表示されます。Power BI、Data Factory、Data Activator、Industry Solutions、および Real-Time Intelligence は独立したエクスペリエンスであることに注意してください。Data Engineering、Data Science、Data Warehouse は Synapse のエクスペリエンスであり、これら 4 つのエクスペリエンスは Synapse を利用します。詳しく見て行きましょう。 
 
 2. **Data Factory** を選択します。 
+   
+   ![](../media/lab-02/image024.jpg)
 
 3. **Data Factory のホーム ペ**ージが表示されます。このページは 3 つのメイン セクションに分かれています。 
 
@@ -93,11 +101,13 @@ Fabric ワークスペース
 
     c. **Quick access:** このセクションには、最近使用したアイテムやお気に入りのアイテムの一覧が表示されます。 
 
- 
+     ![](../media/lab-02/image027.jpg)
 
 #### タスク 3: Data Activator のエクスペリエンス 
 
 1. 画面の左下にある **Fabric エクスペリエンス セレクター アイコン** (現在は Data Factory に設定されています) を選択します。Fabric エクスペリエンスのダイアログが開きます。 
+
+   ![](../media/lab-02/image030.png)
 
 2. ダイアログで **Data Activator** を選択します。**Data Activator のホーム ページ**が表示されます。Data Activator は、変化するデータからパターンや条件が検出されたときに自動的にアクションを実行する、Microsoft Fabric のノーコード エクスペリエンスです。3 つのセクションは Data Factory のエクスペリエンスと似ています。推奨セクションには次のアイテムがあります。 
 
@@ -105,7 +115,7 @@ Fabric ワークスペース
 
     b.**Reflex サンプル:** サンプル ソリューション。 
 
- 
+    ![](../media/lab-02/image033.png)
 
 #### タスク 4: Industry Solutions のエクスペリエンス 
 
@@ -120,7 +130,7 @@ Fabric ワークスペース
 
     c. Healthcare ソリューション: 医療データを分析に適した形式に効率的に変換するという重要なニーズに対処し、顧客が価値を実現するまでの時間を短縮するように戦略的に設計されています。 
 
- 
+   ![](../media/lab-02/image036.png)
 
 #### タスク 5: Real-Time Intelligence エクスペリエンス 
 
@@ -141,6 +151,8 @@ Fabric ワークスペース
     f. **サンプルを使用する:** サンプル ソリューション。 
 
     **注:** Reflex は、Data Activator エクスペリエンスでも利用できます。 
+
+    ![](../media/lab-02/image039.jpg)
 
 #### タスク 6: Synapse Data Engineering エクスペリエンス 
 
@@ -164,6 +176,7 @@ Fabric ワークスペース
 
     h. **Use a sample:** サンプル ソリューション。 
 
+    ![](../media/lab-02/image042.jpg)
 
 #### タスク 7: Synapse Data Science エクスペリエンス 
 
@@ -187,7 +200,7 @@ Fabric ワークスペース
 
 **注:** ノートブック、環境、データ パイプラインなどのアイテムは、これらの各エクスペリエンスで関連しているので、複数のエクスペリエンスで使用できます。 
 
- 
+  ![](../media/lab-02/image045.jpg)
 
 #### タスク 8: Synapse Data Warehouse エクスペリエンス 
 
@@ -205,7 +218,7 @@ Fabric ワークスペース
 
     e. **ミラーリングされる Azure Cosmos DB:** Azure Cosmos DB をミラーリングするために使用されます。 
 
- 
+    ![](../media/lab-02/image048.jpg)
 
 ## Fabric ワークスペース 
 
@@ -214,6 +227,8 @@ Fabric ワークスペース
 1. 次は、Fabric ライセンスを使用してワークスペースを作成しましょう。左ナビゲーション バーから**ワークスペース**を選択します。ダイアログが開きます。 
 
 2. **新しいワークスペース**を選択します。 
+
+   ![](../media/lab-02/image051.png)
 
 3. **ワークスペースの作成**ダイアログがブラウザーの右側に開きます。 
 
@@ -226,10 +241,13 @@ Fabric ワークスペース
 
 6. **詳細**をクリックしてセクションを展開します。 
 
+    ![](../media/lab-02/image054.png)
+
 7. **License mode** で、**Trial** が選択されていることを確認します (既定で選択されています)。 
 
 8. **Apply** を選択して新しいワークスペースを作成します。  
 
+    ![](../media/lab-02/image057.png)
 
    新しくワークスペースが作成され、そのワークスペースが表示されます。さまざまなデータ ソースからレイクハウスにデータを取り込み、そのレイクハウスからのデータを使用してモデルを構築し、レポートを作成します。最初のステップでは、レイクハウスを作成します。 
 
@@ -238,26 +256,34 @@ Fabric ワークスペース
 1. 画面の左下にある **Fabric エクスペリエンス セレクター アイコン** (現在は Data Warehouse に設定されています) を選択します。Fabric エクスペリエンスのダイアログが開きます。 
 
 2. **Data Engineering** を選択すると、Data Engineering のホーム ページが表示されます。 
-
+ 
+    ![](../media/lab-02/image060.png)
+  
 3. **レイクハウス**を選択します。 
-
+    
+    ![](../media/lab-02/image063.jpg)
+    
 4. [New lakehouse] ダイアログが開きます。[Name] テキストボックスに **lh_FAIAD** と入力します。 
 
    **注:** ここでの lh は Lakehouse を指します。識別と検索を容易にするために、接頭辞として lh を付けています。 
 
 5. **Create** を選択します。 
 
+   ![](../media/lab-02/image066.png)
+
 しばらくすると Lakehouse が作成され、Lakehouse のインターフェイスが表示されます。**左パネル**の自分のワークスペースの下に Lakehouse のアイコンが表示されます。このアイコンをクリックすると、いつでも簡単にその Lakehouse に移動できます。 
 
 Lakehouse エクスプローラーには **Tables** と **Files** があります。レイクハウスで [Files] セクションの下に Azure Data Lake Storage Gen2 のファイルを公開することも、データフローでデータを Lakehouse の [Tables] に読み込むこともできます。さまざまなオプションを利用できます。以降のラボでそのオプションをいくつか紹介します。 
- 
+  
+   ![](../media/lab-02/image069.jpg)
+
 このラボでは、Fabric インターフェイスの中を探索し、Fabric ワークスペースと Lakehouse を作成しました。次のラボでは、レイクハウスでショートカットを使用して ADLS Gen2 データに接続する方法、およびビューを使用してこのデータを変換する方法を学習します。 
 
 ## リファレンス
 
 Fabric Analyst in a Day (FAIAD) では、Microsoft Fabric で使用できる主要な機能の一部をご紹介します。サービスのメニューにあるヘルプ (?) セクションには、いくつかの優れたリソースへのリンクがあります。
 
-![](../Images/lab-01/image054.png) 
+ ![](../media/lab-02/image072.png) 
 
 Microsoft Fabric の次のステップに役立つリソースをいくつか以下に紹介します。
 
