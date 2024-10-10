@@ -1,3 +1,4 @@
+![](../media/lab-04/img1.png)
 
 ## Contenido 
 
@@ -39,8 +40,12 @@ Al final de este laboratorio, habrá aprendido:
 2. Seleccione el icono **Selector de experiencia de Fabric** en la parte inferior izquierda de su pantalla. Se abre el cuadro de diálogo de experiencia de Fabric
 
 3. Seleccione **Data Factory** en el cuadro de diálogo. Navegará a la **página principal de Data Factory**.
+
+   ![](../media/lab-04/image006.png)
  
 4. En Artículos recomendados, seleccione **Dataflow Gen2**.
+
+   ![](../media/lab-04/image009.png)
  
 Se le dirigirá de vuelta a la **página de del flujo de datos**. La interfaz del flujo de datos Gen2 es como Power Query en Power BI Desktop. Podemos copiar consultas desde el flujo de datos Gen2 de Power BI Desktop. Vamos a intentarlo.
 
@@ -51,6 +56,8 @@ Se le dirigirá de vuelta a la **página de del flujo de datos**. La interfaz de
 7. En el panel izquierdo, en la carpeta SharepointData, **seleccione la** consulta **People**.
 
 8. **Haga clic con el botón derecho** y seleccione Copiar.
+
+   ![](../media/lab-04/image012.png)
   
 9. Vuelva a la **pantalla del flujo de datos** en el explorador.
 
@@ -63,6 +70,8 @@ Observe la consulta pegada y disponible en el panel izquierdo. Como no tenemos u
 ### Tarea 2: Crear una conexión a SharePoint
 
 1. Seleccione **Configurar conexión**.
+
+   ![](../media/lab-04/image015.png)
  
 2. Se abre el cuadro de diálogo del origen de datos. En el menú desplegable **Conexión**, asegúrese de que **Crear nueva conexión** esté seleccionado.
 
@@ -71,6 +80,8 @@ Observe la consulta pegada y disponible en el panel izquierdo. Como no tenemos u
 4. Seleccione **Conectar**.
 
 **Nota:** Iniciará sesión con sus credenciales. Serán diferentes a la captura de pantalla siguiente.
+
+![](../media/lab-04/image018.png)
  
 ### Tarea 3: Configurar el destino de datos para la consulta People
 
@@ -79,8 +90,12 @@ Se establece la conexión y puede ver los datos en el panel de versión prelimin
 1. Seleccione la consulta **People**.
 
 2. En la cinta de opciones, seleccione **Inicio -> Agregar destino de datos -> Lakehouse**.
+
+   ![](../media/lab-04/image021.png)
  
 3. Se abre el cuadro de diálogo Conectarse al destino de datos. Necesitamos crear una nueva conexión con el almacén de lago de datos. Con **Crear nueva conexión** seleccionado en el **menú desplegable Conexión** y Tipo de autenticación configurado en **Cuenta de organización**, seleccione **Siguiente**.
+
+   ![](../media/lab-04/image024.png)
  
 4. Se abre el cuadro de diálogo de Elegir el objetivo de destino. Asegúrese de que el **botón de opción Nueva tabla** esté seleccionado, ya que estamos creando una nueva tabla.
 
@@ -91,12 +106,16 @@ Se establece la conexión y puede ver los datos en el panel de versión prelimin
 7. Deje el nombre de la tabla como **People**
 
 8. Seleccione **Siguiente**.
+
+   ![](../media/lab-04/image027.png)
  
 9. Se abre el cuadro de diálogo de Elegir la configuración de destino. Asegúrese de que la opción “**Usar configuración automática**” esté **habilitada**. 
 
 **Nota:** Puede deshabilitar la configuración automática y observe que tiene opciones para establecer las opciones Método de actualización y Esquema. Cuando haya finalizado la exploración, asegúrese de que la opción “**Usar configuración automática**” esté **habilitada**. 
 
 10.	Seleccione **Guardar configuración**.
+
+    ![](../media/lab-04/image030.png)
  
 
 ### Tarea 4: Publicar y cambiar el nombre del flujo de datos de SharePoint
@@ -104,16 +123,22 @@ Se establece la conexión y puede ver los datos en el panel de versión prelimin
 1. Volverá a la **ventana de Power Query**. Observe que en la **esquina inferior derecha**, el destino de los datos está configurado en el **lakehouse**.
 
 2. En la esquina inferior derecha, seleccione **Publicar**.
+
+   ![](../media/lab-04/image033.png)
  
 **Nota:** Se le dirigirá de vuelta al área de trabajo **FAIAD_<username>**. Es posible que el flujo de datos tarde unos minutos en publicarse. 
 
 3. Estamos trabajando con Dataflow 1. Cambiémosle el nombre antes de continuar. Haga clic en los **puntos suspensivos (…)** junto a Dataflow 1. Seleccione **Propiedades**.
+
+   ![](../media/lab-04/image036.png)
  
 4. Se abre el cuadro de diálogo de propiedades del flujo de datos. Cambie el **nombre** a **df_People_SharePoint**.
 
 5. En el cuadro de texto **Descripción**, agregue **Flujo de datos para ingerir datos** de People desde SharePoint a Almacén de lago de datos.
 
 6. Seleccione **Guardar**.
+
+   ![](../media/lab-04/image039.png)
  
 Se le dirigirá de vuelta al **área de trabajo FAIAD_<username>**. 
 
@@ -132,6 +157,8 @@ Ahora hemos ingerido todos los datos en el almacén de lago de datos. En la pró
 1. Volvamos al área de trabajo de Fabric, **FAIAD_<username>**
 
 2. En el menú superior, seleccione **Nuevo -> Flujo de datos Gen2**.
+
+   ![](../media/lab-04/image042.png)
  
 Se le dirigirá de vuelta a la página de del flujo de datos. Ahora que estamos familiarizados con el flujo de datos, sigamos adelante y copiemos las consultas de Power BI Desktop en el flujo de datos.
 
@@ -152,12 +179,16 @@ Se le dirigirá de vuelta a la página de del flujo de datos. Ahora que estamos 
     e. PO Line Items
 
 6. **Haga clic con el botón derecho** y seleccione **Copiar**.
+
+   ![](../media/lab-04/image045.png)
  
 7. Vuelva al **explorador**.
 
 8. En el **panel del flujo de datos**, seleccione el **panel central**, introduzca **Ctrl+V** (actualmente, hacer clic con el botón derecho en Pegar no es compatible). Si está utilizando un dispositivo MAC, utilice Cmd+V para pegar.
 
 **Nota:** Si está trabajando en el entorno de laboratorio, seleccione los puntos suspensivos en la parte superior derecha de la pantalla. Utilice el control deslizante para **habilitar Portapapeles nativo de VM**. Seleccione Aceptar en el cuadro de diálogo. Una vez que haya terminado de pegar las consultas, puede desactivar esta opción.
+
+![](../media/lab-04/image048.png)
  
 ### Tarea 6: Crear una conexión a Snowflake
 
