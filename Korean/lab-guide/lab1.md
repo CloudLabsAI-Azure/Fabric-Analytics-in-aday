@@ -1,3 +1,5 @@
+![](../media/lab-01/title.png)
+
 # 목차
 
 - 문서 구조	
