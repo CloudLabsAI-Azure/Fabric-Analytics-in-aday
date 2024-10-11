@@ -39,49 +39,49 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 ### Aufgabe 1: SharePoint-Abfragen in Dataflow kopieren
 
-1. Navigieren wir nun zurück zum Fabric-Arbeitsbereich, FAIAD_<username>, den Sie in Übung 2, Aufgabe 9, erstellt haben.
+1. Navigieren wir nun zurück zum Fabric-Arbeitsbereich, **FAIAD_<username>**, den Sie in Übung 2, Aufgabe 9, erstellt haben.
 
-2. Wählen Sie unten links auf dem Bildschirm das Symbol für die Fabric-Funktionsbereichs- Auswahl aus. Das Dialogfeld „Fabric-Funktionsbereich“ wird geöffnet.
+2. Wählen Sie unten links auf dem Bildschirm das **Symbol** für die **Fabric-Funktionsbereichs- Auswahl** aus. Das Dialogfeld „Fabric-Funktionsbereich“ wird geöffnet.
 
-3. Wählen Sie dort die Option Data Factory aus. Sie navigieren zur Data Factory-Startseite.
+3. Wählen Sie dort die Option **Data Factory** aus. Sie navigieren zur **Data Factory-Startseite.**
 
     ![](../media/lab-04/image006.jpg)
  
-4. Wählen Sie unter „Empfohlene Elemente“ die Option Dataflow Gen2 aus.
+4. Wählen Sie unter „Empfohlene Elemente“ die Option **Dataflow Gen2** aus.
 
     ![](../media/lab-04/image009.jpg)
 
-Sie werden zur Dataflow-Seite weitergeleitet. Die Dataflow Gen2-Schnittstelle ähnelt der von Power Query in Power BI Desktop. Wir können Abfragen von Power BI Desktop nach Dataflow Gen2 kopieren. Lassen Sie uns dies ausprobieren.
+   Sie werden zur **Dataflow-Seite** weitergeleitet. Die Dataflow Gen2-Schnittstelle ähnelt der von Power Query in Power BI Desktop. Wir können Abfragen von Power BI Desktop nach Dataflow Gen2 kopieren. Lassen Sie uns dies ausprobieren.
 
-5. Öffnen Sie FAIAD.pbix im Ordner Reports auf dem Desktop Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
+5. Öffnen Sie **FAIAD.pbix** im Ordner **Reports** auf dem Desktop Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
 
-6. Wählen Sie im Menüband Start > Daten transformieren aus. Das Power Query-Fenster wird geöffnet. Wie Sie in der vorherigen Übung festgestellt haben, sind die Abfragen im linken Bereich nach Datenquelle organisiert.
+6. Wählen Sie im Menüband **Start > Daten transformieren** aus. Das Power Query-Fenster wird geöffnet. Wie Sie in der vorherigen Übung festgestellt haben, sind die Abfragen im linken Bereich nach Datenquelle organisiert.
 
-7. Wählen Sie links unter dem Ordner SharepointData die Abfrage People aus.
+7. Wählen Sie links unter dem Ordner **SharepointData** die Abfrage **People** aus.
 
-8. Klicken Sie mit der rechten Maustaste, und wählen Sie Kopieren aus.
+8. **Klicken Sie mit der rechten Maustaste,** und wählen Sie **Kopieren** aus.
 
     ![](../media/lab-04/image012.png)
  
-9. Rufen Sie im Browser wieder das Fenster Dataflow auf.
+9. Rufen Sie im Browser wieder das Fenster **Dataflow** auf.
 
-10.	Drücken Sie im Bereich Dataflow auf STRG+V (das Einfügen mittels Rechtsklick ist derzeit nicht möglich). Wenn Sie ein MAC-Gerät verwenden, drücken Sie zum Einfügen bitte Cmd+V.
+10.	Drücken Sie im Bereich **Dataflow** auf **STRG+V** (das Einfügen mittels Rechtsklick ist derzeit nicht möglich). Wenn Sie ein MAC-Gerät verwenden, drücken Sie zum Einfügen bitte Cmd+V.
 
-    **Hinweis**: Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den Schieberegler, um das VM Native Clipboard zu aktivieren. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben, können Sie diese Option deaktivieren.
+    **Hinweis**: Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den Schieberegler, um das **VM Native Clipboard** zu aktivieren. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben, können Sie diese Option deaktivieren.
 
     Beachten Sie, dass die Abfrage links eingefügt wurde. Weil für SharePoint keine Verbindung erstellt wurde, wird eine Warnmeldung angezeigt, in der Sie aufgefordert werden, eine Verbindung zu konfigurieren.
 
 ### Aufgabe 2: Verbindung zu SharePoint erstellen
 
-1. Wählen Sie Verbindung konfigurieren aus.
+1. Wählen Sie **Verbindung konfigurieren** aus.
 
     ![](../media/lab-04/image015.jpg)
 
-2. Das Dialogfeld „Mit Datenquelle verbinden“ wird geöffnet. Überprüfen Sie, dass im Dropdown- Menü Verbindung die Option Neue Verbindung erstellen ausgewählt ist.
+2. Das Dialogfeld „Mit Datenquelle verbinden“ wird geöffnet. Überprüfen Sie, dass im Dropdown- Menü **Verbindung** die Option **Neue Verbindung erstellen** ausgewählt ist.
 
-3. Die Authentifizierungsart muss Organisationskonto lauten.
+3. Die **Authentifizierungsart** muss **Organisationskonto** lauten.
 
-4. Wählen Sie Verbinden aus.
+4. Wählen Sie **Verbinden** aus.
 
     **Hinweis**: Sie werden mit Ihren Anmeldeinformationen angemeldet. Sie werden von denen auf dem Screenshot unten abweichen.
 
@@ -91,68 +91,67 @@ Sie werden zur Dataflow-Seite weitergeleitet. Die Dataflow Gen2-Schnittstelle ä
 
 Die Verbindung wird hergestellt, und Sie können die Daten im Vorschaubereich ansehen. Wenn Sie möchten, sehen Sie sich die angewandten Schritte der Abfragen an. Nun müssen die „People“-Daten im Lakehouse erfasst werden.
 
-1. Wählen Sie die Abfrage People aus.
+1. Wählen Sie die Abfrage **People** aus.
 
-2. Klicken Sie im Menüband auf Start > Datenziel hinzufügen -> Lakehouse.
+2. Klicken Sie im Menüband auf **Start > Datenziel hinzufügen -> Lakehouse**.
 
     ![](../media/lab-04/image021.jpg)
 
-3. Das Dialogfeld „Herstellen einer Verbindung mit dem Datenziel“ wird geöffnet. Wir müssen eine neue Verbindung zu Lakehouse herstellen. Wenn Neue Verbindung erstellen im Dropdown-
-Menü „Verbindung“ ausgewählt und Authentifizierungsart auf Organisationskonto festgelegt ist, wählen Sie Weiter aus.
+3. Das Dialogfeld „Herstellen einer Verbindung mit dem Datenziel“ wird geöffnet. Wir müssen eine neue Verbindung zu Lakehouse herstellen. Wenn **Neue Verbindung erstellen im Dropdown-
+Menü „Verbindung“** ausgewählt und **Authentifizierungsart** auf **Organisationskonto** festgelegt ist, wählen Sie **Weiter** aus.
 
     ![](../media/lab-04/image024.jpg)
 
-4. Das Dialogfeld „Ziel auswählen“ wird geöffnet. Stellen Sie sicher, dass das Optionsfeld „Neue Tabelle“ ausgewählt ist, da wir eine neue Tabelle erstellen.
+4. Das Dialogfeld „Ziel auswählen“ wird geöffnet. Stellen Sie sicher, dass das **Optionsfeld „Neue Tabelle“** ausgewählt ist, da wir eine neue Tabelle erstellen.
 
-5. Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen. Navigieren Sie im linken Bereich zu Lakehouse -> FAIAD_<Benutzername>.
+5. Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen. Navigieren Sie im linken Bereich zu **Lakehouse -> FAIAD_<Benutzername>**.
 
-6. Wählen Sie lh_FAIAD aus.
+6. Wählen Sie **lh_FAIAD** aus.
 
-7. Behalten Sie den Tabellennamen People bei.
+7. Behalten Sie den Tabellennamen **People** bei.
  
-8. Wählen Sie Weiter aus.
+8. Wählen Sie **Weiter** aus.
 
     ![](../media/lab-04/image027.png)
 
 9. Das Dialogfeld „Zieleinstellungen auswählen“ wird geöffnet. Stellen Sie sicher, dass
-„Automatische Einstellungen verwenden“ aktiviert ist.
+**„Automatische Einstellungen verwenden“ aktiviert** ist.
 
-    **Hinweis**: Sie können die automatischen Einstellungen deaktivieren und haben die Möglichkeit, die Aktualisierungsmethode und die Schemaoptionen festzulegen. Vergewissern Sie sich nach der Erkundung, dass „Automatische Einstellungen verwenden“ aktiviert ist.
+    **Hinweis**: Sie können die automatischen Einstellungen deaktivieren und haben die Möglichkeit, die Aktualisierungsmethode und die Schemaoptionen festzulegen. Vergewissern Sie sich nach der Erkundung, dass **„Automatische Einstellungen verwenden“ aktiviert** ist.
 
-10.	Wählen Sie Einstellungen speichern aus.
+10.	Wählen Sie **Einstellungen speichern ** aus.
 
     ![](../media/lab-04/image030.png)
 
 ### Aufgabe 4: SharePoint-Dataflow veröffentlichen und umbenennen
 
-1. Sie werden zum Power Query-Fenster weitergeleitet. Beachten Sie, dass unten rechts das Datenziel auf Lakehouse festgelegt ist.
+1. Sie werden zum **Power Query-Fenster** weitergeleitet. Beachten Sie, dass **unten rechts** das Datenziel auf **Lakehouse** festgelegt ist.
  
-2. Wählen Sie unten rechts Veröffentlichen aus.
+2. Wählen Sie unten rechts **Veröffentlichen** aus.
 
     ![](../media/lab-04/image033.jpg)
 
-    **Hinweis**: Sie werden zum Arbeitsbereich FAIAD_<Benutzername> weitergeleitet. Es kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
+    **Hinweis**: Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet. Es kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
 
-3. Wir arbeiten mit Dataflow 1. Benennen wir ihn um, bevor wir fortfahren. Klicken Sie auf die Auslassungspunkte (…) neben Dataflow 1. Wählen Sie Eigenschaften aus.
+3. Wir arbeiten mit Dataflow 1. Benennen wir ihn um, bevor wir fortfahren. Klicken Sie auf die **Auslassungspunkte (…)** neben Dataflow 1. Wählen Sie **Eigenschaften** aus.
 
     ![](../media/lab-04/image036.jpg)
 
-4. Das Dialogfeld „Dataflow-Eigenschaften“ wird geöffnet. Ändern Sie den Namen in
-df_People_SharePoint.
+4. Das Dialogfeld „Dataflow-Eigenschaften“ wird geöffnet. Ändern Sie den **Namen** in ** df_People_SharePoint**.
 
-5. Ergänzen Sie im Textfeld Beschreibung den Text Dataflow zur Erfassung der „People“-Daten aus SharePoint im Lakehouse.
+5. Ergänzen Sie im Textfeld **Beschreibung** den Text **Dataflow zur Erfassung der „People“-Daten aus SharePoint im Lakehouse**.
  
-6. Wählen Sie Speichern aus.
+6. Wählen Sie **Speichern** aus.
 
     ![](../media/lab-04/image039.png)
 
-Sie werden zum Arbeitsbereich FAIAD_<Benutzername> weitergeleitet.
+Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet.
 
-7. Wählen Sie lh_FAIAD aus, um zum Lakehouse zu navigieren.
+7. Wählen Sie **lh_FAIAD** aus, um zum Lakehouse zu navigieren.
 
 8. Stellen Sie sicher, dass Sie sich in der Lakehouse-Ansicht (nicht im SQL-Analyseendpunkt) befinden.
 
-9. Beachten Sie, dass die Tabelle People jetzt im Lakehouse verfügbar ist.
+9. Beachten Sie, dass die Tabelle **People** jetzt im Lakehouse verfügbar ist.
 
     **Hinweis**: Wenn die neu erstellten Tabellen nicht angezeigt werden, wählen Sie die
     Auslassungspunkte neben „Tabellen“ und „Aktualisieren“ aus, um die Tabellen zu aktualisieren.
@@ -161,19 +160,19 @@ Sie werden zum Arbeitsbereich FAIAD_<Benutzername> weitergeleitet.
  
 ### Aufgabe 5: Snowflake-Abfragen in Dataflow kopieren
 
-1. Wir navigieren zurück zum Fabric-Arbeitsbereich FAIAD_<username>.
+1. Wir navigieren zurück zum Fabric-Arbeitsbereich **FAIAD_<username>**.
 
-2. Wählen Sie im Menü oben die Option Neu -> Dataflow Gen2 aus.
+2. Wählen Sie im Menü oben die Option **Neu -> Dataflow Gen2** aus.
 
     ![](../media/lab-04/image042.jpg)
 
-Sie werden zur Dataflow-Seite weitergeleitet. Nachdem Sie Dataflow nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in Dataflow.
+Sie werden zur **Dataflow-Seite** weitergeleitet. Nachdem Sie Dataflow nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in Dataflow.
 
-3. Öffnen Sie FAIAD.pbix im Ordner Reports auf dem Desktop Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
+3. Öffnen Sie **FAIAD.pbix** im Ordner **Reports** auf dem Desktop Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
 
-4. Wählen Sie im Menüband Start > Daten transformieren aus. Das Power Query-Fenster wird geöffnet. Wie Sie in der vorherigen Übung festgestellt haben, sind die Abfragen im linken Bereich nach Datenquelle organisiert.
+4. Wählen Sie im Menüband **Start > Daten transformieren** aus. Das Power Query-Fenster wird geöffnet. Wie Sie in der vorherigen Übung festgestellt haben, sind die Abfragen im linken Bereich nach Datenquelle organisiert.
 
-5. Wählen Sie links unter dem Ordner „SnowflakeData“ mit STRG+Auswahl oder
+5. Wählen Sie links unter dem Ordner „SnowflakeData“ mit **STRG+Auswahl** oder
 „Umschalt+Auswahl“ die folgenden Abfragen aus:
 
     a.	SupplierCategories
@@ -186,13 +185,13 @@ Sie werden zur Dataflow-Seite weitergeleitet. Nachdem Sie Dataflow nun kennen, k
 
     e.	PO Line Items
  
-6. Klicken Sie mit der rechten Maustaste, und wählen Sie Kopieren aus.
+6. **Klicken Sie mit der rechten Maustaste**, und wählen Sie **Kopieren** aus.
 
     ![](../media/lab-04/image045.png)
 
-7. Navigieren Sie zurück zum Browser.
+7. Navigieren Sie zurück zum **Browser**.
 
-8. Wählen Sie im Bereich Dataflow den mittleren Bereich aus, und drücken Sie STRG+V (das Einfügen mittels Rechtklick ist derzeit nicht möglich). Wenn Sie ein MAC-Gerät verwenden, drücken Sie zum Einfügen bitte Cmd+V.
+8. Wählen Sie im Bereich **Dataflow** den **mittleren Bereich** aus, und drücken Sie **STRG+V** (das Einfügen mittels Rechtklick ist derzeit nicht möglich). Wenn Sie ein MAC-Gerät verwenden, drücken Sie zum Einfügen bitte Cmd+V.
 
     **Hinweis**: Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den Schieberegler, um das **VM Native Clipboard zu aktivieren**. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben, können Sie diese Option deaktivieren.
 
@@ -320,7 +319,7 @@ Verzeichnis aus Dataverse auswählen können. Beachten Sie, dass viele verschied
 In unseren Szenario hat das IT-Team bereits eine Verknüpfung zu Dataverse erstellt und die erforderlichen Datentransformationen angewendet, die diese in der Power BI Desktop-Datei
 spiegeln. Sie haben diese Daten in Lakehouse im Arbeitsbereich „Administrator“ erfasst und uns Zugriff auf die Tabelle(n) gewährt. Da unser IT-Team die ganze harte Arbeit erledigt hat, können wir im Arbeitsbereich „Administrator“ eine Verknüpfung zu diesem Lakehouse erstellen.
  
-9. Wählen Sie im Dialogfeld „Neue Verknüpfung“ die Option Abbrechen aus, um zum Lakehouse zurückzukehren.
+9. Wählen Sie im Dialogfeld „Neue Verknüpfung“ die Option **Abbrechen** aus, um zum Lakehouse zurückzukehren.
  
    ![](../media/lab-04/image092.jpg)
 
