@@ -194,7 +194,7 @@ Sie werden zur Dataflow-Seite weitergeleitet. Nachdem Sie Dataflow nun kennen, k
 
 8. Wählen Sie im Bereich Dataflow den mittleren Bereich aus, und drücken Sie STRG+V (das Einfügen mittels Rechtklick ist derzeit nicht möglich). Wenn Sie ein MAC-Gerät verwenden, drücken Sie zum Einfügen bitte Cmd+V.
 
-    **Hinweis**: Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den Schieberegler, um das VM Native Clipboard zu aktivieren. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben, können Sie diese Option deaktivieren.
+    **Hinweis**: Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den Schieberegler, um das **VM Native Clipboard zu aktivieren**. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben, können Sie diese Option deaktivieren.
 
     ![](../media/lab-04/image048.jpg)
  
@@ -202,17 +202,17 @@ Sie werden zur Dataflow-Seite weitergeleitet. Nachdem Sie Dataflow nun kennen, k
 
 Beachten Sie, dass die fünf Abfragen eingefügt wurden und dass der Bereich „Abfragen“ jetzt links ist. Weil für Snowflake keine Verbindung erstellt wurde, wird eine Warnmeldung angezeigt, in der Sie aufgefordert werden, eine Verbindung zu konfigurieren.
 
-1. Wählen Sie Verbindung konfigurieren aus.
+1. Wählen Sie **Verbindung konfigurieren** aus.
 
     ![](../media/lab-04/image051.jpg)
 
-2. Das Dialogfeld „Mit Datenquelle verbinden“ wird geöffnet. Überprüfen Sie, dass im Dropdown- Menü Verbindung die Option Neue Verbindung erstellen ausgewählt ist.
+2. Das Dialogfeld „Mit Datenquelle verbinden“ wird geöffnet. Überprüfen Sie, dass im Dropdown- Menü **Verbindung** die Option **Neue Verbindung erstellen** ausgewählt ist.
 
-3. Die Authentifizierungsart sollte Snowflake lauten.
+3. Die **Authentifizierungsart** sollte **Snowflake** lauten.
 
-4. Geben Sie den Benutzernamen und das Kennwort für Snowflake ein. Beides finden Sie auf der Registerkarte mit den Environment Variables (neben der Registerkarte mit der Übungsanleitung).
+4. Geben Sie den **Benutzernamen und das Kennwort für Snowflake** ein. Beides finden Sie auf der Registerkarte mit den Environment Variables (neben der Registerkarte mit der Übungsanleitung).
 
-5.	Wählen Sie Verbinden aus.
+5.	Wählen Sie **Verbinden** aus.
 
     ![](../media/lab-04/image054.png)
 
@@ -220,54 +220,65 @@ Beachten Sie, dass die fünf Abfragen eingefügt wurden und dass der Bereich „
  
 ### Aufgabe 7: Datenziel für die Abfragen „Supplier“ und „PO“ konfigurieren
 
-1. Wählen Sie die Abfrage Supplier aus.
+1. Wählen Sie die Abfrage **Supplier** aus.
 
-2. Klicken Sie im Menüband auf Start > Datenziel hinzufügen -> Lakehouse.
+2. Klicken Sie im Menüband auf **Start > Datenziel hinzufügen -> Lakehouse**.
 
     ![](../media/lab-04/image057.jpg)
 
 3. Das Dialogfeld „Herstellen einer Verbindung mit dem Datenziel“ wird geöffnet. Wählen Sie im
-Dropdown-Menü „Verbindung“ die Option Lakehouse (keine) aus.
+**Dropdown-Menü „Verbindung“** die Option **Lakehouse (keine)** aus.
 
-4. Wählen Sie Weiter aus.
+4. Wählen Sie **Weiter** aus.
 
     ![](../media/lab-04/image060.png)
 
-5. Das Dialogfeld „Ziel auswählen“ wird geöffnet. Stellen Sie sicher, dass das Optionsfeld Neue Tabelle ausgewählt ist, weil wir eine neue Tabelle erstellen.
+5. Das Dialogfeld „Ziel auswählen“ wird geöffnet. Stellen Sie sicher, dass das Optionsfeld **Neue Tabelle ausgewählt** ist, weil wir eine neue Tabelle erstellen.
 
-6. Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen. Navigieren Sie im linken Bereich zu Lakehouse -> FAIAD_<Benutzername>.
+6. Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen. Navigieren Sie im linken Bereich zu **Lakehouse -> FAIAD_<Benutzername>.**
 
-7. Wählen Sie lh_FAIAD aus.
+7. Wählen Sie **lh_FAIAD** aus.
 
-8. Behalten Sie den Tabellennamen Supplier bei.
+8. Behalten Sie den Tabellennamen **Supplier** bei.
  
-9. Wählen Sie Weiter aus.
+9. Wählen Sie **Weiter** aus.
 
-10. Das Dialogfeld „Zieleinstellungen auswählen“ wird geöffnet. Wir verwenden die automatischen Einstellungen, da hierdurch eine vollständige Aktualisierung der Daten erfolgt. Außerdem werden die Spalten nach Bedarf umbenannt. Wählen Sie Einstellungen speichern aus.
+   ![](../media/lab-04/image063gu.png)
 
-11.	Sie werden zum Power Query-Fenster weitergeleitet. Beachten Sie unten rechts, dass das Datenziel auf Lakehouse festgelegt ist. Legen Sie ebenso das Datenziel für die Abfrage „PO“ fest. Sobald das erledigt ist, sollte bei der Abfrage „PO“ das Datenziel, wie im Screenshot unten zu sehen, Lakehouse lauten.
+10. Das Dialogfeld „Zieleinstellungen auswählen“ wird geöffnet. Wir verwenden die automatischen Einstellungen, da hierdurch eine vollständige Aktualisierung der Daten erfolgt. Außerdem werden die Spalten nach Bedarf umbenannt. Wählen Sie **Einstellungen speichern** aus.
+   
+    ![](../media/lab-04/image065.jpg)
 
+11.	Sie werden zum **Power Query-Fenster** weitergeleitet. Beachten Sie unten rechts, dass das **Datenziel** auf **Lakehouse** festgelegt ist. Legen Sie ebenso das **Datenziel für die Abfrage „PO“** fest. Sobald das erledigt ist, sollte bei der Abfrage „PO“ das **Datenziel**, wie im Screenshot unten zu sehen, **Lakehouse** lauten.
+
+     ![](../media/lab-04/image068.jpg)
 
 ### Aufgabe 8: Snowflake-Dataflow umbenennen und veröffentlichen
 
-1. Wählen Sie oben auf dem Bildschirm den Pfeil neben Dataflow 1 aus.
+1. Wählen Sie oben auf dem Bildschirm den **Pfeil neben Dataflow 1** aus.
 
-2. Ändern Sie im Dialogfeld den Namen in df_Supplier_Snowflake
+2. Ändern Sie im Dialogfeld den Namen in **df_Supplier_Snowflake**
 
-3. Speichern Sie die Namensänderung durch Drücken der Eingabetaste.
+3. Speichern Sie die Namensänderung durch Drücken der **Eingabetaste**.
 
-4. Wählen Sie unten rechts Veröffentlichen aus.
+    ![](../media/lab-04/image071.png)
 
+4. Wählen Sie unten rechts **Veröffentlichen** aus.
 
-Sie werden zum Arbeitsbereich FAIAD_<Benutzername> weitergeleitet. Es kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
+    ![](../media/lab-04/image074.jpg)
 
-5. Wählen Sie lh_FAIAD aus, um zum Lakehouse zu navigieren.
+   Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet. Es kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
+
+5. Wählen Sie **lh_FAIAD** aus, um zum Lakehouse zu navigieren.
 
 6. Stellen Sie sicher, dass Sie sich in der Lakehouse-Ansicht (nicht im SQL-Analyseendpunkt) befinden.
 
-7. Beachten Sie, dass die Tabelle PO und Supplier jetzt im Lakehouse verfügbar ist.
-Hinweis: Wenn die neu erstellten Tabellen nicht angezeigt werden, wählen Sie die
-Auslassungspunkte neben „Tabellen“ und „Aktualisieren“ aus, um die Tabellen zu aktualisieren. Nun erstellen wir eine Verknüpfung, um Daten aus Dataverse zu erfassen.
+7. Beachten Sie, dass die Tabelle **PO** und **Supplier** jetzt im Lakehouse verfügbar ist.
+
+   **Hinweis:** Wenn die neu erstellten Tabellen nicht angezeigt werden, wählen Sie die
+Auslassungspunkte neben „Tabellen“ und „Aktualisieren“ aus, um die Tabellen zu aktualisieren. 
+
+   Nun erstellen wir eine Verknüpfung, um Daten aus Dataverse zu erfassen.
 
 ## Verknüpfung zu ADLS Gen2
 
@@ -275,39 +286,55 @@ Auslassungspunkte neben „Tabellen“ und „Aktualisieren“ aus, um die Tabel
 
 Sie sollten sich im Lakehouse lh_FAIAD befinden. Stellen Sie sicher, dass Sie sich in der Lakehouse- Ansicht (nicht im SQL-Analyseendpunkt) befinden.
 
- 
-1. Wählen Sie im Bereich Explorer die Auslassungspunkte neben Tabellen aus.
-2. Wählen Sie Neue Verknüpfung aus.
+![](../media/lab-04/image077.jpg)
 
-3. Das Dialogfeld „Neue Verknüpfung“ wird geöffnet. Wählen Sie unter Externe Quellen die Option Dataverse aus.
-Hinweis: In der vorherigen Übung haben wir ähnliche Schritte zum Erstellen einer Verknüpfung zu Azure Data Lake Storage Gen2 ausgeführt.
+1. Wählen Sie im Bereich **Explorer** die **Auslassungspunkte** neben **Tabellen** aus.
+
+2. Wählen Sie **Neue Verknüpfung** aus.
+
+3. Das Dialogfeld „Neue Verknüpfung“ wird geöffnet. Wählen Sie unter **Externe Quellen die Option Dataverse** aus.
+
+   **Hinweis:** In der vorherigen Übung haben wir ähnliche Schritte zum Erstellen einer Verknüpfung zu Azure Data Lake Storage Gen2 ausgeführt.
+
+   ![](../media/lab-04/image083.jpg)
 
 4. Das Dialogfeld „Verbindungseinstellungen“ wird geöffnet. Geben Sie
-org6c18814a.crm.dynamics.com als Umgebungsdomäne ein.
+**org6c18814a.crm.dynamics.com** als **Umgebungsdomäne** ein.
 
-5. Behalten Sie Authentifizierungsart als Organisationskonto bei.
+5. Behalten Sie **Authentifizierungsart** als **Organisationskonto** bei.
  
-6. Wählen Sie Anmelden aus.
+6. Wählen Sie **Anmelden** aus.
 
-7. Das Dialogfeld „Bei Ihrem Konto anmelden“ wird geöffnet. Wählen Sie Ihr Konto aus, um sich anzumelden.
-Hinweis: Ihr Konto wird von dem auf dem Screenshot unten abweichen.
+   ![](../media/lab-04/image086.jpg)
 
-8. Wählen Sie im Dialogfeld „Verbindungseinstellungen“ die Option Weiter aus.
-Sie werden zu einem Dialogfeld weitergeleitet, in dem Sie den anderen Bucket/das andere
+7. Das Dialogfeld „Bei Ihrem Konto anmelden“ wird geöffnet. **Wählen Sie Ihr Konto** aus, um sich anzumelden.
+
+   **Hinweis:** Ihr Konto wird von dem auf dem Screenshot unten abweichen.
+
+   ![](../media/lab-04/image089.png)
+
+8. Wählen Sie im Dialogfeld „Verbindungseinstellungen“ die Option **Weiter** aus.
+
+   Sie werden zu einem Dialogfeld weitergeleitet, in dem Sie den anderen Bucket/das andere
 Verzeichnis aus Dataverse auswählen können. Beachten Sie, dass viele verschiedene Buckets zur Verfügung stehen. Wir können den/die Buckets auswählen, die wir benötigen, und den in Übung 3 beschriebenen Prozess befolgen (die Visual-Abfrage verwenden, um Daten zu transformieren und Ansichten zu erstellen). Wir können auch mit Dataflow Gen2 eine Verbindung zu SharePoint herstellen, wie zuvor in dieser Übung. Wir möchten Sie jedoch auf eine weitere verfügbare Option aufmerksam machen.
 In unseren Szenario hat das IT-Team bereits eine Verknüpfung zu Dataverse erstellt und die erforderlichen Datentransformationen angewendet, die diese in der Power BI Desktop-Datei
 spiegeln. Sie haben diese Daten in Lakehouse im Arbeitsbereich „Administrator“ erfasst und uns Zugriff auf die Tabelle(n) gewährt. Da unser IT-Team die ganze harte Arbeit erledigt hat, können wir im Arbeitsbereich „Administrator“ eine Verknüpfung zu diesem Lakehouse erstellen.
  
 9. Wählen Sie im Dialogfeld „Neue Verknüpfung“ die Option Abbrechen aus, um zum Lakehouse zurückzukehren.
-
+ 
+   ![](../media/lab-04/image092.jpg)
 
 ### Aufgabe 6: Eine Verknüpfung zu Lakehouse erstellen
 
-1. Wählen Sie im Bereich Explorer die Auslassungspunkte neben Tabellen aus.
+1. Wählen Sie im Bereich **Explorer** die **Auslassungspunkte** neben **Tabellen** aus.
 
-2. Wählen Sie Neue Verknüpfung aus.
+2. Wählen Sie **Neue Verknüpfung** aus.
 
-3. Das Dialogfeld „Neue Verknüpfung“ wird geöffnet. Wählen Sie die Option Microsoft OneLake unter „Interne Quellen“ aus.
+    ![](../media/lab-04/image095g.png)
+
+3. Das Dialogfeld „Neue Verknüpfung“ wird geöffnet. Wählen Sie die Option **Microsoft OneLake** unter „Interne Quellen“ aus.
+
+    ![](../media/lab-04/image096.jpg)
 
 4. Das Dialogfeld „Datenquellentyp auswählen“ wird geöffnet. Beachten Sie, dass Sie über zwei Datenquellen verfügen.
 
@@ -315,26 +342,37 @@ spiegeln. Sie haben diese Daten in Lakehouse im Arbeitsbereich „Administrator�
 
     b. lh_dataverse – Dies ist das vom Administrator erstellte Lakehouse.
 
-5. Wählen Sie lh_dataverse aus.
+5. Wählen Sie **lh_dataverse** aus.
 
-6. Wählen Sie Weiter aus.
+6. Wählen Sie **Weiter** aus.
 
-7. Erweitern Sie im linken Bereich lh_dataverse -> Tabellen. Beachten Sie, dass der IT-Administrator Zugriff auf die Tabelle „Customer“ gewährt hat.
+     ![](../media/lab-04/image099.jpg)
 
-8. Wählen Sie Kunde aus.
+7. Erweitern Sie im linken Bereich **lh_dataverse -> Tabellen**. Beachten Sie, dass der IT-Administrator Zugriff auf die Tabelle „Customer“ gewährt hat.
+
+8. Wählen Sie **Kunde** aus.
  
-9. Wählen Sie Weiter aus.
+9. Wählen Sie **Weiter** aus.
 
-10. Wählen Sie im nächsten Dialogfeld Erstellen aus. Sie werden zum Lakehouse „lh_FAIAD“ weitergeleitet.
+   ![](../media/lab-04/image102.jpg)
 
-11.	Beachten Sie, dass im linken Bereich Explorer die neue Tabelle Customer erstellt wurde.
+10. Wählen Sie im nächsten Dialogfeld **Erstellen** aus. Sie werden zum Lakehouse „lh_FAIAD“ weitergeleitet.
 
-12.	Wählen Sie die Tabelle Customer aus, um die Daten im Vorschaubereich anzuzeigen. Wir haben erfolgreich eine Verknüpfung zu einem anderen Lakehouse erstellt.
-In der nächsten Übung richten wir geplante Aktualisierungen ein.
+    ![](../media/lab-04/image105.jpg)
+
+11.	Beachten Sie, dass im linken Bereich **Explorer** die neue Tabelle **Customer** erstellt wurde.
+
+12.	Wählen Sie die Tabelle **Customer** aus, um die Daten im Vorschaubereich anzuzeigen. 
+
+    Wir haben erfolgreich eine Verknüpfung zu einem anderen Lakehouse erstellt.
+
+    In der nächsten Übung richten wir geplante Aktualisierungen ein.
  
 ## Referenzen
 
 Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie in der Hilfe (?) Links zu praktischen Informationen.
+
+  ![](../media/lab-04/image108.png)
 
 Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit Microsoft Fabric.
 
