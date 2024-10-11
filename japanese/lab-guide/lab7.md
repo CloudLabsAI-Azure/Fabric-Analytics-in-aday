@@ -1,6 +1,8 @@
  	 
 # Microsoft Fabric - Fabric Analyst in a Day - ラボ 7
 
+![](../media/lab-07/imagelab7.png)  
+
 # 目次
 - 概要	
 - Power BI	
