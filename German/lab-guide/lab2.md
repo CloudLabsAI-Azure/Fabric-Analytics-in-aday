@@ -48,7 +48,7 @@ Inhalt dieser Übung:
 5. Sie werden zur bereits bekannten **Startseite des Power BI-Dienstes** geleitet.
 6. Es wird angenommen, dass Ihnen der Aufbau des Power BI-Dienstes bekannt ist. Bei Fragen wenden Sie sich einfach an den Kursleiter.
 
-Derzeit sind Sie in **Mein Arbeitsbereich**. Wenn Sie mit Fabric-Elementen arbeiten möchten, benötigen Sie eine Testlizenz und einen Arbeitsbereich mit zugewiesener Fabric-Lizenz. Lassen Sie uns das einrichten.
+   Derzeit sind Sie in **Mein Arbeitsbereich**. Wenn Sie mit Fabric-Elementen arbeiten möchten, benötigen Sie eine Testlizenz und einen Arbeitsbereich mit zugewiesener Fabric-Lizenz. Lassen Sie uns das einrichten.
 
 7. Klicken Sie oben rechts auf dem Bildschirm auf das **Benutzersymbol**.
 8. Wählen Sie **Kostenlose Testversion** aus.
