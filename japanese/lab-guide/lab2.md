@@ -2,26 +2,26 @@
 ![](../media/lab-02/image001l2.png)
 
 ## ​目次	
-概要
+- 概要
 
-Fabric ライセンス
+- Fabric ライセンス
 
-- タスク 1: Microsoft Fabric 試用版ライセンスを有効にる
+    -  タスク 1: Microsoft Fabric 試用版ライセンスを有効にる
 
-Fabric のエクスペリエンスの概要
-- タスク 2: Data Factory のエクスペリエンス
-- タスク 3: Data Activator のエクスペリエンス
-- タスク 4: Industry Solutions のエクスペリエンス
-- タスク 5: Real-Time Intelligence エクスペリエンス	
-- タスク 6: Synapse Data Engineering エクスペリエンス
-- タスク 7: Synapse Data Science エクスペリエンス
-- タスク 8: Synapse Data Warehouse エクスペリエンス
+- Fabric のエクスペリエンスの概要
+    - タスク 2: Data Factory のエクスペリエンス
+    - タスク 3: Data Activator のエクスペリエンス
+    - タスク 4: Industry Solutions のエクスペリエンス
+    - タスク 5: Real-Time Intelligence エクスペリエンス	
+    - タスク 6: Synapse Data Engineering エクスペリエンス
+    - タスク 7: Synapse Data Science エクスペリエンス
+    - タスク 8: Synapse Data Warehouse エクスペリエンス
 
-Fabric ワークスペース
-- タスク 9: Fabric ワークスペースを作成する
-- タスク 10: レイクハウスを作成する
+- Fabric ワークスペース
+    - タスク 9: Fabric ワークスペースを作成する
+    - タスク 10: レイクハウスを作成する
 
-リファレンス
+- リファレンス
  
 
 ## 概要 
@@ -39,7 +39,7 @@ Fabric ワークスペース
 
 1. **ブラウザー**を開いて、https://app.powerbi.com/ に移動します。ログイン ページが表示されます。 
 
- **注:** ラボ環境を使用しておらず、Power BI アカウントを既にお持ちの場合は、ブラウザーをプライベート モードやシークレット モードで使用することをお勧めします。 
+   **注:** ラボ環境を使用しておらず、Power BI アカウントを既にお持ちの場合は、ブラウザーをプライベート モードやシークレット モードで使用することをお勧めします。 
 
 2. **環境変数**タブ ([ラボ ガイド] タブの横) で確認できる**ユーザー名を電子メール**として入力して、**Submit** をクリックします。 
 
@@ -55,7 +55,7 @@ Fabric ワークスペース
 
 6. このラボは、Power BI サービスのレイアウトに精通していることを前提に進めます。不明な点がある場合は、講師に遠慮なく質問してください。 
 
-現在、**マイ ワークスペース**が表示されています。Fabric のアイテムを操作するには、試用版ライセンスが必要になります。また、ワークスペースに Fabric ライセンスが割り当てられている必要があります。設定を始めましょう。 
+   現在、**マイ ワークスペース**が表示されています。Fabric のアイテムを操作するには、試用版ライセンスが必要になります。また、ワークスペースに Fabric ライセンスが割り当てられている必要があります。設定を始めましょう。 
 
 7. 画面右上の**ユーザー アイコン**を選択します。 
 
@@ -75,9 +75,9 @@ Fabric ワークスペース
 
 ![](../media/lab-02/image021.jpg)
 
-## Fabric のエクスペリエンスの概要 
+# Fabric のエクスペリエンスの概要 
 
-#### タスク 2: Data Factory のエクスペリエンス 
+## タスク 2: Data Factory のエクスペリエンス 
 
 1. 画面左下の **Microsoft Fabric** (Fabric エクスペリエンス セレクター) アイコンを選択します。ダイアログが開き、Fabric のエクスペリエンスの一覧が表示されます。Power BI、Data Factory、Data Activator、Industry Solutions、および Real-Time Intelligence は独立したエクスペリエンスであることに注意してください。Data Engineering、Data Science、Data Warehouse は Synapse のエクスペリエンスであり、これら 4 つのエクスペリエンスは Synapse を利用します。詳しく見て行きましょう。 
 
@@ -103,7 +103,7 @@ Fabric ワークスペース
 
      ![](../media/lab-02/image027.jpg)
 
-#### タスク 3: Data Activator のエクスペリエンス 
+## タスク 3: Data Activator のエクスペリエンス 
 
 1. 画面の左下にある **Fabric エクスペリエンス セレクター アイコン** (現在は Data Factory に設定されています) を選択します。Fabric エクスペリエンスのダイアログが開きます。 
 
@@ -117,7 +117,7 @@ Fabric ワークスペース
 
     ![](../media/lab-02/image033.png)
 
-#### タスク 4: Industry Solutions のエクスペリエンス 
+## タスク 4: Industry Solutions のエクスペリエンス 
 
 1. 画面の左下にある **Fabric エクスペリエンス セレクター アイコン** (現在は Data Activator に設定されています) を選択します。Fabric エクスペリエンスのダイアログが開きます。 
 
@@ -132,7 +132,7 @@ Fabric ワークスペース
 
    ![](../media/lab-02/image036.png)
 
-#### タスク 5: Real-Time Intelligence エクスペリエンス 
+## タスク 5: Real-Time Intelligence エクスペリエンス 
 
 1. 画面の左下にある **Fabric エクスペリエンス セレクター アイコン** (現在は Industry Solutions に設定されています) を選択します。Fabric エクスペリエンスのダイアログが開きます。 
 
@@ -154,7 +154,7 @@ Fabric ワークスペース
 
     ![](../media/lab-02/image039.jpg)
 
-#### タスク 6: Synapse Data Engineering エクスペリエンス 
+## タスク 6: Synapse Data Engineering エクスペリエンス 
 
 1. 画面の左下にある Fabric **エクスペリエンス セレクター アイコン** (現在は Real-Time Intelligence に設定されています) を選択します。Fabric エクスペリエンスのダイアログが開きます。 
 
@@ -178,7 +178,7 @@ Fabric ワークスペース
 
     ![](../media/lab-02/image042.jpg)
 
-#### タスク 7: Synapse Data Science エクスペリエンス 
+## タスク 7: Synapse Data Science エクスペリエンス 
 
 1. 画面の左下にある **Fabric エクスペリエンス セレクター アイコン** (現在は Data Engineering に設定されています) を選択します。Fabric エクスペリエンスのダイアログが開きます。 
 
@@ -198,11 +198,11 @@ Fabric ワークスペース
 
     g. **Use a sample:** サンプル ソリューション。 
 
-**注:** ノートブック、環境、データ パイプラインなどのアイテムは、これらの各エクスペリエンスで関連しているので、複数のエクスペリエンスで使用できます。 
+   **注:** ノートブック、環境、データ パイプラインなどのアイテムは、これらの各エクスペリエンスで関連しているので、複数のエクスペリエンスで使用できます。 
 
-  ![](../media/lab-02/image045.jpg)
+    ![](../media/lab-02/image045.jpg)
 
-#### タスク 8: Synapse Data Warehouse エクスペリエンス 
+## タスク 8: Synapse Data Warehouse エクスペリエンス 
 
 1. 画面の左下にある **Fabric エクスペリエンス セレクター アイコン** (現在は Data Science に設定されています) を選択します。Fabric エクスペリエンスのダイアログが開きます。 
 
@@ -220,9 +220,9 @@ Fabric ワークスペース
 
     ![](../media/lab-02/image048.jpg)
 
-## Fabric ワークスペース 
+# Fabric ワークスペース 
 
-#### タスク 9: Fabric ワークスペースを作成する 
+## タスク 9: Fabric ワークスペースを作成する 
 
 1. 次は、Fabric ライセンスを使用してワークスペースを作成しましょう。左ナビゲーション バーから**ワークスペース**を選択します。ダイアログが開きます。 
 
@@ -251,7 +251,7 @@ Fabric ワークスペース
 
    新しくワークスペースが作成され、そのワークスペースが表示されます。さまざまなデータ ソースからレイクハウスにデータを取り込み、そのレイクハウスからのデータを使用してモデルを構築し、レポートを作成します。最初のステップでは、レイクハウスを作成します。 
 
-### タスク 10: レイクハウスを作成する 
+## タスク 10: レイクハウスを作成する 
 
 1. 画面の左下にある **Fabric エクスペリエンス セレクター アイコン** (現在は Data Warehouse に設定されています) を選択します。Fabric エクスペリエンスのダイアログが開きます。 
 
@@ -279,7 +279,7 @@ Lakehouse エクスプローラーには **Tables** と **Files** がありま�
 
 このラボでは、Fabric インターフェイスの中を探索し、Fabric ワークスペースと Lakehouse を作成しました。次のラボでは、レイクハウスでショートカットを使用して ADLS Gen2 データに接続する方法、およびビューを使用してこのデータを変換する方法を学習します。 
 
-## リファレンス
+# リファレンス
 
 Fabric Analyst in a Day (FAIAD) では、Microsoft Fabric で使用できる主要な機能の一部をご紹介します。サービスのメニューにあるヘルプ (?) セクションには、いくつかの優れたリソースへのリンクがあります。
 
