@@ -488,29 +488,21 @@ InvoiceLineItems テーブルと Invoices テーブル、および Reseller ビ�
 
     簡単に行うには、詳細エディターですべてのコードを削除し、次のコードを詳細エディターに貼り付けます。 
 
-  let 
-  
-  Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner), 
-
-   #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}), 
-
-   #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}), 
-
-   #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"CustomerID", "ResellerID"}}), 
-
-   #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller, {"ResellerID"}, "Customer", JoinKind.Inner), 
-
-   #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each [ExtendedPrice] - [TaxAmount]), 
-
-   #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", type number}}), 
-
-   #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"}) 
-
-  in 
-   
-  #"Removed Columns" 
-
- 
+```
+    let
+    Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
+    #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID",
+    "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
+    #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
+    #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"CustomerID", "ResellerID"}}),
+    
+    #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller,
+    {"ResellerID"}, "Customer", JoinKind.Inner),
+    #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each [ExtendedPrice] - [TaxAmount]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", type number}}),
+    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"}) in
+    #"Removed Columns"
+```
 
 26. Power Query エディターに戻ります。左側の [クエリ] パネルで、**マージクエリをダブルクリックして、**名前を変更します。 
 
