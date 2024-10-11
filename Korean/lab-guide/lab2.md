@@ -1,3 +1,5 @@
+![](../media/lab-02/title.png)
+
 # 목차
 
 - 소개	
