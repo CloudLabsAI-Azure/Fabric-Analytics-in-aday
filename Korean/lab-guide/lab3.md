@@ -43,6 +43,7 @@
 9.	화면 오른쪽 하단에서 **다음**을 선택합니다.
 
 10. 왼쪽 패널에 디렉터리 구조가 표시된 ADLS Gen2에 연결됩니다. **Delta‐Parquet‐Format‐FY25**를 확장합니다.
+
 11. 다음 디렉터리를 **선택**합니다:
 
     a. Application.Cities  
@@ -64,20 +65,21 @@
 14.	이름을 편집할 수 있는 다음 대화 상자로 이동합니다.**Application.Cities**에 대한 작업에서
 편집 아이콘을 선택합니다.
 15.	**Application.Cities를 Cities**로 이름을 변경합니다.
-16.	이름 옆의 확인 표시를 선택하여 변경 사항을 저장합니다.
+16. 이름 옆의 확인 표시를 선택하여 변경 사항을 저장합니다.
 
-17.	마찬가지로 바로 가기 이름도 아래와 같이 이름을 바꿉니다.
-    a.Application.Countries에서 **Countries**로
-    b.Application.StateProvinces에서 **States**로
-    c.DateDim에서 **Date**로
-    d.Sales.BuyingGroups에서 **BuyingGroups**로
-    e.Sales.Customers에서 **Customers**로
-    f.Sales.InvoiceLines에서 **InvoiceLineItems**로
-    g.Sales.Invoices에서 **Invoices**로
-    h.Warehouse.StockGroups에서 **ProductGroups**로
-    i.Warehouse.StockItemStockGroups에서 **ProductItemGroup**로
-    j.Warehouse.StockItems에서 **ProductItem**로
-   	
+17. 마찬가지로 바로 가기 이름도 아래와 같이 이름을 바꿉니다:
+
+    a. Application.Countries에서 **Countries**로  
+    b. Application.StateProvinces에서 **States**로  
+    c. DateDim에서 **Date**로  
+    d. Sales.BuyingGroups에서 **BuyingGroups**로  
+    e. Sales.Customers에서 **Customers**로  
+    f. Sales.InvoiceLines에서 **InvoiceLineItems**로  
+    g. Sales.Invoices에서 **Invoices**로  
+    h. Warehouse.StockGroups에서 **ProductGroups**로  
+    i. Warehouse.StockItemStockGroups에서 **ProductItemGroup**로  
+    j. Warehouse.StockItems에서 **ProductItem**로 
+     	
 **참고:** 이름을 다시 확인하세요. 랩 도중 오타로 인해 오류가 발생할 수 있습니다.
 17.	**만들기**를 선택하여 바로 가기를 만듭니다.
 
@@ -115,32 +117,32 @@ Countries 쿼리를 새 시각적 쿼리 패널로 끌어 보겠습니다.
 10.	**확인**을 선택합니다.
  
 병합이라는 새 쿼리가 생성되♘음을 알 수 있습니다. States에서 열이 몇 개 필요합니다.
-11.	**Data 보기**(아래쪽 패널)에서 **States** 열(오른쪽 마지막 열) 옆에 있는 **이중 화살표**를 클릭합니다.
-12.	패널이 열립니다. 다음 열을 선택합니다.
-    a.StateProvinceCode
-    b.StateProvinceName
-    c.CountryID
-    d.SalesTerritory
-13.	확인을 선택합니다.
- 
-이제 Countries 쿼리를 병합해야 합니다.
-14.	쿼리 병합을 선택한 상태에서 리본 메뉴에서 **홈 ‐> 쿼리 병합 ‐> 쿼리 병합**을 선택합니다.
-15.	쿼리 병합 대화 상자가 열립니다. **병합할 오른쪽 테이블에서 Countries**를 선택합니다.
-16.	두 테이블에서 **CountryID**열을 선택합니다. 이 열을 사용하여 조인할 것입니다.
-17.	**조인 종류**로 **안쪽을** 선택합니다.
-18.	**확인**을 선택합니다.
- 
-Countries에서 열이 몇 개 필요합니다.
-19.	**Data 보기**(하단 패널)에서 **Countries** 열 옆의 **이중 화살표**를 클릭합니다.
-20.	패널이 열립니다. 다음 열을 **선택**합니다.
-    a.CountryName
-    b.FormalName
-    c.IsoAlpha3Code
-    d.IsoNumericCode
-    e.CountryType
-    f.Continent
-    g.Region
-    h.Subregion
+11. **Data 보기**(아래쪽 패널)에서 **States** 열(오른쪽 마지막 열) 옆에 있는 **이중 화살표**를 클릭합니다.  
+12. 패널이 열립니다. 다음 열을 선택합니다:  
+    a. StateProvinceCode  
+    b. StateProvinceName  
+    c. CountryID  
+    d. SalesTerritory  
+13. **확인**을 선택합니다.  
+
+이제 Countries 쿼리를 병합해야 합니다.  
+14. 쿼리 병합을 선택한 상태에서 리본 메뉴에서 **홈 ‐> 쿼리 병합 ‐> 쿼리 병합**을 선택합니다.  
+15. 쿼리 병합 대화 상자가 열립니다. **병합할 오른쪽 테이블에서 Countries**를 선택합니다.  
+16. 두 테이블에서 **CountryID** 열을 선택합니다. 이 열을 사용하여 조인할 것입니다.  
+17. **조인 종류**로 **안쪽**을 선택합니다.  
+18. **확인**을 선택합니다.  
+
+Countries에서 열이 몇 개 필요합니다.  
+19. **Data 보기**(하단 패널)에서 **Countries** 열 옆의 **이중 화살표**를 클릭합니다.  
+20. 패널이 열립니다. 다음 열을 **선택**합니다:  
+    a. CountryName  
+    b. FormalName  
+    c. IsoAlpha3Code  
+    d. IsoNumericCode  
+    e. CountryType  
+    f. Continent  
+    g. Region  
+    h. Subregion  
 
 21.	**확인**을 선택합니다.
 
@@ -148,14 +150,14 @@ Countries에서 열이 몇 개 필요합니다.
  
 22.	쿼리 병합을 선택한 상태에서 리본 메뉴에서 **홈 ‐> 열 선택 ‐> 열 선택**을 선택합니다.
 
-23.	열 선택 대화 상자가 열립니다. 다음 열을 **선택 취소**합니다.
-    a.StateProvinceID
-    b.Location
-    c.LastEditedBy
-    d.ValidFrom
-    e.ValidTo
-    f.CountryID
-24.	**확인**을 선택합니다.
+23. 열 선택 대화 상자가 열립니다. 다음 열을 **선택 취소**합니다:  
+    a. StateProvinceID  
+    b. Location  
+    c. LastEditedBy  
+    d. ValidFrom  
+    e. ValidTo  
+    f. CountryID  
+24. **확인**을 선택합니다.  
 
 오른쪽의 적용된 단계 패널과 시각적 보기 모두에 모든 단계가 기록되어 있으며, 프로세스는 Power Query과 같습니다. 이 쿼리에서 데이터가 로드되도록 쿼리 병합 및 로드 활성화의 이름을 변경하겠습니다.
 25.	쿼리(왼쪽) 패널에서 쿼리 **병합을 마우스 오른쪽 버튼으로 클릭**합니다. 이름 바꾸기를 선택하고 쿼리 이름을 **Geo로** 바꿉니다.
@@ -203,20 +205,20 @@ Customers 테이블과 BuyingGroups 테이블을 병합하여 생성되는 Resel
 모든 열이 필요하지는 않습니다. 필요한 것만 선택해 보겠습니다.
 12.	시각적 쿼리 메뉴에서 열 관리 ‐> 열 선택을 선택합니다.
 
-13.	열 선택 대화 상자가 열립니다. 다음 열을 선택합니다.
-    a.ResellerID
-    b.ResellerName
-    c.PostalCityID
-    d.PhoneNumber
-    e.FaxNumber
-    f.WebsiteURL
-    g.DeliveryAddressLine1
-    h.DeliveryAddressLine2
-    i.DeliveryPostalCode
-    j.PostalAddressLine1
-    k.PostalAddressLine2
-    l.PostalPostalCode
-    m.BuyingGroupName
+13. 열 선택 대화 상자가 열립니다. 다음 열을 선택합니다:  
+    a. ResellerID  
+    b. ResellerName  
+    c. PostalCityID  
+    d. PhoneNumber  
+    e. FaxNumber  
+    f. WebsiteURL  
+    g. DeliveryAddressLine1  
+    h. DeliveryAddressLine2  
+    i. DeliveryPostalCode  
+    j. PostalAddressLine1  
+    k. PostalAddressLine2  
+    l. PostalPostalCode  
+    m. BuyingGroupName  
 
 14.	**확인**을 선택합니다.
  
@@ -378,27 +380,25 @@ ADLS Gen2 데이터 원본에서 데이터를 변환했습니다. 이 랩에서�
 Fabric Analyst in a Day(FAIAD)는 Microsoft Fabric에서 사용할 수 있는 몇 가지 주요 기능을 소개합니다. 서비스의 메뉴에 있는 도움말(?) 섹션에는 유용한 리소스로 연결되는 링크가 있습니다.
 
 아래는 Microsoft Fabric의 다음 단계에 도움이 되는 몇 가지 추가 자료입니다.
-•	Microsof t Fabric GA 발표 전문을 블로그 포스트로 읽기
-•	가이드 투어로 Fabric 탐색
-•	Microsof t Fabric 무료 평가판 신청
-•	Microsof t Fabric 웹사이트 방문
- 
-•	Fabric 학습 모듈을 탐색해서 새로운 기술 익히기
-•	Fabric 기술 문서 검토
-•	Fabric 시작하기 무료 e북 읽기
-•	Fabric 커뮤니티에 가입하여 질문을 게시하고 피드백을 공유하며 다른 사람들로부터 배우기
+- Microsof t Fabric GA 발표 전문을 블로그 포스트로 읽기
+- 가이드 투어로 Fabric 탐색
+- Microsof t Fabric 무료 평가판 신청
+- Microsof t Fabric 웹사이트 방문
+- Fabric 학습 모듈을 탐색해서 새로운 기술 익히기
+- Fabric 기술 문서 검토
+- Fabric 시작하기 무료 e북 읽기
+- Fabric 커뮤니티에 가입하여 질문을 게시하고 피드백을 공유하며 다른 사람들로부터 배우기
 더 많은 심층 Fabric 환경 발표 블로그 포스트 읽기:
-•	Fabric 블로그의 Data Factory 환경
-•	Fabric 블로그의 Synapse Data Engineering 환경
-•	Fabric 블로그의 Synapse Data Science 환경
-•	Fabric 블로그의 Synapse Data Warehousing 환경
-•	Fabric 블로그의 Synapse Real-Time Analytics 환경
-•	Power BI 발표 블로그
-•	Fabric 블로그의 Data Activator 환경
-•	Fabric 블로그의 관리 및 거버넌스
-•	Fabric 블로그의 OneLake
-•	Dataverse 및 Microsof t Fabric 통합 블로그
-
+- Fabric 블로그의 Data Factory 환경
+- Fabric 블로그의 Synapse Data Engineering 환경
+- Fabric 블로그의 Synapse Data Science 환경
+- Fabric 블로그의 Synapse Data Warehousing 환경
+- Fabric 블로그의 Synapse Real-Time Analytics 환경
+- Power BI 발표 블로그
+- Fabric 블로그의 Data Activator 환경
+- Fabric 블로그의 관리 및 거버넌스
+- Fabric 블로그의 OneLake
+- Dataverse 및 Microsof t Fabric 통합 블로그
 
 © 2023 Microsoft Corporation. All rights reserved.
 이 데모/랩을 사용하면 다음 조건에 동의하게 됩니다.
