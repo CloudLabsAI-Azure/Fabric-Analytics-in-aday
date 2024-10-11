@@ -420,12 +420,17 @@ varTempCounter)。各反復の終わりには、varCounter とvarTempCounter の
 7. **待機時間(秒)** フィールドで、**テキストボックス**を選択し、**動的なコンテンツの追加**リンクを選択します。
 8. パイプライン式ビルダーダイアログが開きます。以下を入力します
 
-    **@if(
-    greater(variables('varCounter'), 1),
-    if(equals(variables('varCounter'), 2), mul(variables('varWaitTime'),15 ), mul(variables('varWaitTime'), 0)
-    ),
-    mul(variables('varWaitTime'),5 )
-    )**
+     ```
+     @if(  
+       greater(variables('varCounter'), 1),  
+       if(  
+        equals(variables('varCounter'), 2),  
+        mul(variables('varWaitTime'), 15),  
+        mul(variables('varWaitTime'), 0)  
+       ),  
+       mul(variables('varWaitTime'), 5)  
+     )
+     ```
 
     この式を入力しても、メニューを使って関数を選択しても、またはコピーして貼り付けても構いません。
  
@@ -506,6 +511,7 @@ Microsoft Fabric の次のステップに役立つリソースをいくつか以
 - [Fabric の OneLake に関するブログ](https://blog.fabric.microsoft.com/en-us/blog/microsoft-onelake-in-fabric-the-onedrive-for-data/) 
 - [Dataverse とMicrosof t Fabric の統合に関するブログ](https://cloudblogs.microsoft.com/dynamics365/it/2023/05/24/new-dataverse-enhancements-and-ai-powered-productivity-with-microsoft-365-copilot/)
 
+© 2023 Microsoft Corporation. All rights reserved.
 
 このデモ/ラボを使用すると、次の条件に同意したことになります。
 このデモ/ラボで説明するテクノロジまたは機能は、ユーザーのフィードバックを取得 し、学習エクスペリエンスを提供するために、Microsoft Corporation によって提供されます。ユーザーは、このようなテクノロジおよび機能を評価し、Microsoft にフィードバックを提供するためにのみデモ/ラボを使用できます。それ以外の目的には使用できませ ん。このデモ/ラボまたはその一部を、変更、コピー、配布、送信、表示、実行、再現、 発行、ライセンス、著作物の作成、転送、または販売することはできません。
