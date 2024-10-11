@@ -34,10 +34,13 @@
 
 2.	**환경 변수** 탭(랩 가이드 옆)에 있는 **사용자 이름을 이메일로 입력하고 Submit**을 클릭합니다.
 
+      ![](../media/lab-02/image006.png)
 
 3.	**암호** 화면이 열립니다. 강사가 공유한 **환경 변수** 탭(랩 가이드 옆)에 있는 **암호를** 입력합니다.
  
 4.	**Sign in**을 클릭하고 안내에 따라 Fabric에 로그인합니다.
+
+      ![](../media/lab-02/image009.png)
 
 5.	익숙한 **Power BI 서비스 홈 페이지**가 열립니다.
 6.	참여자가 Power BI 서비스 레이아웃에 익숙하다고 가정합니다. 궁금한 사항은 주저없이 강사에게 문의하십시오.
@@ -48,11 +51,19 @@
 7.	화면의 오른쪽 상단 모서리에서 **사용자 아이콘**을 선택합니다.
 8.	**무료 평가판**을 선택합니다.
 
+      ![](../media/lab-02/image012.jpg)
+
+      ![](../media/lab-02/image015.jpg)
+
 9.	무료 Microsoft Fabric 평가판으로 업그레이드 대화상자가 열립니다. **평가판 시작**을 선택합니다.
 
 10.	Microsoft Fabric 업그레이드 성공 대화 상자가 열립니다. **Fabric Home Page**를 선택합니다.
 
+      ![](../media/lab-02/image018.png)
+
 11.	**Microsoft Fabric 홈 페이지**로 이동합니다.
+
+      ![](../media/lab-02/image021.jpg)
 
 # Fabric 환경 개요
 
@@ -63,6 +74,8 @@ Engineering, Data Science 및 Data Warehouse는 Synapse에 의해 구동되는 �
 Synapse 경험입니다.. 한번 살펴보겠습니다!
 2.	**Data Factory**를 선택합니다.
 
+      ![](../media/lab-02/image024.jpg)
+
 3.	**Data Factory 홈 페이지**로 이동되었습니다. 이 페이지에는 세 가지 주요 섹션이 있습니다.
          a.	**권장:** Data Factory에서 사용할 수 있는 항목 - 데이터 흐름 2세대, 데이터 파이프라인, 데이터 워크플로 및 GraphQL용 API가 나열되어 있습니다.
             i.	데이터 흐름 2세대는 차세대 데이터 흐름입니다.
@@ -71,17 +84,22 @@ Synapse 경험입니다.. 한번 살펴보겠습니다!
             iv.	GraphQL용 API는 여러 데이터 원본을 쿼리하는 API입니다.
         b.	**Learn:** 이 섹션은 빠른 시작 학습 문서에 대한 액세스를 제공합니다.
         c.	**빠른 액세스:** 이 섹션은 최근에 사용했거나 즐겨찾는 항목을 나열합니다.
- 
+
+      ![](../media/lab-02/image027.jpg)
  
 # 작업 3: Data Activator 환경
 
 1.	화면 왼쪽 하단에 있는 **Fabric 환경 선택기 아이콘**(현재 Data Factory로 설정됨)을 선택합니다. Fabric 환경 대화 상자가 열립니다.
+
+    ![](../media/lab-02/image030.png)
 
 2.	대화 상자에서 **Data Activator**를 선택합니다. **Data Activator 홈 페이지**로 이동됩니다. Data Activator는 데이터 변경에서 패턴이나 조건이 감지되면 자동으로 조치를 취하는 Microsoft
 Fabric의 노코드 환경입니다. 세 가지 섹션은 Data Factory 환경과 유사합니다. 권장 섹션에서 다음 항목을 확인합니다.
       a.	**Reflex:** 패턴에 대한 데이터 세트, 쿼리 및 Eventstreams를 모니터링하는 데 사용됩니다.
       b.	**Reflex 샘플:** 샘플 솔루션.
    
+      ![](../media/lab-02/image033.jpg)
+
 # 작업 4: Industry Solutions 경험
 
 1.	화면 왼쪽 하단에 있는 **Fabric 환경 선택기 아이콘**(현재 Data Activator로 설정됨)을 선택합니다. Fabric 환경 대화 상자가 열립니다.
@@ -90,6 +108,7 @@ Fabric의 노코드 환경입니다. 세 가지 섹션은 Data Factory 환경과
       b.	**리테일 솔루션:** 대량의 데이터를 관리하고, 다양한 소스의 데이터를 통합하며, 신속한 의사 결정을 위한 실시간 분석을 제공하는 데 도움이 됩니다. 판매점은 이러한 솔루션을 사용하여 재고 최적화, 고객 세분화, 판매 예측, 동적 가격 책정 및 사기 탐지를 수행할 수 있습니다.
       c.	**Healthcare 솔루션:** 의료 데이터를 분석에 적합한 형식으로 효율적으로 변환해야 하는 중요한 요구를 해결하여 고객의 가치 실현 시간을 단축하기 위해 전략적으로 설계되었습니다.
   
+    ![](../media/lab-02/image036.png)
    
 # 작업 5: Real-Time Intelligence 환경
 
@@ -103,6 +122,7 @@ Fabric의 노코드 환경입니다. 세 가지 섹션은 Data Factory 환경과
         f.	**샘플 사용:** 샘플 솔루션.
     **참고:** Reflex 는 Data Activator 환경에서도 사용할 수 있습니다.
 
+    ![](../media/lab-02/image039.jpg)
 
 # 작업 6: Synapse Data Engineering 환경
 
@@ -118,6 +138,8 @@ Fabric의 노코드 환경입니다. 세 가지 섹션은 Data Factory 환경과
         g.	**Import notebook:** 로컬 컴퓨터에서 Notebook을 가져오는 데 사용됩니다.
         h.	**Use a sample:** 샘플 솔루션.
 
+      ![](../media/lab-02/image042.jpg)
+
 # 작업 7: Synapse Data Science 환경
 
 1.	화면 왼쪽 하단에 있는 **Fabric 환경 선택기 아이콘**(현재 Data Engineering으로 설정됨)을 선택합니다. Fabric 환경 대화 상자가 열립니다.
@@ -132,6 +154,7 @@ Fabric의 노코드 환경입니다. 세 가지 섹션은 Data Factory 환경과
       g.	**Use a sample:** 샘플 솔루션.
    **메모:** Notebook, 환경, 데이터 파이프라인 등과 같은 항목은 각 경험과 관련이 있으므로 여러 경험에서 사용할 수 있습니다.
 
+    ![](../media/lab-02/image045.jpg)
 
 # 작업 8: Synapse Data Warehouse 환경
 
@@ -143,13 +166,16 @@ Fabric의 노코드 환경입니다. 세 가지 섹션은 Data Factory 환경과
       d.	**미러링된 Snowflake:** Snowflake Database를 미러링하는 데 사용됩니다.
       e.	**미러링된 Azure Cosmos DB:** Azure Cosmos DB를 미러링하는 데 사용됩니다.
        
- 
+    ![](../media/lab-02/image048.jpg)
+
 # Fabric 작업 영역
 
 ## 작업 9: Fabric 작업 영역 만들기
 
 1.	이제 Fabric 라이선스로 작업 영역을 만들어 보겠습니다. 왼쪽 탐색 모음에서 **작업 영역**을 선택합니다. 대화 상자가 열립니다.
 2.	**새 작업 영역**을 선택합니다.
+
+    ![](../media/lab-02/image051.png)
 
 3.	브라우저 오른쪽에 **작업 영역 만들기** 대화상자가 열립니다.
  
@@ -158,8 +184,12 @@ Fabric의 노코드 환경입니다. 세 가지 섹션은 Data Factory 환경과
 5.	원하는 경우 작업 영역에 대한 **설명**을 입력할 수 있습니다. 이는 선택적 필드입니다.
 6.	**고급**을 클릭하여 섹션을 확장합니다.
 
+    ![](../media/lab-02/image054.jpg)
+
 7.	**라이선스 모드에서 평가판** 이 선택되어 있는지 확인합니다. (기본적으로 선택되어 있어야 합니다.)
 8.	**Apply**을 선택하여 새 작업 영역을 만듭니다.
+
+    ![](../media/lab-02/image057.jpg)
 
 새 작업 영역이 만들어지면 그 작업 영역으로 전환됩니다. 다양한 데이터 원본의 데이터를 Lakehouse로 가져오고 Lakehouse의 데이터를 사용하여 모델을 구축하고 이에 대해 보고할 것입니다. 첫 번째 단계로 Lakehouse를 선택합니다.
  
@@ -168,14 +198,22 @@ Fabric의 노코드 환경입니다. 세 가지 섹션은 Data Factory 환경과
 1.	화면 왼쪽 하단에 있는 **Fabric 환경 선택기 아이콘**(현재 Data Warehouse로 설정됨)을 선택합니다. Fabric 환경 대화 상자가 열립니다.
 2.	Data Engineering 홈페이지로 이동하려면 **Data Engineering**을 선택합니다.
 
+    ![](../media/lab-02/image060.png)
+
 3.	**레이크하우스**를 선택합니다.
+
+    ![](../media/lab-02/image063.jpg)
 
 4.	새 레이크하우스 대화 상자가 열립니다. 이름 텍스트 상자에 **lh_FAIAD**를 입력합니다. **참고:** 여기서 lh는 Lakehouse를 나타냅니다. 쉽게 식별하고 검색할 수 있도록 lh 접두사를 붙입니다.
  
 5.	**만들기**를 선택합니다.
 
+    ![](../media/lab-02/image066.png)
+
 몇 분 안에 Lakehouse가 생성되고 Lakehouse 인터페이스로 이동하게 됩니다.
 **왼쪽 패널**에서 작업 영역 아래에 Lakehouse 아이콘이 있는 것을 확인합니다. 언제든지 이 아이콘을 클릭하면 Lakehouse로 쉽게 이동할 수 있습니다.
+
+![](../media/lab-02/image069.jpg)
 
 Lakehouse 탐색기에는 테이블 및 파일이 표시됩니다. Lakehouse는 파일 섹션 아래에 Azure Data Lake Storage Gen2 파일을 노출하거나 데이터 흐름이 Lakehouse 테이블에 데이터를 로드할 수 있습니다. 사용할 수 있는 다양한 옵션이 있습니다. 다음 랩에서 몇 가지 옵션을 보여드리겠습니다.
 이 랩에서는 Fabric 인터페이스를 살펴보고 Fabric 작업 영역과 Lakehouse를 만들었습니다. 다음 랩에서는 레이크하우스에서 바로 가기를 사용하여 ADLS Gen2 데이터에 연결하는 방법과 보기를 사용하여 이 데이터를 변환하는 방법에 대해 알아봅니다.
@@ -183,6 +221,7 @@ Lakehouse 탐색기에는 테이블 및 파일이 표시됩니다. Lakehouse는 
 # 참조
 Fabric Analyst in a Day(FAIAD)는 Microsoft Fabric에서 사용할 수 있는 몇 가지 주요 기능을 소개합니다. 서비스의 메뉴에 있는 도움말(?) 섹션에는 유용한 리소스로 연결되는 링크가 있습니다.
 
+![](../media/lab-02/image072.png)
 
 
 아래는 Microsoft Fabric의 다음 단계에 도움이 되는 몇 가지 추가 자료입니다.
