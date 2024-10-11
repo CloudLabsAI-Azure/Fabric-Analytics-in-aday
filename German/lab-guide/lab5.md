@@ -1,3 +1,7 @@
+# Microsoft Fabric - Fabric Analyst in a Day - Übung 5
+
+![](../media/lab-05/image001g.png)
+
 # Inhalt
 
 - Einführung
@@ -44,158 +48,245 @@ Inhalt dieser Übung:
 Beginnen wir damit, eine geplante Aktualisierung des Lieferanten-Dataflows zu konfigurieren.
 
 1. Wir navigieren zurück zum Fabric-Arbeitsbereich,**FAIAD_\<Benutzername>**, indem wir den Arbeitsbereich im linken Bereich auswählen.
+
 2. Zum Maximieren des Bereichs mit der Liste der Artefakte wählen Sie den Doppelpfeil oben rechts im Bereich aus.
+   ![](../media/lab-05/image006.jpg)
 3. Alle von Ihnen erstellten Artefakte werden hier aufgelistet. Geben Sie rechts im Bildschirm **df** in das **Suchfeld** ein. Dadurch werden die Artefakte nach Dataflows gefiltert.
+
+   ![](../media/lab-05/image009.jpg)
+
 4. Zeigen Sie mit der Maus auf die Zeile **df_Supplier_Snowflake**. Beachten Sie, dass die vertrauten Symbole **Aktualisieren** und **Aktualisierung planen** verfügbar sind. Klicken Sie auf die **Auslassungspunkte (...)**.
+
 5. Beachten Sie, dass die Optionen „Löschen“, „Bearbeiten“ und „Dataflow exportieren“ vorhanden sind. Wir können Eigenschaften verwenden, um den Namen und die Beschreibung des Dataflows zu aktualisieren. Wir sehen uns den Aktualisierungsverlauf in Kürze an. Wählen Sie **Einstellungen** aus.
 
-**Hinweis:** Die Seite „Einstellungen“ wird geöffnet. Im linken Bereich sind alle Dataflows aufgelistet.
+   ![](../media/lab-05/image012.jpg)
 
-6. Wählen Sie im mittleren Bereich den Link Verlauf aktualisieren aus.
+   **Hinweis:** Die Seite „Einstellungen“ wird geöffnet. Im linken Bereich sind alle Dataflows aufgelistet.
+
+6. Wählen Sie im mittleren Bereich den Link 
+   **Verlauf aktualisieren** aus.
+
+    ![](../media/lab-05/image015.jpg)
+
 7. Das Dialogfeld „Verlauf aktualisieren“ wird geöffnet. Es wird eine Aktualisierung aufgelistet.
 Hierbei handelt es sich um die Aktualisierung, die bei der Veröffentlichung des Dataflows erfolgt ist. Wählen Sie den Link **Startzeit** aus.
 
-**Hinweis**: Die Startzeit ist für Sie unterschiedlich.
+   **Hinweis**: Die Startzeit ist für Sie unterschiedlich.
 
- 
-Der Detailbildschirm wird geöffnet. Hier erhalten Sie Details zur Aktualisierung sowie eine Liste mit Start-, Endzeit und Dauer. Außerdem werden die aktualisierten Tabellen/Aktivitäten aufgelistet. Falls ein Fehler auftritt, können Sie auf den Namen der Tabelle/Aktivität klicken, um mehr zu erfahren.
+     ![](../media/lab-05/image018.jpg)
 
+   Der Detailbildschirm wird geöffnet. Hier erhalten Sie Details zur Aktualisierung sowie eine Liste mit Start-, Endzeit und Dauer. Außerdem werden die aktualisierten Tabellen/Aktivitäten aufgelistet. Falls ein Fehler auftritt, können Sie auf den Namen der Tabelle/Aktivität klicken, um mehr zu erfahren.
+
+    ![](../media/lab-05/image021.png)
 
 8. Wir navigieren von dieser Seite weg, indem wir auf das X in der oberen rechten Ecke klicken. Sie werden zur **Seite „Dataflow-Einstellungen“** weitergeleitet.
-9. Erweitern Sie unter „Gateway-Verbindung“ Datenquellen-Anmeldeinformationen. Es wird eine Liste der im Dataflow verwendeten Verbindungen angezeigt. In diesem Fall „Lakehouse“ und
-„Snowflake“.
+
+9. Erweitern Sie unter „Gateway-Verbindung“ **Datenquellen-Anmeldeinformationen**. Es wird eine Liste der im Dataflow verwendeten Verbindungen angezeigt. In diesem Fall „Lakehouse“ und„Snowflake“.
 
     a. **Lakehouse**: Dies ist die Verbindung zum Erfassen von Daten aus Dataflow.
 
     b. **Snowflake**: Dies ist die Verbindung zu den Snowflake-Quelldaten.
 
+    ![](../media/lab-05/image024.jpg)
+
 10. Erweitern Sie **Aktualisieren**.
+
 11. Legen Sie den Schieberegler für **Aktualisierungszeitplan** auf **Ein** fest.
+
 12.	Legen Sie das **Dropdownmenü Aktualisierungshäufigkeit** auf **Täglich** fest. Beachten Sie, dass Sie auch die Option „Wöchentlich“ auswählen können.
+
 13.	Legen Sie die **Zeitzone** auf Ihre bevorzugte Zeitzone fest.
 
-**Hinweis**: Da es sich um eine Übungsumgebung handelt, können Sie die Zeitzone auf Ihre
+    **Hinweis**: Da es sich um eine Übungsumgebung handelt, können Sie die Zeitzone auf Ihre
 bevorzugte Zeitzone festlegen. In einem realen Szenario legen Sie die Zeitzone basierend auf Ihrem/Speicherort der Datenquelle fest.
 
 14.	Klicken Sie auf den Link **Andere Uhrzeit hinzufügen.** Hinweis: Die Option **Uhrzeit** wird angezeigt.
+
 15. Legen Sie die **Uhrzeit** auf **Mitternacht/00:00 Uhr** fest. Beachten Sie, dass Sie die Aktualisierung zu jeder vollen oder halben Stunde einstellen können.
+
 16.	Wählen Sie **Übernehmen** aus, um diese Einstellung zu speichern.
 
-**Hinweis**: Durch Klicken auf den Link „Andere Uhrzeit hinzufügen“ können Sie mehrere Aktualisierungszeiten hinzufügen.
+    **Hinweis**: Durch Klicken auf den Link „Andere Uhrzeit hinzufügen“ können Sie mehrere Aktualisierungszeiten hinzufügen.
 
-Sie können auch Fehlerbenachrichtigungen an den Besitzer des Dataflows und an andere Kontakte senden.
+    Sie können auch Fehlerbenachrichtigungen an den Besitzer des Dataflows und an andere Kontakte senden.
 
-Wie bereits erwähnt, müssen wir eine benutzerdefinierte Logik erstellen, um das Szenario zu handhaben, in dem die Mitarbeiterdatei in SharePoint nicht rechtzeitig gesendet wird. Wir verwenden die Datenpipeline, um dieses Problem zu beheben.
+    ![](../media/lab-05/image027.jpg)
+
+    Wie bereits erwähnt, müssen wir eine benutzerdefinierte Logik erstellen, um das Szenario zu handhaben, in dem die Mitarbeiterdatei in SharePoint nicht rechtzeitig gesendet wird. Wir verwenden die Datenpipeline, um dieses Problem zu beheben.
 
 
 # Datenpipeline
+
 ## Aufgabe 2: Datenpipeline erstellen
+
 1. Wählen Sie unten links auf dem Bildschirm das Symbol **Fabric-Funktionsbereichs-Auswahl** aus.
+
 2. Das Dialogfeld Microsoft Fabric wird geöffnet. Wählen Sie **Data Factory** aus. Sie navigieren zur Data Factory-Startseite.
 
+    ![](../media/lab-05/image030.png)
+
 3. Wählen Sie im oberen Bereich **Datenpipeline** aus, um eine neue Pipeline zu erstellen.
+
 4. Das Dialogfeld „Neue Pipeline“ wird geöffnet. Geben Sie der Pipeline den Namen
 **pl_Refresh_People_SharePoint**.
+
 5. Wählen Sie **Erstellen** aus.
 
-Sie werden zur **Seite „Datenpipeline“** weitergeleitet. Wenn Sie bereits mit Azure Data Factory gearbeitet haben, sind Sie mit diesem Bildschirm vertraut. Verschaffen wir uns einen kurzen Überblick über das Layout.
+   ![](../media/lab-05/image033.jpg)
 
-Sie befinden sich auf dem **Startbildschirm**. Im oberen Menü finden Sie Optionen zum Hinzufügen häufig verwendeter Aktivitäten: „Überprüfen“, „Ausführen“ und „Ausführungsverlauf anzeigen“. Im mittleren Bereich finden Sie ebenfalls Optionen zum schnellen Erstellen der Pipeline.
+   Sie werden zur **Seite „Datenpipeline“** weitergeleitet. Wenn Sie bereits mit Azure Data Factory gearbeitet haben, sind Sie mit diesem Bildschirm vertraut. Verschaffen wir uns einen kurzen Überblick über das Layout.
+
+   Sie befinden sich auf dem **Startbildschirm**. Im oberen Menü finden Sie Optionen zum Hinzufügen häufig verwendeter Aktivitäten: „Überprüfen“, „Ausführen“ und „Ausführungsverlauf anzeigen“. Im mittleren Bereich finden Sie ebenfalls Optionen zum schnellen Erstellen der Pipeline.
  
- 
+   ![](../media/lab-05/image036.jpg)
+
 6.	Wählen Sie im oberen Menü die Option **Aktivitäten** aus. Das Menü enthält nun eine Liste mit häufig verwendeten Aktivitäten.
+
 7.	Wählen Sie rechts im Menü die **Auslassungspunkte (…)** aus, um alle anderen verfügbaren Aktivitäten anzuzeigen. Wir werden einige dieser Aktivitäten in der Übung verwenden.
 
 8.	Klicken Sie im oberen Menü auf **Ausführen**. Es werden Optionen zum Ausführen und Planen der Pipeline angezeigt. Hier finden Sie auch die Option zum Anzeigen des Ausführungsverlaufs mithilfe von „Ausführungsverlauf anzeigen“.
+
+    ![](../media/lab-05/image039.jpg)
+
 9.	Wählen Sie im oberen Menü die Option **Anzeigen** aus. Hier finden Sie Optionen zum Anzeigen des Codes im JSON-Format. Außerdem sind Optionen zum Formatieren der Aktivitäten verfügbar.
 
-**Hinweis:** Wenn Sie am Ende der Übung über einen JSON-Hintergrund verfügen, können Sie auch
-„JSON-Code anzeigen“ auswählen. Hier sehen Sie, dass die gesamte Orchestrierung, die Sie über die Entwurfsansicht durchführen, auch in JSON geschrieben werden kann.
+    **Hinweis:** Wenn Sie am Ende der Übung über einen JSON-Hintergrund verfügen, können Sie auch „JSON-Code anzeigen“ auswählen. Hier sehen Sie, dass die gesamte Orchestrierung, die Sie über die Entwurfsansicht durchführen, auch in JSON geschrieben werden kann.
 
- 
+    ![](../media/lab-05/image042.png)
+
 ## Aufgabe 3: Einfache Datenpipeline erstellen
+
 Beginnen wir mit der Erstellung der Pipeline. Wir benötigen eine Aktivität, um den Dataflow zu aktualisieren. Lassen Sie uns nach einer Aktivität suchen, die wir verwenden können.
+
 1. Wählen Sie im oberen Menü **Aktivitäten -> Dataflow** aus. Die Dataflow-Aktivität wird dem mittleren Designbereich hinzugefügt. Beachten Sie, dass der untere Bereich jetzt
 Konfigurationsoptionen der Dataflow-Aktivität enthält.
+
 2. Wir werden die Aktivität so konfigurieren, dass sie eine Verbindung zur df_People_SharePoint- Aktivität herstellt. Wählen Sie im **unteren Bereich** die Option **Einstellungen** aus.
+
 3. Stellen Sie sicher, dass **Arbeitsbereich** auf Ihren Fabric-Arbeitsbereich, **FAIAD_\<Benutzername>**, festgelegt ist.
+
 4. Wählen Sie im **Dropdownmenü „Dataflow“** die Option **df_People_SharePoint** aus. Wenn diese Dataflow-Aktivität ausgeführt wird, erfolgt eine Aktualisierung von **df_People_SharePoint**. Das war doch einfach, oder?
 
-In unserem Szenario werden Mitarbeiterdaten nicht planmäßig aktualisiert. Manchmal kommt es zu einer Verzögerung. Sehen wir uns an, ob wir dies berücksichtigen können.
+   In unserem Szenario werden Mitarbeiterdaten nicht planmäßig aktualisiert. Manchmal kommt es zu einer Verzögerung. Sehen wir uns an, ob wir dies berücksichtigen können.
+
+   ![](../media/lab-05/image045.png)
 
 5. Wählen Sie im **unteren Bereich** die Option **Allgemein** aus. Wir geben der Aktivität einen Namen und eine Beschreibung.
+
 6. Geben Sie im Feld **Name dfactivity_People_SharePoint** ein.
+
 7. Geben Sie im Feld **Beschreibung** die **Dataflow-Aktivität ein, um den df_People_Sharepoint- Dataflow zu aktualisieren.**
+
 8. Beachten Sie, dass eine Option zum Deaktivieren einer Aktivität vorhanden ist. Diese Funktion ist beim Testen oder Debuggen hilfreich. Behalten Sie die Einstellung **Aktiviert** bei.
+
 9.	Es ist eine Option zum Festlegen eines **Timeouts** verfügbar. Lassen wir den **Standardwert** unverändert, damit dem Dataflow genügend Zeit für die Aktualisierung zur Verfügung steht.
 
-**Hinweis:** Wenn die Daten nicht planmäßig verfügbar sind, legen wir die Aktivität so fest, dass sie dreimal alle 10 Minuten erneut ausgeführt wird. Wenn der dritte Versuch fehlschlägt, wird ein Fehler gemeldet.
+    **Hinweis:** Wenn die Daten nicht planmäßig verfügbar sind, legen wir die Aktivität so fest, dass sie dreimal alle 10 Minuten erneut ausgeführt wird. Wenn der dritte Versuch fehlschlägt, wird ein Fehler gemeldet.
  
 10. Legen Sie **Wiederholen** auf **3** fest.
+
 11.	Erweitern Sie den Abschnitt **Erweitert**.
+
 12.	Legen Sie **Wiederholungsintervall (Sek.)** auf **600** fest.
+
 13.	Wählen Sie im Menü **Startseite -> Symbol „Speichern“** aus, um die Pipeline zu speichern.
 
-Beachten Sie, welchen Vorteil die Verwendung der Datenpipeline im Vergleich zur Festlegung des Dataflows auf eine geplante Aktualisierung bietet (wie es schon bei früheren Dataflows erfolgt ist):
+    ![](../media/lab-05/image048.jpg)
 
-- Die Pipeline bietet die Möglichkeit der mehrmaligen Wiederholung, bevor die Aktualisierung fehlschlägt.
-- Die Pipeline ermöglicht eine Aktualisierung innerhalb von Sekunden, während beim Dataflow alle 30 Minuten eine geplante Aktualisierung erfolgt.
+    Beachten Sie, welchen Vorteil die Verwendung der Datenpipeline im Vergleich zur Festlegung des Dataflows auf eine geplante Aktualisierung bietet (wie es schon bei früheren Dataflows erfolgt ist):
+
+    - Die Pipeline bietet die Möglichkeit der mehrmaligen Wiederholung, bevor die Aktualisierung fehlschlägt.
+
+    - Die Pipeline ermöglicht eine Aktualisierung innerhalb von Sekunden, während beim Dataflow alle 30 Minuten eine geplante Aktualisierung erfolgt.
 
 
 ## Aufgabe 4: Neue Datenpipeline erstellen
+
 Fügen wir unserem Szenario etwas mehr Komplexität hinzu. Wir haben festgestellt, dass, wenn die Daten nicht um 9:00 Uhr morgens verfügbar sind, sie in der Regel innerhalb von fünf Minuten verfügbar sind. Wird das Zeitfenster verpasst, dauert es 15 Minuten, bis die Datei verfügbar ist. Wir möchten die Wiederholungen so planen, dass sie alle 5 und 15 Minuten erfolgen. Sehen wir uns an, wie dies durch die Erstellung einer neuen Datenpipeline erreicht werden kann.
+
 1. Wählen Sie im linken Bereich **FAIAD_\<Benutzername>** aus, um zur Startseite des Arbeitsbereichs zu gelangen.
+
 2. Klicken Sie im oberen Menü auf **Neu** und im **Dropdownmenü** auf **Datenpipeline**.
+
 3. Das Dialogfeld „Neue Pipeline“ wird geöffnet. **Geben Sie der Pipeline den Namen pl_Refresh_People_SharePoint_Option2.**
+
 4. Wählen Sie **Erstellen** aus.
 
+   ![](../media/lab-05/image051.jpg)
 
 ## Aufgabe 5: Until-Aktivität erstellen
+
 1. Sie werden zum Bildschirm „Datenpipeline“ weitergeleitet. Wählen Sie im Menü die Option **Aktivitäten** aus.
+
 2. Klicken Sie rechts auf die **Auslassungspunkte (...)**.
+
 3. Klicken Sie in der Aktivitätsliste auf **Bis**.
 
-**Bis:** Mit dieser Aktivität wird eine Iteration ausgeführt, bis eine Bedingung erfüllt ist.
+   **Bis:** Mit dieser Aktivität wird eine Iteration ausgeführt, bis eine Bedingung erfüllt ist.
 
-In unserem Szenario erfolgt die Iteration des Dataflows so lange, bis er erfolgreich ist oder drei Versuche durchgeführt wurden.
+   In unserem Szenario erfolgt die Iteration des Dataflows so lange, bis er erfolgreich ist oder drei Versuche durchgeführt wurden.
 
+    ![](../media/lab-05/image054.jpg)
 
 ## Aufgabe 6: Variablen erstellen
+
 1. Wir müssen Variablen für die Iteration und Festlegung des Status festlegen. Wählen Sie den **leeren Bereich** im Bereich für Pipelinedesign aus.
+
 2. Beachten Sie, dass sich das Menü im unteren Bereich ändert. Wählen Sie **Variablen** aus.
+
 3. Wählen Sie **Neu** aus, um eine neue Variable hinzuzufügen.
+
 4. Beachten Sie, dass eine Zeile angezeigt wird. Geben Sie **varCounter** in das **Textfeld „Name“** ein. Wir verwenden diese Variable für eine dreimalige Iteration.
+
 5. Wählen Sie im Dropdownmenü **Typ** die Option **Integer** aus.
+
 6. Geben Sie den **Standardwert 0** ein.
 
-**Hinweis:** Wir stellen den Variablennamen „var“ voran, damit sie leicht zu finden sind und da es eine gut Vorgehensweise ist.
+   **Hinweis:** Wir stellen den Variablennamen „var“ voran, damit sie leicht zu finden sind und da es eine gut Vorgehensweise ist.
+
+   ![](../media/lab-05/image057.png)
 
 7. Wählen Sie **Neu** aus, um eine weitere Variable hinzuzufügen.
-8. Beachten Sie, dass eine Zeile angezeigt wird. Geben Sie **varTempCounter** in das **Textfeld „Name“** ein. Wir werden diese Variable verwenden, um die Variable varCounter zu inkrementieren.
-9. Wählen Sie im Dropdownmenü **Typ** die Option **Integer** aus.
-10.	Geben Sie den **Standardwert 0** ein.
-11.	Fügen Sie auf die gleiche Weise drei weitere Variablen hinzu:
-    a. **varIsSuccess** vom Typ **String** und Standardwert **No**. Diese Variable wird verwendet, um anzuzeigen, ob die Dataflow-Aktualisierung erfolgreich war.
-    b. **varSuccess** vom Typ **String** und Standardwert **Yes**. Diese Variable wird verwendet, um den Wert „varIsSuccess“ festzulegen, wenn die Dataflow-Aktualisierung erfolgreich ist.
-    c. **varWaitTime** vom Typ **Integer** und Standardwert **60**. Mit dieser Variablen wird die
-Wartezeit festgelegt, wenn der Dataflow fehlschlägt (entweder 5 Minuten/300 Sekunden oder 15 Minuten/900 Sekunden).
- 
-**Hinweis:** Achten Sie darauf, dass vor oder nach dem Variablennamen kein Leerzeichen vorhanden ist.
 
+8. Beachten Sie, dass eine Zeile angezeigt wird. Geben Sie **varTempCounter** in das **Textfeld „Name“** ein. Wir werden diese Variable verwenden, um die Variable varCounter zu inkrementieren.
+
+9. Wählen Sie im Dropdownmenü **Typ** die Option **Integer** aus.
+
+10.	Geben Sie den **Standardwert 0** ein.
+
+11.	Fügen Sie auf die gleiche Weise drei weitere Variablen hinzu:
+
+    a. **varIsSuccess** vom Typ **String** und Standardwert **No**. Diese Variable wird verwendet, um anzuzeigen, ob die Dataflow-Aktualisierung erfolgreich war.
+
+    b. **varSuccess** vom Typ **String** und Standardwert **Yes**. Diese Variable wird verwendet, um den Wert „varIsSuccess“ festzulegen, wenn die Dataflow-Aktualisierung erfolgreich ist.
+
+    c. **varWaitTime** vom Typ **Integer** und Standardwert **60**. Mit dieser Variablen wird die Wartezeit festgelegt, wenn der Dataflow fehlschlägt (entweder 5 Minuten/300 Sekunden oder 15 Minuten/900 Sekunden).
+ 
+    **Hinweis:** Achten Sie darauf, dass vor oder nach dem Variablennamen kein Leerzeichen vorhanden ist.
+
+    ![](../media/lab-05/image060.png)
 
 ## Aufgabe 7: Until-Aktivität konfigurieren
+
 1. Wählen Sie die **Bis**-Aktivität aus.
+
 2. Wählen Sie im **unteren Bereich** die Option **Allgemein** aus.
+
 3. Geben Sie als **Name Iterator** ein.
+
 4. Geben Sie als **Beschreibung Iterator zum Aktualisieren des Dataflows ein. Es werden bis zu drei Wiederholungen durchgeführt.**
 
+   ![](../media/lab-05/image063.png)
+
 5. Wählen Sie im unteren Bereich die Option **Einstellungen** aus.
+
 6. Wählen Sie das **Textfeld „Ausdruck“** aus. Wir müssen einen Ausdruck in dieses Textfeld eingeben, der als wahr oder falsch ausgewertet wird. Die Bis-Aktivität führt die Iteration durch, während dieser Ausdruck als falsch ausgewertet wird. Sobald der Ausdruck als wahr ausgewertet wird, beendet die Bis-Aktivität die Iteration.
  
 7. Wählen Sie den Link **Dynamischen Inhalt hinzufügen** aus, der unter dem Textfeld angezeigt wird.
 
-Wir müssen einen Ausdruck schreiben, der so lange ausgeführt wird, bis der Wert **varCounter 3** oder der Wert **varIsSuccess** „Ja“ lautet. („varCounter“ und *„varIsSuccess“* sind die Variablen, die wir
-gerade erstellt haben.)
+    ![](../media/lab-05/image066.png)
+
+   Wir müssen einen Ausdruck schreiben, der so lange ausgeführt wird, bis der Wert **varCounter 3** oder der Wert **varIsSuccess** „Ja“ lautet. („varCounter“ und *„varIsSuccess“* sind die Variablen, die wir gerade erstellt haben.)
 
 8. Das Dialogfeld **Pipeline-Ausdrucks-Generator** wird geöffnet. In der unteren Hälfte des Dialogfelds finden Sie ein Menü:
     
@@ -211,129 +302,210 @@ gerade erstellt haben.)
     e. **Variablen:** Pipeline-Variablen sind Werte, die während einer Pipeline-Ausführung festgelegt und geändert werden können. Im Gegensatz zu Pipeline-Parametern, die auf Pipeline-Ebene definiert werden und während einer Pipeline-Ausführung nicht geändert werden können, lassen sich Pipeline-Variablen innerhalb einer Pipeline mit der Aktivität
     „Variable festlegen“ festlegen und ändern. Wir werden die Aktivität „Variable festlegen“ in Kürze verwenden.
  
- 
+     ![](../media/lab-05/image069.jpg)
+
 9. Klicken Sie im unteren Menü auf **Funktionen**.
+
 10.	Wählen Sie im Abschnitt **Logical Funktionen** die **or-Funktion** aus. Beachten Sie, dass **@or()** dem Textfeld für den dynamischen Ausdruck hinzugefügt wird. Die Funktion „or“ benötigt zwei
 Parameter. Wir arbeiten am ersten Parameter.
 
+    ![](../media/lab-05/image072.jpg)
+
 11.	Platzieren Sie den Cursor **zwischen den Klammern** der Funktion **@or**.
+
 12.	Wählen Sie im Abschnitt **Logical Funktionen** die Funktion **equals** aus. Beachten Sie, dass diese dem Textfeld für den dynamischen Ausdruck hinzugefügt wird.
  
-**Hinweis:** Ihre Funktion sollte wie folgt aussehen: **@or(equals())**. Die Funktion „equals“ benötigt auch zwei Parameter . Wir überprüfen, ob die Variable „varCounter“ gleich 3 ist.
+    **Hinweis:** Ihre Funktion sollte wie folgt aussehen: **@or(equals())**. Die Funktion „equals“ benötigt auch zwei Parameter . Wir überprüfen, ob die Variable „varCounter“ gleich 3 ist.
+
+    ![](../media/lab-05/image075.jpg)
 
 13.	Platzieren Sie nun den Cursor **zwischen den Klammern** der Funktion **@equals**, um die Parameter hinzuzufügen.
+
 14.	Wählen Sie im unteren Menü **Variablen** aus.
+
 15.	Wählen Sie die Variable **varCounter** aus, bei der es sich um den ersten Parameter handelt.
+
 16.	Geben Sie **3** als zweiten Parameter der Funktion „equals“ ein. Wie im Screenshot unten lautet Ihr Ausdruck **@or(equals(variables('varCounter'),3))**.
 
+    ![](../media/lab-05/image078.png)
  
 17.	Wir müssen den zweiten Parameter der Funktion „or“ hinzufügen. **Fügen Sie zwischen den beiden Endklammern ein Komma** ein. Dieses Mal versuchen wir, den Funktionsnamen einzugeben. Beginnen Sie mit der Eingabe von **equ**, sodass Sie ein Dropdownmenü mit den verfügbaren Funktionen erhalten (dies wird als IntelliSense bezeichnet). Wählen Sie die Funktion **equals** aus.
 
+     ![](../media/lab-05/image081.jpg)
+
 18.	Der erste Parameter der Funktion „equals“ ist eine Variable. Platzieren Sie den **Cursor vor dem Komma**.
+
 19.	Beginnen Sie mit der Eingabe von **variables(**.
+
 20.	Wählen Sie mithilfe von IntelliSense **variables('varIsSuccess')** aus.
+
 21.	Nach dem Komma geben wir den zweiten Parameter ein. Beginnen Sie mit der Eingabe von **variables(**.
+
 22.	Wählen Sie mithilfe von IntelliSense **variables('varSuccess')** aus. Hier vergleichen wir den Wert „varIsSuccess“ mit dem Wert „varSuccess“. („varSuccess“ ist standardmäßig auf „Ja“ festgelegt.)
+
+    ![](../media/lab-05/image084.png)
 
 23.	Ihr Ausdruck sollte folgendermaßen lauten:
 **@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))**
  
 24.	Wählen Sie **OK** aus.
 
+    ![](../media/lab-05/image087.jpg)
 
 ## Aufgabe 8: Dataflow-Aktivität konfigurieren
+
 1. Sie werden zum Designbildschirm weitergeleitet. Wählen Sie bei ausgewählter **Bis-Aktivität** im **unteren Bereich** die Option **Aktivitäten** aus. Wir fügen nun die Aktivitäten hinzu, die ausgeführt werden müssen.
+
 2. Wählen Sie in der ersten Zeile das **Bearbeitungssymbol** aus. Sie werden zum leeren Iterator- Designbildschirm weitergeleitet.
 
+   ![](../media/lab-05/image090.png)
+
 3. Wählen Sie im oberen Menü **Aktivitäten -> Dataflow** aus. Die Dataflow-Aktivität wird dem Designbereich hinzugefügt.
+
 4. Wählen Sie bei ausgewählter **Dataflow-Aktivität** im unteren Bereich **Allgemein** aus. Wir geben der Aktivität einen Namen und eine Beschreibung.
+
 5. Geben Sie im Feld **Name dfactivity_People_SharePoint** ein.
+
 6. Geben Sie im Feld **Beschreibung** die **Dataflow-Aktivität ein, um den df_People_Sharepoint- Dataflow zu aktualisieren**.
 
+   ![](../media/lab-05/image093.jpg)
+
 7. Wählen Sie im unteren Bereich die Option **Einstellungen** aus.
+
 8. Stellen Sie sicher, dass **Arbeitsbereich** auf Ihren Arbeitsbereich, **FAIAD_\<Benutzername>**, festgelegt ist.
+
 9. Wählen Sie im **Dropdownmenü „Dataflow“** die Option  **df_People_SharePoint** aus. Wenn diese Dataflow-Aktivität ausgeführt wird, erfolgt eine Aktualisierung von **df_People_SharePoint**.
 
+    ![](../media/lab-05/image096.jpg)
 
 ## Aufgabe 9: Erste Aktivität „Variable festlegen“ konfigurieren
+
 Wir haben die Dataflow-Aktivität wie zuvor in der Übung konfiguriert. Nun fügen wir neue Logik hinzu. Wenn die Dataflow-Aktualisierung erfolgreich ist, müssen wir den Bis-Iterator beenden. Bedenken Sie, dass eine der Bedingungen für die Beendigung des Iterators darin besteht, den Wert der Variablen „varIsSuccess“ auf „Ja“ festzulegen.
+
 1. Wählen Sie im oberen Menü **Aktivitäten -> Variable festlegen** aus. Die Aktivität „Variable festlegen“ wird dem Designcanvas hinzugefügt.
+
 2. Wählen Sie bei ausgewählter **Aktivität „Variable festlegen“** im unteren Bereich **Allgemein** aus. Wir geben der Aktivität einen Namen und eine Beschreibung.
+
 3. Geben Sie im Feld **Name set_varIsSuccess** ein.
+
 4. Geben Sie im Feld **Beschreibung Variable „varIsSuccess“ auf „Ja“ festlegen** aus.
 
-**Hinweis:** Zeigen Sie mit der Mais auf **Dataflow-Aktivität**. Rechts neben dem Aktivitätsfeld befinden sich vier Symbole. Diese können verwendet werden, um basierend auf dem Ergebnis der Aktivität eine Verbindung zur nächsten Aktivität herzustellen:
-- Das Symbol **Grauer gebogener Pfeil** dient zum Überspringen der Aktivität.
-- Das Symbol **Grünes Häkchen** wird bei erfolgreicher Ausführung der Aktivität verwendet.
-- Das Symbol **Rotes X** wird verwendet, wenn die Aktivität nicht erfolgreich war.
-- Das Symbol **Blauer gerader Pfeil** wird nach Abschluss der Aktivität verwendet.
+    **Hinweis:** Zeigen Sie mit der Mais auf **Dataflow-Aktivität**. Rechts neben dem Aktivitätsfeld befinden sich vier Symbole. Diese können verwendet werden, um basierend auf dem Ergebnis der Aktivität eine Verbindung zur nächsten Aktivität herzustellen:
+    - Das Symbol **Grauer gebogener Pfeil** dient zum Überspringen der Aktivität.
+    - Das Symbol **Grünes Häkchen** wird bei erfolgreicher Ausführung der Aktivität verwendet.
+    - Das Symbol **Rotes X** wird verwendet, wenn die Aktivität nicht erfolgreich war.
+    - Das Symbol **Blauer gerader Pfeil** wird nach Abschluss der Aktivität verwendet.
 
 5. Klicken Sie auf das **grüne Häkchen** der Dataflow-Aktivität „dfactivity_People_SharePoint“, und ziehen Sie es, um eine Verbindung mit der neuen **Aktivität „Variable festlegen“ set_varIsSuccess** herzustellen. Bei erfolgreicher Dataflow-Aktualisierung möchten wir also die Aktivität „Variable festlegen“ ausführen.
 
+   ![](../media/lab-05/image099.png)
+
 6. Klicken Sie bei ausgewählter **Aktivität „Variable festlegen“** im unteren Menü auf **Einstellungen**.
+
 7. Stellen Sie im unteren Bereich sicher, dass **Variablentyp** auf **Pipelinevariable** festgelegt ist.
  
 8. Wählen Sie im Feld **Name** die Option **varIsSucces** aus. Dies ist die Variable, deren Wert wir festlegen werden.
+
 9. Wählen Sie im Feld **Wert** das **Textfeld** aus. Wählen Sie den Link **Dynamischen Inhalt hinzufügen** aus.
 
+    ![](../media/lab-05/image102.jpg)
+
 10.	Das Dialogfeld Pipeline-Ausdrucks-Generator wird geöffnet. Wählen Sie unten den Textbereich **Dynamischen Inhalt unten mit einer beliebigen Kombination aus Ausdrücken, Funktionen und Systemvariablen hinzufügen** aus.
+
 11.	Wählen Sie im unteren Menü **Variablen -> varSuccess** aus. Beachten Sie, dass „@variables('varSuccess')“ im Textbereich „Dynamischen Inhalt unten hinzufügen“ eingegeben wird. Denken Sie daran, als wir Variablen erstellt haben, hatten wir den Wert der Variablen „varSuccess“ auf „Ja“ voreingestellt. Daher weisen wir der Variablen „varIsSuccess“ den Wert „Ja“ zu.
+
 12.	Wählen Sie **OK** aus. Sie werden zum **Iterator-Designbereich** weitergeleitet.
 
- 
+     ![](../media/lab-05/image105.png)
+
 Nun müssen wir den Zähler festlegen, wenn die Dataflow-Aktivität fehlschlägt. In der Datenpipeline können wir keine Selbstreferenz für eine Variable festlegen. Das bedeutet, dass wir die Zählervariable
 „varCounter“ nicht inkrementieren können, indem wir ihr den Wert eins hinzufügen (varCounter = varCounter + 1). Daher nutzen wir die Variable „varTempCounter“.
 
 
 ## Aufgabe 10: Zweite Aktivität „Variable festlegen“ konfigurieren
+
 1. Wählen Sie im oberen Menü **Aktivitäten -> Variable festlegen** aus. Die Aktivität „Variable festlegen“ wird dem Designcanvas hinzugefügt.
+
 2. Wählen Sie bei ausgewählter **Aktivität „Variable festlegen“** im unteren Bereich **Allgemein** aus. Wir geben der Aktivität einen Namen und eine Beschreibung.
+
 3. Geben Sie im Feld **Name set_varTempCounter** ein.
+
 4. Geben Sie im Feld Beschreibung Variable „varTempCounter“ inkrementieren aus.
+
 5. Klicken Sie auf das **rote X** der Dataflow-Aktivität “ zur neuen Aktivität „Variable festlegen“. Bei nicht erfolgreicher Dataflow-Aktualisierung können wir also diese Aktivität „Variable festlegen“ ausführen.
 
+    ![](../media/lab-05/image108.png)
+
 6.	Wählen Sie bei ausgewählter **Aktivität „Variable festlegen“** im unteren Menü Einstellungen aus.
+
 7.	Stellen Sie im unteren Bereich sicher, dass **Variablentyp** auf **Pipelinevariable** festgelegt ist.
+
 8.	Wählen Sie im Feld **Name varTempCounter** aus. aus. Dies ist die Variable, deren Wert wir festlegen werden.
+
 9.	Wählen Sie im Feld **Wert** das **Textfeld** aus. Wählen Sie den Link **Dynamischen Inhalt hinzufügen** aus.
+
 10.	Das Dialogfeld Pipeline-Ausdrucks-Generator wird geöffnet. Geben Sie
 **@add(variables('varCounter'),1)** ein..
  
-**Hinweis:** Sie können diesen Ausdruck gerne eingeben und die Funktionen über das Menü auswählen oder kopieren und einfügen. Diese Funktion legt den Wert der Variablen „varTempCounter“ auf den Wert der Variablen „varCounter“ plus eins (varTempCounter = varCounter + 1) fest.
+    **Hinweis:** Sie können diesen Ausdruck gerne eingeben und die Funktionen über das Menü auswählen oder kopieren und einfügen. Diese Funktion legt den Wert der Variablen „varTempCounter“ auf den Wert der Variablen „varCounter“ plus eins (varTempCounter = varCounter + 1) fest.
+  
+    ![](../media/lab-05/image111.jpg)
 
-Nun müssen wir den Wert der Variablen „varCounter“ auf den Wert „varTempCounter“ festlegen.
+     Nun müssen wir den Wert der Variablen „varCounter“ auf den Wert „varTempCounter“ festlegen.
 
 
 ## Aufgabe 11: Dritte Aktivität „Variable festlegen“ konfigurieren
+
 1. Wählen Sie im oberen Menü **Aktivitäten -> Variable festlegen** aus. Die Aktivität „Variable festlegen“ wird dem Designcanvas hinzugefügt.
+
 2. Wählen Sie bei ausgewählter **Aktivität „Variable festlegen“** im unteren Bereich **Allgemein** aus. Wir geben der Aktivität einen Namen und eine Beschreibung.
+
 3. Geben Sie im Feld **Name set_varCounter** ein.
+
 4. Geben Sie im Feld **Beschreibung Variable „varCounter“ inkrementieren** ein.
+
 5. Klicken Sie auf das **grüne Häkchen** der Aktivität zum Festlegen der Variablen „set_varTempCounter“, und ziehen Sie es, um eine Verbindung mit der neuen der Aktivität zum Festlegen der Variablen **set_varCounter** herzustellen.
  
+   ![](../media/lab-05/image113.png)
+
 6. Wählen Sie bei ausgewählter **Aktivität zum Festlegen der Variablen „set_varCounter“** im unteren Menü **Einstellungen** aus.
+
 7. Stellen Sie im unteren Bereich sicher, dass **Variablentyp** auf **Pipelinevariable** festgelegt ist.
+
 8. Wählen Sie im Feld **Name varCounter** aus. aus. Dies ist die Variable, deren Wert wir festlegen werden.
+
 9. Wählen Sie im Feld **Wert** das **Textfeld** aus. Wählen Sie den Link Dynamischen Inhalt hinzufügen aus.
+
 10. Das Dialogfeld Pipeline-Ausdrucks-Generator wird geöffnet. Geben Sie
 **@variables('varTempCounter')** ein. Sie können diesen Ausdruck gerne eingeben oder die Funktionen über das Menü auswählen oder kopieren und einfügen.
 
-**Hinweis:** Diese Funktion legt den Wert der Variablen „varTempCounter“ auf den Wert der Variablen „varTempCounter“ (varCounter = varTempCounter) fest. Am Ende jeder Iteration haben sowohl varCounter als auch varTempCounter denselben Wert.
+    **Hinweis:** Diese Funktion legt den Wert der Variablen „varTempCounter“ auf den Wert der Variablen „varTempCounter“ (varCounter = varTempCounter) fest. Am Ende jeder Iteration haben sowohl varCounter als auch varTempCounter denselben Wert.
 
+     ![](../media/lab-05/image116.jpg)
 
 ## Aufgabe 12: Wait-Aktivität konfigurieren
+
 Als nächstes müssen wir 5 Minuten/300 Sekunden warten, wenn die Dataflow-Aktualisierung beim ersten Mal fehlschlägt, bevor wir es erneut versuchen. Wenn die Dataflow-Aktualisierung zum
 zweiten Mal fehlschlägt, müssen wir 15 Minuten/900 Sekunden warten, und es erneut versuchen. Wir verwenden die Wait-Aktivität und die Variable „varWaitTime“, um die Wartezeit festzulegen.
+
 1. Wählen Sie im oberen Menü **Aktivitäten -> Auslassungspunkte -> Warten** aus. Die Wait-Aktivität wird dem Designcanvas hinzugefügt.
+
 2. Wählen Sie bei ausgewählter **Wait-Aktivität** im unteren Bereich **Allgemein** aus. Wir geben der Aktivität einen Namen und eine Beschreibung.
+
 3. Geben Sie im Feld **Name wait_onFailure** ein.
+
 4. Geben Sie im Feld **Beschreibung 300 Sekunden beim zweiten Versuch und 900 Sekunden beim dritten Versuch warten** ein.
  
 5. Klicken Sie auf das **grüne Häkchen** der Aktivität zum Festlegen der Variablen „set_varCounter“, und ziehen Sie es, um eine Verbindung mit der neuen **Wait-Aktivität „wait_onFailure“** herzustellen.
 
+    ![](../media/lab-05/image119.jpg)
+
 6. Klicken Sie bei ausgewählter **Wait-Aktivität** im unteren Menü auf **Einstellungen**.
+
 7. Wählen Sie im Feld **Wartezeit in Sekunden** das **Textfeld** und dann den Link **Dynamischer Inhalt** aus.
+
 8. Das Dialogfeld Pipeline-Ausdrucks-Generator wird geöffnet. Geben Sie
+
 ```markdown
 @if(
  greater(variables(‘varCounter’), 1),
@@ -346,8 +518,11 @@ zweiten Mal fehlschlägt, müssen wir 15 Minuten/900 Sekunden warten, und es ern
 ```
 
 Sie können diesen Ausdruck gerne eingeben oder die Funktionen über das Menü auswählen oder kopieren und einfügen.
+
+  ![](../media/lab-05/image122.jpg)
  
 Wir verwenden hier zwei neue Funktionen:
+
 - **greater:** Verwendet zwei Zahlen als Parameter und vergleicht, welche größer ist.
 - **mul:** Dies ist eine Multiplikationsfunktion, die zur Multiplikation zwei Parameter benötigt.
 
@@ -355,41 +530,58 @@ Der Ausdruck ist eine geschachtelte if-Anweisung. Hiermit wird überprüft, ob d
 abgeschlossen. Wir müssen nicht mehr warten), die Wartezeit ist auf „varWaitTime * 0“ festgelegt, also auf „0“. Wenn der Wert der Variablen „varCounter“ „1“ ist, multiplizieren wir „varWaitTime“ mit „5“. Das wären 60*5 = 300 Sekunden.
 
 9. Wählen Sie **OK** aus.
-**Prüfpunkt:** Ihr Bis-Iterator sollte so wie im Screenshot unten aussehen.
+
+   **Prüfpunkt:** Ihr Bis-Iterator sollte so wie im Screenshot unten aussehen.
+
+   ![](../media/lab-05/image125.jpg)
 
 10.	Wählen Sie oben links im Designcanvas **Pl_Refresh_People_Sharepoint_Option2** aus, um vom Bis-Iterator weg zu navigieren.
 
- 
+    ![](../media/lab-05/image127.jpg)
+
 11.	Nun ist die Datenpipeline erstellt. Wählen Sie im oberen Menü **Startseite -> Symbol „Speichern“** aus, um die Datenpipeline zu speichern.
 
-
+     ![](../media/lab-05/image130.png)
 
 ## Aufgabe 13: Geplante Aktualisierung für die Datenpipeline konfigurieren
+
 1.	Wir können die Datenpipeline testen, indem wir **Startseite -> Ausführen** auswählen.
 
     **Hinweis:** Es kann einige Minuten dauern, bis die Datenpipeline vollständig aktualisiert ist. Dies ist eine Trainingsumgebung, sodass die Datei in SharePoint immer verfügbar. Daher schlägt Ihre Datenpipeline fehl.
 
 2. Wir können die Ausführung der Datenpipeline nach einem Zeitplan festlegen. Wählen Sie im Menü oben den Eintrag **Startseite -> Zeitplan** aus. Das Dialogfeld „Zeitplan“ wird geöffnet.
+
 3. Legen Sie das Optionsfeld **Geplante Ausführung** auf **Ein** fest.
+
 4. Legen Sie das **Dropdownmenü „Wiederholen“** auf **Täglich** fest.
+
 5. Legen Sie die **Uhrzeit** auf **9:00 Uhr** fest.
+
 6. Legen Sie **Startdatum und Uhrzeit** auf **Heute** fest.
+
 7. Legen Sie **Startdatum und Uhrzeit** auf ein **zukünftiges Datum** fest.
+
 8. Legen Sie Ihre **Zeitzone** fest.
 
-**Hinweis:** Da es sich um eine Übungsumgebung handelt, können Sie die Zeitzone auf Ihre bevorzugte Zeitzone festlegen. In einem realen Szenario legen Sie die Zeitzone basierend auf Ihrem/Speicherort der Datenquelle fest.
+   **Hinweis:** Da es sich um eine Übungsumgebung handelt, können Sie die Zeitzone auf Ihre bevorzugte Zeitzone festlegen. In einem realen Szenario legen Sie die Zeitzone basierend auf Ihrem/Speicherort der Datenquelle fest.
 
 9. Wählen Sie **Übernehmen** aus. 
+
 10.	Wählen Sie das **X** oben rechts im Dialogfeld aus, um es zu schließen.
+
+    ![](../media/lab-05/image133.jpg)
 
 11.	Wählen Sie im linken Bereich Ihren Fabric-Arbeitsbereich **FAIAD_\<Benutzername>** aus, um zur Startseite des Arbeitsbereichs zu navigieren.
 
-**Hinweis:** Im Bildschirm „Zeitplan“ ist keine Option verfügbar, um Sie zu benachrichtigen, ob der Vorgang erfolgreich war oder nicht (wie beim Dataflow-Zeitplan). Die Benachrichtigung kann durch Hinzufügen einer Aktivität in der Datenpipeline erfolgen. Wir führen diesen Schritt nicht in dieser Übung durch, da es sich um eine Übungsumgebung handelt.
+    **Hinweis:** Im Bildschirm „Zeitplan“ ist keine Option verfügbar, um Sie zu benachrichtigen, ob der Vorgang erfolgreich war oder nicht (wie beim Dataflow-Zeitplan). Die Benachrichtigung kann durch Hinzufügen einer Aktivität in der Datenpipeline erfolgen. Wir führen diesen Schritt nicht in dieser Übung durch, da es sich um eine Übungsumgebung handelt.
 
 Wir haben Aktualisierungen für die verschiedenen Datenquellen geplant. In der nächsten Übung werden wir ein semantisches Modell mit Beziehungen, Kennzahlen und anderen Modellierungsvorgängen durchführen.
  
 # Referenzen
+
 Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie in der Hilfe (?) Links zu praktischen Informationen.
+
+   ![](../media/lab-05/image136.png)
 
 Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit Microsoft Fabric.
 
