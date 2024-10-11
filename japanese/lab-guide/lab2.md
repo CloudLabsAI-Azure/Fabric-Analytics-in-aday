@@ -1,7 +1,9 @@
+# Microsoft Fabric - Fabric Analyst in a Day - ラボ 2
+
 
 ![](../media/lab-02/image001l2.png)
 
-## ​目次	
+# ​目次	
 - 概要
 
 - Fabric ライセンス
@@ -24,7 +26,7 @@
 - リファレンス
  
 
-## 概要 
+# 概要 
 
 今日は、Microsoft Fabric のさまざまな主要機能について学習します。この入門ワークショップでは、Fabric で利用できる製品のさまざまなエクスペリエンスやアイテムを紹介します。このワークショップを終了すると、レイクハウス、Dataflow Gen2、データ パイプライン、DirectLake などの使い方がわかります。 
 
@@ -33,9 +35,9 @@
 - Fabric ワークスペースの作成方法 
 - Lakehouse の作成方法 
 
-## Fabric ライセンス 
+# Fabric ライセンス 
 
-#### タスク 1: Microsoft Fabric 試用版ライセンスを有効にする 
+## タスク 1: Microsoft Fabric 試用版ライセンスを有効にする 
 
 1. **ブラウザー**を開いて、https://app.powerbi.com/ に移動します。ログイン ページが表示されます。 
 
