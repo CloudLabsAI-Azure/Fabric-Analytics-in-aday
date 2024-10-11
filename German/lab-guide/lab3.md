@@ -13,7 +13,6 @@
     - Aufgabe 4: Ansicht „Sales“ mithilfe einer Visual-Abfrage erstellen
     - Aufgabe 5: Ansicht „Product“ mithilfe einer Visual-Abfrage erstellen
 - Referenzen
-
  
 ## Einführung
 In unserem Szenario stammen die Verkaufsdaten aus dem ERP-System und werden in einer ADLS Gen2 gespeichert. Jeden Tag um 12 Uhr mittags werden die Daten aktualisiert. Wir müssen diese Daten transformieren, in Lakehouse erfassen und in unserem Modell verwenden.
