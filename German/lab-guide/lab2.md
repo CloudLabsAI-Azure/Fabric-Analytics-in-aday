@@ -291,13 +291,9 @@ Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten Funktionen
 Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit Microsoft Fabric.
 
 - Die vollständige [Ankündigung der allgemeinen Verfügbarkeit von Microsof t Fabric finden](https://aka.ms/Fabric-Hero-Blog-Ignite23) Sie im Blogbeitrag.
-
 - Fabric bei einer [interaktiven Vorstellung](https://aka.ms/Fabric-GuidedTour) kennenlernen
-
 - Zur [kostenlosen Testversion von Microsof t Fabric](https://aka.ms/try-fabric) anmelden
-
 - [Website von Microsoft Fabric](https://aka.ms/microsoft-fabric) besuchen
-
 - Mit Modulen von [Fabric Learning](https://aka.ms/learn-fabric) neue Qualifikationen erwerben
 - [Technische Dokumentation zu Fabric](https://aka.ms/fabric-docs) lesen
 - [Kostenloses E-Book zum Einstieg in Fabric](https://aka.ms/fabric-get-started-ebook) lesen
