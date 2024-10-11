@@ -566,21 +566,19 @@ ProductItem、ProductItemGroup、および ProductGroups の各テーブルを�
 
 12. 次のコードを詳細エディターに**貼り付けます。** 
 
-   let
-
-   Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter), 
-
-   #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}), 
-
-   #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter), 
-
-   #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}), 
-
-   #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice", "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"}) 
-
- in 
-
-  #"Choose columns" 
+   ```
+    let
+    Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
+    #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup",
+    {"StockGroupID"}, {"StockGroupID"}),
+    #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
+    #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
+    
+    #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice",
+    "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
+    in
+    #"Choose columns"
+``` 
 
 13. **OK** を選択して詳細エディターを閉じます。Power Query エディターに戻ります。 
 
