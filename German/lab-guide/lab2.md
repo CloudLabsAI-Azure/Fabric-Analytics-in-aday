@@ -26,7 +26,6 @@ Inhalt dieser Übung:
 - So erstellen Sie einen Fabric-Arbeitsbereich
 - So erstellen Sie ein Lakehouse
 
-
 ## Fabric-Lizenz
 
 ### Aufgabe 1: Lizenz für Testversion von Microsoft Fabric aktivieren

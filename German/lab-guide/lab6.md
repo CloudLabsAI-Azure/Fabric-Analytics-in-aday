@@ -54,7 +54,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 5. Fügen Sie die unten **stehende SQL-Abfrage** in das **Abfragefenster** ein. Mit dieser Abfrage werden die Units by Supplierenname ermittelt. Dazu wird die Tabelle „Sales“ mit den Tabellen „Product“ und „Supplier“ verknüpft.
 
-    ```sql
+    ```
     SELECT su.SupplierName, SUM(Quantity) as Units
     FROM dbo.Sales s
     JOIN dbo.Product p on p.StockItemID = s.StockItemID

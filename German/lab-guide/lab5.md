@@ -506,16 +506,17 @@ zweiten Mal fehlschlägt, müssen wir 15 Minuten/900 Sekunden warten, und es ern
 
 8. Das Dialogfeld Pipeline-Ausdrucks-Generator wird geöffnet. Geben Sie
 
-    ```markdown
-    @if(
-    greater(variables(‘varCounter’), 1),
-    if(equals(variables(‘varCounter’), 2), 
-        mul(variables(‘varWaitTime’),15 ), 
-        mul(variables(‘varWaitTime’), 0)
-    ),
-    mul(variables(‘varWaitTime’),5 ) ein.
-    )
-    ```
+     ```
+     @if(  
+       greater(variables('varCounter'), 1),  
+       if(  
+        equals(variables('varCounter'), 2),  
+        mul(variables('varWaitTime'), 15),  
+        mul(variables('varWaitTime'), 0)  
+       ),  
+       mul(variables('varWaitTime'), 5)  
+     )
+     ```
 
     Sie können diesen Ausdruck gerne eingeben oder die Funktionen über das Menü auswählen oder kopieren und einfügen.
 
