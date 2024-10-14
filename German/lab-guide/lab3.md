@@ -52,14 +52,11 @@ Die Verknüpfung wird verwendet, um eine Verknüpfung zum Zielort zu erstellen. 
 
     ![](../media/lab-03/image009.jpg)
 
-6. Sie müssen eine Verbindung zur ADLS Gen2-Datenquelle herstellen. Geben Sie unter
-**Verbindungseinstellungen -> URL** diesen Link
-https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales  ein.
+6. Sie müssen eine Verbindung zur ADLS Gen2-Datenquelle herstellen. Geben Sie unter **Verbindungseinstellungen -> URL** diesen Link https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales ein.
 
 7. Wählen Sie **Kontoschlüssel** aus der Dropdown-Liste „Authentifizierungsart“ aus.
 
-8. Kopieren Sie den **Zugriffsschlüssel für das Adls-Speicherkonto** von der Registerkarte
-**Umgebungsvariablen** (neben der Registerkarte „Übungsanleitung“) und fügen Sie ihn in das Textfeld **Kontoschlüssel** ein.
+8. Kopieren Sie den **Zugriffsschlüssel für das Adls-Speicherkonto** von der Registerkarte **Umgebungsvariablen** (neben der Registerkarte „Übungsanleitung“) und fügen Sie ihn in das Textfeld **Kontoschlüssel** ein.
  
 9. Wählen Sie unten rechts auf dem Bildschirm **Weiter** aus.
 
@@ -67,73 +64,73 @@ https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales  ein.
 
 10. Sie werden mit ADLS Gen2 verbunden und die Verzeichnisstruktur wird im linken Bereich angezeigt. Erweitern Sie **Delta-Parquet-Format-FY25**.
 
-11.	**Wählen** Sie die folgenden Verzeichnisse aus:
+11. **Wählen** Sie die folgenden Verzeichnisse aus:
 
-    a.	Application.Cities
+    a. Application.Cities
 
-    b.	Application.Countries
+    b. Application.Countries
 
-    c.	Application.StateProvinces
+    c. Application.StateProvinces
 
-    d.	DateDim
+    d. DateDim
 
-    e.	Sales.BuyingGroups
+    e. Sales.BuyingGroups
 
-    f.	Sales.Customers
+    f. Sales.Customers
 
-    g.	Sales.Invoices
+    g. Sales.Invoices
 
-    h.	Sales.InvoiceLines
+    h. Sales.InvoiceLines
 
-    i.	Warehouse.StockItems
+    i. Warehouse.StockItems
 
-    j.	Warehouse.StockGroups
+    j. Warehouse.StockGroups
 
-    k.	Warehouse.StockItemStockGroups
+    k. Warehouse.StockItemStockGroups
 
-**Hinweis**: „Sales.Invoices_May“ ist das einzige Verzeichnis, das **nicht** ausgewählt ist.
+    **Hinweis**: „Sales.Invoices_May“ ist das einzige Verzeichnis, das **nicht** ausgewählt ist.
  
-12.	Wählen Sie **Weiter** aus.
+12. Wählen Sie **Weiter** aus.
 
     ![](../media/lab-03/image015.jpg)
 
-13.	Sie werden zum nächsten Dialogfeld weitergeleitet, in dem Sie die Namen bearbeiten können. Wählen Sie das **Symbol „Bearbeiten“** unter Aktionen für **Application.Cities** aus.
+13. Sie werden zum nächsten Dialogfeld weitergeleitet, in dem Sie die Namen bearbeiten können. Wählen Sie das **Symbol „Bearbeiten“** unter Aktionen für **Application.Cities** aus.
 
-14.	Benennen Sie **Application.Cities in „Cities“** um.
+14. Benennen Sie **Application.Cities in „Cities“** um.
 
-15.	Aktivieren Sie das Häkchen neben dem Namen, um die Änderung zu speichern.
+15. Aktivieren Sie das Häkchen neben dem Namen, um die Änderung zu speichern.
 
     ![](../media/lab-03/image018.jpg)
 
-16.	Benennen Sie auch die Namen der Verknüpfungen wie folgt um:
+16. Benennen Sie auch die Namen der Verknüpfungen wie folgt um:
 
-    a.	Application.Countries in **Countries**
+    a. Application.Countries in **Countries**
 
-    b.	Application.StateProvinces in **States**
+    b. Application.StateProvinces in **States**
 
-    c.	DateDim in **Date**
+    c. DateDim in **Date**
 
-    d.	Sales.BuyingGroups in **BuyingGroups**
+    d. Sales.BuyingGroups in **BuyingGroups**
 
-    e.	Sales.Customers in **Customers**
+    e. Sales.Customers in **Customers**
 
-    f.	Sales.InvoiceLines in **InvoiceLineItems**
+    f. Sales.InvoiceLines in **InvoiceLineItems**
 
-    g.	Sales.Invoices in **Invoices**
+    g. Sales.Invoices in **Invoices**
 
-    h.	Warehouse.StockGroups in **ProductGroups**
+    h. Warehouse.StockGroups in **ProductGroups**
 
-    i.	Warehouse.StockItemStockGroups in **ProductItemGroup**
+    i. Warehouse.StockItemStockGroups in **ProductItemGroup**
 
-    j.	Warehouse.StockItems in **ProductItem**
+    j. Warehouse.StockItems in **ProductItem**
 
     **Hinweis**: Überprüfen Sie die Namen. Ein Tippfehler kann während der Übung zu Fehlern führen.
 
-17.	Wählen Sie **Erstellen** aus, um die Verknüpfung zu erstellen.
+17. Wählen Sie **Erstellen** aus, um die Verknüpfung zu erstellen.
 
     ![](../media/lab-03/image021.jpg)
 
-18.	Beachten Sie, dass alle Verknüpfungen als Tabellen erstellt werden. Wählen Sie die Tabelle **BuyingGroups** aus, und beachten Sie, dass im Datenbereich eine Vorschau der Daten angezeigt wird.
+18. Beachten Sie, dass alle Verknüpfungen als Tabellen erstellt werden. Wählen Sie die Tabelle **BuyingGroups** aus, und beachten Sie, dass im Datenbereich eine Vorschau der Daten angezeigt wird.
 
     ![](../media/lab-03/image024.png)
  
@@ -186,7 +183,7 @@ Das nächste Schritt besteht darin, die Daten zu transformieren, damit wir ein s
 
 11.	Klicken Sie in der **Datenansicht** (unterer Bereich) auf den **Doppelpfeil** neben der Spalte **States** (letzte Spalte rechts).
 
-12.	Es wird ein Bereich geöffnet. **Wählen** Sie die folgenden Spalten aus:
+12. Es wird ein Bereich geöffnet. **Wählen** Sie die folgenden Spalten aus:
 
     a. StateProvinceCode
 
@@ -196,31 +193,31 @@ Das nächste Schritt besteht darin, die Daten zu transformieren, damit wir ein s
 
     d. SalesTerritory
  
-13.	Wählen Sie **OK** aus.
+13. Wählen Sie **OK** aus.
 
     ![](../media/lab-03/image045.jpg)
 
     Wir müssen jetzt die Abfrage „Countries“ zusammenführen.
 
-14.	Wählen Sie bei ausgewählter Merge-Abfrage im Menüband **Start -> Merge-Abfragen -> Merge- Abfragen** aus.
+14. Wählen Sie bei ausgewählter Merge-Abfrage im Menüband **Start -> Merge-Abfragen -> Merge- Abfragen** aus.
 
     ![](../media/lab-03/image048.jpg)
 
-15.	Das Dialogfeld „Merge-Abfrage“ wird geöffnet. Wählen Sie in der **rechten zusammenzuführenden Tabelle Countries** aus.
+15. Das Dialogfeld „Merge-Abfrage“ wird geöffnet. Wählen Sie in der **rechten zusammenzuführenden Tabelle Countries** aus.
 
-16.	Wählen Sie **CountryID**-Spalten aus beiden Tabellen aus. Wir führen eine Verknüpfung über diese Spalte aus.
+16. Wählen Sie **CountryID**-Spalten aus beiden Tabellen aus. Wir führen eine Verknüpfung über diese Spalte aus.
 
-17.	Wählen Sie **Innerer** als **Art des Joins** aus.
+17. Wählen Sie **Innerer** als **Art des Joins** aus.
  
-18.	Wählen Sie **OK** aus.
+18. Wählen Sie **OK** aus.
 
     ![](../media/lab-03/image051.jpg)
 
     Wir benötigen einige Spalten aus „Countries“.
 
-19.	Klicken Sie in der **Datenansicht** (unterer Bereich) auf den **Doppelpfeil** neben der Spalte **Countries**.
+19. Klicken Sie in der **Datenansicht** (unterer Bereich) auf den **Doppelpfeil** neben der Spalte **Countries**.
 
-20.	Es wird ein Bereich geöffnet. **Wählen** Sie die folgenden Spalten aus:
+20. Es wird ein Bereich geöffnet. **Wählen** Sie die folgenden Spalten aus:
 
     a. CountryName
 
@@ -238,17 +235,17 @@ Das nächste Schritt besteht darin, die Daten zu transformieren, damit wir ein s
 
     h. Subregion
 
-21.	Wählen Sie **OK** aus.
+21. Wählen Sie **OK** aus.
 
     ![](../media/lab-03/image054.jpg)
 
     Wir benötigen nicht alle Spalten. Wir wählen nur die aus, die wir benötigen.
  
-22.	Wählen Sie bei Merge-Abfrage im Menüband **Start -> Spalten auswählen-> Spalten auswählen** aus.
+22. Wählen Sie bei Merge-Abfrage im Menüband **Start -> Spalten auswählen-> Spalten auswählen** aus.
 
     ![](../media/lab-03/image057.jpg)
 
-23.	Das Dialogfeld „Spalten auswählen“ wird geöffnet. **Deaktivieren** Sie die folgenden Spalten.
+23. Das Dialogfeld „Spalten auswählen“ wird geöffnet. **Deaktivieren** Sie die folgenden Spalten.
 
     a. StateProvinceID
 
@@ -262,19 +259,19 @@ Das nächste Schritt besteht darin, die Daten zu transformieren, damit wir ein s
 
     f. CountryID
 
-24.	Wählen Sie **OK** aus.
+24. Wählen Sie **OK** aus.
 
     ![](../media/lab-03/image060.png)
 
     Beachten Sie, dass der Prozess dem von Power Query ähnelt. Alle Schritte sind sowohl im Bereich „Angewendete Schritte“ rechts als auch in der visuellen Ansicht aufgezeichnet. Wir benennen „Merge-Abfrage“ und „Laden aktivieren“ um, damit die Daten aus dieser Abfrage geladen werden.
 
-25.	**Klicken Sie im Bereich „Abfragen“ (links) mit der rechten Maustaste auf „Merge-Abfrage“.** Wählen Sie **Umbenennen** aus, und benennen Sie die Abfrage in **Geo** um.
+25. **Klicken Sie im Bereich „Abfragen“ (links) mit der rechten Maustaste auf „Merge-Abfrage“.** Wählen Sie **Umbenennen** aus, und benennen Sie die Abfrage in **Geo** um.
  
-26.	**Klicken Sie im Bereich „Abfragen“ (links) mit der 1rechten Maustaste auf Geo 1-Abfrage.** Wählen Sie **Laden aktivieren** aus, um diese Abfrage zu aktivieren.
+26. **Klicken Sie im Bereich „Abfragen“ (links) mit der 1rechten Maustaste auf Geo 1-Abfrage.** Wählen Sie **Laden aktivieren** aus, um diese Abfrage zu aktivieren.
 
-27.	Stellen Sie sicher, dass die Abfragen „Cities“, „States“ und „Countries“ **deaktiviert** sind.
+27. Stellen Sie sicher, dass die Abfragen „Cities“, „States“ und „Countries“ **deaktiviert** sind.
 
-28.	Wählen Sie **Speichern** aus.
+28. Wählen Sie **Speichern** aus.
 
     ![](../media/lab-03/image063.jpg)
 
@@ -282,21 +279,21 @@ Das nächste Schritt besteht darin, die Daten zu transformieren, damit wir ein s
 
     **Hinweis**: Alle Schritte, die wir mit dem Power Query-Editor ausgeführt haben, können auch mit dem Editor für Visual-Abfragen ausgeführt werden.
 
-29.	Wählen Sie im Menü des Editors für Visual-Abfragen **Als Ansicht speichern** aus.
+29. Wählen Sie im Menü des Editors für Visual-Abfragen **Als Ansicht speichern** aus.
 
     ![](../media/lab-03/image066.png)
 
     Das Dialogfeld „Als Ansicht speichern“ wird geöffnet. Beachten Sie, dass die SQL-Abfrage verfügbar ist. Sie können sie bei Bedarf überprüfen.
 
-30.	Geben Sie als **Ansichtsname Geo** ein.
+30. Geben Sie als **Ansichtsname Geo** ein.
  
-31.	Wählen Sie **OK** aus, um die Ansicht zu speichern.
+31. Wählen Sie **OK** aus, um die Ansicht zu speichern.
 
     ![](../media/lab-03/image069.png)
 
     Sie erhalten eine Benachrichtigung, nachdem die Ansicht gespeichert wurde.
 
-32.	Erweitern Sie im Explorer-Bereich (links) **Ansichten**. Wir haben die neu erstellte Ansicht „Geo“.
+32. Erweitern Sie im Explorer-Bereich (links) **Ansichten**. Wir haben die neu erstellte Ansicht „Geo“.
 
     ![](../media/lab-03/image072.png)
  
@@ -333,71 +330,71 @@ Wir erstellen die Ansicht „Reseller“, indem wir die Tabelle „Customers“ 
 
 10.	Es wird ein Bereich geöffnet. **Wählen Sie die Spalte BuyingGroupName** aus.
 
-11.	Wählen Sie **OK** aus.
+11. Wählen Sie **OK** aus.
 
     ![](../media/lab-03/image084.jpg)
 
     Wir benötigen nicht alle Spalten. Wir wählen nur die aus, die wir benötigen.
  
-12.	Wählen Sie im Menü der Visual-Abfrage **Spalten verwalten -> Spalten auswählen** aus.
+12. Wählen Sie im Menü der Visual-Abfrage **Spalten verwalten -> Spalten auswählen** aus.
 
     ![](../media/lab-03/image087.png)
 
-13.	Das Dialogfeld „Spalten auswählen“ wird geöffnet. **Wählen Sie** die folgenden Spalten aus.
+13. Das Dialogfeld „Spalten auswählen“ wird geöffnet. **Wählen Sie** die folgenden Spalten aus.
 
-    a.	ResellerID
+    a. ResellerID
 
-    b.	ResellerName
+    b. ResellerName
 
-    c.	PostalCityID
+    c. PostalCityID
 
-    d.	PhoneNumber
+    d. PhoneNumber
 
-    e.	FaxNumber
+    e. FaxNumber
 
-    f.	WebsiteURL
+    f. WebsiteURL
 
-    g.	DeliveryAddressLine1
+    g. DeliveryAddressLine1
 
-    h.	DeliveryAddressLine2
+    h. DeliveryAddressLine2
 
-    i.	DeliveryPostalCode
+    i. DeliveryPostalCode
 
-    j.	PostalAddressLine1
+    j. PostalAddressLine1
 
-    k.	PostalAddressLine2
+    k. PostalAddressLine2
 
-    l.	PostalPostalCode
+    l. PostalPostalCode
 
-    m.	BuyingGroupName
+    m. BuyingGroupName
 
-14.	Wählen Sie **OK** aus.
+14. Wählen Sie **OK** aus.
 
     ![](../media/lab-03/image090.png)
 
-15.	Wir benennen die Spalte „BuyingGroupName“ um. **Doppelklicken Sie in der Datenansicht auf die Spaltenüberschrift „BuyingGroupName“**, damit sie bearbeitet werden kann.
+15. Wir benennen die Spalte „BuyingGroupName“ um. **Doppelklicken Sie in der Datenansicht auf die Spaltenüberschrift „BuyingGroupName“**, damit sie bearbeitet werden kann.
  
-16.	**Benennen** Sie die Spalte in **ResellerCompany** um.
+16. **Benennen** Sie die Spalte in **ResellerCompany** um.
 
     ![](../media/lab-03/image093.jpg)
 
     Beachten Sie, dass in der Tabelle „Customers“ alle Schritte dokumentiert sind. Jetzt speichern wir diese Ansicht.
 
-17.	Wählen Sie im Menü der Visual-Abfrage **Als Ansicht speichern** aus.
+17. Wählen Sie im Menü der Visual-Abfrage **Als Ansicht speichern** aus.
 
     ![](../media/lab-03/image096.png)
 
     Das Dialogfeld „Als Ansicht speichern“ wird geöffnet. Beachten Sie, dass die SQL-Abfrage verfügbar ist. Sie können sie bei Bedarf überprüfen.
 
-18.	Geben Sie als **Ansichtsname Reseller** ein.
+18. Geben Sie als **Ansichtsname Reseller** ein.
 
-19.	Wählen Sie **OK** aus, um die Ansicht zu speichern.
+19. Wählen Sie **OK** aus, um die Ansicht zu speichern.
 
     ![](../media/lab-03/image099.png)
 
-Sie erhalten eine Benachrichtigung, nachdem die Ansicht gespeichert wurde.
+    Sie erhalten eine Benachrichtigung, nachdem die Ansicht gespeichert wurde.
  
-20.	Erweitern Sie im Explorer-Bereich (links) **Ansichten**. Wir haben die neu erstellte Ansicht „Reseller“.
+20. Erweitern Sie im Explorer-Bereich (links) **Ansichten**. Wir haben die neu erstellte Ansicht „Reseller“.
 
     ![](../media/lab-03/image102.png)
 
@@ -432,53 +429,53 @@ Visual-Abfrage keine leere Abfrage erstellt werden kann. Lassen Sie uns diese Me
 
 9. Wählen Sie **Innerer** als **Art des Joins** aus.
  
-10.	Wählen Sie **OK** aus.
+10. Wählen Sie **OK** aus.
 
     ![](../media/lab-03/image111.jpg)
 
-Wir kopieren den Code aus Power BI Desktop, und fügen ihn über „Erweiterter Editor“ ein.
+    Wir kopieren den Code aus Power BI Desktop, und fügen ihn über „Erweiterter Editor“ ein.
 
-11.	Öffnen Sie **FAIAD.pbix** im Ordner **Report** auf dem Desktop Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
+11. Öffnen Sie **FAIAD.pbix** im Ordner **Report** auf dem Desktop Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
 
-12.	Wählen Sie im Menüband **Start > Daten transformieren** aus. Das Power Query-Fenster wird geöffnet. Wie Sie in der vorherigen Übung festgestellt haben, sind die Abfragen im linken Bereich nach Datenquelle organisiert.
+12. Wählen Sie im Menüband **Start > Daten transformieren** aus. Das Power Query-Fenster wird geöffnet. Wie Sie in der vorherigen Übung festgestellt haben, sind die Abfragen im linken Bereich nach Datenquelle organisiert.
 
     ![](../media/lab-03/image114.jpg)
 
-13.	Wählen Sie links unter dem Ordner „ADLSData“ die Abfrage **Sales** aus.
+13. Wählen Sie links unter dem Ordner „ADLSData“ die Abfrage **Sales** aus.
  
-14.	Wählen Sie im Menüband die Registerkarte **Start -> Erweiterter Editor** aus. Das Dialogfenster „Erweiterter Editor“ wird geöffnet.
+14. Wählen Sie im Menüband die Registerkarte **Start -> Erweiterter Editor** aus. Das Dialogfenster „Erweiterter Editor“ wird geöffnet.
 
     ![](../media/lab-03/image117.jpg)
 
-15.	**Wählen Sie Code aus Zeile 3** (#"Expanded Invoice" …) bis zur letzten Codezeile aus.
+15. **Wählen Sie Code aus Zeile 3** (#"Expanded Invoice" …) bis zur letzten Codezeile aus.
 
-16.	**Klicken Sie mit der rechten Maustaste**, und wählen Sie **Kopieren** aus.
+16. **Klicken Sie mit der rechten Maustaste**, und wählen Sie **Kopieren** aus.
 
-17.	Wählen Sie **Abbrechen** aus, um „Erweiterter Editor“ zu schließen.
+17. Wählen Sie **Abbrechen** aus, um „Erweiterter Editor“ zu schließen.
 
     ![](../media/lab-03/image120.jpg)
 
-18.	**Navigieren Sie zurück zum Browser**, in dem der Power Query-Editor geöffnet ist.
+18. **Navigieren Sie zurück zum Browser**, in dem der Power Query-Editor geöffnet ist.
 
-19.	Stellen Sie sicher, dass Sie die Abfrage **Merge** ausgewählt haben.
+19. Stellen Sie sicher, dass Sie die Abfrage **Merge** ausgewählt haben.
  
-20.	Wählen Sie im Menüband die Registerkarte **Start -> Erweiterter Editor** aus. Das Dialogfenster „Erweiterter Editor“ wird geöffnet.
+20. Wählen Sie im Menüband die Registerkarte **Start -> Erweiterter Editor** aus. Das Dialogfenster „Erweiterter Editor“ wird geöffnet.
 
     ![](../media/lab-03/image123.jpg)
 
-21.	Fügen Sie am **Ende von Zeile 2 ein Komma** hinzu (Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner).
+21. Fügen Sie am **Ende von Zeile 2 ein Komma** hinzu (Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner).
 
-22.	Klicken Sie auf die **Eingabetaste**, um eine neue Zeile zu beginnen.
+22. Klicken Sie auf die **Eingabetaste**, um eine neue Zeile zu beginnen.
 
-23.	Geben Sie auf Ihrer Tastatur **STRG+V** ein, um den Code einzufügen, den Sie aus Power BI Desktop kopiert haben.
+23. Geben Sie auf Ihrer Tastatur **STRG+V** ein, um den Code einzufügen, den Sie aus Power BI Desktop kopiert haben.
 
     **Hinweis**: Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den Schieberegler, um das **VM Native Clipboard zu aktivieren**. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben, können Sie diese Option deaktivieren.
 
     ![](../media/lab-03/image126.jpg)
 
-24.	Markieren Sie die letzten beiden Codezeilen (in der Quelle) und **löschen** Sie sie.
+24. Markieren Sie die letzten beiden Codezeilen (in der Quelle) und **löschen** Sie sie.
  
-25.	Wählen Sie **OK** aus, um die Änderungen zu speichern.
+25. Wählen Sie **OK** aus, um die Änderungen zu speichern.
 
     ![](../media/lab-03/image129.jpg)
 
@@ -498,27 +495,27 @@ Wir kopieren den Code aus Power BI Desktop, und fügen ihn über „Erweiterter 
     #"Removed Columns"
     ```
 
-26.	Sie werden zum Power Query-Editor weitergeleitet. Im linken Bereich „Abfragen“ müssen Sie **kauf die „Merge-Abfrage doppelklicken**, um sie umzubenennen.
+26. Sie werden zum Power Query-Editor weitergeleitet. Im linken Bereich „Abfragen“ müssen Sie **kauf die „Merge-Abfrage doppelklicken**, um sie umzubenennen.
 
-27.	**Benennen** Sie Merge-Abfrage in **Sales** um.
+27. **Benennen** Sie Merge-Abfrage in **Sales** um.
 
-28.	Klicken Sie mit der rechten Maustaste auf die Abfrage „Sales“, und wählen Sie **Laden aktivieren** aus, damit die Abfrage geladen werden kann.
+28. Klicken Sie mit der rechten Maustaste auf die Abfrage „Sales“, und wählen Sie **Laden aktivieren** aus, damit die Abfrage geladen werden kann.
 
     ![](../media/lab-03/image132.png)
 
-29.	Wählen Sie **Speichern** aus, um das Power Query-Dialogfeld zu speichern und zu schließen. Die werden zur visuellen Abfrage weitergeleitet.
+29. Wählen Sie **Speichern** aus, um das Power Query-Dialogfeld zu speichern und zu schließen. Die werden zur visuellen Abfrage weitergeleitet.
 
-30.	Wählen Sie im Menü der Visual-Abfrage **Als Ansicht speichern** aus. Das Dialogfeld „Als Ansicht speichern“ wird geöffnet. Beachten Sie, dass die SQL-Abfrage verfügbar ist. Sie können sie bei Bedarf überprüfen.
+30. Wählen Sie im Menü der Visual-Abfrage **Als Ansicht speichern** aus. Das Dialogfeld „Als Ansicht speichern“ wird geöffnet. Beachten Sie, dass die SQL-Abfrage verfügbar ist. Sie können sie bei Bedarf überprüfen.
 
-31.	Geben Sie als **Ansichtsname Sales** ein.
+31. Geben Sie als **Ansichtsname Sales** ein.
 
-32.	Wählen Sie **OK** aus, um die Ansicht zu speichern.
+32. Wählen Sie **OK** aus, um die Ansicht zu speichern.
 
     ![](../media/lab-03/image135.png)
 
-Sie erhalten eine Benachrichtigung, nachdem die Ansicht gespeichert wurde.
+    Sie erhalten eine Benachrichtigung, nachdem die Ansicht gespeichert wurde.
  
-33.	Erweitern Sie im Explorer-Bereich (links) **Ansichten**. Wir haben die neu erstellte Ansicht „Sales“.
+33. Erweitern Sie im Explorer-Bereich (links) **Ansichten**. Wir haben die neu erstellte Ansicht „Sales“.
 
     ![](../media/lab-03/image138.png)
 
@@ -550,13 +547,13 @@ Wir erstellen die Ansicht „Product“, die durch das Zusammenführen der Tabel
 
     ![](../media/lab-03/image147.jpg)
 
-10.	Wählen Sie bei ausgewählter Merge-Abfrage im Menüband **Start -> Erweiterter** Editor aus. Das Dialogfenster „Erweiterter Editor“ wird geöffnet.
+10. Wählen Sie bei ausgewählter Merge-Abfrage im Menüband **Start -> Erweiterter** Editor aus. Das Dialogfenster „Erweiterter Editor“ wird geöffnet.
 
     ![](../media/lab-03/image150.jpg)
 
-11.	**Wählen Sie den gesamten Code** in „Erweiterter Editor“ aus, und **löschen** Sie ihn.
+11. **Wählen Sie den gesamten Code** in „Erweiterter Editor“ aus, und **löschen** Sie ihn.
 
-12.	Fügen Sie den folgenden Code in „Erweiterter Editor“ ein.
+12. Fügen Sie den folgenden Code in „Erweiterter Editor“ ein.
 
     ```
     let
@@ -571,31 +568,32 @@ Wir erstellen die Ansicht „Product“, die durch das Zusammenführen der Tabel
     in
     #"Choose columns"
     ```
-13.	Wählen Sie **OK** aus, um „Erweiterter Editor“ zu schließen. Sie werden zum Power Query-Editor weitergeleitet.
+
+13. Wählen Sie **OK** aus, um „Erweiterter Editor“ zu schließen. Sie werden zum Power Query-Editor weitergeleitet.
 
     ![](../media/lab-03/image153.jpg)
  
-14.	Im linken Bereich „Abfragen“ müssen Sie **kauf die „Merge-Abfrage doppelklicken**, um sie umzubenennen.
+14. Im linken Bereich „Abfragen“ müssen Sie **kauf die „Merge-Abfrage doppelklicken**, um sie umzubenennen.
 
-15.	**Benennen** Sie Merge-Abfrage in **Product** um.
+15. **Benennen** Sie Merge-Abfrage in **Product** um.
 
-16.	Klicken Sie mit der rechten Maustaste auf die Abfrage „Product“, und wählen Sie **Laden aktivieren** aus, damit die Abfrage geladen werden kann.
+16. Klicken Sie mit der rechten Maustaste auf die Abfrage „Product“, und wählen Sie **Laden aktivieren** aus, damit die Abfrage geladen werden kann.
 
-17.	Wählen Sie **Speichern** aus, um das Power Query-Dialogfeld zu speichern und zu schließen. Die werden zur visuellen Abfrage weitergeleitet.
+17. Wählen Sie **Speichern** aus, um das Power Query-Dialogfeld zu speichern und zu schließen. Die werden zur visuellen Abfrage weitergeleitet.
 
     ![](../media/lab-03/image156.jpg)
 
-18.	Wählen Sie im Menü der Visual-Abfrage **Als Ansicht speichern** aus. Das Dialogfeld „Als Ansicht speichern“ wird geöffnet. Beachten Sie, dass die SQL-Abfrage verfügbar ist. Sie können sie bei Bedarf überprüfen.
+18. Wählen Sie im Menü der Visual-Abfrage **Als Ansicht speichern** aus. Das Dialogfeld „Als Ansicht speichern“ wird geöffnet. Beachten Sie, dass die SQL-Abfrage verfügbar ist. Sie können sie bei Bedarf überprüfen.
 
-19.	Geben Sie als **Ansichtsname Product** ein.
+19. Geben Sie als **Ansichtsname Product** ein.
 
-20.	Wählen Sie **OK** aus, um die Ansicht zu speichern.
+20. Wählen Sie **OK** aus, um die Ansicht zu speichern.
 
     ![](../media/lab-03/image159.png)
 
     Sie erhalten eine Benachrichtigung, nachdem die Ansicht gespeichert wurde.
  
-21.	Erweitern Sie im Explorer-Bereich (links) **Ansichten**. Wir haben die neu erstellte Ansicht
+21. Erweitern Sie im Explorer-Bereich (links) **Ansichten**. Wir haben die neu erstellte Ansicht
 „Product“.
 
     ![](../media/lab-03/image162.jpg)
