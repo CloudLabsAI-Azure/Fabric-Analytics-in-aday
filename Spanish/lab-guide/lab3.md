@@ -500,7 +500,7 @@ Vamos a crear la vista Sales, que se crea combinando la tabla InvoiceLineItems e
 
 32. Seleccione **Aceptar** para guardar la vista. 
 
-    ![](../media/lab-03/image135.png)
+    ![](../media/lab-03/image-135.png)
  
     Recibirá una alerta una vez que se guarde la vista. 
 
