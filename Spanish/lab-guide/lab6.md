@@ -1,5 +1,8 @@
+# Microsoft Fabric - Fabric Analyst in a Day - Laboratorio 6
 
-## Contenido
+![](../media/lab-06/image000.png)
+
+# Contenido
 
 - Presentación
 - Almacén de lago de datos: análisis de datos
@@ -13,7 +16,7 @@
   - Tarea 7: Sección opcional: crear medidas	
 - Referencias	
 
-## Presentación 
+# Presentación 
 
 Tenemos datos de diferentes orígenes ingeridos en el almacén de lago de datos. En esta práctica de laboratorio, trabajará con el modelo semántico. Normalmente, hacemos actividades de modelado como crear relaciones, agregar medidas, etc. en Power BI Desktop. Aquí aprenderemos cómo hacer estas actividades de modelado en el servicio. 
 
@@ -22,24 +25,28 @@ Al final de este laboratorio, habrá aprendido:
 - Uso de la vista SQL en el punto de conexión de análisis SQL
 - Crear un modelo semántico
 
-## Almacén de lago de datos: análisis de datos
+# Almacén de lago de datos: análisis de datos
 
-### Tarea 1: Consultar datos con SQL
+## Tarea 1: Consultar datos con SQL
 
 1. Volvamos al área de trabajo de Fabric, **FAIAD_<username>**, que creó en el Laboratorio 2, Tarea 9.
 
 2. Si lo desea, **Minimice el flujo** de tareas para ver la lista completa de elementos.
 
 3. Verá tres tipos de lh_FAIAD: almacén de lago de datos, modelo semántico y punto de conexión SQL. Exploramos el almacén de lago de datos y creamos consultas visuales mediante el punto de conexión de análisis SQL en un laboratorio anterior. Seleccione la opción Punto de **conexión de análisis SQL lh_FAIAD** para continuar explorando esta opción. Esto le llevará a la **vista de SQL** del explorador.
+
+    ![](../media/lab-06/image005.png)
   
-Si desea explorar los datos antes de crear un modelo de datos, puede utilizar SQL para hacerlo. Hay dos opciones disponibles para usar SQL. La primera opción es la consulta visual, que utilizamos en el laboratorio anterior. La opción 2 es escribir código TSQL. Se trata de una opción favorable para los desarrolladores. Exploremos más. 
+   Si desea explorar los datos antes de crear un modelo de datos, puede utilizar SQL para hacerlo. Hay dos opciones disponibles para usar SQL. La primera opción es la consulta visual, que utilizamos en el laboratorio anterior. La opción 2 es escribir código TSQL. Se trata de una opción favorable para los desarrolladores. Exploremos más. 
 
-Supongamos que desea conocer rápidamente las Units vendidas por el proveedor mediante SQL.
+    Supongamos que desea conocer rápidamente las Units vendidas por el proveedor mediante SQL.
 
-En el almacén de lago de datos, punto de conexión de análisis SQL, observe que en el panel izquierdo puede ver las tablas. Si expande las tablas, puede ver las columnas que componen la tabla. Además, hay opciones para crear vistas, funciones y procedimientos almacenados de SQL. Si tiene experiencia en SQL, no dude en explorar estas opciones. Intentemos escribir una consulta SQL simple.
+    En el almacén de lago de datos, punto de conexión de análisis SQL, observe que en el panel izquierdo puede ver las tablas. Si expande las tablas, puede ver las columnas que componen la tabla. Además, hay opciones para crear vistas, funciones y procedimientos almacenados de SQL. Si tiene experiencia en SQL, no dude en explorar estas opciones. Intentemos escribir una consulta SQL simple.
 
 4. Desde el **menú superior**, seleccione **Nueva consulta SQL** o desde la **parte inferior izquierda panel**, seleccione **Consulta**. Esto le llevará a la vista de consultas de SQL.
- 
+
+    ![](../media/lab-06/image008.png)
+
 5. Copie la **siguiente consulta de SQL** en la **ventana de consultas**. Esta consulta devolverá las unidades por nombre del proveedor. Para conseguirlo, se une la tabla Sales con las tablas Product y Supplier.
 
    ```
@@ -56,84 +63,106 @@ En el almacén de lago de datos, punto de conexión de análisis SQL, observe qu
 
 8. En el panel del **explorador izquierdo**, en la sección **Queries**, observe que esta consulta se guarda en **Mis consultas** como **SQL query 1**. Esto proporciona una opción para cambiar el nombre de la consulta y guardarla para uso futuro. También hay una opción para ver las consultas que se comparten con usted mediante la carpeta **Consultas compartidas**.
 
-**Nota:** las consultas visuales que había creado en laboratorios anteriores también están disponibles en la carpeta Mis consultas.
- 
-### Tarea 2: visualizar el resultado de T-SQL
+    **Nota:** las consultas visuales que había creado en laboratorios anteriores también están disponibles en la carpeta Mis consultas.
+
+    ![](../media/lab-06/image011.png)
+
+## Tarea 2: visualizar el resultado de T-SQL
 
 1. También podemos visualizar el resultado de esta consulta. **Resalte la consulta** en el panel de consulta 
 
 2. En el menú del panel Resultados, seleccione **Explorar estos datos (versión preliminar) -> Visualización de resultados**.
- 
+
+    ![](../media/lab-06/image014.png)
+
 3. Se abrirá el cuadro de diálogo **Visualización de resultados**. Seleccione **Continuar**.
 
-Se abre el cuadro de diálogo **Visualización de resultados** que se parece a la vista de informe de Power BI Desktop. Esto tiene todas las características disponibles en la vista de informe de Power BI Desktop, puede formatear la página, seleccionar diferentes visuales, formatear visuales, añadir filtros, etc. No exploraremos estas opciones en este curso.
+    Se abre el cuadro de diálogo **Visualización de resultados** que se parece a la vista de informe de Power BI Desktop. Esto tiene todas las características disponibles en la vista de informe de Power BI Desktop, puede formatear la página, seleccionar diferentes visuales, formatear visuales, añadir filtros, etc. No exploraremos estas opciones en este curso.
 
 4. Expanda el panel Datos y expanda **SQL query 1**.
 
 5. Seleccione los **campos Supplier_Name y Units**. Se crea un objeto visual de tabla.
- 
+
+    ![](../media/lab-06/image017.png)
+
 6. En la sección **Visualizaciones**, cambie el tipo de objeto visual mediante la selección del **gráfico de Columna apilada**.
 
 7. Seleccione **Guardar como informe** en la parte inferior derecha de la pantalla.
- 
+
+    ![](../media/lab-06/image020.png)
+
 8. Se abre el cuadro de diálogo Guardar el informe. Escriba **Units by Supplier** en el cuadro de texto **Especifique un nombre para el informe**.
 
 9. Asegúrese de que el área de trabajo de destino es su área de trabajo de Fabric **FAIAD<username>**
 
 10. Seleccione **Guardar**.
+
+    ![](../media/lab-06/image023.png)
  
     Se le dirigirá de nuevo a la pantalla de consulta SQL.
 
-## Almacén de lago de datos: modelado semántico
+# Almacén de lago de datos: modelado semántico
 
-### Tarea 3: Crear un modelo semántico
+## Tarea 3: Crear un modelo semántico
 
 1. En el **panel inferior**, seleccione **Modelo**. Verá que el panel central se parece a la vista Modelo que vemos en Power BI Desktop. 
- 
+
+    ![](../media/lab-06/image026.png)
+
    Este es el modelo predeterminado que crea el almacén de lago de datos. Sin embargo, existen algunas limitaciones con el modelo predeterminado (como la capacidad de dar formato a medidas, etc.). Además, solo necesitamos un subconjunto de las tablas en nuestro modelo. Así que crearemos un nuevo modelo semántico.
 
 2. En el menú, en la parte superior derecha,** seleccione la flecha junto al punto de conexión de análisis SQL**.
 
 3. **Seleccione el Lakehouse** para navegar a la vista del almacén de lago de datos.
- 
+
+    ![](../media/lab-06/image029.png)
+
 4. En el menú superior, seleccione **Inicio -> Nuevo modelo semántico**.
 
 5. Se abre el cuadro de diálogo Nuevo modelo semántico. Escriba **sm_FAIAD** como nombre del modelo semántico de Direct Lake.
 
 6. Tenemos la opción de seleccionar un subconjunto de las tablas de manera predeterminada. Recuerde que creamos vistas en el laboratorio anterior. Queremos incluir estas vistas en el modelo. **Haga clic** en el **icono** en la **barra de búsqueda** y seleccione **Mostrar vistas**. Ahora tenemos la opción de ver y seleccionar vistas.
- 
+
+    ![](../media/lab-06/image032.png)
+
 7. **Seleccione** las siguientes tablas/vistas:
 
-    a. Date
+    a. **Date**
 
-    b. People
+    b. **People**
 
-    c. Customer
+    c. **Customer**
 
-    d. PO
+    d. **PO**
 
-    e. Supplier
+    e. **Supplier**
 
-    f. Geo
+    f. **Geo**
 
-    g. Reseller
+    g. **Reseller**
 
-    h. Sales
+    h. **Sales**
 
-    i. Product
+    i. **Product**
 
 8. Seleccione **Confirmar**.
- 
-### Tarea 4: Crear relaciones
+
+    ![](../media/lab-06/image035.png)
+
+## Tarea 4: Crear relaciones
 
 Navegará al nuevo modelo semántico con las tablas seleccionadas. Asegúrese de reorganizar las tablas según sea necesario. Observe que algunas de las tablas (Geo, Reseller, Sales y Product) tienen un signo de advertencia en la parte superior derecha de la tabla. Esto se debe a que son vistas. Todos los objetos visuales creados con campos de estas vistas estarán en modo Direct Query y no en modo Direct Lake. 
 
 **Nota:** El modo Direct Lake es más rápido que el modo Direct Query. 
- 
+
+![](../media/lab-06/image038.png)
+
 El primer paso es crear relaciones entre estas tablas.
 
 1. Creemos una relación entre las tablas Sales y Reseller. Seleccione **ResellerID** de la tabla **Sales** y arrástrelo a **ResellerID** en la tabla **Reseller**.
- 
+
+    ![](../media/lab-06/image041.png)
+
 2. Se abre el cuadro de diálogo Nueva relación. Asegúrese de que la **Desde la tabla** sea **Sales** y que la **Columna** sea **ResellerID**.
 
 3. Asegúrese de que la **A la tabla** sea **Reseller** y que la **Columna** sea **ResellerID**.
@@ -143,7 +172,9 @@ El primer paso es crear relaciones entre estas tablas.
 5. Asegúrese de que la **Dirección de filtro cruzado** sea **Único**.
 
 6. Seleccione **Guardar**.
- 
+
+    ![](../media/lab-06/image044.png)
+
 7. De forma similar, creemos una relación entre las tablas Sales y Date. Seleccione **InvoiceDate** de la tabla **Sales** y arrástrelo a **Date** en la tabla **Date**.
 
 8. Se abre el cuadro de diálogo Nueva relación. Asegúrese de que la **Desde la tabla** sea **Sales** y que la **Columna** sea **InvoiceDate**.
@@ -155,16 +186,20 @@ El primer paso es crear relaciones entre estas tablas.
 11. Asegúrese de que la **Dirección de filtro cruzado sea Único**.
 
 12. Seleccione **Guardar**.
- 
+
+    ![](../media/lab-06/image047.png)
+
 13. De forma similar, cree una relación **varios a uno** entre las tablas **Sales** y **Product**. Seleccione StockItemID en la tabla Sales y StockItemID en la tabla **Product**.
 
-**Nota:** Todas nuestras actualizaciones se guardan automáticamente.
+    **Nota:** Todas nuestras actualizaciones se guardan automáticamente.
 
-**Punto de control:** su modelo debe tener tres relaciones entre las tablas Sales y Reseller, Sales y Date y Sales y Product como se muestra en la siguiente captura de pantalla:
- 
-Por razones de tiempo, no crearemos todas las relaciones. Si el tiempo lo permite, puede completar la sección opcional al final de la práctica de laboratorio. La sección opcional recorre los pasos para crear las relaciones restantes.
+    **Punto de control:** su modelo debe tener tres relaciones entre las tablas Sales y Reseller, Sales y Date y Sales y Product como se muestra en la siguiente captura de pantalla:
 
-### Tarea 5: Crear medidas
+    ![](../media/lab-06/image050.png)
+
+    Por razones de tiempo, no crearemos todas las relaciones. Si el tiempo lo permite, puede completar la sección opcional al final de la práctica de laboratorio. La sección opcional recorre los pasos para crear las relaciones restantes.
+
+## Tarea 5: Crear medidas
 
 Agreguemos algunas medidas que necesitamos para crear el panel de Sales.
 
@@ -183,7 +218,9 @@ Agreguemos algunas medidas que necesitamos para crear el panel de Sales.
 7. En el menú desplegable **Formato**, seleccione **Moneda**.
 
 8. Establezca Posiciones decimales en **0**.
- 
+
+    ![](../media/lab-06/image051.png)
+
 9. Con la **tabla Sales** seleccionada en el menú superior, seleccione **Inicio -> Nueva medida**. Observe que se muestra la barra de fórmulas.
 
 10. Introduzca **Units = SUM(Sales[Quantity])** en la **barra de fórmulas**.
@@ -195,7 +232,9 @@ Agreguemos algunas medidas que necesitamos para crear el panel de Sales.
 13. En el menú desplegable **Formato**, seleccione **Número entero**.
 
 14. Utilice el control deslizante para establecer el **Separador de miles** en **Sí**.
- 
+
+    ![](../media/lab-06/image052.png)
+
 15. Con la **tabla Sales** seleccionada en el menú superior, seleccione **Inicio -> Nueva medida**. Observe que se muestra la barra de fórmulas.
 
 16. Introduzca **Sales Orders = DISTINCTCOUNT(Sales[InvoiceID])** en la barra de fórmulas.
@@ -207,25 +246,31 @@ Agreguemos algunas medidas que necesitamos para crear el panel de Sales.
 19. En el menú desplegable **Formato**, seleccione **Número entero**.
 
 20. Utilice el control deslizante para establecer el **Separador de miles** en **Sí**.
- 
+
+    ![](../media/lab-06/image053.png)
+
 21. En el **Panel de datos** (en la derecha), seleccione **Modelo**. Observe que esto proporciona una vista que ayudará a organizar todos los elementos del modelo semántico.
 
 22. Expanda **Modelo semántico -> Medidas** para ver todas las medidas que acaba de crear.
 
 23. También puede **expandir tablas individuales** para ver las columnas, jerarquías y medidas en cada una de ellas.
- 
-De nuevo, por razones de tiempo, no crearemos todas las medidas. Si el tiempo lo permite, puede completar la sección opcional al final de la práctica de laboratorio. La sección opcional recorre los pasos para crear las medidas restantes.
 
-Hemos creado un modelo semántico, el siguiente paso es crear un informe. Lo haremos en el siguiente laboratorio.
+    ![](../media/lab-06/image062.png)
 
-### Tarea 6: Sección opcional: crear relaciones
+    De nuevo, por razones de tiempo, no crearemos todas las medidas. Si el tiempo lo permite, puede completar la sección opcional al final de la práctica de laboratorio. La sección opcional recorre los pasos para crear las medidas restantes.
+
+    Hemos creado un modelo semántico, el siguiente paso es crear un informe. Lo haremos en el siguiente laboratorio.
+
+## Tarea 6: Sección opcional: crear relaciones
 
 Agreguemos las relaciones restantes.
 
 1. En el menú, seleccione Inicio -> Administrar relaciones.
 
 2. Se abre el cuadro de diálogo Administrar relaciones. Seleccione Nueva relación.
- 
+
+    ![](../media/lab-06/image070.png)
+
 3. Se abre el cuadro de diálogo Nueva relación. Asegúrese de que la **Desde la tabla** sea **Sales** y que la **Columna** sea **SalespersonPersonID**.
 
 4. Asegúrese de que la **A la tabla** sea **People** y que la **Columna** sea **PersonID**.
@@ -235,7 +280,9 @@ Agreguemos las relaciones restantes.
 6. Asegúrese de que la **Dirección de filtro cruzado** sea **Único**.
 
 7. Seleccione **Guardar**. Se abre el cuadro de diálogo Administrar relaciones con la nueva relación agregada.
- 
+
+    ![](../media/lab-06/image69.png)
+
 8. Ahora creemos una relación entre las tablas Product y Supplier. Seleccione **Nueva relación**.
 
 9. Asegúrese de que la **Desde la tabla** sea **Product** y que la **Columna** sea **SupplierID**.
@@ -247,7 +294,9 @@ Agreguemos las relaciones restantes.
 12. Asegúrese de que la **Dirección de filtro cruzado** sea **Ambas**.
 
 13. Seleccione **Guardar**.
- 
+
+    ![](../media/lab-06/image071.png)
+
 14. Ahora creemos una relación entre las tablas Reseller y Geo. Seleccione **Nueva relación**. 
 
 15. Se abre el cuadro de diálogo Nueva relación. Asegúrese de que la **Desde la tabla** sea **Reseller** y que la **Columna** sea **PostalCityID**.
@@ -259,7 +308,9 @@ Agreguemos las relaciones restantes.
 18. Asegúrese de que la **Dirección de filtro cruzado** sea **Ambas**.
 
 19. Seleccione **Guardar**.
- 
+
+    ![](../media/lab-06/image074.png)
+
 20. Del mismo modo, creamos una relación entre las tablas Customer y Reseller. Seleccione **Nueva relación**.
 
 21. Se abre el cuadro de diálogo Nueva relación. Asegúrese de que la **Desde la tabla** sea **Customer** y que la **Columna** sea **ResellerID**.
@@ -272,8 +323,10 @@ Agreguemos las relaciones restantes.
 
 25. Seleccione **Guardar**.	
 
-**Punto de control:** la administración de relaciones debe parecerse al de la siguiente captura de pantalla.
- 
+    **Punto de control:** la administración de relaciones debe parecerse al de la siguiente captura de pantalla.
+
+    ![](../media/lab-06/image077.png)
+
 26. Igualmente, cree una relación varios a uno entre las tablas **PO** y **Date**. Seleccione **Order_Date** de **PO** y **Date** de **Date**.
 
 27. Igualmente, cree una relación **varios a uno** entre las tablas **PO** y **Product**. Seleccione **StockItemID** de **PO** y **StockItemID** de **Product**.
@@ -282,11 +335,13 @@ Agreguemos las relaciones restantes.
 
 29. Haga clic en **Cerrar** para cerrar el cuadro de diálogo Administrar relaciones.
 
-Hemos terminado de crear todas las relaciones.
+    Hemos terminado de crear todas las relaciones.
 
-**Punto de control:** su modelo debe parecerse al de la siguiente captura de pantalla.
- 
-### Tarea 7: Sección opcional: crear medidas
+    **Punto de control:** su modelo debe parecerse al de la siguiente captura de pantalla.
+
+    ![](../media/lab-06/image080.png)
+
+## Tarea 7: Sección opcional: crear medidas
 
 Agreguemos las medidas restantes.
 
@@ -303,7 +358,9 @@ Agreguemos las medidas restantes.
 6. En el menú desplegable **Formato**, seleccione **Moneda**.
 
 7. Establezca Posiciones decimales en 0.
- 
+
+    ![](../media/lab-06/image083.png)
+
 8. Siga pasos similares para agregar las siguientes medidas:
 
     a.	En la tabla **Sales, GM = SUM(Sales[LineProfit])** formateado como **Divisa con 0 decimales**.
@@ -317,10 +374,12 @@ Agreguemos las medidas restantes.
 
     d.	En la tabla **Customer**, **No of Customers = COUNTROWS**(Customer) formateado como Número entero con separador de miles activado.
 
-## Referencias
+# Referencias
 
 Fabric Analyst in a Day (FAIAD) le presenta algunas funciones clave disponibles en Microsoft Fabric. En el menú del servicio, la sección Ayuda (?) tiene vínculos a algunos recursos excelentes.
- 
+
+![](../media/lab-06/image086.png)
+
 Estos son algunos recursos más que podrán ayudarle a seguir avanzando con Microsoft Fabric.
 
 - Vea la publicación del blog para leer el [anuncio de disponibilidad general de Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) completo.
