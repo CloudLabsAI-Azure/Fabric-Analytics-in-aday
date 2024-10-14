@@ -496,12 +496,13 @@ varTempCounter)。各反復の終わりには、varCounter とvarTempCounter の
 
     さまざまなデータ ソースの更新をスケジュールしました。次のラボでは、リレーション シップ、メジャー、および他のモデリング操作を使用して、セマンティック モデルを作成します。
 
-
 # リファレンス
 Fabric Analyst in a Day (FAIAD) では、Microsoft Fabric で使用できる主要な機能の一部をご紹介します。サービスのメニューにあるヘルプ (?) セクションには、いくつかの優れたリソースへのリンクがあります。
 
-![](../media/lab-05/image134.png) 
+![](../media/lab-05/image134.png)
+ 
 Microsoft Fabric の次のステップに役立つリソースをいくつか以下に紹介します。
+
 - ブログ記事で [Microsoft-Fabric-のGA-に関するお知らせ](https://aka.ms/Fabric-Hero-Blog-Ignite23) の全文を確認する
 - [ガイド付きツアー](https://aka.ms/Fabric-GuidedTour) を通じて Fabric を探索する
 - [Microsoft Fabric の無料試用版](https://www.microsoft.com/en-us/microsoft-fabric/getting-started) にサインアップする
@@ -510,7 +511,9 @@ Microsoft Fabric の次のステップに役立つリソースをいくつか以
 - [Fabric の技術ドキュメント](https://learn.microsoft.com/en-us/fabric/) を参照する
 - [Fabric 入門編の無料のe-book](https://info.microsoft.com/ww-landing-unlocking-transformative-data-value-with-microsoft-fabric.html) を読む
 - [Fabric コミュニティ](https://community.fabric.microsoft.com/)に参加し、質問の投稿やフィードバックの共有を行い、他のユーザーから学びを得る
+
 より詳しい Fabric  エクスペリエンスのお知らせに関するブログを参照してください。
+
 - [Fabric の Data Factory エクスペリエンスに関するブログ](https://blog.fabric.microsoft.com/en-us/blog/introducing-data-factory-in-microsoft-fabric/)
 - [Fabric のSynapse Data Engineering エクスペリエンスに関するブログ](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-engineering-in-microsoft-fabric/)
 - [Fabric のSynapse Data Science エクスペリエンスに関するブログ](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-science-in-microsoft-fabric/)
