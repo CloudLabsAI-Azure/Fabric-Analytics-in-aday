@@ -1,4 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - 实验 2 	 
+
+![](../media/lab-02/image000.png) 
  
 # 目录
 - 简介	
@@ -38,9 +40,14 @@
 
     **注意：** 如果您未使用实验环境，并且已经有 Power BI 帐户，您可能希望在隐私/无痕模式下使用浏览器。
 2. 输入**用户名，** 其位于**环境变量**选项卡中（“实验指南”选项卡旁边），作为**电子邮件地址，** 然后点击 **Submit。**
+
+   ![](../media/lab-02/image006.png) 
+
 3. 您将导航到**密码**屏幕。输入讲师提供给您的**密码，** 其位于**环境变量**选项卡中（“实验指南”选项卡旁边）。
  
 4. 点击 **Sign in** 并按照提示登录Fabric。
+
+   ![](../media/lab-02/image009.png) 
 
 5. 您将导航到熟悉的 **Power BI 服务主页。**
 6. 我们相信您熟悉Power BI 服务的布局。如果您有任何问题，请随时询问讲师。
@@ -51,13 +58,19 @@
 7. 在屏幕右上角，选择**用户图标。**
 8. 选择**免费试用。**
 
+   ![](../media/lab-02/image012.jpg) 
+
 9. “升级到 Microsoft Fabric 免费试用版”对话框随即打开。选择**开始试用。**
- 
+
+   ![](../media/lab-02/image015.jpg)  
  
 10. “已成功升级到Microsoft Fabric”对话框随即打开。选择 **Fabric Home Page。**
 
+    ![](../media/lab-02/image018.png) 
+
 11. 您将导航到 **Microsoft Fabric 主页。**
  
+    ![](../media/lab-02/image021.jpg) 
 
 # Fabric 体验概述
 ## 任务 2：Data Factory 体验
@@ -65,6 +78,8 @@
 1. 选择屏幕左下角的 **Microsoft Fabric**（Fabric 体验选择器）图标。将打开一个包含Fabric 体验列表的对话框。请**注意，** Power BI、Data Factory、Data Activator、Industry Solutions 和Real-Time Intelligence 是独立的体验。Data Engineering、Data Science 和Data Warehouse 是Synapse 体验，这些体验均由Synapse 提供支持。我们来探索吧。
  
 2. 选择 **Data Factory。**
+
+   ![](../media/lab-02/image024.jpg) 
 
 3. 您将导航到 **Data Factory 主页页面。** 该页面包含三个主要部分。
 
@@ -82,10 +97,13 @@
 
     c. **Quick Access：** 这一部分列出了最近使用或收藏的项目。
 
-
+   ![](../media/lab-02/image027.jpg) 
  
 ## 任务 3：Data Activator 体验
+
 1. 选择屏幕左下角的 **Fabric 体验选择器图标**（目前设为 Data Factory）。Fabric 体验对话框随即打开。
+
+   ![](../media/lab-02/image030.png) 
 
 2. 从对话框选择 **Data Activator。** 您将导航到 **Data Activator 主页。** Data Activator 是Microsoft Fabric 中的一种无代码体验，在数据变化中检测到模式或条件时自动采取操作。请注意， 这三个部分与 Data Factory 体验相似。在**建议**部分中，请注意以下项目：
 
@@ -94,6 +112,7 @@
 
     b. **Reflex 示例：** 示例解决方案。
 
+   ![](../media/lab-02/image033.jpg) 
 
 ## 任务 4：Industry Solutions 体验
 
@@ -107,6 +126,7 @@
 
     c. **医疗保健解决方案：** 经过战略设计，旨在通过满足将医疗保健数据有效转换为适合 格式以供分析的关键需求，加快客户实现价值的时间。
 
+   ![](../media/lab-02/image036.jpg) 
 
 ## 任务 5：Real-Time Intelligence 体验
 1. 选择屏幕左下角的 **Fabric 体验选择器图标**（目前设置为Industry Solutions）。Fabric 体验对话框随即打开。
@@ -126,6 +146,8 @@
 
  
     **注意：** Reflex 也在 Data Activator 体验中可用。
+
+   ![](../media/lab-02/image039.jpg)     
 
 ## 任务 6：Synapse Data Engineering 体验
 1. 选择屏幕左下角的 **Fabric 体验选择器图标**（目前设置为Real-Time Intelligence）。“Fabric 体验”对话框随即打开。
@@ -148,7 +170,7 @@
     h. **Use a sample：** 示例解决方案。
  
  
-
+   ![](../media/lab-02/image042.jpg)     
 
 ## 任务 7：Synapse Data Science 体验
 
@@ -171,7 +193,7 @@
 
     **注意：** 笔记本、环境、数据管道等项目在多种体验中可用，因为它们与每种体验都相关。
  
- 
+   ![](../media/lab-02/image045.jpg)      
 
 ## 任务 8：Synapse Data Warehouse 体验
 
@@ -188,11 +210,15 @@
 
     e. **镜像 Azure Cosmos DB：** 用于镜像 Azure Cosmos DB。
 
- 
+   ![](../media/lab-02/image048.jpg)     
+
 # Fabric 工作区
 ## 任务 9：创建Fabric 工作区
 1. 现在我们创建一个具有Fabric 许可证的工作区。从左侧导航栏中选择**工作区。** 对话框随即打开。
 2. 选择**新建工作区。**
+
+   ![](../media/lab-02/image051.png)     
+
 3. 浏览器右侧将打开**创建工作区**对话框。
 4. 在**名称**字段中输入 **FAIAD_<username>**
 
@@ -200,10 +226,13 @@
 
 5. 您可以选择输入工作区的**说明。** 这是选填字段。
 6. 点击**高级**以展开此部分。
- 
+
+   ![](../media/lab-02/image054.png)      
  
 7. 在 **License mode** 下，确保选择 **Trial。**（这应该已默认选中。）
 8. 选择 **Apply** 以创建新工作区。
+
+   ![](../media/lab-02/image057.jpg)     
 
 这样就创建了新的工作区，且您将会导航到该工作区。我们将来自不同数据源的数据引入
 Lakehouse，并使用 Lakehouse 中的数据来构建模型并生成报表。第一步是创建 Lakehouse。
@@ -212,12 +241,18 @@ Lakehouse，并使用 Lakehouse 中的数据来构建模型并生成报表。第
 1. 选择屏幕左下角的 **Fabric 体验选择器图标** （目前设置为 Data Warehouse）。我们将在以下实验室中向您展示其中一些选项。
 2. 选择 **Data Engineering** 以导航到 Data Engineering 主页。
 
+   ![](../media/lab-02/image060.png)     
+
 3. 选择**湖屋。**
- 
+
+   ![](../media/lab-02/image063.jpg)     
+
 4. New lakehouse 对话框随即打开。在Name 文本框中输入 **lh_FAIAD。**
 
     **注意：** 这里的 lh 指的是 Lakehouse。我们添加 lh 前缀是为了便于识别和搜索。
 5. 选择 **Create。**
+
+   ![](../media/lab-02/image066.png)     
 
     Lakehouse 很快就会创建完毕，您将导航到 Lakehouse 界面。
  
@@ -226,12 +261,14 @@ Lakehouse。
 
     在 Lakehouse Explorer 中会显示**表**和**文件。** Lakehouse 的文件部分下可能会显示Azure Data Lake Storage Gen2 文件，或者数据流可能会将数据加载到 Lakehouse 表中。有各种选项可用。我们将在以下实验中向您展示其中一些选项。
 
+   ![](../media/lab-02/image069.jpg)     
+
     在本实验中，我们探索了Fabric 界面，创建了Fabric 工作区和 Lakehouse。在下一个实验室中， 我们将学习如何使用湖屋中的快捷方式连接到ADLS Gen2 数据以及如何使用视图转换此数据。
  
-参考
+# 参考
 Fabric Analyst in a Day (FAIAD) 介绍了Microsoft Fabric 中提供的一些主要功能。在服务菜单中， “帮助 (?)”部分包含指向一些优质资源的链接。
 
-![](../media/lab-01/image37.png)
+![](../media/lab-02/image072.png)
 
 以下更多参考资源可帮助您进行 Microsoft Fabric 相关的后续步骤。
 
