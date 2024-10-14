@@ -19,7 +19,6 @@
     -  Aufgabe 6: Eine Verknüpfung zu Lakehouse erstellen
 - Referenzen
 
- 
 ## Einführung
 
 Bei unserem Anwendungsfall befinden sich die Lieferantendaten in Snowflake, die Kundendaten in Dataverse und die Mitarbeiterdaten in SharePoint. Alle diese Datenquellen werden zu verschiedenen Zeiten aktualisiert. Um die Anzahl der Datenaktualisierungen von Dataflows zu verringern, erstellen wir für Snowflake und SharePoint-Datenquellen individuelle Dataflows.
@@ -392,7 +391,6 @@ Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
 - [Blog zum Data Warehousing-Funktionsbereich von Synapse in Fabric](https://aka.ms/Fabric-DW-Blog)
 - [Blog zum Real-Time Analytics-Funktionsbereich von Synapse in Fabric](https://aka.ms/Fabric-RTA-Blog)
 - [Blog mit Ankündigungen zu Power BI](https://aka.ms/Fabric-PBI-Blog)
- 
 - [Blog zum Data Activator-Funktionsbereich in Fabric](https://aka.ms/Fabric-DA-Blog)
 - [Blog zu Verwaltung und Governance in Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
 - [Blog zu OneLake in Fabric](https://aka.ms/Fabric-OneLake-Blog)
