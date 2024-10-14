@@ -1,11 +1,5 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Labo 1 ##
 
-<<<<<<< HEAD
-Image 
-=======
-![](../media/lab-01/main1.png)
->>>>>>> cdfe8fea55e17deec24e89d5d6786f88fc676185
-
 ## Sommaire ##
 - Structure du document	
 - Scénario/Énoncé du problème	
@@ -50,20 +44,25 @@ Avant de prendre en main Fabric, examinons l’état actuel dans Power BI Deskto
 
 ### Tâche 1 : configurer Power BI Desktop dans l’environnement de labo ###
 1.	Ouvrez le fichier **FAIAD.pbix** situé dans le dossier **Reports** sur le **bureau** de votre environnement de labo. Le fichier s’ouvre alors dans Power BI Desktop.
-   Image
+   
+    ![](../media/lab-01/image009.png)
 
 2.	La boîte de dialogue Entrez votre adresse e-mail s’ouvre alors. Accédez à l’onglet **Détails de l’environnement** sur le volet droit dans l’environnement de labo.
 3.	Copiez la valeur Informations d’identification du champ **Nom d’utilisateur** et collez-la dans la zone de texte E-mail de la boîte de dialogue.
 4.	Cliquez sur **Continuer**.
+
+    ![](../media/lab-01/image012.jpg)
+
 5.	La boîte de dialogue Se connecter s’ouvre alors. Saisissez à nouveau la valeur Informations d’identification du champ **Nom d’utilisateur** en la copiant depuis l’onglet **Détails de
 l’environnement**.
 6.	Cliquez sur **Suivant**.
 7.	Dans la boîte de dialogue suivante, saisissez la valeur **Informations d’identification** du champ
 **Mot de passe** en la copiant depuis l’onglet **Détails de l’environnement**.
 8.	Cliquez sur **Se connecter**
-9.	La boîte de dialogue **Rester connecté à toutes vos applications** s’ouvre alors. Cliquez sur **OK**.
 
-  Image
+    ![](../media/lab-01/image015.jpg)
+9.	La boîte de dialogue **Rester connecté à toutes vos applications** s’ouvre alors. Cliquez sur **OK**.
+    ![](../media/lab-01/image018.jpg)
 
 10.	La boîte de dialogue **Vous êtes prêt !** s’ouvre alors. Cliquez sur **Terminé**.
 
@@ -72,7 +71,7 @@ l’environnement**.
 ## Tâche 2 : analyser l’état Power BI Desktop ##
 L’état ci-dessous analyse les ventes de Fabrikam. Les KPI sont répertoriés en haut de la page à gauche. Les visuels restants mettent en évidence les ventes au fil du temps, par secteur de vente, groupe de produits et revendeur.
 
-Image
+![](../media/lab-01/image021.jpg)
 
 **_Remarque :_** dans cette formation, nous nous concentrons sur l’acquisition, la transformation et la modélisation de données à l’aide des outils disponibles dans Fabric. Nous n’aborderons pas l’élaboration d’états ou la navigation dans les états. Consacrons quelques minutes à la compréhension de l’état et passons aux étapes suivantes.
 
@@ -80,31 +79,33 @@ Image
 Tailspin Toys réalise plus de ventes que Wingtip Toys en Nouvelle-Angleterre. Sur l’histogramme
 % des ventes en glissement annuel, notez que la croissance des ventes de Wingtip Toys a été faible et en baisse d’un trimestre à l’autre au cours de l’année écoulée. Après un léger rebond au troisième trimestre, elle a de nouveau diminué au quatrième trimestre.
 
-  Images
+    ![](../media/lab-01/image024.png)
 
 2.	Comparons cela au secteur de vente des Rocheuses. Cliquez sur **Rocky Mountain** dans le visuel Secteur de vente (nuage de points). Sur l’histogramme % des ventes en glissement annuel,
 les ventes de Wingtip Toys ont considérablement augmenté au quatrième trimestre 2022 après avoir été faibles au cours des deux trimestres précédents.
 
-  Images
+     ![](../media/lab-01/image027.jpg)
+
  
 3.	Cliquez sur **Rocky Mountain** dans le visuel Secteur de vente pour supprimer le filtre.
 
 4.	Dans le visuel Nuage de points en bas au centre de l’écran (Commandes client par ventes),
 cliquez sur la valeur hors norme en haut à droite (4e quadrant). Notez que le % de marge est de 52 %, ce qui est supérieur à la moyenne de 50 %. En outre, le % des ventes en glissement annuel a augmenté au cours des deux derniers trimestres de 2023.
 
-  Images
+    ![](../media/lab-01/image030.jpg)
 
 5.	Cliquez sur la valeur Reseller hors norme dans le visuel Nuage de points pour **supprimer le filtre**.
 
 6.	Obtenons les détails produit par groupe de produits et revendeur. À partir du visuel Histogramme Ventes par groupe de produits et revendeur, **cliquez avec le bouton droit sur la barre Packaging Materials pour Tailspin Toys**, puis sélectionnez **Extraire -> Product Detail** dans la boîte de dialogue.
 
-Images
+    ![](../media/lab-01/image033.jpg)
 
-Vous êtes alors redirigé vers la page qui fournit les détails produit. Notez que de futures commandes sont également en cours.
+    Vous êtes alors redirigé vers la page qui fournit les détails produit. Notez que de futures commandes sont également en cours.
 
 7.	Après avoir examiné cette page, revenez à l’état sur les ventes à l’aide du raccourci **Ctrl + flèche Précédent** en haut de la page à droite.
 
-  Images
+    ![](../media/lab-01/image036.jpg)
+
   
 8.	N’hésitez pas à analyser davantage l’état. Une fois prêt, jetez un œil à la vue de modèle. Dans le volet gauche, cliquez sur **Icône de vue de modèle**. Notez qu’il existe deux tables de fait : Sales et PO.
 -  La granularité des données Sales est par date, revendeur, produit et personne. Les valeurs Date, Reseller, Product et People sont liées à la table Sales.
@@ -116,7 +117,8 @@ Vous êtes alors redirigé vers la page qui fournit les détails produit. Notez 
 ## Tâche 3 : examiner les requêtes Power Query ##
 1.	Examinons à présent Power Query pour comprendre les sources de données. Dans le ruban, cliquez sur **Accueil -> Transformer les données**.
 
-  Images
+    ![](../media/lab-01/image039.jpg)
+
 
 2.	Une fenêtre Power Query s’ouvre alors. Dans le ruban, cliquez sur **Accueil -> Paramètres de
 la source de données**. La boîte de dialogue Paramètres de la source de données s’ouvre alors. En parcourant la liste, notez que quatre sources de données principales sont mentionnées dans l’énoncé du problème :
@@ -127,13 +129,15 @@ la source de données**. La boîte de dialogue Paramètres de la source de donn�
  
 3.	Cliquez sur **Fermer** pour fermer la boîte de dialogue Paramètres de la source de données.
 
-  Images
+  ![](../media/lab-01/image042.png)
+
   
 4.	Dans le volet gauche Queries, notez que les requêtes sont regroupées par source de données.
 5.	Notez que le dossier **DataverseData** comporte des données Customer disponibles dans quatre requêtes différentes : BabyBoomer, GenX, GenY et GenZ. Ces quatre requêtes sont ajoutées pour créer la requête Customer.
 6.	Vous pouvez saisir les informations d’identification de la source de données Dataverse en saisissant le **Nom d’utilisateur** et le **Mot de passe** disponibles dans l’onglet **Variables d’environnement** (en regard de l’onglet Guide du labo). Veuillez sélectionner l’option Compte Microsoft.
  
- Images
+    ![](../media/lab-01/image045.jpg)
+
 
 7.	Pour la source de données ADLS, utilisez l’option **Clé de compte** et saisissez la **Clé d’accès au compte de stockage Adls** disponible dans l’onglet **Variables d’environnement** (en regard de l’onglet Guide du labo).
 8.	Notez que le dossier **ADLSData** comporte plusieurs dimensions : Geo, Product, Reseller et Date. Il comporte également un fait Sales.
@@ -149,14 +153,16 @@ labo).
 11.	Pour la source de données SharePoint, saisissez le **Nom d’utilisateur** et le **Mot de passe** disponibles dans l’onglet **Variables d’environnement** (en regard de l’onglet Guide du labo). Veuillez sélectionner l’option Compte Microsoft.
 12.	Notez que le dossier **SharepointData** comporte la dimension People.
 
-  Images
+    ![](../media/lab-01/image048.png)
+
 
 Nous savons désormais à quoi nous avons affaire. Dans les labos suivants, nous allons créer une requête Power Query similaire à l’aide de Dataflow Gen2 et un modèle à l’aide de la fonctionnalité Lakehouse.
 
 ## Références ##
 Fabric Analyst in a Day (FAIAD) vous présente certaines des fonctions clés de Microsoft Fabric. Dans le menu du service, la section Aide (?) comporte des liens vers d’excellentes ressources.
 
-  Images
+  ![](../media/lab-01/image051.png)
+
 
 Voici quelques autres ressources qui vous aideront lors de vos prochaines étapes avec Microsoft Fabric :
 -  Consultez le billet de blog pour lire l’intégralité de l[’annonce de la GA de Microsof t Fabric](https://www.microsoft.com/en-us/microsoft-fabric/blog/2023/11/15/prepare-your-data-for-ai-innovation-with-microsoft-fabric-now-generally-available/).
