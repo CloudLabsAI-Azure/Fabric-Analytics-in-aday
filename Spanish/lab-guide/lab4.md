@@ -2,7 +2,7 @@
 
 ![](../media/lab-04/img1.png)
 
-## Contenido 
+# Contenido 
 
 - Presentación	
 - Flujo de datos Gen2	
