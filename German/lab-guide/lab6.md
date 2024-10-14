@@ -34,7 +34,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 ## Aufgabe 1: Daten mithilfe von SQL abfragen
 
-1. Navigieren wir nun zurück zum Fabric-Arbeitsbereich **FAIAD_\<username>**, den Sie in Übung 2, Aufgabe 9, erstellt haben.
+1. Navigieren wir nun zurück zum Fabric-Arbeitsbereich **FAIAD_\<Benutzername>**, den Sie in Übung 2, Aufgabe 9, erstellt haben.
 
 2. Sie können bei Bedarf den **Aufgabenfluss minimieren**, um die vollständige Liste der Elemente anzuzeigen.
 
@@ -98,7 +98,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 8. Das Dialogfeld „Bericht speichern“ wird geöffnet. Geben Sie im Textfeld Bericht benennen den Text **Units by Supplier** ein.
 
-9. Überprüfen Sie, dass der Zielarbeitsbereich Ihrem Fabric-Arbeitsbereich **FAIAD\<Benutzername>** entspricht.
+9. Überprüfen Sie, dass der Zielarbeitsbereich Ihrem Fabric-Arbeitsbereich **FAIAD_\<Benutzername>** entspricht.
 
 10. Wählen Sie **Speichern** aus.
 

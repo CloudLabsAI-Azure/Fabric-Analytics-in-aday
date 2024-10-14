@@ -38,7 +38,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 ### Aufgabe 1: SharePoint-Abfragen in Dataflow kopieren
 
-1. Navigieren wir nun zurück zum Fabric-Arbeitsbereich, **FAIAD_<username>**, den Sie in Übung 2, Aufgabe 9, erstellt haben.
+1. Navigieren wir nun zurück zum Fabric-Arbeitsbereich, **FAIAD_\<Benutzername>**, den Sie in Übung 2, Aufgabe 9, erstellt haben.
 
 2. Wählen Sie unten links auf dem Bildschirm das **Symbol** für die **Fabric-Funktionsbereichs- Auswahl** aus. Das Dialogfeld „Fabric-Funktionsbereich“ wird geöffnet.
 
@@ -103,7 +103,7 @@ Menü „Verbindung“** ausgewählt und **Authentifizierungsart** auf **Organis
 
 4. Das Dialogfeld „Ziel auswählen“ wird geöffnet. Stellen Sie sicher, dass das **Optionsfeld „Neue Tabelle“** ausgewählt ist, da wir eine neue Tabelle erstellen.
 
-5. Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen. Navigieren Sie im linken Bereich zu **Lakehouse -> FAIAD_<Benutzername>**.
+5. Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen. Navigieren Sie im linken Bereich zu **Lakehouse -> **FAIAD_\<Benutzername>**.
 
 6. Wählen Sie **lh_FAIAD** aus.
 
@@ -129,7 +129,7 @@ Menü „Verbindung“** ausgewählt und **Authentifizierungsart** auf **Organis
 
     ![](../media/lab-04/image033.jpg)
 
-    **Hinweis**: Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet. Es kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
+    **Hinweis**: Sie werden zum Arbeitsbereich **FAIAD_\<Benutzername>** weitergeleitet. Es kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
 
 3. Wir arbeiten mit Dataflow 1. Benennen wir ihn um, bevor wir fortfahren. Klicken Sie auf die **Auslassungspunkte (…)** neben Dataflow 1. Wählen Sie **Eigenschaften** aus.
 
@@ -143,7 +143,7 @@ Menü „Verbindung“** ausgewählt und **Authentifizierungsart** auf **Organis
 
     ![](../media/lab-04/image039.png)
 
-    Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet.
+    Sie werden zum Arbeitsbereich **FAIAD_\<Benutzername>** weitergeleitet.
 
 7. Wählen Sie **lh_FAIAD** aus, um zum Lakehouse zu navigieren.
 
@@ -158,7 +158,7 @@ Menü „Verbindung“** ausgewählt und **Authentifizierungsart** auf **Organis
  
 ### Aufgabe 5: Snowflake-Abfragen in Dataflow kopieren
 
-1. Wir navigieren zurück zum Fabric-Arbeitsbereich **FAIAD_<username>**.
+1. Wir navigieren zurück zum Fabric-Arbeitsbereich **FAIAD_\<Benutzername>**.
 
 2. Wählen Sie im Menü oben die Option **Neu -> Dataflow Gen2** aus.
 
@@ -230,7 +230,7 @@ Beachten Sie, dass die fünf Abfragen eingefügt wurden und dass der Bereich „
 
 5. Das Dialogfeld „Ziel auswählen“ wird geöffnet. Stellen Sie sicher, dass das Optionsfeld **Neue Tabelle ausgewählt** ist, weil wir eine neue Tabelle erstellen.
 
-6. Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen. Navigieren Sie im linken Bereich zu **Lakehouse -> FAIAD_<Benutzername>.**
+6. Wir möchten die zuvor erstellte Tabelle in Lakehouse erstellen. Navigieren Sie im linken Bereich zu **Lakehouse -> **FAIAD_\<Benutzername>**.
 
 7. Wählen Sie **lh_FAIAD** aus.
 
@@ -262,7 +262,7 @@ Beachten Sie, dass die fünf Abfragen eingefügt wurden und dass der Bereich „
 
     ![](../media/lab-04/image074.jpg)
 
-   Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet. Es kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
+   Sie werden zum Arbeitsbereich **FAIAD_\<Benutzername>** weitergeleitet. Es kann einige Momente dauern, bis der Dataflow veröffentlicht wird.
 
 5. Wählen Sie **lh_FAIAD** aus, um zum Lakehouse zu navigieren.
 

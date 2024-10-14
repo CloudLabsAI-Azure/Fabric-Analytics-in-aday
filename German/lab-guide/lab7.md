@@ -101,7 +101,7 @@ Verwenden wir zunächst die Option „Bericht automatisch erstellen“. Und spä
 
     **Hinweis**: Wir stellen dem Berichtsnamen das Präfix „rpt“ voran, was für „Bericht“ steht. 
 
-11. Stellen Sie sicher, dass der Bericht in Ihrem Arbeitsbereich **FAIAD_<Benutzername>** gespeichert wird. 
+11. Stellen Sie sicher, dass der Bericht in Ihrem Arbeitsbereich **FAIAD_\<Benutzername>** gespeichert wird. 
 
 12. Wählen Sie **Speichern** aus. 
 
@@ -119,7 +119,7 @@ Verwenden wir zunächst die Option „Bericht automatisch erstellen“. Und spä
 
 Lassen Sie uns einen neuen Bericht mit einer leeren Canvas erstellen. 
 
-1. Wählen Sie im **linken Bereich** den Namen Ihres Arbeitsbereichs, **FAIAD_<Benutzername>**, aus, um zum Arbeitsbereich zu gelangen. 
+1. Wählen Sie im **linken Bereich** den Namen Ihres Arbeitsbereichs, **FAIAD_\<Benutzername>**, aus, um zum Arbeitsbereich zu gelangen. 
 
 2. Wählen Sie im oberen Menü **Neu -> Bericht** aus. Sie werden zur Seite „Erstellen Sie Ihren ersten Bericht” weitergeleitet. 
 
@@ -257,7 +257,7 @@ Speichern wir den Bericht, bevor wir ihn verlassen, um Änderungen am Modell vor
 
    **Hinweis:** Wir stellen dem Berichtsnamen das Präfix „rpt“ voran, was für „Bericht“ steht. 
 
-3. Stellen Sie sicher, dass der Bericht im Arbeitsbereich **FAIAD_<Benutzername>** gespeichert wird. 
+3. Stellen Sie sicher, dass der Bericht im Arbeitsbereich **FAIAD_\<Benutzername>** gespeichert wird. 
 
 4. Wählen Sie **Speichern** aus. Beachten Sie, dass der Bericht gespeichert ist und Sie sich im Anzeigemodus befinden. 
 
@@ -447,7 +447,7 @@ In einem realen Szenario werden die Daten an der Quelle aktualisiert. Da wir uns
 
 1. Navigieren Sie zurück zum **Browser**. 
 
-2. Wählen Sie in der linken Menüleiste **FAIAD_<Benutzername>** aus, um zur Startseite des Arbeitsbereichs zu wechseln. 
+2. Wählen Sie in der linken Menüleiste **FAIAD_\<Benutzername>** aus, um zur Startseite des Arbeitsbereichs zu wechseln. 
 
 3. Wählen Sie **lh_FAIAD** aus, um zum Lakehouse zu navigieren. 
 
@@ -675,7 +675,7 @@ ALTER VIEW [dbo].[Sales] AS (
 
 Wenn Sie bereit sind, die Übungsumgebung zu bereinigen, führen Sie die folgenden Schritte aus. 
 
-1. Wählen Sie im linken Bereich den Arbeitsbereich **FAIAD_<Benutzername>** aus, um zur Startseite des Arbeitsbereichs zu navigieren. 
+1. Wählen Sie im linken Bereich den Arbeitsbereich **FAIAD_\<Benutzername>** aus, um zur Startseite des Arbeitsbereichs zu navigieren. 
 
 2. Wählen Sie im oberen Menü **Arbeitsbereichseinstellungen** aus. 
 

@@ -232,7 +232,7 @@ verschiedenen Quellen zu integrieren und umfassende Analysen zu nutzen. Beachten
 
 3. Rechts im Browser wird das Dialogfeld **Arbeitsbereich erstellen** geöffnet.
 
-4. Geben Sie im Feld **Name** den Text **FAIAD_<Benutzername>** ein.
+4. Geben Sie im Feld **Name** den Text **FAIAD_\<Benutzername>** ein.
  
     **Hinweis**: Der Name des Arbeitsbereichs muss eindeutig sein. Der Name Ihres Arbeitsbereichs lautet jedoch anders. Achten Sie darauf, dass unter dem Feld für den Namen ein grünes Häkchen mit dem Text Dieser Name ist verfügbar zu sehen ist.
 
