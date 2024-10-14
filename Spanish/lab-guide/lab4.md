@@ -1,3 +1,5 @@
+# Microsoft Fabric - Fabric Analyst in a Day - Laboratorio 4
+
 ![](../media/lab-04/img1.png)
 
 ## Contenido 
@@ -17,7 +19,7 @@
   - Tarea 6: Crear un acceso directo al almacén de lago de datos	
 - Referencias	
 
-## Presentación 
+# Presentación 
 
 En nuestro escenario, los datos del proveedor están en Snowflake, los datos del cliente están en Dataverse y los datos de los empleados están en SharePoint. Todos estos orígenes de datos se actualizan en diferentes momentos. Para minimizar la cantidad de actualizaciones de datos de los flujos de datos, crearemos flujos de datos individuales para los orígenes de datos de Snowflake y SharePoint.
 
@@ -31,9 +33,9 @@ Al final de este laboratorio, habrá aprendido:
 - Cómo conectarse a Snowflake mediante el flujo de datos Gen2 e ingerir datos en el almacén de lago de datos
 - Cómo ingerir datos desde un almacén de lagos compartido
 
-## Flujo de datos Gen2
+# Flujo de datos Gen2
 
-### Tarea 1: Copiar consultas de SharePoint al flujo de datos
+## Tarea 1: Copiar consultas de SharePoint al flujo de datos
 
 1. Volvamos al área de trabajo de Fabric, **FAIAD_<username>**, que creó en el Laboratorio 2, Tarea 9.
 
@@ -67,7 +69,7 @@ Se le dirigirá de vuelta a la **página de del flujo de datos**. La interfaz de
 
 Observe la consulta pegada y disponible en el panel izquierdo. Como no tenemos una conexión creada para SharePoint, verá un mensaje de advertencia que le solicitará que configure la conexión.
 
-### Tarea 2: Crear una conexión a SharePoint
+## Tarea 2: Crear una conexión a SharePoint
 
 1. Seleccione **Configurar conexión**.
 
@@ -83,7 +85,7 @@ Observe la consulta pegada y disponible en el panel izquierdo. Como no tenemos u
 
 ![](../media/lab-04/image018.png)
  
-### Tarea 3: Configurar el destino de datos para la consulta People
+## Tarea 3: Configurar el destino de datos para la consulta People
 
 Se establece la conexión y puede ver los datos en el panel de versión preliminar. Siéntase libre de navegar por los pasos aplicados de las consultas. Ahora necesitamos incorporar los datos de People en el almacén de lago de datos.
 
@@ -118,7 +120,7 @@ Se establece la conexión y puede ver los datos en el panel de versión prelimin
     ![](../media/lab-04/image030.png)
  
 
-### Tarea 4: Publicar y cambiar el nombre del flujo de datos de SharePoint
+## Tarea 4: Publicar y cambiar el nombre del flujo de datos de SharePoint
 
 1. Volverá a la **ventana de Power Query**. Observe que en la **esquina inferior derecha**, el destino de los datos está configurado en el **lakehouse**.
 
@@ -152,7 +154,7 @@ Se le dirigirá de vuelta al **área de trabajo FAIAD_<username>**.
 
 Ahora hemos ingerido todos los datos en el almacén de lago de datos. En la próxima práctica de laboratorio, programaremos la actualización del flujo de datos.
 
-### Tarea 5: Copiar consultas de Snowflake al flujo de datos
+## Tarea 5: Copiar consultas de Snowflake al flujo de datos
 
 1. Volvamos al área de trabajo de Fabric, **FAIAD_<username>**
 
@@ -190,12 +192,14 @@ Se le dirigirá de vuelta a la página de del flujo de datos. Ahora que estamos 
 
 ![](../media/lab-04/image048.png)
  
-### Tarea 6: Crear una conexión a Snowflake
+## Tarea 6: Crear una conexión a Snowflake
 
 Observe que las cinco consultas están pegadas y ahora tiene el panel Consultas a la izquierda. Como no tenemos una conexión creada para Snowflake, verá un mensaje de advertencia que le solicitará que configure la conexión.
 
 1. Seleccione **Configurar conexión**.
  
+   ![](../media/lab-04/image051.png)
+
 2. Se abre el cuadro de diálogo del origen de datos. En el menú desplegable **Conexión**, asegúrese de que **Crear nueva conexión** esté seleccionado.
 
 3. **El tipo de autenticación** debe ser **Snowflake**.
@@ -204,18 +208,23 @@ Observe que las cinco consultas están pegadas y ahora tiene el panel Consultas 
 
 5. Seleccione **Conectar**.
 
+   ![](../media/lab-04/image52.png)
  
 Se establece la conexión y puede ver los datos en el panel de versión preliminar. Siéntase libre de navegar por los pasos aplicados de las consultas. Básicamente, la consulta Suppliers tiene los detalles de los proveedores y SupplierCategories, como su nombre indica, tiene categorías de proveedores. Estas dos tablas se unen para crear la dimensión Supplier, con las columnas que necesitamos. De manera similar, tenemos PO Line Items combinada con pedidos de compra para crear el dato de PO. Ahora necesitamos incorporar los datos de Supplier y de PO en el almacén de lago de datos.
 
-### Tarea 7: Configurar el destino de datos para las consultas de Supplier y PO
+## Tarea 7: Configurar el destino de datos para las consultas de Supplier y PO
 
 1.	Seleccione la consulta de **Supplier**.
 
 2.	En la cinta de opciones, seleccione **Inicio -> Agregar destino de datos -> Lakehouse**.
  
+    ![](../media/lab-04/image057.png)
+
 3.	Se abre el cuadro de diálogo Conectarse al destino de datos. Desde el **menú desplegable Conexión**, seleccione **Lakehouse (ninguno)**.
 
 4.	Seleccione **Siguiente**.
+
+    ![](../media/lab-04/image058.png)
 
 5.	Se abre el cuadro de diálogo de Elegir el objetivo de destino. Asegúrese de que el botón de opción **Nueva tabla** esté **seleccionado**, ya que estamos creando una nueva tabla.
 
@@ -226,21 +235,31 @@ Se establece la conexión y puede ver los datos en el panel de versión prelimin
 8.	Deje el nombre de la tabla como **Supplier**
 
 9.	Seleccione **Siguiente**.
- 
+
+    ![](../media/lab-04/image059.png)
+
 10.	Se abre el cuadro de diálogo de Elegir la configuración de destino. Usaremos la configuración automática, ya que esto realizará una actualización completa de los datos. Además, cambiará el nombre de las columnas según sea necesario. Seleccione **Guardar configuración**.
  
+    ![](../media/lab-04/image065.png)
+
 11.	Volverá a la **ventana de Power Query**. Observe que en la **esquina inferior derecha**, el destino de los datos está configurado en el lakehouse. De manera similar, **configure el destino de datos para la consulta de PO**. Una vez hecho esto, su consulta de PO debe tener **Destino de datos** establecido en **Almacén de lago de datos** como se muestra en la siguiente captura de pantalla.
  
-### Tarea 8: Cambiar el nombre y publicar el flujo de datos de Snowflake
+    ![](../media/lab-04/image068.png)
+
+## Tarea 8: Cambiar el nombre y publicar el flujo de datos de Snowflake
 
 1. En la parte superior de la pantalla, seleccione la **flecha junto a Dataflow 1** para cambiar el nombre.
 
 2. En el cuadro de diálogo, cambie el nombre a **df_Supplier_Snowflake**.
 
 3. Haga clic en **Introducir** para guardar el cambio de nombre.
- 
+
+    ![](../media/lab-04/image071.png)
+
 4. En la esquina inferior derecha, seleccione **Publicar**.
- 
+
+    ![](../media/lab-04/image074.png)
+
 Se le dirigirá de vuelta al **área de trabajo FAIAD_<username>**. Es posible que el flujo de datos tarde unos minutos en publicarse. 
 
 5. Seleccione **lh_FAIAD** para ir al almacén de lago de datos.
@@ -252,45 +271,64 @@ Se le dirigirá de vuelta al **área de trabajo FAIAD_<username>**. Es posible q
 **Nota:** Si no ve las tablas recién creadas, seleccione los puntos suspensivos junto a Tables y seleccionar Actualizar para actualizar las tablas.
 
 Ahora creemos un acceso directo para traer datos de Dataverse.
-Acceso directo a ADLS Gen2
 
-### Tarea 9: Cómo crear un acceso directo a Dataverse
+# Acceso directo a ADLS Gen2
+
+## Tarea 9: Cómo crear un acceso directo a Dataverse
 
 Debe estar en el almacén de lago de datos lh_FAIAD. Asegúrese de estar en la vista del almacén de lago de datos (no en el punto de conexión de análisis SQL).
  
+   ![](../media/lab-04/image077.png)
+
 1. En el panel del **explorador** de la izquierda, seleccione los **puntos suspensivos** al lado de **Tables**.
 
 2. Seleccione **Nuevo acceso directo**.
- 
+
+    ![](../media/lab-04/image080.png)
+
 3. Se abre el cuadro de diálogo Nuevo acceso directo. En **Orígenes externos**, seleccione **Dataverse**.
 
-**Nota:** En la práctica de laboratorio anterior, seguimos pasos similares para crear un acceso directo a Azure Data Lake Storage Gen2. 
- 
+   **Nota:** En la práctica de laboratorio anterior, seguimos pasos similares para crear un acceso directo a Azure Data Lake Storage Gen2. 
+
+    ![](../media/lab-04/image083.png)
+
 4. Se abre el cuadro de diálogo Configuración de conexión. Introduzca **org6c18814a.crm.dynamics.com** como **dominio del entorno**.
 
 5. Deje **Tipo de autenticación** como **Cuenta de organización**.
 
 6. Seleccione **Iniciar sesión**.
- 
+
+    ![](../media/lab-04/image086.png)
+
 7. Se abre el cuadro de diálogo Iniciar sesión en su cuenta. **Elija su cuenta** para iniciar sesión.
 
-**Nota:** Su cuenta será diferente de la captura de pantalla siguiente.
- 
+   **Nota:** Su cuenta será diferente de la captura de pantalla siguiente.
+
+    ![](../media/lab-04/image089.png)
+
 8. Seleccione **Siguiente** en el cuadro de diálogo Configuración de conexión.
 
-Se le dirigirá a un cuadro de diálogo de donde puede elegir el cubo/directorio diferente de Dataverse. Observe que hay una gran cantidad de cubos disponibles. Podríamos elegir los cubos que necesitamos y seguir el proceso del laboratorio 3 (usar la consulta visual para transformar datos y crear vistas). También podríamos usar el flujo de datos Gen2 como lo usamos anteriormente en este laboratorio para conectar SharePoint. Sin embargo, queremos informarle de otra opción que está disponible.
+   Se le dirigirá a un cuadro de diálogo de donde puede elegir el cubo/directorio diferente de Dataverse. Observe que hay una gran cantidad de cubos disponibles. Podríamos elegir los cubos que necesitamos y seguir el proceso del laboratorio 3 (usar la consulta visual para transformar datos y crear vistas). También podríamos usar el flujo de datos Gen2 como lo usamos anteriormente en este laboratorio para conectar SharePoint. Sin embargo, queremos informarle de otra opción que está disponible.
 
-En nuestro escenario, el equipo de TI ya ha establecido un vínculo a Dataverse y aplicado las transformaciones de datos necesarias, reflejándolas en el archivo de Power BI Desktop. Han ingerido estos datos al almacén de lago de datos en el área de trabajo de administración y nos han dado acceso a las tablas. Puesto que nuestro equipo informático ha hecho todo el trabajo duro, podemos crear un acceso directo a este almacén de lago de datos en el área de trabajo de administrador.
+   En nuestro escenario, el equipo de TI ya ha establecido un vínculo a Dataverse y aplicado las transformaciones de datos necesarias, reflejándolas en el archivo de Power BI Desktop. Han ingerido estos datos al almacén de lago de datos en el área de trabajo de administración y nos han dado acceso a las tablas. Puesto que nuestro equipo informático ha hecho todo el trabajo duro, podemos crear un acceso directo a este almacén de lago de datos en el área de trabajo de administrador.
 
 9. Seleccione **Cancelar** en el cuadro de diálogo Nuevo acceso directo para volver al almacén de lago de datos.
- 
-### Tarea 6: Crear un acceso directo al almacén de lago de datos
+
+    ![](../media/lab-04/image092.png)
+
+## Tarea 6: Crear un acceso directo al almacén de lago de datos
 
 1. En el panel del **explorador** de la izquierda, seleccione los **puntos suspensivos** al lado de **Tables**.
 
 2. Seleccione **Nuevo acceso directo**.
- 
+
+    ![](../media/lab-04/image095.png)
+
 3. Se abre el cuadro de diálogo Nuevo acceso directo. Seleccione la opción **Microsoft OneLake** en orígenes internos.
+
+
+    ![](../media/lab-04/image096.png)
+
  
 4. Se abrirá el cuadro de diálogo Seleccionar un tipo de origen de datos. Observe que tiene dos orígenes de datos.
 
@@ -301,15 +339,25 @@ En nuestro escenario, el equipo de TI ya ha establecido un vínculo a Dataverse 
 5. Seleccione **lh_dataverse**.
 
 6. Seleccione **Siguiente**.
- 
+
+
+    ![](../media/lab-04/image099.png)
+
 7. En el panel izquierdo, expanda **lh_dataverse -> Tables**. Observe que el administrador de TI ha proporcionado acceso a la tabla Cliente.
 
 8.	Seleccione **Cliente**.
 
 9.	Seleccione **Siguiente**.
+
+
+    ![](../media/lab-04/image102.png)
+
  
 10.	Seleccione Crear en el siguiente cuadro de diálogo. Se le dirigirá de vuelta al almacén de lago de datos lh_FAIAD.
- 
+
+
+    ![](../media/lab-04/image105.png)
+
 11.	En el panel Explorador de la izquierda, observe que se ha creado la nueva tabla Cliente.
 
 12.	Seleccione la tabla Cliente para ver los datos en el panel de versión preliminar.
@@ -318,10 +366,13 @@ Hemos creado correctamente un acceso directo a otro almacén de lago de datos.
 
 En la próxima práctica de laboratorio, configuraremos actualizaciones de programaciones.
 
-## Referencias
+# Referencias
 
 Fabric Analyst in a Day (FAIAD) le presenta algunas funciones clave disponibles en Microsoft Fabric. En el menú del servicio, la sección Ayuda (?) tiene vínculos a algunos recursos excelentes.
  
+
+![](../media/lab-04/image108.png)
+
 Estos son algunos recursos más que podrán ayudarle a seguir avanzando con Microsoft Fabric.
 
 - Vea la publicación del blog para leer el [anuncio de disponibilidad general de Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) completo.
