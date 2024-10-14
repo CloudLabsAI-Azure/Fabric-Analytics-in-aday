@@ -129,7 +129,7 @@ la source de données**. La boîte de dialogue Paramètres de la source de donn�
  
 3.	Cliquez sur **Fermer** pour fermer la boîte de dialogue Paramètres de la source de données.
 
-  ![](../media/lab-01/image042.png)
+    ![](../media/lab-01/image042.png)
 
   
 4.	Dans le volet gauche Queries, notez que les requêtes sont regroupées par source de données.
