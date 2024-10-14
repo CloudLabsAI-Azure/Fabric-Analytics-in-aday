@@ -128,10 +128,7 @@ la source de données**. La boîte de dialogue Paramètres de la source de donn�
   -  Dataverse
  
 3.	Cliquez sur **Fermer** pour fermer la boîte de dialogue Paramètres de la source de données.
-
-        ![](../media/lab-01/image042.png)
-
-  
+    
 4.	Dans le volet gauche Queries, notez que les requêtes sont regroupées par source de données.
 5.	Notez que le dossier **DataverseData** comporte des données Customer disponibles dans quatre requêtes différentes : BabyBoomer, GenX, GenY et GenZ. Ces quatre requêtes sont ajoutées pour créer la requête Customer.
 6.	Vous pouvez saisir les informations d’identification de la source de données Dataverse en saisissant le **Nom d’utilisateur** et le **Mot de passe** disponibles dans l’onglet **Variables d’environnement** (en regard de l’onglet Guide du labo). Veuillez sélectionner l’option Compte Microsoft.
