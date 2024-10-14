@@ -1,5 +1,8 @@
+# Microsoft Fabric - Fabric Analyst in a Day - Laboratorio 7
 
-## Contenido
+![](../media/lab-07/image000.png)
+
+# Contenido
 
 - Introducción	
 - Power BI	
@@ -17,7 +20,7 @@
 - Limpieza del entorno de laboratorio	
 - Referencias	
 
-## Introducción 
+# Introducción 
 
 Se nos presenta el almacén de lago de datos, se ingieren datos de diferentes orígenes de datos en el almacén de lago de datos, se establece un calendario de actualización para las orígenes de datos y se crea un modelo de datos. Ahora vamos a crear un informe.
 
@@ -28,9 +31,9 @@ Al final de este laboratorio, habrá aprendido:
 - Cómo crear un informe con Power BI Desktop
 - Cómo usar el modo Direct Lake, que da como resultado una actualización automática de los datos
 
-## Power BI
+# Power BI
 
-### Tarea 1: Crear un informe de forma automática
+## Tarea 1: Crear un informe de forma automática
 
 Comencemos con la opción de creación automática de informes. Y, más adelante en el laboratorio, volveremos a crear el informe que tenemos en Power BI.
 
@@ -39,11 +42,17 @@ Comencemos con la opción de creación automática de informes. Y, más adelante
 2. En la parte inferior del panel de navegación de la izquierda, seleccione el icono Selector de **experiencia de Fabric**.
 
 3. Se abre el cuadro de diálogo de experiencia de Fabric. Seleccione Power BI. Se le llevará a la **página Inicio de Power BI**.
- 
+
+    ![](../media/lab-07/image006.png)
+
 4. Seleccione **Nuevo informe** en el menú superior.
- 
+
+    ![](../media/lab-07/image009.png)
+
 5. Se le dirigirá a la **pantalla Crear el primer informe**. Habrá opciones para crear un informe usando Excel, CSV, introducir datos manualmente y crear un informe o elegir un modelo semántico publicado. Hemos creado un modelo semántico en los laboratorios anteriores. Usemos ese. **Seleccione la opción Selección de un modelo semántico publicado**.
- 
+
+    ![](../media/lab-07/image012.png)
+
 6. Se abre la página Elija un conjunto de datos para usar en su informe. Observe que tenemos cuatro opciones. Seleccione **sm_FAIAD**.
 
     a. **sm_FAIAD:** este es el modelo semántico que hemos creado y que queremos utilizar para crear el informe.
@@ -57,13 +66,16 @@ Comencemos con la opción de creación automática de informes. Y, más adelante
     e. **DataflowsStagingLakehouse:** este es el Lakehouse provisional que se crea de manera predeterminada. No utilizamos esto porque no organizamos datos.
 
 7. Haga clic en la flecha **junto al botón Crear informe de forma automática**. Observe que hay dos opciones: Crear informe de forma automática y Crear un informe en blanco. Probemos la creación automática: seleccione **Crear informe de forma automática**.
- 
+
+    ![](../media/lab-07/image015.png) 
 
 8. Power BI comenzará a crear de forma automática el informe. Observe que hay una opción para seleccionar previamente los datos si así lo queremos también. Una vez que el informe esté listo, aparecerá un cuadro de diálogo en la parte superior derecha de la pantalla. Seleccione **Ver informe ahora o se cargará automáticamente en unos segundos**.
- 
-**Punto de control:** tendrá un informe similar a la captura de pantalla siguiente. Hay algunos KPI y algunos objetos visuales de tendencias. Este es un buen comienzo si está analizando un nuevo modelo y necesita un impulso.
 
-**Nota:** Observe que en el menú superior tiene la opción de editar el informe o ver algunos de los datos como tablas. No dude en explorar estas opciones.
+    ![](../media/lab-07/image018.png)
+
+    **Punto de control:** tendrá un informe similar a la captura de pantalla siguiente. Hay algunos KPI y algunos objetos visuales de tendencias. Este es un buen comienzo si está analizando un nuevo modelo y necesita un impulso.
+
+    **Nota:** Observe que en el menú superior tiene la opción de editar el informe o ver algunos de los datos como tablas. No dude en explorar estas opciones.
 
 9. Guardemos este informe. En el menú superior, seleccione **Guardar**.
 
@@ -74,31 +86,43 @@ Comencemos con la opción de creación automática de informes. Y, más adelante
 11. Asegúrese de que el informe esté guardado en el área de trabajo **FAIAD_<username>**.
 
 12. Seleccione **Guardar**.
- 
-**Nota:** El informe creado automáticamente puede verse diferente ya que se "creó automáticamente". También depende de las relaciones y medidas que creó en el laboratorio anterior (Laboratorio 6).
 
-La captura de pantalla anterior muestra el aspecto que el informe creado automáticamente puede tener si ha creado todas las relaciones y medidas, incluidas las relaciones opcionales (Laboratorio 6).
-
-La siguiente captura de pantalla es el aspecto que puede tener el informe creado automáticamente si omite la creación de las relaciones y medidas opcionales (Laboratorio 6).
+    ![](../media/lab-07/image021.png)
  
-### Tarea 2: Configurar el fondo para un nuevo informe
+    **Nota:** El informe creado automáticamente puede verse diferente ya que se "creó automáticamente". También depende de las relaciones y medidas que creó en el laboratorio anterior (Laboratorio 6).
+
+    La captura de pantalla anterior muestra el aspecto que el informe creado automáticamente puede tener si ha creado todas las relaciones y medidas, incluidas las relaciones opcionales (Laboratorio 6).
+
+    La siguiente captura de pantalla es el aspecto que puede tener el informe creado automáticamente si omite la creación de las relaciones y medidas opcionales (Laboratorio 6).
+
+    ![](../media/lab-07/image024.png)
+ 
+## Tarea 2: Configurar el fondo para un nuevo informe
 
 Creemos un nuevo informe usando un lienzo en blanco.
 
 1. En el **panel izquierdo**, seleccione el nombre del área de trabajo, **FAIAD_<username>** por el que se navegará en el área de trabajo.
 
 2. En el menú superior, seleccione **Nuevo -> Informe**. Se le dirigirá a la página de creación de su primer informe.
- 
+
+    ![](../media/lab-07/image027.png)
+
 3. Seleccione la opción **Selección de un modelo semántico publicado**, para que podamos elegir el modelo que hemos creado.
- 
+
+    ![](../media/lab-07/image030.png)
+
 4. Se abre el cuadro de diálogo Selección de un modelo semántico para usarlo en su informe. Seleccione **sm_FAIAD**.
 
 5. Haga clic en la flecha **junto al botón Crear informe de forma automática**. Seleccione **Crear un informe en blanco**. Se le dirigirá a una página del informe similar a la página del informe de Power BI Desktop.
- 
+
+    ![](../media/lab-07/image033.png)
+
 6. Si aún no lo ha abierto, abra **FAIAD.pbix**, que se encuentra en la carpeta **Reports** en el **escritorio** de su entorno de laboratorio.
 
-Vamos a utilizar este informe como referencia. Comenzaremos agregando el fondo del lienzo. Crearemos el encabezado del informe, agregaremos un par de KPI y crearemos el gráfico de líneas de Ventas a lo largo del tiempo. Por razones de tiempo y sabiendo que tiene experiencia en la creación de objetos visuales en Power BI Desktop, no crearemos todos los objetos visuales. 
- 
+    Vamos a utilizar este informe como referencia. Comenzaremos agregando el fondo del lienzo. Crearemos el encabezado del informe, agregaremos un par de KPI y crearemos el gráfico de líneas de Ventas a lo largo del tiempo. Por razones de tiempo y sabiendo que tiene experiencia en la creación de objetos visuales en Power BI Desktop, no crearemos todos los objetos visuales. 
+
+    ![](../media/lab-07/image036.png)
+
 7. Vuelva al **lienzo de Power BI** en su explorador.
 
 8. Seleccione el **icono de la página Formato** en el panel de Visualizaciones.
@@ -114,8 +138,10 @@ Vamos a utilizar este informe como referencia. Comenzaremos agregando el fondo d
 13. Establezca el menú desplegable **Ajuste de imagen** en **Ajustar**.
 
 14. Establezca la Transparencia en **0 %**.
- 
-### Tarea 3: Agregar un encabezado al informe
+
+    ![](../media/lab-07/image039.png)
+
+## Tarea 3: Agregar un encabezado al informe
 
 1. Agreguemos el encabezado en el margen superior. En **el menú**, seleccione **Cuadro de texto**.
 
@@ -132,7 +158,9 @@ Vamos a utilizar este informe como referencia. Comenzaremos agregando el fondo d
 7. Utilice el control deslizante **Fondo** para configurarlo en **Desactivado**.
 
 8. Cambie el tamaño del cuadro de texto **para que quepa en el margen superior**.
- 
+
+    ![](../media/lab-07/image045.png)
+
 ### Tarea 4: Agregar KPI al informe
 
 1. Agreguemos KPI de ventas. Seleccione el **espacio en blanco** en el lienzo para quitar el foco del cuadro de texto.
@@ -142,7 +170,9 @@ Vamos a utilizar este informe como referencia. Comenzaremos agregando el fondo d
 3. En la **sección Datos**, expanda la **tabla Sales**.
 
 4. Seleccione la medida Sales.
- 
+
+    ![](../media/lab-07/image046.png)
+
 5. Con el objeto **visual de tarjeta de varias filas seleccionado**, seleccione el **icono Dar formato a objeto visual** en la sección Visualizaciones.
 
 6. Expanda la sección **Etiquetas de categorías**.
@@ -154,11 +184,15 @@ Vamos a utilizar este informe como referencia. Comenzaremos agregando el fondo d
 9. Seleccione **Más colores**.
 
 10. Establezca el valor Hex en **#004753**.
- 
+
+    ![](../media/lab-07/image047.png)
+
 11. Expanda la sección **Tarjetas**.
 
-12. Utilice el control deslizante B**arra de énfasis para configurarlo en Desactivado**.
- 
+12. Utilice el control deslizante **Barra de énfasis** para configurarlo en **Desactivado**.
+
+    ![](../media/lab-07/image051.png)
+
 13. Seleccione **General** en el panel de Visualizaciones.
 
 14. Expanda la **sección Efectos**.
@@ -166,7 +200,9 @@ Vamos a utilizar este informe como referencia. Comenzaremos agregando el fondo d
 15. Utilice el control deslizante **Fondo** para configurarlo en **Desactivado**.
 
 16. Cambie el tamaño del **objeto visual** y muévalo al **cuadro izquierdo como se muestra en la captura de pantalla**.
- 
+
+    ![](../media/lab-07/image048.png)
+
 17. Vamos a agregar otro KPI. Seleccione la **Tarjeta de varias filas de Sales** que acabamos de crear. **Copie** el objeto visual mediante la selección de **Ctrl+C** desde tu teclado.
 
 18. Pegue el objeto visual mediante la selección de **Ctrl+V** desde tu teclado. Observe que el objeto visual se pega en el lienzo.
@@ -176,8 +212,10 @@ Vamos a utilizar este informe como referencia. Comenzaremos agregando el fondo d
 20. Desde la sección **Datos**, expanda la tabla Sales y seleccione la medida **Units**.
 
 21. Cambie el tamaño del **objeto visual y colóquelo en el cuadro debajo del objeto visual Sales**.
- 
-### Tarea 5: Agregar un gráfico de líneas al informe
+
+    ![](../media/lab-07/image049.png)
+
+## Tarea 5: Agregar un gráfico de líneas al informe
 
 Creemos un gráfico de líneas para visualizar las ventas a lo largo del tiempo por empresa revendedora.
 
@@ -188,8 +226,10 @@ Creemos un gráfico de líneas para visualizar las ventas a lo largo del tiempo 
 3. En la **sección Datos**, expanda la tabla **Date**.
 
 4. Seleccione el campo **Year**. Tenga en cuenta que Year se suma de forma predeterminada y se agrega al eje Y. Rectifiquemos esto.
- 
-### Tarea 6: Guardar el informe
+
+    ![](../media/lab-07/image060.png)
+
+## Tarea 6: Guardar el informe
 
 Guardemos el informe antes de salir de él para realizar cambios en el modelo. 
 
@@ -197,18 +237,22 @@ Guardemos el informe antes de salir de él para realizar cambios en el modelo.
 
 2. Se abre el cuadro de diálogo Guardar el informe. Nombre el informe como **rpt_Sales_Report** 
 
-**Nota:** Estamos anteponiendo rpt al nombre del informe, que es la abreviatura de informe (en inglés).
+    **Nota:** Estamos anteponiendo rpt al nombre del informe, que es la abreviatura de informe (en inglés).
 
 3. Asegúrese de que el informe esté guardado en el área **de trabajo FAIAD_<username>**.
 
 4. **Seleccione Guardar**. Observe que el informe se guarda y usted se encuentra en modo de vista.
- 
-### Tarea 7: Configurar la columna Year en la tabla Date
+
+    ![](../media/lab-07/image063.png)
+
+## Tarea 7: Configurar la columna Year en la tabla Date
 
 1. En el **menú superior**, seleccione **Editar** para volver al modo de edición.
 
 2. En el **menú superior**, seleccione **Abrir modelo de datos**. Observe que el modelo semántico se abre en una nueva ventana o pestaña del navegador.
- 
+
+    ![](../media/lab-07/image066.png)
+
 3. En el panel **Datos de la derecha**, seleccione Tablas.
 
 4. Expanda la tabla **Date**.
@@ -218,7 +262,9 @@ Guardemos el informe antes de salir de él para realizar cambios en el modelo.
 6. En el panel **Propiedades** de la derecha, expanda la sección **Avanzado**.
 
 7. En el menú desplegable **Resumir por**, seleccione **Ninguno**.
- 
+
+    ![](../media/lab-07/image069.png)
+
 8. Vuelva a la **ventana/pestaña del informe** del navegador.
 
 9. En el **panel Datos** de la derecha, expanda la tabla Date. Observe que Year no es un campo de suma.
@@ -228,8 +274,10 @@ Guardemos el informe antes de salir de él para realizar cambios en el modelo.
 11. Seleccione el campo **Year** y se agregará al **eje X**.
 
 12. Expanda la tabla Sales y seleccione la **medida Sales**.
- 
-### Tarea 8: Configurar la columna Month Name en la tabla Date
+
+    ![](../media/lab-07/image072.png)
+
+## Tarea 8: Configurar la columna Month Name en la tabla Date
 
 1. Agreguemos Mes a este gráfico. Desde la tabla Date, arrastre el campo **MonthNameShort** debajo de **Year** en el **eje X**. Observe que el objeto visual está ordenado por Sales. Ordenémoslo por **MonthNameShort**.
 
@@ -240,9 +288,13 @@ Guardemos el informe antes de salir de él para realizar cambios en el modelo.
 4. Haga clic en los **puntos suspensivos (…)** en la esquina superior derecha del objeto visual.
 
 5. Seleccione **Ordenar eje -> Orden ascendente**.
- 
-**Nota:** Los meses están ordenados alfabéticamente. Vamos a arreglarlo.
- 
+
+    ![](../media/lab-07/image075.png)
+
+    **Nota:** Los meses están ordenados alfabéticamente. Vamos a arreglarlo.
+
+    ![](../media/lab-07/image078.png)
+
 6. Regrese a la **ventana/pestaña del navegador** donde tiene abierto el modelo semántico.
 
 7. En el panel **Datos**, expanda la tabla Date.
@@ -252,17 +304,23 @@ Guardemos el informe antes de salir de él para realizar cambios en el modelo.
 9. En el panel **Propiedades** de la derecha, expanda la sección **Avanzado**.
 
 10. En el menú desplegable **Ordenar por columna** seleccione **Month**.
- 
+
+    ![](../media/lab-07/image081.png)
+
 11. Vuelva a la **ventana/pestaña del informe** del navegador. Observe que ahora los meses están ordenados correctamente.
- 
-### Tarea 9: Aplicar formato al gráfico de líneas
+
+    ![](../media/lab-07/image084.png)
+
+## Tarea 9: Aplicar formato al gráfico de líneas
 
 Observe lo fácil que es actualizar el modelo semántico mientras se crean los informes. Esto proporciona una interacción fluida como Power BI Desktop.
 
 1. Con el **objeto visual Gráfico de líneas seleccionado, en la sección Datos**, expanda la tabla **Reseller**.
 
 2. Arrastre **Reseller -> Reseller Company** a la sección Leyenda.
- 
+
+    ![](../media/lab-07/image087.png)
+
 3. Con el **objeto visual Gráfico de líneas seleccionado**, en la sección **Visualizaciones**, seleccione **icono Formato visual -> General**.
 
 4. Expanda la sección **Título**.
@@ -272,7 +330,9 @@ Observe lo fácil que es actualizar el modelo semántico mientras se crean los i
 6. Expanda la sección **Efectos**.
 
 7. Utilice el control deslizante Fondo para configurarlo en **Desactivado**.
- 
+
+    ![](../media/lab-07/image090.png)
+
 8. En la sección **Visualizaciones**, seleccione el **icono Formato de objeto visual -> Objeto visual**.
 
 9. Expanda la sección **Líneas**.
@@ -290,25 +350,33 @@ Observe lo fácil que es actualizar el modelo semántico mientras se crean los i
 15. Cambie el tamaño del objeto visual y muévalo al **cuadro superior derecho como se muestra en la captura de pantalla**.
 
 16. Desplácese hacia la derecha en el objeto visual y o**bserve que tenemos datos hasta abril de 2024**.
- 
+
+    ![](../media/lab-07/image093.png)
+
 17. Guardemos el informe: desde el menú, seleccione **Archivo -> Guardar**.
 
 Como se mencionó anteriormente, no crearemos todos los objetos visuales en esta práctica de laboratorio. Siéntase libre de crear más objetos visuales si lo desea. 
 
-### Tarea 10: Conectar Power BI Desktop al modelo semántico
+## Tarea 10: Conectar Power BI Desktop al modelo semántico
 
 Ahora, veamos lo fácil que es Conectar Power BI Desktop al modelo semántico y crear objetos visuales.
 
 1. Abra **FAIADTemplate.pbix**, que se encuentra en la carpeta **Reports** en el **escritorio** de su entorno de laboratorio.
 
 2. En la cinta de opciones, seleccione **Inicio -> Centro de conectividad de datos de OneLake -> Modelos semánticos de Power BI**.
- 
+
+    ![](../media/lab-07/image096.png)
+
 3. Se abre el cuadro de diálogo del centro de datos de OneLake. Seleccione **sm_FAIAD**, el modelo semántico que hemos creado.
 
 4. Seleccione **Conectar**. Observe que en el panel de datos tenemos las tablas del modelo semántico.
- 
+
+    ![](../media/lab-07/image099.png)
+
 5. En el ***panel izquierdo***, seleccione **Vista de modelo**. Observe que podemos ver la relación entre tablas.
- 
+
+    ![](../media/lab-07/image102.png)
+
 6. En el **panel izquierdo**, seleccione **Vista Informe** para volver a la vista del informe.
 
 7. Si aún no lo ha abierto, abra **FAIAD.pbix**, que se encuentra en la carpeta **Reports** en el **escritorio** de su entorno de laboratorio.
@@ -316,14 +384,20 @@ Ahora, veamos lo fácil que es Conectar Power BI Desktop al modelo semántico y 
 8. Seleccione el **objeto visual del título del informe**.
 
 9. En la cinta de opciones, seleccione **Inicio -> Copiar**.
+
+    ![](../media/lab-07/image105.png)
  
 10. Vaya a **FAIADTemplate.pbix** y seleccione el lienzo del informe.
 
 11. En la cinta de opciones, seleccione **Inicio -> Pegar**.
  
+    ![](../media/lab-07/image106.png)
+
 12. Del mismo modo, copie y pegue los **KPI de Sales y Units**. Para su información, se pueden copiar y pegar varios objetos visuales juntos.
- 
-Observe que es fácil copiar objetos visuales de un informe existente y pegarlos en un informe que se conecta al modelo semántico. Tenga en cuenta que los nombres de las tablas, columnas y medidas deben ser los mismos para que funcione la función de copiar y pegar. Si no son los mismos, es posible que tenga un error, pero esto se puede resolver fácilmente.
+
+    ![](../media/lab-07/image111.png)
+
+    Observe que es fácil copiar objetos visuales de un informe existente y pegarlos en un informe que se conecta al modelo semántico. Tenga en cuenta que los nombres de las tablas, columnas y medidas deben ser los mismos para que funcione la función de copiar y pegar. Si no son los mismos, es posible que tenga un error, pero esto se puede resolver fácilmente.
 
 13. Vaya a **FAIAD.pbix** y seleccione el gráfico de líneas de Ventas a lo largo del tiempo.
 
@@ -334,14 +408,18 @@ Observe que es fácil copiar objetos visuales de un informe existente y pegarlos
 16. En la cinta de opciones, seleccione **Inicio -> Pegar**. Observe que el objeto visual no se representa. Esto se debe a que actualmente el modelo semántico no crea una jerarquía a partir del campo date.
 
 17. Vamos a arreglarlo. En el panel **Visualización**, en **Eje X** elimine **StartOfMonth**.
- 
+
+    ![](../media/lab-07/image115.png)
+
 18. En el **panel Datos**, expanda la tabla Date.
 
 19. Arrastre el campo **StartOfMonth** al **Eje X**. Esto corrige el objeto visual. Puede que tenga que dar formato al objeto visual.
  
+    ![](../media/lab-07/image116.png)
+
 20. Guardemos el informe: en la cinta de opciones, seleccione **Archivo -> Guardar**.
 
-### Tarea 11: Agregar nuevos datos para simular el modo Direct Lake
+## Tarea 11: Agregar nuevos datos para simular el modo Direct Lake
 
 Normalmente, en el modo Import, una vez que se actualizan los datos en el origen, necesitamos actualizar el modelo de Power BI y después se actualizan los datos en el informe. Con el modo de Direct Query, una vez que los datos se actualizan en el origen, están disponibles en el informe de Power BI. Sin embargo, el modo de Direct Query suele ser lento. Para resolver este problema, Microsoft Fabric presenta el modo Direct Lake. Direct Lake es una ruta rápida para cargar los datos del lago directamente en el motor de Power BI listos para su análisis. 
 
@@ -355,22 +433,32 @@ En un escenario real, los datos se actualizan en el origen. Como estamos en un e
 
 3. Seleccione **lh_FAIAD** para ir al almacén de lago de datos.
  
+    ![](../media/lab-07/image117.png)
+
 4. En el **panel del explorador** de la izquierda, seleccione los **puntos suspensivos** al lado de las **Tablas**.
 
 5. Seleccione **Nuevo acceso directo**.
  
+    ![](../media/lab-07/image123.png)
+
 6. Se abre el cuadro de diálogo Nuevo acceso directo. En **Orígenes externos, seleccione Azure Data Lake Storage Gen2**.
- 
+
+    ![](../media/lab-07/image126.png)
+
 7. En Configuración de conexión -> Dirección URL, introduzca este vínculo https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 
 8. Dado que hemos creado la conexión anteriormente, se reconoce. Seleccione **Siguiente**.
- 
+
+    ![](../media/lab-07/image129.png)
+
 9. Se conectará a ADLS Gen2 con la estructura de directorios que se muestra en el panel izquierdo. Expanda **Delta-Parquet-Format-FY25**.
 
 10. Seleccione **Sales.Invoices_May**.
 
 11. Seleccione **Siguiente**.
- 
+
+    ![](../media/lab-07/image132.png)
+
 12. Se le dirigirá al siguiente cuadro de diálogo, donde podemos editar los nombres. Seleccione el **icono Editar** en Acciones para **Sales.Invoices_May**.
 
 13. Cambie el nombre de **Sales.Invoices_May a InvoicesMay**.
@@ -378,11 +466,15 @@ En un escenario real, los datos se actualizan en el origen. Como estamos en un e
 14. Seleccione la **marca de verificación** al lado del nombre para guardar el cambio.
 
 15. Seleccione **Crear**.
- 
-Observe en el **Panel del explorador** de la izquierda que tenemos la tabla InvoicesMay. Ahora necesitamos actualizar Sales view.
+
+    ![](../media/lab-07/image135.png)
+
+    Observe en el **Panel del explorador** de la izquierda que tenemos la tabla InvoicesMay. Ahora necesitamos actualizar Sales view.
 
 16. En la **parte superior derecha de la pantalla, seleccione Almacén de lago de datos -> Punto de conexión de análisis SQL**.
- 
+
+    ![](../media/lab-07/image138.png) 
+
 17. En el menú superior, seleccione **Inicio -> Nueva consulta SQL. Se abre un nuevo panel de consulta SQL**.
 
 18. **Copie** el siguiente código y **péguelo** en el panel de consulta SQL.
@@ -532,15 +624,19 @@ Observe en el **Panel del explorador** de la izquierda que tenemos la tabla Invo
 
 19. En el menú de consulta del objeto visual, seleccione **Ejecutar** para ejecutar el código.
 
-Una vez ejecutado el código, hemos actualizado la tabla Sales para que incluya los datos de mayo de 2024.
+    Una vez ejecutado el código, hemos actualizado la tabla Sales para que incluya los datos de mayo de 2024.
+
+    ![](../media/lab-07/image143.png)    
  
 20. Seleccione **rpt_Sales_Report** en la barra de menús izquierda para volver al informe.
 
 21. En el menú superior, seleccione **Actualizar**. Observe ahora que en el gráfico de líneas hay datos para mayo de 2024. Además, observe que el importe y las Unidades de ventas han aumentado.
  
-No tenemos que actualizar el modelo de datos ni informar cuando los datos cambian. Esta es la ventaja de Direct Lake y Direct query.
+    ![](../media/lab-07/image146.png)
 
-Revisemos los desafíos que se enumeran en el planteamiento del problema:
+    No tenemos que actualizar el modelo de datos ni informar cuando los datos cambian. Esta es la ventaja de Direct Lake y Direct query.
+
+    Revisemos los desafíos que se enumeran en el planteamiento del problema:
 
 - **Debe actualizar su conjunto de datos al menos tres veces al día para adaptarse a los diferentes tiempos de actualización para los diferentes orígenes de datos**. Resolvimos esto con Direct Lake. Cada flujo de datos individual se actualiza según su programación. No es necesario actualizar el conjunto de datos y el informe.
 - **Sus actualizaciones tardan mucho tiempo, ya que necesita hacer una actualización completa cada vez para capturar cualquier actualización que haya ocurrido en los sistemas de origen**.
@@ -552,26 +648,32 @@ Vimos que los flujos de datos y el almacén de lago de datos son eficientes y es
 - **Necesita que un PO con Windows use Power BI Desktop aunque el estándar corporativo es Mac.**
 Microsoft Fabric es una oferta SaaS. Lo único que necesitamos es un explorador para acceder al servicio. No tenemos que instalar ningún software en nuestros escritorios.
 
-## Limpieza del entorno de laboratorio
+# Limpieza del entorno de laboratorio
 
 Una vez que esté todo listo para limpiar el entorno del laboratorio, siga los pasos a continuación.
 
 1. Seleccione el área de trabajo **FAIAD_<nombre de usuario>**  en el panel izquierdo para navegar a la página de inicio del área de trabajo.
 
 2. En el menú superior, seleccione **Configuración** del área de trabajo.
- 
+
+    ![](../media/lab-07/image149.png)
+
 3. Se abre el cuadro de diálogo de Configuración del área de trabajo. En la sección General, desplácese hacia abajo.
 
 4. Seleccione **Quitar esta área de trabajo**.
 
 5. Se abrirá el cuadro de diálogo de eliminar área de trabajo. Seleccione **Eliminar**.
 
-Esto eliminará el área de trabajo y todos los elementos que contenía.
+    Esto eliminará el área de trabajo y todos los elementos que contenía.
  
-## Referencias
+    ![](../media/lab-07/image152.png)
+
+# Referencias
 
 Fabric Analyst in a Day (FAIAD) le presenta algunas funciones clave disponibles en Microsoft Fabric. En el menú del servicio, la sección Ayuda (?) tiene vínculos a algunos recursos excelentes.
  
+![](../media/lab-07/image155.png)
+
 Estos son algunos recursos más que podrán ayudarle a seguir avanzando con Microsoft Fabric.
 
 - Vea la publicación del blog para leer el [anuncio de disponibilidad general de Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) completo.
