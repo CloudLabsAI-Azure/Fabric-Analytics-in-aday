@@ -48,8 +48,6 @@ Inhalt dieser Übung:
 
 - So erkunden Sie den Direct Lake-Modus, in dem Daten automatisch aktualisiert werden 
 
- 
-
 # Power BI 
 
 ## Aufgabe 1: Bericht automatisch erstellen 
@@ -118,8 +116,6 @@ Verwenden wir zunächst die Option „Bericht automatisch erstellen“. Und spä
     ![](../media/lab-07/image024.jpg)
 
 ## Aufgabe 2: Hintergrund für einen neuen Bericht konfigurieren 
-
- 
 
 Lassen Sie uns einen neuen Bericht mit einer leeren Canvas erstellen. 
 
@@ -235,7 +231,7 @@ Lassen Sie uns einen neuen Bericht mit einer leeren Canvas erstellen.
 
 21. Ändern Sie die Größe des **Visuals** und **platzieren Sie es im Feld unter dem Sales-Visual**. 
 
-  ![](../media/lab-07/image057.jpg)
+    ![](../media/lab-07/image057.jpg)
 
 ## Aufgabe 5: Dem Bericht ein Liniendiagramm hinzufügen 
 
@@ -467,8 +463,7 @@ In einem realen Szenario werden die Daten an der Quelle aktualisiert. Da wir uns
 
    ![](../media/lab-07/image126.jpg)
 
-7. Geben Sie unter Verbindungseinstellungen -> URL diesen Link
- https://stvnextblobstorage.dfs.core.windows.net/fabrikam-salesein. 
+7. Geben Sie unter Verbindungseinstellungen -> URL diesen Link https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales. 
 
 8. Da wir die Verbindung bereits früher hergestellt haben, wird sie erkannt. Wählen Sie **Weiter** aus. 
 
@@ -676,8 +671,6 @@ ALTER VIEW [dbo].[Sales] AS (
 
   Microsoft Fabric ist ein SaaS-Angebot. Wir benötigen lediglich einen Browser, um auf den Dienst zuzugreifen. Wir müssen keine Software auf unseren Desktops installieren. 
 
- 
-
 # Übungsumgebung bereinigen 
 
 Wenn Sie bereit sind, die Übungsumgebung zu bereinigen, führen Sie die folgenden Schritte aus. 
@@ -698,14 +691,13 @@ Wenn Sie bereit sind, die Übungsumgebung zu bereinigen, führen Sie die folgend
 
    ![](../media/lab-07/image151.jpg)
 
+## Referenzen
 
-   ## Referenzen
-   
-   Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie in der Hilfe (?) Links zu praktischen Informationen.
+Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie in der Hilfe (?) Links zu praktischen Informationen.
 
-    ![](../media/lab-07/image154.png)
+![](../media/lab-07/image154.png)
 
-   Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit Microsoft Fabric.
+Nachfolgend finden Sie weitere Angebote zur weiteren Arbeit mit Microsoft Fabric.
 
 - Die vollständige [Ankündigung der allgemeinen Verfügbarkeit von Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23) finden Sie 
 im Blogbeitrag.

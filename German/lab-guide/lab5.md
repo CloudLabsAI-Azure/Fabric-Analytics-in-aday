@@ -105,13 +105,13 @@ Hierbei handelt es sich um die Aktualisierung, die bei der Veröffentlichung des
 
 16. Wählen Sie **Übernehmen** aus, um diese Einstellung zu speichern.
 
-**Hinweis**: Durch Klicken auf den Link „Andere Uhrzeit hinzufügen“ können Sie mehrere Aktualisierungszeiten hinzufügen.
+    **Hinweis**: Durch Klicken auf den Link „Andere Uhrzeit hinzufügen“ können Sie mehrere Aktualisierungszeiten hinzufügen.
 
-Sie können auch Fehlerbenachrichtigungen an den Besitzer des Dataflows und an andere Kontakte senden.
+    Sie können auch Fehlerbenachrichtigungen an den Besitzer des Dataflows und an andere Kontakte senden.
 
-![](../media/lab-05/image027.jpg)
+    ![](../media/lab-05/image027.jpg)
 
-Wie bereits erwähnt, müssen wir eine benutzerdefinierte Logik erstellen, um das Szenario zu handhaben, in dem die Mitarbeiterdatei in SharePoint nicht rechtzeitig gesendet wird. Wir verwenden die Datenpipeline, um dieses Problem zu beheben.
+    Wie bereits erwähnt, müssen wir eine benutzerdefinierte Logik erstellen, um das Szenario zu handhaben, in dem die Mitarbeiterdatei in SharePoint nicht rechtzeitig gesendet wird. Wir verwenden die Datenpipeline, um dieses Problem zu beheben.
 
 # Datenpipeline
 
@@ -190,11 +190,11 @@ Konfigurationsoptionen der Dataflow-Aktivität enthält.
 
     ![](../media/lab-05/image048.jpg)
 
-Beachten Sie, welchen Vorteil die Verwendung der Datenpipeline im Vergleich zur Festlegung des Dataflows auf eine geplante Aktualisierung bietet (wie es schon bei früheren Dataflows erfolgt ist):
+    Beachten Sie, welchen Vorteil die Verwendung der Datenpipeline im Vergleich zur Festlegung des Dataflows auf eine geplante Aktualisierung bietet (wie es schon bei früheren Dataflows erfolgt ist):
 
-- Die Pipeline bietet die Möglichkeit der mehrmaligen Wiederholung, bevor die Aktualisierung fehlschlägt.
+    - Die Pipeline bietet die Möglichkeit der mehrmaligen Wiederholung, bevor die Aktualisierung fehlschlägt.
 
-- Die Pipeline ermöglicht eine Aktualisierung innerhalb von Sekunden, während beim Dataflow alle 30 Minuten eine geplante Aktualisierung erfolgt.
+    - Die Pipeline ermöglicht eine Aktualisierung innerhalb von Sekunden, während beim Dataflow alle 30 Minuten eine geplante Aktualisierung erfolgt.
 
 
 ## Aufgabe 4: Neue Datenpipeline erstellen
@@ -219,11 +219,11 @@ Fügen wir unserem Szenario etwas mehr Komplexität hinzu. Wir haben festgestell
 
 3. Klicken Sie in der Aktivitätsliste auf **Bis**.
 
-**Bis:** Mit dieser Aktivität wird eine Iteration ausgeführt, bis eine Bedingung erfüllt ist.
+    **Bis:** Mit dieser Aktivität wird eine Iteration ausgeführt, bis eine Bedingung erfüllt ist.
 
-In unserem Szenario erfolgt die Iteration des Dataflows so lange, bis er erfolgreich ist oder drei Versuche durchgeführt wurden.
+    In unserem Szenario erfolgt die Iteration des Dataflows so lange, bis er erfolgreich ist oder drei Versuche durchgeführt wurden.
 
-![](../media/lab-05/image054.jpg)
+    ![](../media/lab-05/image054.jpg)
 
 ## Aufgabe 6: Variablen erstellen
 
@@ -419,10 +419,10 @@ Wir haben die Dataflow-Aktivität wie zuvor in der Übung konfiguriert. Nun füg
 
 12. Wählen Sie **OK** aus. Sie werden zum **Iterator-Designbereich** weitergeleitet.
 
-![](../media/lab-05/image105.png)
+    ![](../media/lab-05/image105.png)
 
-Nun müssen wir den Zähler festlegen, wenn die Dataflow-Aktivität fehlschlägt. In der Datenpipeline können wir keine Selbstreferenz für eine Variable festlegen. Das bedeutet, dass wir die Zählervariable
-„varCounter“ nicht inkrementieren können, indem wir ihr den Wert eins hinzufügen (varCounter = varCounter + 1). Daher nutzen wir die Variable „varTempCounter“.
+    Nun müssen wir den Zähler festlegen, wenn die Dataflow-Aktivität fehlschlägt. In der Datenpipeline können wir keine Selbstreferenz für eine Variable festlegen. Das bedeutet, dass wir die Zählervariable
+    „varCounter“ nicht inkrementieren können, indem wir ihr den Wert eins hinzufügen (varCounter = varCounter + 1). Daher nutzen wir die Variable „varTempCounter“.
 
 ## Aufgabe 10: Zweite Aktivität „Variable festlegen“ konfigurieren
 
@@ -446,8 +446,7 @@ Nun müssen wir den Zähler festlegen, wenn die Dataflow-Aktivität fehlschlägt
 
 9. Wählen Sie im Feld **Wert** das **Textfeld** aus. Wählen Sie den Link **Dynamischen Inhalt hinzufügen** aus.
 
-10. Das Dialogfeld Pipeline-Ausdrucks-Generator wird geöffnet. Geben Sie
-**@add(variables('varCounter'),1)** ein..
+10. Das Dialogfeld Pipeline-Ausdrucks-Generator wird geöffnet. Geben Sie **@add(variables('varCounter'),1)** ein..
  
 **Hinweis:** Sie können diesen Ausdruck gerne eingeben und die Funktionen über das Menü auswählen oder kopieren und einfügen. Diese Funktion legt den Wert der Variablen „varTempCounter“ auf den Wert der Variablen „varCounter“ plus eins (varTempCounter = varCounter + 1) fest.
 
@@ -478,8 +477,7 @@ Nun müssen wir den Wert der Variablen „varCounter“ auf den Wert „varTempC
 
 9. Wählen Sie im Feld **Wert** das **Textfeld** aus. Wählen Sie den Link D**ynamischen Inhalt hinzufügen** aus.
 
-10. Das Dialogfeld Pipeline-Ausdrucks-Generator wird geöffnet. Geben Sie
-**@variables('varTempCounter')** ein. Sie können diesen Ausdruck gerne eingeben oder die Funktionen über das Menü auswählen oder kopieren und einfügen.
+10. Das Dialogfeld Pipeline-Ausdrucks-Generator wird geöffnet. Geben Sie **@variables('varTempCounter')** ein. Sie können diesen Ausdruck gerne eingeben oder die Funktionen über das Menü auswählen oder kopieren und einfügen.
 
 **Hinweis:** Diese Funktion legt den Wert der Variablen „varTempCounter“ auf den Wert der Variablen „varTempCounter“ (varCounter = varTempCounter) fest. Am Ende jeder Iteration haben sowohl varCounter als auch varTempCounter denselben Wert.
 
@@ -575,9 +573,9 @@ zweiten Mal fehlschlägt, müssen wir 15 Minuten/900 Sekunden warten, und es ern
 
 11. Wählen Sie im linken Bereich Ihren Fabric-Arbeitsbereich **FAIAD_\<Benutzername>** aus, um zur Startseite des Arbeitsbereichs zu navigieren.
 
-**Hinweis:** Im Bildschirm „Zeitplan“ ist keine Option verfügbar, um Sie zu benachrichtigen, ob der Vorgang erfolgreich war oder nicht (wie beim Dataflow-Zeitplan). Die Benachrichtigung kann durch Hinzufügen einer Aktivität in der Datenpipeline erfolgen. Wir führen diesen Schritt nicht in dieser Übung durch, da es sich um eine Übungsumgebung handelt.
+    **Hinweis:** Im Bildschirm „Zeitplan“ ist keine Option verfügbar, um Sie zu benachrichtigen, ob der Vorgang erfolgreich war oder nicht (wie beim Dataflow-Zeitplan). Die Benachrichtigung kann durch Hinzufügen einer Aktivität in der Datenpipeline erfolgen. Wir führen diesen Schritt nicht in dieser Übung durch, da es sich um eine Übungsumgebung handelt.
 
-Wir haben Aktualisierungen für die verschiedenen Datenquellen geplant. In der nächsten Übung werden wir ein semantisches Modell mit Beziehungen, Kennzahlen und anderen Modellierungsvorgängen durchführen.
+    Wir haben Aktualisierungen für die verschiedenen Datenquellen geplant. In der nächsten Übung werden wir ein semantisches Modell mit Beziehungen, Kennzahlen und anderen Modellierungsvorgängen durchführen.
  
 # Referenzen
 

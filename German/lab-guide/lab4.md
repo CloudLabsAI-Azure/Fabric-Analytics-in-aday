@@ -359,9 +359,9 @@ Sie sollten sich im Lakehouse lh_FAIAD befinden. Stellen Sie sicher, dass Sie si
 
 12. Wählen Sie die Tabelle **Customer** aus, um die Daten im Vorschaubereich anzuzeigen. 
 
-Wir haben erfolgreich eine Verknüpfung zu einem anderen Lakehouse erstellt.
+    Wir haben erfolgreich eine Verknüpfung zu einem anderen Lakehouse erstellt.
 
-In der nächsten Übung richten wir geplante Aktualisierungen ein.
+    In der nächsten Übung richten wir geplante Aktualisierungen ein.
  
 ## Referenzen
 

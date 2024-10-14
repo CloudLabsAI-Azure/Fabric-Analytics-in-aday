@@ -338,9 +338,7 @@ Ergänzen wir die restlichen Beziehungen.
 
 28. Erstellen Sie ebenso eine **n:1-Beziehung** zwischen den Tabellen **PO** und **People**. Wählen Sie unter **PO** den Eintrag **ContactPersonID** und unter **People** den Eintrag **PersonID** aus.
 
-29. Wählen Sie **Schließen** aus, um das Dialogfeld „Beziehungen verwalten“ zu schließen. 
-
-    Nun sind alle Beziehungen erstellt.
+29. Wählen Sie **Schließen** aus, um das Dialogfeld „Beziehungen verwalten“ zu schließen. Nun sind alle Beziehungen erstellt.
 
     **Überprüfen Sie:** Das Modell sollte so wie im Screenshot unten aussehen.
 
