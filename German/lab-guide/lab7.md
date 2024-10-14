@@ -259,7 +259,7 @@ Speichern wir den Bericht, bevor wir ihn verlassen, um Änderungen am Modell vor
 
 2. Das Dialogfeld „Bericht speichern“ wird geöffnet. Geben Sie dem Bericht den Namen **rpt_Sales_Report**.  
 
-**Hinweis:** Wir stellen dem Berichtsnamen das Präfix „rpt“ voran, was für „Bericht“ steht. 
+   **Hinweis:** Wir stellen dem Berichtsnamen das Präfix „rpt“ voran, was für „Bericht“ steht. 
 
 3. Stellen Sie sicher, dass der Bericht im Arbeitsbereich **FAIAD_<Benutzername>** gespeichert wird. 
 
@@ -275,7 +275,7 @@ Speichern wir den Bericht, bevor wir ihn verlassen, um Änderungen am Modell vor
 
    ![](../media/lab-07/image066.jpg)
 
-3. Wählen Sie im Bereich **Daten auf der rechten Seite „**Tabellen“ aus. 
+3. Wählen Sie im Bereich **Daten auf der rechten Seite „** Tabellen“ aus. 
 
 4. Erweitern Sie die Tabelle **Date**. 
 
@@ -301,7 +301,7 @@ Speichern wir den Bericht, bevor wir ihn verlassen, um Änderungen am Modell vor
 
 ## Aufgabe 8: Die Spalte „Month Name“ in der Tabelle „Date“ konfigurieren 
 
-1. Fügen wir diesem Diagramm „Monat“ hinzu. Ziehen Sie das Feld **MonthNameShort** unter **Year** aus der Tabelle „Date“ in die X-Achse. Nun sortieren wir es nach **MonthNameShort**. 
+1. Fügen wir diesem Diagramm „Monat“ hinzu. Ziehen Sie das Feld **MonthNameShort** unter **Year** aus der Tabelle „Date“ in die **X-Achse.** Nun sortieren wir es nach **MonthNameShort**. 
 
 2. Wählen Sie die **Auslassungspunkte (…)** oben rechts im Visual aus. 
 
