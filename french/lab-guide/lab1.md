@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Labo 1 ##
 
-Image 
+![](../media/lab-01/main1.png)
 
 ## Sommaire ##
 - Structure du document	
@@ -28,7 +28,7 @@ Afin de tirer de précieux insights des données, vous extrayez les données de 
 - **Données client :** proviennent de Customer Insights et les données sont stockées dans Dataverse. Les données sont systématiquement à jour.
 - **Données collaborateur :** proviennent du système RH ; elles sont stockées sous forme de fichier d’exportation dans un dossier SharePoint. Elles sont mises à jour tous les matins à 9 h.
 
-  Image
+  ![image](french/media/lab-01/image006.jpg)
 
 Vous créez actuellement un jeu de données dans Power BI Premium qui extrait les données des systèmes sources ci-dessus pour répondre à vos besoins en matière de reporting et fournir un libre- service aux utilisateurs finaux. Vous mettez à jour votre modèle à l’aide de Power Query.
 ### Vous êtes confronté aux défis suivants : ###
