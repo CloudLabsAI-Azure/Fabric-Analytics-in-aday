@@ -114,7 +114,7 @@ Comencemos configurando una actualización programada del flujo de datos del pro
 
 # Canalización de datos
 
-## Tarea 3: Crear una canalización de datos
+## Tarea 2: Crear una canalización de datos
 
 1. Seleccione el icono **Selector de experiencia de Fabric** en la parte inferior izquierda de su pantalla.
 
