@@ -230,7 +230,7 @@ Fabric Analyst in a Day (FAIAD) 介绍了Microsoft Fabric 中提供的一些主�
 
 © 2023 Microsoft Corporation.保留所有权利。
 
-保留所有权利。使用此演示/实验即表示您已同意以下条款: 
+© 2023 Microsoft Corporation.保留所有权利。使用此演示/实验即表示您已同意以下条款: 
 
 本演示/实验中的技术/功能由 Microsoft Corporation 出于获取反馈和提供学习体验的目的提供。只能将本演示/实验用于评估这些技术特性和功能以及向Microsoft 提供反馈。不得用于任何其他用途。不得对此演示/实验或其任何部分进行修改、复制、分发、传送、显示、 执行、复制、公布、许可、转让、销售或基于以上内容创建衍生作品。
 
