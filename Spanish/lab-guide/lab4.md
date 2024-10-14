@@ -316,7 +316,7 @@ Debe estar en el almacén de lago de datos lh_FAIAD. Asegúrese de estar en la v
 
     ![](../media/lab-04/image092.png)
 
-## Tarea 6: Crear un acceso directo al almacén de lago de datos
+## Tarea 10: Crear un acceso directo al almacén de lago de datos
 
 1. En el panel del **explorador** de la izquierda, seleccione los **puntos suspensivos** al lado de **Tables**.
 
