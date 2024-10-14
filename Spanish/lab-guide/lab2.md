@@ -44,7 +44,7 @@ Al final de este laboratorio, habrá aprendido:
 
 4. Haga clic en **Sign in** y siga las indicaciones para iniciar sesión en Fabric.
 
-   ![](../media/lab-02/image009.png)
+   ![](../media/lab-02/image-009.png)
 
 5. Se le dirigirá a la **página principal del servicio Power BI** que ya conoce.
 
