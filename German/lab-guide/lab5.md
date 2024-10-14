@@ -346,7 +346,10 @@ Parameter. Wir arbeiten am ersten Parameter.
     ![](../media/lab-05/image084.png)
 
 23.	Ihr Ausdruck sollte folgendermaßen lauten:
-**@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))**
+
+    ```
+     @or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess'))) 
+     ```
  
 24.	Wählen Sie **OK** aus.
 
@@ -474,7 +477,7 @@ Nun müssen wir den Zähler festlegen, wenn die Dataflow-Aktivität fehlschlägt
 
 8. Wählen Sie im Feld **Name varCounter** aus. aus. Dies ist die Variable, deren Wert wir festlegen werden.
 
-9. Wählen Sie im Feld **Wert** das **Textfeld** aus. Wählen Sie den Link Dynamischen Inhalt hinzufügen aus.
+9. Wählen Sie im Feld **Wert** das **Textfeld** aus. Wählen Sie den Link D**ynamischen Inhalt hinzufügen** aus.
 
 10. Das Dialogfeld Pipeline-Ausdrucks-Generator wird geöffnet. Geben Sie
 **@variables('varTempCounter')** ein. Sie können diesen Ausdruck gerne eingeben oder die Funktionen über das Menü auswählen oder kopieren und einfügen.
