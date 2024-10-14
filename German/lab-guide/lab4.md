@@ -64,11 +64,11 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
  
 9. Rufen Sie im Browser wieder das Fenster **Dataflow** auf.
 
-10.	Drücken Sie im Bereich **Dataflow** auf **STRG+V** (das Einfügen mittels Rechtsklick ist derzeit nicht möglich). Wenn Sie ein MAC-Gerät verwenden, drücken Sie zum Einfügen bitte Cmd+V.
+10. Drücken Sie im Bereich **Dataflow** auf **STRG+V** (das Einfügen mittels Rechtsklick ist derzeit nicht möglich). Wenn Sie ein MAC-Gerät verwenden, drücken Sie zum Einfügen bitte Cmd+V.
 
-    **Hinweis**: Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den Schieberegler, um das **VM Native Clipboard** zu aktivieren. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben, können Sie diese Option deaktivieren.
+**Hinweis**: Wenn Sie in der Übungsumgebung arbeiten, wählen Sie die Auslassungspunkte oben rechts auf dem Bildschirm aus. Verwenden Sie den Schieberegler, um das **VM Native Clipboard** zu aktivieren. Wählen Sie im Dialogfeld OK aus. Nachdem Sie die Abfragen eingefügt haben, können Sie diese Option deaktivieren.
 
-    Beachten Sie, dass die Abfrage links eingefügt wurde. Weil für SharePoint keine Verbindung erstellt wurde, wird eine Warnmeldung angezeigt, in der Sie aufgefordert werden, eine Verbindung zu konfigurieren.
+Beachten Sie, dass die Abfrage links eingefügt wurde. Weil für SharePoint keine Verbindung erstellt wurde, wird eine Warnmeldung angezeigt, in der Sie aufgefordert werden, eine Verbindung zu konfigurieren.
 
 ### Aufgabe 2: Verbindung zu SharePoint erstellen
 
@@ -113,12 +113,11 @@ Menü „Verbindung“** ausgewählt und **Authentifizierungsart** auf **Organis
 
     ![](../media/lab-04/image027.png)
 
-9. Das Dialogfeld „Zieleinstellungen auswählen“ wird geöffnet. Stellen Sie sicher, dass
-**„Automatische Einstellungen verwenden“ aktiviert** ist.
+9. Das Dialogfeld „Zieleinstellungen auswählen“ wird geöffnet. Stellen Sie sicher, dass **„Automatische Einstellungen verwenden“ aktiviert** ist.
 
     **Hinweis**: Sie können die automatischen Einstellungen deaktivieren und haben die Möglichkeit, die Aktualisierungsmethode und die Schemaoptionen festzulegen. Vergewissern Sie sich nach der Erkundung, dass **„Automatische Einstellungen verwenden“ aktiviert** ist.
 
-10.	Wählen Sie **Einstellungen speichern** aus.
+10. Wählen Sie **Einstellungen speichern** aus.
 
     ![](../media/lab-04/image030.png)
 
@@ -144,7 +143,7 @@ Menü „Verbindung“** ausgewählt und **Authentifizierungsart** auf **Organis
 
     ![](../media/lab-04/image039.png)
 
-Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet.
+    Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet.
 
 7. Wählen Sie **lh_FAIAD** aus, um zum Lakehouse zu navigieren.
 
@@ -165,24 +164,23 @@ Sie werden zum Arbeitsbereich **FAIAD_<Benutzername>** weitergeleitet.
 
     ![](../media/lab-04/image042.jpg)
 
-Sie werden zur **Dataflow-Seite** weitergeleitet. Nachdem Sie Dataflow nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in Dataflow.
+    Sie werden zur **Dataflow-Seite** weitergeleitet. Nachdem Sie Dataflow nun kennen, kopieren Sie die Abfragen aus Power BI Desktop in Dataflow.
 
 3. Öffnen Sie **FAIAD.pbix** im Ordner **Reports** auf dem Desktop Ihrer Übungsumgebung, falls dies noch nicht erfolgt ist.
 
 4. Wählen Sie im Menüband **Start > Daten transformieren** aus. Das Power Query-Fenster wird geöffnet. Wie Sie in der vorherigen Übung festgestellt haben, sind die Abfragen im linken Bereich nach Datenquelle organisiert.
 
-5. Wählen Sie links unter dem Ordner „SnowflakeData“ mit **STRG+Auswahl** oder
-„Umschalt+Auswahl“ die folgenden Abfragen aus:
+5. Wählen Sie links unter dem Ordner „SnowflakeData“ mit **STRG+Auswahl** oder „Umschalt+Auswahl“ die folgenden Abfragen aus:
 
-    a.	SupplierCategories
+    a. SupplierCategories
 
-    b.	Suppliers
+    b. Suppliers
 
-    c.	Supplier
+    c. Supplier
 
-    d.	PO
+    d. PO
 
-    e.	PO Line Items
+    e. PO Line Items
  
 6. **Klicken Sie mit der rechten Maustaste**, und wählen Sie **Kopieren** aus.
 
@@ -210,7 +208,7 @@ Beachten Sie, dass die fünf Abfragen eingefügt wurden und dass der Bereich „
 
 4. Geben Sie den **Benutzernamen und das Kennwort für Snowflake** ein. Beides finden Sie auf der Registerkarte mit den Environment Variables (neben der Registerkarte mit der Übungsanleitung).
 
-5.	Wählen Sie **Verbinden** aus.
+5. Wählen Sie **Verbinden** aus.
 
     ![](../media/lab-04/image054.png)
 
@@ -224,8 +222,7 @@ Beachten Sie, dass die fünf Abfragen eingefügt wurden und dass der Bereich „
 
     ![](../media/lab-04/image057.jpg)
 
-3. Das Dialogfeld „Herstellen einer Verbindung mit dem Datenziel“ wird geöffnet. Wählen Sie im
-**Dropdown-Menü „Verbindung“** die Option **Lakehouse (keine)** aus.
+3. Das Dialogfeld „Herstellen einer Verbindung mit dem Datenziel“ wird geöffnet. Wählen Sie im **Dropdown-Menü „Verbindung“** die Option **Lakehouse (keine)** aus.
 
 4. Wählen Sie **Weiter** aus.
 
@@ -247,7 +244,7 @@ Beachten Sie, dass die fünf Abfragen eingefügt wurden und dass der Bereich „
    
     ![](../media/lab-04/image065.jpg)
 
-11.	Sie werden zum **Power Query-Fenster** weitergeleitet. Beachten Sie unten rechts, dass das **Datenziel** auf **Lakehouse** festgelegt ist. Legen Sie ebenso das **Datenziel für die Abfrage „PO“** fest. Sobald das erledigt ist, sollte bei der Abfrage „PO“ das **Datenziel**, wie im Screenshot unten zu sehen, **Lakehouse** lauten.
+11. Sie werden zum **Power Query-Fenster** weitergeleitet. Beachten Sie unten rechts, dass das **Datenziel** auf **Lakehouse** festgelegt ist. Legen Sie ebenso das **Datenziel für die Abfrage „PO“** fest. Sobald das erledigt ist, sollte bei der Abfrage „PO“ das **Datenziel**, wie im Screenshot unten zu sehen, **Lakehouse** lauten.
 
      ![](../media/lab-04/image068.jpg)
 
@@ -298,8 +295,7 @@ Sie sollten sich im Lakehouse lh_FAIAD befinden. Stellen Sie sicher, dass Sie si
 
    ![](../media/lab-04/image083.jpg)
 
-4. Das Dialogfeld „Verbindungseinstellungen“ wird geöffnet. Geben Sie
-**org6c18814a.crm.dynamics.com** als **Umgebungsdomäne** ein.
+4. Das Dialogfeld „Verbindungseinstellungen“ wird geöffnet. Geben Sie **org6c18814a.crm.dynamics.com** als **Umgebungsdomäne** ein.
 
 5. Behalten Sie **Authentifizierungsart** als **Organisationskonto** bei.
  
@@ -315,10 +311,9 @@ Sie sollten sich im Lakehouse lh_FAIAD befinden. Stellen Sie sicher, dass Sie si
 
 8. Wählen Sie im Dialogfeld „Verbindungseinstellungen“ die Option **Weiter** aus.
 
-   Sie werden zu einem Dialogfeld weitergeleitet, in dem Sie den anderen Bucket/das andere
-Verzeichnis aus Dataverse auswählen können. Beachten Sie, dass viele verschiedene Buckets zur Verfügung stehen. Wir können den/die Buckets auswählen, die wir benötigen, und den in Übung 3 beschriebenen Prozess befolgen (die Visual-Abfrage verwenden, um Daten zu transformieren und Ansichten zu erstellen). Wir können auch mit Dataflow Gen2 eine Verbindung zu SharePoint herstellen, wie zuvor in dieser Übung. Wir möchten Sie jedoch auf eine weitere verfügbare Option aufmerksam machen.
-In unseren Szenario hat das IT-Team bereits eine Verknüpfung zu Dataverse erstellt und die erforderlichen Datentransformationen angewendet, die diese in der Power BI Desktop-Datei
-spiegeln. Sie haben diese Daten in Lakehouse im Arbeitsbereich „Administrator“ erfasst und uns Zugriff auf die Tabelle(n) gewährt. Da unser IT-Team die ganze harte Arbeit erledigt hat, können wir im Arbeitsbereich „Administrator“ eine Verknüpfung zu diesem Lakehouse erstellen.
+   Sie werden zu einem Dialogfeld weitergeleitet, in dem Sie den anderen Bucket/das andere Verzeichnis aus Dataverse auswählen können. Beachten Sie, dass viele verschiedene Buckets zur Verfügung stehen. Wir können den/die Buckets auswählen, die wir benötigen, und den in Übung 3 beschriebenen Prozess befolgen (die Visual-Abfrage verwenden, um Daten zu transformieren und Ansichten zu erstellen). Wir können auch mit Dataflow Gen2 eine Verbindung zu SharePoint herstellen, wie zuvor in dieser Übung. Wir möchten Sie jedoch auf eine weitere verfügbare Option aufmerksam machen.
+
+    In unseren Szenario hat das IT-Team bereits eine Verknüpfung zu Dataverse erstellt und die erforderlichen Datentransformationen angewendet, die diese in der Power BI Desktop-Datei spiegeln. Sie haben diese Daten in Lakehouse im Arbeitsbereich „Administrator“ erfasst und uns Zugriff auf die Tabelle(n) gewährt. Da unser IT-Team die ganze harte Arbeit erledigt hat, können wir im Arbeitsbereich „Administrator“ eine Verknüpfung zu diesem Lakehouse erstellen.
  
 9. Wählen Sie im Dialogfeld „Neue Verknüpfung“ die Option **Abbrechen** aus, um zum Lakehouse zurückzukehren.
  
@@ -362,11 +357,11 @@ spiegeln. Sie haben diese Daten in Lakehouse im Arbeitsbereich „Administrator�
 
 11.	Beachten Sie, dass im linken Bereich **Explorer** die neue Tabelle **Customer** erstellt wurde.
 
-12.	Wählen Sie die Tabelle **Customer** aus, um die Daten im Vorschaubereich anzuzeigen. 
+12. Wählen Sie die Tabelle **Customer** aus, um die Daten im Vorschaubereich anzuzeigen. 
 
-    Wir haben erfolgreich eine Verknüpfung zu einem anderen Lakehouse erstellt.
+Wir haben erfolgreich eine Verknüpfung zu einem anderen Lakehouse erstellt.
 
-    In der nächsten Übung richten wir geplante Aktualisierungen ein.
+In der nächsten Übung richten wir geplante Aktualisierungen ein.
  
 ## Referenzen
 
@@ -399,18 +394,18 @@ Lesen Sie die detaillierteren Blogs zur Ankündigung der Fabric-Umgebung:
 - [Blog zur Dataverse- und Microsoft Fabric-Integration](https://aka.ms/Dataverse-Fabric-Blog)
 
 
-    © 2023 Microsoft Corporation. Alle Rechte vorbehalten.
+© 2023 Microsoft Corporation. Alle Rechte vorbehalten.
 
-    Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den folgenden Bedingungen zu:
+Durch die Verwendung der vorliegenden Demo/Übung stimmen Sie den folgenden Bedingungen zu:
 
-    Die in dieser Demo/Übung beschriebene Technologie/Funktionalität wird von der Microsoft Corporation bereitgestellt, um Feedback von Ihnen zu erhalten und Ihnen Wissen zu vermitteln. Sie dürfen die Demo/Übung nur verwenden, um derartige Technologiefeatures und Funktionen zu bewerten und Microsoft Feedback zu geben. Es ist Ihnen nicht erlaubt, sie für andere Zwecke zu verwenden. Es ist Ihnen nicht gestattet, diese Demo/Übung oder einen Teil derselben zu ändern, zu kopieren, zu verbreiten, zu übertragen, anzuzeigen, auszuführen, zu vervielfältigen, zu veröffentlichen, zu lizenzieren, zu transferieren oder zu verkaufen oder aus ihr abgeleitete Werke zu erstellen.
+Die in dieser Demo/Übung beschriebene Technologie/Funktionalität wird von der Microsoft Corporation bereitgestellt, um Feedback von Ihnen zu erhalten und Ihnen Wissen zu vermitteln. Sie dürfen die Demo/Übung nur verwenden, um derartige Technologiefeatures und Funktionen zu bewerten und Microsoft Feedback zu geben. Es ist Ihnen nicht erlaubt, sie für andere Zwecke zu verwenden. Es ist Ihnen nicht gestattet, diese Demo/Übung oder einen Teil derselben zu ändern, zu kopieren, zu verbreiten, zu übertragen, anzuzeigen, auszuführen, zu vervielfältigen, zu veröffentlichen, zu lizenzieren, zu transferieren oder zu verkaufen oder aus ihr abgeleitete Werke zu erstellen.
 
-    DAS KOPIEREN ODER VERVIELFÄLTIGEN DER DEMO/ÜBUNG (ODER EINES TEILS DERSELBEN) AUF EINEN/EINEM ANDEREN SERVER ODER SPEICHERORT FÜR DIE WEITERE VERVIELFÄLTIGUNG ODER VERBREITUNG IST AUSDRÜCKLICH UNTERSAGT. DIESE DEMO/ÜBUNG STELLT BESTIMMTE SOFTWARE-TECHNOLOGIE-/PRODUKTFEATURES UND FUNKTIONEN, EINSCHLIESSLICH POTENZIELLER NEUER FEATURES UND KONZEPTE, IN EINER SIMULIERTEN UMGEBUNG OHNE KOMPLEXE EINRICHTUNG ODER INSTALLATION FÜR DEN OBEN BESCHRIEBENEN ZWECK BEREIT. DIE TECHNOLOGIE/KONZEPTE IN DIESER DEMO/ÜBUNG ZEIGEN MÖGLICHERWEISE NICHT DAS VOLLSTÄNDIGE FUNKTIONSSPEKTRUM UND FUNKTIONIEREN MÖGLICHERWEISE NICHT WIE DIE ENDGÜLTIGE VERSION. UNTER UMSTÄNDEN VERÖFFENTLICHEN WIR AUCH KEINE ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
+DAS KOPIEREN ODER VERVIELFÄLTIGEN DER DEMO/ÜBUNG (ODER EINES TEILS DERSELBEN) AUF EINEN/EINEM ANDEREN SERVER ODER SPEICHERORT FÜR DIE WEITERE VERVIELFÄLTIGUNG ODER VERBREITUNG IST AUSDRÜCKLICH UNTERSAGT. DIESE DEMO/ÜBUNG STELLT BESTIMMTE SOFTWARE-TECHNOLOGIE-/PRODUKTFEATURES UND FUNKTIONEN, EINSCHLIESSLICH POTENZIELLER NEUER FEATURES UND KONZEPTE, IN EINER SIMULIERTEN UMGEBUNG OHNE KOMPLEXE EINRICHTUNG ODER INSTALLATION FÜR DEN OBEN BESCHRIEBENEN ZWECK BEREIT. DIE TECHNOLOGIE/KONZEPTE IN DIESER DEMO/ÜBUNG ZEIGEN MÖGLICHERWEISE NICHT DAS VOLLSTÄNDIGE FUNKTIONSSPEKTRUM UND FUNKTIONIEREN MÖGLICHERWEISE NICHT WIE DIE ENDGÜLTIGE VERSION. UNTER UMSTÄNDEN VERÖFFENTLICHEN WIR AUCH KEINE ENDGÜLTIGE VERSION DERARTIGER FEATURES ODER KONZEPTE. IHRE ERFAHRUNG BEI DER VERWENDUNG DERARTIGER FEATURES UND FUNKTIONEN IN EINER PHYSISCHEN UMGEBUNG KANN FERNER ABWEICHEND SEIN.
 
-    **FEEDBACK**. Wenn Sie Feedback zu den Technologiefeatures, Funktionen und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden, gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und gewerblich zu nutzen. Außerdem treten Sie Dritten kostenlos sämtliche Patentrechte ab, die erforderlich sind, damit deren Produkte, Technologien und Dienste bestimmte Teile einer Software oder eines Dienstes von Microsoft, welche/welcher das Feedback enthält, verwenden oder eine Verbindung zu dieser/diesem herstellen können. Sie geben kein Feedback, das einem Lizenzvertrag unterliegt, aufgrund dessen Microsoft Drittparteien eine Lizenz für seine Software oder Dokumentation gewähren muss, weil wir Ihr Feedback in diese aufnehmen. Diese Rechte bestehen nach Ablauf dieser Vereinbarung fort.
-    
-    DIE MICROSOFT CORPORATION LEHNT HIERMIT JEGLICHE GEWÄHRLEISTUNGEN UND GARANTIEN IN BEZUG AUF DIE DEMO/ÜBUNG AB, EINSCHLIESSLICH ALLER AUSDRÜCKLICHEN, KONKLUDENTEN ODER GESETZLICHEN GEWÄHRLEISTUNGEN UND GARANTIEN DER HANDELSÜBLICHKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN ZWECK, DES RECHTSANSPRUCHS UND DER NICHTVERLETZUNG VON RECHTEN DRITTER. MICROSOFT MACHT KEINERLEI ZUSICHERUNGEN BZW. ERHEBT KEINERLEI ANSPRÜCHE IM HINBLICK AUF DIE RICHTIGKEIT DER ERGEBNISSE UND DES AUS DER VERWENDUNG DER DEMO/ÜBUNG RESULTIERENDEN ARBEITSERGEBNISSES BZW. BEZÜGLICH DER EIGNUNG DER IN DER DEMO/ÜBUNG ENTHALTENEN INFORMATIONEN FÜR EINEN BESTIMMTEN ZWECK.
+**FEEDBACK**. Wenn Sie Feedback zu den Technologiefeatures, Funktionen und/oder Konzepten geben, die in dieser Demo/Übung beschrieben werden, gewähren Sie Microsoft das Recht, Ihr Feedback in jeglicher Weise und für jeglichen Zweck kostenlos zu verwenden, zu veröffentlichen und gewerblich zu nutzen. Außerdem treten Sie Dritten kostenlos sämtliche Patentrechte ab, die erforderlich sind, damit deren Produkte, Technologien und Dienste bestimmte Teile einer Software oder eines Dienstes von Microsoft, welche/welcher das Feedback enthält, verwenden oder eine Verbindung zu dieser/diesem herstellen können. Sie geben kein Feedback, das einem Lizenzvertrag unterliegt, aufgrund dessen Microsoft Drittparteien eine Lizenz für seine Software oder Dokumentation gewähren muss, weil wir Ihr Feedback in diese aufnehmen. Diese Rechte bestehen nach Ablauf dieser Vereinbarung fort.
 
-    **HAFTUNGSAUSSCHLUSS**
+DIE MICROSOFT CORPORATION LEHNT HIERMIT JEGLICHE GEWÄHRLEISTUNGEN UND GARANTIEN IN BEZUG AUF DIE DEMO/ÜBUNG AB, EINSCHLIESSLICH ALLER AUSDRÜCKLICHEN, KONKLUDENTEN ODER GESETZLICHEN GEWÄHRLEISTUNGEN UND GARANTIEN DER HANDELSÜBLICHKEIT, DER EIGNUNG FÜR EINEN BESTIMMTEN ZWECK, DES RECHTSANSPRUCHS UND DER NICHTVERLETZUNG VON RECHTEN DRITTER. MICROSOFT MACHT KEINERLEI ZUSICHERUNGEN BZW. ERHEBT KEINERLEI ANSPRÜCHE IM HINBLICK AUF DIE RICHTIGKEIT DER ERGEBNISSE UND DES AUS DER VERWENDUNG DER DEMO/ÜBUNG RESULTIERENDEN ARBEITSERGEBNISSES BZW. BEZÜGLICH DER EIGNUNG DER IN DER DEMO/ÜBUNG ENTHALTENEN INFORMATIONEN FÜR EINEN BESTIMMTEN ZWECK.
 
-    Diese Demo/Übung enthält nur einen Teil der neuen Features und Verbesserungen in Microsoft Power BI. Einige Features können sich unter Umständen in zukünftigen Versionen des Produkts ändern. In dieser Demo/Übung erhalten Sie Informationen über einige, aber nicht über alle neuen Features.
+**HAFTUNGSAUSSCHLUSS**
+
+Diese Demo/Übung enthält nur einen Teil der neuen Features und Verbesserungen in Microsoft Power BI. Einige Features können sich unter Umständen in zukünftigen Versionen des Produkts ändern. In dieser Demo/Übung erhalten Sie Informationen über einige, aber nicht über alle neuen Features.
