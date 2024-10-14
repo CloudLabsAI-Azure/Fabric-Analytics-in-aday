@@ -2,7 +2,6 @@
 
 ![](../media/lab-02/intro-german.png)
 
- 
 ## Inhalt
 - Einführung
 - Fabric-Lizenz
@@ -19,7 +18,6 @@
     - Aufgabe 9: Fabric-Arbeitsbereich erstellen
     - Aufgabe 10: Lakehouse erstellen
 - Referenzen
-
  
 ## Einführung
 Heute geht es um die verschiedenen Hauptfunktionen von Microsoft Fabric. In diesem Einführungsworkshop werden die verschiedenen Funktionsbereiche und Bestandteile von Fabric vorgestellt. Am Ende des Workshops erfahren Sie zudem, wie Sie Lakehouse, Dataflow Gen2, Data Pipeline, DirectLake und mehr verwenden.
@@ -34,13 +32,15 @@ Inhalt dieser Übung:
 ### Aufgabe 1: Lizenz für Testversion von Microsoft Fabric aktivieren
 
 1. Öffnen Sie den **Browser**, und rufen Sie https://app.powerbi.com/ auf. Die Anmeldeseite wird angezeigt.
-**Hinweis**: Wenn Sie nicht die Übungsumgebung nutzen und bereits ein Power BI-Konto haben, können Sie den Browser im privaten Modus/Inkognito-Modus verwenden.
+
+    **Hinweis**: Wenn Sie nicht die Übungsumgebung nutzen und bereits ein Power BI-Konto haben, können Sie den Browser im privaten Modus/Inkognito-Modus verwenden.
+
 2. Geben Sie den **Benutzernamen**, den Sie auf der Registerkarte **Umgebungsvariablen** (neben der der Übungsanleitung) finden, sowie die **E-Mail** ein und klicken Sie auf **Submit**.
 
     ![](../media/lab-02/image006.jpg)
 
-3. Die Seite **Kennwort** wird angezeigt. Geben Sie das **Kennwort** ein, das Sie auf der Registerkarte
-**Umgebungsvariablen** (neben der Übungsanleitung) finden und Ihnen von Ihrem Kursleiter mitgeteilt wurde.
+3. Die Seite **Kennwort** wird angezeigt. Geben Sie das **Kennwort** ein, das Sie auf der Registerkarte **Umgebungsvariablen** (neben der Übungsanleitung) finden und Ihnen von Ihrem Kursleiter mitgeteilt wurde.
+
 4. Klicken Sie auf **Sign in**, und folgen Sie den Anweisungen, um sich bei Fabric anzumelden.
 
     ![](../media/lab-02/image009.png)
@@ -63,7 +63,7 @@ Inhalt dieser Übung:
 
     ![](../media/lab-02/image018.jpg)
 
-11.	Sie werden zur Startseite von Microsoft Fabric geleitet.
+11. Sie werden zur Startseite von Microsoft Fabric geleitet.
 
     ![](../media/lab-02/image021.jpg)
 
@@ -99,12 +99,12 @@ Sehen wir uns die Funktionsbereiche nun gesondert an.
 
 ### Aufgabe 3: Data Activator-Funktionsbereich
 
-1.	Wählen Sie unten links auf Ihrem Bildschirm das Symbol **Fabric-Funktionsbereichs-Auswahl**
+1. Wählen Sie unten links auf Ihrem Bildschirm das Symbol **Fabric-Funktionsbereichs-Auswahl**
 (aktuell auf Data Factory eingestellt) aus. Das Dialogfeld „Fabric-Funktionsbereich“ wird geöffnet.
 
     ![](../media/lab-02/image030.png)
 
-2.	Wählen Sie dort die Option **Data Activator** aus. Sie werden zur **Startseite von Data Activator** weitergeleitet. Data Activator ist ein codefreier Funktionsbereich in Microsoft Fabric, mit dem automatisch Maßnahmen durchgeführt werden können, wenn in sich ändernden Daten Muster oder Bedingungen erkannt werden. Beachten Sie, dass die drei Abschnitte dem Data Factory- Funktionsbereich ähneln. Beachten Sie im Abschnitt „Empfohlen“ die folgenden Elemente:
+2. Wählen Sie dort die Option **Data Activator** aus. Sie werden zur **Startseite von Data Activator** weitergeleitet. Data Activator ist ein codefreier Funktionsbereich in Microsoft Fabric, mit dem automatisch Maßnahmen durchgeführt werden können, wenn in sich ändernden Daten Muster oder Bedingungen erkannt werden. Beachten Sie, dass die drei Abschnitte dem Data Factory- Funktionsbereich ähneln. Beachten Sie im Abschnitt „Empfohlen“ die folgenden Elemente:
 
     a. **Reflex**: Dient zur Überwachung von Datensätzen, Abfragen und Ereignisströmen auf Muster.
 
@@ -204,22 +204,21 @@ verschiedenen Quellen zu integrieren und umfassende Analysen zu nutzen. Beachten
 
 ### Aufgabe 8: Data Warehouse-Funktionsbereich von Synapse
 
-1. Wählen Sie unten links auf Ihrem Bildschirm das Symbol **Fabric-Funktionsbereichs-Auswahl**
-(aktuell auf Data Science eingestellt) aus. Das Dialogfeld „Fabric-Funktionsbereich“ wird geöffnet.
+1. Wählen Sie unten links auf Ihrem Bildschirm das Symbol **Fabric-Funktionsbereichs-Auswahl** (aktuell auf Data Science eingestellt) aus. Das Dialogfeld „Fabric-Funktionsbereich“ wird geöffnet.
 
 2. Klicken Sie auf **Data Warehouse**. Sie werden zur **Startseite von Data Warehouse** weitergeleitet. Auch hier gibt es drei Abschnitte: Unter „Neu“ sehen Sie diese Elemente:
 
-a. **Warehouse**: Dient dem Erstellen eines Data Warehouse.
+    a. **Warehouse**: Dient dem Erstellen eines Data Warehouse.
 
-b. **Datenpipeline**: Hiermit wird die Datenlösung orchestriert.
+    b. **Datenpipeline**: Hiermit wird die Datenlösung orchestriert.
 
-c. **Gespiegelte SQL-Datenbank**: Wird verwendet, um die Azure SQL-Datenbank zu spiegeln.
+    c. **Gespiegelte SQL-Datenbank**: Wird verwendet, um die Azure SQL-Datenbank zu spiegeln.
 
-d. **Gespiegeltes Snowflake**: Wird verwendet, um die Snowflake-Datenbank zu spiegeln.
- 
-e. **Gespiegeltes Azure Cosmos DB**: Wird verwendet, um Azure Cosmos DB zu spiegeln.
+    d. **Gespiegeltes Snowflake**: Wird verwendet, um die Snowflake-Datenbank zu spiegeln.
+    
+    e. **Gespiegeltes Azure Cosmos DB**: Wird verwendet, um Azure Cosmos DB zu spiegeln.
 
-![](../media/lab-02/image048.jpg)
+    ![](../media/lab-02/image048.jpg)
 
 ## Fabric-Arbeitsbereich
 
@@ -235,7 +234,7 @@ e. **Gespiegeltes Azure Cosmos DB**: Wird verwendet, um Azure Cosmos DB zu spieg
 
 4. Geben Sie im Feld **Name** den Text **FAIAD_<Benutzername>** ein.
  
-**Hinweis**: Der Name des Arbeitsbereichs muss eindeutig sein. Der Name Ihres Arbeitsbereichs lautet jedoch anders. Achten Sie darauf, dass unter dem Feld für den Namen ein grünes Häkchen mit dem Text Dieser Name ist verfügbar zu sehen ist.
+    **Hinweis**: Der Name des Arbeitsbereichs muss eindeutig sein. Der Name Ihres Arbeitsbereichs lautet jedoch anders. Achten Sie darauf, dass unter dem Feld für den Namen ein grünes Häkchen mit dem Text Dieser Name ist verfügbar zu sehen ist.
 
 5. Wenn Sie möchten, können Sie eine **Beschreibung** des Arbeitsbereichs eingeben. Dieses Feld ist optional.
 
@@ -249,8 +248,7 @@ e. **Gespiegeltes Azure Cosmos DB**: Wird verwendet, um Azure Cosmos DB zu spieg
 
     ![](../media/lab-02/image057.jpg)
 
-Ein neuer Arbeitsbereich wird erstellt, und Sie werden zu diesem weitergeleitet. Als Nächstes
-importieren wir Daten aus verschiedenen Quellen in das Lakehouse, entwickeln damit ein Modell und nutzen die Daten für Berichte. Erstellen wir zunächst ein Lakehouse.
+Ein neuer Arbeitsbereich wird erstellt, und Sie werden zu diesem weitergeleitet. Als Nächstes importieren wir Daten aus verschiedenen Quellen in das Lakehouse, entwickeln damit ein Modell und nutzen die Daten für Berichte. Erstellen wir zunächst ein Lakehouse.
  
 ### Aufgabe 10: Lakehouse erstellen
 
@@ -267,7 +265,7 @@ importieren wir Daten aus verschiedenen Quellen in das Lakehouse, entwickeln dam
 
 4. Das Dialogfeld „Neues Lakehouse“ wird geöffnet. Geben Sie im Textfeld für den Namen die Bezeichnung **lh_FAIAD** ein.
 
-**Hinweis**: „lh“ bezieht sich hier auf Lakehouse. Die Buchstaben „lh“ werden vorangestellt, damit das Lakehouse leichter erkannt und gefunden werden kann.
+    **Hinweis**: „lh“ bezieht sich hier auf Lakehouse. Die Buchstaben „lh“ werden vorangestellt, damit das Lakehouse leichter erkannt und gefunden werden kann.
  
 5. Wählen Sie **Create in the screenshot** aus.
 
