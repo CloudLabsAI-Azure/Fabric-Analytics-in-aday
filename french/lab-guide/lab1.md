@@ -1,8 +1,6 @@
-# Microsoft Fabric #
-## Fabric Analyst in a Day ##
-## Labo 1 ##
+# Microsoft Fabric - Fabric Analyst in a Day - Labo 1 ##
 
-**Version : août 2024**
+Image 
 
 ## Sommaire ##
 - Structure du document	
@@ -15,12 +13,16 @@
 
 ## Structure du document ##
 Le labo comprend des étapes à suivre par l’utilisateur, ainsi que des captures d’écran associées qui fournissent une aide visuelle. Dans chaque capture d’écran, des sections sont mises en évidence avec des encadrés orange afin de souligner la ou les zones sur laquelle/lesquelles l’utilisateur doit se concentrer.
-Remarque : certaines captures d’écran peuvent être obsolètes en raison des mises à jour produit en
+
+**_Remarque :_** certaines captures d’écran peuvent être obsolètes en raison des mises à jour produit en
 cours.
 ## Scénario/Énoncé du problème ##
 Fabrikam, Inc. est un grossiste en produits innovants. Ses clients sont majoritairement des sociétés qui revendent aux particuliers. Fabrikam vend à des clients de détail à travers les États-Unis, notamment des magasins spécialisés, des supermarchés, des magasins d’informatique et des magasins d’attractions touristiques. Fabrikam vend également à d’autres grossistes au moyen d’un réseau d’agents qui font la promotion des produits au nom de Fabrikam. Bien que tous les clients de Fabrikam soient actuellement basés aux États-Unis, la société a l’intention de favoriser son expansion dans d’autres pays/régions.
+
 Vous êtes analyste de données au sein de l’équipe commerciale. Vous recueillez, nettoyez et interprétez des jeux de données pour résoudre des problèmes métier. Vous créez également des visualisations telles que des tableaux et des graphiques, rédigez des états et les présentez aux décideurs de l’organisation.
+
 Afin de tirer de précieux insights des données, vous extrayez les données de plusieurs systèmes, les nettoyez et les agrégez.
+
 - **Données Sales :** proviennent du système ERP et sont stockées dans une base de données ADLS Gen2. Elles sont mises à jour au quotidien à midi.
 - **Données fournisseur :** proviennent de différents fournisseurs et les données sont stockées dans une base de données Snowflake. Elles sont mises à jour au quotidien à minuit.
 - **Données client :** proviennent de Customer Insights et les données sont stockées dans Dataverse. Les données sont systématiquement à jour.
@@ -35,9 +37,11 @@ Vous créez actuellement un jeu de données dans Power BI Premium qui extrait le
 - Toute erreur dans l’une des sources de données à partir desquelles vous extrayez des données entraîne une interruption de l’actualisation de votre jeu de données. Il arrive souvent que le fichier collaborateur ne soit pas chargé à temps, ce qui aboutit à une interruption de l’actualisation de votre jeu de données.
 - Apporter des modifications à votre modèle de données est un processus chronophage, car Power Query prend beaucoup de temps pour actualiser vos aperçus, compte tenu du gros volume de données et des transformations complexes.
 - Vous avez besoin d’un PC Windows pour utiliser Power BI Desktop, même si le standard de l’entreprise est Mac.
+
 Vous avez entendu parler de Microsoft Fabric et décidé de l’essayer pour voir s’il peut relever vos défis.
 
 ## Présentation de l’état Power BI Desktop ##
+
 Avant de prendre en main Fabric, examinons l’état actuel dans Power BI Desktop pour comprendre les transformations et le modèle.
 
 ### Tâche 1 : configurer Power BI Desktop dans l’environnement de labo ###
@@ -57,37 +61,43 @@ l’environnement**.
 
   Image
 
-11.	La boîte de dialogue **Vous êtes prêt !** s’ouvre alors. Cliquez sur **Terminé**. Power BI Desktop s’ouvre alors.
+10.	La boîte de dialogue **Vous êtes prêt !** s’ouvre alors. Cliquez sur **Terminé**.
+
+ Power BI Desktop s’ouvre alors.
 
 ## Tâche 2 : analyser l’état Power BI Desktop ##
 L’état ci-dessous analyse les ventes de Fabrikam. Les KPI sont répertoriés en haut de la page à gauche. Les visuels restants mettent en évidence les ventes au fil du temps, par secteur de vente, groupe de produits et revendeur.
 
 Image
 
-**Remarque :** dans cette formation, nous nous concentrons sur l’acquisition, la transformation et la modélisation de données à l’aide des outils disponibles dans Fabric. Nous n’aborderons pas l’élaboration d’états ou la navigation dans les états. Consacrons quelques minutes à la compréhension de l’état et passons aux étapes suivantes.
+**_Remarque :_** dans cette formation, nous nous concentrons sur l’acquisition, la transformation et la modélisation de données à l’aide des outils disponibles dans Fabric. Nous n’aborderons pas l’élaboration d’états ou la navigation dans les états. Consacrons quelques minutes à la compréhension de l’état et passons aux étapes suivantes.
+
 1.	Analysons les données par secteur de vente. Cliquez sur **New England** dans le visuel Secteur de vente (nuage de points). Dans le visuel Ventes au fil du temps, notez que le revendeur
 Tailspin Toys réalise plus de ventes que Wingtip Toys en Nouvelle-Angleterre. Sur l’histogramme
 % des ventes en glissement annuel, notez que la croissance des ventes de Wingtip Toys a été faible et en baisse d’un trimestre à l’autre au cours de l’année écoulée. Après un léger rebond au troisième trimestre, elle a de nouveau diminué au quatrième trimestre.
 
   Images
 
-3.	Comparons cela au secteur de vente des Rocheuses. Cliquez sur **Rocky Mountain** dans le visuel Secteur de vente (nuage de points). Sur l’histogramme % des ventes en glissement annuel,
+2.	Comparons cela au secteur de vente des Rocheuses. Cliquez sur **Rocky Mountain** dans le visuel Secteur de vente (nuage de points). Sur l’histogramme % des ventes en glissement annuel,
 les ventes de Wingtip Toys ont considérablement augmenté au quatrième trimestre 2022 après avoir été faibles au cours des deux trimestres précédents.
 
   Images
  
 3.	Cliquez sur **Rocky Mountain** dans le visuel Secteur de vente pour supprimer le filtre.
+
 4.	Dans le visuel Nuage de points en bas au centre de l’écran (Commandes client par ventes),
 cliquez sur la valeur hors norme en haut à droite (4e quadrant). Notez que le % de marge est de 52 %, ce qui est supérieur à la moyenne de 50 %. En outre, le % des ventes en glissement annuel a augmenté au cours des deux derniers trimestres de 2023.
 
   Images
 
-6.	Cliquez sur la valeur Reseller hors norme dans le visuel Nuage de points pour **supprimer le filtre**.
-7.	Obtenons les détails produit par groupe de produits et revendeur. À partir du visuel Histogramme Ventes par groupe de produits et revendeur, **cliquez avec le bouton droit sur la barre Packaging Materials pour Tailspin Toys**, puis sélectionnez **Extraire -> Product Detail** dans la boîte de dialogue.
+5.	Cliquez sur la valeur Reseller hors norme dans le visuel Nuage de points pour **supprimer le filtre**.
+
+6.	Obtenons les détails produit par groupe de produits et revendeur. À partir du visuel Histogramme Ventes par groupe de produits et revendeur, **cliquez avec le bouton droit sur la barre Packaging Materials pour Tailspin Toys**, puis sélectionnez **Extraire -> Product Detail** dans la boîte de dialogue.
 
 Images
- 
+
 Vous êtes alors redirigé vers la page qui fournit les détails produit. Notez que de futures commandes sont également en cours.
+
 7.	Après avoir examiné cette page, revenez à l’état sur les ventes à l’aide du raccourci **Ctrl + flèche Précédent** en haut de la page à droite.
 
   Images
