@@ -118,7 +118,7 @@ Menü „Verbindung“** ausgewählt und **Authentifizierungsart** auf **Organis
 
     **Hinweis**: Sie können die automatischen Einstellungen deaktivieren und haben die Möglichkeit, die Aktualisierungsmethode und die Schemaoptionen festzulegen. Vergewissern Sie sich nach der Erkundung, dass **„Automatische Einstellungen verwenden“ aktiviert** ist.
 
-10.	Wählen Sie **Einstellungen speichern ** aus.
+10.	Wählen Sie **Einstellungen speichern** aus.
 
     ![](../media/lab-04/image030.png)
 
@@ -136,7 +136,7 @@ Menü „Verbindung“** ausgewählt und **Authentifizierungsart** auf **Organis
 
     ![](../media/lab-04/image036.jpg)
 
-4. Das Dialogfeld „Dataflow-Eigenschaften“ wird geöffnet. Ändern Sie den **Namen** in ** df_People_SharePoint**.
+4. Das Dialogfeld „Dataflow-Eigenschaften“ wird geöffnet. Ändern Sie den **Namen** in **df_People_SharePoint**.
 
 5. Ergänzen Sie im Textfeld **Beschreibung** den Text **Dataflow zur Erfassung der „People“-Daten aus SharePoint im Lakehouse**.
  
@@ -289,6 +289,8 @@ Sie sollten sich im Lakehouse lh_FAIAD befinden. Stellen Sie sicher, dass Sie si
 1. Wählen Sie im Bereich **Explorer** die **Auslassungspunkte** neben **Tabellen** aus.
 
 2. Wählen Sie **Neue Verknüpfung** aus.
+
+     ![](../media/lab-04/image080.jpg)
 
 3. Das Dialogfeld „Neue Verknüpfung“ wird geöffnet. Wählen Sie unter **Externe Quellen die Option Dataverse** aus.
 
