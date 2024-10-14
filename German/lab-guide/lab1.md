@@ -150,9 +150,9 @@ Im nachstehenden Bericht werden die Verkäufe von Fabrikam analysiert. Die KPIs 
 
 6. Sie können die Anmeldeinformationen für die Dataverse Datenquelle eingeben, indem Sie den auf der Registerkarte **Environment Variables** (neben der Übungsanleitung) angezeigten **Username** und das **Password** eingeben. Wählen Sie die Option „Microsoft-Konto“ aus.
 
-    ![](../media/lab-01/image045.png)
+    ![](../media/lab-01/14-10-24(1).png)
  
-7. Verwenden Sie bei der ADLS-Datenquelle die Option **Kontoschlüssel**, und geben Sie den **Zugriffsschlüssel für das Adls-Speicherkonto** ein. Diesen finden Sie auf der Registerkarte **Environment Variables** (neben der Übungsanleitung).
+7. Verwenden Sie für die ADLS-Datenquelle die Option **Shared Access Signature (SAS)** und geben Sie das **SAS-Token** ein, das auf der Registerkarte **Umgebung** (neben dem Laborhandbuch) verfügbar ist.
 
 8. Beachten Sie, dass der Ordner **ADLSData** mehrere Dimensionen beinhaltet: Geo, Product, Reseller und Date. Zudem ist das Sales-Element enthalten.
 

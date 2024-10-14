@@ -52,15 +52,13 @@ Die Verknüpfung wird verwendet, um eine Verknüpfung zum Zielort zu erstellen. 
 
     ![](../media/lab-03/image009.jpg)
 
-6. Sie müssen eine Verbindung zur ADLS Gen2-Datenquelle herstellen. Geben Sie unter **Verbindungseinstellungen -> URL** diesen Link https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales ein.
+6. Sie müssen eine Verbindung zur ADLS Gen2-Datenquelle herstellen. Geben Sie unter Verbindungseinstellungen -> URL diesen Link ein: `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
 
-7. Wählen Sie **Kontoschlüssel** aus der Dropdown-Liste „Authentifizierungsart“ aus.
+7. Wählen Sie **Shared Access Signature (SAS)** aus der Dropdown-Liste Authentifizierungsart.
+8. Kopieren Sie das **SAS-Token** aus der Registerkarte **Umgebungsvariablen** (neben der Registerkarte Laborhandbuch) und fügen Sie es in das Feld **SAS-Token** ein.
+9. Wählen Sie unten rechts auf dem Bildschirm **Weiter**.
 
-8. Kopieren Sie den **Zugriffsschlüssel für das Adls-Speicherkonto** von der Registerkarte **Umgebungsvariablen** (neben der Registerkarte „Übungsanleitung“) und fügen Sie ihn in das Textfeld **Kontoschlüssel** ein.
- 
-9. Wählen Sie unten rechts auf dem Bildschirm **Weiter** aus.
-
-    ![](../media/lab-03/image012.jpg)
+    ![](../../english/media/lab-01/19-09-2024(10).png)
 
 10. Sie werden mit ADLS Gen2 verbunden und die Verzeichnisstruktur wird im linken Bereich angezeigt. Erweitern Sie **Delta-Parquet-Format-FY25**.
 
