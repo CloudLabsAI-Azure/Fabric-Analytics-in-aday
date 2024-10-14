@@ -78,7 +78,7 @@ GROUP BY su.SupplierName
 
 2. Wählen Sie im Menü des Bereichs „Ergebnisse“ **Diese Daten erkunden (Vorschauversion) -> Ergebnisse visualisieren** aus.
 
-   ![](../media/lab-06/image014.jpg)
+   ![](../media/lab-06/image014.png)
 
 3. Das Dialogfeld **Ergebnisse visualisieren** wird geöffnet. Wählen Sie **Weiter** aus.
 
@@ -127,7 +127,7 @@ Sie werden zum Bildschirm „SQL-Abfrage“ weitergeleitet.
 
 5. Das Dialogfeld „Neues semantisches Modell“ wird geöffnet. Geben Sie **sm_FAIAD** als Name des semantischen Direct Lake-Modells ein.
  
-6. Wir haben standardmäßig die Möglichkeit, eine Teilmenge der Tabellen auszuwählen. Denken Sie daran, dass wir in der vorherigen Übung Ansichten erstellt haben. Wir möchten diese Ansichten in das Modell einbeziehen. **Klicken Sie** auf das **Symbol** in der **Suchleiste**, und wählen Sie **Ansichten** **anzeigen** aus. Jetzt haben wir die Möglichkeit, **Ansichten** anzuzeigen und auszuwählen.
+6. Wir haben standardmäßig die Möglichkeit, eine Teilmenge der Tabellen auszuwählen. Denken Sie daran, dass wir in der vorherigen Übung Ansichten erstellt haben. Wir möchten diese Ansichten in das Modell einbeziehen. **Klicken Sie** auf das **Symbol** in der **Suchleiste**, und wählen Sie **Ansichten** **anzeigen** aus. Jetzt haben wir die Möglichkeit, Ansichten anzuzeigen und auszuwählen.
 
    ![](../media/lab-06/image032.jpg)
 
@@ -365,12 +365,9 @@ Ergänzen wir die restlichen Measures.
 
     b. In der Tabelle **Sales, GM% = DIVIDE([GM], [Sales])** formatiert als **Prozentsatz mit 0 Dezimalstellen**.
 
-    c. In der Tabelle 
-    
-            Sales, Sales YoY% = 
-            VAR __PREV_YEAR = CALCULATE([Sales], DATEADD('Date'[Date].[Date], -1, YEAR))
-            RETURN DIVIDE([Sales] - __PREV_YEAR, __PREV_YEAR)
-            formatiert als Prozentsatz mit 2 Dezimalstellen.
+    c. In der Tabelle **Sales, Sales YoY% = 
+       VAR __PREV_YEAR = CALCULATE([Sales], DATEADD('Date'[Date].[Date], -1, YEAR))
+       RETURN DIVIDE([Sales] - __PREV_YEAR, __PREV_YEAR)** formatiert als **Prozentsatz mit 2 Dezimalstellen**.
 
     d.	In der Tabelle **Customer , No of Customers = COUNTROWS(Customer)** formatiert als **Ganze Zahl mit aktiviertem Tausendertrennzeichen**.
  
