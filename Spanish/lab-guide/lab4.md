@@ -49,7 +49,7 @@ Al final de este laboratorio, habrá aprendido:
 
    ![](../media/lab-04/image009.png)
  
-Se le dirigirá de vuelta a la **página de del flujo de datos**. La interfaz del flujo de datos Gen2 es como Power Query en Power BI Desktop. Podemos copiar consultas desde el flujo de datos Gen2 de Power BI Desktop. Vamos a intentarlo.
+    Se le dirigirá de vuelta a la **página de del flujo de datos**. La interfaz del flujo de datos Gen2 es como Power Query en Power BI Desktop. Podemos copiar consultas desde el flujo de datos Gen2 de Power BI Desktop. Vamos a intentarlo.
 
 5. Si todavía no lo ha abierto, abra **FAIAD.pbix** que se encuentra en la carpeta **Reports** del escritorio de su entorno de laboratorio. 
 
@@ -65,9 +65,9 @@ Se le dirigirá de vuelta a la **página de del flujo de datos**. La interfaz de
 
 10.	En el **panel del flujo de datos**, introduzca Ctrl+V (actualmente, hacer clic con el botón derecho en Pegar no es compatible). Si está utilizando un dispositivo MAC, utilice Cmd+V para pegar.
 
-**Nota:** Si está trabajando en el entorno de laboratorio, seleccione los puntos suspensivos en la parte superior derecha de la pantalla. Utilice el control deslizante para habilitar Portapapeles nativo de VM. Seleccione Aceptar en el cuadro de diálogo. Una vez que haya terminado de pegar las consultas, puede desactivar esta opción.
+    **Nota:** Si está trabajando en el entorno de laboratorio, seleccione los puntos suspensivos en la parte superior derecha de la pantalla. Utilice el control deslizante para habilitar Portapapeles nativo de VM. Seleccione Aceptar en el cuadro de diálogo. Una vez que haya terminado de pegar las consultas, puede desactivar esta opción.
 
-Observe la consulta pegada y disponible en el panel izquierdo. Como no tenemos una conexión creada para SharePoint, verá un mensaje de advertencia que le solicitará que configure la conexión.
+    Observe la consulta pegada y disponible en el panel izquierdo. Como no tenemos una conexión creada para SharePoint, verá un mensaje de advertencia que le solicitará que configure la conexión.
 
 ## Tarea 2: Crear una conexión a SharePoint
 
@@ -113,7 +113,7 @@ Se establece la conexión y puede ver los datos en el panel de versión prelimin
  
 9. Se abre el cuadro de diálogo de Elegir la configuración de destino. Asegúrese de que la opción “**Usar configuración automática**” esté **habilitada**. 
 
-**Nota:** Puede deshabilitar la configuración automática y observe que tiene opciones para establecer las opciones Método de actualización y Esquema. Cuando haya finalizado la exploración, asegúrese de que la opción “**Usar configuración automática**” esté **habilitada**. 
+    **Nota:** Puede deshabilitar la configuración automática y observe que tiene opciones para establecer las opciones Método de actualización y Esquema. Cuando haya finalizado la exploración, asegúrese de que la opción “**Usar configuración automática**” esté **habilitada**. 
 
 10.	Seleccione **Guardar configuración**.
 
@@ -128,7 +128,7 @@ Se establece la conexión y puede ver los datos en el panel de versión prelimin
 
    ![](../media/lab-04/image033.png)
  
-**Nota:** Se le dirigirá de vuelta al área de trabajo **FAIAD_<username>**. Es posible que el flujo de datos tarde unos minutos en publicarse. 
+    **Nota:** Se le dirigirá de vuelta al área de trabajo **FAIAD_<username>**. Es posible que el flujo de datos tarde unos minutos en publicarse. 
 
 3. Estamos trabajando con Dataflow 1. Cambiémosle el nombre antes de continuar. Haga clic en los **puntos suspensivos (…)** junto a Dataflow 1. Seleccione **Propiedades**.
 
@@ -142,7 +142,7 @@ Se establece la conexión y puede ver los datos en el panel de versión prelimin
 
    ![](../media/lab-04/image039.png)
  
-Se le dirigirá de vuelta al **área de trabajo FAIAD_<username>**. 
+    Se le dirigirá de vuelta al **área de trabajo FAIAD_<username>**. 
 
 7. Seleccione **lh_FAIAD** para ir al almacén de lago de datos.
 
@@ -150,9 +150,9 @@ Se le dirigirá de vuelta al **área de trabajo FAIAD_<username>**.
 
 9. Observe que la tabla **People** esté ahora disponible en el almacén de lago de datos.
 
-**Nota:** Si no ve las tablas recién creadas, seleccione los puntos suspensivos junto a Tables y seleccionar Actualizar para actualizar las tablas.
+    **Nota:** Si no ve las tablas recién creadas, seleccione los puntos suspensivos junto a Tables y seleccionar Actualizar para actualizar las tablas.
 
-Ahora hemos ingerido todos los datos en el almacén de lago de datos. En la próxima práctica de laboratorio, programaremos la actualización del flujo de datos.
+    Ahora hemos ingerido todos los datos en el almacén de lago de datos. En la próxima práctica de laboratorio, programaremos la actualización del flujo de datos.
 
 ## Tarea 5: Copiar consultas de Snowflake al flujo de datos
 
@@ -162,7 +162,7 @@ Ahora hemos ingerido todos los datos en el almacén de lago de datos. En la pró
 
    ![](../media/lab-04/image042.png)
  
-Se le dirigirá de vuelta a la página de del flujo de datos. Ahora que estamos familiarizados con el flujo de datos, sigamos adelante y copiemos las consultas de Power BI Desktop en el flujo de datos.
+    Se le dirigirá de vuelta a la página de del flujo de datos. Ahora que estamos familiarizados con el flujo de datos, sigamos adelante y copiemos las consultas de Power BI Desktop en el flujo de datos.
 
 3. Si todavía no lo ha abierto, abra **FAIAD.pbix** que se encuentra en la carpeta **Reports** del escritorio de su entorno de laboratorio. 
 
@@ -188,7 +188,7 @@ Se le dirigirá de vuelta a la página de del flujo de datos. Ahora que estamos 
 
 8. En el **panel del flujo de datos**, seleccione el **panel central**, introduzca **Ctrl+V** (actualmente, hacer clic con el botón derecho en Pegar no es compatible). Si está utilizando un dispositivo MAC, utilice Cmd+V para pegar.
 
-**Nota:** Si está trabajando en el entorno de laboratorio, seleccione los puntos suspensivos en la parte superior derecha de la pantalla. Utilice el control deslizante para **habilitar Portapapeles nativo de VM**. Seleccione Aceptar en el cuadro de diálogo. Una vez que haya terminado de pegar las consultas, puede desactivar esta opción.
+    **Nota:** Si está trabajando en el entorno de laboratorio, seleccione los puntos suspensivos en la parte superior derecha de la pantalla. Utilice el control deslizante para **habilitar Portapapeles nativo de VM**. Seleccione Aceptar en el cuadro de diálogo. Una vez que haya terminado de pegar las consultas, puede desactivar esta opción.
 
 ![](../media/lab-04/image048.png)
  
