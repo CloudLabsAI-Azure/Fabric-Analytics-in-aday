@@ -554,7 +554,7 @@ Next, we need to wait for 5 minutes/300 seconds if the dataflow refresh fails th
 
 1. We can test the data pipeline, by selecting **Home -> Run**.
 
-   **Note:** It may take a few minutes for the data pipeline to complete refresh. This is a training environment, so the file in SharePoint is always available. Hence, your data pipeline will never fail.
+      **Note:** It may take a few minutes for the data pipeline to complete refresh. This is a training environment, so the file in SharePoint is always available. Hence, your data pipeline will never fail.
 
 2. We can set the data pipeline to execute on a schedule. From the top menu, select **Home -> Schedule**. The schedule dialog opens.
 
