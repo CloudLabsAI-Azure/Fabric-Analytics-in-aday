@@ -1,3 +1,5 @@
+![](../media/lab-05/title.png)
+
 # 목차
 
 - 서문	
