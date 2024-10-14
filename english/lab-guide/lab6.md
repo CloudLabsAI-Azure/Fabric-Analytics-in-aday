@@ -137,7 +137,7 @@ You will be navigated back to the SQL query screen.
    
 5. A new semantic model dialog opens. Enter **sm\_FAIAD** as the Direct Lake semantic model name.
    
-   ![](../media/lab-06/image016.png)
+   ![](../media/lab-06/14-10-24.png)
 
 7. **Select** the following tables/views:
    
