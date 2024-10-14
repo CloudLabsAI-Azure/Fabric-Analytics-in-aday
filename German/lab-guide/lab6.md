@@ -54,13 +54,13 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 5. Fügen Sie die unten **stehende SQL-Abfrage** in das **Abfragefenster** ein. Mit dieser Abfrage werden die Units by Supplierenname ermittelt. Dazu wird die Tabelle „Sales“ mit den Tabellen „Product“ und „Supplier“ verknüpft.
 
-```sql
-SELECT su.SupplierName, SUM(Quantity) as Units
-FROM dbo.Sales s
-JOIN dbo.Product p on p.StockItemID = s.StockItemID
-JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
-GROUP BY su.SupplierName
-```
+    ```sql
+    SELECT su.SupplierName, SUM(Quantity) as Units
+    FROM dbo.Sales s
+    JOIN dbo.Product p on p.StockItemID = s.StockItemID
+    JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+    GROUP BY su.SupplierName
+    ```
 
 6. Klicken Sie im SQL-Editor-Menü auf **Ausführen**, um die Ergebnisse anzuzeigen.
 
@@ -82,8 +82,7 @@ GROUP BY su.SupplierName
 
 3. Das Dialogfeld **Ergebnisse visualisieren** wird geöffnet. Wählen Sie **Weiter** aus.
 
-   Das Dialogfeld **Ergebnisse visualisieren** wird geöffnet und ähnelt der Power BI Desktop-
-  Berichtsansicht. Es umfasst alle in der Power BI Desktop-Berichtsansicht verfügbaren Funktionen. Sie können die Seite formatieren, verschiedene Visuals auswählen, Visuals formatieren, Filter hinzufügen usw. Wir werden uns in diesem Kurs nicht mit diesen Optionen beschäftigen.
+   Das Dialogfeld **Ergebnisse visualisieren** wird geöffnet und ähnelt der Power BI Desktop - Berichtsansicht. Es umfasst alle in der Power BI Desktop-Berichtsansicht verfügbaren Funktionen. Sie können die Seite formatieren, verschiedene Visuals auswählen, Visuals formatieren, Filter hinzufügen usw. Wir werden uns in diesem Kurs nicht mit diesen Optionen beschäftigen.
  
 4. Erweitern Sie den Bereich **Daten**, und erweitern Sie **SQL-Abfrage 1**.
 
@@ -105,7 +104,7 @@ GROUP BY su.SupplierName
 
     ![](../media/lab-06/image023.png)
 
-Sie werden zum Bildschirm „SQL-Abfrage“ weitergeleitet.
+    Sie werden zum Bildschirm „SQL-Abfrage“ weitergeleitet.
  
 # Lakehouse – Semantische Modellierung
 
@@ -134,13 +133,21 @@ Sie werden zum Bildschirm „SQL-Abfrage“ weitergeleitet.
 7. **Wählen Sie** die folgenden Tabellen/Ansichten aus:
 
     a. **Date**  
+    
     b. **People**  
+    
     c. **Customer**  
+    
     d. **PO**  
+    
     e. **Supplier**  
+    
     f. **Geo**  
+    
     g. **Reseller**  
+    
     h. **Sales**  
+    
     i. **Product**
  
 8. Wählen Sie **Bestätigen** aus.
@@ -179,21 +186,21 @@ Das erste Schritt besteht darin, Beziehungen zwischen diesen Tabellen zu erstell
 
 9. Vergewissern Sie sich, dass unter **In Tabelle Date** und bei **Spalte Date** angegeben ist.
 
-10.	Die **Kardinalität** lautet n:1.
+10. Die **Kardinalität** lautet n:1.
 
-11.	Bei **Kreuzfilterrichtung** muss **Einfach** ausgewählt sein.
+11. Bei **Kreuzfilterrichtung** muss **Einfach** ausgewählt sein.
 
-12.	Wählen Sie **Speichern** aus.
+12. Wählen Sie **Speichern** aus.
 
     ![](../media/lab-06/image047.png)
 
-13.	Erstellen Sie eine analog eine **n:1-Beziehung** zwischen den Tabellen **Sales** und **Product**. Wählen Sie in der Tabelle **Sales** den Eintrag **StockItemID** und in der Tabelle **Product** den Eintrag **StockItemID** aus.
+13. Erstellen Sie eine analog eine **n:1-Beziehung** zwischen den Tabellen **Sales** und **Product**. Wählen Sie in der Tabelle **Sales** den Eintrag **StockItemID** und in der Tabelle **Product** den Eintrag **StockItemID** aus.
 
     **Hinweis:** Alle unsere Aktualisierungen werden automatisch gespeichert.
- 
+
     **Überprüfen Sie:** Das Modell muss die drei Beziehungen zwischen den Tabellen „Sales“ und „Reseller“,„Sales“ und „Date“ sowie „Sales“ und „Product“ aufweisen, wie im folgenden Screenshot gezeigt:
 
-     ![](../media/lab-06/image050.jpg)
+    ![](../media/lab-06/image050.jpg)
 
     Aus Zeitgründen können wir nicht alle Beziehungen erstellen. Sofern Zeit verbleibt, können Sie den fakultativen Abschnitt am Ende der Übung durcharbeiten. Darin werden die restlichen Beziehungen erstellt.
 
@@ -221,37 +228,37 @@ Ergänzen wir ein paar Kennzahlen, die zur Erstellung des Sales-Dashboards benö
 
 9. Wählen Sie bei Auswahl der Tabelle **Sales** im Menü oben die Option **Start -> Neues Measure** aus. Die Bearbeitungsleiste wird angezeigt.
 
-10.	Geben Sie dort **Units = SUM(Sales[Quantity])** ein.
+10. Geben Sie dort **Units = SUM(Sales[Quantity])** ein.
 
-11.	Klicken Sie links neben der Bearbeitungsleiste auf das **Häkchen**, oder drücken Sie die **Eingabetaste**.
+11. Klicken Sie links neben der Bearbeitungsleiste auf das **Häkchen**, oder drücken Sie die **Eingabetaste**.
 
-12.	Erweitern Sie im Eigenschaftsfenster rechts den Abschnitt **Formatierung** (es kann einen Moment dauern, bis das Eigenschaftsfenster geladen wird).
+12. Erweitern Sie im Eigenschaftsfenster rechts den Abschnitt **Formatierung** (es kann einen Moment dauern, bis das Eigenschaftsfenster geladen wird).
 
-13.	Wählen Sie in der Dropdown-Liste **Format** den Eintrag **Ganze Zahl** aus.
+13. Wählen Sie in der Dropdown-Liste **Format** den Eintrag **Ganze Zahl** aus.
 
-14.	Verwenden Sie den Schieberegler, um **Tausendertrennzeichen** auf **Ja** festzulegen.
+14. Verwenden Sie den Schieberegler, um **Tausendertrennzeichen** auf **Ja** festzulegen.
 
     ![](../media/lab-06/image056.jpg)
 
-15.	Wählen Sie bei Auswahl der Tabelle **Sales** im Menü oben die Option **Start -> Neues Measure** aus. Die Bearbeitungsleiste wird angezeigt.
+15. Wählen Sie bei Auswahl der Tabelle **Sales** im Menü oben die Option **Start -> Neues Measure** aus. Die Bearbeitungsleiste wird angezeigt.
  
-16.	Geben Sie in der **Formularleiste Sales Orders = DISTINCTCOUNT(Sales[InvoiceID])** ein.
+16. Geben Sie in der **Formularleiste Sales Orders = DISTINCTCOUNT(Sales[InvoiceID])** ein.
 
-17.	Klicken Sie links neben der Bearbeitungsleiste auf das **Häkchen**, oder drücken Sie die **Eingabetaste**.
+17. Klicken Sie links neben der Bearbeitungsleiste auf das **Häkchen**, oder drücken Sie die **Eingabetaste**.
 
-18.	Erweitern Sie im Eigenschaftsfenster rechts den Abschnitt **Formatierung**.
+18. Erweitern Sie im Eigenschaftsfenster rechts den Abschnitt **Formatierung**.
 
-19.	Wählen Sie in der Dropdown-Liste **Format** den Eintrag **Ganze Zahl** aus.
+19. Wählen Sie in der Dropdown-Liste **Format** den Eintrag **Ganze Zahl** aus.
 
-20.	Verwenden Sie den Schieberegler, um **Tausendertrennzeichen** auf **Ja** festzulegen.
+20. Verwenden Sie den Schieberegler, um **Tausendertrennzeichen** auf **Ja** festzulegen.
 
     ![](../media/lab-06/image059.jpg)
 
-21.	Wählen Sie im **Datenbereich** (rechts) die Option **Modell** aus. Beachten Sie, dass dadurch eine Ansicht bereitgestellt wird, in der Sie alle Elemente im semantischen Modell organisieren können.
+21. Wählen Sie im **Datenbereich** (rechts) die Option **Modell** aus. Beachten Sie, dass dadurch eine Ansicht bereitgestellt wird, in der Sie alle Elemente im semantischen Modell organisieren können.
 
-22.	Erweitern Sie **Semantisches Modell -> Kennzahlen**, um alle Kennzahlen anzuzeigen, die Sie gerade erstellt haben.
+22. Erweitern Sie **Semantisches Modell -> Kennzahlen**, um alle Kennzahlen anzuzeigen, die Sie gerade erstellt haben.
 
-23.	Sie können auch **einzelne Tabellen erweitern**, um die Spalten, Hierarchien und Kennzahlen in jeder einzelnen Tabelle anzuzeigen.
+23. Sie können auch **einzelne Tabellen erweitern**, um die Spalten, Hierarchien und Kennzahlen in jeder einzelnen Tabelle anzuzeigen.
 
     ![](../media/lab-06/image062.png)
 
@@ -263,75 +270,75 @@ Ergänzen wir ein paar Kennzahlen, die zur Erstellung des Sales-Dashboards benö
 
 Ergänzen wir die restlichen Beziehungen.
 
-1.	Wählen Sie im Menü Start > Beziehungen verwalten aus.
+1. Wählen Sie im Menü Start > Beziehungen verwalten aus.
 
-2.	Das Dialogfeld „Beziehungen verwalten“ wird geöffnet. Wählen Sie Neue Beziehung aus.
+2. Das Dialogfeld „Beziehungen verwalten“ wird geöffnet. Wählen Sie Neue Beziehung aus.
 
     ![](../media/lab-06/image065.jpg)
 
-3.	Das Dialogfeld „Neue Beziehung“ wird geöffnet. Vergewissern Sie sich, dass unter **Von Tabelle Sales** und bei **Spalte SalespersonPersonID** angegeben ist.
+3. Das Dialogfeld „Neue Beziehung“ wird geöffnet. Vergewissern Sie sich, dass unter **Von Tabelle Sales** und bei **Spalte SalespersonPersonID** angegeben ist.
 
-4.	Vergewissern Sie sich, dass unter **In Tabelle People** und bei **Spalte PersonID** angegeben ist.
+4. Vergewissern Sie sich, dass unter **In Tabelle People** und bei **Spalte PersonID** angegeben ist.
 
-5.	Die **Kardinalität** lautet **n:1**.
+5. Die **Kardinalität** lautet **n:1**.
 
-6.	Bei **Kreuzfilterrichtung** muss **Einfach** ausgewählt sein.
+6. Bei **Kreuzfilterrichtung** muss **Einfach** ausgewählt sein.
 
-7.	Wählen Sie **Speichern** aus. Das Dialogfeld „Beziehungen verwalten“ wird mit der neuen hinzugefügten Beziehung geöffnet.
+7. Wählen Sie **Speichern** aus. Das Dialogfeld „Beziehungen verwalten“ wird mit der neuen hinzugefügten Beziehung geöffnet.
 
     ![](../media/lab-06/image068.jpg)
  
-8.	Erstellen wir jetzt eine Beziehung zwischen den Tabellen „Product“ und „Supplier“. Wählen Sie **Neue Beziehung** aus.
+8. Erstellen wir jetzt eine Beziehung zwischen den Tabellen „Product“ und „Supplier“. Wählen Sie **Neue Beziehung** aus.
 
-9.	Vergewissern Sie sich, dass unter **Von Tabelle Product** und bei **Spalte SupplierID** angegeben ist.
+9. Vergewissern Sie sich, dass unter **Von Tabelle Product** und bei **Spalte SupplierID** angegeben ist.
 
-10.	Vergewissern Sie sich, dass unter **In Tabelle Supplier** und bei **Spalte SupplierID** angegeben ist.
+10. Vergewissern Sie sich, dass unter **In Tabelle Supplier** und bei **Spalte SupplierID** angegeben ist.
 
-11.	Die **Kardinalität** lautet **n:1**.
+11. Die **Kardinalität** lautet **n:1**.
 
-12.	Bei **Kreuzfilterrichtung** muss **Beides** ausgewählt sein.
+12. Bei **Kreuzfilterrichtung** muss **Beides** ausgewählt sein.
 
-13.	Wählen Sie **Speichern** aus.
+13. Wählen Sie **Speichern** aus.
 
     ![](../media/lab-06/image071.png)
 
-14.	Erstellen wir jetzt eine Beziehung zwischen den Tabellen „Reseller“ und „Geo“. Wählen Sie **Neue Beziehung** aus.
+14. Erstellen wir jetzt eine Beziehung zwischen den Tabellen „Reseller“ und „Geo“. Wählen Sie **Neue Beziehung** aus.
 
-15.	Das Dialogfeld „Neue Beziehung“ wird geöffnet. Vergewissern Sie sich, dass unter **Von Tabelle Reseller** und bei **Spalte PostalCityID** festgelegt ist.
+15. Das Dialogfeld „Neue Beziehung“ wird geöffnet. Vergewissern Sie sich, dass unter **Von Tabelle Reseller** und bei **Spalte PostalCityID** festgelegt ist.
 
-16.	Vergewissern Sie sich, dass unter **In Tabelle** auf **Geo** und Spalte auf **CityID** festgelegt ist.
+16. Vergewissern Sie sich, dass unter **In Tabelle** auf **Geo** und Spalte auf **CityID** festgelegt ist.
 
-17.	Die **Kardinalität** lautet **n:1**.
+17. Die **Kardinalität** lautet **n:1**.
 
-18.	Bei **Kreuzfilterrichtung** muss **Beides** ausgewählt sein.
+18. Bei **Kreuzfilterrichtung** muss **Beides** ausgewählt sein.
  
-19.	Wählen Sie **Speichern** aus.
+19. Wählen Sie **Speichern** aus.
 
     ![](../media/lab-06/image074.png)
 
-20.	Erstellen Sie ebenso eine Beziehung zwischen den Tabellen „Customer“ und „Reseller“. Wählen Sie **Neue Beziehung** aus.
+20. Erstellen Sie ebenso eine Beziehung zwischen den Tabellen „Customer“ und „Reseller“. Wählen Sie **Neue Beziehung** aus.
 
-21.	Das Dialogfeld „Neue Beziehung“ wird geöffnet. Vergewissern Sie sich, dass unter **Von Tabelle Customer** und bei **Spalte ResellerID** angegeben ist.
+21. Das Dialogfeld „Neue Beziehung“ wird geöffnet. Vergewissern Sie sich, dass unter **Von Tabelle Customer** und bei **Spalte ResellerID** angegeben ist.
 
-22.	Vergewissern Sie sicher, dass unter **In Tabelle Reseller** und bei **Spalte ResellerID** angegeben ist.
+22. Vergewissern Sie sicher, dass unter **In Tabelle Reseller** und bei **Spalte ResellerID** angegeben ist.
 
-23.	Die **Kardinalität** lautet **n:1**.
+23. Die **Kardinalität** lautet **n:1**.
 
-24.	Bei **Kreuzfilterrichtung** muss **Einfach** ausgewählt sein.
+24. Bei **Kreuzfilterrichtung** muss **Einfach** ausgewählt sein.
 
-25.	Wählen Sie **Speichern** aus.
+25. Wählen Sie **Speichern** aus.
 
     **Prüfpunkt:** „Beziehungen verwalten“ sollte so wie im Screenshot unten aussehen.
 
     ![](../media/lab-06/image077.png)
 
-26.	Erstellen Sie ebenso eine **n:1-Beziehung** zwischen den Tabellen **PO** und **Date**. Wählen Sie **Order_Date** aus **PO** und **Date** aus **Date** aus.
+26. Erstellen Sie ebenso eine **n:1-Beziehung** zwischen den Tabellen **PO** und **Date**. Wählen Sie **Order_Date** aus **PO** und **Date** aus **Date** aus.
 
-27.	Erstellen Sie ebenso eine **n:1-Beziehung** zwischen den Tabellen PO und Product. Wählen Sie unter **PO** den Eintrag **StockItemID** und unter **Product** den Eintrag **StockItemID** aus.
+27. Erstellen Sie ebenso eine **n:1-Beziehung** zwischen den Tabellen PO und Product. Wählen Sie unter **PO** den Eintrag **StockItemID** und unter **Product** den Eintrag **StockItemID** aus.
 
-28.	Erstellen Sie ebenso eine **n:1-Beziehung** zwischen den Tabellen **PO** und **People**. Wählen Sie unter **PO** den Eintrag **ContactPersonID** und unter **People** den Eintrag **PersonID** aus.
+28. Erstellen Sie ebenso eine **n:1-Beziehung** zwischen den Tabellen **PO** und **People**. Wählen Sie unter **PO** den Eintrag **ContactPersonID** und unter **People** den Eintrag **PersonID** aus.
 
-29.	Wählen Sie **Schließen** aus, um das Dialogfeld „Beziehungen verwalten“ zu schließen. 
+29. Wählen Sie **Schließen** aus, um das Dialogfeld „Beziehungen verwalten“ zu schließen. 
 
     Nun sind alle Beziehungen erstellt.
 
@@ -365,11 +372,9 @@ Ergänzen wir die restlichen Measures.
 
     b. In der Tabelle **Sales, GM% = DIVIDE([GM], [Sales])** formatiert als **Prozentsatz mit 0 Dezimalstellen**.
 
-    c. In der Tabelle **Sales, Sales YoY% = 
-       VAR __PREV_YEAR = CALCULATE([Sales], DATEADD('Date'[Date].[Date], -1, YEAR))
-       RETURN DIVIDE([Sales] - __PREV_YEAR, __PREV_YEAR)** formatiert als **Prozentsatz mit 2 Dezimalstellen**.
+    c. In der Tabelle **Sales, Sales YoY% = VAR __PREV_YEAR = CALCULATE([Sales], DATEADD('Date'[Date].[Date], -1, YEAR))RETURN DIVIDE([Sales] - __PREV_YEAR, __PREV_YEAR)** formatiert als **Prozentsatz mit 2 Dezimalstellen**.
 
-    d.	In der Tabelle **Customer , No of Customers = COUNTROWS(Customer)** formatiert als **Ganze Zahl mit aktiviertem Tausendertrennzeichen**.
+    d. In der Tabelle **Customer , No of Customers = COUNTROWS(Customer)** formatiert als **Ganze Zahl mit aktiviertem Tausendertrennzeichen**.
  
 ## Referenzen
 Bei Fabric Analyst in a Day (FAIAD) lernen Sie einige der wichtigsten Funktionen von Microsoft Fabric kennen. Im Menü des Dienstes finden Sie in der Hilfe (?) Links zu praktischen Informationen.
