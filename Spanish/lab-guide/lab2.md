@@ -114,7 +114,7 @@ Actualmente, está en Mi área de trabajo. Para trabajar con elementos de Fabric
 1. Seleccione el **icono Selector de experiencia de Fabric** (actualmente configurado en Data Activator) en la parte inferior izquierda de la pantalla. Se abre el cuadro de diálogo de experiencia de Fabric.
 
 
-2. 	Seleccione **Industry Solutions** en el cuadro de diálogo. Se le dirigirá a la página Inicio de **Industry Solutions**. Microsoft Fabric ofrece soluciones de datos específicas de sector que proporcionan una plataforma sólida para la administración de datos, el análisis y la toma de decisiones. Estas soluciones de datos abordan los desafíos únicos a los que se enfrentan diferentes sectores, lo cual permite a las empresas optimizar las operaciones, integrar datos de diferentes orígenes y utilizar análisis enriquecidos. Observe que las tres secciones son como las experiencias anteriores. En la sección Recomendado, observe los elementos:
+2. Seleccione **Industry Solutions** en el cuadro de diálogo. Se le dirigirá a la página Inicio de **Industry Solutions**. Microsoft Fabric ofrece soluciones de datos específicas de sector que proporcionan una plataforma sólida para la administración de datos, el análisis y la toma de decisiones. Estas soluciones de datos abordan los desafíos únicos a los que se enfrentan diferentes sectores, lo cual permite a las empresas optimizar las operaciones, integrar datos de diferentes orígenes y utilizar análisis enriquecidos. Observe que las tres secciones son como las experiencias anteriores. En la sección Recomendado, observe los elementos:
 
     a. **Soluciones de sostenibilidad:** admiten la ingesta, la estandarización y el análisis de datos ambientales, sociales y de gobernanza (ASG).
 
@@ -128,7 +128,7 @@ Actualmente, está en Mi área de trabajo. Para trabajar con elementos de Fabric
 
 1. Seleccione el **icono Selector de experiencia de Fabric** (actualmente configurado en Industry Solutions) en la parte inferior izquierda de la pantalla. Se abre el cuadro de diálogo de experiencia de Fabric.
 
-2. 	Seleccione **Real-Time Intelligence**. Se le dirigirá a la **página principal de Real-Time Intelligence**. De nuevo, hay tres secciones. En la sección Recomendado, observe los elementos:
+2. Seleccione **Real-Time Intelligence**. Se le dirigirá a la **página principal de Real-Time Intelligence**. De nuevo, hay tres secciones. En la sección Recomendado, observe los elementos:
 
     a. **Eventhouse:** se utiliza para crear un área de trabajo de base de datos, que se puede compartir entre proyectos.
 
@@ -148,9 +148,9 @@ Actualmente, está en Mi área de trabajo. Para trabajar con elementos de Fabric
  
 ### Tarea 6: Experiencia de Synapse Data Engineering
 
-1. 	Seleccione el **icono Selector de experiencia de Fabric** (actualmente configurado en Real-Time Intelligence) en la parte inferior izquierda de la pantalla. Se abre el cuadro de diálogo de experiencia de Fabric.
+1. Seleccione el **icono Selector de experiencia de Fabric** (actualmente configurado en Real-Time Intelligence) en la parte inferior izquierda de la pantalla. Se abre el cuadro de diálogo de experiencia de Fabric.
 
-2. 	Seleccione **Data Engineering**. Se le dirigirá a la **Synapse Data Engineering Home**. De nuevo, la página tiene tres secciones principales. En la sección Recomendado, observe los elementos:
+2. Seleccione **Data Engineering**. Se le dirigirá a la **Synapse Data Engineering Home**. De nuevo, la página tiene tres secciones principales. En la sección Recomendado, observe los elementos:
 
     a. **Lakehouse:** se utiliza para almacenar macrodatos para limpiar, consultar, generar informes y compartir.
 
@@ -226,7 +226,7 @@ Actualmente, está en Mi área de trabajo. Para trabajar con elementos de Fabric
 
 4. En el campo **Nombre**, introduzca **FAIAD_<username>**
 
-**Nota:** El nombre del área de trabajo debe ser único. Sin embargo, el nombre de su área de trabajo debe ser diferente. Asegúrese de que aparezca una marca de verificación verde con "**Este nombre está disponible**" debajo del campo Nombre.
+   **Nota:** El nombre del área de trabajo debe ser único. Sin embargo, el nombre de su área de trabajo debe ser diferente. Asegúrese de que aparezca una marca de verificación verde con "**Este nombre está disponible**" debajo del campo Nombre.
 
 5. Si lo desea, puede escribir una **Descripción** para el área de trabajo. Este campo es opcional.
 
@@ -256,7 +256,7 @@ Se crea una nueva área de trabajo y se nos dirige hasta ella. Traeremos datos d
  
 4. Se abre un nuevo cuadro de diálogo de lakehouse. Escriba **lh_FAIAD** en el cuadro de texto Nombre. 
 
-**Nota:** lh aquí se refiere a Lakehouse. Vamos a anteponer lh para que sea fácil de identificar y buscar.
+   **Nota:** lh aquí se refiere a Lakehouse. Vamos a anteponer lh para que sea fácil de identificar y buscar.
 
 5. Seleccione **Create**.
 

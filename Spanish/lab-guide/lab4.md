@@ -63,7 +63,7 @@ Al final de este laboratorio, habrá aprendido:
   
 9. Vuelva a la **pantalla del flujo de datos** en el explorador.
 
-10.	En el **panel del flujo de datos**, introduzca Ctrl+V (actualmente, hacer clic con el botón derecho en Pegar no es compatible). Si está utilizando un dispositivo MAC, utilice Cmd+V para pegar.
+10. En el **panel del flujo de datos**, introduzca Ctrl+V (actualmente, hacer clic con el botón derecho en Pegar no es compatible). Si está utilizando un dispositivo MAC, utilice Cmd+V para pegar.
 
     **Nota:** Si está trabajando en el entorno de laboratorio, seleccione los puntos suspensivos en la parte superior derecha de la pantalla. Utilice el control deslizante para habilitar Portapapeles nativo de VM. Seleccione Aceptar en el cuadro de diálogo. Una vez que haya terminado de pegar las consultas, puede desactivar esta opción.
 
@@ -81,9 +81,9 @@ Al final de este laboratorio, habrá aprendido:
 
 4. Seleccione **Conectar**.
 
-**Nota:** Iniciará sesión con sus credenciales. Serán diferentes a la captura de pantalla siguiente.
+   **Nota:** Iniciará sesión con sus credenciales. Serán diferentes a la captura de pantalla siguiente.
 
-![](../media/lab-04/image018.png)
+   ![](../media/lab-04/image018.png)
  
 ## Tarea 3: Configurar el destino de datos para la consulta People
 
@@ -115,10 +115,9 @@ Se establece la conexión y puede ver los datos en el panel de versión prelimin
 
     **Nota:** Puede deshabilitar la configuración automática y observe que tiene opciones para establecer las opciones Método de actualización y Esquema. Cuando haya finalizado la exploración, asegúrese de que la opción “**Usar configuración automática**” esté **habilitada**. 
 
-10.	Seleccione **Guardar configuración**.
+10. Seleccione **Guardar configuración**.
 
     ![](../media/lab-04/image030.png)
- 
 
 ## Tarea 4: Publicar y cambiar el nombre del flujo de datos de SharePoint
 
@@ -190,7 +189,7 @@ Se establece la conexión y puede ver los datos en el panel de versión prelimin
 
     **Nota:** Si está trabajando en el entorno de laboratorio, seleccione los puntos suspensivos en la parte superior derecha de la pantalla. Utilice el control deslizante para **habilitar Portapapeles nativo de VM**. Seleccione Aceptar en el cuadro de diálogo. Una vez que haya terminado de pegar las consultas, puede desactivar esta opción.
 
-![](../media/lab-04/image048.png)
+    ![](../media/lab-04/image048.png)
  
 ## Tarea 6: Crear una conexión a Snowflake
 
@@ -214,35 +213,35 @@ Se establece la conexión y puede ver los datos en el panel de versión prelimin
 
 ## Tarea 7: Configurar el destino de datos para las consultas de Supplier y PO
 
-1.	Seleccione la consulta de **Supplier**.
+1. Seleccione la consulta de **Supplier**.
 
-2.	En la cinta de opciones, seleccione **Inicio -> Agregar destino de datos -> Lakehouse**.
+2. En la cinta de opciones, seleccione **Inicio -> Agregar destino de datos -> Lakehouse**.
  
     ![](../media/lab-04/image057.png)
 
-3.	Se abre el cuadro de diálogo Conectarse al destino de datos. Desde el **menú desplegable Conexión**, seleccione **Lakehouse (ninguno)**.
+3. Se abre el cuadro de diálogo Conectarse al destino de datos. Desde el **menú desplegable Conexión**, seleccione **Lakehouse (ninguno)**.
 
-4.	Seleccione **Siguiente**.
+4. Seleccione **Siguiente**.
 
     ![](../media/lab-04/image058.png)
 
-5.	Se abre el cuadro de diálogo de Elegir el objetivo de destino. Asegúrese de que el botón de opción **Nueva tabla** esté **seleccionado**, ya que estamos creando una nueva tabla.
+5. Se abre el cuadro de diálogo de Elegir el objetivo de destino. Asegúrese de que el botón de opción **Nueva tabla** esté **seleccionado**, ya que estamos creando una nueva tabla.
 
-6.	Queremos crear la tabla en el lakehouse que creamos anteriormente. En el panel izquierdo, navegue hasta **Lakehouse -> FAIAD_<username>**. 
+6. Queremos crear la tabla en el lakehouse que creamos anteriormente. En el panel izquierdo, navegue hasta **Lakehouse -> FAIAD_<username>**. 
 
-7.	Seleccione **lh_FAIAD**.
+7. Seleccione **lh_FAIAD**.
 
-8.	Deje el nombre de la tabla como **Supplier**
+8. Deje el nombre de la tabla como **Supplier**
 
-9.	Seleccione **Siguiente**.
+9. Seleccione **Siguiente**.
 
     ![](../media/lab-04/image059.png)
 
-10.	Se abre el cuadro de diálogo de Elegir la configuración de destino. Usaremos la configuración automática, ya que esto realizará una actualización completa de los datos. Además, cambiará el nombre de las columnas según sea necesario. Seleccione **Guardar configuración**.
+10. Se abre el cuadro de diálogo de Elegir la configuración de destino. Usaremos la configuración automática, ya que esto realizará una actualización completa de los datos. Además, cambiará el nombre de las columnas según sea necesario. Seleccione **Guardar configuración**.
  
     ![](../media/lab-04/image065.png)
 
-11.	Volverá a la **ventana de Power Query**. Observe que en la **esquina inferior derecha**, el destino de los datos está configurado en el lakehouse. De manera similar, **configure el destino de datos para la consulta de PO**. Una vez hecho esto, su consulta de PO debe tener **Destino de datos** establecido en **Almacén de lago de datos** como se muestra en la siguiente captura de pantalla.
+11. Volverá a la **ventana de Power Query**. Observe que en la **esquina inferior derecha**, el destino de los datos está configurado en el lakehouse. De manera similar, **configure el destino de datos para la consulta de PO**. Una vez hecho esto, su consulta de PO debe tener **Destino de datos** establecido en **Almacén de lago de datos** como se muestra en la siguiente captura de pantalla.
  
     ![](../media/lab-04/image068.png)
 
@@ -260,15 +259,15 @@ Se establece la conexión y puede ver los datos en el panel de versión prelimin
 
     ![](../media/lab-04/image074.png)
 
-Se le dirigirá de vuelta al **área de trabajo FAIAD_<username>**. Es posible que el flujo de datos tarde unos minutos en publicarse. 
+    Se le dirigirá de vuelta al **área de trabajo FAIAD_<username>**. Es posible que el flujo de datos tarde unos minutos en publicarse. 
 
 5. Seleccione **lh_FAIAD** para ir al almacén de lago de datos.
 
-6.	Asegúrese de estar en la vista del almacén de lago de datos (no en el punto de conexión de análisis SQL).
+6. Asegúrese de estar en la vista del almacén de lago de datos (no en el punto de conexión de análisis SQL).
 
-7.	Observe que la tabla **PO** y **Supplier** ahora está disponible en el almacén de lago de datos.
+7. Observe que la tabla **PO** y **Supplier** ahora está disponible en el almacén de lago de datos.
 
-**Nota:** Si no ve las tablas recién creadas, seleccione los puntos suspensivos junto a Tables y seleccionar Actualizar para actualizar las tablas.
+    **Nota:** Si no ve las tablas recién creadas, seleccione los puntos suspensivos junto a Tables y seleccionar Actualizar para actualizar las tablas.
 
 Ahora creemos un acceso directo para traer datos de Dataverse.
 
@@ -298,13 +297,13 @@ Debe estar en el almacén de lago de datos lh_FAIAD. Asegúrese de estar en la v
 
 6. Seleccione **Iniciar sesión**.
 
-    ![](../media/lab-04/image086.png)
+   ![](../media/lab-04/image086.png)
 
 7. Se abre el cuadro de diálogo Iniciar sesión en su cuenta. **Elija su cuenta** para iniciar sesión.
 
    **Nota:** Su cuenta será diferente de la captura de pantalla siguiente.
 
-    ![](../media/lab-04/image089.png)
+   ![](../media/lab-04/image089.png)
 
 8. Seleccione **Siguiente** en el cuadro de diálogo Configuración de conexión.
 
@@ -326,10 +325,8 @@ Debe estar en el almacén de lago de datos lh_FAIAD. Asegúrese de estar en la v
 
 3. Se abre el cuadro de diálogo Nuevo acceso directo. Seleccione la opción **Microsoft OneLake** en orígenes internos.
 
-
     ![](../media/lab-04/image096.png)
 
- 
 4. Se abrirá el cuadro de diálogo Seleccionar un tipo de origen de datos. Observe que tiene dos orígenes de datos.
 
     a. lh_FAIAD: este es el almacén de lago de datos que ha creado.
@@ -340,27 +337,23 @@ Debe estar en el almacén de lago de datos lh_FAIAD. Asegúrese de estar en la v
 
 6. Seleccione **Siguiente**.
 
-
     ![](../media/lab-04/image099.png)
 
 7. En el panel izquierdo, expanda **lh_dataverse -> Tables**. Observe que el administrador de TI ha proporcionado acceso a la tabla Cliente.
 
-8.	Seleccione **Cliente**.
+8. Seleccione **Cliente**.
 
-9.	Seleccione **Siguiente**.
-
+9. Seleccione **Siguiente**.
 
     ![](../media/lab-04/image102.png)
-
  
 10.	Seleccione Crear en el siguiente cuadro de diálogo. Se le dirigirá de vuelta al almacén de lago de datos lh_FAIAD.
 
-
     ![](../media/lab-04/image105.png)
 
-11.	En el panel Explorador de la izquierda, observe que se ha creado la nueva tabla Cliente.
+11. En el panel Explorador de la izquierda, observe que se ha creado la nueva tabla Cliente.
 
-12.	Seleccione la tabla Cliente para ver los datos en el panel de versión preliminar.
+12. Seleccione la tabla Cliente para ver los datos en el panel de versión preliminar.
 
 Hemos creado correctamente un acceso directo a otro almacén de lago de datos.
 
@@ -369,7 +362,6 @@ En la próxima práctica de laboratorio, configuraremos actualizaciones de progr
 # Referencias
 
 Fabric Analyst in a Day (FAIAD) le presenta algunas funciones clave disponibles en Microsoft Fabric. En el menú del servicio, la sección Ayuda (?) tiene vínculos a algunos recursos excelentes.
- 
 
 ![](../media/lab-04/image108.png)
 

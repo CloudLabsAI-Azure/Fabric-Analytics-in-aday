@@ -1,6 +1,5 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Laboratorio 5
 
-
 ![](../media/lab-05/image000.png)
 
 # Contenido
@@ -71,8 +70,7 @@ Comencemos configurando una actualización programada del flujo de datos del pro
 
     **Nota:** La hora de inicio será diferente para usted.
 
-    ![](../media/lab-05/image018.png) 
-
+    ![](../media/lab-05/image018.png)
 
     Se abre la pantalla de detalles. Esto proporcionará detalles de la actualización e indica la hora de inicio, finalización y duración. También enumera las tablas o actividades que se actualizaron. En caso de que haya un error, puede hacer clic en el nombre de la tabla o actividad para investigar más a fondo.
 
@@ -538,7 +536,7 @@ A continuación, debemos esperar cinco minutos/300 segundos si la actualización
 
 1. Podemos probar la canalización de datos si seleccionamos **Inicio -> Ejecutar**. 
 
-**Nota:** Es posible que la actualización de la canalización de datos tarde unos minutos. Este es un entorno de capacitación, por lo que el archivo en SharePoint siempre está disponible. Por lo tanto, su canalización de datos nunca fallará.
+    **Nota:** Es posible que la actualización de la canalización de datos tarde unos minutos. Este es un entorno de capacitación, por lo que el archivo en SharePoint siempre está disponible. Por lo tanto, su canalización de datos nunca fallará.
 
 2. Podemos configurar la canalización de datos para que se ejecute según una programación. En el menú superior, seleccione **Inicio -> Programar**. Se abre el cuadro de diálogo de programación.
 

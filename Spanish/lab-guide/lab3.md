@@ -88,7 +88,7 @@ El acceso directo se utiliza para crear un vínculo a la ubicación de destino. 
 
     k.	Warehouse.StockItemStockGroups
 
-**Nota:** Sales.Invoices_May es el único directorio que no está seleccionado.
+    **Nota:** Sales.Invoices_May es el único directorio que no está seleccionado.
 
 12. Seleccione **Siguiente**.
 
@@ -124,7 +124,7 @@ El acceso directo se utiliza para crear un vínculo a la ubicación de destino. 
 
     j. Warehouse.StockItems a **ProductItem**
 
-**Nota:** Compruebe dos veces los nombres. Un error tipográfico puede causar errores durante el laboratorio.
+    **Nota:** Compruebe dos veces los nombres. Un error tipográfico puede causar errores durante el laboratorio.
 
 17. Seleccione **Crear** para crear el acceso directo.
 
@@ -144,9 +144,9 @@ El siguiente paso es transformar los datos, para que podamos crear un modelo sem
 
    ![](../media/lab-03/image027.jpg)
  
-Esto le llevará al punto de conexión de análisis de SQL. Observe que el panel del Explorador ha cambiado. Ahora puede crear vistas, procedimientos almacenados, consultas y mucho más. Vamos a crear una consulta visual, ya que proporciona una interfaz similar a Power Query, y la guardaremos como una vista.
+    Esto le llevará al punto de conexión de análisis de SQL. Observe que el panel del Explorador ha cambiado. Ahora puede crear vistas, procedimientos almacenados, consultas y mucho más. Vamos a crear una consulta visual, ya que proporciona una interfaz similar a Power Query, y la guardaremos como una vista.
 
-Comenzaremos creando la vista Geo. Necesitamos fusionar los datos de la consulta Cities, States y Countries para crear Geo.
+    Comenzaremos creando la vista Geo. Necesitamos fusionar los datos de la consulta Cities, States y Countries para crear Geo.
 
 2. En el menú superior, seleccione **Nueva consulta visual**.
 
@@ -156,7 +156,7 @@ Comenzaremos creando la vista Geo. Necesitamos fusionar los datos de la consulta
 
    ![](../media/lab-03/image033.png)
  
-Necesitamos fusionar estas consultas. Y la consulta visual viene con la opción de usar el Editor de Power Query. Usemos esto, ya que estamos familiarizados con esto.
+    Necesitamos fusionar estas consultas. Y la consulta visual viene con la opción de usar el Editor de Power Query. Usemos esto, ya que estamos familiarizados con esto.
 
 4. En el menú del editor de consultas visuales, seleccione el icono **Modo de enfoque** (hacia la derecha). Se le llevará al Editor de Power Query.
 
@@ -178,7 +178,7 @@ Necesitamos fusionar estas consultas. Y la consulta visual viene con la opción 
 
     ![](../media/lab-03/image042.jpg)
  
-Observe que se ha creado una nueva consulta llamada Merge. Necesitamos algunas columnas de States.
+    Observe que se ha creado una nueva consulta llamada Merge. Necesitamos algunas columnas de States.
 
 11. En la **vista Datos** (panel inferior), haga clic en la **doble flecha** al lado de la columna **States** (última columna a la derecha).
 
@@ -212,7 +212,7 @@ Observe que se ha creado una nueva consulta llamada Merge. Necesitamos algunas c
 
     ![](../media/lab-03/image051.jpg)
  
-Necesitamos algunas columnas de Countries.
+    Necesitamos algunas columnas de Countries.
 
 19. En el panel **vista Datos** (panel inferior), haga clic en la **doble flecha** al lado de la columna **Countries**.
 
@@ -238,7 +238,7 @@ Necesitamos algunas columnas de Countries.
 
     ![](../media/lab-03/image054.jpg)
  
-No necesitamos todas las columnas. Seleccione solo aquellos que necesitamos.
+    No necesitamos todas las columnas. Seleccione solo aquellos que necesitamos.
 
 22. Con la consulta de combinación seleccionada, en la cinta de opciones seleccione **Inicio -> Elegir columnas -> Elegir columnas**.
 
@@ -257,7 +257,7 @@ No necesitamos todas las columnas. Seleccione solo aquellos que necesitamos.
 
     ![](../media/lab-03/image060.png)
 
-Observe que el proceso es como el de Power Query, tenemos todos los pasos registrados tanto en el panel Pasos aplicados de la derecha como en la vista visual. Vamos a cambiar el nombre de Combinar consulta a Habilitar carga de modo que se carguen los datos desde esta consulta.
+    Observe que el proceso es como el de Power Query, tenemos todos los pasos registrados tanto en el panel Pasos aplicados de la derecha como en la vista visual. Vamos a cambiar el nombre de Combinar consulta a Habilitar carga de modo que se carguen los datos desde esta consulta.
 
 25. **Haga clic con el botón derecho en Combinar** consulta en el panel Consultas (izquierda). Seleccione Cambiar nombre y cambie el nombre de la consulta a Geo.
 
@@ -269,15 +269,15 @@ Observe que el proceso es como el de Power Query, tenemos todos los pasos regist
 
     ![](../media/lab-03/image063.jpg)
  
-Se nos dirigirá al editor de consultas visuales. Guardemos ahora esta consulta como una vista.
+    Se nos dirigirá al editor de consultas visuales. Guardemos ahora esta consulta como una vista.
 
-**Nota:** Todos los pasos que hemos realizado con el Editor de Power Query también se pueden llevar a cabo con el editor de consultas visuales.
+    **Nota:** Todos los pasos que hemos realizado con el Editor de Power Query también se pueden llevar a cabo con el editor de consultas visuales.
 
 29. En el menú del editor de consultas visuales, seleccione **Guardar como copia**.
 
     ![](../media/lab-03/image066.jpg)
  
-Se abre el cuadro de diálogo Guardar como copia. Observe que la consulta SQL está disponible. Puede revisarlo, si así lo desea. 
+    Se abre el cuadro de diálogo Guardar como copia. Observe que la consulta SQL está disponible. Puede revisarlo, si así lo desea. 
 
 30. Escriba Geo como **Nombre de la vista**.
 
@@ -285,7 +285,7 @@ Se abre el cuadro de diálogo Guardar como copia. Observe que la consulta SQL es
 
     ![](../media/lab-03/image069.png)
  
-Recibirá una alerta una vez que se guarde la vista. 
+    Recibirá una alerta una vez que se guarde la vista. 
 
 32. En el panel Explorador (izquierda), expanda **Views**. Tenemos la vista Geo recién creada.
 
@@ -307,19 +307,19 @@ Vamos a crear una vista Reseller, que se crea al combinar la tabla Customers con
 
    ![](../media/lab-03/image078.png)
  
-Se abre el cuadro de diálogo Combinar con Customers seleccionado como la tabla superior. 
+    Se abre el cuadro de diálogo Combinar con Customers seleccionado como la tabla superior. 
 
 5. En **Tabla derecha para combinación**, seleccione **BuyingGroups**.
 
-6 Seleccione las columnas **BuyingGroupID** de ambas tablas. Vamos a unirnos usando esta columna.
+6. Seleccione las columnas **BuyingGroupID** de ambas tablas. Vamos a unirnos usando esta columna.
 
-7 Seleccione **Interior** como el **Tipo de combinación**.
+7. Seleccione **Interior** como el **Tipo de combinación**.
 
-8 Seleccione **Aceptar**.
+8. Seleccione **Aceptar**.
 
    ![](../media/lab-03/image081.jpg)
  
-9 En la **Vista de datos** (panel inferior), haga clic en la doble flecha al lado de la columna BuyingGroups (última columna a la derecha) para seleccionar las columnas que necesitamos de BuyingGroups.
+9. En la **Vista de datos** (panel inferior), haga clic en la doble flecha al lado de la columna BuyingGroups (última columna a la derecha) para seleccionar las columnas que necesitamos de BuyingGroups.
 
 10. Se abre un panel. **Seleccione la columna BuyingGroupName**.
 
@@ -327,7 +327,7 @@ Se abre el cuadro de diálogo Combinar con Customers seleccionado como la tabla 
 
     ![](../media/lab-03/image084.jpg)
   
-No necesitamos todas las columnas. Seleccione solo aquellos que necesitamos.
+    No necesitamos todas las columnas. Seleccione solo aquellos que necesitamos.
 
 12. En el menú Consulta visual, seleccione **Administrar columnas -> Elegir columnas**.
 
@@ -371,13 +371,13 @@ No necesitamos todas las columnas. Seleccione solo aquellos que necesitamos.
 
     ![](../media/lab-03/image093.jpg)
  
-Observe que la tabla Cliente tiene todos los pasos documentados. Ahora guardemos esta vista.
+    Observe que la tabla Cliente tiene todos los pasos documentados. Ahora guardemos esta vista.
 
 17. En el menú de consultas visuales, seleccione **Guardar como copia**.
 
     ![](../media/lab-03/image096.png)
  
-Se abre el cuadro de diálogo Guardar como copia. Observe que la consulta SQL está disponible. Puede revisarlo, si así lo desea. 
+    Se abre el cuadro de diálogo Guardar como copia. Observe que la consulta SQL está disponible. Puede revisarlo, si así lo desea. 
 
 18. Escriba **Reseller** como **Nombre de la vista**.
 
@@ -385,7 +385,7 @@ Se abre el cuadro de diálogo Guardar como copia. Observe que la consulta SQL es
 
     ![](../media/lab-03/image099.png)
  
-Recibirá una alerta una vez que se guarde la vista.
+    Recibirá una alerta una vez que se guarde la vista.
 
 20. En el panel Explorador (izquierda), expanda Views. Tenemos la vista Reseller recién creada.
 
@@ -459,9 +459,9 @@ Vamos a crear la vista Sales, que se crea combinando la tabla InvoiceLineItems e
 
 23. Introduzca **Ctrl+V** en el teclado para pegar el código que Power BI Desktop ha copiado.
 
-**Nota:** Si está trabajando en el entorno de laboratorio, seleccione los puntos suspensivos en la parte superior derecha de la pantalla. Utilice el control deslizante para habilitar Portapapeles nativo de VM. Seleccione Aceptar en el cuadro de diálogo. Una vez que haya terminado de pegar las consultas, puede desactivar esta opción.
+    **Nota:** Si está trabajando en el entorno de laboratorio, seleccione los puntos suspensivos en la parte superior derecha de la pantalla. Utilice el control deslizante para habilitar Portapapeles nativo de VM. Seleccione Aceptar en el cuadro de diálogo. Una vez que haya terminado de pegar las consultas, puede desactivar esta opción.
 
-![](../media/lab-03/image126.jpg)
+    ![](../media/lab-03/image126.jpg)
  
 24. Resalte las dos últimas líneas de código (en Origen) y **elimínelas**.
 
