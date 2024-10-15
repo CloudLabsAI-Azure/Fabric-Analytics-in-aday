@@ -307,16 +307,16 @@
  
 8. 按照相似的步骤添加以下度量值：
 
-a. 在 **Sales** 表中，**GM = SUM(Sales[LineProfit])** 的格式已设置为**不带小数位数的货币。**
+    a. 在 **Sales** 表中，**GM = SUM(Sales[LineProfit])** 的格式已设置为**不带小数位数的货币。**
 
-b. 在 **Sales** 表中，**GM% = DIVIDE([GM], [Sales])** 的格式已设置为**不带小数位数的百分比。**
+    b. 在 **Sales** 表中，**GM% = DIVIDE([GM], [Sales])** 的格式已设置为**不带小数位数的百分比。**
 
-c. 在 **Sales** 表中，**Sales YoY% =
-VAR    PREV_YEAR = CALCULATE([Sales], DATEADD('Date'[Date].[Da te], -1, YEAR))
-RETURN DIVIDE([Sales] -   PREV_YEAR,  PREV_YEAR)**
-格式已设置为**带 2 位小数的百分比。**
+    c. 在 **Sales** 表中，**Sales YoY% =
+    VAR    PREV_YEAR = CALCULATE([Sales], DATEADD('Date'[Date].[Da te], -1, YEAR))
+    RETURN DIVIDE([Sales] -   PREV_YEAR,  PREV_YEAR)**
+    格式已设置为**带 2 位小数的百分比。**
 
-d. 在 **Customer** 表中，**No of Customers = COUNTROWS(Customer)** 格式已设置为**已启用千位分隔符的整数。**
+    d. 在 **Customer** 表中，**No of Customers = COUNTROWS(Customer)** 格式已设置为**已启用千位分隔符的整数。**
  
 # 参考
 Fabric Analyst in a Day (FAIAD) 介绍了Microsoft Fabric 中提供的一些主要功能。在服务菜单中， “帮助 (?)”部分包含指向一些优质资源的链接。
