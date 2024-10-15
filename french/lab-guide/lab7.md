@@ -58,11 +58,11 @@ Commençons par utiliser l’option de création automatique d’un état. Plus 
 
 3. La boîte de dialogue Expérience Fabric s’ouvre alors. Cliquez sur **Power BI**. Vous êtes alors redirigé vers la **page d’Accueil Power BI**.
 
-![](../media/lab-07/image006.jpg)
+  ![](../media/lab-07/image006.jpg)
 
 4. Cliquez sur **Nouveau rapport** dans le menu supérieur.
 
-![](../media/lab-07/image009.jpg)
+  ![](../media/lab-07/image009.jpg)
 
 5. Vous êtes alors redirigé vers l’écran **Créer votre premier rapport**. Des options permettent de créer un état à l’aide du format Excel ou CSV, saisir des données manuellement ou choisir un modèle sémantique publié. Nous avons créé un modèle sémantique dans les labos précédents.Utilisons-le. Sélectionnez l’option **Choisir un modèle sémantique publié**.
 
