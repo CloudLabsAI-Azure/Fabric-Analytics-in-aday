@@ -186,10 +186,11 @@ Comencemos a crear la canalización. Necesitamos una actividad para actualizar e
 
     ![](../media/lab-05/image048.png)
 
-Observe la ventaja de utilizar la canalización de datos en comparación con configurar el flujo de datos en una actualización programada (como hicimos con los flujos de datos anteriores):
+    Observe la ventaja de utilizar la canalización de datos en comparación con configurar el flujo de datos en una actualización programada (como hicimos con los flujos de datos anteriores):
 
-- La canalización ofrece la opción de reintentar varias veces antes de que falle la actualización.
-- La canalización brinda la capacidad de actualizar en segundos, mientras que con el flujo de datos, la actualización programada es cada 30 minutos.
+    - La canalización ofrece la opción de reintentar varias veces antes de que falle la actualización.
+
+    - La canalización brinda la capacidad de actualizar en segundos, mientras que con el flujo de datos, la actualización programada es cada 30 minutos.
 
 ## Tarea 4: Crear una nueva canalización de datos
 
@@ -415,7 +416,7 @@ Hemos configurado la actividad del flujo de datos como lo hicimos anteriormente 
 
     ![](../media/lab-05/image105.png)
 
-Ahora necesitamos configurar el contador si falla la actividad del flujo de datos. En la canalización de datos, no podemos hacer referencia a una variable. Lo que significa que no podemos incrementar la variable de contador varCounter si agregamos uno a su valor (varCounter = varCounter + 1). Entonces, utilizamos la variable varTempCounter.
+    Ahora necesitamos configurar el contador si falla la actividad del flujo de datos. En la canalización de datos, no podemos hacer referencia a una variable. Lo que significa que no podemos incrementar la variable de contador varCounter si agregamos uno a su valor (varCounter = varCounter + 1). Entonces, utilizamos la variable varTempCounter.
 
 ## Tarea 10: Configurar la segunda actividad de Establecer variable
 

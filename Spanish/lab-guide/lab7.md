@@ -81,9 +81,9 @@ Comencemos con la opción de creación automática de informes. Y, más adelante
 
 10. Se abre el cuadro de diálogo Guardar el informe. Nombre el informe como **rpt_Sales_Auto_Report** 
 
-**Nota:** Estamos anteponiendo rpt al nombre del informe, que es la abreviatura de informe (en inglés).
+    **Nota:** Estamos anteponiendo rpt al nombre del informe, que es la abreviatura de informe (en inglés).
 
-11. Asegúrese de que el informe esté guardado en el área de trabajo **FAIAD_<username>**.
+11. Asegúrese de que el informe esté guardado en el área de trabajo **FAIAD_\<username>**.
 
 12. Seleccione **Guardar**.
 
@@ -355,7 +355,7 @@ Observe lo fácil que es actualizar el modelo semántico mientras se crean los i
 
 17. Guardemos el informe: desde el menú, seleccione **Archivo -> Guardar**.
 
-Como se mencionó anteriormente, no crearemos todos los objetos visuales en esta práctica de laboratorio. Siéntase libre de crear más objetos visuales si lo desea. 
+    Como se mencionó anteriormente, no crearemos todos los objetos visuales en esta práctica de laboratorio. Siéntase libre de crear más objetos visuales si lo desea. 
 
 ## Tarea 10: Conectar Power BI Desktop al modelo semántico
 
@@ -445,7 +445,7 @@ En un escenario real, los datos se actualizan en el origen. Como estamos en un e
 
     ![](../media/lab-07/image126.png)
 
-7. En Configuración de conexión -> Dirección URL, introduzca este vínculo https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
+7. **En Configuración de conexión -> URL** ingrese este enlace `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
 
 8. Dado que hemos creado la conexión anteriormente, se reconoce. Seleccione **Siguiente**.
 

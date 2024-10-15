@@ -355,9 +355,9 @@ Debe estar en el almacén de lago de datos lh_FAIAD. Asegúrese de estar en la v
 
 12. Seleccione la tabla Cliente para ver los datos en el panel de versión preliminar.
 
-Hemos creado correctamente un acceso directo a otro almacén de lago de datos.
+    Hemos creado correctamente un acceso directo a otro almacén de lago de datos.
 
-En la próxima práctica de laboratorio, configuraremos actualizaciones de programaciones.
+    En la próxima práctica de laboratorio, configuraremos actualizaciones de programaciones.
 
 # Referencias
 
