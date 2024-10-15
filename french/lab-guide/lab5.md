@@ -6,33 +6,33 @@
 
 -   Dataflow Gen2
 
-        -   Tâche 1 : configurer l’actualisation planifiée pour le flux de données Fournisseur	
+    -   Tâche 1 : configurer l’actualisation planifiée pour le flux de données Fournisseur	
 
 -   Pipeline de données	
 
-        -   Tâche 2 : créer un pipeline de données	
+    -   Tâche 2 : créer un pipeline de données	
 
-        -   Tâche 3 : créer un pipeline de données simple	
+    -   Tâche 3 : créer un pipeline de données simple	
 
-        -   Tâche 4 : créer un pipeline de données	
+    -   Tâche 4 : créer un pipeline de données	
 
-        -   Tâche 5 : créer une activité Until	
+    -   Tâche 5 : créer une activité Until	
 
-        -   Tâche 6 : créer des variables	
+    -   Tâche 6 : créer des variables	
 
-        -   Tâche 7 : configurer l’activité Until	
+    -   Tâche 7 : configurer l’activité Until	
 
-        -   Tâche 8 : configurer l’activité Flux de données	
+    -   Tâche 8 : configurer l’activité Flux de données	
 
-        -   Tâche 9 : configurer une 1re activité Définir une variable
+    -   Tâche 9 : configurer une 1re activité Définir une variable
 
-        -   Tâche 10 : configurer une 2e activité Définir une variable
+    -   Tâche 10 : configurer une 2e activité Définir une variable
 
-        -   Tâche 11 : configurer une 3e activité Définir une variable	
+    -   Tâche 11 : configurer une 3e activité Définir une variable	
 
-        -   Tâche 12 : configurer l’activité Attente	
+    -   Tâche 12 : configurer l’activité Attente	
 
-        -   Tâche 13 : configurer l’actualisation planifiée pour le pipeline de données	
+    -   Tâche 13 : configurer l’actualisation planifiée pour le pipeline de données	
 
 -   Références	
 
