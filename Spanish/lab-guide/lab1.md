@@ -151,9 +151,9 @@ El siguiente informe analiza las ventas de Fabrikam. Los KPI se enumeran en la p
 
 6. Puede introducir las credenciales para el origen de datos de Dataverse si escribe el **Nombre de usuario** y **Contraseña** disponibles en la pestaña **Variables de entorno** (junto a la Guía de laboratorio). Seleccione la opción de cuenta de Microsoft.
 
-   ![](../media/lab-01/image045.jpg)
+   ![](../media/lab-01/15-10-24.png)
  
-7. Para el origen de datos ADLS, utilice la opción **Clave de cuenta** e introduzca la **Clave de acceso de la cuenta de almacenamiento de ADLS** que está disponible en las **Variables de entorno** (al lado de la Guía de laboratorio).
+7. Para la fuente de datos ADLS, utilice la opción **Firma de acceso compartido (SAS)** e ingrese el **token SAS** que está disponible en la pestaña **Entorno** (junto a la Guía de laboratorio).
 
 8. Observe que la carpeta **ADLSData** tiene varias dimensiones: Geo, Product, Reseller y Date. También tiene datos de Sales. 
 
