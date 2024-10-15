@@ -230,7 +230,7 @@ States.
 
 13. Cliquez sur **OK.**
 
-    
+     ![](../media/lab-03/image045.jpg)
 
     Nous devons maintenant fusionner la requête Countries. 
 
@@ -377,7 +377,7 @@ cette colonne.
 
 11. Cliquez sur **OK.**
 
-    
+    ![](../media/lab-03/image084.jpg)
 
     Nous n’avons pas besoin de toutes les colonnes. Nous allons sélectionner uniquement celles dont nous avons besoin.
 
