@@ -74,7 +74,7 @@ modélisation telles que la création de relations, l’ajout de mesures, etc. d
 
 8.	Dans le **volet gauche** Explorateur, sous la section **Queries**, cette requête est enregistrée sous **Mes requêtes** comme **SQL query 1**. Cela permet de renommer la requête et de l’enregistrer pour une utilisation ultérieure. En outre, une option permet d’afficher les requêtes partagées avec vous à l’aide du dossier **Requêtes partagées**.
 
-    **_Remarque_** : les requêtes visuelles que vous avez créées dans les labos précédents sont également disponibles sous le dossier Mes requêtes.
+    **Remarque** : les requêtes visuelles que vous avez créées dans les labos précédents sont également disponibles sous le dossier Mes requêtes.
 
     ![](../media/lab-06/image011.jpg)
 
@@ -166,7 +166,7 @@ Vous êtes alors redirigé vers l’écran de requête SQL.
 Vous allez accéder au nouveau modèle sémantique avec les tables sélectionnées. N’hésitez pas à **réorganiser** les tables si nécessaire. Notez que certaines tables (Geo, Reseller, Sales et Product) comportent un symbole d’avertissement en haut de la table à droite. En effet, il s’agit de vues. Tous
 les visuels créés avec des champs provenant de ces vues sont en mode DirectQuery et non en mode Direct Lake.
 
-**_Remarque_** : le mode Direct Lake est plus rapide que le mode DirectQuery.
+**Remarque** : le mode Direct Lake est plus rapide que le mode DirectQuery.
 
 ![](../media/lab-06/image038.jpg)
  
@@ -206,7 +206,7 @@ dans la table **Sales** et faites-la glisser vers la valeur **Date** dans la tab
 
 13.	De même, créez une relation **plusieurs-à-un** entre les tables **Sales** et **Product**. Sélectionnez la valeur **StockItemID** dans la table **Sales** et la valeur **StockItemID** dans la table **Product**.
 
-**_Remarque_** : toutes nos mises à jour sont enregistrées automatiquement.
+**Remarque** : toutes nos mises à jour sont enregistrées automatiquement.
 
 **Point de contrôle** : votre modèle devrait comporter les trois relations entre les tables Sales et Reseller, les tables Sales et Date, et les tables Sales et Product, comme illustré dans la capture d’écran ci-dessous :
 
