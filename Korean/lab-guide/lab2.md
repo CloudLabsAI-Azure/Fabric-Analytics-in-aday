@@ -78,14 +78,18 @@ Synapse 경험입니다.. 한번 살펴보겠습니다!
 
       ![](../media/lab-02/image024.jpg)
 
-3.	**Data Factory 홈 페이지**로 이동되었습니다. 이 페이지에는 세 가지 주요 섹션이 있습니다.
-         a.	**권장:** Data Factory에서 사용할 수 있는 항목 - 데이터 흐름 2세대, 데이터 파이프라인, 데이터 워크플로 및 GraphQL용 API가 나열되어 있습니다.
-            i.	데이터 흐름 2세대는 차세대 데이터 흐름입니다.
-            ii.	데이터 파이프라인은 데이터 조정에 사용됩니다.
-            iii.	데이터 워크플로는 워크플로 오케스트레이션 관리자입니다.
-            iv.	GraphQL용 API는 여러 데이터 원본을 쿼리하는 API입니다.
-        b.	**Learn:** 이 섹션은 빠른 시작 학습 문서에 대한 액세스를 제공합니다.
-        c.	**빠른 액세스:** 이 섹션은 최근에 사용했거나 즐겨찾는 항목을 나열합니다.
+3. **Data Factory 홈 페이지**로 이동되었습니다. 이 페이지에는 세 가지 주요 섹션이 있습니다:  
+
+   a. **권장**: Data Factory에서 사용할 수 있는 항목 - 데이터 흐름 2세대, 데이터 파이프라인, 데이터 워크플로 및 GraphQL용 API가 나열되어 있습니다.  
+      i. 데이터 흐름 2세대는 차세대 데이터 흐름입니다.  
+      ii. 데이터 파이프라인은 데이터 조정에 사용됩니다.  
+      iii. 데이터 워크플로는 워크플로 오케스트레이션 관리자입니다.  
+      iv. GraphQL용 API는 여러 데이터 원본을 쿼리하는 API입니다.  
+
+   b. **Learn**: 이 섹션은 빠른 시작 학습 문서에 대한 액세스를 제공합니다.  
+
+   c. **빠른 액세스**: 이 섹션은 최근에 사용했거나 즐겨찾는 항목을 나열합니다.  
+
 
       ![](../media/lab-02/image027.jpg)
  
@@ -95,80 +99,91 @@ Synapse 경험입니다.. 한번 살펴보겠습니다!
 
     ![](../media/lab-02/image030.png)
 
-2.	대화 상자에서 **Data Activator**를 선택합니다. **Data Activator 홈 페이지**로 이동됩니다. Data Activator는 데이터 변경에서 패턴이나 조건이 감지되면 자동으로 조치를 취하는 Microsoft
-Fabric의 노코드 환경입니다. 세 가지 섹션은 Data Factory 환경과 유사합니다. 권장 섹션에서 다음 항목을 확인합니다.
-      a.	**Reflex:** 패턴에 대한 데이터 세트, 쿼리 및 Eventstreams를 모니터링하는 데 사용됩니다.
-      b.	**Reflex 샘플:** 샘플 솔루션.
+2. 대화 상자에서 **Data Activator**를 선택합니다. **Data Activator 홈 페이지**로 이동됩니다. Data Activator는 데이터 변경에서 패턴이나 조건이 감지되면 자동으로 조치를 취하는 Microsoft Fabric의 노코드 환경입니다. 세 가지 섹션은 Data Factory 환경과 유사합니다. 권장 섹션에서 다음 항목을 확인합니다:  
+
+   a. **Reflex**: 패턴에 대한 데이터 세트, 쿼리 및 Eventstreams를 모니터링하는 데 사용됩니다.  
+   b. **Reflex 샘플**: 샘플 솔루션.
    
       ![](../media/lab-02/image033.jpg)
 
 # 작업 4: Industry Solutions 경험
 
 1.	화면 왼쪽 하단에 있는 **Fabric 환경 선택기 아이콘**(현재 Data Activator로 설정됨)을 선택합니다. Fabric 환경 대화 상자가 열립니다.
-2.	대화 상자에서 **Industry Solutions**를 선택합니다. **Industry Solutions** 홈 페이지로 이동합니다. Microsoft Fabric에서는 데이터 관리, 분석 및 의사 결정을 위한 강력한 산업별 플랫폼을 제공합니다. 이러한 데이터 솔루션은 다양한 산업이 직면한 고유한 문제를 해결하여 기업이 운영을 최적화하고, 다양한 소스의 데이터를 통합하고, 풍부한 분석을 사용할 수 있도록 지원합니다. 세 가지 섹션은 이전 환경과 유사합니다. 권장 섹션에서 다음 항목을 확인합니다.
-      a.	**지송 가능성 솔루션:** 환경, 사회 및 거버넌스(ESG) 데이터의 수집, 표준화 및 분석을 지원합니다.
-      b.	**리테일 솔루션:** 대량의 데이터를 관리하고, 다양한 소스의 데이터를 통합하며, 신속한 의사 결정을 위한 실시간 분석을 제공하는 데 도움이 됩니다. 판매점은 이러한 솔루션을 사용하여 재고 최적화, 고객 세분화, 판매 예측, 동적 가격 책정 및 사기 탐지를 수행할 수 있습니다.
-      c.	**Healthcare 솔루션:** 의료 데이터를 분석에 적합한 형식으로 효율적으로 변환해야 하는 중요한 요구를 해결하여 고객의 가치 실현 시간을 단축하기 위해 전략적으로 설계되었습니다.
+
+2. 대화 상자에서 **Industry Solutions**를 선택합니다. **Industry Solutions** 홈 페이지로 이동합니다. Microsoft Fabric에서는 데이터 관리, 분석 및 의사 결정을 위한 강력한 산업별 플랫폼을 제공합니다. 이러한 데이터 솔루션은 다양한 산업이 직면한 고유한 문제를 해결하여 기업이 운영을 최적화하고, 다양한 소스의 데이터를 통합하고, 풍부한 분석을 사용할 수 있도록 지원합니다. 세 가지 섹션은 이전 환경과 유사합니다. 권장 섹션에서 다음 항목을 확인합니다:  
+
+   a. **지속 가능성 솔루션**: 환경, 사회 및 거버넌스(ESG) 데이터의 수집, 표준화 및 분석을 지원합니다.  
+   b. **리테일 솔루션**: 대량의 데이터를 관리하고, 다양한 소스의 데이터를 통합하며, 신속한 의사 결정을 위한 실시간 분석을 제공합니다. 판매점은 이러한 솔루션을 사용하여 재고 최적화, 고객 세분화, 판매 예측, 동적 가격 책정 및 사기 탐지를 수행할 수 있습니다.  
+   c. **Healthcare 솔루션**: 의료 데이터를 분석에 적합한 형식으로 효율적으로 변환해야 하는 중요한 요구를 해결하여 고객의 가치 실현 시간을 단축하기 위해 전략적으로 설계되었습니다.  
+
   
     ![](../media/lab-02/image036.png)
    
 # 작업 5: Real-Time Intelligence 환경
 
 1.	화면 왼쪽 하단에 있는 **Fabric 환경 선택기 아이콘**(현재 Industry Solutions로 설정됨)을 선택합니다. Fabric 환경 대화 상자가 열립니다.
-2.	**Real-Time Intelligence** 를 선택합니다. **Real-Time Intelligence 홈 페이지**로 이동됩니다. 여기에도 역시 세 개의 섹션이 있습니다. 권장 섹션에서 다음 항목을 확인합니다.
-        a.	**Eventhouse:** 프로젝트 간에 공유할 수 있는 데이터베이스 작업 공간을 만드는 데 사용됩니다.
-        b.	**KQL 쿼리 집합:** 공유 가능한 테이블과 시각적 개체를 생성하기 위해 데이터에 대한 쿼리를 실행하는 데 사용됩니다.
-        c.	**실시간 대시보드:** 데이터 수집 후 몇 초 내에 실시간 대시보드를 시각화하는 데 사용됩니다.
-        d.	**Eventstream:** 실시간 이벤트 스트림을 캡처, 변환 및 라우팅하는 데 사용됩니다.
-        e.	**Reflex:** 데이터 집합, 쿼리 및 이벤트 스트림에서 패턴을 모니터링하는 데 사용됩니다.
-        f.	**샘플 사용:** 샘플 솔루션.
-    **참고:** Reflex 는 Data Activator 환경에서도 사용할 수 있습니다.
 
-    ![](../media/lab-02/image039.jpg)
+2. **Real-Time Intelligence**를 선택합니다. **Real-Time Intelligence 홈 페이지**로 이동됩니다. 여기에도 세 개의 섹션이 있습니다. 권장 섹션에서 다음 항목을 확인합니다:  
+
+   a. **Eventhouse**: 프로젝트 간에 공유할 수 있는 데이터베이스 작업 공간을 만드는 데 사용됩니다.  
+   b. **KQL 쿼리 집합**: 공유 가능한 테이블과 시각적 개체를 생성하기 위해 데이터에 대한 쿼리를 실행하는 데 사용됩니다.  
+   c. **실시간 대시보드**: 데이터 수집 후 몇 초 내에 실시간 대시보드를 시각화하는 데 사용됩니다.  
+   d. **Eventstream**: 실시간 이벤트 스트림을 캡처, 변환 및 라우팅하는 데 사용됩니다.  
+   e. **Reflex**: 데이터 집합, 쿼리 및 이벤트 스트림에서 패턴을 모니터링하는 데 사용됩니다.  
+   f. **샘플 사용**: 샘플 솔루션.  
+
+**참고:** Reflex는 Data Activator 환경에서도 사용할 수 있습니다.
+
+![](../media/lab-02/image039.jpg)
 
 # 작업 6: Synapse Data Engineering 환경
 
 1.	화면 왼쪽 하단에 있는 **Fabric 환경 선택기 아이콘**(현재 Real-Time Intelligence 로 설정됨)을 선택합니다. Fabric 환경 대화 상자가 열립니다.
  
-2.	**Data Engineering**을 선택합니다. **Data Engineering 홈 페이지**로 이동됩니다. 이번에도 이 페이지에는 세 가지 주요 섹션이 있습니다. 권장 섹션에서 다음 항목을 확인합니다.
-        a.	**Lakehouse:** 정리, 쿼리, 보고 및 공유를 위한 빅데이터를 저장하는 데 사용됩니다.
-        b.	**Notebook:** Python, R, Scala 등 다양한 언어를 사용하여 데이터 수집, 준비, 분석 및 기타 데이터 관련 작업에 사용됩니다.
-        c.	**Environment:** 공유 라이브러리를 설정하고 Notebooks용 Spark 컴퓨팅 설정 및 리소스와 Spark 작업 정의를 설정하는 데 사용됩니다.
-        d.	**Spark Job Definition:** Apache 작업을 정의, 예약 및 관리하는 데 사용됩니다.
-        e.	**Data pipeline:** 데이터 솔루션 조정에 사용됩니다.
-        f.	**GraphQL용 API:** 여러 데이터 원본을 쿼리하는 API입니다.
-        g.	**Import notebook:** 로컬 컴퓨터에서 Notebook을 가져오는 데 사용됩니다.
-        h.	**Use a sample:** 샘플 솔루션.
+2. **Data Engineering**을 선택합니다. **Data Engineering 홈 페이지**로 이동됩니다. 이번에도 이 페이지에는 세 가지 주요 섹션이 있습니다. 권장 섹션에서 다음 항목을 확인합니다:  
 
-      ![](../media/lab-02/image042.jpg)
+   a. **Lakehouse**: 정리, 쿼리, 보고 및 공유를 위한 빅데이터를 저장하는 데 사용됩니다.  
+   b. **Notebook**: Python, R, Scala 등 다양한 언어를 사용하여 데이터 수집, 준비, 분석 및 기타 데이터 관련 작업에 사용됩니다.  
+   c. **Environment**: 공유 라이브러리를 설정하고 Notebooks용 Spark 컴퓨팅 설정 및 리소스와 Spark 작업 정의를 설정하는 데 사용됩니다.  
+   d. **Spark Job Definition**: Apache 작업을 정의, 예약 및 관리하는 데 사용됩니다.  
+   e. **Data pipeline**: 데이터 솔루션 조정에 사용됩니다.  
+   f. **GraphQL용 API**: 여러 데이터 원본을 쿼리하는 API입니다.  
+   g. **Import notebook**: 로컬 컴퓨터에서 Notebook을 가져오는 데 사용됩니다.  
+   h. **Use a sample**: 샘플 솔루션.
+   
+   ![](../media/lab-02/image042.jpg)
 
 # 작업 7: Synapse Data Science 환경
 
 1.	화면 왼쪽 하단에 있는 **Fabric 환경 선택기 아이콘**(현재 Data Engineering으로 설정됨)을 선택합니다. Fabric 환경 대화 상자가 열립니다.
 
-2.	**Data Science**를 선택합니다. **Data Science 홈 페이지**로 이동됩니다. 여기에도 역시 세 개의 섹션이 있습니다. 권장 섹션에서 다음 항목을 확인합니다.
-      a.	**ML model:** 기계 학습 모델을 생성하는 데 사용됩니다.
-      b.	**Experiment:** 여러 모델을 생성, 실행하고 그 개발을 추적하는 데 사용됩니다.
-      c.	**Notebook:** 데이터를 탐색하고 기계 학습 솔루션을 구축하는 데 사용됩니다. 
-      d.	**Environment:** 공유 라이브러리를 설정하고 Notebooks용 Spark 컴퓨팅 설정 및 리소스와 Spark 작업 정의를 설정하는 데 사용됩니다.
-      e.	**AI 기술:** 자신만의 생성형 AI 경험을 구축하는 데 사용됩니다.
-      f.	**Import notebook:** 로컬 컴퓨터에서 Notebook을 가져오는 데 사용됩니다.
-      g.	**Use a sample:** 샘플 솔루션.
-   **메모:** Notebook, 환경, 데이터 파이프라인 등과 같은 항목은 각 경험과 관련이 있으므로 여러 경험에서 사용할 수 있습니다.
+2. **Data Science**를 선택합니다. **Data Science 홈 페이지**로 이동됩니다. 여기에도 역시 세 개의 섹션이 있습니다. 권장 섹션에서 다음 항목을 확인합니다:  
 
-    ![](../media/lab-02/image045.jpg)
+   a. **ML model**: 기계 학습 모델을 생성하는 데 사용됩니다.  
+   b. **Experiment**: 여러 모델을 생성, 실행하고 그 개발을 추적하는 데 사용됩니다.  
+   c. **Notebook**: 데이터를 탐색하고 기계 학습 솔루션을 구축하는 데 사용됩니다.  
+   d. **Environment**: 공유 라이브러리를 설정하고 Notebooks용 Spark 컴퓨팅 설정 및 리소스와 Spark 작업 정의를 설정하는 데 사용됩니다.  
+   e. **AI 기술**: 자신만의 생성형 AI 경험을 구축하는 데 사용됩니다.  
+   f. **Import notebook**: 로컬 컴퓨터에서 Notebook을 가져오는 데 사용됩니다.  
+   g. **Use a sample**: 샘플 솔루션.  
+
+**메모**: Notebook, 환경, 데이터 파이프라인 등과 같은 항목은 각 경험과 관련이 있으므로 여러 경험에서 사용할 수 있습니다.
+
+![](../media/lab-02/image045.jpg)
 
 # 작업 8: Synapse Data Warehouse 환경
 
 1.	화면 왼쪽 하단에 있는 **Fabric 환경 선택기 아이콘**(현재 Data Science로 설정됨)을 선택합니다. Fabric 환경 대화 상자가 열립니다.
-2.	**Data Warehouse**를 선택합니다. **Data Warehouse 홈 페이지**로 이동됩니다. 여기에도 역시 세 개의 섹션이 있습니다. 새로 만들기 섹션에서 다음 항목을 확인합니다.
-      a.	**웨어하우스:** Data Warehouse를 생성하는 데 사용됩니다.
-      b.	**데이터 파이프라인:** 데이터 솔루션 조정에 사용됩니다.
-      c.	**미러링된 SQL Database:** Azure SQL Database를 미러링하는 데 사용됩니다.
-      d.	**미러링된 Snowflake:** Snowflake Database를 미러링하는 데 사용됩니다.
-      e.	**미러링된 Azure Cosmos DB:** Azure Cosmos DB를 미러링하는 데 사용됩니다.
-       
-    ![](../media/lab-02/image048.jpg)
+
+2. **Data Warehouse**를 선택합니다. **Data Warehouse 홈 페이지**로 이동됩니다. 여기에도 역시 세 개의 섹션이 있습니다. 새로 만들기 섹션에서 다음 항목을 확인합니다:  
+
+   a. **웨어하우스**: Data Warehouse를 생성하는 데 사용됩니다.  
+   b. **데이터 파이프라인**: 데이터 솔루션 조정에 사용됩니다.  
+   c. **미러링된 SQL Database**: Azure SQL Database를 미러링하는 데 사용됩니다.  
+   d. **미러링된 Snowflake**: Snowflake Database를 미러링하는 데 사용됩니다.  
+   e. **미러링된 Azure Cosmos DB**: Azure Cosmos DB를 미러링하는 데 사용됩니다.
+
+![Data Warehouse Image](../media/lab-02/image048.jpg)
 
 # Fabric 작업 영역
 
