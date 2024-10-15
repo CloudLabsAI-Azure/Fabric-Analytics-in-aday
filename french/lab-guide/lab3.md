@@ -609,22 +609,20 @@ cette colonne.
 
 12. **Collez** le code ci-dessous dans l’Éditeur avancé :
 
-```
-let
- Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, 
-{"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
- #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", 
-{"StockGroupID"}, {"StockGroupID"}),
- #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, 
-ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
- #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", 
-"ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
- #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", 
-"StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice", 
-"RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
-in
- #"Choose columns"
- ```
+    ```
+    let
+    Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
+    #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup",
+    {"StockGroupID"}, {"StockGroupID"}),
+    #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
+    #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
+    
+    #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice",
+    "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
+    in
+    #"Choose columns"
+    ```
+
 13. Cliquez sur **OK** pour fermer l’Éditeur avancé. Vous êtes alors redirigé vers l’Éditeur Power Query.
 
     ![](../media/lab-03/image153.jpg)
