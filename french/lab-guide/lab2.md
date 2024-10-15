@@ -246,7 +246,7 @@ fois, il y a trois sections. Dans la section Éléments recommandés, notez les 
 
 3. La boîte de dialogue **Créer un espace de travail** s’ouvre alors sur le côté droit du navigateur.
 
-4. Dans le champ **Nom**, saisissez **FAIAD_< username>**
+4. Dans le champ **Nom**, saisissez **FAIAD_\<username>**.
 
     **Remarque** : le nom de l’espace de travail doit être unique. Cependant, le nom de votre espace de travail doit être différent. Assurez-vous qu’une coche verte avec « **Ce nom est disponible** » s’affiche sous le champ Nom.
 

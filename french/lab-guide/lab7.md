@@ -98,7 +98,7 @@ Commençons par utiliser l’option de création automatique d’un état. Plus 
 
     **Remarque** : nous ajoutons le préfixe rpt, à savoir l’abréviation du terme « report » (état) en anglais, au nom de l’état.
 
-11. Assurez-vous que l’état est enregistré dans votre espace de travail **FAIAD_< username>**.
+11. Assurez-vous que l’état est enregistré dans votre espace de travail **FAIAD_\<username>**.
 
 12. Cliquez sur **Enregistrer**.
 
@@ -116,7 +116,7 @@ La capture d’écran ci-dessous illustre à quoi **peut** ressembler l’état 
 
 Nous allons créer un nouvel état en utilisant un canevas vierge.
 
-1. Dans le **panneau de gauche**, sélectionnez le nom de votre espace de travail, **FAIAD_< username>** pour naviguer dans l’espace de travail.
+1. Dans le **panneau de gauche**, sélectionnez le nom de votre espace de travail, **FAIAD_\<username>** pour naviguer dans l’espace de travail.
 
 2. Dans le menu supérieur, cliquez sur **Nouveau -> État**. Vous êtes alors redirigé vers la page Créer votre premier état.
 
@@ -254,7 +254,7 @@ Nous allons enregistrer l’état avant de le quitter pour apporter des modifica
 
     **Remarque** : nous ajoutons le préfixe rpt, à savoir l’abréviation du terme « report » (état) en anglais, au nom de l’état.
 
-3. Assurez-vous que l’état est enregistré dans l’espace de travail **FAIAD_< username>**.
+3. Assurez-vous que l’état est enregistré dans l’espace de travail **FAIAD_\<username>**.
 
 4. Cliquez sur **Enregistrer**. Notez que l’état est enregistré et que vous êtes en mode Affichage.
 
@@ -443,7 +443,7 @@ Dans un scénario réel, les données sont mises à jour à la source. Puisque n
 
 1. Revenez au **navigateur**.
 
-2. Cliquez sur **FAIAD_< username>** dans la barre de menus gauche pour accéder à la page d’accueil de l’espace de travail.
+2. Cliquez sur **FAIAD_\<username>** dans la barre de menus gauche pour accéder à la page d’accueil de l’espace de travail.
 
 3. Cliquez sur **lh_FAIAD** pour accéder à la lakehouse.
 
@@ -672,7 +672,7 @@ Revenons sur les défis répertoriés dans l’énoncé du problème :
 
 Une fois que vous êtes prêt à nettoyer l’environnement de labo, procédez comme suit :
 
-1. Sélectionnez l’espace de travail **FAIAD_< username>** à partir du panneau de gauche pour naviguer vers la page d’accueil de l’espace de travail.
+1. Sélectionnez l’espace de travail **FAIAD_\<username>** à partir du panneau de gauche pour naviguer vers la page d’accueil de l’espace de travail.
 
 2. Dans le menu supérieur, cliquez sur **Paramètres de l’espace de travail**.
 

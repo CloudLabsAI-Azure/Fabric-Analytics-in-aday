@@ -56,7 +56,7 @@ L’équipe informatique a déjà établi un lien vers Dataverse et appliqué le
 
 ## Tâche 1 : copier des requêtes SharePoint dans Dataflow
 
-1. Revenons à l’espace de travail Fabric **FAIAD_<username>** que vous avez créé dans le labo 2, tâche 9.
+1. Revenons à l’espace de travail Fabric **FAIAD_\<username>** que vous avez créé dans le labo 2, tâche 9.
 
 2. Cliquez sur l’**icône** du **sélecteur de l’expérience Fabric** en bas de votre écran à gauche. La boîte de dialogue Expérience Fabric s’ouvre alors.
 
@@ -124,7 +124,7 @@ déroulante **Connexion** et le champ **Type d’authentification** défini sur
 
 4. La boîte de dialogue Choisir la cible de destination s’ouvre alors. Assurez-vous que le bouton radio **Nouvelle table** est coché, car nous créons une table.
 
-5. Nous souhaitons créer la table dans la lakehouse que nous avons créée plus tôt. Dans le volet gauche, accédez à **Lakehouse -> FAIAD_<username>.** 
+5. Nous souhaitons créer la table dans la lakehouse que nous avons créée plus tôt. Dans le volet gauche, accédez à **Lakehouse ->FAIAD_\<username>.** 
 
 6. Sélectionnez **lh_FAIAD.**
 
@@ -152,7 +152,7 @@ l’option « **Utiliser les paramètres automatiques** » est **activée.**
 
    ![](../media/lab-04/image033.jpg)
 
-   **Remarque :** vous êtes alors redirigé vers l’espace de travail **FAIAD_<username>.** La publication du flux de données peut prendre quelques instants.
+   **Remarque :** vous êtes alors redirigé vers l’espace de travail **FAIAD_\<username>**. La publication du flux de données peut prendre quelques instants.
 
 3. Dataflow 1 est le flux de données dans lequel nous travaillions. Renommons-le avant de 
 continuer. Cliquez sur les **points de suspension (…)** en regard de Dataflow 1. Sélectionnez 
@@ -168,7 +168,7 @@ continuer. Cliquez sur les **points de suspension (…)** en regard de Dataflow 
 
    ![](../media/lab-04/image039.png)
 
-   Vous êtes alors redirigé vers l’espace de travail **FAIAD_<username>.** 
+   Vous êtes alors redirigé vers l’espace de travail **FAIAD_\<username>** 
 
 7. Cliquez sur **lh_FAIAD** pour accéder à la lakehouse.
 
@@ -183,7 +183,7 @@ analytique SQL).
 
 ## Tâche 5 : copier des requêtes Snowflake dans Dataflow
 
-1. Revenons à l’espace de travail Fabric **FAIAD_<username>.**
+1. Revenons à l’espace de travail Fabric **FAIAD_\<username>**
 
 2. Dans le menu supérieur, cliquez sur **Nouveau -> Flux de données Gen2.**
 
@@ -258,7 +258,7 @@ Notez que les cinq requêtes sont collées et que vous disposez désormais du vo
 
 5. La boîte de dialogue Choisir la cible de destination s’ouvre alors. Assurez-vous que le **bouton radio Nouvelle table** est **coché,** car nous créons une table.
 
-6. Nous souhaitons créer la table dans la lakehouse que nous avons créée plus tôt. Dans le volet gauche, accédez à **Lakehouse -> FAIAD_<username>.** 
+6. Nous souhaitons créer la table dans la lakehouse que nous avons créée plus tôt. Dans le volet gauche, accédez à **Lakehouse -> FAIAD_\<username>.** 
 
 7. Sélectionnez **lh_FAIAD.**
 
@@ -291,7 +291,7 @@ colonnes seront renommées si nécessaire. Cliquez sur **Enregistrer les paramè
 
    ![](../media/lab-04/image075.jpg)
 
-   Vous êtes alors redirigé vers l’espace de travail **FAIAD_<username>.** La publication du flux de 
+   Vous êtes alors redirigé vers l’espace de travail **FAIAD_\<username>** La publication du flux de 
 données peut prendre quelques instants. 
 
 5. Cliquez sur **lh_FAIAD** pour accéder à la lakehouse.

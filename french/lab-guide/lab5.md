@@ -66,7 +66,7 @@ configurer l’actualisation, car nous nous connectons à la lakehouse fournie p
 
 Commençons par configurer une actualisation planifiée du flux de données Fournisseur.
 
-1.	Revenons à l’espace de travail Fabric **FAIAD_<username>** en cliquant sur 
+1.	Revenons à l’espace de travail Fabric **FAIAD_\<username>** en cliquant sur 
 l’espace de travail dans le volet gauche.
 
 2.	Pour agrandir le volet avec la liste des artefacts, cliquez sur la double flèche en haut du volet à droite.
@@ -188,7 +188,7 @@ Commençons à créer le pipeline. Nous avons besoin d’une activité pour actu
 **volet inférieur**, cliquez sur **Paramètres**.
 
 3.	Assurez-vous que le champ **Espace de travail** est défini sur votre espace de travail Fabric
-**FAIAD_<username>**.
+**FAIAD_\<username>**.
 
 4.	Dans la **liste déroulante Flux de données**, sélectionnez **df_People_SharePoint**. Lorsque cette activité Flux de données est exécutée, elle va actualiser **df_People_SharePoint**. C’était facile, non ? v¨●
 
@@ -227,7 +227,7 @@ Notez les avantages d’utiliser le pipeline de données par rapport à la défi
 
 Ajoutons un peu plus de complexité à notre scénario. Nous avons remarqué que si les données ne sont pas disponibles à 9 h, elles le sont généralement sous cinq minutes. Si la fenêtre temporelle est manquée, le fichier est disponible sous 15 minutes. Nous souhaitons planifier les tentatives à cinq et 15 minutes. Voyons comment nous pouvons y parvenir en créant un pipeline de données.
 
-1.	Dans le panneau de gauche, cliquez sur **FAIAD_<username>** pour accéder à la page d’accueil de l’espace de travail.
+1.	Dans le panneau de gauche, cliquez sur **FAIAD_\<username>** pour accéder à la page d’accueil de l’espace de travail.
 
 2.	Dans le menu supérieur, cliquez sur Nouveau, puis sélectionnez **Pipeline de données** dans la **liste déroulante**.
 
@@ -395,7 +395,7 @@ l’on appelle IntelliSense.) Sélectionnez la fonction **equals**.
 7.	Cliquez sur **Paramètres** dans le volet inférieur.
 
 8.	Assurez-vous que le champ **Espace de travail** est défini sur votre espace de travail
-**FAIAD_<username>**.
+**FAIAD_\<username>**.
 
 9.	Dans la **liste déroulante Flux de données**, sélectionnez **df_People_SharePoint**. Lorsque cette activité Flux de données est exécutée, elle va actualiser **df_People_SharePoint**.
 
@@ -595,7 +595,7 @@ pour quitter l’itérateur Until.
 
     ![](../media/lab-05/image134.jpg)
 
-11.	Sélectionnez votre espace de travail Fabric **FAIAD_<username>** dans le panneau de gauche pour accéder à l’espace de travail.
+11.	Sélectionnez votre espace de travail Fabric **FAIAD_\<username>** dans le panneau de gauche pour accéder à l’espace de travail.
     **_Remarque_** : sur l’écran Planifier, aucune option ne permet de notifier le succès ou l’échec (comme Planification de flux de données). La notification peut être effectuée en ajoutant une activité dans le pipeline de données. Nous ne le faisons pas dans ce labo, car il s’agit d’un environnement de labo.
     Nous avons planifié des actualisations pour les différentes sources de données. Nous allons créer un modèle sémantique avec des relations, des mesures et d’autres opérations de modélisation dans le prochain labo.
  
