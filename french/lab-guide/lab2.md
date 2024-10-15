@@ -66,7 +66,7 @@ Aujourd’hui, vous allez découvrir diverses fonctionnalités clés de Microsof
 6. Nous supposons que vous connaissez la disposition du service Power BI. Si vous avez une 
 question, n’hésitez pas à la poser au formateur.
 
-   Vous êtes actuellement dans Mon espace de travail. Pour utiliser des éléments Fabric, vous avez besoin d’une licence d’essai et d’un espace de travail doté d’une licence Fabric. En avant pour la configuration.
+   Vous êtes actuellement dans **Mon espace de travail**. Pour utiliser des éléments Fabric, vous avez besoin d’une licence d’essai et d’un espace de travail doté d’une licence Fabric. En avant pour la configuration.
 
 7. Dans le coin supérieur droit de l’écran, cliquez sur l’**icône utilisateur.**
 
@@ -186,7 +186,7 @@ question, n’hésitez pas à la poser au formateur.
 
     h. **Utiliser un échantillon** : exemple de solution.
 
-![](../media/lab-02/image042.jpg)
+    ![](../media/lab-02/image042.jpg)
 
 ## Tâche 7 : expérience Synapse Data Science
 
