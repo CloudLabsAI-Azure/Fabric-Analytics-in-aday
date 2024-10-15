@@ -209,7 +209,7 @@ anche il fatto Sales.
 
     b. Il **fatto PO** è creato unendo le query PO e PO Line Items.
 
-11. Per l'origine dati SharePoint, immettere il **Nome utente** e la **Password** disponibili nella scheda Variabili di ambiente (accanto alla guida al lab). Selezionare l'opzione dell'account Microsoft.
+11. Per l'origine dati SharePoint, immettere il **Nome utente** e la **Password** disponibili nella scheda **Variabili di ambiente** (accanto alla guida al lab). Selezionare l'opzione dell'account Microsoft.
 
 12. Notare che la cartella **SharepointData** include la dimensione People.
 
