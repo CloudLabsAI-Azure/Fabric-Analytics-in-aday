@@ -25,6 +25,7 @@ Le labo comprend des étapes à suivre par l’utilisateur, ainsi que des captur
 cours.
 
 # Scénario/Énoncé du problème 
+
 Fabrikam, Inc. est un grossiste en produits innovants. Ses clients sont majoritairement des sociétés qui revendent aux particuliers. Fabrikam vend à des clients de détail à travers les États-Unis, notamment des magasins spécialisés, des supermarchés, des magasins d’informatique et des magasins d’attractions touristiques. Fabrikam vend également à d’autres grossistes au moyen d’un réseau d’agents qui font la promotion des produits au nom de Fabrikam. Bien que tous les clients de Fabrikam soient actuellement basés aux États-Unis, la société a l’intention de favoriser son expansion dans d’autres pays/régions.
 
 Vous êtes analyste de données au sein de l’équipe commerciale. Vous recueillez, nettoyez et interprétez des jeux de données pour résoudre des problèmes métier. Vous créez également des visualisations telles que des tableaux et des graphiques, rédigez des états et les présentez aux décideurs de l’organisation.
@@ -143,10 +144,10 @@ cliquez sur la valeur hors norme en haut à droite (4e quadrant). Notez que le %
 -  Nous avons des informations Customer par Reseller. La valeur Customer est liée à la valeur Reseller.
 
 ## Tâche 3 : examiner les requêtes Power Query ##
+
 1.	Examinons à présent Power Query pour comprendre les sources de données. Dans le ruban, cliquez sur **Accueil -> Transformer les données**.
 
     ![](../media/lab-01/image039.jpg)
-
 
 2.	Une fenêtre Power Query s’ouvre alors. Dans le ruban, cliquez sur **Accueil -> Paramètres de
 la source de données**. La boîte de dialogue Paramètres de la source de données s’ouvre alors. En parcourant la liste, notez que quatre sources de données principales sont mentionnées dans l’énoncé du problème :
