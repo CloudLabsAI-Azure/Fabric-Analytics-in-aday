@@ -21,7 +21,7 @@
 
 Le labo comprend des étapes à suivre par l’utilisateur, ainsi que des captures d’écran associées qui fournissent une aide visuelle. Dans chaque capture d’écran, des sections sont mises en évidence avec des encadrés orange afin de souligner la ou les zones sur laquelle/lesquelles l’utilisateur doit se concentrer.
 
-**_Remarque :_** certaines captures d’écran peuvent être obsolètes en raison des mises à jour produit en
+**Remarque :** certaines captures d’écran peuvent être obsolètes en raison des mises à jour produit en
 cours.
 
 # Scénario/Énoncé du problème 
