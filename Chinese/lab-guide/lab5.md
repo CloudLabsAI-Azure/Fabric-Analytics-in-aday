@@ -116,7 +116,7 @@
 4. “新建管道”对话框随即打开。将管道命名为 **pl_Refresh_People_SharePoint**
 5. 选择**创建。**
 
-   ![](../media/lab-05/image033.jpg)  
+   ![](../media/lab-05/image033.png)  
 
     您将导航到**数据管道页面。** 如果您使用过Azure 数据工厂，您会熟悉此屏幕。让我们快速了解一下布局。
 
