@@ -42,14 +42,14 @@ L’équipe informatique a déjà établi un lien vers Dataverse et appliqué le
 
 À la fin de ce labo, vous saurez : 
 
-  • comment vous connecter à SharePoint à l’aide de Dataflow Gen2 et ingérer des données 
+  - comment vous connecter à SharePoint à l’aide de Dataflow Gen2 et ingérer des données 
   dans Lakehouse ;
 
-  • comment vous connecter à Snowflake à l’aide de 
+  - comment vous connecter à Snowflake à l’aide de 
     Dataflow Gen2 et ingérer des données dans 
     Lakehouse ;
 
-  • comment ingérer des données depuis une 
+  - comment ingérer des données depuis une 
     lakehouse partagée.
 
 # Dataflow Gen2
