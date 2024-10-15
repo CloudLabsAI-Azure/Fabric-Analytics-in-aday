@@ -1,5 +1,6 @@
-# Microsoft Fabric - Fabric Analyst in a Day - Labo 5 #
 
+<<<<<<< HEAD
+=======
 ![](../media/lab-05/image001l5f.png)
 
 # Sommaire #
@@ -124,9 +125,10 @@ l’espace de travail dans le volet gauche.
 15.	Définissez le champ **Heure** sur **minuit/0 h**. Notez que vous pouvez définir l’actualisation sur une heure pile ou une demi-heure.
 
 16.	Cliquez sur Appliquer pour enregistrer ce paramètre.
-    **Remarque** : en cliquant sur le lien Ajouter un autre horaire, vous pouvez ajouter plusieurs heures d’actualisation.
 
-    **Remarque** : en cliquant sur le lien Ajouter un autre horaire, vous pouvez ajouter plusieurs heures d’actualisation. Vous pouvez également envoyer des notifications d’échec au propriétaire du flux de données et à d’autres contacts.
+    **Remarque** : en cliquant sur le lien Ajouter un autre horaire, vous pouvez ajouter plusieurs heures d’actualisation.
+    
+     Vous pouvez également envoyer des notifications d’échec au propriétaire du flux de données et à d’autres contacts.
 
     ![](../media/lab-05/image027.jpg)
 
@@ -693,3 +695,5 @@ de changer dans les versions ultérieures du produit. Dans ce labo/cette démons
 
 
 
+
+>>>>>>> 23d147e4aa779b47fb010b86651426cb0a9225a7
