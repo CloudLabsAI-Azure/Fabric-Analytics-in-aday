@@ -1,3 +1,5 @@
+# Microsoft Fabric - 일일 패브릭 분석가 - 랩 1
+
 ![](../media/lab-01/title.png)
 
 # 목차
@@ -87,31 +89,31 @@
 
 **참고:** 이 교육에서는 Fabric에서 사용할 수 있는 도구를 사용한 데이터 수집, 변환 및 모델링에 중점을 둡니다. 보고서 개발이나 탐색은 중점 사항이 아닙니다. 몇 분 동안 보고서를 살펴보고 다음 단계로 넘어가겠습니다.
 
-1.	판매 지역별로 데이터를 분석해 보겠습니다. 판매 지역에서 **뉴잉글랜드**(산점도) 시각적 개체를 선택합니다. 시간 경과에 따른 매출에 따르면, Reseller Tailspin Toys는 뉴잉글랜드의 Wingtip Toys에 비해 매출이 더 많다는 점에 유의합니다. 전년대비(YoY%) Sales 막대형 차트를 보면 지난 1년 동안 Wingtip Toys 매출 성장이 낮았고 분기별로 감소했음을 알
+1. 판매 지역별로 데이터를 분석해 보겠습니다. 판매 지역에서 **뉴잉글랜드**(산점도) 시각적 개체를 선택합니다. 시간 경과에 따른 매출에 따르면, Reseller Tailspin Toys는 뉴잉글랜드의 Wingtip Toys에 비해 매출이 더 많다는 점에 유의합니다. 전년대비(YoY%) Sales 막대형 차트를 보면 지난 1년 동안 Wingtip Toys 매출 성장이 낮았고 분기별로 감소했음을 알
 수 있습니다. 3분기에 소폭 반등한 후 4분기에 다시 하락세를 보였습니다.
 
       ![](../media/lab-01/image024.jpg)
 
-2.	이것을 록키산맥 지역과 비교해 보겠습니다. 판매 지역에서 **로키 산맥**(산점도) 시각적 개체를 선택합니다. 전년대비 막대형 차트를 보면 Wingtip Toys의 매출이 지난 2분기 동안 저점에 있다가 2022년 4분기에 급격하게 증가한 것을 알 수 있습니다.
+2. 이것을 록키산맥 지역과 비교해 보겠습니다. 판매 지역에서 **로키 산맥**(산점도) 시각적 개체를 선택합니다. 전년대비 막대형 차트를 보면 Wingtip Toys의 매출이 지난 2분기 동안 저점에 있다가 2022년 4분기에 급격하게 증가한 것을 알 수 있습니다.
 
       ![](../media/lab-01/image027.jpg)
 
-3.	판매 지역에서 **로키 산맥**(산점도)을 선택하여 필터를 제거합니다.
+3. 판매 지역에서 **로키 산맥**(산점도)을 선택하여 필터를 제거합니다.
    
-4.	화면 하단 중앙에 있는 산점도 시각적 개체(매출별 판매 주문)에서 오른쪽 상단(4사분면)에 있는 이상값을 선택합니다. 마진(%)이 평균 50%보다 높은 52%입니다. 또한 2023년 마지막 2분기 매출 전년 동기 대비 증가율도 상승했습니다.
+4. 화면 하단 중앙에 있는 산점도 시각적 개체(매출별 판매 주문)에서 오른쪽 상단(4사분면)에 있는 이상값을 선택합니다. 마진(%)이 평균 50%보다 높은 52%입니다. 또한 2023년 마지막 2분기 매출 전년 동기 대비 증가율도 상승했습니다.
 
       ![](../media/lab-01/image030.jpg)
 
 
-5.	**필터를 제거**하려면 산점도 시각적 개체에서 이상값 Reseller를 선택합니다.
+5. **필터를 제거**하려면 산점도 시각적 개체에서 이상값 Reseller를 선택합니다.
 
-6.	Product Group 및 Reseller별 제품 상세 정보를 살펴보겠습니다. Product Groups 및 재판매사 매출 막대 그래프에서 **Tailspin Toys의 포장 재료 막대를 마우스 우클릭하고** 대화 상자에서 **드릴스루 -> 제품 상세 정보**를 선택합니다.
+6. Product Group 및 Reseller별 제품 상세 정보를 살펴보겠습니다. Product Groups 및 재판매사 매출 막대 그래프에서 **Tailspin Toys의 포장 재료 막대를 마우스 우클릭하고** 대화 상자에서 **드릴스루 -> 제품 상세 정보**를 선택합니다.
 
       ![](../media/lab-01/image033.jpg)
 
 제품 상세 정보를 제공하는 페이지로 이동하게 됩니다. 향후 주문도 일부 있음을 확인합니다.
 
-7.	이 페이지를 검토한 후 페이지 오른쪽 상단에 있는 **Ctrl+뒤로 화살표**를 선택하여 판매 보고서로 다시 이동합니다.
+7. 이 페이지를 검토한 후 페이지 오른쪽 상단에 있는 **Ctrl+뒤로 화살표**를 선택하여 판매 보고서로 다시 이동합니다.
 
       ![](../media/lab-01/image036.png)
 
@@ -129,7 +131,7 @@
  
 # 작업 3: Power Query 검토
 
-1.	Power Query를 보면서 데이터 원본을 파악해보겠습니다. 리본 메뉴에서 **홈 -> 데이터 변환**을 선택합니다.
+1. Power Query를 보면서 데이터 원본을 파악해보겠습니다. 리본 메뉴에서 **홈 -> 데이터 변환**을 선택합니다.
 
       ![](../media/lab-01/image039.jpg)
 
@@ -143,19 +145,19 @@
    
    d. **Dataverse**
  
-4.	**닫기**를 선택하여 데이터 원본 설정 대화 상자를 닫습니다.
+4. **닫기**를 선택하여 데이터 원본 설정 대화 상자를 닫습니다.
 
       ![](../media/lab-01/image042.png)
 
-5.	왼쪽 쿼리 패널에서 쿼리가 데이터 원본별로 그룹화되어 있는지 확인합니다.
+5. 왼쪽 쿼리 패널에서 쿼리가 데이터 원본별로 그룹화되어 있는지 확인합니다.
 
-6.	**DataverseData** 폴더에는 BabyBoomer, GenX, GenY, 및 GenZ의 네 가지 쿼리에서 사용할 수 있는 고객 데이터가 있습니다. 이 네 가지 쿼리는 Customer 쿼리를 생성하기 위해 추가됩니다.
+6. **DataverseData** 폴더에는 BabyBoomer, GenX, GenY, 및 GenZ의 네 가지 쿼리에서 사용할 수 있는 고객 데이터가 있습니다. 이 네 가지 쿼리는 Customer 쿼리를 생성하기 위해 추가됩니다.
 
       ![](../media/lab-01/image045.jpg)
 
-7.	**환경 변수** 탭(랩 가이드 옆)에 있는 **사용자 이름** 및 **암호**를 입력하여 Dataverse 데이터 원본에 대한 자격 증명을 입력할 수 있습니다. Microsoft 계정 옵션을 선택합니다.
+7. **환경 변수** 탭(랩 가이드 옆)에 있는 **사용자 이름** 및 **암호**를 입력하여 Dataverse 데이터 원본에 대한 자격 증명을 입력할 수 있습니다. Microsoft 계정 옵션을 선택합니다.
  
-8.	ADLS 데이터 원본의 경우 **계정 키** 옵션을 선택하고 **환경 변수** 탭(랩 가이드 옆)에 있는 **Adls
+8. ADLS 데이터 원본의 경우 **계정 키** 옵션을 선택하고 **환경 변수** 탭(랩 가이드 옆)에 있는 **Adls
 스토리지 계정 액세스 키**를 입력합니다.
 
 9. **ADLSData** 폴더에는 Geo, Product, Reseller, Date 등 다양한 차원(dimension)이 있습니다. Sales 팩트도 있습니다.
@@ -168,7 +170,7 @@
    
    d. **Sales 팩트**는 InvoiceLineItems를 Invoice 쿼리와 병합하여 생성됩니다.
 
-10.	Snowflake 데이터 원본의 경우, **환경 변수** 탭(랩 가이드 옆)에 있는 **Snowflake 사용자 이름
+10. Snowflake 데이터 원본의 경우, **환경 변수** 탭(랩 가이드 옆)에 있는 **Snowflake 사용자 이름
 및 Snowflake 암호**를 사용합니다.
 
 12. **SnowflakeData** 폴더에는 Supplier 차원과 PO(주문/지출) 팩트가 있습니다.
@@ -177,9 +179,9 @@
     
     b. **PO 팩트**는 PO와 PO Line Items 쿼리를 병합하여 생성됩니다.
    	
-14.	SharePoint 데이터 원본의 경우, **환경 변수** 탭(랩 가이드 옆)에 있는 **사용자 이름** 및 **암호**를 입력합니다. Microsoft 계정 옵션을 선택합니다.
+14. SharePoint 데이터 원본의 경우, **환경 변수** 탭(랩 가이드 옆)에 있는 **사용자 이름** 및 **암호**를 입력합니다. Microsoft 계정 옵션을 선택합니다.
  
-15.	**SharepointData** 폴더에는 People 차원이 있습니다.
+15. **SharepointData** 폴더에는 People 차원이 있습니다.
 
       ![](../media/lab-01/image048.png)
 
@@ -191,27 +193,28 @@
 
 ![](../media/lab-01/image051.png)
 
-아래는 **Microsoft Fabric**의 다음 단계에 도움이 되는 몇 가지 추가 자료입니다.
-- Microsof t Fabric GA 발표 전문을 블로그 포스트로 읽기
-- 가이드 투어로 Fabric 탐색
-- Microsof t Fabric 무료 평가판 신청
-- Microsof t Fabric 웹사이트 방문
-- Fabric 학습 모듈을 탐색해서 새로운 기술 익히기
-- Fabric 기술 문서 검토
-- Fabric 시작하기 무료 e북 읽기
-- Fabric 커뮤니티에 가입하여 질문을 게시하고 피드백을 공유하며 다른 사람들로부터 배우기
- 
-더 많은 심층 **Fabric** 환경 발표 블로그 포스트 읽기:
-- Fabric 블로그의 Data Factory 환경
-- Fabric 블로그의 Synapse Data Engineering 환경
-- Fabric 블로그의 Synapse Data Science 환경
-- Fabric 블로그의 Synapse Data Warehousing 환경
-- Fabric 블로그의 Synapse Real-Time Analytics 환경
-- Power BI 발표 블로그
-- Fabric 블로그의 Data Activator 환경
-- Fabric 블로그의 관리 및 거버넌스
-- Fabric 블로그의 OneLake
-- Dataverse 및 Microsof t Fabric 통합 블로그
+아래는 Microsoft Fabric의 다음 단계에 도움이 되는 몇 가지 추가 자료입니다.
+
+- [Microsoft Fabric GA 발표](https://www.microsoft.com/en-us/microsoft-fabric/blog/2023/11/15/prepare-your-data-for-ai-innovation-with-microsoft-fabric-now-generally-available/) 전문을 블로그 포스트로 읽기
+- [가이드 투어](https://guidedtour.microsoft.com/en-us/guidedtour/microsoft-fabric/microsoft-fabric/1/1)로 Fabric 탐색
+- [Microsoft Fabric 무료 평가판](https://www.microsoft.com/en-us/microsoft-fabric/getting-started) 신청
+- [Microsoft Fabric 웹사이트](https://www.microsoft.com/en-in/microsoft-fabric) 방문
+- [Fabric 학습 모듈](https://learn.microsoft.com/en-us/training/browse/?products=fabric&resource_type=module)을 탐색해서 새로운 기술 익히기
+- [Fabric 기술 문서](https://learn.microsoft.com/en-us/fabric/) 검토
+- [Fabric 시작하기 무료 e북](https://info.microsoft.com/ww-landing-unlocking-transformative-data-value-with-microsoft-fabric.html) 읽기
+- [Fabric 커뮤니티](https://community.fabric.microsoft.com/)에 가입하여 질문을 게시하고 피드백을 공유하며 다른 사람들로부터 배우기
+
+더 많은 심층 Fabric 환경 발표 블로그 포스트 읽기:
+- [Fabric 블로그의 Data Factory 환경](https://aka.ms/Fabric-Data-Factory-Blog)
+- [Fabric 블로그의 Synapse Data Engineering 환경](https://aka.ms/Fabric-DE-Blog)
+- [Fabric 블로그의 Synapse Data Science 환경](https://aka.ms/Fabric-DS-Blog)
+- [Fabric 블로그의 Synapse Data Warehousing 환경](https://aka.ms/Fabric-DW-Blog)
+- [Fabric 블로그의 Synapse Real-Time Analytics 환경](https://aka.ms/Fabric-RTA-Blog)
+- [Power BI 발표 블로그](https://aka.ms/Fabric-PBI-Blog)
+- [Fabric 블로그의 Data Activator 환경](https://aka.ms/Fabric-DA-Blog)
+- [Fabric 블로그의 관리 및 거버넌스](https://aka.ms/Fabric-Admin-Gov-Blog)
+- [Fabric 블로그의 OneLake](https://aka.ms/Fabric-OneLake-Blog)
+- [Dataverse 및 Microsoft Fabric 통합 블로그](https://aka.ms/Dataverse-Fabric-Blog)
 
 
 **© 2023 Microsoft Corporation. All rights reserved.**

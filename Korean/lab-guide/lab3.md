@@ -1,3 +1,5 @@
+# Microsoft Fabric - 일일 패브릭 분석가 - 랩 3
+
 ![](../media/lab-03/title2.png)
 
 # 목차
@@ -13,6 +15,7 @@
 
  
 # 소개
+
 우리 시나리오에서 매출 데이터는 ERP 시스템에서 제공되며 ADLS Gen2에 저장됩니다. 매일 정오/오후 12시에 업데이트됩니다. 이 데이터를 레이크하우스로 변환하고 수집하여 모델에서 사용해야 합니다.
 
 데이터를 수집할 수 있는 방법은 다양합니다.
@@ -28,6 +31,7 @@
     -  시각적 쿼리를 사용하여 데이터를 변환하는 방법
     
 # ADLS Gen2 바로 가기
+
 ## 작업 1: 바로 가기 만들기
 
 바로 가기는 대상 위치에 대한 링크를 만드는 데 사용됩니다. 이것은 Windows 바탕 화면에 바로 가기를 만드는 것과 같습니다.
@@ -107,70 +111,81 @@
 
 ## 작업 2: 시각적 쿼리를 사용하여 Geo 보기 만들기
 
-1.	SQL 엔드포인트를 사용하여 레이크하우스에 액세스할 수 있습니다. 이를 통해 데이터를 쿼리하고 보기를 만들 수 있습니다. 화면 오른쪽 상단에서 **Lakehouse ‐> SQL** **분석 엔드포인트를** 선택합니다.
+1. SQL 엔드포인트를 사용하여 레이크하우스에 액세스할 수 있습니다. 이를 통해 데이터를 쿼리하고 보기를 만들 수 있습니다. 화면 오른쪽 상단에서 **Lakehouse ‐> SQL** **분석 엔드포인트를** 선택합니다.
 
     ![](../media/lab-03/image027.jpg)
 
-SQL 분석 엔드포인트로 이동합니다. 탐색기 패널이 변경된 것을 확인할 수 있습니다. 이제 보기, 저장 프로시저, 쿼리 등을 만들 수 있습니다. Power Query와 같은 인터페이스를 제공하는 시각적 쿼리를 만들고 이를 뷰로 저장하겠습니다.
-먼저 Geo 보기를 만들어 보겠습니다. Cities, States 및 Countries 쿼리의 데이터를 병합하여
-Geo를 만들어야 합니다.
+    SQL 분석 엔드포인트로 이동합니다. 탐색기 패널이 변경된 것을 확인할 수 있습니다. 이제 보기, 저장 프로시저, 쿼리 등을 만들 수 있습니다. Power Query와 같은 인터페이스를 제공하는 시각적 쿼리를 만들고 이를 뷰로 저장하겠습니다.
+    먼저 Geo 보기를 만들어 보겠습니다. Cities, States 및 Countries 쿼리의 데이터를 병합하여
+    Geo를 만들어야 합니다.
  
-2.	상단 메뉴에서 **새 시각적 쿼리**를 선택합니다.
+2. 상단 메뉴에서 **새 시각적 쿼리**를 선택합니다.
     
     ![](../media/lab-03/image030.jpg)
 
-3.	쿼리를 작성하려면 테이블을 새 시각적 쿼리 패널로 끌어야 합니다. Cities, States 및
+3. 쿼리를 작성하려면 테이블을 새 시각적 쿼리 패널로 끌어야 합니다. Cities, States 및
 Countries 쿼리를 새 시각적 쿼리 패널로 끌어 보겠습니다.
 
     ![](../media/lab-03/image033.png)
 
 이러한 쿼리를 병합해야 합니다. 새 시각적 쿼리에는 Power Query 편집기를 사용할 수 있는 옵션이 함께 제공됩니다. 익숙한 기능이니 이 기능을 사용해보겠습니다.
  
-4.	새 시각적 쿼리 편집기의 메뉴에서 **포커스 모드** 아이콘(오른쪽)을 선택합니다. Power Query
+4. 새 시각적 쿼리 편집기의 메뉴에서 **포커스 모드** 아이콘(오른쪽)을 선택합니다. Power Query
 편집기로 이동합니다.
 
     ![](../media/lab-03/image036.png)
 
-5.	Cities 쿼리를 선택한 상태에서 Power Query 편집기 리본 메뉴에서 **홈 ‐ > 쿼리 병합 ‐ >
+5. Cities 쿼리를 선택한 상태에서 Power Query 편집기 리본 메뉴에서 **홈 ‐ > 쿼리 병합 ‐ >
 쿼리를 새 항목으로 병합**을 선택합니다. 쿼리 병합 대화 상자가 열립니다.
 
     ![](../media/lab-03/image039.jpg)
 
-6.	**병합할 왼쪽 테이블**에서 **Cities**를 선택합니다.
-7.	**병합할 오른쪽 테이블**에서 **States**를 선택합니다.
-8.	두 테이블에서 **StateProvinceID** 열을 선택합니다. 이 열을 사용하여 조인할 것입니다.
-9.	**조인 종류**로 **안쪽을** 선택합니다.
-10.	**확인**을 선택합니다.
+6. **병합할 왼쪽 테이블**에서 **Cities**를 선택합니다.
+
+7. **병합할 오른쪽 테이블**에서 **States**를 선택합니다.
+
+8. 두 테이블에서 **StateProvinceID** 열을 선택합니다. 이 열을 사용하여 조인할 것입니다.
+
+9. **조인 종류**로 **안쪽을** 선택합니다.
+
+10. **확인**을 선택합니다.
     
     ![](../media/lab-03/image042.jpg)
 
-병합이라는 새 쿼리가 생성되♘음을 알 수 있습니다. States에서 열이 몇 개 필요합니다.
+    병합이라는 새 쿼리가 생성되♘음을 알 수 있습니다. States에서 열이 몇 개 필요합니다.
 
 11. **Data 보기**(아래쪽 패널)에서 **States** 열(오른쪽 마지막 열) 옆에 있는 **이중 화살표**를 클릭합니다.  
+
 12. 패널이 열립니다. 다음 열을 선택합니다:  
     a. StateProvinceCode  
     b. StateProvinceName  
     c. CountryID  
     d. SalesTerritory  
+
 13. **확인**을 선택합니다.  
 
     ![](../media/lab-03/image045.jpg)
 
-이제 Countries 쿼리를 병합해야 합니다. 
+    이제 Countries 쿼리를 병합해야 합니다. 
 
 14. 쿼리 병합을 선택한 상태에서 리본 메뉴에서 **홈 ‐> 쿼리 병합 ‐> 쿼리 병합**을 선택합니다. 
 
      ![](../media/lab-03/image048.jpg)
 
 15. 쿼리 병합 대화 상자가 열립니다. **병합할 오른쪽 테이블에서 Countries**를 선택합니다.  
+
 16. 두 테이블에서 **CountryID** 열을 선택합니다. 이 열을 사용하여 조인할 것입니다.  
+
 17. **조인 종류**로 **안쪽**을 선택합니다.  
+
 18. **확인**을 선택합니다.  
 
     ![](../media/lab-03/image051.jpg)
 
 Countries에서 열이 몇 개 필요합니다.  
+
 19. **Data 보기**(하단 패널)에서 **Countries** 열 옆의 **이중 화살표**를 클릭합니다.  
+
 20. 패널이 열립니다. 다음 열을 **선택**합니다:  
     a. CountryName  
     b. FormalName  
@@ -185,7 +200,7 @@ Countries에서 열이 몇 개 필요합니다.
 
     ![](../media/lab-03/image054.jpg)
 
-모든 열이 필요하지는 않습니다. 필요한 것만 선택해 보겠습니다.
+    모든 열이 필요하지는 않습니다. 필요한 것만 선택해 보겠습니다.
  
 22.	쿼리 병합을 선택한 상태에서 리본 메뉴에서 **홈 ‐> 열 선택 ‐> 열 선택**을 선택합니다.
 
@@ -202,7 +217,8 @@ Countries에서 열이 몇 개 필요합니다.
 
     ![](../media/lab-03/image060.png)
 
-오른쪽의 적용된 단계 패널과 시각적 보기 모두에 모든 단계가 기록되어 있으며, 프로세스는 Power Query과 같습니다. 이 쿼리에서 데이터가 로드되도록 쿼리 병합 및 로드 활성화의 이름을 변경하겠습니다.
+    오른쪽의 적용된 단계 패널과 시각적 보기 모두에 모든 단계가 기록되어 있으며, 프로세스는 Power Query과 같습니다. 이 쿼리에서 데이터가 로드되도록 쿼리 병합 및 로드 활성화의 이름을 변경하겠습니다.
+
 25.	쿼리(왼쪽) 패널에서 쿼리 **병합을 마우스 오른쪽 버튼으로 클릭**합니다. 이름 바꾸기를 선택하고 쿼리 이름을 **Geo로** 바꿉니다.
 
 26.	쿼리(왼쪽) 패널에서 쿼리 **Geo를 마우스 오른쪽 버튼으로 클릭**합니다. **로드 사용을를** 선택하여 이 쿼리를 활성화합니다.
@@ -213,14 +229,15 @@ Countries에서 열이 몇 개 필요합니다.
 
     ![](../media/lab-03/image063.jpg)
 
-시각적 쿼리 편집기로 이동합니다. 이제 이 쿼리를 뷰로 저장해 보겠습니다.
+    시각적 쿼리 편집기로 이동합니다. 이제 이 쿼리를 뷰로 저장해 보겠습니다.
+
 **참고:** Power Query 편집기를 사용하여 수행한 모든 단계는 시각적 쿼리 편집기를 통해서도 수행할 수 있습니다.
 
 29.	시각적 쿼리 편집기 메뉴에서 **뷰로 저장**을 선택합니다.
 
     ![](../media/lab-03/image066.png)
  
-뷰로 저장 대화 상자가 열립니다. SQL 쿼리가 사용 가능하다는 것을 알 수 있습니다. 원하는 경우 검토할 수 있습니다.
+    뷰로 저장 대화 상자가 열립니다. SQL 쿼리가 사용 가능하다는 것을 알 수 있습니다. 원하는 경우 검토할 수 있습니다.
 
 30.	**보기 이름으로 Geo를** 입력합니다.
 
@@ -238,34 +255,34 @@ Countries에서 열이 몇 개 필요합니다.
 
 Customers 테이블과 BuyingGroups 테이블을 병합하여 생성되는 Reseller 보기를 만들어 보겠습니다. 이번에는 시각적 쿼리를 사용하여 보기를 만들어 보겠습니다.
 
-1.	레이크하우스 메뉴 모음에서 홈 ‐> 새 시각적 쿼리를 선택합니다. 새 시각적 창이 열립니다.
+1. 레이크하우스 메뉴 모음에서 홈 ‐> 새 시각적 쿼리를 선택합니다. 새 시각적 창이 열립니다.
 
-2.	탐색기섹션에서 Customers 및 BuyingGroups 테이블을 시각적 쿼리 섹션으로 끌어옵니다.
+2. 탐색기섹션에서 Customers 및 BuyingGroups 테이블을 시각적 쿼리 섹션으로 끌어옵니다.
 
     ![](../media/lab-03/image075.png)
 
-3.	**Customers** 쿼리를 선택합니다. 선택하면 Customers에 파란색 테두리가 생기고 테이블 뒤에
+3. **Customers** 쿼리를 선택합니다. 선택하면 Customers에 파란색 테두리가 생기고 테이블 뒤에
 “+” 기호가 표시됩니다(이는 테이블 뒤에 단계를 추가하고 있음을 나타냅니다). 테이블
  
 뒤에 "+" 기호가 표시되지 않으면 다른 단계를 선택했을 수 있습니다. Table을 선택하면 바로 사용할 수 있습니다.
 
-4.	시각적 쿼리 메뉴에서 **결합 ‐> 쿼리 병합**을 선택합니다.
+4. 시각적 쿼리 메뉴에서 **결합 ‐> 쿼리 병합**을 선택합니다.
     
     ![](../media/lab-03/image078.png)
 
 병합 대화 상자가 열리고 Customers가 맨 위 테이블로 선택되어 있습니다.
 
-5.	**병합할 오른쪽 테이블**에서 **BuyingGroups를** 선택합니다.
+5. **병합할 오른쪽 테이블**에서 **BuyingGroups를** 선택합니다.
 
-6.	두 테이블에서 **BuyingGroupID** 열을 선택합니다. 이 열을 사용하여 조인할 것입니다.
+6. 두 테이블에서 **BuyingGroupID** 열을 선택합니다. 이 열을 사용하여 조인할 것입니다.
 
-7.	**조인 종류로 안쪽을** 선택합니다.
+7. **조인 종류로 안쪽을** 선택합니다.
 
-8.	**확인**을 선택합니다.
+8. **확인**을 선택합니다.
 
     ![](../media/lab-03/image081.png)
 
-9.	**데이터 보기**(아래쪽 패널)에서 **BuyingGroups** 열(오른쪽 마지막 열) 옆의 이중 화살표를 클릭하여 BuyingGroups에서 필요한 열을 선택합니다.
+9. **데이터 보기**(아래쪽 패널)에서 **BuyingGroups** 열(오른쪽 마지막 열) 옆의 이중 화살표를 클릭하여 BuyingGroups에서 필요한 열을 선택합니다.
 
 10.	패널이 열립니다. **BuyingGroupName** 열을 **선택**합니다.
 
@@ -342,7 +359,7 @@ InvoiceLineItems 및 Invoices 테이블과 Reseller 보기를 병합하여 Sales
 
     ![](../media/lab-03/image108.jpg)
 
-병합 대화 상자가 열립니다.
+    병합 대화 상자가 열립니다.
 
 6.	**병합할 왼쪽 테이블**에서 **InvoiceLineItems**를 선택합니다.
 
@@ -356,7 +373,7 @@ InvoiceLineItems 및 Invoices 테이블과 Reseller 보기를 병합하여 Sales
  
     ![](../media/lab-03/image111.jpg) 
 
-Power BI Desktop에서 코드를 복사하여 고급 편집기를 사용하여 붙여 넣겠습니다.
+    Power BI Desktop에서 코드를 복사하여 고급 편집기를 사용하여 붙여 넣겠습니다.
 
 11.	아직 열지 않았다면 랩 환경 바탕 화면의 **Reports** 폴더에 있는 **FAIAD.pbix**를 엽니다.
 
@@ -450,27 +467,27 @@ let
 # 작업 5: 시각적 쿼리를 사용하여 Product 보기 만들기
 ProductItem, ProductItemGroup 및 ProductGroups 테이블을 병합하여 생성되는 제품 보기를 만들어 보겠습니다. 작업을 진행하기 위해 고급 편집기에 코드를 복사하겠습니다.
 
-1.	레이크하우스 메뉴 모음에서 홈 ‐> 새 시각적 쿼리를 선택합니다. 새로운 시각적 쿼리 창이 열립니다.
+1. 레이크하우스 메뉴 모음에서 홈 ‐> 새 시각적 쿼리를 선택합니다. 새로운 시각적 쿼리 창이 열립니다.
 
-2.	탐색기 섹션에서 **ProductItem, ProductItemGroup 및 ProductGroups** 테이블을 시각적 쿼리 섹션으로 드래그합니다.
+2. 탐색기 섹션에서 **ProductItem, ProductItemGroup 및 ProductGroups** 테이블을 시각적 쿼리 섹션으로 드래그합니다.
 
-3.	시각적 쿼리 편집기에서 **포커스 모드 아이콘**을 선택하여 Power Query 편집기를 엽니다.
+3. 시각적 쿼리 편집기에서 **포커스 모드 아이콘**을 선택하여 Power Query 편집기를 엽니다.
 
     ![](../media/lab-03/image141.png)
 
-4.	**ProductItem** 쿼리를 선택한 상태에서 리본에서 **홈 ‐> 쿼리 병합 ‐> 쿼리를 새 항목으로 병합**을 선택합니다. 병합 대화 상자가 열립니다.
+4. **ProductItem** 쿼리를 선택한 상태에서 리본에서 **홈 ‐> 쿼리 병합 ‐> 쿼리를 새 항목으로 병합**을 선택합니다. 병합 대화 상자가 열립니다.
 
     ![](../media/lab-03/image144.jpg)
 
-5.	**병합할 왼쪽 테이블**에서 **ProductItem**을 선택합니다.
+5. **병합할 왼쪽 테이블**에서 **ProductItem**을 선택합니다.
 
-6.	**병합할 오른쪽 테이블**에서 **ProductItemGroup**을 선택합니다.
+6. **병합할 오른쪽 테이블**에서 **ProductItemGroup**을 선택합니다.
 
-7.	두 테이블에서 **StockItemID**열을 선택합니다. 이 열을 사용하여 조인할 것입니다.
+7. 두 테이블에서 **StockItemID**열을 선택합니다. 이 열을 사용하여 조인할 것입니다.
  
-8.	**조인 종류로 왼쪽 우선 외부**를 선택합니다.
+8. **조인 종류로 왼쪽 우선 외부**를 선택합니다.
 
-9.	**확인**을 선택합니다. 새 병합 쿼리가 만들어집니다.
+9. **확인**을 선택합니다. 새 병합 쿼리가 만들어집니다.
     
     ![](../media/lab-03/image147.jpg)
 
@@ -531,40 +548,52 @@ ADLS Gen2 데이터 원본에서 데이터를 변환했습니다. 이 랩에서�
 
 
 # 참조
+
 Fabric Analyst in a Day(FAIAD)는 Microsoft Fabric에서 사용할 수 있는 몇 가지 주요 기능을 소개합니다. 서비스의 메뉴에 있는 도움말(?) 섹션에는 유용한 리소스로 연결되는 링크가 있습니다.
 
 ![](../media/lab-03/image165.png)
 
 아래는 Microsoft Fabric의 다음 단계에 도움이 되는 몇 가지 추가 자료입니다.
-- Microsof t Fabric GA 발표 전문을 블로그 포스트로 읽기
-- 가이드 투어로 Fabric 탐색
-- Microsof t Fabric 무료 평가판 신청
-- Microsof t Fabric 웹사이트 방문
-- Fabric 학습 모듈을 탐색해서 새로운 기술 익히기
-- Fabric 기술 문서 검토
-- Fabric 시작하기 무료 e북 읽기
-- Fabric 커뮤니티에 가입하여 질문을 게시하고 피드백을 공유하며 다른 사람들로부터 배우기
-더 많은 심층 Fabric 환경 발표 블로그 포스트 읽기:
-- Fabric 블로그의 Data Factory 환경
-- Fabric 블로그의 Synapse Data Engineering 환경
-- Fabric 블로그의 Synapse Data Science 환경
-- Fabric 블로그의 Synapse Data Warehousing 환경
-- Fabric 블로그의 Synapse Real-Time Analytics 환경
-- Power BI 발표 블로그
-- Fabric 블로그의 Data Activator 환경
-- Fabric 블로그의 관리 및 거버넌스
-- Fabric 블로그의 OneLake
-- Dataverse 및 Microsof t Fabric 통합 블로그
 
-© 2023 Microsoft Corporation. All rights reserved.
+- [Microsoft Fabric GA 발표](https://www.microsoft.com/en-us/microsoft-fabric/blog/2023/11/15/prepare-your-data-for-ai-innovation-with-microsoft-fabric-now-generally-available/) 전문을 블로그 포스트로 읽기
+- [가이드 투어](https://guidedtour.microsoft.com/en-us/guidedtour/microsoft-fabric/microsoft-fabric/1/1)로 Fabric 탐색
+- [Microsoft Fabric 무료 평가판](https://www.microsoft.com/en-us/microsoft-fabric/getting-started) 신청
+- [Microsoft Fabric 웹사이트](https://www.microsoft.com/en-in/microsoft-fabric) 방문
+- [Fabric 학습 모듈](https://learn.microsoft.com/en-us/training/browse/?products=fabric&resource_type=module)을 탐색해서 새로운 기술 익히기
+- [Fabric 기술 문서](https://learn.microsoft.com/en-us/fabric/) 검토
+- [Fabric 시작하기 무료 e북](https://info.microsoft.com/ww-landing-unlocking-transformative-data-value-with-microsoft-fabric.html) 읽기
+- [Fabric 커뮤니티](https://community.fabric.microsoft.com/)에 가입하여 질문을 게시하고 피드백을 공유하며 다른 사람들로부터 배우기
+
+더 많은 심층 Fabric 환경 발표 블로그 포스트 읽기:
+- [Fabric 블로그의 Data Factory 환경](https://aka.ms/Fabric-Data-Factory-Blog)
+- [Fabric 블로그의 Synapse Data Engineering 환경](https://aka.ms/Fabric-DE-Blog)
+- [Fabric 블로그의 Synapse Data Science 환경](https://aka.ms/Fabric-DS-Blog)
+- [Fabric 블로그의 Synapse Data Warehousing 환경](https://aka.ms/Fabric-DW-Blog)
+- [Fabric 블로그의 Synapse Real-Time Analytics 환경](https://aka.ms/Fabric-RTA-Blog)
+- [Power BI 발표 블로그](https://aka.ms/Fabric-PBI-Blog)
+- [Fabric 블로그의 Data Activator 환경](https://aka.ms/Fabric-DA-Blog)
+- [Fabric 블로그의 관리 및 거버넌스](https://aka.ms/Fabric-Admin-Gov-Blog)
+- [Fabric 블로그의 OneLake](https://aka.ms/Fabric-OneLake-Blog)
+- [Dataverse 및 Microsoft Fabric 통합 블로그](https://aka.ms/Dataverse-Fabric-Blog)
+
+
+**© 2023 Microsoft Corporation. All rights reserved.**
 이 데모/랩을 사용하면 다음 조건에 동의하게 됩니다.
-이 데모/랩에 설명된 기술/기능은 학습 환경을 제공하고 사용자 의견을 얻기 위해 Microsoft Corporation에서 제공합니다. 데모/랩을 통해서만 이러한 기술적 특성과 기능을 평가하고 사용자 의견을 Microsoft에 제시할 수 있습니다. 다른 용도로는 사용할 수 없습니다. 이 데모/랩 또는 그 일부에 대해 수정, 복사, 배포, 전송, 표시, 수행, 재현, 게시, 라이선스 허여, 파생 작업 생성, 양도 또는 판매할 수 없습니다.
+
+이 데모/랩에 설명된 기술/기능은 학습 환경을 제공하고 사용자 의견을 얻기 위해 **Microsoft Corporation**에서 제공합니다. 데모/랩을 통해서만 이러한 기술적 특성과 기능을 평가하고 사용자 의견을 Microsoft에 제시할 수 있습니다. 다른 용도로는 사용할 수 없습니다. 이 데모/랩 또는 그 일부에 대해 수정, 복사, 배포, 전송, 표시, 수행, 재현, 게시, 라이선스 허여, 파생 작업 생성, 양도 또는 판매할 수 없습니다.
+
 추가 복제 또는 재배포를 위한 다른 서버 또는 위치에 대한 데모/랩(또는 그 일부)의 복사 또는 재현은 명시적으로 금지됩니다.
-이 데모/랩은 위에서 명시한 목적을 위해 복잡한 설정 또는 설치가 없는 시뮬레이션된 환경에서 잠재적인 새로운 기능과 개념을 포함하여 특정 소프트웨어 기술/제품의 특성 및 기능을 제공합니다. 이 데모/랩에서 서술된 기술/개념은 전체 기능을 나타내지 않을 수 있으며, 최종 버전이 작동하지 않을 수도 있습니다. 또한 해당 기능 또는 개념의 최종 버전을 릴리스하지 않을 수도 있습니다. 또한 실제 환경에서 이러한 특성과 기능을 사용한 경험이 다를 수도 있습니다.
+
+이 데모/랩은 위에서 명시한 목적을 위해 복잡한 설정 또는 설치가 없는 시뮬레이션된 환경에서 잠재적인 새로운 기능과 개념을 포함하여 특정 소프트웨어 기술/제품의 특성 및 기능을 제공합니다. 이 데모/랩에서 서술된 기술/개념은 전체 기능을 나타내지 않을 수 있으며, 최종 버전이 작동하지 않을 수도 있습니다. 또한 해당 기능 또는 개념의 최종
+
+버전을 릴리스하지 않을 수도 있습니다. 또한 실제 환경에서 이러한 특성과 기능을 사용한 경험이 다를 수도 있습니다.
  
-피드백. 이 데모/랩에서 서술된 기술적 특성, 기능 및/또는 개념에 대한 사용자 의견을
-Microsoft에 제시하면 Microsoft는 이 사용자 의견을 어떤 방식과 목적으로든 무료로 사용, 공유 및 상용화할 수 있습니다. 또한 제품, 기술 및 서비스에서 사용자 의견이 포함된
-Microsoft 소프트웨어 또는 서비스의 특정 부분을 사용하거나 인터페이스하는 데 필요한 모든 특허권을 제3자에게 무료로 제공합니다. Microsoft에서 사용자 의견을 포함하기 때문에 Microsoft에서 해당 소프트웨어 또는 설명서의 사용을 인가해야 하는 라이선스에 종속된 사용자 의견은 제공할 수 없습니다. 이러한 권리는 본 계약에 의거하여 유효합니다.
-Microsoft Corporation은 이에 따라 명시적, 묵시적 또는 법적 특정 목적에의 적합성, 권리 및 비침해 여부에 관계없이 모든 보증과 조건을 포함하여 데모/랩과 관련된 모든 보증 및 조건을 부인합니다. Microsoft는 어떤 목적으로든 결과의 정확성, 데모/랩의 사용으로 파생된 출력 또는 데모/랩에 포함된 정보의 적합성과 관련하여 어떠한 보증이나 진술도 하지 않습니다.
-고지 사항
-이 데모/랩에는 Microsoft Power BI의 새로운 기능 및 향상된 기능 중 일부만 포함되어 있습니다. 일부 기능은 제품의 향후 릴리스에서 변경될 수 있습니다. 이 데모/랩에서는 새로운 기능 모두가 아닌 일부에 대해 학습하게 됩니다.
+**피드백**. 이 데모/랩에서 서술된 기술적 특성, 기능 및/또는 개념에 대한 사용자 의견을
+**Microsoft**에 제시하면 Microsoft는 이 사용자 의견을 어떤 방식과 목적으로든 무료로 사용, 공유 및 상용화할 수 있습니다. 또한 제품, 기술 및 서비스에서 사용자 의견이 포함된
+
+**Microsoft** 소프트웨어 또는 서비스의 특정 부분을 사용하거나 인터페이스하는 데 필요한 모든 특허권을 제3자에게 무료로 제공합니다. Microsoft에서 사용자 의견을 포함하기 때문에 Microsoft에서 해당 소프트웨어 또는 설명서의 사용을 인가해야 하는 라이선스에 종속된 사용자 의견은 제공할 수 없습니다. 이러한 권리는 본 계약에 의거하여 유효합니다.
+
+**Microsoft Corporation**은 이에 따라 명시적, 묵시적 또는 법적 특정 목적에의 적합성, 권리 및 비침해 여부에 관계없이 모든 보증과 조건을 포함하여 데모/랩과 관련된 모든 보증 및 조건을 부인합니다. Microsoft는 어떤 목적으로든 결과의 정확성, 데모/랩의 사용으로 파생된 출력 또는 데모/랩에 포함된 정보의 적합성과 관련하여 어떠한 보증이나 진술도 하지 않습니다.
+
+**고지 사항**
+이 데모/랩에는 **Microsoft Power BI**의 새로운 기능 및 향상된 기능 중 일부만 포함되어 있습니다. 일부 기능은 제품의 향후 릴리스에서 변경될 수 있습니다. 이 데모/랩에서는 새로운 기능 모두가 아닌 일부에 대해 학습하게 됩니다.
