@@ -242,7 +242,7 @@ fois, il y a trois sections. Dans la section Éléments recommandés, notez les 
 
 2. Cliquez sur **Nouvel espace de travail.**
 
-![](../media/lab-02/image051.png)
+   ![](../media/lab-02/image051.png)
 
 3. La boîte de dialogue **Créer un espace de travail** s’ouvre alors sur le côté droit du navigateur.
 
@@ -262,7 +262,7 @@ fois, il y a trois sections. Dans la section Éléments recommandés, notez les 
 
     ![](../media/lab-02/image057.jpg)
 
-Un espace de travail est alors créé et vous êtes redirigé vers cet espace de travail. Nous allons importer les données des différentes sources de données dans la lakehouse et créer notre modèle à l’aide des données de la lakehouse et en rendre compte. La première étape consiste à créer une lakehouse.
+   Un espace de travail est alors créé et vous êtes redirigé vers cet espace de travail. Nous allons importer les données des différentes sources de données dans la lakehouse et créer notre modèle à l’aide des données de la lakehouse et en rendre compte. La première étape consiste à créer une lakehouse.
 
 # Tâche 10 : créer une lakehouse
 
@@ -278,7 +278,7 @@ Un espace de travail est alors créé et vous êtes redirigé vers cet espace de
 
 4. La boîte de dialogue Nouvelle lakehouse s’ouvre alors. Tapez **lh_FAIAD** dans la zone de texte Nom.
 
-**Remarque** : lh fait ici référence à la fonctionnalité Lakehouse. Nous ajoutons le préfixe lh afin de faciliter l’identification et la recherche.
+   **Remarque** : lh fait ici référence à la fonctionnalité Lakehouse. Nous ajoutons le préfixe lh afin de faciliter l’identification et la recherche.
 
 5. Cliquez sur **Créer.**
 
