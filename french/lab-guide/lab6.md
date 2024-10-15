@@ -1,6 +1,7 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Labo 6
 
- 
+![](../media/lab-06/image.png)
+
 # Sommaire
 
 -   Introduction
