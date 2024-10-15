@@ -42,7 +42,7 @@ modélisation telles que la création de relations, l’ajout de mesures, etc. d
 
 ## Tâche 1 : interroger des données à l’aide de SQL
 
-1.	Revenons à l’espace de travail Fabric **FAIAD_<username>** que vous avez créé dans le labo 2, tâche 9.
+1.	Revenons à l’espace de travail Fabric **FAIAD_\<username>** que vous avez créé dans le labo 2, tâche 9.
 
 2.	Si vous le souhaitez, **réduisez le flux de tâches** pour afficher la liste complète des éléments.
 
@@ -65,8 +65,13 @@ modélisation telles que la création de relations, l’ajout de mesures, etc. d
 
 5.	Collez la **requête SQL ci-dessous** dans la **fenêtre Requête**. Cette requête renvoie les unités par nom de fournisseur. Pour y parvenir, elle joint la table Sales avec les tables Product et Supplier.
 
-    `SELECT su.SupplierName, SUM(Quantity) as Units FROM dbo.Sales s
-    JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.SupplierID = p.SupplierID GROUP BY su.SupplierName`
+    ```
+    SELECT su.SupplierName, SUM(Quantity) as Units
+    FROM dbo.Sales s
+    JOIN dbo.Product p on p.StockItemID = s.StockItemID
+    JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+    GROUP BY su.SupplierName
+    ```
 
 6.	Cliquez sur **Run** dans le menu de l’éditeur SQL pour afficher les résultats.
 
@@ -106,13 +111,13 @@ modélisation telles que la création de relations, l’ajout de mesures, etc. d
 8.	La boîte de dialogue Enregistrer votre rapport s’ouvre alors. Tapez **Units by Supplier** dans la zone de texte **Entrez un nom pour votre rapport**.
 
 9.	Assurez-vous que l’espace de travail de destination est votre espace de travail Fabric
-**FAIAD<username>**.
+**FAIAD\<username>**.
  
 10.	Cliquez sur **Enregistrer**.
 
     ![](../media/lab-06/image023.png)
 
-Vous êtes alors redirigé vers l’écran de requête SQL.
+    Vous êtes alors redirigé vers l’écran de requête SQL.
 
 # Lakehouse : modélisation sémantique
 
@@ -207,13 +212,13 @@ dans la table **Sales** et faites-la glisser vers la valeur **Date** dans la tab
 
 13.	De même, créez une relation **plusieurs-à-un** entre les tables **Sales** et **Product**. Sélectionnez la valeur **StockItemID** dans la table **Sales** et la valeur **StockItemID** dans la table **Product**.
 
-**Remarque** : toutes nos mises à jour sont enregistrées automatiquement.
+    **Remarque** : toutes nos mises à jour sont enregistrées automatiquement.
 
-**Point de contrôle** : votre modèle devrait comporter les trois relations entre les tables Sales et Reseller, les tables Sales et Date, et les tables Sales et Product, comme illustré dans la capture d’écran ci-dessous :
+    **Point de contrôle** : votre modèle devrait comporter les trois relations entre les tables Sales et Reseller, les tables Sales et Date, et les tables Sales et Product, comme illustré dans la capture d’écran ci-dessous :
 
-![](../media/lab-06/image050.jpg)
+    ![](../media/lab-06/image050.jpg)
 
-Pour gagner du temps, nous n’allons pas créer toutes les relations. Si le temps le permet, vous pouvez suivre la section facultative à la fin du labo. La section facultative passe en revue les étapes permettant de créer les relations restantes.
+    Pour gagner du temps, nous n’allons pas créer toutes les relations. Si le temps le permet, vous pouvez suivre la section facultative à la fin du labo. La section facultative passe en revue les étapes permettant de créer les relations restantes.
 
 ## Tâche 5 : créer des mesures
 
@@ -241,7 +246,7 @@ Ajoutons quelques mesures dont nous avons besoin pour créer le tableau de bord 
 
 10.	Saisissez **Units = SUM(Sales[Quantity])** dans la **barre de formule**.
 
-11.	Cliquez sur la coche à gauche de la barre de formule ou appuyez sur la touche **Entrée**.
+11.	Cliquez sur la **coche** à gauche de la barre de formule ou appuyez sur la touche **Entrée**.
 
 12.	Dans le volet Propriétés à droite, développez la section **Mise en forme**. (Le chargement du volet Propriétés peut prendre quelques instants.)
 
@@ -273,9 +278,9 @@ Ajoutons quelques mesures dont nous avons besoin pour créer le tableau de bord 
 
     ![](../media/lab-06/image062.png)
 
-Encore une fois, pour gagner du temps, nous n’allons pas créer toutes les mesures. Si le temps le permet, vous pouvez suivre la section facultative à la fin du labo. La section facultative passe en revue les étapes permettant de créer les mesures restantes.
+    Encore une fois, pour gagner du temps, nous n’allons pas créer toutes les mesures. Si le temps le permet, vous pouvez suivre la section facultative à la fin du labo. La section facultative passe en revue les étapes permettant de créer les mesures restantes.
 
-Nous avons créé un modèle sémantique et l’étape suivante consiste à créer un état. Nous allons le faire dans le prochain labo.
+    Nous avons créé un modèle sémantique et l’étape suivante consiste à créer un état. Nous allons le faire dans le prochain labo.
 
 ## Tâche 6 : section facultative - Créer des relations
 Ajoutons les relations restantes.
@@ -342,9 +347,9 @@ sur **SupplierID**.
 
 25.	Cliquez sur **Enregistrer**.
 
-**Point de contrôle :** la boîte de dialogue Gérer les relations devrait ressembler à la capture d’écran ci- dessous.
+    **Point de contrôle :** la boîte de dialogue Gérer les relations devrait ressembler à la capture d’écran ci- dessous.
 
-![](../media/lab-06/image077.jpg)
+    ![](../media/lab-06/image077.jpg)
 
 26.	De même, créez une relation **plusieurs-à-un** entre les tables **PO** et **Date**. Sélectionnez la valeur
 **Order_Date** dans la table **PO** et la valeur **Date** dans la table **Date**.
@@ -356,11 +361,11 @@ sur **SupplierID**.
 
 29.	Cliquez sur **Fermer** pour fermer la boîte de dialogue Gérer les relations. 
 
-Nous avons fini de créer toutes les relations.
+    Nous avons fini de créer toutes les relations.
 
-**Point de contrôle :** votre modèle devrait ressembler à la capture d’écran ci-dessous.
+    **Point de contrôle :** votre modèle devrait ressembler à la capture d’écran ci-dessous.
  
-![](../media/lab-06/image080.jpg)
+    ![](../media/lab-06/image080.jpg)
 
 ## Tâche 7 : section facultative - Créer des mesures
 Ajoutons les mesures restantes.
