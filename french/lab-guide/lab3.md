@@ -169,12 +169,13 @@ les noms. Cliquez sur l’**icône Modifier** sous Actions pour **Application.Ci
 ## Tâche 2 : créer une vue Geo à l’aide d’une requête visuelle
 
 1. Nous pouvons accéder à la lakehouse à l’aide d’un point de terminaison SQL. Ainsi, nous pouvons 
-interroger les données et créer des vues. En haut de l’écran à droite, cliquez sur **Lakehouse -> Point de terminaison Analytique SQL.**
+interroger les données et créer des vues. En **haut** de l’écran à droite, cliquez sur **Lakehouse -> Point de terminaison Analytique SQL.**
 
    ![](../media/lab-03/image027.jpg)
 
-Vous êtes alors redirigé vers le point de terminaison analytique SQL. Notez que le volet Explorateur a changé. Vous pouvez désormais créer des vues, des procédures stockées, des requêtes et bien plus encore. Nous allons créer une requête visuelle, car elle fournit une interface de type Power Query, 
-puis l’enregistrer en tant que vue.Nous allons commencer par créer une vue Geo. Nous devons fusionner les données des requêtes Cities, States et Countries pour créer la vue Geo.
+   Vous êtes alors redirigé vers le point de terminaison analytique SQL. Notez que le volet Explorateur a changé. Vous pouvez désormais créer des vues, des procédures stockées, des requêtes et bien plus encore. Nous allons créer une requête visuelle, car elle fournit une interface de type Power Query, puis l’enregistrer en tant que vue.
+
+   Nous allons commencer par créer une vue Geo. Nous devons fusionner les données des requêtes Cities, States et Countries pour créer la vue Geo.
 
 
 2. Dans le menu supérieur, cliquez sur **Nouvelle requête visuelle.**
@@ -302,7 +303,7 @@ nous avons besoin.
 
     ![](../media/lab-03/image060.png)
 
-Notez que le processus est similaire à celui de Power Query : toutes les étapes sont enregistrées à la fois dans le volet Étapes appliquées à droite et dans la vue visuelle. Renommons la requête Merge et activons le chargement, afin que les données soient chargées à partir de cette requête.
+    Notez que le processus est similaire à celui de Power Query : toutes les étapes sont enregistrées à la fois dans le volet Étapes appliquées à droite et dans la vue visuelle. Renommons la requête Merge et activons le chargement, afin que les données soient chargées à partir de cette requête.
 
 25. **Cliquez avec le bouton droit sur la requête Merge** dans le volet (gauche) Requêtes. Sélectionnez 
 **Renommer** et redéfinissez le nom de la requête sur **Geo.**
@@ -316,16 +317,15 @@ Notez que le processus est similaire à celui de Power Query : toutes les étape
 
     ![](../media/lab-03/image063.jpg)
 
-Nous sommes alors redirigés vers l’éditeur de requête visuelle. Enregistrons maintenant cette requête en tant que vue.
+    Nous sommes alors redirigés vers l’éditeur de requête visuelle. Enregistrons maintenant cette requête en tant que vue.
 
-**Remarque :** toutes les étapes que nous avons effectuées à l’aide de l’éditeur Power Query peuvent également l’être à l’aide de l’éditeur de requête visuelle.
+    **Remarque :** toutes les étapes que nous avons effectuées à l’aide de l’éditeur Power Query peuvent également l’être à l’aide de l’éditeur de requête visuelle.
 
 29. Dans le menu de l’éditeur de requête visuelle, sélectionnez **Enregistrer en tant que vue.**
 
     ![](../media/lab-03/image066.png)
 
-La boîte de dialogue Enregistrer en tant que vue s’ouvre alors. Notez que la requête SQL est 
-disponible. Vous pouvez l’examiner, le cas échéant. 
+    La boîte de dialogue Enregistrer en tant que vue s’ouvre alors. Notez que la requête SQL est disponible. Vous pouvez l’examiner, le cas échéant. 
 
 30. Saisissez **Geo** dans le champ **Nom de la vue.**
 
@@ -358,7 +358,7 @@ autre étape. Sélectionnez Table et vous serez prêt.)
 
    ![](../media/lab-03/image078.png)
 
-La boîte de dialogue Fusionner s’ouvre alors avec Customers sélectionnée comme table supérieure. 
+   La boîte de dialogue Fusionner s’ouvre alors avec Customers sélectionnée comme table supérieure. 
 
 5. Dans le champ **Table de droite pour la fusion,** sélectionnez **BuyingGroups.**
 
@@ -511,8 +511,7 @@ le bureau de votre environnement de labo.
 
     ![](../media/lab-03/image123.jpg)
 
-21. À **la fin de la ligne 2, ajoutez une virgule** (Source = Table.NestedJoin(InvoiceLineItems, 
-{"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner).
+21. À **la fin de la ligne 2, ajoutez une virgule** (Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner).
 
 22. Appuyez sur **Entrée** pour commencer une nouvelle ligne.
 
@@ -655,9 +654,11 @@ l’examiner, le cas échéant.
 19. Saisissez **Product** dans le champ **Nom de la vue.**
 
 20. Cliquez sur **OK** pour enregistrer la vue. 
-Une alerte s’affiche une fois la vue enregistrée. 
+ 
 
     ![](../media/lab-03/image158.png)
+
+    Une alerte s’affiche une fois la vue enregistrée.
 
 21. Dans le volet (gauche) Explorateur, développez **Views.** Nous disposons de la vue Product venant d’être créée.
 
@@ -698,6 +699,7 @@ Lisez les blogs d’annonces plus détaillés sur l’expérience Fabric :
 
 
 © 2023 Microsoft Corporation. Tous droits réservés.
+
 En effectuant cette démonstration/ce labo, vous acceptez les conditions suivantes :
 
 La technologie/fonctionnalité décrite dans cette démonstration/ces travaux pratiques est fournie par Microsoft Corporation en vue d’obtenir vos commentaires et de vous fournir une expérience d’apprentissage. Vous pouvez utiliser cette démonstration/ces ateliers uniquement pour évaluer ces technologies et fonctionnalités, et pour fournir des commentaires à Microsoft. Vous ne pouvez pas l’utiliser à d’autres fins. Vous ne pouvez pas modifier, copier, distribuer, transmettre, afficher, effectuer, reproduire, publier, accorder une licence, créer des œuvres dérivées, transférer ou vendre tout ou une partie de cette démonstration/ces ateliers.
