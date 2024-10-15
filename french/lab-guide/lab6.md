@@ -86,7 +86,7 @@ modélisation telles que la création de relations, l’ajout de mesures, etc. d
 
     ![](../media/lab-06/image014.png)
 
-3.	La boîte de dialogue **Visualiser les résultats** s’ouvre alors. Cliquez sur Continuer.
+3.	La boîte de dialogue **Visualiser les résultats** s’ouvre alors. Cliquez sur **Continuer**.
 
     La boîte de dialogue **Visualiser les résultats** s’ouvre alors et ressemble à la vue d’état Power BI Desktop. Elle affiche toutes les fonctionnalités disponibles dans la vue d’état Power BI Desktop : vous pouvez mettre en forme la page, sélectionner différents visuels, mettre en forme des visuels, ajouter des filtres, etc. Nous n’allons pas explorer ces options dans ce cours.
 
@@ -250,7 +250,7 @@ Ajoutons quelques mesures dont nous avons besoin pour créer le tableau de bord 
 
     ![](../media/lab-06/image056.jpg)
  
-15.	Une fois la table Sales sélectionnée dans le menu supérieur, cliquez sur **Accueil -> Nouvelle mesure**. Notez que la barre de formule s’affiche.
+15.	Une fois la table **Sales** sélectionnée dans le menu supérieur, cliquez sur **Accueil -> Nouvelle mesure**. Notez que la barre de formule s’affiche.
 
 16.	Saisissez **Sales Orders = DISTINCTCOUNT(Sales[InvoiceID])** dans la **barre de formule**.
 
@@ -434,6 +434,7 @@ Lisez les blogs d’annonces plus détaillés sur l’expérience Fabric :
 
 
 © 2023 Microsoft Corporation. Tous droits réservés.
+
 En effectuant cette démonstration/ce labo, vous acceptez les conditions suivantes :
 
 La technologie/fonctionnalité décrite dans cette démonstration/ces travaux pratiques est fournie par Microsoft Corporation en vue d’obtenir vos commentaires et de vous fournir une expérience d’apprentissage. Vous pouvez utiliser cette démonstration/ces ateliers uniquement pour évaluer ces technologies et fonctionnalités, et pour fournir des commentaires à Microsoft. Vous ne
