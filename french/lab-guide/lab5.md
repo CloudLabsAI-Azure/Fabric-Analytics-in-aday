@@ -42,31 +42,15 @@
 
 Nous avons ingéré des données provenant de différentes sources de données dans Lakehouse. Dans ce labo, vous allez configurer un calendrier d’actualisation pour les sources de données. Voici un résumé du besoin :
 
-<<<<<<< HEAD
--   **Données fournisseur** : stockées dans Snowflake et mises à jour au quotidien à minuit.
-=======
 -   **Données fournisseur :** stockées dans Snowflake et mises à jour au quotidien à minuit.
->>>>>>> aa252058df97603510eb539fc54d1a47f0e73712
 
-<<<<<<< HEAD
--   **Données collaborateur** : stockées dans SharePoint et mises à jour au quotidien à 9 h. Cependant, nous avons remarqué qu’il y a parfois un retard de 5 à 15 minutes. Nous devons créer un calendrier d’actualisation pour en tenir compte.
-=======
 -   **Données collaborateur :** stockées dans SharePoint et mises à jour au quotidien à 9 h. 
 Cependant, nous avons remarqué qu’il y a parfois un retard de 5 à 15 minutes. Nous devons créer un calendrier d’actualisation pour en tenir compte.
->>>>>>> aa252058df97603510eb539fc54d1a47f0e73712
 
-<<<<<<< HEAD
--   **Données client** : stockées dans Dataverse et systématiquement à jour. Auparavant, nous les actualisions quatre fois par jour : à minuit, 6 h, midi et 18 h. À présent, l’équipe informatique a créé un lien vers Dataverse permettant d’ingérer ces données dans une lakehouse d’administration. Elle a également transformé ces données. Nous n’avons pas besoin de configurer l’actualisation, car nous nous connectons à la lakehouse fournie par l’équipe informatique.
-=======
 -   **Données client :** stockées dans Dataverse et systématiquement à jour. Auparavant, nous les actualisions quatre fois par jour : à minuit, 6 h, midi et 18 h. À présent, l’équipe informatique a créé un lien vers Dataverse permettant d’ingérer ces données dans une lakehouse d’administration. Elle a également transformé ces données. Nous n’avons pas besoin de  
 configurer l’actualisation, car nous nous connectons à la lakehouse fournie par l’équipe informatique.
->>>>>>> aa252058df97603510eb539fc54d1a47f0e73712
 
-<<<<<<< HEAD
--   **Données Sales** : stockées dans ADLS et mises à jour au quotidien à midi. Nous n’avons pas besoin de configurer l’actualisation pour cela puisque nous avons créé un raccourci. Dès que les données sont mises à jour dans ADLS, elles sont disponibles.
-=======
 -   **Données Sales :** stockées dans ADLS et mises à jour au quotidien à midi. Nous n’avons pas besoin de configurer l’actualisation pour cela puisque nous avons créé un raccourci. Dès que les données sont mises à jour dans ADLS, elles sont disponibles.
->>>>>>> aa252058df97603510eb539fc54d1a47f0e73712
 
     À la fin de ce labo, vous saurez :
 
@@ -89,19 +73,11 @@ l’espace de travail dans le volet gauche.
 
     ![](../media/lab-05/image006.jpg)
 
-<<<<<<< HEAD
-3.	Tous les artefacts que vous avez créés sont répertoriés ici. Sur le côté droit de l’écran, saisissez **df** dans la **zone de recherche**. Les artefacts sont alors filtrés vers les flux de données.
-=======
 3.	Tous les artefacts que vous avez créés sont répertoriés ici. Sur le côté droit de l’écran, saisissez **df** dans la **zone de recherche.** Les artefacts sont alors filtrés vers les flux de données.
->>>>>>> aa252058df97603510eb539fc54d1a47f0e73712
 
     ![](../media/lab-05/image009.jpg)
 
-<<<<<<< HEAD
-4.	Survolez la ligne **df_Supplier_Snowflake**. Notez que les icônes familières **Actualiser** et **Planifier l’actualisation** sont disponibles. Cliquez sur les **points de suspension (…)**.
-=======
 4.	Survolez la ligne **df_Supplier_Snowflake**. Notez que les icônes familières **Actualiser** et **Planifier** l’actualisation sont disponibles. Cliquez sur les **points de suspension (…)**.
->>>>>>> aa252058df97603510eb539fc54d1a47f0e73712
 
 5.	Notez qu’une option permet de supprimer, de modifier et d’exporter le flux de données. Nous pouvons mettre à jour le nom et la description du flux de données à l’aide des propriétés. Nous allons examiner prochainement l’historique des actualisations. Cliquez sur **Paramètres**.
 
@@ -147,12 +123,8 @@ l’espace de travail dans le volet gauche.
 
 15.	Définissez le champ **Heure** sur **minuit/0 h**. Notez que vous pouvez définir l’actualisation sur une heure pile ou une demi-heure.
 
-<<<<<<< HEAD
-16.	Cliquez sur **Appliquer** pour enregistrer ce paramètre.
-=======
 16.	Cliquez sur Appliquer pour enregistrer ce paramètre.
     **Remarque** : en cliquant sur le lien Ajouter un autre horaire, vous pouvez ajouter plusieurs heures d’actualisation.
->>>>>>> aa252058df97603510eb539fc54d1a47f0e73712
 
     **Remarque** : en cliquant sur le lien Ajouter un autre horaire, vous pouvez ajouter plusieurs heures d’actualisation.
 
