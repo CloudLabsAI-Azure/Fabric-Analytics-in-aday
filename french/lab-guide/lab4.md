@@ -230,7 +230,7 @@ Notez que les cinq requêtes sont collées et que vous disposez désormais du vo
    ![](../media/lab-04/image051.jpg)
 
 2. La boîte de dialogue Connexion à une source de données s’ouvre alors. Dans la liste déroulante 
-**Connexion,** assurez-vous que l’option Créer une connexion est sélectionnée.
+**Connexion,** assurez-vous que l’option **Créer une connexion** est sélectionnée.
 
 3. Le champ **Type d’authentification** doit être défini sur **Snowflake.**
 
@@ -327,7 +327,7 @@ Vous devriez être dans la lakehouse **lh_FAIAD.** Vérifiez que vous vous trouv
    ![](../media/lab-04/image084.jpg)
 
 4. La boîte de dialogue Paramètres de connexion 
-   s’ouvre alors. Saisissez **org6c18814a.crm.dynamics.**com dans le champ **Domaine de l’environnement.**
+   s’ouvre alors. Saisissez **org6c18814a.crm.dynamics.com** dans le champ **Domaine de l’environnement.**
 
 5. Laissez le champ **Type d’authentification** défini sur **Compte professionnel.**
 
@@ -381,7 +381,7 @@ disposez de deux sources de données.
 
    ![](../media/lab-04/image101.jpg)
 
-7. Dans le volet gauche, développez *lh_dataverse -> Tables.* Notez que l’administrateur 
+7. Dans le volet gauche, développez **lh_dataverse -> Tables.** Notez que l’administrateur 
 informatique a accordé un accès à la table Customer.
 
 8. Sélectionnez **Customer.**
@@ -398,9 +398,9 @@ informatique a accordé un accès à la table Customer.
 
 12. Cliquez sur la table **Customer** pour afficher les données dans le volet d’aperçu.
 
-Nous avons réussi à créer un raccourci vers une autre lakehouse.
+    Nous avons réussi à créer un raccourci vers une autre lakehouse.
 
-Dans le prochain labo, nous allons configurer des actualisations planifiées.
+    Dans le prochain labo, nous allons configurer des actualisations planifiées.
 
 # Références
 
