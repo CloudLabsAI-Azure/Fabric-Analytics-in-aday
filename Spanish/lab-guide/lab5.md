@@ -156,7 +156,7 @@ Comencemos a crear la canalización. Necesitamos una actividad para actualizar e
 
 2. Vamos a configurar la actividad para conectarse a la actividad df_People_SharePoint. En el **panel inferior**, seleccione Configuración.
 
-3. Asegúrese de que Área de trabajo está configurada en su área de trabajo de Fabric, **FAIAD_<username>**.
+3. Asegúrese de que Área de trabajo está configurada en su área de trabajo de Fabric, **FAIAD_\<username>**.
 
 4. En el menú desplegable Flujo de datos, seleccione **df_People_SharePoint**. Cuando se ejecute esta actividad del flujo de datos, se actualizará **df_People_SharePoint**. Fácil, ¿verdad? 😊
 
@@ -196,7 +196,7 @@ Comencemos a crear la canalización. Necesitamos una actividad para actualizar e
 
 Agreguemos un poco más de complejidad a nuestro escenario. Hemos observado que si los datos no están disponibles a las 09:00, normalmente lo estarán en cinco minutos. Si se pierde la ventana de tiempo, el archivo tardará 15 minutos en estar disponible. Queremos programar los reintentos a los cinco y 15 minutos. Veamos cómo se puede lograr esto mediante la creación de una nueva canalización de datos.
 
-1. En el panel izquierdo, haga clic en **FAIAD_<username>** para navegar a la página de inicio del área de trabajo.
+1. En el panel izquierdo, haga clic en **FAIAD_\<username>** para navegar a la página de inicio del área de trabajo.
 
 2. En el menú superior, haga clic en **Nuevo** y en el **menú desplegable**, haga clic en **Canalización de datos**.
 
@@ -366,7 +366,7 @@ introducir una expresión en este cuadro de texto que se evaluará como true o f
 
 7. Seleccione **Configuración** en el panel inferior.
 
-8. Asegúrese de que Área de trabajo está configurada en su área de trabajo, **FAIAD_<username>**.
+8. Asegúrese de que Área de trabajo está configurada en su área de trabajo, **FAIAD_\<username>**.
 
 9. En el **menú desplegable Flujo de datos**, seleccione **df_People_SharePoint**. Cuando se ejecute esta actividad del flujo de datos, se actualizará **df_People_SharePoint**.
 
@@ -498,16 +498,17 @@ A continuación, debemos esperar cinco minutos/300 segundos si la actualización
 
 8. Se abre el cuadro de diálogo Generador de expresiones de canalización. Introducir 
 
-   ```
-    @if(
-        greater(variables(‘varCounter’), 1),
-        if(equals(variables(‘varCounter’), 2),
-            mul(variables(‘varWaitTime’),15 ), 
-            mul(variables(‘varWaitTime’), 0)
-        ),
-        mul(variables(‘varWaitTime’),5 )
-    )
-   ```
+     ```
+     @if(  
+       greater(variables('varCounter'), 1),  
+       if(  
+        equals(variables('varCounter'), 2),  
+        mul(variables('varWaitTime'), 15),  
+        mul(variables('varWaitTime'), 0)  
+       ),  
+       mul(variables('varWaitTime'), 5)  
+     )
+     ```
 
     Siéntase libre de escribir esta expresión o use el menú para seleccionar las funciones o copiarla y pegarla.
 
@@ -561,7 +562,7 @@ A continuación, debemos esperar cinco minutos/300 segundos si la actualización
 
     ![](../media/lab-05/image135.png)
 
-11. Seleccione el área de trabajo de Fabric **FAIAD_<username>** en el panel izquierdo para navegar al área de trabajo.
+11. Seleccione el área de trabajo de Fabric **FAIAD_\<username>** en el panel izquierdo para navegar al área de trabajo.
 
     **Nota:** En la pantalla Programación, no hay ninguna opción para notificar sobre el éxito o el error (como la programación de flujos de datos). La notificación se puede llevar a cabo mediante una actividad en la canalización de datos. No lo haremos en este laboratorio, ya que es un entorno de laboratorio.
 

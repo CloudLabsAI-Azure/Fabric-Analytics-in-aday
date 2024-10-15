@@ -29,7 +29,7 @@ Al final de este laboratorio, habrá aprendido:
 
 ## Tarea 1: Consultar datos con SQL
 
-1. Volvamos al área de trabajo de Fabric, **FAIAD_<username>**, que creó en el Laboratorio 2, Tarea 9.
+1. Volvamos al área de trabajo de Fabric, **FAIAD_\<username>**, que creó en el Laboratorio 2, Tarea 9.
 
 2. Si lo desea, **Minimice el flujo** de tareas para ver la lista completa de elementos.
 
@@ -49,13 +49,13 @@ Al final de este laboratorio, habrá aprendido:
 
 5. Copie la **siguiente consulta de SQL** en la **ventana de consultas**. Esta consulta devolverá las unidades por nombre del proveedor. Para conseguirlo, se une la tabla Sales con las tablas Product y Supplier.
 
-   ```
+    ```
     SELECT su.SupplierName, SUM(Quantity) as Units
     FROM dbo.Sales s
     JOIN dbo.Product p on p.StockItemID = s.StockItemID
     JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
     GROUP BY su.SupplierName
-   ```
+    ```
 
 6. Haga clic en **Run** en el menú del editor de SQL para ver los resultados.
 

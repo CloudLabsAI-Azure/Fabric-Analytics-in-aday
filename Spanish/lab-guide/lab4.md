@@ -37,7 +37,7 @@ Al final de este laboratorio, habrá aprendido:
 
 ## Tarea 1: Copiar consultas de SharePoint al flujo de datos
 
-1. Volvamos al área de trabajo de Fabric, **FAIAD_<username>**, que creó en el Laboratorio 2, Tarea 9.
+1. Volvamos al área de trabajo de Fabric, **FAIAD_\<username>**, que creó en el Laboratorio 2, Tarea 9.
 
 2. Seleccione el icono **Selector de experiencia de Fabric** en la parte inferior izquierda de su pantalla. Se abre el cuadro de diálogo de experiencia de Fabric
 
@@ -127,7 +127,7 @@ Se establece la conexión y puede ver los datos en el panel de versión prelimin
 
    ![](../media/lab-04/image033.png)
  
-    **Nota:** Se le dirigirá de vuelta al área de trabajo **FAIAD_<username>**. Es posible que el flujo de datos tarde unos minutos en publicarse. 
+    **Nota:** Se le dirigirá de vuelta al área de trabajo **FAIAD_\<username>**. Es posible que el flujo de datos tarde unos minutos en publicarse. 
 
 3. Estamos trabajando con Dataflow 1. Cambiémosle el nombre antes de continuar. Haga clic en los **puntos suspensivos (…)** junto a Dataflow 1. Seleccione **Propiedades**.
 
@@ -155,7 +155,7 @@ Se establece la conexión y puede ver los datos en el panel de versión prelimin
 
 ## Tarea 5: Copiar consultas de Snowflake al flujo de datos
 
-1. Volvamos al área de trabajo de Fabric, **FAIAD_<username>**
+1. Volvamos al área de trabajo de Fabric, **FAIAD_\<username>**
 
 2. En el menú superior, seleccione **Nuevo -> Flujo de datos Gen2**.
 

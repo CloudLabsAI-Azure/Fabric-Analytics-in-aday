@@ -116,7 +116,6 @@ Al final de este laboratorio, habrá aprendido:
 
 1. Seleccione el **icono Selector de experiencia de Fabric** (actualmente configurado en Data Activator) en la parte inferior izquierda de la pantalla. Se abre el cuadro de diálogo de experiencia de Fabric.
 
-
 2. Seleccione **Industry Solutions** en el cuadro de diálogo. Se le dirigirá a la página Inicio de **Industry Solutions**. Microsoft Fabric ofrece soluciones de datos específicas de sector que proporcionan una plataforma sólida para la administración de datos, el análisis y la toma de decisiones. Estas soluciones de datos abordan los desafíos únicos a los que se enfrentan diferentes sectores, lo cual permite a las empresas optimizar las operaciones, integrar datos de diferentes orígenes y utilizar análisis enriquecidos. Observe que las tres secciones son como las experiencias anteriores. En la sección Recomendado, observe los elementos:
 
     a. **Soluciones de sostenibilidad:** admiten la ingesta, la estandarización y el análisis de datos ambientales, sociales y de gobernanza (ASG).
@@ -172,7 +171,6 @@ Al final de este laboratorio, habrá aprendido:
     h. **Use a sample:** solución de muestra.
 
     ![](../media/lab-02/image042.jpg)
- 
 
 ### Tarea 7: Experiencia de Synapse Data Science
 
@@ -227,7 +225,7 @@ Al final de este laboratorio, habrá aprendido:
  
 3. **El cuadro de diálogo Crear un área de trabajo** se abre en el lado derecho del explorador.
 
-4. En el campo **Nombre**, introduzca **FAIAD_<username>**
+4. En el campo **Nombre**, introduzca **FAIAD_\<username>**
 
    **Nota:** El nombre del área de trabajo debe ser único. Sin embargo, el nombre de su área de trabajo debe ser diferente. Asegúrese de que aparezca una marca de verificación verde con "**Este nombre está disponible**" debajo del campo Nombre.
 
