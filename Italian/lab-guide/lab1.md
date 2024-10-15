@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 1
 
-
+![](../media/lab-01/image001.png)
 
 # Sommario
 
@@ -46,7 +46,7 @@ Vengono aggiornati alle 12.00 ogni giorno.
  - **Dati sui dipendenti:** provengono dal sistema 
    HR e sono archiviati in un file di esportazione in una cartella di SharePoint. Vengono aggiornati ogni mattina alle 9.00. 
 
-
+   
 
    Attualmente si sta creando un set di dati in Power BI Premium che estrae i dati dai sistemi di origine sopraelencati al fine di soddisfare le esigenze di reporting e fornire agli utenti finali possibilità di uso self-service. Si usa Power Query per aggiornare il modello. 
 
