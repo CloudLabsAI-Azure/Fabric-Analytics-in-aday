@@ -529,28 +529,21 @@ le bureau de votre environnement de labo.
     ![](../media/lab-03/image129.jpg)
 
     Si c’est plus facile, supprimez tout le code dans l’Éditeur avancé et collez le code ci-dessous dans l’Éditeur avancé :
-```
-let
-Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, 
-"Invoices", JoinKind.Inner),
-#"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", 
-"BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", 
-"BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
-#"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", 
-"InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", 
-"ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
-#"Renamed Columns" = Table.RenameColumns(#"Removed Other 
-Columns",{{"CustomerID", "ResellerID"}}),
-#"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller, 
-{"ResellerID"}, "Customer", JoinKind.Inner),
-#"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each 
-[ExtendedPrice] - [TaxAmount]),
-#"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", 
-type number}}),
-#"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"})
-in
-#"Removed Columns"
-```
+    ```
+    let
+    Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
+    #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID",
+    "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
+    #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
+    #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"CustomerID", "ResellerID"}}),
+    
+    #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller,
+    {"ResellerID"}, "Customer", JoinKind.Inner),
+    #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each [ExtendedPrice] - [TaxAmount]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", type number}}),
+    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"}) in
+    #"Removed Columns"
+    ```
 
 26. Vous êtes alors redirigé vers l’Éditeur Power Query. Dans le volet gauche Requêtes, **double-cliquez sur la requête Merge** pour la renommer.
 
