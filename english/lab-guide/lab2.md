@@ -90,7 +90,9 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
  
 3. You are navigated to the **Data Factory Home page**. The page contains three main sections.
 
-    a. **Recommended:** This lists the items available in Data Factory – Dataflow Gen2, Data pipeline, Data workflow and API for GraphQL.
+    a. **Create a Workspace with Task Flow** : This section explains how to create a workspace using a predesigned template called a task flow, which helps keep your items organized in Microsoft Fabric.
+   
+    b. **Recommended:** This lists the items available in Data Factory – Dataflow Gen2, Data pipeline, Data workflow and API for GraphQL.
         
     i. Dataflow Gen2 is the next generation of Dataflow.
     
@@ -100,11 +102,11 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
         
     iv. API for GraphQL is API to query multiple data sources.
 
-    b. **Learn:** This section provides access to quick start learning documentation.
+    c. **Learn:** This section provides access to quick start learning documentation.
     
-    c. **Quick Access:** This section lists the recently used or favorite items.
+    d. **Quick Access:** This section lists the recently used or favorite items.
 
-    ![](../media/lab-02/image027u.png)
+    ![](../media/lab-02/f1.png)
  
 ## Task 3: Data Activator Experience
 1. Select **Fabric experience selector icon** (currently set to Data Factory) on the bottom left of your screen. Fabric experience dialog opens.
