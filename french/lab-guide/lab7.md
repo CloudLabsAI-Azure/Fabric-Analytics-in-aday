@@ -39,8 +39,11 @@ Nous avons découvert Lakehouse, ingéré des données de différentes sources d
 À la fin de ce labo, vous saurez : 
 
 - comment créer automatiquement un état
+  
 - comment créer un état à partir d’un canevas vide
+
 - Création d’un état à l’aide de Power BI Desktop
+
 - comment bénéficier du mode Direct Lake entraînant une actualisation automatique des données.
 
 # Power BI
