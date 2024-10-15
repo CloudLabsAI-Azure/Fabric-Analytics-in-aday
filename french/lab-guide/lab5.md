@@ -52,13 +52,13 @@ configurer l’actualisation, car nous nous connectons à la lakehouse fournie p
 
 -   **Données Sales :** stockées dans ADLS et mises à jour au quotidien à midi. Nous n’avons pas besoin de configurer l’actualisation pour cela puisque nous avons créé un raccourci. Dès que les données sont mises à jour dans ADLS, elles sont disponibles.
 
-    À la fin de ce labo, vous saurez :
+À la fin de ce labo, vous saurez :
 
-    -   comment configurer une actualisation planifiée de Dataflow Gen2 ;
+-   comment configurer une actualisation planifiée de Dataflow Gen2
 
-    -   comment créer un pipeline de données ;
+-   comment créer un pipeline de données
 
-    -   comment configurer une actualisation planifiée d’un pipeline de données.
+-   comment configurer une actualisation planifiée d’un pipeline de données.
 
 # Dataflow Gen2 #
 
@@ -103,9 +103,9 @@ l’espace de travail dans le volet gauche.
 
 9.	Sous Connexion à la passerelle, développez **Informations d’identification de la source de données**. Une liste des connexions utilisées dans le flux de données s’affiche alors, Dans ce cas, il s’agit de Lakehouse et Snowflake.
 
-    -	**Lakehouse** : il s’agit de la connexion permettant d’ingérer des données depuis Dataflow.
+    a.	**Lakehouse** : il s’agit de la connexion permettant d’ingérer des données depuis Dataflow.
 
-    -	**Snowflake** : il s’agit de la connexion aux données sources Snowflake.
+    b.	**Snowflake** : il s’agit de la connexion aux données sources Snowflake.
 
     ![](../media/lab-05/image024.jpg)
 
@@ -126,9 +126,7 @@ l’espace de travail dans le volet gauche.
 16.	Cliquez sur Appliquer pour enregistrer ce paramètre.
     **Remarque** : en cliquant sur le lien Ajouter un autre horaire, vous pouvez ajouter plusieurs heures d’actualisation.
 
-    **Remarque** : en cliquant sur le lien Ajouter un autre horaire, vous pouvez ajouter plusieurs heures d’actualisation.
-
-    Vous pouvez également envoyer des notifications d’échec au propriétaire du flux de données et à d’autres contacts.
+    **Remarque** : en cliquant sur le lien Ajouter un autre horaire, vous pouvez ajouter plusieurs heures d’actualisation. Vous pouvez également envoyer des notifications d’échec au propriétaire du flux de données et à d’autres contacts.
 
     ![](../media/lab-05/image027.jpg)
 
@@ -360,7 +358,9 @@ Ajoutons un peu plus de complexité à notre scénario. Nous avons remarqué que
     ![](../media/lab-05/image084.jpg)
 
 23.	Votre expression devrait être :
-**@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))**
+     ```
+     @or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess'))) 
+     ```
  
 24.	Cliquez sur **OK**.
 
@@ -472,7 +472,7 @@ incrémenter la variable de compteur varCounter en ajoutant un à sa valeur (var
 
     ![](../media/lab-05/image111.jpg)
 
-    Nous devons maintenant définir la valeur de la variable varCounter sur la valeur de varTempCounter.
+Nous devons maintenant définir la valeur de la variable varCounter sur la valeur de varTempCounter.
 
 ## Tâche 11 : configurer une 3e activité Définir une variable
 
@@ -525,12 +525,17 @@ Ensuite, nous devons attendre 5 minutes/300 secondes si l’actualisation du flu
 
 8.	La boîte de dialogue Générateur d’expressions de pipeline s’ouvre alors. Saisissez
     
-    `@if(
-    greater(variables(‘varCounter’), 1),
-    if(equals(variables(‘varCounter’), 2), mul(variables(‘varWaitTime’),15 ), mul(variables(‘varWaitTime’), 0)
-    ),
-    mul(variables(‘varWaitTime’),5 )
-    )`
+     ```
+     @if(  
+       greater(variables('varCounter'), 1),  
+       if(  
+        equals(variables('varCounter'), 2),  
+        mul(variables('varWaitTime'), 15),  
+        mul(variables('varWaitTime'), 0)  
+       ),  
+       mul(variables('varWaitTime'), 5)  
+     )
+     ```
 
     N’hésitez pas à saisir cette expression, à sélectionner les fonctions à l’aide du menu ou à la copier-coller.
 
@@ -543,7 +548,7 @@ Ensuite, nous devons attendre 5 minutes/300 secondes si l’actualisation du flu
     -   **mul** : il s’agit d’une fonction de multiplication effectuant une multiplication à l’aide de deux paramètres.
 
     L’expression est une instruction if imbriquée. Elle vérifie si la valeur de la variable varCounter est supérieure à 1. Si tel est le cas, elle vérifie si la valeur de la variable varCounter est 2. Si tel est le cas, elle définit le temps d’attente sur la valeur varWaitTime multipliée par 15. N’oubliez pas que nous avions défini par défaut la valeur de la variable varWaitTime sur 60. Le temps d’attente serait donc
-    60X15 = 900 secondes. Si la valeur de la variable varCounter n’est pas 2 (et donc supérieure à 2, ce qui signifie que l’actualisation du flux de données a échoué trois fois, que nous avons terminé l’itération et que nous n’avons plus besoin d’attendre), le temps d’attente est défini sur varWaitTime * 0, soit 0. Si la valeur de la variable varCounter est 1, nous multiplions la valeur varWaitTime par 5. Le temps d’attente serait donc 60X5 = 300 secondes.
+    60\*15 = 900 secondes. Si la valeur de la variable varCounter n’est pas 2 (et donc supérieure à 2, ce qui signifie que l’actualisation du flux de données a échoué trois fois, que nous avons terminé l’itération et que nous n’avons plus besoin d’attendre), le temps d’attente est défini sur varWaitTime * 0, soit 0. Si la valeur de la variable varCounter est 1, nous multiplions la valeur varWaitTime par 5. Le temps d’attente serait donc 60\*5 = 300 secondes.
 
 9.	Cliquez sur **OK**.
     
@@ -589,9 +594,7 @@ Ensuite, nous devons attendre 5 minutes/300 secondes si l’actualisation du flu
 
 11.	Sélectionnez votre espace de travail Fabric **FAIAD_\<username>** dans le panneau de gauche pour accéder à l’espace de travail.
 
-    **Remarque** : sur l’écran Planifier, aucune option ne permet de notifier le succès ou l’échec (comme Planification de flux de données). La notification peut être effectuée en ajoutant une activité dans le pipeline de données. Nous ne le faisons pas dans ce labo, car il s’agit d’un environnement de labo.
-
-    Nous avons planifié des actualisations pour les différentes sources de données. Nous allons créer un modèle sémantique avec des relations, des mesures et d’autres opérations de modélisation dans le prochain labo.
+    **Remarque** : sur l’écran Planifier, aucune option ne permet de notifier le succès ou l’échec (comme Planification de flux de données). La notification peut être effectuée en ajoutant une activité dans le pipeline de données. Nous ne le faisons pas dans ce labo, car il s’agit d’un environnement de labo. Nous avons planifié des actualisations pour les différentes sources de données. Nous allons créer un modèle sémantique avec des relations, des mesures et d’autres opérations de modélisation dans le prochain labo.
  
 # Références
 
