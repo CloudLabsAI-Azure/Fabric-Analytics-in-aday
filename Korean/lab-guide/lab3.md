@@ -1,3 +1,5 @@
+![](../media/lab-03/title2.png)
+
 # 목차
 - 소개	
 - ADLS Gen2 바로 가기	3
