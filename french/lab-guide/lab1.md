@@ -2,11 +2,17 @@
 
 ## Sommaire ##
 - Structure du document	
+
 - Scénario/Énoncé du problème	
+
 - Présentation de l’état Power BI Desktop	
+
     -  Tâche 1 : configurer Power BI Desktop dans l’environnement de labo	
+
     -  Tâche 2 : analyser l’état Power BI Desktop	
+
     -  Tâche 3 : examiner les requêtes Power Query	
+
 - Références	
 
 ## Structure du document ##
@@ -48,6 +54,7 @@ Avant de prendre en main Fabric, examinons l’état actuel dans Power BI Deskto
     ![](../media/lab-01/image009.png)
 
 2.	La boîte de dialogue Entrez votre adresse e-mail s’ouvre alors. Accédez à l’onglet **Détails de l’environnement** sur le volet droit dans l’environnement de labo.
+
 3.	Copiez la valeur Informations d’identification du champ **Nom d’utilisateur** et collez-la dans la zone de texte E-mail de la boîte de dialogue.
 4.	Cliquez sur **Continuer**.
 
@@ -55,13 +62,18 @@ Avant de prendre en main Fabric, examinons l’état actuel dans Power BI Deskto
 
 5.	La boîte de dialogue Se connecter s’ouvre alors. Saisissez à nouveau la valeur Informations d’identification du champ **Nom d’utilisateur** en la copiant depuis l’onglet **Détails de
 l’environnement**.
+
 6.	Cliquez sur **Suivant**.
+
 7.	Dans la boîte de dialogue suivante, saisissez la valeur **Informations d’identification** du champ
 **Mot de passe** en la copiant depuis l’onglet **Détails de l’environnement**.
+
 8.	Cliquez sur **Se connecter**
 
     ![](../media/lab-01/image015.jpg)
+
 9.	La boîte de dialogue **Rester connecté à toutes vos applications** s’ouvre alors. Cliquez sur **OK**.
+
     ![](../media/lab-01/image018.jpg)
 
 10.	La boîte de dialogue **Vous êtes prêt !** s’ouvre alors. Cliquez sur **Terminé**.
@@ -122,32 +134,46 @@ cliquez sur la valeur hors norme en haut à droite (4e quadrant). Notez que le %
 
 2.	Une fenêtre Power Query s’ouvre alors. Dans le ruban, cliquez sur **Accueil -> Paramètres de
 la source de données**. La boîte de dialogue Paramètres de la source de données s’ouvre alors. En parcourant la liste, notez que quatre sources de données principales sont mentionnées dans l’énoncé du problème :
+
   -  Snowflake
+
   -  SharePoint
+
   -  ADLS Gen2
+
   -  Dataverse
  
 3.	Cliquez sur **Fermer** pour fermer la boîte de dialogue Paramètres de la source de données.
     ![](../media/lab-01/image042.png)
+
 4.	Dans le volet gauche Queries, notez que les requêtes sont regroupées par source de données.
-5.	Notez que le dossier **DataverseData** comporte des données Customer disponibles dans quatre requêtes différentes : BabyBoomer, GenX, GenY et GenZ. Ces quatre requêtes sont ajoutées pour créer la requête Customer.
+
+5.	Notez que le dossier **DataverseData** comporte des données Customer disponibles dans quatre requêtes 
+différentes : BabyBoomer, GenX, GenY et GenZ. Ces quatre requêtes sont ajoutées pour créer la requête Customer.
+
 6.	Vous pouvez saisir les informations d’identification de la source de données Dataverse en saisissant le **Nom d’utilisateur** et le **Mot de passe** disponibles dans l’onglet **Variables d’environnement** (en regard de l’onglet Guide du labo). Veuillez sélectionner l’option Compte Microsoft.
  
     ![](../media/lab-01/image045.jpg)
 
 
 7.	Pour la source de données ADLS, utilisez l’option **Clé de compte** et saisissez la **Clé d’accès au compte de stockage Adls** disponible dans l’onglet **Variables d’environnement** (en regard de l’onglet Guide du labo).
+
 8.	Notez que le dossier **ADLSData** comporte plusieurs dimensions : Geo, Product, Reseller et Date. Il comporte également un fait Sales.
+
   -  **La dimension Geo** est créée en fusionnant les données des requêtes Cities, Countries et States.
   -  **La dimension Product** est créée en fusionnant les données des requêtes Product Groups et Product Item Group.
   -  **La dimension Reseller** est filtrée à l’aide de la requête BuyingGroup.
   -  **Le fait Sales** est créé en fusionnant la requête InvoiceLineItems avec la requête Invoice.
+
 9.	Pour la source de données Snowflake, utilisez le **Nom d’utilisateur Snowflake** et le **Mot de passe Snowflake** disponibles dans l’onglet Variables d’environnement (en regard de l’onglet Guide du
 labo).
+
 10.	Notez que le dossier **SnowflakeData** comporte une dimension Supplier et un fait PO (Commande/Dépense).
   -  **La dimension Supplier** est créée en fusionnant la requête Suppliers avec la requête SupplierCategories.
   -  **Le fait PO** est créé en fusionnant la requête PO avec la requête PO Line Items.
+
 11.	Pour la source de données SharePoint, saisissez le **Nom d’utilisateur** et le **Mot de passe** disponibles dans l’onglet **Variables d’environnement** (en regard de l’onglet Guide du labo). Veuillez sélectionner l’option Compte Microsoft.
+
 12.	Notez que le dossier **SharepointData** comporte la dimension People.
 
     ![](../media/lab-01/image048.png)
