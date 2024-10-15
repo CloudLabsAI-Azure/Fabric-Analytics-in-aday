@@ -40,7 +40,8 @@ Afin de tirer de précieux insights des données, vous extrayez les données de 
 
   Vous créez actuellement un jeu de données dans Power BI Premium qui extrait les données des systèmes sources ci-dessus pour répondre à vos besoins en matière de reporting et fournir un libre- service aux utilisateurs finaux. Vous mettez à jour votre modèle à l’aide de Power Query.
 
-# Vous êtes confronté aux défis suivants : 
+ **Vous êtes confronté aux défis suivants :** 
+
 - Vous devez actualiser votre jeu de données au moins trois fois par jour pour tenir compte des différentes heures de mise à jour des différentes sources de données.
 
 - Vos actualisations prennent beaucoup de temps, car vous devez effectuer chaque fois une actualisation complète pour capturer toutes les mises à jour survenues sur les systèmes sources.
