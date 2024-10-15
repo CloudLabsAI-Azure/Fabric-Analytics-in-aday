@@ -101,7 +101,7 @@ Se establece la conexión y puede ver los datos en el panel de versión prelimin
  
 4. Se abre el cuadro de diálogo de Elegir el objetivo de destino. Asegúrese de que el **botón de opción Nueva tabla** esté seleccionado, ya que estamos creando una nueva tabla.
 
-5. Queremos crear la tabla en el lakehouse que creamos anteriormente. En el panel izquierdo, navegue hasta **Lakehouse -> FAIAD_<username>**. 
+5. Queremos crear la tabla en el lakehouse que creamos anteriormente. En el panel izquierdo, navegue hasta **Lakehouse -> FAIAD_\<username>**. 
 
 6. Seleccione **lh_FAIAD**.
 
