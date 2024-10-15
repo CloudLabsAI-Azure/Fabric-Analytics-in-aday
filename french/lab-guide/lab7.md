@@ -182,7 +182,7 @@ Nous allons créer un nouvel état en utilisant un canevas vierge.
 
 2. Dans la **section Visualisations**, sélectionnez le visuel **Carte multiligne**.
 
-3. Dans la section Données, développez la **table Sales**.
+3. Dans la section **Données,** développez la **table Sales**.
 
 4. Sélectionnez la mesure **Sales**.
 
