@@ -42,15 +42,31 @@
 
 Nous avons ingéré des données provenant de différentes sources de données dans Lakehouse. Dans ce labo, vous allez configurer un calendrier d’actualisation pour les sources de données. Voici un résumé du besoin :
 
+<<<<<<< HEAD
+-   **Données fournisseur** : stockées dans Snowflake et mises à jour au quotidien à minuit.
+=======
 -   **Données fournisseur :** stockées dans Snowflake et mises à jour au quotidien à minuit.
+>>>>>>> aa252058df97603510eb539fc54d1a47f0e73712
 
+<<<<<<< HEAD
+-   **Données collaborateur** : stockées dans SharePoint et mises à jour au quotidien à 9 h. Cependant, nous avons remarqué qu’il y a parfois un retard de 5 à 15 minutes. Nous devons créer un calendrier d’actualisation pour en tenir compte.
+=======
 -   **Données collaborateur :** stockées dans SharePoint et mises à jour au quotidien à 9 h. 
 Cependant, nous avons remarqué qu’il y a parfois un retard de 5 à 15 minutes. Nous devons créer un calendrier d’actualisation pour en tenir compte.
+>>>>>>> aa252058df97603510eb539fc54d1a47f0e73712
 
+<<<<<<< HEAD
+-   **Données client** : stockées dans Dataverse et systématiquement à jour. Auparavant, nous les actualisions quatre fois par jour : à minuit, 6 h, midi et 18 h. À présent, l’équipe informatique a créé un lien vers Dataverse permettant d’ingérer ces données dans une lakehouse d’administration. Elle a également transformé ces données. Nous n’avons pas besoin de configurer l’actualisation, car nous nous connectons à la lakehouse fournie par l’équipe informatique.
+=======
 -   **Données client :** stockées dans Dataverse et systématiquement à jour. Auparavant, nous les actualisions quatre fois par jour : à minuit, 6 h, midi et 18 h. À présent, l’équipe informatique a créé un lien vers Dataverse permettant d’ingérer ces données dans une lakehouse d’administration. Elle a également transformé ces données. Nous n’avons pas besoin de  
 configurer l’actualisation, car nous nous connectons à la lakehouse fournie par l’équipe informatique.
+>>>>>>> aa252058df97603510eb539fc54d1a47f0e73712
 
+<<<<<<< HEAD
+-   **Données Sales** : stockées dans ADLS et mises à jour au quotidien à midi. Nous n’avons pas besoin de configurer l’actualisation pour cela puisque nous avons créé un raccourci. Dès que les données sont mises à jour dans ADLS, elles sont disponibles.
+=======
 -   **Données Sales :** stockées dans ADLS et mises à jour au quotidien à midi. Nous n’avons pas besoin de configurer l’actualisation pour cela puisque nous avons créé un raccourci. Dès que les données sont mises à jour dans ADLS, elles sont disponibles.
+>>>>>>> aa252058df97603510eb539fc54d1a47f0e73712
 
     À la fin de ce labo, vous saurez :
 
@@ -73,11 +89,19 @@ l’espace de travail dans le volet gauche.
 
     ![](../media/lab-05/image006.jpg)
 
+<<<<<<< HEAD
+3.	Tous les artefacts que vous avez créés sont répertoriés ici. Sur le côté droit de l’écran, saisissez **df** dans la **zone de recherche**. Les artefacts sont alors filtrés vers les flux de données.
+=======
 3.	Tous les artefacts que vous avez créés sont répertoriés ici. Sur le côté droit de l’écran, saisissez **df** dans la **zone de recherche.** Les artefacts sont alors filtrés vers les flux de données.
+>>>>>>> aa252058df97603510eb539fc54d1a47f0e73712
 
     ![](../media/lab-05/image009.jpg)
 
+<<<<<<< HEAD
+4.	Survolez la ligne **df_Supplier_Snowflake**. Notez que les icônes familières **Actualiser** et **Planifier l’actualisation** sont disponibles. Cliquez sur les **points de suspension (…)**.
+=======
 4.	Survolez la ligne **df_Supplier_Snowflake**. Notez que les icônes familières **Actualiser** et **Planifier** l’actualisation sont disponibles. Cliquez sur les **points de suspension (…)**.
+>>>>>>> aa252058df97603510eb539fc54d1a47f0e73712
 
 5.	Notez qu’une option permet de supprimer, de modifier et d’exporter le flux de données. Nous pouvons mettre à jour le nom et la description du flux de données à l’aide des propriétés. Nous allons examiner prochainement l’historique des actualisations. Cliquez sur **Paramètres**.
 
@@ -99,10 +123,9 @@ l’espace de travail dans le volet gauche.
 
     ![](../media/lab-05/image021.jpg)
 
-8.	Quittons cet écran en cliquant sur le X dans le coin supérieur droit. Vous êtes alors redirigé vers la **page des paramètres du flux de données**.
+8.	Quittons cet écran en cliquant sur le **X** dans le coin supérieur droit. Vous êtes alors redirigé vers la **page des paramètres du flux de données**.
 
-9.	Sous Connexion à la passerelle, développez **Informations d’identification de la source de
-données**. Une liste des connexions utilisées dans le flux de données s’affiche alors, Dans ce cas, il s’agit de Lakehouse et Snowflake.
+9.	Sous Connexion à la passerelle, développez **Informations d’identification de la source de données**. Une liste des connexions utilisées dans le flux de données s’affiche alors, Dans ce cas, il s’agit de Lakehouse et Snowflake.
 
     -	**Lakehouse** : il s’agit de la connexion permettant d’ingérer des données depuis Dataflow.
 
@@ -118,13 +141,19 @@ données**. Une liste des connexions utilisées dans le flux de données s’aff
 
 13.	Définissez le champ **Fuseau horaire** sur votre fuseau horaire préféré.
  
-    **_Remarque_** : comme il s’agit d’un environnement de labo, vous pouvez définir le fuseau horaire sur votre fuseau horaire préféré. Dans un scénario réel, vous définissez le fuseau horaire en fonction de l’emplacement de votre source de données.
+    **Remarque** : comme il s’agit d’un environnement de labo, vous pouvez définir le fuseau horaire sur votre fuseau horaire préféré. Dans un scénario réel, vous définissez le fuseau horaire en fonction de l’emplacement de votre source de données.
 
 14.	Cliquez sur le lien **Ajouter un autre horaire**. Notez que l’option **Heure** s’affiche alors.
 
 15.	Définissez le champ **Heure** sur **minuit/0 h**. Notez que vous pouvez définir l’actualisation sur une heure pile ou une demi-heure.
 
+<<<<<<< HEAD
+16.	Cliquez sur **Appliquer** pour enregistrer ce paramètre.
+=======
 16.	Cliquez sur Appliquer pour enregistrer ce paramètre.
+    **Remarque** : en cliquant sur le lien Ajouter un autre horaire, vous pouvez ajouter plusieurs heures d’actualisation.
+>>>>>>> aa252058df97603510eb539fc54d1a47f0e73712
+
     **Remarque** : en cliquant sur le lien Ajouter un autre horaire, vous pouvez ajouter plusieurs heures d’actualisation.
 
     Vous pouvez également envoyer des notifications d’échec au propriétaire du flux de données et à d’autres contacts.
@@ -143,7 +172,7 @@ données**. Une liste des connexions utilisées dans le flux de données s’aff
 
     ![](../media/lab-05/image030.png)
 
-3.	Dans le volet supérieur, cliquez sur Pipeline de données pour créer un pipeline.
+3.	Dans le volet supérieur, cliquez sur **Pipeline de données** pour créer un pipeline.
 
 4.	La boîte de dialogue Nouveau pipeline s’ouvre alors. Nommez le pipeline
 **pl_Refresh_People_SharePoint**.
@@ -154,11 +183,7 @@ données**. Une liste des connexions utilisées dans le flux de données s’aff
 
     Vous êtes alors redirigé vers la **page Pipeline de données**. Si vous avez utilisé Azure Data Factory, cet écran vous est familier. Présentons rapidement la disposition.
 
-    Vous vous trouvez sur l’écran d’**Accueil**. Le menu supérieur comporte des options permettant
-
-    d’ajouter les activités couramment utilisées : valider et exécuter un pipeline, et afficher l’historique d’exécution. De plus, le volet central comporte des options rapides permettant de commencer à
-
-    créer le pipeline.
+    Vous vous trouvez sur l’écran d’**Accueil**. Le menu supérieur comporte des options permettant d’ajouter les activités couramment utilisées : valider et exécuter un pipeline, et afficher l’historique d’exécution. De plus, le volet central comporte des options rapides permettant de commencer à créer le pipeline.
 
     ![](../media/lab-05/image036.jpg)
 
@@ -168,13 +193,11 @@ données**. Une liste des connexions utilisées dans le flux de données s’aff
 
     ![](../media/lab-05/image039.jpg)
 
-8.	Dans le menu supérieur, cliquez sur **Exécuter**. Des options vous permettent d’exécuter et de
-planifier l’exécution du pipeline. Vous pouvez également afficher l’historique d’exécution à l’aide de l’option Afficher l’historique de l’exécution.
+8.	Dans le menu supérieur, cliquez sur **Exécuter**. Des options vous permettent d’exécuter et de planifier l’exécution du pipeline. Vous pouvez également afficher l’historique d’exécution à l’aide de l’option Afficher l’historique de l’exécution.
 
 9.	Dans le menu supérieur, cliquez sur **Affichage**. Ici, des options vous permettent d’afficher le code au format JSON. En outre, des options vous permettent de mettre en forme les activités.
 
-    **_Remarque_** : Si vous disposez d’un arrière-plan JSON à la fin du labo, n’hésitez pas à cliquer sur
-Afficher le code JSON. Ici, notez que toute l’orchestration que vous effectuez à l’aide de la vue de conception peut également être écrite au format JSON.
+    **Remarque** : Si vous disposez d’un arrière-plan JSON à la fin du labo, n’hésitez pas à cliquer sur Afficher le code JSON. Ici, notez que toute l’orchestration que vous effectuez à l’aide de la vue de conception peut également être écrite au format JSON.
 
     ![](../media/lab-05/image042.png)
 
@@ -184,13 +207,11 @@ Commençons à créer le pipeline. Nous avons besoin d’une activité pour actu
 
 1.	Dans le menu supérieur, cliquez sur **Activités -> Flux de données**. L’activité Flux de données est alors ajoutée au volet de conception central. Notez que le volet inférieur comporte désormais des options de configuration de l’activité Flux de données.
 
-2.	Nous allons configurer l’activité pour se connecter à l’activité df_People_SharePoint. Dans le
-**volet inférieur**, cliquez sur **Paramètres**.
+2.	Nous allons configurer l’activité pour se connecter à l’activité df_People_SharePoint. Dans le **volet inférieur**, cliquez sur **Paramètres**.
 
-3.	Assurez-vous que le champ **Espace de travail** est défini sur votre espace de travail Fabric
-**FAIAD_\<username>**.
+3.	Assurez-vous que le champ **Espace de travail** est défini sur votre espace de travail Fabric **FAIAD_\<username>**.
 
-4.	Dans la **liste déroulante Flux de données**, sélectionnez **df_People_SharePoint**. Lorsque cette activité Flux de données est exécutée, elle va actualiser **df_People_SharePoint**. C’était facile, non ? v¨●
+4.	Dans la **liste déroulante Flux de données**, sélectionnez **df_People_SharePoint**. Lorsque cette activité Flux de données est exécutée, elle va actualiser **df_People_SharePoint**. C’était facile, non ?
 
     Dans notre scénario, les données collaborateur ne sont pas mises à jour dans les délais. Parfois, il y a un retard. Voyons si nous pouvons nous adapter à cela.
 
@@ -206,13 +227,14 @@ Commençons à créer le pipeline. Nous avons besoin d’une activité pour actu
 
 9.	Une option permet de définir le **Délai d’expiration**. Laissons la valeur par défaut telle quelle, ce qui devrait laisser suffisamment de temps au flux de données pour s’actualiser.
 
-    **_Remarque_** : si les données ne sont pas disponibles dans les délais, définissons l’activité afin qu’elle se réexécute toutes les 10 minutes, trois fois. Si elle échoue également à la troisième tentative, un échec est signalé.
+    **Remarque** : si les données ne sont pas disponibles dans les délais, définissons l’activité afin qu’elle se réexécute toutes les 10 minutes, trois fois. Si elle échoue également à la troisième tentative, un échec est signalé.
 
 10.	Définissez le champ **Nombre de nouvelles tentatives** sur **3**.
 
 11.	Développer la section **Avancé**.
  
 12.	Définissez le champ **Intervalle de nouvelle tentative(s)** sur **600**.
+
 13.	Dans le menu, cliquez sur l’icône **Accueil -> Enregistrer** pour enregistrer le pipeline.
 
     ![](../media/lab-05/image048.png)
@@ -247,7 +269,8 @@ Ajoutons un peu plus de complexité à notre scénario. Nous avons remarqué que
 3.	Dans la liste des activités, cliquez sur **Until**.
 
     **Until** : activité permettant d’itérer jusqu’à ce qu’une condition soit remplie.
-Dans notre scénario, nous allons itérer et actualiser le flux de données jusqu’à ce qu’il réussisse ou nous effectuons trois tentatives.
+
+    Dans notre scénario, nous allons itérer et actualiser le flux de données jusqu’à ce qu’il réussisse ou nous effectuons trois tentatives.
 
     ![](../media/lab-05/image054.jpg)
 
@@ -265,7 +288,7 @@ Dans notre scénario, nous allons itérer et actualiser le flux de données jusq
 
 6.	Définissez le champ **Valeur par défaut** sur **0**.
 
-    **_Remarque_** : nous ajoutons le préfixe var aux noms des variables, afin qu’il soit facile de les trouver, ce qui est une bonne pratique.
+    **Remarque** : nous ajoutons le préfixe var aux noms des variables, afin qu’il soit facile de les trouver, ce qui est une bonne pratique.
 
     ![](../media/lab-05/image057.png)
 
@@ -279,14 +302,13 @@ Dans notre scénario, nous allons itérer et actualiser le flux de données jusq
 
 11.	Procédez de même pour ajouter trois variables supplémentaires :
 
-    -	**varIsSuccess** de type **String** avec la valeur par défaut **Non**. Cette variable permet d’indiquer si l’actualisation du flux de données a réussi.
+    a.	**varIsSuccess** de type **String** avec la valeur par défaut **Non**. Cette variable permet d’indiquer si l’actualisation du flux de données a réussi.
 
-    -	**varSuccess** de type **String** avec la valeur par défaut **Oui**. Cette variable permet de définir la valeur de varIsSuccess si l’actualisation du flux de données réussit.
+    b.	**varSuccess** de type **String** avec la valeur par défaut **Oui**. Cette variable permet de définir la valeur de varIsSuccess si l’actualisation du flux de données réussit.
 
-    -	**varWaitTime** de type **Integer** avec la valeur par défaut **60**. Cette variable permet de définir le temps d’attente si l’actualisation du flux de données échoue (soit
-5 minutes/300 secondes, soit 15 minutes/900 secondes).
+    c.	**varWaitTime** de type **Integer** avec la valeur par défaut **60**. Cette variable permet de définir le temps d’attente si l’actualisation du flux de données échoue (soit 5 minutes/300 secondes, soit 15 minutes/900 secondes).
 
-    **_Remarque_** : assurez-vous qu’il n’y a pas d’espace avant ou après le nom de la variable.
+    **Remarque** : assurez-vous qu’il n’y a pas d’espace avant ou après le nom de la variable.
 
     ![](../media/lab-05/image060.png)
 
@@ -314,19 +336,17 @@ Dans notre scénario, nous allons itérer et actualiser le flux de données jusq
 
 8. La boîte de dialogue **Générateur d’expressions de pipeline** s’ouvre alors. Dans la moitié inférieure de la boîte de dialogue se trouve un menu :
 
-   - **Réglages** : constantes dans une fabrique de données qui peuvent être utilisées par un pipeline dans toute expression.
+   a. **Réglages** : constantes dans une fabrique de données qui peuvent être utilisées par un pipeline dans toute expression.
 
-   - **Variables système** : peuvent être utilisées dans des expressions lors de la définition d’entités au sein de l’un ou l’autre de ces services, par ex. ID du pipeline, nom du pipeline, nom du déclencheur, etc.
+   b. **Variables système** : peuvent être utilisées dans des expressions lors de la définition d’entités au sein de l’un ou l’autre de ces services, par ex. ID du pipeline, nom du pipeline, nom du déclencheur, etc.
 
-   - **Paramètres de déclenchement** : paramètres ayant déclenché le pipeline. Par ex., Nom du fichier ou Chemin d’accès au dossier.
+   c. **Paramètres de déclenchement** : paramètres ayant déclenché le pipeline. Par ex., Nom du fichier ou Chemin d’accès au dossier.
 
-   - **Fonctions** : vous pouvez appeler des fonctions dans des expressions. Les fonctions sont classées selon les catégories suivantes : Collection, Conversion, Date, Logique, Mathématique et Chaîne. Par ex., concat est une fonction Chaîne, add est une fonction Mathématique, etc.
+   d. **Fonctions** : vous pouvez appeler des fonctions dans des expressions. Les fonctions sont classées selon les catégories suivantes : Collection, Conversion, Date, Logique, Mathématique et Chaîne. Par ex., concat est une fonction Chaîne, add est une fonction Mathématique, etc.
 
-   - **Variables** : les variables de pipeline sont des valeurs qui peuvent être définies et modifiées lors de l’exécution d’un pipeline. Contrairement aux paramètres de pipeline, qui sont définis au niveau du pipeline et ne peuvent pas être modifiés pendant l’exécution d’un pipeline, les variables de pipeline peuvent être définies et modifiées dans un pipeline 
-   
-        à l’aide d’une activité Définir une variable. Nous allons prochainement utiliser l’activité Définir une variable.
+   e. **Variables** : les variables de pipeline sont des valeurs qui peuvent être définies et modifiées lors de l’exécution d’un pipeline. Contrairement aux paramètres de pipeline, qui sont définis au niveau du pipeline et ne peuvent pas être modifiés pendant l’exécution d’un pipeline, les variables de pipeline peuvent être définies et modifiées dans un pipeline à l’aide d’une activité Définir une variable. Nous allons prochainement utiliser l’activité Définir une variable.
 
-        ![](../media/lab-05/image069.jpg)
+    ![](../media/lab-05/image069.jpg)
 
 9.	Cliquez sur **Fonctions** dans le menu inférieur.
 
@@ -337,7 +357,7 @@ Dans notre scénario, nous allons itérer et actualiser le flux de données jusq
 11.	Placez le curseur **entre les parenthèses** de la fonction **@or**.
 12.	Dans la section **Logical Fonctions**, sélectionnez la fonction **equals**. Notez que cette mention est ajoutée à la zone de texte de l’expression dynamique.
  
-    **_Remarque_** : Votre fonction devrait ressembler à **@or(equals())**. La fonction equals utilise également deux paramètres. Nous allons vérifier si la variable varCounter est égale à 3.
+    **Remarque** : Votre fonction devrait ressembler à **@or(equals())**. La fonction equals utilise également deux paramètres. Nous allons vérifier si la variable varCounter est égale à 3.
 
     ![](../media/lab-05/image075.jpg)
 
@@ -351,14 +371,14 @@ Dans notre scénario, nous allons itérer et actualiser le flux de données jusq
 
     ![](../media/lab-05/image078.jpg)
 
-17.	Nous devons ajouter le deuxième paramètre à la fonction or. **Ajoutez une virgule** entre les deux parenthèses finales. Cette fois-ci, nous allons essayer de saisir le nom de la fonction. Commencez à taper **equ** et vous obtenez une liste déroulante des fonctions disponibles. (Il s’agit de ce que
-l’on appelle IntelliSense.) Sélectionnez la fonction **equals**.
+17.	Nous devons ajouter le deuxième paramètre à la fonction or. **Ajoutez une virgule** entre les deux parenthèses finales. Cette fois-ci, nous allons essayer de saisir le nom de la fonction. Commencez à taper **equ** et vous obtenez une liste déroulante des fonctions disponibles. (Il s’agit de ce que l’on appelle IntelliSense.) Sélectionnez la fonction **equals**.
 
     ![](../media/lab-05/image081.jpg)
 
 18.	Le premier paramètre de la fonction equals est une variable. Placez le **curseur avant la virgule**.
 
 19.	Commencez à taper **variables**(.
+
 20.	À l’aide d’IntelliSense, sélectionnez **variables('varIsSuccess')**.
 
 21.	Après la virgule, saisissons le deuxième paramètre. Commencez à taper **variables**(.
@@ -414,15 +434,15 @@ Nous avons configuré l’activité Flux de données comme nous l’avons fait p
 
 4.	Dans le champ **Description**, saisissez **Set variable varIsSuccess to Yes**.
 
-    **_Remarque_** : survolez l’**activité Flux de données**. À droite de la zone de l’activité se trouvent quatre icônes. Elles permettent de se connecter à l’activité suivante en fonction du résultat de l’activité :
+    **Remarque** : survolez l’**activité Flux de données**. À droite de la zone de l’activité se trouvent quatre icônes. Elles permettent de se connecter à l’activité suivante en fonction du résultat de l’activité :
 
-    -  	L’icône représentant une **flèche incurvée grise** permet d’ignorer l’activité.
+    a. L’icône représentant une **flèche incurvée grise** permet d’ignorer l’activité.
 
-    -	L’icône représentant une **coche verte** est utilisée en cas de réussite de l’activité.
+    b. L’icône représentant une **coche verte** est utilisée en cas de réussite de l’activité.
 
-    - 	L’icône représentant une **croix rouge** est utilisée en cas d’échec de l’activité.
+    c. L’icône représentant une **croix rouge** est utilisée en cas d’échec de l’activité.
 
-    - 	L’icône représentant une **flèche droite bleue** est utilisée à la fin de l’activité.
+    d. L’icône représentant une **flèche droite bleue** est utilisée à la fin de l’activité.
 
 5.	Cliquez sur la  **coche verte** de l’activité Flux de données dfactivity_People_SharePoint et faites-la glisser pour vous connecter à la nouvelle **activité Définir une variable set_varIsSuccess**. Ainsi, en cas de succès de l’actualisation du flux de données, nous souhaitons exécuter l’activité Définir une variable.
 
@@ -443,7 +463,7 @@ Nous avons configuré l’activité Flux de données comme nous l’avons fait p
 11.	Dans le menu inférieur, cliquez sur **Variables -> varSuccess**. Notez que la mention
 @variables('varSuccess') est saisie dans la zone de texte Ajoutez du contenu dynamique ci- dessous. N’oubliez pas que lorsque nous avons créé des variables, nous avions prédéfini la valeur de la variable varSuccess sur Oui. Nous attribuons donc la valeur Oui à la variable varIsSuccess.
 
-12.	Cliquez sur OK. Vous êtes alors redirigé vers le **volet de conception de l’itérateur**.
+12.	Cliquez sur **OK**. Vous êtes alors redirigé vers le **volet de conception de l’itérateur**.
 
     ![](../media/lab-05/image105.png)
 
@@ -476,7 +496,7 @@ incrémenter la variable de compteur varCounter en ajoutant un à sa valeur (var
 10.	La boîte de dialogue Générateur d’expressions de pipeline s’ouvre alors. Saisissez
 **@add(variables('varCounter'),1)**
 
-    **_Remarque_** : n’hésitez pas à saisir cette expression, à sélectionner les fonctions à l’aide du menu ou à la copier-coller. cette fonction définit la valeur de la variable varTempCounter sur la valeur de la variable varCounter plus un (varTempCounter = varCounter + 1).
+    **Remarque** : n’hésitez pas à saisir cette expression, à sélectionner les fonctions à l’aide du menu ou à la copier-coller. cette fonction définit la valeur de la variable varTempCounter sur la valeur de la variable varCounter plus un (varTempCounter = varCounter + 1).
 
     ![](../media/lab-05/image111.jpg)
 
@@ -487,9 +507,11 @@ incrémenter la variable de compteur varCounter en ajoutant un à sa valeur (var
 1.	Dans le menu supérieur, cliquez sur **Activités -> Définir une variable**. L’activité Définir une variable est alors ajoutée au canevas de conception.
 
 2.	Une fois l’activité **Définir une variable** sélectionnée, cliquez sur Général dans le volet inférieur. Donnons un nom et une description à l’activité.
+
 3.	Dans le champ **Nom**, saisissez **set_varCounter**.
 
 4.	Dans le champ **Description**, saisissez **Increment variable varCounter**.
+
 5.	Cliquez sur la **coche verte** de l’activité Définir une variable set_varTempCounter et faites-la glisser pour vous connecter à la nouvelle **activité Définir une variable set_varCounter**.
 
     ![](../media/lab-05/image113.jpg)
@@ -505,7 +527,7 @@ incrémenter la variable de compteur varCounter en ajoutant un à sa valeur (var
 10.	La boîte de dialogue Générateur d’expressions de pipeline s’ouvre alors. Saisissez
 **@variables('varTempCounter')**. N’hésitez pas à saisir cette expression, à sélectionner les fonctions à l’aide du menu ou à la copier-coller.
 
-    **_Remarque_** : cette fonction définit la valeur de la variable varCounter sur la valeur de la variable varTempCounter (varCounter = varTempCounter). À la fin de chaque itération, varCounter et varTempCounter ont la même valeur.
+    **Remarque** : cette fonction définit la valeur de la variable varCounter sur la valeur de la variable varTempCounter (varCounter = varTempCounter). À la fin de chaque itération, varCounter et varTempCounter ont la même valeur.
 
     ![](../media/lab-05/image116.jpg)
 
@@ -525,7 +547,7 @@ Ensuite, nous devons attendre 5 minutes/300 secondes si l’actualisation du flu
 
     ![](../media/lab-05/image119.jpg)
 
-6.	Une fois l’activité Attente sélectionnée, cliquez sur **Paramètres** dans le menu inférieur.
+6.	Une fois l’activité **Attente** sélectionnée, cliquez sur **Paramètres** dans le menu inférieur.
 
 7.	Dans le champ **Temps d’attente en secondes**, cliquez sur la **zone de texte**, puis sur le lien **Ajouter du contenu dynamique**.
 
@@ -549,8 +571,7 @@ Ensuite, nous devons attendre 5 minutes/300 secondes si l’actualisation du flu
     -   **mul** : il s’agit d’une fonction de multiplication effectuant une multiplication à l’aide de deux paramètres.
 
     L’expression est une instruction if imbriquée. Elle vérifie si la valeur de la variable varCounter est supérieure à 1. Si tel est le cas, elle vérifie si la valeur de la variable varCounter est 2. Si tel est le cas, elle définit le temps d’attente sur la valeur varWaitTime multipliée par 15. N’oubliez pas que nous avions défini par défaut la valeur de la variable varWaitTime sur 60. Le temps d’attente serait donc
-    60*15 = 900 secondes. Si la valeur de la variable varCounter n’est pas 2 (et donc supérieure à 2, ce qui signifie que l’actualisation du flux de données a échoué trois fois, que nous avons terminé
-    l’itération et que nous n’avons plus besoin d’attendre), le temps d’attente est défini sur varWaitTime * 0, soit 0. Si la valeur de la variable varCounter est 1, nous multiplions la valeur varWaitTime par 5. Le temps d’attente serait donc 60*5 = 300 secondes.
+    60X15 = 900 secondes. Si la valeur de la variable varCounter n’est pas 2 (et donc supérieure à 2, ce qui signifie que l’actualisation du flux de données a échoué trois fois, que nous avons terminé l’itération et que nous n’avons plus besoin d’attendre), le temps d’attente est défini sur varWaitTime * 0, soit 0. Si la valeur de la variable varCounter est 1, nous multiplions la valeur varWaitTime par 5. Le temps d’attente serait donc 60X5 = 300 secondes.
 
 9.	Cliquez sur **OK**.
     
@@ -558,13 +579,11 @@ Ensuite, nous devons attendre 5 minutes/300 secondes si l’actualisation du flu
 
     ![](../media/lab-05/image125.jpg)
 
-10.	En haut du canevas de conception à gauche, cliquez sur **pl_Refresh_People_Sharepoint_Option2**
-pour quitter l’itérateur Until.
+10.	En haut du canevas de conception à gauche, cliquez sur **pl_Refresh_People_Sharepoint_Option2** pour quitter l’itérateur Until.
 
     ![](../media/lab-05/image128.jpg)
  
-11.	Nous avons fini de créer le pipeline de données. Dans le menu supérieur, cliquez sur l’icône **Accueil
--> Enregistrer** pour enregistrer le pipeline de données.
+11.	Nous avons fini de créer le pipeline de données. Dans le menu supérieur, cliquez sur l’icône **Accueil-> Enregistrer** pour enregistrer le pipeline de données.
 
     ![](../media/lab-05/image131.png)
 
@@ -572,7 +591,7 @@ pour quitter l’itérateur Until.
 
 1.	Nous pouvons tester le pipeline de données en cliquant sur **Accueil -> Exécuter**.
 
-    **_Remarque_** : l’actualisation du pipeline de données peut prendre quelques minutes. Il s’agit d’un environnement de formation, donc le fichier est toujours disponible dans SharePoint. Par conséquent, votre pipeline de données n’échoue jamais.
+    **Remarque** : l’actualisation du pipeline de données peut prendre quelques minutes. Il s’agit d’un environnement de formation, donc le fichier est toujours disponible dans SharePoint. Par conséquent, votre pipeline de données n’échoue jamais.
 
 2.	Nous pouvons définir le pipeline de données afin qu’il s’exécute selon une planification. Dans le menu supérieur, cliquez sur **Accueil -> Planifier**. La boîte de dialogue Planifier s’ouvre alors.
 
@@ -587,7 +606,8 @@ pour quitter l’itérateur Until.
 7.	Définissez le champ **Date et heure de fin** sur **une date future**.
 
 8.	Définissez votre **Fuseau horaire**.
-    **_Remarque_** : comme il s’agit d’un environnement de labo, vous pouvez définir le fuseau horaire sur votre fuseau horaire préféré. Dans un scénario réel, vous définissez le fuseau horaire en fonction de l’emplacement de votre source de données.
+
+    **Remarque** : comme il s’agit d’un environnement de labo, vous pouvez définir le fuseau horaire sur votre fuseau horaire préféré. Dans un scénario réel, vous définissez le fuseau horaire en fonction de l’emplacement de votre source de données.
 
 9.	Cliquez sur **Appliquer**.
  
@@ -596,7 +616,9 @@ pour quitter l’itérateur Until.
     ![](../media/lab-05/image134.jpg)
 
 11.	Sélectionnez votre espace de travail Fabric **FAIAD_\<username>** dans le panneau de gauche pour accéder à l’espace de travail.
-    **_Remarque_** : sur l’écran Planifier, aucune option ne permet de notifier le succès ou l’échec (comme Planification de flux de données). La notification peut être effectuée en ajoutant une activité dans le pipeline de données. Nous ne le faisons pas dans ce labo, car il s’agit d’un environnement de labo.
+
+    **Remarque** : sur l’écran Planifier, aucune option ne permet de notifier le succès ou l’échec (comme Planification de flux de données). La notification peut être effectuée en ajoutant une activité dans le pipeline de données. Nous ne le faisons pas dans ce labo, car il s’agit d’un environnement de labo.
+
     Nous avons planifié des actualisations pour les différentes sources de données. Nous allons créer un modèle sémantique avec des relations, des mesures et d’autres opérations de modélisation dans le prochain labo.
  
 # Références
@@ -608,6 +630,7 @@ Fabric Analyst in a Day (FAIAD) vous présente certaines des fonctions clés de 
 Voici quelques autres ressources qui vous aideront lors de vos prochaines étapes avec Microsoft Fabric :
 
 -	Consultez le billet de blog pour lire l’intégralité de l’[annonce de la GA de Microsoft Fabric](https://www.microsoft.com/en-us/microsoft-fabric/blog/2023/11/15/prepare-your-data-for-ai-innovation-with-microsoft-fabric-now-generally-available/).
+
 
 -	Explorez Fabric grâce à la [visite guidée](https://guidedtour.microsoft.com/en-us/guidedtour/microsoft-fabric/microsoft-fabric/1/1).
 
