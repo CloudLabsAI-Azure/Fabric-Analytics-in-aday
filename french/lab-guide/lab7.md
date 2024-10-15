@@ -48,7 +48,7 @@ Nous avons découvert Lakehouse, ingéré des données de différentes sources d
 
 # Power BI
 
-# Tâche 1 : créer automatiquement un état
+## Tâche 1 : créer automatiquement un état
 
 Commençons par utiliser l’option de création automatique d’un état. Plus tard dans le labo, nous allons recréer l’état dont nous disposons dans Power BI.
 
@@ -58,15 +58,15 @@ Commençons par utiliser l’option de création automatique d’un état. Plus 
 
 3. La boîte de dialogue Expérience Fabric s’ouvre alors. Cliquez sur **Power BI**. Vous êtes alors redirigé vers la **page d’Accueil Power BI**.
 
-  ![](../media/lab-07/image006.jpg)
+     ![](../media/lab-07/image006.jpg)
 
 4. Cliquez sur **Nouveau rapport** dans le menu supérieur.
 
-  ![](../media/lab-07/image009.jpg)
+     ![](../media/lab-07/image009.jpg)
 
 5. Vous êtes alors redirigé vers l’écran **Créer votre premier rapport**. Des options permettent de créer un état à l’aide du format Excel ou CSV, saisir des données manuellement ou choisir un modèle sémantique publié. Nous avons créé un modèle sémantique dans les labos précédents.Utilisons-le. Sélectionnez l’option **Choisir un modèle sémantique publié**.
 
-![](../media/lab-07/image012.jpg)
+   ![](../media/lab-07/image012.jpg)
 
 6. Choisissez un jeu de données à utiliser sur la page de votre état qui s’ouvre. Notez que nous disposons de quatre options. Sélectionnez **sm_FAIAD**.
 
@@ -82,15 +82,15 @@ Commençons par utiliser l’option de création automatique d’un état. Plus 
 
 7. Cliquez sur la **flèche en regard du bouton Créer automatiquement un état**. Notez que deux options sont disponibles : Créer automatiquement un état et Créer un rapport vide. Essayons la création automatique, donc sélectionnons **Créer automatiquement un état**.
 
-![](../media/lab-07/image015.jpg)
+   ![](../media/lab-07/image015.jpg)
 
 8. Power BI commence alors à créer automatiquement l’état. Notez qu’une option permet de présélectionner des données, le cas échéant. Une fois l’état prêt, une boîte de dialogue s’affiche en haut de l’écran à droite. Sélectionnez **Afficher l’état maintenant ou il se chargera automatiquement dans quelques secondes**.
 
-![](../media/lab-07/image018.jpg)
+   ![](../media/lab-07/image018.jpg)
 
-**Point de contrôle** : vous disposez d’un état qui ressemble à la capture d’écran ci-dessous. Quelques KPI et quelques visuels de tendance sont disponibles. Il s’agit d’un bon point de départ si vous analysez un nouveau modèle.
+   **Point de contrôle** : vous disposez d’un état qui ressemble à la capture d’écran ci-dessous. Quelques KPI et quelques visuels de tendance sont disponibles. Il s’agit d’un bon point de départ si vous analysez un nouveau modèle.
 
-**Remarque** : dans le menu supérieur, notez que vous pouvez modifier l’état ou afficher certaines données sous forme de tables. N’hésitez pas à explorer ces options.
+   **Remarque** : dans le menu supérieur, notez que vous pouvez modifier l’état ou afficher certaines données sous forme de tables. N’hésitez pas à explorer ces options.
 
 9. Enregistrons cet état. Dans le menu supérieur, cliquez sur **Enregistrer**.
 
@@ -102,17 +102,17 @@ Commençons par utiliser l’option de création automatique d’un état. Plus 
 
 12. Cliquez sur **Enregistrer**.
 
-![](../media/lab-07/image021.jpg)
+    ![](../media/lab-07/image021.jpg)
 
-**Remarque** : l’état créé automatiquement peut être différent pour vous, car il est « créé automatiquement ». Cela dépend également des relations et des mesures créées dans le labo précédent (Labo 6).
+    **Remarque** : l’état créé automatiquement peut être différent pour vous, car il est « créé automatiquement ». Cela dépend également des relations et des mesures créées dans le labo précédent (Labo 6).
 
-La capture d’écran ci-dessus illustre à quoi **peut** ressembler l’état créé automatiquement si vous avez créé toutes les relations et mesures, y compris les relations facultatives (Labo 6).
+    La capture d’écran ci-dessus illustre à quoi **peut** ressembler l’état créé automatiquement si vous avez créé toutes les relations et mesures, y compris les relations facultatives (Labo 6).
 
-La capture d’écran ci-dessous illustre à quoi **peut** ressembler l’état créé automatiquement si vous n’avez pas créé les relations et mesures facultatives (Labo 6).
+    La capture d’écran ci-dessous illustre à quoi **peut** ressembler l’état créé automatiquement si vous n’avez pas créé les relations et mesures facultatives (Labo 6).
 
-![](../media/lab-07/image024.jpg)
+    ![](../media/lab-07/image024.jpg)
 
-# Tâche 2 : configurer l’arrière-plan d’un nouvel état
+## Tâche 2 : configurer l’arrière-plan d’un nouvel état
 
 Nous allons créer un nouvel état en utilisant un canevas vierge.
 
@@ -120,23 +120,23 @@ Nous allons créer un nouvel état en utilisant un canevas vierge.
 
 2. Dans le menu supérieur, cliquez sur **Nouveau -> État**. Vous êtes alors redirigé vers la page Créer votre premier état.
 
-![](../media/lab-07/image027.jpg)
+   ![](../media/lab-07/image027.jpg)
 
 3. Sélectionnez **Choisir un modèle sémantique publié** pour pouvoir choisir le modèle que nous avons créé.
 
-![](../media/lab-07/image012.jpg)
+   ![](../media/lab-07/image012.jpg)
 
 4. Choisissez un modèle sémantique à utiliser dans la boîte de dialogue de l’état qui s’ouvre. Sélectionnez **sm_FAIAD**.
 
 5. Cliquez sur la **flèche en regard du bouton Créer automatiquement un état**. Cliquez sur **Créer un état vide**. Vous êtes alors redirigé vers une page d’état qui ressemble à la page d’état Power BI Desktop.
 
-![](../media/lab-07/image032.jpg)
+   ![](../media/lab-07/image032.jpg)
 
 6. Si vous ne l’avez pas encore ouvert, ouvrez le fichier **FAIAD.pbix** situé dans le dossier **Reports** sur le **bureau** de votre environnement de labo.
 
-Cet état va nous servir de référence. Nous allons commencer par ajouter l’arrière-plan du canevas. Nous allons créer l’en-tête de l’état, ajouter quelques KPI et créer le graphique en courbes Sales over time. Pour gagner du temps et étant entendu que vous avez de l’expérience dans la création de visuels dans Power BI Desktop, nous n’allons pas créer tous les visuels. 
+   Cet état va nous servir de référence. Nous allons commencer par ajouter l’arrière-plan du canevas. Nous allons créer l’en-tête de l’état, ajouter quelques KPI et créer le graphique en courbes Sales over time. Pour gagner du temps et étant entendu que vous avez de l’expérience dans la création de visuels dans Power BI Desktop, nous n’allons pas créer tous les visuels. 
 
-![](../media/lab-07/image035.jpg)
+   ![](../media/lab-07/image035.jpg)
 
 7. Revenez au **canevas Power BI** dans votre navigateur.
 
@@ -154,9 +154,9 @@ Cet état va nous servir de référence. Nous allons commencer par ajouter l’a
 
 14. Réglez le curseur Transparence sur **0 %**.
 
-![](../media/lab-07/image038.jpg)
+    ![](../media/lab-07/image038.jpg)
 
-# Tâche 3 : ajouter un en-tête à l’état
+## Tâche 3 : ajouter un en-tête à l’état
 
 1. Ajoutons l’en-tête dans la marge supérieure. Dans le **menu**, cliquez sur **Zone de texte**.
 
@@ -174,9 +174,9 @@ Cet état va nous servir de référence. Nous allons commencer par ajouter l’a
 
 8. Redimensionnez la **zone de texte pour l’adapter à la marge supérieure**.
 
-![](../media/lab-07/image041.jpg)
+   ![](../media/lab-07/image041.jpg)
 
-# Tâche 4 : ajouter des KPI à l’état
+## Tâche 4 : ajouter des KPI à l’état
 
 1. Ajoutons l’indicateur de performance clé Sales. Cliquez sur l’**espace blanc** dans le canevas pour détourner le focus de la zone de texte.
 
@@ -186,7 +186,7 @@ Cet état va nous servir de référence. Nous allons commencer par ajouter l’a
 
 4. Sélectionnez la mesure **Sales**.
 
-![](../media/lab-07/image044.jpg)
+   ![](../media/lab-07/image044.jpg)
 
 5. Une fois le visuel **Carte multiligne** sélectionné, cliquez sur l’icône **Mettre en forme le visuel dans** la section Visualisations.
 
@@ -200,13 +200,13 @@ Cet état va nous servir de référence. Nous allons commencer par ajouter l’a
 
 10. Définissez la valeur Hex sur **#004753**.
 
-![](../media/lab-07/image047.jpg)
+    ![](../media/lab-07/image047.jpg)
 
 11. Développez la section **Cartes**.
 
 12. Réglez le curseur **Barre d’accentuation** sur **Désactivé**.
 
-![](../media/lab-07/image050.png)
+    ![](../media/lab-07/image050.png)
 
 13. Cliquez sur **Général** dans le volet Visualisations.
 
@@ -216,7 +216,7 @@ Cet état va nous servir de référence. Nous allons commencer par ajouter l’a
 
 16. Redimensionnez le **visuel** et déplacez-le vers la **case gauche, comme illustré dans la capture d’écran**.
 
-![](../media/lab-07/image053.jpg)
+    ![](../media/lab-07/image053.jpg)
 
 17. Ajoutons un autre KPI. Sélectionnez la **carte multiligne Sales** que vous venez de créer. **Copiez** le visuel à l’aide du raccourci clavier **Ctrl + C**.
 
@@ -228,9 +228,9 @@ Cet état va nous servir de référence. Nous allons commencer par ajouter l’a
 
 21. Redimensionnez le **visuel** et **placez-le dans la case située sous le visuel Sales**.
 
-![](../media/lab-07/image056.jpg)
+    ![](../media/lab-07/image056.jpg)
 
-# Tâche 5 : ajouter un graphique en courbes à l’état
+## Tâche 5 : ajouter un graphique en courbes à l’état
 
 Créons un graphique en courbes pour visualiser Sales dans le temps par Reseller Company.
 
@@ -242,9 +242,9 @@ Créons un graphique en courbes pour visualiser Sales dans le temps par Reseller
 
 4. Cliquez sur le champ **Year**. Notez que le champ Year est une somme par défaut et ajouté à l’axe Y. Résolvons ce problème.
 
-![](../media/lab-07/image059.jpg)
+   ![](../media/lab-07/image059.jpg)
 
-# Tâche 6 : enregistrer l’état
+## Tâche 6 : enregistrer l’état
 
 Nous allons enregistrer l’état avant de le quitter pour apporter des modifications au modèle. 
 
@@ -258,15 +258,15 @@ Nous allons enregistrer l’état avant de le quitter pour apporter des modifica
 
 4. Cliquez sur **Enregistrer**. Notez que l’état est enregistré et que vous êtes en mode Affichage.
 
-![](../media/lab-07/image062.png)
+   ![](../media/lab-07/image062.png)
 
-# Tâche 7 : configurer la colonne Year de la table Date
+## Tâche 7 : configurer la colonne Year de la table Date
 
 1. Dans le **menu supérieur**, cliquez sur **Modifier** pour repasser en mode Édition.
 
 2. Dans le **menu supérieur**, cliquez sur **Ouvrir le modèle de données**. Notez que le modèle sémantique est ouvert dans une nouvelle fenêtre/un nouvel onglet de navigateur.
 
-![](../media/lab-07/image065.jpg)
+   ![](../media/lab-07/image065.jpg)
 
 3. Dans le volet **Données à droite**, cliquez sur Tables.
 
@@ -278,7 +278,7 @@ Nous allons enregistrer l’état avant de le quitter pour apporter des modifica
 
 7. Dans la liste déroulante **Totaliser par**, sélectionnez **Aucun**.
 
-![](../media/lab-07/image068.jpg)
+   ![](../media/lab-07/image068.jpg)
 
 8. Revenez à **la fenêtre/l’onglet d’état** du navigateur.
 
@@ -290,9 +290,9 @@ Nous allons enregistrer l’état avant de le quitter pour apporter des modifica
 
 12. Développez la table **Sales** et sélectionnez la mesure **Sales**.
 
-![](../media/lab-07/image071.jpg)
+    ![](../media/lab-07/image071.jpg)
 
-# Tâche 8 : configurer la colonne Month Name de la table Date
+## Tâche 8 : configurer la colonne Month Name de la table Date
 
 1. Ajoutons le mois à ce graphique. Dans la table Date, faites glisser le champ **MonthNameShort** sous **Year** sur l’**axe des X**. Notez que le visuel est trié selon Sales. Trions-le selon **MonthNameShort**.
 
@@ -304,11 +304,11 @@ Nous allons enregistrer l’état avant de le quitter pour apporter des modifica
 
 5. Sélectionnez **Trier axe -> Tri croissant**.
 
-![](../media/lab-07/image074.jpg)
+   ![](../media/lab-07/image074.jpg)
 
-**Remarque** : les mois sont triés par ordre alphabétique. Résolvons ce problème.
+   **Remarque** : les mois sont triés par ordre alphabétique. Résolvons ce problème.
 
-![](../media/lab-07/image077.png)
+   ![](../media/lab-07/image077.png)
 
 6. Revenez à **la fenêtre/l’onglet de navigateur** dans laquelle/lequel le modèle sémantique est ouvert.
 
@@ -320,13 +320,13 @@ Nous allons enregistrer l’état avant de le quitter pour apporter des modifica
 
 10. Dans la liste déroulante **Trier par colonne**, sélectionnez **Month**.
 
-![](../media/lab-07/image080.jpg)
+    ![](../media/lab-07/image080.jpg)
 
 11. Revenez à **la fenêtre/l’onglet d’état** du navigateur. Notez maintenant que les mois sont triés correctement.
 
-![](../media/lab-07/image083.png)
+    ![](../media/lab-07/image083.png)
 
-# Tâche 9 : mettre en forme le graphique en courbes
+## Tâche 9 : mettre en forme le graphique en courbes
 
 Notez à quel point il est facile de mettre à jour le modèle sémantique lors de la création des états. Cela donne des interactions fluides comme Power BI Desktop.
 
@@ -334,7 +334,7 @@ Notez à quel point il est facile de mettre à jour le modèle sémantique lors 
 
 2. Faites glisser le champ **Reseller -> Reseller Company** vers la section **Légende**.
 
-![](../media/lab-07/image086.jpg)
+   ![](../media/lab-07/image086.jpg)
 
 3. Une fois le visuel **Graphique en courbes** sélectionné, cliquez sur l’icône **Mettre en forme le visuel -> Général** dans la section **Visualisations**.
 
@@ -346,7 +346,7 @@ Notez à quel point il est facile de mettre à jour le modèle sémantique lors 
 
 7. Réglez le curseur **Arrière-plan** sur **Désactivé**.
 
-![](../media/lab-07/image089.png)
+   ![](../media/lab-07/image089.png)
 
 8. Dans la section **Visualisations**, cliquez sur l’icône **Mettre en forme le visuel -> Objet visuel**.
 
@@ -366,11 +366,11 @@ Notez à quel point il est facile de mettre à jour le modèle sémantique lors 
 
 16. Faites défiler le visuel vers la droite et **notez que nous disposons de données jusqu’en avril 2024.**
 
-![](../media/lab-07/image092.png)
+    ![](../media/lab-07/image092.png)
 
 17. Enregistrons l’état en sélectionnant **Fichier -> Enregistrer** dans le menu.Comme indiqué précédemment, nous n’allons pas créer tous les visuels dans ce labo. À votre guise, n’hésitez pas à créer d’autres visuels. 
 
-# Tâche 10 : connecter Power BI Desktop au modèle sémantique
+## Tâche 10 : connecter Power BI Desktop au modèle sémantique
 
 Voyons maintenant à quel point il est facile de connecter Power BI Desktop au modèle sémantique et de créer des visuels.
 
@@ -378,17 +378,17 @@ Voyons maintenant à quel point il est facile de connecter Power BI Desktop au m
 
 2. Dans le ruban, cliquez sur **Accueil -> Hub de données OneLake -> Modèles sémantiques Power BI**.
 
-![](../media/lab-07/image095.jpg)
+   ![](../media/lab-07/image095.jpg)
 
 3. La boîte de dialogue Hub de données OneLake s’ouvre alors. Sélectionnez **sm_FAIAD**, le modèle sémantique que nous avons créé.
 
 4. Cliquez sur **Connexion**. Notez que les tables du modèle sémantique se trouvent dans le volet Données.
 
-![](../media/lab-07/image098.jpg)
+   ![](../media/lab-07/image098.jpg)
 
 5. Dans le **volet gauche**, cliquez sur **Vue Modèle**. Notez que nous pouvons visualiser la relation entre les tables.
 
-![](../media/lab-07/image101.jpg)
+   ![](../media/lab-07/image101.jpg)
 
 6. Dans le **volet gauche**, cliquez sur **Vue État** pour revenir à la vue État.
 
@@ -398,19 +398,19 @@ Voyons maintenant à quel point il est facile de connecter Power BI Desktop au m
 
 9. Dans le ruban, cliquez sur **Accueil -> Copier**.
 
-![](../media/lab-07/image104.jpg)
+   ![](../media/lab-07/image104.jpg)
 
 10. Accédez à **FAIADTemplate.pbix** et cliquez sur le canevas d’état.
 
 11. Dans le ruban, cliquez sur **Accueil -> Coller**.
 
-![](../media/lab-07/image107.png)
+    ![](../media/lab-07/image107.png)
 
 12. De même, copiez-collez les **KPI Sales et Units**. Pour votre information, plusieurs visuels peuvent être copiés-collés ensemble.
 
-![](../media/lab-07/image110.png)
+    ![](../media/lab-07/image110.png)
 
-Notez qu’il est facile de copier les visuels d’un état existant et de les coller dans un état qui se connecte au modèle sémantique. Notez que les noms de table, les noms de colonne et les noms de mesure doivent être identiques afin que le copier-coller fonctionne. S’ils ne sont pas identiques, vous pouvez avoir une erreur, mais elle peut être facilement corrigée.
+    Notez qu’il est facile de copier les visuels d’un état existant et de les coller dans un état qui se connecte au modèle sémantique. Notez que les noms de table, les noms de colonne et les noms de mesure doivent être identiques afin que le copier-coller fonctionne. S’ils ne sont pas identiques, vous pouvez avoir une erreur, mais elle peut être facilement corrigée.
 
 13. Accédez à **FAIAD.pbix** et sélectionnez le graphique en courbes Sales over time.
 
@@ -422,17 +422,17 @@ Notez qu’il est facile de copier les visuels d’un état existant et de les c
 
 17. Résolvons ce problème. Dans le volet **Visualisation**, sous l’**axe des X**, supprimez **StartOfMonth**.
 
-![](../media/lab-07/image113.jpg)
+    ![](../media/lab-07/image113.jpg)
 
 18. Dans le volet **Données**, développez la table **Date**.
 
 19. Faites glisser le champ **StartOfMonth** sur l’**axe des X**. Cela corrige le visuel. Vous devrez peut-être mettre en forme le visuel.
 
-![](../media/lab-07/image116.jpg)
+    ![](../media/lab-07/image116.jpg)
 
 20. Enregistrons l’état en cliquant sur **Fichier -> Enregistrer** dans le ruban.
 
-# Tâche 11 : ajouter de nouvelles données pour simuler le mode Direct Lake
+## Tâche 11 : ajouter de nouvelles données pour simuler le mode Direct Lake
 
 En général, en mode Import, une fois les données de la source actualisées, nous devons actualiser le modèle Power BI après quoi les données de l’état sont mises à jour. Avec le mode Direct Query, une fois les données actualisées dans la source, elles sont disponibles dans l’état Power BI. Cependant, le mode Direct Query est généralement lent. Pour résoudre ce problème, Microsoft Fabric a introduit le mode Direct Lake. Direct Lake est un moyen rapide de charger les données du lac directement dans 
 le moteur Power BI, prêtes à l’analyse. 
@@ -447,17 +447,17 @@ Dans un scénario réel, les données sont mises à jour à la source. Puisque n
 
 3. Cliquez sur **lh_FAIAD** pour accéder à la lakehouse.
 
-![](../media/lab-07/image119.jpg)
+   ![](../media/lab-07/image119.jpg)
 
 4. Dans le volet **Explorateur** à gauche, cliquez sur les **points de suspension** en regard de **Tables**.
 
 5. Cliquez sur **Nouveau raccourci**.
 
-![](../media/lab-07/image122.png)
+   ![](../media/lab-07/image122.png)
 
 6. La boîte de dialogue Nouveau raccourci s’ouvre alors. Sous **Sources externes**, sélectionnez **Azure Data Lake Storage Gen2**.
 
-![](../media/lab-07/image125.jpg)
+   ![](../media/lab-07/image125.jpg)
 
 7. Sous Paramètres de connexion -> URL, saisissez ce lien :
 
@@ -465,7 +465,7 @@ Dans un scénario réel, les données sont mises à jour à la source. Puisque n
 
 8. Comme nous avons créé la connexion précédemment, elle est reconnue. Cliquez sur **Suivant**.
 
-![](../media/lab-07/image128.jpg)
+   ![](../media/lab-07/image128.jpg)
 
 9. Vous êtes alors connecté à ADLS Gen2 avec la structure de répertoires s’affichant dans le volet gauche. Développez **Delta-Parquet-Format-FY25**.
 
@@ -473,7 +473,7 @@ Dans un scénario réel, les données sont mises à jour à la source. Puisque n
 
 11. Cliquez sur **Suivant**.
 
-![](../media/lab-07/image131.jpg)
+    ![](../media/lab-07/image131.jpg)
 
 12. Vous êtes alors redirigé vers la boîte de dialogue suivante dans laquelle nous pouvons modifier les noms. Cliquez sur l’**icône Modifier** sous Actions pour **Sales.Invoices_May**.
 
@@ -483,13 +483,13 @@ Dans un scénario réel, les données sont mises à jour à la source. Puisque n
 
 15. Cliquez sur **Créer**.
 
-![](../media/lab-07/image134.jpg)
+    ![](../media/lab-07/image134.jpg)
 
-Notez que la table InvoicesMay se trouve dans le **volet Explorateur** à gauche. Nous devons maintenant mettre à jour la vue Sales.
+    Notez que la table InvoicesMay se trouve dans le **volet Explorateur** à gauche. Nous devons maintenant mettre à jour la vue Sales.
 
 16. En **haut** de l’écran à droite, cliquez sur **Lakehouse -> Point de terminaison analytique SQL**.
 
-![](../media/lab-07/image137.jpg)
+    ![](../media/lab-07/image137.jpg)
 
 17. Dans le menu supérieur, cliquez sur **Accueil -> Nouvelle requête SQL**. Un volet de nouvelle requête SQL s’ouvre alors.
 
@@ -636,19 +636,19 @@ ALTER VIEW [dbo].[Sales] AS (
 19. Dans le menu de requête visuelle, cliquez sur **Exécuter** pour exécuter le code.
     Une fois le code exécuté, nous avons mis à jour la table Sales pour y inclure les données de mai 2024.
 
-![](../media/lab-07/image142.jpg)
+    ![](../media/lab-07/image142.jpg)
 
 20. Cliquez sur **rpt_Sales_Report** dans la barre de menu de gauche pour revenir à l’état.
 
 21. Dans le menu supérieur, cliquez sur **Actualiser**. Notez maintenant que le graphique en courbes comporte des données pour mai 2024. Notez également que le montant Sales et Units a augmenté.
 
-![](../media/lab-07/image145.jpg)
+    ![](../media/lab-07/image145.jpg)
 
-Nous n’avons pas besoin d’actualiser le modèle de données et de signaler la modification de données. Voilà l’avantage de Direct Lake et de DirectQuery.
+    Nous n’avons pas besoin d’actualiser le modèle de données et de signaler la modification de données. Voilà l’avantage de Direct Lake et de DirectQuery.
 
-Revenons sur les défis répertoriés dans l’énoncé du problème :
+    Revenons sur les défis répertoriés dans l’énoncé du problème :
 
-- **Vous devez actualiser votre jeu de données au moins trois fois par jour pour tenir compte des différentes heures de mise à jour des différentes sources de données.**
+ - **Vous devez actualiser votre jeu de données au moins trois fois par jour pour tenir compte des différentes heures de mise à jour des différentes sources de données.**
 
     Nous avons résolu ce problème à l’aide de Direct Lake. Chaque flux de données individuel est actualisé selon son calendrier. Le jeu de données et l’état n’ont pas besoin d’être actualisés.
 
@@ -676,7 +676,7 @@ Une fois que vous êtes prêt à nettoyer l’environnement de labo, procédez c
 
 2. Dans le menu supérieur, cliquez sur **Paramètres de l’espace de travail**.
 
-![](../media/lab-07/image148.jpg)
+    ![](../media/lab-07/image148.jpg)
 
 3. La boîte de dialogue Paramètres d’espace de travail s’ouvre alors. Dans la section **Général**, faites défiler vers le bas.
 
@@ -684,9 +684,9 @@ Une fois que vous êtes prêt à nettoyer l’environnement de labo, procédez c
 
 5. La boîte de dialogue Supprimer l’espace de travail s’ouvre alors. Cliquez sur **Supprimer**.
 
-L’espace de travail et tous les éléments qu’il comporte sont alors supprimés.
+   L’espace de travail et tous les éléments qu’il comporte sont alors supprimés.
 
-![](../media/lab-07/image151.jpg)
+    ![](../media/lab-07/image151.jpg)
 
 # Références
 

@@ -42,23 +42,23 @@
 
 Nous avons ingéré des données provenant de différentes sources de données dans Lakehouse. Dans ce labo, vous allez configurer un calendrier d’actualisation pour les sources de données. Voici un résumé du besoin :
 
--   Données fournisseur : stockées dans Snowflake et mises à jour au quotidien à minuit.
+-   **Données fournisseur :** stockées dans Snowflake et mises à jour au quotidien à minuit.
 
--   Données collaborateur : stockées dans SharePoint et mises à jour au quotidien à 9 h. 
+-   **Données collaborateur :** stockées dans SharePoint et mises à jour au quotidien à 9 h. 
 Cependant, nous avons remarqué qu’il y a parfois un retard de 5 à 15 minutes. Nous devons créer un calendrier d’actualisation pour en tenir compte.
 
--   Données client : stockées dans Dataverse et systématiquement à jour. Auparavant, nous les actualisions quatre fois par jour : à minuit, 6 h, midi et 18 h. À présent, l’équipe informatique a créé un lien vers Dataverse permettant d’ingérer ces données dans une lakehouse d’administration. Elle a également transformé ces données. Nous n’avons pas besoin de  
+-   **Données client :** stockées dans Dataverse et systématiquement à jour. Auparavant, nous les actualisions quatre fois par jour : à minuit, 6 h, midi et 18 h. À présent, l’équipe informatique a créé un lien vers Dataverse permettant d’ingérer ces données dans une lakehouse d’administration. Elle a également transformé ces données. Nous n’avons pas besoin de  
 configurer l’actualisation, car nous nous connectons à la lakehouse fournie par l’équipe informatique.
 
--   Données Sales : stockées dans ADLS et mises à jour au quotidien à midi. Nous n’avons pas besoin de configurer l’actualisation pour cela puisque nous avons créé un raccourci. Dès que les données sont mises à jour dans ADLS, elles sont disponibles.
+-   **Données Sales :** stockées dans ADLS et mises à jour au quotidien à midi. Nous n’avons pas besoin de configurer l’actualisation pour cela puisque nous avons créé un raccourci. Dès que les données sont mises à jour dans ADLS, elles sont disponibles.
 
-À la fin de ce labo, vous saurez :
+    À la fin de ce labo, vous saurez :
 
--   comment configurer une actualisation planifiée de Dataflow Gen2 ;
+    -   comment configurer une actualisation planifiée de Dataflow Gen2 ;
 
--   comment créer un pipeline de données ;
+    -   comment créer un pipeline de données ;
 
--   comment configurer une actualisation planifiée d’un pipeline de données.
+    -   comment configurer une actualisation planifiée d’un pipeline de données.
 
 # Dataflow Gen2 #
 
@@ -73,18 +73,17 @@ l’espace de travail dans le volet gauche.
 
     ![](../media/lab-05/image006.jpg)
 
-3.	Tous les artefacts que vous avez créés sont répertoriés ici. Sur le côté droit de l’écran, saisissez df
-dans la zone de recherche. Les artefacts sont alors filtrés vers les flux de données.
+3.	Tous les artefacts que vous avez créés sont répertoriés ici. Sur le côté droit de l’écran, saisissez **df** dans la **zone de recherche.** Les artefacts sont alors filtrés vers les flux de données.
 
     ![](../media/lab-05/image009.jpg)
 
-4.	Survolez la ligne **df_Supplier_Snowflake**. Notez que les icônes familières Actualiser et Planifier l’actualisation sont disponibles. Cliquez sur les **points de suspension (…)**.
+4.	Survolez la ligne **df_Supplier_Snowflake**. Notez que les icônes familières **Actualiser** et **Planifier** l’actualisation sont disponibles. Cliquez sur les **points de suspension (…)**.
 
 5.	Notez qu’une option permet de supprimer, de modifier et d’exporter le flux de données. Nous pouvons mettre à jour le nom et la description du flux de données à l’aide des propriétés. Nous allons examiner prochainement l’historique des actualisations. Cliquez sur **Paramètres**.
 
     ![](../media/lab-05/image012.jpg)
 
-    **_Remarque_** : la page Paramètres s’ouvre alors. Tous les flux de données sont répertoriés dans le volet gauche.
+    **Remarque** : la page Paramètres s’ouvre alors. Tous les flux de données sont répertoriés dans le volet gauche.
 
 6.	Dans le volet central, cliquez sur le lien **Historique des actualisations**.
 
@@ -92,7 +91,7 @@ dans la zone de recherche. Les artefacts sont alors filtrés vers les flux de do
 
 7.	La boîte de dialogue Historique des actualisations s’ouvre alors. Une actualisation est alors répertoriée. Il s’agit de l’actualisation qui s’est produite lors de la publication du flux de données. Cliquez sur le lien **Heure de début**.
  
-    **_Remarque_** : l’heure de début est différente pour vous.
+    **Remarque** : l’heure de début est différente pour vous.
 
     ![](../media/lab-05/image018.jpg)
 
@@ -126,13 +125,13 @@ données**. Une liste des connexions utilisées dans le flux de données s’aff
 15.	Définissez le champ **Heure** sur **minuit/0 h**. Notez que vous pouvez définir l’actualisation sur une heure pile ou une demi-heure.
 
 16.	Cliquez sur Appliquer pour enregistrer ce paramètre.
-    **_Remarque_** : en cliquant sur le lien Ajouter un autre horaire, vous pouvez ajouter plusieurs heures d’actualisation.
+    **Remarque** : en cliquant sur le lien Ajouter un autre horaire, vous pouvez ajouter plusieurs heures d’actualisation.
 
     Vous pouvez également envoyer des notifications d’échec au propriétaire du flux de données et à d’autres contacts.
 
     ![](../media/lab-05/image027.jpg)
 
-Comme indiqué précédemment, nous devons créer une logique personnalisée pour gérer le scénario dans lequel le fichier collaborateur dans SharePoint n’est pas livré à temps. Résolvons ce problème à l’aide d’un pipeline de données.
+    Comme indiqué précédemment, nous devons créer une logique personnalisée pour gérer le scénario dans lequel le fichier collaborateur dans SharePoint n’est pas livré à temps. Résolvons ce problème à l’aide d’un pipeline de données.
 
 # Pipeline de données #
 
@@ -180,6 +179,7 @@ Afficher le code JSON. Ici, notez que toute l’orchestration que vous effectuez
     ![](../media/lab-05/image042.png)
 
 ## Tâche 3 : créer un pipeline de données simple ##
+
 Commençons à créer le pipeline. Nous avons besoin d’une activité pour actualiser le flux de données. Trouvons une activité que nous pouvons utiliser.
 
 1.	Dans le menu supérieur, cliquez sur **Activités -> Flux de données**. L’activité Flux de données est alors ajoutée au volet de conception central. Notez que le volet inférieur comporte désormais des options de configuration de l’activité Flux de données.
