@@ -115,13 +115,17 @@
 
       ![](../media/lab-01/image036.png)
 
-8.	보고서를 자유롭게 더 분석합니다. 준비가 되♘으면 모델 보기를 살펴보겠습니다. 왼쪽 패널에서 **모델 보기 아이콘**을 선택합니다. Sales와 PO라는 두 개의 팩트 테이블이 있습니다.
+8. 보고서를 자유롭게 더 분석합니다. 준비가 되면 모델 보기를 살펴보겠습니다. 왼쪽 패널에서 **모델 보기 아이콘**을 선택합니다. Sales와 PO라는 두 개의 팩트 테이블이 있습니다.
+
+   a. 매출 데이터의 세분화는 **Date**, **Reseller**, **Product** 및 **People**별로 이루어집니다. **Date**, **Reseller**, **Product**, **People**이 Sales에 연결됩니다.
    
-    a.	매출 데이터의 세분화는 Date, Reseller, Product 및 People별로 이루어집니다. Date, Reseller, Product, People이 Sales에 연결됩니다.
-    b.	PO 데이터의 세분화는 Date, Product 및 People별로 이루어집니다. Date, Product, People이 PO에 연결됩니다.
-    c.	Product별 Supplier 데이터가 있습니다. Supplier는 Product에 연결됩니다.
-    d.	Geo별 Reseller 위치 데이터가 있습니다. Geo가 Reseller에 연결됩니다.
-    e.	Reseller별 고객 정보가 있습니다. Customer가 Reseller에 연결됩니다.
+   b. PO 데이터의 세분화는 **Date**, **Product** 및 **People**별로 이루어집니다. **Date**, **Product**, **People**이 PO에 연결됩니다.
+   
+   c. **Product**별 Supplier 데이터가 있습니다. **Supplier**는 Product에 연결됩니다.
+   
+   d. **Geo**별 Reseller 위치 데이터가 있습니다. **Geo**가 Reseller에 연결됩니다.
+   
+   e. **Reseller**별 고객 정보가 있습니다. **Customer**가 Reseller에 연결됩니다.
  
 # 작업 3: Power Query 검토
 
@@ -129,12 +133,15 @@
 
       ![](../media/lab-01/image039.jpg)
 
-2.	Power Query 창이 열립니다. 리본 메뉴에서 **홈 -> 데이터 원본 설정**을 선택합니다. 데이터 원본 설정 대화 상자가 열립니다. 목록을 스크롤하면 문제 설명에 언급된 대로 네 가지 데이터 원본이 있음을 알 수 있습니다.
+2. Power Query 창이 열립니다. 리본 메뉴에서 **홈 -> 데이터 원본 설정**을 선택합니다. 데이터 원본 설정 대화 상자가 열립니다. 목록을 스크롤하면 문제 설명에 언급된 대로 네 가지 데이터 원본이 있음을 알 수 있습니다.
    
-   a.	Snowflake
-   b.	SharePoint
-   c.	ADLS Gen2
-   d.	Dataverse
+   a. **Snowflake**
+   
+   b. **SharePoint**
+   
+   c. **ADLS Gen2**
+   
+   d. **Dataverse**
  
 4.	**닫기**를 선택하여 데이터 원본 설정 대화 상자를 닫습니다.
 
@@ -150,18 +157,25 @@
  
 8.	ADLS 데이터 원본의 경우 **계정 키** 옵션을 선택하고 **환경 변수** 탭(랩 가이드 옆)에 있는 **Adls
 스토리지 계정 액세스 키**를 입력합니다.
-9.	**ADLSData** 폴더에는 Geo, Product, Reseller, Date 등 다양한 차원(dimension)이 있습니다. Sales
-팩트도 있습니다.
-   a.	**Geo 차원**은 Cities, Countries, 및 States 쿼리의 데이터를 병합하여 생성됩니다.
-   b.	**Product 차원**은 Product Groups 및 Product Item Group 쿼리의 데이터를 병합하여 생성됩니다.
-   c.	**Reseller 차원**은 BuyingGroup 쿼리를 사용하여 필터링됩니다.
-   d.	**Sales 팩트**는 InvoiceLineItems를 Invoice 쿼리와 병합하여 생성됩니다.
+
+9. **ADLSData** 폴더에는 Geo, Product, Reseller, Date 등 다양한 차원(dimension)이 있습니다. Sales 팩트도 있습니다.
+
+   a. **Geo 차원**은 Cities, Countries, 및 States 쿼리의 데이터를 병합하여 생성됩니다.
+   
+   b. **Product 차원**은 Product Groups 및 Product Item Group 쿼리의 데이터를 병합하여 생성됩니다.
+   
+   c. **Reseller 차원**은 BuyingGroup 쿼리를 사용하여 필터링됩니다.
+   
+   d. **Sales 팩트**는 InvoiceLineItems를 Invoice 쿼리와 병합하여 생성됩니다.
+
 10.	Snowflake 데이터 원본의 경우, **환경 변수** 탭(랩 가이드 옆)에 있는 **Snowflake 사용자 이름
 및 Snowflake 암호**를 사용합니다.
 
-12.	**SnowflakeData** 폴더에는 Supplier 차원과 PO(주문/지출) 팩트가 있습니다.
-    a.	**Supplier 차원**은 Suppliers 쿼리와 SupplierCategories 쿼리를 병합하여 생성됩니다.
-    b.	**PO 팩트**는 PO와 PO Line Items 쿼리를 병합하여 생성됩니다.
+12. **SnowflakeData** 폴더에는 Supplier 차원과 PO(주문/지출) 팩트가 있습니다.
+
+    a. **Supplier 차원**은 Suppliers 쿼리와 SupplierCategories 쿼리를 병합하여 생성됩니다.
+    
+    b. **PO 팩트**는 PO와 PO Line Items 쿼리를 병합하여 생성됩니다.
    	
 14.	SharePoint 데이터 원본의 경우, **환경 변수** 탭(랩 가이드 옆)에 있는 **사용자 이름** 및 **암호**를 입력합니다. Microsoft 계정 옵션을 선택합니다.
  
