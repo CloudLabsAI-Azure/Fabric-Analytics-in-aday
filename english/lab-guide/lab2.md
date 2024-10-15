@@ -106,7 +106,7 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
     
     d. **Quick Access:** This section lists the recently used or favorite items.
 
-    ![](../media/lab-02/f1.png)
+      ![](../media/lab-02/f1.png)
  
 ## Task 3: Data Activator Experience
 1. Select **Fabric experience selector icon** (currently set to Data Factory) on the bottom left of your screen. Fabric experience dialog opens.
@@ -117,7 +117,7 @@ Engineering, Data Science and Data Warehouse are Synapse experiences as these ex
 
     a. **Reflex:** Used to monitor datasets, queries, and event streams for patterns.
 
-    ![](../media/lab-03/f2.png)
+      ![](../media/lab-02/f2.png)
 
 ## Task 4: Industry Solutions Experience
 1. Select **Fabric experience selector icon** (currently set to Data Activator) on the bottom left of your screen. Fabric experience dialog opens.
