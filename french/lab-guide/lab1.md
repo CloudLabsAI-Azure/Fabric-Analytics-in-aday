@@ -91,7 +91,7 @@ l’environnement**.
 
 10.	La boîte de dialogue **Vous êtes prêt !** s’ouvre alors. Cliquez sur **Terminé**.
 
- Power BI Desktop s’ouvre alors.
+    Power BI Desktop s’ouvre alors.
 
 ## Tâche 2 : analyser l’état Power BI Desktop ##
 
@@ -135,14 +135,15 @@ cliquez sur la valeur hors norme en haut à droite (4e quadrant). Notez que le %
   
 8.	N’hésitez pas à analyser davantage l’état. Une fois prêt, jetez un œil à la vue de modèle. Dans le volet gauche, cliquez sur **Icône de vue de modèle**. Notez qu’il existe deux tables de fait : Sales et PO.
 
--  La granularité des données Sales est par date, revendeur, produit et personne. Les valeurs Date, Reseller, Product et People sont liées à la table Sales.
+    a. La granularité des données Sales est par date, revendeur, produit et personne. Les valeurs Date, Reseller, Product et People sont liées à la table Sales.
 
--  La granularité des données PO est par date, produit et personne. Les valeurs Date, Product et People sont liées à la table PO.
+    b. La granularité des données PO est par date, produit et personne. Les valeurs Date, Product et People sont liées à la table PO.
 
--  Nous disposons de données Supplier par produit. La valeur Supplier est liée à la table Product.
--  Nous disposons des données d’emplacement du Reseller par Geo. La valeur Geo est liée à la valeur Reseller.
+    c. Nous disposons de données Supplier par produit. La valeur Supplier est liée à la table Product.
 
--  Nous avons des informations Customer par Reseller. La valeur Customer est liée à la valeur Reseller.
+    d. Nous disposons des données d’emplacement du Reseller par Geo. La valeur Geo est liée à la valeur Reseller.
+
+    e. Nous avons des informations Customer par Reseller. La valeur Customer est liée à la valeur Reseller.
 
 ## Tâche 3 : examiner les requêtes Power Query ##
 
@@ -153,15 +154,16 @@ cliquez sur la valeur hors norme en haut à droite (4e quadrant). Notez que le %
 2.	Une fenêtre Power Query s’ouvre alors. Dans le ruban, cliquez sur **Accueil -> Paramètres de
 la source de données**. La boîte de dialogue Paramètres de la source de données s’ouvre alors. En parcourant la liste, notez que quatre sources de données principales sont mentionnées dans l’énoncé du problème :
 
-    -  Snowflake
+    a.  Snowflake
 
-    -  SharePoint
+    b.  SharePoint
 
-    -  ADLS Gen2
+    c.  ADLS Gen2
 
-    -  Dataverse
+    d.  Dataverse
  
 3.	Cliquez sur **Fermer** pour fermer la boîte de dialogue Paramètres de la source de données.
+
     ![](../media/lab-01/image042.png)
 
 4.	Dans le volet gauche Queries, notez que les requêtes sont regroupées par source de données.
@@ -178,22 +180,21 @@ différentes : BabyBoomer, GenX, GenY et GenZ. Ces quatre requêtes sont ajouté
 
 8.	Notez que le dossier **ADLSData** comporte plusieurs dimensions : Geo, Product, Reseller et Date. Il comporte également un fait Sales.
 
-  -  **La dimension Geo** est créée en fusionnant les données des requêtes Cities, Countries et States.
+    a. **La dimension Geo** est créée en fusionnant les données des requêtes Cities, Countries et States.
 
-  -  **La dimension Product** est créée en fusionnant les données des requêtes Product Groups et Product Item Group.
+    b.  **La dimension Product** est créée en fusionnant les données des requêtes Product Groups et Product Item Group.
 
-  -  **La dimension Reseller** est filtrée à l’aide de la requête BuyingGroup.
-  
-  -  **Le fait Sales** est créé en fusionnant la requête InvoiceLineItems avec la requête Invoice.
+    c.  **La dimension Reseller** est filtrée à l’aide de la requête BuyingGroup.
+    
+    d.  **Le fait Sales** est créé en fusionnant la requête InvoiceLineItems avec la requête Invoice.
 
-9.	Pour la source de données Snowflake, utilisez le **Nom d’utilisateur Snowflake** et le **Mot de passe Snowflake** disponibles dans l’onglet Variables d’environnement (en regard de l’onglet Guide du
-labo).
+9.	Pour la source de données Snowflake, utilisez le **Nom d’utilisateur Snowflake** et le **Mot de passe Snowflake** disponibles dans l’onglet **Variables d’environnement** (en regard de l’onglet Guide du labo).
 
 10.	Notez que le dossier **SnowflakeData** comporte une dimension Supplier et un fait PO (Commande/Dépense).
 
-  -  **La dimension Supplier** est créée en fusionnant la requête Suppliers avec la requête SupplierCategories.
+    a. **La dimension Supplier** est créée en fusionnant la requête Suppliers avec la requête SupplierCategories.
 
-  -  **Le fait PO** est créé en fusionnant la requête PO avec la requête PO Line Items.
+    b. **Le fait PO** est créé en fusionnant la requête PO avec la requête PO Line Items.
 
 11.	Pour la source de données SharePoint, saisissez le **Nom d’utilisateur** et le **Mot de passe** disponibles dans l’onglet **Variables d’environnement** (en regard de l’onglet Guide du labo). Veuillez sélectionner l’option Compte Microsoft.
 
