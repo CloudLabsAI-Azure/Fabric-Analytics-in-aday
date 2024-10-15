@@ -43,7 +43,7 @@ Al final de este laboratorio, habrá aprendido:
 
 Comencemos configurando una actualización programada del flujo de datos del proveedor.
 
-1. Volvamos al área de trabajo de Fabric, **FAIAD_<nombre de usuario>** seleccionando el área de trabajo en el panel izquierdo.
+1. Volvamos al área de trabajo de Fabric, **FAIAD_\<nombre de usuario>** seleccionando el área de trabajo en el panel izquierdo.
 
 2. Para maximizar el panel con la lista de artefactos, seleccione la flecha doble situada en la parte superior derecha del panel.
  
