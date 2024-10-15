@@ -107,7 +107,7 @@ El siguiente informe analiza las ventas de Fabrikam. Los KPI se enumeran en la p
 
    ![](../media/lab-01/image033.jpg)
  
-Se le dirigirá a la página que proporciona los detalles del producto. Tenga en cuenta que también hay algunos pedidos futuros.
+   Se le dirigirá a la página que proporciona los detalles del producto. Tenga en cuenta que también hay algunos pedidos futuros.
 
 7. Una vez que haya terminado de revisar esta página, seleccione **Ctrl+flecha** hacia atrás en la parte superior derecha de la página para volver al informe de ventas.
 

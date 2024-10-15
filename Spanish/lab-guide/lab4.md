@@ -269,7 +269,7 @@ Se establece la conexión y puede ver los datos en el panel de versión prelimin
 
     **Nota:** Si no ve las tablas recién creadas, seleccione los puntos suspensivos junto a Tables y seleccionar Actualizar para actualizar las tablas.
 
-Ahora creemos un acceso directo para traer datos de Dataverse.
+    Ahora creemos un acceso directo para traer datos de Dataverse.
 
 # Acceso directo a ADLS Gen2
 
@@ -347,7 +347,7 @@ Debe estar en el almacén de lago de datos lh_FAIAD. Asegúrese de estar en la v
 
     ![](../media/lab-04/image102.png)
  
-10.	Seleccione Crear en el siguiente cuadro de diálogo. Se le dirigirá de vuelta al almacén de lago de datos lh_FAIAD.
+10. Seleccione Crear en el siguiente cuadro de diálogo. Se le dirigirá de vuelta al almacén de lago de datos lh_FAIAD.
 
     ![](../media/lab-04/image105.png)
 

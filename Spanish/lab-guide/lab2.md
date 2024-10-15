@@ -50,7 +50,7 @@ Al final de este laboratorio, habrá aprendido:
 
 6. Asumimos que está familiarizado con el diseño del servicio Power BI. Si tiene alguna pregunta, no dude en preguntar.
 
-Actualmente, está en Mi área de trabajo. Para trabajar con elementos de Fabric, necesitará una licencia de prueba y un área de trabajo que tenga una licencia de Fabric asignada.
+   Actualmente, está en Mi área de trabajo. Para trabajar con elementos de Fabric, necesitará una licencia de prueba y un área de trabajo que tenga una licencia de Fabric asignada.
 
 7. En la esquina superior derecha de la pantalla, seleccione el **icono** del **usuario**.
 
@@ -85,8 +85,11 @@ Actualmente, está en Mi área de trabajo. Para trabajar con elementos de Fabric
    a. **Recomendado:** enumera los elementos disponibles en Data Factory: Flujo de datos Gen2, Canalización de datos, Flujo de trabajo de datos y API para GraphQL.
 
     - El flujo de datos de segunda generación es la nueva generación de flujos de datos.
+    
     - La canalización de datos se utiliza para la orquestación de datos.
+    
     - El flujo de trabajo de datos es el administrador de orquestación de flujo de trabajo.
+    
     - API para GraphQL es una API para consultar múltiples orígenes de datos.
 
    b. **Aprender:** esta sección proporciona acceso a documentación de aprendizaje de inicio rápido.
@@ -144,7 +147,7 @@ Actualmente, está en Mi área de trabajo. Para trabajar con elementos de Fabric
 
     ![](../media/lab-02/image039.jpg)
 
-**Nota:** Reflex también está disponible en experiencias de Data Activator.
+   **Nota:** Reflex también está disponible en experiencias de Data Activator.
  
 ### Tarea 6: Experiencia de Synapse Data Engineering
 
@@ -190,9 +193,9 @@ Actualmente, está en Mi área de trabajo. Para trabajar con elementos de Fabric
 
     g. **Use a sample:** solución de muestra.
 
-**Nota:** los elementos como Bloc de notas, Entorno, Canalización de datos, etc. están disponibles en múltiples experiencias, ya que son relevantes en cada una de estas experiencias.
+   **Nota:** los elementos como Bloc de notas, Entorno, Canalización de datos, etc. están disponibles en múltiples experiencias, ya que son relevantes en cada una de estas experiencias.
 
-![](../media/lab-02/image045.jpg)
+   ![](../media/lab-02/image045.jpg)
  
 ### Tarea 8: Experiencia de Synapse Data Warehouse
 
@@ -240,7 +243,7 @@ Actualmente, está en Mi área de trabajo. Para trabajar con elementos de Fabric
 
    ![](../media/lab-02/image057.jpg)
  
-Se crea una nueva área de trabajo y se nos dirige hasta ella. Traeremos datos de los diferentes orígenes de datos a un Lakehouse y utilizaremos los datos del Lakehouse para crear nuestro modelo y generar informes en él. El primer paso es crear un Lakehouse.
+   Se crea una nueva área de trabajo y se nos dirige hasta ella. Traeremos datos de los diferentes orígenes de datos a un Lakehouse y utilizaremos los datos del Lakehouse para crear nuestro modelo y generar informes en él. El primer paso es crear un Lakehouse.
 
 ### Tarea 10: Crear un Lakehouse
 
@@ -262,14 +265,13 @@ Se crea una nueva área de trabajo y se nos dirige hasta ella. Traeremos datos d
 
    ![](../media/lab-02/image066.png)
  
-En unos momentos, se crea un lakehouse y se le dirigirá a la interfaz del mismo.
-En el **panel izquierdo**, observe que debajo de su área de trabajo tendrá el icono del lakehouse. Puede navegar fácilmente hasta el lakehouse si hace clic en este icono en cualquier momento.
+   En unos momentos, se crea un lakehouse y se le dirigirá a la interfaz del mismo. En el **panel izquierdo**, observe que debajo de su área de trabajo tendrá el icono del lakehouse. Puede navegar fácilmente hasta el lakehouse si hace clic en este icono en cualquier momento.
 
-Dentro del explorador del lakehouse, verá **Tables** y **Files**. Lakehouse podría exponer archivos Azure Data Lake Storage Gen2 en la sección de archivos o un flujo de datos podría cargar datos en las tablas del lakehouse. Existen varias opciones disponibles. Le mostraremos algunas de las opciones en las siguientes prácticas de laboratorio.
+   Dentro del explorador del lakehouse, verá **Tables** y **Files**. Lakehouse podría exponer archivos Azure Data Lake Storage Gen2 en la sección de archivos o un flujo de datos podría cargar datos en las tablas del lakehouse. Existen varias opciones disponibles. Le mostraremos algunas de las opciones en las siguientes prácticas de laboratorio.
 
-![](../media/lab-02/image069.jpg)
- 
-En esta práctica de laboratorio, exploramos la interfaz de Fabric, creamos un área de trabajo de Fabric y un lakehouse. En el próximo laboratorio, aprenderemos a utilizar accesos directos en el almacén de lago de datos para conectarnos a los datos de ADLS Gen2 y a transformar estos datos mediante vistas.
+   ![](../media/lab-02/image069.jpg)
+   
+   En esta práctica de laboratorio, exploramos la interfaz de Fabric, creamos un área de trabajo de Fabric y un lakehouse. En el próximo laboratorio, aprenderemos a utilizar accesos directos en el almacén de lago de datos para conectarnos a los datos de ADLS Gen2 y a transformar estos datos mediante vistas.
 
 ## Referencias
 

@@ -52,7 +52,7 @@ El acceso directo se utiliza para crear un vínculo a la ubicación de destino. 
 
    ![](../media/lab-03/image009.jpg)
  
-6. Debe crear una conexión al origen de datos ADLS Gen2. En **Configuración de conexión -> Dirección URL**, introduzca este vínculo https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
+6. Debe crear una conexión a la fuente de datos de ADLS Gen2. En Configuración de conexión -> URL, ingrese este vínculo `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
 
 7. Seleccione **Clave de cuenta** en el menú desplegable Tipo de autenticación.
 
@@ -247,10 +247,15 @@ El siguiente paso es transformar los datos, para que podamos crear un modelo sem
 23. Se abrirá el cuadro de diálogo Elegir columnas. **Desmarque** las siguientes columnas.
 
     a. StateProvinceID
+    
     b. Location
+    
     c. LastEditedBy
+    
     d. ValidFrom
+    
     e. ValidTo
+    
     f. CountryID
 
 24. Seleccione **Aceptar**.
@@ -544,7 +549,7 @@ Vamos a crear la vista Producto, que se crea mediante la combinación de las tab
 
 12. **Pegue** el código siguiente en el Editor avanzado.
 
-   ```
+    ```
     let
     Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
     #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup", {"StockGroupID"}, {"StockGroupID"}),
@@ -553,7 +558,7 @@ Vamos a crear la vista Producto, que se crea mediante la combinación de las tab
     #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice", "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
     in
     #"Choose columns"
-   ```
+    ```
 
 13. Seleccione **Aceptar** para cerrar el Editor avanzado. Se le llevará de vuelta al Editor de Power Query.
 
