@@ -160,7 +160,7 @@ continuer. Cliquez sur les **points de suspension (…)** en regard de Dataflow 
 
    ![](../media/lab-04/image036.jpg)
 
-4. La boîte de dialogue Propriétés du flux de données s’ouvre alors. Redéfinissez le champ Nom sur **df_People_SharePoint.**
+4. La boîte de dialogue Propriétés du flux de données s’ouvre alors. Redéfinissez le champ **Nom** sur **df_People_SharePoint.**
 
 5. Dans la zone de texte **Description,** ajoutez **Dataflow to ingest People data from SharePoint to Lakehouse.**
 
