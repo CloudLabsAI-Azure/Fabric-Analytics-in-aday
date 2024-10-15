@@ -210,11 +210,11 @@ Commençons à créer le pipeline. Nous avons besoin d’une activité pour actu
 
     ![](../media/lab-05/image048.png)
 
-Notez les avantages d’utiliser le pipeline de données par rapport à la définition du flux de données sur une actualisation planifiée (comme nous l’avons fait pour les flux de données précédents) :
+    Notez les avantages d’utiliser le pipeline de données par rapport à la définition du flux de données sur une actualisation planifiée (comme nous l’avons fait pour les flux de données précédents) :
 
--   Le pipeline permet d’effectuer plusieurs tentatives avant l’échec de l’actualisation.
+    -   Le pipeline permet d’effectuer plusieurs tentatives avant l’échec de l’actualisation.
 
--   Le pipeline permet d’effectuer une actualisation en quelques secondes, alors qu’avec le flux de données, l’actualisation planifiée a lieu toutes les 30 minutes.
+    -   Le pipeline permet d’effectuer une actualisation en quelques secondes, alors qu’avec le flux de données, l’actualisation planifiée a lieu toutes les 30 minutes.
 
 ## Tâche 4 : créer un pipeline de données ##
 
@@ -224,7 +224,7 @@ Ajoutons un peu plus de complexité à notre scénario. Nous avons remarqué que
 
 2.	Dans le menu supérieur, cliquez sur Nouveau, puis sélectionnez **Pipeline de données** dans la **liste déroulante**.
 
-3.	La boîte de dialogue Nouveau pipeline s’ouvre alors. **Nommez** le pipeline
+3.	La boîte de dialogue **Nouveau** pipeline s’ouvre alors. **Nommez** le pipeline
 **pl_Refresh_People_SharePoint_Option2**.
  
 4.	Cliquez sur **Créer**.
@@ -253,7 +253,7 @@ Ajoutons un peu plus de complexité à notre scénario. Nous avons remarqué que
 
 3.	Cliquez sur **Nouveau** pour ajouter une nouvelle variable.
  
-4.	Notez qu’une ligne s’affiche. Saisissez **varCounter** dans la zone de texte Nom. Nous allons itérer trois fois à l’aide de cette variable.
+4.	Notez qu’une ligne s’affiche. Saisissez **varCounter** dans la zone de texte **Nom.** Nous allons itérer trois fois à l’aide de cette variable.
 
 5.	Dans la liste **déroulante Type**, sélectionnez **Integer**.
 
@@ -425,9 +425,9 @@ Nous avons configuré l’activité Flux de données comme nous l’avons fait p
 
 7.	Dans le volet inférieur, assurez-vous que le paramètre **Type de variable** est défini sur **Variable de pipeline**.
 
-8.	Dans le champ Nom, sélectionnez **varIsSuccess**. Il s’agit de la variable dont nous allons définir la valeur.
+8.	Dans le champ **Nom,** sélectionnez **varIsSuccess**. Il s’agit de la variable dont nous allons définir la valeur.
 
-9.	Dans le champ Valeur, cliquez sur la zone de texte. Cliquez sur le lien **Ajouter du contenu dynamique**.
+9.	Dans le champ **Valeur,** cliquez sur la **zone de texte.** Cliquez sur le lien **Ajouter du contenu dynamique**.
 
     ![](../media/lab-05/image102.png)
 
@@ -440,8 +440,7 @@ Nous avons configuré l’activité Flux de données comme nous l’avons fait p
 
     ![](../media/lab-05/image105.png)
 
-Nous devons maintenant définir le compteur si l’activité Flux de données échoue. Dans le pipeline de données, nous ne pouvons pas auto-référencer une variable. Autrement dit, nous ne pouvons pas
-incrémenter la variable de compteur varCounter en ajoutant un à sa valeur (varCounter = varCounter + 1). Nous utilisons donc la variable varTempCounter.
+    Nous devons maintenant définir le compteur si l’activité Flux de données échoue. Dans le pipeline de données, nous ne pouvons pas auto-référencer une variable. Autrement dit, nous ne pouvons pas incrémenter la variable de compteur varCounter en ajoutant un à sa valeur (varCounter = varCounter + 1). Nous utilisons donc la variable varTempCounter.
 
 
 ## Tâche 10 : configurer une 2e activité Définir une variable
@@ -479,7 +478,7 @@ Nous devons maintenant définir la valeur de la variable varCounter sur la valeu
 
 1.	Dans le menu supérieur, cliquez sur **Activités -> Définir une variable**. L’activité Définir une variable est alors ajoutée au canevas de conception.
 
-2.	Une fois l’activité **Définir une variable** sélectionnée, cliquez sur Général dans le volet inférieur. Donnons un nom et une description à l’activité.
+2.	Une fois l’activité **Définir une variable** sélectionnée, cliquez sur **Général** dans le volet inférieur. Donnons un nom et une description à l’activité.
 
 3.	Dans le champ **Nom**, saisissez **set_varCounter**.
 
@@ -639,6 +638,7 @@ Lisez les blogs d’annonces plus détaillés sur l’expérience Fabric :
 
 
 © 2023 Microsoft Corporation. Tous droits réservés.
+
 En effectuant cette démonstration/ce labo, vous acceptez les conditions suivantes :
 
 La technologie/fonctionnalité décrite dans cette démonstration/ces travaux pratiques est fournie par Microsoft Corporation en vue d’obtenir vos commentaires et de vous fournir une expérience d’apprentissage. Vous pouvez utiliser cette démonstration/ces ateliers uniquement pour évaluer ces technologies et fonctionnalités, et pour fournir des commentaires à Microsoft. Vous ne
