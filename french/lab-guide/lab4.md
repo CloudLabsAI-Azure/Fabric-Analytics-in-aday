@@ -1,5 +1,7 @@
 # Microsoft Fabric Fabric Analyst in a Day Labo 4
 
+   ![](../media/lab-04/image001.png)
+
 # Sommaire
 
 - Introduction
@@ -60,10 +62,13 @@ L’équipe informatique a déjà établi un lien vers Dataverse et appliqué le
 
 3. Cliquez sur **Data Factory** dans la boîte de dialogue. Vous êtes alors redirigé vers la **page d’accueil de Data Factory.**
 
+    ![](../media/lab-04/image006.jpg)
+
 4. Sous Éléments recommandés, cliquez sur **Flux de données Gen2.**
 
-Vous êtes alors redirigé vers la **page Dataflow.** L’interface Dataflow Gen2 ressemble à celle de Power Query dans Power BI Desktop. Nous pouvons copier des requêtes depuis Power BI Desktop dans 
-Dataflow Gen2. Essayons de le faire.
+    ![](../media/lab-04/image009.jpg)
+
+   Vous êtes alors redirigé vers la **page Dataflow.** L’interface Dataflow Gen2 ressemble à celle de Power Query dans Power BI Desktop. Nous pouvons copier des requêtes depuis Power BI Desktop dans Dataflow Gen2. Essayons de le faire.
 
 5. Si vous ne l’avez pas encore ouvert, ouvrez le fichier **FAIAD.pbix** situé dans le dossier **Reports** sur le bureau de votre environnement de labo. 
 
@@ -74,19 +79,21 @@ organisées par source de données.
 
 8. **Cliquez avec le bouton droit** et sélectionnez **Copier.**
 
+   ![](../media/lab-04/image012.png)
+
 9. Revenez à l’**écran Dataflow** dans le navigateur.
 
 10. Dans le **volet Dataflow,** utilisez le raccourci clavier **Ctrl + V.** (À l’heure actuelle, le clic droit sur Coller n’est pas pris en charge.) Si vous utilisez un appareil MAC, collez à l’aide du raccourci clavier Cmd + V.
 
-**Remarque :** si vous travaillez dans un environnement de labo, cliquez sur les points de suspension en haut de l’écran à droite. Utilisez le curseur pour **activer le Presse-papiers natif de VM.** Cliquez sur D’ACCORD dans la boîte de dialogue. Après avoir collé les requêtes, vous pouvez désactiver cette option.
+    **Remarque :** si vous travaillez dans un environnement de labo, cliquez sur les points de suspension en haut de l’écran à droite. Utilisez le curseur pour **activer le Presse-papiers natif de VM.** Cliquez sur D’ACCORD dans la boîte de dialogue. Après avoir collé les requêtes, vous pouvez désactiver cette option.
 
-Notez que la requête est collée et disponible dans le volet gauche. Comme nous n’avons pas de 
-connexion créée pour SharePoint, un message d’avertissement s’affiche pour vous demander de 
-configurer la connexion.
+    Notez que la requête est collée et disponible dans le volet gauche. Comme nous n’avons pas de connexion créée pour SharePoint, un message d’avertissement s’affiche pour vous demander de configurer la connexion.
 
 ## Tâche 2 : créer une connexion SharePoint
 
 1. Cliquez sur **Configurer la connexion.**
+
+   ![](../media/lab-04/image015.jpg)
 
 2. La boîte de dialogue Connexion à une source de données s’ouvre alors. Dans la liste déroulante 
 **Connexion,** assurez-vous que l’option **Créer une connexion** est sélectionnée.
@@ -95,7 +102,9 @@ configurer la connexion.
 
 4. Cliquez sur **Connexion.**
 
-  **Remarque :** vous êtes connecté à l’aide de vos informations d’identification. Elles sont différentes de celles figurant dans la capture d’écran ci-dessous.
+   **Remarque :** vous êtes connecté à l’aide de vos informations d’identification. Elles sont différentes de celles figurant dans la capture d’écran ci-dessous.
+
+   ![](../media/lab-04/image018.png)
 
 ## Tâche 3 : configurer la destination des données pour la requête People
 
@@ -105,8 +114,13 @@ La connexion est alors établie et vous pouvez afficher les données dans le vol
 
 2. Dans le ruban, cliquez sur **Accueil -> Ajouter une destination de données -> Lakehouse.**
 
+   ![](../media/lab-04/image021.jpg)
+
 3. La boîte de dialogue Se connecter à la destination des données s’ouvre alors. Nous devons créer une connexion à la lakehouse. Avec l’option **Créer une connexion** sélectionnée dans la liste 
-déroulante **Connexion** et le champ **Type d’authentification** défini sur **Compteprofessionnel,** cliquez sur **Suivant.**
+déroulante **Connexion** et le champ **Type d’authentification** défini sur 
+ **Compteprofessionnel,** cliquez sur **Suivant.**
+
+    ![](../media/lab-04/image024.jpg)
 
 4. La boîte de dialogue Choisir la cible de destination s’ouvre alors. Assurez-vous que le bouton radio **Nouvelle table** est coché, car nous créons une table.
 
@@ -117,15 +131,18 @@ déroulante **Connexion** et le champ **Type d’authentification** défini sur 
 7. Laissez le champ Nom de la table défini sur 
    **People.**
 
-
 8. Cliquez sur **Suivant.**
+
+   ![](../media/lab-04/image027.png)
 
 9. La boîte de dialogue Choisir les paramètres de destination s’ouvre alors. Assurez-vous que 
 l’option « **Utiliser les paramètres automatiques** » est **activée.** 
 
-  **Remarque :** vous pouvez désactiver les paramètres automatiques et notez que vous disposez d’options pour définir les options Méthode de mise à jour et Schéma. Ensuite, assurez-vous que l’option « **Utiliser les paramètres automatiques** » est **activée.** 
+   **Remarque :** vous pouvez désactiver les paramètres automatiques et notez que vous disposez d’options pour définir les options Méthode de mise à jour et Schéma. Ensuite, assurez-vous que l’option « **Utiliser les paramètres automatiques** » est **activée.** 
 
 10. Cliquez sur **Enregistrer les paramètres.**
+
+    ![](../media/lab-04/image030.png)
 
 ## Tâche 4 : publier et renommer le flux de données SharePoint
 
@@ -133,11 +150,15 @@ l’option « **Utiliser les paramètres automatiques** » est **activée.**
 
 2. Dans le coin inférieur droit, cliquez sur **Publier.**
 
- **Remarque :** vous êtes alors redirigé vers l’espace de travail **FAIAD_<username>.** La publication du flux de données peut prendre quelques instants.
+   ![](../media/lab-04/image033.jpg)
+
+   **Remarque :** vous êtes alors redirigé vers l’espace de travail **FAIAD_<username>.** La publication du flux de données peut prendre quelques instants.
 
 3. Dataflow 1 est le flux de données dans lequel nous travaillions. Renommons-le avant de 
 continuer. Cliquez sur les **points de suspension (…)** en regard de Dataflow 1. Sélectionnez 
 **Propriétés.**
+
+   ![](../media/lab-04/image036.jpg)
 
 4. La boîte de dialogue Propriétés du flux de données s’ouvre alors. Redéfinissez le champ Nom sur **df_People_SharePoint.**
 
@@ -145,8 +166,9 @@ continuer. Cliquez sur les **points de suspension (…)** en regard de Dataflow 
 
 6. Cliquez sur **Enregistrer.**
 
+   ![](../media/lab-04/image039.png)
 
-Vous êtes alors redirigé vers l’espace de travail **FAIAD_<username>.** 
+   Vous êtes alors redirigé vers l’espace de travail **FAIAD_<username>.** 
 
 7. Cliquez sur **lh_FAIAD** pour accéder à la lakehouse.
 
@@ -155,10 +177,9 @@ analytique SQL).
 
 9. Notez que nous disposons maintenant d’une table **People** dans la lakehouse.
 
-**Remarque :** si vous ne voyez pas les tables venant d’être créées, cliquez sur les points de suspension en regard de Tables et sélectionnez Actualiser pour actualiser les tables.
+   **Remarque :** si vous ne voyez pas les tables venant d’être créées, cliquez sur les points de suspension en regard de Tables et sélectionnez Actualiser pour actualiser les tables.
 
-Nous avons maintenant ingéré toutes les données dans Lakehouse. Dans le prochain labo, nous 
-allons planifier l’actualisation de Dataflow.
+    Nous avons maintenant ingéré toutes les données dans Lakehouse. Dans le prochain labo, nous allons planifier l’actualisation de Dataflow.
 
 ## Tâche 5 : copier des requêtes Snowflake dans Dataflow
 
@@ -166,7 +187,9 @@ allons planifier l’actualisation de Dataflow.
 
 2. Dans le menu supérieur, cliquez sur **Nouveau -> Flux de données Gen2.**
 
-Vous êtes alors redirigé vers la **page Dataflow.** Maintenant que nous connaissons Dataflow, copions les requêtes de Power BI Desktop dans Dataflow.
+    ![](../media/lab-04/image042.jpg)
+
+   Vous êtes alors redirigé vers la **page Dataflow.** Maintenant que nous connaissons Dataflow, copions les requêtes de Power BI Desktop dans Dataflow.
 
 3. Si vous ne l’avez pas encore ouvert, ouvrez le fichier **FAIAD.pbix** situé dans le dossier **Reports** sur le bureau de votre environnement de labo. 
 
@@ -175,31 +198,36 @@ organisées par source de données.
 
 5. Dans le volet gauche, sous le dossier SnowflakeData, appuyez sur la touche **Ctrl** ou Maj et sélectionnez les requêtes suivantes :
 
-a. SupplierCategories
+    a. SupplierCategories
 
-b. Suppliers
+    b. Suppliers
 
-c. Supplier
+    c. Supplier
 
-d. PO
+    d. PO
 
-e. PO Line Items
+    e. PO Line Items
 
 
 6. **Cliquez avec le bouton droit** et sélectionnez **Copier.**
+
+   ![](../media/lab-04/image045.png)
 
 7. Revenez au **navigateur.**
 
 8. Dans le **volet Dataflow,** cliquez sur le **volet central** et utilisez le raccourci clavier **Ctrl + V.** (À l’heure actuelle, le clic droit sur Coller n’est pas pris en charge.) Si vous utilisez un appareil MAC, collez à l’aide du raccourci clavier Cmd + V.
 
-**Remarque :** si vous travaillez dans un environnement de labo, cliquez sur les points de suspension en haut de l’écran à droite. Utilisez le curseur pour **activer le Presse-papiers natif de VM.** Cliquez sur D’ACCORD dans la boîte de dialogue. Après avoir collé les requêtes, vous pouvez désactiver cette 
-option.
+   **Remarque :** si vous travaillez dans un environnement de labo, cliquez sur les points de suspension en haut de l’écran à droite. Utilisez le curseur pour **activer le Presse-papiers natif de VM.** Cliquez sur D’ACCORD dans la boîte de dialogue. Après avoir collé les requêtes, vous pouvez désactiver cette option.
+
+   ![](../media/lab-04/image048.jpg)
 
 ## Tâche 6 : créer une connexion à Snowflake
+
 Notez que les cinq requêtes sont collées et que vous disposez désormais du volet Requêtes à gauche. Comme nous n’avons pas de connexion créée pour Snowflake, un message d’avertissement s’affiche pour vous demander de configurer la connexion.
 
 1. Cliquez sur **Configurer la connexion.**
 
+   ![](../media/lab-04/image051.jpg)
 
 2. La boîte de dialogue Connexion à une source de données s’ouvre alors. Dans la liste déroulante 
 **Connexion,** assurez-vous que l’option Créer une connexion est sélectionnée.
@@ -210,10 +238,9 @@ Notez que les cinq requêtes sont collées et que vous disposez désormais du vo
 
 5. Cliquez sur **Connexion.**
 
-La connexion est alors établie et vous pouvez afficher les données dans le volet d’aperçu. N’hésitez pas à parcourir les étapes appliquées des requêtes. En substance, la requête Suppliers comporte les détails des fournisseurs et la requête SupplierCategories, comme son nom l’indique, comporte des catégories de fournisseurs. Ces deux tables sont jointes pour créer la dimension Supplier, avec les 
-colonnes dont nous avons besoin. De même, nous avons fusionné la requête PO Line Items avec la 
-requête PO pour créer le fait PO. Nous devons maintenant ingérer les données Supplier et PO dans 
-Lakehouse.
+   ![](../media/lab-04/image054.png)
+
+   La connexion est alors établie et vous pouvez afficher les données dans le volet d’aperçu. N’hésitez pas à parcourir les étapes appliquées des requêtes. En substance, la requête Suppliers comporte les détails des fournisseurs et la requête SupplierCategories, comme son nom l’indique, comporte des catégories de fournisseurs. Ces deux tables sont jointes pour créer la dimension Supplier, avec les colonnes dont nous avons besoin. De même, nous avons fusionné la requête PO Line Items avec la requête PO pour créer le fait PO. Nous devons maintenant ingérer les données Supplier et PO dans Lakehouse.
 
 ## Tâche 7 : configurer la destination des données pour les requêtes Supplier et PO
 
@@ -221,9 +248,13 @@ Lakehouse.
 
 2. Dans le ruban, cliquez sur **Accueil -> Ajouter une destination de données -> Lakehouse.**
 
+   ![](../media/lab-04/image057.jpg)
+
 3. La boîte de dialogue Se connecter à la destination des données s’ouvre alors. Dans la liste déroulante **Connexion,** sélectionnez **Lakehouse (aucun).**
 
 4. Cliquez sur **Suivant.**
+
+   ![](../media/lab-04/image060.png)
 
 5. La boîte de dialogue Choisir la cible de destination s’ouvre alors. Assurez-vous que le **bouton radio Nouvelle table** est **coché,** car nous créons une table.
 
@@ -235,10 +266,16 @@ Lakehouse.
 
 9. Cliquez sur **Suivant.**
 
+   ![](../media/lab-04/image063.png)
+
 10. La boîte de dialogue Choisir les paramètres de destination s’ouvre alors. Nous allons utiliser les paramètres automatiques pour permettre une mise à jour complète des données. De plus, les 
 colonnes seront renommées si nécessaire. Cliquez sur **Enregistrer les paramètres.**
 
+    ![](../media/lab-04/image066.png)
+
 11. Vous êtes redirigé vers la **fenêtre Power Query.** Dans le **coin inférieur droit,** notez que la liste déroulante Destination des données est définie sur **Lakehouse.** De même, **configurez la destination des données pour la requête PO.** Ensuite, la liste déroulante **Destination des données** de votre requête PO devrait être définie sur **Lakehouse,** comme illustré dans la capture d’écran ci-dessous.
+
+    ![](../media/lab-04/image069.jpg)
 
 ## Tâche 8 : renommer et publier le flux de données Snowflake
 
@@ -248,10 +285,13 @@ colonnes seront renommées si nécessaire. Cliquez sur **Enregistrer les paramè
 
 3. Appuyez sur **Entrée** pour enregistrer le changement de nom.
 
+   ![](../media/lab-04/image072.png)
 
 4. Dans le coin inférieur droit, cliquez sur **Publier.**
 
-Vous êtes alors redirigé vers l’espace de travail **FAIAD_<username>.** La publication du flux de 
+   ![](../media/lab-04/image075.jpg)
+
+   Vous êtes alors redirigé vers l’espace de travail **FAIAD_<username>.** La publication du flux de 
 données peut prendre quelques instants. 
 
 5. Cliquez sur **lh_FAIAD** pour accéder à la lakehouse.
@@ -261,9 +301,9 @@ analytique SQL).
 
 7. Notez que nous disposons maintenant de tables **PO** et **Supplier** dans la lakehouse.
 
-**Remarque :** si vous ne voyez pas les tables venant d’être créées, cliquez sur les points de suspension en regard de Tables et sélectionnez Actualiser pour actualiser les tables.
+   **Remarque :** si vous ne voyez pas les tables venant d’être créées, cliquez sur les points de suspension en regard de Tables et sélectionnez Actualiser pour actualiser les tables.
 
-Créons maintenant un raccourci permettant d’importer les données de Dataverse.
+   Créons maintenant un raccourci permettant d’importer les données de Dataverse.
 
 # Raccourci vers ADLS Gen2
 
@@ -271,14 +311,20 @@ Créons maintenant un raccourci permettant d’importer les données de Datavers
 
 Vous devriez être dans la lakehouse **lh_FAIAD.** Vérifiez que vous vous trouvez dans la vue Lakehouse (et non dans le point de terminaison analytique SQL).
 
+  ![](../media/lab-04/image078.jpg)
+
 1. Dans le volet **Explorateur**, cliquez sur les **points de suspension** en regard de **Tables.**
 
 2. Cliquez sur **Nouveau raccourci.**
 
+   ![](../media/lab-04/image081.jpg)
+
 3. La boîte de dialogue Nouveau raccourci s’ouvre alors. Sous **Sources externes,** sélectionnez 
 **Dataverse.**
 
-  **Remarque :** dans le labo précédent, nous avons procédé de même pour créer un raccourci vers Azure Data Lake Storage Gen2. 
+   **Remarque :** dans le labo précédent, nous avons procédé de même pour créer un raccourci vers Azure Data Lake Storage Gen2. 
+
+   ![](../media/lab-04/image084.jpg)
 
 4. La boîte de dialogue Paramètres de connexion 
    s’ouvre alors. Saisissez **org6c18814a.crm.dynamics.**com dans le champ **Domaine de l’environnement.**
@@ -287,28 +333,26 @@ Vous devriez être dans la lakehouse **lh_FAIAD.** Vérifiez que vous vous trouv
 
 6. Cliquez sur **Se connecter.**
 
+   ![](../media/lab-04/image087.jpg)
+
 7. La boîte de dialogue Connectez-vous à votre 
    compte s’ouvre alors. **Choisissez votre compte** pour vous connecter.
 
    **Remarque :** votre compte est différent de celui figurant dans la capture d’écran ci-dessous.
 
-
+   ![](../media/lab-04/image090.png)
 
 8. Cliquez sur **Suivant** dans la boîte de dialogue Paramètres de connexion.
 
-Vous êtes alors redirigé vers une boîte de dialogue dans laquelle vous pouvez sélectionner les différents compartiments/répertoires depuis Dataverse. Notez que de nombreux compartiments 
-différents sont disponibles. Nous pouvons choisir le(s) compartiment(s) dont nous avons besoin et 
-procéder de même que dans le labo 3 (transformer les données et créer des vues à l’aide d’une 
-requête visuelle). Nous pouvons également utiliser Dataflow Gen2 comme il nous a permis 
-précédemment dans ce labo de nous connecter à SharePoint. Cependant, nous souhaitons vous 
-informer d’une autre option disponible.
+   Vous êtes alors redirigé vers une boîte de dialogue dans laquelle vous pouvez sélectionner les différents compartiments/répertoires depuis Dataverse. Notez que de nombreux compartiments 
+  différents sont disponibles. Nous pouvons choisir le(s) compartiment(s) dont nous avons besoin et procéder de même que dans le labo 3 (transformer les données et créer des vues à l’aide d’une requête visuelle). Nous pouvons également utiliser Dataflow Gen2 comme il nous a permis précédemment dans ce labo de nous connecter à SharePoint. Cependant, nous souhaitons vous informer d’une autre option disponible.
 
-Dans notre scénario, l’équipe informatique a déjà établi un lien vers Dataverse et appliqué les 
-transformations de données nécessaires, en miroir de celles du fichier Power BI Desktop. Elle a 
-ingéré ces données dans Lakehouse dans l’espace de travail Administration et nous a donné accès à 
-la table/aux tables. Puisque notre équipe informatique a déjà fait le plus dur, nous pouvons créer un raccourci vers cette lakehouse dans l’espace de travail Administration.
+   Dans notre scénario, l’équipe informatique a déjà établi un lien vers Dataverse et appliqué les transformations de données nécessaires, en miroir de celles du fichier Power BI Desktop. Elle a ingéré ces données dans Lakehouse dans l’espace de travail Administration et nous a donné accès à la table/aux tables. Puisque notre équipe informatique a déjà fait le plus dur, nous pouvons créer un raccourci vers cette lakehouse dans l’espace de travail Administration.
 
 9. Cliquez sur **Annuler** dans la boîte de dialogue Nouveau raccourci pour revenir à la lakehouse.
+
+    ![](../media/lab-04/image093.jpg)
+
 
 ## Tâche 6 : créer un raccourci vers Lakehouse
 
@@ -316,19 +360,26 @@ la table/aux tables. Puisque notre équipe informatique a déjà fait le plus du
 
 2. Cliquez sur **Nouveau raccourci.**
 
+    ![](../media/lab-04/image111.png)
+
 3. La boîte de dialogue Nouveau raccourci s’ouvre alors. Sélectionnez l’option **Microsoft OneLake**
 sous Sources internes.
+
+     ![](../media/lab-04/image098.jpg)
+
 
 4. La boîte de dialogue Sélectionner un type de source des données s’ouvre alors. Notez que vous 
 disposez de deux sources de données.
 
-  a. lh_FAIAD : il s’agit de la lakehouse que vous avez créée.
+      a. lh_FAIAD : il s’agit de la lakehouse que vous avez créée.
 
-  b. lh_dataverse : il s’agit de la lakehouse créée par l’administrateur.
+      b. lh_dataverse : il s’agit de la lakehouse créée par l’administrateur.
 
 5. Sélectionnez **lh_dataverse.**
 
 6. Cliquez sur **Suivant.**
+
+   ![](../media/lab-04/image101.jpg)
 
 7. Dans le volet gauche, développez *lh_dataverse -> Tables.* Notez que l’administrateur 
 informatique a accordé un accès à la table Customer.
@@ -337,8 +388,11 @@ informatique a accordé un accès à la table Customer.
 
 9. Cliquez sur **Suivant.**
 
+   ![](../media/lab-04/image104.jpg)
 
 10. Cliquez sur **Créer** dans la boîte de dialogue suivante. Vous êtes alors redirigé vers la lakehouse lh_FAIAD.
+
+    ![](../media/lab-04/image107.jpg)
 
 11. Dans le volet **Explorateur** à gauche, notez la création de la table **Customer.**
 
@@ -352,7 +406,7 @@ Dans le prochain labo, nous allons configurer des actualisations planifiées.
 
 Fabric Analyst in a Day (FAIAD) vous présente certaines des fonctions clés de Microsoft Fabric. Dans le menu du service, la section Aide (?) comporte des liens vers d’excellentes ressources.
 
-![](../media/lab-03/image164.png)
+ ![](../media/lab-04/image110.png)
 
 Voici quelques autres ressources qui vous aideront lors de vos prochaines étapes avec Microsoft Fabric :
 - Consultez le billet de blog pour lire l’intégralité de l’[annonce de la GA de Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23).
