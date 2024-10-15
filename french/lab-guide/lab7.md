@@ -331,7 +331,7 @@ Notez à quel point il est facile de mettre à jour le modèle sémantique lors 
 
 2. Faites glisser le champ **Reseller -> Reseller Company** vers la section **Légende**.
 
-![](../media/lab-07/image086.png)
+![](../media/lab-07/image086.jpg)
 
 3. Une fois le visuel **Graphique en courbes** sélectionné, cliquez sur l’icône **Mettre en forme le visuel -> Général** dans la section **Visualisations**.
 
@@ -343,7 +343,7 @@ Notez à quel point il est facile de mettre à jour le modèle sémantique lors 
 
 7. Réglez le curseur **Arrière-plan** sur **Désactivé**.
 
-![](../media/lab-07/image089.jpg)
+![](../media/lab-07/image089.png)
 
 8. Dans la section **Visualisations**, cliquez sur l’icône **Mettre en forme le visuel -> Objet visuel**.
 
@@ -375,7 +375,7 @@ Voyons maintenant à quel point il est facile de connecter Power BI Desktop au m
 
 2. Dans le ruban, cliquez sur **Accueil -> Hub de données OneLake -> Modèles sémantiques Power BI**.
 
-![](../media/lab-07/image095.png)
+![](../media/lab-07/image095.jpg)
 
 3. La boîte de dialogue Hub de données OneLake s’ouvre alors. Sélectionnez **sm_FAIAD**, le modèle sémantique que nous avons créé.
 
@@ -401,7 +401,7 @@ Voyons maintenant à quel point il est facile de connecter Power BI Desktop au m
 
 11. Dans le ruban, cliquez sur **Accueil -> Coller**.
 
-![](../media/lab-07/image107.jpg)
+![](../media/lab-07/image107.png)
 
 12. De même, copiez-collez les **KPI Sales et Units**. Pour votre information, plusieurs visuels peuvent être copiés-collés ensemble.
 
@@ -419,7 +419,7 @@ Notez qu’il est facile de copier les visuels d’un état existant et de les c
 
 17. Résolvons ce problème. Dans le volet **Visualisation**, sous l’**axe des X**, supprimez **StartOfMonth**.
 
-![](../media/lab-07/image113.png)
+![](../media/lab-07/image113.jpg)
 
 18. Dans le volet **Données**, développez la table **Date**.
 
