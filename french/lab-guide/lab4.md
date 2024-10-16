@@ -1,6 +1,6 @@
 # Microsoft Fabric - Analyste Fabric en un jour - Laboratoire 4
 
-   ![](../media/lab-04/image001.png)
+![](../media/lab-04/image001.png)
 
 # Sommaire
 

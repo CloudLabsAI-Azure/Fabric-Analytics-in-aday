@@ -164,9 +164,9 @@ différentes : BabyBoomer, GenX, GenY et GenZ. Ces quatre requêtes sont ajouté
 
 6. Vous pouvez saisir les informations d’identification de la source de données Dataverse en saisissant le **Nom d’utilisateur** et le **Mot de passe** disponibles dans l’onglet **Variables d’environnement** (en regard de l’onglet Guide du labo). Veuillez sélectionner l’option Compte Microsoft.
  
-    ![](../media/lab-01/image045.jpg)
+    ![](../media/lab-01/16-10-24(2).png)
 
-7. Pour la source de données ADLS, utilisez l’option **Clé de compte** et saisissez la **Clé d’accès au compte de stockage Adls** disponible dans l’onglet **Variables d’environnement** (en regard de l’onglet Guide du labo).
+7. Pour la source de données ADLS, utilisez l’option **Signature d’accès partagé (SAS)** et saisissez le **jeton SAS** disponible dans l’onglet **Environnement** (à côté du Guide de laboratoire).
 
 8. Notez que le dossier **ADLSData** comporte plusieurs dimensions : Geo, Product, Reseller et Date. Il comporte également un fait Sales.
 

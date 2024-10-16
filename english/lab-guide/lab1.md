@@ -153,6 +153,7 @@ available in Fabric. We will not be focusing on report development or navigation
     ![](../media/lab-01/11-10-24.png)
  
 7. For ADLS data source, use the **Shared access signature (SAS)** option and enter the **SAS token** that is available in the **Environment** tab (next to the Lab Guide).
+
 8. Notice the **ADLSData** folder has multiple dimensions: Geo, Product, Reseller, and Date. It also has Sales fact.
 
     a. **Geo dimension** is created by merging data from Cities, Countries, and States query.

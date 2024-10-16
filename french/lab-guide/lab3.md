@@ -64,15 +64,13 @@ Un raccourci permet de créer un lien vers l’emplacement cible. Cela s’appar
 
    ![](../media/lab-03/image009.jpg)
 
-6. Vous devez créer une connexion à la source de données ADLS Gen2. Sous **Paramètres de connexion -> URL,** saisissez ce lien : 
+6. Vous devez créer une connexion à la source de données ADLS Gen2. Sous Paramètres de connexion -> URL, saisissez ce lien `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
 
-   https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
+7. Sélectionnez **Shared Access Signature (SAS)** dans la liste déroulante Type d'authentification.
 
-7. Sélectionnez **Clé de compte** dans la liste déroulante Type d’authentification.
+8. Copiez le **jeton SAS** depuis l'onglet **Variables d'environnement** (à côté de l'onglet Guide de laboratoire) et collez-le dans la zone **Jeton SAS**.
 
-8. Copiez la **clé d’accès du compte de stockage Adls** depuis **l’onglet Variables d’environnement** (en regard de l’onglet Guide du labo) et collez-la dans la **zone de texte Clé de compte**.
-
-9. Cliquez sur **Suivant** en bas de l’écran à droite.
+9. Sélectionnez **Suivant** en bas à droite de l'écran.
 
    ![](../media/lab-03/image012.jpg)
 

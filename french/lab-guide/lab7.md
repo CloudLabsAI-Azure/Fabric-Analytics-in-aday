@@ -631,7 +631,7 @@ ALTER VIEW [dbo].[Sales] AS (
     WHERE [$Outer].[CustomerID] = [$Inner].[ResellerID] OR [$Outer].[CustomerID] IS NULL AND [$Inner].[ResellerID] IS NULL
   )
 )
-```    
+```   
 
 19. Dans le menu de requête visuelle, cliquez sur **Exécuter** pour exécuter le code.
     Une fois le code exécuté, nous avons mis à jour la table Sales pour y inclure les données de mai 2024.
