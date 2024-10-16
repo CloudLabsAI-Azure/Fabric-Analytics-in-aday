@@ -454,8 +454,8 @@ varTempCounter 的值设置为变量varCounter 的值加 1，(varTempCounter = v
 
     我们在这里使用两个新函数：
 
-- **greater：** 以两个数字为参数，比较哪个数字更大。
-- **mul：** 这是一个乘法函数，它使用两个参数相乘。
+    - **greater：** 以两个数字为参数，比较哪个数字更大。
+    - **mul：** 这是一个乘法函数，它使用两个参数相乘。
 
     该表达式是一个嵌套的if 语句。它检查varCounter 变量的值是否大于 1。如果为true，则检查varCounter 变量的值是否为 2。如果为true，则将等待时间设置为varWaitTime 乘以 15。请注意，我们已经默认了varWaitTime 值设置为 60。因此 60*15 = 900 秒。如果varCounter 变量的值不是 2（大于 2，这意味着数据流刷新已失败 3 次），我们就结束迭代。不再继续等待），等待时间设置为varWaitTime * 0，因此设置为 0。如果 varCounter 变量的值为 1，便乘以varWaitTime * 5，那就是 60*5 = 300 秒。
 
