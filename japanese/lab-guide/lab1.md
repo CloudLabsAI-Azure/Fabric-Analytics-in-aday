@@ -194,8 +194,7 @@ Fabric の説明を始める前に、変換とモデルについて理解する�
 
     b. PO ファクトは、PO と PO Line Items のクエリをマージすることで作成されます。 
 
-11. SharePoint データ ソースの場合は、**環境変数**タブ ([ラボ ガイド] の隣) で確認できる 
-**ユーザー名とパスワード**を入力します。Microsoft アカウントのオプションを選択してください。 
+11. SharePoint データ ソースの場合は、**環境変数**タブ ([ラボ ガイド] の隣) で確認できる **ユーザー名とパスワード**を入力します。Microsoft アカウントのオプションを選択してください。 
 
 12. **SharepointData** フォルダーには People ディメンションが含まれていることがわかります。 
 
@@ -232,8 +231,6 @@ Microsoft Fabric の次のステップに役立つリソースをいくつか以
 - [Fabric の管理とガバナンスに関するブログ](https://blog.fabric.microsoft.com/en-us/blog/administration-security-and-governance-in-microsoft-fabric/)
 - [Fabric の OneLake に関するブログ](https://blog.fabric.microsoft.com/en-us/blog/microsoft-onelake-in-fabric-the-onedrive-for-data/) 
 - [Dataverse とMicrosof t Fabric の統合に関するブログ](https://cloudblogs.microsoft.com/dynamics365/it/2023/05/24/new-dataverse-enhancements-and-ai-powered-productivity-with-microsoft-365-copilot/)
-
-
 
 © 2023 Microsoft Corporation. All rights reserved.
 
