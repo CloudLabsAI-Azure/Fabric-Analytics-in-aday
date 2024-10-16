@@ -25,12 +25,10 @@
     - Attività 7 - Esperienza Synapse Data Science
 
     - Attività 8 - Esperienza Synapse Data Warehouse
-    
+
 - Area di lavoro di Fabric
 
-    - Attività 9 - Creazione di un'area di lavoro di
-
-- Fabric
+    - Attività 9 - Creazione di un'area di lavoro di Fabric
 
     - Attività 10 - Creazione di un Lakehouse
 
