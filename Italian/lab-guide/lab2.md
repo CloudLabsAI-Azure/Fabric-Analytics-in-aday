@@ -218,7 +218,9 @@ presenti tre sezioni. Nella sezione Consigliato, notare gli elementi:
     f. **Import notebook:** permette di importare notebook dal computer locale.
 
     g. **Use a sample:** soluzione di esempio.
-    Nota: elementi come Notebook, Environment, Data pipeline e così via sono disponibili in più esperienze poiché sono rilevanti in ciascuna di esse.
+
+
+    **Nota:** elementi come Notebook, Environment, Data pipeline e così via sono disponibili in più esperienze poiché sono rilevanti in ciascuna di esse.
 
     ![](../media/lab-02/image045.jpg)
 
