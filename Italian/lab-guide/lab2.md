@@ -198,28 +198,27 @@ in basso a sinistra della schermata. Si apre la finestra di dialogo Esperienza F
 
 ## Attività 7 - Esperienza Synapse Data Science
 
-1. Selezionare l'icona selettore esperienza in Fabric (attualmente impostata su Data Engineering) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
+1. Selezionare l'icona **selettore esperienza in Fabric** (attualmente impostata su Data Engineering) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
 
-2. Selezionare Data Science. Si apre la home page di Data Science. Anche in questo caso sono 
+2. Selezionare **Data Science.** Si apre la **home page di Data Science.** Anche in questo caso sono 
 presenti tre sezioni. Nella sezione Consigliato, notare gli elementi:
 
-    a. ML model: consente di creare modelli di Machine Learning.
+    a. **ML model:** consente di creare modelli di Machine Learning.
 
-    b. Experiment: consente di creare, eseguire e monitorare lo sviluppo di più modelli.
+    b. **Experiment:** consente di creare, eseguire e monitorare lo sviluppo di più modelli.
 
-    c. Notebook: permette di esplorare dati e creare soluzioni di Machine Learning.
+    c. **Notebook:** permette di esplorare dati e creare soluzioni di Machine Learning.
 
-    d. Environment: usato per configurare librerie condivise, impostazioni di calcolo Spark e 
+    d. **Environment:** usato per configurare librerie condivise, impostazioni di calcolo Spark e 
     risorse per notebook e definizioni di processi Spark.
 
-    e. Competenza IA: usata per creare un'esperienza personale di intelligenza artificiale 
+    e. **Competenza IA:** usata per creare un'esperienza personale di intelligenza artificiale 
     generativa.
 
-    f. Import notebook: permette di importare notebook dal computer locale.
+    f. **Import notebook:** permette di importare notebook dal computer locale.
 
-    g. Use a sample: soluzione di esempio.
-    Nota: elementi come Notebook, Environment, Data pipeline e così via sono disponibili in più 
-    esperienze poiché sono rilevanti in ciascuna di esse.
+    g. **Use a sample:** soluzione di esempio.
+    Nota: elementi come Notebook, Environment, Data pipeline e così via sono disponibili in più esperienze poiché sono rilevanti in ciascuna di esse.
 
     ![](../media/lab-02/image045.jpg)
 
