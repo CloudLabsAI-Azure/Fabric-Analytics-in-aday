@@ -164,9 +164,9 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 
 9. Notare la tabella **People** ora disponibile nel lakehouse.
 
-**Nota**: se le tabelle appena create non sono visibili, selezionare i puntini di sospensione accanto a Tables e selezionare Aggiorna per aggiornare le tabelle.
+    **Nota**: se le tabelle appena create non sono visibili, selezionare i puntini di sospensione accanto a Tables e selezionare Aggiorna per aggiornare le tabelle.
 
-Ora abbiamo inserito tutti i dati nel lakehouse. Nel prossimo lab pianificheremo l'aggiornamento del flusso di dati.
+    Ora abbiamo inserito tutti i dati nel lakehouse. Nel prossimo lab pianificheremo l'aggiornamento del flusso di dati.
 
 ## Attività 5: Copia di query di Snowflake nel flusso di dati
 
@@ -379,8 +379,8 @@ Nel prossimo lab pianificheremo gli aggiornamenti della pianificazione.
 # Riferimenti
 
 Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità chiave disponibili in Microsoft Fabric. Nel menu di servizio, la sezione Guida (?) include collegamenti ad alcune risorse utili.
-\
-    ![](../media/lab-04/image109.png)
+
+![](../media/lab-04/image109.png)
 
 Di seguito sono riportate ulteriori risorse utili che consentiranno di progredire nell'uso di Microsoft Fabric.
 
