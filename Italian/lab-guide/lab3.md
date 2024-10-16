@@ -163,7 +163,7 @@ i nomi. Selezionare l'**icona Modifica** in Azioni per **Application.Cities.**
 
 ## Attività 2: Creazione di una vista Geo mediante le query visive
 
-1. Possiamo accedere al lakehouse usando un endpoint SQL. Ciò permette di eseguire query sui dati e creare viste. In alto a destra della schermata selezionare **Lakehouse -> Endpoint di Analisi SQL.**
+1. Possiamo accedere al lakehouse usando un endpoint SQL. Ciò permette di eseguire query sui dati e creare viste. In **alto a destra** della schermata selezionare **Lakehouse -> Endpoint di Analisi SQL.**
 
    ![](../media/lab-03/image027.jpg)
 
