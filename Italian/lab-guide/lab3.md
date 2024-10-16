@@ -416,7 +416,7 @@ della colonna BuyingGroupName** per renderla modificabile.
 
     ![](../media/lab-03/image093.jpg)
 
-Notare che nella tabella Customer sono documentati tutti i passaggi. Ora è il momento di salvare la vista.
+    Notare che nella tabella Customer sono documentati tutti i passaggi. Ora è il momento di salvare la vista.
 
 17. Dal menu Query visiva selezionare **Salvare come visualizzazione.**
 
@@ -473,7 +473,7 @@ join.
 
     Copiamo il codice da Power BI Desktop e lo incolliamo usando l'editor avanzato.
 
-11. Se non lo si è ancora aperto, aprire il file **FAIAD.pbix** nella cartella Reports sul desktop 
+11. Se non lo si è ancora aperto, aprire il file **FAIAD.pbix** nella cartella **Reports** sul desktop 
 dell'ambiente lab. 
 
 12. Nella barra multifunzione selezionare **Home -> Trasforma dati.** Si apre la finestra Power Query. Come si è notato nel lab precedente, le query nel pannello di sinistra sono organizzate per origine dati.
