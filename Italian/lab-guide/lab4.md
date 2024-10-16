@@ -28,7 +28,7 @@
 
     - Attività 9: Come creare un collegamento a Dataverse
 
-    - Attività 6: Creazione di un collegamento al lakehouse 
+    - Attività 10: Creazione di un collegamento al lakehouse 
 
 - Riferiment
 
@@ -331,7 +331,7 @@ Ci si dovrebbe trovare nel lakehouse **lh_FAIAD**. Accertarsi di essere nella vi
 
     ![](../media/lab-04/image092.jpg)
 
-## Attività 6: Creazione di un collegamento al lakehouse
+## Attività 10: Creazione di un collegamento al lakehouse
 
 1. Nel pannello **Explorer** selezionare i **puntini di sospensione** accanto a **Tables**.
 
