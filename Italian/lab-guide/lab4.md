@@ -41,8 +41,11 @@ Nel nostro scenario, i dati sui fornitori si trovano in Snowflake, i dati sui cl
 Il team IT ha già stabilito un collegamento a Dataverse e applicato le necessarie trasformazioni dei dati, eseguendone il mirroring nel file Power BI Desktop. Ha inserito questi dati nel lakehouse nell'area di lavoro di amministrazione e ha concesso l'accesso alle tabelle. Ora procederemo a creare un collegamento per il lakehouse creato dal team IT.
 
 In questo lab si apprenderà quanto segue: 
+
 - Come stabilire una connessione a SharePoint mediante Flusso di dati Gen2 e inserire dati in lakehouse.
+
 - Come stabilire una connessione a Snowflake tramite Flusso di dati Gen2 e inserire dati in Lakehouse.
+
 - Come inserire dati in un lakehouse condiviso.
 
 # Flusso di dati Gen2
@@ -61,7 +64,7 @@ In questo lab si apprenderà quanto segue:
 
     ![](../media/lab-04/image009.jpg)
 
-Verrà visualizzata la pagina **Flusso di dati**. L'interfaccia di Flusso di dati Gen2 è simile a Power Query in Power BI Desktop. Possiamo copiare le query da Power BI Desktop a Flusso di dati Gen2. Proviamo.
+    Verrà visualizzata la pagina **Flusso di dati**. L'interfaccia di Flusso di dati Gen2 è simile a Power Query in Power BI Desktop. Possiamo copiare le query da Power BI Desktop a Flusso di dati Gen2. Proviamo.
 
 5. Se non è già stato fatto, aprire il file **FAIAD.pbix** che si trova nella cartella **Reports** sul desktop dell'ambiente lab. 
 
@@ -77,9 +80,9 @@ Verrà visualizzata la pagina **Flusso di dati**. L'interfaccia di Flusso di dat
 
 10. Nel **riquadro Flusso di dati** premere **CTRL+V** (l'opzione Incolla del menu del pulsante destro non è attualmente supportata). Se si usa un dispositivo MAC, usare Cmd+V per incollare.
 
-**Nota**: se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per **abilitare VM Native Clipboard**. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
+    **Nota**: se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per **abilitare VM Native Clipboard**. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
 
-Notare che la query viene incollata ed è disponibile nel pannello di sinistra. Poiché non abbiamo creato una connessione a SharePoint, compare un messaggio di avviso che chiede di configurare la connessione.
+    Notare che la query viene incollata ed è disponibile nel pannello di sinistra. Poiché non abbiamo creato una connessione a SharePoint, compare un messaggio di avviso che chiede di configurare la connessione.
 
 ## Attività 2: Creazione della connessione a SharePoint
 
@@ -125,7 +128,7 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 
 9. Si apre la finestra di dialogo Scegli le impostazioni di destinazione. Assicurarsi che l'opzione "**Usa impostazioni automatiche**" sia **abilitata**. 
 
-**Nota**: se si disabilitano le impostazioni automatiche, si potrà notare che sono disponibili opzioni per impostare il metodo di aggiornamento e opzioni dello schema. Dopo aver vagliato le possibilità offerte, assicurarsi che l'opzione "**Usa impostazioni automatiche**" sia **abilitata**. 
+    **Nota**: se si disabilitano le impostazioni automatiche, si potrà notare che sono disponibili opzioni per impostare il metodo di aggiornamento e opzioni dello schema. Dopo aver vagliato le possibilità offerte, assicurarsi che l'opzione "**Usa impostazioni automatiche**" sia **abilitata**. 
 
 10. Selezionare **Salva impostazioni**.
 
@@ -153,7 +156,7 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 
     ![](../media/lab-04/image039.png)
 
-Si tornerà all'area di lavoro **FAIAD_\<nome utente>**.
+    Si tornerà all'area di lavoro **FAIAD_\<nome utente>**.
 
 7. Selezionare **lh_FAIAD** per spostarsi nel lakehouse.
 
@@ -173,7 +176,7 @@ Ora abbiamo inserito tutti i dati nel lakehouse. Nel prossimo lab pianificheremo
 
     ![](../media/lab-04/image042.png)
 
-Verrà visualizzata la pagina **Flusso di dati**. Ora che abbiamo familiarità con Flusso di dati, procediamo con la copia delle query da Power BI Desktop a Flusso di dati.
+    Verrà visualizzata la pagina **Flusso di dati**. Ora che abbiamo familiarità con Flusso di dati, procediamo con la copia delle query da Power BI Desktop a Flusso di dati.
 
 3. Se non è già stato fatto, aprire il file **FAIAD.pbix** che si trova nella cartella **Reports** sul desktop dell'ambiente lab. 
 
@@ -221,7 +224,7 @@ Notare che le cinque query vengono incollate e sulla sinistra è visualizzato il
 
     ![](../media/lab-04/image054.png)
 
-Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello di anteprima. Esplorare i Passaggi applicati delle query. In genere, la query Suppliers contiene i dettagli sui fornitori e SupplierCategories contiene le categorie di fornitori. Queste due tabelle vengono unite per creare la dimensione Supplier, con le colonne necessarie. Analogamente, PO Line Items viene unita con PO per creare il fatto PO. Ora dobbiamo inserire i dati di Supplier e PO in Lakehouse.
+    Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello di anteprima. Esplorare i Passaggi applicati delle query. In genere, la query Suppliers contiene i dettagli sui fornitori e SupplierCategories contiene le categorie di fornitori. Queste due tabelle vengono unite per creare la dimensione Supplier, con le colonne necessarie. Analogamente, PO Line Items viene unita con PO per creare il fatto PO. Ora dobbiamo inserire i dati di Supplier e PO in Lakehouse.
 
 ## Attività 7: Configurazione della destinazione dei dati per le query Supplier e PO
 
@@ -271,7 +274,7 @@ Viene stabilita la connessione ed è possibile visualizzare i dati nel pannello 
 
     ![](../media/lab-04/image074.jpg)
 
-Si tornerà all'area di lavoro **FAIAD_\<nome utente>**. La pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
+    Si tornerà all'area di lavoro **FAIAD_\<nome utente>**. La pubblicazione del flusso di dati potrebbe richiedere alcuni istanti.
 
 5. Selezionare **lh_FAIAD** per spostarsi nel lakehouse.
 
@@ -279,17 +282,17 @@ Si tornerà all'area di lavoro **FAIAD_\<nome utente>**. La pubblicazione del fl
 
 7. Notare le tabelle **PO** e **Supplier** ora disponibili nel lakehouse.
 
-**Nota**: se le tabelle appena create non sono visibili, selezionare i puntini di sospensione accanto a Tables e selezionare Aggiorna per aggiornare le tabelle.
+    **Nota**: se le tabelle appena create non sono visibili, selezionare i puntini di sospensione accanto a Tables e selezionare Aggiorna per aggiornare le tabelle.
 
-Ora creiamo un collegamento per importare i dati da Dataverse.
+    Ora creiamo un collegamento per importare i dati da Dataverse.
 
 # Collegamento ad ADLS Gen2
 
 ## Attività 9: Come creare un collegamento a Dataverse
 
 Ci si dovrebbe trovare nel lakehouse **lh_FAIAD**. Accertarsi di essere nella vista Lakehouse (non nell'endpoint di Analisi SQL).
-\
-    ![](../media/lab-04/image077.jpg)
+
+![](../media/lab-04/image077.jpg)
 
 1. Nel pannello **Explorer** selezionare i **puntini di sospensione** accanto a **Tables**.
 
@@ -320,11 +323,9 @@ Ci si dovrebbe trovare nel lakehouse **lh_FAIAD**. Accertarsi di essere nella vi
 
 8. Selezionare **Avanti** nella finestra di dialogo Impostazioni connessione.
 
-Si verrà indirizzati a una finestra di dialogo in cui sarà possibile scegliere un bucket/una directory diverso da Dataverse. Notare che sono presenti numerosi bucket diversi. Possiamo selezionare i bucket di cui abbiamo bisogno e seguire il processo come nel Lab 3 (usare una query visiva per trasformare i dati e creare viste). Possiamo anche usare il flusso di dati Gen2 come abbiamo fatto in precedenza in questo lab per stabilire una connessione a SharePoint. Tuttavia, vogliamo segnalare 
-un'altra opzione disponibile.
+    Si verrà indirizzati a una finestra di dialogo in cui sarà possibile scegliere un bucket/una directory diverso da Dataverse. Notare che sono presenti numerosi bucket diversi. Possiamo selezionare i bucket di cui abbiamo bisogno e seguire il processo come nel Lab 3 (usare una query visiva per trasformare i dati e creare viste). Possiamo anche usare il flusso di dati Gen2 come abbiamo fatto in precedenza in questo lab per stabilire una connessione a SharePoint. Tuttavia, vogliamo segnalare un'altra opzione disponibile.
 
-Nel nostro scenario, il team IT ha già stabilito un collegamento a Dataverse e applicato le necessarie trasformazioni dei dati, eseguendone il mirroring nel file Power BI Desktop. Ha inserito questi dati nel 
-lakehouse nell'area di lavoro di amministrazione e ha concesso l'accesso alle tabelle. Dal momento che il team IT ha già fatto la parte più complessa del lavoro, possiamo creare un collegamento a questo lakehouse nell'area di lavoro Amministrazione.
+    Nel nostro scenario, il team IT ha già stabilito un collegamento a Dataverse e applicato le necessarie trasformazioni dei dati, eseguendone il mirroring nel file Power BI Desktop. Ha inserito questi dati nel lakehouse nell'area di lavoro di amministrazione e ha concesso l'accesso alle tabelle. Dal momento che il team IT ha già fatto la parte più complessa del lavoro, possiamo creare un collegamento a questo lakehouse nell'area di lavoro Amministrazione.
 
 9. Selezionare **Annulla** nella finestra di dialogo Nuovo collegamento per tornare al lakehouse.
 
