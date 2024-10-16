@@ -18,7 +18,6 @@
 
 - 参考資料
 
-
 # 概要 
 
 このシナリオでは、ERP システムから取得された販売データが ADLS Gen2 に格納されています。毎日正午 (午後 12 時) に更新されます。このデータを変換してレイクハウスに取り込み、モデルで使用する必要があります。 
@@ -61,15 +60,15 @@
 
    ![](../media/lab-03/image009.jpg)
 
-6. ADLS Gen2 データ ソースへの接続を作成する必要があります。**接続設定 -> URL** に、リンク https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales を入力します。 
+6. ADLS Gen2 データ ソースへの接続を作成する必要があります。[接続設定] -> [URL] で、このリンク `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales` を入力します。
 
-7. [認証の種類] ドロップダウンから、**アカウント キー**を選択します。 
+7. [認証の種類] ドロップダウンから [**Shared Access Signature (SAS)**] を選択します。
 
-8. **環境変数**タブ ([ラボ ガイド] タブの横) から **ADLS ストレージ アカウントのアクセス キー**をコピーし、**アカウント キー** テキスト ボックスに貼り付けます。 
+8. [**環境変数**] タブ ([ラボ ガイド] タブの横) から [**SAS トークン**] をコピーし、[**SAS トークン**] ボックスに貼り付けます。
 
-9. 画面右下の**次へ**を選択します。  
+9. 画面の右下にある [**次へ**] を選択します。
 
-   ![](../media/lab-03/image012.jpg)
+   ![](../../english/media/lab-03/image012.jpg)
 
 10. ADLS Gen2 に接続され、左パネルにディレクトリ構造が表示されます。**Delta-Parquet-Format-FY25** を展開します。 
 
@@ -488,7 +487,7 @@ InvoiceLineItems テーブルと Invoices テーブル、および Reseller ビ�
 
     簡単に行うには、詳細エディターですべてのコードを削除し、次のコードを詳細エディターに貼り付けます。 
 
-```
+    ```
     let
     Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
     #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID",
@@ -502,7 +501,7 @@ InvoiceLineItems テーブルと Invoices テーブル、および Reseller ビ�
     #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", type number}}),
     #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"}) in
     #"Removed Columns"
-```
+    ```
 
 26. Power Query エディターに戻ります。左側の [クエリ] パネルで、**マージクエリをダブルクリックして、**名前を変更します。 
 
@@ -566,7 +565,7 @@ ProductItem、ProductItemGroup、および ProductGroups の各テーブルを�
 
 12. 次のコードを詳細エディターに**貼り付けます。** 
 
-   ```
+    ```
     let
     Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
     #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup",
@@ -578,7 +577,7 @@ ProductItem、ProductItemGroup、および ProductGroups の各テーブルを�
     "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
     in
     #"Choose columns"
-``` 
+    ``` 
 
 13. **OK** を選択して詳細エディターを閉じます。Power Query エディターに戻ります。 
 
