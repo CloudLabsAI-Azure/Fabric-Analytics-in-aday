@@ -72,7 +72,7 @@ Un raccourci permet de créer un lien vers l’emplacement cible. Cela s’appar
 
 9. Sélectionnez **Suivant** en bas à droite de l'écran.
 
-   ![](../media/lab-03/image012.jpg)
+   ![](../../english/media/lab-03/image012.jpg)
 
 10. Vous êtes alors connecté à ADLS Gen2 avec la structure de répertoires s’affichant dans le volet gauche. Développez **Delta-Parquet-Format-FY25**.
 
