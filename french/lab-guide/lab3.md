@@ -36,9 +36,9 @@ Plusieurs moyens permettent d’ingérer ces données.
 
 - **Pipeline de données:** il s’agit d’un outil d’orchestration. Les activités peuvent être orchestrées pour extraire, transformer et ingérer des données. Le pipeline de données va nous permettre d’exécuter l’activité Dataflow Gen2 qui à son tour effectue l’extraction, la transformation et l’ingestion. 
 
-Nous allons commencer par créer un raccourci pour ingérer des données dans Lakehouse à partir de la source de données ADLS Gen2. Une fois les données ingérées, nous allons les transformer à l’aide de vues Requête visuelle.
+    Nous allons commencer par créer un raccourci pour ingérer des données dans Lakehouse à partir de la source de données ADLS Gen2. Une fois les données ingérées, nous allons les transformer à l’aide de vues Requête visuelle.
 
-À la fin de ce labo, vous saurez : 
+    À la fin de ce labo, vous saurez : 
 
   - comment créer un raccourci vers Lakehouse ;
 
