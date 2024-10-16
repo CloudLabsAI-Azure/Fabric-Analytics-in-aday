@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 2
 
-
+![](../media/lab-02/image001.png)
 
 # Sommario
 
@@ -56,12 +56,13 @@ In questo lab si imparerà a:
 
 2. Immettere il **nome utente** disponibile nella scheda **Variabili di ambiente** (accanto alla Guida al lab) in **Email,** quindi fare clic su **Submit.**
 
-
+   ![](../media/lab-02/image006.jpg)
 
 3. Si aprirà la schermata **Password.** Immettere la **Password** disponibile nella scheda **Variabili di ambiente** (accanto alla Guida al lab) fornita dall'istruttore. 
 
-
 4. Fare clic su **Sign in** e seguire le istruzioni per accedere a Fabric.
+
+    ![](../media/lab-02/image009.png)
 
 5. Si aprirà la **home page abituale del servizio Power BI.**
 
@@ -74,14 +75,20 @@ A questo punto, ci si trova nell'**Area di lavoro personale.** Per lavorare con 
 
 8. Selezionare **Versione di valutazione gratuita.**
 
-
+    ![](../media/lab-02/image012.jpg)
 
 9. Si apre la finestra di dialogo Esegui l'aggiornamento a una versione di valutazione gratuita Microsoft Fabric. Selezionare **Avvia versione di valutazione.**
+
+    ![](../media/lab-02/image015.jpg)
 
 10. Si apre la finestra di dialogo Aggiornamento a una versione di valutazione gratuita Microsoft 
 Fabric completato. Selezionare **Fabric Home Page.** 
 
+    ![](../media/lab-02/image018.png)
+
 11. Si aprirà la **home page** di **Microsoft Fabric.**
+
+     ![](../media/lab-02/image021.jpg)
 
 # Panoramica delle esperienze in Fabric
 
@@ -90,36 +97,42 @@ Fabric completato. Selezionare **Fabric Home Page.**
 
 2. Selezionare **Data Factory.**
 
+   ![](../media/lab-02/image024.jpg)
+
 3. Si apre la **home page** di **Data Factory.** La pagina contiene tre sezioni principali. 
 
-a. **Consigliato:** elenca gli elementi disponibili in Data Factory, ossia Flusso di dati Gen2, 
-Pipeline di dati, Flusso di lavoro dei dati e API per GraphQL.
+    a. **Consigliato:** elenca gli elementi disponibili in Data Factory, ossia Flusso di dati Gen2, 
+    Pipeline di dati, Flusso di lavoro dei dati e API per GraphQL.
 
-i. Dataflow Gen2 è la nuova generazione di Flusso di dati.
+    i. Dataflow Gen2 è la nuova generazione di Flusso di dati.
 
-ii. Data pipeline si usa per l'orchestrazione dei dati.
+    ii. Data pipeline si usa per l'orchestrazione dei dati.
 
-iii. Flusso di lavoro dei dati è il gestore dell'orchestrazione del flusso di lavoro.
+    iii. Flusso di lavoro dei dati è il gestore dell'orchestrazione del flusso di lavoro.
 
-iv. API per GraphQL: è l'API per eseguire query su più origini dati.
+    iv. API per GraphQL: è l'API per eseguire query su più origini dati.
 
-b. **Impara:** questa sezione fornisce accesso alla documentazione di apprendimento per 
-l'avvio rapido.
+    b. **Impara:** questa sezione fornisce accesso alla documentazione di apprendimento per 
+    l'avvio rapido.
 
-c. **Quick access:** questa sezione elenca gli elementi preferiti o usati di recente.
+    c. **Quick access:** questa sezione elenca gli elementi preferiti o usati di recente.
 
-
+    ![](../media/lab-02/image027.jpg)
 
 ## Attività 3 - Esperienza Data Activator
 
 1. Selezionare l'icona **selettore esperienza in Fabric** (attualmente impostata su Data Factory) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
 
+    ![](../media/lab-02/image030.png)
+
 2. Selezionare **Data Activator** nella finestra di dialogo. Si apre la **home page di Data Activator.** Data Activator è un'esperienza senza codice in Microsoft Fabric che consente di effettuare automaticamente azioni quando vengono rilevati schemi o condizioni nei dati che cambiano. Notare che le tre sezioni 
 sono analoghe all'esperienza Data Factory. Nella sezione Consigliato, notare gli elementi:
 
-a. **Reflex:** consente di monitorare set di dati, query e flussi di eventi per individuare schemi.
+    a. **Reflex:** consente di monitorare set di dati, query e flussi di eventi per individuare schemi.
 
-b. **Esempio di Reflex:** soluzione di esempio.
+    b. **Esempio di Reflex:** soluzione di esempio.
+
+   ![](../media/lab-02/image033.jpg)
 
 ## Attività 4 - Esperienza Industry Solutions
 
@@ -128,12 +141,14 @@ b. **Esempio di Reflex:** soluzione di esempio.
 2. Selezionare **Industry Solutions** nella finestra di dialogo. Verrà visualizzata la home page di **Industry Solutions.** Microsoft Fabric include soluzioni di dati specifiche del settore che offrono una piattaforma affidabile per la gestione dei dati, l'analisi e il processo decisionale. Queste soluzioni di dati risolvono 
 le problematiche specifiche affrontate da diversi settori, permettendo alle aziende di ottimizzare le operazioni, integrare dati provenienti da origini diverse e usare analisi avanzate. Si noti che le tre sezioni sono analoghe alle esperienze precedenti. Nella sezione Consigliato, notare gli elementi:
 
-   a. **Soluzioni per la sostenibilità:** supporta l'inserimento, la standardizzazione e l'analisi di dati ambientali, sociali e di governance (ESG).
+    a. **Soluzioni per la sostenibilità:** supporta l'inserimento, la standardizzazione e l'analisi di dati ambientali, sociali e di governance (ESG).
 
-   b. **Soluzioni retail:** permette di gestire grandi volumi di dati, di integrare dati provenienti da origini varie e di fornire analisi in tempo reale per un processo decisionale rapido e tempestivo. I rivenditori possono usare queste soluzioni per l'ottimizzazione delle scorte, la segmentazione dei clienti, la previsione delle vendite, la determinazione dinamica dei prezzi e il rilevamento delle frodi.
+    b. **Soluzioni retail:** permette di gestire grandi volumi di dati, di integrare dati provenienti da origini varie e di fornire analisi in tempo reale per un processo decisionale rapido e tempestivo. I rivenditori possono usare queste soluzioni per l'ottimizzazione delle scorte, la segmentazione dei clienti, la previsione delle vendite, la determinazione dinamica dei prezzi e il rilevamento delle frodi.
 
-   c. **Soluzioni Healthcare:** sono progettate strategicamente per accelerare il time-to-value 
-   per i clienti rispondendo all'esigenza critica di trasformare in modo efficiente i dati sanitari in un formato adatto per l'analisi.
+    c. **Soluzioni Healthcare:** sono progettate strategicamente per accelerare il time-to-value 
+    per i clienti rispondendo all'esigenza critica di trasformare in modo efficiente i dati sanitari in un formato adatto per l'analisi.
+
+    ![](../media/lab-02/image036.png)
 
 ## Attività 5 - Esperienza Real-Time Intelligence
 
@@ -154,6 +169,8 @@ le problematiche specifiche affrontate da diversi settori, permettendo alle azie
    f. **Usare un esempio:** soluzione di esempio.
 
    **Nota:** Reflex è disponibile anche nelle esperienze Data Activator.
+
+   ![](../media/lab-02/image039.jpg)
 
 ## Attività 6 - Esperienza Synapse Data Engineering
 
@@ -177,6 +194,8 @@ in basso a sinistra della schermata. Si apre la finestra di dialogo Esperienza F
    g. **Import notebook:** permette di importare notebook dal computer locale.
 
    h. **Use a sample:** soluzione di esempio.
+
+   ![](../media/lab-02/image042.jpg)
 
 ## Attività 7 - Esperienza Synapse Data Science
 
@@ -203,6 +222,7 @@ presenti tre sezioni. Nella sezione Consigliato, notare gli elementi:
     Nota: elementi come Notebook, Environment, Data pipeline e così via sono disponibili in più 
     esperienze poiché sono rilevanti in ciascuna di esse.
 
+    ![](../media/lab-02/image045.jpg)
 
 ## Attività 8 - Esperienza Synapse Data Warehouse
 
@@ -220,6 +240,8 @@ presenti tre sezioni. Nella sezione Consigliato, notare gli elementi:
 
    e. **Azure Cosmos DB con mirroring :** usato per il mirroring di Azure Cosmos DB.
 
+   ![](../media/lab-02/image048.jpg)
+
 # Area di lavoro di Fabric
 
 ## Attività 9 - Creazione di un'area di lavoro di Fabric
@@ -227,6 +249,8 @@ presenti tre sezioni. Nella sezione Consigliato, notare gli elementi:
 1. Ora creeremo un'area di lavoro con licenza di Fabric. Selezionare **Aree di lavoro** nella barra di spostamento a sinistra. Si apre una finestra di dialogo.
 
 2. Selezionare **Nuova area di lavoro.**
+
+   ![](../media/lab-02/image051.png)
 
 3. Si apre la finestra di dialogo **Crea un'area di lavoro** sul lato destro del browser.
 
@@ -238,9 +262,14 @@ presenti tre sezioni. Nella sezione Consigliato, notare gli elementi:
 
 6. Fare clic su **Avanzate** per espandere la sezione.
 
+   ![](../media/lab-02/image054.png)
+
 7. In **License mode** assicurarsi che si sia selezionato **Trial** (deve essere selezionato per impostazione predefinita).
 
 8. Selezionare **Apply** per creare una nuova area di lavoro.
+n
+
+   ![](../media/lab-02/image057.png)
 
    Viene creata una nuova area di lavoro e si passa a tale area di lavoro. Importeremo dati da diverse origini dati in Lakehouse e useremo i dati da Lakehouse per creare il modello e il report relativi. Il primo passaggio consiste nel creare un Lakehouse.
 
@@ -250,17 +279,25 @@ presenti tre sezioni. Nella sezione Consigliato, notare gli elementi:
 
 2. Selezionare **Data Engineering** per andare alla home page di Data Engineering.
 
+   ![](../media/lab-02/image060.png)
+
 3. Selezionare **Lakehouse.**
+
+    ![](../media/lab-02/image063.jpg)
 
 4. Si apre la finestra di dialogo New lakehouse. Digitare **lh_FAIAD** nella casella di testo Name.
 
-**Nota:** lh indica Lakehouse. Aggiungiamo il prefisso lh per agevolarne l'identificazione e la ricerca.
+   **Nota:** lh indica Lakehouse. Aggiungiamo il prefisso lh per agevolarne l'identificazione e la ricerca.
 
 5. Selezionare **Create.**
+
+   ![](../media/lab-02/image066.png)
 
    Dopo qualche istante viene creato un lakehouse e si passerà all'interfaccia di Lakehouse.Nel **pannello sinistro** notare che sotto all'area di lavoro è ancora presente l'icona di Lakehouse. È possibile passare agevolmente a Lakehouse facendo clic su questa icona in qualsiasi momento.
 
    Nell'interfaccia di esplorazione di Lakehouse si noteranno **Tables** e **Files.** Lakehouse può esporre file di Azure Data Lake Storage Gen2 nella sezione file oppure un flusso di dati può caricare dati nelle tabelle di Lakehouse. Sono disponibili varie opzioni. Illustreremo alcune di queste opzioni nei lab seguenti.
+
+   ![](../media/lab-02/image069.jpg)
 
    In questo lab abbiamo esplorato l'interfaccia di Fabric, creato uno spazio di lavoro di Fabric e un lakehouse. Nel prossimo lab si imparerà a usare Flusso di dati Gen2 per connettersi ad ADLS Gen2 per estrarre, trasformare e inserire dati nel lakehouse.
 
@@ -269,7 +306,7 @@ presenti tre sezioni. Nella sezione Consigliato, notare gli elementi:
 
 Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità chiave disponibili in Microsoft Fabric. Nel menu di servizio, la sezione Guida (?) include collegamenti ad alcune risorse utili.
 
-![](../media/lab-01/image051.png)
+![](../media/lab-02/image072.png)
      
 Di seguito sono riportate ulteriori risorse utili che consentiranno di progredire nell'uso di Microsoft Fabric.<br>
 - Vedere il post di blog per leggere l'[annuncio completo sulla disponibilità generale di Microsof t Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)<br>
