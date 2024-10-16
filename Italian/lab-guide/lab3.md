@@ -595,7 +595,7 @@ un join.
 
 12. **Incollare** il codice di seguito nell'editor avanzato.
 
-```
+    ```
     let
     Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
     #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup",
@@ -607,7 +607,7 @@ un join.
     "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
     in
     #"Choose columns"
-  ```
+    ```
 
 13. Selezionare **OK** per chiudere l'editor avanzato. Si aprirà nuovamente l'editor di Power Query.
 

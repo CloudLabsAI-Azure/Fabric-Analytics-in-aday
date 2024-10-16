@@ -354,7 +354,7 @@ Aggiungiamo un po' più di complessità al nostro scenario. Abbiamo notato che s
 23. L'espressione dovrebbe essere:
 
     ```
-    @or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))
+    @or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess'))) 
     ```
 
 24. Selezionare **OK**.
@@ -515,16 +515,17 @@ Quindi, dovremo impostare un'attesa di 5 minuti/300 secondi in caso di un primo 
 
 8. Si apre la finestra di dialogo Generatore di espressioni della pipeline. Immettere 
 
-    ```
-    @if(
-     greater(variables(‘varCounter’), 1),
-     if(equals(variables(‘varCounter’), 2),
-     mul(variables(‘varWaitTime’),15 ), 
-     mul(variables(‘varWaitTime’), 0)
-     ),
-     mul(variables(‘varWaitTime’),5 )
-    )
-    ```
+     ```
+     @if(  
+       greater(variables('varCounter'), 1),  
+       if(  
+        equals(variables('varCounter'), 2),  
+        mul(variables('varWaitTime'), 15),  
+        mul(variables('varWaitTime'), 0)  
+       ),  
+       mul(variables('varWaitTime'), 5)  
+     )
+     ```
 
     È possibile digitare l'espressione, usare il menu per selezionare le funzioni o copiare e incollare l'espressione. 
 
