@@ -64,15 +64,15 @@ Si usa il collegamento per creare un link all'ubicazione di destinazione. È com
 
     ![](../media/lab-03/image009.jpg)
 
-6. È necessario creare una connessione all'origine dati ADLS Gen2. In **Impostazioni connessione -> URL** immettere il seguente collegamento: https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
+6. Devi creare una connessione alla fonte dati ADLS Gen2. In Impostazioni connessione -> URL inserisci questo link `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
 
-7. Selezionare **Chiave account** dal menu a discesa Tipo di autenticazione.
+7. Seleziona **Shared Access Signature (SAS)** dal menu a discesa Tipo di autenticazione.
 
-8. Copiare la **chiave di accesso dell'account di archiviazione ADLS** nella scheda **Variabili di ambiente** (accanto alla scheda Guida al lab) e incollarla nella casella di testo **Chiave account**.
+8. Copia il **token SAS** dalla scheda **Variabili ambiente** (accanto alla scheda Guida di laboratorio) e incollalo nella casella **Token SAS**.
 
-9. Selezionare **Avanti** nella parte inferiore destra della schermata.
+9. Seleziona **Avanti** in basso a destra dello schermo.
 
-    ![](../media/lab-03/image012.jpg)
+    ![](../../english/media/lab-03/image012.jpg)
 
 10. Verrà stabilita una connessione ad ADLS Gen2 con la struttura delle directory visualizzata nel pannello di sinistra. Espandere **Delta-Parquet-Format-FY25**.
 
