@@ -67,7 +67,6 @@ In questo lab si imparerà a:
 
 6. Si presuppone che si abbia familiarità con il layout del servizio Power BI. Per eventuali domande, rivolgersi all'istruttore.
 
-
    A questo punto, ci si trova nell'**Area di lavoro personale.** Per lavorare con gli elementi di Fabric, sono necessarie una licenza di valutazione e un'area di lavoro con licenza di Fabric assegnata.
 
 7. Nell'angolo in alto a destra della schermata selezionare l'**icona utente.**
