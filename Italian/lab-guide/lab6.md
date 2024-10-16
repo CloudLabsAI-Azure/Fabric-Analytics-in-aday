@@ -328,116 +328,182 @@ misure in ciascuna di esse.
 
 
     Anche in questo caso, per motivi di tempo non creeremo tutte le misure. Se il tempo lo consente, 
-è possibile completare la sezione facoltativa alla fine del laboratorio. La sezione facoltativa illustra 
-i passaggi per creare le misure rimanenti.
+    è possibile completare la sezione facoltativa alla fine del laboratorio. La sezione facoltativa illustra 
+    i passaggi per creare le misure rimanenti.
 
     Abbiamo creato un modello semantico, il passaggio successivo è creare un report. Ce ne occuperemo 
-nel prossimo lab.
+    nel prossimo lab.
 
 ## Attività 6: Sezione facoltativa: creazione delle relazioni
 Aggiungiamo le relazioni rimanenti.
 
 1. Nel menu in alto selezionare Home -> Gestisci relazioni.
+
 2. Viene visualizzata la finestra di dialogo Gestisci relazioni. Selezionare Nuova relazione.
-Versione: 08.2024 Copyright 2024 Microsoft 15|Pagina 
-Gestito da: Microsoft Corporation
-3. Si apre la finestra di dialogo Nuova relazione. Assicurarsi che Da tabella sia Sales e che la 
-Colonna sia SalespersonPersonID.
-4. Assicurarsi che Nella tabella sia People e che la Colonna sia PersonID.
-5. Assicurarsi che il campo Cardinalità sia impostato su Molti a uno (*:1).
-6. Assicurarsi che il campo Direzione filtro incrociato sia impostato su Singola.
-7. Selezionare Salva. Viene visualizzata la finestra di dialogo Gestisci relazioni con la nuova relazione 
+
+    ![](../media/lab-06/image065.jpg)
+
+3. Si apre la finestra di dialogo Nuova relazione. Assicurarsi che **Da tabella** sia **Sales** e che la 
+**Colonna** sia **SalespersonPersonID**.
+
+4. Assicurarsi che **Nella tabella** sia **People** e che la **Colonna** sia **PersonID**.
+
+5. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (*:1)**.
+
+6. Assicurarsi che il campo **Direzione filtro incrociato** sia impostato su **Singola**.
+
+7. Selezionare **Salva**. Viene visualizzata la finestra di dialogo Gestisci relazioni con la nuova relazione 
 aggiunta.
-8. Creiamo ora una relazione tra Product e Supplier. Selezionare Nuova relazione.
-9. Assicurarsi che Da tabella sia Product e che la Colonna sia SupplierID.
-10. Assicurarsi che Nella tabella sia Supplier e che la Colonna sia SupplierID.
-11. Assicurarsi che il campo Cardinalità sia impostato su Molti a uno (*:1).
-12. Assicurarsi che il campo Direzione filtro incrociato sia impostato su Entrambi.
-13. Selezionare Salva.
-Versione: 08.2024 Copyright 2024 Microsoft 16|Pagina 
-Gestito da: Microsoft Corporation
-14. Creiamo ora una relazione tra Reseller e Geo. Selezionare Nuova relazione.
-15. Si apre la finestra di dialogo Nuova relazione. Assicurarsi che Da tabella sia Reseller e che la 
-Colonna sia PostalCityID.
-16. Assicurarsi che Nella tabella sia Geo e che la Colonna sia CityID.
-17. Assicurarsi che il campo Cardinalità sia impostato su Molti a uno (*:1).
-18. Assicurarsi che il campo Direzione filtro incrociato sia impostato su Entrambi.
-19. Selezionare Salva.
+
+    ![](../media/lab-06/image068.jpg)
+
+8. Creiamo ora una relazione tra Product e Supplier. Selezionare **Nuova relazione**.
+
+9. Assicurarsi che **Da tabella** sia **Product** e che la **Colonna** sia **SupplierID**.
+
+10. Assicurarsi che **Nella tabella** sia **Supplier** e che la **Colonna** sia **SupplierID**.
+
+11. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (*:1)**.
+
+12. Assicurarsi che il campo **Direzione filtro incrociato** sia impostato su **Entrambi**.
+
+13. Selezionare **Salva**.
+
+    ![](../media/lab-06/image071.png)
+
+14. Creiamo ora una relazione tra Reseller e Geo. Selezionare **Nuova relazione**.
+
+15. Si apre la finestra di dialogo Nuova relazione. Assicurarsi che **Da tabella** sia **Reseller** e che la 
+**Colonna** sia **PostalCityID**.
+
+16. Assicurarsi che **Nella tabella** sia **Geo** e che la **Colonna** sia **CityID**.
+
+17. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (*:1)**.
+
+18. Assicurarsi che il campo **Direzione filtro incrociato** sia impostato su **Entrambi**.
+
+19. Selezionare **Salva**.
+
+    ![](../media/lab-06/image074.png)
+
 20. Creiamo ora una relazione tra Customer e Reseller seguendo la stessa procedura. Selezionare 
-Nuova relazione.
-21. Si apre la finestra di dialogo Nuova relazione. Assicurarsi che Da tabella sia Customer e che la 
-Colonna sia ResellerID.
-22. Assicurarsi che Nella tabella sia Reseller e che la Colonna sia ResellerID.
-23. Assicurarsi che il campo Cardinalità sia impostato su Molti a uno (*:1).
-24. Assicurarsi che il campo Direzione filtro incrociato sia impostato su Singola.
-25. Selezionare Salva.
-Checkpoint: le relazioni del modello dovrebbero presentarsi come illustrato nello screenshot 
-seguente.
-Versione: 08.2024 Copyright 2024 Microsoft 17|Pagina 
-Gestito da: Microsoft Corporation
-26. Allo stesso modo, creare una relazione molti-a-uno tra le tabelle PO e Date. Selezionare 
-Order_Date da PO e Date da Date.
-27. Allo stesso modo, creare una relazione molti-a-uno tra le tabelle PO e Product. Selezionare 
-StockItemID da PO e StockItemID da Product.
-28. Allo stesso modo, creare una relazione molti-a-uno tra le tabelle PO e People. Selezionare 
-ContactPersonID da PO e PersonID da People. 
-29. Selezionare Chiudi per chiudere la finestra di dialogo Gestisci relazioni.
+**Nuova relazione**.
+
+21. Si apre la finestra di dialogo Nuova relazione. Assicurarsi che **Da tabella** sia **Customer** e che la 
+**Colonna** sia **ResellerID**.
+
+22. Assicurarsi che **Nella tabella** sia **Reseller** e che la **Colonna** sia **ResellerID**.
+
+23. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (*:1)**.
+
+24. Assicurarsi che il campo **Direzione filtro incrociato** sia impostato su **Singola**.
+
+25. Selezionare **Salva**.
+
+    **Checkpoint:** le relazioni del modello dovrebbero presentarsi come illustrato nello screenshot 
+    seguente.
+
+    ![](../media/lab-06/image077.png)
+
+
+26. Allo stesso modo, creare una relazione **molti-a-uno** tra le tabelle **PO** e **Date**. Selezionare 
+**Order_Date** da **PO** e **Date** da **Date**.
+
+27. Allo stesso modo, creare una relazione **molti-a-uno** tra le tabelle **PO** e **Product**. Selezionare 
+**StockItemID** da **PO** e **StockItemID** da **Product**.
+
+28. Allo stesso modo, creare una relazione **molti-a-uno** tra le tabelle **PO** e **People**. Selezionare 
+**ContactPersonID** da **PO** e **PersonID** da **People**. 
+
+29. Selezionare **Chiudi** per chiudere la finestra di dialogo Gestisci relazioni.
+
 Abbiamo creato tutte le relazioni. 
-Checkpoint: il modello dovrebbe presentarsi come illustrato nello screenshot seguente.
-Versione: 08.2024 Copyright 2024 Microsoft 18|Pagina 
-Gestito da: Microsoft Corporation
-Attività 7: Sezione facoltativa: creazione delle misure
+
+**Checkpoint:** il modello dovrebbe presentarsi come illustrato nello screenshot seguente.
+
+![](../media/lab-06/image080.jpg)
+
+## Attività 7: Sezione facoltativa: creazione delle misure
 Aggiungiamo le misure rimanenti.
-1. Selezionare la tabella Sales e nel menu in alto selezionare Home -> Nuova misura.
-2. Immettere Avg Order = DIVIDE([Sales], [Orders]) nella barra della formula.
-3. Fare clic sul segno di spunta nella barra della formula o premere il tasto INVIO.
+
+1. Selezionare la tabella **Sales**  e nel menu in alto selezionare **Home -> Nuova misura**.
+
+2. Immettere **Avg Order = DIVIDE([Sales], [Orders])** nella barra della formula.
+
+3. Fare clic sul **segno di spunta** nella barra della formula o premere il tasto INVIO.
+
 4. Espandere il pannello delle proprietà a destra.
-5. Espandere la sezione Formattazione.
-6. Nel menu a discesa Formato selezionare Valuta.
+
+5. Espandere la sezione **Formattazione**.
+
+6. Nel menu a discesa **Formato** selezionare **Valuta**.
+
 7. Impostare Posizioni decimali su 0.
+
+    ![](../media/lab-06/image083.jpg)
+
 8. Seguire passaggi analoghi per aggiungere le seguenti misure:
-a. Nella tabella Sales, GM = SUM(Sales[LineProfit]) formattato come Valuta con 0 posizioni 
-decimali.
-b. Nella tabella Sales, GM% = DIVIDE([GM], [Sales]) formattato come Percentuale con 0 
-posizioni decimali.
-c. Nella tabella Sales, Sales YoY% = 
-VAR __PREV_YEAR = CALCULATE([Sales], DATEADD('Date'[Date].[Date], -1, YEAR))
-RETURN DIVIDE([Sales] - __PREV_YEAR, __PREV_YEAR)
-formattato come Percentuale con 2 cifre decimali.
-d. Nella tabella Customer, No of Customers = COUNTROWS(Customer) formattato come 
-Numero intero con separatore delle migliaia abilitato.
-Versione: 08.2024 Copyright 2024 Microsoft 19|Pagina 
-Gestito da: Microsoft Corporation
-Riferimenti
+
+    a. Nella tabella **Sales, GM = SUM(Sales[LineProfit])** formattato come **Valuta con 0 posizioni 
+    decimali**.
+
+    b. Nella tabella **Sales, GM% = DIVIDE([GM], [Sales])** formattato come **Percentuale con 0 
+    posizioni decimali**.
+
+    c. Nella tabella **Sales, Sales YoY% = 
+    VAR __PREV_YEAR = CALCULATE([Sales], DATEADD('Date'[Date].[Date], -1, YEAR))
+    RETURN DIVIDE([Sales] - __PREV_YEAR, __PREV_YEAR)**
+    formattato come **Percentuale con 2 cifre decimali**.
+
+    d. Nella tabella **Customer, No of Customers = COUNTROWS(Customer)** formattato come 
+    **Numero intero con separatore delle migliaia abilitato**.
+
+# Riferimenti
+
 Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità chiave disponibili in Microsoft 
 Fabric. Nel menu di servizio, la sezione Guida (?) include collegamenti ad alcune risorse utili.
+
+![](../media/lab-06/image086.png)
+
 Di seguito sono riportate ulteriori risorse utili che consentiranno di progredire nell'uso di Microsoft 
 Fabric.
-• Vedere il post di blog per leggere l'annuncio completo sulla disponibilità generale di 
-Microsoft Fabric
-• Esplorare Fabric attraverso la Presentazione guidata
-• Iscriversi alla versione di valutazione gratuita di Microsoft Fabric
-• Visitare il sito Web di Microsoft Fabric
-• Acquisire nuove competenze esplorando i moduli di apprendimento su Fabric
-• Consultare la documentazione tecnica di Fabric
-• Leggere l'e-book gratuito introduttivo a Fabric
-• Unirsi alla community di Fabric per pubblicare domande, condividere feedback e imparare 
+
+-   Vedere il post di blog per leggere l'[annuncio completo sulla disponibilità generale di 
+Microsoft Fabric](https://www.microsoft.com/en-us/microsoft-fabric/blog/2023/11/15/prepare-your-data-for-ai-innovation-with-microsoft-fabric-now-generally-available/)
+
+-   Esplorare Fabric attraverso la [Presentazione guidata](https://guidedtour.microsoft.com/en-us/guidedtour/microsoft-fabric/microsoft-fabric/1/1)
+
+-   Iscriversi alla [versione di valutazione gratuita di Microsoft Fabric](https://www.microsoft.com/en-us/microsoft-fabric/getting-started)
+
+-   Visitare il [sito Web di Microsoft Fabric](https://www.microsoft.com/en-in/microsoft-fabric)
+
+-   Acquisire nuove competenze esplorando i [moduli di apprendimento su Fabric](https://learn.microsoft.com/en-us/training/browse/?products=fabric&resource_type=module)
+
+-   Consultare la [documentazione tecnica di Fabric](https://learn.microsoft.com/en-us/fabric/)
+
+-   Leggere l'[e-book gratuito introduttivo a Fabric](https://info.microsoft.com/ww-landing-unlocking-transformative-data-value-with-microsoft-fabric.html)
+
+-   Unirsi alla [community di Fabric](https://community.fabric.microsoft.com/) per pubblicare domande, condividere feedback e imparare 
 dagli altri
+
 Leggere i blog di annunci più approfonditi sull'esperienza Fabric:
-• Blog sull'esperienza Data Factory in Fabric
-• Blog sull'esperienza Synapse Data Engineering in Fabric
-• Blog sull'esperienza Synapse Data Science in Fabric
-• Blog sull'esperienza Synapse Data Warehousing in Fabric
-• Blog sull'esperienza Synapse Real-Time Analytics in Fabric
-Versione: 08.2024 Copyright 2024 Microsoft 20|Pagina 
-Gestito da: Microsoft Corporation
-• Blog di annunci di Power BI
-• Blog sull'esperienza Data Activator in Fabric
-• Blog su amministrazione e governance in Fabric
-• Blog su OneLake in Fabric
-• Blog sull'integrazione di Dataverse e Microsoft Fabric
+
+-   [Blog sull'esperienza Data Factory in Fabric](https://blog.fabric.microsoft.com/en-us/blog/introducing-data-factory-in-microsoft-fabric/)
+-   [Blog sull'esperienza Synapse Data Engineering in Fabric](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-engineering-in-microsoft-fabric/)
+-   [Blog sull'esperienza Synapse Data Science in Fabric](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-science-in-microsoft-fabric/)
+-   [Blog sull'esperienza Synapse Data Warehousing in Fabric](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-warehouse-in-microsoft-fabric/)
+-   [Blog sull'esperienza Synapse Real-Time Analytics in Fabric](https://blog.fabric.microsoft.com/en-us/blog/sense-analyze-and-generate-insights-with-synapse-real-time-analytics-in-microsoft-fabric/)
+-   [Blog di annunci di Power BI](https://powerbi.microsoft.com/en-us/blog/empower-power-bi-users-with-microsoft-fabric-and-copilot/)
+-   [Blog sull'esperienza Data Activator in Fabric](https://blog.fabric.microsoft.com/en-us/blog/driving-actions-from-your-data-with-data-activator/)
+-   [Blog su amministrazione e governance in Fabric](https://blog.fabric.microsoft.com/en-us/blog/administration-security-and-governance-in-microsoft-fabric/)
+-   [Blog su OneLake in Fabric](https://blog.fabric.microsoft.com/en-us/blog/microsoft-onelake-in-fabric-the-onedrive-for-data/)
+-   [Blog sull'integrazione di Dataverse e Microsoft Fabric](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2023/05/24/new-dataverse-enhancements-and-ai-powered-productivity-with-microsoft-365-copilot/)
+
+
 © 2023 Microsoft Corporation. Tutti i diritti sono riservati.
+
 L'uso della demo/del lab implica l'accettazione delle seguenti condizioni:
+
 La tecnologia/le funzionalità descritte nella demo/nel lab sono fornite da Microsoft Corporation 
 allo scopo di ottenere feedback dall'utente e offrire un'esperienza di apprendimento. L'utilizzo 
 della demo/del lab è consentito solo per la valutazione delle caratteristiche e delle funzionalità 
@@ -445,9 +511,12 @@ di tale tecnologia e per l'invio di feedback a Microsoft. L'utilizzo per qualsia
 è consentito. È vietato modificare, copiare, distribuire, trasmettere, visualizzare, eseguire, 
 riprodurre, pubblicare, concedere in licenza, usare per la creazione di lavori derivati, trasferire 
 o vendere questa demo/questo lab o parte di essi.
+
+
 SONO ESPLICITAMENTE PROIBITE LA COPIA E LA RIPRODUZIONE DELLA DEMO/DEL LAB (O DI 
 QUALSIASI PARTE DI ESSI) IN QUALSIASI ALTRO SERVER O IN QUALSIASI ALTRA POSIZIONE PER 
 ULTERIORE RIPRODUZIONE O RIDISTRIBUZIONE.
+
 QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE SOFTWARE/FUNZIONALITÀ DI 
 PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E NUOVE FUNZIONALITÀ POTENZIALI, IN UN 
 AMBIENTE SIMULATO, CON UN'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, 
@@ -457,7 +526,8 @@ IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA VERSIONE FINALE. È AN
 POSSIBILE CHE UNA VERSIONE FINALE DI TALI FUNZIONALITÀ O CONCETTI NON VENGA 
 RILASCIATA. L'ESPERIENZA D'USO DI TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ INOLTRE 
 RISULTARE DIVERSA IN UN AMBIENTE FISICO.
-FEEDBACK. L'invio a Microsoft di feedback sulle caratteristiche, sulle funzionalità e/o sui concetti 
+
+**FEEDBACK**. L'invio a Microsoft di feedback sulle caratteristiche, sulle funzionalità e/o sui concetti 
 della tecnologia descritti in questa demo/questo lab implica la concessione a Microsoft, a titolo 
 gratuito, del diritto di utilizzare, condividere e commercializzare tale feedback in qualsiasi modo e 
 per qualsiasi scopo. Implica anche la concessione a titolo gratuito a terze parti del diritto di utilizzo 
@@ -466,6 +536,8 @@ utilizzare o interfacciarsi ai componenti software o ai servizi Microsoft specif
 feedback. L'utente si impegna a non inviare feedback la cui inclusione all'interno di software o 
 documentazione Microsoft imponga a Microsoft di concedere in licenza a terze parti tale software 
 o documentazione. Questi diritti sussisteranno anche dopo la scadenza del presente contratto.
+
+
 CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA O 
 CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E CONDIZIONI 
 DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O PRESCRITTE DALLA LEGGE, 
@@ -473,9 +545,9 @@ ADEGUATEZZA PER UNO SCOPO SPECIFICO, TITOLARITÀ E NON VIOLABILITÀ. MICROSOFT N
 OFFRE GARANZIE O RAPPRESENTAZIONI IN RELAZIONE ALL'ACCURATEZZA DEI RISULTATI E 
 DELL'OUTPUT DERIVANTI DALL'USO DELLA DEMO/DEL LAB O ALL'ADEGUATEZZA DELLE 
 INFORMAZIONI CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.
-Versione: 08.2024 Copyright 2024 Microsoft 21|Pagina 
-Gestito da: Microsoft Corporation
-CLAUSOLA DI RESPONSABILITÀ
+
+**CLAUSOLA DI RESPONSABILITÀ**
+
 Questa demo/questo lab contiene solo una parte delle nuove funzionalità e dei miglioramenti in 
 Microsoft Power BI. Alcune funzionalità potrebbero cambiare nelle versioni future del prodotto. 
 In questa demo/in questo lab si apprendono alcune delle nuove funzionalità, ma non tutte.
