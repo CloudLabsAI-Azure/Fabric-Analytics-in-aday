@@ -154,10 +154,10 @@ i nomi. Selezionare l'**icona Modifica** in Azioni per **Application.Cities.**
      ![](../media/lab-03/image021.jpg)
 
 18. Notare che tutti i collegamenti vengono creati come tabelle. Selezionare la tabella **BuyingGroups;** notare che è possibile vedere un anteprima dei dati nel pannello dati.
-Il passaggio successivo consiste nel trasformare i dati, in modo da poter creare un modello 
-semantico. Creeremo delle viste per trasformare i dati.
 
     ![](../media/lab-03/image024.png)
+
+    Il passaggio successivo consiste nel trasformare i dati, in modo da poter creare un modello semantico. Creeremo delle viste per trasformare i dati.
 
 # Trasformazione dei dati usando le query visive
 
