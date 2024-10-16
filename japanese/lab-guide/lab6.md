@@ -173,7 +173,7 @@
  
     ![](../media/lab-06/image047.jpg)  
 
-13.	同じようにして、**Sales** テーブルと **Product** テーブルの間の**多対一**リレーションシップを作成します。**Sales** テーブルの **StockItemID** と **Product** テーブルの **StockItemID** を選択します。
+13. 同じようにして、**Sales** テーブルと **Product** テーブルの間の**多対一**リレーションシップを作成します。**Sales** テーブルの **StockItemID** と **Product** テーブルの **StockItemID** を選択します。
     **注記:** 更新はすべて自動的に保存されます。
 
     **チェックポイント:** 以下のスクリーンショットに示すように、このモデルには 3 つのリレーションシップ(Sales とReseller テーブルの間、Sales と Date テーブルの間、Sales とProduct テーブルの間) が必要です。
