@@ -22,48 +22,48 @@
 O laboratório inclui etapas a serem seguidas pelo usuário juntamente com as capturas de tela 
 associadas que fornecem auxílio visual. Em cada captura de tela, as seções estão destacadas com 
 caixas laranjas para indicar as áreas nas quais o usuário deve se concentrar.
-Observação: Algumas capturas de tela podem estar desatualizadas devido às atualizações contínuas 
+
+**Observação:** Algumas capturas de tela podem estar desatualizadas devido às atualizações contínuas 
 do produto.
-Cenário/Declaração do problema
-A Fabrikam, Inc. é distribuidora atacadista de produtos inovadores. Como atacadista, os clientes da 
-Fabrikam são principalmente empresas que revendem para pessoas físicas. A Fabrikam vende para 
-clientes de varejo nos Estados Unidos, incluindo lojas especializadas, supermercados, lojas de 
-informática e lojas de atrações turísticas. A Fabrikam também vende para outros atacadistas por 
-meio de uma rede de agentes que promovem os produtos em nome da Fabrikam. Embora todos 
-os clientes da Fabrikam estejam atualmente nos Estados Unidos, a empresa pretende impulsionar 
-a expansão para outros países/regiões.
-Você é um Analista de Dados na equipe de Vendas. Você coleta, limpa e interpreta conjuntos de 
-dados para resolver problemas de negócios. Você também reúne visualizações, como tabelas e 
+
+# Cenário/Declaração do problema
+
+A Fabrikam, Inc. é distribuidora atacadista de produtos inovadores. Como atacadista, os clientes da Fabrikam são principalmente empresas que revendem para pessoas físicas. A Fabrikam vende para clientes de varejo nos Estados Unidos, incluindo lojas especializadas, supermercados, lojas de informática e lojas de atrações turísticas. A Fabrikam também vende para outros atacadistas por meio de uma rede de agentes que promovem os produtos em nome da Fabrikam. Embora todos 
+os clientes da Fabrikam estejam atualmente nos Estados Unidos, a empresa pretende impulsionar a expansão para outros países/regiões.
+
+Você é um Analista de Dados na equipe de Vendas. Você coleta, limpa e interpreta conjuntos de dados para resolver problemas de negócios. Você também reúne visualizações, como tabelas e 
 gráficos, escreve relatórios e os apresenta aos tomadores de decisão na organização.
-Para obter insights valiosos dos dados, você extrai dados de vários sistemas, limpa-os e combina-os.
-Você extrai dados das seguintes fontes:
-• Dados de Venda: são obtidos do sistema ERP e armazenados em um banco de dados ADLS 
+
+Para obter insights valiosos dos dados, você extrai dados de vários sistemas, limpa-os e combina-os.Você extrai dados das seguintes fontes:
+
+- **Dados de Venda:** são obtidos do sistema ERP e armazenados em um banco de dados ADLS 
 Gen2. Eles são atualizados ao meio-dia/12h, todos os dias.
-• Dados do Fornecedor: são obtidos de diferentes fornecedores e armazenados em um banco 
+
+- **Dados do Fornecedor:** são obtidos de diferentes fornecedores e armazenados em um banco 
 de dados Snowflake. São atualizados à meia-noite/24h, todos os dias.
-• Dados do Cliente: são obtidos do Customer Insights e armazenados no Dataverse. Os dados 
+- **Dados do Cliente:** são obtidos do Customer Insights e armazenados no Dataverse. Os dados 
 estão sempre atualizados.
-• Dados do Funcionário: são obtidos do sistema de RH e armazenados como um arquivo de 
+
+- **Dados do Funcionário:** são obtidos do sistema de RH e armazenados como um arquivo de 
 exportação em uma pasta do SharePoint. São atualizados todas as manhãs, às 9h. 
-Versão: 08.2024 Copyright 2024 Microsoft 4|Página 
-Mantido por: Microsoft Corporation
-No momento, você está criando um conjunto de dados no Power BI Premium que extrai os dados 
-dos sistemas de origem acima para gerar relatórios e fornecer aos usuários finais o recurso de 
-autoatendimento. Você usa o Power Query para atualizar seu modelo. 
-Você está enfrentando os seguintes desafios:
-• Você precisa atualizar seu conjunto de dados pelo menos três vezes por dia para acomodar 
-os diferentes horários de atualização para as diferentes fontes de dados.
-• As atualizações podem demorar, pois é sempre necessário fazer uma atualização completa 
-para capturar tudo o que foi atualizado nos sistemas de origem.
-• Os erros detectados em qualquer uma das fontes das quais você está extraindo dados 
-resultarão na interrupção da atualização do conjunto de dados. Muitas vezes o arquivo do 
-funcionário não é carregado no prazo, resultando na interrupção da atualização do conjunto 
-de dados. 
-• As alterações no modelo de dados demoram muito tempo, pois o Power Query leva tempo 
-para atualizar as versões preliminares devido aos tamanhos de dados grandes e às 
+
+    
+
+   No momento, você está criando um conjunto de dados no Power BI Premium que extrai os dados dos sistemas de origem acima para gerar relatórios e fornecer aos usuários finais o recurso de autoatendimento. Você usa o Power Query para atualizar seu modelo. 
+
+  **Você está enfrentando os seguintes desafios:**
+
+- Você precisa atualizar seu conjunto de dados pelo menos três vezes por dia para acomodar os diferentes horários de atualização para as diferentes fontes de dados.
+
+- As atualizações podem demorar, pois é sempre necessário fazer uma atualização completa para capturar tudo o que foi atualizado nos sistemas de origem.
+
+- Os erros detectados em qualquer uma das fontes das quais você está extraindo dados resultarão na interrupção da atualização do conjunto de dados. Muitas vezes o arquivo do 
+funcionário não é carregado no prazo, resultando na interrupção da atualização do conjunto de dados. 
+
+- As alterações no modelo de dados demoram muito tempo, pois o Power Query leva tempo para atualizar as versões preliminares devido aos tamanhos de dados grandes e às 
 transformações complexas. 
-• Você precisa de um computador com Windows para usar o Power BI Desktop mesmo que 
-o padrão corporativo seja Mac.
+
+- Você precisa de um computador com Windows para usar o Power BI Desktop mesmo que o padrão corporativo seja Mac.
 Você ouviu falar do Microsoft Fabric e decidiu tentar ver se ele resolverá seus desafios.
 Visão geral do relatório do Power BI Desktop
 Antes de começarmos com o Fabric, vamos dar uma olhada no Relatório atual no Power BI Desktop 
