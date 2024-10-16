@@ -1,5 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 3
 
+ ![](../media/lab-03/image001.png)
 
 # Sommario
 
@@ -63,9 +64,11 @@ collegamenti nel desktop di Windows.
 
 4. Selezionare **Nuovo collegamento.**
 
-
+   ![](../media/lab-03/image006.jpg)
 
 5. Viene visualizzata la finestra di dialogo **Nuovo collegamento** . In **Origini esterne** selezionare **Azure Data Lake Storage Gen2.**
+
+    ![](../media/lab-03/image009.jpg)
 
 6. È necessario creare una connessione all'origine dati ADLS Gen2. In **Impostazioni connessione -> 
 URL** immettere il seguente collegamento: 
@@ -78,7 +81,7 @@ ambiente** (accanto alla scheda Guida al lab) e incollarla nella casella di test
 
 9. Selezionare **Avanti** nella parte inferiore destra della schermata.
 
-
+    ![](../media/lab-03/image012.jpg)
 
 10. Verrà stabilita una connessione ad ADLS Gen2 con la struttura delle directory visualizzata nel 
 pannello di sinistra. Espandere **Delta-Parquet-Format-FY25.**
@@ -111,6 +114,8 @@ pannello di sinistra. Espandere **Delta-Parquet-Format-FY25.**
 
 12. Selezionare **Avanti.**
 
+     ![](../media/lab-03/image015.jpg)
+
 13. Si verrà indirizzati alla finestra di dialogo successiva, dove avremo la possibilità di modificare 
 i nomi. Selezionare l'**icona Modifica** in Azioni per **Application.Cities.**
 
@@ -118,7 +123,7 @@ i nomi. Selezionare l'**icona Modifica** in Azioni per **Application.Cities.**
 
 15. Selezionare il segno di spunta accanto al nome per salvare la modifica.
 
-
+    ![](../media/lab-03/image018.jpg)
 
 16. Allo stesso modo, rinominare i collegamenti come indicato di seguito:
 
@@ -146,10 +151,13 @@ i nomi. Selezionare l'**icona Modifica** in Azioni per **Application.Cities.**
 
 17. Selezionare **Crea** per creare il collegamento.
 
+     ![](../media/lab-03/image021.jpg)
 
 18. Notare che tutti i collegamenti vengono creati come tabelle. Selezionare la tabella **BuyingGroups;** notare che è possibile vedere un anteprima dei dati nel pannello dati.
 Il passaggio successivo consiste nel trasformare i dati, in modo da poter creare un modello 
 semantico. Creeremo delle viste per trasformare i dati.
+
+    ![](../media/lab-03/image024.png)
 
 # Trasformazione dei dati usando le query visive
 
@@ -157,30 +165,32 @@ semantico. Creeremo delle viste per trasformare i dati.
 
 1. Possiamo accedere al lakehouse usando un endpoint SQL. Ciò permette di eseguire query sui dati e creare viste. In alto a destra della schermata selezionare **Lakehouse -> Endpoint di Analisi SQL.**
 
+   ![](../media/lab-03/image027.jpg)
 
+   Si verrà indirizzati all'endpoint di Analisi SQL. Notare che il pannello Explorer è cambiato. Ora è possibile creare viste, stored procedure, query e altro ancora. Creeremo una query visiva poiché fornisce un'interfaccia simile a quella di Power Query e la salveremo come vista.
 
-Si verrà indirizzati all'endpoint di Analisi SQL. Notare che il pannello Explorer è cambiato. Ora è 
-possibile creare viste, stored procedure, query e altro ancora. Creeremo una query visiva poiché 
-fornisce un'interfaccia simile a quella di Power Query e la salveremo come vista.
-
-Inizieremo creando la vista Geo. Per poter creare la vista Geo, dobbiamo unire i dati dalle query 
-Cities, States e Countries.
+   Inizieremo creando la vista Geo. Per poter creare la vista Geo, dobbiamo unire i dati dalle query Cities, States e Countries.
 
 2. Nel menu in alto selezionare **Nuova query visiva.**
 
+    ![](../media/lab-03/image030.jpg)
 
 3. Per creare una query dobbiamo trascinare le tabelle nel pannello Query visiva. Trasciniamo le 
 query Cities, States e Countries nel pannello della query visiva.
 
-Dobbiamo unire queste query. La query visiva include un'opzione che permette di usare l'editor di Power Query. E noi lo useremo, visto che lo conosciamo bene.
+     ![](../media/lab-03/image033.png)
+
+   Dobbiamo unire queste query. La query visiva include un'opzione che permette di usare l'editor di Power Query. E noi lo useremo, visto che lo conosciamo bene.
 
 4. Dal menu nell'editor di query visive, selezionare l'icona **Modalità messa a fuoco** (verso destra). Si aprirà l'editor di Power Query.
 
-
+     ![](../media/lab-03/image036.png)
 
 5. Con la query Cities selezionata, dalla barra multifunzione dell'editor di Power Query selezionare 
 **Home - > Esegui merge di query -> Esegui merge di query come nuova.** Si apre la finestra di 
 dialogo Esegui merge di query.
+
+    ![](../media/lab-03/image039.jpg)
 
 6. Nella **tabella di sinistra da unire** selezionare **Cities.**
 
@@ -193,9 +203,9 @@ creare un join.
 
 10. Selezionare **OK.**
 
+    ![](../media/lab-03/image042.jpg)
 
-Notare che è stata creata una nuova query denominata Merge. Abbiamo bisogno di alcune colonne 
-da States.
+    Notare che è stata creata una nuova query denominata Merge. Abbiamo bisogno di alcune colonne da States.
 
 11. Nel **vista dati** (pannello inferiore) fare clic sulla **freccia doppia** accanto alla colonna **States** (ultima colonna a destra).
 
@@ -211,22 +221,25 @@ da States.
 
 13. Selezionare **OK.**
 
-   
+    ![](../media/lab-03/image045.jpg)
 
     Ora dobbiamo unire la query Countries. 
 
 14. Con la query Merge selezionata, selezionare **Home -> Esegui merge di query -> Esegui merge di 
 query** dalla barra multifunzione.
 
+     ![](../media/lab-03/image048.jpg)
+
 15. Si apre la finestra di dialogo Esegui merge di query. Nella **tabella di destra da unire** selezionare **Countries.**
 
 16. Selezionare le colonne **ICountryID** da entrambe le tabelle. Useremo questa colonna per creare 
 un join.
 
-
 17. Selezionare **Inner** come **Tipo di join.**
 
 18. Selezionare **OK.**
+
+    ![](../media/lab-03/image051.jpg)
 
     Abbiamo bisogno di alcune colonne da Countries.
 
@@ -252,11 +265,14 @@ un join.
 
 21. Selezionare **OK.**
 
+    ![](../media/lab-03/image054.jpg)
 
     Non abbiamo bisogno di tutte le colonne. Selezioniamo solo quelle di cui abbiamo bisogno.
 
 22. Con la query Merge, dalla barra multifunzione selezionare **Home -> Scegli colonne -> Scegli 
 colonne.**
+
+    ![](../media/lab-03/image057.jpg)
 
 23. Viene visualizzata la finestra di dialogo Scegli colonne. **Deselezionare** le seguenti colonne.
 
@@ -274,6 +290,7 @@ colonne.**
 
 24. Selezionare **OK.**
 
+    ![](../media/lab-03/image060.png)
 
     Notare che il processo è simile a quello di Power Query, abbiamo tutti i passaggi registrati sia nel pannello Passaggi applicati a destra sia nella vista visiva. Rinominiamo la query Merge e poi scegliamo Abilita caricamento, in modo che i dati vengano caricati da questa query.
 
@@ -286,12 +303,15 @@ Selezionare **Abilita caricamento** per abilitare questa query.
 
 28. Selezionare **Salva.**
 
+    ![](../media/lab-03/image063.jpg)
+
     Verremo indirizzati all'editor di query visive. Salviamo ora questa query come vista.
 
     **Nota:** tutti i passaggi eseguiti mediante l'editor di Power Query possono essere anche eseguiti usando l'editor di query visive.
 
 29. Dal menu Editor di query visive selezionare **Salvare come viualizzazione.**
 
+    ![](../media/lab-03/image066.png)
 
     Viene visualizzata la finestra di dialogo Salva come visualizzazione. Notare che la query SQL è disponibile. Se lo si desidera, è possibile rivederla. 
 
@@ -299,9 +319,13 @@ Selezionare **Abilita caricamento** per abilitare questa query.
 
 31. Selezionare **OK** per salvare la vista. 
 
-Si riceverà un avviso una volta salvata la vista. 
+    ![](../media/lab-03/image069.png)
+
+    Si riceverà un avviso una volta salvata la vista. 
 
 32. Nel pannello Explorer (a sinistra), espandere **Views.** Abbiamo la vista Geo appena creata.
+
+     ![](../media/lab-03/image072.png)
 
 ## Attività 3: Creazione di una vista Reseller mediante le query visive
 
@@ -311,8 +335,9 @@ volta creeremo la vista usando una query visiva.
 1. Dalla barra di menu di Lakehouse selezionare **Home -> Nuova query visiva.** Si apre una nuova 
 query visiva.
 
-2. Dalla sezione Explorer, trascinare le tabelle Customers e BuyingGroups nella sezione dedicata alla 
-query visiva.
+2. Dalla sezione Explorer, trascinare le tabelle Customers e BuyingGroups nella sezione dedicata alla query visiva.
+
+   ![](../media/lab-03/image075.png)
 
 3. S**elezionare la query** Customers. Una volta selezionato, Customers avrà un bordo blu e un segno 
 "+" dopo Table (ciò indica che stiamo aggiungendo un passaggio dopo Table. Se non è 
@@ -321,7 +346,7 @@ diverso. Selezionare Table e il problema è risolto).
 
 4. Nel menu Query visiva selezionare **Combina -> Esegui merge di query.**
 
-   
+     ![](../media/lab-03/image078.png)
 
    Viene visualizzata la finestra di dialogo Merge con Customers selezionato come tabella superiore. 
 
@@ -334,6 +359,7 @@ creare un join.
 
 8. Selezionare **OK.**
 
+   ![](../media/lab-03/image081.jpg)
 
 9. Nella **Vista dati** (pannello inferiore), fare clic sulla **freccia doppia** accanto alla colonna 
 **BuyingGroups** (ultima colonna a destra) per selezionare le colonne di cui abbiamo bisogno da 
@@ -343,11 +369,13 @@ BuyingGroups.
 
 11. Selezionare **OK.**
 
+    ![](../media/lab-03/image084.jpg)
 
-
-Non abbiamo bisogno di tutte le colonne. Selezioniamo solo quelle di cui abbiamo bisogno.
+    Non abbiamo bisogno di tutte le colonne. Selezioniamo solo quelle di cui abbiamo bisogno.
 
 12. Dal menu della query visiva selezionare **Gestisci colonne -> Scegli colonne.**
+
+     ![](../media/lab-03/image087.png)
 
 13. Viene visualizzata la finestra di dialogo Scegli colonne. **Selezionare** le seguenti colonne.
 
@@ -379,16 +407,20 @@ Non abbiamo bisogno di tutte le colonne. Selezioniamo solo quelle di cui abbiamo
 
 14. Selezionare **OK.**
 
+    ![](../media/lab-03/image090.png)
+
 15. Rinominiamo la colonna BuyingGroupName. Nella **vista Dati, fare doppio clic sull'intestazione 
 della colonna BuyingGroupName** per renderla modificabile.
 
 16. **Rinominare** la colonna in **ResellerCompany.**
 
+    ![](../media/lab-03/image093.jpg)
 
 Notare che nella tabella Customer sono documentati tutti i passaggi. Ora è il momento di salvare la vista.
 
 17. Dal menu Query visiva selezionare **Salvare come visualizzazione.**
 
+    ![](../media/lab-03/image096.png)
 
     Viene visualizzata la finestra di dialogo Salva come visualizzazione. Notare che la query SQL è disponibile. Se lo si desidera, è possibile rivederla. 
 
@@ -396,11 +428,13 @@ Notare che nella tabella Customer sono documentati tutti i passaggi. Ora è il m
 
 19. Selezionare **OK** per salvare la vista. 
 
+    ![](../media/lab-03/image099.png)
 
+    Si riceverà un avviso una volta salvata la vista. 
 
-  Si riceverà un avviso una volta salvata la vista. 
+20. Nel pannello Explorer (a sinistra), espandere **Views.** Abbiamo la vista Reseller appena creata.
 
-20. Nel pannello Explorer (a sinistra), espandere Views. Abbiamo la vista Reseller appena creata.
+     ![](../media/lab-03/image102.png)
 
 ## Attività 4: Creazione di una vista Sales mediante le query visive
 
@@ -415,11 +449,12 @@ query visiva.
 
 4. Dall'editor di query visive, selezionare l'**icona Modalità messa a fuoco** per aprire l'editor di Power Query.
 
-
+   ![](../media/lab-03/image105.jpg)
 
 5. Con la query InvoiceLineItems selezionata, dalla barra multifunzione dell'editor, selezionare 
 **Home - > Esegui merge di query - > Esegui merge di query come nuova.**
 
+   ![](../media/lab-03/image108.jpg)
 
    Si apre la finestra di dialogo Merge.
 
@@ -434,6 +469,7 @@ join.
 
 10. Selezionare **OK.**
 
+    ![](../media/lab-03/image111.jpg)
 
     Copiamo il codice da Power BI Desktop e lo incolliamo usando l'editor avanzato.
 
@@ -442,10 +478,13 @@ dell'ambiente lab.
 
 12. Nella barra multifunzione selezionare **Home -> Trasforma dati.** Si apre la finestra Power Query. Come si è notato nel lab precedente, le query nel pannello di sinistra sono organizzate per origine dati.
 
+    ![](../media/lab-03/image114.jpg)
 
 13. Dal pannello di sinistra, nella cartella ADLSData, selezionare la query **Sales.**
 
 14. Nella barra multifunzione selezionare **Home - > Editor avanzato.** Viene visualizzata la finestra di dialogo dell'editor avanzato.
+
+    ![](../media/lab-03/image117.png)
 
 15. **Selezionare li codice dalla riga 3** (#"Expanded Invoice" …) fino all'ultima riga di codice.
 
@@ -453,13 +492,15 @@ dell'ambiente lab.
 
 17. Selezionare **Annulla** per chiudere l'editor avanzato.
 
+    ![](../media/lab-03/image120.jpg)
 
 18. **Tornare alla finestra/scheda del browser** in cui è aperto l'editor di Power Query.
 
 19. Accertarsi di aver selezionato la query **Merge.**
 
-20. Nella barra multifunzione selezionare **Home -> Editor avanzato.** Viene visualizzata la finestra di 
-dialogo dell'editor avanzato.
+20. Nella barra multifunzione selezionare **Home -> Editor avanzato.** Viene visualizzata la finestra di dialogo dell'editor avanzato.
+
+     ![](../media/lab-03/image123.jpg)
 
 21. Alla **fine della riga 2 aggiungere una virgola** (Source = Table.NestedJoin(InvoiceLineItems, 
 {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner)
@@ -469,16 +510,19 @@ dialogo dell'editor avanzato.
 23. Usare la combinazione di tasti **CTRL+V** per incollare il codice copiato da Power BI Desktop.
 
 
-**Nota:** se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per **abilitare VM Native Clipboard.** Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
+    **Nota:** se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per **abilitare VM Native Clipboard.** Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
+
+    ![](../media/lab-03/image126.jpg)
 
 24. Evidenziare le ultime due righe di codice (in Origine) ed **eliminarle.**
 
 25. Selezionare **OK** per salvare le modifiche.
 
+    ![](../media/lab-03/image129.jpg)
 
     Se è più semplice, eliminare tutto il codice nell'editor avanzato e incollare il codice sottostante.
 
-   ```
+    ```
     let
     Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
     #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID",
@@ -492,7 +536,7 @@ dialogo dell'editor avanzato.
     #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", type number}}),
     #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"}) in
     #"Removed Columns"
-  ```
+    ```
 
 26. Si aprirà nuovamente l'editor di Power Query. A sinistra, nel pannello Query, **fare doppio clic 
 sulla query Merge** per rinominarla.
@@ -501,6 +545,7 @@ sulla query Merge** per rinominarla.
 
 28. Fare clic con il pulsante destro del mouse sulla query Sales e selezionare **Abilita caricamento** per abilitare il caricamento della query.
 
+     ![](../media/lab-03/image132.png)
 
 29. Selezionare **Salva** per salvare e chiudere la finestra di dialogo Power Query. Si verrà indirizzati alla 
 query visiva.
@@ -513,10 +558,13 @@ rivederla.
 
 32. Selezionare **OK** per salvare la vista. 
 
+    ![](../media/lab-03/image135.png)
+
     Si riceverà un avviso una volta salvata la vista. 
 
 33. Nel pannello Explorer (a sinistra), espandere **Views.** Abbiamo la vista Sales appena creata.
 
+    ![](../media/lab-03/image138.jpg)
 
 ## Attività 5: Creazione di una vista Product mediante le query visive
 
@@ -532,11 +580,12 @@ nella sezione della query visiva
 3. Dall'editor di query visive, selezionare l'**icona Modalità messa a fuoco** per aprire l'editor di 
 Power Query.
 
+   ![](../media/lab-03/image141.jpg)
 
 4. Con la query **ProductItem** selezionata, dalla barra multifunzione selezionare **Home -> Esegui 
 merge di query -> Esegui merge di query come nuova.** Si apre la finestra di dialogo Merge. 
 
-
+   ![](../media/lab-03/image144.jpg)
 
 5. Nella **tabella di sinistra da unire** selezionare **ProductItem.**
 
@@ -549,7 +598,11 @@ un join.
 
 9. Selezionare **OK.** La nuova query viene creata.
 
+   ![](../media/lab-03/image147.jpg)
+
 10. Con la query Merge selezionata, dalla barra multifunzione selezionare **Home -> Editor avanzato.** Viene visualizzata la finestra di dialogo dell'editor avanzato.
+
+    ![](../media/lab-03/image150.jpg)
 
 11. **Selezionare tutto il codice** nell'editor avanzato ed **eliminarlo.**
 
@@ -571,6 +624,8 @@ un join.
 
 13. Selezionare **OK** per chiudere l'editor avanzato. Si aprirà nuovamente l'editor di Power Query.
 
+    ![](../media/lab-03/image153.jpg)
+
 14. A sinistra, nel pannello Query, **fare doppio clic sulla query Merge** per rinominarla.
 
 15. **Rinominare** la query Merge in **Product.**
@@ -580,30 +635,31 @@ un join.
 17. Selezionare **Salva** per salvare e chiudere la finestra di dialogo Power Query. Si verrà indirizzati alla 
 query visiva.
 
+     ![](../media/lab-03/image156.jpg)
+
 18. Dal menu Query visiva selezionare **Salvare come visualizzazione.** Viene visualizzata la finestra di dialogo Salva come visualizzazione. Notare che la query SQL è disponibile. Se lo si desidera, è possibile rivederla. 
 
 19. Immettere **Product** come **Nome visualizzazione.**
 
 20. Selezionare **OK** per salvare la vista. 
 
+    ![](../media/lab-03/image159.png)
 
     Si riceverà un avviso una volta salvata la vista. 
 
 21. Nel pannello Explorer (a sinistra), espandere **Views.** Abbiamo la vista Product appena creata.
 
+    ![](../media/lab-03/image162.jpg)
 
-Abbiamo trasformato i dati dall'origine dati ADLS Gen2. In questo laboratorio è stato spiegato come 
-creare collegamenti e sono state illustrate varie opzioni per usare le viste di query visive per 
-trasformare i dati.
+    Abbiamo trasformato i dati dall'origine dati ADLS Gen2. In questo laboratorio è stato spiegato come creare collegamenti e sono state illustrate varie opzioni per usare le viste di query visive per trasformare i dati.
 
-Nel prossimo lab verrà descritto come usare Dataflow Gen2 e creare un collegamento a un altro 
-lakehouse.
+    Nel prossimo lab verrà descritto come usare Dataflow Gen2 e creare un collegamento a un altro lakehouse.
 
 # Riferimenti
 
 Fabric Analyst in a Day (FAIAD) presenta alcune delle funzionalità chiave disponibili in Microsoft Fabric. Nel menu di servizio, la sezione Guida (?) include collegamenti ad alcune risorse utili.
 
-![](../media/lab-02/image072.png)
+![](../media/lab-03/image165.png)
      
 Di seguito sono riportate ulteriori risorse utili che consentiranno di progredire nell'uso di Microsoft Fabric.<br>
 - Vedere il post di blog per leggere l'[annuncio completo sulla disponibilità generale di Microsof t Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23)<br>
