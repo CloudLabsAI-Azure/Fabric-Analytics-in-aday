@@ -1,4 +1,4 @@
-# Microsoft Fabric - Fabric Analyst in a Day - Lab 4
+# Microsoft Fabric - Fabric Analyst in un giorno - Lab 4
 
 ![](../media/lab-04/image001.png)
 
@@ -306,8 +306,7 @@ Ci si dovrebbe trovare nel lakehouse **lh_FAIAD**. Accertarsi di essere nella vi
 
     ![](../media/lab-04/image083.jpg)
 
-4. Si apre la finestra di dialogo Impostazioni connessione. Immettere 
-**org6c18814a.crm.dynamics.com** come **Dominio dell'ambiente**.
+4. Si apre la finestra di dialogo Impostazioni connessione. Immettere **org6c18814a.crm.dynamics.com** come **Dominio dell'ambiente**.
 
 5. Lasciare **Tipo di autenticazione** come **Account aziendale**.
 

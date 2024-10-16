@@ -1,4 +1,4 @@
-# Microsoft Fabric - Fabric Analyst in a Day - Lab 3
+# Microsoft Fabric - Fabric Analyst in un giorno - Lab 3
 
  ![](../media/lab-03/image001.png)
 
@@ -70,8 +70,7 @@ collegamenti nel desktop di Windows.
 
     ![](../media/lab-03/image009.jpg)
 
-6. È necessario creare una connessione all'origine dati ADLS Gen2. In **Impostazioni connessione -> 
-URL** immettere il seguente collegamento: 
+6. È necessario creare una connessione all'origine dati ADLS Gen2. In **Impostazioni connessione -> URL** immettere il seguente collegamento: 
 https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 
 7. Selezionare **Chiave account** dal menu a discesa Tipo di autenticazione.
@@ -186,8 +185,7 @@ query Cities, States e Countries nel pannello della query visiva.
 
      ![](../media/lab-03/image036.png)
 
-5. Con la query Cities selezionata, dalla barra multifunzione dell'editor di Power Query selezionare 
-**Home - > Esegui merge di query -> Esegui merge di query come nuova.** Si apre la finestra di 
+5. Con la query Cities selezionata, dalla barra multifunzione dell'editor di Power Query selezionare **Home - > Esegui merge di query -> Esegui merge di query come nuova.** Si apre la finestra di 
 dialogo Esegui merge di query.
 
     ![](../media/lab-03/image039.jpg)
@@ -339,21 +337,16 @@ query visiva.
 
    ![](../media/lab-03/image075.png)
 
-3. S**elezionare la query** Customers. Una volta selezionato, Customers avrà un bordo blu e un segno 
-"+" dopo Table (ciò indica che stiamo aggiungendo un passaggio dopo Table. Se non è 
-visualizzato alcun segno "+" dopo la tabella, è possibile che si sia selezionato un passaggio 
-diverso. Selezionare Table e il problema è risolto).
+3. S**elezionare la query** Customers. Una volta selezionato, Customers avrà un bordo blu e un segno "+" dopo Table (ciò indica che stiamo aggiungendo un passaggio dopo Table. Se non è visualizzato alcun segno "+" dopo la tabella, è possibile che si sia selezionato un passaggio diverso. Selezionare Table e il problema è risolto).
 
 4. Nel menu Query visiva selezionare **Combina -> Esegui merge di query.**
-
      ![](../media/lab-03/image078.png)
 
    Viene visualizzata la finestra di dialogo Merge con Customers selezionato come tabella superiore. 
 
 5. Nella **tabella di destra da unire** selezionare **BuyingGroups.**
 
-6. Selezionare le colonne **BuyingGroupID** da entrambe le tabelle. Useremo questa colonna per 
-creare un join.
+6. Selezionare le colonne **BuyingGroupID** da entrambe le tabelle. Useremo questa colonna per creare un join.
 
 7. Selezionare **Inner** come **Tipo di join.**
 
@@ -361,9 +354,7 @@ creare un join.
 
    ![](../media/lab-03/image081.jpg)
 
-9. Nella **Vista dati** (pannello inferiore), fare clic sulla **freccia doppia** accanto alla colonna 
-**BuyingGroups** (ultima colonna a destra) per selezionare le colonne di cui abbiamo bisogno da 
-BuyingGroups.
+9. Nella **Vista dati** (pannello inferiore), fare clic sulla **freccia doppia** accanto alla colonna **BuyingGroups** (ultima colonna a destra) per selezionare le colonne di cui abbiamo bisogno da BuyingGroups.
 
 10. Si apre un pannello. **Selezionare la colonna BuyingGroupName .**
 
@@ -409,8 +400,7 @@ BuyingGroups.
 
     ![](../media/lab-03/image090.png)
 
-15. Rinominiamo la colonna BuyingGroupName. Nella **vista Dati, fare doppio clic sull'intestazione 
-della colonna BuyingGroupName** per renderla modificabile.
+15. Rinominiamo la colonna BuyingGroupName. Nella **vista Dati, fare doppio clic sull'intestazione della colonna BuyingGroupName** per renderla modificabile.
 
 16. **Rinominare** la colonna in **ResellerCompany.**
 
@@ -451,8 +441,7 @@ query visiva.
 
    ![](../media/lab-03/image105.jpg)
 
-5. Con la query InvoiceLineItems selezionata, dalla barra multifunzione dell'editor, selezionare 
-**Home - > Esegui merge di query - > Esegui merge di query come nuova.**
+5. Con la query InvoiceLineItems selezionata, dalla barra multifunzione dell'editor, selezionare **Home - > Esegui merge di query - > Esegui merge di query come nuova.**
 
    ![](../media/lab-03/image108.jpg)
 
@@ -502,13 +491,11 @@ dell'ambiente lab.
 
      ![](../media/lab-03/image123.jpg)
 
-21. Alla **fine della riga 2 aggiungere una virgola** (Source = Table.NestedJoin(InvoiceLineItems, 
-{"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner)
+21. Alla **fine della riga 2 aggiungere una virgola** (Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner)
 
 22. Fare clic su **INVIO** per iniziare una nuova riga.
 
 23. Usare la combinazione di tasti **CTRL+V** per incollare il codice copiato da Power BI Desktop.
-
 
     **Nota:** se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per **abilitare VM Native Clipboard.** Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
 

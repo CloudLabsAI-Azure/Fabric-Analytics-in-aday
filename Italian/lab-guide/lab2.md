@@ -1,4 +1,4 @@
-# Microsoft Fabric - Fabric Analyst in a Day - Lab 2
+# Microsoft Fabric - Fabric Analyst in un giorno - Lab 2
 
 ![](../media/lab-02/image001.png)
 
@@ -68,7 +68,7 @@ In questo lab si imparerà a:
 6. Si presuppone che si abbia familiarità con il layout del servizio Power BI. Per eventuali domande, rivolgersi all'istruttore.
 
 
-A questo punto, ci si trova nell'**Area di lavoro personale.** Per lavorare con gli elementi di Fabric, sono necessarie una licenza di valutazione e un'area di lavoro con licenza di Fabric assegnata.
+   A questo punto, ci si trova nell'**Area di lavoro personale.** Per lavorare con gli elementi di Fabric, sono necessarie una licenza di valutazione e un'area di lavoro con licenza di Fabric assegnata.
 
 7. Nell'angolo in alto a destra della schermata selezionare l'**icona utente.**
 
@@ -127,9 +127,9 @@ Fabric completato. Selezionare **Fabric Home Page.**
 2. Selezionare **Data Activator** nella finestra di dialogo. Si apre la **home page di Data Activator.** Data Activator è un'esperienza senza codice in Microsoft Fabric che consente di effettuare automaticamente azioni quando vengono rilevati schemi o condizioni nei dati che cambiano. Notare che le tre sezioni 
 sono analoghe all'esperienza Data Factory. Nella sezione Consigliato, notare gli elementi:
 
-    a. **Reflex:** consente di monitorare set di dati, query e flussi di eventi per individuare schemi.
+   a. **Reflex:** consente di monitorare set di dati, query e flussi di eventi per individuare schemi.
 
-    b. **Esempio di Reflex:** soluzione di esempio.
+   b. **Esempio di Reflex:** soluzione di esempio.
 
    ![](../media/lab-02/image033.jpg)
 
@@ -140,14 +140,14 @@ sono analoghe all'esperienza Data Factory. Nella sezione Consigliato, notare gli
 2. Selezionare **Industry Solutions** nella finestra di dialogo. Verrà visualizzata la home page di **Industry Solutions.** Microsoft Fabric include soluzioni di dati specifiche del settore che offrono una piattaforma affidabile per la gestione dei dati, l'analisi e il processo decisionale. Queste soluzioni di dati risolvono 
 le problematiche specifiche affrontate da diversi settori, permettendo alle aziende di ottimizzare le operazioni, integrare dati provenienti da origini diverse e usare analisi avanzate. Si noti che le tre sezioni sono analoghe alle esperienze precedenti. Nella sezione Consigliato, notare gli elementi:
 
-    a. **Soluzioni per la sostenibilità:** supporta l'inserimento, la standardizzazione e l'analisi di dati ambientali, sociali e di governance (ESG).
+   a. **Soluzioni per la sostenibilità:** supporta l'inserimento, la standardizzazione e l'analisi di dati ambientali, sociali e di governance (ESG).
 
-    b. **Soluzioni retail:** permette di gestire grandi volumi di dati, di integrare dati provenienti da origini varie e di fornire analisi in tempo reale per un processo decisionale rapido e tempestivo. I rivenditori possono usare queste soluzioni per l'ottimizzazione delle scorte, la segmentazione dei clienti, la previsione delle vendite, la determinazione dinamica dei prezzi e il rilevamento delle frodi.
+   b. **Soluzioni retail:** permette di gestire grandi volumi di dati, di integrare dati provenienti da origini varie e di fornire analisi in tempo reale per un processo decisionale rapido e tempestivo. I rivenditori possono usare queste soluzioni per l'ottimizzazione delle scorte, la segmentazione dei clienti, la previsione delle vendite, la determinazione dinamica dei prezzi e il rilevamento delle frodi.
 
-    c. **Soluzioni Healthcare:** sono progettate strategicamente per accelerare il time-to-value 
+   c. **Soluzioni Healthcare:** sono progettate strategicamente per accelerare il time-to-value 
     per i clienti rispondendo all'esigenza critica di trasformare in modo efficiente i dati sanitari in un formato adatto per l'analisi.
 
-    ![](../media/lab-02/image036.png)
+   ![](../media/lab-02/image036.png)
 
 ## Attività 5 - Esperienza Real-Time Intelligence
 
@@ -203,26 +203,25 @@ in basso a sinistra della schermata. Si apre la finestra di dialogo Esperienza F
 2. Selezionare **Data Science.** Si apre la **home page di Data Science.** Anche in questo caso sono 
 presenti tre sezioni. Nella sezione Consigliato, notare gli elementi:
 
-    a. **ML model:** consente di creare modelli di Machine Learning.
+   a. **ML model:** consente di creare modelli di Machine Learning.
 
-    b. **Experiment:** consente di creare, eseguire e monitorare lo sviluppo di più modelli.
+   b. **Experiment:** consente di creare, eseguire e monitorare lo sviluppo di più modelli.
 
-    c. **Notebook:** permette di esplorare dati e creare soluzioni di Machine Learning.
+   c. **Notebook:** permette di esplorare dati e creare soluzioni di Machine Learning.
 
-    d. **Environment:** usato per configurare librerie condivise, impostazioni di calcolo Spark e 
+   d. **Environment:** usato per configurare librerie condivise, impostazioni di calcolo Spark e 
     risorse per notebook e definizioni di processi Spark.
 
-    e. **Competenza IA:** usata per creare un'esperienza personale di intelligenza artificiale 
+   e. **Competenza IA:** usata per creare un'esperienza personale di intelligenza artificiale 
     generativa.
 
-    f. **Import notebook:** permette di importare notebook dal computer locale.
+   f. **Import notebook:** permette di importare notebook dal computer locale.
 
-    g. **Use a sample:** soluzione di esempio.
+   g. **Use a sample:** soluzione di esempio.
 
+   **Nota:** elementi come Notebook, Environment, Data pipeline e così via sono disponibili in più esperienze poiché sono rilevanti in ciascuna di esse.
 
-    **Nota:** elementi come Notebook, Environment, Data pipeline e così via sono disponibili in più esperienze poiché sono rilevanti in ciascuna di esse.
-
-    ![](../media/lab-02/image045.jpg)
+   ![](../media/lab-02/image045.jpg)
 
 ## Attività 8 - Esperienza Synapse Data Warehouse
 
@@ -267,7 +266,6 @@ presenti tre sezioni. Nella sezione Consigliato, notare gli elementi:
 7. In **License mode** assicurarsi che si sia selezionato **Trial** (deve essere selezionato per impostazione predefinita).
 
 8. Selezionare **Apply** per creare una nuova area di lavoro.
-n
 
    ![](../media/lab-02/image057.png)
 
@@ -300,7 +298,6 @@ n
    ![](../media/lab-02/image069.jpg)
 
    In questo lab abbiamo esplorato l'interfaccia di Fabric, creato uno spazio di lavoro di Fabric e un lakehouse. Nel prossimo lab si imparerà a usare Flusso di dati Gen2 per connettersi ad ADLS Gen2 per estrarre, trasformare e inserire dati nel lakehouse.
-
 
 # Riferimenti
 

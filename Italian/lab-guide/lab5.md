@@ -1,4 +1,4 @@
-# Microsoft Fabric - Fabric Analyst in a Day - Lab 5
+# Microsoft Fabric - Fabric Analyst in un giorno - Lab 5
 
 ![](../media/lab-05/image001.png)
 
@@ -528,15 +528,15 @@ Quindi, dovremo impostare un'attesa di 5 minuti/300 secondi in caso di un primo 
 
     È possibile digitare l'espressione, usare il menu per selezionare le funzioni o copiare e incollare l'espressione. 
 
-![](../media/lab-05/image123.jpg)
+    ![](../media/lab-05/image123.jpg)
 
-Qui usiamo due nuove funzioni:
+    Qui usiamo due nuove funzioni:
 
-- **greater**: prende due numeri come parametri e li confronta per indicare qual è il maggiore.
+    - **greater**: prende due numeri come parametri e li confronta per indicare qual è il maggiore.
 
-- **mul**: questa è una funzione di moltiplicazione, prende due parametri da moltiplicare. 
+    - **mul**: questa è una funzione di moltiplicazione, prende due parametri da moltiplicare. 
 
-L'espressione è un'istruzione if annidata. Controlla se il valore della variabile varCounter è maggiore di 1. Se è true, controlla se il valore della variabile varCounter è 2. Se è true, imposta il tempo di attesa su varWaitTime per 15. Ricordare che abbiamo impostato il valore predefinito di 60 per la variabile varWaitTime.Il risultato sarebbe 60\*15 = 900 secondi. Se il valore della variabile varCounter è diverso da 2 (è maggiore di 2, ossia l'aggiornamento del flusso di dati non è riuscito per 3 volte e l'iterazione si conclude, non occorre attendere oltre), il tempo di attesa è impostato su varWaitTime \* 0. Pertanto è pari a 0. Se il valore della variabile varCounter è 1, moltiplicheremo varWaitTime \* 5. Il risultato sarebbe 60\*5 = 300 secondi.
+    L'espressione è un'istruzione if annidata. Controlla se il valore della variabile varCounter è maggiore di 1. Se è true, controlla se il valore della variabile varCounter è 2. Se è true, imposta il tempo di attesa su varWaitTime per 15. Ricordare che abbiamo impostato il valore predefinito di 60 per la variabile varWaitTime.Il risultato sarebbe 60\*15 = 900 secondi. Se il valore della variabile varCounter è diverso da 2 (è maggiore di 2, ossia l'aggiornamento del flusso di dati non è riuscito per 3 volte e l'iterazione si conclude, non occorre attendere oltre), il tempo di attesa è impostato su varWaitTime \* 0. Pertanto è pari a 0. Se il valore della variabile varCounter è 1, moltiplicheremo varWaitTime \* 5. Il risultato sarebbe 60\*5 = 300 secondi.
 
 9. Selezionare **OK**. 
 
