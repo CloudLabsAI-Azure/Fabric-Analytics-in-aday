@@ -1,20 +1,39 @@
+# Microsoft Fabric - Fabric Analyst in a Day - Lab 2
+
+
 
 # Sommario
+
 - Introduzione
-Licenza di Fabric
-Attività 1 - Abilitazione di una licenza di valutazione per Microsoft Fabric 
-Panoramica delle esperienze in Fabric
-Attività 2 - Esperienza Data Factory 
-Attività 3 - Esperienza Data Activator
-Attività 4 - Esperienza Industry Solutions
-Attività 5 - Esperienza Real-Time Intelligence
-Attività 6 - Esperienza Synapse Data Engineering
-Attività 7 - Esperienza Synapse Data Science
-Attività 8 - Esperienza Synapse Data Warehouse
-Area di lavoro di Fabric
-Attività 9 - Creazione di un'area di lavoro di Fabric
-Attività 10 - Creazione di un Lakehouse
-Riferimenti
+
+- Licenza di Fabric
+
+    - Attività 1 - Abilitazione di una licenza di valutazione per Microsoft Fabric 
+
+- Panoramica delle esperienze in Fabric
+
+    - Attività 2 - Esperienza Data Factory 
+
+    - Attività 3 - Esperienza Data Activator
+
+    - Attività 4 - Esperienza Industry Solutions
+
+    - Attività 5 - Esperienza Real-Time Intelligence
+
+    - Attività 6 - Esperienza Synapse Data Engineering
+
+    - Attività 7 - Esperienza Synapse Data Science
+
+    - Attività 8 - Esperienza Synapse Data Warehouse
+    - Area di lavoro di Fabric
+
+    - Attività 9 - Creazione di un'area di lavoro di
+
+- Fabric
+
+    - Attività 10 - Creazione di un Lakehouse
+
+- Riferimenti
 
 # Introduzione 
 Oggi si apprenderanno alcune funzionalità chiave di Microsoft Fabric. Questo è un workshop 
