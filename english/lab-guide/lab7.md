@@ -413,7 +413,7 @@ Now let’s see how easy it is to connect Power BI Desktop to the semantic model
  
     Notice it is easy to copy visuals from an existing report and paste them into a report that connects to the semantic model. Note that the table names, column names, and measure names must be the same for copy and paste to work. If they are not the same you may have an error, but this can be easily resolved. 
 
-13. Navigate to **FAIAD.pbix** and select Sales over the line chart.
+13. Navigate to **FAIAD.pbix** and select Sales over time line chart.
 
 14. From the ribbon, select **Home -> Copy**.
 

@@ -262,7 +262,7 @@ You should be in the Lakehouse **lh_FAIAD**. Make sure you are in Lakehouse view
 
     ![](../media/lab-04/image084.jpg)
  
-4. Connection settings dialog opens. Enter **org6c18814a.crm.dynamics.com** as **Environment domain**.
+4. Connection settings dialog opens. Select **Create new connection** radio button and Enter **org6c18814a.crm.dynamics.com** as **Environment domain**.
 5. Leave **Authentication kind** as **Organizational account**.
 6. Select **Sign in**.
 
