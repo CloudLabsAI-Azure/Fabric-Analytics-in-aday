@@ -40,182 +40,303 @@ In questo lab si apprenderà quanto segue:
 
 ## Attività 1: Query sui dati mediante SQL
 
-1. Torniamo all'area di lavoro di Fabric FAIAD_<nome utente> creata nel Lab 2, Attività 9.
+1. Torniamo all'area di lavoro di Fabric **FAIAD_\<nome utente>** creata nel Lab 2, Attività 9.
 
-2. Se si preferisce, è possibile ridurre a icona il flusso di attività per visualizzare l'elenco completo 
-degli elementi. 
+2. Se si preferisce, è possibile **ridurre a icona il flusso di attività** per visualizzare l'elenco completo 
+degli elementi.
 
 3. Saranno visibili tre tipi di lh_FAIAD, Lakehouse, modello semantico ed endpoint SQL. In un lab 
 precedente abbiamo esaminato il lakehouse e creato query visive usando l'endpoint di Analisi 
-SQL. Selezionare l'opzione lh_FAIAD - Endpoint di Analisi SQL per continuare a esplorare questa 
-opzione. Si aprirà la vista SQL di Explorer.
+SQL. Selezionare l'opzione **lh_FAIAD - Endpoint di Analisi SQL** per continuare a esplorare questa 
+opzione. Si aprirà la **vista SQL** di Explorer.
 
+    ![](../media/lab-06/image005.jpg)
 
 
 Se si desidera esplorare i dati prima di creare un modello di dati, è possibile usare SQL a questo fine. 
 Sono disponibili due opzioni per usare SQL. La prima opzione è la query visiva, che abbiamo usato nel 
 lab precedente. La seconda opzione è la scrittura di codice TSQL. Si tratta di un'opzione pensata per 
 gli sviluppatori. Esaminiamola assieme. 
+
 Supponiamo di voler conoscere rapidamente le unità Units dal fornitore mediante SQL.
-Versione: 08.2024 Copyright 2024 Microsoft 4|Pagina 
-Gestito da: Microsoft Corporation
+
 Nell'endpoint di Analisi SQL del lakehouse, come indicato nel pannello di sinistra, è possibile 
 visualizzare le tabelle. Espandendo le tabelle, si possono visualizzare le colonne che compongono 
 la tabella. Vi sono inoltre opzioni per la creazione di viste SQL, funzioni e stored procedure. Se si ha 
 familiarità con SQL, è possibile esplorare queste opzioni. Proviamo a scrivere una semplice query SQL.
-4. Nel menu in alto selezionare Nuova query SQL oppure nella parte inferiore del pannello di 
-sinistra selezionare Query. Si aprirà la vista della query SQL.
-5. Incollare la query SQL seguente nella finestra della query. Questa query restituirà le unità in 
+
+4. Nel **menu in alto** selezionare **Nuova query SQL** oppure nella **parte inferiore del pannello di 
+sinistra** selezionare **Query**. Si aprirà la vista della query SQL.
+
+    ![](../media/lab-06/image008.jpg)   
+
+5. Incollare la **query SQL seguente** nella **finestra della query**. Questa query restituirà le unità in 
 base al nome del fornitore. Per ottenere questo risultato è necessario unire la tabella Sales alle 
 tabelle Product e Supplier.
-SELECT su.SupplierName, SUM(Quantity) as Units
-FROM dbo.Sales s
-JOIN dbo.Product p on p.StockItemID = s.StockItemID
-JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
-GROUP BY su.SupplierName
-6. Fare clic su Esegui nel menu dell'editor SQL per visualizzare i risultati.
-7. Notare che è disponibile un'opzione per salvare questa query come vista selezionando Salva 
-come visualizzazione.
-8. Nel pannello di sinistra Explorer, nella sezione Query notare che questa query è salvata in Query 
-personali come SQL query 1. Ciò consente di rinominare la query e salvarla per l'uso futuro. È 
+
+    `SELECT su.SupplierName, SUM(Quantity) as Units
+    FROM dbo.Sales s
+    JOIN dbo.Product p on p.StockItemID = s.StockItemID
+    JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+    GROUP BY su.SupplierName`
+
+6. Fare clic su **Esegui** nel menu dell'editor SQL per visualizzare i risultati.
+
+7. Notare che è disponibile un'opzione per salvare questa query come vista selezionando **Salva 
+come visualizzazione**.
+8. Nel pannello di **sinistra Explorer**, nella sezione **Query** notare che questa query è salvata in **Query 
+personali** come **SQL query 1**. Ciò consente di rinominare la query e salvarla per l'uso futuro. È 
 inoltre presente un'opzione per visualizzare le query condivise con l'utente corrente mediante la 
-cartella Query condivise.
-Nota: le query visive create nei lab precedenti sono disponibili anche nella cartella My queries.
-Versione: 08.2024 Copyright 2024 Microsoft 5|Pagina 
-Gestito da: Microsoft Corporation
-Attività 2: Visualizzazione del risultato T-SQL
-1. Possiamo anche visualizzare il risultato di questa query. Evidenziare la query nel riquadro delle query 
-2. Nel menu del riquadro Risultati, selezionare Esplorare questi dati (anteprima) -> Visualizza risultati.
-3. Si apre la finestra di dialogo Visualizza risultati . Selezionare Continua.
-Si apre la finestra di dialogo Visualizza risultati che ha un aspetto simile alla vista del report Power BI 
-Desktop. Presenta tutte le funzionalità disponibili nella vista del report Power BI Desktop: è possibile 
-formattare la pagina, selezionare diversi oggetti visivi, formattare gli oggetti visivi, aggiungere filtri, 
-ecc. Non esploreremo queste opzioni in questo corso.
-4. Espandere il riquadro Dati, quindi espandere Query SQL 1.
-5. Selezionare i campi Supplier_Name e Units. Viene creato un oggetto visivo tabella.
-Versione: 08.2024 Copyright 2024 Microsoft 6|Pagina 
-Gestito da: Microsoft Corporation
-6. Nella sezione Visualizzazioni cambiare il tipo di oggetto visivo selezionando l'istogramma in pila.
-7. Selezionare Salvare come report in basso a destra della schermata.
-8. Si apre la finestra di dialogo Salva il report. Digitare Units per fornitore nella casella di testo 
-Immettere un nome per il report.
-9. Assicurarsi che l'area di lavoro di destinazione sia l'area di lavoro di Fabric FAIAD<nomeutente>
-10. Selezionare Salva.
-Si aprirà nuovamente la schermata Query SQL.
-Versione: 08.2024 Copyright 2024 Microsoft 7|Pagina 
-Gestito da: Microsoft Corporation
-Lakehouse: modellazione semantica
-Attività 3: Creazione di un modello semantico
-1. Nel pannello inferiore selezionare Modello. Il riquadro centrale è simile alla vista Modello 
+cartella **Query condivise**.
+
+    **Nota:** le query visive create nei lab precedenti sono disponibili anche nella cartella My queries.
+
+    ![](../media/lab-06/image011.jpg)
+
+## Attività 2: Visualizzazione del risultato T-SQL
+
+1. Possiamo anche visualizzare il risultato di questa query. **Evidenziare la query** nel riquadro delle query 
+
+2. Nel menu del riquadro Risultati, selezionare **Esplorare questi dati (anteprima) -> Visualizza risultati**.
+
+    ![](../media/lab-06/image014.png)
+
+
+3. Si apre la finestra di dialogo **Visualizza risultati** . Selezionare **Continua**.
+
+    Si apre la finestra di dialogo **Visualizza risultati** che ha un aspetto simile alla vista del report Power BI 
+    Desktop. Presenta tutte le funzionalità disponibili nella vista del report Power BI Desktop: è possibile 
+    formattare la pagina, selezionare diversi oggetti visivi, formattare gli oggetti visivi, aggiungere filtri, 
+    ecc. Non esploreremo queste opzioni in questo corso.
+
+4. Espandere il riquadro **Dati**, quindi espandere **Query SQL 1**.
+
+5. Selezionare i campi **Supplier_Name** e **Units**. Viene creato un oggetto visivo tabella.
+
+    ![](../media/lab-06/image017.jpg)
+
+
+6. Nella sezione **Visualizzazioni** cambiare il tipo di oggetto visivo selezionando l'**istogramma in pila**.
+
+7. Selezionare **Salvare come report**  in basso a destra della schermata.
+
+    ![](../media/lab-06/image020.jpg)
+
+
+8. Si apre la finestra di dialogo Salva il report. Digitare **Units per fornitore** nella casella di testo 
+**Immettere un nome per il report**.
+
+9. Assicurarsi che l'area di lavoro di destinazione sia l'area di lavoro di Fabric **FAIAD\<nomeutente>**
+
+10. Selezionare **Salva**.
+
+    ![](../media/lab-06/image023.png)
+
+
+    Si aprirà nuovamente la schermata Query SQL.
+
+# Lakehouse: modellazione semantica
+
+## Attività 3: Creazione di un modello semantico
+
+1. Nel **pannello inferiore** selezionare **Modello**. Il riquadro centrale è simile alla vista Modello 
 presente in Power BI Desktop. 
-Questo è il modello predefinito creato dal lakehouse. Tuttavia, il modello predefinito presenta alcune 
-limitazioni (ad esempio la possibilità di formattare le misure, ecc.). Inoltre, nel nostro modello 
-abbiamo bisogno solo di un sottoinsieme delle tabelle. Quindi procederemo alla creazione di un 
-nuovo modello semantico.
-2. Dal menu in alto a destra selezionare la freccia accanto all'endpoint di Analisi SQL.
-3. Selezionare Lakehouse per passare alla vista Lakehouse.
-4. Nel menu selezionare Home -> Nuovo modello semantico.
-5. Viene visualizzata la finestra di dialogo Nuovo modello semantico. Immettere sm_FAIAD come 
+
+    ![](../media/lab-06/image026.jpg)
+
+
+    Questo è il modello predefinito creato dal lakehouse. Tuttavia, il modello predefinito presenta alcune 
+    limitazioni (ad esempio la possibilità di formattare le misure, ecc.). Inoltre, nel nostro modello 
+    abbiamo bisogno solo di un sottoinsieme delle tabelle. Quindi procederemo alla creazione di un 
+    nuovo modello semantico.
+    
+2. Dal menu in alto a destra **selezionare la freccia accanto all'endpoint di Analisi SQL**.
+
+3. Selezionare **Lakehouse** per passare alla vista Lakehouse.
+
+    ![](../media/lab-06/image029.jpg)
+
+
+4. Nel menu selezionare **Home -> Nuovo modello semantico**.
+
+5. Viene visualizzata la finestra di dialogo Nuovo modello semantico. Immettere **sm_FAIAD** come 
 nome del modello semantico Direct Lake.
 6. Per impostazione predefinita abbiamo la possibilità di selezionare un sottoinsieme delle tabelle. 
 tenere presente che nel lab precedente avevamo creato delle viste. Ora vogliamo includere 
-queste viste nel modello. Fare clic sull'icona nella barra di ricerca e selezionare Mostra viste. 
+queste viste nel modello. **Fare clic** sull'**icona** nella **barra di ricerca** e selezionare **Mostra viste**. 
 Ora abbiamo la possibilità di visualizzare e selezionare le viste.
-Versione: 08.2024 Copyright 2024 Microsoft 8|Pagina 
-Gestito da: Microsoft Corporation
-7. Selezionare le seguenti tabelle/viste:
-a. Date
-b. People
-c. Customer
-d. PO
-e. Supplier
-f. Geo
-g. Reseller
-h. Sales
-i. Product
-8. Selezionare Conferma.
-Versione: 08.2024 Copyright 2024 Microsoft 9|Pagina 
-Gestito da: Microsoft Corporation
-Attività 4: Creazione di relazioni
-Verrà visualizzato il nuovo modello semantico con le tabelle selezionate. È possibile ridisporre
+
+    ![](../media/lab-06/image032.jpg)
+
+
+7. **Selezionare** le seguenti tabelle/viste:
+    
+    **a. Date**
+
+    **b. People**
+
+    **c. Customer**
+
+    **d. PO**
+
+    **e. Supplier**
+
+    **f. Geo**
+
+    **g. Reseller**
+
+    **h. Sales**
+
+    **i. Product**
+
+8. Selezionare **Conferma**.
+
+    ![](../media/lab-06/image035.png)
+
+
+## Attività 4: Creazione di relazioni
+
+Verrà visualizzato il nuovo modello semantico con le tabelle selezionate. È possibile **ridisporre**
 liberamente le tabelle in base alle esigenze. Notare che alcune tabelle (Geo, Reseller, Sales e Product) 
 presentano un segnale di avviso in alto a destra. Questo perché si tratta di viste. Tutti gli oggetti visivi 
 creati con campi a partire da queste viste saranno in modalità Direct Query e non in modalità Direct Lake. 
-Nota: la modalità Direct Lake è più veloce della modalità Direct Query. 
-Versione: 08.2024 Copyright 2024 Microsoft 10|Pagina 
-Gestito da: Microsoft Corporation
+
+**Nota:** la modalità Direct Lake è più veloce della modalità Direct Query. 
+
+![](../media/lab-06/image038.jpg)
+
+
 Il primo passaggio permette di creare relazioni tra queste tabelle.
-9. Creiamo una relazione tra le tabelle Sales e Reseller. Selezionare ResellerID dalla tabella Sales e 
-trascinarlo su ResellerID nella tabella Reseller.
-10. Si apre la finestra di dialogo Nuova relazione. Assicurarsi che Da tabella sia Sales e che la 
-Colonna sia ResellerID.
-11. Assicurarsi che Nella tabella sia Reseller e che la Colonna sia ResellerID.
-12. Assicurarsi che il campo Cardinalità sia impostato su Molti a uno (*:1).
-13. Assicurarsi che il campo Direzione filtro incrociato sia impostato su Singola.
-14. Selezionare Salva.
-Versione: 08.2024 Copyright 2024 Microsoft 11|Pagina 
-Gestito da: Microsoft Corporation
-15. Allo stesso modo, creiamo una relazione tra le tabelle Sales e Date. Selezionare InvoiceDate dalla 
-tabella Sales e trascinarlo su Date nella tabella Date.
-16. Si apre la finestra di dialogo Nuova relazione. Assicurarsi che Da tabella sia Sales e che la 
-Colonna sia InvoiceDate.
-17. Assicurarsi che Nella tabella sia Date e che la Colonna sia Date.
-18. Assicurarsi che il campo Cardinalità sia impostato su Molti a uno (*:1).
-19. Assicurarsi che il campo Direzione filtro incrociato sia impostato su Singola.
-20. Selezionare Salva.
-21. Analogamente, creare una relazione molti-a-uno tra le tabelle Sales e Product. Selezionare 
-StockItemID dalla tabella Sales e StockItemID dalla tabella Product.
-Nota: tutti i nostri aggiornamenti vengono salvati automaticamente.
-Checkpoint: il modello dovrebbe avere le tre relazioni tra le tabelle Sales e Reseller e le tabelle Sales 
-e Date e Sales e Product come mostrato nello screenshot seguente:
-Versione: 08.2024 Copyright 2024 Microsoft 12|Pagina 
-Gestito da: Microsoft Corporation
-Per motivi di tempo, non creeremo tutte le relazioni. Se il tempo lo consente, è possibile completare 
-la sezione facoltativa alla fine del laboratorio. La sezione facoltativa illustra i passaggi per creare le 
-relazioni rimanenti.
-Attività 5: Creazione delle misure
+
+9. Creiamo una relazione tra le tabelle Sales e Reseller. Selezionare **ResellerID** dalla tabella **Sales** e 
+trascinarlo su **ResellerID** nella tabella **Reseller**.
+
+    ![](../media/lab-06/image041.jpg)
+
+
+10. Si apre la finestra di dialogo Nuova relazione. Assicurarsi che **Da tabella** sia **Sales** e che la 
+**Colonna** sia **ResellerID**.
+
+11. Assicurarsi che **Nella tabella** sia **Reseller** e che la **Colonna** sia **ResellerID**.
+
+12. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (*:1)**.
+
+13. Assicurarsi che il campo **Direzione filtro incrociato** sia impostato su **Singola**.
+
+14. Selezionare **Salva**.
+
+    ![](../media/lab-06/image044.png)
+
+
+15. Allo stesso modo, creiamo una relazione tra le tabelle Sales e Date. Selezionare **InvoiceDate** dalla 
+tabella **Sales** e trascinarlo su **Date** nella tabella **Date**.
+
+16. Si apre la finestra di dialogo Nuova relazione. Assicurarsi che **Da tabella** sia **Sales** e che la 
+**Colonna** sia **InvoiceDate**.
+
+17. Assicurarsi che **Nella tabella** sia **Date** e che la **Colonna** sia **Date**.
+
+18. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (*:1)**.
+
+19. Assicurarsi che il campo **Direzione filtro incrociato** sia impostato su **Singola**.
+
+20. Selezionare **Salva**.
+
+    ![](../media/lab-06/image047.png)
+
+
+21. Analogamente, creare una relazione molti-a-uno tra le tabelle **Sales** e **Product**. Selezionare 
+**StockItemID** dalla tabella **Sales** e **StockItemID** dalla tabella **Product**.
+
+    **Nota:** tutti i nostri aggiornamenti vengono salvati automaticamente.
+
+    **Checkpoint:** il modello dovrebbe avere le tre relazioni tra le tabelle Sales e Reseller e le tabelle Sales 
+    e Date e Sales e Product come mostrato nello screenshot seguente:
+
+    ![](../media/lab-06/image050.jpg)
+
+
+    Per motivi di tempo, non creeremo tutte le relazioni. Se il tempo lo consente, è possibile completare 
+    la sezione facoltativa alla fine del laboratorio. La sezione facoltativa illustra i passaggi per creare le 
+    relazioni rimanenti.
+
+## Attività 5: Creazione delle misure
 Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
-1. Selezionare la tabella Sales dalla vista del modello. Vogliamo aggiungere le misure alla tabella 
+
+1. Selezionare la tabella **Sales** dalla vista del modello. Vogliamo aggiungere le misure alla tabella 
 Sales.
-2. Nel menu in alto selezionare Home -> Nuova misura. Notare che viene visualizzata la barra della 
+
+2. Nel menu in alto selezionare **Home -> Nuova misura**. Notare che viene visualizzata la barra della 
 formula.
-3. Immettere Sales = SUM(Sales[Sales Amount]) nella barra della formula.
-4. Fare clic sul segno di spunta a sinistra della barra della formula o premere il tasto INVIO.
+
+3. Immettere **Sales = SUM(Sales[Sales Amount])** nella **barra della formula**.
+
+4. Fare clic sul **segno di spunta** a sinistra della barra della formula o premere il tasto **INVIO**.
+
 5. Espandere il pannello delle proprietà a destra.
-6. Espandere la sezione Formattazione.
-7. Nel menu a discesa Formato selezionare Valuta.
-8. Impostare Posizioni decimali su 0.
-Versione: 08.2024 Copyright 2024 Microsoft 13|Pagina 
-Gestito da: Microsoft Corporation
-9. Con la tabella Sales selezionata nel menu in alto, selezionare Home -> Nuova misura. Notare che 
+
+6. Espandere la sezione **Formattazione**.
+
+7. Nel menu a discesa **Formato** selezionare **Valuta**.
+
+8. Impostare Posizioni decimali su **0**.
+
+    ![](../media/lab-06/image053.jpg)
+
+
+9. Con la tabella **Sales** selezionata nel menu in alto, selezionare **Home -> Nuova misura**. Notare che 
 viene visualizzata la barra della formula.
-10. Immettere Units = SUM(Sales[Quantity]) nella barra della formula.
-11. Fare clic sul segno di spunta a sinistra della barra della formula o premere il tasto INVIO.
-12. Nel pannello Proprietà a destra espandere la sezione Formattazione (il caricamento del pannello 
+
+10. Immettere **Units = SUM(Sales[Quantity])** nella **barra della formula**.
+
+11. Fare clic sul **segno di spunta** a sinistra della barra della formula o premere il tasto **INVIO**.
+
+12. Nel pannello Proprietà a destra espandere la sezione **Formattazione** (il caricamento del pannello 
 Proprietà potrebbe richiedere alcuni istanti).
-13. Nell'elenco a discesa Formato selezionare Numero intero.
-14. Usare il dispositivo di scorrimento per impostare il Separatore delle migliaia su Sì.
-15. Con la tabella Sales selezionata nel menu in alto, selezionare Home -> Nuova misura. Notare che 
+
+13. Nell'elenco a discesa **Formato** selezionare **Numero intero**.
+
+14. Usare il dispositivo di scorrimento per impostare il **Separatore delle migliaia su Sì**.
+
+    ![](../media/lab-06/image056.jpg)
+
+
+15. Con la tabella Sales selezionata nel menu in alto, selezionare **Home -> Nuova misura**. Notare che 
 viene visualizzata la barra della formula.
-16. Immettere Sales Orders = DISTINCTCOUNT(Sales[InvoiceID]) nella barra della formula.
-17. Fare clic sul segno di spunta a sinistra della barra della formula o premere il tasto INVIO.
-18. Nel pannello Proprietà a destra espandere la sezione Formattazione.
-19. Nell'elenco a discesa Formato selezionare Numero intero.
-20. Usare il dispositivo di scorrimento per impostare il Separatore delle migliaia su Sì.
-Versione: 08.2024 Copyright 2024 Microsoft 14|Pagina 
-Gestito da: Microsoft Corporation
-21. Nel pannello dati (a destra) selezionare Modello. Notare che questa operazione fornisce una 
+
+16. Immettere **Sales Orders = DISTINCTCOUNT(Sales[InvoiceID])** nella **barra della formula**.
+
+17. Fare clic sul **segno di spunta** a sinistra della barra della formula o premere il tasto **INVIO**.
+
+18. Nel pannello Proprietà a destra espandere la sezione **Formattazione**.
+
+19. Nell'elenco a discesa **Formato** selezionare **Numero intero**.
+20. Usare il dispositivo di scorrimento per impostare il **Separatore delle migliaia** su **Sì**.
+
+    ![](../media/lab-06/image059.jpg)
+
+
+21. Nel **pannello dati** (a destra) selezionare **Modello**. Notare che questa operazione fornisce una 
 vista che semplificherà l'organizzazione di tutti gli elementi nel modello semantico.
-22. Espandere Modello semantico -> Misure per visualizzare tutte le misure appena create.
-23. È anche possibile espandere le singole tabelle per visualizzare le colonne, le gerarchie e le 
+
+22. Espandere **Modello semantico -> Misure** per visualizzare tutte le misure appena create.
+
+23. È anche possibile **espandere le singole tabelle** per visualizzare le colonne, le gerarchie e le 
 misure in ciascuna di esse.
-Anche in questo caso, per motivi di tempo non creeremo tutte le misure. Se il tempo lo consente, 
+
+    ![](../media/lab-06/image062.png)
+
+
+    Anche in questo caso, per motivi di tempo non creeremo tutte le misure. Se il tempo lo consente, 
 è possibile completare la sezione facoltativa alla fine del laboratorio. La sezione facoltativa illustra 
 i passaggi per creare le misure rimanenti.
-Abbiamo creato un modello semantico, il passaggio successivo è creare un report. Ce ne occuperemo 
+
+    Abbiamo creato un modello semantico, il passaggio successivo è creare un report. Ce ne occuperemo 
 nel prossimo lab.
-Attività 6: Sezione facoltativa: creazione delle relazioni
+
+## Attività 6: Sezione facoltativa: creazione delle relazioni
 Aggiungiamo le relazioni rimanenti.
+
 1. Nel menu in alto selezionare Home -> Gestisci relazioni.
 2. Viene visualizzata la finestra di dialogo Gestisci relazioni. Selezionare Nuova relazione.
 Versione: 08.2024 Copyright 2024 Microsoft 15|Pagina 
