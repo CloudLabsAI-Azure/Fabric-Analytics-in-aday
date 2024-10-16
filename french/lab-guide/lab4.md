@@ -258,7 +258,7 @@ Notez que les cinq requêtes sont collées et que vous disposez désormais du vo
 
 11. Vous êtes redirigé vers la **fenêtre Power Query**. Dans le **coin inférieur droit,** notez que la liste déroulante Destination des données est définie sur **Lakehouse**. De même, **configurez la destination des données pour la requête PO**. Ensuite, la liste déroulante **Destination des données** de votre requête PO devrait être définie sur **Lakehouse,** comme illustré dans la capture d’écran ci-dessous.
 
-   ![](../media/lab-04/image069.jpg)
+    ![](../media/lab-04/image069.jpg)
 
 ## Tâche 8 : renommer et publier le flux de données Snowflake
 

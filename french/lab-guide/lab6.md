@@ -1,15 +1,16 @@
 # Microsoft Fabric - Analyste Fabric en un jour - Laboratoire 6
+
 ![](../media/lab-06/image.png)
 
 # Sommaire
 
--   Introduction
+- Introduction
 
--   Lakehouse : analyse des données	
+- Lakehouse : analyse des données	
 
-    -   Tâche 1 : interroger des données à l’aide de SQL
+    - Tâche 1 : interroger des données à l’aide de SQL
 
-    -   Tâche 2 : visualiser le résultat T-SQL	
+    - Tâche 2 : visualiser le résultat T-SQL	
 
 -   Lakehouse : modélisation sémantique	
 

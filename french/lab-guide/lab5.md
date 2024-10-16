@@ -50,13 +50,13 @@ Nous avons ingéré des données provenant de différentes sources de données d
 
 - **Données Sales :** stockées dans ADLS et mises à jour au quotidien à midi. Nous n’avons pas besoin de configurer l’actualisation pour cela puisque nous avons créé un raccourci. Dès que les données sont mises à jour dans ADLS, elles sont disponibles.
 
-À la fin de ce labo, vous saurez :
+    À la fin de ce labo, vous saurez :
 
-- comment configurer une actualisation planifiée de Dataflow Gen2
+    - comment configurer une actualisation planifiée de Dataflow Gen2
 
-- comment créer un pipeline de données
+    - comment créer un pipeline de données
 
-- comment configurer une actualisation planifiée d’un pipeline de données.
+    - comment configurer une actualisation planifiée d’un pipeline de données.
 
 # Dataflow Gen2
 
@@ -83,11 +83,11 @@ l’espace de travail dans le volet gauche.
 
     **Remarque** : la page Paramètres s’ouvre alors. Tous les flux de données sont répertoriés dans le volet gauche.
 
-6.	Dans le volet central, cliquez sur le lien **Historique des actualisations**.
+6. Dans le volet central, cliquez sur le lien **Historique des actualisations**.
 
     ![](../media/lab-05/image015.jpg)
 
-7.	La boîte de dialogue Historique des actualisations s’ouvre alors. Une actualisation est alors répertoriée. Il s’agit de l’actualisation qui s’est produite lors de la publication du flux de données. Cliquez sur le lien **Heure de début**.
+7. La boîte de dialogue Historique des actualisations s’ouvre alors. Une actualisation est alors répertoriée. Il s’agit de l’actualisation qui s’est produite lors de la publication du flux de données. Cliquez sur le lien **Heure de début**.
  
     **Remarque** : l’heure de début est différente pour vous.
 
@@ -97,9 +97,9 @@ l’espace de travail dans le volet gauche.
 
     ![](../media/lab-05/image021.jpg)
 
-8.	Quittons cet écran en cliquant sur le **X** dans le coin supérieur droit. Vous êtes alors redirigé vers la **page des paramètres du flux de données**.
+8. Quittons cet écran en cliquant sur le **X** dans le coin supérieur droit. Vous êtes alors redirigé vers la **page des paramètres du flux de données**.
 
-9.	Sous Connexion à la passerelle, développez **Informations d’identification de la source de données**. Une liste des connexions utilisées dans le flux de données s’affiche alors, Dans ce cas, il s’agit de Lakehouse et Snowflake.
+9. Sous Connexion à la passerelle, développez **Informations d’identification de la source de données**. Une liste des connexions utilisées dans le flux de données s’affiche alors, Dans ce cas, il s’agit de Lakehouse et Snowflake.
 
     a. **Lakehouse** : il s’agit de la connexion permettant d’ingérer des données depuis Dataflow.
 
@@ -107,21 +107,21 @@ l’espace de travail dans le volet gauche.
 
     ![](../media/lab-05/image024.jpg)
 
-10.	Développez **Actualiser**.
+10. Développez **Actualiser**.
 
-11.	Réglez le curseur **Configurer une planification d’actualisation** sur **Activé**.
+11. Réglez le curseur **Configurer une planification d’actualisation** sur **Activé**.
 
-12.	Définissez la **liste déroulante Fréquence d’actualisation** sur **Tous les jours**. Notez que vous pouvez également la définir sur Toutes les semaines.
+12. Définissez la **liste déroulante Fréquence d’actualisation** sur **Tous les jours**. Notez que vous pouvez également la définir sur Toutes les semaines.
 
-13.	Définissez le champ **Fuseau horaire** sur votre fuseau horaire préféré.
+13. Définissez le champ **Fuseau horaire** sur votre fuseau horaire préféré.
  
     **Remarque** : comme il s’agit d’un environnement de labo, vous pouvez définir le fuseau horaire sur votre fuseau horaire préféré. Dans un scénario réel, vous définissez le fuseau horaire en fonction de l’emplacement de votre source de données.
 
-14.	Cliquez sur le lien **Ajouter un autre horaire**. Notez que l’option **Heure** s’affiche alors.
+14. Cliquez sur le lien **Ajouter un autre horaire**. Notez que l’option **Heure** s’affiche alors.
 
-15.	Définissez le champ **Heure** sur **minuit/0 h**. Notez que vous pouvez définir l’actualisation sur une heure pile ou une demi-heure.
+15. Définissez le champ **Heure** sur **minuit/0 h**. Notez que vous pouvez définir l’actualisation sur une heure pile ou une demi-heure.
 
-16.	Cliquez sur Appliquer pour enregistrer ce paramètre.
+16. Cliquez sur Appliquer pour enregistrer ce paramètre.
 
     **Remarque** : en cliquant sur le lien Ajouter un autre horaire, vous pouvez ajouter plusieurs heures d’actualisation.
     
@@ -386,7 +386,7 @@ Ajoutons un peu plus de complexité à notre scénario. Nous avons remarqué que
 
 8. Assurez-vous que le champ **Espace de travail** est défini sur votre espace de travail **FAIAD_\<username>**.
 
-9.	Dans la **liste déroulante Flux de données**, sélectionnez **df_People_SharePoint**. Lorsque cette activité Flux de données est exécutée, elle va actualiser **df_People_SharePoint**.
+9. Dans la **liste déroulante Flux de données**, sélectionnez **df_People_SharePoint**. Lorsque cette activité Flux de données est exécutée, elle va actualiser **df_People_SharePoint**.
 
     ![](../media/lab-05/image096.jpg)
 
@@ -591,69 +591,54 @@ Ensuite, nous devons attendre 5 minutes/300 secondes si l’actualisation du flu
 
 Fabric Analyst in a Day (FAIAD) vous présente certaines des fonctions clés de Microsoft Fabric. Dans le menu du service, la section Aide (?) comporte des liens vers d’excellentes ressources.
 
-![](../media/lab-05/image137.png)
+ ![](../media/lab-04/image110.png)
 
 Voici quelques autres ressources qui vous aideront lors de vos prochaines étapes avec Microsoft Fabric :
-
--	Consultez le billet de blog pour lire l’intégralité de l’[annonce de la GA de Microsoft Fabric](https://www.microsoft.com/en-us/microsoft-fabric/blog/2023/11/15/prepare-your-data-for-ai-innovation-with-microsoft-fabric-now-generally-available/).
-
-
--	Explorez Fabric grâce à la [visite guidée](https://guidedtour.microsoft.com/en-us/guidedtour/microsoft-fabric/microsoft-fabric/1/1).
-
--	Inscrivez-vous pour bénéficier d’un [essai gratuit de Microsoft Fabric](https://www.microsoft.com/en-us/microsoft-fabric/getting-started).
-
--	Rendez-vous sur le [site web Microsoft Fabric](https://www.microsoft.com/en-in/microsoft-fabric).
-
--	Acquérez de nouvelles compétences en explorant les [modules d’apprentissage Fabric](https://learn.microsoft.com/en-us/training/browse/?products=fabric&resource_type=module).
-
--	Explorez la [documentation technique Fabric](https://learn.microsoft.com/en-us/fabric/).
-
--	Lisez le [livre électronique gratuit sur la prise en main de Fabric](https://info.microsoft.com/ww-landing-unlocking-transformative-data-value-with-microsoft-fabric.html).
-
--	Rejoignez la [communauté Fabric](https://community.fabric.microsoft.com/) pour publier vos questions, partager vos commentaires et apprendre des autres.
+- Consultez le billet de blog pour lire l’intégralité de l’[annonce de la GA de Microsoft Fabric](https://aka.ms/Fabric-Hero-Blog-Ignite23).
+- Explorez Fabric grâce à la [visite guidée](https://aka.ms/Fabric-GuidedTour).
+- Inscrivez-vous pour bénéficier d’un [essai gratuit de Microsoft Fabric](https://aka.ms/try-fabric).
+- Rendez-vous sur le [site web Microsoft Fabric](https://aka.ms/microsoft-fabric).
+- Acquérez de nouvelles compétences en explorant les [modules d’apprentissage Fabric](https://aka.ms/learn-fabric).
+- Explorez la [documentation technique Fabric](https://aka.ms/fabric-docs).
+- Lisez le [livre électronique gratuit sur la prise en main de Fabric](https://aka.ms/fabric-get-started-ebook).
+- Rejoignez la [communauté Fabric](https://aka.ms/fabric-community) pour publier vos questions, partager vos commentaires et apprendre des autres.
 
 Lisez les blogs d’annonces plus détaillés sur l’expérience Fabric :
--	[Blog Expérience Data Factory dans Fabric](https://blog.fabric.microsoft.com/en-us/blog/introducing-data-factory-in-microsoft-fabric/)
--	[Blog Expérience Synapse Data Engineering dans Fabric](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-engineering-in-microsoft-fabric/)
--	[Blog Expérience Synapse Data Science dans Fabric](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-science-in-microsoft-fabric/)
--	[Blog Expérience Synapse Data Warehousing dans Fabric](https://blog.fabric.microsoft.com/en-us/blog/introducing-synapse-data-warehouse-in-microsoft-fabric/)
--	[Blog Expérience Synapse Real-Time Analytics dans Fabric](https://blog.fabric.microsoft.com/en-us/blog/sense-analyze-and-generate-insights-with-synapse-real-time-analytics-in-microsoft-fabric/)
--	[Blog Annonce Power BI](https://powerbi.microsoft.com/en-us/blog/empower-power-bi-users-with-microsoft-fabric-and-copilot/)
--	[Blog Expérience Data Activator dans Fabric](https://blog.fabric.microsoft.com/en-us/blog/driving-actions-from-your-data-with-data-activator/)
- 
--	[Blog Administration et gouvernance dans Fabric](https://blog.fabric.microsoft.com/en-us/blog/administration-security-and-governance-in-microsoft-fabric/)
 
--	[Blog OneLake dans Fabric](https://blog.fabric.microsoft.com/en-us/blog/microsoft-onelake-in-fabric-the-onedrive-for-data/)
-
--  	[Blog Intégration de Dataverse et Microsoft Fabric](https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2023/05/24/new-dataverse-enhancements-and-ai-powered-productivity-with-microsoft-365-copilot/)
+- [Blog Expérience Data Factory dans Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
+- [Blog Expérience Synapse Data Engineering dans Fabric](https://aka.ms/Fabric-DE-Blog)
+- [Blog Expérience Synapse Data Science dans Fabric](https://aka.ms/Fabric-DS-Blog)
+- [Blog Expérience Synapse Data Warehousing dans Fabric](https://aka.ms/Fabric-DW-Blog)
+- [Blog Expérience Synapse Real-Time Analytics dans Fabric](https://aka.ms/Fabric-RTA-Blog)
+- [Blog Annonce Power BI](https://aka.ms/Fabric-PBI-Blog)
+- [Blog Expérience Data Activator dans Fabric](https://aka.ms/Fabric-DA-Blog)
+- [Blog Administration et gouvernance dans Fabric](https://aka.ms/Fabric-Admin-Gov-Blog)
+- [Blog OneLake dans Fabric](https://aka.ms/Fabric-OneLake-Blog)
+- [Blog Intégration de Dataverse et Microsoft Fabric](https://aka.ms/Dataverse-Fabric-Blog)
 
 
 © 2023 Microsoft Corporation. Tous droits réservés.
 
 En effectuant cette démonstration/ce labo, vous acceptez les conditions suivantes :
 
-La technologie/fonctionnalité décrite dans cette démonstration/ces travaux pratiques est fournie par Microsoft Corporation en vue d’obtenir vos commentaires et de vous fournir une expérience d’apprentissage. Vous pouvez utiliser cette démonstration/ces ateliers uniquement pour évaluer ces technologies et fonctionnalités, et pour fournir des commentaires à Microsoft. Vous ne
-pouvez pas l’utiliser à d’autres fins. Vous ne pouvez pas modifier, copier, distribuer, transmettre, afficher, effectuer, reproduire, publier, accorder une licence, créer des œuvres dérivées,
-transférer ou vendre tout ou une partie de cette démonstration/ces ateliers.
+La technologie/fonctionnalité décrite dans cette démonstration/ces travaux pratiques est fournie par Microsoft Corporation en vue d’obtenir vos commentaires et de vous fournir une expérience d’apprentissage. Vous pouvez utiliser cette démonstration/ces ateliers uniquement pour évaluer ces technologies et fonctionnalités, et pour fournir des commentaires à Microsoft. Vous ne pouvez pas l’utiliser à d’autres fins. Vous ne pouvez pas modifier, copier, distribuer, transmettre, afficher, effectuer, reproduire, publier, accorder une licence, créer des œuvres dérivées, transférer ou vendre tout ou une partie de cette démonstration/ces ateliers.
 
 LA COPIE OU LA REPRODUCTION DE CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES (OU DE TOUTE PARTIE DE CEUX-CI) SUR TOUT AUTRE SERVEUR OU AUTRE EMPLACEMENT EN VUE D’UNE AUTRE REPRODUCTION OU REDISTRIBUTION EST EXPRESSÉMENT INTERDITE.
-
-CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES FOURNISSENT CERTAINES FONCTIONNALITÉS DE PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT D’ÉVENTUELS NOUVEAUX CONCEPTS ET FONCTIONNALITÉS, DANS UN ENVIRONNEMENT SIMULÉ SANS INSTALLATION OU
-CONFIGURATION COMPLEXE AUX FINS DÉCRITES CI-DESSUS. LES TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES PEUVENT NE PAS REPRÉSENTER LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE PAS FONCTIONNER DE
-LA MÊME MANIÈRE QUE DANS UNE VERSION FINALE. IL EST ÉGALEMENT POSSIBLE QUE NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES FONCTIONNALITÉS OU CONCEPTS. VOTRE EXPÉRIENCE D’UTILISATION DE CES FONCTIONNALITÉS DANS UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE DIFFÉRENTE.
+CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES FOURNISSENT CERTAINES FONCTIONNALITÉS DE PRODUIT/TECHNOLOGIES LOGICIELLES, NOTAMMENT D’ÉVENTUELS NOUVEAUX CONCEPTS ET FONCTIONNALITÉS, DANS UN ENVIRONNEMENT SIMULÉ SANS INSTALLATION OU CONFIGURATION
+COMPLEXE AUX FINS DÉCRITES CI-DESSUS. LES TECHNOLOGIES/CONCEPTS REPRÉSENTÉS DANS CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES PEUVENT NE PAS REPRÉSENTER LES FONCTIONNALITÉS COMPLÈTES ET PEUVENT NE PAS FONCTIONNER DE LA MÊME MANIÈRE QUE DANS UNE VERSION FINALE. IL EST ÉGALEMENT POSSIBLE QUE NOUS NE PUBLIIONS PAS DE VERSION FINALE DE CES FONCTIONNALITÉS OU CONCEPTS. VOTRE EXPÉRIENCE D’UTILISATION DE CES FONCTIONNALITÉS DANS UN ENVIRONNEMENT PHYSIQUE PEUT ÉGALEMENT ÊTRE DIFFÉRENTE.
 
 **COMMENTAIRES**. Si vous envoyez des commentaires sur les fonctionnalités, technologies et/ou concepts décrits dans ces ateliers/cette démonstration à Microsoft, vous accordez à Microsoft, sans frais, le droit d’utiliser, de partager et de commercialiser vos commentaires de quelque
 manière et à quelque fin que ce soit. Vous accordez également à des tiers, sans frais, les droits de brevet nécessaires pour leurs produits, technologies et services en vue de l’utilisation ou
-de l’interface avec des parties spécifiques d’un logiciel ou d’un service Microsoft incluant les commentaires. Vous n’enverrez pas de commentaires soumis à une licence exigeant que Microsoft accorde une licence pour son logiciel ou sa documentation à des tiers du fait que nous y incluons vos commentaires. Ces droits survivent à ce contrat.
- 
+de l’interface avec des parties spécifiques d’un logiciel ou d’un service Microsoft incluant les commentaires. Vous n’enverrez pas de commentaires soumis à une licence exigeant que
+Microsoft accorde une licence pour son logiciel ou sa documentation à des tiers du fait que nous y incluons vos commentaires. Ces droits survivent à ce contrat.
+
 MICROSOFT CORPORATION DÉCLINE TOUTES LES GARANTIES ET CONDITIONS EN CE
 QUI CONCERNE CETTE DÉMONSTRATION/CES TRAVAUX PRATIQUES, Y COMPRIS TOUTES LES GARANTIES ET CONDITIONS DE QUALITÉ MARCHANDE, QU’ELLES SOIENT EXPLICITES,
 IMPLICITES OU LÉGALES, D’ADÉQUATION À UN USAGE PARTICULIER, DE TITRE ET D’ABSENCE
 DE CONTREFAÇON. MICROSOFT N’OFFRE AUCUNE GARANTIE OU REPRÉSENTATION EN CE QUI CONCERNE LA PRÉCISION DES RÉSULTATS, LA CONSÉQUENCE QUI DÉCOULE DE L’UTILISATION
 DE CETTE DÉMONSTRATION/CES ATELIERS, OU L’ADÉQUATION DES INFORMATIONS CONTENUES DANS CETTE DÉMONSTRATION/CES ATELIERS À QUELQUE FIN QUE CE SOIT.
-
+ 
 **CLAUSE D’EXCLUSION DE RESPONSABILITÉ**
-
 Cette démonstration/Ce labo comporte seulement une partie des nouvelles fonctionnalités et améliorations disponibles dans Microsoft Power BI. Certaines fonctionnalités sont susceptibles
 de changer dans les versions ultérieures du produit. Dans ce labo/cette démonstration, vous allez découvrir comment utiliser certaines nouvelles fonctionnalités, mais pas toutes.
 
