@@ -160,8 +160,7 @@ Das nächste Schritt besteht darin, die Daten zu transformieren, damit wir ein s
 
     ![](../media/lab-03/image036.png)
 
-5. Wählen Sie bei ausgewählter Abfrage „Cities“ im Menüband des Power Query-Editors **Start -> Abfragen zusammenführen -> Abfragen als neue Abfrage zusammenführen.** Das Dialogfeld
-„Abfragen zusammenführen“ wird geöffnet.
+5. Wählen Sie bei ausgewählter Abfrage „Cities“ im Menüband des Power Query-Editors **Start -> Abfragen zusammenführen -> Abfragen als neue Abfrage zusammenführen**. Das Dialogfeld „Abfragen zusammenführen“ wird geöffnet.
 
     ![](../media/lab-03/image039.jpg)
 
@@ -263,9 +262,9 @@ Das nächste Schritt besteht darin, die Daten zu transformieren, damit wir ein s
 
     Beachten Sie, dass der Prozess dem von Power Query ähnelt. Alle Schritte sind sowohl im Bereich „Angewendete Schritte“ rechts als auch in der visuellen Ansicht aufgezeichnet. Wir benennen „Merge-Abfrage“ und „Laden aktivieren“ um, damit die Daten aus dieser Abfrage geladen werden.
 
-25. **Klicken Sie im Bereich „Abfragen“ (links) mit der rechten Maustaste auf „Merge-Abfrage“.** Wählen Sie **Umbenennen** aus, und benennen Sie die Abfrage in **Geo** um.
+25. **Klicken Sie im Bereich „Abfragen“ (links) mit der rechten Maustaste auf „Merge-Abfrage“**. Wählen Sie **Umbenennen** aus, und benennen Sie die Abfrage in **Geo** um.
  
-26. **Klicken Sie im Bereich „Abfragen“ (links) mit der 1rechten Maustaste auf Geo 1-Abfrage.** Wählen Sie **Laden aktivieren** aus, um diese Abfrage zu aktivieren.
+26. **Klicken Sie im Bereich „Abfragen“ (links) mit der 1rechten Maustaste auf Geo 1-Abfrage**. Wählen Sie **Laden aktivieren** aus, um diese Abfrage zu aktivieren.
 
 27. Stellen Sie sicher, dass die Abfragen „Cities“, „States“ und „Countries“ **deaktiviert** sind.
 

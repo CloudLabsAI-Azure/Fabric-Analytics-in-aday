@@ -1,4 +1,4 @@
-# Microsoft Fabric - Fabric Analyst in a Day - Labo 2 ##
+# Microsoft Fabric - Analyste Fabric en un jour - Laboratoire 2
 
 ![](../media/lab-02/image001.png)
 
@@ -8,8 +8,7 @@
 
 - Licence Fabric	
 
-    - Tâche 1 : activer une licence d’essai 
-    Microsoft Fabric	
+    - Tâche 1 : activer une licence d’essai Microsoft Fabric	
 
 - Présentation des expériences Fabric	
 
@@ -20,6 +19,7 @@
     - Tâche 4 : expérience Industry Solutions	
     
     - Tâche 5 : expérience Real-Time Intelligence	
+
     - Tâche 6 : expérience Synapse Data Engineering	
 
     - Tâche 7 : expérience Synapse Data Science
@@ -51,7 +51,7 @@ Aujourd’hui, vous allez découvrir diverses fonctionnalités clés de Microsof
 
    **Remarque** : si vous n’utilisez pas l’environnement de labo et que vous disposez d’un compte Power BI existant, vous pouvez utiliser le navigateur en mode privé/incognito.
 
-2. Saisissez le **Nom d’utilisateur** disponible dans l’onglet **Variables d’environnement** (en regard du Guide de labo) dans le champ **E-mail** et cliquez sur **Envoyer.**
+2. Saisissez le **Nom d’utilisateur** disponible dans l’onglet **Variables d’environnement** (en regard du Guide de labo) dans le champ **E-mail** et cliquez sur **Envoyer**.
 
    ![](../media/lab-02/image006.jpg)
 
@@ -63,26 +63,25 @@ Aujourd’hui, vous allez découvrir diverses fonctionnalités clés de Microsof
 
 5. Vous êtes alors redirigé vers la **page d’accueil Service Power BI** familière.
 
-6. Nous supposons que vous connaissez la disposition du service Power BI. Si vous avez une 
-question, n’hésitez pas à la poser au formateur.
+6. Nous supposons que vous connaissez la disposition du service Power BI. Si vous avez une question, n’hésitez pas à la poser au formateur.
 
    Vous êtes actuellement dans **Mon espace de travail**. Pour utiliser des éléments Fabric, vous avez besoin d’une licence d’essai et d’un espace de travail doté d’une licence Fabric. En avant pour la configuration.
 
-7. Dans le coin supérieur droit de l’écran, cliquez sur l’**icône utilisateur.**
+7. Dans le coin supérieur droit de l’écran, cliquez sur l’**icône utilisateur**.
 
-8. Cliquez sur **Essai gratuit.**
+8. Cliquez sur **Essai gratuit**.
 
    ![](../media/lab-02/image012.jpg)
 
-9. La boîte de dialogue Mettre à niveau vers un essai gratuit Microsoft Fabric s’ouvre alors. Cliquez sur **Démarrer l’évaluation.**
+9. La boîte de dialogue Mettre à niveau vers un essai gratuit Microsoft Fabric s’ouvre alors. Cliquez sur **Démarrer l’évaluation**.
 
     ![](../media/lab-02/image015.jpg)
 
-10. La boîte de dialogue Mise à niveau réussie vers Microsoft Fabric s’ouvre alors. Cliquez sur **Page d’accueil Fabric.**
+10. La boîte de dialogue Mise à niveau réussie vers Microsoft Fabric s’ouvre alors. Cliquez sur **Page d’accueil Fabric**.
 
     ![](../media/lab-02/image018.png)
 
-11. Vous êtes alors redirigé vers la **page d’accueil Microsoft Fabric.**
+11. Vous êtes alors redirigé vers la **page d’accueil Microsoft Fabric**.
 
     ![](../media/lab-02/image021.jpg)
 
@@ -92,7 +91,7 @@ question, n’hésitez pas à la poser au formateur.
 
 1. Sélectionnez l’icône **Microsoft Fabric** (sélecteur de l’expérience Fabric) en bas à gauche de votre écran. Une boîte de dialogue avec la liste des expériences Fabric s’ouvre alors. Notez que Power BI, Data Factory, Data Activator, Industry Solutions et Real-Time Intelligence sont des expériences indépendantes. Data Engineering, Data Science et Data Warehouse sont des expériences Synapse, car ces expériences sont optimisées par Synapse. Explorons.
 
-2. Cliquez sur **Data Factory.**
+2. Cliquez sur **Data Factory**.
 
    ![](../media/lab-02/image024.jpg)
 
@@ -112,7 +111,7 @@ question, n’hésitez pas à la poser au formateur.
 
     c. **Accès rapide** : cette section répertorie les éléments récemment utilisés ou favoris.
 
-   ![](../media/lab-02/image027.jpg)
+    ![](../media/lab-02/image027.jpg)
 
 ## Tâche 3 : expérience Data Activator
 
@@ -192,28 +191,27 @@ question, n’hésitez pas à la poser au formateur.
 
 1. Sélectionnez l’icône **Sélecteur de l’expérience Fabric** (actuellement défini sur Data Engineering) en bas à gauche de l’écran. La boîte de dialogue Expérience Fabric s’ouvre alors.
 
-2. Cliquez sur **Data Science**. Vous êtes alors redirigé vers la **page d’accueil Data Science**. Encore une 
-fois, il y a trois sections. Dans la section Éléments recommandés, notez les éléments suivants :
+2. Cliquez sur **Data Science**. Vous êtes alors redirigé vers la **page d’accueil Data Science**. Encore une fois, il y a trois sections. Dans la section Éléments recommandés, notez les éléments suivants :
 
-    a. **Modèle ML** : permet de créer des modèles Machine Learning.
+   a. **Modèle ML** : permet de créer des modèles Machine Learning.
 
-    b. **Expérience** : permet de créer, d’exécuter et de suivre le développement de plusieurs 
+   b. **Expérience** : permet de créer, d’exécuter et de suivre le développement de plusieurs 
     modèles.
 
-    c. **Notebook** : permet d’explorer des données et de créer des solutions de Machine 
+   c. **Notebook** : permet d’explorer des données et de créer des solutions de Machine 
     Learning.
 
-    d. **Environnement** : Utilisé pour configurer les bibliothèques partagées, les paramètres de calcul Spark et les ressources pour les notebooks et les définitions de tâche Spark.
+   d. **Environnement** : Utilisé pour configurer les bibliothèques partagées, les paramètres de calcul Spark et les ressources pour les notebooks et les définitions de tâche Spark.
 
-    e. **Compétence d’IA** : vous permet de créer votre propre expérience d’IA générative.
+   e. **Compétence d’IA** : vous permet de créer votre propre expérience d’IA générative.
 
-    f. **Importer un Notebook** : permet d’importer des notebooks à partir d’une machine locale.
+   f. **Importer un Notebook** : permet d’importer des notebooks à partir d’une machine locale.
 
-    g. **Utiliser un échantillon** : exemple de solution.
+   g. **Utiliser un échantillon** : exemple de solution.
 
-    **Remarque** : des éléments tels que le Notebook, Environnement, Pipeline de données, etc. sont disponibles dans plusieurs expériences car ils sont pertinents dans chacune d’elles.
+   **Remarque** : des éléments tels que le Notebook, Environnement, Pipeline de données, etc. sont disponibles dans plusieurs expériences car ils sont pertinents dans chacune d’elles.
 
-    ![](../media/lab-02/image045.jpg)
+   ![](../media/lab-02/image045.jpg)
 
 ## Tâche 8 : expérience Synapse Data Warehouse
 
@@ -240,7 +238,7 @@ fois, il y a trois sections. Dans la section Éléments recommandés, notez les 
 
 1. Créons maintenant un espace de travail avec la licence Fabric. Cliquez sur **Espaces de travail** dans la barre de navigation gauche. Une boîte de dialogue s’ouvre alors.
 
-2. Cliquez sur **Nouvel espace de travail.**
+2. Cliquez sur **Nouvel espace de travail**.
 
    ![](../media/lab-02/image051.png)
 
@@ -272,7 +270,7 @@ fois, il y a trois sections. Dans la section Éléments recommandés, notez les 
 
    ![](../media/lab-02/image060.png)
 
-3. Cliquez sur **Lakehouse.**
+3. Cliquez sur **Lakehouse**.
 
     ![](../media/lab-02/image063.jpg)
 
@@ -280,7 +278,7 @@ fois, il y a trois sections. Dans la section Éléments recommandés, notez les 
 
    **Remarque** : lh fait ici référence à la fonctionnalité Lakehouse. Nous ajoutons le préfixe lh afin de faciliter l’identification et la recherche.
 
-5. Cliquez sur **Créer.**
+5. Cliquez sur **Créer**.
 
    ![](../media/lab-02/image066.png)
 
@@ -290,7 +288,7 @@ fois, il y a trois sections. Dans la section Éléments recommandés, notez les 
 
    ![](../media/lab-02/image069.jpg)
 
-    Dans ce labo, nous avons exploré l’interface Fabric, créé un espace de travail Fabric et une lakehouse. Dans le prochain labo, nous allons découvrir comment les raccourcis dans Lakehouse permettent de se connecter aux données ADLS Gen2 et comment transformer ces données à l’aide de vues.
+   Dans ce labo, nous avons exploré l’interface Fabric, créé un espace de travail Fabric et une lakehouse. Dans le prochain labo, nous allons découvrir comment les raccourcis dans Lakehouse permettent de se connecter aux données ADLS Gen2 et comment transformer ces données à l’aide de vues.
 
 # Références
 
@@ -310,6 +308,7 @@ Voici quelques autres ressources qui vous aideront lors de vos prochaines étape
 apprendre des autres.
 
 Lisez les blogs d’annonces plus détaillés sur l’expérience Fabric :
+
 - [Blog Expérience Data Factory dans Fabric](https://aka.ms/Fabric-Data-Factory-Blog)
 - [Blog Expérience Synapse Data Engineering dans Fabric](https://aka.ms/Fabric-DE-Blog)
 - [Blog Expérience Synapse Data Science dans Fabric](https://aka.ms/Fabric-DS-Blog)

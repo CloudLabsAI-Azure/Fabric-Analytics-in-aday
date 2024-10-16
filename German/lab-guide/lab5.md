@@ -99,7 +99,7 @@ Hierbei handelt es sich um die Aktualisierung, die bei der Veröffentlichung des
 
     **Hinweis**: Da es sich um eine Übungsumgebung handelt, können Sie die Zeitzone auf Ihre bevorzugte Zeitzone festlegen. In einem realen Szenario legen Sie die Zeitzone basierend auf Ihrem/Speicherort der Datenquelle fest.
 
-14. Klicken Sie auf den Link **Andere Uhrzeit hinzufügen.** Hinweis: Die Option **Uhrzeit** wird angezeigt.
+14. Klicken Sie auf den Link **Andere Uhrzeit hinzufügen**. Hinweis: Die Option **Uhrzeit** wird angezeigt.
 
 15. Legen Sie die **Uhrzeit** auf **Mitternacht/00:00 Uhr** fest. Beachten Sie, dass Sie die Aktualisierung zu jeder vollen oder halben Stunde einstellen können.
 
@@ -172,7 +172,7 @@ Konfigurationsoptionen der Dataflow-Aktivität enthält.
 
 6. Geben Sie im Feld **Name dfactivity_People_SharePoint** ein.
 
-7. Geben Sie im Feld **Beschreibung** die **Dataflow-Aktivität ein, um den df_People_Sharepoint- Dataflow zu aktualisieren.**
+7. Geben Sie im Feld **Beschreibung** die **Dataflow-Aktivität ein, um den df_People_Sharepoint- Dataflow zu aktualisieren**.
 
 8. Beachten Sie, dass eine Option zum Deaktivieren einer Aktivität vorhanden ist. Diese Funktion ist beim Testen oder Debuggen hilfreich. Behalten Sie die Einstellung **Aktiviert** bei.
 
@@ -205,7 +205,7 @@ Fügen wir unserem Szenario etwas mehr Komplexität hinzu. Wir haben festgestell
 
 2. Klicken Sie im oberen Menü auf **Neu** und im **Dropdownmenü** auf **Datenpipeline**.
 
-3. Das Dialogfeld „Neue Pipeline“ wird geöffnet. **Geben Sie der Pipeline den Namen pl_Refresh_People_SharePoint_Option2.**
+3. Das Dialogfeld „Neue Pipeline“ wird geöffnet. **Geben Sie der Pipeline den Namen pl_Refresh_People_SharePoint_Option2**.
 
 4. Wählen Sie **Erstellen** aus.
 
@@ -271,7 +271,7 @@ Fügen wir unserem Szenario etwas mehr Komplexität hinzu. Wir haben festgestell
 
 3. Geben Sie als **Name Iterator** ein.
 
-4. Geben Sie als **Beschreibung Iterator zum Aktualisieren des Dataflows ein. Es werden bis zu drei Wiederholungen durchgeführt.**
+4. Geben Sie als **Beschreibung Iterator zum Aktualisieren des Dataflows ein. Es werden bis zu drei Wiederholungen durchgeführt**.
 
    ![](../media/lab-05/image063.png)
 

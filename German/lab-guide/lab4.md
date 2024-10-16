@@ -42,7 +42,7 @@ Am Ende dieser Übung haben Sie Folgendes gelernt:
 
 2. Wählen Sie unten links auf dem Bildschirm das **Symbol** für die **Fabric-Funktionsbereichs- Auswahl** aus. Das Dialogfeld „Fabric-Funktionsbereich“ wird geöffnet.
 
-3. Wählen Sie dort die Option **Data Factory** aus. Sie navigieren zur **Data Factory-Startseite.**
+3. Wählen Sie dort die Option **Data Factory** aus. Sie navigieren zur **Data Factory-Startseite**.
 
     ![](../media/lab-04/image006.jpg)
  

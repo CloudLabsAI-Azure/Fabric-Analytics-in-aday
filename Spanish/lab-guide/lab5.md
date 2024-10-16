@@ -248,7 +248,7 @@ Agreguemos un poco más de complejidad a nuestro escenario. Hemos observado que 
 
 11. Siga los mismos pasos para agregar tres variables más:
 
-    a.**varIsSuccess** de tipo **String** y valor predeterminado **No**. Esta variable se utilizará para indicar si la actualización del flujo de datos se llevó a cabo correctamente.
+    a. **varIsSuccess** de tipo **String** y valor predeterminado **No**. Esta variable se utilizará para indicar si la actualización del flujo de datos se llevó a cabo correctamente.
 
     b. **varSuccess** de tipo **String** y valor predeterminado **Yes**. Esta variable se utilizará para establecer el valor de varIsSuccess si la actualización del flujo de datos se realiza correctamente.
 

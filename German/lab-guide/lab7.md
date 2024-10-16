@@ -297,7 +297,7 @@ Speichern wir den Bericht, bevor wir ihn verlassen, um Änderungen am Modell vor
 
 ## Aufgabe 8: Die Spalte „Month Name“ in der Tabelle „Date“ konfigurieren 
 
-1. Fügen wir diesem Diagramm „Monat“ hinzu. Ziehen Sie das Feld **MonthNameShort** unter **Year** aus der Tabelle „Date“ in die **X-Achse.** Nun sortieren wir es nach **MonthNameShort**. 
+1. Fügen wir diesem Diagramm „Monat“ hinzu. Ziehen Sie das Feld **MonthNameShort** unter **Year** aus der Tabelle „Date“ in die **X-Achse**. Nun sortieren wir es nach **MonthNameShort**. 
 
 2. Wählen Sie die **Auslassungspunkte (…)** oben rechts im Visual aus. 
 
@@ -651,23 +651,23 @@ ALTER VIEW [dbo].[Sales] AS (
 
     Sehen wir uns noch einmal die Herausforderungen an, die in der Problemstellung aufgeführt sind: 
 
-- **Das Dataset muss mindestens dreimal täglich aktualisiert werden, um den verschiedenen Aktualisierungszeiten der Datenquellen Rechnung zu tragen.** 
+- **Das Dataset muss mindestens dreimal täglich aktualisiert werden, um den verschiedenen Aktualisierungszeiten der Datenquellen Rechnung zu tragen**. 
 
   Wir haben dieses Problem mithilfe von Direct Lake gelöst. Jeder einzelne Dataflow wird nach seinem Zeitplan aktualisiert. Das DataSet und der Bericht müssen nicht aktualisiert werden. 
 
-- **Die Aktualisierungen dauern lange, weil die Daten jedes Mal komplett aktualisiert werden müssen, um alle Änderungen an den Daten in den Quellsystemen zu erfassen.** 
+- **Die Aktualisierungen dauern lange, weil die Daten jedes Mal komplett aktualisiert werden müssen, um alle Änderungen an den Daten in den Quellsystemen zu erfassen**. 
 
   Auch hier haben wir dieses Problem mithilfe von Direct Lake gelöst. Jeder einzelne Dataflow wird nach seinem Zeitplan aktualisiert. Das DataSet und der Bericht müssen nicht aktualisiert werden, sodass wir uns keine Sorgen über eine vollständige Aktualisierung machen müssen.  
 
-- **Tritt in den Datenquellen, aus denen die Daten abgerufen werden, ein Fehler auf, wird die DataSet-Aktualisierung abgebrochen. Oftmals wird die Mitarbeiterdatei nicht pünktlich hochgeladen, was ebenso zum Abbruch der DataSet-Aktualisierung führt.**  
+- **Tritt in den Datenquellen, aus denen die Daten abgerufen werden, ein Fehler auf, wird die DataSet-Aktualisierung abgebrochen. Oftmals wird die Mitarbeiterdatei nicht pünktlich hochgeladen, was ebenso zum Abbruch der DataSet-Aktualisierung führt**.  
 
   Die Datenpipeline hilft, dieses Problem zu lösen, indem es die Möglichkeit bietet, die Aktualisierung bei Fehlern und in verschiedenen Intervallen zu wiederholen. 
 
-- **Änderungen am Datenmodell nehmen sehr viel Zeit in Anspruch, weil Power Query aufgrund der großen Datenmenge und des aufwändigen Transformationsvorgangs sehr lange braucht, um die Vorschauversionen zu aktualisieren.**  
+- **Änderungen am Datenmodell nehmen sehr viel Zeit in Anspruch, weil Power Query aufgrund der großen Datenmenge und des aufwändigen Transformationsvorgangs sehr lange braucht, um die Vorschauversionen zu aktualisieren**.  
 
   Wir haben festgestellt, dass Dataflows und Lakehouse effizient und einfach zu ändern sind. Das Laden der Vorschauversion in Dataflows und Lakehouse dauert in der Regel nicht lange. 
 
-- **Für Power BI Desktop brauchen Sie einen PC mit Windows, auch wenn im Unternehmen Mac-Geräte genutzt werden.**
+- **Für Power BI Desktop brauchen Sie einen PC mit Windows, auch wenn im Unternehmen Mac-Geräte genutzt werden**.
 
   Microsoft Fabric ist ein SaaS-Angebot. Wir benötigen lediglich einen Browser, um auf den Dienst zuzugreifen. Wir müssen keine Software auf unseren Desktops installieren. 
 

@@ -100,7 +100,7 @@ Im nachstehenden Bericht werden die Verkäufe von Fabrikam analysiert. Die KPIs 
 
     ![](../media/lab-01/image030.jpg)
  
-5. Wählen Sie im Streudiagrammvisual den Handelspartner mit dem Ausreißer aus, um den **Filter zu entfernen.**
+5. Wählen Sie im Streudiagrammvisual den Handelspartner mit dem Ausreißer aus, um den **Filter zu entfernen**.
 
 6. Sehen wir nun die Produktinformationen nach Produktgruppe und Wiederverkäufer an. Klicken Sie im Balkendiagrammvisual „Sales by Product Group and Reseller Company“ mit der rechten Maustaste auf den Balken **Packaging Materials** von Tailspin Toys, und wählen Sie im Dialogfeld die Option **Drillthrough ausführen -> Product Detail** aus.
 
@@ -126,7 +126,7 @@ Im nachstehenden Bericht werden die Verkäufe von Fabrikam analysiert. Die KPIs 
 
 ### Aufgabe 3: Power Query-Abfragen überprüfen
 
-1. Beschäftigen wir uns in Power Query mit den Datenquellen. Klicken Sie im Menüband auf **Start > Daten transformieren.**
+1. Beschäftigen wir uns in Power Query mit den Datenquellen. Klicken Sie im Menüband auf **Start > Daten transformieren**.
 
     ![](../media/lab-01/image039.jpg)
 

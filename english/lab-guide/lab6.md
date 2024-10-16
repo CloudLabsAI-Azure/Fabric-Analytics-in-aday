@@ -111,7 +111,7 @@ By the end of this lab, you will have learned:
    
 9. Make sure the destination workspace is your Fabric workspace, **FAIAD<username\>**.
    
-10. Select **Save.**
+10. Select **Save**.
 
      ![](../media/lab-06/image013.png)
 
@@ -133,7 +133,7 @@ You will be navigated back to the SQL query screen.
 
    ![](../media/lab-06/image015.png)
 
-4. From the menu select **Home -> New semantic model.**
+4. From the menu select **Home -> New semantic model**.
    
 5. A new semantic model dialog opens. Enter **sm\_FAIAD** as the Direct Lake semantic model name.
    
@@ -159,7 +159,7 @@ You will be navigated back to the SQL query screen.
 
    i. **Product**
 
-9. Select **Confirm.**
+9. Select **Confirm**.
 
    ![](../media/lab-06/image017.png)
 
@@ -177,9 +177,9 @@ You will navigate to the new semantic model with the selected tables. Feel free 
 
    ![](../media/lab-06/image020.png)
 
-2. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **ResellerID.**
+2. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **ResellerID**.
 
-3. Make sure **To table** is **Reseller** and **Column** is **ResellerID.**
+3. Make sure **To table** is **Reseller** and **Column** is **ResellerID**.
 
 4. Make sure **Cardinality** is **Many to one (\*:1)**.
 
@@ -191,9 +191,9 @@ You will navigate to the new semantic model with the selected tables. Feel free 
 
 7. Similarly, create a relationship between the Sales and Date tables. Select **InvoiceDate** from the **Sales** table and drag it over to **Date** in the **Date** table.
 
-8. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **InvoiceDate.**
+8. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **InvoiceDate**.
    
-9. Make sure **To table** is **Date** and **Column** is **Date.**
+9. Make sure **To table** is **Date** and **Column** is **Date**.
     
 10. Make sure **Cardinality** is **Many to one (\*:1)**.
 
@@ -251,7 +251,7 @@ Let’s add a few measures we need to create the Sales dashboard.
 
 15. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
-16. Enter **Sales Orders = DISTINCTCOUNT(Sales[InvoiceID])** in the **formula bar.**
+16. Enter **Sales Orders = DISTINCTCOUNT(Sales[InvoiceID])** in the **formula bar**.
 
 17. Click the **check mark** left of the formula bar or click the **Enter** button.
 
@@ -285,9 +285,9 @@ Let’s add the remaining relationships.
 
    ![](../media/lab-06/image029.png)
 
-3. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **SalespersonPersonID.**
+3. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **SalespersonPersonID**.
 
-4. Make sure **To table** is **People** and **Column** is **PersonID.**
+4. Make sure **To table** is **People** and **Column** is **PersonID**.
 
 5. Make sure **Cardinality** is **Many to one (\*:1)**.
 
@@ -299,9 +299,9 @@ Let’s add the remaining relationships.
 
 8. Now let’s create a relationship between the Product and the Supplier. Select **New relationship**.
 
-9. Make sure **From table** is **Product** and **Column** is **SupplierID.**
+9. Make sure **From table** is **Product** and **Column** is **SupplierID**.
 
-10. Make sure **To table** is **Supplier** and **Column** is **SupplierID.**
+10. Make sure **To table** is **Supplier** and **Column** is **SupplierID**.
 
 11. Make sure **Cardinality** is **Many to one (\*:1)**.
 
@@ -313,9 +313,9 @@ Let’s add the remaining relationships.
 
 14. Now let’s create a relationship between Reseller and Geo. Select **New relationship**.
 
-15. New relationship dialog opens. Make sure **From table** is **Reseller** and **Column** is **PostalCityID.**
+15. New relationship dialog opens. Make sure **From table** is **Reseller** and **Column** is **PostalCityID**.
 
-16. Make sure **To table** is **Geo** and **Column** is **CityID.**
+16. Make sure **To table** is **Geo** and **Column** is **CityID**.
 
 17. Make sure **Cardinality** is **Many to one (\*:1)**.
 
@@ -327,9 +327,9 @@ Let’s add the remaining relationships.
 
 20. Similarly, create a relationship between the Customer and the Reseller. Select **New relationship**.
 
-21. New relationship dialog opens. Make sure **From table** is **Customer** and **Column** is **ResellerID.**
+21. New relationship dialog opens. Make sure **From table** is **Customer** and **Column** is **ResellerID**.
 
-22. Make sure **To table** is **Reseller** and **Column** is **ResellerID.**
+22. Make sure **To table** is **Reseller** and **Column** is **ResellerID**.
 
 23. Make sure **Cardinality** is **Many to one (\*:1)**.
 
@@ -375,11 +375,11 @@ Let’s add the remaining measures.
 
 8. Follow similar steps to add the following measures:
 
-   a. In **Sales** table, **GM = SUM(Sales[LineProfit])** formatted as **Currency with 0 decimal places.**
+   a. In **Sales** table, **GM = SUM(Sales[LineProfit])** formatted as **Currency with 0 decimal places**.
 
-   b. In **Sales** table, **GM% = DIVIDE([GM], [Sales])** formatted as **Percentage with 0 decimal places.**
+   b. In **Sales** table, **GM% = DIVIDE([GM], [Sales])** formatted as **Percentage with 0 decimal places**.
 
-   c. In **Customer** table **, No of Customers = COUNTROWS(Customer)** formatted as **Whole Number with Thousands separator enabled.**
+   c. In **Customer** table **, No of Customers = COUNTROWS(Customer)** formatted as **Whole Number with Thousands separator enabled**.
 
 # References
 

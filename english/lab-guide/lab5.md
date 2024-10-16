@@ -96,7 +96,7 @@ Let's start by configuring a scheduled refresh of Supplier Dataflow.
 
    ![](../media/lab-05/image8.png)
 
-8. Let's navigate away, by clicking on the **X** on the top right corner. You will be navigated back to the **dataflow settings page.**
+8. Let's navigate away, by clicking on the **X** on the top right corner. You will be navigated back to the **dataflow settings page**.
 
 9. Under Gateway connection, expand **Data source credentials**. A list of connections used in the dataflow is displayed. In this case, Lakehouse and Snowflake.
 
@@ -174,9 +174,9 @@ Let's start building the pipeline. We need an activity to refresh the data flow.
 
 2. We are going to configure the activity to connect to the df_People_SharePoint activity. From the **bottom pane**, select **Settings**.
 
-3. Make sure **Workspace** is set to your Fabric workspace, **FAIAD_<username\>.**
+3. Make sure **Workspace** is set to your Fabric workspace, **FAIAD_<username\>**.
 
-4. From the **Dataflow dropdown** select **df_People_SharePoint**. When this Dataflow activity is executed, it is going to refresh **df_People_SharePoint.** That was easy, right?
+4. From the **Dataflow dropdown** select **df_People_SharePoint**. When this Dataflow activity is executed, it is going to refresh **df_People_SharePoint**. That was easy, right?
 
    In our scenario, Employee Data is not updated on schedule. Sometimes there is a delay. Let's see if we can accommodate this.
 
@@ -186,7 +186,7 @@ Let's start building the pipeline. We need an activity to refresh the data flow.
 
 6. In the **Name** field, enter **dfactivity_People_SharePoint**
 
-7. In the **Description** field, enter **Dataflow activity to refresh df_People_Sharepoint dataflow.**
+7. In the **Description** field, enter **Dataflow activity to refresh df_People_Sharepoint dataflow**.
 
 8. Notice there is an option to Deactivate an activity. This feature is useful during testing or debugging. Leave it as **Activated**.
 
@@ -296,7 +296,7 @@ Let's add a little more complexity to our scenario. We have noticed that if the 
 
    ![](../media/lab-05/image23.png)
 
-   We need to write an expression which would execute until either the value of **varCounter is 3** or value **varIsSuccess is Yes.** (varCounter and varIsSuccess are the variables we just created.)
+   We need to write an expression which would execute until either the value of **varCounter is 3** or value **varIsSuccess is Yes**. (varCounter and varIsSuccess are the variables we just created.)
 
 8. **Pipeline expression builder** dialog opens. In the bottom half of the dialog, you will have a menu:
 
@@ -376,15 +376,15 @@ Let's add a little more complexity to our scenario. We have noticed that if the 
 
 5. In the **Name** field, enter **dfactivity_People_SharePoint**
 
-6. In the **Description** field, enter **Dataflow activity to refresh df_People_Sharepoint dataflow.**
+6. In the **Description** field, enter **Dataflow activity to refresh df_People_Sharepoint dataflow**.
 
    ![](../media/lab-05/image32.png)
 
 7. Select **Settings** from the bottom pane.
 
-8. Make sure **Workspace** is set to your workspace, **FAIAD_<username\>.**
+8. Make sure **Workspace** is set to your workspace, **FAIAD_<username\>**.
 
-9. From the **Dataflow dropdown** select **df_People_SharePoint**. When this Dataflow activity is executed, it is going to refresh **df_People_SharePoint.**
+9. From the **Dataflow dropdown** select **df_People_SharePoint**. When this Dataflow activity is executed, it is going to refresh **df_People_SharePoint**.
 
    ![](../media/lab-05/image33.png)
 
@@ -398,7 +398,7 @@ We have configured the Dataflow activity like we did earlier in the lab. Now we 
 
 3. In the **Name** field, enter **set_varIsSuccess**
 
-4. In the **Description** field, enter **Set variable varIsSuccess to Yes.**
+4. In the **Description** field, enter **Set variable varIsSuccess to Yes**.
 
    **Note:** Hover over **Dataflow activity**. To the right of the activity box, there are four icons. These can be used to connect to the next activity based on the result of the activity:
 
@@ -418,7 +418,7 @@ We have configured the Dataflow activity like we did earlier in the lab. Now we 
 
 7. In the bottom pane, make sure **Variable type** is **Pipeline variable**.
 
-8. In the **Name** field, select **varIsSucces.** This is the variable whose value we are going to set.
+8. In the **Name** field, select **varIsSucces**. This is the variable whose value we are going to set.
 
 9. In the **Value** field, select the **text box**. Select the **Add dynamic content** link.
 
@@ -442,7 +442,7 @@ Now we need to set the counter if the dataflow activity fails. In Data Pipeline,
 
 3. In the **Name** field, enter **set_varTempCounter**
 
-4. In the **Description** field, enter **Increment variable varTempCounter.**
+4. In the **Description** field, enter **Increment variable varTempCounter**.
 
 5. Click the **red x-mark** from Dataflow activity to the new Set variable activity. So, on failure of dataflow refresh we want to execute this Set variable activity.
 
@@ -452,7 +452,7 @@ Now we need to set the counter if the dataflow activity fails. In Data Pipeline,
 
 7. In the bottom pane, make sure **Variable type** is **Pipeline variable**.
 
-8. In the **Name** field, select **varTempCounter.** This is the variable whose value we are going to set.
+8. In the **Name** field, select **varTempCounter**. This is the variable whose value we are going to set.
 
 9. In the **Value** field, select the **text box**. Select the **Add dynamic content** link.
 
@@ -472,7 +472,7 @@ Now we need to set the value of varCounter variable to the value of varTempCount
 
 3. In the **Name** field, enter **set_varCounter**
 
-4. In the **Description** field, enter **Increment variable varCounter.**
+4. In the **Description** field, enter **Increment variable varCounter**.
 
 5. Click the **green check mark** from set_varTempCounter Set variable activity and drag to connect to the new **set_varCounter Set variable activity**.
 
@@ -502,7 +502,7 @@ Next, we need to wait for 5 minutes/300 seconds if the dataflow refresh fails th
 
 3. In the **Name** field, enter **wait_onFailure**
 
-4. In the **Description** field, enter **Wait for 300 seconds on 2nd try and 900 seconds on 3rd try.**
+4. In the **Description** field, enter **Wait for 300 seconds on 2nd try and 900 seconds on 3rd try**.
 
 5. Click the **green check mark** from set_varCounter Set variable activity and drag to connect to the new **wait_onFailure Wait activity**.
 

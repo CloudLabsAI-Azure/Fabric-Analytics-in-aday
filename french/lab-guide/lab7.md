@@ -1,4 +1,4 @@
-# Microsoft Fabric - Fabric Analyst in a Day - Labo 7 ##
+# Microsoft Fabric - Analyste Fabric en un jour - Laboratoire 7
 
 ![](../media/lab-07/image001.png)
 
@@ -364,7 +364,7 @@ Notez à quel point il est facile de mettre à jour le modèle sémantique lors 
 
 15. Redimensionnez le **visuel** et déplacez-le vers la **case supérieure droite, comme illustré dans la capture d’écran**.
 
-16. Faites défiler le visuel vers la droite et **notez que nous disposons de données jusqu’en avril 2024.**
+16. Faites défiler le visuel vers la droite et **notez que nous disposons de données jusqu’en avril 2024**.
 
     ![](../media/lab-07/image092.png)
 
@@ -648,23 +648,23 @@ ALTER VIEW [dbo].[Sales] AS (
 
     Revenons sur les défis répertoriés dans l’énoncé du problème :
 
- - **Vous devez actualiser votre jeu de données au moins trois fois par jour pour tenir compte des différentes heures de mise à jour des différentes sources de données.**
+ - **Vous devez actualiser votre jeu de données au moins trois fois par jour pour tenir compte des différentes heures de mise à jour des différentes sources de données**.
 
     Nous avons résolu ce problème à l’aide de Direct Lake. Chaque flux de données individuel est actualisé selon son calendrier. Le jeu de données et l’état n’ont pas besoin d’être actualisés.
 
-- **Vos actualisations prennent beaucoup de temps, car vous devez effectuer chaque fois une actualisation complète pour capturer toutes les mises à jour survenues sur les systèmes sources.**
+- **Vos actualisations prennent beaucoup de temps, car vous devez effectuer chaque fois une actualisation complète pour capturer toutes les mises à jour survenues sur les systèmes sources**.
 
     Encore une fois, nous avons résolu ce problème à l’aide de Direct Lake. Chaque flux de données individuel est actualisé selon son calendrier. Le jeu de données et l’état n’ont pas besoin d’être actualisés, donc nous n’avons pas à nous soucier d’une actualisation complète.
 
-- **Toute erreur dans l’une des sources de données à partir desquelles vous extrayez des données entraîne une interruption de l’actualisation de votre jeu de données. Il arrive souvent que le fichier collaborateur ne soit pas chargé à temps, ce qui aboutit à une interruption de l’actualisation de votre jeu de données.** 
+- **Toute erreur dans l’une des sources de données à partir desquelles vous extrayez des données entraîne une interruption de l’actualisation de votre jeu de données. Il arrive souvent que le fichier collaborateur ne soit pas chargé à temps, ce qui aboutit à une interruption de l’actualisation de votre jeu de données**. 
 
     Le pipeline de données permet de résoudre ce problème, en permettant de réessayer d’effectuer une actualisation en cas d’échec et à différents intervalles.
 
-- **Apporter des modifications à votre modèle de données prend beaucoup de temps, car Power Query en prend beaucoup pour actualiser vos aperçus, compte tenu du gros volume de données et des transformations complexes.** 
+- **Apporter des modifications à votre modèle de données prend beaucoup de temps, car Power Query en prend beaucoup pour actualiser vos aperçus, compte tenu du gros volume de données et des transformations complexes**. 
 
     Nous avons remarqué que les flux de données et la lakehouse sont efficaces et faciles à modifier. En général, le chargement de l’aperçu dans les flux de données et la lakehouse ne prend pas beaucoup de temps.
 
-- **Vous avez besoin d’un PC Windows pour utiliser Power BI Desktop, même si le standard de l’entreprise est Mac.**
+- **Vous avez besoin d’un PC Windows pour utiliser Power BI Desktop, même si le standard de l’entreprise est Mac**.
 
     Microsoft Fabric est une offre SaaS. Il nous suffit d’un navigateur pour accéder au service. Nous n’avons pas besoin d’installer de logiciel sur nos bureaux.
 

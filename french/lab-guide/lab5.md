@@ -1,4 +1,4 @@
-# Microsoft Fabric Fabric Analyst in a Day Labo 5
+# Microsoft Fabric - Analyste Fabric en un jour - Laboratoire 5
 
 ![](../media/lab-05/image001l5f.png)
 
@@ -73,7 +73,7 @@ l’espace de travail dans le volet gauche.
 
     ![](../media/lab-05/image006.jpg)
 
-3.	Tous les artefacts que vous avez créés sont répertoriés ici. Sur le côté droit de l’écran, saisissez **df** dans la **zone de recherche.** Les artefacts sont alors filtrés vers les flux de données.
+3.	Tous les artefacts que vous avez créés sont répertoriés ici. Sur le côté droit de l’écran, saisissez **df** dans la **zone de recherche**. Les artefacts sont alors filtrés vers les flux de données.
 
     ![](../media/lab-05/image009.jpg)
 
@@ -253,7 +253,7 @@ Ajoutons un peu plus de complexité à notre scénario. Nous avons remarqué que
 
 3.	Cliquez sur **Nouveau** pour ajouter une nouvelle variable.
  
-4.	Notez qu’une ligne s’affiche. Saisissez **varCounter** dans la zone de texte **Nom.** Nous allons itérer trois fois à l’aide de cette variable.
+4.	Notez qu’une ligne s’affiche. Saisissez **varCounter** dans la zone de texte **Nom**. Nous allons itérer trois fois à l’aide de cette variable.
 
 5.	Dans la liste **déroulante Type**, sélectionnez **Integer**.
 
@@ -427,7 +427,7 @@ Nous avons configuré l’activité Flux de données comme nous l’avons fait p
 
 8.	Dans le champ **Nom,** sélectionnez **varIsSuccess**. Il s’agit de la variable dont nous allons définir la valeur.
 
-9.	Dans le champ **Valeur,** cliquez sur la **zone de texte.** Cliquez sur le lien **Ajouter du contenu dynamique**.
+9.	Dans le champ **Valeur,** cliquez sur la **zone de texte**. Cliquez sur le lien **Ajouter du contenu dynamique**.
 
     ![](../media/lab-05/image102.png)
 
