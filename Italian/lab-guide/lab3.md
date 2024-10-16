@@ -24,26 +24,21 @@
 
 # Introduzione 
 
-Nel nostro scenario i dati di vendita provengono dal sistema ERP e sono archiviati in un ADLS Gen2. 
-Vengono aggiornati alle 12.00 ogni giorno. Dobbiamo trasformare e inserire questi dati in Lakehouse e usarli nel nostro modello.
+Nel nostro scenario i dati di vendita provengono dal sistema ERP e sono archiviati in un ADLS Gen2. Vengono aggiornati alle 12.00 ogni giorno. Dobbiamo trasformare e inserire questi dati in Lakehouse e usarli nel nostro modello.
 
 Esistono più modi per inserire questi dati. 
 
-- **Collegamenti:** crea un collegamento ai dati e possiamo usare le viste di query visive per 
-trasformarlo. Useremo i collegamenti in questo lab.
+- **Collegamenti:** crea un collegamento ai dati e possiamo usare le viste di query visive per trasformarlo. Useremo i collegamenti in questo lab.
 
 - **Notebook:** richiedono la scrittura di codice. È un approccio pensato per gli sviluppatori.
 
-- **Flusso di dati Gen2:** probabilmente si ha familiarità con Power Query o Flusso di dati Gen1. 
-Flusso di dati Gen2, come indica il nome, è la versione più recente di Flusso di dati. Fornisce 
-tutte le funzionalità di Power Query/Flusso di dati Gen1 con la possibilità aggiuntiva di 
-trasformare e inserire dati in più origini dati. Ne parleremo nei prossimi due lab.
+- **Flusso di dati Gen2:** probabilmente si ha familiarità con Power Query o Flusso di dati Gen1. Flusso di dati Gen2, come indica il nome, è la versione più recente di Flusso di dati. Fornisce tutte le funzionalità di Power Query/Flusso di dati Gen1 con la possibilità aggiuntiva di trasformare e inserire dati in più origini dati. Ne parleremo nei prossimi due lab.
 
 - **Pipeline di dati:** questo è uno strumento di orchestrazione. Le attività possono essere orchestrate per estrarre, trasformare e acquisire dati. Useremo Pipeline di dati per eseguire l'attività di Flusso di dati Gen2 che a sua volta eseguirà l'estrazione, la trasformazione e l'acquisizione.
 
-   Inizieremo creando un collegamento per importare i dati nel lakehouse dall'origine dati ADLS Gen2. Una volta inseriti i dati, useremo le viste delle query visive per trasformarli.
+Inizieremo creando un collegamento per importare i dati nel lakehouse dall'origine dati ADLS Gen2. Una volta inseriti i dati, useremo le viste delle query visive per trasformarli.
 
-  In questo lab si apprenderà quanto segue: 
+In questo lab si apprenderà quanto segue: 
 
   - Come creare un collegamento al lakehouse
 
@@ -53,37 +48,33 @@ trasformare e inserire dati in più origini dati. Ne parleremo nei prossimi due 
 
 ## Attività 1: Creazione di un collegamento
 
-Si usa il collegamento per creare un link all'ubicazione di destinazione. È come creare dei 
-collegamenti nel desktop di Windows.
+Si usa il collegamento per creare un link all'ubicazione di destinazione. È come creare dei collegamenti nel desktop di Windows.
 
 1. Torniamo all'**area di lavoro di Fabric** creata nel Lab 2, Attività 9.
 
 2. Se non si è usciti dopo il lab precedente, ci si trova nella schermata Lakehouse. Se si è usciti, non c'è problema. Selezionare **lh_FAIAD** per spostarsi nel lakehouse. 
 
-3. Nel **pannello Explorer** selezionare i **puntini di sospensione** accanto a **Tables.**
+3. Nel **pannello Explorer** selezionare i **puntini di sospensione** accanto a **Tables**.
 
-4. Selezionare **Nuovo collegamento.**
+4. Selezionare **Nuovo collegamento**.
 
    ![](../media/lab-03/image006.jpg)
 
-5. Viene visualizzata la finestra di dialogo **Nuovo collegamento** . In **Origini esterne** selezionare **Azure Data Lake Storage Gen2.**
+5. Viene visualizzata la finestra di dialogo **Nuovo collegamento** . In **Origini esterne** selezionare **Azure Data Lake Storage Gen2**.
 
     ![](../media/lab-03/image009.jpg)
 
-6. È necessario creare una connessione all'origine dati ADLS Gen2. In **Impostazioni connessione -> URL** immettere il seguente collegamento: 
-https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
+6. È necessario creare una connessione all'origine dati ADLS Gen2. In **Impostazioni connessione -> URL** immettere il seguente collegamento: https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 
 7. Selezionare **Chiave account** dal menu a discesa Tipo di autenticazione.
 
-8. Copiare la **chiave di accesso dell'account di archiviazione ADLS** nella scheda **Variabili di 
-ambiente** (accanto alla scheda Guida al lab) e incollarla nella casella di testo **Chiave account.**
+8. Copiare la **chiave di accesso dell'account di archiviazione ADLS** nella scheda **Variabili di ambiente** (accanto alla scheda Guida al lab) e incollarla nella casella di testo **Chiave account**.
 
 9. Selezionare **Avanti** nella parte inferiore destra della schermata.
 
     ![](../media/lab-03/image012.jpg)
 
-10. Verrà stabilita una connessione ad ADLS Gen2 con la struttura delle directory visualizzata nel 
-pannello di sinistra. Espandere **Delta-Parquet-Format-FY25.**
+10. Verrà stabilita una connessione ad ADLS Gen2 con la struttura delle directory visualizzata nel pannello di sinistra. Espandere **Delta-Parquet-Format-FY25**.
 
 11. **Selezionare** le seguenti directory:
 
@@ -111,14 +102,13 @@ pannello di sinistra. Espandere **Delta-Parquet-Format-FY25.**
 
     **Nota:** Sales.Invoices_May è l'unica directory **non** selezionata.
 
-12. Selezionare **Avanti.**
+12. Selezionare **Avanti**.
 
      ![](../media/lab-03/image015.jpg)
 
-13. Si verrà indirizzati alla finestra di dialogo successiva, dove avremo la possibilità di modificare 
-i nomi. Selezionare l'**icona Modifica** in Azioni per **Application.Cities.**
+13. Si verrà indirizzati alla finestra di dialogo successiva, dove avremo la possibilità di modificare i nomi. Selezionare l'**icona Modifica** in Azioni per **Application.Cities**.
 
-14. Rinominare **Application.Cities in Cities.**
+14. Rinominare **Application.Cities in Cities**.
 
 15. Selezionare il segno di spunta accanto al nome per salvare la modifica.
 
@@ -162,7 +152,7 @@ i nomi. Selezionare l'**icona Modifica** in Azioni per **Application.Cities.**
 
 ## Attività 2: Creazione di una vista Geo mediante le query visive
 
-1. Possiamo accedere al lakehouse usando un endpoint SQL. Ciò permette di eseguire query sui dati e creare viste. In **alto a destra** della schermata selezionare **Lakehouse -> Endpoint di Analisi SQL.**
+1. Possiamo accedere al lakehouse usando un endpoint SQL. Ciò permette di eseguire query sui dati e creare viste. In **alto a destra** della schermata selezionare **Lakehouse -> Endpoint di Analisi SQL**.
 
    ![](../media/lab-03/image027.jpg)
 
@@ -170,12 +160,11 @@ i nomi. Selezionare l'**icona Modifica** in Azioni per **Application.Cities.**
 
    Inizieremo creando la vista Geo. Per poter creare la vista Geo, dobbiamo unire i dati dalle query Cities, States e Countries.
 
-2. Nel menu in alto selezionare **Nuova query visiva.**
+2. Nel menu in alto selezionare **Nuova query visiva**.
 
     ![](../media/lab-03/image030.jpg)
 
-3. Per creare una query dobbiamo trascinare le tabelle nel pannello Query visiva. Trasciniamo le 
-query Cities, States e Countries nel pannello della query visiva.
+3. Per creare una query dobbiamo trascinare le tabelle nel pannello Query visiva. Trasciniamo le query Cities, States e Countries nel pannello della query visiva.
 
      ![](../media/lab-03/image033.png)
 
@@ -185,21 +174,19 @@ query Cities, States e Countries nel pannello della query visiva.
 
      ![](../media/lab-03/image036.png)
 
-5. Con la query Cities selezionata, dalla barra multifunzione dell'editor di Power Query selezionare **Home - > Esegui merge di query -> Esegui merge di query come nuova.** Si apre la finestra di 
-dialogo Esegui merge di query.
+5. Con la query Cities selezionata, dalla barra multifunzione dell'editor di Power Query selezionare **Home - > Esegui merge di query -> Esegui merge di query come nuova**. Si apre la finestra di dialogo Esegui merge di query.
 
     ![](../media/lab-03/image039.jpg)
 
-6. Nella **tabella di sinistra da unire** selezionare **Cities.**
+6. Nella **tabella di sinistra da unire** selezionare **Cities**.
 
-7. Nella **tabella di destra da unire** selezionare **States.**
+7. Nella **tabella di destra da unire** selezionare **States**.
 
-8. Selezionare le colonne **StateProvinceID** da entrambe le tabelle. Useremo questa colonna per 
-creare un join.
+8. Selezionare le colonne **StateProvinceID** da entrambe le tabelle. Useremo questa colonna per creare un join.
 
-9. Selezionare **Inner** come **Tipo di join.**
+9. Selezionare **Inner** come **Tipo di join**.
 
-10. Selezionare **OK.**
+10. Selezionare **OK**.
 
     ![](../media/lab-03/image042.jpg)
 
@@ -217,33 +204,32 @@ creare un join.
 
     d. SalesTerritory
 
-13. Selezionare **OK.**
+13. Selezionare **OK**.
 
     ![](../media/lab-03/image045.jpg)
 
     Ora dobbiamo unire la query Countries. 
 
-14. Con la query Merge selezionata, selezionare **Home -> Esegui merge di query -> Esegui merge di 
-query** dalla barra multifunzione.
+14. Con la query Merge selezionata, selezionare **Home -> Esegui merge di query -> Esegui merge di query** dalla barra multifunzione.
 
      ![](../media/lab-03/image048.jpg)
 
-15. Si apre la finestra di dialogo Esegui merge di query. Nella **tabella di destra da unire** selezionare **Countries.**
+15. Si apre la finestra di dialogo Esegui merge di query. Nella **tabella di destra da unire** selezionare **Countries**.
 
 16. Selezionare le colonne **ICountryID** da entrambe le tabelle. Useremo questa colonna per creare 
 un join.
 
-17. Selezionare **Inner** come **Tipo di join.**
+17. Selezionare **Inner** come **Tipo di join**.
 
-18. Selezionare **OK.**
+18. Selezionare **OK**.
 
     ![](../media/lab-03/image051.jpg)
 
     Abbiamo bisogno di alcune colonne da Countries.
 
-19. Nel **vista dati** (pannello inferiore) fare clic sulla **freccia doppia** accanto alla colonna **Countries.**
+19. Nel **vista dati** (pannello inferiore) fare clic sulla **freccia doppia** accanto alla colonna **Countries**.
 
-20. Si apre un pannello.**Selezionare** le seguenti colonne:
+20. Si apre un pannello **Selezionare** le seguenti colonne:
 
     a. CountryName
 
@@ -261,14 +247,13 @@ un join.
 
     h. Subregion
 
-21. Selezionare **OK.**
+21. Selezionare **OK**.
 
     ![](../media/lab-03/image054.jpg)
 
     Non abbiamo bisogno di tutte le colonne. Selezioniamo solo quelle di cui abbiamo bisogno.
 
-22. Con la query Merge, dalla barra multifunzione selezionare **Home -> Scegli colonne -> Scegli 
-colonne.**
+22. Con la query Merge, dalla barra multifunzione selezionare **Home -> Scegli colonne -> Scegli colonne**.
 
     ![](../media/lab-03/image057.jpg)
 
@@ -286,20 +271,19 @@ colonne.**
 
     f. CountryID
 
-24. Selezionare **OK.**
+24. Selezionare **OK**.
 
     ![](../media/lab-03/image060.png)
 
     Notare che il processo è simile a quello di Power Query, abbiamo tutti i passaggi registrati sia nel pannello Passaggi applicati a destra sia nella vista visiva. Rinominiamo la query Merge e poi scegliamo Abilita caricamento, in modo che i dati vengano caricati da questa query.
 
-25. **Fare clic con il pulsante destro del mouse sulla query Merge** nel pannello Query (a sinistra). Selezionare **Rinomina,** quindi rinominare la query in **Geo.**
+25. **Fare clic con il pulsante destro del mouse sulla query Merge** nel pannello Query (a sinistra). Selezionare **Rinomina,** quindi rinominare la query in **Geo**.
 
-26. **Fare clic con il pulsante destro del mouse sulla query Geo** nel pannello Query (a sinistra). 
-Selezionare **Abilita caricamento** per abilitare questa query.
+26. **Fare clic con il pulsante destro del mouse sulla query Geo** nel pannello Query (a sinistra). Selezionare **Abilita caricamento** per abilitare questa query.
 
-27. Accertarsi che le query Cities, States e Countries siano **disabilitate.**
+27. Accertarsi che le query Cities, States e Countries siano **disabilitate**.
 
-28. Selezionare **Salva.**
+28. Selezionare **Salva**.
 
     ![](../media/lab-03/image063.jpg)
 
@@ -307,13 +291,13 @@ Selezionare **Abilita caricamento** per abilitare questa query.
 
     **Nota:** tutti i passaggi eseguiti mediante l'editor di Power Query possono essere anche eseguiti usando l'editor di query visive.
 
-29. Dal menu Editor di query visive selezionare **Salvare come viualizzazione.**
+29. Dal menu Editor di query visive selezionare **Salvare come viualizzazione**.
 
     ![](../media/lab-03/image066.png)
 
     Viene visualizzata la finestra di dialogo Salva come visualizzazione. Notare che la query SQL è disponibile. Se lo si desidera, è possibile rivederla. 
 
-30. Immettere **Geo** come **Nome visualizzazione.**
+30. Immettere **Geo** come **Nome visualizzazione**.
 
 31. Selezionare **OK** per salvare la vista. 
 
@@ -321,7 +305,7 @@ Selezionare **Abilita caricamento** per abilitare questa query.
 
     Si riceverà un avviso una volta salvata la vista. 
 
-32. Nel pannello Explorer (a sinistra), espandere **Views.** Abbiamo la vista Geo appena creata.
+32. Nel pannello Explorer (a sinistra), espandere **Views**. Abbiamo la vista Geo appena creata.
 
      ![](../media/lab-03/image072.png)
 
@@ -330,41 +314,41 @@ Selezionare **Abilita caricamento** per abilitare questa query.
 Creiamo la vista Reseller, creata unendo la tabella Customers con la tabella BuyingGroups. Questa 
 volta creeremo la vista usando una query visiva.
 
-1. Dalla barra di menu di Lakehouse selezionare **Home -> Nuova query visiva.** Si apre una nuova 
-query visiva.
+1. Dalla barra di menu di Lakehouse selezionare **Home -> Nuova query visiva**. Si apre una nuova query visiva.
 
 2. Dalla sezione Explorer, trascinare le tabelle Customers e BuyingGroups nella sezione dedicata alla query visiva.
 
    ![](../media/lab-03/image075.png)
 
-3. S**elezionare la query** Customers. Una volta selezionato, Customers avrà un bordo blu e un segno "+" dopo Table (ciò indica che stiamo aggiungendo un passaggio dopo Table. Se non è visualizzato alcun segno "+" dopo la tabella, è possibile che si sia selezionato un passaggio diverso. Selezionare Table e il problema è risolto).
+3. **Selezionare la query** Customers. Una volta selezionato, Customers avrà un bordo blu e un segno "+" dopo Table (ciò indica che stiamo aggiungendo un passaggio dopo Table. Se non è visualizzato alcun segno "+" dopo la tabella, è possibile che si sia selezionato un passaggio diverso. Selezionare Table e il problema è risolto).
 
-4. Nel menu Query visiva selezionare **Combina -> Esegui merge di query.**
+4. Nel menu Query visiva selezionare **Combina -> Esegui merge di query**.
+     
      ![](../media/lab-03/image078.png)
 
    Viene visualizzata la finestra di dialogo Merge con Customers selezionato come tabella superiore. 
 
-5. Nella **tabella di destra da unire** selezionare **BuyingGroups.**
+5. Nella **tabella di destra da unire** selezionare **BuyingGroups**.
 
 6. Selezionare le colonne **BuyingGroupID** da entrambe le tabelle. Useremo questa colonna per creare un join.
 
-7. Selezionare **Inner** come **Tipo di join.**
+7. Selezionare **Inner** come **Tipo di join**.
 
-8. Selezionare **OK.**
+8. Selezionare **OK**.
 
    ![](../media/lab-03/image081.jpg)
 
 9. Nella **Vista dati** (pannello inferiore), fare clic sulla **freccia doppia** accanto alla colonna **BuyingGroups** (ultima colonna a destra) per selezionare le colonne di cui abbiamo bisogno da BuyingGroups.
 
-10. Si apre un pannello. **Selezionare la colonna BuyingGroupName .**
+10. Si apre un pannello. **Selezionare la colonna BuyingGroupName **.
 
-11. Selezionare **OK.**
+11. Selezionare **OK**.
 
     ![](../media/lab-03/image084.jpg)
 
     Non abbiamo bisogno di tutte le colonne. Selezioniamo solo quelle di cui abbiamo bisogno.
 
-12. Dal menu della query visiva selezionare **Gestisci colonne -> Scegli colonne.**
+12. Dal menu della query visiva selezionare **Gestisci colonne -> Scegli colonne**.
 
      ![](../media/lab-03/image087.png)
 
@@ -396,25 +380,25 @@ query visiva.
 
     m. BuyingGroupName
 
-14. Selezionare **OK.**
+14. Selezionare **OK**.
 
     ![](../media/lab-03/image090.png)
 
 15. Rinominiamo la colonna BuyingGroupName. Nella **vista Dati, fare doppio clic sull'intestazione della colonna BuyingGroupName** per renderla modificabile.
 
-16. **Rinominare** la colonna in **ResellerCompany.**
+16. **Rinominare** la colonna in **ResellerCompany**.
 
     ![](../media/lab-03/image093.jpg)
 
     Notare che nella tabella Customer sono documentati tutti i passaggi. Ora è il momento di salvare la vista.
 
-17. Dal menu Query visiva selezionare **Salvare come visualizzazione.**
+17. Dal menu Query visiva selezionare **Salvare come visualizzazione**.
 
     ![](../media/lab-03/image096.png)
 
     Viene visualizzata la finestra di dialogo Salva come visualizzazione. Notare che la query SQL è disponibile. Se lo si desidera, è possibile rivederla. 
 
-18. Immettere **Reseller** come **Nome visualizzazione.**
+18. Immettere **Reseller** come **Nome visualizzazione**.
 
 19. Selezionare **OK** per salvare la vista. 
 
@@ -422,7 +406,7 @@ query visiva.
 
     Si riceverà un avviso una volta salvata la vista. 
 
-20. Nel pannello Explorer (a sinistra), espandere **Views.** Abbiamo la vista Reseller appena creata.
+20. Nel pannello Explorer (a sinistra), espandere **Views**. Abbiamo la vista Reseller appena creata.
 
      ![](../media/lab-03/image102.png)
 
@@ -430,8 +414,7 @@ query visiva.
 
 Creiamo la vista Sales, unendo le tabelle InvoiceLineItems e Invoices e la vista Reseller. Abbiamo questa query in Power BI Desktop. Copieremo il codice dall'editor avanzato. Ma prima di copiare il codice, dobbiamo creare una tabella di unione usando Query visiva, poiché in Query visiva non è possibile creare una query vuota. Proviamo a usare questo metodo.
 
-1. Dalla barra di menu di Lakehouse selezionare H**ome -> Nuova query visiva.** Si apre una nuova 
-query visiva.
+1. Dalla barra di menu di Lakehouse selezionare H**ome -> Nuova query visiva**. Si apre una nuova query visiva.
 
 2. Dalla sezione **Explorer -> Tables,** trascinare le tabelle **InvoiceLineItems, Invoices** nella sezione Query visiva 
 
@@ -441,43 +424,41 @@ query visiva.
 
    ![](../media/lab-03/image105.jpg)
 
-5. Con la query InvoiceLineItems selezionata, dalla barra multifunzione dell'editor, selezionare **Home - > Esegui merge di query - > Esegui merge di query come nuova.**
+5. Con la query InvoiceLineItems selezionata, dalla barra multifunzione dell'editor, selezionare **Home - > Esegui merge di query - > Esegui merge di query come nuova**.
 
    ![](../media/lab-03/image108.jpg)
 
    Si apre la finestra di dialogo Merge.
 
-6. Nella **tabella di sinistra da unire** selezionare **InvoiceLineItems.**
+6. Nella **tabella di sinistra da unire** selezionare **InvoiceLineItems**.
 
-7. Nella **tabella di destra da unire**  selezionare **Invoices.**
+7. Nella **tabella di destra da unire**  selezionare **Invoices**.
 
-8. Selezionare le colonne **InvoiceID** da entrambe le tabelle. Useremo questa colonna per creare un 
-join.
+8. Selezionare le colonne **InvoiceID** da entrambe le tabelle. Useremo questa colonna per creare un join.
 
-9. Selezionare Inner come **Tipo di join.**
+9. Selezionare Inner come **Tipo di join**.
 
-10. Selezionare **OK.**
+10. Selezionare **OK**.
 
     ![](../media/lab-03/image111.jpg)
 
     Copiamo il codice da Power BI Desktop e lo incolliamo usando l'editor avanzato.
 
-11. Se non lo si è ancora aperto, aprire il file **FAIAD.pbix** nella cartella **Reports** sul desktop 
-dell'ambiente lab. 
+11. Se non lo si è ancora aperto, aprire il file **FAIAD.pbix** nella cartella **Reports** sul desktop dell'ambiente lab. 
 
-12. Nella barra multifunzione selezionare **Home -> Trasforma dati.** Si apre la finestra Power Query. Come si è notato nel lab precedente, le query nel pannello di sinistra sono organizzate per origine dati.
+12. Nella barra multifunzione selezionare **Home -> Trasforma dati**. Si apre la finestra Power Query. Come si è notato nel lab precedente, le query nel pannello di sinistra sono organizzate per origine dati.
 
     ![](../media/lab-03/image114.jpg)
 
-13. Dal pannello di sinistra, nella cartella ADLSData, selezionare la query **Sales.**
+13. Dal pannello di sinistra, nella cartella ADLSData, selezionare la query **Sales**.
 
-14. Nella barra multifunzione selezionare **Home - > Editor avanzato.** Viene visualizzata la finestra di dialogo dell'editor avanzato.
+14. Nella barra multifunzione selezionare **Home - > Editor avanzato**. Viene visualizzata la finestra di dialogo dell'editor avanzato.
 
     ![](../media/lab-03/image117.png)
 
 15. **Selezionare li codice dalla riga 3** (#"Expanded Invoice" …) fino all'ultima riga di codice.
 
-16. **Fare clic con il pulsante destro del mouse** e selezionare **Copia.**
+16. **Fare clic con il pulsante destro del mouse** e selezionare **Copia**.
 
 17. Selezionare **Annulla** per chiudere l'editor avanzato.
 
@@ -485,9 +466,9 @@ dell'ambiente lab.
 
 18. **Tornare alla finestra/scheda del browser** in cui è aperto l'editor di Power Query.
 
-19. Accertarsi di aver selezionato la query **Merge.**
+19. Accertarsi di aver selezionato la query **Merge**.
 
-20. Nella barra multifunzione selezionare **Home -> Editor avanzato.** Viene visualizzata la finestra di dialogo dell'editor avanzato.
+20. Nella barra multifunzione selezionare **Home -> Editor avanzato**. Viene visualizzata la finestra di dialogo dell'editor avanzato.
 
      ![](../media/lab-03/image123.jpg)
 
@@ -497,11 +478,11 @@ dell'ambiente lab.
 
 23. Usare la combinazione di tasti **CTRL+V** per incollare il codice copiato da Power BI Desktop.
 
-    **Nota:** se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per **abilitare VM Native Clipboard.** Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
+    **Nota:** se si lavora in un ambiente lab, selezionare i puntini di sospensione in alto a destra della schermata. Usare il dispositivo di scorrimento per **abilitare VM Native Clipboard**. Nella finestra di dialogo selezionare OK. Dopo aver incollato le query è possibile disabilitare questa opzione.
 
     ![](../media/lab-03/image126.jpg)
 
-24. Evidenziare le ultime due righe di codice (in Origine) ed **eliminarle.**
+24. Evidenziare le ultime due righe di codice (in Origine) ed **eliminarle**.
 
 25. Selezionare **OK** per salvare le modifiche.
 
@@ -525,10 +506,9 @@ dell'ambiente lab.
     #"Removed Columns"
     ```
 
-26. Si aprirà nuovamente l'editor di Power Query. A sinistra, nel pannello Query, **fare doppio clic 
-sulla query Merge** per rinominarla.
+26. Si aprirà nuovamente l'editor di Power Query. A sinistra, nel pannello Query, **fare doppio clic sulla query Merge** per rinominarla.
 
-27. **Rinominare** la query Merge in **Sales.**
+27. **Rinominare** la query Merge in **Sales**.
 
 28. Fare clic con il pulsante destro del mouse sulla query Sales e selezionare **Abilita caricamento** per abilitare il caricamento della query.
 
@@ -537,11 +517,9 @@ sulla query Merge** per rinominarla.
 29. Selezionare **Salva** per salvare e chiudere la finestra di dialogo Power Query. Si verrà indirizzati alla 
 query visiva.
 
-30. Dal menu Query visiva selezionare **Salvare come visualizzazione.** Viene visualizzata la finestra di 
-dialogo Salva come visualizzazione. Notare che la query SQL è disponibile. Se lo si desidera, è possibile 
-rivederla. 
+30. Dal menu Query visiva selezionare **Salvare come visualizzazione**. Viene visualizzata la finestra di dialogo Salva come visualizzazione. Notare che la query SQL è disponibile. Se lo si desidera, è possibile rivederla. 
 
-31. Immettere **Sales** come **Nome visualizzazione.**
+31. Immettere **Sales** come **Nome visualizzazione**.
 
 32. Selezionare **OK** per salvare la vista. 
 
@@ -549,7 +527,7 @@ rivederla.
 
     Si riceverà un avviso una volta salvata la vista. 
 
-33. Nel pannello Explorer (a sinistra), espandere **Views.** Abbiamo la vista Sales appena creata.
+33. Nel pannello Explorer (a sinistra), espandere **Views**. Abbiamo la vista Sales appena creata.
 
     ![](../media/lab-03/image138.jpg)
 
@@ -558,40 +536,35 @@ rivederla.
 Creiamo la vista Product unendo le tabelle ProductItem, ProductItemGroup e ProductGroups. Per 
 procedere, copieremo il codice nell'editor avanzato.
 
-1. Dalla barra di menu di Lakehouse selezionare **Home -> Nuova query visiva.** Si apre una nuova 
-query visiva.
+1. Dalla barra di menu di Lakehouse selezionare **Home -> Nuova query visiva**. Si apre una nuova query visiva.
 
-2. Dalla sezione Explorer trascinare le tabelle **ProductItem, ProductItemGroup and ProductGroups** 
-nella sezione della query visiva 
+2. Dalla sezione Explorer trascinare le tabelle **ProductItem, ProductItemGroup and ProductGroups** nella sezione della query visiva 
 
-3. Dall'editor di query visive, selezionare l'**icona Modalità messa a fuoco** per aprire l'editor di 
-Power Query.
+3. Dall'editor di query visive, selezionare l'**icona Modalità messa a fuoco** per aprire l'editor di Power Query.
 
    ![](../media/lab-03/image141.jpg)
 
-4. Con la query **ProductItem** selezionata, dalla barra multifunzione selezionare **Home -> Esegui 
-merge di query -> Esegui merge di query come nuova.** Si apre la finestra di dialogo Merge. 
+4. Con la query **ProductItem** selezionata, dalla barra multifunzione selezionare **Home -> Esegui merge di query -> Esegui merge di query come nuova**. Si apre la finestra di dialogo Merge. 
 
    ![](../media/lab-03/image144.jpg)
 
-5. Nella **tabella di sinistra da unire** selezionare **ProductItem.**
+5. Nella **tabella di sinistra da unire** selezionare **ProductItem**.
 
-6. Nella **tabella di destra da unire** selezionare **ProductItemGroup.**
+6. Nella **tabella di destra da unire** selezionare **ProductItemGroup**.
 
-7. Selezionare le colonne **StockItemID** da entrambe le tabelle. Useremo questa colonna per creare 
-un join.
+7. Selezionare le colonne **StockItemID** da entrambe le tabelle. Useremo questa colonna per creare un join.
 
-8. Selezionare **Left outer** come **Tipo di join.**
+8. Selezionare **Left outer** come **Tipo di join**.
 
-9. Selezionare **OK.** La nuova query viene creata.
+9. Selezionare **OK**. La nuova query viene creata.
 
    ![](../media/lab-03/image147.jpg)
 
-10. Con la query Merge selezionata, dalla barra multifunzione selezionare **Home -> Editor avanzato.** Viene visualizzata la finestra di dialogo dell'editor avanzato.
+10. Con la query Merge selezionata, dalla barra multifunzione selezionare **Home -> Editor avanzato**. Viene visualizzata la finestra di dialogo dell'editor avanzato.
 
     ![](../media/lab-03/image150.jpg)
 
-11. **Selezionare tutto il codice** nell'editor avanzato ed **eliminarlo.**
+11. **Selezionare tutto il codice** nell'editor avanzato ed **eliminarlo**.
 
 12. **Incollare** il codice di seguito nell'editor avanzato.
 
@@ -615,18 +588,17 @@ un join.
 
 14. A sinistra, nel pannello Query, **fare doppio clic sulla query Merge** per rinominarla.
 
-15. **Rinominare** la query Merge in **Product.**
+15. **Rinominare** la query Merge in **Product**.
 
 16. Fare clic con il pulsante destro del mouse sulla query Product e selezionare **Abilita caricamento** per abilitare il caricamento della query.
 
-17. Selezionare **Salva** per salvare e chiudere la finestra di dialogo Power Query. Si verrà indirizzati alla 
-query visiva.
+17. Selezionare **Salva** per salvare e chiudere la finestra di dialogo Power Query. Si verrà indirizzati alla query visiva.
 
      ![](../media/lab-03/image156.jpg)
 
-18. Dal menu Query visiva selezionare **Salvare come visualizzazione.** Viene visualizzata la finestra di dialogo Salva come visualizzazione. Notare che la query SQL è disponibile. Se lo si desidera, è possibile rivederla. 
+18. Dal menu Query visiva selezionare **Salvare come visualizzazione**. Viene visualizzata la finestra di dialogo Salva come visualizzazione. Notare che la query SQL è disponibile. Se lo si desidera, è possibile rivederla. 
 
-19. Immettere **Product** come **Nome visualizzazione.**
+19. Immettere **Product** come **Nome visualizzazione**.
 
 20. Selezionare **OK** per salvare la vista. 
 
@@ -634,7 +606,7 @@ query visiva.
 
     Si riceverà un avviso una volta salvata la vista. 
 
-21. Nel pannello Explorer (a sinistra), espandere **Views.** Abbiamo la vista Product appena creata.
+21. Nel pannello Explorer (a sinistra), espandere **Views**. Abbiamo la vista Product appena creata.
 
     ![](../media/lab-03/image162.jpg)
 
@@ -681,7 +653,7 @@ riprodurre, pubblicare, concedere in licenza, usare per la creazione di lavori d
 SONO ESPLICITAMENTE PROIBITE LA COPIA E LA RIPRODUZIONE DELLA DEMO/DEL LAB (O DI QUALSIASI PARTE DI ESSI) IN QUALSIASI ALTRO SERVER O IN QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O RIDISTRIBUZIONE.
 QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON UN'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI IN QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L'ESPERIENZA D'USO DI TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ INOLTRE RISULTARE DIVERSA IN UN AMBIENTE FISICO.
 
-**FEEDBACK.** L'invio a Microsoft di feedback sulle caratteristiche, sulle funzionalità e/o sui concetti della tecnologia descritti in questa demo/questo lab implica la concessione a Microsoft, a titolo gratuito, del diritto di utilizzare, condividere e commercializzare tale feedback in qualsiasi modo e per qualsiasi scopo. Implica anche la concessione a titolo gratuito a terze parti del diritto di utilizzo di eventuali brevetti necessari per i loro prodotti, le loro tecnologie e i loro servizi al fine di utilizzare o interfacciarsi ai componenti software o ai servizi Microsoft specifici che includono il feedback. L'utente si impegna a non inviare feedback la cui inclusione all'interno di software o
+**FEEDBACK**. L'invio a Microsoft di feedback sulle caratteristiche, sulle funzionalità e/o sui concetti della tecnologia descritti in questa demo/questo lab implica la concessione a Microsoft, a titolo gratuito, del diritto di utilizzare, condividere e commercializzare tale feedback in qualsiasi modo e per qualsiasi scopo. Implica anche la concessione a titolo gratuito a terze parti del diritto di utilizzo di eventuali brevetti necessari per i loro prodotti, le loro tecnologie e i loro servizi al fine di utilizzare o interfacciarsi ai componenti software o ai servizi Microsoft specifici che includono il feedback. L'utente si impegna a non inviare feedback la cui inclusione all'interno di software o
 documentazione Microsoft imponga a Microsoft di concedere in licenza a terze parti tale software o documentazione. Questi diritti sussisteranno anche dopo la scadenza del presente contratto.
  
 CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA O CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O PRESCRITTE DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO, TITOLARITÀ E NON VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE O RAPPRESENTAZIONI IN RELAZIONE ALL'ACCURATEZZA DEI RISULTATI E DELL'OUTPUT DERIVANTI DALL'USO DELLA DEMO/DEL LAB O ALL'ADEGUATEZZA DELLE INFORMAZIONI CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.

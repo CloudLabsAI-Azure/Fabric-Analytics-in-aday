@@ -64,7 +64,7 @@ In questo lab si imparerà a:
 
 Iniziamo con la configurazione di un aggiornamento pianificato del flusso di dati dei fornitori.
 
-1. Torniamo all'area di lavoro Fabric, **FAIAD_\<username>** selezionando l'area di lavoro nel pannello a sinistra.
+1. Torniamo all'area di lavoro Fabric, **FAIAD_\<nomeutente>** selezionando l'area di lavoro nel pannello a sinistra.
 
 2. Per ingrandire il pannello con l'elenco degli artefatti, selezionare la doppia freccia in alto a destra del pannello.
 
@@ -204,11 +204,11 @@ Iniziamo a creare la pipeline. Abbiamo bisogno di un'attività per aggiornare il
 
     ![](../media/lab-05/image048.png)
 
-Si notino i vantaggi offerti dall'uso della pipeline di dati rispetto all'impostazione del flusso di dati su un aggiornamento pianificato (come abbiamo fatto per i flussi di dati precedenti):
+    Si notino i vantaggi offerti dall'uso della pipeline di dati rispetto all'impostazione del flusso di dati su un aggiornamento pianificato (come abbiamo fatto per i flussi di dati precedenti):
 
-- La pipeline offre la possibilità di riprovare più volte prima che l'aggiornamento venga considerato non riuscito.
+    - La pipeline offre la possibilità di riprovare più volte prima che l'aggiornamento venga considerato non riuscito.
 
-- La pipeline offre la possibilità di eseguire l'aggiornamento in pochi secondi mentre l'aggiornamento pianificato del flusso di dati avviene ogni 30 minuti.
+    - La pipeline offre la possibilità di eseguire l'aggiornamento in pochi secondi mentre l'aggiornamento pianificato del flusso di dati avviene ogni 30 minuti.
 
 ## Attività 4 - Creazione di una nuova pipeline di dati
 
@@ -299,6 +299,7 @@ Aggiungiamo un po' più di complessità al nostro scenario. Abbiamo notato che s
     Dobbiamo scrivere un'espressione che verrà eseguita finché il valore di **varCounter è 3** o il valore **di varIsSuccess è Sì** (varCounter e varIsSuccess sono le variabili che abbiamo appena creato).
 
 8. Si apre la finestra di dialogo **Generatore di espressioni della pipeline**. Nella metà inferiore della finestra di dialogo è presente un menu:
+
     a. **Parametri**: sono costanti in una data factory che possono essere usate da una pipeline in qualsiasi espressione.
 
     b. **Variabili di sistema**: queste variabili possono essere usate nelle espressioni quando si definiscono entità all'interno di uno dei servizi. Ad esempio, ID pipeline, nome pipeline, nome trigger e così via.

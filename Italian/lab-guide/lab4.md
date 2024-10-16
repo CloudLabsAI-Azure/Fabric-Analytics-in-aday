@@ -60,7 +60,7 @@ In questo lab si apprenderà quanto segue:
 
     ![](../media/lab-04/image006.jpg)
 
-4. Nella sezione dedicata agli elementi consigliati, selezionare **Flusso di dati Gen2.**
+4. Nella sezione dedicata agli elementi consigliati, selezionare **Flusso di dati Gen2**.
 
     ![](../media/lab-04/image009.jpg)
 
@@ -342,8 +342,7 @@ Ci si dovrebbe trovare nel lakehouse **lh_FAIAD**. Accertarsi di essere nella vi
 
     ![](../media/lab-04/image097.jpg)
 
-4. Viene visualizzata la finestra di dialogo Selezionare il tipo di origine dati. Come si può notare, ora 
-sono disponibili due origini dati.
+4. Viene visualizzata la finestra di dialogo Selezionare il tipo di origine dati. Come si può notare, ora sono disponibili due origini dati.
 
     a. lh_FAIAD: questo è il lakehouse creato personalmente.
 

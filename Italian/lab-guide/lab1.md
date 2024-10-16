@@ -22,17 +22,13 @@
 
 Il lab include i passaggi che l'utente deve seguire con gli screenshot associati che forniscono un aiuto visivo. In ogni screenshot vi sono sezioni evidenziate con riquadri arancioni che indicano le aree su cui l'utente deve concentrarsi.
 
-**Nota:** alcuni screenshot potrebbero non essere aggiornati a causa dei continui aggiornamenti del 
-prodotto.
+**Nota:** alcuni screenshot potrebbero non essere aggiornati a causa dei continui aggiornamenti del prodotto.
 
 # Scenario/Esposizione del problema
 
-Fabrikam, Inc. è un distributore di oggettistica all'ingrosso. Poiché Fabrikam è un grossista, i suoi clienti sono soprattutto aziende che rivendono ai consumatori. Fabrikam vende a rivenditori al dettaglio in tutti gli Stati Uniti, inclusi negozi specializzati, supermercati, negozi di informatica e di souvenir per turisti. Fabrikam vende anche ad altri grossisti attraverso una rete di agenti che promuovono i prodotti per conto di Fabrikam. Sebbene tutti i clienti di Fabrikam abbiano sede negli Stati Uniti, l'azienda 
-desidera espandersi in altri paesi/aree geografiche.
+Fabrikam, Inc. è un distributore di oggettistica all'ingrosso. Poiché Fabrikam è un grossista, i suoi clienti sono soprattutto aziende che rivendono ai consumatori. Fabrikam vende a rivenditori al dettaglio in tutti gli Stati Uniti, inclusi negozi specializzati, supermercati, negozi di informatica e di souvenir per turisti. Fabrikam vende anche ad altri grossisti attraverso una rete di agenti che promuovono i prodotti per conto di Fabrikam. Sebbene tutti i clienti di Fabrikam abbiano sede negli Stati Uniti, l'azienda desidera espandersi in altri paesi/aree geografiche.
 
-In qualità di analista dei dati del team di vendita, si raccolgono, puliscono e interpretano set di dati 
-per risolvere i problemi aziendali. Si compongono anche visualizzazioni come grafici e diagrammi, si 
-scrivono report e li presentano ai decision-maker dell'organizzazione.
+In qualità di analista dei dati del team di vendita, si raccolgono, puliscono e interpretano set di dati per risolvere i problemi aziendali. Si compongono anche visualizzazioni come grafici e diagrammi, si scrivono report e li presentano ai decision-maker dell'organizzazione.
 
 Per ottenere informazioni utili, si estraggono, puliscono e organizzano insieme dati provenienti da più sistemi. Si ottengono dati dalle seguenti origini:
 
@@ -50,20 +46,15 @@ Vengono aggiornati alle 12.00 ogni giorno.
 
    Attualmente si sta creando un set di dati in Power BI Premium che estrae i dati dai sistemi di origine sopraelencati al fine di soddisfare le esigenze di reporting e fornire agli utenti finali possibilità di uso self-service. Si usa Power Query per aggiornare il modello. 
 
-
 **Si devono affrontare le seguenti problematiche:**
 
-- È necessario aggiornare il set di dati almeno tre volte al giorno per adattarsi ai diversi tempi 
-di aggiornamento delle diverse origini dati.
+- È necessario aggiornare il set di dati almeno tre volte al giorno per adattarsi ai diversi tempi di aggiornamento delle diverse origini dati.
 
-- Gli aggiornamenti richiedono molto tempo in quanto è necessario eseguire un aggiornamento 
-completo ogni volta per acquisire eventuali aggiornamenti dei sistemi di origine.
+- Gli aggiornamenti richiedono molto tempo in quanto è necessario eseguire un aggiornamento completo ogni volta per acquisire eventuali aggiornamenti dei sistemi di origine.
 
 - Se si verificano errori in qualsiasi delle origini dati da cui si estraggono i dati, l'aggiornamento del set di dati si interrompe. Spesso il file dei dipendenti non viene caricato in tempo e ciò causa l'interruzione dell'aggiornamento del set di dati. 
 
-- Eventuali modifiche al modello di dati richiedono molto tempo in quanto Power Query 
-richiede molto tempo per l'aggiornamento delle anteprime, date le dimensioni elevate dei 
-dati e le trasformazioni complesse.
+- Eventuali modifiche al modello di dati richiedono molto tempo in quanto Power Query richiede molto tempo per l'aggiornamento delle anteprime, date le dimensioni elevate dei dati e le trasformazioni complesse.
 
 - È necessario un PC Windows per usare Power BI Desktop anche se lo standard aziendale è Mac.
 
@@ -84,21 +75,21 @@ trasformazioni e il modello.
 
 3. Copiare il **Nome utente** e incollarlo nella casella di testo E-mail della finestra di dialogo.
 
-4. Selezionare **Continua.**
+4. Selezionare **Continua**.
 
     ![](../media/lab-01/image012.png)
 
-5. Si apre la finestra di dialogo Accedi. Immettere nuovamente il **Nome utente** copiandolo nella scheda **Dettagli ambiente.**
+5. Si apre la finestra di dialogo Accedi. Immettere nuovamente il **Nome utente** copiandolo nella scheda **Dettagli ambiente**.
 
-6. Selezionare **Avanti.**
+6. Selezionare **Avanti**.
 
-7. Nella finestra di dialogo successiva immettere le **Credenziali** e la **Password** copiandole dalla scheda **Dettagli ambiente.**
+7. Nella finestra di dialogo successiva immettere le **Credenziali** e la **Password** copiandole dalla scheda **Dettagli ambiente**.
 
-8. Selezionare **Accedi.**
+8. Selezionare **Accedi**.
 
    ![](../media/lab-01/image015.jpg)
 
-9. Viene visualizzata la finestra di dialogo **Rimani connesso a tutte le app.** Selezionare **OK.**
+9. Viene visualizzata la finestra di dialogo **Rimani connesso a tutte le app**. Selezionare **OK**.
 
    ![](../media/lab-01/image018.jpg)
 
@@ -106,21 +97,19 @@ trasformazioni e il modello.
 
     Si aprirà Power BI Desktop.
 
-
 ## Attività 2 - Analisi del report di Power BI Desktop
 
 Il report seguente analizza le vendite per Fabrikam. I KPI sono elencati in alto a sinistra nella pagina. Gli oggetti visivi rimanenti evidenziano le vendite nel tempo, per area, gruppo di prodotti e azienda rivenditrice. 
 
 ![](../media/lab-01/image021.jpg)
 
-**Nota:** in questo corso di formazione ci concentreremo sull'acquisizione, la trasformazione e la modellazione dei dati mediante gli strumenti disponibili in Fabric. Non ci concentreremo sullo sviluppo di report né sullo spostamento al loro interno. Dedichiamo qualche minuto alla comprensione del report prima di procedere 
-ai passaggi successivi.
+**Nota:** in questo corso di formazione ci concentreremo sull'acquisizione, la trasformazione e la modellazione dei dati mediante gli strumenti disponibili in Fabric. Non ci concentreremo sullo sviluppo di report né sullo spostamento al loro interno. Dedichiamo qualche minuto alla comprensione del report prima di procedere ai passaggi successivi.
 
-1. Analizziamo i dati per area di vendita. Selezionare **New England nel grafico a dispersione Sales Territory.** In Sales over time notare che il rivenditore Tailspin Toys presenta più vendite di Wingtip Toys in New England. Se si considera l'istogramma % vendite rispetto all'anno precedente, si noterà che la crescita delle vendite di Wingtip Toys è stata bassa ed è calata di trimestre nello scorso anno. Dopo un leggero rialzo nel terzo trimestre è nuovamente calata nel quarto. 
+1. Analizziamo i dati per area di vendita. Selezionare **New England nel grafico a dispersione Sales Territory**. In Sales over time notare che il rivenditore Tailspin Toys presenta più vendite di Wingtip Toys in New England. Se si considera l'istogramma % vendite rispetto all'anno precedente, si noterà che la crescita delle vendite di Wingtip Toys è stata bassa ed è calata di trimestre nello scorso anno. Dopo un leggero rialzo nel terzo trimestre è nuovamente calata nel quarto. 
 
    ![](../media/lab-01/image024.png)
 
-2. Confrontiamo questi dati con l'area delle Montagne Rocciose. Selezionare **Rocky Mountain nel grafico a dispersione Sales Territory.** Dall'istogramma % vendite rispetto all'anno precedente risulta che le vendite per Wingtip Toys sono aumentate notevolmente nel quarto trimestre del 2022 dopo essere state basse nei due trimestri precedenti.
+2. Confrontiamo questi dati con l'area delle Montagne Rocciose. Selezionare **Rocky Mountain nel grafico a dispersione Sales Territory**. Dall'istogramma % vendite rispetto all'anno precedente risulta che le vendite per Wingtip Toys sono aumentate notevolmente nel quarto trimestre del 2022 dopo essere state basse nei due trimestri precedenti.
 
    ![](../media/lab-01/image027.png)
 
@@ -130,9 +119,9 @@ ai passaggi successivi.
 
    ![](../media/lab-01/image030.png)
 
-5. Selezionare il rivenditore outlier nel grafico a dispersione per **rimuovere il filtro.**
+5. Selezionare il rivenditore outlier nel grafico a dispersione per **rimuovere il filtro**.
 
-6. Otteniamo i dettagli del prodotto per gruppo di prodotti e rivenditore. Nel grafico a barre Vendite per gruppo di prodotti e azienda rivenditrice **fare clic con il pulsante destro del mouse sulla barra Packaging Materials per Tailspin Toys** e nella finestra di dialogo selezionare **Drill-through -> Product Detail.**
+6. Otteniamo i dettagli del prodotto per gruppo di prodotti e rivenditore. Nel grafico a barre Vendite per gruppo di prodotti e azienda rivenditrice **fare clic con il pulsante destro del mouse sulla barra Packaging Materials per Tailspin Toys** e nella finestra di dialogo selezionare **Drill-through -> Product Detail**.
 
    ![](../media/lab-01/image033.jpg)
 
@@ -144,11 +133,9 @@ ai passaggi successivi.
 
 8. Se lo si desidera, analizzare ulteriormente il report, dopodiché esamineremo la vista modello. Nel pannello a sinistra selezionare l'**icona della vista modello**. Notare che vi sono due tabelle dei fatti Sales e PO. 
 
-    a. La granularità dei dati di Sales è per Date, Reseller, Product e People. Date, Reseller, 
-    Product e People si collegano a Sales.
+    a. La granularità dei dati di Sales è per Date, Reseller, Product e People. Date, Reseller, Product e People si collegano a Sales.
 
-    b. La granularità dei dati di PO è per Date, Product e People. Date, Product e People si 
-    collegano a PO.
+    b. La granularità dei dati di PO è per Date, Product e People. Date, Product e People si collegano a PO.
 
     c. Abbiamo dati di Supplier per Product. Supplier si collega a Product.
 
@@ -158,13 +145,11 @@ ai passaggi successivi.
 
 ## Attività 3 - Analisi delle query in Power Query
 
-1. Osserviamo Power Query per comprendere le origini dati. Nella barra multifunzione selezionare **Home -> Trasforma dati.**
+1. Osserviamo Power Query per comprendere le origini dati. Nella barra multifunzione selezionare **Home -> Trasforma dati**.
 
    ![](../media/lab-01/image039.jpg)
 
-2. Si apre la finestra Power Query. Nella barra multifunzione selezionare **Home -> Impostazioni
-origine dati.** Scorrendo l'elenco si noterà che vi sono quattro origini dati, come indicato 
-nell'esposizione del problema:
+2. Si apre la finestra Power Query. Nella barra multifunzione selezionare **Home -> Impostazioni origine dati**. Scorrendo l'elenco si noterà che vi sono quattro origini dati, come indicato nell'esposizione del problema:
 
     a. Snowflake
 
@@ -188,14 +173,11 @@ nell'esposizione del problema:
 
 7. Per l'origine dati ADLS, usare l'opzione **Chiave account** e immettere la **chiave di accesso dell'account di archiviazione ADLS,** disponibile nella scheda **Variabili di ambiente** (accanto alla guida al lab).
 
-8. Notare che la cartella **ADLSData** include più dimensioni: Geo, Product, Reseller e Date. Include 
-anche il fatto Sales. 
+8. Notare che la cartella **ADLSData** include più dimensioni: Geo, Product, Reseller e Date. Include anche il fatto Sales. 
 
-    a. La **dimensione Geo** è creata unendo i dati 
-      dalle query Cities, Countries e States. 
+    a. La **dimensione Geo** è creata unendo i dati dalle query Cities, Countries e States. 
 
-    b. La **dimensione Product** è creata unendo i dati dalle query Product Groups e Product 
-    Item Group.
+    b. La **dimensione Product** è creata unendo i dati dalle query Product Groups e Product Item Group.
 
     c. La **dimensione Reseller** è filtrata usando la query BuyingGroup.
 
@@ -255,7 +237,7 @@ riprodurre, pubblicare, concedere in licenza, usare per la creazione di lavori d
 SONO ESPLICITAMENTE PROIBITE LA COPIA E LA RIPRODUZIONE DELLA DEMO/DEL LAB (O DI QUALSIASI PARTE DI ESSI) IN QUALSIASI ALTRO SERVER O IN QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O RIDISTRIBUZIONE.
 QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON UN'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI IN QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L'ESPERIENZA D'USO DI TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ INOLTRE RISULTARE DIVERSA IN UN AMBIENTE FISICO.
 
-**FEEDBACK.** L'invio a Microsoft di feedback sulle caratteristiche, sulle funzionalità e/o sui concetti della tecnologia descritti in questa demo/questo lab implica la concessione a Microsoft, a titolo gratuito, del diritto di utilizzare, condividere e commercializzare tale feedback in qualsiasi modo e per qualsiasi scopo. Implica anche la concessione a titolo gratuito a terze parti del diritto di utilizzo di eventuali brevetti necessari per i loro prodotti, le loro tecnologie e i loro servizi al fine di utilizzare o interfacciarsi ai componenti software o ai servizi Microsoft specifici che includono il feedback. L'utente si impegna a non inviare feedback la cui inclusione all'interno di software o
+**FEEDBACK**. L'invio a Microsoft di feedback sulle caratteristiche, sulle funzionalità e/o sui concetti della tecnologia descritti in questa demo/questo lab implica la concessione a Microsoft, a titolo gratuito, del diritto di utilizzare, condividere e commercializzare tale feedback in qualsiasi modo e per qualsiasi scopo. Implica anche la concessione a titolo gratuito a terze parti del diritto di utilizzo di eventuali brevetti necessari per i loro prodotti, le loro tecnologie e i loro servizi al fine di utilizzare o interfacciarsi ai componenti software o ai servizi Microsoft specifici che includono il feedback. L'utente si impegna a non inviare feedback la cui inclusione all'interno di software o
 documentazione Microsoft imponga a Microsoft di concedere in licenza a terze parti tale software o documentazione. Questi diritti sussisteranno anche dopo la scadenza del presente contratto.
  
 CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA O CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O PRESCRITTE DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO, TITOLARITÀ E NON VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE O RAPPRESENTAZIONI IN RELAZIONE ALL'ACCURATEZZA DEI RISULTATI E DELL'OUTPUT DERIVANTI DALL'USO DELLA DEMO/DEL LAB O ALL'ADEGUATEZZA DELLE INFORMAZIONI CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.

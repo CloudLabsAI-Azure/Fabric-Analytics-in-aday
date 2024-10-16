@@ -36,14 +36,13 @@
 
 # Introduzione 
 
-Oggi si apprenderanno alcune funzionalità chiave di Microsoft Fabric. Questo è un workshop 
-introduttivo che ha lo scopo di presentare le diverse esperienze di uso del prodotto e i vari elementi disponibili in Fabric. Al termine del workshop, si imparerà a usare le funzionalità Lakehouse, Flusso di dati Gen2, Pipeline di dati, DirectLake e altre ancora.
+Oggi si apprenderanno alcune funzionalità chiave di Microsoft Fabric. Questo è un workshop introduttivo che ha lo scopo di presentare le diverse esperienze di uso del prodotto e i vari elementi disponibili in Fabric. Al termine del workshop, si imparerà a usare le funzionalità Lakehouse, Flusso di dati Gen2, Pipeline di dati, DirectLake e altre ancora.
 
 In questo lab si imparerà a: 
 
 - Creare un'area di lavoro Fabric
 
--  Creare un lakehouse 
+- Creare un lakehouse 
 
 # Licenza di Fabric
 
@@ -53,38 +52,37 @@ In questo lab si imparerà a:
 
    **Nota:** se non si usa l'ambiente lab e si dispone di un account Power BI esistente, può essere opportuno usare il browser in modalità privata o in incognito.
 
-2. Immettere il **nome utente** disponibile nella scheda **Variabili di ambiente** (accanto alla Guida al lab) in **Email,** quindi fare clic su **Submit.**
+2. Immettere il **nome utente** disponibile nella scheda **Variabili di ambiente** (accanto alla Guida al lab) in **Email,** quindi fare clic su **Submit**.
 
    ![](../media/lab-02/image006.jpg)
 
-3. Si aprirà la schermata **Password.** Immettere la **Password** disponibile nella scheda **Variabili di ambiente** (accanto alla Guida al lab) fornita dall'istruttore. 
+3. Si aprirà la schermata **Password**. Immettere la **Password** disponibile nella scheda **Variabili di ambiente** (accanto alla Guida al lab) fornita dall'istruttore. 
 
 4. Fare clic su **Sign in** e seguire le istruzioni per accedere a Fabric.
 
     ![](../media/lab-02/image009.png)
 
-5. Si aprirà la **home page abituale del servizio Power BI.**
+5. Si aprirà la **home page abituale del servizio Power BI**.
 
 6. Si presuppone che si abbia familiarità con il layout del servizio Power BI. Per eventuali domande, rivolgersi all'istruttore.
 
-   A questo punto, ci si trova nell'**Area di lavoro personale.** Per lavorare con gli elementi di Fabric, sono necessarie una licenza di valutazione e un'area di lavoro con licenza di Fabric assegnata.
+   A questo punto, ci si trova nell'**Area di lavoro personale**. Per lavorare con gli elementi di Fabric, sono necessarie una licenza di valutazione e un'area di lavoro con licenza di Fabric assegnata.
 
-7. Nell'angolo in alto a destra della schermata selezionare l'**icona utente.**
+7. Nell'angolo in alto a destra della schermata selezionare l'**icona utente**.
 
-8. Selezionare **Versione di valutazione gratuita.**
+8. Selezionare **Versione di valutazione gratuita**.
 
     ![](../media/lab-02/image012.jpg)
 
-9. Si apre la finestra di dialogo Esegui l'aggiornamento a una versione di valutazione gratuita Microsoft Fabric. Selezionare **Avvia versione di valutazione.**
+9. Si apre la finestra di dialogo Esegui l'aggiornamento a una versione di valutazione gratuita Microsoft Fabric. Selezionare **Avvia versione di valutazione**.
 
     ![](../media/lab-02/image015.jpg)
 
-10. Si apre la finestra di dialogo Aggiornamento a una versione di valutazione gratuita Microsoft 
-Fabric completato. Selezionare **Fabric Home Page.** 
+10. Si apre la finestra di dialogo Aggiornamento a una versione di valutazione gratuita Microsoft Fabric completato. Selezionare **Fabric Home Page**. 
 
     ![](../media/lab-02/image018.png)
 
-11. Si aprirà la **home page** di **Microsoft Fabric.**
+11. Si aprirà la **home page** di **Microsoft Fabric**.
 
      ![](../media/lab-02/image021.jpg)
 
@@ -93,14 +91,13 @@ Fabric completato. Selezionare **Fabric Home Page.**
 ## Attività 2 - Esperienza Data Factory
 1. Selezionare l'icona di **Microsoft Fabric** (selettore esperienza in Fabric) in basso a sinistra della schermata. Si apre una finestra di dialogo contenente l'elenco delle esperienze in Fabric. Notare che Power BI, Data Factory, Data Activator, Industry Solutions e Real-Time Intelligence sono esperienze indipendenti. Data Engineering, Data Science e Data Warehouse sono esperienze Synapse e si basano su Synapse. Procediamo a esaminarle.
 
-2. Selezionare **Data Factory.**
+2. Selezionare **Data Factory**.
 
    ![](../media/lab-02/image024.jpg)
 
-3. Si apre la **home page** di **Data Factory.** La pagina contiene tre sezioni principali. 
+3. Si apre la **home page** di **Data Factory**. La pagina contiene tre sezioni principali. 
 
-    a. **Consigliato:** elenca gli elementi disponibili in Data Factory, ossia Flusso di dati Gen2, 
-    Pipeline di dati, Flusso di lavoro dei dati e API per GraphQL.
+    a. **Consigliato:** elenca gli elementi disponibili in Data Factory, ossia Flusso di dati Gen2, Pipeline di dati, Flusso di lavoro dei dati e API per GraphQL.
 
     i. Dataflow Gen2 è la nuova generazione di Flusso di dati.
 
@@ -110,8 +107,7 @@ Fabric completato. Selezionare **Fabric Home Page.**
 
     iv. API per GraphQL: è l'API per eseguire query su più origini dati.
 
-    b. **Impara:** questa sezione fornisce accesso alla documentazione di apprendimento per 
-    l'avvio rapido.
+    b. **Impara:** questa sezione fornisce accesso alla documentazione di apprendimento per l'avvio rapido.
 
     c. **Quick access:** questa sezione elenca gli elementi preferiti o usati di recente.
 
@@ -123,7 +119,7 @@ Fabric completato. Selezionare **Fabric Home Page.**
 
     ![](../media/lab-02/image030.png)
 
-2. Selezionare **Data Activator** nella finestra di dialogo. Si apre la **home page di Data Activator.** Data Activator è un'esperienza senza codice in Microsoft Fabric che consente di effettuare automaticamente azioni quando vengono rilevati schemi o condizioni nei dati che cambiano. Notare che le tre sezioni 
+2. Selezionare **Data Activator** nella finestra di dialogo. Si apre la **home page di Data Activator**. Data Activator è un'esperienza senza codice in Microsoft Fabric che consente di effettuare automaticamente azioni quando vengono rilevati schemi o condizioni nei dati che cambiano. Notare che le tre sezioni 
 sono analoghe all'esperienza Data Factory. Nella sezione Consigliato, notare gli elementi:
 
    a. **Reflex:** consente di monitorare set di dati, query e flussi di eventi per individuare schemi.
@@ -136,8 +132,7 @@ sono analoghe all'esperienza Data Factory. Nella sezione Consigliato, notare gli
 
 1. Selezionare l'icona **selettore esperienza in Fabric** (attualmente impostata su Data Activator) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
 
-2. Selezionare **Industry Solutions** nella finestra di dialogo. Verrà visualizzata la home page di **Industry Solutions.** Microsoft Fabric include soluzioni di dati specifiche del settore che offrono una piattaforma affidabile per la gestione dei dati, l'analisi e il processo decisionale. Queste soluzioni di dati risolvono 
-le problematiche specifiche affrontate da diversi settori, permettendo alle aziende di ottimizzare le operazioni, integrare dati provenienti da origini diverse e usare analisi avanzate. Si noti che le tre sezioni sono analoghe alle esperienze precedenti. Nella sezione Consigliato, notare gli elementi:
+2. Selezionare **Industry Solutions** nella finestra di dialogo. Verrà visualizzata la home page di **Industry Solutions**. Microsoft Fabric include soluzioni di dati specifiche del settore che offrono una piattaforma affidabile per la gestione dei dati, l'analisi e il processo decisionale. Queste soluzioni di dati risolvono le problematiche specifiche affrontate da diversi settori, permettendo alle aziende di ottimizzare le operazioni, integrare dati provenienti da origini diverse e usare analisi avanzate. Si noti che le tre sezioni sono analoghe alle esperienze precedenti. Nella sezione Consigliato, notare gli elementi:
 
    a. **Soluzioni per la sostenibilità:** supporta l'inserimento, la standardizzazione e l'analisi di dati ambientali, sociali e di governance (ESG).
 
@@ -152,7 +147,7 @@ le problematiche specifiche affrontate da diversi settori, permettendo alle azie
 
 1. Selezionare l'icona **selettore esperienza in Fabric**(attualmente impostata su Industry Solutions) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
 
-2. Selezionare **Real-Time Intelligence.** Verrà visualizzata la **home page di Real-Time Intelligence.** Anche in questo caso sono presenti tre sezioni. Nella sezione Consigliato, notare gli elementi:
+2. Selezionare **Real-Time Intelligence**. Verrà visualizzata la **home page di Real-Time Intelligence**. Anche in questo caso sono presenti tre sezioni. Nella sezione Consigliato, notare gli elementi:
 
    a. **Eventhouse:** permette di creare un'area di lavoro di database, che è possibile condividere tra progetti.
 
@@ -172,10 +167,9 @@ le problematiche specifiche affrontate da diversi settori, permettendo alle azie
 
 ## Attività 6 - Esperienza Synapse Data Engineering
 
-1. Selezionare l'icona **selettore esperienza Fabric** (attualmente impostato su Real-Time Intelligence) 
-in basso a sinistra della schermata. Si apre la finestra di dialogo Esperienza Fabric.
+1. Selezionare l'icona **selettore esperienza Fabric** (attualmente impostato su Real-Time Intelligence) in basso a sinistra della schermata. Si apre la finestra di dialogo Esperienza Fabric.
 
-2. Selezionare **Data Engineering.** Si apre la **home page di Data Engineering.** Anche in questo caso, la pagina contiene tre sezioni principali. Nella sezione New osservare gli elementi: 
+2. Selezionare **Data Engineering**. Si apre la **home page di Data Engineering**. Anche in questo caso, la pagina contiene tre sezioni principali. Nella sezione New osservare gli elementi: 
 
    a. **Lakehouse:** permette di archiviare Big Data per operazioni di pulizia, query, reporting e condivisione.
 
@@ -199,8 +193,7 @@ in basso a sinistra della schermata. Si apre la finestra di dialogo Esperienza F
 
 1. Selezionare l'icona **selettore esperienza in Fabric** (attualmente impostata su Data Engineering) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
 
-2. Selezionare **Data Science.** Si apre la **home page di Data Science.** Anche in questo caso sono 
-presenti tre sezioni. Nella sezione Consigliato, notare gli elementi:
+2. Selezionare **Data Science**. Si apre la **home page di Data Science**. Anche in questo caso sono presenti tre sezioni. Nella sezione Consigliato, notare gli elementi:
 
    a. **ML model:** consente di creare modelli di Machine Learning.
 
@@ -208,11 +201,9 @@ presenti tre sezioni. Nella sezione Consigliato, notare gli elementi:
 
    c. **Notebook:** permette di esplorare dati e creare soluzioni di Machine Learning.
 
-   d. **Environment:** usato per configurare librerie condivise, impostazioni di calcolo Spark e 
-    risorse per notebook e definizioni di processi Spark.
+   d. **Environment:** usato per configurare librerie condivise, impostazioni di calcolo Spark e risorse per notebook e definizioni di processi Spark.
 
-   e. **Competenza IA:** usata per creare un'esperienza personale di intelligenza artificiale 
-    generativa.
+   e. **Competenza IA:** usata per creare un'esperienza personale di intelligenza artificiale generativa.
 
    f. **Import notebook:** permette di importare notebook dal computer locale.
 
@@ -226,7 +217,7 @@ presenti tre sezioni. Nella sezione Consigliato, notare gli elementi:
 
 1. Selezionare l'icona **selettore esperienza in Fabric** (attualmente impostata su Data Science) in basso a sinistra della schermata. Si apre la finestra di dialogo delle esperienze in Fabric.
 
-2. Selezionare **Data Warehouse.** Si apre la **home page di Data Warehouse.** Anche in questo caso sono presenti tre sezioni. Nella sezione Nuovo osservare gli elementi:
+2. Selezionare **Data Warehouse**. Si apre la **home page di Data Warehouse**. Anche in questo caso sono presenti tre sezioni. Nella sezione Nuovo osservare gli elementi:
 
    a. **Data warehouse:** permette di creare un Data Warehouse.
 
@@ -246,7 +237,7 @@ presenti tre sezioni. Nella sezione Consigliato, notare gli elementi:
 
 1. Ora creeremo un'area di lavoro con licenza di Fabric. Selezionare **Aree di lavoro** nella barra di spostamento a sinistra. Si apre una finestra di dialogo.
 
-2. Selezionare **Nuova area di lavoro.**
+2. Selezionare **Nuova area di lavoro**.
 
    ![](../media/lab-02/image051.png)
 
@@ -254,7 +245,7 @@ presenti tre sezioni. Nella sezione Consigliato, notare gli elementi:
 
 4. Nel campo **Nome** immettere **FAIAD_\<nome utente>**
 
-   **Nota:** il nome dell'area di lavoro deve essere univoco. Tuttavia, il nome dell'area di lavoro usato deve essere diverso. Assicurarsi che sotto il campo Nome sia presente un segno di spunta verde e che sia indicato "**Questo nome è disponibile".**
+   **Nota:** il nome dell'area di lavoro deve essere univoco. Tuttavia, il nome dell'area di lavoro usato deve essere diverso. Assicurarsi che sotto il campo Nome sia presente un segno di spunta verde e che sia indicato "**Questo nome è disponibile"**.
 
 5. Se lo si desidera, è possibile immettere una **Descrizione** per l'area di lavoro. Questo campo è facoltativo.
 
@@ -278,7 +269,7 @@ presenti tre sezioni. Nella sezione Consigliato, notare gli elementi:
 
    ![](../media/lab-02/image060.png)
 
-3. Selezionare **Lakehouse.**
+3. Selezionare **Lakehouse**.
 
     ![](../media/lab-02/image063.jpg)
 
@@ -286,13 +277,13 @@ presenti tre sezioni. Nella sezione Consigliato, notare gli elementi:
 
    **Nota:** lh indica Lakehouse. Aggiungiamo il prefisso lh per agevolarne l'identificazione e la ricerca.
 
-5. Selezionare **Create.**
+5. Selezionare **Create**.
 
    ![](../media/lab-02/image066.png)
 
    Dopo qualche istante viene creato un lakehouse e si passerà all'interfaccia di Lakehouse.Nel **pannello sinistro** notare che sotto all'area di lavoro è ancora presente l'icona di Lakehouse. È possibile passare agevolmente a Lakehouse facendo clic su questa icona in qualsiasi momento.
 
-   Nell'interfaccia di esplorazione di Lakehouse si noteranno **Tables** e **Files.** Lakehouse può esporre file di Azure Data Lake Storage Gen2 nella sezione file oppure un flusso di dati può caricare dati nelle tabelle di Lakehouse. Sono disponibili varie opzioni. Illustreremo alcune di queste opzioni nei lab seguenti.
+   Nell'interfaccia di esplorazione di Lakehouse si noteranno **Tables** e **Files**. Lakehouse può esporre file di Azure Data Lake Storage Gen2 nella sezione file oppure un flusso di dati può caricare dati nelle tabelle di Lakehouse. Sono disponibili varie opzioni. Illustreremo alcune di queste opzioni nei lab seguenti.
 
    ![](../media/lab-02/image069.jpg)
 
@@ -337,7 +328,7 @@ riprodurre, pubblicare, concedere in licenza, usare per la creazione di lavori d
 SONO ESPLICITAMENTE PROIBITE LA COPIA E LA RIPRODUZIONE DELLA DEMO/DEL LAB (O DI QUALSIASI PARTE DI ESSI) IN QUALSIASI ALTRO SERVER O IN QUALSIASI ALTRA POSIZIONE PER ULTERIORE RIPRODUZIONE O RIDISTRIBUZIONE.
 QUESTA DEMO/QUESTO LAB RENDONO DISPONIBILI TECNOLOGIE SOFTWARE/FUNZIONALITÀ DI PRODOTTO SPECIFICHE, INCLUSI NUOVI CONCETTI E NUOVE FUNZIONALITÀ POTENZIALI, IN UN AMBIENTE SIMULATO, CON UN'INSTALLAZIONE E UNA CONFIGURAZIONE PRIVE DI COMPLESSITÀ, PER GLI SCOPI DESCRITTI IN PRECEDENZA. LA TECNOLOGIA/I CONCETTI RAPPRESENTATI IN QUESTA DEMO/IN QUESTO LAB POTREBBERO NON CONTENERE LE FUNZIONALITÀ COMPLETE E IL LORO FUNZIONAMENTO POTREBBE NON ESSERE LO STESSO DELLA VERSIONE FINALE. È ANCHE POSSIBILE CHE UNA VERSIONE FINALE DI TALI FUNZIONALITÀ O CONCETTI NON VENGA RILASCIATA. L'ESPERIENZA D'USO DI TALI CARATTERISTICHE E FUNZIONALITÀ PUÒ INOLTRE RISULTARE DIVERSA IN UN AMBIENTE FISICO.
 
-**FEEDBACK.** L'invio a Microsoft di feedback sulle caratteristiche, sulle funzionalità e/o sui concetti della tecnologia descritti in questa demo/questo lab implica la concessione a Microsoft, a titolo gratuito, del diritto di utilizzare, condividere e commercializzare tale feedback in qualsiasi modo e per qualsiasi scopo. Implica anche la concessione a titolo gratuito a terze parti del diritto di utilizzo di eventuali brevetti necessari per i loro prodotti, le loro tecnologie e i loro servizi al fine di utilizzare o interfacciarsi ai componenti software o ai servizi Microsoft specifici che includono il feedback. L'utente si impegna a non inviare feedback la cui inclusione all'interno di software o
+**FEEDBACK**. L'invio a Microsoft di feedback sulle caratteristiche, sulle funzionalità e/o sui concetti della tecnologia descritti in questa demo/questo lab implica la concessione a Microsoft, a titolo gratuito, del diritto di utilizzare, condividere e commercializzare tale feedback in qualsiasi modo e per qualsiasi scopo. Implica anche la concessione a titolo gratuito a terze parti del diritto di utilizzo di eventuali brevetti necessari per i loro prodotti, le loro tecnologie e i loro servizi al fine di utilizzare o interfacciarsi ai componenti software o ai servizi Microsoft specifici che includono il feedback. L'utente si impegna a non inviare feedback la cui inclusione all'interno di software o
 documentazione Microsoft imponga a Microsoft di concedere in licenza a terze parti tale software o documentazione. Questi diritti sussisteranno anche dopo la scadenza del presente contratto.
  
 CON LA PRESENTE MICROSOFT CORPORATION NON RICONOSCE ALCUNA GARANZIA O CONDIZIONE RELATIVAMENTE ALLA DEMO/AL LAB, INCLUSE TUTTE LE GARANZIE E CONDIZIONI DI COMMERCIABILITÀ, DI FATTO ESPRESSE, IMPLICITE O PRESCRITTE DALLA LEGGE, ADEGUATEZZA PER UNO SCOPO SPECIFICO, TITOLARITÀ E NON VIOLABILITÀ. MICROSOFT NON OFFRE GARANZIE O RAPPRESENTAZIONI IN RELAZIONE ALL'ACCURATEZZA DEI RISULTATI E DELL'OUTPUT DERIVANTI DALL'USO DELLA DEMO/DEL LAB O ALL'ADEGUATEZZA DELLE INFORMAZIONI CONTENUTE NELLA DEMO/NEL LAB PER QUALSIASI SCOPO.

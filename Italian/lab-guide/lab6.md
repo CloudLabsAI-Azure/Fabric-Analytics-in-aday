@@ -44,15 +44,11 @@ In questo lab si apprenderà quanto segue:
 2. Se si preferisce, è possibile **ridurre a icona il flusso di attività** per visualizzare l'elenco completo 
 degli elementi.
 
-3. Saranno visibili tre tipi di lh_FAIAD, Lakehouse, modello semantico ed endpoint SQL. In un lab 
-precedente abbiamo esaminato il lakehouse e creato query visive usando l'endpoint di Analisi 
-SQL. Selezionare l'opzione **lh_FAIAD - Endpoint di Analisi SQL** per continuare a esplorare questa 
-opzione. Si aprirà la **vista SQL** di Explorer.
+3. Saranno visibili tre tipi di lh_FAIAD, Lakehouse, modello semantico ed endpoint SQL. In un lab precedente abbiamo esaminato il lakehouse e creato query visive usando l'endpoint di Analisi SQL. Selezionare l'opzione **lh_FAIAD - Endpoint di Analisi SQL** per continuare a esplorare questa opzione. Si aprirà la **vista SQL** di Explorer.
 
     ![](../media/lab-06/image005.jpg)
 
-    Se si desidera esplorare i dati prima di creare un modello di dati, è possibile usare SQL a questo fine. Sono disponibili due opzioni per usare SQL. La prima opzione è la query visiva, che abbiamo usato nel 
-    lab precedente. La seconda opzione è la scrittura di codice TSQL. Si tratta di un'opzione pensata per gli sviluppatori. Esaminiamola assieme. 
+    Se si desidera esplorare i dati prima di creare un modello di dati, è possibile usare SQL a questo fine. Sono disponibili due opzioni per usare SQL. La prima opzione è la query visiva, che abbiamo usato nel lab precedente. La seconda opzione è la scrittura di codice TSQL. Si tratta di un'opzione pensata per gli sviluppatori. Esaminiamola assieme. 
 
     Supponiamo di voler conoscere rapidamente le unità Units dal fornitore mediante SQL.
 
@@ -62,8 +58,7 @@ opzione. Si aprirà la **vista SQL** di Explorer.
 
     ![](../media/lab-06/image008.jpg)   
 
-5. Incollare la **query SQL seguente** nella **finestra della query**. Questa query restituirà le unità in base al nome del fornitore. Per ottenere questo risultato è necessario unire la tabella Sales alle 
-tabelle Product e Supplier.
+5. Incollare la **query SQL seguente** nella **finestra della query**. Questa query restituirà le unità in base al nome del fornitore. Per ottenere questo risultato è necessario unire la tabella Sales alle tabelle Product e Supplier.
 
     ```
     SELECT su.SupplierName, SUM(Quantity) as Units
@@ -93,10 +88,7 @@ tabelle Product e Supplier.
 
 3. Si apre la finestra di dialogo **Visualizza risultati** . Selezionare **Continua**.
 
-    Si apre la finestra di dialogo **Visualizza risultati** che ha un aspetto simile alla vista del report Power BI 
-    Desktop. Presenta tutte le funzionalità disponibili nella vista del report Power BI Desktop: è possibile 
-    formattare la pagina, selezionare diversi oggetti visivi, formattare gli oggetti visivi, aggiungere filtri, 
-    ecc. Non esploreremo queste opzioni in questo corso.
+    Si apre la finestra di dialogo **Visualizza risultati** che ha un aspetto simile alla vista del report Power BI Desktop. Presenta tutte le funzionalità disponibili nella vista del report Power BI Desktop: è possibile formattare la pagina, selezionare diversi oggetti visivi, formattare gli oggetti visivi, aggiungere filtri, ecc. Non esploreremo queste opzioni in questo corso.
 
 4. Espandere il riquadro **Dati**, quindi espandere **Query SQL 1**.
 
@@ -182,51 +174,49 @@ Il primo passaggio permette di creare relazioni tra queste tabelle.
 
     ![](../media/lab-06/image041.jpg)
 
-10. Si apre la finestra di dialogo Nuova relazione. Assicurarsi che **Da tabella** sia **Sales** e che la **Colonna** sia **ResellerID**.
+1. Si apre la finestra di dialogo Nuova relazione. Assicurarsi che **Da tabella** sia **Sales** e che la **Colonna** sia **ResellerID**.
 
-11. Assicurarsi che **Nella tabella** sia **Reseller** e che la **Colonna** sia **ResellerID**.
+1. Assicurarsi che **Nella tabella** sia **Reseller** e che la **Colonna** sia **ResellerID**.
 
-12. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (*:1)**.
+1. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (*:1)**.
 
-13. Assicurarsi che il campo **Direzione filtro incrociato** sia impostato su **Singola**.
+1. Assicurarsi che il campo **Direzione filtro incrociato** sia impostato su **Singola**.
 
-14. Selezionare **Salva**.
+1. Selezionare **Salva**.
 
     ![](../media/lab-06/image044.png)
 
-15. Allo stesso modo, creiamo una relazione tra le tabelle Sales e Date. Selezionare **InvoiceDate** dalla tabella **Sales** e trascinarlo su **Date** nella tabella **Date**.
+1. Allo stesso modo, creiamo una relazione tra le tabelle Sales e Date. Selezionare **InvoiceDate** dalla tabella **Sales** e trascinarlo su **Date** nella tabella **Date**.
 
-16. Si apre la finestra di dialogo Nuova relazione. Assicurarsi che **Da tabella** sia **Sales** e che la **Colonna** sia **InvoiceDate**.
+1. Si apre la finestra di dialogo Nuova relazione. Assicurarsi che **Da tabella** sia **Sales** e che la **Colonna** sia **InvoiceDate**.
 
-17. Assicurarsi che **Nella tabella** sia **Date** e che la **Colonna** sia **Date**.
+1. Assicurarsi che **Nella tabella** sia **Date** e che la **Colonna** sia **Date**.
 
-18. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (*:1)**.
+1. Assicurarsi che il campo **Cardinalità** sia impostato su **Molti a uno (*:1)**.
 
-19. Assicurarsi che il campo **Direzione filtro incrociato** sia impostato su **Singola**.
+1. Assicurarsi che il campo **Direzione filtro incrociato** sia impostato su **Singola**.
 
-20. Selezionare **Salva**.
+1. Selezionare **Salva**.
 
     ![](../media/lab-06/image047.png)
 
-21. Analogamente, creare una relazione molti-a-uno tra le tabelle **Sales** e **Product**. Selezionare **StockItemID** dalla tabella **Sales** e **StockItemID** dalla tabella **Product**.
+1. Analogamente, creare una relazione molti-a-uno tra le tabelle **Sales** e **Product**. Selezionare **StockItemID** dalla tabella **Sales** e **StockItemID** dalla tabella **Product**.
 
     **Nota:** tutti i nostri aggiornamenti vengono salvati automaticamente.
 
-    **Checkpoint:** il modello dovrebbe avere le tre relazioni tra le tabelle Sales e Reseller e le tabelle Sales 
-    e Date e Sales e Product come mostrato nello screenshot seguente:
+    **Checkpoint:** il modello dovrebbe avere le tre relazioni tra le tabelle Sales e Reseller e le tabelle Sales e Date e Sales e Product come mostrato nello screenshot seguente:
 
     ![](../media/lab-06/image050.jpg)
 
     Per motivi di tempo, non creeremo tutte le relazioni. Se il tempo lo consente, è possibile completare la sezione facoltativa alla fine del laboratorio. La sezione facoltativa illustra i passaggi per creare le relazioni rimanenti.
 
 ## Attività 5: Creazione delle misure
+
 Aggiungiamo alcune misure necessarie per creare il dashboard Sales.
 
-1. Selezionare la tabella **Sales** dalla vista del modello. Vogliamo aggiungere le misure alla tabella 
-Sales.
+1. Selezionare la tabella **Sales** dalla vista del modello. Vogliamo aggiungere le misure alla tabella Sales.
 
-2. Nel menu in alto selezionare **Home -> Nuova misura**. Notare che viene visualizzata la barra della 
-formula.
+2. Nel menu in alto selezionare **Home -> Nuova misura**. Notare che viene visualizzata la barra della formula.
 
 3. Immettere **Sales = SUM(Sales[Sales Amount])** nella **barra della formula**.
 
@@ -265,6 +255,7 @@ formula.
 18. Nel pannello Proprietà a destra espandere la sezione **Formattazione**.
 
 19. Nell'elenco a discesa **Formato** selezionare **Numero intero**.
+
 20. Usare il dispositivo di scorrimento per impostare il **Separatore delle migliaia** su **Sì**.
 
     ![](../media/lab-06/image059.jpg)
@@ -282,6 +273,7 @@ formula.
     Abbiamo creato un modello semantico, il passaggio successivo è creare un report. Ce ne occuperemo nel prossimo lab.
 
 ## Attività 6: Sezione facoltativa: creazione delle relazioni
+
 Aggiungiamo le relazioni rimanenti.
 
 1. Nel menu in alto selezionare Home -> Gestisci relazioni.
@@ -298,8 +290,7 @@ Aggiungiamo le relazioni rimanenti.
 
 6. Assicurarsi che il campo **Direzione filtro incrociato** sia impostato su **Singola**.
 
-7. Selezionare **Salva**. Viene visualizzata la finestra di dialogo Gestisci relazioni con la nuova relazione 
-aggiunta.
+7. Selezionare **Salva**. Viene visualizzata la finestra di dialogo Gestisci relazioni con la nuova relazione aggiunta.
 
     ![](../media/lab-06/image068.jpg)
 
@@ -343,8 +334,7 @@ aggiunta.
 
 25. Selezionare **Salva**.
 
-    **Checkpoint:** le relazioni del modello dovrebbero presentarsi come illustrato nello screenshot 
-    seguente.
+    **Checkpoint:** le relazioni del modello dovrebbero presentarsi come illustrato nello screenshot seguente.
 
     ![](../media/lab-06/image077.png)
 
@@ -363,6 +353,7 @@ Abbiamo creato tutte le relazioni.
 ![](../media/lab-06/image080.jpg)
 
 ## Attività 7: Sezione facoltativa: creazione delle misure
+
 Aggiungiamo le misure rimanenti.
 
 1. Selezionare la tabella **Sales**  e nel menu in alto selezionare **Home -> Nuova misura**.

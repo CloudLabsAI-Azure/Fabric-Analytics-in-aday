@@ -227,7 +227,7 @@ Creiamo un grafico a linee per visualizzare le vendite nel tempo per azienda riv
 
 Salviamo il report prima di uscire da esso per apportare modifiche al modello.
 
-1. Nel menu selezionare **File -> Salva.**
+1. Nel menu selezionare **File -> Salva**.
 
 2. Si apre la finestra di dialogo Salva report. Assegnare al report il nome **rpt_Sales_Report**
 
@@ -410,7 +410,7 @@ dell'ambiente lab.
 
     ![](../media/lab-07/image117.jpg)
 
-20. Per salvare il report, nella barra multifunzione selezionare **File -> Salva.**
+20. Per salvare il report, nella barra multifunzione selezionare **File -> Salva**.
 
 ## Attività 11 - Aggiunta di nuovi dati per simulare la modalità Direct Lake
 
@@ -628,19 +628,19 @@ Ricontrolliamo le problematiche elencate nell'esposizione del problema:
 
 Abbiamo risolto questo problema usando Direct Lake. Ogni singolo flusso di dati viene aggiornato in base alla propria pianificazione. Non è necessario aggiornare il set di dati e il report.
 
-- **Gli aggiornamenti richiedono molto tempo in quanto è necessario eseguire un aggiornamento completo ogni volta per acquisire eventuali aggiornamenti dei sistemi di origine.**
+- **Gli aggiornamenti richiedono molto tempo in quanto è necessario eseguire un aggiornamento completo ogni volta per acquisire eventuali aggiornamenti dei sistemi di origine**.
 
 Abbiamo risolto anche questo problema usando Direct Lake. Ogni singolo flusso di dati viene aggiornato in base alla propria pianificazione. Non è necessario aggiornare il set di dati e il report, perciò non è richiesto un aggiornamento completo.
 
-- **Se si verificano errori in qualsiasi delle origini dati da cui si estraggono i dati, l'aggiornamento del set di dati si interrompe. Spesso il file dei dipendenti non viene caricato in tempo e ciò causa l'interruzione dell'aggiornamento del set di dati.** 
+- **Se si verificano errori in qualsiasi delle origini dati da cui si estraggono i dati, l'aggiornamento del set di dati si interrompe. Spesso il file dei dipendenti non viene caricato in tempo e ciò causa l'interruzione dell'aggiornamento del set di dati**. 
 
 Pipeline di dati aiuta a risolvere questo problema, consentendo di provare più volte a eseguire l'aggiornamento a intervalli diversi.
 
-- **Eventuali modifiche al modello di dati richiedono molto tempo in quanto Power Query richiede molto tempo per l'aggiornamento delle anteprime, date le dimensioni elevate dei dati e le trasformazioni complesse.**
+- **Eventuali modifiche al modello di dati richiedono molto tempo in quanto Power Query richiede molto tempo per l'aggiornamento delle anteprime, date le dimensioni elevate dei dati e le trasformazioni complesse**.
 
 Abbiamo capito che i flussi di dati e il lakehouse sono efficienti e facili da modificare. In genere, il caricamento dell'anteprima nei flussi di dati e nel lakehouse non richiede molto tempo.
 
-- **È necessario un PC Windows per usare Power BI Desktop anche se lo standard aziendale è Mac.**
+- **È necessario un PC Windows per usare Power BI Desktop anche se lo standard aziendale è Mac**.
 
 Microsoft Fabric è un'offerta SaaS. Tutto ciò di cui abbiamo bisogno è un browser per accedere al servizio. Non dobbiamo installare alcun software nei nostri desktop.
  
