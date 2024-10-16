@@ -1,4 +1,4 @@
-# Microsoft Fabric - Fabric Analyst in a Day - Lab 4
+# Microsoft Fabric - Fabric Analyst in a Day - Lab 5
 
 ![](../media/lab-05/image001.png)
 
@@ -53,7 +53,9 @@ Abbiamo inserito dati da diverse origini dati in Lakehouse. In questo lab si imp
 In questo lab si imparerà a: 
 
 - Configurare una pianificazione degli aggiornamenti di Flusso di dati Gen2
+
 - Creare una pipeline di dati
+
 - Configurare una pianificazione degli aggiornamenti di una pipeline di dat
 
 # Flusso di dati Gen2
@@ -78,7 +80,7 @@ Iniziamo con la configurazione di un aggiornamento pianificato del flusso di dat
 
     ![](../media/lab-05/image012.jpg)
 
-**Nota**: si apre la pagina Impostazioni. Nel pannello di sinistra sono elencati tutti i flussi di dat
+    **Nota**: si apre la pagina Impostazioni. Nel pannello di sinistra sono elencati tutti i flussi di dat
 
 6. Nel riquadro centrale selezionare il collegamento **Cronologia aggiornamenti**.
 
@@ -112,9 +114,7 @@ Iniziamo con la configurazione di un aggiornamento pianificato del flusso di dat
 
 13. Impostare **Fuso orario** sul fuso orario preferito. 
 
-**Nota**: poiché si tratta di un ambiente lab, è possibile impostare il fuso orario sul fuso orario preferito. 
-In uno scenario reale, si imposterà il fuso orario in base alla propria ubicazione o all'ubicazione 
-dell'origine dati.
+    **Nota**: poiché si tratta di un ambiente lab, è possibile impostare il fuso orario sul fuso orario preferito. In uno scenario reale, si imposterà il fuso orario in base alla propria ubicazione o all'ubicazione dell'origine dati.
 
 14. Fai clic sul collegamento **Aggiungi un'altra ora**. Notare che l'opzione **Ora** è visualizzata.
 
@@ -122,14 +122,11 @@ dell'origine dati.
 
 16. Selezionare **Applica** per salvare l'impostazione.
 
-    **Nota**: facendo clic sul collegamento Aggiungi un'altra ora, è possibile aggiungere più orari di aggiornamento. 
-
-    È anche possibile inviare le notifiche di errore al proprietario del flusso di dati e ad altri contatti.
+    **Nota**: facendo clic sul collegamento Aggiungi un'altra ora, è possibile aggiungere più orari di aggiornamento. È anche possibile inviare le notifiche di errore al proprietario del flusso di dati e ad altri contatti.
 
     ![](../media/lab-05/image027.jpg)
 
-Come illustrato in precedenza, è necessario creare una logica personalizzata per gestire lo scenario in cui il file Employee in SharePoint non viene consegnato in tempo. Usiamo la pipeline di dati per 
-risolvere questo problema.
+    Come illustrato in precedenza, è necessario creare una logica personalizzata per gestire lo scenario in cui il file Employee in SharePoint non viene consegnato in tempo. Usiamo la pipeline di dati per risolvere questo problema.
 
 # Pipeline di dati
 
@@ -149,10 +146,10 @@ risolvere questo problema.
 
     ![](../media/lab-05/image033.jpg)
 
-Si apre la pagina **Pipeline di dati**. Se si è lavorato con Azure Data Factory, questa schermata sarà familiare. Esaminiamone rapidamente il layout.
+    Si apre la pagina **Pipeline di dati**. Se si è lavorato con Azure Data Factory, questa schermata sarà familiare. Esaminiamone rapidamente il layout.
 
-Ci si trova nella schermata **Home**. Se si osserva il menu in alto, si possono notare le opzioni per aggiungere le attività di uso comune: convalida, esecuzione di una pipeline e visualizzazione della cronologia di esecuzione. Inoltre, nel riquadro centrale sono presenti opzioni rapide per iniziare a creare la pipeline.
-\
+    Ci si trova nella schermata **Home**. Se si osserva il menu in alto, si possono notare le opzioni per aggiungere le attività di uso comune: convalida, esecuzione di una pipeline e visualizzazione della cronologia di esecuzione. Inoltre, nel riquadro centrale sono presenti opzioni rapide per iniziare a creare la pipeline.
+
     ![](../media/lab-05/image036.jpg)
 
 6. Nel menu in alto selezionare **Attività**. Ora nel menu si troverà anche un elenco delle attività di uso comune. 
@@ -195,7 +192,7 @@ Iniziamo a creare la pipeline. Abbiamo bisogno di un'attività per aggiornare il
 
 9. È presente un'opzione per impostare il **Timeout**. Lasciamo il **valore predefinito** poiché dovrebbe fornire tempo sufficiente per l'aggiornamento del flusso di dati.
 
-**Nota**: se i dati non sono disponibili nei tempi previsti, impostiamo l'attività in modo che venga eseguita nuovamente ogni 10 minuti, per tre volte. Se anche al terzo tentativo non riesce, verrà segnalato un esito negativo.
+    **Nota**: se i dati non sono disponibili nei tempi previsti, impostiamo l'attività in modo che venga eseguita nuovamente ogni 10 minuti, per tre volte. Se anche al terzo tentativo non riesce, verrà segnalato un esito negativo.
 
 10. Impostare **Riprova** su **3**
 
@@ -299,7 +296,7 @@ Aggiungiamo un po' più di complessità al nostro scenario. Abbiamo notato che s
 
     ![](../media/lab-05/image066.png)
 
-Dobbiamo scrivere un'espressione che verrà eseguita finché il valore di **varCounter è 3** o il valore **di varIsSuccess è Sì** (varCounter e varIsSuccess sono le variabili che abbiamo appena creato).
+    Dobbiamo scrivere un'espressione che verrà eseguita finché il valore di **varCounter è 3** o il valore **di varIsSuccess è Sì** (varCounter e varIsSuccess sono le variabili che abbiamo appena creato).
 
 8. Si apre la finestra di dialogo **Generatore di espressioni della pipeline**. Nella metà inferiore della finestra di dialogo è presente un menu:
     a. **Parametri**: sono costanti in una data factory che possono essere usate da una pipeline in qualsiasi espressione.
@@ -355,7 +352,10 @@ Dobbiamo scrivere un'espressione che verrà eseguita finché il valore di **varC
     ![](../media/lab-05/image084.jpg)
 
 23. L'espressione dovrebbe essere:
-**@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))**
+
+    ```
+    @or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))
+    ```
 
 24. Selezionare **OK**.
 
@@ -399,15 +399,15 @@ Abbiamo configurato l'attività Flusso di dati come abbiamo fatto in precedenza 
 
 4. Nel campo **Descrizione** immettere **Impostare la variabile varIsSuccess su Sì**.
 
-**Nota**: passare il puntatore del mouse sull'**attività Flusso di dati**. A destra del riquadro dell'attività sono presenti quattro icone. Tali icone si possono usare per la connessione all'attività successiva in base al risultato dell'attività:
+    **Nota**: passare il puntatore del mouse sull'**attività Flusso di dati**. A destra del riquadro dell'attività sono presenti quattro icone. Tali icone si possono usare per la connessione all'attività successiva in base al risultato dell'attività:
 
-a. L'icona **freccia curva grigia** si usa per saltare l'attività.
-    
-b. L'icona **segno di spunta verde** si usa in caso di esito positivo dell'attività.
-    
-c. L'icona **segno X rosso** si usa in caso di esito negativo dell'attività.
-    
-d. L'icona **freccia dritta blu** si usa al completamento dell'attività.
+    a. L'icona **freccia curva grigia** si usa per saltare l'attività.
+
+    b. L'icona **segno di spunta verde** si usa in caso di esito positivo dell'attività.
+
+    c. L'icona **segno X rosso** si usa in caso di esito negativo dell'attività.
+
+    d. L'icona **freccia dritta blu** si usa al completamento dell'attività.
 
 5. Fare clic sul **segno di spunta verde** dall'attività Flusso di dati dfactivity_People_SharePoint e trascinare per connettere la nuova **attività Imposta variabile set_varIsSuccess**. In caso di esito positivo dell'aggiornamento del flusso di dati, vogliamo eseguire l'attività Imposta variabile.
 
@@ -515,18 +515,18 @@ Quindi, dovremo impostare un'attesa di 5 minuti/300 secondi in caso di un primo 
 
 8. Si apre la finestra di dialogo Generatore di espressioni della pipeline. Immettere 
 
-```
-@if(
- greater(variables(‘varCounter’), 1),
- if(equals(variables(‘varCounter’), 2),
- mul(variables(‘varWaitTime’),15 ), 
- mul(variables(‘varWaitTime’), 0)
- ),
- mul(variables(‘varWaitTime’),5 )
-)
-```
+    ```
+    @if(
+     greater(variables(‘varCounter’), 1),
+     if(equals(variables(‘varCounter’), 2),
+     mul(variables(‘varWaitTime’),15 ), 
+     mul(variables(‘varWaitTime’), 0)
+     ),
+     mul(variables(‘varWaitTime’),5 )
+    )
+    ```
 
-È possibile digitare l'espressione, usare il menu per selezionare le funzioni o copiare e incollare l'espressione. 
+    È possibile digitare l'espressione, usare il menu per selezionare le funzioni o copiare e incollare l'espressione. 
 
 ![](../media/lab-05/image123.jpg)
 
@@ -536,8 +536,7 @@ Qui usiamo due nuove funzioni:
 
 - **mul**: questa è una funzione di moltiplicazione, prende due parametri da moltiplicare. 
 
-L'espressione è un'istruzione if annidata. Controlla se il valore della variabile varCounter è maggiore di 1. Se è true, controlla se il valore della variabile varCounter è 2. Se è true, imposta il tempo di attesa su varWaitTime per 15. Ricordare che abbiamo impostato il valore predefinito di 60 per la variabile varWaitTime. Il risultato sarebbe 60\*15 = 900 secondi. Se il valore della variabile varCounter è diverso da 2 (è maggiore di 2, ossia l'aggiornamento del flusso di dati non è riuscito per 3 volte e l'iterazione si conclude, non occorre attendere oltre), il tempo di attesa è impostato su varWaitTime \* 0. Pertanto è pari a 0. Se il valore della variabile varCounter è 1, moltiplicheremo varWaitTime \* 5. 
-Il risultato sarebbe 60\*5 = 300 secondi.
+L'espressione è un'istruzione if annidata. Controlla se il valore della variabile varCounter è maggiore di 1. Se è true, controlla se il valore della variabile varCounter è 2. Se è true, imposta il tempo di attesa su varWaitTime per 15. Ricordare che abbiamo impostato il valore predefinito di 60 per la variabile varWaitTime.Il risultato sarebbe 60\*15 = 900 secondi. Se il valore della variabile varCounter è diverso da 2 (è maggiore di 2, ossia l'aggiornamento del flusso di dati non è riuscito per 3 volte e l'iterazione si conclude, non occorre attendere oltre), il tempo di attesa è impostato su varWaitTime \* 0. Pertanto è pari a 0. Se il valore della variabile varCounter è 1, moltiplicheremo varWaitTime \* 5. Il risultato sarebbe 60\*5 = 300 secondi.
 
 9. Selezionare **OK**. 
 
@@ -545,8 +544,7 @@ Il risultato sarebbe 60\*5 = 300 secondi.
 
     ![](../media/lab-05/image126.jpg)
 
-10. Nella parte superiore sinistra del canvas di progettazione selezionare 
-**pl_Refresh_People_Sharepoint_Option2** per uscire dall'iteratore Fino a. 
+10. Nella parte superiore sinistra del canvas di progettazione selezionare **pl_Refresh_People_Sharepoint_Option2** per uscire dall'iteratore Fino a. 
 
     ![](../media/lab-05/image129.jpg)
 
@@ -558,7 +556,7 @@ Il risultato sarebbe 60\*5 = 300 secondi.
 
 1. Possiamo testare la pipeline di dati selezionando **Home -> Esegui**. 
 
-**Nota**: il completamento dell'aggiornamento della pipeline di dati potrebbe richiedere alcuni minuti. Questo è un ambiente di formazione, quindi il file in SharePoint è sempre disponibile. Pertanto, in questo caso la pipeline di dati non avrà mai esito negativo.
+    **Nota**: il completamento dell'aggiornamento della pipeline di dati potrebbe richiedere alcuni minuti. Questo è un ambiente di formazione, quindi il file in SharePoint è sempre disponibile. Pertanto, in questo caso la pipeline di dati non avrà mai esito negativo.
 
 2. Possiamo impostare la pipeline di dati in modo che venga eseguita in base a una pianificazione. Nel menu in alto selezionare **Home -> Pianificazione**. Si apre la finestra Pianificazione.
 
@@ -574,7 +572,7 @@ Il risultato sarebbe 60\*5 = 300 secondi.
 
 8. Impostare il proprio **Fuso orario**.
 
-**Nota**: poiché si tratta di un ambiente lab, è possibile impostare il fuso orario sul fuso orario preferito. In uno scenario reale, si imposterà il fuso orario in base alla propria ubicazione o all'ubicazione dell'origine dati.
+    **Nota**: poiché si tratta di un ambiente lab, è possibile impostare il fuso orario sul fuso orario preferito. In uno scenario reale, si imposterà il fuso orario in base alla propria ubicazione o all'ubicazione dell'origine dati.
 
 9. Selezionare **Applica**.
 
@@ -584,9 +582,9 @@ Il risultato sarebbe 60\*5 = 300 secondi.
 
 11. Selezionare l'area di lavoro di Fabric **FAIAD_\<nome utente>** nel pannello di sinistra per andare all'area di lavoro.
 
-**Nota**: nella schermata Pianificazione non vi è un'opzione per la notifica dell'esito positivo o negativo (come nella pianificazione del flusso di dati). È possibile impostare la notifica aggiungendo un'attività nella pipeline di dati. Non effettueremo questa impostazione in questo lab poiché si tratta di un ambiente lab.
+    **Nota**: nella schermata Pianificazione non vi è un'opzione per la notifica dell'esito positivo o negativo (come nella pianificazione del flusso di dati). È possibile impostare la notifica aggiungendo un'attività nella pipeline di dati. Non effettueremo questa impostazione in questo lab poiché si tratta di un ambiente lab.
 
-Abbiamo pianificato gli aggiornamenti per le diverse origini dati. Nel prossimo lab creeremo un modello semantico con relazioni, misure e altre operazioni di modellazione.
+    Abbiamo pianificato gli aggiornamenti per le diverse origini dati. Nel prossimo lab creeremo un modello semantico con relazioni, misure e altre operazioni di modellazione.
 
 # Riferimenti
 
