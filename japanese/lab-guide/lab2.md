@@ -75,7 +75,7 @@
 
 11. **Microsoft Fabric のホーム ページ**が開きます。 
 
-![](../media/lab-02/image021.jpg)
+    ![](../media/lab-02/image021.jpg)
 
 # Fabric のエクスペリエンスの概要 
 
