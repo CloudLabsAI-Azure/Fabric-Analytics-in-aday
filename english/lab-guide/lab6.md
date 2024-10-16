@@ -123,7 +123,7 @@ You will be navigated back to the SQL query screen.
 
 1. From the explorer pane, scroll down and select **Model Layouts**. You will notice the center pane looks like the Model view we see in Power BI Desktop.
 
-   ![](../media/lab-06/image014.png)
+   ![](../media/lab-06/f4.png)
 
    This is the default model the Lakehouse creates. However, there are some limitations with the default model (like the ability to format measures, etc). Also, we need only a subset of the tables in our model. So we will create a new semantic model.
 
