@@ -532,13 +532,14 @@ Em seguida, precisamos esperar 5 minutos/300 segundos se a atualização do flux
 
     ![](../media/lab-05/image123.jpg)
 
-    Estamos usando duas novas funções aqui:
+Estamos usando duas novas funções aqui:
 
-    - **greater**: usa dois números como parâmetros e compara qual deles é maior.
+- **greater**: usa dois números como parâmetros e compara qual deles é maior.
     
-    - **mul**: esta é uma função de multiplicação; ela usa dois parâmetros para multiplicar. 
+- **mul**: esta é uma função de multiplicação; ela usa dois parâmetros para multiplicar. 
 
-    A expressão é uma instrução if aninhada. Ela está verificando se o valor da variável varCounter é maior que 1. Se for verdadeiro, ela verifica se o valor da variável varCounter é 2. Se for verdadeiro, ela define o tempo de espera para varWaitTime vezes 15. Lembre-se, definimos como padrão o valor de varWaitTime para 60. Isso seria 60\*15 = 900 segundos. Se o valor da variável varCounter não for 2 (for maior que 2, o que significa que a atualização do fluxo de dados falhou 3 vezes, terminamos a iteração. Não precisamos mais esperar), o tempo de espera é definido como varWaitTime * 0. Portanto, como 0. Se o valor da variável varCounter for 1,multiplicaremos varWaitTime * 5. Isso seria 60\*5 = 300 segundos.
+
+A expressão é uma instrução if aninhada. Ela está verificando se o valor da variável varCounter é maior que 1. Se for verdadeiro, ela verifica se o valor da variável varCounter é 2. Se for verdadeiro, ela define o tempo de espera para varWaitTime vezes 15. Lembre-se, definimos como padrão o valor de varWaitTime para 60. Isso seria 60\*15 = 900 segundos. Se o valor da variável varCounter não for 2 (for maior que 2, o que significa que a atualização do fluxo de dados falhou 3 vezes, terminamos a iteração. Não precisamos mais esperar), o tempo de espera é definido como varWaitTime * 0. Portanto, como 0. Se o valor da variável varCounter for 1,multiplicaremos varWaitTime * 5. Isso seria 60\*5 = 300 segundos.
 
 9. Selecione **OK**. 
 
@@ -584,9 +585,9 @@ Em seguida, precisamos esperar 5 minutos/300 segundos se a atualização do flux
 
 11. Selecione seu workspace do Fabric **FAIAD_\<nome de usuário>** no painel esquerdo para navegar até o workspace.
 
-**Observação**: Na tela Agendamento, não há opção de notificação sobre sucesso ou falha (como Agendamento do Fluxo de dados). A notificação pode ser feita adicionando uma atividade no Pipeline de dados. Não estamos fazendo isso neste laboratório, pois é um ambiente de laboratório. 
+    **Observação**: Na tela Agendamento, não há opção de notificação sobre sucesso ou falha (como Agendamento do Fluxo de dados). A notificação pode ser feita adicionando uma atividade no Pipeline de dados. Não estamos fazendo isso neste laboratório, pois é um ambiente de laboratório. 
 
-Agendamos atualizações para as diversas fontes de dados. Criaremos um modelo semântico com relacionamentos, medidas e outras operações de modelagem no próximo laboratório.
+    Agendamos atualizações para as diversas fontes de dados. Criaremos um modelo semântico com relacionamentos, medidas e outras operações de modelagem no próximo laboratório.
 
 # Referências
 
