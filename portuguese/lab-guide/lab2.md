@@ -166,9 +166,9 @@ Gen2, Pipeline de Dados, DirectLake, entre outros. Ao final deste laboratório, 
 
 1. Selecione o **ícone Fabric experience selector** (atualmente definido como Real-Time Intelligence) na parte inferior esquerda da tela. A caixa de diálogo de experiência do Fabric é aberta.
 
-2. Selecione **Data Engineering.** Você será direcionado para a **Página Inicial do Data Engineering**. Novamente, a página contém três seções principais. Na seção Recomendado, observe os itens:
+2. Selecione **Data Engineering**. Você será direcionado para a **Página Inicial do Data Engineering**. Novamente, a página contém três seções principais. Na seção Recomendado, observe os itens:
 
-    a.**Lakehouse:** usado para armazenar Big Data para limpeza, consulta, geração de relatórios e compartilhamento.
+    a**.Lakehouse:** usado para armazenar Big Data para limpeza, consulta, geração de relatórios e compartilhamento.
 
     b. **Notebook:** usado para ingestão, preparação, análise e outras tarefas relacionadas a dados usando várias linguagens, como Python, R e Scala.
 
@@ -240,7 +240,7 @@ Gen2, Pipeline de Dados, DirectLake, entre outros. Ao final deste laboratório, 
 
 3. A caixa de diálogo **Criar um workspace** é aberta no lado direito do navegador.
 
-4. No campo Nome, insira **FAIAD_\<nome de usuário>.**
+4. No campo Nome, insira **FAIAD_\<nome de usuário>**.
 
    **Observação:** O nome do workspace deve ser exclusivo. No entanto, o nome do seu workspace deve ser diferente. Verifique se há uma marca de seleção verde em "Este nome está disponível", abaixo do campo Nome.
 

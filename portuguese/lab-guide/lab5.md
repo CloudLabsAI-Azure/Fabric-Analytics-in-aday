@@ -357,7 +357,7 @@ Vamos adicionar um pouco mais de complexidade ao nosso cenário. Observamos que,
 23. Sua expressão deve ser:
 
     ```
-    @or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))
+    @or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess'))) 
     ```
 
 24. Selecione OK.
@@ -517,16 +517,17 @@ Em seguida, precisamos esperar 5 minutos/300 segundos se a atualização do flux
 
 8. A caixa de diálogo Construtor de expressão de pipeline é aberta. Insira 
 
-    ```
-    @if(
-     greater(variables(‘varCounter’), 1),
-     if(equals(variables(‘varCounter’), 2),
-     mul(variables(‘varWaitTime’),15 ), 
-     mul(variables(‘varWaitTime’), 0)
-     ),
-     mul(variables(‘varWaitTime’),5 )
-    )
-    ```
+     ```
+     @if(  
+       greater(variables('varCounter'), 1),  
+       if(  
+        equals(variables('varCounter'), 2),  
+        mul(variables('varWaitTime'), 15),  
+        mul(variables('varWaitTime'), 0)  
+       ),  
+       mul(variables('varWaitTime'), 5)  
+     )
+     ```
 
     Sinta-se à vontade para digitar esta expressão, usar o menu para selecionar as funções ou copiá-la e colá-la.
 

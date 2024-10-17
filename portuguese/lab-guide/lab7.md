@@ -92,7 +92,7 @@ Vamos começar usando a opção de criação automática de relatório. E, mais 
 
 9. Vamos salvar este relatório. No menu superior, selecione **Salvar**.
 
-10. A caixa de diálogo Salvar seu relatório é aberta. Nomeie o relatório como **rpt_Sales_Auto_Report.** 
+10. A caixa de diálogo Salvar seu relatório é aberta. Nomeie o relatório como **rpt_Sales_Auto_Report**. 
 
 	**Observação:** estamos prefixando o nome do relatório com rpt, que é a abreviação de relatório.
 
@@ -492,144 +492,139 @@ Em um cenário real, os dados são atualizados na fonte. Como estamos em um ambi
 
 ```
 ALTER VIEW [dbo].[Sales] AS (
-select [$Outer].[InvoiceLineID] as [InvoiceLineID],
-  [$Outer].[InvoiceID] as [InvoiceID],
-  [$Outer].[StockItemID] as [StockItemID],
-  [$Outer].[Quantity] as [Quantity],
-  [$Outer].[UnitPrice] as [UnitPrice],
-  [$Outer].[TaxRate] as [TaxRate],
-  [$Outer].[TaxAmount] as [TaxAmount],
-  [$Outer].[LineProfit] as [LineProfit],
-  [$Outer].[ExtendedPrice] as [ExtendedPrice],
-  [$Outer].[CustomerID] as [ResellerID],
-  [$Outer].[SalespersonPersonID] as [SalespersonPersonID],
-  [$Outer].[InvoiceDate] as [InvoiceDate],
- [$Outer].[t0_0] as [Sales Amount] from
-(
-  select [_].[InvoiceLineID] as [InvoiceLineID],
-	[_].[InvoiceID] as [InvoiceID],
-	[_].[StockItemID] as [StockItemID],
-	[_].[Quantity] as [Quantity],
-	[_].[UnitPrice] as [UnitPrice],
-	[_].[TaxRate] as [TaxRate],
-	[_].[TaxAmount] as [TaxAmount],
-	[_].[LineProfit] as [LineProfit],
-	[_].[ExtendedPrice] as [ExtendedPrice],
-	[_].[CustomerID] as [CustomerID],
-	[_].[SalespersonPersonID] as [SalespersonPersonID],
-	[_].[InvoiceDate] as [InvoiceDate],
-	[_].[ExtendedPrice] - [_].[TaxAmount] as [t0_0]
-  from
-  (
-	select [$Outer].[InvoiceLineID],
-	[$Outer].[InvoiceID],
-	[$Outer].[StockItemID],
-	[$Outer].[Quantity],
- 
-	[$Outer].[UnitPrice],
-	[$Outer].[TaxRate],
-	[$Outer].[TaxAmount],
-	[$Outer].[LineProfit],
-	[$Outer].[ExtendedPrice],
-	[$Inner].[CustomerID],
-	[$Inner].[SalespersonPersonID],
-	[$Inner].[InvoiceDate]
-	from [lh  FAIAD].[dbo].[InvoiceLineItems] as [$Outer]
-	inner join
-	(
-	select [_].[InvoiceID] as [InvoiceID2],
-	[_].[CustomerID] as [CustomerID],
-	[_].[BillToResellerID] as [BillToResellerID],
-	[_].[OrderID] as [OrderID],
-	[_].[DeliveryMethodID] as [DeliveryMethodID],
-	[_].[ContactPersonID] as [ContactPersonID],
-	[_].[AccountsPersonID] as [AccountsPersonID],
-	[_].[SalespersonPersonID] as [SalespersonPersonID],
-	[_].[PackedByPersonID] as [PackedByPersonID],
-	[_].[InvoiceDate] as [InvoiceDate],
-	[_].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
-	[_].[IsCreditNote] as [IsCreditNote],
-	[_].[CreditNoteReason] as [CreditNoteReason],
-	[_].[Comments] as [Comments],
-	[_].[DeliveryInstructions] as [DeliveryInstructions],
-	[_].[InternalComments] as [InternalComments],
-	[_].[TotalDryItems] as [TotalDryItems],
-	[_].[TotalChillerItems] as [TotalChillerItems],
-	[_].[DeliveryRun] as [DeliveryRun],
-	[_].[RunPosition] as [RunPosition],
-	[_].[ReturnedDeliveryData] as [ReturnedDeliveryData],
-	[_].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
-	[_].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
-	[_].[LastEditedBy] as [LastEditedBy2],
-	[_].[LastEditedWhen] as [LastEditedWhen2]
-	from
-	(
-	select [$Table].[InvoiceID] as [InvoiceID],
-	[$Table].[CustomerID] as [CustomerID],
-	[$Table].[BillToResellerID] as [BillToResellerID],
-	[$Table].[OrderID] as [OrderID],
-	[$Table].[DeliveryMethodID] as [DeliveryMethodID],
-	[$Table].[ContactPersonID] as [ContactPersonID],
-	[$Table].[AccountsPersonID] as [AccountsPersonID],
-	[$Table].[SalespersonPersonID] as [SalespersonPersonID],
-	[$Table].[PackedByPersonID] as [PackedByPersonID],
-	[$Table].[InvoiceDate] as [InvoiceDate],
-	[$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
-	[$Table].[IsCreditNote] as [IsCreditNote],
-	[$Table].[CreditNoteReason] as [CreditNoteReason],
-	[$Table].[Comments] as [Comments],
-	[$Table].[DeliveryInstructions] as [DeliveryInstructions],
-	[$Table].[InternalComments] as [InternalComments],
-	[$Table].[TotalDryItems] as [TotalDryItems],
-	[$Table].[TotalChillerItems] as [TotalChillerItems],
-	[$Table].[DeliveryRun] as [DeliveryRun],
- 
-	[$Table].[RunPosition] as [RunPosition],
-	[$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
-	[$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
-	[$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
-	[$Table].[LastEditedBy] as [LastEditedBy],
-	[$Table].[LastEditedWhen] as [LastEditedWhen]
-	from [lh  FAIAD].[dbo].[Invoices] as [$Table]
-	union all select [$Table].[InvoiceID] as [InvoiceID],
-	[$Table].[CustomerID] as [CustomerID],
-	[$Table].[BillToResellerID] as [BillToResellerID],
-	[$Table].[OrderID] as [OrderID],
-	[$Table].[DeliveryMethodID] as [DeliveryMethodID],
-	[$Table].[ContactPersonID] as [ContactPersonID],
-	[$Table].[AccountsPersonID] as [AccountsPersonID],
-	[$Table].[SalespersonPersonID] as [SalespersonPersonID],
-	[$Table].[PackedByPersonID] as [PackedByPersonID],
-	[$Table].[InvoiceDate] as [InvoiceDate],
-	[$Table].[CustomerPurchaseOrderNumber] as [CustomerPurchaseOrderNumber],
-	[$Table].[IsCreditNote] as [IsCreditNote],
-	[$Table].[CreditNoteReason] as [CreditNoteReason],
-	[$Table].[Comments] as [Comments],
-	[$Table].[DeliveryInstructions] as [DeliveryInstructions],
-	[$Table].[InternalComments] as [InternalComments],
-	[$Table].[TotalDryItems] as [TotalDryItems],
-	[$Table].[TotalChillerItems] as [TotalChillerItems],
-	[$Table].[DeliveryRun] as [DeliveryRun],
-	[$Table].[RunPosition] as [RunPosition],
-	[$Table].[ReturnedDeliveryData] as [ReturnedDeliveryData],
-	[$Table].[ConfirmedDeliveryTime] as [ConfirmedDeliveryTime],
-	[$Table].[ConfirmedReceivedBy] as [ConfirmedReceivedBy],
-	[$Table].[LastEditedBy] as [LastEditedBy],
-	[$Table].[LastEditedWhen] as [LastEditedWhen]
-	from [lh  FAIAD].[dbo].[InvoicesMay] as [$Table]
-	) as [_]
-	) as [$Inner] on ([$Outer].[InvoiceID] = [$Inner].[InvoiceID2] or [$Outer].[InvoiceID] is null and [$Inner].[InvoiceID2] is null)
-  ) as [_]
- 
-(
-  select 1
-  from
-  (
-	select [ResellerID]
-	from [lh  FAIAD].[dbo].[Reseller] as [$Table]
-  ) as [$Inner]
- where [$Outer].[CustomerID] = [$Inner].[ResellerID] or [$Outer].[CustomerID] is null and [$Inner].[ResellerID] is null
-)
+  SELECT [$Outer].[InvoiceLineID] AS [InvoiceLineID],
+    [$Outer].[InvoiceID] AS [InvoiceID],
+    [$Outer].[StockItemID] AS [StockItemID],
+    [$Outer].[Quantity] AS [Quantity],
+    [$Outer].[UnitPrice] AS [UnitPrice],
+    [$Outer].[TaxRate] AS [TaxRate],
+    [$Outer].[TaxAmount] AS [TaxAmount],
+    [$Outer].[LineProfit] AS [LineProfit],
+    [$Outer].[ExtendedPrice] AS [ExtendedPrice],
+    [$Outer].[CustomerID] AS [ResellerID],
+    [$Outer].[SalespersonPersonID] AS [SalespersonPersonID],
+    [$Outer].[InvoiceDate] AS [InvoiceDate],
+    [$Outer].[t0_0] AS [Sales Amount]
+  FROM (
+    SELECT [_].[InvoiceLineID] AS [InvoiceLineID],
+      [_].[InvoiceID] AS [InvoiceID],
+      [_].[StockItemID] AS [StockItemID],
+      [_].[Quantity] AS [Quantity],
+      [_].[UnitPrice] AS [UnitPrice],
+      [_].[TaxRate] AS [TaxRate],
+      [_].[TaxAmount] AS [TaxAmount],
+      [_].[LineProfit] AS [LineProfit],
+      [_].[ExtendedPrice] AS [ExtendedPrice],
+      [_].[CustomerID] AS [CustomerID],
+      [_].[SalespersonPersonID] AS [SalespersonPersonID],
+      [_].[InvoiceDate] AS [InvoiceDate],
+      [_].[ExtendedPrice] - [_].[TaxAmount] AS [t0_0]
+    FROM (
+      SELECT [$Outer].[InvoiceLineID],
+        [$Outer].[InvoiceID],
+        [$Outer].[StockItemID],
+        [$Outer].[Quantity],
+        [$Outer].[UnitPrice],
+        [$Outer].[TaxRate],
+        [$Outer].[TaxAmount],
+        [$Outer].[LineProfit],
+        [$Outer].[ExtendedPrice],
+        [$Inner].[CustomerID],
+        [$Inner].[SalespersonPersonID],
+        [$Inner].[InvoiceDate]
+      FROM [lh_FAIAD].[dbo].[InvoiceLineItems] AS [$Outer]
+      INNER JOIN (
+        SELECT [_].[InvoiceID] AS [InvoiceID2],
+          [_].[CustomerID],
+          [_].[BillToResellerID],
+          [_].[OrderID],
+          [_].[DeliveryMethodID],
+          [_].[ContactPersonID],
+          [_].[AccountsPersonID],
+          [_].[SalespersonPersonID],
+          [_].[PackedByPersonID],
+          [_].[InvoiceDate],
+          [_].[CustomerPurchaseOrderNumber],
+          [_].[IsCreditNote],
+          [_].[CreditNoteReason],
+          [_].[Comments],
+          [_].[DeliveryInstructions],
+          [_].[InternalComments],
+          [_].[TotalDryItems],
+          [_].[TotalChillerItems],
+          [_].[DeliveryRun],
+          [_].[RunPosition],
+          [_].[ReturnedDeliveryData],
+          [_].[ConfirmedDeliveryTime],
+          [_].[ConfirmedReceivedBy],
+          [_].[LastEditedBy] AS [LastEditedBy2],
+          [_].[LastEditedWhen] AS [LastEditedWhen2]
+        FROM (
+          SELECT [$Table].[InvoiceID],
+            [$Table].[CustomerID],
+            [$Table].[BillToResellerID],
+            [$Table].[OrderID],
+            [$Table].[DeliveryMethodID],
+            [$Table].[ContactPersonID],
+            [$Table].[AccountsPersonID],
+            [$Table].[SalespersonPersonID],
+            [$Table].[PackedByPersonID],
+            [$Table].[InvoiceDate],
+            [$Table].[CustomerPurchaseOrderNumber],
+            [$Table].[IsCreditNote],
+            [$Table].[CreditNoteReason],
+            [$Table].[Comments],
+            [$Table].[DeliveryInstructions],
+            [$Table].[InternalComments],
+            [$Table].[TotalDryItems],
+            [$Table].[TotalChillerItems],
+            [$Table].[DeliveryRun],
+            [$Table].[RunPosition],
+            [$Table].[ReturnedDeliveryData],
+            [$Table].[ConfirmedDeliveryTime],
+            [$Table].[ConfirmedReceivedBy],
+            [$Table].[LastEditedBy],
+            [$Table].[LastEditedWhen]
+          FROM [lh_FAIAD].[dbo].[Invoices] AS [$Table]
+          UNION ALL
+          SELECT [$Table].[InvoiceID],
+            [$Table].[CustomerID],
+            [$Table].[BillToResellerID],
+            [$Table].[OrderID],
+            [$Table].[DeliveryMethodID],
+            [$Table].[ContactPersonID],
+            [$Table].[AccountsPersonID],
+            [$Table].[SalespersonPersonID],
+            [$Table].[PackedByPersonID],
+            [$Table].[InvoiceDate],
+            [$Table].[CustomerPurchaseOrderNumber],
+            [$Table].[IsCreditNote],
+            [$Table].[CreditNoteReason],
+            [$Table].[Comments],
+            [$Table].[DeliveryInstructions],
+            [$Table].[InternalComments],
+            [$Table].[TotalDryItems],
+            [$Table].[TotalChillerItems],
+            [$Table].[DeliveryRun],
+            [$Table].[RunPosition],
+            [$Table].[ReturnedDeliveryData],
+            [$Table].[ConfirmedDeliveryTime],
+            [$Table].[ConfirmedReceivedBy],
+            [$Table].[LastEditedBy],
+            [$Table].[LastEditedWhen]
+          FROM [lh_FAIAD].[dbo].[InvoicesMay] AS [$Table]
+        ) AS [_]
+      ) AS [$Inner] ON ([$Outer].[InvoiceID] = [$Inner].[InvoiceID2] OR [$Outer].[InvoiceID] IS NULL AND [$Inner].[InvoiceID2] IS NULL)
+    ) AS [_]
+  ) AS [$Outer]
+  WHERE EXISTS (
+    SELECT 1
+    FROM (
+      SELECT [ResellerID]
+      FROM [lh_FAIAD].[dbo].[Reseller] AS [$Table]
+    ) AS [$Inner]
+    WHERE [$Outer].[CustomerID] = [$Inner].[ResellerID] OR [$Outer].[CustomerID] IS NULL AND [$Inner].[ResellerID] IS NULL
+  )
 )
 ```
 
@@ -651,15 +646,15 @@ Não precisamos atualizar o modelo de dados e o relatório quando os dados mudam
 
 Vamos verificar novamente os desafios listados na declaração do problema:
 
--	**Você precisa atualizar seu conjunto de dados pelo menos três vezes por dia para acomodar os diferentes horários de atualização para as diferentes fontes de dados.** Resolvemos isso usando Direct Lake. Cada Fluxo de Dados individual é atualizado em sua agenda. O conjunto de dados e o relatório não precisam ser atualizados.
+-	**Você precisa atualizar seu conjunto de dados pelo menos três vezes por dia para acomodar os diferentes horários de atualização para as diferentes fontes de dados**. Resolvemos isso usando Direct Lake. Cada Fluxo de Dados individual é atualizado em sua agenda. O conjunto de dados e o relatório não precisam ser atualizados.
 
--   **As atualizações podem demorar, pois é sempre necessário fazer uma atualização completa para capturar tudo o que foi atualizado nos sistemas de origem.** Novamente, resolvemos isso usando Direct Lake. Cada Fluxo de Dados individual é atualizado em sua agenda. O conjunto de dados e o relatório não precisam ser atualizados, portanto não precisamos nos preocupar com a atualização completa.
+-   **As atualizações podem demorar, pois é sempre necessário fazer uma atualização completa para capturar tudo o que foi atualizado nos sistemas de origem**. Novamente, resolvemos isso usando Direct Lake. Cada Fluxo de Dados individual é atualizado em sua agenda. O conjunto de dados e o relatório não precisam ser atualizados, portanto não precisamos nos preocupar com a atualização completa.
 
--   **Os erros detectados em qualquer uma das fontes das quais você está extraindo dados resultarão na interrupção da atualização do conjunto de dados. Muitas vezes o arquivo do funcionário não é carregado no prazo, resultando na interrupção da atualização do conjunto de dados.** O Pipeline de Dados ajuda a resolver esse problema, oferecendo o recurso de tentar novamente a atualização em caso de falha e em intervalos diferentes.
+-   **Os erros detectados em qualquer uma das fontes das quais você está extraindo dados resultarão na interrupção da atualização do conjunto de dados. Muitas vezes o arquivo do funcionário não é carregado no prazo, resultando na interrupção da atualização do conjunto de dados**. O Pipeline de Dados ajuda a resolver esse problema, oferecendo o recurso de tentar novamente a atualização em caso de falha e em intervalos diferentes.
  
--   **As alterações no modelo de dados demoram muito tempo, pois o Power Query leva tempo para atualizar as versões preliminares devido aos tamanhos de dados grandes e às transformações complexas.** Percebemos que os Fluxos de Dados e o Lakehouse são eficientes e fáceis de fazer alterações. Geralmente, a pré-visualização em Fluxos de Dados e Lakehouse não demora muito para carregar.
+-   **As alterações no modelo de dados demoram muito tempo, pois o Power Query leva tempo para atualizar as versões preliminares devido aos tamanhos de dados grandes e às transformações complexas**. Percebemos que os Fluxos de Dados e o Lakehouse são eficientes e fáceis de fazer alterações. Geralmente, a pré-visualização em Fluxos de Dados e Lakehouse não demora muito para carregar.
 
--   **Você precisa de um computador com Windows para usar o Power BI Desktop mesmo que o padrão corporativo seja Mac.** O Microsoft Fabric é uma oferta de SaaS. Tudo o que precisamos é de um navegador para acessar o serviço. Não precisamos instalar nenhum software em nossos desktops.
+-   **Você precisa de um computador com Windows para usar o Power BI Desktop mesmo que o padrão corporativo seja Mac**. O Microsoft Fabric é uma oferta de SaaS. Tudo o que precisamos é de um navegador para acessar o serviço. Não precisamos instalar nenhum software em nossos desktops.
 
 # Limpar o ambiente do laboratório
 

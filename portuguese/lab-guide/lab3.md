@@ -64,15 +64,13 @@ O atalho é usado para criar um link com o local de destino. É como criar atalh
 
     ![](../media/lab-03/image009.png)
 
-6. Você precisa criar uma conexão com a fonte de dados ADLS Gen2. Em **Configurações de conexão -> URL**, insira este link https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
+6. Você precisa criar uma conexão com a fonte de dados do ADLS Gen2. Em Connection Settings -> URL, insira este link `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
 
-7. Selecione **Chave de conta** no menu suspenso Tipo de autenticação.
-
-8. Copie a **conta de armazenamento Adls e Chave de acesso da guia Variáveis de Ambiente** (ao lado do Guia de Laboratório) e cole-a na **caixa de texto Chave de conta**.
-
-9. Selecione **Avançar** na parte inferior direita da tela.
+7. Selecione **Shared Access Signature (SAS)** no menu suspenso Authentication kind.
+8. Copie o **SAS token** da guia **Environment Variables** (ao lado da guia Lab Guide) e cole-o na caixa **SAS token**.
+9. Selecione **Next** no canto inferior direito da tela.
  
-    ![](../media/lab-03/image012.png)
+    ![](../../english/media/lab-03/image012.png)
  
 10. Você será conectado ao ADLS Gen2 com a estrutura de diretórios exibida no painel esquerdo. Expanda **Delta-Parquet-Format-FY25**.
 
@@ -491,9 +489,11 @@ Vamos criar a exibição Sales, mesclando a tabela InvoiceLineItems and Invoices
     ```
     let
     Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
-    #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
+    #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID",
+    "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
     #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
     #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"CustomerID", "ResellerID"}}),
+    
     #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller,
     {"ResellerID"}, "Customer", JoinKind.Inner),
     #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each [ExtendedPrice] - [TaxAmount]),
@@ -564,12 +564,12 @@ Vamos criar a exibição Product, mesclando as tabelas ProductItem, ProductItemG
 
     ```
     let
-    Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup,
-    {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
+    Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
     #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup",
     {"StockGroupID"}, {"StockGroupID"}),
     #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
     #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
+    
     #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice",
     "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
     in
