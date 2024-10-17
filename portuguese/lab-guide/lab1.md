@@ -2,13 +2,13 @@
  	 
  
 # Sumário
-- Estrutura do documento	3
-- Cenário/Declaração do problema	3
-- Visão geral do relatório do Power BI Desktop	4
-  - Tarefa 1: Configurar o Power BI Desktop no ambiente de laboratório	4
-  - Tarefa 2: Analisar relatório do Power BI Desktop	6
-  - Tarefa 3: Revisar Power Queries	10
-- Referências	13
+- Estrutura do documento
+- Cenário/Declaração do problema
+- Visão geral do relatório do Power BI Desktop
+  - Tarefa 1: Configurar o Power BI Desktop no ambiente de laboratório
+  - Tarefa 2: Analisar relatório do Power BI Desktop
+  - Tarefa 3: Revisar Power Queries
+- Referências
 
  
 # Estrutura do documento
@@ -31,7 +31,7 @@ Para obter insights valiosos dos dados, você extrai dados de vários sistemas, 
 - **Dados do Cliente:** são obtidos do Customer Insights e armazenados no Dataverse. Os dados estão sempre atualizados.
 - **Dados do Funcionário:** são obtidos do sistema de RH e armazenados como um arquivo de exportação em uma pasta do SharePoint. São atualizados todas as manhãs, às 9h.
 
-![](../media/lab-01/image006.jpg)
+    ![](../media/lab-01/image006.jpg)
  
 No momento, você está criando um conjunto de dados no Power BI Premium que extrai os dados dos sistemas de origem acima para gerar relatórios e fornecer aos usuários finais o recurso de autoatendimento. Você usa o Power Query para atualizar seu modelo.
 
@@ -57,8 +57,7 @@ Antes de começarmos com o Fabric, vamos dar uma olhada no Relatório atual no P
 
     ![](../media/lab-01/image009.jpg)
  
-2. Insira seu endereço de email na caixa de diálogo aberta. Navegue até a guia **Environment Details**
-no painel direito do ambiente de laboratório.
+2. Insira seu endereço de email na caixa de diálogo aberta. Navegue até a guia **Environment Details** no painel direito do ambiente de laboratório.
 
 3. Copie os dados de **Username** e cole na caixa de texto Email da caixa de diálogo.
 
@@ -94,101 +93,96 @@ O relatório abaixo analisa as Sales da Fabrikam. Os KPIs estão listados no can
 modelagem de dados usando as ferramentas disponíveis no Fabric. Não nos concentraremos no desenvolvimento ou na navegação de relatórios. Vamos reservar alguns minutos para entender o relatório e passar para as próximas etapas.
 
 
-1.	Vamos analisar os dados por Sales Territory. Selecione o visual **New England from the Sales Territory** (gráfico de dispersão). Observe que em Sales over time, Reseller Tailspin Toys tem mais vendas em comparação com Wingtip Toys em New England. Se você olhar o gráfico de colunas Sales YoY%, notará que o crescimento das vendas da Wingtip Toys foi baixo e diminuiu trimestre após trimestre durante o ano passado. Depois de uma pequena recuperação no terceiro
+1. Vamos analisar os dados por Sales Territory. Selecione o visual **New England from the Sales Territory** (gráfico de dispersão). Observe que em Sales over time, Reseller Tailspin Toys tem mais vendas em comparação com Wingtip Toys em New England. Se você olhar o gráfico de colunas Sales YoY%, notará que o crescimento das vendas da Wingtip Toys foi baixo e diminuiu trimestre após trimestre durante o ano passado. Depois de uma pequena recuperação no terceiro
 trimestre, caiu novamente no quarto.
 
     ![](../media/lab-01/image024.png)
 
-2.	Vamos comparar isso com a região Rocky Mountain. Selecione o visual **Rocky Mountain from
-Sales Territory** (gráfico de dispersão). Observe no gráfico de colunas Sales YoY% que as vendas da Wingtip Toys aumentaram drasticamente no quarto trimestre de 2022, depois de terem sido baixas nos dois trimestres anteriores.
+2. Vamos comparar isso com a região Rocky Mountain. Selecione o visual **Rocky Mountain from Sales Territory** (gráfico de dispersão). Observe no gráfico de colunas Sales YoY% que as vendas da Wingtip Toys aumentaram drasticamente no quarto trimestre de 2022, depois de terem sido baixas nos dois trimestres anteriores.
 
     ![](../media/lab-01/image027.png)
 
-3.	Selecione o visual **Rocky Mountain from Sales Territory** para remover o filtro.
+3. Selecione o visual **Rocky Mountain from Sales Territory** para remover o filtro.
 
-4.	No visual Gráfico de dispersão, na parte inferior central da tela (Sales Orders por Sales), selecione a exceção no canto superior direito (4º quadrante). Observe que a margem percentual é de 52%, estando acima da média de 50%. Além disso, o Sales YoY% aumentou últimos dois trimestres
-de 2023.
+4. No visual Gráfico de dispersão, na parte inferior central da tela (Sales Orders por Sales), selecione a exceção no canto superior direito (4º quadrante). Observe que a margem percentual é de 52%, estando acima da média de 50%. Além disso, o Sales YoY% aumentou últimos dois trimestres de 2023.
 
     ![](../media/lab-01/image030.png)
 
-5.	Selecione a exceção Reseller no visual Gráfico de dispersão para **remover o filtro**.
+5. Selecione a exceção Reseller no visual Gráfico de dispersão para **remover o filtro**.
 
-6.	Vamos obter os detalhes de Product por Product Group e Reseller. No visual do gráfico de barras Sales por Product Group e Reseller Company, **clique com o botão direito na barra Packaging Materials para Tailspin Toys** e, na caixa de diálogo, selecione **Drill through -> Product Detail**.
+6. Vamos obter os detalhes de Product por Product Group e Reseller. No visual do gráfico de barras Sales por Product Group e Reseller Company, **clique com o botão direito na barra Packaging Materials para Tailspin Toys** e, na caixa de diálogo, selecione **Drill through -> Product Detail**.
 
     ![](../media/lab-01/image033.jpg)
  
     Você será direcionado para a página que fornece os Product Details. Observe que também existem algumas ordens futuras em andamento.
     
-7.	Quando terminar de revisar esta página, selecione **Ctrl+seta para voltar** na parte superior direita da página para "voltar ao Sales Report.
+7. Quando terminar de revisar esta página, selecione **Ctrl+seta para voltar** na parte superior direita da página para "voltar ao Sales Report.
 
     ![](../media/lab-01/image036.png)
 
-8.	Fique à vontade para analisar o relatório posteriormente. Quando estiver pronto, vamos dar uma olhada na exibição do modelo. No painel esquerdo, selecione o **Ícone de exibição do modelo**. Observe que existem duas tabelas de fatos, Sales e PO.
+8. Fique à vontade para analisar o relatório posteriormente. Quando estiver pronto, vamos dar uma olhada na exibição do modelo. No painel esquerdo, selecione o **Ícone de exibição do modelo**. Observe que existem duas tabelas de fatos, Sales e PO.
 
-    a.	A granularidade dos dados de Sales é por Date, Reseller, Product e People. Date, Reseller, Product e People conectam-se a Sales.
+    a. A granularidade dos dados de Sales é por Date, Reseller, Product e People. Date, Reseller, Product e People conectam-se a Sales.
 
-    b.	A granularidade dos dados de PO é por Date, Product e People. Date, Product e People conectam-se a PO.
+    b. A granularidade dos dados de PO é por Date, Product e People. Date, Product e People conectam-se a PO.
 
-    c.	Temos dados de Supplier por Product. Supplier conecta-se a Product.
+    c. Temos dados de Supplier por Product. Supplier conecta-se a Product.
 
-    d.	Temos os dados de localização de Reseller por Geo. Geo conecta-se a Reseller.
+    d. Temos os dados de localização de Reseller por Geo. Geo conecta-se a Reseller.
 
-    e.	Temos informações de Customer por Reseller. Customer conecta-se a Reseller.
+    e. Temos informações de Customer por Reseller. Customer conecta-se a Reseller.
  
 ## Tarefa 3: Revisar Power Queries
-1.	Vamos analisar o Power Query para entender as fontes de dados. Na faixa de opções, selecione
-**Página Inicial -> Transformar dados**.
+
+1. Vamos analisar o Power Query para entender as fontes de dados. Na faixa de opções, selecione **Página Inicial -> Transformar dados**.
 
       ![](../media/lab-01/image039.jpg)
 
-2.	A janela do Power Query é aberta. Na faixa de opções, selecione **Página Inicial -> Configuração da fonte de dados**. A caixa de diálogo Configuração da fonte de dados é aberta. Ao percorrer a lista, você notará que existem quatro fontes de dados, conforme mencionado na declaração do problema:
+2. A janela do Power Query é aberta. Na faixa de opções, selecione **Página Inicial -> Configuração da fonte de dados**. A caixa de diálogo Configuração da fonte de dados é aberta. Ao percorrer a lista, você notará que existem quatro fontes de dados, conforme mencionado na declaração do problema:
     
-    a.	Snowflake
+    a. Snowflake
 
-    b.	SharePoint
+    b. SharePoint
 
-    c.	ADLS Gen2
+    c. ADLS Gen2
 
-    d.	Dataverse
+    d. Dataverse
 
-3.	Selecione **Fechar** para fechar a caixa de diálogo Configuração da fonte de dados.
+3. Selecione **Fechar** para fechar a caixa de diálogo Configuração da fonte de dados.
 
     ![](../media/lab-01/image042.png)
 
-4.	No painel esquerdo Consultas, observe que as consultas estão agrupadas por fonte de dados.
+4. No painel esquerdo Consultas, observe que as consultas estão agrupadas por fonte de dados.
 
-5.	Observe que a pasta **DataverseData** tem os dados de Customer disponíveis em quatro consultas diferentes: BabyBoomer, GenX, GenY e GenZ. Essas quatro consultas são acrescentadas para criar a consulta Customer.
+5. Observe que a pasta **DataverseData** tem os dados de Customer disponíveis em quatro consultas diferentes: BabyBoomer, GenX, GenY e GenZ. Essas quatro consultas são acrescentadas para criar a consulta Customer.
 
-6.	Você pode inserir as credenciais para a fonte de dados Dataverse inserindo o **Username** e a
-**Password** disponíveis na guia **Environment Variables** (ao lado do Guia de Laboratório). Selecione a opção Conta Microsoft.
+6. Você pode inserir as credenciais para a fonte de dados Dataverse inserindo o **Username** e a **Password** disponíveis na guia **Environment Variables** (ao lado do Guia de Laboratório). Selecione a opção Conta Microsoft.
 
     ![](../media/lab-01/image045.png)
 
-7.	Para a fonte de dados ADLS, use a opção **Account Key** e insira os valores de **Adls storage account e Access key** que estão disponíveis na guia **Environment Variables** (ao lado do Guia de
-Laboratório).
+7. Para a fonte de dados ADLS, use a opção **Account Key** e insira os valores de **Adls storage account e Access key** que estão disponíveis na guia **Environment Variables** (ao lado do Guia de Laboratório).
 
-8.	Observe que a pasta **ADLSData** tem múltiplas dimensões: Geo, Product, Reseller e Date. Também tem o fato Sales.
+8. Observe que a pasta **ADLSData** tem múltiplas dimensões: Geo, Product, Reseller e Date. Também tem o fato Sales.
     
-    a.	A **dimensão Geo** é criada mesclando dados da consulta Cities, Countries e States.
+    a. A **dimensão Geo** é criada mesclando dados da consulta Cities, Countries e States.
 
-    b.	A **dimensão Product** é criada mesclando dados da consulta Product Groups e Product Item Group.
+    b. A **dimensão Product** é criada mesclando dados da consulta Product Groups e Product Item Group.
 
-    c.	A **dimensão Reseller** é filtrada usando a consulta BuyingGroup.
+    c. A **dimensão Reseller** é filtrada usando a consulta BuyingGroup.
 
-    d.	O **fato Sales** é criado mesclando InvoiceLineItems com a consulta Invoice.
+    d. O **fato Sales** é criado mesclando InvoiceLineItems com a consulta Invoice.
 
-9.	Para a fonte de dados Snowflake, use o **SnowFlake Username** e a **SnowFlake Password** que estão disponíveis na guia **Environment Variables** (ao lado do Guia de Laboratório).
+9. Para a fonte de dados Snowflake, use o **SnowFlake Username** e a **SnowFlake Password** que estão disponíveis na guia **Environment Variables** (ao lado do Guia de Laboratório).
 
-10.	Observe que a pasta **SnowflakeData** tem a dimensão Supplier e o fato PO (Oder/Spend).
+10. Observe que a pasta **SnowflakeData** tem a dimensão Supplier e o fato PO (Oder/Spend).
 
-    a.	A **dimensão Supplier** é criada mesclando a consulta Suppliers com a consulta SupplierCategories.
+    a. A **dimensão Supplier** é criada mesclando a consulta Suppliers com a consulta SupplierCategories.
 
-    b.	O **fato PO** é criado mesclando PO com a consulta PO Line Items.
+    b. O **fato PO** é criado mesclando PO com a consulta PO Line Items.
  
-11.	Para a fonte de dados SharePoint, insira o **Username** e a **Password** disponíveis na guia
-**Environment Variables** (ao lado do Guia de Laboratório). Selecione a opção Conta Microsoft.
+11.	Para a fonte de dados SharePoint, insira o **Username** e a **Password** disponíveis na guia **Environment Variables** (ao lado do Guia de Laboratório). Selecione a opção Conta Microsoft.
 
-12.	Observe que a pasta **SharepointData** tem a dimensão People.
+12. Observe que a pasta **SharepointData** tem a dimensão People.
 
     ![](../media/lab-01/image048.png)
 
