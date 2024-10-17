@@ -64,7 +64,7 @@ Ao final deste laboratório, você terá aprendido:
 
     ![](../media/lab-04/image009.jpg)
 
-Você será direcionado para a **página do Fluxo de Dados**. A interface do Fluxo de dados Gen2 é como a do Power Query no Power BI Desktop. Podemos copiar consultas do Power BI Desktop para o Fluxo de dados Gen2. Vamos testar.
+    Você será direcionado para a **página do Fluxo de Dados**. A interface do Fluxo de dados Gen2 é como a do Power Query no Power BI Desktop. Podemos copiar consultas do Power BI Desktop para o Fluxo de dados Gen2. Vamos testar.
 
 5. Se você ainda não tiver aberto, abra o arquivo **FAIAD.pbix** que está na pasta **Reports** na área de trabalho do seu ambiente de laboratório. 
 
@@ -80,9 +80,9 @@ Você será direcionado para a **página do Fluxo de Dados**. A interface do Flu
 
 10. No **painel Fluxo de dados**, pressione **Ctrl+V** (no momento, não é possível clicar com o botão direito do mouse em Colar). Se você estiver usando o dispositivo MAC, use Cmd+V para colar.
 
-**Observação**: se você estiver trabalhando no ambiente de laboratório, selecione as reticências no canto superior direito da tela. Use o controle deslizante para **habilitar VM Native Clipboard**. Selecione OK na caixa de diálogo. Depois que terminar de colar as consultas, você poderá desabilitar essa opção.
+    **Observação**: se você estiver trabalhando no ambiente de laboratório, selecione as reticências no canto superior direito da tela. Use o controle deslizante para **habilitar VM Native Clipboard**. Selecione OK na caixa de diálogo. Depois que terminar de colar as consultas, você poderá desabilitar essa opção.
 
-Observe se a consulta foi colada e se está disponível no painel esquerdo. Como não temos uma conexão criada para o SharePoint, você verá uma mensagem de aviso solicitando que configure a conexão.
+    Observe se a consulta foi colada e se está disponível no painel esquerdo. Como não temos uma conexão criada para o SharePoint, você verá uma mensagem de aviso solicitando que configure a conexão.
 
 ## Tarefa 2: Criar conexão do SharePoint
 
@@ -128,7 +128,7 @@ A conexão é estabelecida e você pode exibir os dados no painel de visualizaç
 
 9. A caixa de diálogo Escolher configurações de destino é aberta. Habilite **"Usar configurações automáticas"**. 
 
-**Observação**: você pode desativar as configurações automáticas e notar que tem opções para definir o método Update e as opções de esquema. Depois de explorar, habilite **"Usar configurações automáticas"**.
+    **Observação**: você pode desativar as configurações automáticas e notar que tem opções para definir o método Update e as opções de esquema. Depois de explorar, habilite **"Usar configurações automáticas"**.
 
 10. Selecione **Salvar configurações**.
 
@@ -156,7 +156,7 @@ A conexão é estabelecida e você pode exibir os dados no painel de visualizaç
 
     ![](../media/lab-04/image039.png)
 
-Você será direcionado de volta para o **workspace FAIAD_\<nome de usuário>**.
+    Você será direcionado de volta para o **workspace FAIAD_\<nome de usuário>**.
 
 7. Selecione **lh_FAIAD** para acessar o lakehouse.
 
@@ -164,7 +164,7 @@ Você será direcionado de volta para o **workspace FAIAD_\<nome de usuário>**.
 
 9. Veja que a tabela **People** está disponível no Lakehouse.
 
-**Observação**: se você não vir as tabelas recém-criadas, selecione as reticências ao lado de Tabelas e selecione Atualizar para atualizar as tabelas. Agora ingerimos todos os dados no Lakehouse. No próximo laboratório, agendaremos a atualização do Fluxo de Dados.
+    **Observação**: se você não vir as tabelas recém-criadas, selecione as reticências ao lado de Tabelas e selecione Atualizar para atualizar as tabelas. Agora ingerimos todos os dados no Lakehouse. No próximo laboratório, agendaremos a atualização do Fluxo de Dados.
 
 ## Tarefa 5: Copiar consultas do Snowflake para o Fluxo de Dados
 
@@ -174,7 +174,7 @@ Você será direcionado de volta para o **workspace FAIAD_\<nome de usuário>**.
 
     ![](../media/lab-04/image042.jpg)
 
-Você será direcionado para a **página do Fluxo de Dados**. Agora que estamos familiarizados com o Fluxo de Dados, vamos continuar e copiar as consultas do Power BI Desktop no Fluxo de Dados.
+    Você será direcionado para a **página do Fluxo de Dados**. Agora que estamos familiarizados com o Fluxo de Dados, vamos continuar e copiar as consultas do Power BI Desktop no Fluxo de Dados.
 
 3. Se você ainda não tiver aberto, abra o arquivo **FAIAD.pbix** que está na pasta **Reports** na área de trabalho do seu ambiente de laboratório. 
 
@@ -222,7 +222,7 @@ Observe que as cinco consultas foram coladas e agora você tem o painel Consulta
 
     ![](../media/lab-04/image054.png)
 
-A conexão é estabelecida e você pode exibir os dados no painel de visualização. Fique à vontade para navegar pelas Etapas aplicadas das consultas. Basicamente, a consulta Suppliers tem os detalhes dos fornecedores e SupplierCategories, como o nome indica, tem categorias de fornecedores. Essas duas tabelas são unidas para criar a dimensão Supplier, com as colunas necessárias. Da mesma forma, temos a consulta PO Line Items mesclada com PO para criar o fato PO. Agora precisamos ingerir os dados de Supplier e PO no Lakehouse.
+    A conexão é estabelecida e você pode exibir os dados no painel de visualização. Fique à vontade para navegar pelas Etapas aplicadas das consultas. Basicamente, a consulta Suppliers tem os detalhes dos fornecedores e SupplierCategories, como o nome indica, tem categorias de fornecedores. Essas duas tabelas são unidas para criar a dimensão Supplier, com as colunas necessárias. Da mesma forma, temos a consulta PO Line Items mesclada com PO para criar o fato PO. Agora precisamos ingerir os dados de Supplier e PO no Lakehouse.
 
 ## Tarefa 7: Configurar destino de dados para as consultas Supplier e PO
 
@@ -272,7 +272,7 @@ A conexão é estabelecida e você pode exibir os dados no painel de visualizaç
 
     ![](../media/lab-04/image073.jpg)
 
-Você será direcionado de volta para o workspace **FAIAD_\<nome de usuário>**. Pode levar alguns instantes para que Fluxo de Dados seja publicado. 
+    Você será direcionado de volta para o workspace **FAIAD_\<nome de usuário>**. Pode levar alguns instantes para que Fluxo de Dados seja publicado. 
 
 5. Selecione **lh_FAIAD** para acessar o lakehouse.
 
@@ -280,17 +280,17 @@ Você será direcionado de volta para o workspace **FAIAD_\<nome de usuário>**.
 
 7. Veja que a tabela **PO** e a tabela **Supplier** estão disponíveis no Lakehouse.
 
-**Observação**: se você não vir as tabelas recém-criadas, selecione as reticências ao lado de Tabelas e selecione Atualizar para atualizar as tabelas.
+    **Observação**: se você não vir as tabelas recém-criadas, selecione as reticências ao lado de Tabelas e selecione Atualizar para atualizar as tabelas.
 
-Agora vamos criar um atalho para mostrar dados do Dataverse.
+    Agora vamos criar um atalho para mostrar dados do Dataverse.
 
 # Atalho para o ADLS Gen2
 
 ## Tarefa 9: Como criar um atalho para Dataverse
 
-
 Você deve estar no Lakehouse **lh_FAIAD**. Verifique se você está na exibição Lakehouse (não no ponto de extremidade da análise SQL).
-    ![](../media/lab-04/image076.jpg)
+    
+![](../media/lab-04/image076.jpg)
 
 1. No painel **Explorer**, selecione as **reticências** ao lado de **Tabelas**.
 
@@ -320,9 +320,9 @@ Você deve estar no Lakehouse **lh_FAIAD**. Verifique se você está na exibiç�
 
 8. Selecione Próximo na caixa de diálogo Configurações de conexão.
 
-Você irá para uma caixa de diálogo para escolher o bucket/diretório diferente do Dataverse. Observe que há muitas opções de buckets disponíveis. Podemos escolher os buckets que precisamos e seguir o processo como o Laboratório 3 (usar consulta visual para transformar dados e criar exibições). Também podemos usar o Fluxo de dados Gen2 como usamos anteriormente neste laboratório para nos conectarmos ao SharePoint. No entanto, queremos explicar a você outra opção que está disponível.
+    Você irá para uma caixa de diálogo para escolher o bucket/diretório diferente do Dataverse. Observe que há muitas opções de buckets disponíveis. Podemos escolher os buckets que precisamos e seguir o processo como o Laboratório 3 (usar consulta visual para transformar dados e criar exibições). Também podemos usar o Fluxo de dados Gen2 como usamos anteriormente neste laboratório para nos conectarmos ao SharePoint. No entanto, queremos explicar a você outra opção que está disponível.
 
-Em nosso cenário, a equipe de TI já estabeleceu um link para o Dataverse e aplicou as transformações de dados necessárias, espelhando-as no arquivo do Power BI Desktop. Eles ingeriram esses dados para Lakehouse no workspace Admin e nos deram acesso às tabelas. Como nossa equipe de TI fez todo o trabalho árduo, podemos criar um atalho para esse Lakehouse no workspace Admin.
+    Em nosso cenário, a equipe de TI já estabeleceu um link para o Dataverse e aplicou as transformações de dados necessárias, espelhando-as no arquivo do Power BI Desktop. Eles ingeriram esses dados para Lakehouse no workspace Admin e nos deram acesso às tabelas. Como nossa equipe de TI fez todo o trabalho árduo, podemos criar um atalho para esse Lakehouse no workspace Admin.
 
 9. Selecione **Cancelar** na caixa de diálogo Novo atalho para voltar ao Lakehouse.
 
@@ -368,9 +368,9 @@ Em nosso cenário, a equipe de TI já estabeleceu um link para o Dataverse e apl
 
 12. Selecione a tabela **Customer** para exibir os dados no painel de visualização.
 
-Criamos com sucesso um atalho para outro lakehouse.
+    Criamos com sucesso um atalho para outro lakehouse.
 
-No próximo laboratório, vamos configurar atualizações de agendamentos.
+    No próximo laboratório, vamos configurar atualizações de agendamentos.
 
 # Referências
 

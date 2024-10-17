@@ -128,7 +128,7 @@ Vamos começar configurando uma atualização agendada do Fluxo de dados Supplie
 
     ![](../media/lab-05/image030.png)
 
-Conforme mencionado anteriormente, precisamos criar uma lógica personalizada para lidar com o cenário em que o arquivo Employee no SharePoint não é entregue no prazo. Vamos usar o Pipeline de dados para resolver isso.
+    Conforme mencionado anteriormente, precisamos criar uma lógica personalizada para lidar com o cenário em que o arquivo Employee no SharePoint não é entregue no prazo. Vamos usar o Pipeline de dados para resolver isso.
 
 # Pipeline de dados
 
@@ -142,8 +142,7 @@ Conforme mencionado anteriormente, precisamos criar uma lógica personalizada pa
 
 3. No painel superior, selecione **Pipeline de dados** para criar um novo pipeline.
 
-4. A caixa de diálogo Novo pipeline é aberta. Nomeie o pipeline como 
-**pl_Refresh_People_SharePoint**.
+4. A caixa de diálogo Novo pipeline é aberta. Nomeie o pipeline como **pl_Refresh_People_SharePoint**.
 
 5. Selecione **Criar**.
 
@@ -207,11 +206,11 @@ Vamos começar a criar o pipeline. Precisamos de uma atividade para atualizar o 
 
     ![](../media/lab-05/image048.png)
 
-Observe a vantagem de usar o pipeline de dados em comparação com a configuração do fluxo de dados na atualização agendada (como fizemos para os fluxos de dados anteriores):
+    Observe a vantagem de usar o pipeline de dados em comparação com a configuração do fluxo de dados na atualização agendada (como fizemos para os fluxos de dados anteriores):
 
-- O pipeline oferece a opção de tentar novamente várias vezes antes de a atualização falhar.
+    - O pipeline oferece a opção de tentar novamente várias vezes antes de a atualização falhar.
 
-- O pipeline oferece o recurso de atualizar em segundos, enquanto com o fluxo de dados, a atualização agendada ocorre a cada 30 minutos.
+    - O pipeline oferece o recurso de atualizar em segundos, enquanto com o fluxo de dados, a atualização agendada ocorre a cada 30 minutos.
 
 ## Tarefa 4: Criar novo Pipeline de dados
 
@@ -221,8 +220,7 @@ Vamos adicionar um pouco mais de complexidade ao nosso cenário. Observamos que,
 
 2. No menu superior, clique em **Novo** e na **lista suspensa**, clique em **Pipeline de dados**.
 
-3. A caixa de diálogo Novo pipeline é aberta. **Nomeie** o pipeline como 
-**pl_Refresh_People_SharePoint_Option2**.
+3. A caixa de diálogo Novo pipeline é aberta. **Nomeie** o pipeline como **pl_Refresh_People_SharePoint_Option2**.
 
 4. Selecione **Criar**.
 
@@ -272,9 +270,9 @@ Vamos adicionar um pouco mais de complexidade ao nosso cenário. Observamos que,
 
     a. **varIsSuccess** do tipo **String** e valor padrão **Não**. Essa variável será usada para indicar se a atualização do fluxo de dados foi bem-sucedida.
 
-    b. varSuccess do tipo String e valor padrão Sim. Essa variável será usada para definir o valor de varIsSuccess se a atualização do fluxo de dados for bem-sucedida.
+    b. **varSuccess** do tipo **String** e valor padrão **Sim**. Essa variável será usada para definir o valor de varIsSuccess se a atualização do fluxo de dados for bem-sucedida.
 
-    c. varWaitTime do tipo Integer e valor padrão 60. Essa variável será usada para definir o tempo de espera se o fluxo de dados falhar (5 minutos/300 segundos ou 15 minutos/900 segundos).
+    c. **varWaitTime** do tipo **Integer** e valor padrão **60**. Essa variável será usada para definir o tempo de espera se o fluxo de dados falhar (5 minutos/300 segundos ou 15 minutos/900 segundos).
 
     **Observação**: certifique-se de que não haja espaço antes ou depois do nome da variável.
 
@@ -294,14 +292,13 @@ Vamos adicionar um pouco mais de complexidade ao nosso cenário. Observamos que,
 
 5. No painel inferior, selecione **Configurações**.
 
-6. Selecione a **caixa de texto Expressão**. Precisamos inserir uma expressão nessa caixa de texto que será avaliada como verdadeira ou falsa. Iteradores da atividade Until enquanto esta expressão é avaliada como falsa. Depois que a expressão for avaliada como verdadeira, a iteração da 
-atividade Until é interrompida.
+6. Selecione a **caixa de texto Expressão**. Precisamos inserir uma expressão nessa caixa de texto que será avaliada como verdadeira ou falsa. Iteradores da atividade Until enquanto esta expressão é avaliada como falsa. Depois que a expressão for avaliada como verdadeira, a iteração da atividade Until é interrompida.
 
 7. Selecione o link **Adicionar conteúdo dinâmico** que aparece abaixo da caixa de texto.
 
     ![](../media/lab-05/image066.png)
 
-Precisamos escrever uma expressão que seja executada até que o valor de **varCounter seja 3** ou o valor **de varIsSuccess seja Sim**.(varCounter e varIsSuccess são as variáveis que acabamos de criar.)
+    Precisamos escrever uma expressão que seja executada até que o valor de **varCounter seja 3** ou o valor **de varIsSuccess seja Sim**.(varCounter e varIsSuccess são as variáveis que acabamos de criar.)
 
 8. A caixa de diálogo **Construtor de expressão de pipeline** é aberta. Na metade inferior da caixa de diálogo, você terá um menu:
 
@@ -359,9 +356,9 @@ Precisamos escrever uma expressão que seja executada até que o valor de **varC
 
 23. Sua expressão deve ser:
 
-```
-@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))
-```
+    ```
+    @or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))
+    ```
 
 24. Selecione OK.
 
@@ -438,7 +435,7 @@ o valor da variável varIsSuccess como Sim.
 
     ![](../media/lab-05/image105.png)
 
-Agora, precisamos definir o contador se a atividade do fluxo de dados falhar. No Pipeline de dados, não podemos ter autorreferência de uma variável. O que significa que não podemos incrementar a variável do contador varCounter adicionando um ao seu valor (varCounter = varCounter + 1). Então, usamos a variável varTempCounter.
+    Agora, precisamos definir o contador se a atividade do fluxo de dados falhar. No Pipeline de dados, não podemos ter autorreferência de uma variável. O que significa que não podemos incrementar a variável do contador varCounter adicionando um ao seu valor (varCounter = varCounter + 1). Então, usamos a variável varTempCounter.
 
 ## Tarefa 10: Configurar 2ª atividade Set variable
 
@@ -468,12 +465,11 @@ Agora, precisamos definir o contador se a atividade do fluxo de dados falhar. No
 
     ![](../media/lab-05/image111.jpg)
 
-Agora, precisamos definir o valor da variável varCounter como o valor de varTempCounter. 
+    Agora, precisamos definir o valor da variável varCounter como o valor de varTempCounter. 
 
 ## Tarefa 11: Configurar 3ª atividade Set variable
 
-1. No menu superior, selecione **Atividades -> Definir variável**. A atividade Definir variável 
-é adicionada à tela de design.
+1. No menu superior, selecione **Atividades -> Definir variável**. A atividade Definir variável é adicionada à tela de design.
 
 2. Com a **atividade Definir variável** selecionada, no painel inferior, selecione **Geral**. Vamos atribuir um nome e uma descrição à atividade.
 
@@ -542,7 +538,7 @@ Em seguida, precisamos esperar 5 minutos/300 segundos se a atualização do flux
     
     - **mul**: esta é uma função de multiplicação; ela usa dois parâmetros para multiplicar. 
 
-A expressão é uma instrução if aninhada. Ela está verificando se o valor da variável varCounter é maior que 1. Se for verdadeiro, ela verifica se o valor da variável varCounter é 2. Se for verdadeiro, ela define o tempo de espera para varWaitTime vezes 15. Lembre-se, definimos como padrão o valor de varWaitTime para 60. Isso seria 60\*15 = 900 segundos. Se o valor da variável varCounter não for 2 (for maior que 2, o que significa que a atualização do fluxo de dados falhou 3 vezes, terminamos a iteração. Não precisamos mais esperar), o tempo de espera é definido como varWaitTime * 0. Portanto, como 0. Se o valor da variável varCounter for 1,multiplicaremos varWaitTime * 5. Isso seria 60\*5 = 300 segundos.
+    A expressão é uma instrução if aninhada. Ela está verificando se o valor da variável varCounter é maior que 1. Se for verdadeiro, ela verifica se o valor da variável varCounter é 2. Se for verdadeiro, ela define o tempo de espera para varWaitTime vezes 15. Lembre-se, definimos como padrão o valor de varWaitTime para 60. Isso seria 60\*15 = 900 segundos. Se o valor da variável varCounter não for 2 (for maior que 2, o que significa que a atualização do fluxo de dados falhou 3 vezes, terminamos a iteração. Não precisamos mais esperar), o tempo de espera é definido como varWaitTime * 0. Portanto, como 0. Se o valor da variável varCounter for 1,multiplicaremos varWaitTime * 5. Isso seria 60\*5 = 300 segundos.
 
 9. Selecione **OK**. 
 
@@ -550,8 +546,7 @@ A expressão é uma instrução if aninhada. Ela está verificando se o valor da
 
     ![](../media/lab-05/image126.jpg)
 
-10. Na parte superior esquerda da tela de design, selecione
-**pl_Refresh_People_Sharepoint_Option2** para sair do iterador Until. 
+10. Na parte superior esquerda da tela de design, selecione **pl_Refresh_People_Sharepoint_Option2** para sair do iterador Until. 
 
     ![](../media/lab-05/image129.jpg)
 
