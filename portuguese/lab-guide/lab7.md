@@ -690,19 +690,12 @@ O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais funções dis
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas do Microsoft Fabric.
 
 - Veja a postagem do blog para ler o [anúncio completo de GA do Microsof t Fabric](https://www.microsoft.com/en-us/microsoft-fabric/blog/2023/11/15/prepare-your-data-for-ai-innovation-with-microsoft-fabric-now-generally-available/)
-
 - Explore o Fabric por meio do [Tour Guiado](https://guidedtour.microsoft.com/en-us/guidedtour/microsoft-fabric/microsoft-fabric/1/1)
-
 - Inscreva-se para a [avaliação gratuita do Microsof t Fabric](https://www.microsoft.com/en-us/microsoft-fabric/getting-started)
-
 - Visite o [site do Microsof t Fabric](https://www.microsoft.com/en-in/microsoft-fabric)
-
 - Aprenda novas habilidades explorando os [módulos de Aprendizagem do Fabric](https://learn.microsoft.com/en-us/training/browse/?products=fabric&resource_type=module)
-
 - Explore a [documentação técnica do Fabric](https://learn.microsoft.com/en-us/fabric/)
-
 - Leia o [livro eletrônico gratuito sobre como começar a usar o Fabric](https://info.microsoft.com/ww-landing-unlocking-transformative-data-value-with-microsoft-fabric.html)
-
 - Participe da [comunidade do Fabric](https://community.fabric.microsoft.com/) para postar suas 
 perguntas, compartilhar seus comentários e aprender com outras pessoas
 
