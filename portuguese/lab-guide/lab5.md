@@ -94,7 +94,7 @@ Vamos começar configurando uma atualização agendada do Fluxo de dados Supplie
 
     A tela Detalhes será aberta. Ela fornecerá detalhes da atualização, listando o horário de início, de término e a duração. Ela também lista as tabelas/atividades que foram atualizadas. Caso haja uma falha, você pode clicar no nome da tabela/atividade para investigar mais detalhadamente.
 
-    ![](../media/lab-05/image021.jpg)
+    ![](../media/lab-05/image021.png)
 
 8. Vamos sair, clicando no **X** no canto superior direito. Você será direcionado de volta para a **página de configurações do fluxo de dados**.
 
