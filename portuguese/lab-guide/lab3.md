@@ -1,5 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Laboratório 3
- 	 
+
+![](../media/lab-03/image01.jpg)
  
 # Sumário
 - Introdução	
