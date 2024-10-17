@@ -348,13 +348,13 @@ Sales 대시보드를 만드는 데 필요한 몇 가지 측정값을 추가해 
 
 8. 비슷한 단계에 따라 다음 측정값을 추가합니다:  
 
-   a. **Sales** 테이블에서 `GM = SUM(Sales[LineProfit])`는 소수점 이하 자릿수가 0인 통화로 서식이 지정됩니다.  
+   a. **Sales** 테이블에서 **GM = SUM(Sales[LineProfit])`는 소수점 이하 자릿수가 0인 통화**로 서식이 지정됩니다.  
 
-   b. **Sales** 테이블에서 `GM% = DIVIDE([GM], [Sales])`는 소수점 이하 자릿수가 0인 백분율로 형식이 지정됩니다.  
+   b. **Sales** 테이블에서 **GM% = DIVIDE([GM], [Sales])`는 소수점 이하 자릿수가 0인 백분율**로 형식이 지정됩니다.  
 
-   c. **Sales** 테이블에서 `Sales YoY%` = VAR PREV_YEAR = CALCULATE([Sales], DATEADD('Date'[Date].[Date], ‐1, YEAR)) RETURN DIVIDE([Sales] ‐ PREV_YEAR, PREV_YEAR) 소수점 이하 2자리의 백분율로 형식이 지정됩니다.  
+   c. **Sales** 테이블에서 **Sales YoY%` = VAR PREV_YEAR = CALCULATE([Sales], DATEADD('Date'[Date].[Date], ‐1, YEAR)) RETURN DIVIDE([Sales] ‐ PREV_YEAR, PREV_YEAR) 소수점 이하 2자리의 백분율**로 형식이 지정됩니다.  
 
-   d. **Customer** 테이블에서 `No of Customers = COUNTROWS(Customer)`는 천 단위 구분 기호가 활성화된 정수로 형식이 지정됩니다.  
+   d. **Customer** 테이블에서 **No of Customers = COUNTROWS(Customer)`는 천 단위 구분 기호가 활성화된 정수**로 형식이 지정됩니다.  
 
 ## 참조
 
