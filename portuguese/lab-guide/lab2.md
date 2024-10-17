@@ -5,19 +5,33 @@
 # Sumário
 
 - Introdução	
+
 - Licença do Fabric	
+
    - Tarefa 1: Habilitar uma licença de avaliação do Microsoft Fabric	
+
 - Visão geral das experiências do Fabric	
+
    - Tarefa 2: Experiência do Data Factory	
+
    - Tarefa 3: Experiência do Data Activator	
+
    - Tarefa 4: Experiência do Industry Solutions	
-   - Tarefa 5: Experiência do Real-Time Intelligence	
-   - Tarefa 6: Experiência do Synapse Data Engineering	
+
+   - Tarefa 5: Experiência do Real-Time Intelligence
+   
+   - Tarefa 6: Experiência do Synapse Data Engineering
+
    - Tarefa 7: Experiência do Synapse Data Science	
-   - Tarefa 8: Experiência do Synapse Data Warehouse	
+
+   - Tarefa 8: Experiência do Synapse Data Warehouse
+
 - Workspace do Fabric	
+
    - Tarefa 9: Criar um workspace do Fabric	
+
    - Tarefa 10: Criar um Lakehouse	
+
 - Referências
  
 # Introdução
@@ -75,8 +89,7 @@ Gen2, Pipeline de Dados, DirectLake, entre outros. Ao final deste laboratório, 
 
 ## Tarefa 2: Experiência do Data Factory
 
-1. Selecione o ícone **Microsoft Fabric** (fabric experience selector) na parte inferior esquerda da tela. Uma caixa de diálogo com a lista de experiências do Fabric será aberta. Observe que o Power BI, o Data Factory, Data Activator, o Industry Solutions e o Real-Time Intelligence são experiências
-independentes. Data Engineering, Data Science e Data Warehouse são experiências do Synapse, e essas experiências são da plataforma Synapse. Vamos explorar.
+1. Selecione o ícone **Microsoft Fabric** (fabric experience selector) na parte inferior esquerda da tela. Uma caixa de diálogo com a lista de experiências do Fabric será aberta. Observe que o Power BI, o Data Factory, Data Activator, o Industry Solutions e o Real-Time Intelligence são experiências independentes. Data Engineering, Data Science e Data Warehouse são experiências do Synapse, e essas experiências são da plataforma Synapse. Vamos explorar.
  
 2. Selecione **Data Factory**.
 
@@ -118,15 +131,13 @@ independentes. Data Engineering, Data Science e Data Warehouse são experiência
 
 1. Selecione o **ícone Fabric experience selector** (atualmente definido como Data Activator) na parte inferior esquerda da tela. A caixa de diálogo de experiência do Fabric é aberta.
 
-2. Selecione **Industry Solutions** na caixa de diálogo. Você acessará a **Página Inicial do** Industry Solutions. O Microsoft Fabric oferece soluções de dados específicas do setor que fornecem uma plataforma robusta para gerenciamento de dados, análise e tomada de decisões. Essas soluções de dados abordam os desafios exclusivos enfrentados por diferentes setores, permitindo que as empresas otimizem as operações, integrem dados de diferentes fontes e usem análises avançadas. Observe que as três seções são como as experiências anteriores. Na seção
-Recomendado, observe os itens:
+2. Selecione **Industry Solutions** na caixa de diálogo. Você acessará a **Página Inicial do** Industry Solutions. O Microsoft Fabric oferece soluções de dados específicas do setor que fornecem uma plataforma robusta para gerenciamento de dados, análise e tomada de decisões. Essas soluções de dados abordam os desafios exclusivos enfrentados por diferentes setores, permitindo que as empresas otimizem as operações, integrem dados de diferentes fontes e usem análises avançadas. Observe que as três seções são como as experiências anteriores. Na seção Recomendado, observe os itens:
 
    a. **Soluções de sustentabilidade:** oferece suporte à ingestão, padronização e análise de dados de ESG (governança ambiental, social e corporativa).
 
    b. **Soluções de varejo:** ajuda no gerenciamento de grandes volumes de dados, integrando dados de várias fontes e fornecendo análises em tempo real para tomada rápida de decisões. Os varejistas podem usar essas soluções para otimização de estoque, segmentação de clientes, previsão de vendas, preços dinâmicos e detecção de fraudes.
 
-   c. **Soluções do Healthcare:** são estrategicamente projetadas para acelerar o tempo de
-    retorno para os clientes, atendendo à necessidade crítica de transformar com eficiência os dados de saúde em um formato adequado para análise.
+   c. **Soluções do Healthcare:** são estrategicamente projetadas para acelerar o tempo de retorno para os clientes, atendendo à necessidade crítica de transformar com eficiência os dados de saúde em um formato adequado para análise.
 
    ![](../media/lab-02/image036.png)
  
@@ -157,7 +168,7 @@ Recomendado, observe os itens:
 
 2. Selecione **Data Engineering.** Você será direcionado para a **Página Inicial do Data Engineering**. Novamente, a página contém três seções principais. Na seção Recomendado, observe os itens:
 
-    a. **Lakehouse:** usado para armazenar Big Data para limpeza, consulta, geração de relatórios e compartilhamento.
+    a.**Lakehouse:** usado para armazenar Big Data para limpeza, consulta, geração de relatórios e compartilhamento.
 
     b. **Notebook:** usado para ingestão, preparação, análise e outras tarefas relacionadas a dados usando várias linguagens, como Python, R e Scala.
 
@@ -202,6 +213,7 @@ Recomendado, observe os itens:
 ## Tarefa 8: Experiência do Synapse Data Warehouse
 
 1. Selecione o **ícone Fabric experience selector** (atualmente definido como Data Science) na parte inferior esquerda da tela. A caixa de diálogo de experiência do Fabric é aberta.
+
 2. Selecione Data Warehouse. Você será direcionado para a **Página Inicial do Data Warehouse**. Novamente, existem três seções. Na seção Novo, observe os itens:
 
     a. **Warehouse:** usado para criar um Data Warehouse.
@@ -272,8 +284,7 @@ No explorador do Lakehouse, você observará **Tables** e **Files**. O Lakehouse
 
 ![](../media/lab-02/image069.png)
 
-Neste laboratório, exploramos a interface do Fabric, criamos um workspace do Fabric e um
-Lakehouse. No próximo laboratório, aprenderemos como usar atalhos no Lakehouse para se conectar aos dados do ADLS Gen2 e como transformar esses dados usando exibições.
+Neste laboratório, exploramos a interface do Fabric, criamos um workspace do Fabric e um Lakehouse. No próximo laboratório, aprenderemos como usar atalhos no Lakehouse para se conectar aos dados do ADLS Gen2 e como transformar esses dados usando exibições.
  
 # Referências
 O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais funções disponíveis no Microsoft Fabric. No menu do serviço, a seção Ajuda (?) tem links para ótimos recursos.

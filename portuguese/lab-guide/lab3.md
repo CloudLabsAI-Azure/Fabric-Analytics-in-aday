@@ -3,14 +3,23 @@
 ![](../media/lab-03/image01.jpg)
  
 # Sumário
+
 - Introdução	
+
 - Atalho para o ADLS Gen2	
+
    - Tarefa 1: Criar um atalho	
+
 - Transformar dados usando uma consulta Visual	
+
    - Tarefa 2: Criar exibição Geo usando uma consulta Visual	
+
    - Tarefa 3: Criar exibição Reseller usando uma consulta Visual	
+
    - Tarefa 4: Criar a exibição Sales usando uma consulta Visual	
+
    - Tarefa 5: Criar exibição Product usando uma consulta Visual	
+
 - Referências	
  
 # Introdução
@@ -55,8 +64,7 @@ O atalho é usado para criar um link com o local de destino. É como criar atalh
 
     ![](../media/lab-03/image009.png)
 
-6. Você precisa criar uma conexão com a fonte de dados ADLS Gen2. Em **Configurações de conexão
--> URL**, insira este link https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
+6. Você precisa criar uma conexão com a fonte de dados ADLS Gen2. Em **Configurações de conexão -> URL**, insira este link https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 
 7. Selecione **Chave de conta** no menu suspenso Tipo de autenticação.
 
@@ -168,7 +176,7 @@ O atalho é usado para criar um link com o local de destino. É como criar atalh
 
 5. Com a consulta Cities selecionada, na faixa de opções do Editor do Power Query, selecione **Página Inicial - > Mesclar consultas -> Mesclar consultas como novas**. A caixa de diálogo Mesclar consultas é aberta.
  
-     ![](../media/lab-03/image039.png)
+    ![](../media/lab-03/image039.png)
  
 6. Na tabela **à esquerda para mesclar**, selecione **Cities**.
 
@@ -292,13 +300,13 @@ O atalho é usado para criar um link com o local de destino. É como criar atalh
 
 31. Selecione **OK** para salvar a exibição.
  
-     ![](../media/lab-03/image069.png)
+    ![](../media/lab-03/image069.png)
  
     Você receberá um alerta assim que a exibição for salva.
 
 32. No painel Explorer (à esquerda), expanda **Exibições**. Temos a exibição recém-criada Geo.
 
-     ![](../media/lab-03/image072.png)
+    ![](../media/lab-03/image072.png)
 
 ## Tarefa 3: Criar exibição Reseller usando uma consulta Visual
 
@@ -389,6 +397,7 @@ Vamos criar a exibição Reseller, mesclando a tabela Customers com a tabela Buy
     A caixa de diálogo Salvar como exibição é aberta. Observe que a consulta SQL está disponível. Você pode revê-la, se quiser.
 
 18. Insira **Reseller** como **Nome da exibição**.
+
 19. Selecione **OK** para salvar a exibição.
 
     ![](../media/lab-03/image099.png)
@@ -464,6 +473,7 @@ Vamos criar a exibição Sales, mesclando a tabela InvoiceLineItems and Invoices
 21. No **final da linha 2, adicione uma vírgula** (Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner)
 
 22. Pressione **Enter** para começar uma nova linha.
+
 23. Digite **Ctrl+V** no teclado para colar o código copiado do Power BI Desktop.
 
     **Observação:** se você estiver trabalhando no ambiente de laboratório, selecione as reticências no canto superior direito da tela. Use o controle deslizante para habilitar VM Native Clipboard. Selecione OK na caixa de diálogo. Depois que terminar de colar as consultas, você poderá desabilitar essa opção.
@@ -606,19 +616,12 @@ O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais funções dis
 Veja aqui mais alguns recursos que ajudarão você com as próximas etapas do Microsoft Fabric.
 
 - Veja a postagem do blog para ler o [anúncio completo de GA do Microsof t Fabric](https://www.microsoft.com/en-us/microsoft-fabric/blog/2023/11/15/prepare-your-data-for-ai-innovation-with-microsoft-fabric-now-generally-available/)
-
 - Explore o Fabric por meio do [Tour Guiado](https://guidedtour.microsoft.com/en-us/guidedtour/microsoft-fabric/microsoft-fabric/1/1)
-
 - Inscreva-se para a [avaliação gratuita do Microsof t Fabric](https://www.microsoft.com/en-us/microsoft-fabric/getting-started)
-
 - Visite o [site do Microsof t Fabric](https://www.microsoft.com/en-in/microsoft-fabric)
-
 - Aprenda novas habilidades explorando os [módulos de Aprendizagem do Fabric](https://learn.microsoft.com/en-us/training/browse/?products=fabric&resource_type=module)
-
 - Explore a [documentação técnica do Fabric](https://learn.microsoft.com/en-us/fabric/)
-
 - Leia o [livro eletrônico gratuito sobre como começar a usar o Fabric](https://info.microsoft.com/ww-landing-unlocking-transformative-data-value-with-microsoft-fabric.html)
-
 - Participe da [comunidade do Fabric](https://community.fabric.microsoft.com/) para postar suas 
 perguntas, compartilhar seus comentários e aprender com outras pessoas
 
@@ -640,25 +643,19 @@ Leia os blogs de comunicados de experiências do Fabric em mais detalhes:
 
 Ao usar esta demonstração/este laboratório, você concorda com os seguintes termos:
 
-A tecnologia/funcionalidade descrita nesta demonstração/neste laboratório é fornecida pela
-Microsoft Corporation para obter seus comentários e oferecer uma experiência de aprendizado.
-Você pode usar a demonstração/o laboratório somente para avaliar tais funcionalidades e
-recursos de tecnologia e fornecer comentários à Microsoft. Você não pode usá-los para nenhuma outra finalidade. Você não pode modificar, copiar, distribuir, transmitir, exibir, executar,
+A tecnologia/funcionalidade descrita nesta demonstração/neste laboratório é fornecida pela Microsoft Corporation para obter seus comentários e oferecer uma experiência de aprendizado. Você pode usar a demonstração/o laboratório somente para avaliar tais funcionalidades e recursos de tecnologia e fornecer comentários à Microsoft. Você não pode usá-los para nenhuma outra finalidade. Você não pode modificar, copiar, distribuir, transmitir, exibir, executar,
 reproduzir, publicar, licenciar, criar obras derivadas, transferir nem vender esta demonstração/este laboratório ou qualquer parte deles.
 
 A CÓPIA OU A REPRODUÇÃO DA DEMONSTRAÇÃO/DO LABORATÓRIO (OU DE QUALQUER PARTE DELES) EM QUALQUER OUTRO SERVIDOR OU LOCAL PARA REPRODUÇÃO OU REDISTRIBUIÇÃO
 ADICIONAL É EXPRESSAMENTE PROIBIDA.
 
-ESTA DEMONSTRAÇÃO/ESTE LABORATÓRIO FORNECE DETERMINADOS RECURSOS E FUNCIONALIDADES DE PRODUTO/TECNOLOGIA DE SOFTWARE, INCLUINDO NOVOS RECURSOS E CONCEITOS POTENCIAIS, EM UM AMBIENTE SIMULADO SEM CONFIGURAÇÃO NEM
-INSTALAÇÃO COMPLEXA PARA A FINALIDADE DESCRITA ACIMA. A TECNOLOGIA/OS CONCEITOS REPRESENTADOS NESTA DEMONSTRAÇÃO/NESTE LABORATÓRIO PODEM NÃO REPRESENTAR A FUNCIONALIDADE COMPLETA DOS RECURSOS E PODEM NÃO FUNCIONAR DA MESMA MANEIRA QUE UMA VERSÃO FINAL. ALÉM DISSO, PODEMOS NÃO LANÇAR UMA VERSÃO FINAL DE TAIS
-RECURSOS OU CONCEITOS. SUA EXPERIÊNCIA COM O USO DE TAIS RECURSOS E FUNCIONALIDADES EM UM AMBIENTE FÍSICO TAMBÉM PODE SER DIFERENTE.
+ESTA DEMONSTRAÇÃO/ESTE LABORATÓRIO FORNECE DETERMINADOS RECURSOS E FUNCIONALIDADES DE PRODUTO/TECNOLOGIA DE SOFTWARE, INCLUINDO NOVOS RECURSOS E CONCEITOS POTENCIAIS, EM UM AMBIENTE SIMULADO SEM CONFIGURAÇÃO NEM INSTALAÇÃO COMPLEXA PARA A FINALIDADE DESCRITA ACIMA. A TECNOLOGIA/OS CONCEITOS REPRESENTADOS NESTA DEMONSTRAÇÃO/NESTE LABORATÓRIO PODEM NÃO REPRESENTAR A FUNCIONALIDADE COMPLETA DOS RECURSOS E PODEM NÃO FUNCIONAR DA MESMA MANEIRA QUE UMA VERSÃO FINAL. ALÉM DISSO, PODEMOS NÃO LANÇAR UMA VERSÃO FINAL DE TAIS RECURSOS OU CONCEITOS. SUA EXPERIÊNCIA COM O USO DE TAIS RECURSOS E FUNCIONALIDADES EM UM AMBIENTE FÍSICO TAMBÉM PODE SER DIFERENTE.
 
 **COMENTÁRIOS**. Caso você forneça comentários sobre os recursos de tecnologia, as funcionalidades e/ou os conceitos descritos nesta demonstração/neste laboratório à Microsoft, você concederá à Microsoft, sem encargos, o direito de usar, compartilhar e comercializar seus comentários de qualquer forma e para qualquer finalidade. Você também concede a terceiros, sem encargos, quaisquer direitos de patente necessários para que seus produtos, suas
 tecnologias e seus serviços usem ou interajam com partes específicas de um software ou um serviço da Microsoft que inclua os comentários. Você não fornecerá comentários que estejam sujeitos a uma licença que exija que a Microsoft licencie seu software ou sua documentação para terceiros em virtude da inclusão de seus comentários neles. Esses direitos continuarão em vigor após o término do contrato.
 
 POR MEIO DESTE, A MICROSOFT CORPORATION SE ISENTA DE TODAS AS GARANTIAS E CONDIÇÕES REFERENTES À DEMONSTRAÇÃO/AO LABORATÓRIO, INCLUINDO TODAS AS
-GARANTIAS E CONDIÇÕES DE COMERCIALIZAÇÃO, SEJAM ELAS EXPRESSAS, IMPLÍCITAS OU ESTATUTÁRIAS, E DE ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA, TÍTULO E NÃO VIOLAÇÃO.
-A MICROSOFT NÃO DECLARA NEM GARANTE A PRECISÃO DOS RESULTADOS DERIVADOS DO USO DA DEMONSTRAÇÃO/DO LABORATÓRIO NEM A ADEQUAÇÃO DAS INFORMAÇÕES CONTIDAS NA DEMONSTRAÇÃO/NO LABORATÓRIO A QUALQUER FINALIDADE.
+GARANTIAS E CONDIÇÕES DE COMERCIALIZAÇÃO, SEJAM ELAS EXPRESSAS, IMPLÍCITAS OU ESTATUTÁRIAS, E DE ADEQUAÇÃO A UMA FINALIDADE ESPECÍFICA, TÍTULO E NÃO VIOLAÇÃO. A MICROSOFT NÃO DECLARA NEM GARANTE A PRECISÃO DOS RESULTADOS DERIVADOS DO USO DA DEMONSTRAÇÃO/DO LABORATÓRIO NEM A ADEQUAÇÃO DAS INFORMAÇÕES CONTIDAS NA DEMONSTRAÇÃO/NO LABORATÓRIO A QUALQUER FINALIDADE.
  
 **AVISO DE ISENÇÃO DE RESPONSABILIDADE**
 
