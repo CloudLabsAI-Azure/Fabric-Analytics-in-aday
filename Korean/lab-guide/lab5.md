@@ -157,7 +157,7 @@
 
 2. df_People_SharePoint 활동에 연결하도록 활동을 구성하겠습니다. **하단 창에서 설정**을 선택합니다.
 
-3. **작업 영역**이 Fabric 작업 영역 **FAIAD_<username>**(으)로 설정되어 있는지 확인합니다.
+3. **작업 영역**이 Fabric 작업 영역 **FAIAD_\<username>** (으)로 설정되어 있는지 확인합니다.
 
 4. **데이터 흐름 드롭다운**에서 **df_People_SharePoint**를 선택합니다. 이 데이터 흐름 활동이 실행되면 **df_People_SharePoint가 새로 고침됩니다.** 참 쉽죠? 
 

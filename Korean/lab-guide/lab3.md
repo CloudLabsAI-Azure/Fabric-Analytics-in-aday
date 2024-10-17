@@ -55,7 +55,7 @@
 
     ![](../media/lab-03/image012.jpg)
 
-10. 왼쪽 패널에 디렉터리 구조가 표시된 ADLS Gen2에 연결됩니다.**Delta‐Parquet‐Format‐FY25**를 확장합니다.
+10. 왼쪽 패널에 디렉터리 구조가 표시된 ADLS Gen2에 연결됩니다. **Delta‐Parquet‐Format‐FY25**를 확장합니다.
 
 11. 다음 디렉터리를 **선택**합니다:
 
@@ -77,7 +77,7 @@
 
     ![](../media/lab-03/image015.png)
 
-14. 이름을 편집할 수 있는 다음 대화 상자로 이동합니다.**Application.Cities**에 대한 작업에서 편집 아이콘을 선택합니다.
+14. 이름을 편집할 수 있는 다음 대화 상자로 이동합니다. **Application.Cities**에 대한 작업에서 편집 아이콘을 선택합니다.
 15. **Application.Cities를 Cities**로 이름을 변경합니다.
 16. 이름 옆의 확인 표시를 선택하여 변경 사항을 저장합니다.
 
@@ -524,7 +524,7 @@ ProductItem, ProductItemGroup 및 ProductGroups 테이블을 병합하여 생성
 
 11. 고급 편집기에서 **모든 코드**를 선택하고 **삭제**합니다.
 
-12. 아래 코드를 고급 편집기에 **붙여 넣습니다.**
+12. 아래 코드를 고급 편집기에 **붙여 넣습니다**.
 
     ```
     let
