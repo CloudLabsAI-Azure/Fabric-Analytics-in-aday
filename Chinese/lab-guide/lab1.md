@@ -99,8 +99,7 @@ Power BI Desktop 将打开。
    ![](../media/lab-01/image027.png) 
  
 3. 选择**销售区域中的落基山脉**删除筛选器。
-4. 从屏幕底部中间的散点图视觉对象（按销售额划分的销售订单）中，选择右上角的离群值
-（第四象限）。请注意，利润率为 52%，高于 50% 的平均值。此外，2023 年最后两个季度的销售额同比增长。
+4. 从屏幕底部中间的散点图视觉对象（按销售额划分的销售订单）中，选择右上角的离群值 （第四象限）。请注意，利润率为 52%，高于 50% 的平均值。此外，2023 年最后两个季度的销售额同比增长。
 
    ![](../media/lab-01/image030.png) 
 
@@ -117,16 +116,16 @@ Power BI Desktop 将打开。
 
 8. 您可以自行进一步分析该报表。准备好后，我们来看看模型视图。在左侧面板中，选择**模 型视图图标。** 请注意，有两个事实表：Sales 和PO。
 
-    a.	销售数据的粒度是按日期、经销商、产品和人员。Date、Reseller、Product 和
+    a. 销售数据的粒度是按日期、经销商、产品和人员。Date、Reseller、Product 和
     People 连接到 Sales。
 
-    b.	PO 数据的粒度是按日期、经销商和人员。Date、Product 和People 连接到PO。
+    b. PO 数据的粒度是按日期、经销商和人员。Date、Product 和People 连接到PO。
 
-    c.	我们有按产品分类的供应商数据。Supplier 连接到Product。
+    c. 我们有按产品分类的供应商数据。Supplier 连接到Product。
 
-    d.	我们有经销商的按地理划分的位置数据。Geo  连接到 Reseller。
+    d. 我们有经销商的按地理划分的位置数据。Geo  连接到 Reseller。
 
-    e.	我们有按经销商划分的客户信息。Customer 连接到Reseller。
+    e. 我们有按经销商划分的客户信息。Customer 连接到Reseller。
  
 ## 任务 3：查看Power Queries
 
@@ -136,27 +135,26 @@ Power BI Desktop 将打开。
 
 2. Power Query 窗口随即打开。从功能区中选择**主页-> 数据源设置。**“数据源设置”对话框随即打开。滚动浏览列表时，您会注意到问题陈述中提到了四个数据源：
 
-    a.	Snowflake
+    a. Snowflake
 
-    b.	SharePoint
+    b. SharePoint
 
-    c.	ADLS Gen2
+    c. ADLS Gen2
 
-    d.	Dataverse
-
+    d. Dataverse
 
 3. 选择**关闭**以关闭数据源设置对话框。
 
    ![](../media/lab-01/image042.png) 
  
 4. 在左侧的“查询”面板中，请注意查询是按数据源分组的。
-5. 请注意，**DataverseData** 文件夹包含四个不同查询中可用的客户数据：BabyBoomer、
-GenX、GenY 和GenZ。追加这四个查询以创建 Customer 查询。
+5. 请注意，**DataverseData** 文件夹包含四个不同查询中可用的客户数据：BabyBoomer、GenX、GenY 和GenZ。追加这四个查询以创建 Customer 查询。
 6. 您可以通过输入**用户名**和**密码**来输入 Dataverse 数据源的凭据，该用户名和密码位于**环境变量**选项卡中（实验指南旁边）。请选择 Microsoft 帐户选项。
 
-   ![](../media/lab-01/image045.jpg) 
+   ![](../media/lab-01/17-10-24.png) 
 
-7. 对于 ADLS 数据源，请使用**帐户密钥**选项并输入 **Adls storage account Access key，** 其位于**环境变量**选项卡中（实验指南旁边）。
+7. 对于 ADLS 数据源，使用**共享访问签名 (SAS)**选项并输入**环境**选项卡（实验室指南旁边）中提供的**SAS 令牌**。
+
 8. 请注意，**ADLSData** 文件夹具有多个维度：Geo、Product、Reseller 和Date 还具有Sales 事实。
 
     a. **Geo 维度**是通过合并 Cities、Countries 和 States 查询的数据而创建的。

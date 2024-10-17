@@ -4,13 +4,9 @@
 
 # 目录
 - 简介	
-
 - ADLS Gen2 的快捷方式	
-
 	- 任务 1：创建快捷方式	
-
 - 使用视觉对象查询转换数据	
-
 	- 任务 2：使用视觉对象查询创建 Geo 视图	
 	- 任务 3：使用视觉对象查询创建 Reseller 视图	
 	- 任务 4：使用视觉对象查询创建 Sales 视图	
@@ -54,15 +50,15 @@
 
    ![](../media/lab-03/image009.jpg) 
 
-6. 您需要创建与 ADLS Gen2 数据源的连接。在**连接设置 -> URL** 下，输入以下链接 
-https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
+6. 您需要建立與 ADLS Gen2 資料來源的連線。在“連接設定”->“URL”下輸入此連結 `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
 
-7. 从“身份验证种类”下拉列表中选择**帐户密钥。**
-8. 从**环境变量**选项卡（位于“实验室指南”选项卡旁边）复制 **Adls 存储帐户访问密钥，** 并将其粘贴到**帐户密钥文本框**中。
- 
-9. 选择屏幕右下角的**下一步。**
+7. 從「驗證類型」下拉清單中選擇「**共用存取簽章 (SAS)**」。
 
-   ![](../media/lab-03/image012.jpg) 
+8. 從 **環境變數** 標籤（「實驗室指南」標籤旁）複製 **SAS 令牌**，並將其貼上到 **SAS 令牌** 方塊中。
+
+9. 選擇螢幕右下角的**下一步**。
+
+   ![](../../english/media/lab-03/image012.jpg) 
 
 10. 您将连接到 ADLS Gen2，目录结构显示在左侧面板中。展开 **Delta-Parquet-Format-F Y25。**
 11. **选择**以下目录：
