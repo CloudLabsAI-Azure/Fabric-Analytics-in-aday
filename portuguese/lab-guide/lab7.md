@@ -2,37 +2,35 @@
 
 # Sumário
 
--   Introdução	3
--   Power BI	3
-    -   Tarefa 1: Criar relatório automaticamente	
-    -   Tarefa 2: Configurar plano de fundo para um Novo relatório	
-    -   Tarefa 3: Adicionar cabeçalho ao relatório	
-    -   Tarefa 4: Adicionar KPIs ao relatório	
-    -   Tarefa 5: Adicionar gráfico de linhas ao relatório	
-    -   Tarefa 6: Salvar o relatório	
-    -   Tarefa 7: Configurar a coluna Year na tabela Date	
-    -   Tarefa 8: Configurar a coluna Month Name na tabela Date
-    -   Tarefa 9: Formatar gráfico de linhas	
-    -   Tarefa 10: Conectar o Power BI Desktop ao modelo semântico	
-    Tarefa 11: Adicionar novos dados para simular o modo Direct Lake	
--   Limpar o ambiente do laboratório	
--   Referências	
+- Introdução
+- Power BI
+    - Tarefa 1: Criar relatório automaticamente	
+    - Tarefa 2: Configurar plano de fundo para um Novo relatório	
+    - Tarefa 3: Adicionar cabeçalho ao relatório	
+    - Tarefa 4: Adicionar KPIs ao relatório	
+    - Tarefa 5: Adicionar gráfico de linhas ao relatório	
+    - Tarefa 6: Salvar o relatório	
+    - Tarefa 7: Configurar a coluna Year na tabela Date	
+    - Tarefa 8: Configurar a coluna Month Name na tabela Date
+    - Tarefa 9: Formatar gráfico de linhas	
+    - Tarefa 10: Conectar o Power BI Desktop ao modelo semântico	
+    - Tarefa 11: Adicionar novos dados para simular o modo Direct Lake	
+- Limpar o ambiente do laboratório	
+- Referências
 
- 
 # Introdução
 
 Conhecemos o Lakehouse, fizemos a ingestão de dados de diferentes fontes de dados no Lakehouse, definimos uma agenda de atualização para as fontes de dados e criamos um modelo de dados. Agora vamos criar um relatório.
 
 Ao final deste laboratório, você terá aprendido:
 
--   Como criar um relatório automaticamente
+- Como criar um relatório automaticamente
 
--   Como criar um relatório a partir de uma tela em branco
+- Como criar um relatório a partir de uma tela em branco
 
--   Como criar um relatório usando o Power BI Desktop
+- Como criar um relatório usando o Power BI Desktop
 
--   Como experimentar o modo Direct Lake resultante da atualização automática de dados
-
+- Como experimentar o modo Direct Lake resultante da atualização automática de dados
 
 # Power BI
 
@@ -40,35 +38,41 @@ Ao final deste laboratório, você terá aprendido:
 
 Vamos começar usando a opção de criação automática de relatório. E, mais adiante no laboratório, recriaremos o relatório que temos no Power BI.
 
-1.  Vamos voltar ao **workspace** do Fabric que você criou no laboratório anterior.
+1. Vamos voltar ao **workspace** do Fabric que você criou no laboratório anterior.
 
-2.  Na parte inferior esquerda da tela, selecione o ícone **Fabric experience selector**.
+2. Na parte inferior esquerda da tela, selecione o ícone **Fabric experience selector**.
 
-3.  A caixa de diálogo de experiência do Fabric é aberta. Selecione **Power BI**. Você será direcionado a uma **Página Inicial do Power BI**.
+3. A caixa de diálogo de experiência do Fabric é aberta. Selecione **Power BI**. Você será direcionado a uma **Página Inicial do Power BI**.
 
     ![](../media/lab-07/)
 
-4.  No menu superior, selecione Novo relatório.
+4. No menu superior, selecione Novo relatório.
 
-5.	Você será direcionado para Criar seu primeiro relatório. Haverá opções para criar um relatório usando o Excel, csv, inserir dados manualmente ou escolher um modelo semântico publicado. Criamos um modelo semântico nos laboratórios anteriores. Vamos usá-lo. Selecione a opção Escolher um modelo semântico publicado.
+5. Você será direcionado para Criar seu primeiro relatório. Haverá opções para criar um relatório usando o Excel, csv, inserir dados manualmente ou escolher um modelo semântico publicado. Criamos um modelo semântico nos laboratórios anteriores. Vamos usá-lo. Selecione a opção Escolher um modelo semântico publicado.
 
-6.	Escolha um conjunto de dados para usar quando a página do relatório é aberta. Observe que temos quatro opções. Selecione sm_FAIAD.
-a.	sm_FAIAD: é o modelo semântico que criamos e queremos usar para criar o relatório.
-b.	lh_FAIAD: é o lakehouse em que ingerimos todos os dados.
-c.	DataflowsStagingWarehouse: é o depósito temporário criado por padrão. Não usamos essa opção porque não preparamos dados.
-d.	DataflowsStagingLakehouse: é o lakehouse temporário criado por padrão. Não usamos essa opção porque não preparamos dados.
+6. Escolha um conjunto de dados para usar quando a página do relatório é aberta. Observe que temos quatro opções. Selecione sm_FAIAD.
+
+	a. sm_FAIAD: é o modelo semântico que criamos e queremos usar para criar o relatório.
+
+	b. lh_FAIAD: é o lakehouse em que ingerimos todos os dados.
+
+	c. DataflowsStagingWarehouse: é o depósito temporário criado por padrão. Não usamos essa opção porque não preparamos dados.
+
+	d. DataflowsStagingLakehouse: é o lakehouse temporário criado por padrão. Não usamos essa opção porque não preparamos dados.
  
-7.	Clique na seta ao lado do botão Relatório de criação automática. Existem duas opções: Criar relatório automaticamente e Criar um relatório em branco. Vamos tentar criar automaticamente. Selecione Relatório de criação automática.
+7. Clique na seta ao lado do botão Relatório de criação automática. Existem duas opções: Criar relatório automaticamente e Criar um relatório em branco. Vamos tentar criar automaticamente. Selecione Relatório de criação automática.
 
-8.	O Power BI começará a criar automaticamente o relatório. Observe que há uma opção para pré- selecionar dados, se preferirmos. Quando o relatório estiver pronto, uma caixa de diálogo será exibida na parte superior direita da tela. Selecione Exiba o relatório agora ou ele será carregado automaticamente em alguns segundos.
+8. O Power BI começará a criar automaticamente o relatório. Observe que há uma opção para pré- selecionar dados, se preferirmos. Quando o relatório estiver pronto, uma caixa de diálogo será exibida na parte superior direita da tela. Selecione Exiba o relatório agora ou ele será carregado automaticamente em alguns segundos.
 
 Ponto de verificação: você terá um relatório semelhante à captura de tela abaixo. Existem alguns KPIs e alguns visuais de tendências. Este é um bom começo se você estiver analisando um novo modelo e precisar de um impulso inicial.
+
 Observação: No menu superior, você tem a opção de editar o relatório ou visualizar alguns dos dados como tabelas. Fique à vontade para explorar essas opções.
-9.	Vamos salvar este relatório. No menu superior, selecione Salvar.
-10.	A caixa de diálogo Salvar seu relatório é aberta. Nomeie o relatório como rpt_Sales_Auto_Report. Observação: estamos prefixando o nome do relatório com rpt, que é a abreviação de relatório.
+
+9. Vamos salvar este relatório. No menu superior, selecione Salvar.
+10. A caixa de diálogo Salvar seu relatório é aberta. Nomeie o relatório como rpt_Sales_Auto_Report. Observação: estamos prefixando o nome do relatório com rpt, que é a abreviação de relatório.
  
-11.	Verifique se o relatório está salvo no workspace, FAIAD_<nome de usuário>.
-12.	Selecione Salvar.
+11. Verifique se o relatório está salvo no workspace, FAIAD_<nome de usuário>.
+12. Selecione Salvar.
 
 Observação: A aparência do relatório criado automaticamente pode ser diferente para você, pois ele é "criado automaticamente". Depende também dos relacionamento e das medidas que você criou no laboratório anterior (Laboratório 6).
 A captura de tela acima mostra como o relatório criado automaticamente poderá ser exibido se você tiver criado todos os relacionamentos e medidas, incluindo os relacionamentos opcionais

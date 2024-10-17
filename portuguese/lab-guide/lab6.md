@@ -288,8 +288,7 @@ Vamos adicionar os relacionamentos restantes.
 
 6. Verifique se **Direção do filtro cruzado** é **Única**.
 
-7. Selecione **Salvar**. A caixa de diálogo Gerenciar relacionamentos é aberta com o novo 
-relacionamento adicionado.
+7. Selecione **Salvar**. A caixa de diálogo Gerenciar relacionamentos é aberta com o novo relacionamento adicionado.
 
     ![](../media/lab-06/image068.png)
 
@@ -377,10 +376,7 @@ Vamos adicionar as medidas restantes.
     
     b. Na tabela **Sales , GM% = DIVIDE([GM], [Sales])** está formatada como **Porcentagem com 0 casas decimais**.
 
-    c. Na tabela **Sales, Sales YoY% = 
-    VAR __PREV_YEAR = CALCULATE([Sales], DATEADD('Date'[Date].[Date], -1, YEAR))
-    RETURN DIVIDE([Sales] - __PREV_YEAR, __PREV_YEAR)**
-    formatado como **Porcentagem com 2 casas decimais**.
+    c. Na tabela **Sales, Sales YoY% = VAR __PREV_YEAR = CALCULATE([Sales], DATEADD('Date'[Date].[Date], -1, YEAR)) RETURN DIVIDE([Sales] - __PREV_YEAR, __PREV_YEAR)** formatado como **Porcentagem com 2 casas decimais**.
 
     d. Na tabela **Customer , No of Customers = COUNTROWS(Customer)** formatado como **Número Inteiro com separador de milhares habilitado**.
 
