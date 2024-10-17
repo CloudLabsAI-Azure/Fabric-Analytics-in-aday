@@ -1,6 +1,6 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Laboratório 3
  	 
-     
+
  
 # Sumário
 -   Introdução	
@@ -51,26 +51,26 @@ O atalho é usado para criar um link com o local de destino. É como criar atalh
 
 3.	No **painel Explorer**, selecione as **reticências** ao lado de **Tabelas**.
 
-4.	Selecione **Novo atalho**.
+4.  Selecione **Novo atalho**.
  
     ![](../media/lab-03/image006.png)
  
-5.	**A caixa de diálogo Novo atalho** é aberta. Em **Fontes externas**, selecione **Azure Data Lake Storage Gen2**.
+5.  **A caixa de diálogo Novo atalho** é aberta. Em **Fontes externas**, selecione **Azure Data Lake Storage Gen2**.
 
     ![](../media/lab-03/image009.png)
 
-6.	Você precisa criar uma conexão com a fonte de dados ADLS Gen2. Em **Configurações de conexão
+6.  Você precisa criar uma conexão com a fonte de dados ADLS Gen2. Em **Configurações de conexão
 -> URL**, insira este link https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 
-7.	Selecione **Chave de conta** no menu suspenso Tipo de autenticação.
+7.  Selecione **Chave de conta** no menu suspenso Tipo de autenticação.
 
 8.	Copie a **conta de armazenamento Adls e Chave de acesso da guia Variáveis de Ambiente** (ao lado do Guia de Laboratório) e cole-a na **caixa de texto Chave de conta**.
 
-9.	Selecione **Avançar** na parte inferior direita da tela.
+9.  Selecione **Avançar** na parte inferior direita da tela.
  
      ![](../media/lab-03/image012.png)
  
-10.	Você será conectado ao ADLS Gen2 com a estrutura de diretórios exibida no painel esquerdo. Expanda **Delta-Parquet-Format-FY25**.
+10. Você será conectado ao ADLS Gen2 com a estrutura de diretórios exibida no painel esquerdo. Expanda **Delta-Parquet-Format-FY25**.
 
 11.	**Selecione** os seguintes diretórios:
 
