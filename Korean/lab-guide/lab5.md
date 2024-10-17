@@ -315,7 +315,7 @@
 
 15. 첫 번째 매개변수가 될 **varCounter**를 선택합니다.
 
-16.	**3**을 equals 함수의 두 번째 매개변수로 입력합니다. 아래 스크린샷처럼 현재 식은 **@or(equals(variables('varCounter'),3))** 가 됩니다.
+16. **3**을 equals 함수의 두 번째 매개변수로 입력합니다. 아래 스크린샷처럼 현재 식은 **@or(equals(variables('varCounter'),3))** 가 됩니다.
 
     ![](../media/lab-05/image078.png)
 
