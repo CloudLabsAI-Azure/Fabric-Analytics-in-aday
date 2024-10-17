@@ -28,7 +28,7 @@
 
     - Tarefa 9: Como criar um atalho para Dataverse
 
-    - Tarefa 6: Criar um atalho para o Lakehouse
+    - Tarefa 10: Criar um atalho para o Lakehouse
 
 - Referências
 
