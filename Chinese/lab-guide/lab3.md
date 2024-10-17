@@ -527,9 +527,6 @@ https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
     #"Choose columns"
     ```
  
- 
-
- 
 13. 选择**确定**以关闭“高级编辑器”。系统会将您导航回 Power Query 编辑器。
 
 	![](../media/lab-03/image161.jpg) 

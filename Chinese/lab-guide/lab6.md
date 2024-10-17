@@ -2,7 +2,6 @@
 
 ![](../media/lab-06/image000.png) 
 
-
 # 目录
 - 简介	
 - 湖屋 - 分析数据	
@@ -23,7 +22,6 @@
 
 - 在 SQL 分析终结点中使用 SQL 视图
 - 创建语义模型
-
 
 # 湖屋 - 分析数据
 
@@ -54,8 +52,6 @@
     JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
     GROUP BY su.SupplierName
     ```
-	
-
 
 6. 在 SQL 编辑器菜单中单击**运行**以查看结果。
 7. 请注意，有一个选项用于通过选择**另存为视图**来将此查询另存为视图。
