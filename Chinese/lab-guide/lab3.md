@@ -52,7 +52,7 @@
 
 6. 您需要建立與 ADLS Gen2 資料來源的連線。在“連接設定”->“URL”下輸入此連結 `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`
 
-7. 從「驗證類型」下拉清單中選擇「**共用存取簽章 (SAS)**」。
+7. 從「驗證類型」下拉清單中選擇 **「共用存取簽章 (SAS)」**。
 
 8. 從 **環境變數** 標籤（「實驗室指南」標籤旁）複製 **SAS 令牌**，並將其貼上到 **SAS 令牌** 方塊中。
 
