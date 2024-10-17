@@ -164,7 +164,9 @@ A conexão é estabelecida e você pode exibir os dados no painel de visualizaç
 
 9. Veja que a tabela **People** está disponível no Lakehouse.
 
-    **Observação**: se você não vir as tabelas recém-criadas, selecione as reticências ao lado de Tabelas e selecione Atualizar para atualizar as tabelas. Agora ingerimos todos os dados no Lakehouse. No próximo laboratório, agendaremos a atualização do Fluxo de Dados.
+    **Observação**: se você não vir as tabelas recém-criadas, selecione as reticências ao lado de Tabelas e selecione Atualizar para atualizar as tabelas. 
+    
+    Agora ingerimos todos os dados no Lakehouse. No próximo laboratório, agendaremos a atualização do Fluxo de Dados.
 
 ## Tarefa 5: Copiar consultas do Snowflake para o Fluxo de Dados
 
@@ -368,9 +370,9 @@ Você deve estar no Lakehouse **lh_FAIAD**. Verifique se você está na exibiç�
 
 12. Selecione a tabela **Customer** para exibir os dados no painel de visualização.
 
-    Criamos com sucesso um atalho para outro lakehouse.
+Criamos com sucesso um atalho para outro lakehouse.
 
-    No próximo laboratório, vamos configurar atualizações de agendamentos.
+No próximo laboratório, vamos configurar atualizações de agendamentos.
 
 # Referências
 
