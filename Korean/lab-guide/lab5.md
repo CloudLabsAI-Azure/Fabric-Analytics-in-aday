@@ -335,7 +335,11 @@
 
     ![](../media/lab-05/image084.jpg)
 
-23. 식은 다음과 같아야 합니다. **@or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess')))**
+23. 식은 다음과 같아야 합니다.
+
+    ```
+    @or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess'))) 
+    ```
  
 24. **확인**을 선택합니다.
 
@@ -494,14 +498,17 @@
 
 8. 파이프라인 식 작성기 대화상자가 열립니다. 입력
 
-    ```
-    @if(
-    greater(variables(‘varCounter’), 1),
-    if(equals(variables(‘varCounter’), 2), mul(variables(‘varWaitTime’),15 ), mul(variables(‘varWaitTime’), 0)
-    ),
-    mul(variables(‘varWaitTime’),5 )
-    )
-    ``` 
+     ```
+     @if(  
+       greater(variables('varCounter'), 1),  
+       if(  
+        equals(variables('varCounter'), 2),  
+        mul(variables('varWaitTime'), 15),  
+        mul(variables('varWaitTime'), 0)  
+       ),  
+       mul(variables('varWaitTime'), 5)  
+     )
+     ```
 
     이 식을 자유롭게 입력하거나, 메뉴를 사용하여 함수를 선택하거나, 복사하여 붙여넣습니다.
 

@@ -48,10 +48,13 @@
 5. **아래 SQL 쿼리**를 **쿼리 창**에 붙여 넣습니다. 이 쿼리는 Supplier 이름별로 unit을 반환합니다. 이를 달성하기 위해 Sales 테이블을 Product 및 Supplier 테이블과 결합합니다.
 
     ```
-    SELECT su.SupplierName, SUM(Quantity) as Units FROM dbo.Sales s
-    JOIN dbo.Product p on p.StockItemID = s.StockItemID JOIN dbo.Supplier su on su.SupplierID = p.SupplierID GROUP BY    
-    su.SupplierName
+    SELECT su.SupplierName, SUM(Quantity) as Units
+    FROM dbo.Sales s
+    JOIN dbo.Product p on p.StockItemID = s.StockItemID
+    JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+    GROUP BY su.SupplierName
     ```
+
 6. SQL 편집기 메뉴에서 **Run** 을 클릭하여 결과를 확인합니다.
 
 7. **뷰로 저장**을 선택하여 이 쿼리를 뷰로 저장할 수 있는 옵션이 있습니다.

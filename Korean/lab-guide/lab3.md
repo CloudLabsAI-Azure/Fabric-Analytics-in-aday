@@ -450,21 +450,21 @@ InvoiceLineItems 및 Invoices 테이블과 Reseller 보기를 병합하여 Sales
 
     더 쉬운 방법은 고급 편집기에서 모든 코드를 삭제하고 아래 코드를 고급 편집기에 붙여 넣는 것입니다.
 
-```
-let
-  Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
-    #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID",
-"BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
-    #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit",
-"ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
+    ```
+    let
+    Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
+    #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID",
+    "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
+    #"Removed Other Columns" = Table.SelectColumns(#"Expanded Invoice",{"InvoiceLineID", "InvoiceID", "StockItemID", "Quantity", "UnitPrice", "TaxRate", "TaxAmount", "LineProfit", "ExtendedPrice", "CustomerID", "SalespersonPersonID", "InvoiceDate"}),
     #"Renamed Columns" = Table.RenameColumns(#"Removed Other Columns",{{"CustomerID", "ResellerID"}}),
+    
     #"Merged Queries" = Table.NestedJoin(#"Renamed Columns", {"ResellerID"}, Reseller,
-{"ResellerID"}, "Customer", JoinKind.Inner),
+    {"ResellerID"}, "Customer", JoinKind.Inner),
     #"Added Custom" = Table.AddColumn(#"Merged Queries", "Sales Amount", each [ExtendedPrice] - [TaxAmount]),
     #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", type number}}),
     #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"}) in
     #"Removed Columns"
-```
+    ```
 
 26. Power Query 편집기로 다시 이동합니다. 왼쪽의 쿼리 패널에서 쿼리 **병합을 두 번 클릭**하여 쿼리 이름을 바꿉니다.
 
@@ -526,20 +526,19 @@ ProductItem, ProductItemGroup 및 ProductGroups 테이블을 병합하여 생성
 
 12. 아래 코드를 고급 편집기에 **붙여 넣습니다.**
 
-```
-let
-   Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup,
-{"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
-   #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup",
-{"StockGroupID"}, {"StockGroupID"}),
-   #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
-   #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
- 
-   #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice",
-"RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
- in
-  #"Choose columns"
-```
+    ```
+    let
+    Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup, {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
+    #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup",
+    {"StockGroupID"}, {"StockGroupID"}),
+    #"Merged queries" = Table.NestedJoin(#"Expanded ProductItemGroup", {"StockGroupID"}, ProductGroups, {"StockGroupID"}, "ProductGroups", JoinKind.LeftOuter),
+    #"Expanded ProductGroups" = Table.ExpandTableColumn(#"Merged queries", "ProductGroups", {"StockGroupName"}, {"StockGroupName"}),
+    
+    #"Choose columns" = Table.SelectColumns(#"Expanded ProductGroups", {"StockItemID", "StockItemName", "SupplierID", "Size", "IsChillerStock", "TaxRate", "UnitPrice",
+    "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
+    in
+    #"Choose columns"
+    ```
 
 13. **확인**을 선택하여 고급 편집기를 닫습니다. Power Query 편집기로 다시 이동합니다.
 
