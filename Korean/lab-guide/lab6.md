@@ -178,7 +178,7 @@
 
     ![](../media/lab-06/image047.png)
  
-13.	비슷하게, **Sales**와 **Product** 테이블 사이에 **다대일** 관계를 만듭니다. **Sales** 테이블에서 **StockItemID**를 그리고 **Product** 테이블에서 **StockItemID**를 선택합니다.
+13. 비슷하게, **Sales**와 **Product** 테이블 사이에 **다대일** 관계를 만듭니다. **Sales** 테이블에서 **StockItemID**를 그리고 **Product** 테이블에서 **StockItemID**를 선택합니다.
 
     **참고:** 모든 업데이트는 자동으로 저장됩니다.
 
