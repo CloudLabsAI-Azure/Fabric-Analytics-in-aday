@@ -16,7 +16,7 @@
     -  Aufgabe 8: Snowflake-Dataflow umbenennen und veröffentlichen
 - Verknüpfung zu ADLS Gen2
     -  Aufgabe 9: Eine Verknüpfung zu Dataverse erstellen
-    -  Aufgabe 6: Eine Verknüpfung zu Lakehouse erstellen
+    -  Aufgabe 10: Eine Verknüpfung zu Lakehouse erstellen
 - Referenzen
 
 ## Einführung

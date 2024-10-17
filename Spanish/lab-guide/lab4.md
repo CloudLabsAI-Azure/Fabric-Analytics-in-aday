@@ -16,7 +16,7 @@
   - Tarea 8: Cambiar el nombre y publicar el flujo de datos de Snowflake	
 - Acceso directo a ADLS Gen2	
   - Tarea 9: Cómo crear un acceso directo a Dataverse	
-  - Tarea 6: Crear un acceso directo al almacén de lago de datos	
+  - Tarea 10: Crear un acceso directo al almacén de lago de datos	
 - Referencias	
 
 # Presentación 
