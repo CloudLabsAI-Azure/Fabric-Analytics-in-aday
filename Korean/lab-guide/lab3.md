@@ -48,12 +48,15 @@
 
     ![](../media/lab-03/image009.jpg)
 
-6. ADLS Gen2 데이터 원본에 대한 연결을 만들어야 합니다. 연결 설정 ‐> URL에서 다음 링크를 입력합니다. https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
-7. 인증 종류 드롭다운에서 **계정 키**를 선택합니다.
-8. 환경 변수 탭(랩 가이드 탭 옆)의 **Adls** **스토리지 계정 액세스 키**를 복사하여 **계정 키 텍스트 상자**에 붙여 넣습니다.
+6. ADLS Gen2 데이터 소스에 대한 연결을 만들어야 합니다. 연결 설정 -> URL에서 이 링크 `https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales`를 입력합니다.
+
+7. 인증 종류 드롭다운에서 **공유 액세스 서명(SAS)**을 선택합니다.
+
+8. **환경 변수** 탭(랩 가이드 탭 옆)에서 **SAS 토큰**을 복사하여 **SAS 토큰** 상자에 붙여넣습니다.
+
 9. 화면 오른쪽 하단에서 **다음**을 선택합니다.
 
-    ![](../media/lab-03/image012.jpg)
+    ![](../../english/media/lab-03/image012.jpg)
 
 10. 왼쪽 패널에 디렉터리 구조가 표시된 ADLS Gen2에 연결됩니다. **Delta‐Parquet‐Format‐FY25**를 확장합니다.
 
