@@ -52,252 +52,441 @@ O atalho é usado para criar um link com o local de destino. É como criar atalh
 
 4.	Selecione **Novo atalho**.
  
-    ![](../media/lab-03/)
+    ![](../media/lab-03/image006.png)
  
-5.	A caixa de diálogo Novo atalho é aberta. Em Fontes externas, selecione Azure Data Lake Storage Gen2.
+5.	**A caixa de diálogo Novo atalho** é aberta. Em **Fontes externas**, selecione **Azure Data Lake Storage Gen2**.
 
-6.	Você precisa criar uma conexão com a fonte de dados ADLS Gen2. Em Configurações de conexão
--> URL, insira este link https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
-7.	Selecione Chave de conta no menu suspenso Tipo de autenticação.
-8.	Copie a conta de armazenamento Adls e Chave de acesso da guia Variáveis de Ambiente (ao lado do Guia de Laboratório) e cole-a na caixa de texto Chave de conta.
-9.	Selecione Avançar na parte inferior direita da tela.
+    ![](../media/lab-03/image009.png)
+
+6.	Você precisa criar uma conexão com a fonte de dados ADLS Gen2. Em **Configurações de conexão
+-> URL**, insira este link https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
+
+7.	Selecione **Chave de conta** no menu suspenso Tipo de autenticação.
+
+8.	Copie a **conta de armazenamento Adls e Chave de acesso da guia Variáveis de Ambiente** (ao lado do Guia de Laboratório) e cole-a na **caixa de texto Chave de conta**.
+
+9.	Selecione **Avançar** na parte inferior direita da tela.
  
+     ![](../media/lab-03/image012.png)
  
-10.	Você será conectado ao ADLS Gen2 com a estrutura de diretórios exibida no painel esquerdo. Expanda Delta-Parquet-Format-FY25.
-11.	Selecione os seguintes diretórios:
-a.	Application.Cities
-b.	Application.Countries
-c.	Application.StateProvinces
-d.	DateDim
-e.	Sales.BuyingGroups
-f.	Sales.Customers
-g.	Sales.Invoices
-h.	Sales.InvoiceLines
-i.	Warehouse.StockItems
-j.	Warehouse.StockGroups
-k.	Warehouse.StockItemStockGroups
-Observação: Sales.Invoices_May é o único diretório que não está selecionado.
-12.	Selecione Avançar.
+10.	Você será conectado ao ADLS Gen2 com a estrutura de diretórios exibida no painel esquerdo. Expanda **Delta-Parquet-Format-FY25**.
+
+11.	**Selecione** os seguintes diretórios:
+
+    a.	Application.Cities
+
+    b.	Application.Countries
+
+    c.	Application.StateProvinces
+
+    d.	DateDim
+
+    e.	Sales.BuyingGroups
+
+    f.	Sales.Customers
+
+    g.	Sales.Invoices
+
+    h.	Sales.InvoiceLines
+
+    i.	Warehouse.StockItems
+
+    j.	Warehouse.StockGroups
+
+    k.	Warehouse.StockItemStockGroups
+
+**Observação:** Sales.Invoices_May é o único diretório que não está selecionado.
+
+12.	Selecione **Avançar**.
  
+     ![](../media/lab-03/image015.png)
  
-13.	Você irá para a próxima caixa de diálogo para editar os nomes. Selecione o ícone Editar, em Ações, para Application.Cities.
-14.	Renomeie Application.Cities para Cities.
+13.	Você irá para a próxima caixa de diálogo para editar os nomes. Selecione o **ícone Editar**, em Ações, para **Application.Cities**.
+
+14.	Renomeie **Application.Cities para Cities**.
+
 15.	Selecione a marca de seleção ao lado do nome para salvar a alteração.
 
+    ![](../media/lab-03/image018.png)
+
 16.	Da mesma forma, renomeie os nomes de atalhos como abaixo:
-a.	Application.Countries para Countries
-b.	Application.StateProvinces para States
-c.	DateDim para Date
-d.	Sales.BuyingGroups para BuyingGroups
-e.	Sales.Customers para Customers
+
+    a.	Application.Countries para **Countries**    
+
+    b.	Application.StateProvinces para **States**
+
+    c.	DateDim para **Date**
+    
+    d.	Sales.BuyingGroups para **BuyingGroups**
+
+    e.	Sales.Customers para **Customers**
+    
+    f.	Sales.InvoiceLines para **InvoiceLineItems**
+
+    g.	Sales.Invoices para **Invoices**
+
+    h.	Warehouse.StockGroups para **ProductGroups**
+
+    i.	Warehouse.StockItemStockGroups para **ProductItemGroup**
+
+    j.	Warehouse.StockItems para **ProductItem**
+
+    **Observação**: confira novamente os nomes. Um erro de digitação pode causar erros durante o laboratório.
+
+17.	Selecione **Criar** para criar o atalho.
+
+    ![](../media/lab-03/image021.png)
+
+18.	Observe que todos os atalhos são criados como tabelas. Selecione a tabela **BuyingGroups** e observe que podemos ver uma prévia dos dados no painel de dados.
+
+    ![](../media/lab-03/image024.png)
+
+    A próxima etapa é transformar os dados, para que possamos criar um modelo semântico. Vamos criar exibições para transformar os dados.
  
-f.	Sales.InvoiceLines para InvoiceLineItems
-g.	Sales.Invoices para Invoices
-h.	Warehouse.StockGroups para ProductGroups
-i.	Warehouse.StockItemStockGroups para ProductItemGroup
-j.	Warehouse.StockItems para ProductItem
-Observação: confira novamente os nomes. Um erro de digitação pode causar erros durante o laboratório.
-17.	Selecione Criar para criar o atalho.
+# Transformar dados usando uma consulta Visual
 
-18.	Observe que todos os atalhos são criados como tabelas. Selecione a tabela BuyingGroups e observe que podemos ver uma prévia dos dados no painel de dados.
+## Tarefa 2: Criar exibição Geo usando uma consulta Visual
 
-A próxima etapa é transformar os dados, para que possamos criar um modelo semântico. Vamos criar exibições para transformar os dados.
- 
-Transformar dados usando uma consulta Visual
-Tarefa 2: Criar exibição Geo usando uma consulta Visual
-1.	Podemos acessar o lakehouse usando um ponto de extremidade SQL. Isso possibilita consultar os dados e criar exibições. No canto superior direito da tela, selecione Lakehouse -> ponto de
-extremidade do SQL Analytics.
+1.	Podemos acessar o lakehouse usando um ponto de extremidade SQL. Isso possibilita consultar os dados e criar exibições. No **canto superior direito** da tela, selecione **Lakehouse -> ponto de
+extremidade do SQL Analytics**.
 
-Você irá para o ponto de extremidade de análise SQL. Observe que o painel Explorer foi alterado.
+    ![](../media/lab-03/image027.png)
+
+    Você irá para o ponto de extremidade de análise SQL. Observe que o painel Explorer foi alterado.
 Agora você pode criar exibições, procedimentos armazenados, consultas e muito mais. Vamos criar uma consulta visual, pois ela fornece uma interface semelhante à do Power Query, e salvá-la como uma exibição.
-Começaremos criando a exibição Geo. Precisamos mesclar dados da consulta Cities, States e Countries para criar a exibição Geo.
-2.	No menu superior, selecione Nova consulta visual.
+
+    Começaremos criando a exibição Geo. Precisamos mesclar dados da consulta Cities, States e Countries para criar a exibição Geo.
+
+2.	No menu superior, selecione **Nova consulta visual**.
+
+    ![](../media/lab-03/image030.png)
 
 3.	Precisamos arrastar tabelas para o painel Consulta visual para criar uma consulta. Vamos arrastar a consulta Cities, States e Countries para o painel de consulta visual.
  
+     ![](../media/lab-03/image033.png)
  
 Precisamos mesclar essas consultas. E a consulta visual vem com a opção de usar o Editor do Power Query. Vamos usar isso, já que estamos familiarizados.
-4.	No menu do Editor de consultas visuais, selecione o ícone Modo de foco (para a direita). Você irá para o Editor do Power Query.
+
+4.	No menu do Editor de consultas visuais, selecione o ícone **Modo de foco** (para a direita). Você irá para o Editor do Power Query.
+
+    ![](../media/lab-03/image036.png)
 
 5.	Com a consulta Cities selecionada, na faixa de opções do Editor do Power Query, selecione
-Página Inicial - > Mesclar consultas -> Mesclar consultas como novas. A caixa de diálogo Mesclar consultas é aberta.
+**Página Inicial - > Mesclar consultas -> Mesclar consultas como novas**. A caixa de diálogo Mesclar consultas é aberta.
  
+     ![](../media/lab-03/image039.png)
  
-6.	Na tabela à esquerda para mesclar, selecione Cities.
-7.	Na tabela à direita para mesclar, selecione States.
-8.	Selecione as colunas StateProvinceID das duas tabelas. Vamos usar esta coluna.
-9.	Selecione Interna como o tipo de União.
-10.	Selecione OK.
+6.	Na tabela **à esquerda para mesclar**, selecione **Cities**.
+
+7.	Na tabela **à direita para mesclar**, selecione **States**.
+
+8.	Selecione as colunas **StateProvinceID** das duas tabelas. Vamos usar esta coluna.
+
+9.	Selecione **Interna** como o **tipo de União**.
+
+10.	Selecione **OK**.
+
+    ![](../media/lab-03/image042.png)
 
 Observe que uma nova consulta chamada Merge foi criada. Precisamos de algumas colunas de States.
-11.	Na exibição Dados (painel inferior), clique na seta dupla ao lado da coluna States (última coluna à direita).
+
+11.	Na **exibição Dados** (painel inferior), clique na **seta dupla** ao lado da coluna **States** (última coluna à direita).
  
-12.	Um painel é aberto. Selecione as colunas a seguir:
-a.	StateProvinceCode
-b.	StateProvinceName
-c.	CountryID
-d.	SalesTerritory
-13.	Selecione OK.
+12.	Um painel é aberto. **Selecione** as colunas a seguir:
+
+    a.	StateProvinceCode
+
+    b.	StateProvinceName
+
+    c.	CountryID
+
+    d.	SalesTerritory
+
+13.	Selecione **OK**.
+
+    ![](../media/lab-03/image045.png)
 
 Precisamos mesclar a consulta Countries agora.
-14.	Com a consulta Merge selecionada, selecione Página Inicial - > Mesclar consultas na faixa de opções.
 
-15.	A caixa de diálogo Mesclar é aberta. Na tabela à direita para mesclar, selecione Countries.
-16.	Selecione as colunas CountryID das duas tabelas. Vamos usar esta coluna.
-17.	Selecione Interna como o tipo de União.
-18.	Selecione OK.
+14.	Com a consulta Merge selecionada, selecione **Página Inicial - > Mesclar consultas** na faixa de opções.
+
+    ![](../media/lab-03/image048.png)
+
+15.	A caixa de diálogo Mesclar é aberta. Na tabela à **direita para mesclar**, selecione **Countries**.
+
+16.	Selecione as colunas **CountryID** das duas tabelas. Vamos usar esta coluna.
+
+17.	Selecione **Interna** como o **tipo de União**.
+
+18.	Selecione **OK**.
  
+    ![](../media/lab-03/image051.png)
  
 Precisamos de algumas colunas de Countries.
-19.	Na exibição Dados (painel inferior), clique na seta dupla ao lado da coluna Countries.
-20.	Um painel é aberto. Selecione as colunas a seguir:
-a.	CountryName
-b.	FormalName
-c.	IsoAlpha3Code
-d.	IsoNumericCode
-e.	CountryType
-f.	Continent
-g.	Region
-h.	Subregion
-21.	Selecione OK.
 
-Não precisamos de todas as colunas. Vamos selecionar apenas aquelas de que precisamos.
-22.	Com a consulta Merge selecionada, selecione Página Inicial - > Escolher colunas -> Escolher colunas na faixa de opções.
- 
- 
+19.	Na **exibição Dados** (painel inferior), clique na **seta dupla** ao lado da coluna **Countries**.
 
-23.	A caixa de diálogo Escolher colunas é aberta. Desmarque as colunas a seguir.
-a.	StateProvinceID
-b.	Location
-c.	LastEditedBy
-d.	ValidFrom
-e.	ValidTo
-f.	CountryID
-24.	Selecione OK.
+20.	Um painel é aberto. **Selecione** as colunas a seguir:
+
+    a.	CountryName
+
+    b.	FormalName
+
+    c.	IsoAlpha3Code
+
+    d.	IsoNumericCode
+
+    e.	CountryType
+
+    f.	Continent
+
+    g.	Region
+
+    h.	Subregion
+
+21.	Selecione **OK**.
+
+    ![](../media/lab-03/image054.png)
+
+    Não precisamos de todas as colunas. Vamos selecionar apenas aquelas de que precisamos.
+
+22.	Com a consulta Merge selecionada, selecione **Página Inicial - > Escolher colunas -> Escolher colunas** na faixa de opções.
+ 
+    ![](../media/lab-03/image057.png)
+
+23.	A caixa de diálogo Escolher colunas é aberta. **Desmarque** as colunas a seguir.
+
+    a.	StateProvinceID
+
+    b.	Location
+
+    c.	LastEditedBy
+
+    d.	ValidFrom
+
+    e.	ValidTo
+
+    f.	CountryID
+
+24.	Selecione **OK**.
+
+    ![](../media/lab-03/image060.png)
 
 Observe que o processo é como o Power Query. Temos todas as etapas gravadas tanto no painel Etapas Aplicadas à direita quanto na exibição visual. Vamos renomear a consulta Merge e Habilitar carga, para que os dados sejam carregados a partir dessa consulta.
-25.	Clique com o botão direito do mouse na consulta Merge no painel Consultas (à esquerda). Selecione Renomear e renomeie a consulta para Geo.
+
+25.	**Clique com o botão direito do mouse na consulta Merge** no painel Consultas (à esquerda). Selecione **Renomear** e renomeie a consulta para **Geo**.
  
-26.	Clique com o botão direito do mouse na consulta Geo no painel Consultas (à esquerda). Selecione Habilitar carga para habilitar essa consulta.
-27.	Verifique se as consultas Cities, States e Countries estão desabilitadas.
-28.	Selecione Salvar.
+26.	**Clique com o botão direito do mouse na consulta Geo** no painel Consultas (à esquerda). Selecione **Habilitar carga** para habilitar essa consulta.
+
+27.	Verifique se as consultas Cities, States e Countries estão **desabilitadas**.
+
+28.	Selecione **Salvar**.
+
+    ![](../media/lab-03/image063.png)
 
 Navegaremos até o Editor de consulta de visual. Agora vamos salvar essa consulta como uma exibição.
-Observação: todas as etapas que executamos usando o Editor do Power Query podem ser executadas usando o editor de consulta Visual também.
-29.	No menu Editor de consultas Visual, selecione Salvar como exibição.
+
+**Observação:** todas as etapas que executamos usando o Editor do Power Query podem ser executadas usando o editor de consulta Visual também.
+
+29.	No menu Editor de consultas Visual, selecione **Salvar como exibição**.
+
+    ![](../media/lab-03/image066.png)
 
 A caixa de diálogo Salvar como exibição é aberta. Observe que a consulta SQL está disponível. Você pode revê-la, se quiser.
-30.	Insira Geo como Nome da exibição.
-31.	Selecione OK para salvar a exibição.
+
+30.	Insira **Geo** como **Nome da exibição**.
+
+31.	Selecione **OK** para salvar a exibição.
  
+     ![](../media/lab-03/image069.png)
  
 Você receberá um alerta assim que a exibição for salva.
-32.	No painel Explorer (à esquerda), expanda Exibições. Temos a exibição recém-criada Geo.
 
- 
-Tarefa 3: Criar exibição Reseller usando uma consulta Visual
+32.	No painel Explorer (à esquerda), expanda **Exibições**. Temos a exibição recém-criada Geo.
+
+     ![](../media/lab-03/image072.png)
+
+## Tarefa 3: Criar exibição Reseller usando uma consulta Visual
+
 Vamos criar a exibição Reseller, mesclando a tabela Customers com a tabela BuyingGroups. Desta vez, criaremos a exibição usando a consulta Visual.
-1.	Na barra de menu Lakehouse, selecione Página Inicial -> Nova consulta visual. Uma nova consulta de visual é aberta.
+
+1.	Na barra de menu Lakehouse, selecione **Página Inicial -> Nova consulta visual**. Uma nova consulta de visual é aberta.
+
 2.	Na seção Explorer, arraste as tabelas Customers e BuyingGroups para a seção de consulta de visual.
 
-3.	Selecione a consulta Customers. Quando selecionada, Customers terá uma borda azul e um sinal de "+" depois da Tabela (isso indica que estamos adicionando uma etapa depois da Tabela. Se você não vir o sinal de "+" após a tabela, talvez tenha selecionado uma etapa diferente.
+    ![](../media/lab-03/image075.png)
+
+3.	**Selecione a consulta Customers**. Quando selecionada, Customers terá uma borda azul e um sinal de "+" depois da Tabela (isso indica que estamos adicionando uma etapa depois da Tabela. Se você não vir o sinal de "+" após a tabela, talvez tenha selecionado uma etapa diferente.
 Selecione Tabela e pronto).
-4.	No menu Consulta de Visual, selecione Combinar -> Mesclar consultas.
+
+4.	No menu Consulta de Visual, selecione **Combinar -> Mesclar consultas**.
+
+    ![](../media/lab-03/image078.png)
 
 A caixa de diálogo Mesclar é aberta com Customers selecionada como a tabela superior.
-5.	Na tabela à direita para mesclar, selecione BuyingGroups.
-6.	Selecione as colunas BuyingGroupID das duas tabelas. Vamos usar esta coluna.
-7.	Selecione Interna como o tipo de União.
-8.	Selecione OK.
+
+5.	Na tabela **à direita para mesclar**, selecione **BuyingGroups**.
+
+6.	Selecione as colunas **BuyingGroupID** das duas tabelas. Vamos usar esta coluna.
+
+7.	Selecione **Interna** como o **tipo de União**.
+
+8.	Selecione **OK**.
  
+     ![](../media/lab-03/image081.png)
  
-9.	Na exibição Dados (painel inferior), clique na seta dupla ao lado da coluna BuyingGroups (última coluna à direita) para selecionar as colunas que precisamos de BuyingGroups.
-10.	Um painel é aberto. Selecione a coluna BuyingGroupName .
-11.	Selecione OK.
+9.	Na **exibição Dados** (painel inferior), clique na **seta dupla** ao lado da coluna **BuyingGroups** (última coluna à direita) para selecionar as colunas que precisamos de BuyingGroups.
+
+10.	Um painel é aberto. **Selecione a coluna BuyingGroupName** .
+
+11.	Selecione **OK**.
+
+    ![](../media/lab-03/image084.png)
 
 Não precisamos de todas as colunas. Vamos selecionar apenas aquelas de que precisamos.
-12.	No menu de consulta de Visual, selecione Gerenciar colunas -> Escolher colunas.
- 
- 
 
-13.	A caixa de diálogo Escolher colunas é aberta. Selecione as colunas a seguir.
-a.	ResellerID
-b.	ResellerName
-c.	PostalCityID
-d.	PhoneNumber
-e.	FaxNumber
-f.	WebsiteURL
-g.	DeliveryAddressLine1
-h.	DeliveryAddressLine2
-i.	DeliveryPostalCode
-j.	PostalAddressLine1
-k.	PostalAddressLine2
-l.	PostalPostalCode
-m.	BuyingGroupName
-14.	Selecione OK.
-
-15.	Vamos renomear a coluna BuyingGroupName. Na exibição Dados, clique duas vezes no cabeçalho da coluna BuyingGroupName para torná-lo editável.
-16.	Renomeie a coluna como ResellerCompany.
+12.	No menu de consulta de Visual, selecione **Gerenciar colunas -> Escolher colunas**.
  
+     ![](../media/lab-03/image087.png)
+
+13.	A caixa de diálogo Escolher colunas é aberta. **Selecione** as colunas a seguir.
+
+    a.	ResellerID
+
+    b.	ResellerName
+
+    c.	PostalCityID
+
+    d.	PhoneNumber
+
+    e.	FaxNumber
+
+    f.	WebsiteURL
+
+    g.	DeliveryAddressLine1
+
+    h.	DeliveryAddressLine2
+
+    i.	DeliveryPostalCode
+
+    j.	PostalAddressLine1
+
+    k.	PostalAddressLine2
+
+    l.	PostalPostalCode
+
+    m.	BuyingGroupName
+
+14.	Selecione **OK**.
+
+    ![](../media/lab-03/image090.png)
+
+15.	Vamos renomear a coluna BuyingGroupName. Na **exibição Dados, clique duas vezes no cabeçalho da coluna BuyingGroupName** para torná-lo editável.
+
+16.	**Renomeie** a coluna como **ResellerCompany**.
+ 
+     ![](../media/lab-03/image093.png)
  
 Observe que a tabela Customer tem todas as etapas documentadas. Vamos salvar esta exibição.
-17.	No menu de consultas Visual, selecione Salvar como exibição.
+
+17.	No menu de consultas Visual, selecione **Salvar como exibição**.
+
+    ![](../media/lab-03/image096.png)
 
 A caixa de diálogo Salvar como exibição é aberta. Observe que a consulta SQL está disponível. Você pode revê-la, se quiser.
-18.	Insira Reseller como Nome da exibição.
-19.	Selecione OK para salvar a exibição.
+
+18.	Insira **Reseller** como **Nome da exibição**.
+19.	Selecione **OK** para salvar a exibição.
+
+    ![](../media/lab-03/image099.png)
 
 Você receberá um alerta assim que a exibição for salva.
-20.	No painel Explorer (à esquerda), expanda Exibições. Temos a exibição recém-criada Reseller.
+
+20.	No painel Explorer (à esquerda), expanda **Exibições**. Temos a exibição recém-criada Reseller.
  
+     ![](../media/lab-03/image102.png)
  
-Tarefa 4: Criar a exibição Sales usando uma consulta Visual
+## Tarefa 4: Criar a exibição Sales usando uma consulta Visual
+
 Vamos criar a exibição Sales, mesclando a tabela InvoiceLineItems and Invoices e a exibição Reseller. Temos essa consulta no Power BI Desktop. Vamos copiar o código do Editor Avançado. Mas antes de copiar o código, precisamos criar uma tabela de mesclagem usando a consulta Visual, pois a criação de uma consulta em branco não é possível na consulta Visual. Vamos testar esse método.
-1.	Na barra de menu Lakehouse, selecione Página Inicial -> Nova consulta visual. Uma nova consulta de visual é aberta.
-2.	Na seção Explorer -> Tabela, arraste as tabelas InvoiceLineItems, Invoices para a seção de consulta Visual
-3.	Na seção Explorer -> Exibições, arraste a exibição Reseller para a seção de consulta Visual
-4.	No Editor de consulta Visual, selecione o ícone Modo de foco para abrir o Editor do Power Query.
- 
- 
-5.	Com a consulta InvoiceLineItems selecionada, na faixa de opções, selecione Página Inicial - > Mesclar consultas -> Mesclar consultas como novas.
 
-A caixa de diálogo Mesclar é aberta.
-6.	Na tabela à esquerda para mesclar, selecione InvoiceLineItems.
-7.	Na tabela à direita para mesclar, selecione Invoices.
-8.	Selecione as colunas InvoiceID das duas tabelas. Vamos usar esta coluna.
-9.	Selecione Interna como o tipo de União.
-10.	Selecione OK.
- 
- 
-Vamos copiar o código do Power BI Desktop e colá-lo usando o Editor Avançado.
-11.	Se você ainda não tiver aberto, abra o arquivo FAIAD.pbix que está na pasta Reports na área de trabalho do seu ambiente de laboratório.
-12.	Na faixa de opções, selecione Página Inicial -> Transformar dados. A janela do Power Query é aberta. Como você observou no laboratório anterior, as consultas no painel esquerdo são organizadas por fonte de dados.
+1.	Na barra de menu Lakehouse, selecione **Página Inicial -> Nova consulta visual**. Uma nova consulta de visual é aberta.
 
-13.	No painel esquerdo, na pasta ADLSData, selecione a consulta Sales.
-14.	Na faixa de opções, selecione Página Inicial -> Editor Avançado. A caixa de diálogo Editor Avançado é aberta.
- 
- 
-15.	Selecione código da Linha 3 (#"Expanded Invoice"...) até a última linha de código.
-16.	Clique com o botão direito do mouse e selecione Copiar.
-17.	Selecione Cancelar para fechar o Editor Avançado.
+2.	Na seção **Explorer -> Tabela**, arraste as tabelas **InvoiceLineItems, Invoices** para a seção de consulta Visual
 
-18.	Volte a acessar o navegador onde o Editor do Power Query está aberto.
-19.	Verifique se você tem a consulta Merge selecionada.
-20.	Na faixa de opções, selecione Página Inicial -> Editor Avançado. A caixa de diálogo Editor Avançado é aberta.
+3.	Na seção **Explorer -> Exibições**, arraste a exibição **Reseller** para a seção de consulta Visual
+
+4.	No Editor de consulta Visual, selecione o **ícone Modo de foco** para abrir o Editor do Power Query.
  
+      ![](../media/lab-03/image105.png)
+
+5.	Com a consulta InvoiceLineItems selecionada, na faixa de opções, selecione **Página Inicial - > Mesclar consultas -> Mesclar consultas como novas**.
+
+     ![](../media/lab-03/image108.png)
+
+    A caixa de diálogo Mesclar é aberta.
+
+6.	Na tabela **à esquerda para mesclar**, selecione **InvoiceLineItems**.
+
+7.	Na tabela **à direita para mesclar**, selecione **Invoices**.
+
+8.	Selecione as colunas **InvoiceID** das duas tabelas. Vamos usar esta coluna.
+
+9.	Selecione **Interna** como o **tipo de União**.
+
+10.	Selecione **OK**.
  
-21.	No final da linha 2, adicione uma vírgula (Source = Table.NestedJoin(InvoiceLineItems,
+      ![](../media/lab-03/image111.png)
+ 
+    Vamos copiar o código do Power BI Desktop e colá-lo usando o Editor Avançado.
+
+11.	Se você ainda não tiver aberto, abra o arquivo **FAIAD.pbix** que está na pasta **Reports** na área de trabalho do seu ambiente de laboratório.
+
+12.	Na faixa de opções, selecione **Página Inicial -> Transformar dados**. A janela do Power Query é aberta. Como você observou no laboratório anterior, as consultas no painel esquerdo são organizadas por fonte de dados.
+
+     ![](../media/lab-03/image114.png)
+
+13.	No painel esquerdo, na pasta ADLSData, selecione a consulta **Sales**.
+
+14.	Na faixa de opções, selecione **Página Inicial -> Editor Avançado**. A caixa de diálogo Editor Avançado é aberta.
+ 
+      ![](../media/lab-03/image117.png)
+ 
+15.	**Selecione código da Linha 3** (#"Expanded Invoice"...) até a última linha de código.
+
+16.	**Clique com o botão direito do mouse** e selecione **Copiar**.
+
+17.	Selecione **Cancelar** para fechar o Editor Avançado.
+
+     ![](../media/lab-03/image120.png)
+
+18.	**Volte a acessar o navegador** onde o Editor do Power Query está aberto.
+
+19.	Verifique se você tem a consulta **Merge** selecionada.
+
+20.	Na faixa de opções, selecione **Página Inicial -> Editor Avançado**. A caixa de diálogo Editor Avançado é aberta.
+ 
+      ![](../media/lab-03/image123.png)
+ 
+21.	No **final da linha 2, adicione uma vírgula** (Source = Table.NestedJoin(InvoiceLineItems,
 {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner)
-22.	Pressione Enter para começar uma nova linha.
-23.	Digite Ctrl+V no teclado para colar o código copiado do Power BI Desktop.
-Observação: se você estiver trabalhando no ambiente de laboratório, selecione as reticências no canto superior direito da tela. Use o controle deslizante para habilitar VM Native Clipboard.
-Selecione OK na caixa de diálogo. Depois que terminar de colar as consultas, você poderá desabilitar essa opção.
 
-24.	Realce as duas últimas linhas de código (na Origem) e exclua-o.
-25.	Selecione OK para salvar as alterações.
+22.	Pressione **Enter** para começar uma nova linha.
+23.	Digite **Ctrl+V** no teclado para colar o código copiado do Power BI Desktop.
+
+    **Observação:** se você estiver trabalhando no ambiente de laboratório, selecione as reticências no canto superior direito da tela. Use o controle deslizante para habilitar VM Native Clipboard.
+    Selecione OK na caixa de diálogo. Depois que terminar de colar as consultas, você poderá desabilitar essa opção.
+
+     ![](../media/lab-03/image126.png)
+
+24.	Realce as duas últimas linhas de código (na Origem) e **exclua-o**.
+
+25.	Selecione **OK** para salvar as alterações.
  
+      ![](../media/lab-03/image129.png)
  
 Se for mais fácil, exclua todo o código no Editor Avançado e cole o código abaixo no Editor Avançado.
+```
 let
  Source = Table.NestedJoin(InvoiceLineItems, {"InvoiceID"}, Invoices, {"InvoiceID"}, "Invoices", JoinKind.Inner),
  #"Expanded Invoice" = Table.ExpandTableColumn(Source, "Invoices", {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}, {"CustomerID", "BillToCustomerID", "SalespersonPersonID", "InvoiceDate"}),
@@ -309,43 +498,70 @@ let
  #"Changed Type" = Table.TransformColumnTypes(#"Added Custom",{{"Sales Amount", type number}}),
  #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Customer"}) in
   #"Removed Columns"
+```
 
+26.	Você voltará para o Editor do Power Query. À esquerda, no painel Consultas, **clique duas vezes na consulta Merge** para renomeá-la.
 
-26.	Você voltará para o Editor do Power Query. À esquerda, no painel Consultas, clique duas vezes na consulta Merge para renomeá-la.
-27.	Renomeie a consulta Merge para Sales.
-28.	Clique com o botão direito do mouse na consulta Sales e selecione Habilitar carga para permitir que a consulta seja carregada.
- 
- 
-29.	Selecione Salvar para salvar e fechar a caixa de diálogo Power Query. Você será direcionado à consulta Visual.
-30.	No menu de consultas Visual, selecione Salvar como exibição. A caixa de diálogo Salvar como exibição é aberta. Observe que a consulta SQL está disponível. Você pode revê-la, se quiser.
-31.	Insira Sales como Nome da exibição.
-32.	Selecione OK para salvar a exibição.
+27.	**Renomeie** a consulta Merge para **Sales**.
 
-Você receberá um alerta assim que a exibição for salva.
-33.	No painel Explorer (à esquerda), expanda Exibições. Temos a exibição recém-criada Sales.
+28.	Clique com o botão direito do mouse na consulta Sales e selecione **Habilitar carga** para permitir que a consulta seja carregada.
  
+      ![](../media/lab-03/image132.png)
  
+29.	Selecione **Salvar** para salvar e fechar a caixa de diálogo Power Query. Você será direcionado à consulta Visual.
 
-Tarefa 5: Criar exibição Product usando uma consulta Visual
+30.	No menu de consultas Visual, selecione **Salvar como exibição**. A caixa de diálogo Salvar como exibição é aberta. Observe que a consulta SQL está disponível. Você pode revê-la, se quiser.
+
+31.	Insira **Sales** como **Nome da exibição**.
+
+32.	Selecione **OK** para salvar a exibição.
+
+     ![](../media/lab-03/image135.png)
+
+    Você receberá um alerta assim que a exibição for salva.
+
+33.	No painel Explorer (à esquerda), expanda **Exibições**. Temos a exibição recém-criada Sales.
+ 
+      ![](../media/lab-03/image138.png)
+
+## Tarefa 5: Criar exibição Product usando uma consulta Visual
+
 Vamos criar a exibição Product, mesclando as tabelas ProductItem, ProductItemGroup e ProductGroups. Para continuar, vamos copiar o código no Editor Avançado.
-1.	Na barra de menu Lakehouse, selecione Página Inicial -> Nova consulta visual. Uma nova consulta de visual é aberta.
-2.	Na seção Explorer, arraste as tabelas ProductItem, ProductItemGroup e ProductGroups para a seção de consulta Visual
-3.	No Editor de consulta Visual, selecione o ícone Modo de foco para abrir o Editor do Power Query.
 
+1.	Na barra de menu Lakehouse, selecione **Página Inicial -> Nova consulta visual**. Uma nova consulta de visual é aberta.
+
+2.	Na seção Explorer, arraste as tabelas **ProductItem, ProductItemGroup e ProductGroups** para a seção de consulta Visual
+
+3.	No Editor de consulta Visual, selecione o **ícone Modo de foco** para abrir o Editor do Power Query.
+
+     ![](../media/lab-03/image141.png)
  
-4.	Com a consulta ProductItem selecionada, na faixa de opções, selecione Página Inicial - > Mesclar consultas -> Mesclar consultas como novas. A caixa de diálogo Mesclar é aberta.
+4.	Com a consulta **ProductItem** selecionada, na faixa de opções, selecione **Página Inicial - > Mesclar consultas -> Mesclar consultas como novas**. A caixa de diálogo Mesclar é aberta.
 
-5.	Na tabela à esquerda para mesclar, selecione ProductItem.
-6.	Na tabela à direita para mesclar, selecione ProductItemGroup.
-7.	Selecione as colunas StockItemID das duas tabelas. Vamos usar esta coluna.
-8.	Selecione Externa esquerda como Tipo de junção.
-9.	Selecione OK. Uma nova consulta Merge é criada.
+     ![](../media/lab-03/image144.png)
 
-10.	Com a consulta Merge selecionada, selecione Página Inicial - > Editor Avançado na faixa de opções. A caixa de diálogo Editor Avançado é aberta.
+5.	Na tabela **à esquerda para mesclar**, selecione **ProductItem**.
 
- 
-11.	Selecione todo o código no Editor Avançado e exclua-o.
-12.	Cole o código abaixo no Editor Avançado. let
+6.	Na tabela **à direita para mesclar**, selecione **ProductItemGroup**.
+
+7.	Selecione as colunas **StockItemID** das duas tabelas. Vamos usar esta coluna.
+
+8.	Selecione **Externa esquerda** como **Tipo de junção**.
+
+9.	Selecione **OK**. Uma nova consulta Merge é criada.
+
+     ![](../media/lab-03/image147.png)
+
+10.	Com a consulta Merge selecionada, selecione **Página Inicial - > Editor Avançado** na faixa de opções. A caixa de diálogo Editor Avançado é aberta.
+
+      ![](../media/lab-03/image150.png)
+
+11.	**Selecione todo o código** no Editor Avançado e **exclua-o**.
+
+12.	**Cole** o código abaixo no Editor Avançado. 
+
+```
+let
  Source = Table.NestedJoin(ProductItem, {"StockItemID"}, ProductItemGroup,
 {"StockItemID"}, "ProductItemGroup", JoinKind.LeftOuter),
  #"Expanded ProductItemGroup" = Table.ExpandTableColumn(Source, "ProductItemGroup",
@@ -356,24 +572,40 @@ Vamos criar a exibição Product, mesclando as tabelas ProductItem, ProductItemG
 "RecommendedRetailPrice", "TypicalWeightPerUnit", "StockGroupName"})
  in
  #"Choose columns"
-13.	Selecione OK para fechar o Editor Avançado. Você voltará para o Editor do Power Query.
+ ```
 
-14.	À esquerda, no painel Consultas, clique duas vezes na consulta Merge para renomeá-la.
-15.	Renomeie a consulta Merge para Product.
-16.	Clique com o botão direito do mouse na consulta Product e selecione Habilitar carga para permitir que a consulta seja carregada.
-17.	Selecione Salvar para salvar e fechar a caixa de diálogo Power Query. Você será direcionado à consulta Visual.
- 
- 
-18.	No menu de consultas Visual, selecione Salvar como exibição. A caixa de diálogo Salvar como exibição é aberta. Observe que a consulta SQL está disponível. Você pode revê-la, se quiser.
-19.	Insira Product como Nome da exibição.
-20.	Selecione OK para salvar a exibição.
+13.	Selecione **OK** para fechar o Editor Avançado. Você voltará para o Editor do Power Query.
 
-Você receberá um alerta assim que a exibição for salva.
-21.	No painel Explorer (à esquerda), expanda Exibições. Temos a exibição recém-criada Product.
+     ![](../media/lab-03/image153.png)
+
+14.	À esquerda, no painel Consultas, **clique duas vezes na consulta Merge** para renomeá-la.
+
+15.	**Renomeie** a consulta Merge para **Product**.
+
+16.	Clique com o botão direito do mouse na consulta Product e selecione **Habilitar carga** para permitir que a consulta seja carregada.
+
+17.	Selecione **Salvar** para salvar e fechar a caixa de diálogo Power Query. Você será direcionado à consulta Visual.
  
+      ![](../media/lab-03/image156.png)
  
-Transformamos os dados da fonte de dados ADLS Gen2. Neste laboratório, aprendemos a criar atalhos e exploramos várias opções para usar modos de exibição de consulta visual para transformar dados.
-No próximo laboratório, aprenderemos a usar o Fluxo de Dados Gen2 e criar o Atalho para outro Lakehouse.
+18.	No menu de consultas Visual, selecione **Salvar como exibição**. A caixa de diálogo Salvar como exibição é aberta. Observe que a consulta SQL está disponível. Você pode revê-la, se quiser.
+
+19.	Insira **Product** como **Nome da exibição**.
+
+20.	Selecione **OK** para salvar a exibição.
+
+     ![](../media/lab-03/image159.png)
+
+    Você receberá um alerta assim que a exibição for salva.
+
+21.	No painel Explorer (à esquerda), expanda **Exibições**. Temos a exibição recém-criada Product.
+ 
+      ![](../media/lab-03/image162.png)
+ 
+    Transformamos os dados da fonte de dados ADLS Gen2. Neste laboratório, aprendemos a criar atalhos e exploramos várias opções para usar modos de exibição de consulta visual para transformar dados.
+
+    No próximo laboratório, aprenderemos a usar o Fluxo de Dados Gen2 e criar o Atalho para outro Lakehouse.
+    
 Referências
 O Fabric Analyst in a Day (FAIAD) apresenta algumas das principais funções disponíveis no Microsoft Fabric. No menu do serviço, a seção Ajuda (?) tem links para ótimos recursos.
 
