@@ -47,46 +47,42 @@ transformações complexas.
 
 Você ouviu falar do Microsoft Fabric e decidiu tentar ver se ele resolverá seus desafios.
 
-
 # Visão geral do relatório do Power BI Desktop
 
 Antes de começarmos com o Fabric, vamos dar uma olhada no Relatório atual no Power BI Desktop para entender as transformações e o modelo.
 
 ## Tarefa 1: Configurar o Power BI Desktop no ambiente de laboratório
 
-1.	Abra o arquivo **FAIAD.pbix** que está na pasta **Reports** na **área de trabalho** do seu ambiente de laboratório. O arquivo será aberto no Power BI Desktop.
+1. Abra o arquivo **FAIAD.pbix** que está na pasta **Reports** na **área de trabalho** do seu ambiente de laboratório. O arquivo será aberto no Power BI Desktop.
 
     ![](../media/lab-01/image009.jpg)
  
-2.	Insira seu endereço de email na caixa de diálogo aberta. Navegue até a guia **Environment Details**
+2. Insira seu endereço de email na caixa de diálogo aberta. Navegue até a guia **Environment Details**
 no painel direito do ambiente de laboratório.
 
-3.	Copie os dados de **Username** e cole na caixa de texto Email da caixa de diálogo.
+3. Copie os dados de **Username** e cole na caixa de texto Email da caixa de diálogo.
 
-4.	Selecione **Continue**.
+4. Selecione **Continue**.
 
     ![](../media/lab-01/image012.png)
 
-5.	A caixa de diálogo Sign in é aberta. Insira novamente os dados de **Username** copiando-os da guia
-**Environment Details**.
+5. A caixa de diálogo Sign in é aberta. Insira novamente os dados de **Username** copiando-os da guia **Environment Details**.
 
-6.	Selecione **Next**.
+6. Selecione **Next**.
 
-7.	Na próxima caixa de diálogo, insira os dados de **Password Credentials** copiando-os da guia
-**Environment Details**.
+7. Na próxima caixa de diálogo, insira os dados de **Password Credentials** copiando-os da guia **Environment Details**.
 
-8.	Selecione **Sign in**.
+8. Selecione **Sign in**.
 
     ![](../media/lab-01/image015.jpg)
  
-9.	A caixa de diálogo **Manter-se conectado a todos os seus aplicativos** é aberta. Selecione **OK**.
+9. A caixa de diálogo **Manter-se conectado a todos os seus aplicativos** é aberta. Selecione **OK**.
 
     ![](../media/lab-01/image018.jpg)
 
-10.	A caixa de diálogo **Tudo pronto!** é aberta. Selecione **Concluído**. 
+10. A caixa de diálogo **Tudo pronto!** é aberta. Selecione **Concluído**. 
 
     O Power BI Desktop será aberto.
-
 
 ## Tarefa 2: Analisar relatório do Power BI Desktop
 
