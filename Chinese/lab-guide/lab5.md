@@ -247,9 +247,7 @@ varCounter 变量。
 
     ![](../media/lab-05/image066.png)      
 
-
-    我们需要编写一个表达式，该表达式的执行截止条件为值 **varCounter 为 3** 或者值 **varIsSuccess
-    为“Yes”。**（varCounter 和varIsSuccess 是我们刚刚创建的变量。）
+    我们需要编写一个表达式，该表达式的执行截止条件为值 **varCounter 为 3** 或者值 **varIsSuccess 为“Yes”。**（varCounter 和varIsSuccess 是我们刚刚创建的变量。）
 
 8. **管道表达式生成器**对话框随即打开。在对话框的下半部分将会显示一个菜单：
 
@@ -283,11 +281,9 @@ varCounter 是否等于 3。
 13. 现在将光标置于 **@equals** 函数的**括号之间**以添加参数。
 14. 在底部菜单中选择**变量。**
 15. 选择 **varCounter** 变量作为第一个参数。
-16. 输入 **3** 作为 equals 函数的第二个参数。您的表达式将为
-**@or(equals(variables('varCounter'),3))，** 类似于下面的屏幕截图所示
+16. 输入 **3** 作为 equals 函数的第二个参数。您的表达式将为 **@or(equals(variables('varCounter'),3))，** 类似于下面的屏幕截图所示
 
-    ![](../media/lab-05/image078.jpg)      
-
+    ![](../media/lab-05/image078.jpg)
  
 17. 我们需要将第二个参数添加到or 函数中。在结尾的两个括号之间**添加逗号。** 这次我们将尝试输入函数名称。首先输入 **equ，** 您将看到可用函数的下拉列表（称为IntelliSense）。选择 **equals** 函数。
 
@@ -302,16 +298,15 @@ varSuccess 的值进行比较。（varSuccess 默认为“Yes”。）
 
     ![](../media/lab-05/image084.jpg)      
 
-23.	您的表达式应该是：
+23. 您的表达式应该是：
 
-     ```
-     @or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess'))) 
-     ```
+    ```
+    @or(equals(variables('varCounter'),3),equals(variables('varIsSuccess'), variables('varSuccess'))) 
+    ```
  
 24. 选择**确定。**
 
-    ![](../media/lab-05/image087.jpg)      
-
+    ![](../media/lab-05/image087.jpg)
 
 ## 任务 8：配置数据流活动
 1. 您将导航回到设计屏幕。选择***截止活动**后，从 **底部窗格** 中选择 **活动。** 我们现在将添加需要 执行的活动。
@@ -331,8 +326,7 @@ varSuccess 的值进行比较。（varSuccess 默认为“Yes”。）
 8. 确保将**工作区**设置为您的工作区  **FAIAD_\<username>。**
 9. 从**数据流下拉列表**中，选择 **df_People_SharePoint。** 执行此数据流活动时，它将刷新 **df_People_SharePoint。**
 
-    ![](../media/lab-05/image096.jpg)      
-
+    ![](../media/lab-05/image096.jpg)
 
 ## 任务 9：配置第 1 个设置变量活动
 像之前在实验中所做的那样，我们已经配置了数据流活动。我们再来添加一个新逻辑。如果数 据流刷新成功，我们需要存在于截止迭代程序之外。请注意，迭代程序存在的条件之一是将varIsSuccess 变量的值设置为“Yes”。
@@ -352,15 +346,14 @@ varSuccess 的值进行比较。（varSuccess 默认为“Yes”。）
 
     d. **蓝色直箭头**图标表示活动已完成。
 
-5. 点击dfactivity_People_SharePoint 数据流活动中的**绿色复选标记，** 并拖动以连接到新的
-**set_varIsSuccess 设置变量活动。**因此，在数据流刷新成功后，我们要执行“设置变量”活动。
+5. 点击dfactivity_People_SharePoint 数据流活动中的**绿色复选标记，** 并拖动以连接到新的 **set_varIsSuccess 设置变量活动。**因此，在数据流刷新成功后，我们要执行“设置变量”活动。
 
     ![](../media/lab-05/image099.png)      
 
 6. 选择**设置变量活动**后，点击底部菜单中的设置。
 7. 在底部窗格中，确保**变量类型**为**管道变量。**
 8. 在**名称**字段中，选择  **varIsSucces。** 这是我们要设置其值的变量。
-9.	在**值**字段中，选择**文本框。** 选择**添加动态内容**链接。
+9. 在**值**字段中，选择**文本框。** 选择**添加动态内容**链接。
  
     ![](../media/lab-05/image102.png)       
 
@@ -388,12 +381,9 @@ varSuccess 的值进行比较。（varSuccess 默认为“Yes”。）
 9. 在**值**字段中，选择**文本框。** 选择**添加动态内容**链接。
 10.	管道表达式生成器对话框随即打开。输入 **@add(variables('varCounter'),1)**
 
-    **注意：** 自由输入此表达式，使用菜单选择函数，或者复制并粘贴它。该函数将变量
-varTempCounter 的值设置为变量varCounter 的值加 1，(varTempCounter = varCounter + 1)。
+    **注意：** 自由输入此表达式，使用菜单选择函数，或者复制并粘贴它。该函数将变量 varTempCounter 的值设置为变量varCounter 的值加 1，(varTempCounter = varCounter + 1)。
 
-    ![](../media/lab-05/image111.jpg)      
- 
- 
+    ![](../media/lab-05/image111.jpg)
 
     现在我们需要将varCounter 变量的值设置为varTempCounter 的值。
 
@@ -403,12 +393,10 @@ varTempCounter 的值设置为变量varCounter 的值加 1，(varTempCounter = v
 2. 选择**设置变量活动**后，在底部窗格中选择**常规。** 我们为活动指定名称和说明。
 3. 在**名称**字段中，输入 **set_varCounter**
 4. 在**说明**字段中，输入 **Increment variable varCounter。**
-5. 点击 set_varTempCounter  设置变量活动中的**绿色复选标记，** 并拖动以连接到新的
-**set_varCounter 设置变量活动。**
+5. 点击 set_varTempCounter  设置变量活动中的**绿色复选标记，** 并拖动以连接到新的 **set_varCounter 设置变量活动。**
 
     ![](../media/lab-05/image114.jpg)      
 
- 
 6. 选择 **set_varCounter 设置变量活动**后，点击底部菜单中的**设置。**
 7. 在底部窗格中，确保**变量类型**为**管道变量。**
 8. 在**名称**字段中，选择  **varCounter。** 这是我们要设置其值的变量。
