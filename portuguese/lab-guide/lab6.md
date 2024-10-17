@@ -48,21 +48,23 @@ Ao final deste laboratório, você terá aprendido:
 
     ![](../media/lab-06/image005.jpg)
 
-Se desejar explorar os dados antes de criar um modelo de dados, você poderá usar SQL para fazer isso. Há duas opções para usar o SQL. A primeira opção é a consulta visual, que usamos no laboratório anterior. A opção 2 é escrever código TSQL. É uma opção conveniente para desenvolvedores. Vamos explorar isso. 
+    Se desejar explorar os dados antes de criar um modelo de dados, você poderá usar SQL para fazer isso. Há duas opções para usar o SQL. A primeira opção é a consulta visual, que usamos no laboratório anterior. A opção 2 é escrever código TSQL. É uma opção conveniente para desenvolvedores. Vamos explorar isso. 
 
-Vamos supor que você queira descobrir rapidamente as Units vendidas por Fornecedor usando SQL.No lakehouse, ponto de extremidade da análise SQL, observe que no painel esquerdo você pode exibir as Tabelas. Se você expandir as tabelas, poderá visualizar as Colunas que compõem a tabela. Além disso, existem opções para criar Visualizações, Funções e Procedimentos Armazenados de SQL. Se você tiver experiência em SQL, fique à vontade para explorar essas opções. Vamos tentar escrever uma consulta SQL simples.
+    Vamos supor que você queira descobrir rapidamente as Units vendidas por Fornecedor usando SQL.No lakehouse, ponto de extremidade da análise SQL, observe que no painel esquerdo você pode exibir as Tabelas. Se você expandir as tabelas, poderá visualizar as Colunas que compõem a tabela. Além disso, existem opções para criar Visualizações, Funções e Procedimentos Armazenados de SQL. Se você tiver experiência em SQL, fique à vontade para explorar essas opções. Vamos tentar escrever uma consulta SQL simples.
 
 4. No **menu superior** selecione **Nova consulta SQL** ou na **parte inferior o painel esquerdo**, selecione **Consulta**. Você será direcionado à visualização da consulta SQL.
 
-    ![](../media/lab-06/image)
+    ![](../media/lab-06/image008.jpg)
 
 5. Cole a **consulta SQL abaixo** na **janela de consultas**. Essa consulta retornará as unidades por Nome do Fornecedor. Para conseguir isso, una tabela Sales com as tabelas Product e Supplier.
 
-SELECT su.SupplierName, SUM(Quantity) as Units
-FROM dbo.Sales s
-JOIN dbo.Product p on p.StockItemID = s.StockItemID
-JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
-GROUP BY su.SupplierName
+    ```
+    SELECT su.SupplierName, SUM(Quantity) as Units
+    FROM dbo.Sales s
+    JOIN dbo.Product p on p.StockItemID = s.StockItemID
+    JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+    GROUP BY su.SupplierName
+    ```
 
 6. Clique em **Executar** no menu do editor SQL para exibir os resultados.
 
@@ -84,7 +86,7 @@ GROUP BY su.SupplierName
 
 3. A caixa de diálogo **Visualizar resultados** é aberta. Selecione **Continuar**.
 
-**A caixa de diálogo** Visualizar resultados é aberta e se parece com a exibição de relatório do Power BI Desktop. Ela tem todos os recursos disponíveis na exibição de relatório do Power BI Desktop. Você pode formatar a página, selecionar diferentes visuais, formatar visuais, adicionar filtros etc. Não vamos explorar essas opções neste curso.
+    **A caixa de diálogo** Visualizar resultados é aberta e se parece com a exibição de relatório do Power BI Desktop. Ela tem todos os recursos disponíveis na exibição de relatório do Power BI Desktop. Você pode formatar a página, selecionar diferentes visuais, formatar visuais, adicionar filtros etc. Não vamos explorar essas opções neste curso.
 
 4. Expanda o painel **Dados** e expanda **Consulta SQL 1**.
 
@@ -106,7 +108,7 @@ GROUP BY su.SupplierName
 
     ![](../media/lab-06/image023.png)
 
-    Você será direcionado de volta à tela da consulta SQL.
+Você será direcionado de volta à tela da consulta SQL.
 
 # Lakehouse – Modelagem semântica
 
@@ -116,9 +118,7 @@ GROUP BY su.SupplierName
 
     ![](../media/lab-06/image026.jpg)
 
-Esse é o modelo padrão que o lakehouse cria. No entanto, há algumas limitações com o modelo 
-padrão (como capacidade de formatar medidas etc). Além disso, precisamos apenas de um 
-subconjunto das tabelas em nosso modelo. Então vamos criar um novo modelo semântico.
+    Esse é o modelo padrão que o lakehouse cria. No entanto, há algumas limitações com o modelo padrão (como capacidade de formatar medidas etc). Além disso, precisamos apenas de um subconjunto das tabelas em nosso modelo. Então vamos criar um novo modelo semântico.
 
 2. No menu, no canto superior direito, **selecione a seta ao lado do ponto de extremidade da análise SQL**.
 
@@ -162,9 +162,9 @@ subconjunto das tabelas em nosso modelo. Então vamos criar um novo modelo semâ
 
 Você navegará até o novo modelo semântico com as tabelas selecionadas. Você pode **reorganizar** as tabelas conforme necessário. Observe que algumas tabelas (Geo, Reseller, Sales e Product) têm um sinal de aviso no canto superior direito da tabela. Isso porque são exibições. Todos os elementos visuais criados com campos dessas exibições estarão no modo Direct Query e não no modo Direct Lake. 
 
-    **Observação**: o modo Direct Lake é mais rápido do que o modo Direct Query. 
+**Observação**: o modo Direct Lake é mais rápido do que o modo Direct Query. 
 
-    ![](../media/lab-06/image038.jpg)
+![](../media/lab-06/image038.jpg)
 
 A primeira etapa é criar relacionamentos entre essas tabelas.
 
@@ -206,7 +206,7 @@ A primeira etapa é criar relacionamentos entre essas tabelas.
 
     ![](../media/lab-06/image050.jpg)
 
-Por uma questão de tempo, não criaremos todos os relacionamentos. Se o tempo permitir, você poderá concluir a seção opcional no fim do laboratório. A seção opcional percorre as etapas para criar os relacionamentos restantes.
+    Por uma questão de tempo, não criaremos todos os relacionamentos. Se o tempo permitir, você poderá concluir a seção opcional no fim do laboratório. A seção opcional percorre as etapas para criar os relacionamentos restantes.
 
 ## Tarefa 5: Criar medidas
 
@@ -266,9 +266,9 @@ Vamos adicionar algumas medidas necessárias para criar o dashboard Sales.
 
     ![](../media/lab-06/image062.png)
 
-Novamente, por uma questão de tempo, não criaremos todas as medidas. Se o tempo permitir, você poderá concluir a seção opcional no fim do laboratório. A seção opcional percorre as etapas para criar as medidas restantes.
+    Novamente, por uma questão de tempo, não criaremos todas as medidas. Se o tempo permitir, você poderá concluir a seção opcional no fim do laboratório. A seção opcional percorre as etapas para criar as medidas restantes.
 
-Criamos um modelo semântico. A próxima etapa é criar um relatório. Faremos isso no próximo laboratório.
+    Criamos um modelo semântico. A próxima etapa é criar um relatório. Faremos isso no próximo laboratório.
 
 ## Tarefa 6: Seção Opcional – Criar relacionamentos
 
@@ -372,6 +372,7 @@ Vamos adicionar as medidas restantes.
     ![](../media/lab-06/image083.jpg)
 
 8. Siga as etapas semelhantes para adicionar as seguintes medidas:
+
     a. Na tabela **Sales , GM = SUM(Sales[LineProfit])** está formatada como **Moeda com 0 casas decimais**.
     
     b. Na tabela **Sales , GM% = DIVIDE([GM], [Sales])** está formatada como **Porcentagem com 0 casas decimais**.
