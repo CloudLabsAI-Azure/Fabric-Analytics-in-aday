@@ -68,33 +68,33 @@ Vamos começar configurando uma atualização agendada do Fluxo de dados Supplie
 
 2. Para maximizar o painel com a lista de artefatos, selecione a seta dupla no canto superior direito do painel.
 
-    ![]()
+    ![](../media/lab-05/image006.jpg)
 
 3. Todos os artefatos que você criou estão listados aqui. No lado direito da tela, na **Caixa de pesquisa**, insira **df**. Isso filtrará os artefatos para Fluxos de dados.
 
-    ![]()
+    ![](../media/lab-05/image009.jpg)
 
 4. Passe o mouse sobre a linha **df_Supplier_Snowflake**. Observe que os conhecidos ícones **Atualizar** e **Agendar Atualização** estão disponíveis. Selecione as **reticências(…)**.
 
 5. Observe que há opção para Excluir, Editar e Exportar o Fluxo de dados. Podemos usar Propriedades para atualizar o nome e a descrição do Fluxo de dados. Veremos o histórico de atualização em breve. Selecione **Configurações**.
 
-    ![]()
+    ![](../media/lab-05/image012.jpg)
 
     **Observação**: A página Configurações é aberta. No painel esquerdo, você encontrará todos os Fluxos de Dados listados.
 
 6. No painel central, selecione o link **Histórico de atualização**
 
-    ![]()
+    ![](../media/lab-05/image015.jpg)
 
 7. Você terá uma atualização listada. Esta é a atualização que ocorreu quando o fluxo de dados foi publicado. Selecione o link **Hora de início**.
 
     **Observação**: A hora de início será diferente para você.
 
-    ![]()
+    ![](../media/lab-05/image018.jpg)
 
     A tela Detalhes será aberta. Ela fornecerá detalhes da atualização, listando o horário de início, de término e a duração. Ela também lista as tabelas/atividades que foram atualizadas. Caso haja uma falha, você pode clicar no nome da tabela/atividade para investigar mais detalhadamente.
 
-    ![]()
+    ![](../media/lab-05/image021.jpg)
 
 8. Vamos sair, clicando no **X** no canto superior direito. Você será direcionado de volta para a **página de configurações do fluxo de dados**.
 
@@ -104,13 +104,13 @@ Vamos começar configurando uma atualização agendada do Fluxo de dados Supplie
     
     b. **Snowflake**: esta é a conexão com os dados de origem do Snowflake.
 
-    ![]()
+    ![](../media/lab-05/image024.jpg)
 
 10. Expanda **Atualizar**.
 
 11. Defina o controle deslizante **Configurar um agendamento de atualização** como **Ativado**.
 
-    ![]()
+    ![](../media/lab-05/image027.jpg)
 
 12. Defina a **lista suspensa Atualizar frequência** como **Diariamente**. Observe que há uma opção para defini-la como Semanalmente também.
 
@@ -126,7 +126,7 @@ Vamos começar configurando uma atualização agendada do Fluxo de dados Supplie
 
     **Observação**: Ao clicar no link Adicionar outra hora, você pode adicionar vários horários de atualização. Você também pode enviar notificações de falha para o proprietário do fluxo de dados e outros contatos.
 
-    ![]()
+    ![](../media/lab-05/image030.png)
 
 Conforme mencionado anteriormente, precisamos criar uma lógica personalizada para lidar com o cenário em que o arquivo Employee no SharePoint não é entregue no prazo. Vamos usar o Pipeline de dados para resolver isso.
 
@@ -138,7 +138,7 @@ Conforme mencionado anteriormente, precisamos criar uma lógica personalizada pa
 
 2. A caixa de diálogo do Microsoft Fabric será aberta. Selecione **Data Factory**. Você será direcionado à Página Inicial do Data Factory.
 
-    ![]()
+    ![](../media/lab-05/image030.png)
 
 3. No painel superior, selecione **Pipeline de dados** para criar um novo pipeline.
 
@@ -147,19 +147,19 @@ Conforme mencionado anteriormente, precisamos criar uma lógica personalizada pa
 
 5. Selecione **Criar**.
 
-    ![]()
+    ![](../media/lab-05/image033.jpg)
 
     Você é direcionado para a **página Pipeline de dados**. Se você trabalhou com o Azure Data Factory, esta tela será familiar. Vamos obter uma visão geral rápida do layout.
 
     Você está na tela **Página Inicial**. Se você olhar o menu superior, encontrará opções para adicionar as atividades comumente usadas: validar e executar um pipeline e visualizar o histórico de execuções. Além disso, no painel central, você encontrará opções rápidas para começar a criar o pipeline.
 
-    ![]()
+    ![](../media/lab-05/image036.jpg)
 
 6. No menu superior, selecione **Atividades**. Agora, no menu, você encontrará uma lista de atividades comumente usadas. 
 
 7. Selecione as **reticências (…)** à direita no menu para ver todas as outras atividades disponíveis. Usaremos algumas destas atividades no laboratório.
 
-    ![]()
+    ![](../media/lab-05/image039.jpg)
 
 8. No menu superior, clique em **Executar**. Você encontrará opções para executar e agendar a execução do pipeline. Você também encontrará a opção de visualizar o histórico de execuções usando Exibir histórico de execuções.
 
@@ -167,7 +167,7 @@ Conforme mencionado anteriormente, precisamos criar uma lógica personalizada pa
 
     **Observação**: Se você tiver um histórico de JSON, no fim do laboratório, fique à vontade para selecionar Exibir código JSON. Aqui você observará que toda a orquestração que está fazendo usando a visualização de design também pode ser escrita em JSON. 
 
-    ![]()
+    ![](../media/lab-05/image042.png)
 
 ## Tarefa 3: Criar Pipeline de dados simples
 
@@ -183,7 +183,7 @@ Vamos começar a criar o pipeline. Precisamos de uma atividade para atualizar o 
 
     Em nosso cenário, os Dados de Employee não são atualizados na agenda. Às vezes, há um atraso. Vamos ver se podemos acomodar isso.
 
-    ![]()
+    ![](../media/lab-05/image045.png)
 
 5. No **painel inferior**, selecione **Geral**. Vamos atribuir um nome e uma descrição à atividade.
 
@@ -205,7 +205,7 @@ Vamos começar a criar o pipeline. Precisamos de uma atividade para atualizar o 
 
 13. No menu, selecione **Página Inicial -> Salvar** para salvar o pipeline.
 
-    ![]()
+    ![](../media/lab-05/image048.png)
 
 Observe a vantagem de usar o pipeline de dados em comparação com a configuração do fluxo de dados na atualização agendada (como fizemos para os fluxos de dados anteriores):
 
@@ -226,7 +226,7 @@ Vamos adicionar um pouco mais de complexidade ao nosso cenário. Observamos que,
 
 4. Selecione **Criar**.
 
-    ![]()
+    ![](../media/lab-05/image051.jpg)
 
 ## Tarefa 5: Criar atividade Until
 
@@ -240,7 +240,7 @@ Vamos adicionar um pouco mais de complexidade ao nosso cenário. Observamos que,
 
     Em nosso cenário, vamos iterar e atualizar o fluxo de dados até que seja bem-sucedido ou tentamos três vezes.
 
-    ![]()
+    ![](../media/lab-05/image054.jpg)
 
 ## Tarefa 6: Criar variáveis
 
@@ -258,7 +258,7 @@ Vamos adicionar um pouco mais de complexidade ao nosso cenário. Observamos que,
 
     **Observação**: estamos acrescentando var aos nomes das variáveis, por isso é fácil encontrá-las e é uma boa prática.
 
-    ![]()
+    ![](../media/lab-05/image057.png)
 
 7. Selecione **Novo** para adicionar outra nova variável.
 
@@ -278,7 +278,7 @@ Vamos adicionar um pouco mais de complexidade ao nosso cenário. Observamos que,
 
     **Observação**: certifique-se de que não haja espaço antes ou depois do nome da variável.
 
-    ![]()
+    ![](../media/lab-05/image060.png)
 
 ## Tarefa 7: Configurar atividade Until
 
@@ -290,7 +290,7 @@ Vamos adicionar um pouco mais de complexidade ao nosso cenário. Observamos que,
 
 4. Insira **Descrição** como **Iterator to refresh dataflow. It will retry up to 3 times**. 
 
-    ![]()
+    ![](../media/lab-05/image063.png)
 
 5. No painel inferior, selecione **Configurações**.
 
@@ -299,7 +299,7 @@ atividade Until é interrompida.
 
 7. Selecione o link **Adicionar conteúdo dinâmico** que aparece abaixo da caixa de texto.
 
-    ![]()
+    ![](../media/lab-05/image066.png)
 
 Precisamos escrever uma expressão que seja executada até que o valor de **varCounter seja 3** ou o valor **de varIsSuccess seja Sim**.(varCounter e varIsSuccess são as variáveis que acabamos de criar.)
 
@@ -315,13 +315,13 @@ Precisamos escrever uma expressão que seja executada até que o valor de **varC
 
     e. **Variáveis**: variáveis de pipeline são valores que podem ser definidos e modificados durante a execução de um pipeline. Ao contrário dos parâmetros do pipeline, que são definidos no nível do pipeline e não podem ser alterados durante a execução de pipeline, as variáveis do pipeline podem ser definidas e modificadas dentro de um pipeline usando uma atividade Definir Variável. Usaremos a atividade Definir Variável em breve.
 
-    ![]()
+    ![](../media/lab-05/image069.jpg)
 
 9. Clique em **Funções** no menu inferior.
 
 10. Na seção **Funções Lógicas**, selecione a **função or**. O aviso **@or()** é adicionado à caixa de texto da expressão dinâmica. A função "or" tem dois parâmetros. Estamos trabalhando no primeiro parâmetro.
 
-    ![]()
+    ![](../media/lab-05/image072.png)
 
 11. Coloque o cursor **entre os parênteses** da função **@or**.
 
@@ -329,7 +329,7 @@ Precisamos escrever uma expressão que seja executada até que o valor de **varC
 
     **Observação**: Sua função deve ser semelhante a **@or(equals())**. A função equals também aceita dois parâmetros. Estaremos verificando se a variável varCounter é igual a 3.
 
-    ![]()
+    ![](../media/lab-05/image075.jpg)
 
 13. Agora, coloque o cursor **entre os parênteses** da função **@equals** para adicionar os parâmetros.
 
@@ -339,11 +339,11 @@ Precisamos escrever uma expressão que seja executada até que o valor de **varC
 
 16. Insira **3** como o segundo parâmetro da função equals. Como na captura de tela abaixo, sua expressão será **@or(equals(variables('varCounter'),3))**. 
 
-    ![]()
+    ![](../media/lab-05/image078.jpg)
 
 17. Precisamos adicionar o segundo parâmetro à função "or". **Adicione uma vírgula** entre os dois parênteses finais. Desta vez, tentaremos digitar o nome da função. Comece a digitar **equ** e você verá uma lista suspensa das funções disponíveis (isso é chamado de IntelliSense). Selecione a função **equals**.
 
-    ![]()
+    ![](../media/lab-05/image081.jpg)
 
 18. O primeiro parâmetro da função equals é uma variável. Coloque o **cursor antes da vírgula**.
 
@@ -355,7 +355,7 @@ Precisamos escrever uma expressão que seja executada até que o valor de **varC
 
 22. Com a ajuda do IntelliSense, selecione **variables('varSuccess')**. Aqui estamos comparando o valor de varIsSuccess com o valor de varSuccess (Sim é o valor por padrão de varSuccess).
 
-    ![]()
+    ![](../media/lab-05/image084.jpg)
 
 23. Sua expressão deve ser:
 
@@ -365,7 +365,7 @@ Precisamos escrever uma expressão que seja executada até que o valor de **varC
 
 24. Selecione OK.
 
-    ![]()
+    ![](../media/lab-05/image087.png)
 
 ## Tarefa 8: Configurar atividade Dataflow
 
@@ -373,7 +373,7 @@ Precisamos escrever uma expressão que seja executada até que o valor de **varC
 
 2. Selecione o **ícone de Editar** na primeira linha. Você será direcionado para uma tela de design de iterador em branco.
 
-    ![]()
+    ![](../media/lab-05/image090.png)
 
 3. No menu superior, selecione **Atividades -> Fluxo de dados**. A atividade Fluxo de dados é adicionada ao painel de design.
 
@@ -383,7 +383,7 @@ Precisamos escrever uma expressão que seja executada até que o valor de **varC
 
 6. No campo **Descrição**, insira **Dataflow activity to refresh df_People_Sharepoint dataflow**.
 
-    ![]()
+    ![](../media/lab-05/image093.jpg)
 
 7. Selecione **Configurações** no painel inferior.
 
@@ -391,7 +391,7 @@ Precisamos escrever uma expressão que seja executada até que o valor de **varC
 
 9. Na lista suspensa **Fluxo de dados**, selecione **df_People_SharePoint**. Quando esta atividade Fluxo de dados for executada, ela atualizará **df_People_SharePoint**.
 
-    ![]()
+    ![](../media/lab-05/image096.jpg)
 
 ## Tarefa 9: Configurar 1ª atividade Set variable
 
@@ -418,7 +418,7 @@ o valor da variável varIsSuccess como Sim.
 
 5. Clique na **marca de seleção verde** da atividade de Fluxo de dados dfactivity_People_SharePoint e arraste para se conectar à nova **atividade Definir variável set_varIsSuccess**. Portanto, se a atualização do fluxo de dados for bem-sucedida, queremos executar a atividade Definir variável.
 
-    ![]()
+    ![](../media/lab-05/image099.png)
 
 6. Com a **atividade Definir variável** selecionada, clique em **Configurações** no menu inferior.
 
@@ -428,7 +428,7 @@ o valor da variável varIsSuccess como Sim.
 
 9. No campo **Valor**, selecione a **caixa de texto**. Selecione o link **Adicionar conteúdo dinâmico**.
 
-    ![]()
+    ![](../media/lab-05/image102.png)
 
 10. A caixa de diálogo Construtor de expressão de pipeline é aberta. Selecione a área de texto **Adicionar conteúdo dinâmico abaixo usando qualquer combinação de expressão, funções e variáveis do sistema**.
 
@@ -436,7 +436,7 @@ o valor da variável varIsSuccess como Sim.
 
 12. Selecione **OK**. Você será direcionado de volta ao **painel de design do iterador**.
 
-    ![]()
+    ![](../media/lab-05/image105.png)
 
 Agora, precisamos definir o contador se a atividade do fluxo de dados falhar. No Pipeline de dados, não podemos ter autorreferência de uma variável. O que significa que não podemos incrementar a variável do contador varCounter adicionando um ao seu valor (varCounter = varCounter + 1). Então, usamos a variável varTempCounter.
 
@@ -452,7 +452,7 @@ Agora, precisamos definir o contador se a atividade do fluxo de dados falhar. No
 
 5. Clique na **marca x vermelha** da atividade Fluxo de dados para a nova atividade Definir variável. Portanto, se a atualização do fluxo de dados falhar, queremos executar a atividade Definir variável.
 
-    ![]()
+    ![](../media/lab-05/image108.png)
 
 6. Com a **atividade Definir variável** selecionada, escolha **Configurações** no menu inferior.
 
@@ -466,7 +466,7 @@ Agora, precisamos definir o contador se a atividade do fluxo de dados falhar. No
 
     **Observação**: Sinta-se à vontade para digitar esta expressão, usar o menu para selecionar as funções ou copiá-la e colá-la. Esta função define o valor da variável varTempCounter como o valor da variável varCounter mais um, (varTempCounter = varCounter + 1).
 
-    ![]()
+    ![](../media/lab-05/image111.jpg)
 
 Agora, precisamos definir o valor da variável varCounter como o valor de varTempCounter. 
 
@@ -483,7 +483,7 @@ Agora, precisamos definir o valor da variável varCounter como o valor de varTem
 
 5. Clique na **marca de seleção verde** da atividade Definir variável set_varTempCounter e arraste para se conectar à nova **atividade Definir variável set_varCounter**. 
 
-    ![]()
+    ![](../media/lab-05/image114.png)
 
 6. Com a **atividade Definir variável set_varCounter** selecionada, clique em **Configurações** no menu inferior.
 
@@ -497,7 +497,7 @@ Agora, precisamos definir o valor da variável varCounter como o valor de varTem
 
     **Observação**: Esta função define o valor da variável varCounter como o valor da variável varTempCounter (varCounter = varTempCounter). No final de cada iteração, varCounter e varTempCounter têm o mesmo valor.
 
-    ![]()
+    ![](../media/lab-05/image117.jpg)
 
 ## Tarefa 12: Configurar atividade Wait
 
@@ -513,7 +513,7 @@ Em seguida, precisamos esperar 5 minutos/300 segundos se a atualização do flux
 
 5. Clique na **marca de seleção verde** da atividade Definir variável set_varCounter e arraste para se conectar à nova **atividade Wait wait_onFailure**. 
 
-    ![]()
+    ![](../media/lab-05/image120.jpg)
 
 6. Com a **atividade Wait** selecionada, clique em **Configurações** no menu inferior.
 
@@ -534,7 +534,7 @@ Em seguida, precisamos esperar 5 minutos/300 segundos se a atualização do flux
 
     Sinta-se à vontade para digitar esta expressão, usar o menu para selecionar as funções ou copiá-la e colá-la.
 
-    ![]()
+    ![](../media/lab-05/image123.jpg)
 
     Estamos usando duas novas funções aqui:
 
@@ -548,16 +548,16 @@ A expressão é uma instrução if aninhada. Ela está verificando se o valor da
 
     **Ponto de verificação**: O iterador Until deve ser semelhante à captura de tela abaixo.
 
-    ![]()
+    ![](../media/lab-05/image126.jpg)
 
 10. Na parte superior esquerda da tela de design, selecione
 **pl_Refresh_People_Sharepoint_Option2** para sair do iterador Until. 
 
-    ![]()
+    ![](../media/lab-05/image129.jpg)
 
 11. Terminamos de criar o pipeline de dados. No menu superior, selecione **Página Inicial -> ícone de Salvar** para salvar o pipeline de dados.
 
-    ![]()
+    ![](../media/lab-05/image132.png)
 
 ## Tarefa 13: Configurar atualização de agenda para o Pipeline de dados
 
@@ -585,7 +585,7 @@ A expressão é uma instrução if aninhada. Ela está verificando se o valor da
 
 10. Selecione a marca **X** na parte superior direita da caixa de diálogo para fechá-la.
 
-    ![]()
+    ![](../media/lab-05/image135.jpg)
 
 11. Selecione seu workspace do Fabric **FAIAD_\<nome de usuário>** no painel esquerdo para navegar até o workspace.
 
