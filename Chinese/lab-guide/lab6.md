@@ -90,7 +90,7 @@
    ![](../media/lab-06/image020.jpg)   
 
 8. “保存报表”对话框随即打开。在**为报表输入名称**文本框中，键入 **Units by Supplier。**
-9. 确保目标工作区是您的 Fabric 工作区 **FAIAD<username>**
+9. 确保目标工作区是您的 Fabric 工作区 **FAIAD_\<username>。**
  
 10. 选择**保存。**
 
