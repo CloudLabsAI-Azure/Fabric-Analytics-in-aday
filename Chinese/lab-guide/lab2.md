@@ -3,25 +3,21 @@
 ![](../media/lab-02/image000.png) 
  
 # 目录
-- 简介	
-
+- 简介
 - Fabric 许可证	
-
-    - 任务 1：启用Microsoft Fabric 试用许可证
-
+   - 任务 1：启用Microsoft Fabric 试用许可证
 - Fabric 体验概述	
-    - 任务 2：Data Factory 体验	
-    - 任务 3：Data Activator 体验	
-    - 任务 4：Industry Solutions 体验	
-    - 任务 5：Real-Time Intelligence 体验	
-    - 任务 6：Synapse Data Engineering 体验	
-    - 任务 7：Synapse Data Science 体验	
-    - 任务 8：Synapse Data Warehouse 体验	
+   - 任务 2：Data Factory 体验	
+   - 任务 3：Data Activator 体验	
+   - 任务 4：Industry Solutions 体验	
+   - 任务 5：Real-Time Intelligence 体验	
+   - 任务 6：Synapse Data Engineering 体验	
+   - 任务 7：Synapse Data Science 体验	
+   - 任务 8：Synapse Data Warehouse 体验	
 - Fabric 工作区	
-    - 任务 9：创建Fabric 工作区	
-    - 任务 10：创建 Lakehouse	
-- 参考	
-
+   - 任务 9：创建Fabric 工作区	
+   - 任务 10：创建 Lakehouse	
+- 参考
  
 # 简介
 今天，您将学习Microsoft Fabric 的多种主要功能。这是一个介绍性研讨会，旨在向您介绍Fabric 中提供的各种产品体验和项目。在本次研讨会结束时，您将学习如何使用湖屋、数据流Gen2、数据管道和 DirectLake 等。
@@ -31,7 +27,6 @@
 - 如何创建 Fabric 工作区
 - 如何创建 Lakehouse
 
-
 # Fabric 许可证
 
 ## 任务 1：启用Microsoft Fabric 试用许可证
@@ -39,6 +34,7 @@
 1. 打开**浏览器**并导航到  https://app.powerbi.com/。您将导航到登录页。
 
     **注意：** 如果您未使用实验环境，并且已经有 Power BI 帐户，您可能希望在隐私/无痕模式下使用浏览器。
+
 2. 输入**用户名，** 其位于**环境变量**选项卡中（“实验指南”选项卡旁边），作为**电子邮件地址，** 然后点击 **Submit。**
 
    ![](../media/lab-02/image006.png) 
@@ -52,8 +48,7 @@
 5. 您将导航到熟悉的 **Power BI 服务主页。**
 6. 我们相信您熟悉Power BI 服务的布局。如果您有任何问题，请随时询问讲师。
 
-
-    您当前位于**我的工作区。** 若要使用Fabric 项目，您需要试用许可证和分配有Fabric 许可证的工作区。
+   您当前位于**我的工作区。** 若要使用Fabric 项目，您需要试用许可证和分配有Fabric 许可证的工作区。
 
 7. 在屏幕右上角，选择**用户图标。**
 8. 选择**免费试用。**
@@ -107,24 +102,23 @@
 
 2. 从对话框选择 **Data Activator。** 您将导航到 **Data Activator 主页。** Data Activator 是Microsoft Fabric 中的一种无代码体验，在数据变化中检测到模式或条件时自动采取操作。请注意， 这三个部分与 Data Factory 体验相似。在**建议**部分中，请注意以下项目：
 
+   a. **Reflex：** 用于监视数据集、查询和事件流中的模式。
 
-    a. **Reflex：** 用于监视数据集、查询和事件流中的模式。
-
-    b. **Reflex 示例：** 示例解决方案。
+   b. **Reflex 示例：** 示例解决方案。
 
    ![](../media/lab-02/image033.jpg) 
 
 ## 任务 4：Industry Solutions 体验
 
 1. 选择屏幕左下角的 **Fabric 体验选择器图标**（目前设置为 Data Activator）。Fabric 体验对话框随即打开。
+
 2. 从对话框中选择 **Industry Solutions。** 您将导航到 **Industry Solutions** 主页。Microsoft Fabric 提供特定于行业的数据解决方案，这些解决方案为数据管理、分析和决策提供强大的平 台。这些数据解决方案解决了不同行业面临的独特挑战，助力企业优化运营、整合来自不 同来源的数据并使用丰富的分析。请注意，这三个部分与之前的体验相似。在“建议”部 分中，请注意以下项目：
 
- 
-    a. **可持续性解决方案：** 支持引入、标准化和分析环境、社会和治理 (ESG)  数据。
+   a. **可持续性解决方案：** 支持引入、标准化和分析环境、社会和治理 (ESG)  数据。
 
-    b. **零售解决方案：** 有助于管理大量数据，整合来自各个来源的数据，并提供实时分析 以促进及时做出决策。零售商可以使用这些解决方案进行库存优化、客户细分、销 售预测、动态定价和欺诈检测。
+   b. **零售解决方案：** 有助于管理大量数据，整合来自各个来源的数据，并提供实时分析 以促进及时做出决策。零售商可以使用这些解决方案进行库存优化、客户细分、销 售预测、动态定价和欺诈检测。
 
-    c. **医疗保健解决方案：** 经过战略设计，旨在通过满足将医疗保健数据有效转换为适合 格式以供分析的关键需求，加快客户实现价值的时间。
+   c. **医疗保健解决方案：** 经过战略设计，旨在通过满足将医疗保健数据有效转换为适合 格式以供分析的关键需求，加快客户实现价值的时间。
 
    ![](../media/lab-02/image036.jpg) 
 
@@ -144,7 +138,6 @@
 
     f. **使用示例：** 示例解决方案。
 
- 
     **注意：** Reflex 也在 Data Activator 体验中可用。
 
    ![](../media/lab-02/image039.jpg)     

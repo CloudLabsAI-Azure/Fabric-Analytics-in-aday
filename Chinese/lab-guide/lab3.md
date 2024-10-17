@@ -8,6 +8,7 @@
 - ADLS Gen2 的快捷方式	
 
 	- 任务 1：创建快捷方式	
+
 - 使用视觉对象查询转换数据	
 
 	- 任务 2：使用视觉对象查询创建 Geo 视图	
@@ -15,9 +16,6 @@
 	- 任务 4：使用视觉对象查询创建 Sales 视图	
 	- 任务 5：使用视觉对象查询创建 Product 视图	
 - 参考	
-
- 
-
 
 # 简介
 在我们的应用场景中，销售数据来自 ERP 系统，存储在 ADLS Gen2 中。每天中午 12 点更新。我们需要将此数据转换并引入到湖屋中，并在我们的模型中使用此数据。
@@ -98,12 +96,14 @@ https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 	![](../media/lab-03/image015.png) 
 
 13. 系统会将您的导航到下一个对话框，我们可以在其中编辑名称。针对 **Application.Citie s，** 在“操作”下选择**编辑图标。**
+
 14. 将 **Application.Cities 重命名为 Cities。**
+
 15. 选中名称旁边的复选标记以保存更改。
 
 	![](../media/lab-03/image018.jpg) 
  
-16.	同样，按如下所示重命名快捷方式名称：
+16. 同样，按如下所示重命名快捷方式名称：
 
 	a. 将 Application.Countries 重命名为 **Countries**
 
@@ -130,7 +130,6 @@ https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 17. 选择**创建**以创建快捷方式。
 
 	![](../media/lab-03/image021.jpg) 
-
  
 18. 请注意，所有快捷方式均以表的形式创建。选择 **BuyingGroups** 表，请注意，我们可以看到数据面板中的数据预览。
 
@@ -282,7 +281,7 @@ https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 
 	保存视图后，您将收到警报。
 
-32.	在资源管理器（左侧）面板中，展开**视图。** 我们有新创建的 Geo 视图。
+32. 在资源管理器（左侧）面板中，展开**视图。** 我们有新创建的 Geo 视图。
 
 	![](../media/lab-03/image072.png) 
  
@@ -361,7 +360,7 @@ https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 
 	请注意，“Customer”表已记录所有步骤。现在，让我们保存此视图。
 
-17.	从“视觉对象查询”菜单中，选择**另存为视图。**
+17. 从“视觉对象查询”菜单中，选择**另存为视图。**
 
 	![](../media/lab-03/image096.png) 
 
@@ -393,6 +392,7 @@ https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 	![](../media/lab-03/image108.jpg) 
 
 	“合并”对话框随即打开。
+
 6. 在**用于合并的左表**中，选择 **InvoiceLineItems。**
 7. 在**用于合并的右表**中，选择 **Invoices。**
 8. 从两个表中选择 **InvoiceID** 列。我们将使用此列进行联接。
@@ -403,7 +403,9 @@ https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 	![](../media/lab-03/image111.jpg) 
 
 	我们将从 Power BI Desktop 中复制代码并使用“高级编辑器”粘贴它。
+
 11. 如果您尚未打开 **FAIAD.pbix，** 请打开它。它位于您的实验室环境的桌面的 **Reports** 文件夹中。
+
 12. 从功能区中选择**主页 -> 转换数据。** Power Query 窗口随即打开。您在之前的实验室中注意到，左侧面板中的查询是按数据源组织的。
 
 	![](../media/lab-03/image114.jpg) 
@@ -555,8 +557,6 @@ https://stvnextblobstorage.dfs.core.windows.net/fabrikam-sales
 	我们已转换来自 ADLS Gen2 数据源的数据。在本实验室中，我们了解了如何创建快捷方式，并探索了使用视觉对象查询视图转换数据的各种选项。
 
 	在下一个实验室中，我们将了解如何使用数据流 Gen2 以及如何创建另一个湖屋的快捷方式。
- 
-
  
 # 参考
 Fabric Analyst in a Day (FAIAD) 介绍了Microsoft Fabric 中提供的一些主要功能。在服务菜单中， “帮助 (?)”部分包含指向一些优质资源的链接。
