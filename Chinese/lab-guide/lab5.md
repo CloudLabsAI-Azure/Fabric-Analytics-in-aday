@@ -379,7 +379,7 @@ varSuccess 的值进行比较。（varSuccess 默认为“Yes”。）
 7. 在底部窗格中，确保**变量类型**为**管道变量。**
 8. 在**名称**字段中，选择 **varTempCounter。** 这是我们要设置其值的变量。
 9. 在**值**字段中，选择**文本框。** 选择**添加动态内容**链接。
-10.	管道表达式生成器对话框随即打开。输入 **@add(variables('varCounter'),1)**
+10. 管道表达式生成器对话框随即打开。输入 **@add(variables('varCounter'),1)**
 
     **注意：** 自由输入此表达式，使用菜单选择函数，或者复制并粘贴它。该函数将变量 varTempCounter 的值设置为变量varCounter 的值加 1，(varTempCounter = varCounter + 1)。
 
@@ -424,18 +424,18 @@ varSuccess 的值进行比较。（varSuccess 默认为“Yes”。）
 7. 在**等待时间（以秒为单位）** 字段中，选择**文本框，** 并选择**添加动态内容**链接。
 8.	管道表达式生成器对话框随即打开。输入
 
-     ```
-     @if(  
-       greater(variables('varCounter'), 1),  
-       if(  
-        equals(variables('varCounter'), 2),  
-        mul(variables('varWaitTime'), 15),  
-        mul(variables('varWaitTime'), 0)  
-       ),  
-       mul(variables('varWaitTime'), 5)  
-     )
-     ```
- 
+    ```
+    @if(  
+      greater(variables('varCounter'), 1),  
+      if(  
+       equals(variables('varCounter'), 2),  
+       mul(variables('varWaitTime'), 15),  
+       mul(variables('varWaitTime'), 0)  
+      ),  
+      mul(variables('varWaitTime'), 5)  
+    )
+    ```
+    
     自由输入此表达式，使用菜单选择函数，或者复制并粘贴它。
 
     ![](../media/lab-05/image123.jpg)           
@@ -451,9 +451,7 @@ varSuccess 的值进行比较。（varSuccess 默认为“Yes”。）
 
     **检查点：** 您的截止迭代程序应类似于下面的屏幕截图所示。
 
-    ![](../media/lab-05/image126.jpg)           
- 
- 
+    ![](../media/lab-05/image126.jpg)
 
 10. 从设计画布的左上角选择 **pl_Refresh_People_Sharepoint_Option2**  以离开截止迭代程序。
 
