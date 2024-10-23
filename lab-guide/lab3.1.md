@@ -1,8 +1,8 @@
 # Microsoft Fabric - Fabric Analyst in a Day - Lab 3
 
-# ![](../media/ImageNew_faided3.1_1.png)
+## ![](../media/ImageNew_faided3.1_1.png)
 
-# Contents
+## Contents
    * Introduction
 
    * Dataflow Gen2
@@ -33,7 +33,7 @@
 
    * References	
 
-# **Introduction** 
+## **Introduction** 
 In our scenario, Sales Data comes from the ERP system and is stored in an ADLS Gen2 database. It gets updated at noon / 12 PM every day. We need to transform and ingest this data into Lakehouse and use it in our model. 
 
 There are multiple ways to ingest this data. 
@@ -52,9 +52,9 @@ By the end of this lab, you will have learned:
 - How to ingest data into Lakehouse
 
 
-# **Dataflow Gen2**
+## **Dataflow Gen2**
 
-### Task 1: Create Dataflow Gen2
+## Task 1: Create Dataflow Gen2
 
 1. Let’s navigate back to the **Fabric workspace** you created in the earlier Lab 2, Task 9.
 1. If you have not navigated away after the previous lab, you will be in the Lakehouse screen. If you have navigated away that is fine. Select the **Fabric experience selector** icon from the bottom left of your screen.
@@ -68,7 +68,7 @@ By the end of this lab, you will have learned:
 
 You will be navigated to the **Dataflow page**. This screen will look familiar as it is like Dataflow Gen1 or Power Query. You will notice the options to connect to various data sources are available, along with the ability to transform data. Let’s connect to the ADLS Gen2 data source and perform some transformations.
 
-### Task 2: Create a connection to ADLS Gen2
+## Task 2: Create a connection to ADLS Gen2
 
 1. From the ribbon, select **Home -> Get data -> More…** 
 
@@ -100,7 +100,7 @@ You will be navigated to the **Dataflow page**. This screen will look familiar a
 
 1. Select **Next** on the bottom right of the screen.
 
-### Task 3: Create Base ADLS Gen2 folder query
+## Task 3: Create Base ADLS Gen2 folder query
 
 1. Once the connection is established, you will be navigated to the **Preview folder data** screen. There are a lot of files in the ADLS Gen2 folder. We need data from a few of them. Select **Create** to create a connection to the folder.
 
@@ -130,7 +130,7 @@ You will be navigated to the **Dataflow page**. This screen will look familiar a
 
 Now we have the Base query set up. We can reference this query for all the Geo queries.
 
-### Task 4: Create Cities query
+## Task 4: Create Cities query
 Sales Data is available by Geography, Product, salesperson, and Date granularity. Let’s first create a query to get the Geo dimension. Geo data is available in three different files located in the following subfolders:
 
 - **Cities:** Application.Cities
@@ -162,17 +162,17 @@ We need to combine City, State, and Country data from these three files to creat
 
 1. Notice you will see all the City details. In the **right panel**, under **Query settings -> Properties -> Name**, change the name to **Cities**.
 
->**Note:** In the bottom right corner of the screenshot please make sure the query has four steps and wait for the query to finish loading. It may take a few minutes.
+   >**Note:** In the bottom right corner of the screenshot please make sure the query has four steps and wait for the query to finish loading. It may take a few minutes.
    
-  ![A screenshot to Rename query](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.017.png)
+   ![A screenshot to Rename query](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.017.png)
 
->**Note:** If you can't see the source, click the arrow next to **Properties** to make it visible.
+   >**Note:** If you can't see the source, click the arrow next to **Properties** to make it visible.
 
-  ![A screenshot to Rename query](../media/source-1.png)
+   ![A screenshot to Rename query](../media/source-1.png)
 
 In the right panel, under **Applied steps** notice all the steps are registered. This behavior is like Power Query. Now let’s follow a similar process to create a **Country** query.
 
-### Task 5: Create Countries query
+## Task 5: Create Countries query
 
 1. On the left panel, right-click on **ADLS Base Folder**. Select **Reference** to create a new query that references the ADLS Base Folder.
 
@@ -204,7 +204,7 @@ In the right panel, under **Applied steps** notice all the steps are registered.
 
 We need to bring in State next, but the steps are getting repetitive. We already have the queries in the Power BI Desktop file. Let’s see if we can copy over the queries from there.
 
-### Task 6: Create States using Copy – Option 1
+## Task 6: Create States using Copy – Option 1
 
 1. If you have not already opened it, open the **FAIAD.pbix** located in the **Report** folder on the **Desktop** of your lab environment. The file will open in Power BI Desktop.
 
@@ -249,7 +249,7 @@ We need to bring in State next, but the steps are getting repetitive. We already
 
    >**Note:** Please make sure the query has four applied steps and wait for the query to finish loading. It may take a few minutes.
 
-### Task 7: Create Geo query by Copy – Option 2
+## Task 7: Create Geo query by Copy – Option 2
 
 Now we need to merge these queries to create the Geo dimension. Let’s copy the query again from the Power BI Desktop file. This time let’s copy the code from Advanced Editor.
 
@@ -285,7 +285,7 @@ Let’s walk through the steps to understand how Geo was created. From the right
 
    ![A screenshot of Formula bar for Geo query](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.033.png)
 
-### Task 8: Configure Data Destination for Geo query
+## Task 8: Configure Data Destination for Geo query
 
 Now we have a dimension, let’s ingest this data into Lakehouse. This is the new feature available in Dataflow Gen2.
 
@@ -329,7 +329,7 @@ Now we have a dimension, let’s ingest this data into Lakehouse. This is the ne
 
    ![A screenshot to Choose destination settings](../media/Fabrichey1.png)
 
-### Task 9: Publish Dataflow
+## Task 9: Publish Dataflow
 
 1. You will be navigated back to the **Power Query window**. Notice on the bottom right corner, **Data destination is set to Lakehouse**.
 
@@ -351,7 +351,7 @@ Now we have a dimension, let’s ingest this data into Lakehouse. This is the ne
 
 There is a SQL Endpoint as well, which can be used to query this table. We will look at this option in a later lab. Now that we know Geo data landed in Lakehouse, let’s bring the rest of the data from ADLS Gen2.
 
-### Task 10: Rename Dataflow
+## Task 10: Rename Dataflow
 
 1. In the left menu bar, select **FAIAD_username** to be navigated back to the **workspace**.
 
@@ -368,7 +368,7 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 
    ![A screenshot Dataflow Properties dialog](../media/Aspose.Words.cb0f9c33-ba43-4fa0-836b-a8ad8cd51945.043.png)
 
-### Task 11: Build remaining queries in Dataflow
+## Task 11: Build remaining queries in Dataflow
 
 1. You will be navigated back to the **FAIAD_username workspace**. Select the Dataflow **df_Sales_ADLS** to navigate back into the dataflow.
 
@@ -437,7 +437,7 @@ There is a SQL Endpoint as well, which can be used to query this table. We will 
 
    Make sure **all the queries are processed**. Once done, let’s ingest this data into Lakehouse. 
 
-### Task 12: Configure Data destination for remaining queries
+## Task 12: Configure Data destination for remaining queries
 
 1. Select the **Product** query.
 1. From the ribbon select **Home -> Add data destination -> Lakehouse**.
