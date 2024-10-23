@@ -93,7 +93,7 @@ By the end of this lab, you will have learned:
  
     ![](../media/2-9.png)
 
-3. You are navigated to the **Data Factory Home page**. The page contains three main sections.
+3. You are navigated to the **Data Factory Home page**. The page contains four main sections.
 
     a. **Create a Workspace** : This section explains how to create a workspace using a predesigned template called a task flow, which helps keep your items organized in Microsoft Fabric.
    
@@ -143,7 +143,7 @@ By the end of this lab, you will have learned:
 
 1. Select the **Fabric experience selector icon** (currently set to Industry Solutions) on the bottom left of your screen. Fabric experience dialog opens.
 
-2. Select **Data Engineering**. You will be navigated to the **Data Engineering Home page**. Again, the page contains three main sections. In the New section, notice the items, Click on **>** to view other items: 
+2. Select **Data Engineering**. You will be navigated to the **Data Engineering Home page**. Again, the page contains four main sections. In the New section, notice the items, Click on **>** to view other items: 
    
    a. **Lakehouse:** Used to store big data for cleaning, querying, reporting, and sharing.
    
@@ -166,7 +166,7 @@ By the end of this lab, you will have learned:
 
 1. Select the **Fabric experience selector icon** (currently set to Data Engineering) on the bottom left of your screen. Fabric experience dialog opens.
 
-2. Select **Data Science**. You will be navigated to the **Data Science Home page**. Again, there are three sections. In the New section, notice the items. Click on **>** to view other items: 
+2. Select **Data Science**. You will be navigated to the **Data Science Home page**. Again, there are four sections. In the New section, notice the items. Click on **>** to view other items: 
        
     a. **ML model:** Used to create machine learning models.
     
@@ -186,21 +186,32 @@ By the end of this lab, you will have learned:
 
 ### Task 7: Synapse Data Warehouse Experience
 
-1. Select the **Fabric experience selector icon** (currently set to Data Science) on the bottom left of your screen. Fabric experience dialog opens.
+1. Select **Fabric experience selector icon** (currently set to Data Science) on the bottom left of your screen. Fabric experience dialog opens.
+2. Select **Data Warehouse**. You will be navigated to **Data Warehouse Home page**. Again, there are four sections. In the New section, notice the items: Click on **>** to view other items: 
 
-2. Select **Data Warehouse**. You will be navigated to the **Data Warehouse Home page**. Again, there are three sections. In the New section, notice the items. Notice Data Pipeline and Dataflow Gen2 are available here as well.
+    a. **Warehouse:** Used to create a Data Warehouse.
 
-   a. **Warehouse:** Used to provide strategic insights from multiple sources.
+    b. **Sample Warehouse:** Used to explore and test data warehousing capabilities with pre-configured datasets and models.
+
+    c. **Data pipeline:** Used to orchestrate data solution.
    
-   b. **Data pipeline:** Used to orchestrate data solution.
+    d. **Notebook:** Used for creating and sharing interactive data analysis and visualization tasks
 
-      ![](../media/2-16.png)
+    e. **Mirrored SQL Database:** Used to mirror Azure SQL Database.
+
+    f. **Mirrored Azure Databricks Catalog:** Used to mirror data from Azure Databricks for enhanced integration and analytics 
+
+    g. **Mirrored Snowflake:** Used to mirror Snowflake Database.
+
+    h. **Mirrored Azure Cosmos DB:** Used to mirror Azure Cosmos DB.
+
+      ![](../media/f6.png)
 
 ### Task 8: Real-Time Intelligence Experience
 
 1. Select the **Fabric experience selector icon** (currently set to Data Warehouse) on the bottom left of your screen. Fabric experience dialog opens.
 
-2. Select **Real-Time Intelligence**. You will be navigated to the **Real-Time Intelligence Home page**. Again, there are three sections. In the New section, notice the items. Click on **>** to view other items::
+2. Select **Real-Time Intelligence**. You will be navigated to the **Real-Time Intelligence Home page**. Again, there are four sections. In the New section, notice the items. Click on **>** to view other items::
    
    a. **Eventhouse:** Used to create a workspace of the database, which can be shared across projects.
   
