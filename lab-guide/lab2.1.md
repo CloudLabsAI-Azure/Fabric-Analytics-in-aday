@@ -219,9 +219,9 @@ By the end of this lab, you will have learned:
 
    c. **Real-Time Dashboard:** Used to visualize key insights to share with your team
    
-   c. **Eventstream:** Used to capture, transform, and route real-time event stream.
+   d. **Eventstream:** Used to capture, transform, and route real-time event stream.
 
-   d. **Reflex(Preview):** Used to monitor datasets, queries, and event streams for patterns to trigger actions and alerts.
+   e. **Reflex(Preview):** Used to monitor datasets, queries, and event streams for patterns to trigger actions and alerts.
    
       ![](../media/fab5.png)
 
