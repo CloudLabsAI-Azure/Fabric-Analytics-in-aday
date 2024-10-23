@@ -69,7 +69,7 @@ By the end of this lab, you will have learned:
   
 9. Activate your 60-day free Fabric trail capacity. Select **Activate**.
 
-    ![](../media/lab-02/image015u.png)
+    ![](../media/image015u.png)
 
 1. If **Just one last step** dialog box appears select the **“X”** on the top right corner to close the dialog. We will not be providing these details as this is a lab environment.
 
@@ -111,7 +111,7 @@ By the end of this lab, you will have learned:
     
     d. **Quick Access:** This section lists the recently used or favorite items.
 
-      ![](../media/lab-02/f3.png)
+      ![](../media/f3.png)
 
 ## Task 3: Data Activator Experience
 
@@ -119,13 +119,11 @@ By the end of this lab, you will have learned:
 
     ![](../media/2-11.png)
 
-2. Select **Data Activator** from the dialog. You will be navigated to **Data Activator Home page.** Data Activator is a no-code experience in Microsoft Fabric for automatically taking actions when patterns or conditions are detected in changing data. Notice the three sections are like the Data Factory experience. In the New section, notice the items:
+2. Select **Data Activator** from the dialog. You will be navigated to **Data Activator Home page**. Data Activator is a no-code experience in Microsoft Fabric for automatically taking actions when patterns or conditions are detected in changing data. Notice the four sections are like the Data Factory experience. In the Recommended section, notice the items:
 
     a. **Reflex:** Used to monitor datasets, queries, and event streams for patterns.
-    
-    b. **Reflex sample:** Sample solution.
 
-     ![](../media/fab1.png)
+      ![](../media/lab-02/f2.png)
 
 ### Task 4: Industry Solutions Experience
 
