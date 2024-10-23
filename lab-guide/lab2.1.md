@@ -2,7 +2,7 @@
 
 # ![](../media/2-1.png)
 
-# Contents
+## Contents
 
   * Introduction
 
@@ -34,7 +34,7 @@
 
   * References
 
-# Introduction
+## Introduction
 Today you will learn about various key features of Microsoft Fabric. This is an introductory workshop intended to introduce you to the various product experiences and items available in Fabric. By the end of this workshop, you will learn how to use Lakehouse, Dataflow Gen2, Data Pipeline, and DirectLake features.
 
 By the end of this lab, you will have learned: 
@@ -42,9 +42,9 @@ By the end of this lab, you will have learned:
   - How to create a Fabric workspace
   - How to create a Lakehouse  
 
-# Fabric License
+## Fabric License
 
-### Task 1: Enable a Microsoft Fabric trial license
+## Task 1: Enable a Microsoft Fabric trial license
 
 1. Open the **browser** and navigate to https://app.powerbi.com/. You will be navigated to the login page.
     
@@ -67,9 +67,9 @@ By the end of this lab, you will have learned:
 
     ![](../media/2-4-1.png)
   
-1. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Start trial**.
+9. Activate your 60-day free Fabric trail capacity. Select **Activate**.
 
-    ![](../media/2-5.png)
+    ![](../media/lab-02/image015u.png)
 
 1. If **Just one last step** dialog box appears select the **“X”** on the top right corner to close the dialog. We will not be providing these details as this is a lab environment.
 
@@ -85,7 +85,7 @@ By the end of this lab, you will have learned:
 
 # Overview of Fabric Experiences:
 
-### Task 2: Data Factory Experience
+## Task 2: Data Factory Experience
 
 1. Select the **Microsoft Fabric** (fabric experience selector) icon on the bottom left of your screen. A dialog with the list of Fabric experiences will open. Notice that Power BI, Data Factory, Data Activator and Industry Solutions are independent experiences. Data Engineering, Data Science, Data Warehouse, and Real-Time Analytics are Synapse experiences and these four experiences are powered by Synapse. Let’s explore.
 
