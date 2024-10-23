@@ -62,11 +62,11 @@ Notice on the left panel, you can view the Tables. If you expand the tables, you
 4. Paste the **below SQL query** into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
 
     ```
-    SELECT su.Supplier_Name, SUM(Quantity) as Units
-    FROM dbo.Sales s
-    JOIN dbo.Product p on p.StockItemID = s.StockItemID
-    JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
-    GROUP BY su.Supplier_Name
+   SELECT su.Supplier_Name, SUM(Quantity) as Units
+   FROM dbo.Sales s
+   JOIN dbo.Product p on p.StockItemID = s.StockItemID
+   JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+   GROUP BY su.Supplier_Name
     ```
 
 5. Click **Run** to view the results.
