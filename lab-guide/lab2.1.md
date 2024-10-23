@@ -139,7 +139,7 @@ By the end of this lab, you will have learned:
 
       ![](../media/f5.png)
 
-### Task 5: Synapse Data Engineering Experience
+## Task 5: Synapse Data Engineering Experience
 
 1. Select the **Fabric experience selector icon** (currently set to Industry Solutions) on the bottom left of your screen. Fabric experience dialog opens.
 
@@ -162,7 +162,7 @@ By the end of this lab, you will have learned:
       ![](../media/fab3.png)
    
 
-### Task 6: Synapse Data Science Experience
+## Task 6: Synapse Data Science Experience
 
 1. Select the **Fabric experience selector icon** (currently set to Data Engineering) on the bottom left of your screen. Fabric experience dialog opens.
 
@@ -184,7 +184,7 @@ By the end of this lab, you will have learned:
 
      ![](../media/fab4.png)
 
-### Task 7: Synapse Data Warehouse Experience
+## Task 7: Synapse Data Warehouse Experience
 
 1. Select **Fabric experience selector icon** (currently set to Data Science) on the bottom left of your screen. Fabric experience dialog opens.
 2. Select **Data Warehouse**. You will be navigated to **Data Warehouse Home page**. Again, there are four sections. In the New section, notice the items: Click on **>** to view other items: 
@@ -207,7 +207,7 @@ By the end of this lab, you will have learned:
 
       ![](../media/f6.png)
 
-### Task 8: Real-Time Intelligence Experience
+## Task 8: Real-Time Intelligence Experience
 
 1. Select the **Fabric experience selector icon** (currently set to Data Warehouse) on the bottom left of your screen. Fabric experience dialog opens.
 
@@ -227,7 +227,7 @@ By the end of this lab, you will have learned:
 
 # Fabric Workspace
 
-### Task 9: Create a Fabric Workspace
+## Task 9: Create a Fabric Workspace
 
 1. Now let’s create a workspace with a Fabric license. Select **Workspaces** from the left navigation bar. A dialog opens.
 
@@ -255,7 +255,7 @@ By the end of this lab, you will have learned:
 
     A new workspace has been created, and you will be able to navigate into this workspace. We will bring data from the different data sources into Lakehouse and use the data from the Lakehouse to build our model and report on it. The first step is to create a Lakehouse.
 
-### Task 10: Create a Lakehouse
+## Task 10: Create a Lakehouse
 
 1. Select the **Fabric experience selector icon** (currently set to Real-Time Intelligence) on the bottom left of your screen. Fabric experience dialog opens.
 
