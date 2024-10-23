@@ -218,31 +218,31 @@ Ok, now we are ready to build the model, build relationships between tables, and
 
     ![](../media/Lab_6.22.png)
  
-4. New relationship dialog opens. Make sure **Table 1** is **Sales** and **Column** is **ResellerID**.
+2. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **ResellerID**.
 
-5. Make sure **Table 2** is **Reseller** and **Column** is **ResellerID**.
+3. Make sure **To table** is **Reseller** and **Column** is **ResellerID**.
 
-6. Make sure **Cardinality** is **Many to one (*:1)**.
+4. Make sure **Cardinality** is **Many to one (\*:1)**.
 
-7. Make sure **Cross filter direction** is **Single**.
+5. Make sure **Cross filter direction** is **Single**.
 
-8. Select **Save**.
- 
-    ![](../media/Lab_6.23.png)
+6. Select **Save**.
+
+   ![](../media/image021.png)
 
 9. Similarly, create a relationship between the Sales and Date tables. Select **InvoiceDate** from the **Sales** table and drag it over to **Date** in the **Date** table.
 
-10. New relationship dialog opens. Make sure **Table 1** is **Sales** and **Column** is **InvoiceDate**.
+8. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **InvoiceDate**.
+   
+9. Make sure **To table** is **Date** and **Column** is **Date**.
+    
+10. Make sure **Cardinality** is **Many to one (\*:1)**.
 
-11. Make sure **Table 2** is **Date** and **Column** is **Date**.
+11. Make sure **Cross filter direction** is **Single**.
 
-12. Make sure **Cardinality** is **Many to one (*:1)**.
+12. Select **Save**.
 
-13. Make sure **Cross filter direction** is **Single**.
-
-14. Select **Save**.
-
-    ![](../media/Lab_6.24.png)
+    ![](../media/lab-06/image023.png)
  
 15. Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID** from the **Sales** table and drag it over to **StockItemID** in the **Product** table.
 
