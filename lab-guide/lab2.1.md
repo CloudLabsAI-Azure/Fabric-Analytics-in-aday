@@ -125,7 +125,7 @@ By the end of this lab, you will have learned:
 
       ![](../media/f2.png)
 
-### Task 4: Industry Solutions Experience
+## Task 4: Industry Solutions Experience
 
 1. Select the **Fabric experience selector icon** (currently set to Data Activator) on the bottom left of your screen. Fabric experience dialog opens.
 
@@ -137,7 +137,7 @@ By the end of this lab, you will have learned:
 
     c. **Healthcare solutions:** are strategically designed to accelerate the time to value for customers by addressing the critical need to efficiently transform healthcare data into a suitable format for analysis.
 
-      ![](../media/image036.png)
+      ![](../media/f5.png)
 
 ### Task 5: Synapse Data Engineering Experience
 
