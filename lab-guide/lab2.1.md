@@ -93,21 +93,27 @@ By the end of this lab, you will have learned:
  
     ![](../media/2-9.png)
 
-1. You are navigated to the **Data Factory Home page**. The page contains three main sections.
+3. You are navigated to the **Data Factory Home page**. The page contains three main sections.
+
+    a. **Create a Workspace** : This section explains how to create a workspace using a predesigned template called a task flow, which helps keep your items organized in Microsoft Fabric.
    
-    a. **New:** This lists the items available in Data Factory – Dataflow Gen2 and Data pipeline.
-
+    b. **Recommended:** This lists the items available in Data Factory – Dataflow Gen2, Data pipeline, Data workflow and API for GraphQL.
+        
     i. Dataflow Gen2 is the next generation of Dataflow.
+    
+    ii. Data pipeline is used for data orchestration.
+        
+    iii. Apache Airflow job workflow is the workflow orchestration manager.
+        
+    iv. API for GraphQL is API to query multiple data sources.
 
-    ii. A data pipeline is used for data orchestration.
-            
-    b. **Recommended**: This section provides access to quick-start learning documentation.
-       
-    c. **Quick Access**: This section lists the recently used or favourite items.
+    c. **Learn:** This section provides access to quick start learning documentation.
+    
+    d. **Quick Access:** This section lists the recently used or favorite items.
 
-    ![](../media/2-10.png)
+      ![](../media/lab-02/f3.png)
 
-### Task 3: Data Activator Experience
+## Task 3: Data Activator Experience
 
 1. Select the **Fabric experience selector icon** (currently set to Data Factory) on the bottom left of your screen. Fabric experience dialog opens.
 
