@@ -242,7 +242,7 @@ Ok, now we are ready to build the model, build relationships between tables, and
 
 12. Select **Save**.
 
-    ![](../media/lab-06/image023.png)
+    ![](../media/image023.png)
  
 15. Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID** from the **Sales** table and drag it over to **StockItemID** in the **Product** table.
 
