@@ -237,7 +237,7 @@ By the end of this lab, you will have learned:
 
 1. **Create a workspace** dialog opens on the right side of the browser.
    
-1. In the **Name** field enter **FAIAD_username**.
+1. In the **Name** field enter **FAIAD_<username\>**.
 
     >**Note:** Workspace name must be unique. We are using FAIAD as the workspace name for this document. However, your workspace name must be different. Make sure a green check mark with **This name is available** is displayed below the Name field.
    
