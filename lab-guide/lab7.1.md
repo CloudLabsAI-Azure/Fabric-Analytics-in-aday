@@ -58,9 +58,9 @@ Let’s start by using the auto-create report option. And later in the lab, we w
 
     ![](../media/Lab_7.3.png)
 
-5. You will be navigated to **Build your first report screen**. There will be options to enter data manually and build a report or to pick a published semantic model. We have created a semantic model in the previous labs. Let’s use that. Select **Pick a published semantic model** option.
+5. You will be navigated to **Build your first report screen**. There will be options to build reports using Excel and CSV, enter data manually or pick a published semantic model. We have created a semantic model in the previous labs. Let’s use that. Select **Pick a published semantic model** option.
 
-    ![](../media/Lab_7.4.png)
+   ![](../media/image012.jpg)
  
 6. Pick a dataset to use in your report page opens. Notice we have four options. **Select lh_FAIAD:**
 
@@ -118,7 +118,7 @@ Let’s create a new report using a blank canvas.
  
 3. Select **Pick a published semantic model,** so we can pick the model we have created.
 
-   ![](../media/Lab_7.10.png)
+   ![](../media/image012.jpg)
  
 4. Pick a semantic model to use in your report dialog opens. Select **lh_FAIAD**.
 
@@ -192,7 +192,7 @@ Let’s create a new report using a blank canvas.
 
 8. Select **Color drop down** Color palette dialog opens.
 
-9. Set Hex value to **004753**.
+9. Click on more colors and Set Hex value to **004753**.
 
     ![](../media/Lab_7.16.png)
  
