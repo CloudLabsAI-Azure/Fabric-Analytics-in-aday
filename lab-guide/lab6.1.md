@@ -54,9 +54,9 @@ Let’s assume you want to quickly find out the Units sold by Supplier using SQL
 
 Notice on the left panel, you can view the Tables. If you expand the tables, you can view the Columns that make up the table. Also, there are options to create SQL Views, Functions, and Stored Procedures. If you have a SQL background, feel free to explore these options. Let’s try to write a simple SQL query.
 
-3. From the **top menu** select **New SQL query** or from the **bottom of the left panel** select **Query**. You will be navigated to the SQL query view.
+3. From the **top menu** select **New SQL query** . You will be navigated to the SQL query view.
 
-    ![](../media/Lab_6.3.png)
+    ![](../media/f7.png)
 
  >**Note**: Ensure that all items are displayed under **dbo**, as shown in the screenshot.
 4. Paste the **below SQL query** into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
