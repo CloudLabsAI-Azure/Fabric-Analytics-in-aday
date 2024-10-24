@@ -2,7 +2,7 @@
 
 # ![](../media/2-1.png)
 
-# Contents
+## Contents
 
   * Introduction
 
@@ -34,7 +34,7 @@
 
   * References
 
-# Introduction
+## Introduction
 Today you will learn about various key features of Microsoft Fabric. This is an introductory workshop intended to introduce you to the various product experiences and items available in Fabric. By the end of this workshop, you will learn how to use Lakehouse, Dataflow Gen2, Data Pipeline, and DirectLake features.
 
 By the end of this lab, you will have learned: 
@@ -42,9 +42,9 @@ By the end of this lab, you will have learned:
   - How to create a Fabric workspace
   - How to create a Lakehouse  
 
-# Fabric License
+## Fabric License
 
-### Task 1: Enable a Microsoft Fabric trial license
+## Task 1: Enable a Microsoft Fabric trial license
 
 1. Open the **browser** and navigate to https://app.powerbi.com/. You will be navigated to the login page.
     
@@ -67,9 +67,9 @@ By the end of this lab, you will have learned:
 
     ![](../media/2-4-1.png)
   
-1. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Start trial**.
+9. Activate your 60-day free Fabric trail capacity. Select **Activate**.
 
-    ![](../media/2-5.png)
+    ![](../media/image015u.png)
 
 1. If **Just one last step** dialog box appears select the **“X”** on the top right corner to close the dialog. We will not be providing these details as this is a lab environment.
 
@@ -85,7 +85,7 @@ By the end of this lab, you will have learned:
 
 # Overview of Fabric Experiences:
 
-### Task 2: Data Factory Experience
+## Task 2: Data Factory Experience
 
 1. Select the **Microsoft Fabric** (fabric experience selector) icon on the bottom left of your screen. A dialog with the list of Fabric experiences will open. Notice that Power BI, Data Factory, Data Activator and Industry Solutions are independent experiences. Data Engineering, Data Science, Data Warehouse, and Real-Time Analytics are Synapse experiences and these four experiences are powered by Synapse. Let’s explore.
 
@@ -93,51 +93,57 @@ By the end of this lab, you will have learned:
  
     ![](../media/2-9.png)
 
-1. You are navigated to the **Data Factory Home page**. The page contains three main sections.
+3. You are navigated to the **Data Factory Home page**. The page contains four main sections.
+
+    a. **Create a Workspace** : This section explains how to create a workspace using a predesigned template called a task flow, which helps keep your items organized in Microsoft Fabric.
    
-    a. **New:** This lists the items available in Data Factory – Dataflow Gen2 and Data pipeline.
-
+    b. **Recommended:** This lists the items available in Data Factory – Dataflow Gen2, Data pipeline, Data workflow and API for GraphQL.
+        
     i. Dataflow Gen2 is the next generation of Dataflow.
+    
+    ii. Data pipeline is used for data orchestration.
+        
+    iii. Apache Airflow job workflow is the workflow orchestration manager.
+        
+    iv. API for GraphQL is API to query multiple data sources.
 
-    ii. A data pipeline is used for data orchestration.
-            
-    b. **Recommended**: This section provides access to quick-start learning documentation.
-       
-    c. **Quick Access**: This section lists the recently used or favourite items.
+    c. **Learn:** This section provides access to quick start learning documentation.
+    
+    d. **Quick Access:** This section lists the recently used or favorite items.
 
-    ![](../media/2-10.png)
+      ![](../media/f3.png)
 
-### Task 3: Data Activator Experience
+## Task 3: Data Activator Experience
 
 1. Select the **Fabric experience selector icon** (currently set to Data Factory) on the bottom left of your screen. Fabric experience dialog opens.
 
     ![](../media/2-11.png)
 
-2. Select **Data Activator** from the dialog. You will be navigated to **Data Activator Home page.** Data Activator is a no-code experience in Microsoft Fabric for automatically taking actions when patterns or conditions are detected in changing data. Notice the three sections are like the Data Factory experience. In the New section, notice the items:
+2. Select **Data Activator** from the dialog. You will be navigated to **Data Activator Home page**. Data Activator is a no-code experience in Microsoft Fabric for automatically taking actions when patterns or conditions are detected in changing data. Notice the four sections are like the Data Factory experience. In the Recommended section, notice the items:
 
     a. **Reflex:** Used to monitor datasets, queries, and event streams for patterns.
-    
-    b. **Reflex sample:** Sample solution.
 
-     ![](../media/fab1.png)
+      ![](../media/f2.png)
 
-### Task 4: Industry Solutions Experience
+## Task 4: Industry Solutions Experience
 
 1. Select the **Fabric experience selector icon** (currently set to Data Activator) on the bottom left of your screen. Fabric experience dialog opens.
 
-2. Select **Industry Solutions** from the dialog. You will be navigated to the **Industry Solutions Home page**. Microsoft Fabric offers industry-specific data solutions that provide a robust platform for data management, analytics, and decision-making. These data solutions address the unique challenges faced by different industries, enabling businesses to optimize operations, integrate data from different sources, and use rich analytics. Notice the three sections are like the previous experiences. In the New section, notice the items:
+2. Select **Industry Solutions** from the dialog. You will navigate to **Industry Solutions Home page**. Microsoft Fabric offers industry-specific data solutions that provide a robust platform for data management, analytics, and decision-making. These data solutions address the unique challenges faced by different industries, enabling businesses to optimize operations, integrate data from different sources, and use rich analytics. Notice the four sections are like the previous experiences. In the Recommended section, notice the items:
 
     a. **Sustainability solutions:** supports the ingestion, standardization, and analysis of Environmental, Social, and Governance (ESG) data.
 
     b. **Retail solutions:** helps in managing large volumes of data, integrating data from various sources, and providing real-time analytics for prompt decision-making. Retailers can use these solutions for inventory optimization, customer segmentation, sales forecasting, dynamic pricing, and fraud detection.
 
-    ![](../media/fab2.png)
+    c. **Healthcare solutions:** are strategically designed to accelerate the time to value for customers by addressing the critical need to efficiently transform healthcare data into a suitable format for analysis.
 
-### Task 5: Synapse Data Engineering Experience
+      ![](../media/f5.png)
+
+## Task 5: Synapse Data Engineering Experience
 
 1. Select the **Fabric experience selector icon** (currently set to Industry Solutions) on the bottom left of your screen. Fabric experience dialog opens.
 
-2. Select **Data Engineering**. You will be navigated to the **Data Engineering Home page**. Again, the page contains three main sections. In the New section, notice the items, Click on **>** to view other items: 
+2. Select **Data Engineering**. You will be navigated to the **Data Engineering Home page**. Again, the page contains four main sections. In the New section, notice the items, Click on **>** to view other items: 
    
    a. **Lakehouse:** Used to store big data for cleaning, querying, reporting, and sharing.
    
@@ -156,11 +162,11 @@ By the end of this lab, you will have learned:
       ![](../media/fab3.png)
    
 
-### Task 6: Synapse Data Science Experience
+## Task 6: Synapse Data Science Experience
 
 1. Select the **Fabric experience selector icon** (currently set to Data Engineering) on the bottom left of your screen. Fabric experience dialog opens.
 
-2. Select **Data Science**. You will be navigated to the **Data Science Home page**. Again, there are three sections. In the New section, notice the items. Click on **>** to view other items: 
+2. Select **Data Science**. You will be navigated to the **Data Science Home page**. Again, there are four sections. In the New section, notice the items. Click on **>** to view other items: 
        
     a. **ML model:** Used to create machine learning models.
     
@@ -178,23 +184,34 @@ By the end of this lab, you will have learned:
 
      ![](../media/fab4.png)
 
-### Task 7: Synapse Data Warehouse Experience
+## Task 7: Synapse Data Warehouse Experience
 
-1. Select the **Fabric experience selector icon** (currently set to Data Science) on the bottom left of your screen. Fabric experience dialog opens.
+1. Select **Fabric experience selector icon** (currently set to Data Science) on the bottom left of your screen. Fabric experience dialog opens.
+2. Select **Data Warehouse**. You will be navigated to **Data Warehouse Home page**. Again, there are four sections. In the New section, notice the items: Click on **>** to view other items: 
 
-2. Select **Data Warehouse**. You will be navigated to the **Data Warehouse Home page**. Again, there are three sections. In the New section, notice the items. Notice Data Pipeline and Dataflow Gen2 are available here as well.
+    a. **Warehouse:** Used to create a Data Warehouse.
 
-   a. **Warehouse:** Used to provide strategic insights from multiple sources.
+    b. **Sample Warehouse:** Used to explore and test data warehousing capabilities with pre-configured datasets and models.
+
+    c. **Data pipeline:** Used to orchestrate data solution.
    
-   b. **Data pipeline:** Used to orchestrate data solution.
+    d. **Notebook:** Used for creating and sharing interactive data analysis and visualization tasks
 
-      ![](../media/2-16.png)
+    e. **Mirrored SQL Database:** Used to mirror Azure SQL Database.
 
-### Task 8: Real-Time Intelligence Experience
+    f. **Mirrored Azure Databricks Catalog:** Used to mirror data from Azure Databricks for enhanced integration and analytics 
+
+    g. **Mirrored Snowflake:** Used to mirror Snowflake Database.
+
+    h. **Mirrored Azure Cosmos DB:** Used to mirror Azure Cosmos DB.
+
+      ![](../media/f6.png)
+
+## Task 8: Real-Time Intelligence Experience
 
 1. Select the **Fabric experience selector icon** (currently set to Data Warehouse) on the bottom left of your screen. Fabric experience dialog opens.
 
-2. Select **Real-Time Intelligence**. You will be navigated to the **Real-Time Intelligence Home page**. Again, there are three sections. In the New section, notice the items. Click on **>** to view other items::
+2. Select **Real-Time Intelligence**. You will be navigated to the **Real-Time Intelligence Home page**. Again, there are four sections. In the New section, notice the items. Click on **>** to view other items::
    
    a. **Eventhouse:** Used to create a workspace of the database, which can be shared across projects.
   
@@ -202,15 +219,15 @@ By the end of this lab, you will have learned:
 
    c. **Real-Time Dashboard:** Used to visualize key insights to share with your team
    
-   c. **Eventstream:** Used to capture, transform, and route real-time event stream.
+   d. **Eventstream:** Used to capture, transform, and route real-time event stream.
 
-   d. **Reflex(Preview):** Used to monitor datasets, queries, and event streams for patterns to trigger actions and alerts.
+   e. **Reflex(Preview):** Used to monitor datasets, queries, and event streams for patterns to trigger actions and alerts.
    
       ![](../media/fab5.png)
 
 # Fabric Workspace
 
-### Task 9: Create a Fabric Workspace
+## Task 9: Create a Fabric Workspace
 
 1. Now let’s create a workspace with a Fabric license. Select **Workspaces** from the left navigation bar. A dialog opens.
 
@@ -238,7 +255,7 @@ By the end of this lab, you will have learned:
 
     A new workspace has been created, and you will be able to navigate into this workspace. We will bring data from the different data sources into Lakehouse and use the data from the Lakehouse to build our model and report on it. The first step is to create a Lakehouse.
 
-### Task 10: Create a Lakehouse
+## Task 10: Create a Lakehouse
 
 1. Select the **Fabric experience selector icon** (currently set to Real-Time Intelligence) on the bottom left of your screen. Fabric experience dialog opens.
 

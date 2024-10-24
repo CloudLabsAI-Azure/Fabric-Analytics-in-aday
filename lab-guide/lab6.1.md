@@ -54,19 +54,19 @@ Let’s assume you want to quickly find out the Units sold by Supplier using SQL
 
 Notice on the left panel, you can view the Tables. If you expand the tables, you can view the Columns that make up the table. Also, there are options to create SQL Views, Functions, and Stored Procedures. If you have a SQL background, feel free to explore these options. Let’s try to write a simple SQL query.
 
-3. From the **top menu** select **New SQL query** or from the **bottom of the left panel** select **Query**. You will be navigated to the SQL query view.
+3. From the **top menu** select **New SQL query** . You will be navigated to the SQL query view.
 
-    ![](../media/Lab_6.3.png)
+    ![](../media/f7.png)
 
  >**Note**: Ensure that all items are displayed under **dbo**, as shown in the screenshot.
 4. Paste the **below SQL query** into the **query window**. This query will return the units by Supplier Name. It is joining the Sales table with the Product and Supplier tables to achieve this.
 
     ```
-    SELECT su.Supplier_Name, SUM(Quantity) as Units
-    FROM dbo.Sales s
-    JOIN dbo.Product p on p.StockItemID = s.StockItemID
-    JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
-    GROUP BY su.Supplier_Name
+   SELECT su.Supplier_Name, SUM(Quantity) as Units
+   FROM dbo.Sales s
+   JOIN dbo.Product p on p.StockItemID = s.StockItemID
+   JOIN dbo.Supplier su on su.SupplierID = p.SupplierID
+   GROUP BY su.Supplier_Name
     ```
 
 5. Click **Run** to view the results.
@@ -218,31 +218,31 @@ Ok, now we are ready to build the model, build relationships between tables, and
 
     ![](../media/Lab_6.22.png)
  
-4. New relationship dialog opens. Make sure **Table 1** is **Sales** and **Column** is **ResellerID**.
+2. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **ResellerID**.
 
-5. Make sure **Table 2** is **Reseller** and **Column** is **ResellerID**.
+3. Make sure **To table** is **Reseller** and **Column** is **ResellerID**.
 
-6. Make sure **Cardinality** is **Many to one (*:1)**.
+4. Make sure **Cardinality** is **Many to one (\*:1)**.
 
-7. Make sure **Cross filter direction** is **Single**.
+5. Make sure **Cross filter direction** is **Single**.
 
-8. Select **Save**.
- 
-    ![](../media/Lab_6.23.png)
+6. Select **Save**.
+
+   ![](../media/image021.png)
 
 9. Similarly, create a relationship between the Sales and Date tables. Select **InvoiceDate** from the **Sales** table and drag it over to **Date** in the **Date** table.
 
-10. New relationship dialog opens. Make sure **Table 1** is **Sales** and **Column** is **InvoiceDate**.
+8. New relationship dialog opens. Make sure **From table** is **Sales** and **Column** is **InvoiceDate**.
+   
+9. Make sure **To table** is **Date** and **Column** is **Date**.
+    
+10. Make sure **Cardinality** is **Many to one (\*:1)**.
 
-11. Make sure **Table 2** is **Date** and **Column** is **Date**.
+11. Make sure **Cross filter direction** is **Single**.
 
-12. Make sure **Cardinality** is **Many to one (*:1)**.
+12. Select **Save**.
 
-13. Make sure **Cross filter direction** is **Single**.
-
-14. Select **Save**.
-
-    ![](../media/Lab_6.24.png)
+    ![](../media/image023.png)
  
 15. Similarly, create a **many-to-one** relationship between **Sales** and **Product** tables. Select **StockItemID** from the **Sales** table and drag it over to **StockItemID** in the **Product** table.
 
@@ -262,39 +262,41 @@ Let’s add a few measures which we need to create the Sales dashboard.
 
 1. Select **Sales table** from the model view. We want to add the measures to the Sales table.
 
-2. From the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.  
+2. From the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
-3. Enter **Sales = SUM(Sales[Sales_Amount])** in the **formula bar**.
+   **Note:** If New measure is not visible, right click on the **Sales** table and click on **New Measure**
 
-4. Click the **check mark** left of the formula bar or click the **Enter** button.
+4. Enter **Sales = SUM(Sales[Sales_Amount])** in the **formula bar**.
 
-5. In the Properties panel on the right, expand the **Formatting** section.
+5. Click the **check mark** left of the formula bar or click the **Enter** button.
 
-6. From the **Format** dropdown select **Whole number**.
+6. In the Properties panel on the right, expand the **Formatting** section.
+
+7. From the **Format** dropdown select **Whole number**.
 
     ![](../media/Lab_6.27.png)
  
-7. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
+8. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
-8. Enter **Units = SUM(Sales[Quantity])** in the **formula bar**.
+9. Enter **Units = SUM(Sales[Quantity])** in the **formula bar**.
 
-9. Click the **check mark** left of the formula bar or click the **Enter** button.
+10. Click the **check mark** left of the formula bar or click the **Enter** button.
 
-10. In the Properties panel on the right, expand the **Formatting** section (it may take a few moments for the Properties panel to load).
+11. In the Properties panel on the right, expand the **Formatting** section (it may take a few moments for the Properties panel to load).
 
-11. From the **Format** dropdown select **Whole number**.
+12. From the **Format** dropdown select **Whole number**.
 
     ![](../media/Lab_6.28.png)
  
-12. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
+13. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
-13. Enter **Orders = DISTINCTCOUNT(Sales[InvoiceID])** in the **formula bar**.
+14. Enter **Orders = DISTINCTCOUNT(Sales[InvoiceID])** in the **formula bar**.
 
-14. Click the **check mark** left of the formula bar or click the **Enter** button.
+15. Click the **check mark** left of the formula bar or click the **Enter** button.
 
-15. In the Properties panel on the right, expand the **Formatting** section.
+16. In the Properties panel on the right, expand the **Formatting** section.
 
-16. From the Format dropdown select **Whole number**.
+17. From the Format dropdown select **Whole number**.
 
     ![](../media/Lab_6.29.png)
  
@@ -314,69 +316,71 @@ Let’s add the remaining relationships.
  
 2. Now let’s create a relationship between the Product and the Supplier. Select **SupplierID** from the **Product** table and drag it over **SupplierID** in the **Supplier** table.
 
-3. New relationship dialog opens. Make sure **Table 1** is **Product** and **Column** is **SupplierID**.
+3. New relationship dialog opens.Now let’s create a relationship between the Product and the Supplier.
 
-4. Make sure **Table 2** is **Supplier** and **Column** is **SupplierID**.
+4. Make sure **From table** is **Product** and **Column** is **SupplierID**.
 
-5. Make sure **Cardinality** is **Many to one (*:1)**.
+5. Make sure **To table** is **Supplier** and **Column** is **SupplierID**.
 
-6. Make sure **Cross filter direction** is **Both**.
+6. Make sure **Cardinality** is **Many to one (\*:1)**.
 
-7. Select **Ok**.
+7. Make sure **Cross filter direction** is **Both**.
 
-    ![](../media/Lab_6.31.png)
+8. Select **Save**.
 
-8. Similarly, create a **many to one** relationship with **Cross filter direction** as **Both** between **Product_Details** and **Product**. Select **StockItemID** from **Product_Details** and **StockItemID** from **Product**.
+   ![](../media/f8.png)
 
-9. Now let’s create a relationship between Reseller and Geo. Select **PostalCityID** from the **Reseller** table and drag it over **CityID** in the **Geo** table.
+9. Similarly, create a **many to one** relationship with **Cross filter direction** as **Both** between **Product_Details** and **Product**. Select **StockItemID** from **Product_Details** and **StockItemID** from **Product**.
 
-10. New relationship dialog opens. Make sure **Table 1** is **Reseller** and **Column** is **PostalCityID**.
+10. Now let’s create a relationship between Reseller and Geo. Select **PostalCityID** from the **Reseller** table and drag it over **CityID** in the **Geo** table.
 
-11. Make sure **Table 2** is **Geo** and **Column** is **CityID**.
+11. New relationship dialog opens. Make sure **From table** is **Reseller** and **Column** is **PostalCityID**.
 
-12. Make sure **Cardinality** is **Many to one (*:1)**.
+12. Make sure **To table** is **Geo** and **Column** is **CityID**.
 
-13. Make sure **Cross filter direction** is **Both**.
+13. Make sure **Cardinality** is **Many to one (\*:1)**.
 
-14. Select **Ok**.
+14. Make sure **Cross filter direction** is **Both**.
 
-    ![](../media/Lab_6.32.png)
+15. Select **Save**.
+
+    ![](../media/f9.png)
  
-15. Now let’s create a relationship between the Customer and the Reseller. Select **ResellerID** from the **Customer** table and drag it over **ResellerID** in the **Reseller** table.
+16. Now let’s create a relationship between the Customer and the Reseller. Select **ResellerID** from the **Customer** table and drag it over **ResellerID** in the **Reseller** table.
 
-16. New relationship dialog opens. Make sure **Table 1** is **Customer** and **Column** is **ResellerID**.
+17. New relationship dialog opens. Make sure **From table** is **Customer** and **Column** is **ResellerID**.
 
-17. Make sure **Table 2** is **Reseller** and **Column** is **ResellerID**.
+18. Make sure **To table** is **Reseller** and **Column** is **ResellerID**.
 
-18. Make sure **Cardinality** is **Many to one (*:1)**.
+19. Make sure **Cardinality** is **Many to one (\*:1)**.
 
-19. Make sure **Cross filter direction** is **Single**.
+20. Make sure **Cross filter direction** is **Single**.
 
-20. Select **Ok**.  
+21. Select **Save**.
 
-    ![](../media/Lab_6.33.png)
+    ![](../media/f10.png)
  	
     **Checkpoint**: Your model should look like the screenshot below.
 
     ![](../media/Lab_6.34.png)
  
-21. Now let’s create a relationship between PO and Date. Select **Order_Date** from the **PO** table and drag it over **Date** in the **Date** table.
+22. Now let’s create a relationship between PO and Date. Select **Order_Date** from the **PO** table and drag it over **Date** in the **Date** table.
 
-22. New relationship dialog opens. Make sure **Table 1** is **PO** and **Column** is **Order_Date**.
+23. New relationship dialog opens. Make sure **From table** is **PO** and **Column** is **Order_Date**.
 
-23. Make sure **Table 2** is **Date** and **Column** is **Date**.
+24. Make sure **To table** is **Date** and **Column** is **Date**.
 
-24. Make sure **Cardinality** is **Many to one (*:1)**.
+25. Make sure **Cardinality** is **Many to one (*:1)**.
 
-25. Make sure **Cross filter direction** is **Single**.
+26. Make sure **Cross filter direction** is **Single**.
 
-26. Select **OK**.
+27. Select **Save**.
 
-    ![](../media/Lab_6.35.png)
+    ![](../media/l3.png)
  
-27. Similarly, create a **many to one** relationship between **PO** and **Product**. Select **StockItemID** from **PO** and **StockItemID** from **Product**.
+28. Similarly, create a **many to one** relationship between **PO** and **Product**. Select **StockItemID** from **PO** and **StockItemID** from **Product**.
 
-28. Similarly, create a **many to one** relationship between **PO** and **People**. Select **ContactPersonID** from **PO** and **PersonID** from **People**. 
+29. Similarly, create a **many to one** relationship between **PO** and **People**. Select **ContactPersonID** from **PO** and **PersonID** from **People**. 
 
     We are done creating all the relationships. 
 

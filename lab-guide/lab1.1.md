@@ -40,7 +40,7 @@ You heard about Microsoft Fabric and decided to try it to see if it will address
 # Overview of Power BI Desktop Report
 Before we start with Fabric, let’s look at the current Report in Power BI Desktop to understand the transformations and the model.
 
-### Task 1: Set up Power BI Desktop in lab environment
+## Task 1: Set up Power BI Desktop in lab environment
 
 1. Open the **FAIAD.pbix** located in the **Report** folder on the **Desktop** of your lab environment. The file will open in Power BI Desktop.
 
@@ -70,7 +70,7 @@ Before we start with Fabric, let’s look at the current Report in Power BI Desk
  
 12. Select **No, sign in the app only** in the next dialog. Power BI Desktop will now open.
 
-### Task 2: Analyze Power BI Desktop Report
+## Task 2: Analyze Power BI Desktop Report
 The report below analyzes Sales for Fabrikam. KPIs are listed on the left top of the page. The remaining visuals highlight Sales over time, by Territory, Product Group, and Reseller Company. 
 
    # ![](../media/img8.png)
