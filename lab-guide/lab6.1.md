@@ -374,7 +374,7 @@ Let’s add the remaining relationships.
 
 27. Select **Save**.
 
-    ![](../media/fll.png)
+    ![](../media/l3.png)
  
 28. Similarly, create a **many to one** relationship between **PO** and **Product**. Select **StockItemID** from **PO** and **StockItemID** from **Product**.
 
