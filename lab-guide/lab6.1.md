@@ -314,69 +314,71 @@ Let’s add the remaining relationships.
  
 2. Now let’s create a relationship between the Product and the Supplier. Select **SupplierID** from the **Product** table and drag it over **SupplierID** in the **Supplier** table.
 
-3. New relationship dialog opens. Make sure **Table 1** is **Product** and **Column** is **SupplierID**.
+3. New relationship dialog opens.Now let’s create a relationship between the Product and the Supplier.
 
-4. Make sure **Table 2** is **Supplier** and **Column** is **SupplierID**.
+4. Make sure **From table** is **Product** and **Column** is **SupplierID**.
 
-5. Make sure **Cardinality** is **Many to one (*:1)**.
+5. Make sure **To table** is **Supplier** and **Column** is **SupplierID**.
 
-6. Make sure **Cross filter direction** is **Both**.
+6. Make sure **Cardinality** is **Many to one (\*:1)**.
 
-7. Select **Ok**.
+7. Make sure **Cross filter direction** is **Both**.
 
-    ![](../media/Lab_6.31.png)
+8. Select **Save**.
 
-8. Similarly, create a **many to one** relationship with **Cross filter direction** as **Both** between **Product_Details** and **Product**. Select **StockItemID** from **Product_Details** and **StockItemID** from **Product**.
+   ![](../media/f8.png)
 
-9. Now let’s create a relationship between Reseller and Geo. Select **PostalCityID** from the **Reseller** table and drag it over **CityID** in the **Geo** table.
+9. Similarly, create a **many to one** relationship with **Cross filter direction** as **Both** between **Product_Details** and **Product**. Select **StockItemID** from **Product_Details** and **StockItemID** from **Product**.
 
-10. New relationship dialog opens. Make sure **Table 1** is **Reseller** and **Column** is **PostalCityID**.
+10. Now let’s create a relationship between Reseller and Geo. Select **PostalCityID** from the **Reseller** table and drag it over **CityID** in the **Geo** table.
 
-11. Make sure **Table 2** is **Geo** and **Column** is **CityID**.
+11. New relationship dialog opens. Make sure **From table** is **Reseller** and **Column** is **PostalCityID**.
 
-12. Make sure **Cardinality** is **Many to one (*:1)**.
+12. Make sure **To table** is **Geo** and **Column** is **CityID**.
 
-13. Make sure **Cross filter direction** is **Both**.
+13. Make sure **Cardinality** is **Many to one (\*:1)**.
 
-14. Select **Ok**.
+14. Make sure **Cross filter direction** is **Both**.
 
-    ![](../media/Lab_6.32.png)
+15. Select **Save**.
+
+    ![](../media/f9.png)
  
-15. Now let’s create a relationship between the Customer and the Reseller. Select **ResellerID** from the **Customer** table and drag it over **ResellerID** in the **Reseller** table.
+16. Now let’s create a relationship between the Customer and the Reseller. Select **ResellerID** from the **Customer** table and drag it over **ResellerID** in the **Reseller** table.
 
-16. New relationship dialog opens. Make sure **Table 1** is **Customer** and **Column** is **ResellerID**.
+21. New relationship dialog opens. Make sure **From table** is **Customer** and **Column** is **ResellerID**.
 
-17. Make sure **Table 2** is **Reseller** and **Column** is **ResellerID**.
+22. Make sure **To table** is **Reseller** and **Column** is **ResellerID**.
 
-18. Make sure **Cardinality** is **Many to one (*:1)**.
+23. Make sure **Cardinality** is **Many to one (\*:1)**.
 
-19. Make sure **Cross filter direction** is **Single**.
+24. Make sure **Cross filter direction** is **Single**.
 
-20. Select **Ok**.  
+25. Select **Save**.
 
-    ![](../media/Lab_6.33.png)
+    ![](../media/f10.png)
  	
     **Checkpoint**: Your model should look like the screenshot below.
 
     ![](../media/Lab_6.34.png)
  
-21. Now let’s create a relationship between PO and Date. Select **Order_Date** from the **PO** table and drag it over **Date** in the **Date** table.
+22. Now let’s create a relationship between PO and Date. Select **Order_Date** from the **PO** table and drag it over **Date** in the **Date** table.
 
-22. New relationship dialog opens. Make sure **Table 1** is **PO** and **Column** is **Order_Date**.
+23. New relationship dialog opens. Make sure **From table** is **PO** and **Column** is **Order_Date**.
 
-23. Make sure **Table 2** is **Date** and **Column** is **Date**.
+24. Make sure **To table** is **Date** and **Column** is **Date**.
 
-24. Make sure **Cardinality** is **Many to one (*:1)**.
+25. Make sure **Cardinality** is **Many to one (*:1)**.
 
-25. Make sure **Cross filter direction** is **Single**.
+26. Make sure **Cross filter direction** is **Single**.
 
-26. Select **OK**.
+27. Select **Save**.
 
-    ![](../media/Lab_6.35.png)
+    ![](../media/fll.png)
  
-27. Similarly, create a **many to one** relationship between **PO** and **Product**. Select **StockItemID** from **PO** and **StockItemID** from **Product**.
+28. Similarly, create a **many to one** relationship between **PO** and **Product**. Select **StockItemID** from **PO** and **StockItemID** from **Product**.
 
-28. Similarly, create a **many to one** relationship between **PO** and **People**. Select **ContactPersonID** from **PO** and **PersonID** from **People**. 
+29. Similarly, create a **many to one** relationship between **PO** and **People**. Select **ContactPersonID** from **PO** and **PersonID** from **People**. 
 
     We are done creating all the relationships. 
 
