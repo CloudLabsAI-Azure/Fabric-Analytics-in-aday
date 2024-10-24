@@ -262,39 +262,41 @@ Let’s add a few measures which we need to create the Sales dashboard.
 
 1. Select **Sales table** from the model view. We want to add the measures to the Sales table.
 
-2. From the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.  
+2. From the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
-3. Enter **Sales = SUM(Sales[Sales_Amount])** in the **formula bar**.
+   **Note:** If New measure is not visible, right click on the **Sales** table and click on **New Measure**
 
-4. Click the **check mark** left of the formula bar or click the **Enter** button.
+4. Enter **Sales = SUM(Sales[Sales_Amount])** in the **formula bar**.
 
-5. In the Properties panel on the right, expand the **Formatting** section.
+5. Click the **check mark** left of the formula bar or click the **Enter** button.
 
-6. From the **Format** dropdown select **Whole number**.
+6. In the Properties panel on the right, expand the **Formatting** section.
+
+7. From the **Format** dropdown select **Whole number**.
 
     ![](../media/Lab_6.27.png)
  
-7. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
+8. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
-8. Enter **Units = SUM(Sales[Quantity])** in the **formula bar**.
+9. Enter **Units = SUM(Sales[Quantity])** in the **formula bar**.
 
-9. Click the **check mark** left of the formula bar or click the **Enter** button.
+10. Click the **check mark** left of the formula bar or click the **Enter** button.
 
-10. In the Properties panel on the right, expand the **Formatting** section (it may take a few moments for the Properties panel to load).
+11. In the Properties panel on the right, expand the **Formatting** section (it may take a few moments for the Properties panel to load).
 
-11. From the **Format** dropdown select **Whole number**.
+12. From the **Format** dropdown select **Whole number**.
 
     ![](../media/Lab_6.28.png)
  
-12. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
+13. With the **Sales table** selected from the top menu, select **Home -> New Measure**. Notice the formula bar is displayed.
 
-13. Enter **Orders = DISTINCTCOUNT(Sales[InvoiceID])** in the **formula bar**.
+14. Enter **Orders = DISTINCTCOUNT(Sales[InvoiceID])** in the **formula bar**.
 
-14. Click the **check mark** left of the formula bar or click the **Enter** button.
+15. Click the **check mark** left of the formula bar or click the **Enter** button.
 
-15. In the Properties panel on the right, expand the **Formatting** section.
+16. In the Properties panel on the right, expand the **Formatting** section.
 
-16. From the Format dropdown select **Whole number**.
+17. From the Format dropdown select **Whole number**.
 
     ![](../media/Lab_6.29.png)
  
@@ -346,15 +348,15 @@ Let’s add the remaining relationships.
  
 16. Now let’s create a relationship between the Customer and the Reseller. Select **ResellerID** from the **Customer** table and drag it over **ResellerID** in the **Reseller** table.
 
-21. New relationship dialog opens. Make sure **From table** is **Customer** and **Column** is **ResellerID**.
+17. New relationship dialog opens. Make sure **From table** is **Customer** and **Column** is **ResellerID**.
 
-22. Make sure **To table** is **Reseller** and **Column** is **ResellerID**.
+18. Make sure **To table** is **Reseller** and **Column** is **ResellerID**.
 
-23. Make sure **Cardinality** is **Many to one (\*:1)**.
+19. Make sure **Cardinality** is **Many to one (\*:1)**.
 
-24. Make sure **Cross filter direction** is **Single**.
+20. Make sure **Cross filter direction** is **Single**.
 
-25. Select **Save**.
+21. Select **Save**.
 
     ![](../media/f10.png)
  	
